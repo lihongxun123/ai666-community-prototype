@@ -1,14 +1,15 @@
 'use client';
+/* oxlint-disable next/no-img-element -- Evidence screenshots keep their native encoding, load lazily and link to the original file. */
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ListFilter, Menu, Search, X } from 'lucide-react';
 import { profiles } from '@/lib/profiles';
 import { groups, type Section } from '@/lib/research-types';
 import { synthesis, evidence } from '@/lib/synthesis';
 
-const topViews=[['overview','研究总览'],['matrix','21 家对照'],['strategy','定位与种子用户'],['evidence','证据与局限']];
+const topViews=[['overview','研究总览'],['matrix','18 个竞品对照'],['strategy','定位与种子用户'],['evidence','证据与局限']];
 export default function Research(){
  const [view,setView]=useState('overview'); const [query,setQuery]=useState(''); const [group,setGroup]=useState('全部'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
- useEffect(()=>{const read=()=>{const hash=decodeURIComponent(location.hash.slice(1));setView(profiles.some(p=>p.id===hash)||topViews.some(t=>t[0]===hash)?hash:'overview');};read();window.addEventListener('hashchange',read);return()=>window.removeEventListener('hashchange',read);},[]);
+ useEffect(()=>{const read=()=>{const raw=decodeURIComponent(location.hash.slice(1));const hash=raw==='tensor'?'tusi':raw;setView(profiles.some(p=>p.id===hash)||topViews.some(t=>t[0]===hash)?hash:'overview');};read();window.addEventListener('hashchange',read);return()=>window.removeEventListener('hashchange',read);},[]);
  const navigate=(id:string)=>{location.hash=id;setView(id);setMobile(false);window.scrollTo({top:0,behavior:'instant'});};
  const filtered=useMemo(()=>profiles.filter(p=>(group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object}`.toLowerCase().includes(query.trim().toLowerCase())),[query,group]);
  const p=profiles.find(x=>x.id===view); const index=p?profiles.indexOf(p):-1;
@@ -16,60 +17,71 @@ export default function Research(){
  const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):filtered;
  return <div className="research-shell">
  <a href="#main" className="skip-link" onClick={e=>{e.preventDefault();document.getElementById('main')?.focus();window.scrollTo({top:0});}}>跳到正文</a>
- <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区观察 · 2026.09.08</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>阅读说明</span></button></header>
+ <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区观察 · 第二轮 · 2026.09.09</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>阅读说明</span></button></header>
  {mobile&&<button className="sidebar-scrim" onClick={()=>setMobile(false)} aria-label="关闭目录"/>}
  <aside className={`sidebar ${mobile?'is-open':''}`} aria-label="研究目录">
  <div className="sidebar-top"><p className="eyebrow">RESEARCH INDEX</p><p className="sidebar-title">从看内容，到反复使用</p></div>
  <nav className="top-nav">{topViews.map(([id,title])=><button key={id} onClick={()=>navigate(id)} aria-current={view===id?'page':undefined} className={view===id?'active':''}><span>{title}</span>{view===id&&<span className="active-dot"/>}</button>)}</nav>
  <div className="sidebar-controls"><label className="search"><Search size={15}/><input aria-label="搜索竞品、用户或内容类型" placeholder="搜索竞品、用户或内容" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button onClick={()=>setQuery('')} aria-label="清除搜索"><X size={14}/></button>}</label><label className="filter"><ListFilter size={14}/><select aria-label="按社区类型筛选" value={group} onChange={e=>setGroup(e.target.value)}><option>全部</option>{groups.map(g=><option key={g}>{g}</option>)}</select><span>{filtered.length} / {profiles.length}</span></label></div>
  <nav className="profile-nav">{filtered.map(item=><button key={item.id} onClick={()=>navigate(item.id)} aria-current={view===item.id?'page':undefined} className={view===item.id?'active':''}><span className="nav-number">{String(profiles.indexOf(item)+1).padStart(2,'0')}</span><span>{item.name}</span>{view===item.id&&<span className="active-dot"/>}</button>)}{filtered.length===0&&<div className="empty">没有匹配的竞品。<button onClick={()=>{setQuery('');setGroup('全部')}}>清除筛选</button></div>}</nav>
- <div className="sidebar-foot">公开资料深度研究<br/>事实、推断与未知分别呈现</div>
+ <div className="sidebar-foot">公开资料 + 登录观察<br/>第二轮 · 18 个竞品档案</div>
  </aside>
  <main id="main" className="report-main" tabIndex={-1}>
  <div className="breadcrumb"><span>研究报告</span><span>/</span><span>{p?p.group:topViews.find(t=>t[0]===view)?.[1]}</span></div>
  {view==='overview'&&<>
- <div className="page-heading"><p className="eyebrow">21 个样本 · 5 类社区 · 一个业务问题</p><h1>什么值得用户<br className="desktop-break"/>一次次回来？</h1><p className="lead">围绕 AI666 与 MakeNow，研究内容如何被生产、使用与再次使用。把竞品经验转成四人团队可以检验的选择。</p></div>
+ <div className="page-heading"><p className="eyebrow">18 个竞品 · 5 类社区 · 一个业务问题</p><h1>什么让用户愿意<br className="desktop-break"/>一次次回来？</h1><p className="lead">围绕多元拾光与 MakeNow，查清案例从哪里来、用户怎样做成、下一次为什么回来。逐家记录证据，再讨论四人团队值得投入哪一段。</p></div>
  <div className="context-strip"><div><span>当前目标</span><strong>目标用户规模 + 持续活跃</strong></div><div><span>可用资产</span><strong>低价 API · MakeNow</strong></div><div><span>核心缺口</span><strong>成熟案例 · 作者 · 真实任务</strong></div></div>
- <section className="overview-verdict"><span className="section-index">核心判断</span><h2>先建立一小组可复用案例与真实任务，<br/>再决定社区要长成什么样。</h2><p>目前证据支持探索“可用方法 + 作者反馈”的社区。它还不能确定你们该选择哪类用户，也不能证明增加社区功能必然提高留存。</p><button className="primary-button" onClick={()=>navigate('strategy')}>查看定位与验证方案 <ArrowRight size={17}/></button></section>
+ <section className="overview-verdict"><span className="section-index">核心判断</span><h2>先用一个案例，<br/>服务一组有下一次任务的人。</h2><p>首轮建议由一位合作作者制作方法，带 4–5 位使用者完成自己的材料，再观察独立复用与成员帮助。竞品能提供观察点，真实任务才能帮助你们选人群。</p><button className="primary-button" onClick={()=>navigate('strategy')}>查看定位与验证方案 <ArrowRight size={17}/></button></section>
  <section><div className="section-heading"><h2>值得带进讨论的六个发现</h2><span>点击进入相关档案</span></div><div className="finding-grid">
  {[
  ['01','供给需要被组织','Liblib 的早期定向邀约、WaytoAGI 的编辑整理，都说明第一批内容有人承担具体工作。',['liblib','waytoagi']],
- ['02','激励正在变化','吐司停止部分旧激励，Tensor.Art 收窄范围；旧版创作者计划不能当作今天的规则。',['tusi','tensor','civitai']],
+ ['02','激励正在变化','吐司停止部分旧激励，Tensor.Art 收窄范围；旧版创作者计划不能当作今天的规则。',['tusi','civitai']],
  ['03','内容应带着下一步','运行应用、复制工作流、改作与 Fork，让观看之后有可执行行动。按钮存在仍不代表成功。',['runninghub','dify','runway']],
- ['04','工具复用与社区价值分开看','下一个真实任务可以带来工具回访；他人的案例和反馈是否有帮助，需要另行验证。',['openart','huggingface','coze']],
- ['05','福利也可以筛选行动','一些共学、挑战将资源绑定作业或创作。奖励结束后的行为，决定它是否值得继续。',['nightcafe','datawhale','waytoagi']],
+ ['04','工具复用与社区价值分开看','下一个真实任务可以带来工具回访；他人的案例和反馈是否有帮助，需要另行验证。',['openart','huggingface','dify']],
+ ['05','福利也可以筛选行动','一些共学、挑战将资源绑定作业或创作。还要观察奖励结束后的参与、成果采用与组织成本；长期补贴另算可承担预算。',['nightcafe','datawhale','waytoagi']],
  ['06','作者合作要看过程','专业平台的精选成片背后仍有重试、编辑与制作能力。采购可复现方法，才能服务下一位用户。',['runway','leonardo','kling']],
  ].map(([n,title,body,ids])=><article className="finding" key={n as string}><span className="finding-number">{n as string}</span><h3>{title as string}</h3><p>{body as string}</p><div className="profile-links">{(ids as string[]).map(id=><button key={id} onClick={()=>navigate(id)}>{profiles.find(p=>p.id===id)?.name||id}<ArrowUpRight size={13}/></button>)}</div></article>)}
  </div></section>
  <section><div className="section-heading"><h2>建议这样读</h2><button className="text-button" onClick={()=>navigate('matrix')}>打开全部对照 <ArrowRight size={16}/></button></div><div className="reading-paths">{[
- ['先解决内容供给','liblib','runninghub','tusi','runway'],['再判断种子用户','openart','waytoagi','datawhale','linuxdo'],['最后看资源与复用','dify','coze','huggingface','tensor']
+ ['看作者供给','liblib','runninghub','tusi','runway'],['看用户参与','openart','waytoagi','datawhale','linuxdo'],['看资源交接','dify','huggingface','tusi']
  ].map(([title,...ids])=><div key={title}><h3>{title}</h3>{ids.map(id=><button onClick={()=>navigate(id)} key={id}>{profiles.find(p=>p.id===id)?.name||id}<ArrowRight size={14}/></button>)}</div>)}</div></section>
- <div className="notice"><strong>阅读边界</strong><p>资料核验基准为 2026 年 9 月 8 日。21 家都建立独立档案；研究深度与页面可达性并不相同。未登录、付费或执行生成，未取得后台留存和收入数据。公开规模与活动记录不作为增长因果证据。</p><button onClick={()=>navigate('evidence')} className="text-button">查看方法与证据缺口 <ArrowRight size={14}/></button></div>
+ <div className="notice"><strong>阅读边界</strong><p>资料核验于 2026 年 9 月 8–9 日。吐司与 Tensor.Art 合并研究，移除飞桨、Coze；LINUX DO 保留公开研究。登录实操、未完成步骤与截图类型逐家注明。少量虚构商品样图不能证明目标用户需求或普遍成功率。</p><button onClick={()=>navigate('evidence')} className="text-button">查看方法与证据缺口 <ArrowRight size={14}/></button></div>
  </>}
  {view==='matrix'&&<>
- <div className="page-heading"><p className="eyebrow">COMPARISON</p><h1>21 家，放在同一张桌面上</h1><p className="lead">比较服务谁、提供什么、为什么回来，以及你们值得截取哪一段。类型用于理解机制，未对经营表现打分。</p></div>
+ <div className="page-heading"><p className="eyebrow">COMPARISON</p><h1>18 个竞品，比较各自解决的事</h1><p className="lead">比较服务谁、提供什么、为什么回来，以及你们值得截取哪一段。文档描述的路径与本轮实际完成范围分开，实操结果见各档案；未对经营表现打分。</p></div>
  <div className="compare-controls"><p>选择最多 3 家并排对照。{selected.length>0?`已选 ${selected.length} 家。`:'未选择时显示目录筛选结果。'}</p>{selected.length>0&&<button className="text-button" onClick={()=>setSelected([])}>清空选择 <X size={14}/></button>}</div>
  <div className="compare-options">{profiles.map(item=><button aria-pressed={selected.includes(item.id)} disabled={selected.length===3&&!selected.includes(item.id)} className={selected.includes(item.id)?'chosen':''} key={item.id} onClick={()=>toggle(item.id)}>{selected.includes(item.id)&&<Check size={13}/>} {item.name}</button>)}</div>
- <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次有效使用</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>对你们的取舍</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
+ <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>对你们的取舍</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
  {rows.length===0&&<p className="empty">没有匹配结果，请清除左侧筛选。</p>}<p className="muted">各项事实、日期与访问限制见对应档案。这个对照不意味着所有平台都是直接竞争者。</p>
  </>}
  {(view==='strategy'||view==='evidence')&&<>
- <div className="page-heading"><p className="eyebrow">{view==='strategy'?'DECISIONS TO TEST':'EVIDENCE & LIMITS'}</p><h1>{view==='strategy'?'找到第一批会再次使用的人':'知道什么，也知道还缺什么'}</h1><p className="lead">{view==='strategy'?'三个方向都先作为假设。用真实输入、第二次任务和人的反馈，缩小选择范围。':'公开规则说明机制存在；历史访谈解释起点；真实效果仍需要你们自己的用户实验。'}</p></div>
+ <div className="page-heading"><p className="eyebrow">{view==='strategy'?'DECISIONS TO TEST':'EVIDENCE & LIMITS'}</p><h1>{view==='strategy'?'找到第一批会再次使用的人':'知道什么，也知道还缺什么'}</h1><p className="lead">{view==='strategy'?'三个方向都先作为假设。用真实输入、第二次任务和人的反馈，缩小选择范围。':'公开资料说明产品规则或设计；是否上线、能否完成任务分别核验。真实效果仍需要你们自己的用户实验。'}</p></div>
  {(view==='strategy'?synthesis:evidence).map((section,i)=><Essay key={section.title} section={section} number={i+1}/>)}
  {view==='evidence'&&<div className="evidence-register"><h2>逐家来源覆盖</h2><p className="muted">{profiles.reduce((a,p)=>a+p.sources.length,0)} 条来源记录（按档案计，含重复域名与历史资料）。数量不代表证据强弱。</p>{profiles.map(item=><button key={item.id} onClick={()=>navigate(item.id)}><strong>{item.name}</strong><span>{item.sources.length} 条来源</span><span>{item.access}</span><ArrowRight size={15}/></button>)}</div>}
  </>}
  {p&&<>
- <div className="page-heading profile-heading"><p className="eyebrow">档案 {String(index+1).padStart(2,'0')} / 21 <span>·</span> {p.group}</p><h1>{p.name}</h1><p className="focus-line">{p.focus}</p><p className="lead">{p.thesis}</p></div>
- <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次有效使用路径</span><p>{p.first}</p></div></div>
+ <div className="page-heading profile-heading"><p className="eyebrow">档案 {String(index+1).padStart(2,'0')} / 18 <span>·</span> {p.group}</p><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
+ <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
  <div className="access-note"><strong>本轮核验</strong><p>{p.access}</p></div>
+ <nav className="article-toc" aria-label="快速跳转">{[['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs','四人团队怎样取舍'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{label}</a>)}</nav>
+ {p.deep&&<>
+ <section className="research-focus"><h2>这家最值得追问的事</h2><p>{p.deep.question}</p></section>
+ <section className="research-gallery" id="page-evidence"><div className="section-heading"><h2>页面证据</h2><span>点击图片查看大图</span></div>{p.deep.images.length?p.deep.images.map(img=><figure key={img.file}><a href={img.file} target="_blank" rel="noreferrer"><img src={img.file} alt={img.title} loading="lazy"/></a><figcaption><div><strong>{img.title}</strong><span>{img.kind} · {img.date}</span></div><p>{img.observation}</p><p className="muted">{img.limitation}</p><a href={img.url} target="_blank" rel="noreferrer">研究原页 <ArrowUpRight size={13}/></a></figcaption></figure>):<p className="access-note">核心页面尚未取得有效截图。保留资料分析，具体访问限制见本档案；不以空白页或验证页代替。</p>}</section>
+ {p.deep.task&&<section className="task-record" id="task-log"><div className="section-heading"><h2>本轮实际操作</h2><span>{p.deep.task.date}</span></div><p>{p.deep.task.scope}</p><ol>{p.deep.task.steps.map((step,i)=><li key={i}>{step}</li>)}</ol><p><strong>结果：</strong>{p.deep.task.result}</p><p className="muted">已接收生成任务 {p.deep.task.attempts} 次；按钮重试与未接收情况见记录。{p.deep.task.limit}</p></section>}
+ <section className="journey"><h2>从发现到再次使用</h2><p className="muted">下表分析产品提供的路径及可能阻塞；实际完成范围以上方记录为准。</p><div className="table-wrap"><table><thead><tr><th>阶段</th><th>用户在做什么</th><th>哪里可能卡住</th></tr></thead><tbody>{p.deep.route.map(r=><tr key={r.stage}><th>{r.stage}</th><td>{r.behavior}</td><td>{r.friction}</td></tr>)}</tbody></table></div></section>
+ </>}
  <nav className="article-toc" aria-label="本档案章节">{p.sections.map((section,i)=><a key={section.title} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(`section-${i}`)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{String(i+1).padStart(2,'0')} {section.title}</a>)}</nav>
  <div className="article-body">{p.sections.map((section,i)=><section key={section.title} id={`section-${i}`} className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(i+1).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((para,j)=><p key={j}>{para}</p>)}{section.refs&&<div className="citations"><span>依据</span>{section.refs.map(n=><a key={n} href={p.sources[n-1].url} target="_blank" rel="noreferrer">[{n}] {p.sources[n-1].title}<ArrowUpRight size={12}/></a>)}</div>}</section>)}</div>
- <section className="application"><p className="eyebrow">FOR AI666 / MAKENOW</p><h2>把借鉴变成一个可检验动作</h2><p>{p.experiment}</p><div><strong>先不复制</strong><span>{p.notCopy}</span></div></section>
+ {p.deep&&<>
+ <section className="essay-section" id="experience"><div className="section-heading"><h2>界面与操作体验</h2><span className="status status-推断">观察与分析</span></div>{p.deep.ux.map((para,i)=><p key={i}>{para}</p>)}</section>
+ <section className="tradeoffs" id="tradeoffs"><div className="section-heading"><h2>四人团队怎样取舍</h2><span className="status status-建议">建议</span></div>{p.deep.tradeoffs.map((trade,i)=><article key={trade.title}><h3><span>{String(i+1).padStart(2,'0')}</span>{trade.title}</h3><dl><dt>先做什么</dt><dd>{trade.action}</dd><dt>为什么</dt><dd>{trade.reason}</dd><dt>需要付出</dt><dd>{trade.cost}</dd><dt>何时扩大或调整</dt><dd>{trade.signal}</dd></dl></article>)}</section>
+ </>}
+
  <section className="unknowns"><h2>待验证假设与资料缺口</h2><ul>{p.gaps.map(g=><li key={g}>{g}</li>)}</ul></section>
- <section className="sources"><div className="section-heading"><h2>来源与时间边界</h2><span>采集 09-08 · 补核 09-09</span></div>{p.sources.map((src,i)=><div className="source-row" key={src.url}><span className="source-number">{i+1}</span><div><a href={src.url} target="_blank" rel="noreferrer">{src.title}<ArrowUpRight size={14}/></a><p>{src.note}</p><small>{src.type} · {src.date}</small></div></div>)}</section>
+ <section className="sources" id="source-list"><div className="section-heading"><h2>来源与时间边界</h2><span>采集 09-08 · 补核 09-09</span></div>{p.sources.map((src,i)=><div className="source-row" key={`${src.url}-${i}`}><span className="source-number">{i+1}</span><div><a href={src.url} target="_blank" rel="noreferrer">{src.title}<ArrowUpRight size={14}/></a><p>{src.note}</p><small>{src.type} · {src.date}</small></div></div>)}</section>
  <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究总览':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'定位与种子用户':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
  </>}
- <footer className="report-footer"><span>多元拾光 · 竞品研究工作底稿</span><span>观点可讨论，事实有出处。</span></footer>
+ <footer className="report-footer"><span>多元拾光 · 竞品研究工作底稿</span><span>资料核验：2026.09.08–09.09</span></footer>
  </main></div>
 }
 function Essay({section,number}:{section:Section;number:number}){return <section className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(number).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>}
