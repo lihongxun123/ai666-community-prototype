@@ -19,9 +19,10 @@ import { ValidationOverview } from '@/components/validation-research';
 import { EvidenceUpdateOverview, EvidenceUpdateProfile } from '@/components/evidence-update';
 import type { EvidenceUpdate } from '@/lib/evidence-update-types';
 import evidenceUpdateJson from '@/lib/evidence-update.json';
-import { OperationsOverview, OperationsProfileSection } from '@/components/operations-research';
-import type { OperationsResearch } from '@/lib/operations-types';
-import operationsJson from '@/lib/operations-data.json';
+import { OperationsDocument, ContentDocument, StudyProfileLinks } from '@/components/study-documents';
+import type { StudyDocument, OperatingStudy, ContentStudy } from '@/lib/study-types';
+import operatingJson from '@/lib/platform-operations.json';
+import contentJson from '@/lib/content-forms.json';
 
 const businessProfiles: BusinessProfileData[] = businessData;
 const businessById = new Map(businessProfiles.map(profile => [profile.id, profile]));
@@ -29,9 +30,11 @@ const publicProfiles = publicData as PublicDataProfile[];
 const publicById = new Map(publicProfiles.map(profile => [profile.id, profile]));
 const evidenceUpdate=evidenceUpdateJson as EvidenceUpdate;
 const evidenceById=new Map(evidenceUpdate.profiles.map(profile=>[profile.id,profile]));
-const operations=operationsJson as OperationsResearch;
-const operationsById=new Map(operations.profiles.map(profile=>[profile.id,profile]));
-const topViews=[['overview','研究总览'],['operations','运营思路与内容形态'],['supplement','竞品证据补核'],['matrix','18 个竞品对照'],['tasks','任务、内容与作者'],['data','公开数据对照'],['business','商业化、规模与用户'],['evidence','证据与局限'],['strategy','附录：定位假设'],['validation','附录：自身用户验证']];
+const operatingStudy=operatingJson as StudyDocument<OperatingStudy>;
+const contentStudy=contentJson as StudyDocument<ContentStudy>;
+const operatingById=new Map(operatingStudy.profiles.map(profile=>[profile.id,profile]));
+const contentById=new Map(contentStudy.profiles.map(profile=>[profile.id,profile]));
+const topViews=[['overview','研究总览'],['operations','运营思路研究'],['content','内容形态研究'],['supplement','竞品证据补核'],['matrix','18 个竞品对照'],['tasks','任务、内容与作者'],['data','公开数据对照'],['business','商业化、规模与用户'],['evidence','证据与局限'],['strategy','附录：定位假设'],['validation','附录：自身用户验证']];
 export default function Research(){
  const [view,setView]=useState('overview'); const [query,setQuery]=useState(''); const [group,setGroup]=useState('全部'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
  const sectionTarget=useRef<{profileId:string;sectionId:string}|null>(null);
@@ -41,9 +44,9 @@ export default function Research(){
  const showBusiness=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'commercial'};navigate(id);};
  const showData=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'public-data'};navigate(id);};
  const showContent=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'content-observations'};navigate(id);};
- const showOperations=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'operations-profile'};navigate(id);};
+ const showStudy=(kind:'operations'|'content',id:string)=>{setQuery('');setGroup('全部');sectionTarget.current={profileId:kind,sectionId:`${kind}-${id}`};navigate(kind);};
  const showEvidence=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'evidence-update'};navigate(id);};
- const filtered=useMemo(()=>profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${operationsById.get(p.id)?.archetype||''} ${operationsById.get(p.id)?.content.map(c=>c.form).join(' ')||''} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());}),[query,group]);
+ const filtered=useMemo(()=>profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${operatingById.get(p.id)?.position||''} ${contentById.get(p.id)?.forms.map(c=>c.name).join(' ')||''} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());}),[query,group]);
  const p=profiles.find(x=>x.id===view); const index=p?profiles.indexOf(p):-1;
  const toggle=(id:string)=>setSelected(prev=>prev.includes(id)?prev.filter(v=>v!==id):prev.length<3?[...prev,id]:prev);
  const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):filtered;
@@ -63,7 +66,7 @@ export default function Research(){
  {view==='overview'&&<>
  <div className="page-heading"><p className="eyebrow">18 个竞品 · 5 类社区 · 一个业务问题</p><h1>什么让用户愿意<br className="desktop-break"/>一次次回来？</h1><p className="lead">围绕多元拾光与 MakeNow，查清案例从哪里来、用户怎样做成、下一次为什么回来。逐家记录证据，再讨论四人团队值得投入哪一段。</p></div>
  <div className="context-strip"><div><span>当前目标</span><strong>目标用户规模 + 持续活跃</strong></div><div><span>可用资产</span><strong>低价 API · MakeNow</strong></div><div><span>核心缺口</span><strong>成熟案例 · 作者 · 真实任务</strong></div></div>
- <section className="overview-verdict"><span className="section-index">研究重点</span><h2>平台怎样组织参与，<br/>内容承担什么作用？</h2><p>逐家拆解内容形式、供给分工和参与路径。作品、可运行资源、挑战、作业和问题帖承担不同作用；对照公开机制，分析哪些运营条件值得借鉴。</p><button className="primary-button" onClick={()=>navigate('operations')}>查看18家运营与内容分析 <ArrowRight size={17}/></button></section>
+ <section className="overview-verdict"><span className="section-index">研究重点</span><h2>平台怎样组织参与，<br/>内容承担什么作用？</h2><p>两份独立研究分别看组织工作与内容材料。运营篇细化供给、分发、激励和维护；内容篇拆解字段、样本和复用限制，每篇都完整覆盖18家。</p><div className="study-actions"><button className="primary-button" onClick={()=>navigate('operations')}>阅读运营思路研究 <ArrowRight size={17}/></button><button className="text-button" onClick={()=>navigate('content')}>阅读内容形态研究 <ArrowRight size={17}/></button></div></section>
  <section><div className="section-heading"><h2>值得带进讨论的六个发现</h2><span>点击进入相关档案</span></div><div className="finding-grid">
  {[
  ['01','供给需要被组织','Liblib 的早期定向邀约、WaytoAGI 的编辑整理，都说明第一批内容有人承担具体工作。',['liblib','waytoagi']],
@@ -87,7 +90,8 @@ export default function Research(){
  {rows.length===0&&<p className="empty">没有匹配结果，请清除左侧筛选。</p>}<p className="muted">各项事实、日期与访问限制见对应档案。这个对照不意味着所有平台都是直接竞争者。</p>
  </>}
  {view==='validation'&&<ValidationOverview/>}
- {view==='operations'&&<OperationsOverview data={operations} visibleIds={filtered.map(p=>p.id)} onSelect={showOperations}/>}
+ {view==='operations'&&<OperationsDocument data={operatingStudy} visibleIds={filtered.map(p=>p.id)} navigate={navigate}/>}
+ {view==='content'&&<ContentDocument data={contentStudy} visibleIds={filtered.map(p=>p.id)} navigate={navigate}/>}
  {view==='supplement'&&<EvidenceUpdateOverview data={evidenceUpdate} visibleIds={filtered.map(p=>p.id)} onSelect={showEvidence}/>}
  {view==='tasks'&&<><div className="notice"><strong>本页的竞品证据与后续方案分别阅读</strong><p>内容样本和公开讨论属于竞品调研。多元拾光的访谈、作者合作与试用方案作为后续附录保留，尚未执行，也不计入竞品调研进度。</p></div><ContentOverview onSelect={showContent}/></>}
  {view==='data'&&<><div className="notice"><strong>已补充18家的经营规则与使用证据</strong><p>{evidenceUpdate.stats.claims}条核验结论，逐条标注来源、日期、适用范围与仍未解决的问题。原流量数据保留月份和采集轮次，不与本轮披露混算。</p><button className="text-button" onClick={()=>navigate('supplement')}>查看竞品证据补核 <ArrowRight size={14}/></button></div><PublicDataOverview data={publicProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
@@ -101,8 +105,8 @@ export default function Research(){
  <div className="page-heading profile-heading"><p className="eyebrow">档案 {String(index+1).padStart(2,'0')} / 18 <span>·</span> {p.group}</p><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
  <div className="access-note"><strong>第二轮操作核验</strong><p>{p.access}</p></div>
- <nav className="article-toc" aria-label="快速跳转">{[['operations-profile','运营思路与内容形态'],['evidence-update','本次经营与使用补核'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations','第五轮内容与任务']]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs','四人团队怎样取舍'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{label}</a>)}</nav>
- {operationsById.has(p.id)&&<OperationsProfileSection data={operationsById.get(p.id)!}/>}
+ <nav className="article-toc" aria-label="快速跳转">{[['independent-studies','运营与内容专题'],['evidence-update','本次经营与使用补核'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations','第五轮内容与任务']]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs','四人团队怎样取舍'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{label}</a>)}</nav>
+ {operatingById.has(p.id)&&contentById.has(p.id)&&<StudyProfileLinks operations={operatingById.get(p.id)!} content={contentById.get(p.id)!} onOpen={showStudy}/>}
  {evidenceById.has(p.id)&&<EvidenceUpdateProfile data={evidenceById.get(p.id)!}/>}
  <ContentProfile id={p.id} onOpen={()=>navigate('tasks')}/>
  {publicById.has(p.id)&&<PublicDataProfileSection data={publicById.get(p.id)!}/>}

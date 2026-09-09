@@ -349,3 +349,21 @@ body {
 .ops-mechanism{padding:1.3rem 0;border-bottom:1px solid var(--report-line)}.ops-mechanism h4{font-size:1.1rem;font-weight:600;margin:.35rem 0 .7rem}.ops-mechanism>span{font-size:.875rem}
 .ops-roles{display:grid;grid-template-columns:10rem minmax(0,1fr);gap:1rem;margin:1rem 0}.ops-roles dt{font-weight:600}.ops-roles dd{margin:0}
 @media(max-width:760px){.ops-roles{grid-template-columns:1fr;gap:.3rem}.ops-roles dd{margin-bottom:1rem}.operations-profile h2,.operations-report h2{font-size:1.4rem}}
+
+.study-document{line-height:1.85;overflow-wrap:anywhere;min-width:0}
+.study-actions{display:flex;flex-wrap:wrap;gap:1rem 1.8rem;align-items:center;margin:1.4rem 0}
+.study-guide>div{margin:2.5rem 0}.study-guide h2{font-size:1.4rem}
+.study-directory,.study-comparison{margin:3rem 0}.study-document .article-toc{gap:.5rem 1.2rem}
+.study-platform{margin:4rem 0;padding-top:2rem;border-top:2px solid #718069;scroll-margin-top:6rem}
+.study-position{font-size:1.05rem}.study-platform h3{margin:2.5rem 0 1rem;font-size:1.25rem}
+.study-mechanism,.study-form{margin:1.8rem 0;padding-bottom:1.5rem;border-bottom:1px solid var(--report-line)}
+.study-mechanism h4,.study-form h4{font-size:1.1rem;font-weight:600;margin:.4rem 0 .8rem}.study-form h5{font-size:1rem;margin:1rem 0 .5rem}
+.study-definition{margin:1rem 0}.study-definition>div{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:1rem;margin:.9rem 0}
+.study-definition dt{color:#586451;font-size:.9375rem}.study-definition dd{margin:0}
+.study-refs{font-size:.8rem;white-space:normal;margin-left:.25rem}.study-refs a{display:inline-block}
+.study-document table{width:100%;border-collapse:collapse;font-size:.9375rem;line-height:1.8;min-width:550px}
+.study-document th,.study-document td{padding:1rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--report-line)}
+.study-document thead{background:#edf1e7}.study-comparison th:first-child{width:23%}.study-sample-table th:first-child{width:20%}
+.study-sources{padding-top:2rem;margin-top:4rem;border-top:1px solid var(--report-line)}.study-sources li{padding:1rem 0}.study-sources p{margin:.4rem 0;font-size:.875rem}
+.study-profile-links{margin:3rem 0;scroll-margin-top:6rem}.study-profile-links h3{margin:1.6rem 0 .7rem}
+@media(max-width:760px){.study-definition>div{grid-template-columns:1fr;gap:.25rem;margin:1.1rem 0}.study-platform{margin:3rem 0}.study-platform h2{font-size:1.5rem}.study-guide h2{font-size:1.2rem}}
