@@ -1,0 +1,3260 @@
+[
+  {
+    "id": "liblib",
+    "name": "LiblibAI",
+    "summary": "它把创作者的方法变成可以运行、授权和付费获取的资源，再承接用户持续制作时的算力需求。值得借鉴的是先经营作者与任务的匹配；现有证据不足以证明“大模型广场”本身产生了高留存或高利润。",
+    "payer": "个人创作者为生成权益付费；开发者和企业为 API 服务付费；购买专属工作流的用户也是付款方。不同收入占比未公开核实。",
+    "revenueModel": "会员与按需消费、API、工作流授权形成不同收费入口；作者分成是平台供给成本及作者收入，不能当作平台营收。",
+    "commercialization": [
+      {
+        "title": "免费体验的下一步应是一次制作任务",
+        "text": "事实：官方教学入口将免费积分、模型试用和在线训练放在同一体系，会员邀请规则把奖励绑定被邀请人的首次会员购买。推断：免费用户的价值在于能否进入持续制作、继而购买适用权益；每日回来领取积分不能单独证明这条路径成立。当前套餐实付价、续费比例资料不足。",
+        "refs": [
+          "lib-business-1",
+          "lib-business-2"
+        ]
+      },
+      {
+        "title": "工作流可以成为收费商品",
+        "text": "事实：会员工作流协议约定特定入选工作流由平台独家代理销售、许可及分销；售出后按规则给作者分成。具体分成比例没有在该协议中给出，也允许通知后修改。推断：平台在销售作者的方法与使用权，采购、授权、维护和售后都属于业务的一部分。",
+        "refs": [
+          "lib-business-3"
+        ]
+      },
+      {
+        "title": "API 对应另一类采购理由",
+        "text": "事实：开放平台条款明确提供基于模型、工作流的图像生成 API，具体服务等级取决于购买的产品。推断：开发者的付费理由通常是把已经跑通的能力嵌入自己的业务，并减少部署与维护；有 API 入口不等于企业收入已经占主要部分。",
+        "refs": [
+          "lib-business-4"
+        ]
+      },
+      {
+        "title": "集团扩张不能替社区证明收入",
+        "text": "媒体在 2025 年报道了订阅、按需消费和企业服务路径；2026 年有关演语集团的收入运行率已涉及更广产品矩阵。这里不把集团 ARR 填成 Liblib 社区的年收入，也不由融资额推出商业模式已经盈利。",
+        "refs": [
+          "lib-business-5",
+          "lib-business-6"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "累计用户（较新媒体口径）",
+        "value": "超过3000万",
+        "period": "2026-06-18 报道时",
+        "scope": "报道明确指LiblibAI产品",
+        "kind": "媒体转述",
+        "meaning": "显示平台累积用户规模进一步扩大",
+        "limitation": "公司数据的媒体转述；未说明去重及活跃定义，不能和2025年MAU拼接计算增长或转化",
+        "refs": [
+          "lib-business-6"
+        ]
+      },
+      {
+        "label": "月活跃用户",
+        "value": "400万",
+        "period": "2025-10-23 报道时",
+        "scope": "报道所称 Liblib，未明确跨产品/跨端去重",
+        "kind": "媒体转述",
+        "meaning": "提供当时使用规模线索",
+        "limitation": "报道引述接近公司人士，非审计数据；不代表2026年现状，不能计算付费率",
+        "refs": [
+          "lib-business-5"
+        ]
+      },
+      {
+        "label": "总用户",
+        "value": "2500万",
+        "period": "2025-10-23 报道时",
+        "scope": "报道所称 Liblib 总用户",
+        "kind": "媒体转述",
+        "meaning": "累计触达规模线索",
+        "limitation": "总用户定义及与月活口径是否一致未说明；不能当活跃用户",
+        "refs": [
+          "lib-business-5"
+        ]
+      },
+      {
+        "label": "独立社区营收、付费人数及利润",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "LiblibAI社区独立口径",
+        "kind": "资料不足",
+        "meaning": "无法计算社区ARPU、付费转化或单位利润",
+        "limitation": "已核公开协议及经营报道；集团ARR与融资不替代产品财务",
+        "refs": [
+          "lib-business-3",
+          "lib-business-4",
+          "lib-business-6"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "有交付要求的视觉创作者",
+        "job": "给商品、品牌或内容项目生成可采用的视觉素材",
+        "payTrigger": "免费使用受限，或确定某个方法能减少返工后购买",
+        "returnReason": "新素材、修改意见和下一批交付",
+        "evidence": "官方教学定位支持职业创作入口；具体任务频率和付费意愿属于待访谈画像",
+        "refs": [
+          "lib-business-1"
+        ]
+      },
+      {
+        "name": "模型与工作流作者",
+        "job": "将方法交给别人使用，取得现金、声誉及后续合作",
+        "payTrigger": "本人未必是主要消费收入贡献者；他需要真实使用与授权收益",
+        "returnReason": "使用反馈、资源维护与销售表现",
+        "evidence": "作者授权协议证实可交易供给存在；作者普遍收入和留存未知",
+        "refs": [
+          "lib-business-3"
+        ]
+      },
+      {
+        "name": "嵌入生成能力的开发者",
+        "job": "让已有产品或内部流程调用图像能力",
+        "payTrigger": "有可重复调用的业务量、服务等级需求",
+        "returnReason": "稳定运行、成本预测、故障处理",
+        "evidence": "API条款证实产品入口；企业规模与行业占比没有披露",
+        "refs": [
+          "lib-business-4"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：某类效果或教程被发现 → 用自己的素材试做 → 找到合适模型或工作流 → 购买生成权益/授权 → 下一份素材继续使用。",
+      "作者路径：展示可靠方法 → 获得实际采用 → 根据反馈维护 → 获得销售分成；不能把投稿量直接放进付费转化分母。"
+    ],
+    "economics": [
+      "平台至少要承担模型调用/算力、资源存储、审核、作者报酬与客服；低价套餐不能推导出低成本，更不能推导毛利。",
+      "对多元拾光，应该记录“被采用的一张图”的调用、重试和人工修正成本。只比较Token单价会漏掉最重的制作劳动。"
+    ],
+    "implications": [
+      "首批作者可从有完整商品图教程、能解释失败输入的工作流作者中筛选。先小额采购试作与维护，不按粉丝数购买影响力。",
+      "让运营邀请有当周待交素材的使用者，同一方法完成下一份真实素材之后，再判断是否值得封装进MakeNow；两名研发不必先做完整模型市场。"
+    ],
+    "unknowns": [
+      "2026年社区独立MAU、付费用户、订阅续费和API收入占比。",
+      "资源销售平台抽成、作者收入分布、补贴停止后的供给稳定性。",
+      "Liblib社区导向LibTV等产品的去重转化，以及社区对留存的独立贡献。"
+    ],
+    "sources": [
+      {
+        "id": "lib-business-1",
+        "title": "经验教学与免费体验入口",
+        "url": "https://insight.liblib.art/teaching",
+        "publisher": "LiblibAI",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品页面",
+        "note": "官方定位及模型/工作流/训练入口；搜索正文可读，动态页面部分抓取受限"
+      },
+      {
+        "id": "lib-business-2",
+        "title": "会员邀请奖励规则",
+        "url": "https://insight.liblib.art/membershipInvitationBonus",
+        "publisher": "LiblibAI",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方活动规则",
+        "note": "奖励绑定被邀请人首次会员购买；原文搜索正文可读，直接页面动态渲染"
+      },
+      {
+        "id": "lib-business-3",
+        "title": "会员工作流授权许可协议",
+        "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+        "publisher": "LiblibAI",
+        "date": "更新2025-09-08；生效2025-09-15",
+        "accessedAt": "2026-09-09",
+        "type": "官方协议",
+        "note": "已读原文；仅限该授权计划，不将其分成推广到所有资源"
+      },
+      {
+        "id": "lib-business-4",
+        "title": "API开放平台服务条款",
+        "url": "https://www.liblib.art/activities/API-Service-Agreement",
+        "publisher": "LiblibAI",
+        "date": "更新2024-12-03；生效2024-12-05",
+        "accessedAt": "2026-09-09",
+        "type": "官方协议",
+        "note": "已读原文；服务等级和具体计费需对应产品报价"
+      },
+      {
+        "id": "lib-business-5",
+        "title": "400万月活，2500万用户，1.3亿美元：LiblibAI拿到今年国内AI应用最大一笔钱",
+        "url": "https://www.pingwest.com/a/308463",
+        "publisher": "品玩",
+        "date": "2025-10-23",
+        "accessedAt": "2026-09-09",
+        "type": "媒体报道",
+        "note": "已读原文；用户数引述接近公司人士，不是财报"
+      },
+      {
+        "id": "lib-business-6",
+        "title": "Liblib完成近3亿美元B+轮融资，资本排队押注中国AI应用新标杆",
+        "url": "https://www.bianews.com/news/details?id=240165",
+        "publisher": "鞭牛士转载腾讯科技",
+        "date": "2026-06-18",
+        "accessedAt": "2026-09-09",
+        "type": "媒体报道",
+        "note": "收入指标指演语科技集团，含产品矩阵；仅用于说明口径不可混同，未采纳为社区收入"
+      }
+    ]
+  },
+  {
+    "id": "runninghub",
+    "name": "RunningHub",
+    "summary": "它最清楚的收费对象是云端运行能力：普通用户运行现成应用，作者制作与维护流程，企业通过 API 持续调用。公开价格能说明卖什么，尚不能说明单独产品赚了多少。",
+    "payer": "应用使用者、需要云端算力的工作流作者、将流程接入业务的开发者及企业。作者同时可能是付费用户和激励收入获得者。",
+    "revenueModel": "会员消费加按使用量收费；企业共享API按运行时长收费，标准模型另按模型与参数计价；作者激励分配供给侧收益。",
+    "commercialization": [
+      {
+        "title": "把云端执行从一次体验变成持续消费",
+        "text": "事实：平台提供模型、工作流及AI应用入口；官方应用指南要求用户先判断用途和素材，再运行与验收。推断：付款发生在用户需要继续制作、提高任务吞吐或免去本地部署时。现成应用降低操作门槛，但输入错误与返工仍会消耗制作时间。",
+        "refs": [
+          "rh-business-1"
+        ]
+      },
+      {
+        "title": "企业共享API的收费单位很明确",
+        "text": "事实：共享API页面按秒累计所有任务运行时长；Standard为4元/小时、Plus为6元/小时、Ultra为9元/小时，页面另有系统调度的Lite机型。多任务并发的费用相加，不能按墙上经过的一小时统一计价。这些是本轮页面标价，不代表企业采购折扣。",
+        "refs": [
+          "rh-business-2"
+        ]
+      },
+      {
+        "title": "模型API不能套用GPU时长价格",
+        "text": "事实：标准模型目录对不同模型展示按张、按秒或按次的价格。推断：同一个业务可能混用模型API和工作流算力，预算必须先分清调用类型；“多少钱一小时”不足以估算所有任务成本。当前消费会员实付套餐价没有可靠静态页面可统一核实。",
+        "refs": [
+          "rh-business-3"
+        ]
+      },
+      {
+        "title": "供给者获得激励，但不是固定收益承诺",
+        "text": "事实：创作者规则依据有效运行人次（含API调用）、收藏及原创程度计算奖励，非原创模型不参与运行分成；推荐流量与激励规则独立，平台可调整计划。没有核到所有作者通用固定分成比例，不能采信导航站宣传的最高分成作为常态。",
+        "refs": [
+          "rh-business-4"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "独立产品MAU、付费人数与营收",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "RunningHub，区分海马云集团及云桌面",
+        "kind": "资料不足",
+        "meaning": "无法据此测算收入效率和留存",
+        "limitation": "检索到港交所申请材料的RunningHub调用量线索，但原PDF直开失败；未将只可见索引摘要的数字作为已核结果。海马云总营收及云桌面月活不等于RunningHub",
+        "refs": [
+          "rh-business-5"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "会搭流程、缺部署条件的作者",
+        "job": "部署复杂节点和模型，验证工作流并封装成应用",
+        "payTrigger": "本地硬件、依赖维护或远程运行成为阻碍",
+        "returnReason": "流程更新、模型替换与用户反馈",
+        "evidence": "云端流程和创作者规则支持此分工；该人群占比和收入未披露",
+        "refs": [
+          "rh-business-1",
+          "rh-business-4"
+        ]
+      },
+      {
+        "name": "只想完成素材任务的使用者",
+        "job": "替换背景、处理角色、生成商品或短视频素材",
+        "payTrigger": "现成应用在自己的输入上有效，且有后续任务",
+        "returnReason": "同一应用处理新素材，或解决失败输入",
+        "evidence": "官方应用指南按任务组织；高运行量不能证明结果被实际采用",
+        "refs": [
+          "rh-business-1"
+        ]
+      },
+      {
+        "name": "有批量调用需求的开发者或企业",
+        "job": "将已验证流程接入自己的产品或生产步骤",
+        "payTrigger": "需要并发、可预测的运行成本和稳定调用",
+        "returnReason": "新业务订单、日常批量任务与故障维护",
+        "evidence": "共享API页明确计费和并发入口；企业合同规模未知",
+        "refs": [
+          "rh-business-2",
+          "rh-business-3"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：通过某种效果找到应用 → 准备自己的输入 → 运行并判断能否采用 → 为持续运行付费 → 保存应用并处理下一批素材。",
+      "开发者路径：先确认一个流程可靠 → 试调用 → 衡量成功任务成本 → 扩大调用；没有证据说明大量社区浏览者会转成开发者。"
+    ],
+    "economics": [
+      "工作流费随累计执行时长增长，重试会抬高用户完成任务的成本；标准模型还可能另有计价。需要分别记“运行成功”和“业务采用”。",
+      "平台成本还包括GPU利用率、模型依赖维护、作者激励与审核。海马云集团的毛利率不能拿来估算RunningHub，更不能套给多元拾光。"
+    ],
+    "implications": [
+      "优先找已经发布用途清楚的工作流、愿意解释输入限制的作者合作，把样例、失败输入和维护期列入报酬。",
+      "种子使用者应带可反复处理的原始素材来试做；API客户则从现有中转站客户中验证调用任务，两个队列分开记结果。",
+      "MakeNow先把一条任务的输入、输出、保存、再次运行做顺，避免两名研发同时维护通用应用广场、模型库及作者分成后台。"
+    ],
+    "unknowns": [
+      "原始种子作者来源、获客成本、消费会员价格与真实续费。",
+      "有效运行的去重规则、奖励计算系数、作者收入中位数与补贴ROI。",
+      "RunningHub单独收入、毛利、活跃付费人数及企业共享/独占/API收入占比。"
+    ],
+    "sources": [
+      {
+        "id": "rh-business-1",
+        "title": "RunningHub AI Apps 官方使用指南",
+        "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+        "publisher": "RunningHub",
+        "date": "2026-07-02",
+        "accessedAt": "2026-09-09",
+        "type": "官方教程",
+        "note": "任务选择、输入及结果验收；不证明用户占比"
+      },
+      {
+        "id": "rh-business-2",
+        "title": "企业级共享API计费页面",
+        "url": "https://www.runninghub.cn/enterprise-api/sharedApi",
+        "publisher": "RunningHub",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页面",
+        "note": "已读原文；按秒累加任务运行时间；未进入个人账户或读取密钥"
+      },
+      {
+        "id": "rh-business-3",
+        "title": "标准模型API目录",
+        "url": "https://www.runninghub.cn/call-api/search-api/standard-model",
+        "publisher": "RunningHub",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页面",
+        "note": "已读原文；不同模型存在按张、秒、次等标价"
+      },
+      {
+        "id": "rh-business-4",
+        "title": "创作者奖励规则",
+        "url": "https://www.runninghub.cn/creator-reward",
+        "publisher": "RunningHub",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方规则",
+        "note": "已读原文；有效运行、收藏、原创审核与规则变更"
+      },
+      {
+        "id": "rh-business-5",
+        "title": "海马云申请版本概要索引",
+        "url": "https://www1.hkexnews.hk/app/sehk/2026/108176/a130091/sehk26013002523.pdf",
+        "publisher": "港交所／海马云",
+        "date": "2026-01-30",
+        "accessedAt": "2026-09-09",
+        "type": "官方申请材料（本轮未完整取回）",
+        "note": "搜索可见RunningHub累计调用与应用数量线索；原PDF访问404，未据此填入已确认规模"
+      }
+    ]
+  },
+  {
+    "id": "tusi",
+    "name": "吐司 / Tensor.Art",
+    "summary": "合并研究产品形态，但必须分开经营规则。吐司已退出旧上传激励，Tensor.Art则把多项奖励收紧到Pro用户使用。两者共同提示：有作品、有作者和有付费需求是不同的事。",
+    "payer": "主站会员及算力购买者、单独购买模型/工具访问权的使用者；Canvas另有Energy资源体系。作者也可能同时支付生成或训练成本。",
+    "revenueModel": "主站订阅与算力、作者资源单独付费；吐司Canvas资源独立；Tensor.Art保留有条件的Pro及基金激励，不能用吐司规则概括全球站。",
+    "commercialization": [
+      {
+        "title": "吐司：平台补贴停止，直接交易仍保留",
+        "text": "官方通知自2026-06-01停止独家、首发和Pro等创作者激励，关闭新增申请；单独付费、算力返还和历史收益提现保留。通知直言依靠激励金驱动模型上传难以持续。这说明退出的是一类供给补贴，不能写成平台不再收费或作者不能赚钱。",
+        "refs": [
+          "ta-business-1"
+        ]
+      },
+      {
+        "title": "Tensor.Art：奖励更接近付费使用",
+        "text": "2026-07-22调整后的主站规则保留TenStar Fund、Pro模型和Pro工具三条路径，多项收益仅计算Pro用户使用；部分基金限定新基座，普通未开启Pro段的工具不再获激励。Buffet付费访问仍在。推断：平台正让供给激励更贴近能变现的消费，但尚无调整后收入与留存数据。",
+        "refs": [
+          "ta-business-2"
+        ]
+      },
+      {
+        "title": "Canvas不只是把主站按钮换个位置",
+        "text": "吐司更新日志明确Canvas使用独立Energy，与主站算力分开，部分闭源模型向Canvas迁移。推断：用户从模型站迁往连续创作空间时，还要重新理解可用资源与成本；历史会员和历史算力不能自动代表新空间的全部权益。",
+        "refs": [
+          "ta-business-3"
+        ]
+      },
+      {
+        "title": "付费触发应按用户任务分开",
+        "text": "工具使用者可能为特定效果与省去调参付费，连续创作者可能为资源量和项目接续付费，作者需要被使用后的收益。以上是由功能和收费机制形成的画像假设，不是平台披露的收入构成；本轮未核出两站各档实付价格及用户消费占比。",
+        "refs": [
+          "ta-business-1",
+          "ta-business-2",
+          "ta-business-3"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "吐司年度回顾中的网站用户",
+        "value": "超过320万",
+        "period": "2024年度报告；2024-12-28发布",
+        "scope": "吐司报告原文的网站用户口径",
+        "kind": "官方自述",
+        "meaning": "历史规模基线",
+        "limitation": "未交代与Tensor.Art去重关系，也不是MAU；不代表2026年规模，不与Tensor.Art相加",
+        "refs": [
+          "ta-business-4"
+        ]
+      },
+      {
+        "label": "Tensor.Art用户里程碑",
+        "value": "300万",
+        "period": "2024-11；年报2024-12-28发布",
+        "scope": "Tensor.Art年报",
+        "kind": "官方自述",
+        "meaning": "国际站历史规模基线",
+        "limitation": "非活跃或付费用户数；两站用户重叠未知",
+        "refs": [
+          "ta-business-5"
+        ]
+      },
+      {
+        "label": "吐司年龄与性别构成",
+        "value": "26–35岁占38%；女性占20%",
+        "period": "2024年度报告",
+        "scope": "吐司报告用户样本，采样方法未公开",
+        "kind": "官方自述",
+        "meaning": "提供历史招募画像线索",
+        "limitation": "不能推断职业、购买能力，不能当2026年结构",
+        "refs": [
+          "ta-business-4"
+        ]
+      },
+      {
+        "label": "Tensor.Art使用习惯",
+        "value": "70%偏好Web；女性占20%",
+        "period": "2024年度报告",
+        "scope": "Tensor.Art年报用户样本",
+        "kind": "官方自述",
+        "meaning": "历史上Web仍是重要创作入口",
+        "limitation": "采样及统计方式未披露，不能替代当前实际用户访谈",
+        "refs": [
+          "ta-business-5"
+        ]
+      },
+      {
+        "label": "当前付费规模和盈利",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "吐司与Tensor.Art分别",
+        "kind": "资料不足",
+        "meaning": "尚不能判断退出补贴后的商业结果",
+        "limitation": "官方调整公告没有给出前后MAU、付费率、利润或作者收入中位数",
+        "refs": [
+          "ta-business-1",
+          "ta-business-2"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "风格与角色创作爱好者",
+        "job": "围绕喜欢的视觉风格、人物或OC持续尝试",
+        "payTrigger": "独特资源、更多生成机会或更方便的修改",
+        "returnReason": "熟悉作者与风格，继续制作同类内容",
+        "evidence": "历史年报描述晚间活跃及角色内容；这是兴趣使用线索，不能据此断定都是商业设计师",
+        "refs": [
+          "ta-business-5"
+        ]
+      },
+      {
+        "name": "制作工具与模型的作者",
+        "job": "把复杂方法交给普通人使用",
+        "payTrigger": "本人关注被采用后的收益，使用者为工具或模型付费",
+        "returnReason": "修改失败输入、适配新模型与管理收益",
+        "evidence": "两站公告确认资源付费存在，但补贴规则不同；作者流失比例未知",
+        "refs": [
+          "ta-business-1",
+          "ta-business-2"
+        ]
+      },
+      {
+        "name": "迁入Canvas的连续创作者",
+        "job": "将生成、编辑、参考和后续任务放在同一空间",
+        "payTrigger": "模型可用性、资源量与连续操作的效率",
+        "returnReason": "继续编辑项目或用同一参考做新内容",
+        "evidence": "Canvas资源及迁移是事实，职业构成和付费意愿是待验证推断",
+        "refs": [
+          "ta-business-3"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：发现模型或作品 → 做同款并修改 → 为特定资源或持续生成付费 → 保存个人方法继续使用。",
+      "作者路径：发表方法 → 被真实用户采用 → 获取直接收入/符合规则的激励 → 维护；平台补贴到期后还能否保留采用，是关键验证。"
+    ],
+    "economics": [
+      "旧激励退出是经营约束的证据，不能单凭这一点断言吐司亏损或国际站盈利。",
+      "多个资源体系增加解释、客服与账单核对成本。多元拾光如果同时卖API与MakeNow，应让用户知道买的是哪类使用能力。"
+    ],
+    "implications": [
+      "不应向种子作者承诺永久运行分成。先用有范围的稿费采购可复现案例及维护，独立观察使用者是否愿意付钱。",
+      "从工具作者中找能交接方法的人，从作品用户中找愿意带新任务复用的人；两类分别招募与评估，避免同一个奖励活动混算供需。"
+    ],
+    "unknowns": [
+      "两站现行会员价、Canvas单独报价及用户跨站重叠。",
+      "2026年停止/收紧激励后，作者供给、付费与用户留存怎样变化。",
+      "真正售出的资源数量与交易中位数，平台抽成、作者维护成本。"
+    ],
+    "sources": [
+      {
+        "id": "ta-business-1",
+        "title": "致吐司创作者的一封信",
+        "url": "https://tusi.cn/articles/1000707189326777005",
+        "publisher": "吐司官方",
+        "date": "2026-05-20",
+        "accessedAt": "2026-09-09",
+        "type": "官方公告",
+        "note": "已读原文；2026-06-01生效，明确不影响Tensor.Art"
+      },
+      {
+        "id": "ta-business-2",
+        "title": "Changes to the TensorArt Creator Incentive Program",
+        "url": "https://tensor.art/articles/1021600128873589993",
+        "publisher": "Tensor.Art官方",
+        "date": "2026-07-15",
+        "accessedAt": "2026-09-09",
+        "type": "官方公告",
+        "note": "已读原文；2026-07-22生效，主站与Hub规则区分"
+      },
+      {
+        "id": "ta-business-3",
+        "title": "吐司更新日志",
+        "url": "https://tusi.cn/updates",
+        "publisher": "吐司官方",
+        "date": "含2026-04-13至06-02更新",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品记录",
+        "note": "已读原文；Energy独立及模型迁移，历史上线活动不当现行优惠"
+      },
+      {
+        "id": "ta-business-4",
+        "title": "TA 2024年度回忆报告",
+        "url": "https://tusi.cn/articles/812163171642236235",
+        "publisher": "吐司官方",
+        "date": "2024-12-28",
+        "accessedAt": "2026-09-09",
+        "type": "官方年度自述",
+        "note": "已读原文；历史用户与年龄结构，跨站口径未说明"
+      },
+      {
+        "id": "ta-business-5",
+        "title": "TensorArt 2024 Community Trends Report",
+        "url": "https://tensor.art/articles/812183328175377383",
+        "publisher": "Tensor.Art官方",
+        "date": "2024-12-28",
+        "accessedAt": "2026-09-09",
+        "type": "官方年度自述",
+        "note": "已读原文；用户里程碑、Web偏好和使用习惯均为历史"
+      }
+    ]
+  },
+  {
+    "id": "civitai",
+    "name": "Civitai",
+    "summary": "商业价值围绕模型与作品的使用发生：消费者买生成服务或资源使用权，作者提供可反复调用的资源。公开实现文档已把平台收费、作者获得 Buzz、作者提现拆开。当前经营规模仍资料不足，不能凭资源下载热度判断盈利。",
+    "payer": "主要付费者是需要站内生成或付费资源的使用者；部分作者也购买会员。作者同时可能是收入分配的接收方。",
+    "revenueModel": "会员与 Buzz 购买承接消费；资源付费和授权费激励作者；现金结算从符合条件的收入池分配。",
+    "commercialization": [
+      {
+        "title": "站内付费与资源付费是两笔需求",
+        "text": "已确认的规则文档：作者可限制下载或只允许站内生成；一次性付费准入与按次生成授权费可以并存。用户买到资源访问权后，仍可能支付后续生成费用。对作者而言，有人实际用其资源，比单纯浏览作品更接近收费机会。线上各地区当前价格未在本轮核实。",
+        "refs": [
+          "biz-civi-rules"
+        ]
+      },
+      {
+        "title": "作者赚 Buzz，不等于已经收到现金",
+        "text": "官方 Creator Program 实现说明将存入 Buzz、分配补偿池、结算与提现分开；补偿池取决于前期购买收入等计算项。代码中的默认回退池金额不能当作当月真实支出，更不能倒推出平台收入。合理推断：作者留存不仅取决于流量，也取决于结算可预期性。",
+        "refs": [
+          "biz-civi-pool"
+        ]
+      },
+      {
+        "title": "会员标识不能直接计作付费用户",
+        "text": "官方 Buzz membership 文档区分现金会员、用 Buzz 获得的会员和推荐赠予权益。因此，统计所有会员或高级徽章，会把不同支付来源混在一起。多元拾光研究种子用户时也应分别记谁付款、谁获得补贴、谁凭创作挣到额度。",
+        "refs": [
+          "biz-civi-member"
+        ]
+      },
+      {
+        "title": "推荐激励绑定后续支付",
+        "text": "2026 年推荐条款将有效事件设为被推荐者购买会员或 Buzz，并区分站内奖励与现金。这个设计有助于避免只按注册奖励，但不能证明推荐渠道已经盈利；退款、奖励成本和后续复购仍需单独核算。",
+        "refs": [
+          "biz-civi-referral"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "最新营收、付费人数与月活",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "Civitai 平台经营",
+        "kind": "资料不足",
+        "meaning": "本轮确认收费与分配机制，尚不能给出可靠的当期经营规模。",
+        "limitation": "透明度报告原站正文未能读取；搜索中的镜像、社区转载和代码默认金额均未作为经营数字。",
+        "refs": [
+          "biz-civi-pool",
+          "biz-civi-rules"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "寻找特定风格的生成者",
+        "job": "按效果找到模型，修改自己的题材，反复试图或生成变体。",
+        "payTrigger": "推断：本地运行门槛高，或目标资源需要付费且效果值得继续尝试。",
+        "returnReason": "同一作者的版本更新和已验证资源可以减少重新寻找方法的时间。",
+        "evidence": "基于模型使用控制及生成收费规则推断；未得到该群体人数、付费率或访谈。",
+        "refs": [
+          "biz-civi-rules"
+        ]
+      },
+      {
+        "name": "模型与方法供给者",
+        "job": "制作资源、示例与使用说明，并根据使用反馈维护版本。",
+        "payTrigger": "推断：会员提高可经营的资源范围或结算便利时，作者可能付费。",
+        "returnReason": "持续使用带来的收益与反馈；单纯曝光未必覆盖维护成本。",
+        "evidence": "作者收费与补偿池存在是文档事实；作者实际收入分布资料不足。",
+        "refs": [
+          "biz-civi-rules",
+          "biz-civi-pool"
+        ]
+      },
+      {
+        "name": "下载资源后在外部运行的人",
+        "job": "取得资源，在自己的环境完成创作。",
+        "payTrigger": "推断：稀缺资源访问权，而非持续购买站内生成。",
+        "returnReason": "寻找新模型和版本资料；他们可以很活跃却很少给平台付费。",
+        "evidence": "基于 Download 与 Generation 两类控制推断，不能据此估算各类占比。",
+        "refs": [
+          "biz-civi-rules"
+        ]
+      }
+    ],
+    "funnel": [
+      "效果与作者被发现 → 识别所需资源和使用范围。",
+      "运行或购买资源 → 判断是否解决自己的题材。",
+      "换输入继续使用 → 作者得到使用反馈与可能的收益。",
+      "这是一条根据公开机制重建的路径，转化率与因果关系未公开。"
+    ],
+    "economics": [
+      "推断：免费资源分发产生存储和带宽成本，站内生成与资源付费才有机会回收成本；两类活跃不宜混算。",
+      "应核算可分配净收入，而非把发出的积分全当作者收入；结算、客服与资源维护也有成本。"
+    ],
+    "implications": [
+      "优先寻找能解释资源适用范围、愿意修订案例的作者，以案例采购和维护报酬合作。",
+      "MakeNow 初期先证明别人换一份素材仍能完成任务，再决定是否开放资源付费或分成。",
+      "筛种子用户时同时保留消费者与作者两张名单，避免把薅额度的生成量误判为付费需求。"
+    ],
+    "unknowns": [
+      "当期收入、净利润、付费用户数和退款率。",
+      "使用者中站内生成与外部运行的占比。",
+      "普通作者收入中位数、集中度、维护工时与续留率。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-civi-rules",
+        "title": "Monetization rules: paid access, licensing fees, donation goals",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
+        "publisher": "Civitai 官方代码库",
+        "date": "2026-08-25",
+        "accessedAt": "2026-09-09",
+        "type": "官方实现文档",
+        "note": "规则机制及已注明的实现边界；不当作本轮线上付费实测。"
+      },
+      {
+        "id": "biz-civi-pool",
+        "title": "Creator Program - Developer Guide",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md",
+        "publisher": "Civitai 官方代码库",
+        "date": "未标绝对更新日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方实现文档",
+        "note": "确认补偿池和提现机制；默认金额不是经营披露。"
+      },
+      {
+        "id": "biz-civi-member",
+        "title": "Buzz memberships",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md",
+        "publisher": "Civitai 官方代码库",
+        "date": "未标绝对更新日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方实现文档",
+        "note": "现金会员、Buzz 兑换和推荐权益不能等同。"
+      },
+      {
+        "id": "biz-civi-referral",
+        "title": "Civitai Referral Program Terms",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/referral-program-terms.md",
+        "publisher": "Civitai 官方代码库",
+        "date": "2026-04-21生效",
+        "accessedAt": "2026-09-09",
+        "type": "官方条款",
+        "note": "推荐奖励的有效付费事件与站内奖励边界。"
+      }
+    ]
+  },
+  {
+    "id": "seaart",
+    "name": "SeaArt",
+    "summary": "SeaArt同时经营创作消费和工具供给：使用者订阅或补充Credits，原作者通过采用及资源交易获得收入。其兴趣娱乐用户与职业制作用户并存；现有材料无法证明哪一类贡献了多数利润。",
+    "payer": "订阅SVIP或购买Credits的消费者，购买作者作品/模型访问权的用户；API相关业务需要单独核对SeaCloud产品范围。",
+    "revenueModel": "订阅提供日常资源、并发与速度，额外Credits承接更多消耗；资源付费与作者激励形成供给侧收入路径，API不默认包含在消费会员里。",
+    "commercialization": [
+      {
+        "title": "订阅卖的是日常使用条件",
+        "text": "商城确认SVIP按档位提供每日Stamina、并发与更快处理，Credits可另购；Stamina当日有效不累计。实际生成成本随模型与参数变化。推断：经常制作的人更容易用完周期资源，临时高峰则可能购买Credits；这两种行为要分开理解。",
+        "refs": [
+          "sea-business-1"
+        ]
+      },
+      {
+        "title": "当前免费额度的公开说明存在冲突",
+        "text": "同一商城FAQ一处写免费用户每日130 Stamina，另一处写每日登录可领取0 Stamina；套餐金额还受支付币种、税费及结算页面影响。因此本轮不复述第三方互相冲突的价格表，也不把免费生图数量当稳定权益。",
+        "refs": [
+          "sea-business-1"
+        ]
+      },
+      {
+        "title": "作者收入来自采用，也可来自直接付费",
+        "text": "商城允许为作品、模型或LoRA启用付费。现行文档将模型、AI应用、AI角色分设奖励池，计算中包含使用、下载、分享、衍生创作等信号，并提高近期发布内容的权重。推断：这既鼓励维护上新，也可能吸引追奖励供给；无法仅凭发布量判断生态质量。",
+        "refs": [
+          "sea-business-1",
+          "sea-business-2"
+        ]
+      },
+      {
+        "title": "多模态续用与API是不同的扩张方向",
+        "text": "产品公告将图片、视频、AI应用和作者后台连在一起，并明确面向社媒素材与客户项目等使用者。推断：跨格式继续制作能扩大单个用户的消耗；但SeaCloud的具体企业报价与收入没有本轮完整证据，不计入SeaArt消费社区的已知营收。",
+        "refs": [
+          "sea-business-3"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "月活跃用户",
+        "value": "超过2500万",
+        "period": "2026-01-15报道时",
+        "scope": "报道所称SeaArt，端及去重方式未明",
+        "kind": "媒体转述",
+        "meaning": "较新的媒体规模线索",
+        "limitation": "非第三方监测原始数据；不能和AWS历史值计算准确增长率",
+        "refs": [
+          "sea-business-5"
+        ]
+      },
+      {
+        "label": "ARR",
+        "value": "超过5000万美元",
+        "period": "2026-01-15报道时",
+        "scope": "报道所称SeaArt",
+        "kind": "媒体转述",
+        "meaning": "收入运行规模的报道线索",
+        "limitation": "ARR不是2025已实现收入；定义、收入组成及审计依据未披露",
+        "refs": [
+          "sea-business-5"
+        ]
+      },
+      {
+        "label": "网站月活跃用户",
+        "value": "超过1000万",
+        "period": "2024年客户案例，精确统计月未标",
+        "scope": "AWS客户案例所称海艺网站",
+        "kind": "官方自述",
+        "meaning": "供应商与客户联合宣传中的历史规模线索",
+        "limitation": "不是财报或独立测量；页面还使用全球活跃用户等称谓，口径应谨慎",
+        "refs": [
+          "sea-business-4"
+        ]
+      },
+      {
+        "label": "付费人数、付费留存、毛利及人群收入占比",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "SeaArt独立产品",
+        "kind": "资料不足",
+        "meaning": "无法算可靠ARPU或判断哪类用户最赚钱",
+        "limitation": "收入与用户数字来自不同方法，禁止直接相除得到付费表现",
+        "refs": [
+          "sea-business-1",
+          "sea-business-5"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "兴趣与角色创作使用者",
+        "job": "把喜欢的风格、角色和故事做成可分享内容",
+        "payTrigger": "喜欢某种效果，需要更多生成机会或特定资源",
+        "returnReason": "偏好的作者、角色与持续自我表达",
+        "evidence": "产品定位和官方内容类别支持该群体存在；其人数及付费占比未知",
+        "refs": [
+          "sea-business-2",
+          "sea-business-3"
+        ]
+      },
+      {
+        "name": "社媒素材制作人",
+        "job": "制作封面、短片及同一主题的不同媒体素材",
+        "payTrigger": "工具切换和制作耗时成为阻力",
+        "returnReason": "持续更新内容计划或客户修改",
+        "evidence": "官方产品公告直接列出社媒内容创作者；效率及续费仍是供应商主张",
+        "refs": [
+          "sea-business-3"
+        ]
+      },
+      {
+        "name": "原始模型、工具和角色作者",
+        "job": "构建能被他人反复使用的资源",
+        "payTrigger": "作者希望得到付费、使用反馈及平台曝光",
+        "returnReason": "资源维护、继续制作同类作品",
+        "evidence": "现行激励文档明确三类供给；没有作者收入中位数或收入集中度",
+        "refs": [
+          "sea-business-2"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：风格/作品吸引 → 套用资源 → 自己创作与修改 → 订阅或补Credits → 围绕同一兴趣/项目继续生成。",
+      "供给路径：原始资源发布 → 使用与衍生反馈 → 获取奖励或资源销售 → 修改和上新；需要分别观察工具贡献与消费行为。"
+    ],
+    "economics": [
+      "每日额度会促使用户回站，但未用完的额度与为了用完而生成，都不等于真实需求留存。",
+      "作者奖金、GPU与模型采购、跨语言客服及流量分发均有成本。AWS的降本个案不能直接推出整体利润。"
+    ],
+    "implications": [
+      "多元拾光可以选择持续的兴趣创作，也可以选择职业素材生产，但首批不要混成一个实验：两者的采用标准、频率与付费理由不同。",
+      "若先试职业内容，找有持续栏目或素材更新任务的创作者，记录输出是否真正用于下一次发布；若先试兴趣内容，则看是否主动带着同一角色继续创作。",
+      "作者合作先检查后来的陌生用户能否复用；教程和维护本身需要报酬，不能要求作者只靠不确定的平台奖励承担全部劳动。"
+    ],
+    "unknowns": [
+      "当前账户具体免费权益、各地区实付和续费价、API与消费站结算边界。",
+      "收入中的订阅、额外Credits、资源交易和API各占多少。",
+      "普通作者收入中位数、激励集中度、不同题材用户的复访与付费。"
+    ],
+    "sources": [
+      {
+        "id": "sea-business-1",
+        "title": "SeaArt Mall及FAQ",
+        "url": "https://www.seaart.ai/mall",
+        "publisher": "SeaArt官方",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格与FAQ页面",
+        "note": "已读原文；免费额度同页矛盾，价格以实际支付页为准"
+      },
+      {
+        "id": "sea-business-2",
+        "title": "Creator Incentive Program现行文档",
+        "url": "https://docs.seaart.ai/guide-1/6-permanent-events/seaart.ai-creator-incentive-program",
+        "publisher": "SeaArt官方",
+        "date": "未标更新日；含2025-03调整",
+        "accessedAt": "2026-09-09",
+        "type": "官方规则",
+        "note": "已读原文；独立奖励池与月度计算。旧博客仍写半月结算，本轮优先当前文档"
+      },
+      {
+        "id": "sea-business-3",
+        "title": "Introducing SeaArt AI 2.0",
+        "url": "https://www.seaart.ai/blog/seaart-ai-2-0-introducing",
+        "publisher": "SeaArt官方",
+        "date": "2026-06-18",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品公告",
+        "note": "已读原文；作者后台、目标用户及跨格式操作属于官方自述，未复现效果承诺"
+      },
+      {
+        "id": "sea-business-4",
+        "title": "AWS与海艺互娱客户案例",
+        "url": "https://aws.amazon.com/cn/campaigns/awsforgames/seaart/",
+        "publisher": "亚马逊云科技／海艺互娱",
+        "date": "2024；精确统计月未标",
+        "accessedAt": "2026-09-09",
+        "type": "供应商客户联合案例",
+        "note": "已读原文；历史网站月活、提示词和多语言客服，非独立审计"
+      },
+      {
+        "id": "sea-business-5",
+        "title": "AI时代的全球创作消费平台，出现了一家来自中国的隐形冠军",
+        "url": "https://eu.36kr.com/zh/p/3638895618739335",
+        "publisher": "36氪产业创新",
+        "date": "2026-01-15",
+        "accessedAt": "2026-09-09",
+        "type": "媒体报道",
+        "note": "已读原文；MAU、ARR均媒体转述，统计方法及收入构成未披露"
+      }
+    ]
+  },
+  {
+    "id": "openart",
+    "name": "OpenArt",
+    "summary": "OpenArt 的公开叙述提供了清楚的转向线索：最初靠图片与提示词发现吸引人，随后从用户反复要求角色一致性，转向连续故事制作。它值得研究的是重复任务如何扩大付费，而不是照搬全部模型或活动。",
+    "payer": "个人故事与短视频创作者，以及有持续内容产出的品牌和创意团队；受邀推广作者另由平台支付报酬。",
+    "revenueModel": "个人订阅加额度扩充，企业按使用付费；精选作者按内容付费，联盟推广按新订阅结佣。",
+    "commercialization": [
+      {
+        "title": "从图片发现进入持续制作",
+        "text": "官方公司故事说，角色一致性是用户最常要求的功能，进一步发现背后是讲故事的需求。由此增加图像、视频、角色与音频。事实是公司的产品演变自述；推断是保存角色、继续下一段故事让消费从尝鲜变为系列制作，具体留存提升尚无公开对照。",
+        "refs": [
+          "biz-open-story"
+        ]
+      },
+      {
+        "title": "个人套餐围绕产量与制作能力分层",
+        "text": "当前价格页列 Starter、Plus、Pro、Wonder，页面并列对照价14/34/56/240与优惠价13/27/44/175美元/席/月；需在结算前确认账期和优惠适用，本轮未操作账期切换。额度、并行生成和制作功能随档位变化；Plus 起提供加额入口。平台估算的图片或视频数量依赖模型，不能直接跨站比较积分数量。",
+        "refs": [
+          "biz-open-price"
+        ]
+      },
+      {
+        "title": "企业卖的是团队控制和持续用量",
+        "text": "企业页主张按使用收费、席位不限、额度不过期，并提供项目、人员和支出控制；数据使用与赔偿条件属于销售协商范围。合理推断：企业买单点在团队持续交付和采购条件，单纯低价积分不能覆盖这些要求。本轮未取得合同、客户数或平均客单价。",
+        "refs": [
+          "biz-open-enterprise"
+        ]
+      },
+      {
+        "title": "内容供给与拉新佣金分开购买",
+        "text": "OpenArtist 页描述筛选稳定创作、受众参与和个人表达，按帖子支付并设表现奖金；Affiliate 则按带来的新订阅者支付佣金。前者采购持续内容，后者采购获客结果。不能把受邀付费作者的活跃当作自然 UGC，也不能把推广作者佣金当平台收入。",
+        "refs": [
+          "biz-open-artist",
+          "biz-open-affiliate"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "ARR",
+        "value": "从1050万美元增至逾7000万美元",
+        "period": "2025年；2026-03-16披露",
+        "scope": "OpenArt 公司自报 ARR；具体组成未披露",
+        "kind": "官方自述",
+        "meaning": "公司自述经营规模快速扩大。",
+        "limitation": "ARR 是时点年化指标，不是全年已实现收入；组成、净留存、毛利未经公开审计验证。",
+        "refs": [
+          "biz-open-story"
+        ]
+      },
+      {
+        "label": "月活用户",
+        "value": "超过800万 MAU",
+        "period": "2026-03-16文章回顾2025年增长，具体统计月未标",
+        "scope": "OpenArt 平台",
+        "kind": "官方自述",
+        "meaning": "来源明确使用 monthly active users，比网站访问量更接近持续使用规模。",
+        "limitation": "活跃事件、去重方法、付费人数与地区分布未公开。不能将截至文章时的数字直接称为9月MAU。",
+        "refs": [
+          "biz-open-story"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "做系列故事的个人创作者",
+        "job": "沿用角色制作下一集、音乐视频或多个镜头。",
+        "payTrigger": "推断：角色复用和连续镜头减少重复准备，并且当前作品确实有发布用途。",
+        "returnReason": "下一个故事仍要使用已经建立的角色与资料。",
+        "evidence": "公司访谈自述包含持续做 AI 猫故事频道的个案；它是定性样本，不代表多数用户。",
+        "refs": [
+          "biz-open-story"
+        ]
+      },
+      {
+        "name": "品牌与创意团队",
+        "job": "持续制作商品、活动、广告或多场景内容。",
+        "payTrigger": "推断：团队管理、支出透明和使用条款满足采购要求。",
+        "returnReason": "品牌资产、角色与项目资料可用于下一批内容。",
+        "evidence": "企业页有明确对应功能和营销对象，实际行业占比与付费意愿仍未披露。",
+        "refs": [
+          "biz-open-enterprise"
+        ]
+      },
+      {
+        "name": "持续分享过程的外部作者",
+        "job": "制作教程、演示、幕后与作品，并带来合适的新用户。",
+        "payTrigger": "这类人主要是平台合作支出的接收方；推广与内容合作条件不同。",
+        "returnReason": "报酬、曝光、提前访问和直接反馈渠道。",
+        "evidence": "来自官方合作计划，不代表所有创作者都获付费或申请即可通过。",
+        "refs": [
+          "biz-open-artist",
+          "biz-open-affiliate"
+        ]
+      }
+    ],
+    "funnel": [
+      "图与提示词吸引兴趣 → 用户尝试自己的内容。",
+      "围绕同一角色完成系列制作 → 保存资料并继续下一任务。",
+      "触及产量、并发或团队要求 → 订阅、加额或企业采购。",
+      "以上是公开材料支持的机制重建，尚无完整注册到付费漏斗数据。"
+    ],
+    "economics": [
+      "推断：多模型聚合降低选择与切换成本，但模型采购、返工、作者合作仍会消耗毛利；ARR 增长不能证明单张图利润。",
+      "平台主动支付内容报酬，说明优质供给需要采购预算；自然内容与商业合作应分别核算。"
+    ],
+    "implications": [
+      "多元拾光可招募有连载计划、能拿出上一期和下一期材料的个人创作者，验证角色与画布能否帮助继续制作。",
+      "合作作者合同分别写明案例制作、用户试做后的修改、传播任务；不要用一笔积分补贴同时期待全部结果。",
+      "先测用户能否完成自己的连续镜头及修改，再决定角色库或画布分享的优先级。"
+    ],
+    "unknowns": [
+      "MAU中付费人数、地区与行业比例；付费留存和毛利。",
+      "受邀作者的实际人数、报酬、每个有效付费用户的获客成本。",
+      "企业收入占比以及内容合作对自然增长的真实贡献。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-open-story",
+        "title": "The Paintbrush Belongs to Everyone: The OpenArt Story",
+        "url": "https://openart.ai/blog/the-openart-story/",
+        "publisher": "OpenArt",
+        "date": "2026-03-16",
+        "accessedAt": "2026-09-09",
+        "type": "官方公司自述",
+        "note": "ARR、MAU、从图片发现转向角色故事的需求线索；不视为审计财务。"
+      },
+      {
+        "id": "biz-open-price",
+        "title": "OpenArt Pricing",
+        "url": "https://openart.ai/pricing",
+        "publisher": "OpenArt",
+        "date": "动态页面，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "对照价与优惠价并列；本轮未操作账期切换，不能据静态文本断言账期。"
+      },
+      {
+        "id": "biz-open-enterprise",
+        "title": "OpenArt Enterprise",
+        "url": "https://openart.ai/enterprise/",
+        "publisher": "OpenArt",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品页",
+        "note": "使用计费、团队管理和合同选项，未验证企业成交结果。"
+      },
+      {
+        "id": "biz-open-artist",
+        "title": "The OpenArtist Program",
+        "url": "https://openart.ai/program/openartist",
+        "publisher": "OpenArt",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方合作计划",
+        "note": "精选付费内容合作，不代表自然UGC。"
+      },
+      {
+        "id": "biz-open-affiliate",
+        "title": "OpenArt Affiliate Program",
+        "url": "https://openart.ai/programs/affiliate",
+        "publisher": "OpenArt",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方合作计划",
+        "note": "按新增订阅者结佣，当前比例需看获批合同。"
+      }
+    ]
+  },
+  {
+    "id": "nightcafe",
+    "name": "NightCafe",
+    "summary": "NightCafe 的商业化首先围绕创作爱好和每日参与。它的官方定位明确重视乐趣、表达和归属；因此它可以证明休闲创作有付费路径，却不能直接证明工作流用户会为提高产出付费。",
+    "payer": "想更快尝试模型、持续参加创作和管理作品的个人用户；还有购买赠礼的人。当前帮助页说明没有团队套餐。",
+    "revenueModel": "个人 PRO 订阅、额度加购、一次性额度包与礼品卡；非 PRO 广告形成另一收入来源。",
+    "commercialization": [
+      {
+        "title": "免费与付费按速度和模型范围分开",
+        "text": "官方区分免费赚取的 Relax Credits 与购买得到的 Fast Credits；前者低优先级排队，后者可以更快生成，并可使用部分只收 Fast 的模型。用户的付费触发可能是等待和想用特定模型，而非完全失去免费创作机会。",
+        "refs": [
+          "biz-night-credits"
+        ]
+      },
+      {
+        "title": "当前套餐比旧四档方案更细",
+        "text": "帮助页列五个 PRO 档位，月价从7.49到62.49美元；按模型范围、生成速度额度、视频和角色能力分层。所谓无限只适用于指定模型和基础生成，快速配额耗尽后转低优先级。帮助页要求最终以结算价格为准，本轮未进入结算。",
+        "refs": [
+          "biz-night-pro"
+        ]
+      },
+      {
+        "title": "广告与会员共同承担免费创作",
+        "text": "官方历史解释明确说，付费用户曾承担免费用户成本，引入非 PRO 广告是为了减少这一压力；当前 PRO 仍包含去广告。合理推断：奖励可以帮助持续参与，但需要由广告或真实支付支撑，不能把免费积分的流转本身视作收入。广告当前占比未公开。",
+        "refs": [
+          "biz-night-ads",
+          "biz-night-pro"
+        ]
+      },
+      {
+        "title": "作者的价值也可能是主持和教学",
+        "text": "官方作者访谈展示一位长期参与者兼任活动主持与评审，分享模型和提示词方法，并将搜索历史作品视为有价值的 PRO 功能。该个案说明作品管理和被认可也会支撑使用；本轮没有核实普遍的作者现金分成机制，积分打赏不直接等于现金。",
+        "refs": [
+          "biz-night-artist",
+          "biz-night-pro"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "累计创作产出",
+        "value": "超过10亿件作品",
+        "period": "关于页访问2026-09-09，未标统计截止日",
+        "scope": "NightCafe 平台累计产出",
+        "kind": "官方自述",
+        "meaning": "平台存在长期、大量的创作活动。",
+        "limitation": "作品数含同一用户反复生成与淘汰结果，不能转换为用户人数、活跃或收入。",
+        "refs": [
+          "biz-night-about"
+        ]
+      },
+      {
+        "label": "经营与用户规模",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "营收、付费人数、MAU",
+        "kind": "资料不足",
+        "meaning": "可以研究商业机制，但不足以建立营收或付费转化率排序。",
+        "limitation": "官方的 millions of users 未说明统计窗口；连续创作个案不是留存率。",
+        "refs": [
+          "biz-night-about"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "把创作当日常兴趣的人",
+        "job": "围绕题目尝试风格，获得表达和完成作品的满足。",
+        "payTrigger": "推断：减少等待、体验心仪模型和更好地管理作品。",
+        "returnReason": "新题目、技能进步和熟悉的交流对象。",
+        "evidence": "官方关于页直接描述爱好者定位；满足感是否足以长期付费需访谈验证。",
+        "refs": [
+          "biz-night-about",
+          "biz-night-pro"
+        ]
+      },
+      {
+        "name": "挑战与社区参与者",
+        "job": "参赛、投票、交流方法并获得反馈。",
+        "payTrigger": "推断：更稳定的试错体验与更多创作工具；也可能始终只使用奖励。",
+        "returnReason": "持续活动和同伴反馈；积分是其中一个因素，不能预先假设不是主因。",
+        "evidence": "官方日常活动描述支持此类行为存在，但没有该群体的付费留存分组。",
+        "refs": [
+          "biz-night-about"
+        ]
+      },
+      {
+        "name": "有方法输出能力的核心作者",
+        "job": "积累可辨识作品，讲清提示词与模型选择，主持活动。",
+        "payTrigger": "推断：作品搜索和资产整理帮助管理持续创作。",
+        "returnReason": "同行认可、影响力和创作兴趣。",
+        "evidence": "来自被平台挑选的作者访谈，带有头部样本偏差。",
+        "refs": [
+          "biz-night-artist"
+        ]
+      }
+    ],
+    "funnel": [
+      "朋友作品、公开画廊或题目 → 用低门槛任务首次创作。",
+      "再次参加题目或交流 → 形成日常兴趣。",
+      "等待、模型限制或作品管理需求 → 个人 PRO。",
+      "不要把领取奖励和自然回访合并为同一个留存指标。"
+    ],
+    "economics": [
+      "推断：闲时队列可降低免费使用与付费速度之间的冲突，但实际推理成本和广告补贴金额未公开。",
+      "活动主持、反作弊和社区维护是持续人力支出；大量签到并不保证经济上成立。"
+    ],
+    "implications": [
+      "如果多元拾光选择兴趣社群，应明确接受娱乐付费逻辑；若选择任务生产，应另设交付与复用指标。",
+      "从会解释失败原因、能主持讨论的创作者中挑合作对象，不只看爆款作品。",
+      "小规模活动保留无奖续用观察，检查用户是否主动讨论方法、继续下一题，避免重复积分驱动的问题。"
+    ],
+    "unknowns": [
+      "营收组成、利润、付费率及取消订阅原因。",
+      "有奖励和无奖励条件下的自然回访差异。",
+      "作者合作是否有现金报酬、覆盖多少作者及运营成本。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-night-pro",
+        "title": "NightCafe PRO plans — what you get and which plan to choose",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
+        "publisher": "NightCafe",
+        "date": "动态帮助页，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方帮助",
+        "note": "五档套餐、无限生成限制和付费权益；未进入结算。"
+      },
+      {
+        "id": "biz-night-credits",
+        "title": "Fast Credits vs Relax Credits",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
+        "publisher": "NightCafe",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方帮助",
+        "note": "购买与赚取积分的队列和模型权限差别。"
+      },
+      {
+        "id": "biz-night-ads",
+        "title": "2x the credits for the same monthly price!",
+        "url": "https://nightcafe.studio/blogs/blog/2x-the-credits-for-the-same-monthly-price",
+        "publisher": "NightCafe",
+        "date": "2022-12-12",
+        "accessedAt": "2026-09-09",
+        "type": "官方历史说明",
+        "note": "只解释广告引入的商业理由，不沿用旧价格或补贴规模。"
+      },
+      {
+        "id": "biz-night-about",
+        "title": "About NightCafe",
+        "url": "https://creator.nightcafe.studio/about-nightcafe",
+        "publisher": "NightCafe",
+        "date": "未标日期，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方公司自述",
+        "note": "当前兴趣社群定位与累计10亿作品，非MAU。"
+      },
+      {
+        "id": "biz-night-artist",
+        "title": "NightCafe Artist Spotlight: Inside gullyDJ's Weird World",
+        "url": "https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj",
+        "publisher": "NightCafe",
+        "date": "2026-06-19",
+        "accessedAt": "2026-09-09",
+        "type": "官方作者访谈",
+        "note": "长期用户个案、活动角色及作品搜索价值；不推断群体比例。"
+      }
+    ]
+  },
+  {
+    "id": "jimeng",
+    "name": "即梦 AI",
+    "summary": "即梦的商业化已覆盖个人会员、团队空间、积分与API。最有价值的分野是：用户为自己的尝试付款，还是团队为持续交付付款。公开用户量无法替我们回答这两种需求谁更容易留存。",
+    "payer": "个人创作者购买会员和积分；团队创建者为席位与团队积分付费；符合资格的会员另购API服务，火山引擎还有企业资源包入口。",
+    "revenueModel": "订阅加额外积分；团队权益和资产在独立空间管理；API需符合条件并另行购买。消费会员并不自动覆盖API消费。",
+    "commercialization": [
+      {
+        "title": "会员解决的是制作条件",
+        "text": "现行付费协议将个人会员分档，权益包括订阅积分、会员生成通道、去品牌水印及部分模型资格；有些特殊能力仍需另付积分或费用。推断：持续制作、交付格式和所需模型形成升级理由，单纯浏览探索页没有直接收费证据。",
+        "refs": [
+          "jm-business-1"
+        ]
+      },
+      {
+        "title": "免费、订阅和充值积分是不同预算",
+        "text": "协议将周期发放积分、当日赠送积分和充值积分分开，赠送并非所有用户固定权益；充值积分有效期为2年。推断：日常补贴可以启动尝试，但有交付日期的用户需要可预期预算；不能把积分领取频率视为订阅意愿。",
+        "refs": [
+          "jm-business-1"
+        ]
+      },
+      {
+        "title": "团队版开始承接组织管理",
+        "text": "2026-08-10生效版本补充团队会员，面向3人及以上团队，个人与团队空间的积分、素材、资产和生成记录分别管理。推断：团队的采购理由包括人员协作、资产归属和使用管理。不能因为有团队版就假定企业收入已经成熟。",
+        "refs": [
+          "jm-business-1"
+        ]
+      },
+      {
+        "title": "API有独立准入与购买路径",
+        "text": "协议明确API只向特定会员开放，并需另购服务；火山引擎还展示即梦企业资源包。二者的账户、计费及适用模型需分别确认，不把活动折扣当长期标准价。多元拾光的廉价Token优势也应在明确模型、稳定性与交付成本后比较。",
+        "refs": [
+          "jm-business-1",
+          "jm-business-2"
+        ]
+      },
+      {
+        "title": "作品生态为发现和作者合作提供入口",
+        "text": "官网将探索、创作同款与未来影像计划连到工具。可以确认发现路径存在；没有证据表明普通发帖都获得现金分成，也未核到站内作者合作收入的普遍分配规则。作者能通过工具完成客户项目，与平台给每次投稿付钱，是两件事。",
+        "refs": [
+          "jm-business-3"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "App月活跃用户",
+        "value": "8736万",
+        "period": "2026-06；榜单2026-07-06更新",
+        "scope": "AICPB的即梦App口径",
+        "kind": "第三方估计",
+        "meaning": "提供移动端使用规模量级",
+        "limitation": "非即梦官方披露，样本和去重方法本页未充分展示；不是Web访问量、付费人数或社区发帖人数",
+        "refs": [
+          "jm-business-4"
+        ]
+      },
+      {
+        "label": "独立产品营收、付费人数和续费",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "即梦个人、团队及API分别",
+        "kind": "资料不足",
+        "meaning": "不能计算付费率、ARPU或盈利",
+        "limitation": "会员条款证明收费能力，不证明经营结果；字节及火山引擎整体数据不能替代",
+        "refs": [
+          "jm-business-1",
+          "jm-business-2"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "从热门作品进入的尝鲜者",
+        "job": "给自己的照片或想法生成可分享的视觉内容",
+        "payTrigger": "需要热门模型、更多尝试或去品牌水印",
+        "returnReason": "新的兴趣素材或热门玩法",
+        "evidence": "官网同款入口可确认；持续需求与付费结构未知，应单独观察而非直接排除",
+        "refs": [
+          "jm-business-3",
+          "jm-business-1"
+        ]
+      },
+      {
+        "name": "定期交付内容的个人作者",
+        "job": "用参考、镜头与修改完成广告、短片或栏目素材",
+        "payTrigger": "有交期、画质要求及持续消耗，不能等待免费额度",
+        "returnReason": "下一镜、下一集、客户反馈和固定更新计划",
+        "evidence": "官网视频与画布功能支持这种任务；职业身份和频率是待访谈推断",
+        "refs": [
+          "jm-business-3"
+        ]
+      },
+      {
+        "name": "有共同素材的制作团队",
+        "job": "多人管理项目资产与生成预算",
+        "payTrigger": "需要团队空间、席位和预算分配",
+        "returnReason": "同一项目继续制作，成员协作与资产接续",
+        "evidence": "现行协议明确团队产品；并未披露真实客户人数及采用行业比例",
+        "refs": [
+          "jm-business-1"
+        ]
+      },
+      {
+        "name": "嵌入能力的开发者",
+        "job": "把生成接入现有业务",
+        "payTrigger": "API准入及持续调用需求",
+        "returnReason": "工作流执行与业务量增长",
+        "evidence": "独立API购买规则和企业资源包可确认；不据此推算收入规模",
+        "refs": [
+          "jm-business-1",
+          "jm-business-2"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：看作品或同款 → 用自己的素材尝试 → 遇到明确的模型/通道/资源要求 → 购买会员或积分 → 新素材或新交付继续使用。",
+      "团队路径：个人先验证制作方法 → 项目需要多人共享与管理 → 采购团队空间 → 以持续项目维持使用；该转化链尚无公开转化率。"
+    ],
+    "economics": [
+      "连续生产的费用包括生成重试、审核、剪辑和人工沟通。按一段视频标价计算成本容易漏掉淘汰片段。",
+      "大厂模型、分发与云服务能力不是四人团队现成资产；低价也可能随模型与套餐变动，不能把暂时折扣当长期壁垒。"
+    ],
+    "implications": [
+      "不要从“即梦有很多人”推出多元拾光应该获取同样的广泛流量。先找有下一集、下一条广告或下一批商品素材的人，给同一任务配方法。",
+      "作者合作可从公开展示幕后过程的人开始，购买参考整理、淘汰理由和修改过程；先验证陌生用户能否完成，再扩大采购。",
+      "MakeNow应记录用户从首次结果继续编辑和再次调用的行为；社区是否发帖应作为另一项指标，避免漏掉私密项目里的真实深用。"
+    ],
+    "unknowns": [
+      "个人、团队及API的实际付费规模与收入结构，社区对工具留存的增量。",
+      "第三方MAU与官方用户口径差异，职业作者占比及真实任务频率。",
+      "现行会员、团队、API最终结算价及作者计划长期报酬规则。"
+    ],
+    "sources": [
+      {
+        "id": "jm-business-1",
+        "title": "即梦AI付费服务协议",
+        "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html",
+        "publisher": "即梦官方",
+        "date": "更新2026-08-03；生效2026-08-10",
+        "accessedAt": "2026-09-09",
+        "type": "官方协议",
+        "note": "已读原文；个人/团队/API、积分到期与额外收费边界；不作法律效力判断"
+      },
+      {
+        "id": "jm-business-2",
+        "title": "火山引擎即梦企业资源包活动",
+        "url": "https://www.volcengine.com/activity/jimeng",
+        "publisher": "火山引擎",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方商业页面",
+        "note": "搜索原文可读，直开动态壳；确认企业入口，未采用限时价作常态价"
+      },
+      {
+        "id": "jm-business-3",
+        "title": "即梦官网",
+        "url": "https://jimeng.jianying.com/",
+        "publisher": "即梦官方",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品页面",
+        "note": "已读原文；图片视频、画布、探索与同款入口"
+      },
+      {
+        "id": "jm-business-4",
+        "title": "即梦AI产品数据页",
+        "url": "https://www.aicpb.com/zh/product/%E5%8D%B3%E6%A2%A6AI-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8BAI%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/appid1D6F327C1",
+        "publisher": "AI产品榜 AICPB",
+        "date": "2026-07-06更新；数据2026-06",
+        "accessedAt": "2026-09-09",
+        "type": "第三方榜单",
+        "note": "已读原文；App MAU估计，测量和去重方法没有在产品页完整说明"
+      }
+    ]
+  },
+  {
+    "id": "kling",
+    "name": "可灵 Kling AI",
+    "summary": "在这组产品中，可灵拥有较清楚的独立收入证据，能证明生成能力已被实际购买；但财报并未证明站内社区贡献了多少收入，也没有披露付费用户及留存。对多元拾光更有用的是它把个人订阅、团队制作和企业调用分别承接。",
+    "payer": "个人与专业创作者购买会员、额外积分；团队及企业为协作或服务付费；企业客户通过API采购生成能力。",
+    "revenueModel": "个人/团队订阅和积分消费、企业API。商业化规模可由快手官方披露核对，但订阅/API/企业各自收入占比及可灵利润未单列。",
+    "commercialization": [
+      {
+        "title": "从免费尝试转向项目制作",
+        "text": "付费服务协议列有个人、团队和企业会员，权益包括周期积分、快速生成、部分高级能力和去品牌水印等。推断：画面要求、交期、持续修改和工具使用权限比“爱看AI作品”更接近付款触发。需要以对应地区和套餐页面核实权益，不把所有档位理解成完全相同。",
+        "refs": [
+          "kl-business-1"
+        ]
+      },
+      {
+        "title": "初次优惠不能当持续成本",
+        "text": "2026-07-28官方成本指南以Standard为例，展示6.99美元首订月价、后续8.8美元月续费及每月660积分；同时说明报价会更新。这是指定页面当时的报价参照，不是中国区通用价格。专业采购应比较长期实付和被采用结果，而非首月优惠。",
+        "refs": [
+          "kl-business-2"
+        ]
+      },
+      {
+        "title": "积分让更多项目和返工转成消费",
+        "text": "购买积分与订阅积分分开；协议规定前者有效2年，后者通常发放后1个月。官方成本指南要求把模型、时长、画质、声音、参考准备和重试纳入预算。推断：批量制作扩大消耗，也放大返工；单次生成低价并不能保证项目总成本低。",
+        "refs": [
+          "kl-business-1",
+          "kl-business-2"
+        ]
+      },
+      {
+        "title": "企业API提供独立收入路径",
+        "text": "快手投资者资料将用户订阅与商家API分别列为商业化方式；官方亦披露累计企业合作规模。API用户可以长期调用而不在社区发帖，所以公开作品活跃度不足以判断这部分业务好坏。收入占比和企业合同结构尚未单列。",
+        "refs": [
+          "kl-business-3",
+          "kl-business-4"
+        ]
+      },
+      {
+        "title": "专业案例证实采用，不代表平均用户结果",
+        "text": "2026年第二季度官方业绩报告将影视、广告制作及批量编排作为重点方向。精选作品可以帮助找到会实际交付的作者；案例成功不能外推到普通用户出片率，更不能证明社区运营是其付费增长的原因。",
+        "refs": [
+          "kl-business-5"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "产品营业收入",
+        "value": "超过8.5亿元人民币",
+        "period": "2026年第二季度",
+        "scope": "可灵AI，非快手全公司",
+        "kind": "官方披露",
+        "meaning": "明确的单季已发生营业收入证据",
+        "limitation": "来自未经审核业绩披露；未分个人订阅/API/企业，也未披露可灵毛利",
+        "refs": [
+          "kl-business-5"
+        ]
+      },
+      {
+        "label": "全球创作者规模",
+        "value": "超过6000万",
+        "period": "截至2025-12",
+        "scope": "可灵全球累计创作者",
+        "kind": "官方自述",
+        "meaning": "累计使用范围的线索",
+        "limitation": "非MAU、DAU或付费人数；不能与季度收入直接相除",
+        "refs": [
+          "kl-business-4"
+        ]
+      },
+      {
+        "label": "累计合作企业",
+        "value": "超过3万家",
+        "period": "截至2025-12",
+        "scope": "可灵累计企业合作口径",
+        "kind": "官方自述",
+        "meaning": "说明企业服务已非单个案例",
+        "limitation": "未说明全部是否付费、当期活跃、合同金额或是否含试用",
+        "refs": [
+          "kl-business-4"
+        ]
+      },
+      {
+        "label": "年化收入运行率 ARR",
+        "value": "2.4亿美元",
+        "period": "2025-12单月收入年化",
+        "scope": "可灵AI",
+        "kind": "官方披露",
+        "meaning": "官方明示由当月收入超过2000万美元年化",
+        "limitation": "不能称2025全年收入；也不能与季度营业收入相加",
+        "refs": [
+          "kl-business-4"
+        ]
+      },
+      {
+        "label": "付费人数、续费及产品利润",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "可灵独立口径",
+        "kind": "资料不足",
+        "meaning": "无法评估付费用户平均消费与盈利",
+        "limitation": "快手整体用户、毛利与净利都不能替代可灵数据",
+        "refs": [
+          "kl-business-5"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "社交效果尝鲜者",
+        "job": "把个人照片或创意转成好分享的片段",
+        "payTrigger": "热门效果、持续使用或更快输出",
+        "returnReason": "新的玩法与个人素材",
+        "evidence": "官方产品有免费与会员层；尝鲜者留存和对收入贡献未知",
+        "refs": [
+          "kl-business-1"
+        ]
+      },
+      {
+        "name": "影视、广告与品牌创作者",
+        "job": "完成有参考、画质、叙事和交期要求的镜头",
+        "payTrigger": "连续修改与高规格输出需要资源和稳定通道",
+        "returnReason": "下一镜头、下一项目及原项目修改",
+        "evidence": "官方业绩报告明确专业应用方向和精选采用案例；规模占比未知",
+        "refs": [
+          "kl-business-5"
+        ]
+      },
+      {
+        "name": "企业开发者与制作团队",
+        "job": "在业务里批量生成，并管理共同资产和人员",
+        "payTrigger": "API调用量、管理能力与项目交付要求",
+        "returnReason": "持续业务任务和团队项目",
+        "evidence": "官方订阅/API路径及团队会员入口可确认；合同金额与净留存未披露",
+        "refs": [
+          "kl-business-1",
+          "kl-business-3"
+        ]
+      }
+    ],
+    "funnel": [
+      "分析路径：专业案例或热门效果被发现 → 自己的素材试做 → 判断是否达到交付标准 → 购买会员/积分 → 下一镜或项目继续使用。",
+      "企业路径：选定能力 → 试调用与成本验证 → API采购 → 持续业务调用；社区帖子只覆盖其中部分触点。"
+    ],
+    "economics": [
+      "有较高收入仍不能据此推断利润。可灵独立算力、研发、获客和作者合作费用未披露，快手全公司毛利不可套用。",
+      "多元拾光可以采购成熟模型能力，但必须加入参考准备、失败重试、人工选片与后处理，比较整个交付任务的成本。"
+    ],
+    "implications": [
+      "不必追可灵的大范围用户和模型投入。优先寻找有连续镜头或商品修改任务、能展示制作判断的作者及使用者。",
+      "首轮合作采购一段可交接的方法和失败处理；运营跟进第二次任务，产品确认采用标准，研发只补保存、复用和连续编辑中反复出现的阻塞。",
+      "把社区活跃和付费工具使用分别统计：用户可能私密地制作客户项目，这种价值不会表现为更多公开帖子。"
+    ],
+    "unknowns": [
+      "季度收入中订阅、额外积分、团队及API占比，付费人数、续费和收入集中度。",
+      "累计企业客户的付费与活跃定义，客户行业构成和合同规模。",
+      "站内社区相较模型质量、营销传播对商业增长的独立贡献。"
+    ],
+    "sources": [
+      {
+        "id": "kl-business-1",
+        "title": "Kling AI Paid Services Terms",
+        "url": "https://kling.ai/docs/payment-policy",
+        "publisher": "可灵官方",
+        "date": "2026-04-21生效",
+        "accessedAt": "2026-09-09",
+        "type": "官方协议",
+        "note": "已读原文；会员、积分与额外收费边界"
+      },
+      {
+        "id": "kl-business-2",
+        "title": "Kling 3.0 Credit Cost Guide",
+        "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=all",
+        "publisher": "可灵官方",
+        "date": "2026-07-28",
+        "accessedAt": "2026-09-09",
+        "type": "官方成本指南",
+        "note": "已读原文；首订与续费价分开，报价仅指定页面参照"
+      },
+      {
+        "id": "kl-business-3",
+        "title": "快手2025年全年业绩演示材料",
+        "url": "https://ir.kuaishou.com/static-files/589b854a-6258-4c4a-9921-e00c7ddaae9b",
+        "publisher": "快手投资者关系",
+        "date": "2026；报告覆盖2025全年",
+        "accessedAt": "2026-09-09",
+        "type": "官方投资者材料",
+        "note": "已打开并读取31页PDF；订阅/API商业化图示及历史用户口径"
+      },
+      {
+        "id": "kl-business-4",
+        "title": "可灵2025年12月收入运行率公告",
+        "url": "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kelingainianhuashouruyunxingluzai2025nian12yueda24yimeijin",
+        "publisher": "快手投资者关系",
+        "date": "2026-01-13",
+        "accessedAt": "2026-09-09",
+        "type": "官方经营公告",
+        "note": "已读原文；当月收入年化、累计创作者及企业合作口径"
+      },
+      {
+        "id": "kl-business-5",
+        "title": "快手2026年第二季度及中期未经审核财务业绩",
+        "url": "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji",
+        "publisher": "快手投资者关系",
+        "date": "2026-08-19",
+        "accessedAt": "2026-09-09",
+        "type": "官方财务披露",
+        "note": "已读原文；可灵营收单列，不采快手整体用户或利润作可灵指标"
+      }
+    ]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "summary": "Midjourney 可以依靠明确的生成体验先收订阅费，再用速度、并发和私密性推动升级。它并不是先堆免费积分、等社区繁荣后再收费。这个路径的前提是用户已经愿意为其效果付费，多元拾光目前尚未证明同样的条件。",
+    "payer": "个人创作者、专业设计者，以及为员工购买独立账号的组织；普通公开浏览者与 Discord 成员不能等同于付费用户。",
+    "revenueModel": "分档订阅加快速 GPU 时间加购；存在媒体报道的技术授权合作，但未公开收入拆分。",
+    "commercialization": [
+      {
+        "title": "公开网页和 Discord 没有常规免费试用",
+        "text": "当前官方说明：网页与 Discord 不提供免费试用，niji journey 手机应用有有限试用。用户通过作品和口碑形成预期，再付费进入生产。这种收费入口筛选了较强意愿，但需要品牌与稳定效果支撑，不能只复制付费墙。",
+        "refs": [
+          "biz-mj-trial"
+        ]
+      },
+      {
+        "title": "升级购买的是速度、并发和私密性",
+        "text": "官方月度套餐为10、30、60、120美元，快速 GPU 时长逐级提高，可按4美元每小时加购。Standard 起有 Relax 图像生成，Pro/Mega 提供 Stealth；视频的 Relax 范围有限定。合理推断：专业用户不只比较总生成量，还衡量等待和能否公开自己的项目。",
+        "refs": [
+          "biz-mj-price"
+        ]
+      },
+      {
+        "title": "企业使用不等于完整企业产品",
+        "text": "官方支持满足条件的大批量年度 Pro/Mega 订阅统一账单，但明确不提供席位管理、SSO 和合同条款谈判。公开商业使用条件也会按企业收入要求高级套餐。它说明强产品可以先卖给公司里的个人，不必一开始就建齐企业管理系统。",
+        "refs": [
+          "biz-mj-group",
+          "biz-mj-price"
+        ]
+      },
+      {
+        "title": "不能将第三方中转当官方 API 收入",
+        "text": "社区规则说明除少量明确授权例外外，未提供 API，且限制未授权自动化与转售。媒体报道过与 Meta 的技术授权合作，但金额未披露。研究多元拾光的低价 API 优势时，应把模型官方授权、第三方转接与终端订阅分开，不能合并为同一商业路径。",
+        "refs": [
+          "biz-mj-policy",
+          "biz-mj-forbes"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "历史年度收入",
+        "value": "约3亿美元",
+        "period": "2024财年；Forbes于2026-04-16更新",
+        "scope": "Midjourney 公司",
+        "kind": "媒体转述",
+        "meaning": "Forbes 引用 PitchBook，说明其订阅等业务达到较大历史规模。",
+        "limitation": "未见公司审计财务；不是2026收入，也不是ARR；无法拆分图像、视频、授权与其他收入。",
+        "refs": [
+          "biz-mj-forbes"
+        ]
+      },
+      {
+        "label": "当前付费用户与MAU",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "Midjourney 网页与Discord生成服务",
+        "kind": "资料不足",
+        "meaning": "现有公开材料不足以计算付费率、ARPPU或活跃份额。",
+        "limitation": "Discord累计成员、网站访问与付费账号存在口径差异，不能互换。",
+        "refs": [
+          "biz-mj-price",
+          "biz-mj-group"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "偏好其风格的个人创作者",
+        "job": "探索视觉语言、插画与个人表达。",
+        "payTrigger": "推断：作品展示足以形成效果预期，愿意为尝试付费。",
+        "returnReason": "新的题材、持续的审美探索和已有创作习惯。",
+        "evidence": "由订阅入口与社区生成结构推断，未获得用户结构调查。",
+        "refs": [
+          "biz-mj-price",
+          "biz-mj-trial"
+        ]
+      },
+      {
+        "name": "有交付压力的设计者",
+        "job": "为具体项目制作概念图、参考或视觉草案。",
+        "payTrigger": "推断：并发、快时长与私密需求提高，等待的机会成本超过升级费用。",
+        "returnReason": "能沿用工作方式完成下一次设计与修改。",
+        "evidence": "功能分层支持该需求，但不证明所有 Pro 用户均为专业设计者。",
+        "refs": [
+          "biz-mj-price"
+        ]
+      },
+      {
+        "name": "由公司支付个人账号的团队",
+        "job": "在现有团队流程中分别使用生成工具。",
+        "payTrigger": "独立账号及批量账单；未必购买复杂组织协作。",
+        "returnReason": "员工已经在使用且能产生所需成果。",
+        "evidence": "官方批量账单规则确认这条采购路径存在，未公开客户数量。",
+        "refs": [
+          "biz-mj-group"
+        ]
+      }
+    ],
+    "funnel": [
+      "公开效果与推荐 → 用户愿意支付首次订阅。",
+      "反复生成与修改 → 找到可用于个人或工作项目的结果。",
+      "速度、并发和私密需求增加 → 更高套餐或加购。",
+      "这是机制分析，尚无公开获客成本与续费漏斗。"
+    ],
+    "economics": [
+      "推断：Fast/Relax 分档能区分时间敏感度，但不能用标价和GPU小时直接推算毛利。",
+      "不提供完整企业管理，减少了一类产品复杂度；模型研发、算力和支持仍是另一种高投入，不能用小团队传闻当成本证据。"
+    ],
+    "implications": [
+      "多元拾光要先拿出值得用户主动付费的稳定案例，再讨论取消免费或提高门槛。",
+      "招募有真实修改任务、能说清自己为何付费和上次为什么取消的设计者；粉丝数并非首要条件。",
+      "MakeNow 先保住材料、参数和再次制作路径；复杂企业功能应等明确采购阻塞出现后再做。"
+    ],
+    "unknowns": [
+      "2025—2026当期收入、订阅人数和付费流失。",
+      "专业用途与娱乐用途的收入占比。",
+      "技术授权金额、计算成本与模型研发投入。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-mj-price",
+        "title": "Comparing Midjourney Plans",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+        "publisher": "Midjourney",
+        "date": "动态帮助页，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格说明",
+        "note": "当前订阅、GPU时间与私密性；所有商业权利仍受条款约束。"
+      },
+      {
+        "id": "biz-mj-trial",
+        "title": "Free Trials",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials",
+        "publisher": "Midjourney",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方帮助",
+        "note": "区分网页/Discord与niji应用试用。"
+      },
+      {
+        "id": "biz-mj-group",
+        "title": "Group Plans & Corporate Billing",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/27870607078285-Group-Plans-Corporate-Billing",
+        "publisher": "Midjourney",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方帮助",
+        "note": "批量账单与未提供的企业管理能力。"
+      },
+      {
+        "id": "biz-mj-policy",
+        "title": "Community Guidelines",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
+        "publisher": "Midjourney",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方规则",
+        "note": "普通开放API与少数获授权例外有别。"
+      },
+      {
+        "id": "biz-mj-forbes",
+        "title": "Midjourney — Company Overview & News",
+        "url": "https://www.forbes.com/companies/midjourney/",
+        "publisher": "Forbes，引用PitchBook",
+        "date": "2026-04-16",
+        "accessedAt": "2026-09-09",
+        "type": "媒体转述",
+        "note": "2024财年收入约3亿美元，非审计原件；亦提及Meta授权，未给金额。"
+      }
+    ]
+  },
+  {
+    "id": "leonardo",
+    "name": "Leonardo.Ai",
+    "summary": "Leonardo 把免费探索、个人生产、团队使用和 API 接入分开收费。Canva 体系提供了资源和分发条件；近期将 remove.bg API 纳入统一平台，又给它增加了已有业务入口。这些条件不能直接复制到四人团队。",
+    "payer": "个人创作者、需要私密素材和协作的内容团队、把生成与图像处理接入自身业务的开发者或企业。",
+    "revenueModel": "个人订阅及加额、按席位的团队方案、按使用量的 API 与定制合同。",
+    "commercialization": [
+      {
+        "title": "免费创作通往私密与持续生产",
+        "text": "当前价格页免费额度按日刷新；付费个人档提供私密创作、更多产量和更完整的资料管理。Essential/Premium/Ultimate月价列为12/30/60美元。付费触发因此包含客户材料的使用方式，而不只是额度不足；是否适合客户项目仍需以条款和实际流程判断。",
+        "refs": [
+          "biz-leo-price"
+        ]
+      },
+      {
+        "title": "无限生成有成本边界",
+        "text": "官方将 Relax 生成限定在选定模型和优先级，第三方模型不当然包含在无限范围内。用户应比较完成一个任务所需的模型、重试与等待，而非把无限理解为所有模型任意使用。推断：这是同时考虑高频创作者和外部推理成本的分层方法。",
+        "refs": [
+          "biz-leo-price"
+        ]
+      },
+      {
+        "title": "团队与 API 有不同购买理由",
+        "text": "团队套餐按席位并共享额度，提供团队私密生成；API 提供按量付费、自动加额及定制并发。前者为多人使用与资料管理买单，后者为业务接入和持续调用买单。不能把团队席位数和 API 终端用户相加称为付费人数。",
+        "refs": [
+          "biz-leo-price"
+        ]
+      },
+      {
+        "title": "Canva 与 remove.bg 是现成的业务入口",
+        "text": "收购公告确认 Leonardo 获得 Canva 资源支持并继续经营；2026年更新说明 remove.bg API 移入 Leonardo，背景移除与其他图像工具可通过同一账户和额度使用。推断：已有任务流量可逐步转向更多服务，但迁移通知并未披露转化率或增量收入。",
+        "refs": [
+          "biz-leo-canva",
+          "biz-leo-remove"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "累计生成图像",
+        "value": "超过47亿张",
+        "period": "官方文章2026-08-24更新；具体累计截止日未标",
+        "scope": "Leonardo 平台累计产出",
+        "kind": "官方自述",
+        "meaning": "可作为平台生成使用规模的近期资料。",
+        "limitation": "不是MAU、独立用户、成功交付或收入；营销比较文章自述未审计。",
+        "refs": [
+          "biz-leo-output"
+        ]
+      },
+      {
+        "label": "累计生成视频",
+        "value": "超过6400万个",
+        "period": "官方文章2026-08-24更新；具体累计截止日未标",
+        "scope": "Leonardo 平台累计产出",
+        "kind": "官方自述",
+        "meaning": "除图片外已存在视频生成使用。",
+        "limitation": "没有长度、模型、成功率和付费比例；无法与其他站视频数量直接比较。",
+        "refs": [
+          "biz-leo-output"
+        ]
+      },
+      {
+        "label": "独立经营结果",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "Leonardo收入、MAU与付费人数",
+        "kind": "资料不足",
+        "meaning": "不能根据Canva整体收入或用户推算Leonardo经营规模。",
+        "limitation": "收购方在旧公告中的使用者规模是历史口径，不能补作当期MAU。",
+        "refs": [
+          "biz-leo-canva"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "视觉探索者",
+        "job": "尝试不同模型与题材，学习生成与编辑。",
+        "payTrigger": "推断：形成稳定创作频率后需要更多产量或私密创作。",
+        "returnReason": "个人资料和熟悉的流程；也可能因兴趣短期退出。",
+        "evidence": "个人方案明示面向休闲与高频创作者；实际留存分布未披露。",
+        "refs": [
+          "biz-leo-price"
+        ]
+      },
+      {
+        "name": "品牌、设计与内容团队",
+        "job": "用持续一致的素材完成广告、概念图与品牌内容。",
+        "payTrigger": "推断：私密项目、共同资产与团队额度管理。",
+        "returnReason": "同一品牌与素材延续到下一次内容制作。",
+        "evidence": "官方产品与收购公告列出这些用途；它们是目标用户与案例线索，不是用户占比。",
+        "refs": [
+          "biz-leo-price",
+          "biz-leo-canva"
+        ]
+      },
+      {
+        "name": "已有图像处理业务的开发者",
+        "job": "把抠图、生成或放大接入现有服务。",
+        "payTrigger": "稳定调用、自动补充额度和更高用量需要。",
+        "returnReason": "调用已经进入现有业务步骤，改换平台有迁移工作。",
+        "evidence": "API方案与remove.bg迁移是事实；留存和切换成本大小属于待验证推断。",
+        "refs": [
+          "biz-leo-price",
+          "biz-leo-remove"
+        ]
+      }
+    ],
+    "funnel": [
+      "免费探索或既有图像处理任务 → 完成第一份素材。",
+      "保存素材与方法 → 下一项目继续制作。",
+      "个人需求扩大 → 订阅、团队共享或API接入。",
+      "对不同入口分别看留存，不能把Canva带来的接入当作社区自然增长。"
+    ],
+    "economics": [
+      "推断：模型聚合、资产管理和团队控制增加可付费价值，也增加推理、支持与维护成本。",
+      "收购体系带来的用户、资金与渠道不是社区功能本身创造的优势，应在可借鉴项中扣除。"
+    ],
+    "implications": [
+      "多元拾光有低价API业务，可从已有重复调用者中找有固定图像任务的人，观察他们是否也需要画布、参考和成品管理。",
+      "先围绕一个已发生的任务增加相关工具；不要把API用户全部导入发帖社区。",
+      "种子用户不必公开客户素材。用第二批任务完成、交付采用与续用来衡量价值。"
+    ],
+    "unknowns": [
+      "Canva入口、独立站入口、API入口的用户与收入占比。",
+      "平台毛利、付费转化、实际API客户数。",
+      "社区作者是否获得稳定现金报酬及供给集中度。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-leo-price",
+        "title": "Leonardo.Ai Pricing: Individual, Team & API Plans",
+        "url": "https://www.leonardo.ai/pricing",
+        "publisher": "Leonardo.Ai",
+        "date": "动态价格页，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "当前分档与额度机制；模型可用范围有动态调整。"
+      },
+      {
+        "id": "biz-leo-output",
+        "title": "ImagineArt vs Leonardo.Ai: Features, Price & Performance Compared",
+        "url": "https://www.leonardo.ai/news/imagineart-vs-leonardo-ai",
+        "publisher": "Leonardo.Ai",
+        "date": "2026-08-24更新",
+        "accessedAt": "2026-09-09",
+        "type": "官方自述",
+        "note": "只采用其自身累计产出，不采用其对竞品的营销判断。"
+      },
+      {
+        "id": "biz-leo-remove",
+        "title": "remove.bg API is Moving to Leonardo.Ai",
+        "url": "https://www.leonardo.ai/news/removebg-api-leonardo",
+        "publisher": "Leonardo.Ai",
+        "date": "2026-08-28发布，2026-09-01更新",
+        "accessedAt": "2026-09-09",
+        "type": "官方公告",
+        "note": "存量API迁移及同一账户额度；不等于已验证转化增长。"
+      },
+      {
+        "id": "biz-leo-canva",
+        "title": "Welcome to Canva, Leonardo!",
+        "url": "https://www.canva.com/newsroom/news/leonardo-ai/",
+        "publisher": "Canva",
+        "date": "2024年收购公告",
+        "accessedAt": "2026-09-09",
+        "type": "收购方官方公告",
+        "note": "确认业务关系与资源条件；不挪用Canva整体用户和收入。"
+      }
+    ]
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "summary": "Runway 同时卖给个人创作者、制作团队和开发者。公开作品负责展示可能性，持续收费发生在项目、镜头修改和生产接入中。研究它应同时看到消费者收入和企业采用，不能仅把影展与作品页当成商业模式。",
+    "payer": "个人视频创作者、品牌和制作组织、API开发者；渠道推广作者与部分合作创作者是平台采购或奖励的接收方。",
+    "revenueModel": "个人分档订阅与额度加购、企业合同、按模型和输出量计费的API；作者推广采用持续订阅佣金。",
+    "commercialization": [
+      {
+        "title": "免费额度用于试用，升级用于继续生产",
+        "text": "当前价格页免费方案给125个一次性额度；Standard/Pro/Max月度标价为15/35/95美元，年度折算另列。高级档位增加额度、并发、项目和专业输出能力。付费动机可能是继续完成镜头或修改，不能把订阅包含的生成秒数当作最终成片时长。",
+        "refs": [
+          "biz-run-price"
+        ]
+      },
+      {
+        "title": "API 收的是实际运行用量",
+        "text": "开发者价格页按0.01美元购买一个 credit，不同模型按秒、图片或其他单位消耗；专业输出格式可另加费用。它同时提供围绕商品广告等任务的 Recipe 计费。推断：将多个制作步骤包装为任务，也可以成为收费对象，但实际可用率仍决定用户成本。",
+        "refs": [
+          "biz-run-api"
+        ]
+      },
+      {
+        "title": "企业采用从具体用途扩展",
+        "text": "MIXI合作公告描述从既有创意运营扩展到体育、生活与娱乐；Miro客户访谈则呈现活动视频、特定场地镜头和不同投影尺寸。可确认这些组织用途存在，但客户成功故事经过挑选，不能把个案节省时间或合作方自身用户数外推为平台整体收益。",
+        "refs": [
+          "biz-run-mixi",
+          "biz-run-miro"
+        ]
+      },
+      {
+        "title": "作者推广按付费订阅结佣",
+        "text": "联盟页说明合作先进行试点，创作者从推荐订阅中持续取得佣金，而非按发帖一次付清；没有统一脚本与发帖配额。它购买的是有转化能力的推荐。对多元拾光而言，需要案例制作的作者与需要带来购买者的推广人，不宜只用同一合作标准筛选。",
+        "refs": [
+          "biz-run-affiliate"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "创作者覆盖宣传口径",
+        "value": "60M+ creators（超过6000万）",
+        "period": "价格页访问2026-09-09，未标统计窗口",
+        "scope": "Runway 官方对覆盖创作者的自述",
+        "kind": "官方自述",
+        "meaning": "提示较大的产品触达规模。",
+        "limitation": "未定义注册、累计、活跃或付费口径；绝不能写成6000万MAU。",
+        "refs": [
+          "biz-run-price"
+        ]
+      },
+      {
+        "label": "企业客户增长",
+        "value": "过去12个月增长300%",
+        "period": "2026-06-29公告",
+        "scope": "日本扩张语境中的企业客户增长表述",
+        "kind": "官方自述",
+        "meaning": "说明官方重点叙述企业采用的扩展。",
+        "limitation": "该段没有明确分母、绝对客户数或地域统计定义，不据此推算全球企业收入和客户总数。",
+        "refs": [
+          "biz-run-mixi"
+        ]
+      },
+      {
+        "label": "营收、利润与付费人数",
+        "value": "未公开核实",
+        "period": "截至2026-09-09",
+        "scope": "Runway公司及各业务线",
+        "kind": "资料不足",
+        "meaning": "本轮不以融资额或估值替代经营结果。",
+        "limitation": "消费者、企业和API收入拆分没有在所核官方材料中公布。",
+        "refs": [
+          "biz-run-price",
+          "biz-run-api"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "有具体镜头要完成的个人创作者",
+        "job": "做短片、补镜头、试视觉方案并按反馈修改。",
+        "payTrigger": "推断：项目需要继续生成、缩短等待或更高规格输出。",
+        "returnReason": "同一个项目还要补镜头，下一次制作仍需既有方法。",
+        "evidence": "来自收费分层和项目用途；不是用户结构调查。",
+        "refs": [
+          "biz-run-price"
+        ]
+      },
+      {
+        "name": "品牌与专业制作团队",
+        "job": "完成活动视频、本地化内容或特定规格的品牌素材。",
+        "payTrigger": "推断：项目采用效果达到标准，团队愿意扩大使用。",
+        "returnReason": "类似制作简报周期性出现；项目资料和已有制作经验可以复用。",
+        "evidence": "MIXI与Miro是官方客户案例，存在选择偏差，不能代表平均客户。",
+        "refs": [
+          "biz-run-mixi",
+          "biz-run-miro"
+        ]
+      },
+      {
+        "name": "将制作能力接进产品的开发者",
+        "job": "用API或任务封装提供视频与图像处理。",
+        "payTrigger": "实际业务调用量及输出规格。",
+        "returnReason": "下游产品持续需要这些能力；稳定性、预算和接口迁移决定续用。",
+        "evidence": "开发者价格页证明商业供给存在；调用规模和客户留存仍未公开。",
+        "refs": [
+          "biz-run-api"
+        ]
+      }
+    ],
+    "funnel": [
+      "作品、教程或行业案例 → 试一个与自身接近的镜头任务。",
+      "用自己的材料生成、挑选、修改 → 判断能否进入交付。",
+      "更多项目或更高规格 → 个人升级、企业合同或API生产接入。",
+      "公开发帖与私密项目活跃是两条记录，不以社区发帖数代替生产留存。"
+    ],
+    "economics": [
+      "推断：视频任务会因淘汰镜头和返工放大实际成本，应按被采用的镜头或任务计算，而不是仅按生成秒数。",
+      "大型客户还带来销售、支持、采购和安全评估工作；案例露出不说明四人团队可低成本复制企业业务。"
+    ],
+    "implications": [
+      "找手里已有短片、广告修改单或活动视频需求的人；要求说明替代方案与验收标准，避免只招对新模型好奇的人。",
+      "先采购带一次修改的案例过程，记录选片与淘汰原因，测试MakeNow画布是否减少重复准备。",
+      "同时识别只想买成片的人和愿意自己制作的人；前者可能属于代制作业务，不宜混进工具留存。"
+    ],
+    "unknowns": [
+      "各业务线收入、实际活跃和付费用户。",
+      "有效生成率、企业客户净留存与销售周期。",
+      "联盟佣金比例、每个有效付费用户的获客成本及回本时间。",
+      "人口与地区结构未公开：年龄、性别、地区和职业比例没有可核实的代表性调查；上述分群是任务分析，不是人数占比。"
+    ],
+    "sources": [
+      {
+        "id": "biz-run-price",
+        "title": "Runway Pricing",
+        "url": "https://runway.com/pricing",
+        "publisher": "Runway",
+        "date": "动态价格页，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "当前Standard/Pro/Max与60M+宣传口径；非MAU。"
+      },
+      {
+        "id": "biz-run-api",
+        "title": "API Pricing & Costs",
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "publisher": "Runway",
+        "date": "动态文档，访问2026-09-09",
+        "accessedAt": "2026-09-09",
+        "type": "官方API价格说明",
+        "note": "模型、输出规格和Recipe有不同消费单位。"
+      },
+      {
+        "id": "biz-run-mixi",
+        "title": "Runway and MIXI Announce Strategic Partnership",
+        "url": "https://runway.com/news/runway-and-mixi-announce-strategic-partnership",
+        "publisher": "Runway",
+        "date": "2026-06-29",
+        "accessedAt": "2026-09-09",
+        "type": "官方公告",
+        "note": "企业采用和日本扩展语境；不挪用MIXI旗下游戏用户。"
+      },
+      {
+        "id": "biz-run-miro",
+        "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway",
+        "url": "https://runway.com/news/customers/miro",
+        "publisher": "Runway/Miro访谈",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方客户案例",
+        "note": "任务、修改与重复简报线索；精选个案不能外推。"
+      },
+      {
+        "id": "biz-run-affiliate",
+        "title": "Apply to the Runway Affiliate Program",
+        "url": "https://runway.com/affiliate-program",
+        "publisher": "Runway",
+        "date": "未标日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方合作计划",
+        "note": "订阅推荐佣金，非普通创作者默认收入。"
+      }
+    ]
+  },
+  {
+    "id": "waytoagi",
+    "name": "WaytoAGI",
+    "summary": "它的商业价值来自把分散的 AI 学习者组织成能做项目、写经验和传播工具的人群。公开站仍以知识库和工具发现为入口；关联的 WaytoGrowth 已提供面向 AI 品牌的增长服务。需要把知识社区、活动共创和商业服务团队分开判断，不能继续把整个体系概括为无商业化，也不能把品牌影响力当成营收。",
+    "payer": "已确认存在面向 AI 公司和品牌的服务承接入口；活动伙伴提供场地、资源与共创支持。具体付款客户、金额、社群与服务团队之间的收入归属均未公开核实。",
+    "revenueModel": "开放知识内容积累受众与作者，活动组织形成案例和合作关系，关联团队承接 AI 品牌增长服务；社区本体收入资料不足。",
+    "commercialization": [
+      {
+        "title": "知识库负责建立信任",
+        "text": "事实：官网持续更新教程精选、工具目录，并把阅读者导向飞书知识库。页面没有给出统一的付费会员计划。判断：教程是低门槛的获客入口，真正难复制的是筛选、编辑、组织共创和积累作者，而不是工具链接的数量。未查到收费入口不能推出所有内容和活动永久免费。",
+        "refs": [
+          "bc-way-home"
+        ]
+      },
+      {
+        "title": "品牌服务已经有明确产品",
+        "text": "事实：WaytoGrowth 官网自述源自 WaytoAGI，服务包括定位、SEO/GEO、内容、广告测试、创作者分发和全球发布，并提供项目咨询入口。判断：购买者可能是需要开发者或创作者触达的 AI 公司，交付物是增长工作，而非阅读知识库的权限。尚无公开价目或经核实的合同金额，不能计算其服务收入。",
+        "refs": [
+          "bc-way-growth"
+        ]
+      },
+      {
+        "title": "活动支持包含实物与资源",
+        "text": "事实：大理 Hacker House 页面记录共同做产品、演示和复盘，列出场地、社区、资源支持伙伴，并接受后续活动合作和赞助咨询。判断：这种支持能降低办活动的现金支出，但场地、导师时间、曝光互换和现金赞助性质不同，不宜合并成一笔可持续收入。",
+        "refs": [
+          "bc-way-event"
+        ]
+      },
+      {
+        "title": "供给者获得的回报不只是一篇稿费",
+        "text": "判断：从案例记录看，作者与组织者可以获得项目反馈、作品展示和同业关系，品牌也能接触实际使用者。这个价值交换成立的前提是活动有具体任务和可展示产出。多元拾光当前没有成熟案例，直接复制大型共创活动会把组织工作和制作工作同时压在少数人身上。",
+        "refs": [
+          "bc-way-event",
+          "bc-way-growth"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "单场活动的公开成员档案",
+        "value": "100 张公开名片",
+        "period": "2026 年 5 月 24—30 日活动，2026-09-09 读取",
+        "scope": "大理 Hacker House 第一期",
+        "kind": "官方自述",
+        "meaning": "可以证实其曾组织有明确角色和项目的线下共创群体。",
+        "limitation": "页面依据报名、签到和自我介绍整理名片；不是全站用户数，也不是活跃作者或付费人数。",
+        "refs": [
+          "bc-way-event"
+        ]
+      },
+      {
+        "label": "社区月活、付费客户与年度收入",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "WaytoAGI 社区及关联服务团队分别统计",
+        "kind": "资料不足",
+        "meaning": "尚不足以衡量经营规模或计算每用户收入。",
+        "limitation": "站内知识库问答存在明确的 AI 生成声明及相互不同的历史用户数字，未采纳为经营数据；服务官网也未给出收入。",
+        "refs": [
+          "bc-way-home",
+          "bc-way-growth"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "带实际项目的 AI 使用者",
+        "job": "做出一个网站、内容项目或出海产品，解决上线、素材或获客问题。",
+        "payTrigger": "画像推断：能帮助完成眼前项目的工具或服务；没有证据显示此类人普遍向社区付费。",
+        "returnReason": "项目进展带来新问题，需要同伴反馈和后续资料。",
+        "evidence": "活动安排围绕真实项目和最终演示；这能支持任务画像，不能支持职业或年龄占比。",
+        "refs": [
+          "bc-way-event"
+        ]
+      },
+      {
+        "name": "教程作者与共创组织者",
+        "job": "把实践整理成别人能执行的教程，主持共学或推动项目。",
+        "payTrigger": "其首先是供给者；是否收稿费、分成或服务报酬没有公开统一规则。",
+        "returnReason": "得到使用反馈、认可和合作机会，继续积累作品。",
+        "evidence": "官网持续选择教程，活动把现场经验整理成手册；回报动机是机制推断。",
+        "refs": [
+          "bc-way-home",
+          "bc-way-event"
+        ]
+      },
+      {
+        "name": "需要市场增长的 AI 品牌",
+        "job": "解释产品价值、进入搜索与创作者渠道、开展新市场发布。",
+        "payTrigger": "官网明确承接增长服务，是否成交取决于目标、交付和预算。",
+        "returnReason": "持续内容与市场执行可能形成续约，但续约率未知。",
+        "evidence": "WaytoGrowth 的服务对象和服务目录为直接证据。",
+        "refs": [
+          "bc-way-growth"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：搜索或社交平台发现具体教程 → 阅读知识库 → 带问题参与共学 → 完成项目并反馈 → 成为作者或继续参加活动。",
+      "商业支线：AI 品牌通过内容、活动和作者网络认识团队 → 咨询增长服务 → 商定交付；各环节转化率未公开。"
+    ],
+    "economics": [
+      "开放内容本身不按每次阅读收费，成本主要在选题、编辑、作者关系和组织工作。",
+      "增长服务若按项目交付，收入会受人员产能约束；不能用访问量乘一个假定单价估算收入。",
+      "共享品牌不等于合并财务，社区和 WaytoGrowth 的组织、资金关系仍需当事方说明。"
+    ],
+    "implications": [
+      "多元拾光可借鉴任务式共创：先找愿意提交需求材料、按时交成果、接受修改的创作者，再为其补工具额度。",
+      "招募条件应写实际工作和当前卡点，如每周要做商品图的人；不要用“AI 爱好者”替代筛选。",
+      "第一位内容供给者需要能独立制作、讲清步骤并跟进复现；从有持续项目记录的作者中寻找，比按粉丝数选人更合适。"
+    ],
+    "unknowns": [
+      "知识库、社群和活动之间的去重人数及回访率。",
+      "WaytoGrowth 的付费客户、合同周期、复购率和收入归属。",
+      "作者的实际报酬、核心组织者投入工时、活动净成本。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-way-home",
+        "title": "WaytoAGI 首页与知识库精选",
+        "url": "https://www.waytoagi.com/zh",
+        "publisher": "WaytoAGI",
+        "date": "动态页面，读取时含 2026-09-07 精选",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品页",
+        "note": "只用于产品和内容入口，不将工具推荐词作为市场事实。"
+      },
+      {
+        "id": "bc-way-growth",
+        "title": "WaytoGrowth 服务与关于",
+        "url": "https://growth.waytoagi.com/zh",
+        "publisher": "WaytoGrowth",
+        "date": "未标注（页面版权 2026）",
+        "accessedAt": "2026-09-09",
+        "type": "关联团队官方服务页",
+        "note": "自述源自 WaytoAGI；服务存在不等于收入已验证。"
+      },
+      {
+        "id": "bc-way-event",
+        "title": "大理出海 Hacker House 第一期档案",
+        "url": "https://hackerhouse-dali.waytoagi.com/",
+        "publisher": "WaytoAGI",
+        "date": "2026 年 5 月活动，页面未标发布日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方活动档案",
+        "note": "100 张名片是单场活动资料口径；未导出个人联系方式。"
+      }
+    ]
+  },
+  {
+    "id": "datawhale",
+    "name": "Datawhale",
+    "summary": "Datawhale 最值得研究的是把学习者逐步变成助教、作者和项目维护者的组织方式。公开证据支持开源教材、组队学习与企业资源合作，尚不足以证明一个面向学员收费、靠课程销售增长的商业模型。它与多元拾光争取的作者和学习时间有交集，但不能按生成工具的付费率来比较。",
+    "payer": "公开可确认的是联合活动方提供算力等资源；尚未核实社区整体的主要现金资助者、学习者付费比例或统一商业收费计划。",
+    "revenueModel": "开源内容与志愿共建维持供给，课程、学习营、机构合作提供活动场景及资源；组织收入和成本未公开核实。",
+    "commercialization": [
+      {
+        "title": "公开教材是共同资产",
+        "text": "事实：官方将自身定义为 AI 开源组织，学习内容覆盖编程、机器学习等领域，并将资料开放在 GitHub。判断：内容积累可以反复服务新一批学习者，维护和答疑仍然需要投入；开源不是没有生产成本，也不意味着作者不能通过其他渠道获得职业收益。",
+        "refs": [
+          "bc-dw-about",
+          "bc-dw-github"
+        ]
+      },
+      {
+        "title": "企业合作能提供使用场景和资源",
+        "text": "事实：Datawhale 与 AMD 的 hello-rocm 学习营提供免费 GPU、联合结营证书、助教答疑及优秀学习者的布道师通道。能确认的是资源和人才培养合作，不能据此推算赞助现金。判断：企业希望更多开发者实际使用技术，学习者得到实践环境，双方交换的价值比泛曝光具体。",
+        "refs": [
+          "bc-dw-rocm"
+        ]
+      },
+      {
+        "title": "学习行为有验收要求",
+        "text": "事实：wonderful-sql 要求打卡提交学习总结与作业链接，并明确把缺少指定产出的提交视为无效。判断：这类运营能区分报名者和真正完成任务的人，后者才是潜在助教或作者。结营和作业质量比群人数更接近供给培养效果。",
+        "refs": [
+          "bc-dw-sql"
+        ]
+      },
+      {
+        "title": "组织角色需要长期有人负责",
+        "text": "事实：公开治理仓库将开源项目、组队学习、社区建设、产品技术、分享和活动分别列出职责。判断：免费内容背后有协调和维护工作，四人团队不能只复制活动入口，却忽略课程质量、助教和负责人投入。仓库说明组织设计，不保证所有岗位当前实际在岗。",
+        "refs": [
+          "bc-dw-governance"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "GitHub 组织关注者",
+        "value": "约 32.7k",
+        "period": "2026-09-09 页面读取",
+        "scope": "datawhalechina GitHub 组织",
+        "kind": "官方披露",
+        "meaning": "反映对该开源组织的累计关注规模。",
+        "limitation": "关注者不是社区注册人数、活跃学习者、贡献者或付费用户。",
+        "refs": [
+          "bc-dw-github"
+        ]
+      },
+      {
+        "label": "公开仓库数量",
+        "value": "220",
+        "period": "2026-09-09 页面读取",
+        "scope": "GitHub 组织页面显示的仓库集合",
+        "kind": "官方披露",
+        "meaning": "反映可发现的项目供给范围。",
+        "limitation": "不能推出每个仓库都在维护，也不能把仓库数当成完成课程的人数。",
+        "refs": [
+          "bc-dw-github"
+        ]
+      },
+      {
+        "label": "组织收入与有效学习人数",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "全社区的年度现金收入、学习完成者及复参加人数",
+        "kind": "资料不足",
+        "meaning": "不具备盈利和实际留存的可比指标。",
+        "limitation": "旧官网历史活动数字并非当前活跃数据；企业合作和书籍出版也不等于社区取得等额现金收入。",
+        "refs": [
+          "bc-dw-about",
+          "bc-dw-rocm"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "正在补技能的学生与初入行者",
+        "job": "按进度学会技术，做出作业或可展示项目。",
+        "payTrigger": "不宜默认其愿意付社区会员费；更直接的投入是时间、作业和学习纪律。",
+        "returnReason": "后续课程、同伴进度和实操问题产生持续需要。",
+        "evidence": "官方介绍和 SQL 课程目标支持此类任务；具体学历、收入和转行占比未调查。",
+        "refs": [
+          "bc-dw-about",
+          "bc-dw-sql"
+        ]
+      },
+      {
+        "name": "助教、教程作者与维护者",
+        "job": "把实践变成教材，审阅作业，处理问题与勘误。",
+        "payTrigger": "主要为供给角色，现金奖励与收入规则资料不足。",
+        "returnReason": "贡献记录、教学反馈和项目责任可以支持长期参与，是机制推断。",
+        "evidence": "组织指南提供发起项目、贡献和治理入口；不是作者回报的量化调查。",
+        "refs": [
+          "bc-dw-github",
+          "bc-dw-governance"
+        ]
+      },
+      {
+        "name": "希望技术被使用的企业生态团队",
+        "job": "让开发者完成真实部署和调优，形成技术案例及潜在布道者。",
+        "payTrigger": "可能投入算力、专家时间和活动资源；现金采购没有统一公开口径。",
+        "returnReason": "持续产生使用案例和开发者反馈，比一次曝光更可能支持合作延续。",
+        "evidence": "AMD 联合学习营的资源和成长通道为直接证据。",
+        "refs": [
+          "bc-dw-rocm"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：从搜索或 GitHub 进入教材 → 报名同期学习 → 提交作业 → 得到助教或同伴反馈 → 完成课程。",
+      "供给支线：优秀学习者改进教材、答疑或参与维护 → 带下一期学习者；这条路径的转化比例未公开。"
+    ],
+    "economics": [
+      "教材可重复使用，作者维护、作业审阅和助教协调会随内容深度增加。",
+      "企业提供免费算力可以降低学员成本，无法证明组织已经覆盖全部人力支出。",
+      "没有公开财务报告，不能按关注者、仓库星标或培训市场价格反推收入。"
+    ],
+    "implications": [
+      "多元拾光可把一套 MakeNow 案例组织成短期共学，要求交付原始素材、修改版本和问题记录。",
+      "筛选供给者时看他是否曾帮助别人完成任务；会自己做图与会写可复现教程是两种能力。",
+      "把辅助完成和独立复做分别统计，避免运营全程代做后误判产品好用。"
+    ],
+    "unknowns": [
+      "核心维护者与付费工作人员的比例及工时。",
+      "各期报名、实际开做、结营、再次参加的人数和去重口径。",
+      "企业合作的现金合同、资源估值和续约情况。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-dw-about",
+        "title": "Datawhale 官方介绍与大事记",
+        "url": "https://www.datawhale.cn/static/about/index.html",
+        "publisher": "Datawhale",
+        "date": "未标注，历史条目至 2023 年",
+        "accessedAt": "2026-09-09",
+        "type": "官方组织页",
+        "note": "历史覆盖数字未作为当前规模。"
+      },
+      {
+        "id": "bc-dw-github",
+        "title": "Datawhale GitHub 组织",
+        "url": "https://github.com/datawhalechina",
+        "publisher": "Datawhale / GitHub",
+        "date": "动态计数",
+        "accessedAt": "2026-09-09",
+        "type": "官方项目页",
+        "note": "关注者与仓库为公开快照，非活跃用户。"
+      },
+      {
+        "id": "bc-dw-rocm",
+        "title": "hello-rocm 组队学习营",
+        "url": "https://github.com/datawhalechina/hello-rocm/blob/master/docs/zh/learning/index.md",
+        "publisher": "Datawhale",
+        "date": "2026 年 6 月活动",
+        "accessedAt": "2026-09-09",
+        "type": "官方项目文档",
+        "note": "免费算力、证书和助教机制；现金赞助未披露。"
+      },
+      {
+        "id": "bc-dw-sql",
+        "title": "wonderful-sql 课程及打卡要求",
+        "url": "https://github.com/datawhalechina/wonderful-sql/blob/main/README.md",
+        "publisher": "Datawhale",
+        "date": "未标注（持续维护）",
+        "accessedAt": "2026-09-09",
+        "type": "官方项目文档",
+        "note": "任务必须有作业和总结链接的具体案例。"
+      },
+      {
+        "id": "bc-dw-governance",
+        "title": "Datawhale 组织治理",
+        "url": "https://github.com/datawhalechina/whale-governance",
+        "publisher": "Datawhale",
+        "date": "未标注",
+        "accessedAt": "2026-09-09",
+        "type": "官方治理仓库",
+        "note": "描述职责设计，不作为当前岗位人头统计。"
+      }
+    ]
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "summary": "Hugging Face 将开放模型、数据和演示的协作入口，与收费的计算、存储和组织管理接在一起。内容浏览者、模型贡献者和采购者并非同一群人。它的价值在于让项目进入工作过程后持续产生服务需求；单靠复刻资源广场，无法复制其模型供给、工具链和机构关系。",
+    "payer": "需要更多算力和存储的个人开发者，以及需要权限、审计、安全、支持和稳定部署的组织。公司账号和平台用户均不能直接当作付费客户。",
+    "revenueModel": "个人订阅、组织席位、按量计算与存储及企业合同；开源协作提供发现和试用入口。",
+    "commercialization": [
+      {
+        "title": "个人订阅与计算分开收费",
+        "text": "事实：PRO 标价为每月 9 美元，提供扩展存储、推理额度和队列等权益；账单说明计算按使用量另计。判断：个人订阅卖的是经常使用时的便利和容量，计算卖的是实际资源消耗。订阅并不等于可无限运行所有模型，免费用户也不是没有后续商业价值。",
+        "refs": [
+          "bc-hf-price",
+          "bc-hf-billing"
+        ]
+      },
+      {
+        "title": "团队购买的是控制与协作",
+        "text": "事实：企业专页的 Team 起价为每席每月 20 美元，列出 SSO、资源分组、审计和组织账单等能力。价格总页显示 Enterprise 每月 50 美元，企业专页则采用定制合同询价；本报告保留这个差异，不将 50 美元作为所有企业的成交价。判断：从个人试用到组织采购，需要解决管理者的风险和权限问题。",
+        "refs": [
+          "bc-hf-enterprise",
+          "bc-hf-price"
+        ]
+      },
+      {
+        "title": "按量服务随工作负载增长",
+        "text": "事实：账单文档列出 Spaces、Inference Endpoints、Inference Providers 等服务，另有按容量计费的存储。可以通过部分云市场结算，云厂商提供的方案可能由云厂商直接计费。判断：收入与部署、运行和保存的工作负载有关，不能把所有经过平台的模型调用金额都当作 Hugging Face 净收入。",
+        "refs": [
+          "bc-hf-billing",
+          "bc-hf-price"
+        ]
+      },
+      {
+        "title": "资本事件与经营收入必须分开",
+        "text": "事实：NVIDIA 于 2026 年 9 月 3 日宣布已达成收购 Hugging Face 的协议，金额约 129.303 亿美元，并表示平台将继续支持不同模型、云和硬件。该公告不等于本报告已经确认交割完成；收购金额是资本交易价格，更不能当作年度营收。判断：模型发现和分发已具有基础设施价值，但这不是小团队短期可复制的退出路径。",
+        "refs": [
+          "bc-hf-nvidia"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "平台使用者",
+        "value": "超过 1,800 万",
+        "period": "2026-09-03 公告",
+        "scope": "开发者、研究者和创作者的整个平台口径",
+        "kind": "官方自述",
+        "meaning": "来自拟收购方公告，可说明平台触达范围。",
+        "limitation": "没有公开该数字的去重、活跃周期和付费定义；不能写成月活或客户数。",
+        "refs": [
+          "bc-hf-nvidia"
+        ]
+      },
+      {
+        "label": "使用平台的公司",
+        "value": "超过 20 万家",
+        "period": "2026-09-03 公告",
+        "scope": "发现、评估、定制或部署 AI 的公司",
+        "kind": "官方自述",
+        "meaning": "机构使用基础广。",
+        "limitation": "公司使用不等于签约企业；不能与个人数相加，也不能乘 Enterprise 单价推算收入。",
+        "refs": [
+          "bc-hf-nvidia"
+        ]
+      },
+      {
+        "label": "模型下载集中度",
+        "value": "约 1.5% 的模型仓库贡献 99.2% 下载；约 85.6% 模型终生下载少于 200 次",
+        "period": "2026-08-14报告；含1月至8月观察，部分统计取前7个月",
+        "scope": "该报告研究的 Hugging Face 模型仓库与下载",
+        "kind": "官方自述",
+        "meaning": "说明供给庞大并不意味着每项资源都被使用。",
+        "limitation": "下载可由自动系统重复触发，并非独立用户；不同报告时间和统计范围不能直接合并。",
+        "refs": [
+          "bc-hf-summer"
+        ]
+      },
+      {
+        "label": "年度收入、付费率与净留存",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "公司经营及收费产品分项",
+        "kind": "资料不足",
+        "meaning": "本轮不据融资、并购估值或平台人数估算营收。",
+        "limitation": "价格页说明卖什么，不能证明卖了多少。",
+        "refs": [
+          "bc-hf-price",
+          "bc-hf-nvidia"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "模型与数据贡献者",
+        "job": "发布权重、数据、适配器、评测与演示，让研究或工具被发现和复用。",
+        "payTrigger": "更大存储、展示资源和运行容量可能触发付费；并非所有贡献者均购买。",
+        "returnReason": "下游使用、问题反馈、更新和衍生工作。",
+        "evidence": "开放模型生态报告支持贡献与复用结构；未给出贡献者收入或身份占比。",
+        "refs": [
+          "bc-hf-summer"
+        ]
+      },
+      {
+        "name": "构建应用的开发者",
+        "job": "选模型、试 API、做演示并上线实际应用。",
+        "payTrigger": "从短期试验进入持续部署，需要计算、容量或更稳定的运行方式。",
+        "returnReason": "应用仍在运行，模型升级与需求变化会继续产生工作。",
+        "evidence": "计算服务与账单项目为直接依据；付费触发是产品机制推断。",
+        "refs": [
+          "bc-hf-billing"
+        ]
+      },
+      {
+        "name": "企业 AI 平台与安全负责人",
+        "job": "让多个团队在可管理的权限、数据区域和预算下采用 AI。",
+        "payTrigger": "组织使用扩大，必须解决身份、审计、访问和合同支持。",
+        "returnReason": "管理政策和团队资产持续留在平台，迁移涉及流程成本。",
+        "evidence": "Enterprise 的功能和合同入口支持画像；实际采购决策链和留存率未公开。",
+        "refs": [
+          "bc-hf-enterprise"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：公开模型或代码带来发现 → 试运行与评估 → 嵌入项目 → 使用托管计算或扩容 → 组织统一采购。",
+      "供给与需求交叉：使用者可以发布适配结果；作者获传播与反馈，采购者为运行和管理负责。没有公开的全链转化比例。"
+    ],
+    "economics": [
+      "算力和存储按量增长，也会带来资源成本；平台标价不等于毛利。",
+      "机构付费能力更强，但合同、安全和支持要求也更高，不能只看席位价格。",
+      "公开资源的使用高度集中：多元拾光应关心少量案例是否持续复用，而不是尽快堆高总案例数。"
+    ],
+    "implications": [
+      "低价 API 可作为试运行资源，但应先绑定一个能被采用的工作流，让调用产生可交付结果。",
+      "为种子用户分别记录使用、贡献与付款身份；同一人可能兼任，三类数量不能互相替代。",
+      "先验证 MakeNow 案例从发现到修改再到再次使用，不宜提前开发企业权限体系。"
+    ],
+    "unknowns": [
+      "个人、开发团队和企业收入占比，付费机构数量及留存。",
+      "计算成本、上游结算、存储成本和各产品毛利。",
+      "收购协议的最终交割状态和交割后实际产品调整。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-hf-price",
+        "title": "Hugging Face Pricing",
+        "url": "https://huggingface.co/pricing",
+        "publisher": "Hugging Face",
+        "date": "动态价格页",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "PRO、Team、Enterprise 展示价格及计算存储；Enterprise 与专页口径不同。"
+      },
+      {
+        "id": "bc-hf-billing",
+        "title": "Hugging Face Billing",
+        "url": "https://huggingface.co/docs/hub/billing",
+        "publisher": "Hugging Face",
+        "date": "未标注（持续更新）",
+        "accessedAt": "2026-09-09",
+        "type": "官方计费文档",
+        "note": "订阅、计算、存储和云厂商结算边界。"
+      },
+      {
+        "id": "bc-hf-enterprise",
+        "title": "Team & Enterprise Plans",
+        "url": "https://huggingface.co/enterprise",
+        "publisher": "Hugging Face",
+        "date": "动态页面",
+        "accessedAt": "2026-09-09",
+        "type": "官方企业产品页",
+        "note": "Team 按席位，Enterprise 合同询价。"
+      },
+      {
+        "id": "bc-hf-nvidia",
+        "title": "NVIDIA to Acquire Hugging Face",
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+        "publisher": "NVIDIA / Jensen Huang",
+        "date": "2026-09-03",
+        "accessedAt": "2026-09-09",
+        "type": "交易方官方公告",
+        "note": "协议、用户及公司使用口径；公告并非收入审计或已完成交割证明。"
+      },
+      {
+        "id": "bc-hf-summer",
+        "title": "State of Open Models: Summer 2026 Observations",
+        "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+        "publisher": "Hugging Face",
+        "date": "2026-08-14",
+        "accessedAt": "2026-09-09",
+        "type": "官方生态研究",
+        "note": "仓库下载集中度，不当作使用者分布或商业采用份额。"
+      }
+    ]
+  },
+  {
+    "id": "modelscope",
+    "name": "ModelScope 魔搭",
+    "summary": "魔搭把模型、数据、工具、免费算力与开发者实践组织在一起，背后是企业和技术机构共同建设的生态。其公开报告强调开放、中立与非营利运营。对多元拾光而言，它是模型和作者的来源，也是免费资源的强竞争者；不能以阿里云收入证明魔搭社区盈利。",
+    "payer": "社区用户可获得开放资源和部分免费算力；合作企业、机构提供生态资源。付费部署或模型服务可能在云平台等相邻业务完成，但社区与这些业务之间的实际收入归属、转化和预算均未公开。",
+    "revenueModel": "社区以开放供给和资源支持促进模型使用、开发实践及企业生态；相邻云服务商业化，社区独立营收资料不足。",
+    "commercialization": [
+      {
+        "title": "社区目标包含技术采用",
+        "text": "事实：2026 年 4 月以 ModelScope 为署名方、由世界互联网大会发布的报告将魔搭描述为开放、中立、非营利的社区，建设方包括 CCF 相关技术委员会与阿里巴巴。判断：模型被发现、测试、适配并用于应用，本身能为技术生态创造价值，但不自动形成社区直接收入。",
+        "refs": [
+          "bc-ms-report"
+        ]
+      },
+      {
+        "title": "免费资源用于降低实践门槛",
+        "text": "事实：官方 xGPU 文档向创空间开发者提供免费 GPU，支持把模型做成可交互应用。判断：对初期用户，免费资源可能比低价资源更有吸引力；多元拾光若只强调价格，很难解释其额外价值。具体配额会变化，本报告未把页面未读到的日限额当作已核实价格承诺。",
+        "refs": [
+          "bc-ms-xgpu"
+        ]
+      },
+      {
+        "title": "把算力奖励绑定贡献",
+        "text": "事实：AMD 与魔搭联合激励计划列出研习社文章、Notebook 和创空间应用三条参与路径，优质实践可以获得算力资源。判断：这种激励购买的是可使用的内容、应用和技术反馈，而不仅是签到。活动公布的资源上限不等于已实际发放，也不等于社区获得同额现金。",
+        "refs": [
+          "bc-ms-amd"
+        ]
+      },
+      {
+        "title": "商业服务和社区需分账观察",
+        "text": "事实：阿里云 Model Studio 有按模型和用量收费的独立价格文档；魔搭公开资源体系与云商业服务不能合并。合理推断：开发者从社区试验走向规模使用后，可能购买云算力或模型服务，但未得到归因数据，不能称魔搭已验证某个社区到云收入的转化率。",
+        "refs": [
+          "bc-ms-cloud",
+          "bc-ms-report"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "全球用户",
+        "value": "超过 2,500 万",
+        "period": "截至 2026 年 3 月；报告于 2026 年 4 月发布",
+        "scope": "ModelScope 社区",
+        "kind": "官方自述",
+        "meaning": "署名报告披露的平台用户覆盖规模。",
+        "limitation": "未明确是注册、累计访问还是其他去重口径，不能标成月活；属于平台自述而非独立审计。",
+        "refs": [
+          "bc-ms-report"
+        ]
+      },
+      {
+        "label": "供给组织与模型",
+        "value": "超过 1,000 家贡献机构；超过 17 万个模型",
+        "period": "2026 年 4 月报告",
+        "scope": "报告中所述 ModelScope 生态",
+        "kind": "官方自述",
+        "meaning": "体现机构和个人共同提供资源的规模。",
+        "limitation": "机构不是付费企业，模型仓库数不是活跃模型数，也不是有效创作者人数。",
+        "refs": [
+          "bc-ms-report"
+        ]
+      },
+      {
+        "label": "社区经营规模",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "社区直接收入、云服务转化收入、月活及算力成本",
+        "kind": "资料不足",
+        "meaning": "无法给出社区利润、付费率或每用户贡献。",
+        "limitation": "阿里云整体收入、Qwen 使用量、免费 GPU 时数均不能填补此缺口。",
+        "refs": [
+          "bc-ms-report",
+          "bc-ms-cloud"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "模型研究与工程实践者",
+        "job": "寻找权重、数据和工具，验证、适配或部署模型。",
+        "payTrigger": "免费试验无法满足持续生产运行时，可能向相关计算服务付费。",
+        "returnReason": "模型更新、技术问题、实践材料和实验资源。",
+        "evidence": "社区报告与 xGPU 文档支持任务类型；真实消费金额和身份占比未知。",
+        "refs": [
+          "bc-ms-report",
+          "bc-ms-xgpu"
+        ]
+      },
+      {
+        "name": "模型机构、工具作者与应用贡献者",
+        "job": "让模型或工具被国内外开发者发现，收集兼容性和效果反馈。",
+        "payTrigger": "主要是供给和生态投入角色，不应视为社区会员采购者。",
+        "returnReason": "下游采用与反馈，新的模型和应用持续发布。",
+        "evidence": "报告列出机构与个人贡献，AMD 计划提供实践激励。",
+        "refs": [
+          "bc-ms-report",
+          "bc-ms-amd"
+        ]
+      },
+      {
+        "name": "希望建立开发者生态的技术企业",
+        "job": "推动开发者实际使用硬件、模型和工具链。",
+        "payTrigger": "可能投入算力、导师、活动及内容合作，现金交易数据未披露。",
+        "returnReason": "可复用案例和开发者技术反馈可能支持持续合作。",
+        "evidence": "AMD 联合项目为直接证据；整个生态合作收入不能外推。",
+        "refs": [
+          "bc-ms-amd"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：公开模型或教程被搜索发现 → 免费环境中试运行 → 改成 Notebook 或应用 → 获得反馈与资源 → 在项目中继续使用。",
+      "商业支线可能发生在企业采购云资源时，但本轮未发现能量化归因的证据，不能画成已验证收费闭环。"
+    ],
+    "economics": [
+      "大型平台有资源与合作伙伴支持，免费算力是有成本的补贴；四人团队不能按同样规模供给。",
+      "文章、Notebook 和应用的奖励需要质量评审，奖励金额之外还存在审核和维护成本。",
+      "低价 API 若只吸引短期测试，调用量增加不等于项目稳定使用；需要看任务是否被真实采用。"
+    ],
+    "implications": [
+      "从有可运行 Notebook、可交互应用和问题修复记录的作者中寻找合作对象，优先验证其交付能力。",
+      "为 MakeNow 设计贡献验收：原素材、流程、预期结果、失败边界和一次他人复现，资源跟随验收发放。",
+      "保持案例可迁移，商业理由应来自完成工作、减少调试和重复制作，而不是依赖用户离不开某家模型。"
+    ],
+    "unknowns": [
+      "社区预算来源、免费算力实际使用成本与项目资助结构。",
+      "活跃开发者、活跃贡献者和长期维护项目的定义及人数。",
+      "社区使用到云付费的实际归因、客单价与复购。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-ms-report",
+        "title": "Global Value and Practical Exploration of the AI Open Source Ecosystem",
+        "url": "https://www.wicinternet.org/pdf/GlobalValueandPracticalExplorationoftheAIOpenSourceEcosystemUnleashingtheFlywheelEffectandForgingaBornGlobalConsensus.pdf",
+        "publisher": "ModelScope / 世界互联网大会智库合作计划",
+        "date": "2026-04",
+        "accessedAt": "2026-09-09",
+        "type": "社区署名官方报告",
+        "note": "PDF 第 3 页简介及第 22 页明确 2026 年 3 月用户口径；规模为社区自述。"
+      },
+      {
+        "id": "bc-ms-xgpu",
+        "title": "Introduction to xGPU Studios",
+        "url": "https://modelscope.cn/docs/studios/xGPU",
+        "publisher": "ModelScope",
+        "date": "未标注（动态文档）",
+        "accessedAt": "2026-09-09",
+        "type": "官方产品文档",
+        "note": "官方文档索引可读到免费 xGPU 说明，本轮直接打开正文为空；只使用索引明确内容，不延伸配额和条件。"
+      },
+      {
+        "id": "bc-ms-amd",
+        "title": "AMD × 魔搭社区联合开发者激励计划",
+        "url": "https://modelscope.cn/events/247",
+        "publisher": "ModelScope / AMD",
+        "date": "页面报名截至 2026-12-31，未标发布日",
+        "accessedAt": "2026-09-09",
+        "type": "官方活动页",
+        "note": "文章、Notebook、应用贡献与算力激励；不把上限当实际发放。"
+      },
+      {
+        "id": "bc-ms-cloud",
+        "title": "Alibaba Cloud Model Studio model pricing",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "publisher": "Alibaba Cloud",
+        "date": "2026-09-07",
+        "accessedAt": "2026-09-09",
+        "type": "官方计费文档",
+        "note": "只证明相邻商业模型服务存在，不作魔搭社区收入证据。"
+      }
+    ]
+  },
+  {
+    "id": "linuxdo",
+    "name": "LINUX DO",
+    "summary": "LINUX DO 已有清楚的推广收费机制，普通成员的日常使用与商家的付费需求分开。其核心资产是活跃讨论和社区信任；社区细则列出的收益用途包括模型资源、服务器和项目支持，实际支出尚未公开核实。公开页足以验证部分规模和治理机制，但没有财务披露，不能把中转商家的收入或用户对价格的议论当作论坛收入。",
+    "payer": "明确的付费入口面向需要高级推广权限的推广方；定制推广也有公开介绍。普通阅读、提问和贡献者不是已确认的主要付款人。",
+    "revenueModel": "付费头衔关联高级推广权限，另设定制推广；论坛收益和赞助金额未公开，用户自营服务的收入不属于论坛收入。",
+    "commercialization": [
+      {
+        "title": "收费对象是希望触达社区的推广者",
+        "text": "事实：社区细则要求高级推广方订阅并佩戴指定头衔，取得较宽的发帖位置和频次；头衔失效后相关推广帖删除。判断：它出售受规则约束的推广权限，商业价值依赖人群质量和讨论信任，而非单纯会员身份。匿名订阅页未显示可核验价格，本报告不采用用户回帖中的价格作为官方报价。",
+        "refs": [
+          "bc-ld-rules",
+          "bc-ld-subscription"
+        ]
+      },
+      {
+        "title": "商业收益公开了用途，未公开金额",
+        "text": "事实：细则明确暂无收益公布计划，列出高级模型供给、服务器支出和社区项目支持等用途。判断：收费业务至少被设计为维持社区资源的一部分，但无法证明收支平衡或盈利。商家卖 API、工具、课程的收入，以及成员互相交易金额，均不能算入论坛营收。",
+        "refs": [
+          "bc-ld-rules"
+        ]
+      },
+      {
+        "title": "免费推广也有严格条件",
+        "text": "事实：管理员于 2026 年 7 月公布对公益站违规行为的处罚，说明公益项目不得通过相关商业业务、群组等方式改变原承诺。判断：论坛努力避免贡献被当作隐性广告。多元拾光不能把这里视为可以随意拉群的种子用户池，应先遵循项目类型、推广内容和引流限制。",
+        "refs": [
+          "bc-ld-enforcement",
+          "bc-ld-rules"
+        ]
+      },
+      {
+        "title": "治理与社区认同也是持续供给的成本",
+        "text": "事实：管理员的社区文章讨论了低质内容、搬运和功利交流的问题，公开细则也约束无意义回复与推广。判断：这些规定说明真实互动是需要维护的资产；规则越细，执行、申诉和管理员判断的成本也越高。现成论坛软件本身不足以产生相同的关系和内容质量。",
+        "refs": [
+          "bc-ld-letter",
+          "bc-ld-rules"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "近 30 天活跃用户",
+        "value": "115,226",
+        "period": "2026-09-09 读取的滚动 30 天",
+        "scope": "公开 About 页的 Active users",
+        "kind": "官方披露",
+        "meaning": "属于本轮少数能直接读取的活跃用户计数。",
+        "limitation": "页面未解释活跃阈值、去重和匿名访客处理；不是发帖人数，也不能直接与生成工具 MAU 横比。",
+        "refs": [
+          "bc-ld-about"
+        ]
+      },
+      {
+        "label": "近 30 天讨论量",
+        "value": "46,585 个 Topics；1,076,349 个 Posts",
+        "period": "2026-09-09 读取的滚动 30 天",
+        "scope": "About 页公开论坛统计",
+        "kind": "官方披露",
+        "meaning": "可以说明讨论和回复活动的量级。",
+        "limitation": "Topics 与 Posts 的包含关系未解释，不能简单相加；回复数量不代表有效解答或内容质量。",
+        "refs": [
+          "bc-ld-about"
+        ]
+      },
+      {
+        "label": "近 30 天新注册",
+        "value": "9,672",
+        "period": "2026-09-09 读取的滚动 30 天",
+        "scope": "About 页 Sign-ups",
+        "kind": "官方披露",
+        "meaning": "可观察注册流入规模。",
+        "limitation": "没有分来源、激活和留存数据，不代表新用户都会持续参与。",
+        "refs": [
+          "bc-ld-about"
+        ]
+      },
+      {
+        "label": "论坛月收入、付费推广方和净利润",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "LINUX DO 论坛本体",
+        "kind": "资料不足",
+        "meaning": "商业路径已可确认，但经营结果仍无法量化。",
+        "limitation": "官方明确不公布收益；公开用户讨论不能替代价目表和账目。",
+        "refs": [
+          "bc-ld-rules",
+          "bc-ld-subscription"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "实际使用 AI 与开发工具的人",
+        "job": "排查模型、工具、部署和工作流问题，找到别人已经验证过的经验。",
+        "payTrigger": "可能购买帖子提及的外部工具或 API，但不等于向论坛付款。",
+        "returnReason": "持续遇到新问题，需要同行经验和具体回复。",
+        "evidence": "公开版块与社区规则支持此任务画像；职业构成和需求频次需要用户研究。",
+        "refs": [
+          "bc-ld-rules"
+        ]
+      },
+      {
+        "name": "经验作者、答疑者与项目维护者",
+        "job": "分享可用做法，修正问题，积累他人对自己的信任。",
+        "payTrigger": "首先是内容供给者；不能假定作者有稿费。",
+        "returnReason": "同伴认可、讨论质量和自己也能得到帮助，是机制推断。",
+        "evidence": "社区邀请函和原创、精华、共建规则说明平台鼓励何种贡献。",
+        "refs": [
+          "bc-ld-letter",
+          "bc-ld-rules"
+        ]
+      },
+      {
+        "name": "工具或服务推广方",
+        "job": "接触有技术需求的人，介绍产品，回答购买前问题。",
+        "payTrigger": "需要高级推广权限或定制展示时形成明确采购需求。",
+        "returnReason": "若产生合适线索可能续订，但成交与续订数据未公开。",
+        "evidence": "高级推广订阅规则为直接证据；商家最终获客效果未核实。",
+        "refs": [
+          "bc-ld-rules",
+          "bc-ld-subscription"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：公开技术内容带来访问 → 在注册规则允许下加入 → 阅读、求助和回复 → 累积信任并持续参与。",
+      "商业支线：推广方判断人群匹配 → 按规则获得推广权限 → 展示产品与回答问题 → 观察有效线索；缺少公开转化数据。"
+    ],
+    "economics": [
+      "推广收入依赖活跃读者和信任，广告增多也可能降低体验；规模和变现并非总能同步上升。",
+      "帖子量很大时，审核、举报、申诉和基础设施成本随之增加，不能只估算服务器费用。",
+      "细则保留过往 UV/PV 宣传数据，其时间窗与当下滚动活跃统计不同，本报告未将它们混算。"
+    ],
+    "implications": [
+      "把 LINUX DO 作为公开需求观察来源，寻找具体故障、替代方案和结果要求；不要把人气帖直接当付费意愿证据。",
+      "对多元拾光，先形成能得到解答的具体问题区，再考虑推广收入；没有有效讨论时卖广告缺乏基础。",
+      "种子用户筛选可看长期项目与有效回复记录，但合作邀请仍需遵守平台规则，不直接在站内为另一个社区拉人。"
+    ],
+    "unknowns": [
+      "Active users 的精确定义及机器人、重复账号处理。",
+      "付费头衔的当前官方价格、订阅数量、续费率与商家效果。",
+      "收入实际支出、管理员工时以及资源补贴的持续程度。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-ld-about",
+        "title": "About LINUX DO / Site Statistics",
+        "url": "https://linux.do/about",
+        "publisher": "LINUX DO",
+        "date": "动态统计，2026-09-09 读取",
+        "accessedAt": "2026-09-09",
+        "type": "官方公开统计页",
+        "note": "全程未登录；30 天数据为读取时快照，动态页以后会变化。"
+      },
+      {
+        "id": "bc-ld-rules",
+        "title": "LINUX DO 社区细则",
+        "url": "https://linux.do/guidelines",
+        "publisher": "LINUX DO",
+        "date": "版本 2608252340（2026-08-25）",
+        "accessedAt": "2026-09-09",
+        "type": "官方社区规则",
+        "note": "高级推广、定制推广与收益规划；不从规范推断实际收入。"
+      },
+      {
+        "id": "bc-ld-subscription",
+        "title": "LINUX DO 订阅入口",
+        "url": "https://linux.do/s",
+        "publisher": "LINUX DO",
+        "date": "未标注（动态页面）",
+        "accessedAt": "2026-09-09",
+        "type": "官方入口但价格不可见",
+        "note": "匿名读取返回 empty，未核实价格或完成任何订阅。"
+      },
+      {
+        "id": "bc-ld-enforcement",
+        "title": "封禁两例公益站违规",
+        "url": "https://linux.do/t/topic/2587473",
+        "publisher": "LINUX DO 管理员公告",
+        "date": "2026-07-15",
+        "accessedAt": "2026-09-09",
+        "type": "官方执行公告",
+        "note": "证明公益推广条件实际执行，不采用回帖或私人身份信息。"
+      },
+      {
+        "id": "bc-ld-letter",
+        "title": "秘密花园园丁邀请函",
+        "url": "https://linux.do/t/topic/847468",
+        "publisher": "LINUX DO 管理员",
+        "date": "2025 年，原页未在本轮确认精确日期",
+        "accessedAt": "2026-09-09",
+        "type": "官方社区文章",
+        "note": "用于理解内容和交流治理目标，不作用户结构统计。"
+      }
+    ]
+  },
+  {
+    "id": "dify",
+    "name": "Dify",
+    "summary": "Dify 的收入来自让工作流长期运行和被组织管理，而不是让人浏览模板。公开代码、免费试用和插件降低进入成本；云订阅、企业能力和服务伙伴承接更复杂的生产需求。对多元拾光最有用的借鉴，是把“做过一个案例”推进到“业务持续在用”，而不是尽快扩充工作流广场。",
+    "payer": "个人开发者、小团队的工作区负责人，以及采购私有部署、管理、安全和支持能力的企业。最终使用生成应用的员工或客户，往往不是向 Dify 付费的人。",
+    "revenueModel": "Cloud 工作区订阅、企业授权与支持，伙伴通过转售和服务获得收入；插件目录不等于已成熟的付费交易市场。",
+    "commercialization": [
+      {
+        "title": "工作区订阅按使用阶段分层",
+        "text": "事实：Cloud 的 Professional 标价每工作区每月 59 美元、年付 590 美元；Team 为每月 159 美元、年付 1,590 美元，均未含适用税。免费 Sandbox 用于试验，收费层增加协作与资源。判断：收费触发主要是项目持续使用后，团队和容量超出试用边界，而不是第一次发现一个模板。",
+        "refs": [
+          "bc-dify-cloud"
+        ]
+      },
+      {
+        "title": "平台服务与模型费用不是一笔钱",
+        "text": "事实：官方说明内含消息额度可用于体验模型，用完后可使用自己的模型 API 凭证。判断：Dify 卖的是工作流构建和运行环境，并不必然取得所有模型调用收入。多元拾光的 API 业务与 MakeNow 也需要分别核算，才能知道用户是在购买便宜模型，还是购买制作效率。",
+        "refs": [
+          "bc-dify-price",
+          "bc-dify-cloud"
+        ]
+      },
+      {
+        "title": "企业收入还包括授权和管理需求",
+        "text": "事实：企业方案提供私有部署、多工作区、SSO、支持等能力，并以合同询价。代码许可证允许部分商业使用，但对多租户及前端标识修改设有额外条件，不能简单说社区版只准非商业使用。判断：这些边界把免费采用与更复杂的商业部署分开，具体适用需按实际部署和合同判断。",
+        "refs": [
+          "bc-dify-price",
+          "bc-dify-license"
+        ]
+      },
+      {
+        "title": "服务伙伴承接落地工作",
+        "text": "事实：伙伴计划允许转售企业方案，并由服务伙伴对技术服务、培训及相关产品自行定价。判断：行业实施不必全部由平台自身完成；服务商有机会赚交付收入。该收入不全属于 Dify，也没有公开统一抽成率。",
+        "refs": [
+          "bc-dify-partners"
+        ]
+      },
+      {
+        "title": "模板与插件先促使用，交易尚不能高估",
+        "text": "事实：Cloud 对照表将 Marketplace 标为当前免费，伙伴页同时说明插件和工具有商业化机会。判断：供给者的获客、服务销售与平台直接收取市场佣金不是同一模式。未查到足以验证整体交易额、抽成收入及作者收益的数据。",
+        "refs": [
+          "bc-dify-cloud",
+          "bc-dify-partners"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "label": "运行机器数量",
+        "value": "超过 140 万台",
+        "period": "2026-03-10 创始人公告",
+        "scope": "全球部署机器",
+        "kind": "官方自述",
+        "meaning": "说明部署传播范围。",
+        "limitation": "机器数不是独立用户；重复部署、测试环境和活跃状态未说明，不能视为 MAU 或企业客户。",
+        "refs": [
+          "bc-dify-funding"
+        ]
+      },
+      {
+        "label": "团队与企业采用",
+        "value": "超过 2,000 个团队、280 家企业",
+        "period": "2026-03-10 创始人公告",
+        "scope": "公告所述在 Dify 上构建解决方案的组织",
+        "kind": "官方自述",
+        "meaning": "可作为组织采用的公开信号。",
+        "limitation": "原文未明确这些均为付费客户，团队与企业是否重叠亦未说明；不相加，不乘套餐价估收入。",
+        "refs": [
+          "bc-dify-funding"
+        ]
+      },
+      {
+        "label": "融资规模",
+        "value": "3,000 万美元 Pre-A 轮",
+        "period": "2026-03-10 公告",
+        "scope": "Dify 公司融资",
+        "kind": "官方自述",
+        "meaning": "反映用于产品与企业采用建设的外部资本支持。",
+        "limitation": "融资不是营收或盈利，不能用来证明订阅模式已达到某个利润水平。",
+        "refs": [
+          "bc-dify-funding"
+        ]
+      },
+      {
+        "label": "年度经常性收入与付费留存",
+        "value": "未公开核实",
+        "period": "截至 2026-09-09",
+        "scope": "Cloud、Enterprise 与生态收入分项",
+        "kind": "资料不足",
+        "meaning": "收费路径清楚，销售结果仍有资料缺口。",
+        "limitation": "价格、部署量、GitHub 星标和融资不能替代收款与续费数据。",
+        "refs": [
+          "bc-dify-price",
+          "bc-dify-funding"
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "name": "独立开发者与小型 AI 应用团队",
+        "job": "快速把模型、知识和工具接成可运行应用。",
+        "payTrigger": "应用变多、知识量增大或需要协作时升级工作区。",
+        "returnReason": "应用在真实业务中持续使用，需要调试、改进和新流程。",
+        "evidence": "Cloud 套餐明确描述目标人群；实际回访与升级行为为机制推断。",
+        "refs": [
+          "bc-dify-cloud"
+        ]
+      },
+      {
+        "name": "企业业务负责人和 AI 平台团队",
+        "job": "把文档审核、内部知识、客服或运营流程变成可维护系统。",
+        "payTrigger": "稳定运行、私有部署、权限、管理和支持需求。",
+        "returnReason": "流程已融入业务，数据与维护工作持续发生。",
+        "evidence": "融资公告列出真实工作类型，企业页列管理能力；不代表每类客户都已量化盈利。",
+        "refs": [
+          "bc-dify-funding",
+          "bc-dify-price"
+        ]
+      },
+      {
+        "name": "集成商、顾问与插件开发者",
+        "job": "交付行业方案，补充插件与连接器，帮助客户部署和培训。",
+        "payTrigger": "通常先作为供给或渠道；可通过转售和服务向自己的客户收费。",
+        "returnReason": "维护客户项目、持续适配模型和业务系统。",
+        "evidence": "官方伙伴规则支持这类角色及服务收入，未公开伙伴平均收入。",
+        "refs": [
+          "bc-dify-partners"
+        ]
+      }
+    ],
+    "funnel": [
+      "机制推断：开源代码、教程或模板带来试用 → 接入真实资料 → 做成应用 → 多次运行 → 团队协作或资源升级。",
+      "企业支线：部门先验证流程 → IT 与采购参与 → 选择企业方案及服务伙伴 → 持续维护；未公开各阶段转化率。"
+    ],
+    "economics": [
+      "开源降低试用门槛，但云运行、运维、支持和企业销售都有成本，免费采用规模不能直接说明盈利。",
+      "自带模型 API 意味着平台订阅费与模型账单分开，用户总成本应同时看两者。",
+      "实施收入若由伙伴取得，能扩大交付覆盖，也会带来质量和支持边界管理工作。"
+    ],
+    "implications": [
+      "为 MakeNow 选择有固定产出频率的工作，如反复制作同类商品素材；稳定复做比一次惊艳演示更接近订阅理由。",
+      "种子用户中区分操作者、内容作者和预算负责人；给工具评价的人可能没有采购权。",
+      "先用一个可靠作者和少量真实任务用户验证交付，再考虑培养服务伙伴，不提前承诺行业解决方案。"
+    ],
+    "unknowns": [
+      "Cloud 和 Enterprise 的实际付费组织数量、收入占比与续费。",
+      "部署机器的活跃口径及试验环境比例。",
+      "插件付费交易、抽成规则、伙伴贡献收入与实施成功率。",
+      "真实用户的职业、地区、年龄与付费能力分布未公开核实；本报告按任务划分的人群不能当作其占比调查。"
+    ],
+    "sources": [
+      {
+        "id": "bc-dify-cloud",
+        "title": "Dify Cloud Pricing",
+        "url": "https://dify.ai/pricing/dify-cloud",
+        "publisher": "Dify",
+        "date": "动态价格页",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "区分月付与年付、工作区而非每席计价；Marketplace 当前免费。"
+      },
+      {
+        "id": "bc-dify-price",
+        "title": "Dify Pricing / Self-Hosted & Enterprise",
+        "url": "https://dify.ai/pricing",
+        "publisher": "Dify",
+        "date": "动态价格页",
+        "accessedAt": "2026-09-09",
+        "type": "官方价格页",
+        "note": "Enterprise 管理能力、社区部署与消息额度边界。"
+      },
+      {
+        "id": "bc-dify-license",
+        "title": "Dify Open Source License",
+        "url": "https://github.com/langgenius/dify/blob/main/LICENSE",
+        "publisher": "LangGenius",
+        "date": "持续维护，文件版权 2025",
+        "accessedAt": "2026-09-09",
+        "type": "官方许可证原文",
+        "note": "可商业使用但存在额外条件，不表述为纯 Apache 2.0 或禁止全部商用。"
+      },
+      {
+        "id": "bc-dify-partners",
+        "title": "Dify Partner Program",
+        "url": "https://dify.ai/partners",
+        "publisher": "Dify",
+        "date": "未标注（动态页面）",
+        "accessedAt": "2026-09-09",
+        "type": "官方伙伴规则",
+        "note": "转售、服务与市场伙伴；机会不等于交易额。"
+      },
+      {
+        "id": "bc-dify-funding",
+        "title": "Dify Raises $30M: Tomorrow's Organizations Will Be Built by People and Agents",
+        "url": "https://dify.ai/blog/dify-raises-30m-tomorrow-s-organizations-will-be-built-by-people-and-agents",
+        "publisher": "Dify / 创始人 Luyu Zhang",
+        "date": "2026-03-10",
+        "accessedAt": "2026-09-09",
+        "type": "官方融资公告",
+        "note": "机器数、采用团队与企业口径；未明确全部为付费客户。"
+      }
+    ]
+  }
+]
