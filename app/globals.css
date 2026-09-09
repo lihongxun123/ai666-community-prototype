@@ -312,3 +312,24 @@ body {
 .data-gaps ul{padding-left:24px;margin-top:12px}.data-gaps li{font-size:14px;color:#65715f;margin:8px 0}
 .data-sources .source-row p{font-size:13px}
 @media(max-width:760px){.public-data-report h2{font-size:21px}.data-summary{font-size:17px}.data-bar-row{grid-template-columns:110px minmax(0,1fr) 77px;gap:8px}.data-bar-row>button{font-size:12px}.data-bar-value{font-size:13px}.data-bar-row small{font-size:10px}.data-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}.data-highlights strong{font-size:24px}.data-highlights>div{padding:15px 10px 15px 0}.data-trend{padding:16px}.data-trend-columns{gap:10px}}
+
+.evidence-update-report,.evidence-profile{font-size:1rem;line-height:1.9;min-width:0;overflow-wrap:anywhere}
+.evidence-update-report section{margin-block:2.6rem}
+.evidence-update-meta{font-size:.875rem;color:#65715f;line-height:1.8}
+.evidence-inline-refs{display:block;margin-top:.5rem;font-size:.875rem;line-height:1.8}
+.evidence-inline-refs a{color:#35553d;text-decoration:underline;text-underline-offset:3px;margin-right:.6rem;overflow-wrap:anywhere}
+.evidence-coverage-table{border-collapse:collapse;width:100%;min-width:900px;font-size:.9375rem;line-height:1.9}
+.evidence-coverage-table th,.evidence-coverage-table td{text-align:left;vertical-align:top;padding:1rem;border-bottom:1px solid var(--report-line);width:27%}
+.evidence-coverage-table th:first-child{width:19%}
+.evidence-coverage-table thead{background:#edf1e7}
+.evidence-coverage-table small{display:block;font-size:.875rem;font-weight:400;color:#65715f;margin:.5rem 0}
+.evidence-coverage-table p{margin:0}
+.evidence-profile{margin:3rem 0;border-top:2px solid #6c8560;padding-top:1.5rem;scroll-margin-top:6rem}
+.evidence-dimension{margin-top:2rem}
+.evidence-claim{padding:1.25rem 0;border-bottom:1px solid var(--report-line)}
+.evidence-claim-label{display:flex;gap:.75rem;flex-wrap:wrap;font-size:.875rem;color:#52674c}
+.evidence-claim-label span:first-child{font-weight:600}
+.evidence-claim dl{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:.5rem 1rem;font-size:.9375rem;margin-top:1rem}
+.evidence-claim dt{color:#65715f}.evidence-claim dd{margin:0}
+.evidence-interpretations{margin:2rem 0}.evidence-inference{border-left:2px solid #8d9c84;padding-left:1rem}
+@media(max-width:760px){.evidence-claim dl{grid-template-columns:1fr;gap:.25rem}.evidence-claim dd{margin-bottom:.65rem}.evidence-update-report h2,.evidence-profile h2{font-size:1.4rem}}

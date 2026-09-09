@@ -3,7 +3,7 @@ import plan from '@/lib/validation-plan.json';
 
 export function ValidationOverview(){
  return <div className="validation-report content-report">
-  <div className="page-heading"><p className="eyebrow">从竞品研究进入真实任务验证</p><h1>先完成12次访谈，<br/>再选一个试用任务。</h1><p className="lead">{plan.researchQuestion}</p></div>
+  <div className="page-heading"><p className="eyebrow">后续附录 · 不计入竞品调研进度</p><h1>多元拾光自身的<br/>用户研究与试用方案</h1><p className="lead">这份材料用于后续验证自身需求，尚未启动。当前主线继续补足18个竞品的商业化、规模与实际使用证据。</p></div>
   <div className="validation-start"><div><strong>{plan.status}</strong><p>{plan.recruitmentStatus}</p></div><div className="validation-downloads"><a className="primary-button" href="/research-kit/seed-validation.xlsx" download>下载访谈与试用记录表</a><a className="text-button" href="/research-kit/interview-guide.md" download>下载招募文案与执行手册 ↗</a></div></div>
   <p className="data-scope-note">本页是执行方案；实际结果填写在下载的表格中，不会自动回传到网页。12次是计划访谈数，尚未计入任何真实受访者。{plan.scope}</p>
   <nav className="article-toc" aria-label="验证方案章节">{[['validation-today','今天先做什么'],['validation-groups','找谁与如何招募'],['validation-interview','筛选与访谈'],['validation-decide','怎样选择方向'],['validation-pilot','5人任务试用'],['validation-author','作者试交'],['validation-schedule','时间与投入']].map(([id,label])=><a href="#validation" key={id} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}}>{label}</a>)}</nav>

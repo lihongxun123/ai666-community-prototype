@@ -29,7 +29,7 @@ export function BusinessOverview({ data, insights, onSelect }: {
       <dt>供给 / 需求</dt><dd>模型、应用、作品、下载和星标衡量不同的活动。资源多不证明资源被反复使用；创作者多不证明消费者愿意付费。</dd>
       <dt>公司 / 产品 / 社区</dt><dd>集团收入、工具收入与社区收入分开。融资或收购对价说明资本安排，不能作为销售或利润；用户画像也不能用母平台人群替代。</dd>
     </dl></section>
-    <div id="business-findings">{insights.map(insight => <section className="essay-section business-insight" key={insight.title}><h2>{insight.title}</h2>{insight.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}{insight.refs.length > 0 && <div className="citations business-citations">{insight.refs.map(ref => <a href={ref.url} key={ref.url} target="_blank" rel="noreferrer">{ref.title}</a>)}</div>}</section>)}</div>
+    <div id="business-findings">{insights.slice(0,3).map(insight => <section className="essay-section business-insight" key={insight.title}><h2>{insight.title}</h2>{insight.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}{insight.refs.length > 0 && <div className="citations business-citations">{insight.refs.map(ref => <a href={ref.url} key={ref.url} target="_blank" rel="noreferrer">{ref.title}</a>)}</div>}</section>)}<details className="data-gaps"><summary>后续附录：多元拾光的用户研究与试用构想</summary><p>以下为自身业务验证建议，尚未执行，不计入竞品调研进度。</p>{insights.slice(3).map(insight=><section className="essay-section business-insight" key={insight.title}><h3>{insight.title}</h3>{insight.paragraphs.map((paragraph,index)=><p key={index}>{paragraph}</p>)}<div className="citations business-citations">{insight.refs.map(ref=><a href={ref.url} key={ref.url} target="_blank" rel="noreferrer">{ref.title}</a>)}</div></section>)}</details></div>
   </div>;
 }
 

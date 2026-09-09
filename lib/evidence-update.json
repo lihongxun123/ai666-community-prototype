@@ -1,0 +1,2833 @@
+{
+  "accessedAt": "2026-09-09",
+  "profiles": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "summary": "新增证据把两种交易分清了：购买生成会员，不等于获得所有资源的商用许可；出售工作流则涉及独家代理、分成与退款责任。任务页可以证明作者讲解过失败处理，尚不能证明买方成功交付或续用。",
+      "claims": [
+        {
+          "id": "lib-v7-c1",
+          "dimension": "commercial",
+          "statement": "官方商用说明明确：会员/API用户仍须检查底模、LoRA及工作流的许可组合，不能把会员写成全站资源的通用商用授权。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "页面未标更新日；本轮观察2026-09-09",
+          "scope": "LiblibAI图片输出及资源组合",
+          "limitation": "这是平台规则摘要，不是对特定图片权利状态的法律结论。",
+          "sourceIds": [
+            "lib-v7-s1"
+          ]
+        },
+        {
+          "id": "lib-v7-c2",
+          "dimension": "commercial",
+          "statement": "会员工作流计划要求独家代理；作者不得把相同或易混淆工作流交第三方商业代理。分成比例未公开固定值；部分权属变化引起的交易退款，协议要求作者配合。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "更新2025-09-08；生效2025-09-15",
+          "scope": "主动加入会员工作流商业许可计划的作者",
+          "limitation": "不适用于所有免费工作流，也不能据此估算作者净收入或平台利润。",
+          "sourceIds": [
+            "lib-v7-s2"
+          ]
+        },
+        {
+          "id": "lib-v7-c3",
+          "dimension": "usage",
+          "statement": "重读SDXL商品精修案例：作者具体说明ControlNet撕裂、色偏和文字保留如何调整，并邀请返图。它是维护能力线索；页面没有可核验的买方采用记录。",
+          "change": "corroborated",
+          "evidenceClass": "author-description",
+          "period": "发布日期未显示；2026-09-09复核",
+          "scope": "v5既有定向样本中的1个工作流",
+          "limitation": "作者说明，不是本轮复现实验；没有新增用户样本，不增加v5采用人数。",
+          "sourceIds": [
+            "lib-v7-s3"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "付费价值至少需要拆成运行资源、具体资源许可与工作流交易。低价算力只解释第一项，不能替代其余两项的选择与交付工作。",
+          "sourceIds": [
+            "lib-v7-s1",
+            "lib-v7-s2"
+          ]
+        },
+        {
+          "text": "现有证据更能支持“作者在销售方法和处理边界”，尚不支持“模型库大所以用户高留存”。下一项最有价值的材料是买方如何采用、失败后如何处理及是否再次购买。",
+          "sourceIds": [
+            "lib-v7-s2",
+            "lib-v7-s3"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "Liblib社区独立收入、当前MAU和付费人数是多少？",
+          "whyMissing": "公开报道仍混有集团、LibTV、星流和LiblibAI主体；本轮没有取得可独立核验的社区财务或去重用户披露。",
+          "nextEvidence": "有日期、产品范围及分母定义的公司披露；不把集团ARR、融资额或媒体转述升格为社区业绩。"
+        },
+        {
+          "question": "工作流买方能否交付，作者平均实际到手多少？",
+          "whyMissing": "现有任务页只有供给说明，分成协议没有收入分布和实际结算样本。",
+          "nextEvidence": "公开买方返图/引用链、卖方脱敏结算自述及维护记录交叉核对。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "lib-v7-s1",
+          "title": "LiblibAI 创作图片商业使用规范",
+          "url": "https://www.liblib.art/activities/e0aa50f25b874722ac60be71adb8c9cb/Commercial_Guidelines",
+          "publisher": "LiblibAI",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "会员仍需检查组合资源许可；FAQ中的会员存续期说明。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "lib-v7-s2",
+          "title": "会员工作流授权许可协议",
+          "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+          "publisher": "LiblibAI",
+          "publishedAt": "更新2025-09-08；生效2025-09-15",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "第5条独家代理、第6条分成、第7.2条特定退款责任。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "lib-v7-s3",
+          "title": "电商产品精修与背景替换（SDXL版）V1.0",
+          "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+          "publisher": "LiblibAI公开作者内容",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "输入修正、文字保护、色差/撕裂处理；来自v5既有样本。",
+          "limitation": "正文可读；未执行工作流，没有完整买方评论或采用证据。"
+        }
+      ]
+    },
+    {
+      "id": "runninghub",
+      "name": "RunningHub",
+      "summary": "本轮补到了预付资源的有效期、作者结算条件及一个围绕批量调用开发的公开客户端。另发现普通服务许可与企业服务定位之间需要解释的范围差异；不能把会员自动当作完整商用授权。",
+      "claims": [
+        {
+          "id": "rh-v7-c1",
+          "dimension": "commercial",
+          "statement": "付费协议将开通会员与购买RH币分开，单独购买RH币有效期1年；额度耗尽需继续购买。退款有严重服务瑕疵、法规要求等例外，不能简化为绝对不可退。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "未标更新日期；2026-09-09观察",
+          "scope": "runninghub.cn普通付费服务协议",
+          "limitation": "未核个人套餐实付价；到期和退款条款不证明实际执行情况。",
+          "sourceIds": [
+            "rh-v7-s1"
+          ]
+        },
+        {
+          "id": "rh-v7-c2",
+          "dimension": "commercial",
+          "statement": "普通付费协议二2.2默认授予个人、非商业用途许可并保留另有约定；用户协议又说明生成内容权利归用户或原权利人。两处说明对象不同，不能合并成“付会员即可任意商用”。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "2026-09-09观察；用户协议页面检索标示2026年6月，未据此推定生效日",
+          "scope": "普通服务使用许可、生成内容归属与企业服务需分别确认",
+          "limitation": "不据此断言RunningHub全面禁止商用；企业API或具体模型可能有独立约定，本轮未取得完整对应授权。",
+          "sourceIds": [
+            "rh-v7-s1",
+            "rh-v7-s2"
+          ]
+        },
+        {
+          "id": "rh-v7-c3",
+          "dimension": "commercial",
+          "statement": "作者激励按有效运行人次（含API）、收藏及原创程度计算；每周结算、月度打款，非原创模型不参与运行分成。规则没有承诺每次运行固定金额。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "页面无更新日；2026-09-09观察",
+          "scope": "RunningHub创作者激励计划",
+          "limitation": "未取得实际作者收益账单、有效运行去重算法或补贴占比。",
+          "sourceIds": [
+            "rh-v7-s3"
+          ]
+        },
+        {
+          "id": "rh-v7-c4",
+          "dimension": "scale",
+          "statement": "Semrush当前公开页仍显示2026年7月runninghub.cn全设备访问估计138万、会话22:47；它只覆盖该域名，不能成为RunningHub用户总量。",
+          "change": "corroborated",
+          "evidenceClass": "third-party-estimate",
+          "period": "数据2026-07；页面更新2026-08-12",
+          "scope": "runninghub.cn；All Devices；Visits",
+          "limitation": "沿用v4可比口径，非新月份；不与.ai去重合计，不换算MAU、付费率或留存。",
+          "sourceIds": [
+            "rh-v7-s4"
+          ]
+        },
+        {
+          "id": "rh-v7-c5",
+          "dimension": "usage",
+          "statement": "公开非官方客户端的README及更新记录把批量导入、失败重试、自动保存、历史回看和价格预估列为功能；部分并行能力仍标“需测试”。",
+          "change": "new",
+          "evidenceClass": "author-description",
+          "period": "README未标统一更新日；2026-09-09观察",
+          "scope": "1个围绕RunningHub API开发的公开仓库",
+          "limitation": "仅核公开软件说明，没有安装运行；代码项目存在不等于平台用户普遍使用、作者已付费或功能可靠。",
+          "sourceIds": [
+            "rh-v7-s5"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "围绕API出现批量处理、自动归档和重试工具，说明“重复提交到结果管理”是可观察的开发方向。它比泛泛说用户需要效率更具体，但缺少真实安装量与日常使用记录。",
+          "sourceIds": [
+            "rh-v7-s5"
+          ]
+        },
+        {
+          "text": "算力定价、生成内容权利归属与服务许可应分开核对。普通协议的表述和企业业务之间尚缺明确衔接，报告应留出待确认项，而非替平台作授权判断。",
+          "sourceIds": [
+            "rh-v7-s1",
+            "rh-v7-s2"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "RunningHub独立收入、付费活跃人数和调用规模是多少？",
+          "whyMissing": "港交所海马云申请材料原PDF仍未取得全文；搜索命中附录但原站读取失败。集团云游戏/云桌面数据不能归给RunningHub。",
+          "nextEvidence": "继续核港交所完整申请文件及最新重报版本，精确定位RunningHub小节；当前不录索引数字。已尝试https://www1.hkexnews.hk/app/sehk/2026/108176/a130091/sehk26013002523.pdf及sehk26013002550.pdf。"
+        },
+        {
+          "question": "普通会员、企业API及各模型的商用许可如何衔接？",
+          "whyMissing": "普通协议有默认非商业许可，企业API存在独立业务入口，但对应优先适用关系与授权细则尚缺。",
+          "nextEvidence": "具体企业API服务条款、模型授权页和官方公开FAQ；不借导航站的一般商用宣传填空。"
+        },
+        {
+          "question": "哪些买方在持续使用批量流程？",
+          "whyMissing": "本轮得到开发者公开产物，没有可核的任务完成、客户采用或再次调用数据。",
+          "nextEvidence": "已使用该客户端的公开问题单、维护记录、项目交付案例与复用结果。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "rh-v7-s1",
+          "title": "RunningHub付费服务协议",
+          "url": "https://www.runninghub.cn/defray-protocol",
+          "publisher": "RunningHub",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "二2.2默认许可；三2.2 RH币1年；四收费与退款例外。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "rh-v7-s2",
+          "title": "RunningHub用户协议",
+          "url": "https://www.runninghub.cn/protocol",
+          "publisher": "RunningHub",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "2.7普通服务许可；10.2生成内容权利归属，不能混成一项权利。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "rh-v7-s3",
+          "title": "创作者激励计划",
+          "url": "https://www.runninghub.cn/creator-reward",
+          "publisher": "RunningHub",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "运行、收藏、原创、周结算和月度提现周期。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "rh-v7-s4",
+          "title": "runninghub.cn July 2026 Traffic Stats",
+          "url": "https://www.semrush.com/website/runninghub.cn/overview/",
+          "publisher": "Semrush",
+          "publishedAt": "2026-08-12",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "7月All Devices Visits及会话时长。",
+          "limitation": "第三方估计；公开页没有完整样本与去重方法，不能当后台数据。"
+        },
+        {
+          "id": "rh-v7-s5",
+          "title": "RunningHub AI应用客户端（非官方）README与更新记录",
+          "url": "https://github.com/colorAi/RunningHub-AI-Client",
+          "publisher": "公开项目维护者 / GitHub",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "批量提交、失败重试、自动保存、历史和价格预估；并行项需测试。",
+          "limitation": "公开代码说明个案；未安装运行；不记录个人联系方式，不推断实际客户或付款。"
+        }
+      ]
+    },
+    {
+      "id": "tusi",
+      "name": "吐司 / Tensor.Art",
+      "summary": "国内补贴暂停与国际站调整仍须分开。新增的国际站内容迁移规则进一步表明，TensorArt、TensorHub和Canvas不能混成同一套资源及人群口径；2024年的生成与投稿规模只能当历史基线。",
+      "claims": [
+        {
+          "id": "ta-v7-c1",
+          "dimension": "commercial",
+          "statement": "吐司暂停旧创作者激励时保留直接付费、算力返还及历史收益，并取消原最低提现金额门槛；公告明确不影响Tensor.Art激励。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "公告2026-05-20；旧激励停止2026-06-01",
+          "scope": "tusi.cn国内站",
+          "limitation": "新补充为提现门槛与计划范围，核心暂停事实为旧结论复核；不证明作者收入提升或平台亏损。",
+          "sourceIds": [
+            "ta-v7-s1"
+          ]
+        },
+        {
+          "id": "ta-v7-c2",
+          "dimension": "commercial",
+          "statement": "Tensor.Art调整后仅计算符合规则的Pro用户使用，普通未开Pro段工具不再获激励；Buffet单独付费仍保留，Hub不在这次调整范围内。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "公告2026-07-15；生效2026-07-22",
+          "scope": "Tensor.Art主站；不含TensorHub或吐司",
+          "limitation": "未披露调整前后作者留存、收入中位数和付费规模。",
+          "sourceIds": [
+            "ta-v7-s2"
+          ]
+        },
+        {
+          "id": "ta-v7-c3",
+          "dimension": "commercial",
+          "statement": "TensorHub采用单独Token体系，不提供常规每日免费Credits或任务奖励；TensorArt会员不能直接兑换为Hub Token。公告中的一次性换币活动已于2025-12-15截止。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "公告更新2025-11-13；2026-09-09重新读取",
+          "scope": "TensorHub迁移说明；不是吐司定价或新列竞品",
+          "limitation": "历史公告证明资源和账户边界；不把过期迁移优惠列为现在可用权益。",
+          "sourceIds": [
+            "ta-v7-s3"
+          ]
+        },
+        {
+          "id": "ta-v7-c4",
+          "dimension": "scale",
+          "statement": "吐司2024年报自述网站用户超过320万、日均生成30万以上、每天发布2万以上帖子；这些是不同单位，年报没有给出当年去重活跃作者或2026年续用人数。",
+          "change": "new",
+          "evidenceClass": "official-disclosure",
+          "period": "2024年报；发布2024-12-28",
+          "scope": "吐司年报所述网站；跨站统计范围未明",
+          "limitation": "用户规模是旧值复核，新增是生成与帖子口径审查；不能用帖子/图片相除算分享率，也不能与TensorArt相加。",
+          "sourceIds": [
+            "ta-v7-s4"
+          ]
+        },
+        {
+          "id": "ta-v7-c5",
+          "dimension": "usage",
+          "statement": "SUPIR工作流作者说明参数会在贴近原图与增强效果间取舍，并记录小图默认采样器报错及替换方法。该页最后更新为2025-01-31，不能用它证明作者近30天还在维护。",
+          "change": "corroborated",
+          "evidenceClass": "author-description",
+          "period": "页面更新2025-01-31；2026-09-09复核",
+          "scope": "v5既有Tensor.Art工作流1条",
+          "limitation": "作者自述，未实际运行，未新增买方采用或当前连续供给样本。",
+          "sourceIds": [
+            "ta-v7-s5"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "暂停补贴没有消灭作者交易，但会改变收入来源。最值得补的数据是直接付费能否接住失去补贴后的供给，而不是继续展示累计上传规模。",
+          "sourceIds": [
+            "ta-v7-s1",
+            "ta-v7-s2"
+          ]
+        },
+        {
+          "text": "主站与专门站点可以共享部分内容却使用不同消费资源。分析地域和流量变化时，应先核迁移与测量覆盖；没有证据把变化全部归因于体验变差或用户流失。",
+          "sourceIds": [
+            "ta-v7-s3",
+            "ta-v7-s4"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "暂停或收紧补贴后的作者和买方还剩多少？",
+          "whyMissing": "未获得2026年调整前后可比活跃作者、净新增作品、直接成交及续费数据。",
+          "nextEvidence": "按同一作者队列与同一时间窗追踪公开更新/交易反馈，另找平台公开计划复盘。"
+        },
+        {
+          "question": "吐司、TensorArt、TensorHub、Canvas现行账户与消耗怎样关联？",
+          "whyMissing": "历史迁移公告可核，但目前各入口账户关联、实际套餐、每次扣费和跨站用户重叠未完整核验。",
+          "nextEvidence": "分别记录各站现行帮助页和结算前权益说明；不合并积分、Token、Energy或用户数。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "ta-v7-s1",
+          "title": "致吐司创作者的一封信：创作者激励计划调整",
+          "url": "https://tusi.cn/articles/1000707189326777005",
+          "publisher": "吐司",
+          "publishedAt": "2026-05-20",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "6月停止旧激励，保留直接付费与历史提现、取消最低提现门槛；不影响Tensor.Art。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "ta-v7-s2",
+          "title": "Changes to the TensorArt Creator Incentive Program",
+          "url": "https://tensor.art/articles/1021600128873589993",
+          "publisher": "Tensor.Art",
+          "publishedAt": "2026-07-15",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "7月22日起Pro使用及工具激励限制，Hub排除、Buffet保留。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "ta-v7-s3",
+          "title": "TensorHub - New Home for Your Creations & TA Policy Change",
+          "url": "https://www.tensor.art/articles/930981988284769341",
+          "publisher": "Tensor.Art",
+          "publishedAt": "2025-11-13",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Token与Credits分离、历史一次性换币截止、会员不可直接兑换。",
+          "limitation": "历史迁移政策；没有把旧优惠当现行权益，也没有访问或采样敏感内容。"
+        },
+        {
+          "id": "ta-v7-s4",
+          "title": "TA 2024年度回忆报告",
+          "url": "https://tusi.cn/articles/812163171642236235",
+          "publisher": "吐司",
+          "publishedAt": "2024-12-28",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "网站用户、日均生成和日发帖是不同口径；历史自报数据。",
+          "limitation": "非审计；没有完整去重口径、分母或当前值。"
+        },
+        {
+          "id": "ta-v7-s5",
+          "title": "Enhance Image with SUPIR + UPSCALE",
+          "url": "https://tensor.art/workflows/824922304248158170",
+          "publisher": "Tensor.Art公开作者内容",
+          "publishedAt": "更新2025-01-31；首次发布日期未核",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "相似性/增强取舍及小图错误修正。",
+          "limitation": "最后更新时间非首次发布日期；本轮未运行。"
+        }
+      ]
+    },
+    {
+      "id": "civitai",
+      "name": "Civitai",
+      "summary": "官方代码库的实现说明定义了作者资格、收入池、结算与提现，但本轮未确认生产账号资格或线上兑现。新增用户讨论显示资源收费存在抵触，仍不足以判断作者收入是否稳定。",
+      "claims": [
+        {
+          "id": "g7-civi-qualification",
+          "dimension": "commercial",
+          "statement": "官方开发说明将加入 Creator Program 的条件列为 Creator Score 至少40,000、有效 Bronze/Silver/Gold 会员且未被封禁。赚到 Buzz 与取得提现资格是两个阶段。",
+          "change": "new",
+          "evidenceClass": "implementation-doc",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "官方代码库 Creator Program 实现说明；非本轮线上开户实测",
+          "limitation": "主分支文档描述实现，尚未核对生产账户资格页；不能视为所有作者均可兑现。",
+          "sourceIds": [
+            "g7-civi-program"
+          ]
+        },
+        {
+          "id": "g7-civi-settlement",
+          "dimension": "commercial",
+          "statement": "实现说明规定月底分配、次月15日结算，最低提现50美元；每 Buzz 的现金分配有0.001美元上限，并随收入池和总存入量变化。它不是承诺按固定汇率赎回所有 Buzz。",
+          "change": "new",
+          "evidenceClass": "implementation-doc",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "符合 Creator Program 条件的作者收入池",
+          "limitation": "手续费和地区收款资格须以实际支付服务确认；未取得作者到账凭据或当月池金额。",
+          "sourceIds": [
+            "g7-civi-program"
+          ]
+        },
+        {
+          "id": "g7-civi-no-double-count",
+          "dimension": "commercial",
+          "statement": "2026年8月25日修订的官方实现说明区分一次性资源准入与按次授权费；某版本对该次生成收授权费后，不再同时领取该次生成对应的 tips 与 creator compensation。估算作者收益时不能把这几项机械相加。",
+          "change": "new",
+          "evidenceClass": "implementation-doc",
+          "period": "2026-08-25文档修订；访问2026-09-09",
+          "scope": "ModelVersion 收费规则；不包括 ComicChapter",
+          "limitation": "这是代码实现说明，未审计实际订单和分账；不存在可据此计算的作者平均收入。",
+          "sourceIds": [
+            "g7-civi-monetization"
+          ]
+        },
+        {
+          "id": "g7-civi-referral-noncash",
+          "dimension": "commercial",
+          "statement": "推荐条款中的 Referral Tokens 与计划奖励 Blue Buzz 均不可兑现、不可转让；有效支付事件后的奖励还需经过7天结算等待。它们不能与作者计划可结算的收入池混为现金分成。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "2026-04-21生效；访问2026-09-09",
+          "scope": "Civitai Referral Program 奖励",
+          "limitation": "规则存在不证明推荐渠道盈利，也不证明每个获推荐账号已付费。",
+          "sourceIds": [
+            "g7-civi-referral"
+          ]
+        },
+        {
+          "id": "g7-civi-paywall-response",
+          "dimension": "usage",
+          "statement": "一条2026年8月的公开讨论中，发帖者自述屏蔽采用永久付费墙的作者；回复者则区分付费下载与仅通过 API 提供模型。记录显示作者收费会触及开放资源用户的预期，但不构成拒付比例或实际流失证明。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "搜索索引日期2026-08-23；正文仅显示相对日期",
+          "scope": "1条公开讨论；发帖者行为自述，未核验账号操作",
+          "limitation": "未取得购买、屏蔽或流失日志；评论中的‘95%不付费’等估计未采用；不沿用标题的开源定义。",
+          "sourceIds": [
+            "g7-civi-user-paywall"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "资源供给者与生成消费者的激励并不完全一致。前者可能需要确定的售卖收入，后者中的开放资源使用者可能抵触永久收费；是否愿意付费应按资源类型与使用方式分组。",
+          "sourceIds": [
+            "g7-civi-monetization",
+            "g7-civi-user-paywall"
+          ]
+        },
+        {
+          "text": "只有提现人数、实际到账金额、收入集中度与维护工时，才能判断作者生态是否可持续。代码里用于缺失数据的默认池金额不能补成经营数据。",
+          "sourceIds": [
+            "g7-civi-program"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "当期作者到账规模和收入分布是多少？",
+          "whyMissing": "公开实现文档没有实际支付台账；资料不足。",
+          "nextEvidence": "官方月度作者结算披露，或经本人同意提供的脱敏到账与维护工时记录。"
+        },
+        {
+          "question": "下载用户与站内生成用户各有多少付费和复访？",
+          "whyMissing": "既有网站访问估计无法划分使用方式；新发现讨论也没有样本分母。",
+          "nextEvidence": "官方分层活跃与付费数据；或按实际任务招募竞品用户访谈，分别核实下载、站内运行、购买。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-civi-program",
+          "sourceKind": "官方实现说明",
+          "title": "Creator Program - Developer Guide",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md",
+          "publisher": "Civitai 官方代码库",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "加入资格、分配与结算顺序、最低提现和每Buzz分配上限",
+          "limitation": "开发说明不是当月运营披露；main分支可变化。"
+        },
+        {
+          "id": "g7-civi-monetization",
+          "sourceKind": "官方实现说明",
+          "updatedAt": "2026-08-25（文档自述修订日，非Git发布时间）",
+          "title": "Monetization rules: paid access, licensing fees, donation goals",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
+          "publisher": "Civitai 官方代码库",
+          "publishedAt": "更新2026-08-25（文档自述修订日，非Git发布时间）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "R4规定授权费与该次生成的其他作者补偿互斥；资源准入与按次费可以并存",
+          "limitation": "只涵盖ModelVersion；文档自称核对过生产副本，本轮未独立实测线上交易。"
+        },
+        {
+          "id": "g7-civi-referral",
+          "sourceKind": "仓库所载条款",
+          "effectiveAt": "2026-04-21",
+          "title": "Civitai Referral Program Terms",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/referral-program-terms.md",
+          "publisher": "Civitai 官方代码库",
+          "publishedAt": "生效2026-04-21",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "推荐奖励无现金价值、不可转让及7天结算等待",
+          "limitation": "不可外推所有Buzz类别。"
+        },
+        {
+          "id": "g7-civi-user-paywall",
+          "title": "Civitai now has a closed-source models option",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/",
+          "publisher": "Reddit 公开用户讨论",
+          "publishedAt": "2026-08-23（搜索索引；正文相对日期不一致）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "永久付费访问引起的反对自述和另一方解释",
+          "limitation": "便利抽样；未经核验的实际行为。日期按索引保留并明确冲突，未据此计算时间趋势。"
+        }
+      ]
+    },
+    {
+      "id": "seaart",
+      "name": "SeaArt",
+      "summary": "SeaArt不只有平台会员与积分，还在经营经审核的作者订阅。分成、手续费和提现门槛比“创作者可赚钱”更具体；商城的免费额度矛盾仍未消失，公开投诉也提醒试用扣款与持续使用不能混算。",
+      "claims": [
+        {
+          "id": "sea-v7-c1",
+          "dimension": "commercial",
+          "statement": "作者订阅计划需要审核，初期支持模型和AI应用；页面定价为每月9.9美元，标示作者70%、平台30%，另扣通常约10%的处理费，合并收益超过100美元才可提现。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "页面更新2025-12-20；2026-09-09观察",
+          "scope": "SeaArt作者订阅计划，不是全站SVIP或所有作者激励",
+          "limitation": "未核最新结算页面和作者流水；扣费基数/次序不够明确，不计算作者实得63%或平台净抽成。",
+          "sourceIds": [
+            "sea-v7-s1"
+          ]
+        },
+        {
+          "id": "sea-v7-c2",
+          "dimension": "commercial",
+          "statement": "作者订阅规则不支持把已公开免费内容改成订阅内容；审核包含持续更新能力。商城另规定三日试用结束会扣款，并提示取消时间需提前。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "作者规则2025-12-20；商城无更新日；观察2026-09-09",
+          "scope": "作者订阅内容边界与平台SVIP试用分别",
+          "limitation": "两类订阅不能混成同一套餐；规则存在不证明续费稳定或用户主动购买。",
+          "sourceIds": [
+            "sea-v7-s1",
+            "sea-v7-s2"
+          ]
+        },
+        {
+          "id": "sea-v7-c3",
+          "dimension": "commercial",
+          "statement": "商城FAQ仍同时出现每日免费130 Stamina与每日登录0 Stamina，现行免费资源不能从静态文字确定；该页明确Stamina当日有效、额外并发靠SVIP升级。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "2026-09-09观察",
+          "scope": "SeaArt商城公共FAQ",
+          "limitation": "保留同页冲突，不采纳任一值为当前全体账户固定权益。",
+          "sourceIds": [
+            "sea-v7-s2"
+          ]
+        },
+        {
+          "id": "sea-v7-c4",
+          "dimension": "scale",
+          "statement": "AWS在2024年客户案例中称SeaArt网站月活超过1000万；同页又泛称全球活跃用户，精确统计月及去重方法不明。该值只能保留为历史客户自报口径。",
+          "change": "corroborated",
+          "evidenceClass": "case-study",
+          "period": "案例标2024年；精确统计月未知",
+          "scope": "AWS/SeaArt客户案例所称网站用户",
+          "limitation": "不与第三方Visits或2026年媒体ARR相除；供应商案例不是独立审计或当前MAU。",
+          "sourceIds": [
+            "sea-v7-s3"
+          ]
+        },
+        {
+          "id": "sea-v7-c5",
+          "dimension": "usage",
+          "statement": "AWS案例记录过一个反例：SeaArt内部美术人员试用复杂生成流程后，有人认为手绘更省事。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "2024年客户案例；2026-09-09观察",
+          "scope": "SeaArt内部美术人员的历史观察",
+          "limitation": "内部人员不是平台外部用户样本；无人数、任务、版本和工时对照。",
+          "sourceIds": [
+            "sea-v7-s3"
+          ]
+        },
+        {
+          "id": "sea-v7-c6",
+          "dimension": "usage",
+          "statement": "一个Reddit订阅争议线程同时出现扣款/权益问题投诉，以及“持续订阅无问题”的相反自述。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "页面只显示相对时间；2026-09-09观察",
+          "scope": "1个公开讨论线程，非随机样本",
+          "limitation": "未核订单、付款或精确日期，不保存支付截图；不能计算投诉率或断言诈骗。",
+          "sourceIds": [
+            "sea-v7-s4"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "作者订阅把收费对象从通用算力进一步拆到具体作者的新增内容，同时保留旧免费内容。它提供了供给变现机制的证据，但还缺订阅者数量、作者收入分布和续费结果。",
+          "sourceIds": [
+            "sea-v7-s1"
+          ]
+        },
+        {
+          "text": "生成流程可能增加工作量，自动续费也可能被误解为继续使用。研究商业化质量时，应把主动复购、试用后扣款、资源到期与真正任务采用分开。",
+          "sourceIds": [
+            "sea-v7-s2",
+            "sea-v7-s3",
+            "sea-v7-s4"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "作者订阅实际有多少订阅者，收入是否集中？",
+          "whyMissing": "官方只给计划规则，没有中位数、头部占比、退款与净收入数据。",
+          "nextEvidence": "计划复盘、公开作者脱敏收入记录、订阅者连续使用案例；先核处理费计费顺序。"
+        },
+        {
+          "question": "平台试用后扣款有多少是真实续用？",
+          "whyMissing": "商城规则与投诉个案不提供试用转正/主动续费/退款分母。",
+          "nextEvidence": "按同一周期披露的试用、付费、退款及实际任务指标；不能把扣款全部计成已验证需求。"
+        },
+        {
+          "question": "当前免费资源与职业/兴趣用户占比是多少？",
+          "whyMissing": "FAQ有冲突；历史AWS案例与媒体数字没有统一时间或分群。",
+          "nextEvidence": "核对应地区账户的权益说明及官方更新；访谈和公开作品抽样分别覆盖兴趣、职业与角色互动。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "sea-v7-s1",
+          "title": "SeaArt.AI Creator Subscription Program",
+          "url": "https://www.seaart.ai/articleDetail/d535k2de878c73f1h01g",
+          "publisher": "SeaArt",
+          "publishedAt": "更新2025-12-20；首次发布日期未核",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "70/30、约10%手续费、100美元提现门槛、9.9美元定价、审核和免费内容保护。",
+          "limitation": "计划正文可读；部分描述为first phase，未把后续规划写成上线事实。"
+        },
+        {
+          "id": "sea-v7-s2",
+          "title": "Pricing of SeaArt AI / Mall FAQ",
+          "url": "https://www.seaart.ai/mall",
+          "publisher": "SeaArt",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "试用扣款、并发、Stamina有效期及130/0额度矛盾。",
+          "limitation": "动态支付实付未验证；价格受税费、地区与汇率影响。"
+        },
+        {
+          "id": "sea-v7-s3",
+          "title": "亚马逊云科技与海艺互娱客户案例",
+          "url": "https://aws.amazon.com/cn/campaigns/awsforgames/seaart/",
+          "publisher": "AWS / 海艺互娱",
+          "publishedAt": "2024",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "历史网站MAU自述及内部美术认为复杂流程不省事的反例。",
+          "limitation": "供应商与客户联合案例，有推广倾向；统计月、样本、去重不明。"
+        },
+        {
+          "id": "sea-v7-s4",
+          "title": "SeaArt公开订阅争议讨论线程",
+          "url": "https://www.reddit.com/r/SeaArtAI/comments/1pt9tu3/scam/",
+          "publisher": "Reddit公开用户",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "订阅争议与持续使用无问题的相反自述。",
+          "limitation": "正文仅显示8mo/3mo等相对时间，不换算精确日期；未保存用户名/支付信息，也未核截图账单。"
+        }
+      ]
+    },
+    {
+      "id": "openart",
+      "name": "OpenArt",
+      "summary": "新增同一用户前后反馈，看到连续故事需求确实可能留下用户，也看到学习、选片和后期编辑是使用条件。投资方更早披露了8M MAU与70M+ ARR，但没有补出付费留存。",
+      "claims": [
+        {
+          "id": "g7-open-scale-timing",
+          "dimension": "scale",
+          "statement": "Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16日公司文章再次给出相近数字。此前数字可增加一个更早的披露时间，不能称为9月当期规模。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "2026-01-30投资方披露；2026-03-16公司再述",
+          "scope": "OpenArt 公司/平台；MAU与ARR各自统计截止日未明确",
+          "limitation": "投资方有利益关系，且可能引用同一公司数据；两份文章不是两次独立审计。ARR并非2025全年收入。",
+          "sourceIds": [
+            "g7-open-canaan",
+            "g7-open-story"
+          ]
+        },
+        {
+          "id": "g7-open-director-excluded",
+          "dimension": "commercial",
+          "statement": "当前价格页的预估视频数量明确排除 Director；Wonder 的 MiniMax H3 Max 无限活动文案标明截止9月9日。套餐能生成多少独立视频，不能直接换算成多少多镜头故事，也不能把限时无限写成长期权益。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "2026-09-09价格页；活动文案截至Sep 9，未注明时区",
+          "scope": "个人套餐；Director与特定模型活动边界",
+          "limitation": "未进入结算；月付/年付切换状态仍未独立确认；不据静态并列价得出实际应付金额。",
+          "sourceIds": [
+            "g7-open-pricing"
+          ]
+        },
+        {
+          "id": "g7-open-addon-recurring",
+          "dimension": "commercial",
+          "statement": "价格页将额外5,000 credits列为每月15美元的 add-on，并显示需 Plus 解锁。此入口是按月附加订阅表述，不能默认当作任何账号均可购买的一次性点数包。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "公开个人价格页 Add-on 区",
+          "limitation": "未核验加购结算、扣费和取消；不把此价格外推到企业或全部补充额度入口。",
+          "sourceIds": [
+            "g7-open-pricing"
+          ]
+        },
+        {
+          "id": "g7-open-longitudinal-user",
+          "dimension": "usage",
+          "statement": "同一公开账号先自述为9支专辑MV买年费、约3周后因文件管理与教程问题不满；后续又称项目约做完一半，学习影视术语后愿继续使用，并附作品列表。‘初期差评’与‘持续采用’在此个案中并存。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "首条搜索索引2025-11-02；后续正文相对日期约6–7个月前，精确日期未核实",
+          "scope": "1名公开账号的两条前后反馈",
+          "limitation": "年费、进度均为本人自述；作品列表链接存在但本轮未逐个播放；无续费订单，也不能以年费尚有效当自然留存。",
+          "sourceIds": [
+            "g7-open-user-first",
+            "g7-open-user-followup"
+          ]
+        },
+        {
+          "id": "g7-open-multi-tool-user",
+          "dimension": "usage",
+          "statement": "另一位作者自述因音乐视频活动购买年费，后来缩到基础口型同步，并用 Midjourney 制作角色参考图、外部大模型协助分镜提示；其考虑再用 CapCut 完成整片。聚合平台仍可能只承担创作链的一部分。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "评论搜索索引2026-02-05；正文相对日期约6–7个月前",
+          "scope": "1名用户自述的跨工具音乐视频任务",
+          "limitation": "实际已做的是口型片段与参考图；CapCut为考虑中的下一步，未当作已迁移。模型花费是历史个案，未列成当前价格。",
+          "sourceIds": [
+            "g7-open-user-lipsync"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "同一用户由抱怨转为继续使用，提示上手成本、镜头知识和已有项目进度可能影响评价。它既反驳‘有重复任务就自然留存’，也反驳‘一条差评就代表产品无价值’。",
+          "sourceIds": [
+            "g7-open-user-first",
+            "g7-open-user-followup"
+          ]
+        },
+        {
+          "text": "需要比较完成一个故事所用的参考准备、失败尝试、外部编辑和实际采用，不能只比较套餐预估视频数。官方关于持续角色的增长解释仍缺少分组留存数字。",
+          "sourceIds": [
+            "g7-open-pricing",
+            "g7-open-user-lipsync",
+            "g7-open-canaan"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "故事/Director相较单图用户是否有更高付费留存？",
+          "whyMissing": "公司和投资方只有增长叙述，没有按任务分组的同期留存；资料不足。",
+          "nextEvidence": "带活跃事件定义的任务分组留存与订阅续费披露。"
+        },
+        {
+          "question": "套餐月付、年付与加购的完整取消/结转条件？",
+          "whyMissing": "静态价格文本并列多个价格，帮助页正文提取有限；预览子域的旧帮助内容未采作当前规则。",
+          "nextEvidence": "当前正式站账期切换与加购条款截图；不执行购买。"
+        },
+        {
+          "question": "年费用户继续制作是认可产品，还是余额尚未用完？",
+          "whyMissing": "两种解释都与公开自述相容；未取得下一次真实续费。",
+          "nextEvidence": "同一竞品用户后续续费/取消、剩余额度和替代工具使用的脱敏记录。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-open-canaan",
+          "title": "Why We Led OpenArt’s $30M Series A",
+          "url": "https://www.canaan.com/news/why-we-led-openart-s-30m-series-a",
+          "publisher": "Canaan / Laura Chau",
+          "publishedAt": "2026-01-30",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "8M MAU、70M+ ARR与2025增长披露",
+          "limitation": "投资方披露非审计财务；不能视为独立于公司的一套统计。"
+        },
+        {
+          "id": "g7-open-story",
+          "title": "The Paintbrush Belongs to Everyone: The OpenArt Story",
+          "url": "https://openart.ai/blog/the-openart-story/",
+          "publisher": "OpenArt",
+          "publishedAt": "2026-03-16",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "公司再次披露MAU/ARR及角色故事方向",
+          "limitation": "营销与招聘叙事；没有留存百分比或统计定义。"
+        },
+        {
+          "id": "g7-open-pricing",
+          "title": "OpenArt Pricing",
+          "url": "https://openart.ai/pricing",
+          "publisher": "OpenArt",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Director不在预估视频数内；限时无限截止日；每月加购",
+          "limitation": "动态页未确认账期切换与结算；活动时区未注明。"
+        },
+        {
+          "id": "g7-open-user-first",
+          "title": "公开用户：专辑MV项目初期反馈",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/nmp0cqc/",
+          "publisher": "Reddit 公开用户",
+          "publishedAt": "2025-11-02（搜索索引）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "自述年费、9支MV目标和初期困难",
+          "limitation": "选择性公开发言；本人付款和耗时未经核验。"
+        },
+        {
+          "id": "g7-open-user-followup",
+          "title": "同一用户：专辑项目继续制作的后续反馈",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/o3sj2y3/",
+          "publisher": "Reddit 公开用户",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "同账号称完成约一半项目、学习后愿继续，附作品列表",
+          "limitation": "仅相对日期，未确认下一次续费；不重复计作第二名用户。"
+        },
+        {
+          "id": "g7-open-user-lipsync",
+          "title": "公开用户：从完整MV缩到口型片段的跨工具使用",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+          "publisher": "Reddit 公开用户",
+          "publishedAt": "2026-02-05（搜索索引；正文相对日期）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "同一讨论中另一账号对年费、口型同步、Midjourney参考图与外部提示辅助的自述",
+          "limitation": "本轮未检验成片质量；同记录亦用于Midjourney，不重复计数。"
+        }
+      ]
+    },
+    {
+      "id": "nightcafe",
+      "name": "NightCafe",
+      "summary": "新增取消与升级规则，明确积分留存与会员权限不是同一件事。头部作者案例同时依赖作品积累、搜索管理和活动角色，不能把这种参与直接当作普通用户留存。",
+      "claims": [
+        {
+          "id": "g7-night-cancel",
+          "dimension": "commercial",
+          "statement": "官方帮助说明取消不自动退款，PRO到期后未用 Fast Credits仍保留，但只能用于非PRO模型。退款需在付款后7天内提出，已使用额度后不退款，也无按剩余时间比例退款。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "NightCafe PRO与额度包取消/退款帮助规则",
+          "limitation": "按个案审核；未执行退款或核验地区强制规定。留有积分并不等于保留全部模型权限。",
+          "sourceIds": [
+            "g7-night-refund"
+          ]
+        },
+        {
+          "id": "g7-night-upgrade",
+          "dimension": "commercial",
+          "statement": "更换套餐会立即收取新套餐全价并发放完整新额度，原套餐未用额度保留；没有自动按剩余时间抵扣，续费日期也会重设。只比较档位差价会低估当次升级的支付额。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "NightCafe更换PRO套餐",
+          "limitation": "未进入结算，不推断全部账号的实际收费金额；客服退款仍按个案处理。",
+          "sourceIds": [
+            "g7-night-change"
+          ]
+        },
+        {
+          "id": "g7-night-author-context",
+          "dimension": "usage",
+          "statement": "2026年6月19日的官方精选作者访谈中，受访者兼任活动主持与评审，强调PRO的作品搜索对大量历史作品的价值。该文标称其有16万以上创作、2.8万以上关注者，属于头部案例。",
+          "change": "corroborated",
+          "evidenceClass": "case-study",
+          "period": "2026-06-19文章披露",
+          "scope": "1名官方精选作者；作品和关注为该作者累计口径",
+          "limitation": "案例含会员推广；未确认其自费订阅、合作报酬、普通作者收入或平台整体留存。",
+          "sourceIds": [
+            "g7-night-spotlight"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "持续参与可能由创作乐趣、历史作品管理与活动中的角色共同支持。这个用户价值与客户项目交付不同，不能仅按‘每天创作’把两类需求归为同一群体。",
+          "sourceIds": [
+            "g7-night-spotlight"
+          ]
+        },
+        {
+          "text": "订阅到期后的可用模型范围和升级时的即时全额收费，会影响偶发创作者的成本判断；积分余额本身不是用户仍然认可会员的证据。",
+          "sourceIds": [
+            "g7-night-refund",
+            "g7-night-change"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "挑战参与者和付费创作者分别有多少、多久回来？",
+          "whyMissing": "官网累计作品与第三方网站访问均缺少参与者去重和分层；本轮关于页读取失败，未更新累计数字。",
+          "nextEvidence": "官方按月参与/生成/付费去重口径，以及奖励用户与无奖励用户的同期记录。"
+        },
+        {
+          "question": "作者主持和评审是否获得现金，覆盖多少人？",
+          "whyMissing": "精选访谈未公开合同；资料不足。",
+          "nextEvidence": "合作计划条款与已付款的脱敏合作记录。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-night-refund",
+          "title": "I cancelled my subscription but haven't received a refund",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/i-cancelled-my-subscription-but-haven-t-received-a-refund",
+          "publisher": "NightCafe",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "取消后的PRO和Fast Credits边界、7天申请与非按比例退款",
+          "limitation": "官方帮助规则，非实际退款审计。"
+        },
+        {
+          "id": "g7-night-change",
+          "title": "I was charged after changing my subscription plan",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/i-was-charged-after-changing-my-plan",
+          "publisher": "NightCafe",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "新套餐全额即时收费、额度保留与续费日重设",
+          "limitation": "帮助解释没有给实际发生频率。"
+        },
+        {
+          "id": "g7-night-spotlight",
+          "title": "NightCafe Artist Spotlight: Inside gullyDJ's Weird World",
+          "url": "https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj",
+          "publisher": "NightCafe / Olivia Platt",
+          "publishedAt": "2026-06-19",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "头部作者规模、主持评审角色与PRO搜索价值",
+          "limitation": "官方挑选且有推广目的；不能代表普通作者或普遍付费原因。"
+        }
+      ]
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦AI",
+      "summary": "本轮将权益条款与公开使用投诉对应起来：会员是一组资格和周期资源，额外消耗与结果质量仍是另一笔成本。评论可识别失败场景，但不能以自述付费当作核实订单，也不能把负面精选页当满意度调查。",
+      "claims": [
+        {
+          "id": "jm-v7-c1",
+          "dimension": "commercial",
+          "statement": "付费协议明确，部分会员特殊权益只提供使用或购买资格，实际使用仍可能额外扣积分或付费；API在准入会员条件之外独立购买、计量。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "更新2026-08-03；生效2026-08-10",
+          "scope": "即梦个人/团队会员及协议内API",
+          "limitation": "未核结算价，不将消费积分或会员费当成火山引擎API通用报价。",
+          "sourceIds": [
+            "jm-v7-s1"
+          ]
+        },
+        {
+          "id": "jm-v7-c2",
+          "dimension": "commercial",
+          "statement": "团队成员退出后不能继续查看或使用该团队空间的素材、资产和生成记录；个人与团队空间的资源也不自动互通。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "更新2026-08-03；生效2026-08-10",
+          "scope": "即梦团队版空间与成员权限",
+          "limitation": "这是组织采购和迁移成本的规则线索，未观察企业合同或真实席位续费。",
+          "sourceIds": [
+            "jm-v7-s1"
+          ]
+        },
+        {
+          "id": "jm-v7-c3",
+          "dimension": "usage",
+          "statement": "中国区App Store一条2025-03-31评论自述制作动图时反复出现扭曲、重试消耗积分；另有只显示月日的评论抱怨排队，同时承认角色三视图仍有用。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "一条2025-03-31；另一条仅显示5月11日，年份未知；观察2026-09-09",
+          "scope": "公开评论个案，非随机抽样",
+          "limitation": "未核账号付款、输入、结果与版本，不采纳投诉中的成功率或价格为平台事实；不采纳对平台动机的指控。",
+          "sourceIds": [
+            "jm-v7-s2"
+          ]
+        },
+        {
+          "id": "jm-v7-c4",
+          "dimension": "scale",
+          "statement": "当前中国区App Store评论页显示4.2/5分、约2.2万个评分；这是商店评价存量，不能充当下载量、MAU、付费人数或用户满意率。",
+          "change": "new",
+          "evidenceClass": "public-counter",
+          "period": "2026-09-09观察；累计评价区间未说明",
+          "scope": "Apple中国区该App页面评分聚合",
+          "limitation": "评分入口有自选择偏差；仅列辅助信号，不与AICPB的App MAU或Web Visits合并。",
+          "sourceIds": [
+            "jm-v7-s2"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "会员后仍不满意的公开记录，提示收费资格、生成成功和可交付结果必须分开研究。不同任务表现可以不同，角色图可用并不证明人物动作视频同样可靠。",
+          "sourceIds": [
+            "jm-v7-s1",
+            "jm-v7-s2"
+          ]
+        },
+        {
+          "text": "团队版增加的不只是积分量，还包括资产归属和成员离开后的访问边界。下一步竞品证据应关注团队实际如何交接与导出，而非仅比较人均套餐价。",
+          "sourceIds": [
+            "jm-v7-s1"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "职业用户占比、实际付费与续费是否足以解释规模？",
+          "whyMissing": "协议与商店评价都没有产品独立收入、去重付费人数及队列留存；评价数量不是这些指标的替代品。",
+          "nextEvidence": "公司产品口径披露、同源App监测方法与竞品实际用户访谈。"
+        },
+        {
+          "question": "负面案例发生于什么版本、输入和任务？",
+          "whyMissing": "部分评论未显示年份，所有评论均缺可核原始任务、订单和完整结果。",
+          "nextEvidence": "优先找具完整日期、输入输出与迭代记录的公开演示；访谈自述付费者时另标付款未核。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "jm-v7-s1",
+          "title": "即梦AI付费服务协议",
+          "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html",
+          "publisher": "即梦AI",
+          "publishedAt": "2026-08-03",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "4.1.1资格与额外积分、4.1.3成员退出的资产权限、5.1.2独立API计费。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "jm-v7-s2",
+          "title": "即梦AI中国区App Store评分及评论",
+          "url": "https://apps.apple.com/cn/app/%E5%8D%B3%E6%A2%A6ai-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8Bai%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/id6503676563?platform=iphone&see-all=reviews",
+          "publisher": "Apple评分聚合及公开用户评论",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "评分聚合、2025-03-31动图投诉、5月11日三视图与视频不同体验。",
+          "limitation": "用户昵称未写入记录；同一条评论在正文重复展示不重复计数；部分月日无年份。"
+        }
+      ]
+    },
+    {
+      "id": "kling",
+      "name": "可灵 Kling AI",
+      "summary": "可灵的单季收入证据继续成立。本轮补充的是收费与交付标准之间的关系：免费与商用权限不同，4K按秒消耗，专业用户案例会挑选成功结果，不能由此推算平均出片率或社区贡献。",
+      "claims": [
+        {
+          "id": "kl-v7-c1",
+          "dimension": "commercial",
+          "statement": "7月28日官方成本指南把Basic列为无月度积分、输出不可商用；付费档列出商用与去水印权益。4K发布价参考为30积分/秒，应按生成时页面复核。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "指南2026-07-28；2026-09-09观察",
+          "scope": "国际站指定方案及Kling VIDEO 3.0原生4K",
+          "limitation": "不是中国区统一价或当日结算保证；商用资格不能保证特定输出不涉及第三方权利。",
+          "sourceIds": [
+            "kl-v7-s1"
+          ]
+        },
+        {
+          "id": "kl-v7-c2",
+          "dimension": "scale",
+          "statement": "快手2026年第二季度官方业绩仍明确可灵AI收入超过8.5亿元人民币、同比超过200%；该项为可灵单季收入，其他公司级DAU、广告消费及利润不属于可灵。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "2026Q2；披露2026-08-19",
+          "scope": "可灵AI产品收入；未经审核业绩",
+          "limitation": "未拆订阅/API/企业及利润；不能用累计创作者人数计算ARPU，也不归因于社区。",
+          "sourceIds": [
+            "kl-v7-s2"
+          ]
+        },
+        {
+          "id": "kl-v7-c3",
+          "dimension": "usage",
+          "statement": "Pencil接入可灵时展示护肤涂抹、多人用餐和食品特写等测试，明确从12种场景中挑选表现好的结果。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "2026-05-25",
+          "scope": "一家接入可灵的商业平台所做场景测试",
+          "limitation": "合作方有推广动机；总尝试次数、淘汰数量、客户采用与制作成本未披露，不能算成功率。",
+          "sourceIds": [
+            "kl-v7-s3"
+          ]
+        },
+        {
+          "id": "kl-v7-c4",
+          "dimension": "usage",
+          "statement": "官方两周年访谈包含作者自述：某镜头进入《House of David》第一季，以及广告获奖与连续角色短片制作。它比单张作品展示更接近用途证据。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "2026年两周年专题；页面未核到精确发布日期",
+          "scope": "官方精选作者陈述；不同制作项目",
+          "limitation": "未独立核影片镜头、合同、付款、完整工时或失败率；不等于普通用户能达到相同结果。",
+          "sourceIds": [
+            "kl-v7-s4"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "商业化已不只是假设，但收入增长仍无法说明社区带来多少。模型能力、外部创作工具集成与项目交付都是可见路径，后续需要分别找实际采购和使用证据。",
+          "sourceIds": [
+            "kl-v7-s2",
+            "kl-v7-s3"
+          ]
+        },
+        {
+          "text": "4K单次成本、复用参考和返工次数会共同决定项目费用。案例研究应沿着输入、废片与最终采用追踪，不能只截取成片和套餐月费。",
+          "sourceIds": [
+            "kl-v7-s1",
+            "kl-v7-s3",
+            "kl-v7-s4"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "收入由谁贡献，社区占多大作用？",
+          "whyMissing": "官方季度披露未拆订阅、API、企业、渠道或站内内容触点贡献。",
+          "nextEvidence": "官方经营演示、明确客户采购的案例、竞品用户最近一次付费和发现路径。"
+        },
+        {
+          "question": "专业任务平均需要多少次重试才交付？",
+          "whyMissing": "合作方只披露测试场景和精选输出，没有全量尝试及客户验收分母。",
+          "nextEvidence": "完整制作过程或公开成本复盘；少量授权实操只能报告案例，不能外推成功率。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kl-v7-s1",
+          "title": "Kling VIDEO 3.0 Credit Cost: Pricing & Credits Guide",
+          "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=all",
+          "publisher": "Kling AI",
+          "publishedAt": "2026-07-28",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Basic与付费商用差异，4K的30积分/秒参考及需复核规则。",
+          "limitation": "公开正文可读；未登录或执行交易。"
+        },
+        {
+          "id": "kl-v7-s2",
+          "title": "Kuaishou Technology Announces Second Quarter and Interim 2026 Unaudited Financial Results",
+          "url": "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026",
+          "publisher": "快手投资者关系",
+          "publishedAt": "2026-08-19",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "可灵2026Q2收入超过人民币8.5亿元、同比超过200%。",
+          "limitation": "财报正文可读；只引用可灵明确单列指标，不采用快手全公司数据替代。"
+        },
+        {
+          "id": "kl-v7-s3",
+          "title": "Kling is Now on Pencil",
+          "url": "https://community.trypencil.com/en/public/blogs/kling-is-now-on-pencil-2026-05-25",
+          "publisher": "Pencil",
+          "publishedAt": "2026-05-25",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "12场景中精选结果；护肤、多人、食品任务。",
+          "limitation": "商业合作方测试，不是独立基准；没有全量尝试和实际客户验收。"
+        },
+        {
+          "id": "kl-v7-s4",
+          "title": "Kling AI Turns Two: In Creators’ Own Words",
+          "url": "https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words",
+          "publisher": "Kling AI官方作者专题",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "作者陈述其广告、短片、影视项目用途。",
+          "limitation": "精选采访有选择偏差；本轮只读文字正文，未核成片和付款。"
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "summary": "收费不只有月价，年费默认选中和严格退款条件也影响首次购买风险。跨工具用户记录显示它可以只承担角色参考图，不能把一张参考图的采用归为整个视频项目的完成。",
+      "claims": [
+        {
+          "id": "g7-mj-billing-default",
+          "dimension": "commercial",
+          "statement": "官方订阅说明明确默认选中年付，需一次付全年；套餐表月付为10/30/60/120美元，年付总额96/288/576/1,152美元。年付折算8/24/48/96美元不能写作可按月支付的价格。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "Midjourney Basic/Standard/Pro/Mega生成订阅",
+          "limitation": "未结算；可能另有税费。此项是官方默认流程说明，不声称本轮账户实测。",
+          "sourceIds": [
+            "g7-mj-price",
+            "g7-mj-subscribe"
+          ]
+        },
+        {
+          "id": "g7-mj-refund",
+          "dimension": "commercial",
+          "statement": "退款资格按账号整个使用历史判断：累计GPU时间必须少于20分钟，Fast/Turbo与Relax均计入。它不是每次续费后重新获得20分钟试用。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "Midjourney官方退款资格说明",
+          "limitation": "规则不说明实际退款率；未进行退款申请，也未将条款解释为法律结论。",
+          "sourceIds": [
+            "g7-mj-refund-source"
+          ]
+        },
+        {
+          "id": "g7-mj-video-limits",
+          "dimension": "commercial",
+          "statement": "Standard起有不限量Relax图片；Pro/Mega才含Relax视频，套餐表限定为SD视频。更高的Relax能力不代表全部分辨率和所有生成速度都不限量。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "当前套餐表Relax GPU范围",
+          "limitation": "具体等待、模型支持及输出可用率未实测；不能用无限字样推算有效产量。",
+          "sourceIds": [
+            "g7-mj-price"
+          ]
+        },
+        {
+          "id": "g7-mj-reference-role",
+          "dimension": "usage",
+          "statement": "一名在OpenArt讨论区分享音乐视频经历的作者自述，用Midjourney制作角色参考图，再到其他工具做口型和剪辑准备。此记录证明的是该用户把Midjourney放在创作链的参考制作环节。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "评论搜索索引2026-02-05；正文仅相对日期",
+          "scope": "与OpenArt档案同一用户记录，非新增独立受访者",
+          "limitation": "未核验Midjourney付款；CapCut为未来考虑，并非已完成迁移；不作跨工具质量排名。",
+          "sourceIds": [
+            "g7-mj-user-reference"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "用户比较的不只是最低标价，还包括一次付款承诺、能否先验证自己的题材及退款条件。年付折扣是否提高首购或退款争议，需要漏斗和客服数据才能回答。",
+          "sourceIds": [
+            "g7-mj-price",
+            "g7-mj-subscribe",
+            "g7-mj-refund-source"
+          ]
+        },
+        {
+          "text": "工具采用应落在具体步骤：作为参考图工具有价值，不等于它独立解决角色一致、口型、剪辑和整片交付。",
+          "sourceIds": [
+            "g7-mj-user-reference"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "当期订阅人数、付费留存和用途构成是什么？",
+          "whyMissing": "未找到可核验的最新分项经营披露；Discord成员与网站visits不能补作分母。",
+          "nextEvidence": "公司按统计期披露的订阅人数/续费；竞品用户的脱敏最近任务与订阅历史。"
+        },
+        {
+          "question": "公开图库和社区交流对付费有多少增量？",
+          "whyMissing": "套餐与使用个案没有渠道归因或对照组；资料不足。",
+          "nextEvidence": "官方获客及转化分组数据，或跟踪竞品用户真实首次发现与付费路径。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-mj-price",
+          "title": "Comparing Midjourney Plans",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+          "publisher": "Midjourney",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "月价、全年总额、年付折算与SD Relax视频边界",
+          "limitation": "动态套餐；没有付款或活跃统计。"
+        },
+        {
+          "id": "g7-mj-subscribe",
+          "title": "How to Subscribe",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/31974654274573-How-to-Subscribe",
+          "publisher": "Midjourney",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "默认年付与全年预付说明",
+          "limitation": "本轮未进入实际结算。"
+        },
+        {
+          "id": "g7-mj-refund-source",
+          "title": "Requesting a Refund",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund",
+          "publisher": "Midjourney",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "账号终身GPU少于20分钟的退款门槛",
+          "limitation": "规则不等于实际退款结果。"
+        },
+        {
+          "id": "g7-mj-user-reference",
+          "title": "公开音乐视频用户的Midjourney角色参考图使用",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+          "publisher": "Reddit 公开用户",
+          "publishedAt": "2026-02-05（搜索索引；正文相对日期）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Midjourney实际承担参考图步骤的自述",
+          "limitation": "与OpenArt同一记录；未核验Midjourney订阅和实际作品质量。"
+        }
+      ]
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.Ai",
+      "summary": "新API按量付费与旧API订阅规则必须分开。付费用户的公开任务记录还暴露出设置保留、输入行为和成本可预期性的问题，说明高级模型和积分数量不足以解释持续使用。",
+      "claims": [
+        {
+          "id": "g7-leo-payg",
+          "dimension": "commercial",
+          "statement": "当前API FAQ规定新用户采用PAYG，无固定月费，充值余额不过期；现有订阅用户可主动迁移，余额转换为PAYG余额。旧订阅在迁移前仍保留原状，不能把Legacy FAQ的订阅门槛套给全部API用户。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；正文标相对更新时间，迁移生效绝对日未给",
+          "scope": "Leonardo Production API新用户及主动迁移的旧用户",
+          "limitation": "不同文档相对更新时间存在差异；依据页面明确的新用户/旧订阅适用说明，而非推定所有账号已迁移。",
+          "sourceIds": [
+            "g7-leo-payg-source"
+          ]
+        },
+        {
+          "id": "g7-leo-separate-units",
+          "dimension": "commercial",
+          "statement": "API快速开始文档明确API访问与免费/网页订阅分开；网页Token FAQ区分每日免费额度、月度额度、最多三个月容量的结转池和充值Token。网页充值Token不过期但需有效订阅才能使用，不能套用API PAYG余额规则。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "Leonardo网页Token与Production API两类购买体系",
+          "limitation": "网页套餐与模型仍可能变化；未按两种单位做数值换算。",
+          "sourceIds": [
+            "g7-leo-api-start",
+            "g7-leo-token"
+          ]
+        },
+        {
+          "id": "g7-leo-paid-blog-user",
+          "dimension": "usage",
+          "statement": "一名公开发帖者自述为技术博客头图、图示和文章配图购买会员及补充额度，抱怨回车触发付费生成、会话更新后设置变化，以及上传图片后输出尺寸被自动调整。这里有具体持续任务，也有额外返工线索。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "正文显示约6个月前；精确发帖日未核实",
+          "scope": "1名付费用户自述，非受控测试",
+          "limitation": "付款未经核验；故障未复现，不能断言今天仍存在。回复有转交团队的表示，但未见修复确认。",
+          "sourceIds": [
+            "g7-leo-user-blog"
+          ]
+        },
+        {
+          "id": "g7-leo-output-scope",
+          "dimension": "scale",
+          "statement": "官方比较文章仍自述累计生成超过47亿张图片、6400万个视频。该口径可以佐证大量生成活动，不能判定独立用户、可用产出、API客户或付费增长。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "访问2026-09-09；累计截止日未标",
+          "scope": "Leonardo平台累计生成产出",
+          "limitation": "营销文章非审计披露；本轮不采用其对其他产品的评价，也不使用Canva整体用户。",
+          "sourceIds": [
+            "g7-leo-output"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "对低频API客户，非过期的PAYG余额降低固定订阅承诺；对网页用户，结转与有效会员限制仍会影响偶发使用成本。两条收入路径应分开比较。",
+          "sourceIds": [
+            "g7-leo-payg-source",
+            "g7-leo-token"
+          ]
+        },
+        {
+          "text": "公开博客用户的困难主要在可控操作与成本可预期性。模型数量或每日积分不能代替对真实制作过程的观察；也不能由这一条投诉推断整体产品质量。",
+          "sourceIds": [
+            "g7-leo-user-blog"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "API迁移影响了多少客户、收入和调用留存？",
+          "whyMissing": "官方解释规则但没有迁移人数、用量或收入拆分；资料不足。",
+          "nextEvidence": "官方PAYG迁移前后分组数据及付费API客户数。"
+        },
+        {
+          "question": "累计产出中有多少真正采用，网页和API分别贡献多少？",
+          "whyMissing": "累计图片/视频混合了重试、淘汰和不同入口，缺少去重及采用事件。",
+          "nextEvidence": "按入口、模型、成功状态和真实采用定义的披露。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-leo-payg-source",
+          "title": "Pricing & Plans FAQs",
+          "url": "https://docs.leonardo.ai/me/docs/pricing-and-plans-faq",
+          "publisher": "Leonardo.Ai",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "PAYG新用户、旧用户主动迁移、无固定月费、余额不过期",
+          "limitation": "页面相对更新时间不同读取结果有差异；仅确认读取时的正文规则。"
+        },
+        {
+          "id": "g7-leo-api-start",
+          "title": "Quick Start Guide",
+          "url": "https://docs.leonardo.ai/v1.0/docs/getting-started",
+          "publisher": "Leonardo.Ai",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "API访问与网页订阅区分",
+          "limitation": "标题中旧Subscribe措辞不能覆盖新的PAYG FAQ；未调用API。"
+        },
+        {
+          "id": "g7-leo-token",
+          "title": "Tokens - Frequently Asked Questions",
+          "url": "https://intercom.help/leonardo-ai/en/articles/9044700-tokens-frequently-asked-questions",
+          "publisher": "Leonardo.Ai / Nick Lee",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "网页免费Token、结转池、充值Token及有效订阅要求",
+          "limitation": "只用于网页Token；不套到API余额。"
+        },
+        {
+          "id": "g7-leo-user-blog",
+          "title": "Feedback for Leonardo.ai Devs",
+          "url": "https://www.reddit.com/r/leonardoai/comments/1rs2isl/feedback_for_leonardoai_devs/",
+          "publisher": "Reddit 公开用户",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "博客配图任务、会员和加额自述、设置和操作投诉",
+          "limitation": "正文只有相对日期；未复现、未验证付款或后续修复。"
+        },
+        {
+          "id": "g7-leo-output",
+          "title": "ImagineArt vs Leonardo.Ai: Which Should You Choose? (2026)",
+          "url": "https://www.leonardo.ai/news/imagineart-vs-leonardo-ai",
+          "publisher": "Leonardo.Ai",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "47亿图片与6400万视频累计自述",
+          "limitation": "营销比较文，只取其自身口径；不是MAU或收入。"
+        }
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "summary": "需要区分旧Unlimited套餐、当前特定模型的Unlimited Mode，以及企业与普通用户的额度规则。Miro案例还显示专业团队、反复选片和官方驻场创意支持是成功条件的一部分。",
+      "claims": [
+        {
+          "id": "g7-run-legacy-transition",
+          "dimension": "commercial",
+          "statement": "8月27日更新的公告称，旧Unlimited自6月1日起不再向新订阅开放，符合条件的老订阅可持续到11月30日；Max为9,500月度额度，可结转一个月。旧Unlimited的Explore Mode与Max是不同权益。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "2026-08-27更新；旧订阅过渡截至2026-11-30",
+          "scope": "符合资格的旧Unlimited订阅与新Max套餐",
+          "limitation": "公告不等于所有模型无限生成彻底消失；具体旧账号资格未实测。",
+          "sourceIds": [
+            "g7-run-migration"
+          ]
+        },
+        {
+          "id": "g7-run-unlimited-mode",
+          "dimension": "commercial",
+          "statement": "另一份当前帮助文档明确Pro和Max可在支持的模型/工具上使用Unlimited Mode，可能更慢且并发更少，模型范围随套餐和活动变化。旧Unlimited套餐退场，不能简写为Runway已完全取消无限生成。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "Pro/Max指定模型的生成模式，区别于旧Unlimited套餐",
+          "limitation": "文档未给该模式推出日；未实测账号可用模型。名称相似不是规则矛盾，不推定两页覆盖相同权益。",
+          "sourceIds": [
+            "g7-run-mode",
+            "g7-run-migration"
+          ]
+        },
+        {
+          "id": "g7-run-enterprise-api",
+          "dimension": "commercial",
+          "statement": "Enterprise组织经官方账号团队启用、并关联网页与API账号后，可在API项目与网页工作区间双向转额度、管理成员；API密钥和账单仍在开发者门户管理。不能笼统写成所有Runway API与网页额度永远不能互通。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "访问2026-09-09；动态规则未标绝对更新日",
+          "scope": "Enterprise计划的Organization space；须启用并关联账户",
+          "limitation": "不外推个人订阅。组织Analytics当前只覆盖网页工作区，不能从统一管理推定已合并全部API分析。",
+          "sourceIds": [
+            "g7-run-enterprise"
+          ]
+        },
+        {
+          "id": "g7-run-miro-conditions",
+          "dimension": "usage",
+          "statement": "Miro案例说每个镜头先经历数十张静态图尝试，再多次生成视频；动效与3D元素另行叠加，Runway的forward deployed creatives还提供专门辅导。案例的50%制作时间节省应连同这些条件阅读。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "Canvas26项目；页面未标发布日期，访问2026-09-09",
+          "scope": "Miro品牌团队的4城活动开场视频个案",
+          "limitation": "官方精选营销案例；无原始工时台账、软件及支持成本拆分。不能推断普通自助用户同样省50%，Miro用户数不是Runway用户。",
+          "sourceIds": [
+            "g7-run-miro"
+          ]
+        },
+        {
+          "id": "g7-run-scale-boundary",
+          "dimension": "scale",
+          "statement": "当前价格页继续写60M+ creators，但没有说明是累计注册、去重创作者还是某月活跃。因此保留为覆盖宣传口径，不能升级成6,000万MAU或付费账号。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "访问2026-09-09；统计窗口未标",
+          "scope": "Runway官方覆盖创作者宣传口径",
+          "limitation": "与网站访问、Miro客户用户或融资额均不能相加。",
+          "sourceIds": [
+            "g7-run-price"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "同名‘无限’可能代表旧套餐或特定模型的慢速模式。竞品比较必须列出套餐、模型、并发、期限与使用入口，才能比较真实任务成本。",
+          "sourceIds": [
+            "g7-run-migration",
+            "g7-run-mode"
+          ]
+        },
+        {
+          "text": "Miro个案较有力地证明特定场地和宽屏活动视频的需求，但交付依赖制作经验、反复选择与厂商服务。它不足以证明自助工具已经自动消除了这些劳动。",
+          "sourceIds": [
+            "g7-run-miro"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "Pro/Max各模型的Unlimited Mode持续期限与实际排队水平？",
+          "whyMissing": "帮助页表示会随活动和套餐变化；本轮没有执行生成，资料不足。",
+          "nextEvidence": "同一日期同一账号的可用模型、模式说明和只读额度页；获授权后的有界任务实测。"
+        },
+        {
+          "question": "消费者、企业与API收入和留存分别是多少？",
+          "whyMissing": "目前只取得规则和精选案例，没有分项财务与分组行为数据。",
+          "nextEvidence": "公司分业务披露或真实客户采购/续费的脱敏记录。"
+        },
+        {
+          "question": "Miro节省50%的完整成本分母包含哪些内容？",
+          "whyMissing": "没有公开原始工时、尝试成本、后期和驻场支持计费。",
+          "nextEvidence": "客户原始项目工时/采购核算，或客户自身对同一案例的可复核说明。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "g7-run-migration",
+          "updatedAt": "2026-08-27（页面明确更新日）",
+          "title": "Unlimited plan is switching to Max",
+          "url": "https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max",
+          "publisher": "Runway",
+          "publishedAt": "更新2026-08-27（页面明确更新日）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "旧套餐停止新购、老用户过渡和Max月额度/结转",
+          "limitation": "不涵盖Pro/Max后来或另行提供的指定模型Unlimited Mode；不臆定模式上线日期。"
+        },
+        {
+          "id": "g7-run-mode",
+          "title": "Generating in Unlimited Mode",
+          "url": "https://help.runwayml.com/hc/en-us/articles/54428296933011-Generating-in-Unlimited-Mode",
+          "publisher": "Runway",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Pro/Max指定模型无限模式及速度并发限制",
+          "limitation": "支持模型随活动变化；非全部模型常驻承诺。"
+        },
+        {
+          "id": "g7-run-enterprise",
+          "title": "API projects in your Organization space",
+          "url": "https://help.runwayml.com/hc/en-us/articles/55042248433939-API-projects-in-your-Organization-space",
+          "publisher": "Runway",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "Enterprise关联后的双向额度转移、管理与分析边界",
+          "limitation": "必须经账号团队启用并关联；不适用于所有个人账号。"
+        },
+        {
+          "id": "g7-run-miro",
+          "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway",
+          "url": "https://runway.com/news/customers/miro",
+          "publisher": "Runway / Miro客户访谈",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "静态和视频反复尝试、3D后期、官方辅导与50%时间节省自述",
+          "limitation": "营销选择样本，无完整成本/工时台账；客户的1亿用户不能算作平台规模。"
+        },
+        {
+          "id": "g7-run-price",
+          "title": "Runway Pricing",
+          "url": "https://runway.com/pricing",
+          "publisher": "Runway",
+          "publishedAt": null,
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "60M+ creators未定义统计窗口",
+          "limitation": "只作官方覆盖宣传，不作MAU。"
+        }
+      ]
+    },
+    {
+      "id": "waytoagi",
+      "name": "WaytoAGI",
+      "summary": "本轮补到了免费知识库与收费服务的明确边界；组织规模仍主要来自自述，不能转写成社区月活或付费客户。",
+      "claims": [
+        {
+          "id": "v7-way-commercial",
+          "dimension": "commercial",
+          "statement": "About 全文明确：知识库不设付费墙；部分深度训练营、认证与企业服务收费，相关合作由团队承接。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "现行页面；未标更新日",
+          "scope": "知识库、训练营、认证及企业服务分别判断",
+          "limitation": "只确认收费类别存在，缺少价目、成交和收入归属。",
+          "sourceIds": [
+            "v7-way-about"
+          ]
+        },
+        {
+          "id": "v7-way-growth",
+          "dimension": "commercial",
+          "statement": "WaytoGrowth 自述源自 WaytoAGI，面向 AI 公司提供定位、搜索内容、广告测试和创作者分发服务。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "页面版权 2026；2026-09-09 读取",
+          "scope": "关联服务团队",
+          "limitation": "关联品牌不能自动合并财务；客户标识和服务目录不证明合同金额。",
+          "sourceIds": [
+            "v7-way-growth-source"
+          ]
+        },
+        {
+          "id": "v7-way-scale",
+          "dimension": "scale",
+          "statement": "About 标注截至 2026-07 的 3,700 万+学习者与 1 亿+知识库访问；同页高校网络一处写 175 所、一处写 180 所。",
+          "change": "new",
+          "evidenceClass": "official-disclosure",
+          "period": "截至 2026-07",
+          "scope": "官网自述的触达与组织网络",
+          "limitation": "学习者未定义去重、渠道或活跃期；高校数字页内不一致，不选较大值当核实规模。",
+          "sourceIds": [
+            "v7-way-about"
+          ]
+        },
+        {
+          "id": "v7-way-usage",
+          "dimension": "usage",
+          "statement": "大理第一期共创档案展示 100 张成员名片、4 份原始笔记及 6 本手册，议题包括产品上线、支付和获客。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "5 月 24—30 日；页面未单独标年份，前轮档案归为 2026 年活动",
+          "scope": "一个线下共创项目及其公开档案",
+          "limitation": "名片不是按日出勤人数；手册是组织方整理成果，未逐一核实参与者上线、获客或付费结果。",
+          "sourceIds": [
+            "v7-way-house"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "可支持的商业判断是：开放内容积累信任，部分收入可能来自深度服务和企业采购。是否覆盖内容与活动成本仍需账目，访问量无法替代这一步。",
+          "sourceIds": [
+            "v7-way-about",
+            "v7-way-growth-source"
+          ]
+        },
+        {
+          "text": "公开案例支持任务式活动确实发生，也留下可复用材料；尚不能证明活动后有多少人持续创作。",
+          "sourceIds": [
+            "v7-way-house"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "3,700 万学习者究竟统计什么？",
+          "whyMissing": "未见去重方法、累计起点、跨平台合并方法；高校数还存在冲突。",
+          "nextEvidence": "带统计定义与期间的官方统计说明或可核验平台原始汇总。"
+        },
+        {
+          "question": "收费服务是否能支撑社区？",
+          "whyMissing": "没有各服务的付款客户、续约、收入、作者报酬及运营成本。",
+          "nextEvidence": "团队公开财务/项目披露，或经授权的竞品经营者访谈。"
+        },
+        {
+          "question": "参加活动后是否继续用工具、投稿或共建？",
+          "whyMissing": "现场名片、笔记和手册没有对应后续行为。",
+          "nextEvidence": "同一期可公开追踪的交付和后续项目记录，按匿名成员去重。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-way-about",
+          "title": "关于 WaytoAGI · 通往 AGI 之路",
+          "url": "https://about.waytoagi.com/",
+          "publisher": "WaytoAGI",
+          "publishedAt": "未标发布日期；统计截至 2026-07",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "免费/收费边界、学习者和访问量自述、高校数冲突",
+          "limitation": "本轮已读取完整 FAQ；官方页面不是独立统计审计。"
+        },
+        {
+          "id": "v7-way-growth-source",
+          "title": "WaytoGrowth 服务与关于",
+          "url": "https://growth.waytoagi.com/zh",
+          "publisher": "WaytoGrowth",
+          "publishedAt": "未标发布日期；版权 2026",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "服务团队归属自述、客户对象与服务目录",
+          "limitation": "初次超时、重试读取全文；未得到价格、合同或收入。"
+        },
+        {
+          "id": "v7-way-house",
+          "title": "大理出海 Hacker House 第一期现场档案",
+          "url": "https://hackerhouse-dali.waytoagi.com/",
+          "publisher": "WaytoAGI",
+          "publishedAt": "5 月 24—30 日活动；页面未标独立发布日期",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "单场成员档案、笔记、手册及实践主题",
+          "limitation": "只读公开汇总，未复制个人名片或联系方式；组织者选择性展示。"
+        }
+      ]
+    },
+    {
+      "id": "datawhale",
+      "name": "Datawhale",
+      "summary": "资源合作和共学组织有具体证据，但学习完成、复参加和收入仍缺资料。新补的公开问题说明，有价值的教程也可能缺少可复现比较和选型边界。",
+      "claims": [
+        {
+          "id": "v7-dw-cohort",
+          "dimension": "commercial",
+          "statement": "AMD 联合 hello-rocm 学习营提供免费算力、证书、助教和布道师成长通道；6 月两波活动均已结束，当前入口注明暂无进行中的学习营。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "2026-06-10 至 06-30；现行入口于 2026-09-09 读取",
+          "scope": "hello-rocm 单项目",
+          "limitation": "资源支持不是现金收入；不能把历史权益当作今天所有成员都能领取的常态福利。",
+          "sourceIds": [
+            "v7-dw-rocm"
+          ]
+        },
+        {
+          "id": "v7-dw-scale",
+          "dimension": "scale",
+          "statement": "GitHub 组织页当前显示约 32.8k 关注者、220 个仓库；这些是关注和内容供给快照。",
+          "change": "corroborated",
+          "evidenceClass": "public-counter",
+          "period": "2026-09-09 页面快照",
+          "scope": "datawhalechina GitHub 组织",
+          "limitation": "关注者不等于学习者；仓库数不等于持续维护项目数，不用于估计留存或收费转化。",
+          "sourceIds": [
+            "v7-dw-org"
+          ]
+        },
+        {
+          "id": "v7-dw-issue",
+          "dimension": "usage",
+          "statement": "self-harness 的公开议题 #5 肯定教程主线，同时建议补充任务适用判断、可复现评测及成功率、成本、耗时等比较。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "2026-04-15 创建；2026-09-09 可读状态为 Open",
+          "scope": "一条公开读者意见",
+          "limitation": "只能证明该意见存在；无法核验发帖者的实际使用深度、职业或后续采用，不能代表总体需求比例。",
+          "sourceIds": [
+            "v7-dw-issue5"
+          ]
+        },
+        {
+          "id": "v7-dw-cohort-denominator",
+          "dimension": "scale",
+          "statement": "hello-rocm 入口给出了同一期两波学习日期，却没有报名、开做、作业合格、结营及复参加人数。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "2026 年 6 月单期",
+          "scope": "该期可公开取得的运营漏斗",
+          "limitation": "未取得两波参与者的去重信息，不能用活动次数推算有效学习规模。",
+          "sourceIds": [
+            "v7-dw-rocm"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "企业获得开发者实际接触技术的机会，学习者获得环境与助教；这解释合作为什么可能成立，但还解释不了谁支付常态编辑、审阅和答疑成本。",
+          "sourceIds": [
+            "v7-dw-rocm"
+          ]
+        },
+        {
+          "text": "#5 可作为内容质量反例：教程读起来清楚，仍可能不足以支持任务选择和工程使用。它是后续抽样的线索，不是“用户都需要评测”的统计结论。",
+          "sourceIds": [
+            "v7-dw-issue5"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "完成课程后有多少人继续使用或贡献？",
+          "whyMissing": "公开入口只列流程，未给匿名队列和后续事件。",
+          "nextEvidence": "一期开营至结营的去重漏斗，以及结营后30/60天项目提交。"
+        },
+        {
+          "question": "免费内容的生产与服务成本由谁承担？",
+          "whyMissing": "算力与志愿角色不能换算为现金收入，缺少财务和工时披露。",
+          "nextEvidence": "官方年度报告或项目合作费用与助教投入的公开说明。"
+        },
+        {
+          "question": "具体意见是否最终影响教材与使用？",
+          "whyMissing": "议题是建议，尚未核验关联修改和提问者复验。",
+          "nextEvidence": "关联PR、维护者处理记录及原提问者确认。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-dw-rocm",
+          "title": "hello-rocm 组队学习入口（官方原文）",
+          "url": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+          "publisher": "Datawhale",
+          "publishedAt": "未标文件发布日期；活动 2026-06",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "合作权益、两波时间、已结束状态",
+          "limitation": "原始 Markdown 全文可读；活动完成数字未披露。"
+        },
+        {
+          "id": "v7-dw-org",
+          "title": "Datawhale GitHub 组织",
+          "url": "https://github.com/datawhalechina",
+          "publisher": "Datawhale / GitHub",
+          "publishedAt": "动态页",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "组织关注与仓库数",
+          "limitation": "界面局部加载报错，但关注者和仓库总数正文可读；取约数，不外推增长。"
+        },
+        {
+          "id": "v7-dw-issue5",
+          "title": "关于教程可读性与工程落地性的几点改进建议 · Issue #5",
+          "url": "https://github.com/datawhalechina/self-harness/issues/5",
+          "publisher": "公开议题作者 / Datawhale GitHub",
+          "publishedAt": "2026-04-15",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "读者关于复现、边界和评测的具体建议",
+          "limitation": "只分析公开文本，不保存账号身份；未确认使用成果。"
+        }
+      ]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "summary": "商业价值可以细分到组织治理、存储和计算。新增证据明确了计算额度的使用范围，也说明下载量、机构覆盖与实际付款必须分开。",
+      "claims": [
+        {
+          "id": "v7-hf-billing",
+          "dimension": "commercial",
+          "statement": "现行计费文档将订阅与按量计算分账；订阅内计算额度可用于多类计算服务，另购额度也支持超出日配额的 ZeroGPU。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "现行动态文档，2026-09-09",
+          "scope": "PRO/Team/Enterprise 及 Hub 计算计费",
+          "limitation": "不能继续用 2025 年或 2026 年初帖子断言额外额度只适用于 Inference Providers；不等于无限使用。",
+          "sourceIds": [
+            "v7-hf-billing-source"
+          ]
+        },
+        {
+          "id": "v7-hf-downloads",
+          "dimension": "scale",
+          "statement": "Hub 模型下载统计由指定文件的 GET、HEAD 请求产生；GGUF 整仓下载可能重复计数。官方另提供组织级细粒度日志来排除 CI/CD 或去重下载者。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "现行统计方法，2026-09-09",
+          "scope": "Hugging Face Hub 模型下载",
+          "limitation": "下载既不等于人，也不保证完整权重下载或实际推理；发布者自有日志不是公开竞品全站后台。",
+          "sourceIds": [
+            "v7-hf-download-source"
+          ]
+        },
+        {
+          "id": "v7-hf-announcement",
+          "dimension": "scale",
+          "statement": "NVIDIA 2026-09-03 公告正文确认达成收购协议，并称超过 1,800 万开发者、研究者和创作者及超过 20 万家公司使用 Hugging Face。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "2026-09-03 公告",
+          "scope": "公告所述整个平台覆盖",
+          "limitation": "没有活跃期、去重和付款定义；这是交易方披露，协议不等于交割，也不能据公司数乘套餐价估收入。",
+          "sourceIds": [
+            "v7-hf-nvidia"
+          ]
+        },
+        {
+          "id": "v7-hf-paid-case",
+          "dimension": "usage",
+          "statement": "2026-03-31 的公开问题涉及 PRO 用户充值后仍遇 ZeroGPU 限额；4 月跟帖称过渡期问题已修复，5 月另有用户反馈调整权限后恢复，7 月仍出现类似报告。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "2026-03-31 至 07-17",
+          "scope": "一个跨时段公开支持主题",
+          "limitation": "历史回复不能证明9月仍普遍故障；报告数量不等于独立受影响人数，是否同一根因未核实。",
+          "sourceIds": [
+            "v7-hf-quota-thread",
+            "v7-hf-billing-source"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "付款触发点不只是“想多生成”：额度、请求身份、应用配置和服务类型共同影响能否继续工作。支持文档与实际问题帖一起看，才看得到付费后的阻力。",
+          "sourceIds": [
+            "v7-hf-quota-thread",
+            "v7-hf-billing-source"
+          ]
+        },
+        {
+          "text": "下载排行榜适合看资源热度，不能建立付费漏斗。公开公司覆盖和具体付费产品之间还缺合同、用量、续费三段证据。",
+          "sourceIds": [
+            "v7-hf-download-source",
+            "v7-hf-nvidia"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "覆盖公司中有多少是有效付费客户？",
+          "whyMissing": "公告没给合同、付款或活跃定义。",
+          "nextEvidence": "按产品披露的有效客户、ARR、净留存或审计财务。"
+        },
+        {
+          "question": "购买额度后失败的频率与损失多大？",
+          "whyMissing": "公开主题是自选择投诉，缺调用总量和一致错误口径。",
+          "nextEvidence": "官方事故报告、状态页事件或有分母的失败率披露。"
+        },
+        {
+          "question": "下载资源是否用于持续业务？",
+          "whyMissing": "请求计数包含探测、自动化和重复下载。",
+          "nextEvidence": "发布者匿名去重日志、下游部署统计和实际客户案例交叉核验。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-hf-billing-source",
+          "title": "Hugging Face Billing",
+          "url": "https://huggingface.co/docs/hub/billing",
+          "publisher": "Hugging Face",
+          "publishedAt": "未标发布日期；持续更新",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "订阅、按量计算、跨服务额度与 ZeroGPU 超额规则",
+          "limitation": "当前文档已较早期用户帖发生变化；不推断所有账户均已体验同样行为。"
+        },
+        {
+          "id": "v7-hf-download-source",
+          "title": "Models Download Stats",
+          "url": "https://huggingface.co/docs/hub/models-download-stats",
+          "publisher": "Hugging Face",
+          "publishedAt": "未标发布日期；持续更新",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "GET/HEAD、query files、GGUF重复与细粒度日志",
+          "limitation": "官方统计定义；未取得任何竞品组织的非公开日志。"
+        },
+        {
+          "id": "v7-hf-nvidia",
+          "title": "NVIDIA to Acquire Hugging Face",
+          "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+          "publisher": "NVIDIA",
+          "publishedAt": "2026-09-03",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "协议状态、平台个人与机构覆盖口径",
+          "limitation": "正文完整可读；交易方自述，未作为已交割或营收依据。"
+        },
+        {
+          "id": "v7-hf-quota-thread",
+          "title": "Getting You have exceeded your Pro GPU quota error even with credits loaded",
+          "url": "https://discuss.huggingface.co/t/getting-you-have-exceeded-your-pro-gpu-quota-error-even-with-credits-loaded/174850",
+          "publisher": "Hugging Face 公开支持论坛",
+          "publishedAt": "首帖 2026-03-31；本轮可读后续至 2026-07-17",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "付费后失败、规则过渡说明、用户自报解决与后续报告",
+          "limitation": "不记录发帖身份、充值金额和账户截图；讨论回复不是正式SLA或故障率。"
+        }
+      ]
+    },
+    {
+      "id": "modelscope",
+      "name": "ModelScope 魔搭",
+      "summary": "社区的开放资源、工具维护和问题支持都有证据；社区盈利、活跃用户及免费推理的现行完整额度仍不能靠相邻云业务或旧公告代替。",
+      "claims": [
+        {
+          "id": "v7-ms-ownership",
+          "dimension": "commercial",
+          "statement": "2026 年 4 月署名报告将魔搭描述为由 CCF 开源发展技术委员会和阿里巴巴共同发起、遵循开放中立与非营利运营原则的社区。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "2026-04 报告",
+          "scope": "ModelScope 社区自述",
+          "limitation": "非营利是报告中的运营定位，不等于阿里云全部服务免费，也不披露社区预算或实际收支。",
+          "sourceIds": [
+            "v7-ms-report"
+          ]
+        },
+        {
+          "id": "v7-ms-scale",
+          "dimension": "scale",
+          "statement": "同一报告给出截至 2026-03 超过 2,500 万用户、1,000 家贡献组织，并称每月有超过 1 万 technical discussions；未定义这项讨论数量的统计单位。",
+          "change": "corroborated",
+          "evidenceClass": "official-disclosure",
+          "period": "截至 2026-03；报告2026-04",
+          "scope": "社区平台与讨论自述",
+          "limitation": "未解释用户活跃阈值、讨论单位或去重；不把贡献组织称付费企业，不把讨论数称独立提问者。",
+          "sourceIds": [
+            "v7-ms-report"
+          ]
+        },
+        {
+          "id": "v7-ms-download-case",
+          "dimension": "usage",
+          "statement": "公开 issue #1661 报告 Windows 11 / Python 3.14 环境下模型下载中断后再次运行报错，反复从头下载；页面标为 Closed。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "2026-04-01 首发；2026-09-09 读取",
+          "scope": "单一命令行下载个案",
+          "limitation": "关闭状态本身不能证明已修复；本轮未取得完整解决过程和发帖者复验，不外推为普遍故障。",
+          "sourceIds": [
+            "v7-ms-issue1661"
+          ]
+        },
+        {
+          "id": "v7-ms-maintenance",
+          "dimension": "usage",
+          "statement": "官方 modelscope_hub 客户端明确提供断点续传、校验和重试；6月至8月发布记录继续修复缓存路径、下载回调和错误归类。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "2026-06 至 08 发布记录；2026-09-09 读取",
+          "scope": "官方 Hub 客户端",
+          "limitation": "证明相关维护在发生，不能据此断言 issue #1661 已被这个新客户端解决。",
+          "sourceIds": [
+            "v7-ms-sdk"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "模型供给之外，下载可达、失败恢复和环境兼容也是社区价值的一部分。个案与维护记录能支持这个使用问题，不能支持其发生比例。",
+          "sourceIds": [
+            "v7-ms-issue1661",
+            "v7-ms-sdk"
+          ]
+        },
+        {
+          "text": "报告把生态使用描述得很大，但收入和有效活跃仍缺分母。本轮没有把未取得完整方法的问卷百分比作为魔搭用户画像。",
+          "sourceIds": [
+            "v7-ms-report"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "现行免费 API 的完整额度与商业使用条件是什么？",
+          "whyMissing": "官方 limits/intro 页本轮正文为空；索引新手指引与第三方旧指南存在单模型额度差异。",
+          "nextEvidence": "登录后可读官方限额/权益原文、版本日期；不能用2024公告代替当前规则。"
+        },
+        {
+          "question": "2,500万用户和每月1万讨论如何定义？",
+          "whyMissing": "报告未给出能复算的账户、活跃或讨论计数方法。",
+          "nextEvidence": "官方统计字典与按月匿名分群汇总。"
+        },
+        {
+          "question": "公开开发者调查能否代表全体魔搭用户？",
+          "whyMissing": "报告列出选择中国开源社区的多选结果，但本轮未找到抽样、回收及魔搭用户筛选方法。",
+          "nextEvidence": "完整调查方法附录、问卷和样本结构。"
+        },
+        {
+          "question": "免费社区如何转为可持续收入或生态投入？",
+          "whyMissing": "没有社区预算、算力实际成本和向商业云转化的归因。",
+          "nextEvidence": "独立社区收支及云服务来源归因的官方披露。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-ms-report",
+          "title": "Global Value and Practical Exploration of the AI Open Source Ecosystem",
+          "url": "https://www.wicinternet.org/pdf/GlobalValueandPracticalExplorationoftheAIOpenSourceEcosystemUnleashingtheFlywheelEffectandForgingaBornGlobalConsensus.pdf",
+          "publisher": "ModelScope / 世界互联网大会智库合作计划",
+          "publishedAt": "2026-04",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "PDF第3页运营主体与定位、第22页2026-03用户/组织/讨论口径",
+          "limitation": "平台署名自述；未把宣传性因果解释当证明。"
+        },
+        {
+          "id": "v7-ms-issue1661",
+          "title": "断点续传功能问题 · Issue #1661",
+          "url": "https://github.com/modelscope/modelscope/issues/1661",
+          "publisher": "ModelScope 公开 GitHub 议题",
+          "publishedAt": "2026-04-01",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "单一下载失败自报及Closed状态",
+          "limitation": "未保存日志中的个人路径；未读取到完整解决及复验。"
+        },
+        {
+          "id": "v7-ms-sdk",
+          "title": "modelscope_hub 官方客户端与发布记录",
+          "url": "https://github.com/modelscope/modelscope_hub",
+          "publisher": "ModelScope",
+          "publishedAt": "版本记录至2026-08-01；持续更新",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "下载可靠性功能及维护记录",
+          "limitation": "文档功能描述不等于本轮实测，也未与某一issue建立修复关系。"
+        },
+        {
+          "id": "v7-ms-onboarding-index",
+          "title": "New User Onboarding & API Inference Setup Guide",
+          "url": "https://modelscope.ai/learn/434362",
+          "publisher": "ModelScope 站内文章",
+          "publishedAt": "搜索索引显示2026-08，未核实精确日期",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "search-index",
+          "supports": "仅用于定位官方当前限额文档与记录额度冲突线索",
+          "limitation": "直接正文为空；仅搜索索引，不用于关键额度确认。"
+        }
+      ]
+    },
+    {
+      "id": "linuxdo",
+      "name": "LINUX DO",
+      "summary": "公开证据已能把访问活跃与发帖参与分开，并补到一例实际技术互助结果。推广订阅有续费约束，但商家收益和论坛收入仍未知。",
+      "claims": [
+        {
+          "id": "v7-ld-promotion",
+          "dimension": "commercial",
+          "statement": "高级推广要求佩戴订阅头衔，允许更广版块和更高发帖频次；规则规定头衔失效后该账号所有推广帖将被删除。",
+          "change": "new",
+          "evidenceClass": "official-rule",
+          "period": "规则版本2608252340；2026-09-09读取",
+          "scope": "高级推广订阅",
+          "limitation": "这是权益与续费约束，不是订阅人数、商家收益或社区营收；实际价格仍未核。",
+          "sourceIds": [
+            "v7-ld-guidelines"
+          ]
+        },
+        {
+          "id": "v7-ld-active",
+          "dimension": "scale",
+          "statement": "本轮 About 快照显示30天活跃用户115,250、话题46,635、帖子1,076,678、注册9,707。",
+          "change": "corroborated",
+          "evidenceClass": "public-counter",
+          "period": "2026-09-09 滚动30天快照",
+          "scope": "LINUX DO公开站点统计",
+          "limitation": "同日数值也会变化；话题、帖子不可相加当独立内容，活跃不能当发帖作者或新用户留存。",
+          "sourceIds": [
+            "v7-ld-about"
+          ]
+        },
+        {
+          "id": "v7-ld-method",
+          "dimension": "scale",
+          "statement": "Discourse 上游现行代码把 active_users 定义为有效账号的最近出现时间处于窗口内，并将参与用户另列为不同统计。",
+          "change": "new",
+          "evidenceClass": "implementation-doc",
+          "period": "2026-09-09读取main分支",
+          "scope": "Discourse默认实现，非LINUX DO部署审计",
+          "limitation": "LINUX DO确认使用Discourse，但部署版本和定制未核；可解释指标含义，不能声称本站完全采用该代码。",
+          "sourceIds": [
+            "v7-ld-statistics",
+            "v7-ld-about"
+          ]
+        },
+        {
+          "id": "v7-ld-help",
+          "dimension": "usage",
+          "statement": "2026-01-29 一条公开求助描述自部署 NEWAPI 接入社区登录失败；讨论排查网络后，提问者回报服务器访问问题已解决，并有人补充官方备用接口说明。",
+          "change": "new",
+          "evidenceClass": "user-report",
+          "period": "2026-01-29 单个主题",
+          "scope": "一个开发者接入任务",
+          "limitation": "这是一次自报解决的互助记录；未复测、未证明付费、后续回访或社区留存。",
+          "sourceIds": [
+            "v7-ld-help-thread"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "对推广方，持续保留历史推广内容本身也可能形成续费理由；但是否有足够线索与成交支撑续费，需要商家的实际效果数据。",
+          "sourceIds": [
+            "v7-ld-guidelines"
+          ]
+        },
+        {
+          "text": "阅读活跃与技术问题得到解决属于不同层级的价值。About能提供前者的快照，个案补充后者，二者不能拼成留存因果。",
+          "sourceIds": [
+            "v7-ld-about",
+            "v7-ld-statistics",
+            "v7-ld-help-thread"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "高级推广带来多少真实客户和续费？",
+          "whyMissing": "无当前公开价格、付费订阅数量、商家归因或续费表。",
+          "nextEvidence": "官方产品价格与匿名推广效果披露；经授权竞品商家访谈。"
+        },
+        {
+          "question": "活跃成员中有多少人提问、答疑或只访问福利？",
+          "whyMissing": "公开About没有按任务分类的去重参与和后续留存。",
+          "nextEvidence": "公开participating_users统计及人工抽样的问答结果，分别标样本和总体。"
+        },
+        {
+          "question": "实际部署是否使用上游统计定义？",
+          "whyMissing": "只能确认使用Discourse，不能确认提交版本和统计插件。",
+          "nextEvidence": "站方统计说明或公开部署版本与定制代码。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-ld-guidelines",
+          "title": "LINUX DO 社区细则",
+          "url": "https://linux.do/guidelines",
+          "publisher": "LINUX DO",
+          "publishedAt": "版本2608252340（2026-08-25）",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "高级推广权益、失效处置和收入未公开说明",
+          "limitation": "只读未登录；规则可能随时调整。"
+        },
+        {
+          "id": "v7-ld-about",
+          "title": "About LINUX DO / 网站统计",
+          "url": "https://linux.do/about",
+          "publisher": "LINUX DO",
+          "publishedAt": "2026-09-09动态快照",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "30天活跃、话题、帖子和注册；Discourse系统",
+          "limitation": "同日动态值与早轮不同不构成增长趋势。"
+        },
+        {
+          "id": "v7-ld-statistics",
+          "title": "Discourse Statistics 实现",
+          "url": "https://raw.githubusercontent.com/discourse/discourse/main/lib/statistics.rb",
+          "publisher": "Discourse",
+          "publishedAt": "main分支于2026-09-09读取",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "active_users的last_seen_at与valid_users、独立participating_users定义",
+          "limitation": "上游软件定义不等于LINUX DO当前部署已核。"
+        },
+        {
+          "id": "v7-ld-help-thread",
+          "title": "关于应用接入的问题请教佬友",
+          "url": "https://linux.do/t/topic/1537782",
+          "publisher": "LINUX DO公开论坛参与者",
+          "publishedAt": "2026-01-29",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "登录接入求助、排查与提问者自报解决",
+          "limitation": "未保存个人信息、配置截图或任何密钥；不以帖子数量当用户数。"
+        }
+      ]
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "summary": "新补的官方客户自述和企业部署案例，比单看星标更接近商业采用；客户数量、下游应用用户、目标收益和Dify收入必须分开。",
+      "claims": [
+        {
+          "id": "v7-dify-cloud",
+          "dimension": "commercial",
+          "statement": "Cloud 月付表为 Professional每工作区59美元、Team159美元；资源到顶时官方建议升级，Marketplace则标注当前免费。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "2026-09-09动态价格页",
+          "scope": "Dify Cloud工作区，不是每个最终应用用户",
+          "limitation": "年付另计；免费Marketplace不等于外部模型、插件服务都免费；价格不证明成交。",
+          "sourceIds": [
+            "v7-dify-price"
+          ]
+        },
+        {
+          "id": "v7-dify-license",
+          "dimension": "commercial",
+          "statement": "许可证允许商业用途，但运营多租户环境或移除其前端标识有额外授权要求；其中一个租户对应一个工作区。",
+          "change": "corroborated",
+          "evidenceClass": "official-rule",
+          "period": "现行许可证，版权2025；2026-09-09读取",
+          "scope": "Dify源码授权",
+          "limitation": "仅记录原文商业边界，不作具体项目的法律结论；授权销售额未知。",
+          "sourceIds": [
+            "v7-dify-license-source"
+          ]
+        },
+        {
+          "id": "v7-dify-customers",
+          "dimension": "scale",
+          "statement": "当前 About 页直接披露280+ Enterprise customers，同时列出140万+运行机器。较原融资稿的企业采用表述，客户标签更明确。",
+          "change": "new",
+          "evidenceClass": "official-disclosure",
+          "period": "2026-09-09当前页；未标统计截止",
+          "scope": "Dify官方企业客户自述与部署机器",
+          "limitation": "未披露有效付费合同、客户去重、续约或机器活跃定义；两项不可相加。",
+          "sourceIds": [
+            "v7-dify-about"
+          ]
+        },
+        {
+          "id": "v7-dify-maersk",
+          "dimension": "usage",
+          "statement": "官方马士基案例称截至2025年底约90个生产应用、25,000活跃使用者，场景涉及检索、邮件处理与发票审查。",
+          "change": "new",
+          "evidenceClass": "case-study",
+          "period": "2025年底；来源标注2025-11内部评估",
+          "scope": "一家客户内部部署的下游应用",
+          "limitation": "这些人不是Dify直接付费客户；案例由供应商发布，未取得客户原始内部评估或运行日志。",
+          "sourceIds": [
+            "v7-dify-maersk-source"
+          ]
+        },
+        {
+          "id": "v7-dify-case-caution",
+          "dimension": "usage",
+          "statement": "马士基页正文把约2,000万封年邮件的90%自动处理写作目标，摘要却写成已由AI处理；估计年价值也不是Dify收入。",
+          "change": "correction",
+          "evidenceClass": "case-study",
+          "period": "页面当前表述；内部评估标注2025-11",
+          "scope": "同一营销案例内的目标、摘要与估值",
+          "limitation": "本轮仅接受其为目标和供应商估计，不报告为已实现结果；16倍交付速度的计算方法也未给出。",
+          "sourceIds": [
+            "v7-dify-maersk-source"
+          ]
+        }
+      ],
+      "analysis": [
+        {
+          "text": "工作区容量、生产运行和组织采购是更明确的付费承接点；模板或插件的免费供给主要帮助进入使用，并不能证明创作者交易收入。",
+          "sourceIds": [
+            "v7-dify-price",
+            "v7-dify-license-source"
+          ]
+        },
+        {
+          "text": "企业案例已经超过“有模板”的证明力度，但距离可审计ROI仍有差距。跨家比较应优先列已部署范围，目标收益另放，避免把客户省的钱算成供应商赚的钱。",
+          "sourceIds": [
+            "v7-dify-maersk-source",
+            "v7-dify-about"
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "question": "280+客户中有多少有效付费及持续续约？",
+          "whyMissing": "官方标签比采用更明确，但没有合同状态、收入与续费口径。",
+          "nextEvidence": "官方财务/ARR/有效合同及净留存披露。"
+        },
+        {
+          "question": "马士基目标是否已实现、真实投入多少？",
+          "whyMissing": "未获客户内部原始评估、前后同口径数据、实施和模型成本。",
+          "nextEvidence": "客户方公开材料或同口径的任务量、人工成本、错误率和维护成本。"
+        },
+        {
+          "question": "Marketplace能否产生作者现金回报？",
+          "whyMissing": "价格页仍标当前免费，不能从可安装推出可销售和分成。",
+          "nextEvidence": "现行商业条款、交易与结算记录的官方汇总。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v7-dify-price",
+          "title": "Dify Cloud Pricing",
+          "url": "https://dify.ai/pricing/dify-cloud",
+          "publisher": "Dify",
+          "publishedAt": "未标发布日期；动态价格页",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "每工作区月付价格、容量升级、Marketplace当前免费",
+          "limitation": "页面同时展示年付金额；本条仅取月付对照表。"
+        },
+        {
+          "id": "v7-dify-license-source",
+          "title": "Dify Open Source License",
+          "url": "https://raw.githubusercontent.com/langgenius/dify/main/LICENSE",
+          "publisher": "LangGenius",
+          "publishedAt": "未标更新时间；版权2025",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "商业使用及多租户/前端标识的授权条件",
+          "limitation": "原文边界记录，不替代具体授权咨询。"
+        },
+        {
+          "id": "v7-dify-about",
+          "title": "About Dify",
+          "url": "https://dify.ai/about-us",
+          "publisher": "Dify",
+          "publishedAt": "未标统计截止；2026-09-09读取",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "280+ Enterprise customers、1.4M+ machines",
+          "limitation": "官方商业自述，未审计；与历史融资稿不能拼接精确增长。"
+        },
+        {
+          "id": "v7-dify-maersk-source",
+          "title": "Logistics & Supply Chain — Dify Solutions",
+          "url": "https://dify.ai/solutions/logistics-and-supply-chain",
+          "publisher": "Dify",
+          "publishedAt": "未标发布日期；标注来源为Maersk内部评估2025-11",
+          "accessedAt": "2026-09-09",
+          "accessLevel": "full-page",
+          "supports": "客户部署范围、使用场景、目标与摘要不一致",
+          "limitation": "供应商案例；客户原始评估未取得，不能证明已实现ROI。"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "profiles": 18,
+    "claims": 78,
+    "sources": 78,
+    "uniqueUrls": 77,
+    "newlyReferencedUrls": 42,
+    "fullPageSources": 77,
+    "indexOnlySources": 1,
+    "corrections": 1,
+    "userReports": 11
+  },
+  "findings": [
+    {
+      "title": "同一社区里，付款方可能不止一类",
+      "text": "SeaArt既向工具使用者销售会员与资源，也让支持者订阅经审核的作者内容；Dify按工作区销售Cloud服务，市场目录目前免费；WaytoAGI免费开放知识库，另有收费训练营与企业服务。竞争分析需要分别跟踪这些付款方、交付物和收入归属。看见内容社区，并不能判断它主要靠向阅读者收费。",
+      "sourceIds": [
+        "sea-v7-s1",
+        "sea-v7-s2",
+        "v7-dify-price",
+        "v7-way-about"
+      ]
+    },
+    {
+      "title": "会员资格、使用资源与商用许可是不同条件",
+      "text": "Liblib明确会员仍需核对资源许可；RunningHub普通付费协议存在默认非商业用途及另有约定的范围，而企业API需要另外确认。即梦也区分会员资格与实际资源扣费。这些规则会影响客户项目的采购判断，报告不能只写“买会员即可使用”。当前尚未取得足以解释所有套餐、模型与企业合同的完整对应关系。",
+      "sourceIds": [
+        "lib-v7-s1",
+        "rh-v7-s1",
+        "rh-v7-s2",
+        "jm-v7-s1"
+      ]
+    },
+    {
+      "title": "经营数字更具体了，仍不能拼成同一张规模榜",
+      "text": "快手披露可灵2026年第二季度收入超过8.5亿元；Dify官网自述280多家企业客户，马士基案例的25,000名活跃使用者则属于一家客户内部应用。三者分别是产品期间收入、企业客户覆盖和下游应用使用，不能互换。WaytoAGI同一页面的高校数量还出现175与180两个值，报告保留冲突，未择高填表。",
+      "sourceIds": [
+        "kl-v7-s2",
+        "v7-dify-about",
+        "v7-dify-maersk-source",
+        "v7-way-about"
+      ]
+    },
+    {
+      "title": "作者激励需要区分规则、兑现与持续供给",
+      "text": "吐司停止一部分旧现金激励时保留直接付费与算力返还；Tensor.Art另有自己的调整。SeaArt的作者订阅包含审核、分成、处理费和提现门槛，并保护原有免费内容。它们说明供给成本和作者交易正在被细分；旧年报的投稿量或当前的分成比例，都不足以证明作者收入稳定、补贴可持续或供给已经流失。",
+      "sourceIds": [
+        "ta-v7-s1",
+        "ta-v7-s2",
+        "ta-v7-s4",
+        "sea-v7-s1"
+      ]
+    },
+    {
+      "title": "商业案例能说明用途，不能省略选择过程",
+      "text": "Pencil明确从12类场景测试中挑选可灵表现好的结果；Dify马士基页把邮件自动处理写作目标，摘要却呈现为已处理。前者缺总尝试次数，后者存在目标与结果的表述差异。因此报告保留具体任务与部署自述，不据此计算普遍出片率、实际节省成本，或把客户估计收益记成平台收入。",
+      "sourceIds": [
+        "kl-v7-s3",
+        "v7-dify-maersk-source"
+      ]
+    },
+    {
+      "title": "公开差评也要追到后续，而不是停在抱怨",
+      "text": "OpenArt的一名用户先自述购买年费后制作受阻，后来又报告项目继续推进；另一人的流程跨越Midjourney、OpenArt和外部辅助工具。Leonardo也有围绕技术博客配图的具体反馈。它们提示连续项目、工具组合、学习和返工值得研究；付款、进度和问题原因仍是自述，不能据几条评论估计满意率、续费率或认定用户已经迁移。",
+      "sourceIds": [
+        "g7-open-user-first",
+        "g7-open-user-followup",
+        "g7-open-user-lipsync",
+        "g7-leo-user-blog"
+      ]
+    },
+    {
+      "title": "套餐名称相近，实际可用资源可能不同",
+      "text": "Runway旧Unlimited套餐的过渡安排与当前Pro/Max部分模型的Unlimited Mode分开；企业账号经启用后还有网页与API额度互转条件。Leonardo的新API按量余额规则也不能套到网页充值Token或尚未迁移的旧订阅。这类差异会改变高频创作者与企业买方的实际成本，适合逐套餐比较，不能用一个最低月价代表整个平台。",
+      "sourceIds": [
+        "g7-run-migration",
+        "g7-run-mode",
+        "g7-run-enterprise",
+        "g7-leo-payg-source",
+        "g7-leo-token"
+      ]
+    }
+  ],
+  "methods": {
+    "accessedAt": "2026-09-09",
+    "title": "进一步取数的能力与边界",
+    "items": [
+      {
+        "title": "付费数据工具能增加维度，不能保证覆盖这18家",
+        "fact": "Semrush 的 Traffic Analytics 提供历史、渠道、主要页面及访问路径等维度；其完整产品的免费账户只支持示例域名。公开网站速览页与完整产品权限不是一回事。",
+        "implication": "如果需要采购，先索取指定域名、月份、地区、设备范围及目标字段的样例。先验证覆盖，再决定购买；本轮没有购买或取得付费导出。",
+        "sourceIds": [
+          "method-semrush-traffic"
+        ]
+      },
+      {
+        "title": "转化估计有新旧版本，不能一概理解为订阅支付",
+        "fact": "Similarweb 新版转化数据包含桌面与移动网页，针对被归为电商的网站，并设月访问量门槛：进入时至少20,000，低于10,000才移出。Converted Visits 是购买事件估计。旧版帮助页则以桌面感谢页访问定义转化，也可能包含表单提交。",
+        "implication": "不能承诺购买工具就能拿到18家AI社区的付费率。须确认目标域是否纳入、新旧数据版本、转化定义，以及是否覆盖订阅续费、站外付款和退款。当前没有核实这些域名的适用资格。",
+        "sourceIds": [
+          "method-similarweb-new-conversion",
+          "method-similarweb-legacy-conversion"
+        ]
+      },
+      {
+        "title": "独立访客比访问次数更接近人数，但仍有统计范围",
+        "fact": "Similarweb 解释：同一人一个月内多天访问，在每日独立访客中可重复出现，在月独立访客中只计一次。Website Performance 将 Monthly Visits、Monthly Unique Visitors 与跨设备 Deduplicated Audience 分列。",
+        "implication": "即使后续取得UV，也要保留地域、设备和域名范围。只有同一供应商、同一期间和同一范围的数据才能计算每位网站访客的访问频次；它仍不代表产品注册用户的留存。",
+        "sourceIds": [
+          "method-similarweb-uv",
+          "method-similarweb-performance"
+        ]
+      },
+      {
+        "title": "Purchase Conversion 也不是竞品订单账本",
+        "fact": "Semrush 术语表把 Purchase Conversion 描述为可能以某种转化结束的访问指标；Traffic Analytics 官方说明数据来自点击流与建模，并非网站内部分析系统。",
+        "implication": "来源只有估计转化时，保留估计标签，不用它乘套餐标价倒算营收。实际收入还涉及套餐组合、计费周期、折扣、税费、退款以及收入确认范围。",
+        "sourceIds": [
+          "method-semrush-glossary",
+          "method-semrush-traffic"
+        ]
+      }
+    ],
+    "collectionOptions": [
+      {
+        "question": "哪些页面和渠道带来访问？",
+        "evidence": "同一工具下的落地页、子目录、来路、设备及连续月份导出",
+        "limit": "可细分入口，但不能识别每次访问是否完成生成或交付。",
+        "status": "完整付费导出未取得；现有公开流量页继续保留"
+      },
+      {
+        "question": "有多少人持续使用？",
+        "evidence": "竞品发布的活跃定义与分群留存，或同一公开用户/作者跨时间的任务记录",
+        "limit": "公开作者连续发布仅证明该作者供给；不能代替沉默用户或全平台留存。",
+        "status": "平台级可比留存仍不足；逐家记录可见个案"
+      },
+      {
+        "question": "用户因为什么付费和离开？",
+        "evidence": "具日期的公开评价、问题帖、官方回复、变更规则与具体交付案例交叉核对",
+        "limit": "评论有自选择偏差；购买、退款和问题原因若无凭证，只能作为用户自述。",
+        "status": "本轮补核公开个案；未开展访谈"
+      },
+      {
+        "question": "社区本身赚了多少钱？",
+        "evidence": "产品级财务披露、招股书、业务分部收入、付费用户和成本说明",
+        "limit": "集团收入、年化运行率、融资额、作者分成和平台营收分别列示。",
+        "status": "逐家保留已披露值与口径缺口，不估填缺失财务"
+      }
+    ],
+    "sources": [
+      {
+        "id": "method-semrush-traffic",
+        "title": "Traffic Analytics",
+        "url": "https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview",
+        "publisher": "Semrush",
+        "publishedAt": "页面未标注发布日期",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "完整产品的指标、账户权限与点击流建模方法",
+        "limitation": "说明产品能力，不证明特定竞品的付费字段可用"
+      },
+      {
+        "id": "method-similarweb-new-conversion",
+        "title": "Understanding the New Conversion Analysis Metrics",
+        "url": "https://support.similarweb.com/hc/en-us/articles/34990684782109-Understanding-the-New-Conversion-Analysis-Metrics",
+        "publisher": "Similarweb",
+        "publishedAt": "页面未标注发布日期",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "新版转化的设备范围、电商分类、访问门槛与估计性质",
+        "limitation": "不提供本报告18家竞品的适用名单或转化数值"
+      },
+      {
+        "id": "method-similarweb-legacy-conversion",
+        "title": "Conversion Analysis（旧版模块说明）",
+        "url": "https://support.similarweb.com/hc/en-us/articles/360001811838-Conversion-Analysis",
+        "publisher": "Similarweb",
+        "publishedAt": "页面未标注发布日期；新版说明明确区分legacy模块",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "旧版以桌面感谢页定义转化，可能含表单提交",
+        "limitation": "旧版规则不得覆盖新版全设备购买事件估计"
+      },
+      {
+        "id": "method-similarweb-uv",
+        "title": "Monthly Unique Visitors",
+        "url": "https://support.similarweb.com/hc/en-us/articles/214074389-Monthly-Unique-Visitors",
+        "publisher": "Similarweb",
+        "publishedAt": "页面未标注发布日期",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "月度与每日独立访客的计数区别",
+        "limitation": "不是产品账号活跃或分群留存定义"
+      },
+      {
+        "id": "method-similarweb-performance",
+        "title": "View Website Performance",
+        "url": "https://support.similarweb.com/hc/en-us/articles/360010749958-View-Website-Performance",
+        "publisher": "Similarweb",
+        "publishedAt": "页面未标注发布日期",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "访问、月独立访客、跨设备去重受众与过滤范围分列",
+        "limitation": "不代表本轮已取得这些完整字段"
+      },
+      {
+        "id": "method-semrush-glossary",
+        "title": "SEO Terms and Definitions：Purchase Conversion",
+        "url": "https://www.semrush.com/kb/925-glossary",
+        "publisher": "Semrush",
+        "publishedAt": "页面未标注发布日期",
+        "accessedAt": "2026-09-09",
+        "accessLevel": "full-page",
+        "supports": "Purchase Conversion 的可能转化访问定义",
+        "limitation": "术语说明不构成竞品真实支付证据"
+      }
+    ]
+  },
+  "userRecords": {
+    "accessedAt": "2026-09-09",
+    "method": "定向检索公开使用经历；4个公开账号、5条主要发言节点。未访谈、未联系、未验证付款和平台日志。跨平台复用同一记录不增加人数。",
+    "records": [
+      {
+        "id": "GUR-01",
+        "competitors": [
+          "civitai"
+        ],
+        "sourceIds": [
+          "g7-civi-user-paywall"
+        ],
+        "period": "2026-08-23（搜索索引）；正文相对日期存在差异",
+        "task": "在资源发现时判断是否接受永久付费访问",
+        "paymentSelfReport": "没有可核实的付款自述",
+        "actionSelfReport": "称会屏蔽采用永久付费墙的作者",
+        "problemSelfReport": "认为永久收费与开放资源预期冲突",
+        "response": "公开回复存在不同解释：付费下载与仅API服务并不相同",
+        "outcome": "屏蔽和流失均未由平台日志核验",
+        "limitation": "不是已完成生成任务样本；只用于记录收费预期争议，不采用评论中的比例推测。"
+      },
+      {
+        "id": "GUR-02",
+        "competitors": [
+          "openart"
+        ],
+        "sourceIds": [
+          "g7-open-user-first",
+          "g7-open-user-followup"
+        ],
+        "period": "首条搜索索引2025-11-02；后续仅相对日期",
+        "task": "为一张专辑制作9支音乐视频",
+        "paymentSelfReport": "称购买折扣年费，未见付款证明",
+        "actionSelfReport": "初期约3周尝试图片、角色和短镜头；后续称完成约一半项目",
+        "problemSelfReport": "初期文件管理、教程与学习难度",
+        "response": "后续同账号认可学习影视术语的帮助并附作品列表；并非已核验官方客服解决",
+        "outcome": "自述继续使用且认可订阅；未取得下一次续费",
+        "limitation": "两条发言来自同一账号，不能计作两名用户；本轮未逐个播放作品，年费有效期内使用不能当续费。"
+      },
+      {
+        "id": "GUR-03",
+        "competitors": [
+          "openart",
+          "midjourney"
+        ],
+        "sourceIds": [
+          "g7-open-user-lipsync",
+          "g7-mj-user-reference"
+        ],
+        "period": "评论搜索索引2026-02-05；正文仅相对日期",
+        "task": "音乐视频，后缩到基础口型同步片段",
+        "paymentSelfReport": "自述因OpenArt音乐视频活动购买年费；Midjourney付款未明确",
+        "actionSelfReport": "自述Midjourney制作角色参考图，外部大模型协助提示，并制作口型片段",
+        "problemSelfReport": "完整分镜制作需大量调试",
+        "response": "同讨论其他用户交流学习方法；未见平台确认解决",
+        "outcome": "基础片段为自述已做；考虑CapCut组合制作是未来意向",
+        "limitation": "同一记录用于两个产品，不新增人数；历史额度花费不作当前价格，不做品质排名。"
+      },
+      {
+        "id": "GUR-04",
+        "competitors": [
+          "leonardo"
+        ],
+        "sourceIds": [
+          "g7-leo-user-blog"
+        ],
+        "period": "正文约6个月前；精确日期未核实",
+        "task": "技术博客头图、Mermaid图示转图与文章配图",
+        "paymentSelfReport": "自述付费会员及额外额度，未核验账单",
+        "actionSelfReport": "称已使用数月，另外开启大模型窗口协助提示",
+        "problemSelfReport": "回车触发付费生成、会话更新后设置变化、上传图后尺寸自动调整",
+        "response": "回复表示会转交团队；回复者身份及实际修复未独立验证",
+        "outcome": "未见修复、退款或下一次续费确认",
+        "limitation": "未复现现版本，不把发帖者对动机和技术原因的推测当事实。"
+      }
+    ]
+  }
+}

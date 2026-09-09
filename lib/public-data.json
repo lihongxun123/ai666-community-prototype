@@ -8300,12 +8300,12 @@
         "value": "115,233",
         "numericValue": 115233,
         "unit": "账号",
-        "period": "采集于2026-09-09的滚动30天",
+        "period": "2026-09-09第四轮快照的滚动30天",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       },
       {
         "domain": "linux.do",
@@ -8314,12 +8314,12 @@
         "value": "46,598",
         "numericValue": 46598,
         "unit": "主题",
-        "period": "采集于2026-09-09的滚动30天",
+        "period": "2026-09-09第四轮快照的滚动30天",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       },
       {
         "domain": "linux.do",
@@ -8328,12 +8328,12 @@
         "value": "1,076,373",
         "numericValue": 1076373,
         "unit": "帖子",
-        "period": "采集于2026-09-09的滚动30天",
+        "period": "2026-09-09第四轮快照的滚动30天",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       },
       {
         "domain": "linux.do",
@@ -8342,12 +8342,12 @@
         "value": "9,675",
         "numericValue": 9675,
         "unit": "账号",
-        "period": "采集于2026-09-09的滚动30天",
+        "period": "2026-09-09第四轮快照的滚动30天",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       },
       {
         "domain": "linux.do",
@@ -8356,12 +8356,12 @@
         "value": "92,984",
         "numericValue": 92984,
         "unit": "账号",
-        "period": "采集于2026-09-09的滚动7天",
+        "period": "2026-09-09第四轮快照的滚动7天",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       },
       {
         "domain": "linux.do",
@@ -8370,12 +8370,12 @@
         "value": "61,567",
         "numericValue": 61567,
         "unit": "账号",
-        "period": "采集于2026-09-09的滚动24小时",
+        "period": "2026-09-09第四轮快照的滚动24小时",
         "scope": "linux.do 站点自报滚动统计（About 发布）；未提供公开与登录后页面或成员权限分组",
         "provider": "LINUX DO / Discourse",
         "evidenceStatus": "page",
         "sourceId": "linuxdo-about-20260909",
-        "limitation": "滚动期间与7月流量估算不同。Active users 不等于发帖人数；Posts 不等于独立贡献者，不能相除推算留存。"
+        "limitation": "与第三轮和本轮快照分开保留，未记录精确时分；同日差值不能当增长趋势。滚动期与7月流量估计不同。Active users不等于发帖人数，Posts不等于独立贡献者，不能相除推算留存。"
       }
     ],
     "interpretations": [
@@ -8386,7 +8386,7 @@
     ],
     "gaps": [
       "未取得新用户分群留存、阅读者与发帖者的去重关系、活跃作者分布。",
-      "About 的 Active users 判定细节未在该页充分解释；并非作者 MAU 或跨平台总 MAU。",
+      "已查到Discourse上游默认Active users实现；LINUX DO部署版本与定制未核，不是作者MAU或跨平台总MAU。详见本次竞品证据补核。",
       "未取得全站 Desktop/Mobile 比例；国家内部设备表不支持全球份额结论。",
       "实际职业、年龄、常住地区及付费意愿均未知；公开流量报告与 About 计数均未提供按访问权限分组的数据。"
     ],
@@ -8418,7 +8418,7 @@
         "publisher": "LINUX DO / Discourse",
         "publishedAt": null,
         "accessedAt": "2026-09-09",
-        "accessNote": "研究者未登录 LINUX DO，仅打开公开 About 页；这不界定 Semrush 点击流或站点自报计数的页面覆盖范围。采用本轮较晚快照，滚动数会变化。",
+        "accessNote": "研究者未登录 LINUX DO，仅打开公开 About 页；这不界定 Semrush 点击流或站点自报计数的页面覆盖范围。采用本轮较晚快照，滚动数会变化。 第四轮快照，保留原数；与第三轮及本轮分别阅读，不据同日差值推算增长。",
         "excerpt": "30 days: Topics 46598; Posts 1076373; Sign-ups 9675; Active users 115233"
       }
     ]
@@ -8919,7 +8919,7 @@
       "Semrush dify.ai 与 cloud.dify.ai 公开页均未返回可读正文，未取得能加入2026-07同供应商比较的数字。",
       "Similarweb 比较区读到1M/313K，但上方为 Total Visits Last 3 Months；正文没有提供逐月图点或为比较区独立标明周期，暂不当精确月访问。",
       "公开页未充分说明主域是否聚合子域；两个域的访问与用户不能相加。",
-      "未取得全站设备份额、完整渠道、留存、付费用户规模；人口画像为第三方受众估计，缺少职业及客户结构验证。",
+      "已有280+企业客户的官方自述；有效付费客户定义、Cloud/Enterprise拆分和留存仍未取得。全站设备份额、完整渠道及职业结构亦未核，人口画像仅为第三方估计。",
       "自托管实例、API 调用、用户发布在其他域名的应用以及线下使用，不由这些网站报告完整覆盖。"
     ],
     "sources": [
