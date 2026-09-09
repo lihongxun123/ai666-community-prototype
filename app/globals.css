@@ -333,3 +333,19 @@ body {
 .evidence-claim dt{color:#65715f}.evidence-claim dd{margin:0}
 .evidence-interpretations{margin:2rem 0}.evidence-inference{border-left:2px solid #8d9c84;padding-left:1rem}
 @media(max-width:760px){.evidence-claim dl{grid-template-columns:1fr;gap:.25rem}.evidence-claim dd{margin-bottom:.65rem}.evidence-update-report h2,.evidence-profile h2{font-size:1.4rem}}
+
+.operations-report,.operations-profile{font-size:1rem;line-height:1.9;min-width:0;overflow-wrap:anywhere}
+.operations-report section{margin-block:2.7rem;scroll-margin-top:6rem}
+.operations-profile{margin:3rem 0;border-top:2px solid #6c8560;padding-top:1.5rem;scroll-margin-top:6rem}
+.operations-profile h3{margin:2.4rem 0 1rem}.ops-archetype{color:#52674c;font-size:.9375rem}
+.ops-comparison-table,.ops-content-table{width:100%;border-collapse:collapse;font-size:.9375rem;line-height:1.85}
+.ops-comparison-table{min-width:1000px}.ops-content-table{min-width:820px}
+.ops-comparison-table th,.ops-comparison-table td,.ops-content-table th,.ops-content-table td{padding:1rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--report-line);overflow-wrap:anywhere}
+.ops-comparison-table thead,.ops-content-table thead{background:#edf1e7}
+.ops-comparison-table th:first-child{width:16%}.ops-comparison-table td:nth-child(2){width:33%}.ops-comparison-table td:nth-child(3){width:21%}
+.ops-content-table th:first-child{width:17%}.ops-content-table td{width:27.6%}
+.ops-comparison-table small{display:block;font-weight:400;font-size:.8125rem;color:#65715f;margin-top:.65rem}
+.ops-comparison-table ol,.ops-journey{padding-left:1.4rem;margin-top:0}.ops-journey li{padding:.4rem 0}
+.ops-mechanism{padding:1.3rem 0;border-bottom:1px solid var(--report-line)}.ops-mechanism h4{font-size:1.1rem;font-weight:600;margin:.35rem 0 .7rem}.ops-mechanism>span{font-size:.875rem}
+.ops-roles{display:grid;grid-template-columns:10rem minmax(0,1fr);gap:1rem;margin:1rem 0}.ops-roles dt{font-weight:600}.ops-roles dd{margin:0}
+@media(max-width:760px){.ops-roles{grid-template-columns:1fr;gap:.3rem}.ops-roles dd{margin-bottom:1rem}.operations-profile h2,.operations-report h2{font-size:1.4rem}}

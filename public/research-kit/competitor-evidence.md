@@ -851,12 +851,12 @@ NVIDIA 2026-09-03 公告正文确认达成收购协议，并称超过 1,800 万�
 
 - **现行免费 API 的完整额度与商业使用条件是什么？** 官方 limits/intro 页本轮正文为空；索引新手指引与第三方旧指南存在单模型额度差异。 所需证据：登录后可读官方限额/权益原文、版本日期；不能用2024公告代替当前规则。
 - **2,500万用户和每月1万讨论如何定义？** 报告未给出能复算的账户、活跃或讨论计数方法。 所需证据：官方统计字典与按月匿名分群汇总。
-- **公开开发者调查能否代表全体魔搭用户？** 报告列出选择中国开源社区的多选结果，但本轮未找到抽样、回收及魔搭用户筛选方法。 所需证据：完整调查方法附录、问卷和样本结构。
+- **公开开发者调查能否代表全体魔搭用户？** 报告前言自述面向超过20万用户调查并取得超过1万份高质量样本，附录提供问卷；未取得招募、去重、回收率及魔搭用户筛选方法，不能据此代表全站用户。 所需证据：调查对象筛选与招募过程、去重和回收记录、样本与全站结构差异说明。
 - **免费社区如何转为可持续收入或生态投入？** 没有社区预算、算力实际成本和向商业云转化的归因。 所需证据：独立社区收支及云服务来源归因的官方披露。
 
 ### 来源
 
-- [Global Value and Practical Exploration of the AI Open Source Ecosystem](https://www.wicinternet.org/pdf/GlobalValueandPracticalExplorationoftheAIOpenSourceEcosystemUnleashingtheFlywheelEffectandForgingaBornGlobalConsensus.pdf)；ModelScope / 世界互联网大会智库合作计划；发布/更新：2026-04；查阅：2026-09-09；已读取正文。支持：PDF第3页运营主体与定位、第22页2026-03用户/组织/讨论口径。边界：平台署名自述；未把宣传性因果解释当证明。
+- [Global Value and Practical Exploration of the AI Open Source Ecosystem](https://www.wicinternet.org/pdf/GlobalValueandPracticalExplorationoftheAIOpenSourceEcosystemUnleashingtheFlywheelEffectandForgingaBornGlobalConsensus.pdf)；ModelScope / 世界互联网大会智库合作计划；发布/更新：2026-04；查阅：2026-09-09；已读取正文。支持：PDF第3页运营主体与定位、第22页2026-03用户/组织/讨论口径；本次继续核对物理第5页调查规模自述与第34页起的问卷附录。边界：平台署名自述；未把宣传性因果解释当证明。
 - [断点续传功能问题 · Issue #1661](https://github.com/modelscope/modelscope/issues/1661)；ModelScope 公开 GitHub 议题；发布/更新：2026-04-01；查阅：2026-09-09；已读取正文。支持：单一下载失败自报及Closed状态。边界：未保存日志中的个人路径；未读取到完整解决及复验。
 - [modelscope_hub 官方客户端与发布记录](https://github.com/modelscope/modelscope_hub)；ModelScope；发布/更新：版本记录至2026-08-01；持续更新；查阅：2026-09-09；已读取正文。支持：下载可靠性功能及维护记录。边界：文档功能描述不等于本轮实测，也未与某一issue建立修复关系。
 - [New User Onboarding & API Inference Setup Guide](https://modelscope.ai/learn/434362)；ModelScope 站内文章；发布/更新：搜索索引显示2026-08，未核实精确日期；查阅：2026-09-09；仅索引。支持：仅用于定位官方当前限额文档与记录额度冲突线索。边界：直接正文为空；仅搜索索引，不用于关键额度确认。
