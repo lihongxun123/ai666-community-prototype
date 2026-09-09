@@ -197,6 +197,18 @@ body {
 .business-source-list .source-row p{font-size:13px}.business-source-list .source-row small{font-size:12px}
 @media(max-width:760px){.business-method dl,.business-key-facts,.business-segment dl{grid-template-columns:1fr;gap:5px}.business-method dd,.business-key-facts dd,.business-segment dd{margin-bottom:14px}.business-summary{font-size:17px}.business-report h3{font-size:21px}.business-report p{font-size:16px}.business-report .business-reading-note{font-size:14px}.business-metrics{font-size:14px}.business-citations{font-size:13px}}
 
+/* Fieldwork preparation extends the existing report without storing participant data. */
+.validation-start{padding:23px;border:1px solid #cbd5c3;border-left:3px solid var(--report-green);margin:24px 0;background:#edf1e7}
+.validation-start p{margin-top:10px;font-size:15px}.validation-start strong{font-size:17px}
+.validation-downloads{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:20px}.validation-downloads a{text-decoration:none}
+.validation-recruit,.validation-gates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}
+.validation-recruit article,.validation-gates article{padding:18px 0;border-top:2px solid #aebba6;min-width:0}
+.validation-recruit p,.validation-gates p{font-size:15px;line-height:1.95}
+.validation-fallbacks{padding-left:24px}.validation-fallbacks li{margin:14px 0}
+.validation-report .profile-links a{padding:8px 0;color:var(--report-green);text-decoration:underline;text-underline-offset:3px;font-size:14px}
+@media(max-width:1000px){.validation-recruit,.validation-gates{grid-template-columns:1fr;gap:10px}}
+@media(max-width:760px){.validation-start{padding:18px}.validation-downloads{align-items:flex-start;flex-direction:column}.validation-downloads .primary-button{font-size:14px}}
+
 /* Task samples keep missing evidence distinct from negative findings. */
 .content-report{font-size:16px;line-height:1.9;min-width:0}
 .content-report>section{margin:42px 0}

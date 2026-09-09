@@ -15,12 +15,13 @@ import publicData from '@/lib/public-data.json';
 import { publicDataMethod } from '@/lib/public-data-method';
 import { publicDataInsights } from '@/lib/public-data-insights';
 import { ContentOverview, ContentProfile } from '@/components/content-research';
+import { ValidationOverview } from '@/components/validation-research';
 
 const businessProfiles: BusinessProfileData[] = businessData;
 const businessById = new Map(businessProfiles.map(profile => [profile.id, profile]));
 const publicProfiles = publicData as PublicDataProfile[];
 const publicById = new Map(publicProfiles.map(profile => [profile.id, profile]));
-const topViews=[['overview','研究总览'],['matrix','18 个竞品对照'],['tasks','任务、内容与作者'],['data','公开数据对照'],['business','商业化、规模与用户'],['strategy','定位与种子用户'],['evidence','证据与局限']];
+const topViews=[['overview','研究总览'],['validation','下一步：真实任务验证'],['matrix','18 个竞品对照'],['tasks','任务、内容与作者'],['data','公开数据对照'],['business','商业化、规模与用户'],['strategy','定位与种子用户'],['evidence','证据与局限']];
 export default function Research(){
  const [view,setView]=useState('overview'); const [query,setQuery]=useState(''); const [group,setGroup]=useState('全部'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
  const sectionTarget=useRef<{profileId:string;sectionId:string}|null>(null);
@@ -73,7 +74,8 @@ export default function Research(){
  <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>对你们的取舍</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
  {rows.length===0&&<p className="empty">没有匹配结果，请清除左侧筛选。</p>}<p className="muted">各项事实、日期与访问限制见对应档案。这个对照不意味着所有平台都是直接竞争者。</p>
  </>}
- {view==='tasks'&&<ContentOverview onSelect={showContent}/>}
+ {view==='validation'&&<ValidationOverview/>}
+ {view==='tasks'&&<><div className="notice"><strong>下一步：先比较三类真实任务</strong><p>12次探索访谈分别覆盖商品内容、连载创作与API使用。选择一种任务后再做5人试用；本页商品图方案保留为备选。</p><button className="text-button" onClick={()=>navigate('validation')}>打开招募文案、访谈提纲与记录表 <ArrowRight size={14}/></button></div><ContentOverview onSelect={showContent}/></>}
  {view==='data'&&<><div className="notice"><strong>第五轮已补充：从流量深入到具体任务</strong><p>RunningHub、Liblib、吐司/Tensor.Art 共183条去重样本，区分目录、详情与使用者讨论，整理任务、作者供给和获客入口。</p><button className="text-button" onClick={()=>navigate('tasks')}>查看任务、内容与作者 <ArrowRight size={14}/></button></div><PublicDataOverview data={publicProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
  {view==='business'&&<BusinessOverview data={businessProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} insights={businessInsights} onSelect={showBusiness}/>}
  {(view==='strategy'||view==='evidence')&&<>
