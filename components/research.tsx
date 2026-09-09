@@ -14,12 +14,13 @@ import type { PublicDataProfile } from '@/lib/public-data-types';
 import publicData from '@/lib/public-data.json';
 import { publicDataMethod } from '@/lib/public-data-method';
 import { publicDataInsights } from '@/lib/public-data-insights';
+import { ContentOverview, ContentProfile } from '@/components/content-research';
 
 const businessProfiles: BusinessProfileData[] = businessData;
 const businessById = new Map(businessProfiles.map(profile => [profile.id, profile]));
 const publicProfiles = publicData as PublicDataProfile[];
 const publicById = new Map(publicProfiles.map(profile => [profile.id, profile]));
-const topViews=[['overview','研究总览'],['matrix','18 个竞品对照'],['data','公开数据对照'],['business','商业化、规模与用户'],['strategy','定位与种子用户'],['evidence','证据与局限']];
+const topViews=[['overview','研究总览'],['matrix','18 个竞品对照'],['tasks','任务、内容与作者'],['data','公开数据对照'],['business','商业化、规模与用户'],['strategy','定位与种子用户'],['evidence','证据与局限']];
 export default function Research(){
  const [view,setView]=useState('overview'); const [query,setQuery]=useState(''); const [group,setGroup]=useState('全部'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
  const sectionTarget=useRef<{profileId:string;sectionId:string}|null>(null);
@@ -28,6 +29,7 @@ export default function Research(){
  useEffect(()=>{if(sectionTarget.current?.profileId===view){document.getElementById(sectionTarget.current.sectionId)?.scrollIntoView({block:'start'});sectionTarget.current=null;}},[view]);
  const showBusiness=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'commercial'};navigate(id);};
  const showData=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'public-data'};navigate(id);};
+ const showContent=(id:string)=>{sectionTarget.current={profileId:id,sectionId:'content-observations'};navigate(id);};
  const filtered=useMemo(()=>profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());}),[query,group]);
  const p=profiles.find(x=>x.id===view); const index=p?profiles.indexOf(p):-1;
  const toggle=(id:string)=>setSelected(prev=>prev.includes(id)?prev.filter(v=>v!==id):prev.length<3?[...prev,id]:prev);
@@ -71,7 +73,8 @@ export default function Research(){
  <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>对你们的取舍</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
  {rows.length===0&&<p className="empty">没有匹配结果，请清除左侧筛选。</p>}<p className="muted">各项事实、日期与访问限制见对应档案。这个对照不意味着所有平台都是直接竞争者。</p>
  </>}
- {view==='data'&&<PublicDataOverview data={publicProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/>}
+ {view==='tasks'&&<ContentOverview onSelect={showContent}/>}
+ {view==='data'&&<><div className="notice"><strong>第五轮已补充：从流量深入到具体任务</strong><p>RunningHub、Liblib、吐司/Tensor.Art 共183条去重样本，区分目录、详情与使用者讨论，整理任务、作者供给和获客入口。</p><button className="text-button" onClick={()=>navigate('tasks')}>查看任务、内容与作者 <ArrowRight size={14}/></button></div><PublicDataOverview data={publicProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
  {view==='business'&&<BusinessOverview data={businessProfiles.filter(item=>filtered.some(profile=>profile.id===item.id))} insights={businessInsights} onSelect={showBusiness}/>}
  {(view==='strategy'||view==='evidence')&&<>
  <div className="page-heading"><p className="eyebrow">{view==='strategy'?'DECISIONS TO TEST':'EVIDENCE & LIMITS'}</p><h1>{view==='strategy'?'找到第一批会再次使用的人':'知道什么，也知道还缺什么'}</h1><p className="lead">{view==='strategy'?'三个方向都先作为假设。用真实输入、第二次任务和人的反馈，缩小选择范围。':'公开资料说明产品规则或设计；是否上线、能否完成任务分别核验。真实效果仍需要你们自己的用户实验。'}</p></div>
@@ -82,7 +85,8 @@ export default function Research(){
  <div className="page-heading profile-heading"><p className="eyebrow">档案 {String(index+1).padStart(2,'0')} / 18 <span>·</span> {p.group}</p><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
  <div className="access-note"><strong>第二轮操作核验</strong><p>{p.access}</p></div>
- <nav className="article-toc" aria-label="快速跳转">{[['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs','四人团队怎样取舍'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{label}</a>)}</nav>
+ <nav className="article-toc" aria-label="快速跳转">{[...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations','第五轮内容与任务']]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs','四人团队怎样取舍'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{label}</a>)}</nav>
+ <ContentProfile id={p.id} onOpen={()=>navigate('tasks')}/>
  {publicById.has(p.id)&&<PublicDataProfileSection data={publicById.get(p.id)!}/>}
  {businessById.has(p.id)&&<BusinessProfile data={businessById.get(p.id)!}/>}
  {p.deep&&<>

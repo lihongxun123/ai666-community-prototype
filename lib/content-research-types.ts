@@ -1,0 +1,7 @@
+export type ContentSource={id:string;title:string;url:string;publisher:string;date:string|null;accessedAt:string;accessNote:string};
+export type EvidenceCode='yes'|'no'|'unknown';
+export type ContentRecord={id:string;title:string;url:string;domain:string;streamIds:string[];access:'page'|'index'|'listing';publishedAt:string|null;capturedAt:string;task:string;taskEvidence:string;authorKey:string|null;inputDetail:EvidenceCode;procedureDetail:EvidenceCode;outputShown:EvidenceCode;limitsExplained:EvidenceCode;reuseEvidence:string;reuseNote:string;metrics:{label:string;value:string|number;scope:string}[];evidenceNote:string;sourceId:string};
+export type ContentAuthor={key:string;profileUrl:string|null;dateEvidence:string[];repeatAcrossWeeks:string;maintenanceEvidence:string;replyEvidence:string;limitation:string;refs:string[]};
+export type ContentPlatform={platformId:string;name:string;domains:string[];scope:string;streams:{id:string;label:string;entryUrl:string;sort:string;requested:number;observed:number;limitation:string}[];records:ContentRecord[];authors:ContentAuthor[];sources:ContentSource[];findings:{title:string;text:string;refs:string[];kind:string}[];gaps:string[]};
+export type ContentComment={id:string;topic:string;postedAt:string;replyAt:string|null;problem:string;response:string;followup:string;status:string;sourceId:string};
+export type ContentResearch={capturedAt:string;platforms:ContentPlatform[];comments:ContentComment[]};
