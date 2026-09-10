@@ -1,0 +1,1247 @@
+{
+  "title": "补充研究：卡片、详情与后续使用",
+  "checkedAt": "2026-09-09",
+  "scope": "各平台列出内容入口、详情材料和使用条件；未截图的字段注明正文或官方文档来源。",
+  "profiles": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "items": [
+        {
+          "title": "模型资源与使用说明",
+          "cardFields": [
+            "待截图确认：模型列表是否展示底模、版本、LoRA类型和在线使用状态；不能把详情标题里的LoRA直接当成卡片徽标。"
+          ],
+          "detailFields": [
+            "动物主题LoRA的使用说明",
+            "建议画幅3:4",
+            "同作者另一底模版本的对比说明",
+            "提示词组成与示例",
+            "资源用途声明"
+          ],
+          "handoff": "读者先选模型，再用例图提示组织自己的描述。此页交付风格资源及使用方法，未交付节点编排；模型详情与工作流详情交付不同材料。",
+          "limits": "已读作者正文，发布日期未标。底模效果优劣为作者判断；未读取训练材料、下载配置或执行生成。本文只记录有用途声明，不采纳作者的法律判断。",
+          "sourceUrls": [
+            "https://www.liblib.art/modelinfo/a2c90169daeb4e548322fdc0dc88af46?from=personal_page"
+          ],
+          "evidenceType": "author-content/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "主题资源专题",
+          "cardFields": [
+            "专题正文有模型名称、效果图和风格用途描述；这是文章内推荐条目，不是已核的首页模型卡片。",
+            "首页进入该专题的卡片字段待截图确认。"
+          ],
+          "detailFields": [
+            "同一节日用途下的多款模型推荐",
+            "模型主页入口",
+            "触发词、权重、CFG检查说明",
+            "从返图区画同款的操作说明",
+            "提示词中保留项与替换项",
+            "关联活动入口"
+          ],
+          "handoff": "专题先帮助选风格，再指向模型和返图，最后解释如何改成自己的内容。这是编辑整理的资源导览，返图则是可继续创作的作品样本。",
+          "limits": "样本为2025蛇年专题，不能当当前活动。文中自动填参属于操作说明，仍要求检查参数；未验证现在实际继承范围。收益、零成本及快速成功宣传均不采用。",
+          "sourceUrls": [
+            "https://www.liblib.art/activities/49a6540f5b84400a9ed8ff6bcdfcaaa6/2025_envelopecover-models"
+          ],
+          "evidenceType": "official-editorial/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "短视频教程与作品入口",
+          "cardFields": [
+            "待截图确认：教程列表是否展示封面、时长、发布者、日期与难度。搜索摘要不是教程卡片。"
+          ],
+          "detailFields": [
+            "子弹时间运镜主题标题",
+            "简短用途说明",
+            "嵌入视频占位",
+            "指向imageinfo作品页的画同款链接"
+          ],
+          "handoff": "这类教程把观看与创作入口放在一起，但正文没有展开操作。视频内容与画同款的继承范围仍待核对。",
+          "limits": "本次只取得搜索索引中的正文；直接打开教学页为空，作品页未取得。嵌入视频未播放，不能称已读完整教程或确认视频时长。所谓1分钟、无需提示等效果承诺不采用。",
+          "sourceUrls": [
+            "https://www.liblib.art/teaching/25faceacb75e444da13a9e897ea25e8a",
+            "https://www.liblib.art/imageinfo/a17bb10ccc574a718a580c1772cf7c76"
+          ],
+          "evidenceType": "official-teaching/search-index; linked-detail-unavailable",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "商品精修模板",
+          "cardFields": [
+            "截图已确认：效果封面、模板及底模标签、任务标题，悬停出现使用模板入口。"
+          ],
+          "detailFields": [
+            "电商产品商业级渲染精修标题与作者",
+            "1—4张参考图、提示词输入",
+            "推荐使用全能V2",
+            "作者补充角度与文字一致性的限制",
+            "正文用途声明、右侧许可区及作者评论"
+          ],
+          "handoff": "使用者除了准备输入，还需知道复杂文字可能需要人工后期。详情中的参数说明和作者答复共同补足任务条件，不能只按商业级标题判断可用程度。",
+          "limits": "页面观察：正文限制直接售图并写仅娱乐学习分享，右侧则写生成内容可商用、原创可商用，作者评论也说可以商用。同页存在冲突，本稿不代其裁决。未执行生成，也不能把作者答复视为稳定一致性的验证。",
+          "sourceUrls": [
+            "https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8"
+          ],
+          "evidenceType": "author-content/delegated-browser-observation",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "runninghub",
+      "name": "RunningHub",
+      "items": [
+        {
+          "title": "按任务分类的AI应用",
+          "cardFields": [
+            "官方教程说明应用广场按精选、短剧工具与创意玩法寻找入口；逐卡标题、预览、作者及计数待截图确认。"
+          ],
+          "detailFields": [
+            "应用任务说明",
+            "图片上传、Prompt或角色/风格/场景等输入类别",
+            "生成结果与下载/继续创作路径",
+            "输入准备与结果检查建议"
+          ],
+          "handoff": "官方教程把应用界定为封装后的常用任务。应用表单服务直接使用；需要改模型和节点的人再进入专业工作流，两类详情应分别展示。",
+          "limits": "2026-07-02教程只说明不同应用可能采用哪些输入，不能说每个应用都有全部字段。未检查具体应用表单，也没有证明打开应用就能取得完整工作流。",
+          "sourceUrls": [
+            "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+            "https://www.runninghub.cn/ai-apps"
+          ],
+          "evidenceType": "official-guide/full-page; app-list-pending-screenshot",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "角色制作图文教程",
+          "cardFields": [
+            "详情的相关推荐能读到文章标题与链接；博客主列表封面、摘要和日期的位置待截图确认。"
+          ],
+          "detailFields": [
+            "作者署名与2026-07-02日期",
+            "目录、分步说明、FAQ",
+            "短剧定妆照Prompt示例",
+            "角色身份、场景、风格的替换项",
+            "建议保持的年龄、发型、服装等条件"
+          ],
+          "handoff": "文章让读者带走描述方法和检查顺序，再进入应用。这是官方示例教法，区别于一个作者工作流页附外部教程链接。",
+          "limits": "未给该示例的具体应用ID、完整模型/参数、输入成品配对和成本记录。可复制的是文字示例，不能标成已交付可执行配置。",
+          "sourceUrls": [
+            "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide"
+          ],
+          "evidenceType": "official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "活动工作流与投稿材料",
+          "cardFields": [
+            "待截图确认：活动相关工作流卡片是否标期次、版本、参赛状态。详情里的挑战赛标题不能证明卡片有活动标记。"
+          ],
+          "detailFields": [
+            "挑战赛期次与V1工作流名称",
+            "图生视频/视频生视频标签",
+            "1:1、20秒内的作者转述要求",
+            "循环舞蹈与过渡舞蹈两个方向",
+            "姿态/深度素材外链",
+            "活动说明、投稿与运行入口"
+          ],
+          "handoff": "使用者从创作题目取得素材方向，再运行作者提供的方法，最后另到投稿入口。这条资源是辅助参赛的方法，不是已提交、合格或获奖的作品。",
+          "limits": "单个作者页面，更新2025-09-10；未核外部官方活动规则、素材许可或投稿记录，不能认定RunningHub主办。页面含推广与外部服务，未采用其奖励承诺和个人联系信息。",
+          "sourceUrls": [
+            "https://www.runninghub.cn/post/1965685855086104578"
+          ],
+          "evidenceType": "author-content/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "RHTV画布教程",
+          "cardFields": [
+            "相关文章区域确认标题与链接；RHTV模板或项目列表的缩略图、作者、公开状态待截图确认。"
+          ],
+          "detailFields": [
+            "2026-07-03官方教程日期",
+            "新项目、系统模板或空白画布入口说明",
+            "商品主图、Logo、渲染图或视频素材类别",
+            "镜头节点与视觉风格要求",
+            "复制工作流并修改局部内容的说明"
+          ],
+          "handoff": "交付对象扩展到一个项目的组织方法。文章按商品素材、镜头和版本解释如何继续制作，说明RunningHub的内容不应只统计ComfyUI资源。",
+          "limits": "文档说明个人项目可继续使用，未提供该商品演示的公开模板链接或可导入文件；不能据此确认跨作者画布共享。降低成本、跨商品稳定性与投放成效未验证。",
+          "sourceUrls": [
+            "https://www.runninghub.cn/blog/ai-prompts-use-cases/rhtv-product-ad-video-guide"
+          ],
+          "evidenceType": "official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "tusi",
+      "name": "吐司 / Tensor.Art",
+      "items": [
+        {
+          "title": "单图作品与生成信息",
+          "cardFields": [
+            "待截图确认：Posts列表卡片的标题、提示摘要、模型标签及互动图标。单图详情里的数字不能自动认作卡片计数。"
+          ],
+          "detailFields": [
+            "Tensor.Art单图媒体、作者和2024-05-10发布日期",
+            "关联Checkpoint与多个LoRA版本",
+            "正向/负向提示",
+            "Sampler、Steps、CFG、Seed、Clip Skip、Size",
+            "Remix及相关帖子入口"
+          ],
+          "handoff": "此单图样本可追溯一组生成参数，再进入Remix；它不同于只有成品的帖子，也不同于可编辑节点图。吐司2024年指南另说明从帖子做同款进入工作台，并单列种子选择。",
+          "limits": "单图样本不代表全部作品。中文站指南更新2024-05-17，不作为两站当前完全继承的实测；参考图、模型权重、后期和资源许可仍未核。",
+          "sourceUrls": [
+            "https://tensor.art/images/726162984440804171?post_id=726162984436609871",
+            "https://tusi.cn/articles/728615058323724621"
+          ],
+          "evidenceType": "author-content/full-page; official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "图文操作教程",
+          "cardFields": [
+            "待截图确认：Articles列表的封面、标签、作者、更新时间。已核这些字段出现在文章详情，未据此移植到卡片。"
+          ],
+          "detailFields": [
+            "教程标题、官方作者、SD教程标签、更新时间",
+            "白底黑字素材准备与排版要求",
+            "基础模型和ControlNet选择",
+            "正负提示与参数文本",
+            "步骤配图与结果图"
+          ],
+          "handoff": "幻术图教程让读者先准备特定输入，再配模型与控制条件。说明教程不是给结果附一段介绍，而要接上准备、执行与核对材料。",
+          "limits": "更新2024-05-16，旧模型/界面现在是否可用未核；文中canny权重建议0.9，参数文本写1，两者存在差异。不得整理成统一、已验证的标准配置。",
+          "sourceUrls": [
+            "https://tusi.cn/articles/728359301611162291"
+          ],
+          "evidenceType": "official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "TensorForge活动作品与画布",
+          "cardFields": [
+            "活动页的六个方向条目可读到示例图、方向名称、推荐受众和简短说明；属于创作方向卡片。",
+            "真实投稿卡片与首页活动卡片待截图确认。"
+          ],
+          "detailFields": [
+            "创作方向与质量条件",
+            "过程/关键步骤截图、高清成品要求",
+            "图文或视频笔记格式",
+            "画布链接和站外笔记链接",
+            "发布时间段与原创要求"
+          ],
+          "handoff": "规则要求站内创作发布，再整理过程用于站外教学，并提交两个链接。该内容包同时支持展示、学习与作品归属核对，区别于只交一张成片。",
+          "limits": "规则时间表列6.12—7.10但未标年份；不称当前在征集。GOODCASE明确是占位演示，不能当真实优质投稿。画布链接不证明观看者可完整复制；未核实际投稿和奖励。",
+          "sourceUrls": [
+            "https://tusi.cn/blackboard/forgecup"
+          ],
+          "evidenceType": "official-event-rule/full-page",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "civitai",
+      "name": "Civitai",
+      "items": [
+        {
+          "title": "模型资源与版本文件",
+          "cardFields": [
+            "待截图确认：未看到模型卡片，不把API中的名称、类型、标签和计数直接写成卡片字段。"
+          ],
+          "detailFields": [
+            "官方API文档把模型与版本分层：模型有说明和许可字段，版本关联底模、发布时间和实际文件。",
+            "文件记录可有格式、大小、哈希和下载地址；是否支持站内生成另有标记。"
+          ],
+          "handoff": "资源详情交付的是可识别版本的资源及使用条件。分析：读者需先判断依赖与许可，再决定在线调用或下载；单张例图不能替代这些判断。",
+          "limits": "这是官方API说明，非线上模型页实测；样例计数不作经营数据。 文档说明非公开文件会被隐藏，归档等状态还可能移除下载信息；存在模型记录不等于现在能下载或调用。",
+          "sourceUrls": [
+            "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md"
+          ],
+          "evidenceType": "official-api-documentation",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "按内容类型投稿的合集",
+          "cardFields": [
+            "待截图确认：名称、封面、简介和条目数量的卡片展示方式未见，不能用合集编辑字段反推消费卡片。"
+          ],
+          "detailFields": [
+            "实现文档区分图片、帖子和模型合集。",
+            "开放的图片/帖子合集描述了详情页投稿入口；模型合集通过保存选择器加入。",
+            "合集保存的是被组织的条目；投稿和协作权限不是同一字段。"
+          ],
+          "handoff": "分析：合集详情首先回答收集范围，其次才是能否投稿及从哪里投稿。阅读合集、保存条目和加入协作对应不同权限。",
+          "limits": "仅按公开实现文档加深，不保证当前生产账号可用。 合集链接不交付原作品全部素材和配置；不能因可投稿就认为也能修改他人内容。",
+          "sourceUrls": [
+            "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md"
+          ],
+          "evidenceType": "official-implementation-documentation",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "seaart",
+      "name": "SeaArt",
+      "items": [
+        {
+          "title": "作品、生成记录与后续操作",
+          "cardFields": [
+            "待截图确认：Explore列表的作者、提示摘要、模型标签与计数。详情页不能证明列表全显示。"
+          ],
+          "detailFields": [
+            "咖啡场景作品媒体与作者",
+            "Generation Info、Records及Prompts",
+            "尺寸、2025-02-03日期、Mode、Type",
+            "Checkpoint & LoRA区域及标签",
+            "Remix、Video Generation与评论区"
+          ],
+          "handoff": "作品页从观看承接到同平台再创作，并提供局部生成背景。它是结果与记录的组合，AI应用页则提供执行表单，两者不宜用同一套详情字段分析。",
+          "limits": "当前文本的Type为cell，含义未核，不翻译成内容类型。若干数字缺图标含义，不记成下载或运行数；未确认Remix实际带走的字段与素材。",
+          "sourceUrls": [
+            "https://www.seaart.ai/explore/detail/cug2q2te878c73e48gqg?source=share_link",
+            "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-7-post.md"
+          ],
+          "evidenceType": "author-content/full-page; official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "AI角色设定与互动入口",
+          "cardFields": [
+            "待截图确认：Cyberpub角色卡片展示的名称、图像、分类或对话计数；发布表单字段不等于公共卡片字段。"
+          ],
+          "detailFields": [
+            "官方发布指南列角色图和可选简介",
+            "名称、角色描述、Persona",
+            "语音、First Message",
+            "创作者说明、Scenario、Example Dialogue",
+            "分类、预览与发布步骤"
+          ],
+          "handoff": "作者先设定互动对象，使用者随后与角色对话。它的内容价值在持续互动条件，不能按图片模板、模型下载或生成作品来统计。",
+          "limits": "这是官方指南的字段，不是已抽到的真实角色详情。人设全文哪些向使用者公开、能否复制角色定义尚未核；文档示例不作为真实活跃用户或角色质量证据。",
+          "sourceUrls": [
+            "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md"
+          ],
+          "evidenceType": "official-publishing-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "Swift预设工具",
+          "cardFields": [
+            "指南确认入口AI Apps—More；工具卡片的预览、分类、使用按钮和收费标记待截图确认。"
+          ],
+          "detailFields": [
+            "按工具分别要求原图、模板或草图",
+            "风格/滤镜选择",
+            "部分工具提供强度或其他参数",
+            "生成动作，去背景工具另给下载路径"
+          ],
+          "handoff": "官方工具将效果形式和任务绑定，如滤镜、妆效、放大、草图转图。应与用户发布的ComfyUI应用分开，避免把所有应用数量都当成UGC供给。",
+          "limits": "指南明确这些工具由官方创建；逐工具当前可用性和输入数量未实测。不能把一项的强度参数写成所有工具都有，也不采纳无损增强等效果承诺。",
+          "sourceUrls": [
+            "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-4-ai-apps/swift-ai-apps.md"
+          ],
+          "evidenceType": "official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "工作流配置与AI应用界面",
+          "cardFields": [
+            "待截图确认：同作者工作流/应用是否分别成卡、是否有相互入口、各自计数对应什么行为。"
+          ],
+          "detailFields": [
+            "发布指南先要求完成ComfyUI节点效果",
+            "随后分ComfyUI信息与AI App信息",
+            "发布步骤包含配置图示",
+            "节点工作流指南解释保存与共享方法"
+          ],
+          "handoff": "官方文档支持将工作流整理成更易使用的应用，因此应分开核对源方法与应用输入。原稿单个应用的个人历史恢复，也不能代替这层公开发布关系。",
+          "limits": "发布字段主要位于文档配图，本次未读图，不能编造具体字段。文档所说保存共享不证明一项应用会公开全部源节点，二者版本同步与复制权限待核。",
+          "sourceUrls": [
+            "https://docs.seaart.ai/guide-1/portugues/2-funcoes-basicas-do-seaart-ai/2-4-apps-de-ia/como-publicar-como-app",
+            "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-10-workflow.md"
+          ],
+          "evidenceType": "official-publishing-guide/full-page",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "openart",
+      "name": "OpenArt",
+      "items": [
+        {
+          "title": "分章视频教程目录",
+          "cardFields": [
+            "列表文本可读：教程标题、时长，以及新内容、入门课、视频、图像、编辑等分类。",
+            "入门条目在标题中使用Part/Module编号；卡片缩略图、讲师和互动字段待截图确认。"
+          ],
+          "detailFields": [
+            "条目链接指向YouTube视频；目录本身没有提供文字步骤、素材包或完整配置。",
+            "可辨认从图片到视频、角色等不同学习入口，但未取得视频字幕或观看内容。"
+          ],
+          "handoff": "从目录选择所需技能，再转入视频学习。分析：时长和章节能帮助安排学习；它与作品详情的复制按钮承担不同任务。",
+          "limits": "站内引用外部教程不等于每条由平台自制，也不证明都能照做。 部分标题有营销或比较措辞，只记录它们在目录中的存在，不采用其效果结论。 列表中存在不同标题指向同一视频链接的情况，不能按条目数直接算独立教程量。",
+          "sourceUrls": [
+            "https://openart.ai/tutorials"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "故事作品与制作表单",
+          "cardFields": [
+            "/story列表文本可读故事类型和标题，类型包括音乐视频、讲解、角色Vlog、ASMR和从零制作。",
+            "多个条目均显示0:00，不能当真实片长；封面、播放和作者/互动字段待截图确认。"
+          ],
+          "detailFields": [
+            "所点社区故事独立URL仍返回同一列表正文，未读到专属分镜或复制资料。",
+            "另读官方Character Vlog制作页，表单区分角色选择、主题、画幅、视觉风格、音乐、时长和进阶模型设置，并列预览分镜与生成完整视频。"
+          ],
+          "handoff": "分析：社区故事是结果发现入口，制作表单是任务配置入口。现有证据没有证明某条社区故事能把分镜、人物、音乐和提示完整传给表单。",
+          "limits": "不能把制作页通用字段当成公开故事详情已披露的字段。 表单显示的积分和预计耗时属于当次默认状态，不是所有故事固定价格或实测耗时；未生成。 未核音乐来源许可、完整项目分享或他人角色可用范围。",
+          "sourceUrls": [
+            "https://openart.ai/story",
+            "https://openart.ai/story/community/37ITn3XLnO55ct0T9VI9",
+            "https://openart.ai/story/create/vlog"
+          ],
+          "evidenceType": "official-page-text-with-detail-gap",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "可复用角色资产",
+          "cardFields": [
+            "当前/suite/character正文有Browse Library、搜索和角色图像/视频等快捷入口。",
+            "未读取角色库实际条目；姓名、缩略图、风格标签、作者和调用数均待截图确认，不能补造。"
+          ],
+          "detailFields": [
+            "官网角色说明列出参考图、文字和结构化创建三种路径，定义后的角色可被后续图像/视频任务引用。",
+            "当前工具页将角色与普通媒体、项目等资产入口分开；旧/characters地址重定向到功能介绍。"
+          ],
+          "handoff": "分析：这里的内容单位可以是反复调用的人物身份资产，而非一张成图或一篇教程。选择角色后实际带入的参考与身份信息仍待确认。",
+          "limits": "仅确认功能说明和入口；没有证明公共角色库的作者授权、跨账号共享或下载源模型。 官网的一致性措辞不是独立测试；不要写成任何角度、服装和模型都能无损保持身份。 新旧页面同时可读，不据此推断所有账号已经迁到同一界面。",
+          "sourceUrls": [
+            "https://openart.ai/features/ai-character/",
+            "https://openart.ai/suite/character"
+          ],
+          "evidenceType": "official-page-text-with-asset-gap",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "nightcafe",
+      "name": "NightCafe",
+      "items": [
+        {
+          "title": "图文帖、提问与提示词",
+          "cardFields": [
+            "官方说明：发布作品时可选择将描述开头叠在信息流图片上。",
+            "普通帖卡片的标题、摘要、附件预览、评论数和布局未见，待截图确认；不能把作品叠字选项写成所有帖子默认样式。"
+          ],
+          "detailFields": [
+            "Posts可承载图组、博客式表达和问题，并插入作品、GIF、合集和挑战等附件。",
+            "支持基本Markdown；标为prompt的代码块可带复制/使用按钮。"
+          ],
+          "handoff": "分析：一篇帖可以先交代问题，再附素材，最后提供可带走的提示。这比单张结果图多了讨论语境，也比完整工作流轻。",
+          "limits": "官方功能说明，不是已抽样到的真实帖子；未确认站内普遍采用率。 复制提示词仍不保证继承模型、起始图、参数或许可；附件链接也不是源文件包。",
+          "sourceUrls": [
+            "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "公开合集与个人收藏",
+          "cardFields": [
+            "待截图确认：合集卡片未见。官方说明要求公开合集具备简介和主图，但未证明二者都在卡片上完整展示。"
+          ],
+          "detailFields": [
+            "创建字段包含标题，可选简介、标签和主图；公开合集出现在个人主页，并可通过链接查看。",
+            "一个作品可通过生成前选择、单条加入或批量方式归入合集。"
+          ],
+          "handoff": "分析：合集交付主题选择和组合关系，适合连续系列或方法变体；它不是完整项目的同义词，也不能替代每件作品的材料说明。",
+          "limits": "可见性有例外：作者自己的未发布作品置入公开合集后可被所有人看见；他人的未发布作品及已归档作品有不同限制。 公开合集不能等同所有作品已经发布到Explore；未核实际卡片和跨账号材料权限。",
+          "sourceUrls": [
+            "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "作品与制作参数的公开设置",
+          "cardFields": [
+            "待截图确认：作品卡上是否提示复制保护或评论关闭，正文没有说明。",
+            "不把有可见成图、点赞或评论入口推断为提示和起始图也公开。"
+          ],
+          "detailFields": [
+            "官方编辑说明把Comments与Copy Protection作为独立控制项。",
+            "作者可控制评论，以及他人复制/复用提示和起始图；还可配置默认发布偏好。"
+          ],
+          "handoff": "分析：作品详情应同时评价视觉结果和实际开放的制作材料。没有复用按钮可能是作者选择，不能直接归因为平台没有复用能力。",
+          "limits": "核的是权限说明，未选取公开/保护两条作品做对照。 隐藏设置、内容可见和版权许可属于不同问题；不从按钮状态推出通用授权。",
+          "sourceUrls": [
+            "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "基于作品改作的教程",
+          "cardFields": [
+            "待截图确认：这是一篇官方帮助文，非新采集作品卡。文档描述作品库的DNA/Evolve入口，但未见当前卡片。"
+          ],
+          "detailFields": [
+            "Inpainting教程用起始图、局部蒙版和改写提示逐步示范。",
+            "文中说明从作品演化可预填原提示与设置，并在适用来源下把结果作为起始图；同时说明失败可能和调节方向。"
+          ],
+          "handoff": "分析：这类详情交付的是一步接一步的修改理由。读者可以学习局部修复，而不是只复制整句提示。",
+          "limits": "页面前后对支持模型的枚举并不完全一致，不采用完整兼容列表。 本例是平台收录的作者教程，不代表所有模型都有相同继承行为；没有运行。",
+          "sourceUrls": [
+            "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe"
+          ],
+          "evidenceType": "official-help-author-tutorial",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦AI",
+      "items": [
+        {
+          "title": "官方演示与社区作品",
+          "cardFields": [
+            "官网图片演示有题材/风格描述与即梦成片标识；视频演示区另说明文/图输入与首尾帧。",
+            "官网社区区域文本可读到作者显示和创作同款；数字含义及是否对应点赞待截图确认。"
+          ],
+          "detailFields": [
+            "演示提供简短画面描述",
+            "功能说明区解释可用输入类别",
+            "普通社区作品详情的提示、模型、参考图、同款继承字段均待截图确认"
+          ],
+          "handoff": "能力演示让人理解工具，社区作品让人发现作者与尝试同款。需要区分来源：官网示范不能当普通用户作品样本，示范的功能参数也不能代填作品详情。",
+          "limits": "本次公开HTML正文已读取，未访问登录作品详情。首尾帧属于功能说明，不证明首页每个视频都用了两帧；同款入口未操作。",
+          "sourceUrls": [
+            "https://jimeng.jianying.com/"
+          ],
+          "evidenceType": "official-landing-page/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "画布过程材料",
+          "cardFields": [
+            "待截图确认：是否存在可公开浏览的画布/模板卡片。只看到智能画布能力介绍，不列为已确认社区资源形态。"
+          ],
+          "detailFields": [
+            "官网说明多图层、多图融合、局部重绘、扩图、消除与抠图",
+            "历史精选作品的作者阐述提到用画布处理局部内容",
+            "画布文件、图层、素材归属和可复制配置尚未取得"
+          ],
+          "handoff": "分析：一件成片可能由多个编辑步骤完成。若将其定义为可跟做案例，需补画布过程；现有证据只能解释创作环节，不能承诺读者取得该画布。",
+          "limits": "这是需要继续采样的交付层，不是新确认的公开市场。个人能够编辑、多图融合或导出成品，均不足以证明其他用户能继承图层及原素材。",
+          "sourceUrls": [
+            "https://jimeng.jianying.com/",
+            "https://jimeng.jianying.com/visionary"
+          ],
+          "evidenceType": "official-feature-description/full-page; author-statement/full-page; public-sharing-gap",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "赛事投稿与展映档案",
+          "cardFields": [
+            "未来影像计划页面可读到行业活动名称、历史日期、获奖作品入口，以及精选作品的作者、标题与阐述。",
+            "条目的卡片边界、媒体类型及普通投稿列表待截图确认。"
+          ],
+          "detailFields": [
+            "2024赛事规则的工具、时长、画幅与清晰度要求",
+            "样片初审与正式投稿的区别",
+            "公开可见、原创及首发要求",
+            "精选档案中的创作意图、工具和音乐/后期署名"
+          ],
+          "handoff": "投稿材料用于资格与评审，展映档案用于解释作品和作者。可从规则判断平台征集什么，但不能用精选档案代表所有投稿，也不能把两者合成一个完整教程。",
+          "limits": "规则明确是2024-05-08至06-07的历史比赛；档案另含2025征集记录，两者不能当成同一届名单。作品展示授权不等于观看者获准使用素材，未核实际投稿量和完整工程。",
+          "sourceUrls": [
+            "https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/dc943398-71d6-4fd2-bb26-215c4a34ae21.html",
+            "https://jimeng.jianying.com/visionary"
+          ],
+          "evidenceType": "historical-official-rule/full-page; curated-author-content/full-page",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "kling",
+      "name": "可灵AI / Kling AI",
+      "items": [
+        {
+          "title": "教程与编辑文章列表",
+          "cardFields": [
+            "Blog正文可读到文章标题、日期和文章链接。",
+            "分类有Video Creation、Image Creation、Product Features、AI Tools & Creation、Content Marketing；分类属于列表导航。",
+            "封面、摘要、阅读时长是否进卡片待截图确认。"
+          ],
+          "detailFields": [
+            "官方作者、日期、阅读时长",
+            "任务或概念说明",
+            "示例、步骤、FAQ及相关功能链接",
+            "相关/精选文章区域"
+          ],
+          "handoff": "读者可从问题型标题进入学习或选型，再被引向创作。它是官方编辑内容，不是社区作品Feed；更新数量不能换算成活跃创作者数量。",
+          "limits": "这里只核字段与组织形式，不采纳榜单文章对其他产品的比较结论。栏目名称存在也不能证明每篇文章都分类准确或带来转化。",
+          "sourceUrls": [
+            "https://kling.ai/blog",
+            "https://kling.ai/blog/cartoon-styles-for-ai"
+          ],
+          "evidenceType": "official-editorial-index/full-page; official-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "风格对照指南",
+          "cardFields": [
+            "Blog列表确认标题Cartoon Styles for AI及2026-08-31日期；缩略图和摘要待截图确认。"
+          ],
+          "detailFields": [
+            "风格类别、视觉特征与适用用途对照表",
+            "风格比较例图",
+            "参考图—Prompt—结果配对",
+            "纯文字输入与结果",
+            "系列图像示例"
+          ],
+          "handoff": "此类内容先帮助选择表达方式，再提供修改线索，区别于逐节点教程或纯灵感图。读者带走的是对照方法与文字描述，未拿到完整项目。",
+          "limits": "2026-08-31官方示例；未核每张图的种子、模型设置、尝试次数及原图许可。风格化图像不代表矢量源文件、3D模型或可编辑动画。",
+          "sourceUrls": [
+            "https://kling.ai/blog/cartoon-styles-for-ai"
+          ],
+          "evidenceType": "official-example-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "MCP任务教程",
+          "cardFields": [
+            "Blog列表确认教程标题和2026-08-27日期；未看到可下载工作流标记，待截图确认。"
+          ],
+          "detailFields": [
+            "连接与检查可用工具的步骤",
+            "活动视觉参考与商品参考的分工",
+            "先审静态商品、再制作运动的步骤",
+            "全身/半身/细节镜头说明",
+            "少量测试、批量任务配对与分类排错"
+          ],
+          "handoff": "教程提供一组可继续使用的任务指令和人工检查点，再由用户自己的连接调用工具。材料能支持组织制作，但不等于平台交付了公开工作流文件或自动批准所有生成。",
+          "limits": "未执行连接、调用或生成。功能可用性以用户连接实际暴露工具为准；批量指多个协调任务，不应描述为单次生成整套成片。案例没有完整素材包及实测成本。",
+          "sourceUrls": [
+            "https://kling.ai/blog/claude-kling-mcp-fashion-video-workflow?tab=all"
+          ],
+          "evidenceType": "official-task-guide/full-page",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "Elements资产与公开视频",
+          "cardFields": [
+            "元素库实际卡片的缩略图、名称、类别和语音标记待截图确认；它不是已确认的公开Explore资源卡片。"
+          ],
+          "detailFields": [
+            "指南列主参考图与补充视角",
+            "主体类型、唯一名称、描述",
+            "角色语音或无语音选择",
+            "Assets内Use Element与创作中的引用方法",
+            "FAQ单列他人是否可使用元素"
+          ],
+          "handoff": "2026-02-05指南明确元素暂不支持分享到Explore；使用元素生成的视频可公开，并允许他人一键再创作。应把个人资产、公开作品和作品再创作三层分别记录。",
+          "limits": "未实测他人再创作继承哪些原图、语音或隐藏描述，不能称完整复制元素。文档稳定性宣传未验证；当前个人可继续使用也不证明跨账号可编辑或跨工具导出。",
+          "sourceUrls": [
+            "https://kling.ai/quickstart/klingai-element-library-3-user-guide"
+          ],
+          "evidenceType": "official-feature-guide/full-page",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "items": [
+        {
+          "title": "风格索引与风格代码",
+          "cardFields": [
+            "官方2025-09-04发布说明：每个缩略项用一组提示展示同一SREF代码的效果，可喜欢收藏或Try Style。",
+            "这是历史发布说明，不是卡片实见；代码是否常驻展示、当前排序与详情布局待截图确认。"
+          ],
+          "detailFields": [
+            "当前Style Creator帮助仍描述样式项的尝试、展开详情和收藏入口。",
+            "内容核心是可重复调用的风格引用及效果示例，不能当作某个作者完整图片提示或训练文件。"
+          ],
+          "handoff": "分析：风格索引让用户先选审美，再将自己的题材带入该风格。Try Style会用提示栏当前内容生成，读者需要知道这是执行动作而非纯预览。",
+          "limits": "未读取真实风格详情的全部字段，也未确认是否有作者、许可或下载项。 SREF、Moodboard和完整作品不是同一种内容单位；不能把历史V1展示方式当成当前全部界面。",
+          "sourceUrls": [
+            "https://updates.midjourney.com/style-explorer-v1/",
+            "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator"
+          ],
+          "evidenceType": "official-announcement-and-help",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "风格调试过程与结果",
+          "cardFields": [
+            "待截图确认：官方说明中，每轮有预览缩略图；悬停可看更大预览，结束后的结果留在Create页。",
+            "没有亲见真实会话卡片，不能填入轮次标签、按钮位置或结果计数。"
+          ],
+          "detailFields": [
+            "Style Creator按用户选择生成新的风格预览与代码，各轮可保留不同代码。",
+            "结束会话后不能重开该会话；已有预览和代码仍保存，可用于后续提示。"
+          ],
+          "handoff": "分析：这里交付的不是一次“喜欢”，而是选择过程留下的多个可继续使用结果。它属于个人创作记录，不能直接算为公开UGC供给。",
+          "limits": "预览消耗GPU时间，不能把连续选风格视作完全无成本浏览。 帮助说明该工具预览使用V7；不能从最新模型名称推断全部流程都使用新版本。 代码可调用，不等于已提供输入图片的导出包或原训练材料。",
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "图片生成视频、续段与循环",
+          "cardFields": [
+            "待截图确认：帮助说明Create页视频可悬停播放，也有续段入口；这不是Explore卡片观察。",
+            "当前公开视频卡是否显示片长、作者、首帧和参数，资料不足。"
+          ],
+          "detailFields": [
+            "帮助说明作品详情可将图像动画化，视频可自动或手动续段，并可设置循环/结束帧。",
+            "用户可下载视频或GIF；动态作品与起始图、动作提示、续段操作关联。"
+          ],
+          "handoff": "分析：详情交付可继续加工的片段，而非已经剪辑完的故事。起始图是否继承、动作提示是否能改、续段是否重新执行，需要分别确认。",
+          "limits": "从图像进入视频会移除原图像生成参数；不能称完整原参数直接迁移。 这些说明主要针对个人Create/Organize流程，不能外推他人公开视频都能被完整复制。 生成与续段耗费GPU时间；没有生成、播放或导出验证。",
+          "sourceUrls": [
+            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.Ai",
+      "items": [
+        {
+          "title": "图文教程与短技巧",
+          "cardFields": [
+            "Learn列表文本可读：标题、类型、摘要、日期，部分新闻/指南另列预计阅读时间。",
+            "真实卡片截断、封面与字段排列待截图确认；不同栏目不能强行统一字段。"
+          ],
+          "detailFields": [
+            "视频编辑指南详情有目录、分步说明、参考图处理建议和发布日期/更新日。",
+            "所点Bringing Sketches to Life短技巧页仅抽取到标题、简短介绍、媒体与套餐入口，未得到详细步骤。"
+          ],
+          "handoff": "分析：长指南可用于理解材料和操作顺序；短技巧页是否能教会读者，还要看其媒体内容。目录标题写着教程，不足以确认实际教学深度。",
+          "limits": "视频编辑文章发布2026-05-05、更新05-15，其时明确只支持编辑站内生成视频；不把该限制未经复测地称为当前永久限制。 文中泛举的拍摄素材用途不等于当时已可上传任意视频。 短技巧媒体未观看；没有证明两类内容均提供源素材、提示包或完整项目。",
+          "sourceUrls": [
+            "https://www.leonardo.ai/learn",
+            "https://www.leonardo.ai/news/how-to-edit-videos-with-ai",
+            "https://www.leonardo.ai/learn/hacks/bringing-sketches-to-life"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "策展专栏与作者作品",
+          "cardFields": [
+            "待截图确认：未找到TASTE专栏列表卡，不能把文章头部的题名、分类、5分钟阅读时间和日期直接称为卡片字段。"
+          ],
+          "detailFields": [
+            "TASTE第3期按主题组织多位作者，提供创作背景、作品方向和作者站外延伸链接。",
+            "文章标发布2025-05-06、更新2026-04-27；读到的是一个具体编辑专题。"
+          ],
+          "handoff": "分析：该内容帮助读者认识作者和审美方向，下一步是看其作品或背景；它与可复制案例交付的材料不同。",
+          "limits": "作者被Leonardo策展收录，不等于所有展示作品均由Leonardo生成，也不证明其为付费活跃用户。 页面没有逐件交付模型、提示、素材或完整工程；不能据宣传性评价判断平均作品质量。 源文称月度专栏，但单期证据不能证明截至始终按月更新。",
+          "sourceUrls": [
+            "https://www.leonardo.ai/news/taste-curation-no-3-sherbet"
+          ],
+          "evidenceType": "official-editorial-sample",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "Elements训练资产与数据集",
+          "cardFields": [
+            "待截图确认：未访问Your Elements的真实条目，名称、缩略图、基模和强度是否同时上卡未知。"
+          ],
+          "detailFields": [
+            "官方训练指南把数据集和训练结果区分开，Element有自己的名称、说明与基模；使用时可调强度。",
+            "修改训练数据不会自动更新现有Element，需要重新训练。"
+          ],
+          "handoff": "分析：这一内容单位是可重复施加的样式、对象或角色能力，不能与一张参考图混为一谈。维护时要记录数据集变化和训练结果的对应关系。",
+          "limits": "指南位于Legacy功能栏目，标2026-02-19；并非所有模型兼容。 只核训练/使用文档，未证明可公开分享、跨账号安装或下载模型；不计作已确认的公共社区模型市场。 调强度可能影响一致性与变化范围，不能把训练资产宣传为固定可靠的事实还原。",
+          "sourceUrls": [
+            "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai"
+          ],
+          "evidenceType": "official-help-text",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "items": [
+        {
+          "title": "按职业任务组织的课程",
+          "cardFields": [
+            "Academy列表文本可读课程名称、用途简介、模块数、难度和免费报名/详情入口。",
+            "卡片封面、尺寸与字段排列待截图确认；课程模块数不等于独立视频数。"
+          ],
+          "detailFields": [
+            "AI for Advertising详情有课程团队、学习目标、技能标签及10个模块的标题和时长。",
+            "目录从情绪板、概念、分镜到产品镜头等组织学习任务；Start Learning为下一步入口。"
+          ],
+          "handoff": "分析：课程详情在开始学习前交代范围与结构，可帮助读者估计需要补哪些技能。它不直接交付用户项目的可执行工作流。",
+          "limits": "页面标总时长20分钟，但已列10项时长相加为36分59秒；两个口径不一致，不采用总时长估算学习成本。 免费报名不等于练习生成免费；未报名、观看各模块或检查附件。 学习目标中的商业效果和制作质量属于课程承诺，不是学习成效数据。",
+          "sourceUrls": [
+            "https://academy.runwayml.com/",
+            "https://academy.runwayml.com/course/ai-advertising"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "提示词参考与过程对照",
+          "cardFields": [
+            "Academy首页文本提供镜头术语、简短含义和提示示例作为入口。",
+            "实际条目卡和Prompt Library页签的完整字段待截图确认；不编造复制按钮。"
+          ],
+          "detailFields": [
+            "Prompting Guide把文生视频、图生视频的说明分开，并用三次锦鲤场景提示修改配结果示意。",
+            "详情将视觉描述与运动信息拆开讨论，存在Prompt Library页签，但没有读取该页签内容。"
+          ],
+          "handoff": "分析：这类内容交付概念、可参考句法和调整顺序，适合在生成前查阅；不能仅看最终提示而丢掉前后对照。",
+          "limits": "示例属于官方教学材料，未给全部参数、重复试验或失败比例。 文档以Gen-4.5等适用语境说明，不能保证跨模型照搬；没有运行示例。 没有取得素材包或可执行流程；页签存在不证明库中每项可一键运行。",
+          "sourceUrls": [
+            "https://academy.runwayml.com/",
+            "https://academy.runwayml.com/guides/prompting-guide"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "影展作品与活动档案",
+          "cardFields": [
+            "AIF2026正文可读获奖作品题名、作者、奖项、简介；部分作品有片长，相关图片替代文本也标奖项。",
+            "这些是列表文本证据；卡片/展开层如何分配简介、播放器、署名，待截图确认。"
+          ],
+          "detailFields": [
+            "页面同时有影片获奖组、广告/设计等Best Of项目组，以及城市照片和论坛活动记录。",
+            "Film规则要求一定片长、使用生成视频和完整线性叙事；这说明其评价对象是成片，不是单次模型输出。"
+          ],
+          "handoff": "分析：影展内容负责观看、发现创作者和了解作品定位；活动照片记录发生过的场景，两者不应都算作可学习教程。",
+          "limits": "看到2026获奖名单与简介，没有进入独立影片详情或播放验证。 获奖不证明全部由Runway制作，页面没有为每件作品交付完整提示、输入、工具分工和工程文件。 不从精选作品或活动照片推断普通用户留存、制作成本和整体质量；未确认所有奖项已完成付款。",
+          "sourceUrls": [
+            "https://aif.runwayml.com/"
+          ],
+          "evidenceType": "official-festival-page-text",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "waytoagi",
+      "name": "WaytoAGI",
+      "items": [
+        {
+          "title": "智能体介绍与使用入口",
+          "cardFields": [
+            "分类列表正文分成AI站点与AI智能体两组；条目可读名称、用途短述和分类。",
+            "待截图确认：上述字段的卡片布局、封面，以及外链按钮是否直接出现在列表。"
+          ],
+          "detailFields": [
+            "AnalyzePaper详情有标题、简介、能力和使用场景说明，附外部Open入口及相关推荐。",
+            "入口指向外部智能体服务；未取得系统提示词、知识文件或可导入的智能体配置。"
+          ],
+          "handoff": "读者先判断用途，再跳到外部服务使用。详情交付的是选择依据与访问入口，不能据此称为站内可复制智能体。",
+          "limits": "样本介绍中的能力属于页面自述，未验证输出质量。 未实际跳转使用或确认外部服务当前权限；详情不是工作流文件。",
+          "sourceUrls": [
+            "https://www.waytoagi.com/zh/category/7",
+            "https://www.waytoagi.com/agents/723"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "提示词正文",
+          "cardFields": [
+            "待截图确认：读取的是提示词详情及其相关推荐，未目视主列表卡片。",
+            "相关推荐正文可读名称、短描述和分类；不能直接推广为所有列表的固定字段。"
+          ],
+          "detailFields": [
+            "“剧本编剧”详情把提示描述与完整提示词正文分开。",
+            "正文包含角色、背景、约束、目标、语气与工作流程；这是一段可供其他模型执行的任务指令。"
+          ],
+          "handoff": "读者可以取用指令结构，补上自己的任务背景再使用。相比一般经验文章，其交付物是可编辑的提示词文本。",
+          "limits": "未核验复制按钮或执行生成。 样本未给出可核对的模型版本、运行结果与效果对照；能读到正文不代表已经验证有效，也不替代授权判断。",
+          "sourceUrls": [
+            "https://www.waytoagi.com/zh/prompts/246"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "附参考资料的AI问答",
+          "cardFields": [
+            "详情中的“其他人在问”可读问题标题、答案摘录和日期。",
+            "待截图确认：主问答列表卡片与详情内相关推荐是否采用相同字段。"
+          ],
+          "detailFields": [
+            "“知识库目录”页面以问题为标题，回答明确标注AI生成及所用问答服务。",
+            "回答之后列参考资料、原文链接和摘录，并提供重新提问入口。"
+          ],
+          "handoff": "读者可以从回答获得线索，再回到参考资料核查；这与作者独立审校的教程、可复制提示词承担不同任务。",
+          "limits": "AI回答本身不能确认所列目录是平台当前完整目录。 没有重新提问或调用服务；参考链接存在也不等于每个回答已由人工审核。",
+          "sourceUrls": [
+            "https://www.waytoagi.com/zh/question/82231"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "datawhale",
+      "name": "Datawhale",
+      "items": [
+        {
+          "title": "项目目录与课程仓库",
+          "cardFields": [
+            "贡献平台搜索索引可辨项目名称、类型、简介和仓库路径；索引含GitHub项目、社区招募、助教招募等不同类型。",
+            "待截图确认：该列表正文抓取未成功，索引中的筛选和字段不能当成已目视界面。"
+          ],
+          "detailFields": [
+            "all-in-rag仓库README列学习对象、前置能力、分章节目录，以及代码、数据与专题目录。",
+            "部分章节仍标规划中或优化中；许可为CC BY-NC-SA 4.0。"
+          ],
+          "handoff": "读者从项目简介进入一套课程材料，按章节安排学习并准备运行环境；交付单元包括讲解和附件，不能按目录条数计算已完成教程。",
+          "limits": "列表证据仅搜索索引；详情证据来自已读取的官方仓库。 没有运行代码。许可包含非商业条件，不能把公开仓库概括成可任意商用搬运。",
+          "sourceUrls": [
+            "https://contributor.datawhale.cn/projects",
+            "https://github.com/datawhalechina/all-in-rag"
+          ],
+          "evidenceType": "official-repository-text; list-search-index",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "实践专题包",
+          "cardFields": [
+            "仓库主目录可进入Extra-chapter专题区；待截图确认专题是否在社区首页另有独立卡片。",
+            "目录中的文件夹与链接属于仓库导航，不是已确认的平台消费卡片。"
+          ],
+          "detailFields": [
+            "专题贡献说明要求独立目录及readme.md，按需要附图片、代码、依赖和示例数据。",
+            "推荐围绕背景、场景问题、方案、步骤与经验组织正文，并解释环境、引用与实验边界；这些推荐结构不等于所有专题已经具备。"
+          ],
+          "handoff": "一个专题应能脱离主线课程独立阅读和引用，必要附件随正文交付。它比学习打卡更接近可维护的实践材料。",
+          "limits": "来源是专题编写与贡献规范，不是所有现有专题的质量验收结果。 草稿可先讨论，再通过PR提交；提交不等于合并，未投稿或执行示例。",
+          "sourceUrls": [
+            "https://github.com/datawhalechina/all-in-rag/blob/main/Extra-chapter/README.md"
+          ],
+          "evidenceType": "official-contribution-documentation",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "题目招募与任务认领",
+          "cardFields": [
+            "搜索索引出现AI实践教程共创的企业职场、通用生活两组招募条目，并显示类型、主题标签和招募状态。",
+            "待截图确认：当前状态、条目日期与任务入口；没有取得完整详情。"
+          ],
+          "detailFields": [
+            "索引描述期望产出别人可以照做的实践教程；这只能证明招募方向。",
+            "资料不足：未读到完整题目清单、认领进度、资格与验收规则。"
+          ],
+          "handoff": "这是面向供给者的待完成任务，带走的是创作选题或参与线索；不能把招募选题数算成已交付内容量。",
+          "limits": "仅搜索索引，不据此认定当前仍开放、奖酬有效或全部任务已有成果。 不把招募说明与已发布课程混在同一内容供给统计中。",
+          "sourceUrls": [
+            "https://contributor.datawhale.cn/projects"
+          ],
+          "evidenceType": "search-index",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "items": [
+        {
+          "title": "数据集详情与数据预览",
+          "cardFields": [
+            "GLUE论文页中的关联数据集条目可读仓库标识、部分标签或预览提示。",
+            "待截图确认：全站数据集列表的封面、计数与筛选布局；不把README意义的Dataset card当成列表卡片。"
+          ],
+          "detailFields": [
+            "nyu-mll/glue详情有数据集介绍、文件、社区与数据预览入口，并展示任务、语言、格式、许可等信息。",
+            "预览能按subset与split查看样本；所读样本包含premise、hypothesis、label、idx等字段。",
+            "Data Studio文档还描述筛选、搜索、SQL和数据分布查看。"
+          ],
+          "handoff": "详情不仅说明数据是什么，还允许读者检查样本结构，再按用途、权限和许可决定是否获取。",
+          "limits": "部分大数据集的预览或搜索存在处理范围限制，不能把预览行视为全量数据。 未下载、执行SQL或评估数据质量；样本字段属于该数据集，不是平台全部数据集的统一业务结构。",
+          "sourceUrls": [
+            "https://huggingface.co/datasets/nyu-mll/glue",
+            "https://huggingface.co/docs/hub/data-studio",
+            "https://huggingface.co/papers/1804.07461"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "论文、资源与讨论",
+          "cardFields": [
+            "待截图确认：论文推荐列表的标题、时间、票数和作者等视觉字段，未目视主列表。",
+            "重点取得GLUE论文独立页，不用详情字段反推列表。"
+          ],
+          "detailFields": [
+            "论文页有论文标识、原始摘要、arXiv/PDF入口，以及明确标注生成来源的AI摘要。",
+            "页面将社区讨论、引用它的模型/数据集/Spaces及相关Collections接在论文之后。",
+            "官方说明：仓库README中的论文引用可被识别为关联资源。"
+          ],
+          "handoff": "读者可以从研究论点继续寻找实现、数据和演示，再进入相关讨论。交付的是可追踪的资源关系，超出一般论文资讯摘编。",
+          "limits": "AI摘要与原始摘要须分开。 引用关联不代表资源由论文作者制作、得到作者认证或已成功复现；未验证关联实现。",
+          "sourceUrls": [
+            "https://huggingface.co/papers/1804.07461",
+            "https://huggingface.co/docs/hub/paper-pages"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "Gradio Space接口说明",
+          "cardFields": [
+            "待截图确认：Space列表卡片和具体演示页的API入口；使用官方功能文档。",
+            "API参数不是列表字段，不能因文档有参数就写成卡片可见信息。"
+          ],
+          "detailFields": [
+            "Gradio Space的Use via API说明包括端点、输入参数及类型，以及Python或JavaScript调用示例。",
+            "文档另述API recorder与OpenAPI描述，使网页演示能够承接程序调用。"
+          ],
+          "handoff": "用户除了在网页尝试，也可据接口说明把演示接入自己的任务；需要带走的材料是输入约定和调用方法，而非仅一张结果图。",
+          "limits": "这一判断针对Gradio Space，不能推广为所有SDK类型的Space。 未调用接口；服务权限、队列与配额仍会影响可用性，接口公开不等于免费且无限可用。",
+          "sourceUrls": [
+            "https://huggingface.co/docs/hub/spaces-api-endpoints"
+          ],
+          "evidenceType": "official-feature-documentation",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "modelscope",
+      "name": "ModelScope 魔搭",
+      "items": [
+        {
+          "title": "功能指南与服务入口",
+          "cardFields": [
+            "ModelScope在CSDN的社区列表正文可读标题、摘要、发布组织与日期。",
+            "待截图确认：该发布面的卡片布局与封面；它不是ModelScope主站模型列表。"
+          ],
+          "detailFields": [
+            "2026-04-29的PivotEval指南分背景、使用步骤、配图、结果说明及FAQ，并链接相关源码与文档。",
+            "它围绕如何使用评测服务组织内容，与模型仓库的文件、权重和调用示例不同。"
+          ],
+          "handoff": "读者从发布文章理解一项能力，再进入对应服务或资料。文章承担解释与导流，未直接交付可导入的工作流。",
+          "limits": "来源是ModelScope组织在CSDN的发布面；不能将其字段归为主站统一卡片。 没有按教程运行；文章提供步骤不等于已验证完整复现。",
+          "sourceUrls": [
+            "https://modelscope.csdn.net/",
+            "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "结构化评测报告",
+          "cardFields": [
+            "待截图确认：实际任务列表和报告入口，未取得独立报告样本。"
+          ],
+          "detailFields": [
+            "PivotEval官方指南说明可输出Markdown结果和交互HTML报告。",
+            "说明中包括难度或领域分析，并区分模型评估与性能测试；这里只确认官方列出的交付形式。"
+          ],
+          "handoff": "这类内容可作为一次任务的结果存档与分享材料。比较报告时仍应保留模型、评测任务和参数背景，避免只看结论数字。",
+          "limits": "没有执行评测，也未读到可独立访问的实际报告，报告字段及可交互范围待核。 不能把官方所述报告形态当作已经取得的测试证据。",
+          "sourceUrls": [
+            "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html"
+          ],
+          "evidenceType": "official-guide; report-sample-unverified",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "创空间界面与源码",
+          "cardFields": [
+            "待截图确认：创空间列表和应用详情的实际卡片字段。",
+            "官方客户端列出的封面、简介、SDK等配置参数不等于前台一定展示这些字段。"
+          ],
+          "detailFields": [
+            "官方modelscope_hub文档支持为Studio配置简介、许可、SDK类型及运行环境；列出的SDK包括Gradio、Streamlit、Docker和Static。",
+            "Studio还支持protected可见性：应用可公开，而代码仓库隐藏。"
+          ],
+          "handoff": "应用页面可以交付一次可体验的功能，但用户能否带走代码或复制部署，需要另外检查仓库权限和依赖。",
+          "limits": "证据来自官方客户端文档，未核对主站当前界面。 应用公开不能推出源码公开或可完整复制；也不能将名为modelscope-studio的组件库直接当成创空间产品。",
+          "sourceUrls": [
+            "https://github.com/modelscope/modelscope_hub"
+          ],
+          "evidenceType": "official-client-documentation",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "linuxdo",
+      "name": "LINUX DO",
+      "items": [
+        {
+          "title": "共建文档、目录与修订",
+          "cardFields": [
+            "公开文档版主题列表正文有标题、版块/标签及Replies、Views、Activity列。",
+            "待截图确认：主题行布局、摘要和封面；Activity不能直接当成主题创建或正文修订日期。"
+          ],
+          "detailFields": [
+            "抽样共建文档包含快速入口、分节目录、原公告引用和更新记录，并邀请成员补充纠正。",
+            "长正文与后续回复分开：正文承接整理结果，回复可提出补充或问题。"
+          ],
+          "handoff": "读者按问题定位段落，再回原始公告确认适用规则；无需把所有回复都当作最终答案逐条阅读。",
+          "limits": "只读公开文档；已在另一条徽章教程看到当前账户可见的编辑入口与历史记录，但未编辑，也不能推定所有人均可修改。该样本混入打卡文字；存在修订不证明内容正确或有效更新。",
+          "sourceUrls": [
+            "https://linux.do/c/wiki/42/l/top?page=1",
+            "https://linux.do/t/topic/1401642"
+          ],
+          "evidenceType": "public-community-content",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "资源索引主题",
+          "cardFields": [
+            "索引主题在公开列表首先仍是标题、标签和主题活动信息，资源明细需进正文。",
+            "待截图确认：条目能否直接预览资源分组或链接摘要。"
+          ],
+          "detailFields": [
+            "样本把资源按组整理，包含名称、简述、外链和原始主题引用。",
+            "正文或回复可见链接失效、密码错误等提示，说明索引内容仍需要维护。"
+          ],
+          "handoff": "用户拿到的是定位资源和原帖的路径。它与平台实际托管的课程包不同，外部资源是否可取用要逐项确认。",
+          "limits": "未打开云盘或下载资源，不确认授权、完整性或当前有效性。 本报告只记录资源组织方式，不收录提取码或联系信息。",
+          "sourceUrls": [
+            "https://linux.do/c/wiki/42/l/top?page=1",
+            "https://linux.do/t/topic/122079"
+          ],
+          "evidenceType": "public-community-content",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "按环境条件编写的教程",
+          "cardFields": [
+            "待截图确认：技术教程主题行除标题、标签和活动信息外，是否展示环境或难度。",
+            "列表层只能识别教程主题，不能判断它是否适用当前部署方式。"
+          ],
+          "detailFields": [
+            "抽样Docker备份恢复教程按不同存储或部署条件分段。",
+            "各段以操作说明、命令、解释与数据流向组织，并使用占位变量、相关指南和回复补充。"
+          ],
+          "handoff": "详情交付可据自身环境选择的操作材料。相比概念文章，环境前提和分支条件决定是否能照做。",
+          "limits": "样本首发于2024年，只研究内容结构，未执行命令或验证当前版本适用性。 不能据单篇教程与回复量判断平台整体技术正确率或用户完成率。",
+          "sourceUrls": [
+            "https://linux.do/t/topic/174250"
+          ],
+          "evidenceType": "public-community-content",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "结果回传与修订记录",
+          "cardFields": [
+            "已取得登录首页置顶话题行与导航截图；保留标题、分类、回复、浏览与活动。"
+          ],
+          "detailFields": [
+            "提示词首帖后有两条成员图片回传。",
+            "共建教程可查看修订比较，但正文同时混入打卡文字。"
+          ],
+          "handoff": "可继续查看成员结果和历史差异；这些入口不等于一键复制画布或研究者成功复现。",
+          "limits": "6个有意选择的主题，不计算平台内容质量比例；原图模型与参数未核。",
+          "sourceUrls": [
+            "https://linux.do/t/topic/2879086",
+            "https://linux.do/t/topic/342888"
+          ],
+          "evidenceType": "public-community-content",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "items": [
+        {
+          "title": "模型提供商插件",
+          "cardFields": [
+            "市场列表正文把插件与模板分开；插件类型含Models、Tools、Data Source等。",
+            "列表条目可读名称、类型、简介及部分作者或验证信息；待截图确认具体条目的字段组合与视觉排列。"
+          ],
+          "detailFields": [
+            "OpenAI-API-compatible插件详情包含功能介绍、配置说明、版本与要求、版本历史及反馈入口。",
+            "配置涉及服务地址、模型类型与能力选项；其作用是连接已有模型服务。"
+          ],
+          "handoff": "用户得到的是安装和连接能力，仍须准备自己的模型服务及授权；插件不是模型权重，也不是已经完成业务任务的应用。",
+          "limits": "未安装、配置或调用；不保存任何凭证。 验证标记不证明任意兼容服务都能正确运行，安装量也不能视为独立使用人数或成功数。",
+          "sourceUrls": [
+            "https://marketplace.dify.ai/",
+            "https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "Agent策略插件",
+          "cardFields": [
+            "市场区分Agent Strategy类型，不能把它与模型、工具或模板合并为同一种资源。",
+            "待截图确认：Self-Refine Agent列表条目的类别标签、封面与简介。"
+          ],
+          "detailFields": [
+            "Self-Refine Agent详情解释执行、评价、批评和修改的过程。",
+            "参数含模型、工具、指令、输入及迭代上限；另有停止条件、参考论文、许可与版本要求。"
+          ],
+          "handoff": "它交付一种供应用选择的执行策略，安装后还需配置模型与任务。它与填好完整任务逻辑的模板有不同复用条件。",
+          "limits": "改进输出是作者对策略用途的说明，未验证效果。 模型自评不能替代独立质量验收；没有安装或运行迭代。",
+          "sourceUrls": [
+            "https://marketplace.dify.ai/",
+            "https://marketplace.dify.ai/plugin/langgenius/self_refine_agent"
+          ],
+          "evidenceType": "official-page-text",
+          "checkedAt": "2026-09-09"
+        },
+        {
+          "title": "任务模板、设置与配置",
+          "cardFields": [
+            "官方创建者页的搜索索引可见Code Converter标题与简介；待截图确认其模板卡片。",
+            "索引中的使用计数不与详情快照混用，也不解释为成功运行或独立用户。"
+          ],
+          "detailFields": [
+            "Code Converter详情提供Open in Dify、Download、类型、分类、语言、兼容版本和插件要求。",
+            "标题与简介指向代码转换，但Setup steps转而描述分析代码、解释伪代码和找错，说明文字的任务口径不一致。"
+          ],
+          "handoff": "用户可从详情进入应用或获取配置，再准备所需插件与授权。卡片表达的任务能否由配置实现，仍要检查实际模板。",
+          "limits": "这里只确认说明层面不一致，不能断言实际模板无法转换代码。 未下载、导入或运行；公开下载入口不代表依赖、授权和运行成本已经一并解决。",
+          "sourceUrls": [
+            "https://marketplace.dify.ai/creator/langgenius?publisher_type=organization",
+            "https://marketplace.dify.ai/template/langgenius/Code%20Converter?creationType=templates&language=en-US&templateId=09d8b8c8-9459-4ffb-b5e5-6f2255df410b"
+          ],
+          "evidenceType": "official-page-text; creator-list-search-index",
+          "checkedAt": "2026-09-09"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "platforms": 18,
+    "items": 58,
+    "sourceUrls": 74
+  }
+}

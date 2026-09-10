@@ -1,0 +1,715 @@
+# 内容的消费、交接与持续维护
+2026-09-10
+材料包括一个 MakeNow 案例的复制与保存、四个内容样本、两个跨时间维护案例，以及一份历史 API 图像。它们反映出不同内容的交付要求与持续工作，经营回报仍缺数据。
+MakeNow 案例检查了复制、文本编辑、保存重开和源输入；四个内容与两个资源沿同一对象继续核对。API 未重新调用，历史图片已核对画面与文件属性。
+
+## 这次更新了什么
+
+### 副本交接有了实际证据
+事实：MakeNow公开案例已经复制到个人项目，文本标记在离开重开后保留，原公开输入没有出现该标记。
+分析：可以继续按可复用案例整理材料，但这次只验证了部分交接；图片能否访问、依赖和再次生成仍需各自核对。
+依据：〔M20-01〕、〔M20-03〕、〔M20-04〕、〔M20-05〕
+
+### 请求成功与交付合格需要分别判断
+事实：历史API素材记有成功状态和1024×1024参数，实际落盘图片为784×1168。
+分析：内容卡片若承诺某种规格，应该写输出文件的实际属性。差异产生在哪个环节还不清楚，不能直接归因于模型或API。
+依据：〔API20-10〕
+
+### 回应、建议、修订是不同结果
+事实：普通动态出现建议与作者接话；求助作者表示准备采用建议；另有资源出现代码修改并合入。
+分析：成员交流、准备采用建议和交付物变更分别记录；用户最终是否完成任务，仍需后续确认。
+依据：[V20-S02 · Pebble模型发布受阻的公开更新与回复](https://huggingface.co/posts/Hoglet-33/620130623473492)、[V20-S04 · Where to share? — Beginners](https://discuss.huggingface.co/t/where-to-share/176592)、[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)
+
+### 持续供给包括作者之外的工作
+事实：FABRIC存在平台人员迁移运行环境的记录；另一图像分割资源有外部贡献者提交修改、原作者合入。
+分析：资源持续可用涉及答疑、修订与平台支持。合作前需明确采购哪些工作及谁负责维护，实际工时和费用尚无记录。
+依据：[F55 · FABRIC · Admin maintenance migration #55](https://huggingface.co/spaces/dvruette/fabric/discussions/55)、[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)、[S6 · Segment Anything with CLIP · Update requirements.txt #6](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6)、[S7 · Segment Anything with CLIP · Update README.md #7](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7)
+
+## 八项补证进展
+
+| 问题 | 变化 | 仍缺什么 | 下一步 |
+| --- | --- | --- | --- |
+| 01 自身事实基线（有新增执行证据，仍不完整） | 从MakeNow入口观察推进到一个副本的编辑保存；API历史图像完成视觉及尺寸复核。 | 完整任务执行、素材与依赖交接，当前经营与使用数据。 | 分别维护复制、保存、素材访问与再次生成的检查结果。 |
+| 02 内容质量、数量与承载（质量判断更具体；库存仍未普查） | 六种内容分别说明列表重点、详情交付和质量问题；新增输出规格与材料显示的具体检查点。 | 当前社区各类内容量、失效占比，以及具体对象的完整卡片/详情视觉覆盖。 | 按作品、教程和可执行资源各自承诺抽查材料完整性。 |
+| 03 工具之外的用户需要（有具体对象，需求比例未知） | 继续保留欣赏、表达、求助和被认可的价值；已见往来不直接解释成稳定关系。 | 用户来访动机及其比例、持续需要、奖励退出后的自然使用。 | 继续核对普通作品和后续回应，避免长期只看精选或工具使用者。 |
+| 04 替代方式与社区增量（比较条件更明确） | MakeNow副本能力已部分验证；频道、动态、讨论与资源页分别承担不同动作。 | 没有证据证明新增社区入口比既有承接方式更有效。 | 比较同一内容在现有工具和社区分别增加什么信息、关系或服务，记录重复维护。 |
+| 05 普通内容的日常运转（两个资源的时间线明显加深） | 从旧故障帖追到2026年具体修订和迁移，区分反馈、修复声明、代码合入和使用者确认。 | 更多平台的普通样本；尤其国内工作流平台的跨时间维护证据仍薄。 | 补充国内工作流平台的普通内容与跨时间维护记录。 |
+| 06 作者与持续供给（实际劳动角色更清楚） | 找到作者、外部贡献者、平台人员的不同维护工作；作品与认可还涉及编辑和组织工作。 | 合作意愿、回报、交付频率、实际责任分工与工时。 | 从现有合作和交付记录核对谁承担什么，只有材料不能回答的条件再单列。 |
+| 07 成本、产能与主营业务（关键经营缺口仍在） | 明确模型名称、文档模式与输出属性的核对要求；不把历史报价或成功状态换算为当下任务成本。 | 同一任务的实际尝试、扣费、失败退还、人工时间；团队可用工时和预算。 | 费用与执行边界明确后才能记一次实际任务成本；完整经营判断仍需现有聚合记录。 |
+| 08 反例、演变与偏差（纠正了旧线程等于停更的风险） | 资源可在另一个线程、另一次迁移中继续维护；等待时间不等于停机或工时。 | 早期冷启动、退出与迁移的代表性，以及不同平台的对应证据。 | 继续看内容跨版本怎样变化，保留未解决结果，明确精选与可访问样本偏差。 |
+
+## 内容承载：用户的判断决定呈现重点
+
+### 作品欣赏
+用户要判断：这是什么作品，值不值得花时间看？
+列表重点：结果封面、标题、题材、作者；视频可补时长。
+详情交付：可观看的作品与必要创作背景，按实际情况关联过程。
+原因：选择时先判断审美与题材，进入后兑现观看体验。
+质量要求：可观看、署名准确、介绍与作品一致；没有完整看片评分。
+持续工作：创作、选片、说明与播放维护。
+比较样本：After Light；MakeNow TV。[V20-S01 · Runway Watch — After Light](https://watch.runwayml.com/after-light)、〔M20-05〕
+
+### 进展表达
+用户要判断：这个项目发生了什么变化，哪里值得回应？
+列表重点：更新者、时间、变化摘要；未完成状态不应被伪装成成熟案例。
+详情交付：本次变化、局限、对应资源，以及建议和接续回应。
+原因：时间与上下文能让人理解现在需要什么帮助。
+质量要求：事实与计划分清，旧动态与资源现版本不冲突。
+持续工作：作者更新、他人回应、结果回传与说明同步。
+比较样本：Pebble发布动态。[V20-S02 · Pebble模型发布受阻的公开更新与回复](https://huggingface.co/posts/Hoglet-33/620130623473492)、[V20-S03 · Pebble-50M-beta — Model card](https://huggingface.co/basically-experimental/Pebble-50M-beta)
+
+### 求助与讨论
+用户要判断：问题是什么，我能否回答或从回复中得到帮助？
+列表重点：明确的问题标题、分类与回应线索。
+详情交付：条件、尝试、往来、补充信息和可追踪的结果。
+原因：问题往往在交流中逐步澄清，需要保留回复关系而非只留一个最终段落。
+质量要求：答复切题；得到建议、表示理解和实际完成分别记录。
+持续工作：提问者提供条件、回应者解释、后续归纳和更正。
+比较样本：Where to share?。[V20-S04 · Where to share? — Beginners](https://discuss.huggingface.co/t/where-to-share/176592)
+
+### 作品认可与档案
+用户要判断：谁认可了哪件作品，依据能否追溯？
+列表重点：作品、作者、届次与奖项。
+详情交付：对应作品和认定出处；不一定另建独立详情页。
+原因：奖项与认可依赖具体评价、组织者和传播渠道，需要同时安排评选工作。
+质量要求：奖项来源、范围和对应关系准确。
+持续工作：组织选择、核对结果、长期归档与更正。
+比较样本：Gen:48第三届条目。[V20-S05 · 48-Hour AI Film Challenge — Gen:48](https://runway.com/gen48)
+
+### 教程与案例说明
+用户要判断：在什么条件下，我能看懂并尝试这种方法？
+列表重点：任务、预期结果、适用程度及必要前提。
+详情交付：可用输入、步骤、检查点、版本、费用边界和失败处理。
+原因：读者需要知道下一步怎样做，以及做到什么程度才算符合预期。
+质量要求：参数、输出属性与承诺一致；未执行的步骤不拼成成功流程。
+持续工作：方法制作、编辑、独立复查、答疑与改版。
+比较样本：历史API图像材料整理；分割资源用法讨论。〔API20-03〕、〔API20-10〕、[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1)
+
+### 可调用资源与源项目
+用户要判断：我实际能取得什么，接手后可以继续做什么？
+列表重点：效果示例、资源类型、适用条件和明确使用动作。
+详情交付：文件或源结构、依赖与输入、版本、操作入口、已知问题。
+原因：可执行对象需要交接材料和环境条件，成品效果图无法替代这些内容。
+质量要求：打开、复制、保存、材料可用与任务完成分别核对。
+持续工作：作者交付、故障反馈、修订合入、环境适配和复验。
+比较样本：MakeNow案例、FABRIC与分割资源。〔M20-01〕、〔M20-05〕、[F55 · FABRIC · Admin maintenance migration #55](https://huggingface.co/spaces/dvruette/fabric/discussions/55)、[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)
+
+## MakeNow：一个案例的实际交接
+公开画布复制后，副本包含相同分类数量的21个节点。小说输入末尾加入标记并保存，离开重开后标记仍在；原件输入保持607字符且没有标记。素材完整性与生成效果尚未验证。
+仅核对一个公开案例。当前账号与源作者的身份关系未确认，未验证两个独立用户之间的完整交接。
+[公开原件：母亲节主题短片](https://dream.ai666.net/case-share/6/canvas)
+
+| 步骤 | 状态与操作 | 实际结果 | 限制 |
+| --- | --- | --- | --- |
+| M20-01 复制到个人项目 | 已观察到创建结果；在公开画布点击复制画布。 | 进入可编辑的个人画布，标题增加副本后缀。节点清单显示全部21、模块1、图片7、视频0、文本13、音频0，与原公开页分类数量一致。 | 分类数量一致不证明每个节点属性、素材或依赖完整；未确认账号与源作者是否独立。 |
+| M20-02 修改并保存副本 | 实际执行；仅在副本小说输入末尾追加研究识别标记，点击保存进度。 | 输入从607字符变为643字符，其他业务字段未主动修改。 | 不凭点击按钮或短暂提示认定保存成功，继续用离开重开验证。 |
+| M20-03 离开后重新打开 | 本次标记持久化通过；离开画布并确认到达首页，再打开刚创建的副本。 | 小说输入仍为643字符，研究标记仍在。 | 验证的是当前账号和当前文本字段的一次保存重开；不是多设备、并发、全部节点或长期保存验收。 |
+| M20-04 回查公开原件 | 本次输入未被副本编辑影响；重新打开同一公开原件并读取小说输入。 | 原件输入仍为607字符，没有研究标记；节点清单仍显示21。 | 只检查了本次修改的输入字段及节点分类，没有证明所有素材和权限都独立。 |
+| M20-05 材料可读与可继续运行 | 结构可读，材料及执行仍有限制；定位公开原件的小说输入与角色拆解，检查可见节点及缩略图。 | 小说、角色和场景信息可读，当前截图仍有部分图片缩略图未显示；画布中可见推理与生成入口。 | 未据此断言文件被删除或复制失败。生成未提交，实际模型、费用和输出质量仍未确认。 |
+
+| 交付层级 | 本样本结果 | 状态 |
+| --- | --- | --- |
+| 内容能打开 | 原件和副本的输入与制作结构可读。 | 本样本已观察 |
+| 能取得自己的副本 | 个人项目创建、分类数量一致、文本可编辑。 | 本样本已观察 |
+| 修改能保存并再次打开 | 识别标记离开后仍保留，公开源输入未出现标记。 | 限定字段已验证 |
+| 材料和依赖完整可用 | 部分图片未显示，模型和材料交接未全部核对。 | 未完成 |
+| 能继续完成任务且成本可承担 | 未提交生成，也没有完整任务费用及人工处理记录。 | 未验证 |
+
+生成：未提交，提交 0 次。页面显示总积分，尚未确认可用免费额度和单次费用；现有免费额度约束下没有启动生成。
+保留的改动：保留“母亲节主题短片 - 副本”研究项目，仅在副本小说输入末尾加入标记，公开原件未改动。
+分析：复制与文本保存已有操作记录。作为可复用案例交付前，还需补齐输入说明、可访问素材、运行依赖和关键步骤。
+
+- 整理接收者的起点：当前项目披露了小说和角色/场景输入。 需要有人说明应该替换哪里、哪些分支可跳过；没有逐一阅读全部节点确认已有指南。（待核对的内容工作）
+
+- 核对材料与执行环境：复制数量一致，但现场仍有图片未显示。 分别检查素材访问、实际调用模型和费用；不能用节点计数代替。（待核对的交付工作）
+
+- 维护被推荐的版本：副本会保留自己的输入，原件可独立继续存在。 如果将原件更新给接收者，需要明确旧副本怎样获知变化；未观察到版本通知规则。（待验证的维护需要）
+
+![MakeNow公开原件的输入与结构](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/research-images/v20/makenow-original-input.jpg)
+2026-09-10现场截图。副本编辑后回查原件：原小说输入没有研究标记，界面仍有部分缩略图未显示。此图仅证明公开页面现场，副本保存结果见操作记录。
+
+## 四个内容对象：交付与回应分别看
+四个样本分别涉及作品欣赏、过程分享、成员求助和公开认可，重点比较页面呈现、回应与维护工作。各类内容的留存差异尚无数据。
+沿v18的具体作品和话题继续读取，属于目的抽样。2条平台策展或获奖记录，2条非官方公告的成员动态/求助；成员是否同时具有平台雇员身份未核实。没有增加竞品分母，也不把复读算成新增用户。
+使用公开原页正文及页面链接。没有依赖搜索摘要，没有播放完整影片、运行模型、登录其他账号或参与讨论。网页抽取可核对内容字段和链接，不能替代当日截图对卡片尺寸、折叠和排序的核验。
+现有content-screenshots.json中的Runway课程、Hugging Face Space截图与4个具体对象不同，不作为这些对象的截图。没有新增现场截图。未取得列表原位的样本明确写未核。
+
+### After Light：频道发现与单片观看
+[查看原页](https://watch.runwayml.com/after-light) · 2026-09-10；公开页未见本片明确发布日期。
+样本：平台CPP频道中的策展样本；不代表普通投稿都能获得该位置。
+消费价值：欣赏作品、寻找视觉和叙事灵感
+列表：已读取频道条目字段；未做当日视觉截图。 CPP频道列有影片名、创作者署名及影片链接；相邻位置还有其他作者作品。全频道导航与单片页处于同一观看入口。
+详情：单片地址返回影片嵌入入口和回到TV的入口；频道编排仍可读取。没有在该页取得源工程、参数包或完整教程。
+下一步动作：打开影片入口、返回TV、沿频道选择其他作品。只核入口，没有完整播放或测量跨片浏览。
+已见回应：未取得本片观众评论、关注、完播或复看记录；不能把被平台收录当作已观察到观众认可。
+分析：把单片留在频道语境里，能让读者从一件作品继续发现其他作品。其交付对象可以就是值得观看的成片，源文件并非欣赏成立的前提；是否值得看仍需要观看判断。若需要研究创作方法，应另外接入过程材料，而不是要求所有成片卡都堆满参数。
+质量问题：用户是否能判断这是什么作品、由谁创作，并顺利进入观看？
+已见角色：页面可辨认影片创作者与平台频道两个角色；未见内部选片或授权记录。
+
+由此推导的工作（不是竞品内部工时记录）：
+- 作者提供成片、标题与准确署名。
+- 运营说明收录语境，核对播放入口及允许展示的范围。
+- 持续处理失效播放、下架与署名修正；是否增加幕后材料按内容承诺决定。
+以上是所需工作的分析，不是Runway实际人员编制或工时。没有观众价值与维护成本的可比数据。
+不能推出：不能据频道入口推导用户留存、生成转化或选片成功率；未见教程不等于内容质量差，也不等于平台其他入口没有教程。
+较增补：把‘欣赏有独立价值’进一步约束到实际交付：本片提供观看与频道继续发现，未提供可复现材料；两者应分别验收。
+[V20-S01 · Runway Watch — After Light](https://watch.runwayml.com/after-light)
+
+### Pebble发布动态：把未达预期的进展公开出来
+[查看原页](https://huggingface.co/posts/Hoglet-33/620130623473492) · 2026-09-10；动态显示3天前；可见作者回应显示2天前，不换算未经核对的绝对发布日期。
+样本：非官方公告的成员项目更新；正文出现问题和停更计划，非平台精选成功案例。作者或回复者的雇员身份未核。
+消费价值：表达进展、获得同行建议、持续关注一个项目
+列表：已读取单条动态及返回信息流入口；未核它在信息流中的当日位置或卡片折叠。 动态上方保留作者、相对时间、正文与资源链接，旁边有表情回应、回复和关注入口。
+详情：作者陈述发布受阻、效果未达预期，给出beta模型链接和下一步实验方向；模型原页也将它标为实验资源并说明评测材料缺失。
+下一步动作：进入具体模型页，给动态或已有回复作回应，关注参与者。原页的回复串有展开入口；没有展开全部回复或发送内容。
+已见回应：一位成员提出调整训练数据的方向；作者回话称后续测试可能包含此方向。页面还有表情与回复计数，但没有核到建议落实后的实验结果。
+分析：短动态保留变化发生时的语境，资源页保留交付物的长期说明。这里出现了真实的建议与接续回应，说明交流可以围绕不成熟结果发生；它不能证明建议正确或项目因此改善。相同问题若只写在资源说明里，仍需另外解决被谁发现的问题。
+质量问题：读者能否分清目前已做到什么、哪里没做好、希望得到什么回应，以及后来是否有结果？
+已见角色：项目作者发布并回应，另一成员贡献实验建议；资源页与动态分别承载同一项目材料。
+
+由此推导的工作（不是竞品内部工时记录）：
+- 作者交代本次改变、已知局限和对应资源。
+- 回应者针对明确问题给出建议，并区分已验证结果与尝试方向。
+- 作者回传测试结果；重要变化同步资源页，避免旧动态与现版本互相冲突。
+看到了两种贡献，没有回复工时和后续实验记录；不能把成员建议折算为可稳定安排的免费产能。
+不能推出：一轮往来不证明稳定关系或留存；表情不能直接解释为情感支持；模型页的用法入口不证明已运行成功。未运行模型，也未验证作者的性能比较。
+较增补：新增呈现与维护拆分：动态需要时间和回话语境，资源页需要版本说明，两处同步是额外工作。此次模型Community页读取失败，不能沿用‘未见主题’作为当前状态。
+[V20-S02 · Pebble模型发布受阻的公开更新与回复](https://huggingface.co/posts/Hoglet-33/620130623473492)、[V20-S03 · Pebble-50M-beta — Model card](https://huggingface.co/basically-experimental/Pebble-50M-beta)
+
+### Where to share?：有工具，但不知道向谁展示
+[查看原页](https://discuss.huggingface.co/t/where-to-share/176592) · 2026-09-10；首帖2026-06-06；可读回应和作者后续至2026-06-08。
+样本：Beginners分类的普通成员求助样本，不是官方推广或获奖展示；成员身份以页面可见角色为限。
+消费价值：获得引导、找到合适的表达与交流位置
+列表：已读取话题标题与分类；未重现它在分类列表的原始位置。 页首用疑问型标题和Beginners分类说明讨论语境，正文按楼层、日期承接发起者与回复。
+详情：首帖提出工具已经做出、但不知道怎样建立社区。成员用表格与分节回复区分代码、演示、展示公告和招募等材料应如何呈现；这些是成员建议，不是官方发布规则。
+下一步动作：阅读回复中的发布位置链接、补充问题或另开对应主题。这里只核到链接和后续文字，没有代发内容。
+已见回应：作者6月7日表示会按建议选择发布位置；6月8日继续说明准备发布。可见楼层并不连续，没有取得完整对话，也未核到已经发布、招到协作者或建立用户群。
+分析：讨论串容纳最初并不清晰的表达，让别人先帮忙厘清‘想分享什么、希望谁回应’。这种内容的第一份交付是清晰的问题和引导，不一定是可下载资产。但长回复不能单靠篇幅验收，是否被理解、建议是否适用、后续是否完成仍需各自检查。
+质量问题：求助是否得到针对其处境的解释，作者是否理解，最后结果能否被后来者找到？
+已见角色：发起者提出困惑并接续回话，成员承担解释和分流；未核到平台员工介入。
+
+由此推导的工作（不是竞品内部工时记录）：
+- 发起者说明已有材料及希望获得的帮助。
+- 回应者把混在一起的问题拆清，连接合适入口。
+- 出现后续结果时补回原主题；平台或运营维护分类语境，避免建议与规则混淆。
+一条详细回复不证明平台有固定答疑资源或可承诺响应时效；建议整理回首帖的工作也没有在得到确认。
+不能推出：作者表示将采用建议，不等于发布已经完成；表达被回应，不等于技术、研究或商业主张被验证。个人陈述不用于推断总体用户画像。
+较增补：复核到6月8日仍是发布准备陈述；把‘得到回应’与‘完成发布/建立社区’明确分开，没有新增成功转化结论。
+[V20-S04 · Where to share? — Beginners](https://discuss.huggingface.co/t/where-to-share/176592)
+
+### RUPU-KK: the Loop：作品成为公开获奖记录
+[查看原页](https://runway.com/gen48) · 2026-09-10；页面按届次归档；本次未从本条目核到第三届的明确活动日期。
+样本：第三届Gen:48获奖条目，属于筛选后的样本；不能代表普通参与者。
+消费价值：作品被识别、获得有出处的认可，观众借奖项选择影片
+列表：已读取同页获奖条目的字段；未测试其动态播放或独立详情。 第三届归档下，条目同时列影片名、人民选择奖标识、导演署名和1分40秒片长；相邻作品用不同奖项标识。
+详情：档案本身交付作品与奖项的对应记录。未取得单片独立详情或评语，不能硬套‘卡片后必有完整详情页’的结构。
+下一步动作：在同页按届次继续查看获奖作品。页上有观看合集的说明，未完成播放、投票或参赛。
+已见回应：实际可见的是主办方保留的获奖认定；没有取得原始投票、评审意见、观众评论或获奖后的合作结果。
+分析：届次和奖项让‘被选中’有具体出处，作品名与署名使认可可以指向具体创作；片长帮助观众判断观看投入。它交付的增量是有组织者背书的记录，不能只复制视觉徽标。没有可信的选择依据时，同样样式的标签不会自动产生同等认可。
+质量问题：认可由谁给出、依据是什么、对应哪件作品，记录能否持续追溯？
+已见角色：页面体现作品作者和主办方两个角色；未见其内部评审流程或费用。
+
+由此推导的工作（不是竞品内部工时记录）：
+- 作者交付符合活动要求的作品与署名。
+- 主办方公布选择依据、确认结果并建立可引用档案。
+- 保留届次与类别边界，处理更正、下架和播放失效；如组织投票，还需维护投票过程与争议。
+以上是机制成立所需工作的分析，不是已经测得的Runway成本；也不能推定新社区具备相同评审与传播资源。
+不能推出：获奖记录不证明参赛动机、获奖商业收益或未获奖者体验；也不能用它比较多元拾光普通内容的平均质量。
+较增补：把‘认可可以超出点赞’推进到不可省略的供给条件：组织者选择与档案维护。奖项图样和运营能力应分别比较。
+[V20-S05 · 48-Hour AI Film Challenge — Gen:48](https://runway.com/gen48)
+
+### 用户看见什么
+同是内容入口，影片频道先提供作品与作者；动态先提供谁更新了什么；求助先提供问题与分类；获奖档案先提供作品、届次与奖项。呈现重点由用户此刻需要作的判断决定。
+这是跨样本的形式分析，没有比较点击率或排序效果。
+
+### 详情应交付什么
+成片可以交付观看本身，动态交付变化与未解决处，求助交付条件与往来，奖项档案交付可追溯的认定。只有承诺复用或教学时，才应进一步要求输入、步骤、依赖与结果。
+不能由此降低事实准确、署名和可访问等共同底线；也不能给没有观看过的作品打质量分。
+
+### 实际回应意味着什么
+Pebble有建议和作者接话；分享位置求助有理解与准备采用的回应；Gen:48有主办方认定；影片频道未取得观众往来。三种已见回应的含义不同，不适合合为一个互动分数解释。
+未取得互动不等于没有互动，已见互动不等于留存；没有任何一条补足了持续需求的量化证据。
+
+### 谁持续供给
+作者提供内容只是其中一部分。频道需要编辑选择，进展需要作者回传，求助需要有针对性的回应，奖项需要可信的组织与记录；可下载资源还会增加运行和版本维护，不能把这些统称‘招一个内容人’。
+此处拆的是工作种类，还不是招聘建议或人手预算；同一人可能承担多项工作，能否承担需结合实际记录。
+
+## 资源发布以后：谁接着处理问题
+两个 Hugging Face 资源有持续维护记录：FABRIC 涉及原作者排错与平台人员迁移环境；图像分割资源在2026年收到外部成员的代码、依赖和配置修改，由作者合入。维护者角色不同，两例均无可用工时或成本账。
+从v18-input-lifecycle.json的HF02与HF04继续追踪，按同一资源的讨论列表、文件、历史提交、关联PR延伸。有意选择能看见问题与修订的旧内容，属于目的抽样，不能代表平台整体维护质量。
+成员归因为成员主张；Owner修复声明、合入代码、提问者确认、独立运行验证是不同证据层级。没有独立运行验证，未观察到公开回应不等于站外无人处理。
+访问日2026-09-10。正文记录的事件从2023至2026年；页面Running或Sleeping只作访问时的展示，不作为任务可用率或历史修复成功的证据。
+
+### FABRIC：从依赖修复到平台迁移
+[资源页](https://huggingface.co/spaces/dvruette/fabric)
+只读到#26反复重启与2024年8月重开。取得2023年真实修订、2024年跨线程追问、2025至2026年的新副本故障对比，以及HF Staff于2026年完成的ZeroGPU迁移。旧线程没有结论不能再被用来暗示整个资源此后无维护。
+
+| 时间 | 发生了什么 | 证据层级与来源 |
+| --- | --- | --- |
+| 2023-10-14至2023-10-16 | 成员报告运行错误、尝试依赖组合并回传；Owner说明固定依赖后恢复。 | 讨论中的修复声明；成员尝试不是研究者复现；[F26 · FABRIC · Runtime error #26](https://huggingface.co/spaces/dvruette/fabric/discussions/26) |
+| 2023-10-16 | 提交988fb7e将transformers从最低版本约束改为固定4.30.2，支持同日Owner确实调整了依赖这一事实。 | 具体文件修订可核对；不证明全部输入都能运行；[F-C23 · FABRIC · Update requirements.txt 988fb7e](https://huggingface.co/spaces/dvruette/fabric/commit/988fb7e2246338839abd7c0ac342da33ea3326dd) |
+| 2023-12-15、2024-04-22、2024-08-30 | 同一讨论再次承接故障和重启；前两次有Owner回复与提问者回应，8月重开后本线程未见结论。 | 多次历史回应；不合并为同一根因；[F26 · FABRIC · Runtime error #26](https://huggingface.co/spaces/dvruette/fabric/discussions/26) |
+| 2024-09-06至2024-09-14 | 同一提问者另开#49寻求处理；Owner说明可在相关项目提issue，并解释反馈图片的作用。随后仍有颜色异常疑问，页面可见PR未合并且存在冲突。 | 答疑已发生；新疑问未见公开结论；不能当作修复提交；[F49 · FABRIC · A space errored #49](https://huggingface.co/spaces/dvruette/fabric/discussions/49) |
+| 2025-01-03至2025-02-02 | #53再次报告崩溃；Owner说明这次不止需要重启，时间有限。提问者比较旧副本与新复制副本并报告差异；其根因猜测未被确认。 | 不顺利环节与等待已发生；等待时长不是工作时长；[F53 · FABRIC · Space has crashed #53](https://huggingface.co/spaces/dvruette/fabric/discussions/53) |
+| 2026-03-06 | Owner在#53回复似已修复并关闭；同日提交历史可见升级版本、修复兼容和下调Python等记录。 | 声明与修订时间相符；未取得独立生成验证；[F53 · FABRIC · Space has crashed #53](https://huggingface.co/spaces/dvruette/fabric/discussions/53)、[F-HISTORY · FABRIC · Commit History](https://huggingface.co/spaces/dvruette/fabric/commits/main) |
+| 2026-05-25 | 有HF Staff标记的平台成员发起并合入ZeroGPU迁移PR；差异包含GPU运行适配和依赖调整。 | 平台人员介入已确认；费用承担和支持承诺未知；[F55 · FABRIC · Admin maintenance migration #55](https://huggingface.co/spaces/dvruette/fabric/discussions/55)、[F55-DIFF · FABRIC · migration #55 Files changed](https://huggingface.co/spaces/dvruette/fabric/discussions/55/files) |
+
+| 实际参与者 | 可见工作 | 发生条件与来源 |
+| --- | --- | --- |
+| 提问者与其他普通成员 | 发现故障、尝试副本、提供报错和对比、回访、提出用法问题。 | 随问题重复发生；[F26 · FABRIC · Runtime error #26](https://huggingface.co/spaces/dvruette/fabric/discussions/26)、[F49 · FABRIC · A space errored #49](https://huggingface.co/spaces/dvruette/fabric/discussions/49)、[F53 · FABRIC · Space has crashed #53](https://huggingface.co/spaces/dvruette/fabric/discussions/53) |
+| 资源所有者 | 固定依赖、重启、处理兼容、解释运行方式、关闭或继续承接问题。 | 初次修订与后续维护并存；[F-C23 · FABRIC · Update requirements.txt 988fb7e](https://huggingface.co/spaces/dvruette/fabric/commit/988fb7e2246338839abd7c0ac342da33ea3326dd)、[F26 · FABRIC · Runtime error #26](https://huggingface.co/spaces/dvruette/fabric/discussions/26)、[F49 · FABRIC · A space errored #49](https://huggingface.co/spaces/dvruette/fabric/discussions/49)、[F53 · FABRIC · Space has crashed #53](https://huggingface.co/spaces/dvruette/fabric/discussions/53)、[F-HISTORY · FABRIC · Commit History](https://huggingface.co/spaces/dvruette/fabric/commits/main) |
+| 平台人员（页面标记HF Staff） | 提交并合入运行环境迁移。 | 本样本确认1次迁移；不能外推为普遍保修；[F55 · FABRIC · Admin maintenance migration #55](https://huggingface.co/spaces/dvruette/fabric/discussions/55)、[F55-DIFF · FABRIC · migration #55 Files changed](https://huggingface.co/spaces/dvruette/fabric/discussions/55/files) |
+
+平台：仓库、文件差异、讨论与PR记录让问题和版本可追溯；本例另有平台人员亲自维护代码。
+成员：成员的报错、旧副本/新副本比较、使用疑问让维护者获得具体线索，不能替代原服务的权限与兼容处理。
+有可复制源文件不等于无需支持；能评论也不等于成员具备修复与合入权限。
+费用证据：成员曾笼统说排错花了数小时，Owner曾说时间有限；没有工单计时、费用账或计算资源账。
+未知：初次制作工时、各轮排错净工时、平台迁移工时、托管/调用总成本、作者收益、平台人员投入是否有偿。
+不把帖子相隔天数、提交数、差异行数换算为工时、可用率或人均产能。
+分析：可调用内容若承诺持续可用，需要安排错误材料、版本核对、复测与迁移的接手人；只安排作者交稿和运营发布并不覆盖这些已经发生的劳动。
+可采用的工作安排（尚未执行）：
+- 为待推荐资源保留当前适用版本、上次复查日期和已知问题入口。
+- 遇到未确认可用的更新，先标明边界并安排复测，再决定是否恢复推荐。
+- 区分普通成员贡献、作者维护、平台人员投入，分别记录。
+提案尚未执行。没有证明该资源当前失效、官方承诺长期维护、或HF整体采用同等投入。
+
+### 图像分割资源：效果纠错、运行恢复与外部贡献
+[资源页](https://huggingface.co/spaces/curt-park/segment-anything-with-clip)
+看见2023年效果问题与成员补充本地用法。取得对应修订历史、随后两次运行求助，以及2026年外部成员的三项修改被原作者合入。跨年仍有新维护证据，不能以2023年讨论停止作停更结论。
+
+| 时间 | 发生了什么 | 证据层级与来源 |
+| --- | --- | --- |
+| 2023-04-08至2023-04-09 | 成员提供图片与提示词说明分割不合理；Owner承认预处理问题并称修复。历史中有同日Fix preprocessing bug提交。 | 报告与修订记录对应；最初提问者成功未确认；[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1)、[S-HISTORY · Segment Anything with CLIP · Commit History](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/commits/main) |
+| 2023-04-14 | Enhance accuracy提交调整应用并补充三个示例图片。 | 交付内容变更可核对；效果提升幅度未测；[S-C23 · Segment Anything with CLIP · Enhance accuracy bf0a9ad](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/commit/bf0a9ad2c6d30c592b177240ed7a0106b0e73329) |
+| 2023-04-26至2023-07-02 | 另有成员回传异常，Owner补充检查结果；后续问题扩展到本地/API使用，普通成员提供启动说明。 | 效果答疑与补充用法已发生；旧说明不是现行执行指令；[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1) |
+| 2023-07-02至2023-08-23 | #2报告停在构建状态，7月21日仍有人回报；8月23日Owner说已执行factory reboot，未见提问者确认。 | 有延迟与处置声明；结果确认缺失；[S2 · Segment Anything with CLIP · App in build state #2](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/2) |
+| 2024-01-10至2024-02-14 | #4报告本地、API和在线示例错误；Owner随后说明已factory restart并恢复。 | Owner声明可读；未取得独立复现或提问者回传；[S4 · Segment Anything with CLIP · Getting Runtime Error #4](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/4) |
+| 2026-03-13至2026-06-11 | 外部成员分别提交应用、依赖、配置三项PR，原作者6月11日合入；应用修改含模型与输入处理，依赖修改和Gradio配置升级可以逐文件核对。 | 外部贡献与作者合入已确认；未显示审查讨论、测试结果或报酬；[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)、[S6 · Segment Anything with CLIP · Update requirements.txt #6](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6)、[S7 · Segment Anything with CLIP · Update README.md #7](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7)、[S5-DIFF · Segment Anything with CLIP · app.py #5 Files changed](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5/files)、[S6-DIFF · Segment Anything with CLIP · requirements #6 Files changed](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6/files)、[S7-DIFF · Segment Anything with CLIP · README #7 Files changed](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7/files) |
+
+| 实际参与者 | 可见工作 | 发生条件与来源 |
+| --- | --- | --- |
+| 提问者 | 准备异常输入/输出、补报持续故障、描述本地与在线差异。 | 按问题发生；[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1)、[S2 · Segment Anything with CLIP · App in build state #2](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/2)、[S4 · Segment Anything with CLIP · Getting Runtime Error #4](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/4) |
+| 普通回复成员 | 补充本地使用说明。 | 本样本确认1条说明；[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1) |
+| 资源所有者 | 修复预处理、补充示例、回应质量、恢复运行、合入外部修改。 | 初次完善与后续维护；[S1 · Segment Anything with CLIP · Not getting sensible result #1](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1)、[S-C23 · Segment Anything with CLIP · Enhance accuracy bf0a9ad](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/commit/bf0a9ad2c6d30c592b177240ed7a0106b0e73329)、[S2 · Segment Anything with CLIP · App in build state #2](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/2)、[S4 · Segment Anything with CLIP · Getting Runtime Error #4](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/4)、[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)、[S6 · Segment Anything with CLIP · Update requirements.txt #6](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6)、[S7 · Segment Anything with CLIP · Update README.md #7](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7) |
+| 外部贡献者（员工或受雇身份未确认） | 修改应用、依赖与配置并提交PR。 | 确认同批3项PR；[S5 · Segment Anything with CLIP · Update app.py #5](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)、[S6 · Segment Anything with CLIP · Update requirements.txt #6](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6)、[S7 · Segment Anything with CLIP · Update README.md #7](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7) |
+
+平台：App、Files、Community及PR保留了演示、材料、求助、修改、合入几个不同入口；这些入口不自动保证审查及时或效果正确。
+成员：贡献可以从提问、示例回传、用法补充发展为实际修改，但此次仍由资源所有者合入。
+三项PR不是三个新创作者，也不是三份独立内容产出；有合入结果不证明所有问题都解决。
+费用证据：公开记录能看到工作种类和发生日期，未取得实际工时或现金支出。
+未知：贡献是否受雇或自愿、作者审查与测试工时、托管成本、贡献者收益、维护响应目标。
+约三个月的PR等待区间不等于三个月工作量；重启声明与代码变更不当作可用率。
+分析：教程说明、运行服务和源文件各有维护对象。资源可以长期收到贡献，但接手入口、合入责任和复测仍需有人承担。
+可采用的工作安排（尚未执行）：
+- 将异常回传要求写成具体材料：任务、输入、预期、实际、使用版本。
+- 让修订关联问题并记录适用日期；没有结果回传时保留未确认。
+- 只有在承诺可运行或可复制时才增加兼容复查，不把同样要求强加给纯欣赏作品。
+本例两个故障线程缺少提问者确认，不能称完全闭环；本次没有运行、审计整套代码或证明平台普遍得到无偿维护。
+
+## 供给要采购什么工作
+以下清单由交付要求推导；不是已执行流程，也不是立即增加岗位的建议。
+
+### 作品
+以观看、欣赏、表达与获得回应为主要交付；可以关联过程，但不默认承诺可复现。
+首次交付：
+- 选择成品并确认展示授权
+- 整理标题、封面、排序和必要背景
+- 检查图片/视频在列表与详情能正常观看
+- 说明确实关联的过程或原文件
+持续维护：
+- 处理媒体损坏与失效链接
+- 回应与作品有关的讨论或补充创作说明
+- 更正错误署名或事实描述
+- 按实际互动重新组织合集和推荐
+作者交付和说明；编辑/运营选择与组织；平台负责展示功能。
+源画布、逐步教程、模型兼容测试仅在内容明确承诺时增加，不能作为所有作品的质量底线。
+待执行的工作清单，由交付对象差异推导；不声称竞品每项均已做到。
+费用：未知；先记录实际执行时间和外部支出，不估每日篇数。
+
+### 教程
+让读者理解方法并在明确条件下尝试，交付包含步骤和判断标准。
+首次交付：
+- 说明任务、适用读者和前提
+- 准备可用输入与预期结果示例
+- 验证关键步骤并说明版本和必要费用边界
+- 整理失败例、检查点和替代办法
+- 由未参与制作的人检查能否看懂并找到入口
+持续维护：
+- 收集问题并澄清缺失条件
+- 区分读者操作、材料条件、规则变化与工具故障
+- 更正步骤、截图或示例并记录日期
+- 对不再适用部分说明边界或撤下对应推荐
+作者提供方法和材料；编辑梳理表达；懂工具的人处理技术问题；运营整理常见问题和失效入口。
+回答次数不是教程质量，作者回复不等于读者完成；按实际承诺复核关键步骤。
+待执行清单；S1显示示例回传与用法补充确有作用，不能由两例推导人力配额。
+费用：未知；制作、复查、答疑和改版分别计时。
+
+### 可调用资源
+包括工作流、画布、可执行Skill、MCP或小工具；具体交付取决于对象，不能默认互相兼容。
+首次交付：
+- 确认可交付文件、依赖、输入材料与必要权限
+- 验证打开、复制或安装后的关键路径
+- 在已授权预算内记录执行、失败、重试和实际费用
+- 检查保存重开、结果带回与源材料可访问
+- 写明支持范围、已知问题及反馈入口
+持续维护：
+- 诊断报错并取得复现材料
+- 适配依赖、模型、SDK和运行环境变化
+- 核对旧副本与新副本差异
+- 维护示例输入与结果
+- 处理贡献、合入、复测、迁移和失效提示
+作者或工具维护者负责功能与兼容；贡献者提供材料或修改；运营负责发现和状态表达；平台支持按实际承担范围记录。
+下载成功、复制按钮可点、页面Running和代码合入不能代替任务成功；调用额度与人员投入需要分开计算。
+清单中的建议尚未执行；F-C23、F55、S5至S7证明依赖、环境、外部修改合入是实际维护工作。
+费用：未知；不从节点数、PR数或提交行数推断工时和成本。
+
+## API：从历史材料核对交付
+历史 grok-4.2-image 样本完成文本生图并保存为 JPEG，文件可正常打开。实际尺寸784×1168，与摘要中的 size=1024x1024 不同，原因未知。模型名称映射、异步模式和费用仍需核对，尚不能据此估算 MakeNow 画布成本。
+样本：用虚构产品工作区简报生成一张文章插画，并保留为后续人工审阅和编辑的材料。2026-06-17 image-smoke 的 grok-4.2-image 单图样本。
+样本有输入、请求类型、模型标签与本地文件，可检查交付材料是否一致；其任务为虚构产品插画，与 MakeNow 节点无已知对应关系。
+历史执行已记录完成；未重新生成。
+已核对画面和文件属性，完整授权审查、再次生成与编辑效果尚未检查。
+
+![API历史案例输出](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/research-images/v20/api-image-20260617.jpg)
+2026-06-17生成；2026-09-10复核。2026年6月17日历史生成图片。摘要记载1024×1024，实际文件为784×1168，尺寸差异尚未解释。
+
+| 环节 | 已有 | 缺口 | 状态 |
+| --- | --- | --- | --- |
+| 准备输入 | 历史虚构Brief、Prompt、尺寸及模型标签已在脱敏摘要中。 | 当前参数有效范围和别名关系。 | 有历史材料，可用于内部内容整理 |
+| 提交生成 | 公开文档有生成入口和参数示例，用户确认模型供给。 | 文档异步说明不一致；未执行。 | 有说明，不计为当前运行通过 |
+| 判断完成 | 历史运行汇总为成功；查询文档有completed和任务不存在示例。 | 本样本完整状态变化、等待与失败处理记录；实际尺寸不符合摘要记录，尚不能称规格验收通过。 | 单次历史结果已记载，规格另行核对 |
+| 取得并保存图片 | 本地JPEG现存，字节数与历史记录相符，已完成基础视觉核对；文件实际784×1168，与摘要1024×1024不一致。 | 尺寸差异原因、远程期限和完整发布前审核。 | 可供内部审阅，不等于可直接公开 |
+| 继续编辑 | 另一模型的公开编辑文档提供输入和返回结构。 | 本例编辑运行、输入格式限制、前后效果和费用。 | 只有文档对照，不能拼为已完成步骤 |
+| 整理为社区内容 | 历史Prompt、输出、基础视觉核对及实际尺寸，可以组织成有日期的案例草稿。 | 人工解释、尺寸差异说明、适用发布场景的审核、稳定性及任何真实读者反馈。 | 具备候选材料，不承诺内容有效或用户留存 |
+
+### API20-01 历史任务与现有资产
+历史执行记录＋文件存在性确认
+事实：脱敏素材摘要记载 image_generation、grok-4.2-image、1024×1024、状态 succeeded。运行汇总为1个job、1个成功、0个失败；JPEG现存，161037字节，与原素材包记录一致。
+分析：已经具备用于内部整理的输入与输出材料，不必从“没有案例素材”开始。
+未知：1个成功job不等于只发生过1次底层尝试；没有重跑或当前模型生成质量证据。已补基础视觉核对及实际尺寸，详见API20-10，不能将success等同于规格验收通过。
+内容工作：可编写明确标注2026-06-17日期的历史示例，保留Prompt和输出文件对应关系，同时写清记录规格与实际尺寸差异；公开前仍需完成相应用途审阅。
+〔L20-01〕、〔L20-02〕、〔L20-03〕、〔L20-04〕
+
+### API20-02 模型名映射
+已确认存在名称差异；映射未知
+事实：历史样本用 grok-4.2-image；可读生成文档示例用 grok-4-2-image。旧价格清单同时列出两个名称，前者标图像/image-generation，后者标文本/openai。
+分析：内容中的展示名、实际调用名与接口格式需要分开写，不能自动把点号和连字符名称替换或合并。
+未知：两名称是否同路由、同能力、别名或历史分类错误，尚无权威映射证据。用户确认模型均可支持，不等于确认两名字完全等价。
+内容工作：案例可保留当时实际模型标签，接入说明注明当前示例名称不同、需要核对；暂不能给出未经核验的替换代码。
+〔L20-01〕、〔L20-05〕、[W20-02 · 图像生成：grok示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/390053304e0)、〔R20-01〕
+
+### API20-03 生成输入
+历史样本＋公开文档声明
+事实：历史输入是虚构产品工作区的英文简报，要求插画且避免可读文字、标志和真实人物。生成文档示例以JSON提交model、prompt、size和n。
+分析：Prompt不是唯一复现材料，至少还需记录模型调用名、尺寸、数量和本次任务要求。
+未知：未核对所有支持尺寸、数量上限、随机性控制和不同名称的参数差异，不能承诺相同Prompt得到相同图。
+内容工作：适合交付可理解的输入模板：目标画面、必要限制、参数、示例结果与人工检查点。
+〔L20-01〕、〔L20-02〕、[W20-02 · 图像生成：grok示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/390053304e0)
+
+### API20-04 同步与异步
+文档说明存在不一致；样本具体模式未重查
+事实：生成页正文称异步仅支持sora_image，但同页grok示例地址包含async=true；可读成功响应示例为空对象。另一个异步查询页展示按任务标识查询及completed示例。
+分析：内容应分别说明请求被接收、等待、完成、取得结果；不能把HTTP 200或页面栏目名当作完成证据。
+未知：不能据示例判定grok实际是否异步、服务返回空对象或无法使用；未读取原始响应，也没有足够记录复原这次历史运行的全部状态变化。
+内容工作：目前可制作带文档局限说明的状态阅读指引；尚不足以发布声称已经验证的grok异步完整教程。
+[W20-02 · 图像生成：grok示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/390053304e0)、[W20-04 · 图片异步任务查询](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912128e0)、[W20-05 · 异步分组的生成页](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912224e0)、〔L20-03〕
+
+### API20-05 后续编辑输入和输出
+公开文档声明；未实测
+事实：取得的编辑页示例使用gpt-image-2，通过multipart/form-data提交image、prompt、mask、size、quality等字段，返回示例包含图片URL与usage字段。
+分析：继续编辑需要原图及明确修改要求，不能只转交初次生成Prompt。它与本例grok生成属于不同模型说明。
+未知：可见示例的image和mask为空占位，未说明所有可接受格式、是否必填及多图处理限制；不能据此认定mask必填或图片融合已经可用。usage全零是示例占位，不是零成本结果。
+内容工作：可以说明编辑案例应包含原图、修改目标、关键参数和前后结果；当前没有本例的编辑结果，不能生成虚构前后对照。
+[W20-03 · 图像编辑：gpt-image-2示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/449456981e0)
+
+### API20-06 结果取得与保存
+历史保存已记录；文件与基础视觉已核对；远程保留期未知
+事实：历史素材包记载远程结果已保存本地；文件现存且可正常打开查看。查询与编辑页面的示例均可返回结果URL，但本次可读页未取得明确保留期限或过期恢复说明。
+分析：结果链接、可打开文件和可长期维护的案例资产需要分别检查；已有本地文件是比只保留远程链接更具体的交付证据。
+未知：未重验远程URL，也未取得当前存储期限、公开素材授权或画布引用的保存规则。基础视觉核对不构成全面权利审查。
+内容工作：案例素材包可保留本地输出、Prompt与日期，读者说明应交代如何取得文件；不能承诺远程链接永久有效。
+〔L20-01〕、〔L20-02〕、〔L20-04〕、[W20-03 · 图像编辑：gpt-image-2示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/449456981e0)、[W20-04 · 图片异步任务查询](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912128e0)
+
+### API20-07 失败、重试和任务不存在
+公开说明部分可读；代表任务失败记录不足
+事实：通用帮助页区分请求格式、权限、限流和服务错误；异步查询页另列HTTP 200下的“任务不存在”。现有本例汇总只记录1个成功job，没有可用失败或重试过程。
+分析：教程不能只写“失败就再点一次”；先要知道任务是否存在、是否仍在运行、参数是否需改，以及是否可能重复提交。
+未知：未取得此图像链路的幂等、重试间隔、最长等待、失败扣费与退还规则，也不能从通用错误页认定错误一定来自原厂。
+内容工作：可以建立按状态收集反馈的说明，明确记录任务阶段和错误类型；暂不能给出已经验证的自动重试流程或退款承诺。
+[W20-04 · 图片异步任务查询](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912128e0)、[W20-06 · 常见问题及解决办法](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/5681174m0)、〔L20-03〕
+
+### API20-08 费用口径
+历史价格字段存在；当前任务成本未知
+事实：6月清单将两种grok名称都列为按次计费，原字段model_price均为0.015。该清单明确非实时价格承诺。价格页web读取失败；此前浏览器读到公开目录，但没有本模型代表行。
+分析：0.015仅按旧字段原值保留，不补写币种、不当作内部成本。图像编辑页提供usage结构也不等于掌握了单次结算价。
+未知：当前该名称的计价单位、币种、尺寸/质量/数量影响、账户倍率、失败扣费、重试次数与实际结算均未形成证据。
+内容工作：可以告诉读者哪些因素需要计入完整任务成本，不能发布当前单图报价、API毛利或MakeNow画布成本估算。
+〔L20-05〕、[W20-03 · 图像编辑：gpt-image-2示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/449456981e0)、[W20-07 · 公开价格页读取受限](https://kk2.deepwl.net/pricing)、〔R20-02〕
+
+### API20-09 API与MakeNow依赖关系
+API支持为用户确认；具体节点映射未知
+事实：用户已确认API文档全部模型可提供支持；观察到MakeNow画布、技能入口及按次计价提示，但没有确认两条公开画布中某一图片节点调用的模型和API路由。
+分析：模型供给可用于研究任务选择，但不能直接把本例API文档或历史价格贴到MakeNow某个节点。
+未知：MakeNow实际模型、执行次数、积分换算、人工修改和底层API路由均未与本例建立映射。
+内容工作：三产品比较可列出已经拥有的素材与入口；暂不能声称社区作品—MakeNow节点—API成本已贯通。
+〔R20-01〕、〔R20-03〕
+
+### API20-10 输出实际属性与历史规格记录不一致
+文件属性读取与基础视觉核对已完成；差异原因未知
+事实：读取文件属性确认同一落盘JPEG，实际宽784、高1168；这不是view_image缩略图尺寸。case_materials.md第18行记录size为1024x1024。查看原图看到桌面、抽象卡片、箭头和素材组成的插画，当前画面未见可读正文、品牌标志或真实人物。
+分析：任务状态成功只说明运行汇总结果；还需以实际文件核对尺寸、格式与内容是否符合该任务要求。这一差异是已有样本能够支持的具体交付问题。
+未知：未读取原始响应或图片转换链，无法判断是请求记录、API返回、下载、转码还是其他环节造成尺寸差异，不能断言API忽略参数。当前视觉观察也不证明全面权利合规或适合所有发布场景。
+内容工作：公开案例应分开写请求参数（本例仅有历史摘要记录）与输出文件实际属性，并标注检查方法和日期；不能只复制size字段，就将结果称为1024×1024成图。
+〔L20-02〕、〔L20-03〕、〔L20-04〕
+
+### 社区、MakeNow与API各自已有和缺少什么
+
+| 产品 | 已有／当前可用 | 还缺什么 | 判断边界 |
+| --- | --- | --- | --- |
+| 多元拾光社区 | 已有内容承载设计和历史API案例材料；公开样本也已见结果、Prompt、参数及行动入口。 现有脱敏Prompt、模型标签、日期与本地文件可供内部编辑和对照；已完成基础视觉与文件尺寸核对，不必重复索取或重复开展同一检查。 | 本例尺寸差异原因、适用发布场景的全面审阅、已发布页面、读者消费反馈和实际再使用仍缺证据。 | 欣赏型作品提供观看与说明；教程和资源另需复用材料与操作验证。；〔L20-01〕、〔L20-02〕、〔L20-04〕、〔R20-04〕 |
+| MakeNow | 已看到作品关联公开画布、技能入口和按次计价提示。 两条公开画布的结构已有观察；已验证其中一个案例的副本创建、文本修改与保存重开，原公开输入未见研究标记。素材、依赖和生成仍未验证。 | 图片节点的精确模型、API路由、素材依赖、实际费用和完整再执行尚未确认。 | 不将grok历史图像样本视作MakeNow产物；不将API价格换算成MakeNow画布成本。；〔R20-03〕、〔R20-05〕 |
+| API中转服务 | 模型支持范围已由用户确认；有生成、编辑、查询文档及一次历史图像落盘证据。 当前可读文档可用于解释输入与状态，历史样本可用于内部方法说明；运行能力沿用用户确认，未重新验收。 | 精确名称映射、部分异步说明、完整失败恢复、编辑实测与当下任务成本。 | 原厂品牌、服务商路由与MakeNow节点必须分别记录；用户确认支持不等于每项任务的质量和经济性已证明。；[W20-02 · 图像生成：grok示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/390053304e0)、[W20-03 · 图像编辑：gpt-image-2示例](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/449456981e0)、[W20-04 · 图片异步任务查询](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912128e0)、〔L20-01〕、〔R20-01〕 |
+
+### 费用证据
+已知：
+- 历史按次字段可查；原值不是当前报价。
+- 当前编辑文档有用量结构，但示例数值不构成实测。
+未知：
+- 最终采用哪一个精确模型名称与规格
+- 为了获得可用图片实际发生多少计费尝试
+- 失败是否扣费、退还及重复提交处理
+- 选择、修图、写说明和复验的人工耗时
+- MakeNow积分与其底层调用成本之间的关系
+后续只能按同一明确任务汇总实际计费调用与必要人工处理；当前缺少金额和尝试记录，不填写单图总成本、成功率或毛利。
+这是成本证据的整理口径，不是财务测算或采购建议。
+
+## 仍需补齐的成本与选择依据
+
+| 工作 | 要记录什么 | 当前边界 |
+| --- | --- | --- |
+| 内容首次制作 | 输入整理、创作或运行、选择结果、编写说明的实际时间与外部支出。 | 未取得，不从稿件数量估产能。 |
+| 接收者使用 | 所用版本、任务、每次计费尝试、成功输出、人工修改与得到帮助的位置。 | 一次复制或一条成功状态不能替代完整记录。 |
+| 持续维护 | 触发问题、承担者、实际处理时间、修改内容、复验和必要的重新推荐。 | 帖子间隔和PR等待时间不是工作时长。 |
+| 社区增加的工作 | 新增说明、策展、回应、关系维护和跨入口同步；与工具自身已经提供的工作分别记录。 | 不直接把工具自然回访、API收入或点赞计数记成社区增量。 |
+
+- 优先用户尚未确定，需结合重复需求与自身供给能力比较。
+- 六种内容用于比较交付要求，频道和功能安排尚未确定。
+- 制作与维护工作已有清单，实际可分配工时尚未确认。
+- 同一对象的多次观察合并追踪，不重复计为独立用户或任务。
+
+## 样本与访问限制
+访问日为2026-09-10。HF动态只显示相对日期，保留相对值；比赛届次与访问日期分开。原页可读的历史回复不是持续跟踪数据。
+不采集成员头像、联系方式、生活经历或账户数据；只保留去身份概述及公开追溯URL。不得据作者技术自述确认性能，不传播求助帖内未经验证的健康、法律或收入主张。
+文件树一度命中旧缓存，与提交历史有差异；分析采用已取得的具体PR、版本和日期，旧缓存计数不纳入统计。
+新增一张公开画布截图并复核一张历史输出。四个内容对象未新增现场截图，不以别的页面截图代替。未完成完整任务生成，不报告留存率、成功率、维护率或人均产能。
+
+[https://valleeduhamel.com/portfolio-item/afterlight/](https://valleeduhamel.com/portfolio-item/afterlight/)：一次返回页面索引信息，进一步正文读取超时；未将作者官网的故事与分工说明计为新增核验。 v18同作品替代路径的已知来源，没有刷新其具体内容。
+
+[https://huggingface.co/basically-experimental/Pebble-50M-beta/discussions](https://huggingface.co/basically-experimental/Pebble-50M-beta/discussions)：原页读取失败。 不能复用v18的当时空主题状态作为当前观察。
+
+## 来源与日期
+外部页面、历史文档和操作分开记录。M20记录是现场操作；API20记录是对下列材料的核对，均不是独立用户计数。
+
+### V20-S01 · Runway Watch — After Light
+[查看来源](https://watch.runwayml.com/after-light)
+核对：2026-09-10
+影片嵌入、回到TV、CPP及其他频道、片名与署名；未完整播放，未做视觉截图。
+原页正文与链接可读
+
+### V20-S02 · Pebble模型发布受阻的公开更新与回复
+[查看来源](https://huggingface.co/posts/Hoglet-33/620130623473492)
+核对：2026-09-10
+进展自述、beta链接、一级建议与作者接话、回复/关注入口；只显示部分回复，未核模型性能。
+原页正文及部分回复可读
+
+### V20-S03 · Pebble-50M-beta — Model card
+[查看来源](https://huggingface.co/basically-experimental/Pebble-50M-beta)
+核对：2026-09-10
+与动态同一资源的实验状态、评测材料缺失说明和用法入口；不引用下载统计或参数量作分析，未执行推理。
+原页正文可读
+
+### V20-S04 · Where to share? — Beginners
+[查看来源](https://discuss.huggingface.co/t/where-to-share/176592)
+核对：2026-09-10
+6月6日分享困惑、6月7日建议与回话、6月8日准备发布陈述；不采纳帖内健康、法律和商业主张。
+原页正文可读，楼层不连续
+
+### V20-S05 · 48-Hour AI Film Challenge — Gen:48
+[查看来源](https://runway.com/gen48)
+核对：2026-09-10
+指定条目的作品名、奖项、署名、片长和届次；当前Aleph区域显示加载中，未核完整当前名单、投票与评审过程。
+第三届历史获奖区域可读
+
+### F26 · FABRIC · Runtime error #26
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/discussions/26)
+核对：2026-09-10；原事件／修改：2023-10-14至2024-08-30
+问题、成员尝试、Owner回应、重开。
+
+### F-C23 · FABRIC · Update requirements.txt 988fb7e
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/commit/988fb7e2246338839abd7c0ac342da33ea3326dd)
+核对：2026-09-10；原事件／修改：2023-10-16
+固定transformers版本的真实差异。
+
+### F49 · FABRIC · A space errored #49
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/discussions/49)
+核对：2026-09-10；原事件／修改：2024-09-06至2024-09-14
+跨线程追问、回应入口、用法解释及未结疑问；不保存个人活动猜测。
+
+### F53 · FABRIC · Space has crashed #53
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/discussions/53)
+核对：2026-09-10；原事件／修改：2025-01-03至2026-03-06
+时间有限、旧/新副本反馈、Owner修复声明；年份经公开HTML datetime复核。
+
+### F-HISTORY · FABRIC · Commit History
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/commits/main)
+核对：2026-09-10；原事件／修改：2023至2026
+版本修订与2026年维护日期；不计数换算工时。
+
+### F55 · FABRIC · Admin maintenance migration #55
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/discussions/55)
+核对：2026-09-10；原事件／修改：2026-05-25
+HF Staff身份、迁移PR与merged状态；日期经公开HTML复核。
+
+### F55-DIFF · FABRIC · migration #55 Files changed
+[查看来源](https://huggingface.co/spaces/dvruette/fabric/discussions/55/files)
+核对：2026-09-10；原事件／修改：2026-05-25
+GPU运行适配和依赖调整。
+
+### S1 · Segment Anything with CLIP · Not getting sensible result #1
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/1)
+核对：2026-09-10；原事件／修改：2023-04-08至2023-07-02
+结果反馈、Owner修复声明、普通成员补充用法；隐藏评论未读。
+
+### S-HISTORY · Segment Anything with CLIP · Commit History
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/commits/main)
+核对：2026-09-10；原事件／修改：2023至2026
+Fix preprocessing bug日期及后续合入历史。
+
+### S-C23 · Segment Anything with CLIP · Enhance accuracy bf0a9ad
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/commit/bf0a9ad2c6d30c592b177240ed7a0106b0e73329)
+核对：2026-09-10；原事件／修改：2023-04-14
+应用修改与三个示例图片新增，不等于独立效果验证。
+
+### S2 · Segment Anything with CLIP · App in build state #2
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/2)
+核对：2026-09-10；原事件／修改：2023-07-02至2023-08-23
+构建问题持续回报、Owner reboot声明、未见用户确认。
+
+### S4 · Segment Anything with CLIP · Getting Runtime Error #4
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/4)
+核对：2026-09-10；原事件／修改：2024-01-10至2024-02-14
+本地/API/在线故障回报与Owner restart声明。
+
+### S5 · Segment Anything with CLIP · Update app.py #5
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5)
+核对：2026-09-10；原事件／修改：2026-03-13至2026-06-11
+外部提交与作者合入；公开HTML datetime复核。
+
+### S6 · Segment Anything with CLIP · Update requirements.txt #6
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6)
+核对：2026-09-10；原事件／修改：2026-03-13至2026-06-11
+外部提交与作者合入；公开HTML datetime复核。
+
+### S7 · Segment Anything with CLIP · Update README.md #7
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7)
+核对：2026-09-10；原事件／修改：2026-03-13至2026-06-11
+外部提交与作者合入；公开HTML datetime复核。
+
+### S5-DIFF · Segment Anything with CLIP · app.py #5 Files changed
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/5/files)
+核对：2026-09-10；原事件／修改：2026-03-13
+模型与输入处理修改，未推断性能或根因。
+
+### S6-DIFF · Segment Anything with CLIP · requirements #6 Files changed
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/6/files)
+核对：2026-09-10；原事件／修改：2026-03-13
+依赖调整。
+
+### S7-DIFF · Segment Anything with CLIP · README #7 Files changed
+[查看来源](https://huggingface.co/spaces/curt-park/segment-anything-with-clip/discussions/7/files)
+核对：2026-09-10；原事件／修改：2026-03-13
+SDK配置从3.24.1至6.9.0；作为历史事实，非现行技术建议。
+
+### W20-01 · API文档索引
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/llms.txt)
+核对：2026-09-10
+只用于定位图片生成、编辑及查询的具体页；未将目录中的全部条目计为深读。
+
+### W20-02 · 图像生成：grok示例
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/390053304e0)
+核对：2026-09-10；原事件／修改：2026-05-11
+web可读页面：正文、输入示例、async说明与空响应示例。抓取缓存标注约2个月，当前线上变更未独立刷新。
+
+### W20-03 · 图像编辑：gpt-image-2示例
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/449456981e0)
+核对：2026-09-10；原事件／修改：2026-08-09
+web可读正文为gpt-image-2；索引有-all名称差异。仅使用可读示例，不认定当前别名或路由。
+
+### W20-04 · 图片异步任务查询
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912128e0)
+核对：2026-09-10；原事件／修改：2025-11-29
+可读示例为gemini-3-pro-image的completed及结果URL，另列200任务不存在；不能把该示例算成grok实测。
+
+### W20-05 · 异步分组的生成页
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/383912224e0)
+核对：2026-09-10；原事件／修改：2025-11-29
+同样写仅sora_image支持异步，示例为dall-e-3；记录文档说明局限，不据分组断言模型实际模式。
+
+### W20-06 · 常见问题及解决办法
+[查看来源](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/5681174m0)
+核对：2026-09-10；原事件／修改：2024-12-15
+通用HTTP错误说明；没有取得本例专用重试或失败费用规则。
+
+### W20-07 · 公开价格页读取受限
+[查看来源](https://kk2.deepwl.net/pricing)
+核对：2026-09-10
+此次访问未取得正文，先前浏览器访问成功；账户与价格API未核。
+
+### L20-01 · 图像生成小批量真实调用素材包
+本地材料：项目资料/ai666-codex-audit-pack/docs/versions/v1.0/business-logic/model-service/AI666_C端模型服务图像生成接口小批量真实调用素材包_V0.1.md；行 9–26、28–44、48–54
+核对：2026-06-17
+历史事实摘要及公开前复核要求；没有把推荐方案视为已执行。
+
+### L20-02 · 已脱敏图像案例摘要
+本地材料：项目资料/ai666-codex-audit-pack/outputs/model_service_case_factory/live_runs/2026-06-17T08-44-27-948Z-image-smoke/case_materials.md；行 3–20
+核对：2026-06-17
+文件声明不含密钥、请求头、余额或完整日志；仅使用任务输入与本地文件信息。
+
+### L20-03 · 图像单任务运行汇总
+本地材料：项目资料/ai666-codex-audit-pack/outputs/model_service_case_factory/live_runs/2026-06-17T08-44-27-948Z-image-smoke/run_summary.json；行 2–12、14–17
+核对：2026-06-17
+1个job的汇总，不包含完整尝试序列或费用。
+
+### L20-04 · 历史生成图片的存在性、属性与基础视觉核对
+本地材料：项目资料/ai666-codex-audit-pack/outputs/model_service_case_factory/live_runs/2026-06-17T08-44-27-948Z-image-smoke/generated_images/grok-4.2-image-long_doc_001.jpg；行 二进制文件，无行号；view_image与System.Drawing.Image读取结果
+核对：2026-09-10
+文件检查确认存在、161037字节、最后写入2026-06-17。读取文件属性确认实际784×1168，非缩略图尺寸；用view_image确认桌面、抽象卡片、箭头和素材插画，当前未见可读正文、品牌标志或真实人物。未读原始响应/转换链，未做全面权利审查。
+
+### L20-05 · 历史价格与模型名条目
+本地材料：项目资料/ai666-codex-audit-pack/docs/versions/v1.0/business-logic/model-service/AI666_API中转站全量模型清单_2026-06-17.md；行 3–13、128、167
+核对：采集2026-06-16，文件名2026-06-17
+只取两个相关条目；原值model_price=0.015，不推导币种、现价或实际成本。
+
+### R20-01 · 自身能力与用户确认
+本地材料：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v18-input-capabilities.json；行 userConfirmed.UC3；capabilities.C05–C06
+核对：2026-09-10
+既有研究输入，模型供给按用户确认成立。
+
+### R20-02 · API与公开价格观察
+本地材料：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v18-input-api.json；行 pricing.scope、pricing.rows
+核对：2026-09-10
+之前浏览器观察的代表价格行不包括当前grok图像模型，不借其他行估算。
+
+### R20-03 · MakeNow登录观察
+本地材料：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v19-makenow/study.json；行 observations.M19-05、M19-08、M19-09
+核对：2026-09-10
+
+### R20-04 · 社区公开内容抽查
+本地材料：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v18-input-content.json；行 C18-01、C18-05
+核对：2026-09-10
+既有样本显示Prompt及教程承载，不代表本例已经发布。
+
+### R20-05 · 交付基线
+本地材料：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v19-input-baseline.json；行 records：画布跨用户复制完整性、失败后的维护、社区到MakeNow
+核对：2026-09-10
+历史要求与未知项对照；不把规则计为实际交付通过。

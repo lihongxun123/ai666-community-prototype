@@ -1,0 +1,2 @@
+# Preserve the exact bytes recorded in the downloadable report manifest.
+/public/research-deliveries/** -text

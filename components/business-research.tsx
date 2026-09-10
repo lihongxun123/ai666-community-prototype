@@ -13,7 +13,8 @@ export function BusinessOverview({ data, insights, onSelect }: {
   onSelect: (id: string) => void;
 }) {
   return <div className="business-report">
-    <div className="page-heading"><h1>商业化、规模与用户</h1><p className="lead">18 家的付款者、收费路径与经营证据。先找与你们任务相近的人群，再判断需要多大的内容供给和服务投入。</p></div>
+    <div className="page-heading"><h1>商业化、规模与用户</h1></div>
+
     <nav className="article-toc" aria-label="经营研究章节">{[['business-comparison','逐家商业对照'],['business-method','规模数字怎样读'],['business-findings','对多元拾光的判断与验证建议']].map(([id,label])=><a key={id} href="#business" onClick={event=>{event.preventDefault();document.getElementById(id)?.scrollIntoView({block:'start'});}}>{label}</a>)}</nav>
     <p className="business-reading-note">下表沿用左侧搜索与类型筛选。规模栏保留原指标、日期与证据性质；各指标不能直接排序，也不据此估算市场份额。</p>
     <div className="table-wrap" id="business-comparison"><table className="comparison-table business-comparison"><caption>商业路径对照 · 点击竞品查看完整分析</caption><thead><tr><th scope="col">竞品</th><th scope="col">谁付钱</th><th scope="col">收入从哪里来</th><th scope="col">公开规模线索</th><th scope="col">值得观察的用户</th></tr></thead><tbody>{data.map(item => <tr key={item.id}>
@@ -36,7 +37,7 @@ export function BusinessOverview({ data, insights, onSelect }: {
 export function BusinessProfile({ data }: { data: BusinessProfileData }) {
   return <section id="commercial" className="business-report business-profile">
     <div className="section-heading"><h2>商业化、规模与用户</h2><span>经营资料补充 · 2026.09.09</span></div>
-    <p className="business-reading-note">本节补核收费规则与规模资料；后文保留第二轮的页面观察和操作记录。未在本轮新增生成实测，也未取得平台内部经营数据。</p>
+
     <p className="business-summary">{data.summary}</p>
     <dl className="business-key-facts"><dt>主要付款者</dt><dd>{data.payer}</dd><dt>收费结构</dt><dd>{data.revenueModel}</dd></dl>
     <h3>商业化路径</h3>
@@ -49,6 +50,6 @@ export function BusinessProfile({ data }: { data: BusinessProfileData }) {
     <h3>收入背后的成本与约束</h3>{data.economics.map((paragraph, index) => <p className="business-paragraph" key={index}>{paragraph}</p>)}
     <h3>对多元拾光的判断</h3>{data.implications.map((paragraph, index) => <p className="business-paragraph" key={index}>{paragraph}</p>)}
     <details className="business-unknowns" open><summary>尚不能回答的问题</summary><ul>{data.unknowns.map((text, index) => <li key={index}>{text}</li>)}</ul></details>
-    <details className="business-source-list"><summary>本轮经营资料来源（{data.sources.length} 条）</summary>{data.sources.map(source => <div className="source-row" key={source.id}><div><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p>{source.publisher} · {source.type} · {source.date}</p><p>{source.note}</p><small>查阅：{source.accessedAt}</small></div></div>)}</details>
+    <details className="business-source-list"><summary>经营资料来源（{data.sources.length} 条）</summary>{data.sources.map(source => <div className="source-row" key={source.id}><div><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p>{source.publisher} · {source.type} · {source.date}</p><p>{source.note}</p><small>查阅：{source.accessedAt}</small></div></div>)}</details>
   </section>;
 }

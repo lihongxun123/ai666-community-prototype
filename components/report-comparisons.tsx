@@ -1,0 +1,18 @@
+'use client';
+/* oxlint-disable next/no-img-element -- Archived evidence screenshots. */
+import screenshots from '@/lib/content-screenshots.json';
+export type ReportSource={id:string;title:string;url:string;date:string;accessedAt?:string|null;dataFile:string};
+export type Representative={id:string;name:string;category:string;selectionReason:string;task:string;content:string;path:string;supply:string;tool:string;payment:string;limit:string;sources:ReportSource[]};
+export type ReportComparison={id:string;title:string;question:string;observation:string;reasoning:string;cases:{platformId:string;name:string;fact:string;sources:ReportSource[];screenshotIds?:string[]}[];counterpoint:string;adoption:string;requirement:string;missing:string};
+export function ReportSources({sources}:{sources:ReportSource[]}){return <div className="brief-evidence">{sources.map(s=><a key={`${s.dataFile}-${s.id}`} href={s.url} target="_blank" rel="noreferrer" title={`${s.date}${s.accessedAt?` · 查阅：${s.accessedAt}`:''}`}>{s.title} ↗</a>)}</div>;}
+export function RepresentativeComparison({items,navigate}:{items:Representative[];navigate:(id:string)=>void}){return <section className="representative-comparison" id="report-representatives" tabIndex={-1}>
+ <h3>{items.length}个代表平台</h3>
+ <div className="representative-cards">{items.map((r,i)=><article key={r.id} className="representative-card" id={`report-representative-${r.id}`}><header><div><span className="representative-category">{r.category}</span><h4><a href={`#${r.id}`} onClick={e=>{e.preventDefault();navigate(r.id);}}>{r.name} ↗</a></h4></div><span aria-hidden="true">{String(i+1).padStart(2,'0')}</span></header><p>{r.selectionReason}</p><dl><div><dt>用户任务</dt><dd>{r.task}</dd></div><div><dt>内容交付</dt><dd>{r.content}</dd></div><div><dt>从发现到使用</dt><dd>{r.path}</dd></div></dl><details className="brief-records"><summary>依据与待确认部分</summary><p>{r.limit}</p><ReportSources sources={r.sources}/></details></article>)}</div>
+ <details className="brief-records"><summary>供给、工具与收费并排对照</summary><div className="table-wrap"><table className="brief-table"><thead><tr><th scope="col">平台</th><th scope="col">供给与维护</th><th scope="col">工具关系</th><th scope="col">付款方与购买对象</th></tr></thead><tbody>{items.map(r=><tr key={r.id}><th scope="row">{r.name}</th><td>{r.supply}</td><td>{r.tool}</td><td>{r.payment}</td></tr>)}</tbody></table></div></details>
+ </section>;}
+export function CrossPlatformComparison({data,navigate}:{data:ReportComparison;navigate:(id:string)=>void}){return <section id={`report-comparison-${data.id}`} className="cross-platform-comparison" tabIndex={-1}>
+ <h3>{data.title}</h3><p>{data.observation}</p>
+ <div className="comparison-cases">{data.cases.map((c,i)=>{const pair=c.screenshotIds?.length?screenshots.pairs.find(p=>p.id===c.screenshotIds![0]):undefined;return <article key={`${c.platformId}-${i}`}><h4><a href={`#${c.platformId}`} onClick={e=>{e.preventDefault();navigate(c.platformId);}}>{c.name} ↗</a></h4>{pair&&<figure className="case-image"><a href={pair.detail.src} target="_blank" rel="noreferrer"><img src={pair.detail.src} width={pair.detail.width} height={pair.detail.height} alt={pair.detail.caption} loading="lazy"/></a><figcaption>{pair.platform} · {pair.title}<br/>页面截图 · {screenshots.capturedAt}</figcaption></figure>}<p>{c.fact}</p><ReportSources sources={c.sources}/></article>;})}</div>
+ <div className="comparison-insight"><p><strong>分析　</strong>{data.reasoning}</p></div><p className="brief-limit">{data.counterpoint}</p>
+ <dl className="comparison-conditions"><div><dt>多元拾光可借鉴</dt><dd>{data.adoption}</dd></div><div><dt>需要承担的工作</dt><dd>{data.requirement}</dd></div><div><dt>仍需确认</dt><dd>{data.missing}</dd></div></dl>
+ </section>;}

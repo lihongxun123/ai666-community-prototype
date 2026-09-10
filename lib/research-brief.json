@@ -1,0 +1,3432 @@
+{
+  "title": "AI社区竞品调研报告",
+  "date": "2026-09-10",
+  "basis": "依据已归档的平台页面、官方规则、公开用户记录与实操资料整理。",
+  "sections": [
+    {
+      "id": "scope",
+      "title": "平台分类与参照关系",
+      "answer": "研究覆盖18个平台及关联产品组，按内容与使用方式分为五类。每类至少选择一个代表，共7家；流程类同时比较资源库与执行平台，学习与讨论类同时比较课程协作与论坛回应。",
+      "assessment": "足够说明选择这些平台的理由；尚未选定定位，不能把18家都定为直接竞争者。",
+      "table": null,
+      "claims": [],
+      "limit": "吐司与Tensor.Art作为一个关联产品组，两站规则、权益与实操结果分别记录。分类用于确定比较问题，不代表行业份额或平台优劣。",
+      "links": [
+        {
+          "view": "matrix",
+          "label": "18个平台对照"
+        },
+        {
+          "view": "discussion",
+          "label": "内容与工具关系"
+        }
+      ],
+      "evidence": [
+        {
+          "dataPath": "site/lib/profiles.ts",
+          "scope": "18个平台范围"
+        },
+        {
+          "platformIds": [
+            "liblib",
+            "runninghub",
+            "tusi",
+            "civitai",
+            "seaart"
+          ],
+          "scope": "这些样本围绕模型、工作流或简化应用连接作品与运行。与MakeNow及社区资源内容最需要比较的是：结果如何帮助选择方法、接手需要哪些材料、运行失败由谁处理、作者报酬如何与使用关联。"
+        },
+        {
+          "platformIds": [
+            "openart",
+            "jimeng",
+            "kling",
+            "midjourney",
+            "leonardo",
+            "runway"
+          ],
+          "scope": "这些样本以创作和编辑工具为基础，作品、参考、教程、作者合作或项目材料帮助用户开始和继续创作。重点比较工具自身已提供的内容价值，以及独立社区还需要承担的解释、交流与维护工作。"
+        },
+        {
+          "platformIds": [
+            "nightcafe"
+          ],
+          "scope": "该样本主要用于研究主题、衍生作品、评审和聊天室如何组织参与，补足单看生产效率容易忽略的表达与认可需要。单独归组是为了清楚呈现研究问题，并不否认其生成工具与资源收费。"
+        },
+        {
+          "platformIds": [
+            "waytoagi",
+            "datawhale",
+            "linuxdo"
+          ],
+          "scope": "这些样本分别提供知识编辑、任务学习和持续讨论的参照。共同问题是内容怎样被解释、成员怎样获得回应、问题怎样回到知识材料，以及谁持续组织；无需预设它们依靠同一种自营工具变现。"
+        },
+        {
+          "platformIds": [
+            "huggingface",
+            "modelscope",
+            "dify"
+          ],
+          "scope": "这些样本将技术资源、演示或模板交给开发与应用构建者。重点比较模型卡、输入输出、环境配置、版本和问题协作，理解可运行内容相较阅读内容增加的交付与支持责任。"
+        }
+      ],
+      "classificationTable": {
+        "headers": [
+          "参照用途",
+          "平台",
+          "比较的问题"
+        ],
+        "rows": [
+          [
+            "流程与资源复用",
+            "LiblibAI、RunningHub、吐司 / Tensor.Art、Civitai、SeaArt",
+            "作品到模型、工作流或应用的连接；输入、依赖、版本和使用条件；资源更新、问题回应与收益条件"
+          ],
+          [
+            "创作工具与作品",
+            "OpenArt、即梦 AI、可灵 Kling AI、Midjourney、Leonardo.Ai、Runway",
+            "作品发现与制作入口；参考、参数、项目和再次使用；专业案例、作者合作与订阅条件"
+          ],
+          [
+            "兴趣创作与参与",
+            "NightCafe",
+            "创作题目与投稿入口；评审、回应和结果呈现；活动频率、主持与持续组织工作"
+          ],
+          [
+            "学习与讨论",
+            "WaytoAGI 通往 AGI 之路、Datawhale、LINUX DO",
+            "知识、教材与讨论的组织方式；作者、编辑、领学、答疑和管理分工；反馈修订、成员参与及福利的作用"
+          ],
+          [
+            "开发资源与应用",
+            "Hugging Face、魔搭 ModelScope、Dify 社区",
+            "资源说明与试用入口；配置、依赖、导入和部署条件；版本协作、问题处理与运行成本"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "needs",
+      "title": "用户需求与产品价值",
+      "answer": "这些平台承接视觉制作、代码学习、内容欣赏和问题求助等不同需求，产品能力应与具体任务及剩余工作对应。",
+      "assessment": "足够解释已观察到的任务和困难；不足以估计主力客群、职业构成或各群体占比。",
+      "claims": [
+        {
+          "title": "连续视觉创作需要角色、镜头和跨工具制作支持，单次生成成功不足以满足整项任务。",
+          "text": "OpenArt的公开用户记录涉及连续角色、音乐视频及跨镜头制作。平台提供生成和角色能力后，用户仍需学习镜头语言、筛选片段并完成部分外部编辑；继续使用与满意、续费应分别判断。",
+          "examples": [
+            {
+              "platform": "OpenArt",
+              "text": "OpenArt一名公开用户自述为9支专辑MV购买年费，起初因文件管理、教程和角色短镜头受阻，后来学习影视术语并将项目推进约一半。其他记录涉及外部参考图、口型片段和跨工具剪辑。"
+            }
+          ],
+          "basis": "用户自述及同账号前后记录；付款、项目进度和成片质量未独立核验。",
+          "sources": [
+            {
+              "id": "P25-openart-S-u1",
+              "title": "OpenArt使用经历讨论：专辑MV及后续反馈",
+              "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+              "date": "2025-11至2026；个别评论只显示相对日期",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-openart-S-u4",
+              "title": "Suno发行者讨论中的OpenArt视觉制作步骤",
+              "url": "https://www.reddit.com/r/SunoAI/comments/1u1kork/to_those_distributing_suno_tracks_to_spotifyapple/",
+              "date": "2026-07左右；相对日期",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience",
+              "reportSection": "OpenArt：任务画像及产品解决程度",
+              "dataPath": "site/lib/audience-research.json",
+              "platformId": "openart",
+              "recordIds": [
+                "P25-openart-e1",
+                "P25-openart-e2",
+                "P25-openart-e5"
+              ],
+              "sourceIds": [
+                "P25-openart-S-u1",
+                "P25-openart-S-u4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "课程学习涉及环境配置、运行排错和结果检查。",
+          "text": "Datawhale的课程与问题记录显示，学习者会实际运行教材并反馈环境、调用和检索问题。课程、勘误与答疑共同支持学习，但现有样本尚不能判断结课率、独立应用能力或职业分布。",
+          "examples": [
+            {
+              "platform": "Datawhale",
+              "text": "Datawhale的all-in-rag样本有5位不同发帖者，涉及授权配置、模型调用、环境及检索问题。其中一人展示中文BM25检索修正前后对照，说明运行结束后仍需核查结果是否符合任务。"
+            }
+          ],
+          "basis": "课程资料及公开问题记录；局部改善为提交者自述，未独立复现，不代表结课或就业成果。",
+          "sources": [
+            {
+              "id": "P25-datawhale-s1",
+              "title": "all-in-rag课程仓库",
+              "url": "https://github.com/datawhalechina/all-in-rag",
+              "date": "发布日期未标",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s4",
+              "title": "第一节执行示例报错 #125",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+              "date": "2026-07-15",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s5",
+              "title": "KIMI API失效 #121",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/121",
+              "date": "2026-06-22",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s7",
+              "title": "BM25检索中文分块问题 #102",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+              "date": "2026-04-12",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s6",
+              "title": "Windows激活环境问题 #105",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+              "date": "2026-04-27",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s8",
+              "title": "学习反馈 #91",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/91",
+              "date": "2026-03-11",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience",
+              "reportSection": "Datawhale：RAG课程自学与复现",
+              "dataPath": "site/lib/audience-research.json",
+              "platformId": "datawhale",
+              "recordIds": [
+                "P25-datawhale-o1",
+                "P25-datawhale-u1",
+                "P25-datawhale-u2",
+                "P25-datawhale-u4",
+                "P25-datawhale-u3",
+                "P25-datawhale-u5"
+              ],
+              "sourceIds": [
+                "P25-datawhale-s1",
+                "P25-datawhale-s4",
+                "P25-datawhale-s5",
+                "P25-datawhale-s7",
+                "P25-datawhale-s6",
+                "P25-datawhale-s8"
+              ]
+            }
+          ]
+        }
+      ],
+      "limit": "55条任务画像中，49条不足5个可区分用户观察点，18条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。",
+      "links": [
+        {
+          "view": "audience",
+          "label": "完整用户画像与产品价值"
+        },
+        {
+          "view": "china-users",
+          "label": "全国用户规模与分层"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "content",
+      "title": "内容发现与使用路径",
+      "answer": "内容形式的差别，主要体现在用户进入详情后能取得什么。视觉卡片可能只提供参考，也可能交付输入表单或完整流程；课程解释操作与判断，运行文件则传递配置；挑战组织同题创作，讨论围绕具体问题补齐条件。多元拾光可共用发布和关联能力，但卡片字段、详情顺序与后续动作应分别设计。",
+      "assessment": "内容字段、卡片、详情与交付对象的证据较充分；设计效果仍是分析，没有可比转化与留存实验。",
+      "claims": [],
+      "limit": "部分证据来自官方说明或较早的公开作品。入口存在与完整运行成功分别判断，不能按截图给平台的使用效果排名。",
+      "links": [
+        {
+          "view": "content",
+          "label": "内容形态与卡片、详情截图"
+        },
+        {
+          "view": "tasks",
+          "label": "普通内容与任务样本"
+        }
+      ],
+      "table": null,
+      "screenshotIds": [
+        "liblib-template",
+        "runninghub-workflow",
+        "tensor-work",
+        "runway-course",
+        "huggingface-space",
+        "linuxdo-topic"
+      ],
+      "comparisons": [
+        {
+          "id": "visual-reference-and-method",
+          "title": "效果卡片之后：看作品、套模板、改流程",
+          "question": "同样展示一张商品效果图，用户点开后究竟能做什么？",
+          "observation": "Liblib模板从效果封面进入输入要求与使用入口；RunningHub换背景详情进一步列出模型、参数和节点，并将应用与完整工作流分开。Tensor.Art的商品例图则停在作品展示，详情明确没有生成数据。三者入口都可以是图片，交付深度却不同。",
+          "reasoning": "画面能让用户快速判断是否接近目标，详情再承担执行条件的判断。只想换素材的人需要输入表单和输出示例；要调整方法的人需要模型、节点和参数；来找审美参考的人未必需要流程。差异应由详情材料和按钮表达，不能仅靠封面或“同款”标签区分。",
+          "cases": [
+            {
+              "platformId": "liblib",
+              "name": "LiblibAI：电商产品精修模板",
+              "fact": "模板卡片展示效果、任务标题和模板/底模标签；对应详情列1—4张参考图、提示词支持、推荐模型和使用入口。配对截图确认卡片与同一资源详情的关系、输入字段及入口，未进入生成；正文、许可区与作者评论的商用表述存在冲突。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-cn-lib-template"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "liblib-template"
+              ],
+              "sources": [
+                {
+                  "id": "v15-cn-lib-template",
+                  "title": "电商产品商业级渲染精修模板",
+                  "url": "https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8",
+                  "date": "未标注",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "runninghub",
+              "name": "RunningHub：一键换背景工作流",
+              "fact": "商品效果卡片进入换背景详情后，可看到原图与效果、作者说明，以及打开AI应用、运行工作流和下载入口；已读正文另列模型、采样参数和60项节点信息。配对截图证明入口分流和部分详情结构，不能证明节点已经检查或现在仍能运行；资源标注2024年更新。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-cn-rh-flow"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "runninghub-workflow"
+              ],
+              "sources": [
+                {
+                  "id": "v15-cn-rh-flow",
+                  "title": "一键换背景：产品图摄影",
+                  "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+                  "date": "2024-11-23更新",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "tusi",
+              "name": "Tensor.Art：MooMooE-commerce商品例图",
+              "fact": "模型页的蓝色瓶子例图进入单图详情后，页面提示没有生成数据。截图证明例图与对应详情的关系，以及该图片未提供生成参数；模型页仍有运行入口，但不能据此补出这张图的提示词或种子。此例来自国际站，不能外推国内吐司或全站作品。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-cn-tensor-model"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "tensor-work"
+              ],
+              "sources": [
+                {
+                  "id": "v15-cn-tensor-model",
+                  "title": "MooMooE-commerce V1",
+                  "url": "https://tensor.art/models/662744072865292090",
+                  "date": "页面标2024-09-08更新；版本上传2023-11-21",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                }
+              ]
+            }
+          ],
+          "counterpoint": "没有过程材料的作品仍可供欣赏和参考，不必全部改造成教程。相反，RunningHub样本即使列出了模型、节点和运行入口，也仍是较早资源，现时依赖与输出尚未验证。因此应分别说明“有方法材料”与“在什么条件下验证可用”。",
+          "adoption": "保留同一套图片或视频预览，但在详情分别提供“作品参考”“可直接套用”“完整画布”三种交付。作品页展示完整成品和关联方法；套用页列输入、可改项和结果示例；画布页提供流程、依赖、版本及说明。只有实际有材料的入口才显示相应动作。",
+          "requirement": "投稿时核对作者实际交付的层次，建立作品、模板与源画布的关联。模板需有可分享输入、输出对照和失败说明；源画布需确认复制范围、依赖及许可。效果封面可以共用，不能用它代替交付验收。",
+          "missing": "用同一组商品素材完成“直接套用”与“修改画布”两条路径，记录补素材、改参数、求助和最终验收。如果普通用户仍需频繁打开源画布才能完成任务，就需要调整简化表单及内容说明，而不宜宣称套用入口已降低门槛。"
+        },
+        {
+          "id": "learning-and-execution",
+          "title": "教程解释判断，运行材料传递操作",
+          "question": "用户需要学会一个方法，还是尽快完成一次任务？",
+          "observation": "Runway课程先说明目标、难度和章节，课程按制作顺序编排内容；Datawhale具体章节将初始提示、输出与修订放在一起，并提供代码学习材料。RunningHub工作流把已有处理过程作为资源交付，使用者可转入应用或检查节点。课程与文件可以关联，但承担的任务不同。",
+          "reasoning": "课程按学习依赖组织，让读者理解先做什么、为什么调整；运行材料按执行依赖组织，让使用者判断缺什么、可改什么。面对陌生任务，照着流程运行未必能学会处理偏差；已有经验的人也未必愿意为一次操作完整学课。两类入口应能互相转入，而不应把下载文件当作教学已经完成。",
+          "cases": [
+            {
+              "platformId": "runway",
+              "name": "Runway Academy：分章制作课程",
+              "fact": "Building Custom Workflows公开概览列学习目标、难度、总时长和三个带时长章节，说明学习范围与顺序。现有配对截图来自另一门AI for Advertising课程，确认课程卡片的10模块、Beginner、免费入学等字段及对应详情，不能当作工作流课程的截图。广告课程总时长与模块合计不一致；两门课都未完整学习或验证效果。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-c1"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "runway-course"
+              ],
+              "sources": [
+                {
+                  "id": "v15-c1",
+                  "title": "Building Custom Workflows",
+                  "url": "https://academy.runwayml.com/course/custom-workflows",
+                  "date": "未标注",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "datawhale",
+              "name": "Datawhale：迭代讲解与练习材料",
+              "fact": "LLM Cookbook的迭代优化章节保留任务、初始提示、输出和修改过程，项目支持在线阅读、PDF与Notebook等材料；Python课程另将实际编码和作业记录用于参与检查。这里没有配对截图，依据已读章节与课程规则；未执行代码，也不能把规则要求当成所有学员已经完成。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-r-cookbook",
+                    "v15-r-iterative"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/content-forms.json",
+                  "sourceIds": [
+                    "o9-d-dw-learning",
+                    "o9-d-dw-feedback"
+                  ]
+                }
+              ],
+              "screenshotIds": [],
+              "sources": [
+                {
+                  "id": "v15-r-cookbook",
+                  "title": "LLM Cookbook项目说明",
+                  "url": "https://github.com/datawhalechina/llm-cookbook",
+                  "date": "未标注，main持续修订",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                },
+                {
+                  "id": "v15-r-iterative",
+                  "title": "第三章：迭代优化",
+                  "url": "https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md",
+                  "date": "未标注，main持续修订",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                },
+                {
+                  "id": "o9-d-dw-learning",
+                  "title": "组队学习规则",
+                  "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/",
+                  "date": "页脚2022—2024；整页更新日未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "o9-d-dw-feedback",
+                  "title": "课本编写与反馈收集",
+                  "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+                  "date": "页脚2022—2024；整页更新日未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "runninghub",
+              "name": "RunningHub：配置与应用双入口",
+              "fact": "换背景资源详情给出模型、参数和节点清单，并将“打开AI应用”与“运行工作流”并列。它能帮助有准备的使用者从说明进入执行；截图只证明两类入口存在，下载文件、依赖和实际输出尚未验证。本处复用同一组换背景截图，不计作第二个独立样本。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-cn-rh-flow"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "runninghub-workflow"
+              ],
+              "sources": [
+                {
+                  "id": "v15-cn-rh-flow",
+                  "title": "一键换背景：产品图摄影",
+                  "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+                  "date": "2024-11-23更新",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "huggingface",
+              "name": "Hugging Face：运行界面与源码权限",
+              "fact": "Spaces文档区分公开、受保护和私有范围，受保护Space可以公开使用但不公开源码。现有H3 Acceleration Arena配对截图显示应用卡片进入视频对照界面，并保留App、Files、Community入口；没有打开Files、播放或投票，不能用该截图判断这一个应用的源码权限或运行成功。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-d-hf-spaces"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "huggingface-space"
+              ],
+              "sources": [
+                {
+                  "id": "o9-d-hf-spaces",
+                  "title": "Spaces Overview",
+                  "url": "https://huggingface.co/docs/hub/spaces-overview",
+                  "date": "未标注独立更新日",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ]
+            }
+          ],
+          "counterpoint": "两类形式不是互斥：Datawhale教程可以附Notebook，运行资源也可以附教学。Hugging Face的Spaces文档还区分公开、受保护和私有范围，能公开使用的演示不一定开放源码，因此“能运行”也不能直接写成“可取得完整方法”。",
+          "adoption": "针对同一个MakeNow任务，设置两条互相关联的路径：“直接做”提供样例输入、最少参数、输出检查与失败入口；“学做法”按准备、关键修改、结果对照和人工处理分节，并附对应画布。先完善具体任务页，不必先建设多门课程。",
+          "requirement": "同一作者需保留输入、尝试、修改理由和对照输出；编辑将教学步骤对应到画布版本。必须有人能回答为何失败、何时需要人工修正。可运行材料与讲解需保持一致；课程文件复制不附带助教服务。",
+          "missing": "在同一任务下观察新手与有经验者的首选路径、完成时间、主要错误和返回教程的位置。若两组都主要卡在素材准备或结果判断，优先补这些说明；只有出现连续学习需要，再考虑课程化。"
+        },
+        {
+          "id": "participation-and-response",
+          "title": "作品挑战组织同题创作，问题帖组织连续回应",
+          "question": "社区希望用户交一份作品、评价别人的作品，还是一起解决一个问题？",
+          "observation": "NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多个参与者围绕同一题目产出作品。LINUX DO问题帖从个人困扰开始，经回复逐步补充环境、尝试和结果；后来者阅读的是处理记录，不是同一题目的作品排行。",
+          "reasoning": "挑战需要统一题面和评审条件，才能让作品被比较，作品卡应突出题目、阶段和结果。问题讨论开始时可能连问题条件都不完整，列表应突出问题标题和进展，详情保留引用、追问和作者反馈。两者的“参与”不能混为同一种价值：投票主要表达偏好，排查回复需要解释适用条件。",
+          "cases": [
+            {
+              "platformId": "nightcafe",
+              "name": "NightCafe：挑战题面与赛后材料",
+              "fact": "社区挑战规则规定主题、公开范围、阶段和评分/排序方式。Promptle另提供起始图、目标图、有限步数与成绩卡；提示步骤默认不公开，须作者同意，并在当天题目结束后展示。成绩卡不是完整制作过程，Promptle仍标Alpha。本例无配对截图，依据官方规则；没有亲自参赛、评分或验证持续参与效果。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-h1",
+                    "v15-h2"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/content-forms.json",
+                  "sourceIds": [
+                    "o9-g-night-game",
+                    "o9-g-night-promptle"
+                  ]
+                }
+              ],
+              "screenshotIds": [],
+              "sources": [
+                {
+                  "id": "v15-h1",
+                  "title": "Community Challenges on NightCafe",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+                  "date": "未标注",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                },
+                {
+                  "id": "v15-h2",
+                  "title": "Daily Challenge: Eligibility, Rating & Ranking",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+                  "date": "未标注",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                },
+                {
+                  "id": "o9-g-night-game",
+                  "title": "Creating a Game (Community Challenge)",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+                  "date": "未标绝对日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "o9-g-night-promptle",
+                  "title": "Promptle: The Daily AI Art Puzzle",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+                  "date": "未标绝对日期；标Alpha",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                }
+              ]
+            },
+            {
+              "platformId": "linuxdo",
+              "name": "LINUX DO：问题、追问与处理结果",
+              "fact": "知识库管理话题的配对截图显示，列表以标题、分类和最近活动组织，详情保留问题背景、已考虑的方法及楼层回复；它只覆盖首屏，不能证明问题已解决。另一个NEWAPI接入问题样本在登录核对中可见首帖采纳摘要、回复追问与提问者自报解决，两条话题不能混为同一个案例，也没有独立复现该解法。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/market-content-forms.json",
+                  "sourceIds": [
+                    "v15-r-linuxdo"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/content-forms.json",
+                  "sourceIds": [
+                    "v11-ld-solved",
+                    "o9-d-ld-topic",
+                    "v11-ld-prompt"
+                  ]
+                }
+              ],
+              "screenshotIds": [
+                "linuxdo-topic"
+              ],
+              "sources": [
+                {
+                  "id": "v15-r-linuxdo",
+                  "title": "AI时代大家是怎么管理自己的知识库的？",
+                  "url": "https://linux.do/t/topic/2868771",
+                  "date": "2026-09-07起的讨论",
+                  "accessedAt": null,
+                  "dataFile": "site/lib/market-content-forms.json"
+                },
+                {
+                  "id": "o9-d-ld-topic",
+                  "title": "关于应用接入的问题请教佬友",
+                  "url": "https://linux.do/t/topic/1537782",
+                  "date": "2026-01-29",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "v11-ld-prompt",
+                  "title": "壁纸提示词与结果回传",
+                  "url": "https://linux.do/t/topic/2879086",
+                  "date": "2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                }
+              ]
+            }
+          ],
+          "counterpoint": "作品与讨论可以交叉。LINUX DO也有提示词帖子，成员通过回复上传自己的图片；它保留在同一话题中，没有统一运行环境或核验每张图是否使用首帖方法。NightCafe赛后公开步骤则能补充学习内容。因此可以共享评论与材料关联能力，不能把所有返图都算复现成功，也不能把所有讨论都改成竞赛。",
+          "adoption": "若提供练习与问题讨论，分别组织：作品练习页包含题目、输入素材、限制、提交示例和反馈；问题页包含目标、环境/版本、失败表现、已尝试办法及后续结果。作品可关联练习，问题可关联具体画布；采纳与点评各自标明作用。平台维护账号的投稿、回答和自然用户行为分开记录。",
+          "requirement": "练习需有人出题、检查素材并给具体点评；问题区需有人核对技术条件、追问结果，再整理可复用说明。表单可共用附件与引用功能，列表字段、反馈类型与结果状态分别处理。尚无主持或答疑能力时，应缩小主题范围。",
+          "missing": "对同一批内容分别记录自主交作品、有效点评、问题补充、作者反馈及后续再次使用；区分平台账号与外部用户。如果参与主要由平台自问自答或奖励驱动，就不足以支持自然讨论或日常挑战的供给假设。"
+        }
+      ]
+    },
+    {
+      "id": "supply",
+      "title": "内容供给与运营机制",
+      "answer": "平台编选、合作作者与成员贡献承担不同工作，现有案例中都能看到发布之后的组织、答疑或修订。多元拾光当前按平台长期供给核算，合作作者可补充制作能力，自发贡献需要实际出现后再计入。作品数量、运营账号数量和合作计划不能代替可用内容、独立作者与持续产能。",
+      "assessment": "足够比较分工、规则和维护方式；作者实际回报、持续供稿率与经营效果仍缺数据。",
+      "claims": [],
+      "limit": "合作规则说明可以约定什么，版本记录说明出现过维护工作；尚不能据此判断作者长期履约率、平台人效或活动带来的留存增量。",
+      "links": [
+        {
+          "view": "operations",
+          "label": "18个平台的运营机制"
+        },
+        {
+          "view": "tasks",
+          "label": "作者与维护记录"
+        }
+      ],
+      "table": null,
+      "comparisons": [
+        {
+          "id": "supply-roles",
+          "title": "编选、合作与成员贡献需要不同的交付约定",
+          "question": "什么内容由平台保证，什么工作可以交给合作作者或成员？",
+          "observation": "Runway提供作品频道和策选合作机会；NightCafe允许成员主持挑战；LINUX DO可见投稿、成员整理和管理者精选。这些做法分别增加可见度、工具使用机会或参与空间，未必附带固定稿量和维护时限。",
+          "reasoning": "供给不能仅按“官方”或“UGC”二分。作品可以由外部作者制作、平台编选，再由另一人整理过程；活动题目来自成员，规则解释仍需主持；技术答案来自用户，编辑仍要让后续读者找得到。应按实际工作和责任确定合作方式。",
+          "cases": [
+            {
+              "platformId": "runway",
+              "name": "Runway",
+              "fact": "After Light作品页呈现影片、署名与返回TV入口，体现编选和展示。Creative Partners Program提供工具权益、早期访问与合作机会，并明确不要求特定时间或创作投入，因此不能按入选作者数推定稳定供稿。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/evidence-synthesis.json",
+                  "sourceIds": [
+                    "V20-S01"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-g-run-cpp"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "V20-S01",
+                  "title": "Runway Watch — After Light",
+                  "url": "https://watch.runwayml.com/after-light",
+                  "date": "发布日期未标",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/evidence-synthesis.json"
+                },
+                {
+                  "id": "o9-g-run-cpp",
+                  "title": "Creative Partners Program",
+                  "url": "https://runway.com/creative-partners-program",
+                  "date": "未标发布日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "nightcafe",
+              "name": "NightCafe",
+              "fact": "成员挑战由主持人设主题、资格与阶段，参与者投稿和评审；公开聊天室的游戏可进入发现入口。平台提供功能，选题、聚集参与者和解释评审仍是具体组织工作。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-g-night-game",
+                    "o9-g-night-rules"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-g-night-game",
+                  "title": "Creating a Game (Community Challenge)",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+                  "date": "未标绝对日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-g-night-rules",
+                  "title": "Daily Challenge: Eligibility, Rating & Ranking",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+                  "date": "未标绝对日期；v8于2026-09-09复核",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "linuxdo",
+              "name": "LINUX DO",
+              "fact": "公开邀请函鼓励作者提供完整内容、为社区读者改写介绍，并由成员协助整理、管理者精选。登录样本可见提问者回传结果、回复者提供依据和Wiki修订，参与者补充的材料不同。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "v11-ld-letter",
+                    "v11-ld-solved",
+                    "v11-ld-wiki"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "v11-ld-letter",
+                  "title": "秘密花园园丁邀请函",
+                  "url": "https://linux.do/t/topic/847468",
+                  "date": "首发 2025-08-07；访问 2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "v11-ld-solved",
+                  "title": "关于应用接入的问题请教佬友",
+                  "url": "https://linux.do/t/topic/1537782",
+                  "date": "2026-01-29；复核 2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "v11-ld-wiki",
+                  "title": "盘点 L 站的徽章：长期更新",
+                  "url": "https://linux.do/t/topic/342888",
+                  "date": "标题标注 2026-02-17 更新；访问 2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            }
+          ],
+          "counterpoint": "开放投稿能增加潜在来源，却不能保证持续有人制作和维护；合作计划中的资源权益也未必包含案例交付。官方编选可以提升可读性，但平台若包办制作、核验、回应与更新，同样会遇到产能限制。",
+          "adoption": "平台保证选题、编辑与发布质量；合作内容明确交付结果、过程材料、使用范围和维护期限；成员贡献在实际出现后记录，不列为启动期固定产量。",
+          "requirement": "对每份内容指定实际制作与维护者。多账号发布按实际人力核算；如采购作者内容，稿件、素材和后续答疑分别约定，不能将工具额度默认为完整报酬。",
+          "missing": "目前没有可核的作者履约率、每人稳定稿量、主持人持续参与比例或平台编辑工时。多元拾光也缺少从选题到发布再到更新的完整工时记录，不能据竞品机制估算招聘人数或内容产量。"
+        },
+        {
+          "id": "supply-maintenance",
+          "title": "可复用内容需要版本、问题和修订共同维护",
+          "question": "一份内容发布以后，哪些工作仍需持续投入？",
+          "observation": "LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适配日志，Datawhale把学习反馈转入教材协作，Hugging Face将运行文件和问题讨论关联到资源仓库。实际维护对象包括输入条件、依赖、教程、旧版本和后续回应，更新封面或发布时间不能完成这些工作。",
+          "reasoning": "内容能否继续使用，取决于变化是否被发现、能否找到负责的人，以及修订是否回到用户实际阅读的位置。可运行资源的维护通常更贴近技术支持；教程侧重步骤与错误解释；作品展示主要维护媒体、来源和说明。三类内容不宜采用相同产能假设。",
+          "cases": [
+            {
+              "platformId": "liblib",
+              "name": "LiblibAI",
+              "fact": "电商精修V2保留V1关联，并说明模型、模块和配置变化；V1邀请使用者返图与提意见。已见作者维护说明，但未取得完整的返图、修订和用户确认过程。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-c-lib-1",
+                    "o9-c-lib-2"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-c-lib-1",
+                  "title": "电商产品精修+背景替换（SDXL版）V1.0",
+                  "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+                  "date": "未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-c-lib-2",
+                  "title": "电商产品精修+背景替换（FLUX）V2.0",
+                  "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+                  "date": "未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "runninghub",
+              "name": "RunningHub",
+              "fact": "资源说明中有作者汇总问题并关联补充教学的做法，另一条长视频工作流保留跨日期插件适配日志。创作者奖励按有效运行、收藏和原创等条件计算；该奖励规则没有证明平台接管作者维护，也未披露维护工时。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-runninghub-S3",
+                    "P25-runninghub-S4",
+                    "P25-runninghub-S5"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "P25-runninghub-S3",
+                  "title": "Flux Kontext Dev 模糊变高清及放大修复",
+                  "url": "https://www.runninghub.cn/post/1938533049359335425/",
+                  "date": "更新2025-06-27",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-runninghub-S4",
+                  "title": "Scail-2 无劣化与长视频手动分段",
+                  "url": "https://www.runninghub.cn/post/2065490120324767746",
+                  "date": "更新2026-06-29",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-runninghub-S5",
+                  "title": "创作者激励计划",
+                  "url": "https://www.runninghub.cn/creator-reward",
+                  "date": "发布日期未标",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "datawhale",
+              "name": "Datawhale",
+              "fact": "课程协作资料分别列课程入口、作业、直播、教材反馈与学习进度等工作。提问指南要求环境、错误和尝试信息，教材反馈由贡献者与教学团队讨论修订；助教为志愿者，没有即时回复义务。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-d-dw-workflow",
+                    "o9-d-dw-question",
+                    "o9-d-dw-feedback"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-d-dw-workflow",
+                  "title": "团队协作工作流",
+                  "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/workflows/",
+                  "date": "页脚2022—2024；整页更新日未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-d-dw-question",
+                  "title": "How to Ask Questions",
+                  "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+                  "date": "页脚2022—2024；整页更新日未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-d-dw-feedback",
+                  "title": "课本编写与反馈收集",
+                  "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+                  "date": "页脚2022—2024；整页更新日未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "huggingface",
+              "name": "Hugging Face：资源版本与讨论记录",
+              "fact": "模型卡记录用途与限制，Space关联运行文件和资源讨论；官方文档允许通过讨论或PR提出修订，代码提交会触发重建。2025-09-23，一位答疑者发布适配Gradio 5的IDM-VTON演示说明，但未取得原求助者复验成功的记录。该记录证明作者提供了新版本，未证明原问题已经解决。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/content-forms.json",
+                  "sourceIds": [
+                    "o9-d-hf-card",
+                    "o9-d-hf-spaces",
+                    "o9-d-hf-discussion"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-huggingface-s5",
+                    "P25-huggingface-s12"
+                  ]
+                }
+              ],
+              "screenshotIds": [],
+              "sources": [
+                {
+                  "id": "o9-d-hf-card",
+                  "title": "Model Cards",
+                  "url": "https://huggingface.co/docs/hub/model-cards",
+                  "date": "未标注独立更新日",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "o9-d-hf-spaces",
+                  "title": "Spaces Overview",
+                  "url": "https://huggingface.co/docs/hub/spaces-overview",
+                  "date": "未标注独立更新日",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "o9-d-hf-discussion",
+                  "title": "Pull Requests and Discussions",
+                  "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
+                  "date": "未标注独立更新日",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/content-forms.json"
+                },
+                {
+                  "id": "P25-huggingface-s5",
+                  "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+                  "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+                  "date": "2025-09-15",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-huggingface-s12",
+                  "title": "同主题：提供适配Gradio 5的演示",
+                  "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446/6",
+                  "date": "2025-09-23",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ]
+            }
+          ],
+          "counterpoint": "作者写出修复说明或合入修改，仍不等于所有使用者已恢复成功；反过来，某一条讨论未见回复，也不能证明资源永久失效。后续验收应针对具体版本、输入与结果。",
+          "adoption": "以少量内容包记录制作、复核、答疑和更新工作；作品、教程与可运行资源分别列出必须维护的材料。出现问题后，修订应回到详情或教程正文，并保留受影响版本和继续使用的条件。",
+          "requirement": "每份可复用内容有维护责任、问题入口和停止推荐条件。MakeNow素材显示问题由工具或素材维护者排查；运营负责整理说明与反馈，技术适配需有对应能力的人承担。费用核算包含重试、人工修整与支持时间。",
+          "missing": "公开资料能够确认维护行为和规则，不能提供平均响应时间、复验通过率、作者失联后的成本或实际利润。自身内容包尚无完整工时与费用，暂不设每周产量和维护人数。"
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "title": "商业化路径与公开规模",
+      "answer": "18个样本中，15家有平台内创作、开发或运行能力的资料，工具支持是常见条件。但内容的价值不止发生在执行环节：作品帮助判断效果，方法说明帮助选择和上手，讨论承担排错、反馈与交流。多元拾光需要比较哪些环节由MakeNow和API完成，哪些仍值得社区持续投入；已有工具资源尚不能决定社区定位。",
+      "assessment": "足够比较向谁收费、出售什么及部分披露规模；不足以比较利润、付费转化或回本周期。",
+      "claims": [
+        {
+          "title": "生成能力已有实际收入规模，但不能据产品收入认定收入来自社区。",
+          "text": "快手披露，可灵2026年第二季度营业收入超过8.5亿元人民币。这证明产品已有商业收入规模，但个人订阅、团队及API收入份额、社区贡献和产品利润尚未公开。",
+          "examples": [
+            {
+              "platform": "可灵 Kling AI",
+              "text": "快手披露可灵2026年第二季度营业收入超过人民币8.5亿元。个人订阅、团队制作和企业API均有收费入口，但未拆分各入口收入，也未单列社区贡献或可灵毛利。"
+            }
+          ],
+          "basis": "公司未经审核季度及中期业绩披露；统计对象为可灵产品，不是快手全公司或社区收入。",
+          "sources": [
+            {
+              "id": "kl-business-5",
+              "title": "快手2026年第二季度及中期未经审核财务业绩",
+              "url": "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2026niandierjidujizhongqiweijingshenhecaiwuyeji",
+              "date": "2026-08-19",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/business-data.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#kling",
+              "reportSection": "商业化、规模与用户／产品营业收入",
+              "dataPath": "site/lib/business-data.json",
+              "platformId": "kling",
+              "recordSelector": "metrics[label=产品营业收入]",
+              "sourceIds": [
+                "kl-business-5"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "社区的付款方可以是商业推广者，普通阅读和讨论不必直接按Token或会员收费。",
+          "text": "LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公开订阅商品。其可确认的是收费路径，论坛收入、付费推广方数量及推广效果仍未知。",
+          "examples": [
+            {
+              "platform": "LINUX DO",
+              "text": "LINUX DO在2026年9月9日的登录记录中提供US$600/月的高级推广订阅；规则将推广权益与普通讨论区分。该入口只确认商品、币种与周期，未验证结算、付款人数及续订。"
+            }
+          ],
+          "basis": "官方规则及指定日期的登录页面观察，尚无实际交易与财务账目。",
+          "sources": [
+            {
+              "id": "bc-ld-subscription",
+              "title": "LINUX DO 订阅入口",
+              "url": "https://linux.do/s",
+              "date": "登录页面，2026-09-09",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/business-data.json"
+            },
+            {
+              "id": "bc-ld-rules",
+              "title": "LINUX DO 社区细则",
+              "url": "https://linux.do/guidelines",
+              "date": "版本 2608252340（2026-08-25）",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/business-data.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#linuxdo",
+              "reportSection": "商业化、规模与用户／高级推广头衔标价",
+              "dataPath": "site/lib/business-data.json",
+              "platformId": "linuxdo",
+              "recordSelector": "metrics[label=高级推广头衔标价]",
+              "sourceIds": [
+                "bc-ld-subscription",
+                "bc-ld-rules"
+              ]
+            }
+          ]
+        }
+      ],
+      "table": {
+        "headers": [
+          "数据类型",
+          "可用于比较",
+          "不能据此得出"
+        ],
+        "rows": [
+          [
+            "网站访问估计",
+            "同一提供方、同一月份的访问量与行为",
+            "真实用户数、留存、付费率"
+          ],
+          [
+            "产品收入、ARR",
+            "各自期间或年化口径的经营规模",
+            "统一收入排名、社区收入占比、利润"
+          ],
+          [
+            "账户、会员与订阅",
+            "明确地域、期限及权益后的覆盖规模",
+            "跨平台去重付费人数"
+          ],
+          [
+            "付费问卷",
+            "相应调查样本的自报经历",
+            "全国AI付费人数或全国付费率"
+          ]
+        ]
+      },
+      "limit": "全国去重AI付费人数仍未知。规模数据保留统计对象、时间、地域和来源性质，不将全球账户、综合会员、月活与访问次数相加。",
+      "links": [
+        {
+          "view": "business",
+          "label": "各平台商业化与经营规模"
+        },
+        {
+          "view": "data",
+          "label": "公开访问数据"
+        },
+        {
+          "view": "china-users",
+          "label": "AI付费用户数据",
+          "anchor": "cn-payers"
+        }
+      ],
+      "comparisons": [
+        {
+          "id": "tool-delivery",
+          "title": "工具内已有内容，社区新增价值取决于交付还缺什么",
+          "question": "作品、教程与工作流已经能在工具内找到时，独立社区还应提供什么？",
+          "observation": "LiblibAI、RunningHub和Runway都把内容与执行入口连接起来。模型与工作流需要说明版本和依赖；简化应用需要明确可替换的输入；项目分享还受素材和权限范围影响。内容页能启动制作，完整任务仍可能需要选材料、改配置、排错与保存结果。",
+          "reasoning": "内容与工具连接得越紧，用户跨站找入口的负担可能越小，但平台也会承担更多可用性和支持工作。多元拾光若复制一份工具已有的效果介绍，新增价值有限；若能帮助用户选对方法、理解前提、找回修订和完成接手，就有可比较的服务内容。这些是待验证的增量，不是已经证明的留存或收入。",
+          "cases": [
+            {
+              "platformId": "liblib",
+              "name": "LiblibAI",
+              "fact": "电商精修资源V2链接V1，说明由SDXL转向FLUX后的输入、配置和模块变化。会员工作流许可协议另规定选入资源的授权销售；运行资格与资源许可需要分别核对。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-c-lib-1",
+                    "o9-c-lib-2",
+                    "o9-c-lib-3",
+                    "o9-c-lib-4"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-c-lib-1",
+                  "title": "电商产品精修+背景替换（SDXL版）V1.0",
+                  "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+                  "date": "未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-c-lib-2",
+                  "title": "电商产品精修+背景替换（FLUX）V2.0",
+                  "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+                  "date": "未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-c-lib-3",
+                  "title": "会员工作流授权许可协议",
+                  "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+                  "date": "更新2025-09-08；生效2025-09-15",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-c-lib-4",
+                  "title": "LiblibAI创作图片商业使用规范",
+                  "url": "https://www.liblib.art/activities/e0aa50f25b874722ac60be71adb8c9cb/Commercial_Guidelines",
+                  "date": "未标注",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "runninghub",
+              "name": "RunningHub",
+              "fact": "Klein试衣资源页提供两图输入说明，并列应用和工作流入口。另有公开用户在导入LTX流程后询问采样、节点与模型问题，答疑发生在Hugging Face讨论串。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-c-rh-4"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-runninghub-S1"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-c-rh-4",
+                  "title": "Klein虚拟试衣与商品局部替换",
+                  "url": "https://www.runninghub.cn/post/2074049801244917760",
+                  "date": "更新2026-06-13",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "P25-runninghub-S1",
+                  "title": "help me use runninghub for workflow so confused — Discussion #176",
+                  "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+                  "date": "Jun 15—Jun 22；页面不显年份",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "runway",
+              "name": "Runway",
+              "fact": "官方App文档允许把Workflow封装为简化入口并锁定部分配置，修改需回到源流程，适用范围为工作区成员。Projects用于组织会话、流程与素材；这些能力不能直接视为公开社区模板市场。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-g-run-app",
+                    "o9-g-run-projects"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-g-run-app",
+                  "title": "Publishing Workflows as Apps",
+                  "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+                  "date": "未标绝对日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-g-run-projects",
+                  "title": "Introduction to Projects",
+                  "url": "https://help.runwayml.com/hc/en-us/articles/52913050653203-Introduction-to-Projects",
+                  "date": "未标绝对日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                }
+              ],
+              "screenshotIds": []
+            }
+          ],
+          "counterpoint": "并非所有内容都要交付完整流程。作品可以只提供观看和风格参考；工具内项目也可能满足团队继续制作。强制每条内容附带源文件或生成入口，会增加制作与维护成本，也可能妨碍普通阅读。",
+          "adoption": "按内容承诺组织材料：作品保留结果与来源，教程给出步骤和检查方法，可复用资源交代输入、依赖、版本与问题入口。优先补足工具使用中缺失的信息和支持，不另建重复的工具介绍库。",
+          "requirement": "逐项核清MakeNow已能承接的材料、复制、保存和使用范围。现有一个案例验证了复制与文本保存；原件和副本有图片显示问题，再次生成与完整费用尚未核实。提供运行服务时，还需明确素材失效、节点适配和费用问题由谁处理。",
+          "missing": "缺少跨入口的完整任务记录，尚不能比较独立社区相对工具内部说明节省了多少步骤、降低了多少失败，或带来多少付费。也缺少相同任务的调用、重试、人工修改与支持成本。"
+        },
+        {
+          "id": "tool-community-value",
+          "title": "执行可以在站外，解释、反馈与参与仍可留在社区",
+          "question": "用户最终使用外部工具时，社区是否还有独立价值？",
+          "observation": "Datawhale把课程、作业与答疑组织起来，实践可在本地或合作环境完成；LINUX DO承接外部工具的接入问题与结果反馈。NightCafe同时提供生成工具与主题活动，历史用户记录中也有将生成转移到其他工具后仍回来参加挑战和聊天的情况。",
+          "reasoning": "这三种样本分别把学习进度、问题解决和兴趣参与留在社区。执行地点不足以解释社区价值，用户回到哪里补信息、得到反馈或参加活动更值得观察。对多元拾光而言，API和MakeNow既可作为执行入口，也可服务部分内容；内容的适用范围不必与自营工具完全重合。",
+          "cases": [
+            {
+              "platformId": "datawhale",
+              "name": "Datawhale",
+              "fact": "2026年6月ROCm共学资料明确由AMD Radeon Cloud提供免费GPU，Datawhale组织教材、日程、作业与答疑。all-in-rag用户问题涉及环境、API和检索检查，运行与结果检查中仍会发现需要修正的问题。该期活动已结束。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-datawhale-s3",
+                    "P25-datawhale-s4",
+                    "P25-datawhale-s5",
+                    "P25-datawhale-s7"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "P25-datawhale-s3",
+                  "title": "hello-rocm 组队学习入口（官方原文）",
+                  "url": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+                  "date": "未标文件发布日期；活动 2026-06",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-datawhale-s4",
+                  "title": "第一节执行示例报错 #125",
+                  "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+                  "date": "2026-07-15",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-datawhale-s5",
+                  "title": "KIMI API失效 #121",
+                  "url": "https://github.com/datawhalechina/all-in-rag/issues/121",
+                  "date": "2026-06-22",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-datawhale-s7",
+                  "title": "BM25检索中文分块问题 #102",
+                  "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+                  "date": "2026-04-12",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "linuxdo",
+              "name": "LINUX DO",
+              "fact": "接入求助样本保留回复、采纳及提问者确认。Connect提供身份授权，Credit文档另描述服务接入与争议处理；外部工具的交付与收费依赖接入方，未确认论坛统一自营AIGC执行服务。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "v11-ld-connect",
+                    "v11-ld-credit",
+                    "v11-ld-solved"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-linuxdo-s5"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "v11-ld-connect",
+                  "title": "LINUX DO Connect 文档",
+                  "url": "https://wiki.linux.do/Community/LinuxDoConnect",
+                  "date": "未标明确更新时间；访问 2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "v11-ld-credit",
+                  "title": "LINUX DO Credit 使用指南",
+                  "url": "https://credit.linux.do/docs/how-to-use",
+                  "date": "更新 2026-04-20；访问 2026-09-09",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "P25-linuxdo-s5",
+                  "title": "应用接入求助与采纳结果",
+                  "url": "https://linux.do/t/topic/1537782",
+                  "date": "2026-01-29",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ],
+              "screenshotIds": []
+            },
+            {
+              "platformId": "nightcafe",
+              "name": "NightCafe",
+              "fact": "成员挑战规则提供设题、投稿、评审与结果阶段。2023年的一位用户自述把生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天；2026年的另一组讨论也显示积分参与与生成意愿可能不同。前者为历史个案，不能当作当前普遍行为。",
+              "sourceRefs": [
+                {
+                  "dataFile": "site/lib/platform-operations.json",
+                  "sourceIds": [
+                    "o9-g-night-game",
+                    "o9-g-night-rules"
+                  ]
+                },
+                {
+                  "dataFile": "site/lib/audience-research.json",
+                  "sourceIds": [
+                    "P25-nightcafe-S-u1",
+                    "P25-nightcafe-S-u3"
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "id": "o9-g-night-game",
+                  "title": "Creating a Game (Community Challenge)",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+                  "date": "未标绝对日期",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "o9-g-night-rules",
+                  "title": "Daily Challenge: Eligibility, Rating & Ranking",
+                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+                  "date": "未标绝对日期；v8于2026-09-09复核",
+                  "accessedAt": "2026-09-09",
+                  "dataFile": "site/lib/platform-operations.json"
+                },
+                {
+                  "id": "P25-nightcafe-S-u1",
+                  "title": "What do you think about the recent update?",
+                  "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
+                  "date": "2026-02-09起；索引日期",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                },
+                {
+                  "id": "P25-nightcafe-S-u3",
+                  "title": "The rider",
+                  "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
+                  "date": "2023-10-08至11；索引日期",
+                  "accessedAt": "2026-09-10",
+                  "dataFile": "site/lib/audience-research.json"
+                }
+              ],
+              "screenshotIds": []
+            }
+          ],
+          "counterpoint": "站外执行也会分散流程和数据，社区未必能确认用户完成了什么。一个采纳结果或回访自述能够说明价值发生过，无法证明平台总体留存或经营可持续。",
+          "adoption": "分别记录内容阅读、练习结果、问题回应、兴趣参与和工具执行。用户领取过积分不应被一律剔除；被奖励的动作与其后的自主使用需要分开。",
+          "requirement": "内容要有持续可查的材料，问题要有明确的回应与整理位置。平台组织的发布、回复和测试单列，运营账号不能计作独立贡献者或外部用户需求。外部工具的费用和履约不归入社区自营能力。",
+          "missing": "缺少这些行为在同一观察期内的持续记录，也缺少内容消费对工具使用、支持成本和收入的增量贡献。现有材料不能给出自营执行与外部执行哪种更优的总体排序。"
+        }
+      ]
+    },
+    {
+      "id": "implications",
+      "title": "多元拾光的采用条件",
+      "answer": "现阶段可提出内容应交代的材料、所需维护工作和行为统计口径；实际负责人、目标人群、工具依赖程度和投入规模仍需结合自身条件比较。",
+      "assessment": "足够提出有依据的采用条件和备选方案；尚不足以选定唯一方向或承诺收益。",
+      "claims": [
+        {
+          "title": "工作流、画布与教程若承诺复用，应交付输入要求、依赖和排错记录，而不只提供封面或复制按钮。",
+          "text": "多元拾光可按使用目的组织内容：作品展示结果，教程解释过程，工作流与画布附输入、依赖和问题记录。公开案例表明这些环节各有实际工作，分享能力与支持责任应一并评估。",
+          "examples": [
+            {
+              "platform": "RunningHub",
+              "text": "RunningHub公开使用记录中，外部LTX流程仍需调整采样、节点或模型，答疑发生在Hugging Face讨论串；Datawhale课程用户在代码能运行后还检查检索结果。工具执行、方法解释和问题处理分别承担工作。"
+            }
+          ],
+          "basis": "公开用户自述、讨论过程与课程记录；尚未验证完整项目交付、平均节省时间或支持成本。",
+          "sources": [
+            {
+              "id": "P25-runninghub-S1",
+              "title": "help me use runninghub for workflow so confused — Discussion #176",
+              "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+              "date": "Jun 15—Jun 22；页面不显年份",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s7",
+              "title": "BM25检索中文分块问题 #102",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+              "date": "2026-04-12",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-datawhale-s2",
+              "title": "团队协作工作流",
+              "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/workflows/",
+              "date": "页脚2022—2024；整页更新日未标注",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/audience-research.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience",
+              "reportSection": "RunningHub／Datawhale：产品解决程度",
+              "dataPath": "site/lib/audience-research.json",
+              "recordIds": [
+                "P25-runninghub-E1",
+                "P25-runninghub-E2",
+                "P25-datawhale-u4"
+              ],
+              "sourceIds": [
+                "P25-runninghub-S1",
+                "P25-datawhale-s7"
+              ]
+            },
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#datawhale",
+              "reportSection": "课程答疑与编辑分工",
+              "dataPath": "site/lib/audience-research.json",
+              "recordIds": [
+                "P25-datawhale-o2"
+              ],
+              "sourceIds": [
+                "P25-datawhale-s2"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "内容消费、社区参与、工具生成与付款需要分别判断，奖励用户不必一律筛除，也不应以签到代替任务完成。",
+          "text": "竞品记录显示，参与活动、持续生成和解决问题可能是不同使用目的。多元拾光应分别观察阅读、学习、求助、操作和付款，按各自任务判断价值，不能仅凭积分来源或发帖量认定用户质量。",
+          "examples": [
+            {
+              "platform": "NightCafe",
+              "text": "NightCafe的2026年用户记录中，有人主要完成积分任务而很少生成；2023年的另一位用户自述将生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天。LINUX DO另有采纳回复及提问者确认的接入求助个案。"
+            }
+          ],
+          "basis": "用户自述与历史登录观察；跨工具回访为2023年个案，当前行为未知，各样本不能估计总体留存。",
+          "sources": [
+            {
+              "id": "P25-nightcafe-S-u1",
+              "title": "What do you think about the recent update?",
+              "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
+              "date": "2026-02-09起；索引日期",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-nightcafe-S-u3",
+              "title": "The rider",
+              "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
+              "date": "2023-10-08至11；索引日期",
+              "accessedAt": "2026-09-10",
+              "dataFile": "site/lib/audience-research.json"
+            },
+            {
+              "id": "P25-linuxdo-s5",
+              "title": "应用接入求助与采纳结果",
+              "url": "https://linux.do/t/topic/1537782",
+              "date": "2026-01-29",
+              "accessedAt": "2026-09-09",
+              "dataFile": "site/lib/audience-research.json"
+            }
+          ],
+          "evidence": [
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience",
+              "reportSection": "NightCafe：活动参与与持续使用",
+              "dataPath": "site/lib/audience-research.json",
+              "platformId": "nightcafe",
+              "recordIds": [
+                "P25-nightcafe-e2",
+                "P25-nightcafe-e5"
+              ],
+              "sourceIds": [
+                "P25-nightcafe-S-u1",
+                "P25-nightcafe-S-u3"
+              ]
+            },
+            {
+              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#linuxdo",
+              "reportSection": "接入求助与采纳结果",
+              "dataPath": "site/lib/audience-research.json",
+              "platformId": "linuxdo",
+              "recordIds": [
+                "P25-linuxdo-h2"
+              ],
+              "sourceIds": [
+                "P25-linuxdo-s5"
+              ]
+            }
+          ]
+        }
+      ],
+      "table": {
+        "headers": [
+          "可采用的做法",
+          "需要具备",
+          "仍需验证"
+        ],
+        "rows": [
+          [
+            "作品卡片呈现结果，教程入口说明学习目标，资源详情列出输入与依赖；同一案例的作品、方法和问题互相关联",
+            "可持续的选题、编辑与素材来源",
+            "读者能否区分内容、找到材料和下一步"
+          ],
+          [
+            "为可复用内容附输入、依赖和问题记录",
+            "作者自检、编辑复核与后续维护责任",
+            "换素材或账号后能否完成任务"
+          ],
+          [
+            "分别记录阅读、学习、交流、生成与付款",
+            "明确事件与供给来源，区分运营组织的行为",
+            "外部用户是否持续使用及自行回访"
+          ],
+          [
+            "比较四种社区方案的共同投入",
+            "MakeNow交付能力、内容工时与预算",
+            "哪种承诺可以稳定兑现"
+          ]
+        ]
+      },
+      "limit": "当前内容由平台维护，后续也按平台持续供给核算。MakeNow已有一个案例的复制与文本保存证据，素材完整性、再次生成和完整费用仍未核实。",
+      "links": [
+        {
+          "view": "progress",
+          "label": "自身条件与证据缺口"
+        },
+        {
+          "view": "makenow",
+          "label": "MakeNow研究"
+        },
+        {
+          "view": "strategy",
+          "label": "四种社区方案"
+        }
+      ]
+    }
+  ],
+  "depth": {
+    "judgment": "现有材料已超过功能罗列，能够将具体任务、产品机制、使用困难和部分收费结果联系起来；但用户样本稀疏、平台观察深度不齐，尚不足以验证主力客群、留存因果或经营优劣。",
+    "rows": [
+      [
+        "产品与内容结构",
+        "已经分析到入口、字段、详情、交付对象与后续操作。",
+        "不同内容形式的实际采用率未测。"
+      ],
+      [
+        "运营与供给",
+        "已有合作条款、版本变化、回应及维护分工。",
+        "多数缺少工时、供稿频率与激励净效果。"
+      ],
+      [
+        "用户与任务",
+        "已有公开任务、困难、失败和少量同账号后续记录。",
+        "样本稀疏，无法还原平台用户总体。"
+      ],
+      [
+        "实际使用",
+        "部分平台有生成、保存、再次打开或复用检查。",
+        "未对18家完成同一任务的全流程验证。"
+      ],
+      [
+        "经营结果",
+        "已有定价规则、部分经营披露和第三方访问估计。",
+        "利润、留存因果和社区收入贡献未验证。"
+      ]
+    ]
+  },
+  "delivery": {
+    "date": "2026-09-11",
+    "preparedAt": "2026-09-10",
+    "title": "多元拾光 · AI社区竞品调研报告",
+    "html": "/research-deliveries/2026-09-11-public/report.html",
+    "zip": "/research-kit/ai-community-report-2026-09-11-public.zip"
+  },
+  "keyFindings": [
+    {
+      "view": "content",
+      "text": "同一张效果图可能对应作品参考、套用表单或源流程，详情字段和使用按钮应随实际交付变化。"
+    },
+    {
+      "view": "business",
+      "text": "18个样本中15家有平台执行能力资料；工具支持常见，但不能据此认定社区收入来源或用户回访原因。"
+    },
+    {
+      "view": "supply",
+      "text": "合作计划、开放投稿和运营账号不能保证持续产量。制作、编辑、答疑与修订需要分别安排责任和成本。"
+    }
+  ],
+  "representatives": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "selectionReason": "同时呈现效果模板、模型和工作流，适合比较内容如何接到在线使用。",
+      "task": "商品精修与背景替换案例要求用户准备商品图、背景图并处理遮罩，再按所选模型运行。案例说明一种具体制作任务；现有材料不足以确定这类任务占全站使用的比例。",
+      "content": "首页图片模型栏目以效果封面、任务标题和模型标签组织卡片；模板详情补充参考图数量、推荐模型、示例与许可。较复杂的工作流另展示输入要求、模块说明和版本差异。",
+      "path": "从效果卡片进入详情，判断所需素材、模型和许可，再使用模板或工作流。商品精修样例有从SDXL到FLUX的版本链接；是否能将自己的素材稳定复现，仍需实际运行检验。",
+      "supply": "作者发布方法、更新版本并邀请返图反馈，平台提供展示和运行入口。特定会员工作流计划另约定授权、推广和收益分配；没有证据表明全部作者均受该计划约束或持续供稿。",
+      "tool": "平台提供模型与工作流的云端使用入口，并另设API服务。方法由作者编排，底层模型与依赖各有条件；使用平台工具不自动取得所有相关素材和模型的商业使用权。",
+      "payment": "付款对象包括个人生成会员、工作流许可和API服务，付款方可分别是使用者、资源购买者或接入方。现有协议与邀请奖励确认收费安排，未披露各项实际收入和付费人数。",
+      "limit": "模板与工作流样例能说明内容结构及使用条件，尚不足以证明跨商品的稳定产出。会员工作流授权协议于2025年9月生效，仅适用于该计划；条款本身不代表作者已有收入。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-screenshots.json",
+          "sourceIds": [],
+          "recordIds": [
+            "liblib-template"
+          ],
+          "supports": "2026-09-09采集的同一商品精修模板卡片与详情，支持效果封面、模型标签、参考图、许可和使用入口描述。"
+        },
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-c-lib-1",
+            "o9-c-lib-2",
+            "o9-c-lib-4"
+          ],
+          "supports": "商品精修SDXL与FLUX版本的输入、模块、返图与版本关系，以及模型和作品商业使用条件；案例可用性未完整复现。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-c-lib-1",
+            "o9-c-lib-2",
+            "o9-c-lib-3"
+          ],
+          "supports": "作者版本维护与反馈入口、会员工作流计划中的授权和分配责任。协议更新2025-09-08、生效2025-09-15。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "lib-business-1",
+            "lib-business-2",
+            "lib-business-3",
+            "lib-business-4"
+          ],
+          "supports": "个人会员、特定工作流许可与API收费关系。API协议更新2024-12-03、生效2024-12-05；协议日期不代表经营数据期。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "o9-c-lib-1",
+          "title": "电商产品精修+背景替换（SDXL版）V1.0",
+          "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+          "date": "未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-c-lib-2",
+          "title": "电商产品精修+背景替换（FLUX）V2.0",
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "date": "未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-c-lib-4",
+          "title": "LiblibAI创作图片商业使用规范",
+          "url": "https://www.liblib.art/activities/e0aa50f25b874722ac60be71adb8c9cb/Commercial_Guidelines",
+          "date": "未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "lib-business-3",
+          "title": "会员工作流授权许可协议",
+          "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+          "date": "更新2025-09-08；生效2025-09-15",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "lib-business-1",
+          "title": "经验教学与免费体验入口",
+          "url": "https://insight.liblib.art/teaching",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "lib-business-2",
+          "title": "会员邀请奖励规则",
+          "url": "https://insight.liblib.art/membershipInvitationBonus",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "lib-business-4",
+          "title": "API开放平台服务条款",
+          "url": "https://www.liblib.art/activities/API-Service-Agreement",
+          "date": "更新2024-12-03；生效2024-12-05",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "流程与资源复用"
+    },
+    {
+      "id": "runninghub",
+      "name": "RunningHub",
+      "selectionReason": "同一方法可作为应用或节点工作流使用，且公开作者激励与执行计费规则。",
+      "task": "虚拟试衣与商品替换样例让用户提供人物或场景图、商品图及修改说明。另一类任务是将已有ComfyUI流程搬到云端，处理缺失模型或节点后继续运行，技术要求有所不同。",
+      "content": "首页按电商等任务组织内容，卡片先展示效果、标题与作者。工作流详情提供原图对照、更新时间和说明，并列应用与工作流入口；封装应用的详情另显示计费提示和运行入口。",
+      "path": "用户先按任务找效果，从详情选择直接填写应用输入，或打开工作流检查节点。前者减少需要理解的设置，后者保留修改方法的入口；下载流程仍可能需要补齐模型与节点依赖。",
+      "supply": "作者上传应用和工作流、解释输入并更新方法，平台组织任务专区与推荐。公开激励规则将有效运行、收藏和原创性纳入奖励；刷量判定、实际结算及持续供给规模尚未取得。",
+      "tool": "平台提供ComfyUI云端执行及API接入，作者负责流程编排与依赖说明。公开求助记录显示有人仍需自行排查模型和输入节点；云端托管没有消除全部配置与结果整理工作。",
+      "payment": "个人为运行资源或会员权益付费，接入方为API执行付费。工作流计算时长与标准模型按图片、秒或次数计费分别定价；2026-09-09读取的价格规则不能用于计算实际收入。",
+      "limit": "应用表单和工作流双入口已有页面证据，完整生成效果并未逐项验证。公开求助包含已运行者与仅在选平台的人；不能合并计算用户数，也不能据奖励规则推断留存效果。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-screenshots.json",
+          "sourceIds": [],
+          "recordIds": [
+            "runninghub-workflow",
+            "runninghub-app"
+          ],
+          "supports": "2026-09-09同一内容的卡片与详情截图，支持效果卡、双入口和应用计费提示；应用截图中的输入表单尚未加载。"
+        },
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-c-rh-1",
+            "o9-c-rh-3",
+            "o9-c-rh-4"
+          ],
+          "supports": "首页任务专区、工作流案例与Klein试衣样例的两图输入、用途及依赖说明；Klein页面更新2026-06-13。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-c-rh-1",
+            "o9-c-rh-2",
+            "o9-c-rh-4"
+          ],
+          "supports": "任务推荐、作者维护、有效运行及收藏等激励规则，支持运营机制描述，不支持实际兑付或留存判断。"
+        },
+        {
+          "dataFile": "site/lib/audience-research.json",
+          "sourceIds": [
+            "P25-runninghub-S1",
+            "P25-runninghub-S2"
+          ],
+          "recordIds": [
+            "P25-runninghub-E1",
+            "P25-runninghub-E2",
+            "P25-runninghub-E3"
+          ],
+          "supports": "外部工作流使用、配置排查及持续订阅的公开自述；同帖求助者、回答者和潜在使用者需分别判断。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "rh-business-1",
+            "rh-business-2",
+            "rh-business-3",
+            "rh-business-4"
+          ],
+          "supports": "应用使用、企业共享API、标准模型计费和作者奖励关系。官方使用指南发布2026-07-02，动态计费页面读取2026-09-09。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "o9-c-rh-1",
+          "title": "RunningHub任务专区首页",
+          "url": "https://www.runninghub.cn/",
+          "date": "未标注；此前于2026-09-09读取",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-c-rh-3",
+          "title": "Google图像工作流示例",
+          "url": "https://www.runninghub.cn/post/2028347928716251138",
+          "date": "更新2026-03-02",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "o9-c-rh-4",
+          "title": "Klein虚拟试衣与商品局部替换",
+          "url": "https://www.runninghub.cn/post/2074049801244917760",
+          "date": "更新2026-06-13",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "rh-business-4",
+          "title": "创作者奖励规则",
+          "url": "https://www.runninghub.cn/creator-reward",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "P25-runninghub-S1",
+          "title": "help me use runninghub for workflow so confused — Discussion #176",
+          "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+          "date": "Jun 15—Jun 22；页面不显年份",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-runninghub-S2",
+          "title": "Is runninghub best for running comfui on cloud",
+          "url": "https://www.reddit.com/r/comfyui/comments/1qh57f2/is_runninghub_best_for_running_comfui_on_cloud/",
+          "date": "2026-01-19",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "rh-business-1",
+          "title": "RunningHub AI Apps 官方使用指南",
+          "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+          "date": "2026-07-02",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "rh-business-2",
+          "title": "企业级共享API计费页面",
+          "url": "https://www.runninghub.cn/enterprise-api/sharedApi",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "rh-business-3",
+          "title": "标准模型API目录",
+          "url": "https://www.runninghub.cn/call-api/search-api/standard-model",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "流程与资源复用"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "selectionReason": "公开案例和课程之外，还有项目与工作区内复用，可区分展示和制作。",
+      "task": "Miro活动视频案例涉及为不同场地制作镜头、适配投影尺寸及多个市场。任务包含生成、筛选和后续制作，不能将一次生成等同于成片，也不能把官方精选客户视为典型用户。",
+      "content": "公开案例讲任务背景和制作过程；课程卡片先列学习目标、模块数与难度，详情展开技能和学习入口。工作区内的App和Projects则承载输入配置、会话、流程与素材。",
+      "path": "案例和课程帮助读者理解用途，进入工具后再组织生成与修改。工作区成员可按权限使用封装的App，或在项目中继续处理会话和资产；公开浏览与内部项目使用是不同路径。",
+      "supply": "官方选择客户案例并组织创作伙伴与推荐合作，创作者自行探索与发布。App维护者回到源流程更新方法，项目成员管理素材；创作伙伴计划没有固定供稿时间或创作量承诺。",
+      "tool": "自营制作工具、项目管理和API是产品的一部分，工作流可封装为简化操作界面。Projects在成员范围内共享，外部默认私有；公开案例并不附带完整、可复制的客户项目文件。",
+      "payment": "个人按订阅及额度使用制作能力，企业方案另行商议，开发者按API用量付费。2026-09-09读取的价格页区分这些对象；套餐含量和生成时长都不能直接作为交付价值或收入。",
+      "limit": "客户访谈提供了具体用途，仍缺完整项目、成本和独立结果核验。App文档确认工作区内封装与权限，未确认全站公开模板交易；现有资料也没有项目留存或客户净收益数据。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-screenshots.json",
+          "sourceIds": [],
+          "recordIds": [
+            "runway-course"
+          ],
+          "supports": "2026-09-09公开AI for Advertising课程卡片与详情，支持目标、模块、难度、技能和学习入口描述，不证明课程完成。"
+        },
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-g-run-miro",
+            "o9-g-run-app",
+            "o9-g-run-projects"
+          ],
+          "supports": "Miro项目任务、App输入与配置、项目会话流程资产及权限，区分公开案例与内部制作资料。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-g-run-cpp",
+            "o9-g-run-affiliate",
+            "o9-g-run-app",
+            "o9-g-run-projects"
+          ],
+          "supports": "创作伙伴与推荐合作、App源流程维护和项目成员范围。伙伴权益不构成固定供稿合同，推荐佣金不等同于制作稿费。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "biz-run-price",
+            "biz-run-api",
+            "biz-run-miro"
+          ],
+          "supports": "2026-09-09读取的订阅与API计费，以及官方客户制作案例；不支持推算各业务收入或平均客户回报。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "biz-run-miro",
+          "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway",
+          "url": "https://runway.com/news/customers/miro",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "o9-g-run-app",
+          "title": "Publishing Workflows as Apps",
+          "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+          "date": "未标绝对日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-run-projects",
+          "title": "Introduction to Projects",
+          "url": "https://help.runwayml.com/hc/en-us/articles/52913050653203-Introduction-to-Projects",
+          "date": "未标绝对日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-run-cpp",
+          "title": "Creative Partners Program",
+          "url": "https://runway.com/creative-partners-program",
+          "date": "未标发布日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-run-affiliate",
+          "title": "Apply to the Runway Affiliate Program",
+          "url": "https://runway.com/affiliate-program",
+          "date": "未标发布日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "biz-run-price",
+          "title": "Runway Pricing",
+          "url": "https://runway.com/pricing",
+          "date": "动态价格页，访问2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "biz-run-api",
+          "title": "API Pricing & Costs",
+          "url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "date": "动态文档，访问2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "创作工具与作品"
+    },
+    {
+      "id": "nightcafe",
+      "name": "NightCafe",
+      "selectionReason": "作品生成与挑战、主持、评审相连，能观察兴趣参与如何形成内容供给。",
+      "task": "参与者按主题创作图片、提交挑战并评审他人作品；Promptle要求逐步修改图片以接近目标。公开作者访谈还出现主持和分享方法的活动，不能由此推定全部用户的参与方式。",
+      "content": "作品条目承载参赛图片与评审结果，挑战详情说明主题、模型限制和时段。Promptle成绩卡展示起点、目标、结果和得分；提示步骤需参与者同意，并在题目结束后开放。",
+      "path": "成员游戏默认凭链接加入，公开聊天室游戏可从发现入口进入。参与者按题面准备作品，经历投稿、评审和结果阶段；每日题目有更新节奏，但现有资料没有实际完成率。",
+      "supply": "成员可主持主题游戏并设置规则，其他成员投稿和评审；平台维护每日题目、阶段推进、连续记录及异常票处理。题目、作品和评价分别需要供给，功能存在不代表主持工作已稳定。",
+      "tool": "平台将图像生成与挑战、聊天室和作品管理放在同一产品内。免费与付费额度对应不同模型和队列条件；个人可能继续参与讨论却改用外部工具生成，两类行为不能合并判断。",
+      "payment": "个人可购买PRO方案与生成额度，付费涉及模型范围、速度和作品管理等权益。2026-09-09读取的规则区分Fast与Relax额度；奖励积分不是现金收入，实际付费率未披露。",
+      "limit": "挑战与Promptle主要依据官方规则，尚未完整实操。作者访谈是精选个案，外部工具迁移经历发生于2023年；现有材料不能判断奖励带来的净增活跃或今天的用户分布。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-g-night-game",
+            "o9-g-night-promptle",
+            "o9-g-night-rules"
+          ],
+          "supports": "挑战题面、作品与评审结果、Promptle成绩卡和可选步骤。材料为规则文档，Promptle仍标Alpha，不充作实操截图。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-g-night-game",
+            "o9-g-night-promptle",
+            "o9-g-night-streak",
+            "o9-g-night-rules"
+          ],
+          "supports": "成员主持、公开与链接加入、阶段推进、按UTC日的活动节奏及异常评审处理；没有参与率或停奖对照。"
+        },
+        {
+          "dataFile": "site/lib/audience-research.json",
+          "sourceIds": [
+            "P25-nightcafe-S-u3",
+            "P25-nightcafe-S-biz-night-artist"
+          ],
+          "recordIds": [
+            "P25-nightcafe-e5",
+            "P25-nightcafe-e7"
+          ],
+          "supports": "2023-10-08至11外部生成与留在社区参与的自述，以及2026-06-19官方作者访谈中的主持、教学和PRO搜索用途；均不代表主流分布。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "biz-night-pro",
+            "biz-night-credits",
+            "biz-night-artist"
+          ],
+          "supports": "PRO与Fast、Relax额度的权益和队列差异，及作者作品管理用途。动态方案读取2026-09-09，不采用历史广告说明推断当前收入结构。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "o9-g-night-game",
+          "title": "Creating a Game (Community Challenge)",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+          "date": "未标绝对日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-night-promptle",
+          "title": "Promptle: The Daily AI Art Puzzle",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+          "date": "未标绝对日期；标Alpha",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-night-rules",
+          "title": "Daily Challenge: Eligibility, Rating & Ranking",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+          "date": "未标绝对日期；v8于2026-09-09复核",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-g-night-streak",
+          "title": "Streaks & Badges",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges",
+          "date": "未标绝对日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "P25-nightcafe-S-u3",
+          "title": "The rider",
+          "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
+          "date": "2023-10-08至11；索引日期",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "biz-night-artist",
+          "title": "NightCafe Artist Spotlight: Inside gullyDJ's Weird World",
+          "url": "https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj",
+          "date": "2026-06-19",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "biz-night-pro",
+          "title": "NightCafe PRO plans — what you get and which plan to choose",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
+          "date": "动态帮助页，访问2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "biz-night-credits",
+          "title": "Fast Credits vs Relax Credits",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
+          "date": "未标日期",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "兴趣创作与参与"
+    },
+    {
+      "id": "datawhale",
+      "name": "Datawhale",
+      "selectionReason": "以课程、练习和协作维护承载内容，提供生成工具社区之外的比较对象。",
+      "task": "公开问题包括运行RAG课程时的鉴权、模型版本、Windows环境及中文检索故障。学习者要把示例跑通并理解修改方法；这些具体障碍不能用于推断其职业或学习完成比例。",
+      "content": "课程以讲义、Notebook、录播和文本整理承载过程，练习另有作业入口与完成记录。提问指南要求环境、完整错误和尝试结果；现有材料不支持把所有课程概括为统一首页卡片。",
+      "path": "从课程仓库进入章节材料，配置环境后编码练习，按要求提交作业或学习记录；遇到障碍时补充环境和报错再提问。阶段共学结束后仍可自学，答疑资源是否延续要另看安排。",
+      "supply": "公开协作文档分别安排课程入口、作业、直播、教材反馈与学习进度。贡献者整理材料并讨论修订，志愿助教引导排查；岗位说明不能证明当前人数、响应速度和长期维护工时。",
+      "tool": "内容主要通过开源仓库、Notebook和外部模型或计算环境使用。未确认存在与这些课程统一绑定的自营收费生成服务；合作方可提供实践资源，学习者仍需处理环境与依赖。",
+      "payment": "2026年6月的ROCm共学记录确认合作方提供GPU等资源，未取得学员付费、现金赞助或社区收入资料。两期活动均已结束，历史资源支持不能直接折算成当期营业收入。",
+      "limit": "作业要求与公开求助能说明课程如何被使用，尚缺报名到完成、再次参加的去重人数。部分课程协作页未标更新日期；旧课程入口可访问，不代表目前仍配有相同助教和资源。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-d-dw-feedback",
+            "o9-d-dw-learning",
+            "o9-d-dw-homework",
+            "o9-d-dw-question"
+          ],
+          "supports": "讲义与录播、实际编码和作业记录、问题所需环境与报错字段；未逐节运行Notebook。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-d-dw-workflow",
+            "o9-d-dw-feedback",
+            "o9-d-dw-question",
+            "o9-d-dw-rocm"
+          ],
+          "supports": "课程职责分工、反馈修订、志愿助教条件及结束后的自学入口。2026年6月两期ROCm共学已经结束。"
+        },
+        {
+          "dataFile": "site/lib/audience-research.json",
+          "sourceIds": [
+            "P25-datawhale-s1",
+            "P25-datawhale-s4",
+            "P25-datawhale-s5",
+            "P25-datawhale-s6",
+            "P25-datawhale-s7"
+          ],
+          "recordIds": [
+            "P25-datawhale-o1",
+            "P25-datawhale-u1",
+            "P25-datawhale-u2",
+            "P25-datawhale-u3",
+            "P25-datawhale-u4"
+          ],
+          "supports": "all-in-rag课程及鉴权、模型版本、Windows环境、中文BM25问题，支持具体学习任务；使用者自述未经独立复现。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "bc-dw-about",
+            "bc-dw-github",
+            "v7-dw-rocm",
+            "bc-dw-governance"
+          ],
+          "supports": "开源组织与课程仓库、历史合作提供的算力和人员安排、公开治理职责。没有现金赞助、收入或核心收费人群的披露。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "o9-d-dw-feedback",
+          "title": "课本编写与反馈收集",
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+          "date": "页脚2022—2024；整页更新日未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-d-dw-learning",
+          "title": "组队学习规则",
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/",
+          "date": "页脚2022—2024；整页更新日未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "o9-d-dw-homework",
+          "title": "作业发布与验证",
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/homework/",
+          "date": "页脚2022—2024；整页更新日未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "o9-d-dw-question",
+          "title": "How to Ask Questions",
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+          "date": "页脚2022—2024；整页更新日未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-d-dw-workflow",
+          "title": "团队协作工作流",
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/workflows/",
+          "date": "页脚2022—2024；整页更新日未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v7-dw-rocm",
+          "title": "hello-rocm 组队学习入口（官方原文）",
+          "url": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+          "date": "未标文件发布日期；活动 2026-06",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "P25-datawhale-s1",
+          "title": "all-in-rag课程仓库",
+          "url": "https://github.com/datawhalechina/all-in-rag",
+          "date": "发布日期未标",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-datawhale-s4",
+          "title": "第一节执行示例报错 #125",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+          "date": "2026-07-15",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-datawhale-s5",
+          "title": "KIMI API失效 #121",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/121",
+          "date": "2026-06-22",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-datawhale-s6",
+          "title": "Windows激活环境问题 #105",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+          "date": "2026-04-27",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-datawhale-s7",
+          "title": "BM25检索中文分块问题 #102",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+          "date": "2026-04-12",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "bc-dw-about",
+          "title": "Datawhale 官方介绍与大事记",
+          "url": "https://www.datawhale.cn/static/about/index.html",
+          "date": "未标注，历史条目至 2023 年",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "bc-dw-github",
+          "title": "Datawhale GitHub 组织",
+          "url": "https://github.com/datawhalechina",
+          "date": "动态计数",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "bc-dw-governance",
+          "title": "Datawhale 组织治理",
+          "url": "https://github.com/datawhalechina/whale-governance",
+          "date": "未标注",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "学习与讨论"
+    },
+    {
+      "id": "linuxdo",
+      "name": "LINUX DO",
+      "selectionReason": "讨论、答疑和持续维护帖子是主要承载方式，商业入口与普通参与分开。",
+      "task": "具体讨论涉及API首字延迟、应用接入失败、提示词修改与效果回传。接入问题中可见答案标记及提问者确认；这些记录支持问题确实被提出，不等于已独立复现解决办法。",
+      "content": "首页按最新、未读和热门等入口组织话题行，显示标题、分类、回复和最近活动。详情用首帖、楼层引用与时间轴展开；可长期维护的Wiki帖还保留更新与编辑历史。",
+      "path": "读者从分类或话题列表定位问题，阅读背景和楼层中的补充，再沿引用查公告或方法。已解决标记、收藏和通知选项支持继续跟进；是否实际收到通知、是否反复回来尚未核验。",
+      "supply": "提问者补充条件和结果，回复者给办法，Wiki编辑者维护可积累的说明。社区管理另处理推广规则、邀请与异常刷量；维护依赖多种成员贡献，现有资料没有各角色的持续供给量。",
+      "tool": "站点还提供Connect身份接入和Credit积分服务，模型与API服务可由外部经营者提供。商家推广帖和用户接入讨论不能作为社区自营生成服务或自营中转业务的证据。",
+      "payment": "推广者可为高级推广权限订阅，普通阅读和答疑属于另一种参与关系。2026-09-09登录页显示600美元月价；没有实际购买记录，商家的销售额也不能算作社区收入。",
+      "limit": "已登录采集首页与若干话题，能确认信息组织及互动实例，但样本按主题选择。已解决标记不代表全站解决率；推广准入与处置规则也不足以保证站外服务质量或估算订阅收入。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-screenshots.json",
+          "sourceIds": [],
+          "recordIds": [
+            "linuxdo-topic"
+          ],
+          "supports": "2026-09-09公开知识管理话题列表与详情截图，支持话题行、首帖、楼层回复和时间轴的组织描述；头像已遮盖。"
+        },
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "v11-ld-home",
+            "v11-ld-question",
+            "v11-ld-solved",
+            "v11-ld-prompt",
+            "v11-ld-wiki"
+          ],
+          "supports": "2026-09-09登录首页与所选话题，支持导航、具体求助、返图与Wiki维护；样本为定向选择。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "v11-ld-solved",
+            "v11-ld-wiki",
+            "v11-ld-letter",
+            "v11-ld-antifarming",
+            "v11-ld-connect",
+            "v11-ld-credit",
+            "v11-ld-promotionrule"
+          ],
+          "supports": "问题解决反馈、持续维护、邀请与刷量处理、Connect和Credit的边界，以及外部推广管理；未测试通知实际投递。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "bc-ld-rules",
+            "bc-ld-subscription",
+            "bc-ld-enforcement"
+          ],
+          "supports": "版本2026-08-25的社区细则、2026-09-09登录订阅页600美元月价及2026-07-15违规处置实例；无实际交易收入。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "v11-ld-home",
+          "title": "LINUX DO 登录首页",
+          "url": "https://linux.do/",
+          "date": "访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "v11-ld-question",
+          "title": "工具首字延迟求助",
+          "url": "https://linux.do/t/topic/2880961",
+          "date": "2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "v11-ld-solved",
+          "title": "关于应用接入的问题请教佬友",
+          "url": "https://linux.do/t/topic/1537782",
+          "date": "2026-01-29；复核 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-prompt",
+          "title": "壁纸提示词与结果回传",
+          "url": "https://linux.do/t/topic/2879086",
+          "date": "2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/content-forms.json"
+        },
+        {
+          "id": "v11-ld-wiki",
+          "title": "盘点 L 站的徽章：长期更新",
+          "url": "https://linux.do/t/topic/342888",
+          "date": "标题标注 2026-02-17 更新；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-letter",
+          "title": "秘密花园园丁邀请函",
+          "url": "https://linux.do/t/topic/847468",
+          "date": "首发 2025-08-07；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-antifarming",
+          "title": "别刷了，别刷了，服务器顶不住了",
+          "url": "https://linux.do/t/topic/1409175",
+          "date": "2026-01-05；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-connect",
+          "title": "LINUX DO Connect 文档",
+          "url": "https://wiki.linux.do/Community/LinuxDoConnect",
+          "date": "未标明确更新时间；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-credit",
+          "title": "LINUX DO Credit 使用指南",
+          "url": "https://credit.linux.do/docs/how-to-use",
+          "date": "更新 2026-04-20；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v11-ld-promotionrule",
+          "title": "新推广方式：开源推广",
+          "url": "https://linux.do/t/topic/1776670",
+          "date": "2026-03-18；访问 2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "bc-ld-rules",
+          "title": "LINUX DO 社区细则",
+          "url": "https://linux.do/guidelines",
+          "date": "版本 2608252340（2026-08-25）",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "bc-ld-subscription",
+          "title": "LINUX DO 订阅入口",
+          "url": "https://linux.do/s",
+          "date": "登录页面，2026-09-09",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "bc-ld-enforcement",
+          "title": "封禁两例公益站违规",
+          "url": "https://linux.do/t/topic/2587473",
+          "date": "2026-07-15",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "学习与讨论"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "selectionReason": "模型、数据、专题集合与在线应用在同一平台相连，适合比较开发资源如何被发现、使用和持续维护。",
+      "task": "使用者寻找模型与数据，或直接打开他人部署的演示；作者则要把应用交给访客并维护环境。公开试衣和额度讨论说明两类任务存在，组织采购画像主要来自官方产品说明。",
+      "content": "模型卡交代用途、限制和许可，Collection按主题关联资源，Space直接承载应用。H3 Arena卡片展示用途和运行状态，详情有应用、Files与Community入口，各自承载不同材料。",
+      "path": "用户可从任务目录或专题进入资源，查看说明后试用应用或按条件复制。公开应用与源码开放是两种权限；复制后仍需准备私有凭证、模型权限、算力和依赖，不能只带走展示画面。",
+      "supply": "资源作者维护说明、文件和依赖，组织成员编排专题，使用者通过讨论或修改请求反馈。已有答疑者发布适配新版Gradio的演示说明；未取得原求助者采用后成功的确认。",
+      "tool": "Spaces承载应用运行，Inference Endpoints与Inference Providers提供推理服务，Hub承载模型、数据和版本。应用可由作者开发，平台提供托管与协作；可交互内容仍需要运行和维护资源。",
+      "payment": "收费包括个人订阅、按量计算与存储、组织席位和企业合同，付款方可能是使用者、作者或团队。计费文档区分订阅与计算费用；价格和功能不能换算成收入或付费人数。",
+      "limit": "H3 Arena截图仅记录播放前界面，未运行、投票或检查文件。2025—2026年问题帖含受阻、替代版本和个别恢复自述，不能估算故障率或留存；企业采购与持续成功使用的资料仍不足。",
+      "evidence": [
+        {
+          "dataFile": "site/lib/content-screenshots.json",
+          "sourceIds": [],
+          "recordIds": [
+            "huggingface-space"
+          ],
+          "supports": "2026-09-09采集的同一H3 Acceleration Arena卡片与详情，支持用途摘要、状态及App、Files、Community入口；未播放、投票、检查文件或执行调用。"
+        },
+        {
+          "dataFile": "site/lib/content-forms.json",
+          "sourceIds": [
+            "o9-d-hf-card",
+            "o9-d-hf-spaces",
+            "o9-d-hf-collection",
+            "o9-d-hf-discussion"
+          ],
+          "supports": "模型卡、Space、Collection及讨论/PR的交付区别，复制、可见性、依赖和私有凭证条件。官方文档未标独立更新日，2026-09-09读取；未创建或复制Space。"
+        },
+        {
+          "dataFile": "site/lib/platform-operations.json",
+          "sourceIds": [
+            "o9-d-hf-card",
+            "o9-d-hf-spaces",
+            "o9-d-hf-collection",
+            "o9-d-hf-discussion"
+          ],
+          "supports": "资源作者、组织编辑与讨论参与者的分工，代码更新触发构建及问题回到资源仓库的机制；不证明每个仓库都持续有人维护。"
+        },
+        {
+          "dataFile": "site/lib/market-content-forms.json",
+          "sourceIds": [
+            "v15-r-neomme",
+            "v15-hf-directory",
+            "v15-hf-spaces"
+          ],
+          "supports": "2026-09-10读取的NeoMME合集实例、按任务筛选的Spaces目录，以及应用与源码权限区别；未运行其中资源。"
+        },
+        {
+          "dataFile": "site/lib/audience-research.json",
+          "sourceIds": [
+            "P25-huggingface-s5",
+            "P25-huggingface-s7",
+            "P25-huggingface-s9",
+            "P25-huggingface-s10",
+            "P25-huggingface-s12"
+          ],
+          "recordIds": [
+            "P25-huggingface-u1",
+            "P25-huggingface-u3",
+            "P25-huggingface-u5",
+            "P25-huggingface-u6",
+            "P25-huggingface-u8"
+          ],
+          "supports": "2025—2026年的使用与付费自述、公开Demo访问问题、2025-09-23适配Gradio 5的演示发布说明。2026-09-10复核；未核账单、复现替代应用或确认原求助者成功。"
+        },
+        {
+          "dataFile": "site/lib/business-data.json",
+          "sourceIds": [
+            "bc-hf-price",
+            "bc-hf-billing",
+            "bc-hf-enterprise",
+            "v7-hf-billing-source"
+          ],
+          "supports": "个人订阅、组织计划、计算、存储及推理服务的收费对象与边界。动态页面于2026-09-09读取，未把标价当成交价或收入。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "o9-d-hf-card",
+          "title": "Model Cards",
+          "url": "https://huggingface.co/docs/hub/model-cards",
+          "date": "未标注独立更新日",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v15-hf-spaces",
+          "title": "Spaces Overview",
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "date": "未标注（持续更新）",
+          "accessedAt": null,
+          "dataFile": "site/lib/market-content-forms.json"
+        },
+        {
+          "id": "o9-d-hf-collection",
+          "title": "Collections",
+          "url": "https://huggingface.co/docs/hub/collections",
+          "date": "未标注独立更新日",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "o9-d-hf-discussion",
+          "title": "Pull Requests and Discussions",
+          "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
+          "date": "未标注独立更新日",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/platform-operations.json"
+        },
+        {
+          "id": "v15-r-neomme",
+          "title": "NeoMME Collection",
+          "url": "https://huggingface.co/collections/Hcompany/neomme",
+          "date": "动态资源页",
+          "accessedAt": null,
+          "dataFile": "site/lib/market-content-forms.json"
+        },
+        {
+          "id": "v15-hf-directory",
+          "title": "Spaces：Image Classification目录",
+          "url": "https://huggingface.co/spaces?filter=image-classification",
+          "date": "未标注（动态目录）",
+          "accessedAt": null,
+          "dataFile": "site/lib/market-content-forms.json"
+        },
+        {
+          "id": "P25-huggingface-s5",
+          "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+          "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+          "date": "2025-09-15",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-huggingface-s7",
+          "title": "PRO订阅后ZeroGPU配额问题",
+          "url": "https://discuss.huggingface.co/t/pro-plan-issue-zerogpu-quota-not-updated-after-subscription/168001",
+          "date": "2025-09-01",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-huggingface-s9",
+          "title": "充值后仍超过PRO GPU额度",
+          "url": "https://discuss.huggingface.co/t/getting-you-have-exceeded-your-pro-gpu-quota-error-even-with-credits-loaded/174850",
+          "date": "2026-03-31至2026-07-17",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-huggingface-s10",
+          "title": "公开Demo访问与本地替代",
+          "url": "https://discuss.huggingface.co/t/pro-account-getting-gpu-quota-exceeded-when-calling-for-hf-provided-url/154104",
+          "date": "2025-05-08至2025-05-10",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "P25-huggingface-s12",
+          "title": "同主题：提供适配Gradio 5的演示",
+          "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446/6",
+          "date": "2025-09-23",
+          "accessedAt": "2026-09-10",
+          "dataFile": "site/lib/audience-research.json"
+        },
+        {
+          "id": "bc-hf-price",
+          "title": "Hugging Face Pricing",
+          "url": "https://huggingface.co/pricing",
+          "date": "动态价格页",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "v7-hf-billing-source",
+          "title": "Hugging Face Billing",
+          "url": "https://huggingface.co/docs/hub/billing",
+          "date": "未标发布日期；持续更新",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        },
+        {
+          "id": "bc-hf-enterprise",
+          "title": "Team & Enterprise Plans",
+          "url": "https://huggingface.co/enterprise",
+          "date": "动态页面",
+          "accessedAt": "2026-09-09",
+          "dataFile": "site/lib/business-data.json"
+        }
+      ],
+      "category": "开发资源与应用"
+    }
+  ],
+  "toolCensus": {
+    "title": "18个样本的工具支持关系",
+    "asOf": "依据截至2026-09-10已归档材料",
+    "unit": "平台或关联产品组；吐司与Tensor.Art合计1个对象。",
+    "classificationBasis": "按主要执行关系互斥归类，不按是否出现工具链接或开源代码计数。",
+    "conclusion": "12家提供平台创作执行，3家提供开发与运行能力，共15家有平台执行能力资料。另有1家同品牌关联API、1家外部工具讨论社区和1家学习合作实践组织。",
+    "categories": [
+      {
+        "kind": "creative",
+        "label": "平台创作执行",
+        "count": 12,
+        "platformIds": [
+          "liblib",
+          "runninghub",
+          "tusi",
+          "civitai",
+          "seaart",
+          "openart",
+          "nightcafe",
+          "jimeng",
+          "kling",
+          "midjourney",
+          "leonardo",
+          "runway"
+        ],
+        "definition": "平台提供图像、视频等制作、编辑或工作流执行。内容来源可以是平台、合作作者或用户。",
+        "evidence": {
+          "dataFile": "site/lib/research-framework.json",
+          "jsonPath": "countRules[kind=creative]; platforms[kind=creative]"
+        },
+        "limitation": "Civitai部分能力依据官方实现文档；不是12家全部登录实测通过，也不代表全部模型由平台自研。"
+      },
+      {
+        "kind": "developer",
+        "label": "平台开发与运行",
+        "count": 3,
+        "platformIds": [
+          "huggingface",
+          "modelscope",
+          "dify"
+        ],
+        "definition": "提供应用构建、运行环境、托管或推理服务，用户可能另行使用外部模型或算力。",
+        "evidence": {
+          "dataFile": "site/lib/research-framework.json",
+          "jsonPath": "countRules[kind=developer]; platforms[kind=developer]"
+        },
+        "limitation": "提供运行能力不代表所有社区用户付费，第三方模型和云账单不直接归入平台收入。"
+      },
+      {
+        "kind": "associated",
+        "label": "同品牌关联API",
+        "count": 1,
+        "platformIds": [
+          "waytoagi"
+        ],
+        "definition": "已确认同品牌同域API入口与计费文档，社区同时有知识和外部工具目录。",
+        "evidence": {
+          "dataFile": "site/lib/research-framework.json",
+          "jsonPath": "countRules[kind=associated]; platforms[id=waytoagi]"
+        },
+        "limitation": "API经营主体与社区收入归属未确认，不合并为社区直营执行或已验证变现。"
+      },
+      {
+        "kind": "discussion",
+        "label": "讨论与外部工具",
+        "count": 1,
+        "platformIds": [
+          "linuxdo"
+        ],
+        "definition": "论坛提供讨论、身份与贡献相关基础设施，成员或第三方提供工具和服务。",
+        "evidence": {
+          "dataFile": "site/lib/research-framework.json",
+          "jsonPath": "countRules[kind=discussion]; platforms[id=linuxdo]"
+        },
+        "limitation": "Connect、Credit和成员API不能合计为论坛自营生成服务；未确认不等于断言没有任何AI工具。"
+      },
+      {
+        "kind": "learning",
+        "label": "学习与合作实践",
+        "count": 1,
+        "platformIds": [
+          "datawhale"
+        ],
+        "definition": "组织教程、代码、作业与答疑，实践可使用本地或合作环境。",
+        "evidence": {
+          "dataFile": "site/lib/research-framework.json",
+          "jsonPath": "countRules[kind=learning]; platforms[id=datawhale]"
+        },
+        "limitation": "未确认统一自营AIGC执行服务。免费课程或开源代码均不能直接证明组织收入情况。"
+      }
+    ],
+    "allPlatformIds": [
+      "liblib",
+      "runninghub",
+      "tusi",
+      "civitai",
+      "seaart",
+      "openart",
+      "nightcafe",
+      "jimeng",
+      "kling",
+      "midjourney",
+      "leonardo",
+      "runway",
+      "waytoagi",
+      "datawhale",
+      "huggingface",
+      "modelscope",
+      "linuxdo",
+      "dify"
+    ],
+    "countLimitations": [
+      "这18家是按研究需要选择的样本，不用于估算中国或全球AI社区的工具化比例。",
+      "平台有执行能力、执行服务收费、社区促进付款是三个不同问题；15家的计数只回答第一项。",
+      "图像、视频、GPU时间、应用工作区、许可和会员均可能收费，不能统一称为出售文本Token。",
+      "平台入口、自研模型、外部供应商和成员资源分别记录；工具收入也不直接等于社区贡献或利润。",
+      "吐司与Tensor.Art只计1个对象，但站点规则、权益、账户互通和实操结果仍分开。"
+    ],
+    "evidenceDataFile": "site/lib/research-framework.json",
+    "platforms": [
+      {
+        "id": "liblib",
+        "name": "LiblibAI",
+        "kind": "creative",
+        "execution": "平台提供图像、视频和工作流运行；模型与方法可来自作者及外部供应方。",
+        "limit": "部分动态页面正文读取不足，路径结合此前报告样本；未取得社区带来的付费增量、作者收入分布或利润。",
+        "sources": [
+          {
+            "id": "framework-liblib-1",
+            "title": "会员与生成权益",
+            "url": "https://insight.liblib.art/membershipInvitationBonus",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-liblib-2",
+            "title": "原创工作流授权销售协议",
+            "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-liblib-3",
+            "title": "API服务协议",
+            "url": "https://www.liblib.art/activities/API-Service-Agreement",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "runninghub",
+        "name": "RunningHub",
+        "kind": "creative",
+        "execution": "云端ComfyUI、AI应用、模型与工作流API。",
+        "limit": "共享API计费已核；标准模型页面超时，不引用当期精确价格。没有完整成功率、续费或社区收入归因。",
+        "sources": [
+          {
+            "id": "framework-runninghub-1",
+            "title": "共享API计价",
+            "url": "https://www.runninghub.cn/enterprise-api/sharedApi",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runninghub-2",
+            "title": "创作者奖励规则",
+            "url": "https://www.runninghub.cn/creator-reward",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runninghub-3",
+            "title": "可运行应用样本",
+            "url": "https://www.runninghub.cn/ai-detail/1966722305902718977",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "tusi",
+        "name": "吐司 / Tensor.Art",
+        "kind": "creative",
+        "execution": "模型生成、AI Tools、工作流与画布。",
+        "limit": "吐司2026-06-01停止旧激励，Tensor.Art于07-22收窄部分奖励到Pro使用；不能合并成同一政策，也未证实新政策改善作者留存或利润。",
+        "sources": [
+          {
+            "id": "framework-tusi-1",
+            "title": "吐司创作者激励调整",
+            "url": "https://tusi.cn/articles/1000707189326777005",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-tusi-2",
+            "title": "Tensor.Art创作者政策调整",
+            "url": "https://tensor.art/articles/1021600128873589993",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-tusi-3",
+            "title": "吐司Canvas更新",
+            "url": "https://tusi.cn/updates",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "civitai",
+        "name": "Civitai",
+        "kind": "creative",
+        "execution": "官方实现文档记载站内生成器与Remix；生产页面访问受限。",
+        "limit": "这里统计的是官方文档支持的产品能力，未将实现文档当成所有功能线上可用的证明；现行购买资格、覆盖范围和社区收入未知。",
+        "sources": [
+          {
+            "id": "framework-civitai-1",
+            "title": "官方实现文档：生成与引导",
+            "url": "https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-civitai-2",
+            "title": "官方实现文档：资源商业化",
+            "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-civitai-3",
+            "title": "官方实现文档：会员",
+            "url": "https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "seaart",
+        "name": "SeaArt",
+        "kind": "creative",
+        "execution": "图像、视频、训练、任务应用等平台工具。",
+        "limit": "商城超时，不把帮助页的无限使用描述当现行全模型承诺；内容多不代表各类型都有稳定UGC供给。",
+        "sources": [
+          {
+            "id": "framework-seaart-1",
+            "title": "基础页面与内容类型",
+            "url": "https://docs.seaart.ai/guide-1/1-seaart-ai-basic-page",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-seaart-2",
+            "title": "模型与Remix",
+            "url": "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-6-models",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-seaart-3",
+            "title": "模型训练说明",
+            "url": "https://docs.seaart.ai/guide-1/3-advanced-guide/3-2-lora-training-advance/image-training/quick-training-guide",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "openart",
+        "name": "OpenArt",
+        "kind": "creative",
+        "execution": "当前官网提供图像、视频、音频、编辑、Chat和Director等工具。",
+        "limit": "旧/workflows/home重定向到/home。旧索引不能证明工作流目录当前开放或可运行；合作作者计划也不代表普通用户普遍获酬。",
+        "sources": [
+          {
+            "id": "framework-openart-1",
+            "title": "当前工作台",
+            "url": "https://openart.ai/home",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-openart-2",
+            "title": "价格与权益",
+            "url": "https://openart.ai/pricing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-openart-3",
+            "title": "OpenArtist合作计划",
+            "url": "https://openart.ai/program/openartist",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-openart-4",
+            "title": "旧工作流入口（重定向）",
+            "url": "https://openart.ai/workflows/home",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "nightcafe",
+        "name": "NightCafe",
+        "kind": "creative",
+        "execution": "图像/视频生成、演化、局部修改、模型训练。",
+        "limit": "社区活动与工具相连的规则已确认；未取得活动带来的留存或订阅提升，指定模型无限生成仍有限制。",
+        "sources": [
+          {
+            "id": "framework-nightcafe-1",
+            "title": "成员挑战规则",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-nightcafe-2",
+            "title": "Evolve与局部修改",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-nightcafe-3",
+            "title": "PRO方案",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "jimeng",
+        "name": "即梦",
+        "kind": "creative",
+        "execution": "图像/视频生成、智能画布和多图层编辑。",
+        "limit": "确认入口和2026-08-10生效付费协议，未核全部同款继承字段和成功率；没有社区收入归因。",
+        "sources": [
+          {
+            "id": "framework-jimeng-1",
+            "title": "官网创作与同款入口",
+            "url": "https://jimeng.jianying.com/",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-jimeng-2",
+            "title": "付费服务协议",
+            "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "kling",
+        "name": "可灵",
+        "kind": "creative",
+        "execution": "图像、视频、声音、特效与制作能力；企业API。",
+        "limit": "产品收入披露不能证明社区带来多少收入；会员/API占比、独立利润和作品社区付费提升未核实。",
+        "sources": [
+          {
+            "id": "framework-kling-1",
+            "title": "付费条款",
+            "url": "https://kling.ai/docs/payment-policy",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-kling-2",
+            "title": "作者专题与工具用途",
+            "url": "https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "midjourney",
+        "name": "Midjourney",
+        "kind": "creative",
+        "execution": "网页生成、编辑、变体、放大与图生视频。",
+        "limit": "站外交流不等于网站具备完整讨论社区；付费GPU时间不等于用户等待时长或成品数量，社区增量未披露。",
+        "sources": [
+          {
+            "id": "framework-midjourney-1",
+            "title": "网页创作",
+            "url": "https://docs.midjourney.com/hc/en-us/articles/33390732264589-Creating-on-Web",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-midjourney-2",
+            "title": "Moodboards",
+            "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-midjourney-3",
+            "title": "套餐对照",
+            "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "leonardo",
+        "name": "Leonardo.Ai",
+        "kind": "creative",
+        "execution": "图像/视频生成、编辑、Canvas和Blueprints。",
+        "limit": "当前官方文档仍把自建、社区分享Blueprint及相关API列为后续能力；不能把平台现成Blueprint算成开放UGC供给。",
+        "sources": [
+          {
+            "id": "framework-leonardo-1",
+            "title": "价格与产品权益",
+            "url": "https://www.leonardo.ai/pricing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-leonardo-2",
+            "title": "公开作品后续使用",
+            "url": "https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-leonardo-3",
+            "title": "Blueprints当前能力",
+            "url": "https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "runway",
+        "name": "Runway",
+        "kind": "creative",
+        "execution": "视频/图像/音频制作、Workflow、App与API。",
+        "limit": "Workflow链接可复制不等于公开社区目录或交易市场；仅输入资产随链接共享，节点输出不共享，企业账户受公开分享设置限制。尚未确认全站公开UGC模板交易。",
+        "sources": [
+          {
+            "id": "framework-runway-1",
+            "title": "订阅与权益",
+            "url": "https://runway.com/pricing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runway-2",
+            "title": "Workflow分享与复制",
+            "url": "https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runway-3",
+            "title": "Workflow发布为App",
+            "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runway-4",
+            "title": "API计价",
+            "url": "https://docs.dev.runwayml.com/guides/pricing/",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-runway-5",
+            "title": "Runway Academy",
+            "url": "https://academy.runwayml.com/",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "waytoagi",
+        "name": "WaytoAGI",
+        "kind": "associated",
+        "execution": "新增确认：同品牌同域llm.waytoagi.com存在API服务和完整计费文档。应标为‘知识社区＋关联API服务’，不能继续写成纯知识导航/无工具。是否与社区同一经营主体尚未核实。",
+        "limit": "About主站被robots阻断、增长站未成功重读；以先前快照的训练营/企业服务作为历史补充时应注明。API运营主体、收入归属、供给真实性与稳定性、收入占比仍未核实。 目录中大量工具和Agents为第三方产品；同域API文档也指导在外部客户端中执行。工具被收录并不代表自营。",
+        "sources": [
+          {
+            "id": "framework-waytoagi-1",
+            "title": "WayToAGI API文档",
+            "url": "https://llm.waytoagi.com/docs",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-waytoagi-2",
+            "title": "WayToAGI AI Websites目录",
+            "url": "https://www.waytoagi.com/en/sites?tag=38",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-waytoagi-3",
+            "title": "WaytoAGI知识库与工具首页",
+            "url": "https://www.waytoagi.com/zh",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "datawhale",
+        "name": "Datawhale",
+        "kind": "learning",
+        "execution": "未确认统一自营的AIGC生成或算力服务；已确认开源教程/代码及自有AILC学习组织入口。‘只有文档’也不准确，因为它组织实操和代码贡献。",
+        "limit": "不能因有开源代码就计为收费工具，也不能因课程免费就断言组织毫无商业合作或现金收入。 实操可在本地或合作云中完成。例如，2026年6月已结束的hello-rocm共学记录列有AMD Radeon Cloud免费GPU支持，而Datawhale组织教材、课表、助教、作业与证书。",
+        "sources": [
+          {
+            "id": "framework-datawhale-1",
+            "title": "Datawhale官方GitHub组织",
+            "url": "https://github.com/datawhalechina",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-datawhale-2",
+            "title": "hello-rocm组队学习官方文档",
+            "url": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-datawhale-3",
+            "title": "Datawhale组织治理",
+            "url": "https://github.com/datawhalechina/whale-governance",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "huggingface",
+        "name": "Hugging Face",
+        "kind": "developer",
+        "execution": "已确认：Spaces、Inference Endpoints、Inference Providers、Jobs等平台运行/托管/推理服务。",
+        "limit": "官方明确高级功能和计算服务是商业化方式；各收入占比、实际付费转化和净收入未披露。不讨论历史报告中的融资或并购材料。 模型、数据、演示可由外部贡献者发布；部分推理和云方案由合作供应商承接。第一方产品入口不代表全部模型或算力由平台自研。",
+        "sources": [
+          {
+            "id": "framework-huggingface-1",
+            "title": "Spaces Overview",
+            "url": "https://huggingface.co/docs/hub/spaces-overview",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-huggingface-2",
+            "title": "Billing",
+            "url": "https://huggingface.co/docs/hub/billing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-huggingface-3",
+            "title": "Pricing",
+            "url": "https://huggingface.co/pricing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "modelscope",
+        "name": "ModelScope 魔搭",
+        "kind": "developer",
+        "execution": "已确认：Notebook、创空间及模型推理API等社区内运行能力。xGPU文档当前正文抓取为空，不据此延伸具体配额。",
+        "limit": "云生态收益或开发者付费转化是合理可能性，社区直接收入、资源补贴成本及向云的归因转化均未核实。 阿里及其他机构共同建设；模型、工具和硬件资源来自多方，开发者可连接外部商业模型服务。",
+        "sources": [
+          {
+            "id": "framework-modelscope-1",
+            "title": "魔搭署名的AI开源生态报告",
+            "url": "https://www.wicinternet.org/pdf/GlobalValueandPracticalExplorationoftheAIOpenSourceEcosystemUnleashingtheFlywheelEffectandForgingaBornGlobalConsensus.pdf",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-modelscope-2",
+            "title": "魔搭Notebook功能与实操资源介绍",
+            "url": "https://www.modelscope.cn/learn/435254",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-modelscope-3",
+            "title": "免费模型推理API发布说明",
+            "url": "https://community.modelscope.cn/675262372db35d1195183bdb.html",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "linuxdo",
+        "name": "LINUX DO",
+        "kind": "discussion",
+        "execution": "明确有Connect等社区基础设施，但未确认论坛提供自营AIGC生成/工作流执行工具。不能把身份登录、积分系统与生成工具合并计数。",
+        "limit": "订阅标价不等于成交收入；未取得订阅人数、续费、分项收入或论坛自营生成服务财务。需要保留‘未确认’，不能绝对宣称没有任何AI工具。 社区成员和推广商家提供公益API、商业中转及其他工具；部分推广类别要求接入Connect。接入社区账号不等于平台直营或平台担保。",
+        "sources": [
+          {
+            "id": "framework-linuxdo-1",
+            "title": "LINUX DO社区细则",
+            "url": "https://linux.do/guidelines",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-linuxdo-2",
+            "title": "LINUX DO订阅入口",
+            "url": "https://linux.do/s",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-linuxdo-3",
+            "title": "LINUX DO探索地图",
+            "url": "https://linux.do/t/topic/1566233?tl=zh_CN",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      },
+      {
+        "id": "dify",
+        "name": "Dify",
+        "kind": "developer",
+        "execution": "已确认：Cloud及可自行部署的应用/Agent/工作流构建和运行环境。",
+        "limit": "明确销售工作区和企业服务，但不应把所有经过Dify的模型调用金额算作Dify收入；现有报告‘收入来自长期运行’应表述为收费入口/交付价值，避免无财务材料的收入归因。 模型供应商、第三方插件及实施伙伴参与。用户可接入自己的模型API凭证，模型账单可由模型供应商收取。",
+        "sources": [
+          {
+            "id": "framework-dify-1",
+            "title": "Dify Cloud Pricing",
+            "url": "https://dify.ai/pricing/dify-cloud",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-dify-2",
+            "title": "Dify Pricing",
+            "url": "https://dify.ai/pricing",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          },
+          {
+            "id": "framework-dify-3",
+            "title": "Dify官方README",
+            "url": "https://raw.githubusercontent.com/langgenius/dify/main/README.md",
+            "date": "日期见原页；档案核对截至2026-09-10",
+            "dataFile": "site/lib/research-framework.json"
+          }
+        ]
+      }
+    ]
+  },
+  "discussionQuestions": [
+    "对于同一份内容，我们愿意保证到哪一步：准确说明、完整材料、实际复用，还是持续运行？每种承诺分别由谁承担后续工作？",
+    "当用户已经能在MakeNow或外部工具完成制作时，哪些筛选、解释、反馈与交流值得社区持续提供？我们需要什么记录才能判断这些投入的价值？",
+    "平台长期供给中，哪些制作和维护工作必须稳定保有，哪些适合按内容包合作？在工时与实际交付记录补齐前，哪些产量、活动频率或服务时效不宜承诺？"
+  ],
+  "appendices": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "homepage": "https://www.liblib.art/"
+    },
+    {
+      "id": "runninghub",
+      "name": "RunningHub",
+      "homepage": "https://www.runninghub.cn/"
+    },
+    {
+      "id": "tusi",
+      "name": "吐司 / Tensor.Art",
+      "homepage": "https://tusi.cn/"
+    },
+    {
+      "id": "civitai",
+      "name": "Civitai",
+      "homepage": "https://civitai.com/"
+    },
+    {
+      "id": "seaart",
+      "name": "SeaArt",
+      "homepage": "https://www.seaart.ai/"
+    },
+    {
+      "id": "openart",
+      "name": "OpenArt",
+      "homepage": "https://openart.ai/"
+    },
+    {
+      "id": "nightcafe",
+      "name": "NightCafe",
+      "homepage": "https://creator.nightcafe.studio/"
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦 AI",
+      "homepage": "https://jimeng.jianying.com/"
+    },
+    {
+      "id": "kling",
+      "name": "可灵 Kling AI",
+      "homepage": "https://kling.ai/"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "homepage": "https://www.midjourney.com/"
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.Ai",
+      "homepage": "https://leonardo.ai/"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "homepage": "https://runway.com/"
+    },
+    {
+      "id": "waytoagi",
+      "name": "WaytoAGI 通往 AGI 之路",
+      "homepage": "https://www.waytoagi.com/"
+    },
+    {
+      "id": "datawhale",
+      "name": "Datawhale",
+      "homepage": "https://www.datawhale.cn/"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "homepage": "https://huggingface.co/"
+    },
+    {
+      "id": "modelscope",
+      "name": "魔搭 ModelScope",
+      "homepage": "https://www.modelscope.cn/"
+    },
+    {
+      "id": "linuxdo",
+      "name": "LINUX DO",
+      "homepage": "https://linux.do/"
+    },
+    {
+      "id": "dify",
+      "name": "Dify 社区",
+      "homepage": "https://dify.ai/"
+    }
+  ]
+}

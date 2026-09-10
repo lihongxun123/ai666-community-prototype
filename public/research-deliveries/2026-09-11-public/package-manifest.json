@@ -1,0 +1,823 @@
+{
+  "reportDate": "2026-09-11",
+  "preparedAt": "2026-09-10",
+  "evidenceThrough": "2026-09-10",
+  "edition": "public",
+  "files": [
+    {
+      "path": "appendix/civitai.html",
+      "bytes": 54783,
+      "sha256": "bee5965f3b71318a62c2afd12b4164b054d5f86ede438d96c6f320d371c51c37"
+    },
+    {
+      "path": "appendix/datawhale.html",
+      "bytes": 54354,
+      "sha256": "2b24d7e043d1cb568703d9c51e586f4eedda7cc53897a6d8ddb9c5a09ac6c777"
+    },
+    {
+      "path": "appendix/dify.html",
+      "bytes": 58216,
+      "sha256": "cc40d0abf9af6978d935d71a331e73d849003b02868ea1119c26fd86475d3f0d"
+    },
+    {
+      "path": "appendix/huggingface.html",
+      "bytes": 59905,
+      "sha256": "31a72666b9f1f803dc83e24044932cc6bc98fb13e77ff16e047484edc41d6496"
+    },
+    {
+      "path": "appendix/jimeng.html",
+      "bytes": 53497,
+      "sha256": "42b0d490adeca05bd7f7575c8c3ab63c4fbef19bf19d4e61ad001a8dfe8ebbe0"
+    },
+    {
+      "path": "appendix/kling.html",
+      "bytes": 57431,
+      "sha256": "778ee49a9c7daba587ffdbd95653cefd8434274cd0133caba7308cbe96ef2f4f"
+    },
+    {
+      "path": "appendix/leonardo.html",
+      "bytes": 52648,
+      "sha256": "b056df5b974895a7b1ae3e906d4fbecb879cf356c34e89afa618663cc9b32468"
+    },
+    {
+      "path": "appendix/liblib.html",
+      "bytes": 52470,
+      "sha256": "b11a7f59f6407e7cdf6f77ceef6a17fee9e3ee198348652c6891a08f74bae1c3"
+    },
+    {
+      "path": "appendix/linuxdo.html",
+      "bytes": 62098,
+      "sha256": "56a8d97ebae4e35ae7ad533d91bcbc8303e236fec2971898104c12a16be6129e"
+    },
+    {
+      "path": "appendix/midjourney.html",
+      "bytes": 51662,
+      "sha256": "fb9668756b95e1eb974166e8ef4941e565b9639ac03313623b28b2657250dcaa"
+    },
+    {
+      "path": "appendix/modelscope.html",
+      "bytes": 53770,
+      "sha256": "bf16a40b3ebe28e0b790a303b24ff2c05d6c55192a35d897e1c0bbbd6d72e17a"
+    },
+    {
+      "path": "appendix/nightcafe.html",
+      "bytes": 52666,
+      "sha256": "ae1570852277e512fd0fcd76c714e980218393b84457a4c15293fd4ddd1ea38d"
+    },
+    {
+      "path": "appendix/openart.html",
+      "bytes": 55133,
+      "sha256": "f00651d366ff2e23463a4c279d78ce3f23e60e99233296bacfc552d495a0a273"
+    },
+    {
+      "path": "appendix/runninghub.html",
+      "bytes": 48982,
+      "sha256": "a166d6ec22bb606895e776a64e8f7ee768c2fd6a94c0c0d58e4fd635dd3e8b2f"
+    },
+    {
+      "path": "appendix/runway.html",
+      "bytes": 54094,
+      "sha256": "2898eb14b5212e48e4d43a2586a26a5979194c94c34c34c33fc754c1f4b77ce3"
+    },
+    {
+      "path": "appendix/seaart.html",
+      "bytes": 54158,
+      "sha256": "0d84f327d38994175e98ac74f0f096e55298e848aa1b0d9bd31e5f080d62d599"
+    },
+    {
+      "path": "appendix/tusi.html",
+      "bytes": 62232,
+      "sha256": "d7b363e13727dff6d6887fab83c4e44e06ecbc9282433fd51ef0611f23327ebc"
+    },
+    {
+      "path": "appendix/waytoagi.html",
+      "bytes": 50266,
+      "sha256": "d652b0613b1aba8be968eec19f140736e3d86efa2328b7a4d5888b4bd3232b44"
+    },
+    {
+      "path": "assets/report.css",
+      "bytes": 30408,
+      "sha256": "9f42ae157e3b88c5379b2e733f7ed830d7c7ec62f82bee98ceffcfb0fe532aff"
+    },
+    {
+      "path": "assets/research-images/civitai-evidence.png",
+      "bytes": 50812,
+      "sha256": "cbba144450a9be9013e564d9bdaa151b49025a9e9682e6b076f988f1179a6af8"
+    },
+    {
+      "path": "assets/research-images/datawhale.png",
+      "bytes": 106082,
+      "sha256": "c8b61abd354e716347d394e5a3f85fe95e1b6f7954db14ced8a52f9fc71e6ef1"
+    },
+    {
+      "path": "assets/research-images/dify-template.jpg",
+      "bytes": 36565,
+      "sha256": "2548e3b8c7b8c68bf41eb3f5ef905f07e7a114b94c74cd4feacfb17d7412085c"
+    },
+    {
+      "path": "assets/research-images/huggingface.png",
+      "bytes": 215001,
+      "sha256": "8f4b549dba1341382b8446fed41535cad4d8aba8bb15fe9340f16832091df1a6"
+    },
+    {
+      "path": "assets/research-images/jimeng-input.jpg",
+      "bytes": 47452,
+      "sha256": "3fdb1a64a0068ed0df3bdbf2c15b169903c7b90c74f231fec78f7cbd8587a4af"
+    },
+    {
+      "path": "assets/research-images/jimeng-result.jpg",
+      "bytes": 24433,
+      "sha256": "130573285267a58711ce6a3b76cb8380835d74a0d2eed436ae9b7e7ad0fa25a9"
+    },
+    {
+      "path": "assets/research-images/kling-config.jpg",
+      "bytes": 51309,
+      "sha256": "01a07087bf15bb32ee4062f8e89098f189b3a356077a2700351b34087891c733"
+    },
+    {
+      "path": "assets/research-images/kling-result.jpg",
+      "bytes": 31171,
+      "sha256": "f2fc330a15bb8bfd848c67eff450429ec8910c7692b729840ff0051774a61b54"
+    },
+    {
+      "path": "assets/research-images/leonardo.png",
+      "bytes": 1286923,
+      "sha256": "55fdec610f037242f673daf7a99c4e4ad868dc9194afc33e1ac8c84aae14e7d4"
+    },
+    {
+      "path": "assets/research-images/liblib-input.jpg",
+      "bytes": 29468,
+      "sha256": "0b5180b09e57a344974fc0077f2aa25aa315c2967707464db23350e816fef559"
+    },
+    {
+      "path": "assets/research-images/linuxdo-repository.png",
+      "bytes": 98312,
+      "sha256": "9cee3f3dfff8a6a549011b86d057c403a157201de880a0c5ffecf24d256ee749"
+    },
+    {
+      "path": "assets/research-images/midjourney-rooms.png",
+      "bytes": 56748,
+      "sha256": "9a1b8e461d31794e07d98f9c5d9267646c67badb7e16df662f86912f3a2be98e"
+    },
+    {
+      "path": "assets/research-images/modelscope-app.jpg",
+      "bytes": 84853,
+      "sha256": "be6850d8fa19e1bfaec5ecaeea54a2d68d02308f7d1379d843fd3172b469e5ec"
+    },
+    {
+      "path": "assets/research-images/nightcafe-doc-retry.png",
+      "bytes": 289758,
+      "sha256": "9c0ffecb564c040ae00548400eec829a03f2b602ab98f7755df7c90687d2bb02"
+    },
+    {
+      "path": "assets/research-images/openart-result.jpg",
+      "bytes": 54469,
+      "sha256": "2693f1bab61c13f8cf545aaafbadb15ed821f222c24916f8942b5444d4ce44c3"
+    },
+    {
+      "path": "assets/research-images/openart-reuse.jpg",
+      "bytes": 55904,
+      "sha256": "f57fe407b9ef65eea486f2a2148b927a0115dc07cec4a6c53766b587e5afd3d5"
+    },
+    {
+      "path": "assets/research-images/runninghub.png",
+      "bytes": 730138,
+      "sha256": "ca4aca7b14f129bf613235ae417f138309ef8729841150ed01bcf592c909f188"
+    },
+    {
+      "path": "assets/research-images/runway-academy.png",
+      "bytes": 226570,
+      "sha256": "be4f0b98dec3bf44d092d800a00bedc8f0b660abd068c4c3abec81bcd47b88d6"
+    },
+    {
+      "path": "assets/research-images/seaart-config.jpg",
+      "bytes": 137305,
+      "sha256": "6429d20650e8762d2dd5b9257173239ecbf9b8c36df7121f6e0b4db62f8ccda8"
+    },
+    {
+      "path": "assets/research-images/tensor-config.jpg",
+      "bytes": 36122,
+      "sha256": "f3cb3fecb904fa7cd58e5e38a2abd709cd3fc197d74d8b6192a2b650a63a7c34"
+    },
+    {
+      "path": "assets/research-images/tusi-detail.jpg",
+      "bytes": 27339,
+      "sha256": "cd351fcec9b2dffacebd5b97a7dd5d99e38360599baaa538b6136c112768905a"
+    },
+    {
+      "path": "assets/research-images/tusi-library.jpg",
+      "bytes": 40229,
+      "sha256": "df51c361de760f6c8f4b60edfe6e9c0f523dc5c64ba5ea5bccdb9dff25ba0f6b"
+    },
+    {
+      "path": "assets/research-images/tusi-result.jpg",
+      "bytes": 11353,
+      "sha256": "0fdee408fa766beadcb009e344748fee90ccdd23610e3266ef0482efb4a71973"
+    },
+    {
+      "path": "assets/research-images/v10/huggingface-space-card.jpg",
+      "bytes": 16458,
+      "sha256": "c86c402cd0296d1e161a327d7199b2949869691783ac7d4f49756917ce48e4ef"
+    },
+    {
+      "path": "assets/research-images/v10/huggingface-space-detail.jpg",
+      "bytes": 129656,
+      "sha256": "2ca861daf2f6a533dc7e9d35371ee523a07ad0e3a2a7cd2562853e9edf214f59"
+    },
+    {
+      "path": "assets/research-images/v10/liblib-template-card.jpg",
+      "bytes": 29256,
+      "sha256": "6df318248ec601304e07a6b8f8892866566480a451dc322596dd1814851ec210"
+    },
+    {
+      "path": "assets/research-images/v10/liblib-template-detail.jpg",
+      "bytes": 113621,
+      "sha256": "bd2f54fc99c080920901fb21d18eb2ed5d9bc2a5343f9eb3d547da55208ee0c3"
+    },
+    {
+      "path": "assets/research-images/v10/linuxdo-topic-card.jpg",
+      "bytes": 12335,
+      "sha256": "13318c5d08952b096d399d4202eedc9fb3cf303adb0b0f5cf5b5f43d70af6e48"
+    },
+    {
+      "path": "assets/research-images/v10/linuxdo-topic-detail.jpg",
+      "bytes": 73010,
+      "sha256": "83ee3b6d9fb9819fae1358f250f93eb47cfeacb109e90a88b35cab6812909a1e"
+    },
+    {
+      "path": "assets/research-images/v10/runninghub-workflow-card.jpg",
+      "bytes": 23274,
+      "sha256": "8a13a399fb854ae942c4838dd01cda788f2f7e4ba1591e2f510399df07823d0e"
+    },
+    {
+      "path": "assets/research-images/v10/runninghub-workflow-detail.jpg",
+      "bytes": 182193,
+      "sha256": "26a522b6983d180040f1873619454976ea6c0ab344200f84b831b5561ef74e43"
+    },
+    {
+      "path": "assets/research-images/v10/runway-course-card.jpg",
+      "bytes": 32346,
+      "sha256": "822979742bc0b0a325db5bb2c0433d8386b3fea126c29068c0d3be3be8db8f19"
+    },
+    {
+      "path": "assets/research-images/v10/runway-course-detail.jpg",
+      "bytes": 89097,
+      "sha256": "9576939b28e6cd80d2aad00648e1a571c34f468b9d6a8dce0120f90f3f9c7287"
+    },
+    {
+      "path": "assets/research-images/v10/tensor-work-card.jpg",
+      "bytes": 192497,
+      "sha256": "0210b04a28dbcd83fe677dc2cc86de02fbf894b7efe64f3365e2f1003cfb2fb0"
+    },
+    {
+      "path": "assets/research-images/v10/tensor-work-detail.jpg",
+      "bytes": 226771,
+      "sha256": "d8b4865622830a64c0f86421782555a5a7369c68bf09828f30d3651205a6db6e"
+    },
+    {
+      "path": "assets/research-images/waytoagi-participate.png",
+      "bytes": 71264,
+      "sha256": "8555229374abddfd79bb5d273e199cb9ca489ba04ea4e66c4dacb3fde55a98b8"
+    },
+    {
+      "path": "attachments/audience-civitai.md",
+      "bytes": 14712,
+      "sha256": "2046e5bc7ab62d3919020898443db7327b5c84266e59655cc2c9d4638b585563"
+    },
+    {
+      "path": "attachments/audience-datawhale.md",
+      "bytes": 13877,
+      "sha256": "728254f99854cddda163ce4adb7b70e16b8c71917162a00d875db1826a4d4b43"
+    },
+    {
+      "path": "attachments/audience-dify.md",
+      "bytes": 15055,
+      "sha256": "2970f41d710a3b4a68014d2f3151dbcba0c72dd08b069ad0bb65bf5ad27a4d57"
+    },
+    {
+      "path": "attachments/audience-huggingface.md",
+      "bytes": 17487,
+      "sha256": "aca8b5e5c1acc83914f8650cc60dfada8839564cb799858f9f54afc0e9b792d8"
+    },
+    {
+      "path": "attachments/audience-jimeng.md",
+      "bytes": 12999,
+      "sha256": "f65bbf279ac5b1cbb5146e82dfb4d715756946eef8a294647dd45b6d7ee14c18"
+    },
+    {
+      "path": "attachments/audience-kling.md",
+      "bytes": 14437,
+      "sha256": "a5ad6a7aa39e9ab0ed08d7fe44b4dba870b8477d2d40b306cc12aaaab3e65ded"
+    },
+    {
+      "path": "attachments/audience-leonardo.md",
+      "bytes": 15075,
+      "sha256": "5f6e21ca4fb3b3b5a0148a7d37c5f9db1c8fc065d19713db0e626328f5f4077b"
+    },
+    {
+      "path": "attachments/audience-liblib.md",
+      "bytes": 12930,
+      "sha256": "77f1d1c5743344446593637195c4dc79156b7b7e9a19e8aabf20a863e86e67f7"
+    },
+    {
+      "path": "attachments/audience-linuxdo.md",
+      "bytes": 14504,
+      "sha256": "83688d931e1680e73b7540b4d46f0262754b10c962b4fd8d658405db2c092603"
+    },
+    {
+      "path": "attachments/audience-midjourney.md",
+      "bytes": 15092,
+      "sha256": "a9e99adfe7646a2836f2780b6fd47058c15c6aef9251d309f6c115d4ad5e99ae"
+    },
+    {
+      "path": "attachments/audience-modelscope.md",
+      "bytes": 13837,
+      "sha256": "c6fc23bcd2987a3069a7c108da224f03c61e41edb8248e074f3eea79fd0393bd"
+    },
+    {
+      "path": "attachments/audience-nightcafe.md",
+      "bytes": 14828,
+      "sha256": "1cefc198508e1a36bf9f16afa5698e810690cd7b49f1fa8e8b3fa5b3ef6ae539"
+    },
+    {
+      "path": "attachments/audience-openart.md",
+      "bytes": 14872,
+      "sha256": "b42b62993024a6c3ce52bd17a67c3429d317d7460e06f692c46d82d00a2d927a"
+    },
+    {
+      "path": "attachments/audience-research-data.json",
+      "bytes": 510265,
+      "sha256": "b479364e458ef7ef4e53fe3aba19c24db1aeeae66c8c2376e696e2319e920a54"
+    },
+    {
+      "path": "attachments/audience-research.json",
+      "bytes": 510265,
+      "sha256": "b479364e458ef7ef4e53fe3aba19c24db1aeeae66c8c2376e696e2319e920a54"
+    },
+    {
+      "path": "attachments/audience-research.md",
+      "bytes": 278232,
+      "sha256": "057a23595b683f1e1dca55f75f681b0a371a393243f4ae9910e93d79dcd50ed3"
+    },
+    {
+      "path": "attachments/audience-runninghub.md",
+      "bytes": 13466,
+      "sha256": "24cbdf4aa9dc469b7d605d96d529dad3fc3925b86cebe5d032233f7b36a610a3"
+    },
+    {
+      "path": "attachments/audience-runway.md",
+      "bytes": 14421,
+      "sha256": "fa4c4d9eef5c6e047fc0dd1b4ad8a1977e8e2b9806eb06501da79ec8ea125a14"
+    },
+    {
+      "path": "attachments/audience-seaart.md",
+      "bytes": 13550,
+      "sha256": "0fd73707ee78b4c3aaab23100725eedc8f5bd8a9e46d6488ca1a95ba77a93264"
+    },
+    {
+      "path": "attachments/audience-tusi.md",
+      "bytes": 13764,
+      "sha256": "9e48b35c863381c7cd53cc42e482a1022377397cbc8d483f1d5a41d28375f302"
+    },
+    {
+      "path": "attachments/audience-waytoagi.md",
+      "bytes": 13072,
+      "sha256": "4b44bd2dfd5e8cbaef45ec0d60df11e69850dc5f40887a8e3c767da7febbc84b"
+    },
+    {
+      "path": "attachments/business-data.json",
+      "bytes": 173887,
+      "sha256": "2784ebc9a70ec49f499ecc894590205a56c4c5fd9a6bb8f15fee72c14e8f23e1"
+    },
+    {
+      "path": "attachments/china-ai-payers-data.json",
+      "bytes": 22603,
+      "sha256": "daf9fc9d7fc94258465b4009a07b526e130f4627e732c5c985afe83b35b98b40"
+    },
+    {
+      "path": "attachments/china-ai-payers.md",
+      "bytes": 8883,
+      "sha256": "a5dc2915159b52b5eba62fec221be33fb84b832bdb683b3656f9dfd1b11953d9"
+    },
+    {
+      "path": "attachments/china-ai-users-data.json",
+      "bytes": 242216,
+      "sha256": "9bd3e16fc31f85804213ee35d93b38d0f87f47a2f8a5accea6215c86dee179c8"
+    },
+    {
+      "path": "attachments/china-ai-users.json",
+      "bytes": 242216,
+      "sha256": "9bd3e16fc31f85804213ee35d93b38d0f87f47a2f8a5accea6215c86dee179c8"
+    },
+    {
+      "path": "attachments/china-ai-users.md",
+      "bytes": 82293,
+      "sha256": "810b700b08d57397427348c203782083bf018ba021388c3f4a095fcc95103b72"
+    },
+    {
+      "path": "attachments/community-research-report.md",
+      "bytes": 70856,
+      "sha256": "f4d4f484e86a5f559c1e6d936ca66aabad4ac57b58ed167d965490e9e4664e1c"
+    },
+    {
+      "path": "attachments/competitor-evidence.md",
+      "bytes": 119668,
+      "sha256": "3de7bdaeb2aad0e2291f13933c2d5e44596619f277c7fca9ef32682e2ed81e22"
+    },
+    {
+      "path": "attachments/content-delivery-supply.md",
+      "bytes": 74724,
+      "sha256": "a52d78f819a8909dfff76b8b31a676f5a80424a827d6bda505ee70dd3582ca92"
+    },
+    {
+      "path": "attachments/content-forms.md",
+      "bytes": 221135,
+      "sha256": "010903c5dc1aabdc254853ab5f5729b3a805b628eca13f3363298d7bc737c97c"
+    },
+    {
+      "path": "attachments/content-research.json",
+      "bytes": 388517,
+      "sha256": "d71ed07e89443e3f2b052a005d9f9ae08e7fc5c84c59d5013dbe4a3bddbb1ffa"
+    },
+    {
+      "path": "attachments/interview-guide.md",
+      "bytes": 13821,
+      "sha256": "81e8891857f05722ad328329e2f124bb29c45849fee3850a3fe814b83e82e97c"
+    },
+    {
+      "path": "attachments/linuxdo-login-study.md",
+      "bytes": 29444,
+      "sha256": "5b790aae31618ab1b0bb8a0d9a8113f709ab7de9b98e5ed8faee024c1b7fc5ca"
+    },
+    {
+      "path": "attachments/makenow-current.json",
+      "bytes": 11842,
+      "sha256": "ccb0c5531e80774cb35bf0468c86feba86a0fe431518b803dc9836b689f3a463"
+    },
+    {
+      "path": "attachments/market-content-forms.md",
+      "bytes": 56583,
+      "sha256": "b0c43fa4244032231c4dc7c000aba3e40b88aef0ad2004f989f7e94bf56a018c"
+    },
+    {
+      "path": "attachments/platform-operations.md",
+      "bytes": 130526,
+      "sha256": "840475b13ee6569fe7e0503903246e8f0d1143549b551b59a8204400d45d80cf"
+    },
+    {
+      "path": "attachments/platform-supply.md",
+      "bytes": 53320,
+      "sha256": "97ce04b3e1ce10424a0ba8b671bd40bc92f8f98293e9fe050904a11b6eff8c7a"
+    },
+    {
+      "path": "attachments/public-data.json",
+      "bytes": 378079,
+      "sha256": "bfd5b6249a3e3dfc0735f8c86e5ea0ced17504b41ed0dc504d2b993137ea45a9"
+    },
+    {
+      "path": "attachments/research-brief.json",
+      "bytes": 171599,
+      "sha256": "91f97271b1fd191baf2150d33e7126a072c45c4a93bddfaa7b6f4834f0d1c354"
+    },
+    {
+      "path": "attachments/research-framework.md",
+      "bytes": 38953,
+      "sha256": "33af175a525793f9a6a114ea990f899cbe5faaaef12bff5b0a7ec2142e240d57"
+    },
+    {
+      "path": "attachments/research-method.json",
+      "bytes": 4377,
+      "sha256": "2d1b31197dca55ba81d7877ee60d27ee3b6ac682ad91699d15c8c7af0260e8e0"
+    },
+    {
+      "path": "attachments/strategy-comparison.md",
+      "bytes": 114352,
+      "sha256": "d0a0558e4ae67fa257f5f9b34d2b229fe9864d0bef63f396a4a6d2f845eb0629"
+    },
+    {
+      "path": "attachments/strategy-option-a.md",
+      "bytes": 14097,
+      "sha256": "282028c2fdd360ec47b06e364c14419d83ede6f8ad2aebf5c71288b1e2ba7b15"
+    },
+    {
+      "path": "attachments/strategy-option-b.md",
+      "bytes": 14622,
+      "sha256": "34f08fb5ff2c08e2cc6ff09cd2a694528af256a3b1a6efe0a9df36ca12b94122"
+    },
+    {
+      "path": "attachments/strategy-option-c.md",
+      "bytes": 15528,
+      "sha256": "66d666b68a69be2e962f49dfa699d165974e9e233d642322afc3c5314be2d89c"
+    },
+    {
+      "path": "attachments/strategy-option-d.md",
+      "bytes": 14987,
+      "sha256": "6e27a383c576350a9415f64f0fde0627436d4ee0c04ad641d673437f562fa671"
+    },
+    {
+      "path": "main-report.md",
+      "bytes": 71014,
+      "sha256": "db3ef91da5de4b80b6add9b8e1d6c4fa66256ed482528ee25c844454e80e30c4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 569,
+      "sha256": "147329b198417e416d52719f792aa7fe99e8b8f9cc65f69001378bbe1a26f84a"
+    },
+    {
+      "path": "report.html",
+      "bytes": 130947,
+      "sha256": "565497203d221bedea8d6c118b480bc1328bde53817a80a0669a3384273d94e4"
+    },
+    {
+      "path": "research-images/civitai-evidence.png",
+      "bytes": 50812,
+      "sha256": "cbba144450a9be9013e564d9bdaa151b49025a9e9682e6b076f988f1179a6af8"
+    },
+    {
+      "path": "research-images/datawhale.png",
+      "bytes": 106082,
+      "sha256": "c8b61abd354e716347d394e5a3f85fe95e1b6f7954db14ced8a52f9fc71e6ef1"
+    },
+    {
+      "path": "research-images/dify-template.jpg",
+      "bytes": 36565,
+      "sha256": "2548e3b8c7b8c68bf41eb3f5ef905f07e7a114b94c74cd4feacfb17d7412085c"
+    },
+    {
+      "path": "research-images/huggingface.png",
+      "bytes": 215001,
+      "sha256": "8f4b549dba1341382b8446fed41535cad4d8aba8bb15fe9340f16832091df1a6"
+    },
+    {
+      "path": "research-images/jimeng-input.jpg",
+      "bytes": 47452,
+      "sha256": "3fdb1a64a0068ed0df3bdbf2c15b169903c7b90c74f231fec78f7cbd8587a4af"
+    },
+    {
+      "path": "research-images/jimeng-result.jpg",
+      "bytes": 24433,
+      "sha256": "130573285267a58711ce6a3b76cb8380835d74a0d2eed436ae9b7e7ad0fa25a9"
+    },
+    {
+      "path": "research-images/kling-config.jpg",
+      "bytes": 51309,
+      "sha256": "01a07087bf15bb32ee4062f8e89098f189b3a356077a2700351b34087891c733"
+    },
+    {
+      "path": "research-images/kling-result.jpg",
+      "bytes": 31171,
+      "sha256": "f2fc330a15bb8bfd848c67eff450429ec8910c7692b729840ff0051774a61b54"
+    },
+    {
+      "path": "research-images/leonardo.png",
+      "bytes": 1286923,
+      "sha256": "55fdec610f037242f673daf7a99c4e4ad868dc9194afc33e1ac8c84aae14e7d4"
+    },
+    {
+      "path": "research-images/liblib-input.jpg",
+      "bytes": 29468,
+      "sha256": "0b5180b09e57a344974fc0077f2aa25aa315c2967707464db23350e816fef559"
+    },
+    {
+      "path": "research-images/linuxdo-repository.png",
+      "bytes": 98312,
+      "sha256": "9cee3f3dfff8a6a549011b86d057c403a157201de880a0c5ffecf24d256ee749"
+    },
+    {
+      "path": "research-images/midjourney-rooms.png",
+      "bytes": 56748,
+      "sha256": "9a1b8e461d31794e07d98f9c5d9267646c67badb7e16df662f86912f3a2be98e"
+    },
+    {
+      "path": "research-images/modelscope-app.jpg",
+      "bytes": 84853,
+      "sha256": "be6850d8fa19e1bfaec5ecaeea54a2d68d02308f7d1379d843fd3172b469e5ec"
+    },
+    {
+      "path": "research-images/nightcafe-doc-retry.png",
+      "bytes": 289758,
+      "sha256": "9c0ffecb564c040ae00548400eec829a03f2b602ab98f7755df7c90687d2bb02"
+    },
+    {
+      "path": "research-images/openart-result.jpg",
+      "bytes": 54469,
+      "sha256": "2693f1bab61c13f8cf545aaafbadb15ed821f222c24916f8942b5444d4ce44c3"
+    },
+    {
+      "path": "research-images/openart-reuse.jpg",
+      "bytes": 55904,
+      "sha256": "f57fe407b9ef65eea486f2a2148b927a0115dc07cec4a6c53766b587e5afd3d5"
+    },
+    {
+      "path": "research-images/runninghub.png",
+      "bytes": 730138,
+      "sha256": "ca4aca7b14f129bf613235ae417f138309ef8729841150ed01bcf592c909f188"
+    },
+    {
+      "path": "research-images/runway-academy.png",
+      "bytes": 226570,
+      "sha256": "be4f0b98dec3bf44d092d800a00bedc8f0b660abd068c4c3abec81bcd47b88d6"
+    },
+    {
+      "path": "research-images/seaart-config.jpg",
+      "bytes": 137305,
+      "sha256": "6429d20650e8762d2dd5b9257173239ecbf9b8c36df7121f6e0b4db62f8ccda8"
+    },
+    {
+      "path": "research-images/tensor-config.jpg",
+      "bytes": 36122,
+      "sha256": "f3cb3fecb904fa7cd58e5e38a2abd709cd3fc197d74d8b6192a2b650a63a7c34"
+    },
+    {
+      "path": "research-images/tusi-detail.jpg",
+      "bytes": 27339,
+      "sha256": "cd351fcec9b2dffacebd5b97a7dd5d99e38360599baaa538b6136c112768905a"
+    },
+    {
+      "path": "research-images/tusi-library.jpg",
+      "bytes": 40229,
+      "sha256": "df51c361de760f6c8f4b60edfe6e9c0f523dc5c64ba5ea5bccdb9dff25ba0f6b"
+    },
+    {
+      "path": "research-images/tusi-result.jpg",
+      "bytes": 11353,
+      "sha256": "0fdee408fa766beadcb009e344748fee90ccdd23610e3266ef0482efb4a71973"
+    },
+    {
+      "path": "research-images/v10/huggingface-space-card.jpg",
+      "bytes": 16458,
+      "sha256": "c86c402cd0296d1e161a327d7199b2949869691783ac7d4f49756917ce48e4ef"
+    },
+    {
+      "path": "research-images/v10/huggingface-space-detail.jpg",
+      "bytes": 129656,
+      "sha256": "2ca861daf2f6a533dc7e9d35371ee523a07ad0e3a2a7cd2562853e9edf214f59"
+    },
+    {
+      "path": "research-images/v10/liblib-template-card.jpg",
+      "bytes": 29256,
+      "sha256": "6df318248ec601304e07a6b8f8892866566480a451dc322596dd1814851ec210"
+    },
+    {
+      "path": "research-images/v10/liblib-template-detail.jpg",
+      "bytes": 113621,
+      "sha256": "bd2f54fc99c080920901fb21d18eb2ed5d9bc2a5343f9eb3d547da55208ee0c3"
+    },
+    {
+      "path": "research-images/v10/linuxdo-topic-card.jpg",
+      "bytes": 12335,
+      "sha256": "13318c5d08952b096d399d4202eedc9fb3cf303adb0b0f5cf5b5f43d70af6e48"
+    },
+    {
+      "path": "research-images/v10/linuxdo-topic-detail.jpg",
+      "bytes": 73010,
+      "sha256": "83ee3b6d9fb9819fae1358f250f93eb47cfeacb109e90a88b35cab6812909a1e"
+    },
+    {
+      "path": "research-images/v10/runninghub-app-card.jpg",
+      "bytes": 121010,
+      "sha256": "516ec182bf58a5374ccc1e275d682bc39ed1894884b67e89d71a9bc07e3c5805"
+    },
+    {
+      "path": "research-images/v10/runninghub-app-detail.jpg",
+      "bytes": 90231,
+      "sha256": "06435a74956980388f1006f78f33b687fef3fb9ac668cb1a8a1d1a6a9e0771e3"
+    },
+    {
+      "path": "research-images/v10/runninghub-workflow-card.jpg",
+      "bytes": 23274,
+      "sha256": "8a13a399fb854ae942c4838dd01cda788f2f7e4ba1591e2f510399df07823d0e"
+    },
+    {
+      "path": "research-images/v10/runninghub-workflow-detail.jpg",
+      "bytes": 182193,
+      "sha256": "26a522b6983d180040f1873619454976ea6c0ab344200f84b831b5561ef74e43"
+    },
+    {
+      "path": "research-images/v10/runninghub-workflow-parameters.jpg",
+      "bytes": 72026,
+      "sha256": "5abd7abb7840d15771d7bfb3f4a6a4cd6d79cf3329772b9be4bb00760d9e6864"
+    },
+    {
+      "path": "research-images/v10/runway-course-card.jpg",
+      "bytes": 32346,
+      "sha256": "822979742bc0b0a325db5bb2c0433d8386b3fea126c29068c0d3be3be8db8f19"
+    },
+    {
+      "path": "research-images/v10/runway-course-detail.jpg",
+      "bytes": 89097,
+      "sha256": "9576939b28e6cd80d2aad00648e1a571c34f468b9d6a8dce0120f90f3f9c7287"
+    },
+    {
+      "path": "research-images/v10/runway-course-outline.jpg",
+      "bytes": 78384,
+      "sha256": "8001ec40808e323493ba56d9dc7256e7bd3c19bf2a23dffaee09c01a3a67e735"
+    },
+    {
+      "path": "research-images/v10/tensor-work-card.jpg",
+      "bytes": 192497,
+      "sha256": "0210b04a28dbcd83fe677dc2cc86de02fbf894b7efe64f3365e2f1003cfb2fb0"
+    },
+    {
+      "path": "research-images/v10/tensor-work-detail.jpg",
+      "bytes": 226771,
+      "sha256": "d8b4865622830a64c0f86421782555a5a7369c68bf09828f30d3651205a6db6e"
+    },
+    {
+      "path": "research-images/v10/waytoagi-prompt-card.jpg",
+      "bytes": 14462,
+      "sha256": "b85f48be1a523a941dc0ee5a46d055436dc67c9e2e3d10006277edc82689e827"
+    },
+    {
+      "path": "research-images/v10/waytoagi-prompt-detail.jpg",
+      "bytes": 72959,
+      "sha256": "1a8b53a8757d2be94639b9a496ea9891ae1cd05a449df1b1048d1dace447dee4"
+    },
+    {
+      "path": "research-images/v11-linuxdo/01-discovery.jpg",
+      "bytes": 38701,
+      "sha256": "c55813ca5179728423ee44e789d2c376819e3b5bea24efe4dc6470ddfe45f83e"
+    },
+    {
+      "path": "research-images/v11-linuxdo/02-notification-levels.jpg",
+      "bytes": 19442,
+      "sha256": "5fbbedb2e315c0af3f05f05e48c6eb45791645a7e52d97b588f6335d4580bbda"
+    },
+    {
+      "path": "research-images/v11-linuxdo/03-wiki-history.jpg",
+      "bytes": 135401,
+      "sha256": "4b57cbe3802485e399ae2c6152fbff6f8da5309e5c493320ebfc72d138e5b8ad"
+    },
+    {
+      "path": "research-images/v11-linuxdo/04-prompt-detail.jpg",
+      "bytes": 104820,
+      "sha256": "7c12e5ed655a4524ca318477d9f90257fcbf517b71419fd572b28f3b654c5a5e"
+    },
+    {
+      "path": "research-images/v11-linuxdo/05-member-results.jpg",
+      "bytes": 79688,
+      "sha256": "2edb108e9d35d8da04065f5ef5423918ad21f7fa2356418dd8270ebc3c457c3e"
+    },
+    {
+      "path": "research-images/v11-linuxdo/06-promotion.jpg",
+      "bytes": 105248,
+      "sha256": "e62cc4389e8b9c7ffaf4ddfbcea540ffef734261317957370616a00013747f39"
+    },
+    {
+      "path": "research-images/v11-linuxdo/07-subscription.jpg",
+      "bytes": 24719,
+      "sha256": "c3b63c86b714fdb68362b5d4ffeeb70ee97fe5ec03d5ac79e324967972764266"
+    },
+    {
+      "path": "research-images/v15/collection-card.jpg",
+      "bytes": 18603,
+      "sha256": "4589492c6e95311c60e6cc3dc73a6d9c04cddf968bfa6abbc2cccad01687beb4"
+    },
+    {
+      "path": "research-images/v15/collection-detail.jpg",
+      "bytes": 31647,
+      "sha256": "1fa9f98e42ddb39750ab2c5415d87d19877e67097102825fc6378783e18cb763"
+    },
+    {
+      "path": "research-images/v15/mcp-detail.jpg",
+      "bytes": 59998,
+      "sha256": "d37f8014d73ec6c9783eba3a1205ed506a4c1f77ca263dc83cf27195f5aceb4f"
+    },
+    {
+      "path": "research-images/v15/skill-detail.jpg",
+      "bytes": 64652,
+      "sha256": "4b3d64a129f57693239fcf1d2d53b4918fd22cdc6cf3a1b47c276543fb434aa1"
+    },
+    {
+      "path": "research-images/v19/public-canvas-director.jpg",
+      "bytes": 108905,
+      "sha256": "00b527a252c141f12142de00a8bb94a20e5e610015bf7a64f3ba545fe88649eb"
+    },
+    {
+      "path": "research-images/v19/public-canvas-mothers-day.jpg",
+      "bytes": 104188,
+      "sha256": "49dc341ef0f0ba04062434f81aedfa253f74817ed46989483b8c8bfda2d6cea8"
+    },
+    {
+      "path": "research-images/v20/api-image-20260617.jpg",
+      "bytes": 161037,
+      "sha256": "760d6553cc2eded3fce6e956d17b94f33a29e0a3ae2f87590a0a65d0231f7311"
+    },
+    {
+      "path": "research-images/v20/makenow-original-input.jpg",
+      "bytes": 94190,
+      "sha256": "9ff12b24ee4f7f9150abec3ae1f7b5ddfcdd87b318053f65a3c5b5c7b2429436"
+    },
+    {
+      "path": "research-images/v22/makenow-original-image-unavailable.jpg",
+      "bytes": 79346,
+      "sha256": "ea1344f568aa71f9e57baeb9ca38fb02a1761572c46c7aa790e84027911a63f8"
+    },
+    {
+      "path": "research-images/waytoagi-participate.png",
+      "bytes": 71264,
+      "sha256": "8555229374abddfd79bb5d273e199cb9ca489ba04ea4e66c4dacb3fde55a98b8"
+    }
+  ]
+}

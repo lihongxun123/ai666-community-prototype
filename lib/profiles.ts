@@ -19,7 +19,7 @@ export const profiles: Profile[] = originals.filter(p=>order.includes(p.id)).map
   p.supply='模型与工具作者供给；吐司自 2026 年 6 月停止独家／首发／Pro 创作者现金激励，Tensor.Art 另按本地公告执行。';
   p.business='吐司仍保留付费模型／小工具、运行算力返还及提现；两站账号、积分与订阅互通未验证。';
   p.repeat='保存模型、工具与素材，在下一次任务复用；补贴调整对作者持续供给的影响暂无行为数据。';
-  p.first='吐司本轮完成文生图、素材库找回和做同款；Tensor.Art 只检查模型带入和参数配置。';
+  p.first="吐司完成文生图、素材库找回和做同款；Tensor.Art 只检查模型带入和参数配置。";
   const offset=p.sources.length;
   p.sources.push(...tensor.sources);
   p.sections.push(...tensor.sections.filter(s=>!/^UI[／/]UX/.test(s.title)).map(s=>({...s,title:`Tensor.Art：${s.title}`,refs:s.refs?.map(n=>n+offset)})));
@@ -29,14 +29,15 @@ export const profiles: Profile[] = originals.filter(p=>order.includes(p.id)).map
   p.deep.ux.push('两站在本次打开的生成器中均提供模型、LoRA、ControlNet、采样、种子和参数模板。入口相近，不能据此推定账号、资源、权益或激励互通。吐司已得到样图；Tensor.Art 本次仅完成模型带入与配置检查。');
   p.deep.judgment='吐司与 Tensor.Art 按一个产品组研究，但作者激励分别执行。吐司停止部分现金激励并转向 Canvas／Agent，付费资源和运行算力返还仍保留；这提醒多元拾光，工具封装值得学，长期供给不能只靠平台补贴。';
   p.deep.sources.push({title:'吐司创作者激励调整通知',url:'https://tusi.cn/articles/1000707189326777005',date:'更新 2026-05-20；6 月 1 日生效',type:'官方',note:'明确本次调整不影响 Tensor.Art 激励；区分停止现金激励与保留付费资源、算力返还'});
-  p.deep.sections.push({title:'合并品牌研究，不合并两站规则',status:'事实',paragraphs:['吐司官方调整通知明确本次调整不影响 Tensor.Art，支持将两站作为关联产品组比较。自 6 月 1 日起停止的范围是独家、首发与 Pro 创作者现金激励；通知仍保留付费模型和小工具、运行算力返还及提现。','通知把后续投入转向 Canvas／Agent。停止部分现金补贴，不等于取消所有作者收入；同一产品组也不等于同一账号、订阅与资源互通。本轮不对未核验的互通能力作结论。'],refs:[p.deep.sources.length]});
-  p.gaps.push('本轮未验证两站账号、余额、订阅与作品是否互通；不据档案合并推定这些权益。');
+  p.deep.sections.push({title:'合并品牌研究，不合并两站规则',status:'事实',paragraphs:['吐司官方调整通知明确本次调整不影响 Tensor.Art，支持将两站作为关联产品组比较。自 6 月 1 日起停止的范围是独家、首发与 Pro 创作者现金激励；通知仍保留付费模型和小工具、运行算力返还及提现。',"通知把后续投入转向 Canvas／Agent。停止部分现金补贴，不等于取消所有作者收入；同一产品组也不等于同一账号、订阅与资源互通。不对未核验的互通能力作结论。"],refs:[p.deep.sources.length]});
+  p.gaps.push("未验证两站账号、余额、订阅与作品是否互通；不据档案合并推定这些权益。");
  }
  const offset=p.sources.length;
  p.sources.push(...p.deep.sources);
  p.sections.push(...p.deep.sections.map(s=>({...s,refs:s.refs?.map(n=>n+offset)})));
  p.thesis=p.deep.judgment;
  p.access=fieldAccess[p.id]||p.access;
+ if(p.id==='waytoagi') p.business="免费知识与学习/企业服务、关联品牌服务并存；补确认同品牌API充值计费，经营主体与社区收入归属未核。";
  for(const key of ['thesis','job','object','first','supply','repeat','business','relevance','notCopy','experiment','access'] as const)p[key]=clean(p[key]);
  p.sections=p.sections.map(s=>({...s,paragraphs:s.paragraphs.map(clean)}));
  p.gaps=p.gaps.map(clean);

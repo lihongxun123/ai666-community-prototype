@@ -1,0 +1,355 @@
+{
+  "title": "从卡片到详情：8组实际页面",
+  "capturedAt": "2026-09-09",
+  "method": "在用户已登录的Chrome中只读访问公开内容；LINUX DO和Runway Academy按未登录状态查看。每组由同一条目的列表入口进入详情，Tensor样本的入口是模型页内的例图卡片。截图仅裁切页面和遮盖头像、账号区域，未重绘界面。计数为截取时的页面展示，不代表独立用户、成功生成或稳定效果。",
+  "pairs": [
+    {
+      "id": "liblib-template",
+      "platformId": "liblib",
+      "platform": "LiblibAI",
+      "form": "图片模板",
+      "title": "电商产品商业级渲染精修",
+      "card": {
+        "file": "liblib-template-card.jpg",
+        "url": "https://www.liblib.art/",
+        "caption": "图片模型栏目内的模板卡片。封面直接呈现产品渲染用途，悬停后出现使用模板入口。",
+        "fields": [
+          "效果封面",
+          "模板及底模标签",
+          "任务标题",
+          "使用模板入口"
+        ],
+        "width": 272,
+        "height": 391,
+        "src": "/research-images/v10/liblib-template-card.jpg"
+      },
+      "detail": {
+        "file": "liblib-template-detail.jpg",
+        "url": "https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8",
+        "caption": "同一模板详情：效果图旁并列版本、基础模型、参考图数量和使用参数。",
+        "fields": [
+          "多张效果示例",
+          "推荐模型",
+          "1—4张参考图",
+          "提示词支持",
+          "收藏与使用",
+          "许可区"
+        ],
+        "width": 1200,
+        "height": 750,
+        "src": "/research-images/v10/liblib-template-detail.jpg"
+      },
+      "relationship": "首页卡片点击进入相同标题、相同资源ID的模板详情；截图封面是轮播中的不同帧。",
+      "finding": "卡片让人判断用途，详情才交代需要上传什么。模板价值取决于输入要求、说明与作者答复是否齐全，单靠效果封面无法判断。",
+      "handoff": "详情提供使用模板入口。停在说明页，未进入生成。",
+      "limits": "正文的用途声明与右侧可商用标签存在冲突，作者评论又表示可以商用；需向平台或作者确认，不能从标题或单个标签得出许可结论。角度、文字一致性限制来自作者答复，未独立测试。"
+    },
+    {
+      "id": "runninghub-workflow",
+      "platformId": "runninghub",
+      "platform": "RunningHub",
+      "form": "节点工作流",
+      "title": "一键换背景：产品图摄影",
+      "card": {
+        "file": "runninghub-workflow-card.jpg",
+        "url": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "caption": "ComfyUI精选工具中的效果卡片，标题会截断；该列表卡片未展示节点。",
+        "fields": [
+          "商品效果封面",
+          "任务标题",
+          "作者署名",
+          "星标计数"
+        ],
+        "width": 247,
+        "height": 329,
+        "src": "/research-images/v10/runninghub-workflow-card.jpg"
+      },
+      "detail": {
+        "file": "runninghub-workflow-detail.jpg",
+        "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+        "caption": "对应详情同时提供打开AI应用和运行工作流两条入口，并展示原图与效果。",
+        "fields": [
+          "原图与效果",
+          "更新时间",
+          "浏览/点赞/收藏",
+          "应用与工作流入口",
+          "作者说明"
+        ],
+        "width": 1606,
+        "height": 567,
+        "src": "/research-images/v10/runninghub-workflow-detail.jpg"
+      },
+      "extra": [
+        {
+          "file": "runninghub-workflow-parameters.jpg",
+          "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+          "caption": "同页下方继续交付关键节点、模型、ControlNet和采样参数。",
+          "width": 564,
+          "height": 680,
+          "src": "/research-images/v10/runninghub-workflow-parameters.jpg"
+        }
+      ],
+      "relationship": "从精选工具中同名商品换背景卡片进入该工作流帖子。",
+      "finding": "封面仍以结果吸引点击，但详情交付了过程材料。对普通使用者保留应用入口，对需要调整流程的人提供工作流入口，两类需求在同一资源下分流。",
+      "handoff": "可见下载、API、打开AI应用、运行工作流入口；只读取介绍与参数，未下载、运行或验证节点依赖。",
+      "limits": "详情显示2024年更新，属于较早资源；参数齐全不能证明现在仍可运行。封面、运行量和作者的效率描述均不作成功率证据。"
+    },
+    {
+      "id": "runninghub-app",
+      "platformId": "runninghub",
+      "platform": "RunningHub",
+      "form": "封装后的AI应用",
+      "title": "文生视频应用：支持30秒输出（作者标题）",
+      "card": {
+        "file": "runninghub-app-card.jpg",
+        "url": "https://www.runninghub.ai/zh-cn/ai-apps",
+        "caption": "同一栏目中的应用卡片。对应样本为第4张白色封面，署名BKZ-AIGC。",
+        "fields": [
+          "栏目主题",
+          "效果封面",
+          "应用标题",
+          "作者署名",
+          "星标"
+        ],
+        "width": 1780,
+        "height": 400,
+        "src": "/research-images/v10/runninghub-app-card.jpg"
+      },
+      "detail": {
+        "file": "runninghub-app-detail.jpg",
+        "url": "https://www.runninghub.ai/zh-cn/ai-detail/2086711729156894722",
+        "caption": "应用详情提供介绍、计费说明与立即运行；本次加载状态中，左侧尚未出现输入表单。",
+        "fields": [
+          "任务类型",
+          "运行计数",
+          "介绍图",
+          "按用量计费提示",
+          "运行入口",
+          "应用详情/我的生成"
+        ],
+        "width": 1380,
+        "height": 735,
+        "src": "/research-images/v10/runninghub-app-detail.jpg"
+      },
+      "relationship": "直接点击列表第4张卡片打开该应用详情，名称与封面对应。",
+      "finding": "应用详情的入口更集中，面向直接执行任务。但这个样本首屏主要还是宣传封面，输入要求没有在已观察区域说清楚，不能把应用详情等同于完整使用说明。",
+      "handoff": "可见立即运行入口，未提交运行。",
+      "limits": "30秒和模型名称只是作者与页面的标注，未验证能力。部分列表视频未播放；当前未取得表单，不补写其输入字段。"
+    },
+    {
+      "id": "tensor-work",
+      "platformId": "tusi",
+      "platform": "吐司 / Tensor.Art",
+      "form": "模型例图与单张作品",
+      "title": "MooMooE-commerce 的商品例图",
+      "card": {
+        "file": "tensor-work-card.jpg",
+        "url": "https://tensor.art/models/662744072865292090/MooMooE-commerce-V1",
+        "caption": "模型详情内的例图卡片组。它是模型的效果样本区，并非独立的首页作品流。",
+        "fields": [
+          "例图卡本体：商品场景图像与轮播入口",
+          "所在模型页：名称、Checkpoint类型、版本",
+          "所在模型页：运行与下载入口"
+        ],
+        "width": 1170,
+        "height": 650,
+        "src": "/research-images/v10/tensor-work-card.jpg"
+      },
+      "detail": {
+        "file": "tensor-work-detail.jpg",
+        "url": "https://tensor.art/images/662742037059162229?model_id=662744072865292090",
+        "caption": "点击第一张蓝色瓶子例图后，单图详情明确提示没有生成数据。",
+        "fields": [
+          "大图",
+          "发布者与发布时间",
+          "保存图像入口",
+          "无生成数据提示"
+        ],
+        "width": 1620,
+        "height": 875,
+        "src": "/research-images/v10/tensor-work-detail.jpg"
+      },
+      "relationship": "从模型页第一张蓝色瓶子例图进入相同图片ID的单图详情。",
+      "finding": "例图能证明平台展示了某种效果，未必交付可复现材料。模型信息、作品信息、生成参数是三个层次，不能因为图片挂在模型下就认为可画同款。",
+      "handoff": "此例图详情未提供生成数据。模型层的运行入口仍存在，但不能据此补全这张图的提示词或种子。",
+      "limits": "这是Tensor.Art站点的两个相邻历史例图中的一个；邻图也显示无生成数据。不能外推全部作品，更不能当作吐司国内站的统一规则。"
+    },
+    {
+      "id": "huggingface-space",
+      "platformId": "huggingface",
+      "platform": "Hugging Face",
+      "form": "可运行演示与评测应用",
+      "title": "H3 Acceleration Arena",
+      "card": {
+        "file": "huggingface-space-card.jpg",
+        "url": "https://huggingface.co/spaces",
+        "caption": "Spaces周选中的应用卡片，使用状态标签和用途摘要，未依赖一张生成作品封面。",
+        "fields": [
+          "应用名称",
+          "盲评用途摘要",
+          "Running on CPU",
+          "Featured",
+          "点赞",
+          "更新时间"
+        ],
+        "width": 362,
+        "height": 172,
+        "src": "/research-images/v10/huggingface-space-card.jpg"
+      },
+      "detail": {
+        "file": "huggingface-space-detail.jpg",
+        "url": "https://huggingface.co/spaces/multimodalart/h3-acceleration-arena",
+        "caption": "详情直接承载可交互应用，并保留App、Files、Community入口。画面处于播放前状态。",
+        "fields": [
+          "应用界面",
+          "两段视频对照",
+          "播放按钮",
+          "投票选项",
+          "文件入口",
+          "讨论入口"
+        ],
+        "width": 1805,
+        "height": 840,
+        "src": "/research-images/v10/huggingface-space-detail.jpg"
+      },
+      "relationship": "从Spaces周选卡片进入同一作者、同一仓库名的Space。",
+      "finding": "这类内容直接承载可交互工具。卡片说明用途和状态，详情呈现应用；另保留Files与Community入口，具体文件和讨论未检查。",
+      "handoff": "可见播放、盲评与排行榜入口。未播放、投票、检查代码或调用接口。",
+      "limits": "Running状态只能说明页面当时报告的运行状态。页面的投票数属于该应用自述，不是Hugging Face平台活跃用户数，也未独立核验。"
+    },
+    {
+      "id": "runway-course",
+      "platformId": "runway",
+      "platform": "Runway Academy",
+      "form": "结构化课程",
+      "title": "AI for Advertising",
+      "card": {
+        "file": "runway-course-card.jpg",
+        "url": "https://academy.runwayml.com/",
+        "caption": "课程卡片先交代目标、章节数、难度和免费入学入口。",
+        "fields": [
+          "课程名称",
+          "学习目标摘要",
+          "10个模块",
+          "Beginner",
+          "Enroll for free",
+          "View Details"
+        ],
+        "width": 399,
+        "height": 410,
+        "src": "/research-images/v10/runway-course-card.jpg"
+      },
+      "detail": {
+        "file": "runway-course-detail.jpg",
+        "url": "https://academy.runwayml.com/course/ai-advertising",
+        "caption": "同一课程的详情展开学习目标与技能，展示开始学习入口。",
+        "fields": [
+          "课程目标",
+          "技能标签",
+          "难度",
+          "标注总时长",
+          "开始学习"
+        ],
+        "width": 1247,
+        "height": 747,
+        "src": "/research-images/v10/runway-course-detail.jpg"
+      },
+      "extra": [
+        {
+          "file": "runway-course-outline.jpg",
+          "url": "https://academy.runwayml.com/course/ai-advertising",
+          "caption": "同页10个模块的大纲和分项时长，可直接检查内容覆盖。",
+          "width": 1240,
+          "height": 805,
+          "src": "/research-images/v10/runway-course-outline.jpg"
+        }
+      ],
+      "relationship": "从Academy首页的广告课程卡片点击View Details进入同名课程。",
+      "finding": "课程详情把任务拆成情绪板、概念、故事板、产品镜头等阶段。它比单篇技巧文章更能交代学习顺序，但也需要持续维护课程与产品版本。",
+      "handoff": "可见开始学习入口和章节列表；未入学、播放全课或验证学习结果。",
+      "limits": "页面标总时长20分钟，10个模块时长合计36分59秒，存在不一致。免费课程入口不表示生成工具也免费。"
+    },
+    {
+      "id": "waytoagi-prompt",
+      "platformId": "waytoagi",
+      "platform": "WaytoAGI",
+      "form": "文本提示词",
+      "title": "Deep Research：产品对比",
+      "card": {
+        "file": "waytoagi-prompt-card.jpg",
+        "url": "https://www.waytoagi.com/zh/prompts",
+        "caption": "无图片的文本卡片，用标题、摘要和类别完成筛选。",
+        "fields": [
+          "任务标题",
+          "用途摘要",
+          "作者署名",
+          "知识探索分类"
+        ],
+        "width": 302,
+        "height": 179,
+        "src": "/research-images/v10/waytoagi-prompt-card.jpg"
+      },
+      "detail": {
+        "file": "waytoagi-prompt-detail.jpg",
+        "url": "https://www.waytoagi.com/zh/prompts/1940",
+        "caption": "正文展开可替换的产品与需求变量，代码块右上有复制图标。",
+        "fields": [
+          "提示描述",
+          "完整文本",
+          "可替换变量",
+          "复制图标",
+          "分享入口"
+        ],
+        "width": 1252,
+        "height": 420,
+        "src": "/research-images/v10/waytoagi-prompt-detail.jpg"
+      },
+      "relationship": "从提示词列表同名卡片进入编号1940详情。本样本与文字研究中的编号246是不同抽样。",
+      "finding": "提示词不必依靠视觉封面。详情最重要的是让人找到需要替换的内容；当前样本有模板文本，但没有同时交付输出样例或测试条件。",
+      "handoff": "可见复制图标；未执行复制或在模型中使用。",
+      "limits": "未见适用模型版本、实测输出和失败情形，不能从完整正文推断效果。页面中的能力描述是作者提示，不是本报告保证。"
+    },
+    {
+      "id": "linuxdo-topic",
+      "platformId": "linuxdo",
+      "platform": "LINUX DO",
+      "form": "问题讨论",
+      "title": "AI时代大家是怎么管理自己的知识库的？",
+      "card": {
+        "file": "linuxdo-topic-card.jpg",
+        "url": "https://linux.do/",
+        "caption": "论坛中的一行话题条目。截图遮盖参与者头像，保留标题、分类和数值。",
+        "fields": [
+          "问题标题",
+          "类别与标签",
+          "回复数",
+          "浏览量",
+          "最近活动"
+        ],
+        "width": 1258,
+        "height": 72,
+        "src": "/research-images/v10/linuxdo-topic-card.jpg"
+      },
+      "detail": {
+        "file": "linuxdo-topic-detail.jpg",
+        "url": "https://linux.do/t/topic/2868771",
+        "caption": "首帖先说明具体困扰，再接楼层回复；右侧保留阅读位置和时间轴。",
+        "fields": [
+          "问题背景",
+          "已考虑的方法",
+          "楼层回复",
+          "互动摘要",
+          "时间轴",
+          "热门回复入口"
+        ],
+        "width": 1045,
+        "height": 620,
+        "src": "/research-images/v10/linuxdo-topic-detail.jpg"
+      },
+      "relationship": "未登录，从公开最新列表同名条目进入话题2868771。",
+      "finding": "这种形态的内容会在回复中继续生长。卡片需要帮助识别问题和讨论状态，详情需要保留上下文；一条回复既可能提出办法，也可能指出问题本身的前提。",
+      "handoff": "只读首帖与首屏回复，未登录、回复或追踪后续。",
+      "limits": "这是具体问题的公开讨论样本，不能代表用户群总体需求。浏览量不是人数，回复数不是解决率；截图是首屏，未读完全部讨论。"
+    }
+  ]
+}

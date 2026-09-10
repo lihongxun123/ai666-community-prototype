@@ -1,0 +1,1623 @@
+{
+  "title": "18家竞品的内容形态总览",
+  "checkedAt": "2026-09-09",
+  "lead": "",
+  "scope": "16类内容可在同一页面组合。卡片与详情字段为设计建议，竞品实有字段见对应截图和来源。",
+  "sourceDocuments": [
+    "v9/content-forms.json",
+    "v10/global-content-expansion.json",
+    "v10/china-content-expansion.json",
+    "v10/developer-content-expansion.json"
+  ],
+  "categories": [
+    {
+      "id": "inspiration",
+      "name": "灵感作品与完整成品",
+      "readerQuestion": "这是什么效果或表达，值不值得看完、收藏或继续了解？",
+      "cardMustShow": [
+        "能代表内容的画面或文字节选",
+        "作品题目、作者与必要的题材说明",
+        "是否附制作说明；视频片长仅在有可靠值时展示"
+      ],
+      "detailMustProvide": [
+        "可完整查看的作品和作品说明",
+        "创作者及必要署名，明确AI生成与人工制作的范围",
+        "若提供同款、参考或方法链接，说明它们对应哪些材料",
+        "如果是练习或参赛成果，附对应题面、评价含义及可公开的反馈"
+      ],
+      "handoff": "看完整作品，再选择收藏、查看作者或进入其方法说明。",
+      "representativePlatforms": [
+        "liblib",
+        "tusi",
+        "seaart",
+        "jimeng",
+        "kling",
+        "midjourney",
+        "leonardo",
+        "openart",
+        "nightcafe",
+        "runway"
+      ],
+      "boundary": "欣赏价值本身成立，不必强行为每件艺术作品附教程；但不能将无过程材料的成品标成可复现案例。",
+      "platformNames": [
+        "LiblibAI",
+        "吐司 / Tensor.Art",
+        "SeaArt",
+        "即梦AI",
+        "可灵AI / Kling AI",
+        "Midjourney",
+        "Leonardo.Ai",
+        "OpenArt",
+        "NightCafe",
+        "Runway"
+      ],
+      "links": [
+        {
+          "url": "https://tensor.art/images/726162984440804171?post_id=726162984436609871",
+          "title": "tensor.art"
+        },
+        {
+          "url": "https://www.seaart.ai/explore/detail/cug2q2te878c73e48gqg?source=share_link",
+          "title": "www.seaart.ai"
+        },
+        {
+          "url": "https://openart.ai/story",
+          "title": "openart.ai"
+        },
+        {
+          "url": "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+          "title": "docs.midjourney.com"
+        },
+        {
+          "url": "https://aif.runwayml.com/",
+          "title": "aif.runwayml.com"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
+          "title": "help.nightcafe.studio"
+        },
+        {
+          "url": "https://jimeng.jianying.com/",
+          "title": "即梦AI官网：示例、画布与创意社区"
+        },
+        {
+          "url": "https://jimeng.jianying.com/visionary",
+          "title": "未来影像计划：行业活动与获奖作品"
+        },
+        {
+          "url": "https://kling.ai/explore/ai_kling",
+          "title": "AI Kling公开探索专题"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage",
+          "title": "Commercial Usage"
+        }
+      ],
+      "evidenceBoundary": "混合了公开作品样本、官方功能说明和精选展映；官网演示、获奖作品不当成普通作者总体画像。"
+    },
+    {
+      "id": "project_case",
+      "name": "项目介绍与制作复盘",
+      "readerQuestion": "这个项目解决了什么问题，作者为什么这样做，哪些做法适合我的任务？",
+      "cardMustShow": [
+        "具体任务、项目或交付对象",
+        "一项有代表性的结果",
+        "官方示例、作者自述、商业推广或客户访谈的身份"
+      ],
+      "detailMustProvide": [
+        "任务约束与最终交付",
+        "投入的材料、所用工具及人工环节",
+        "主要选择、修改和失败处理；未披露处明确留空",
+        "成效数字如有，附时间、计算口径与资料来源",
+        "若属项目推广，交代使用条件及与发布者的关系"
+      ],
+      "handoff": "带走任务拆解和做法判断；有明确材料入口时再进入操作。",
+      "representativePlatforms": [
+        "runway",
+        "kling",
+        "jimeng",
+        "waytoagi",
+        "linuxdo"
+      ],
+      "boundary": "官方精选和作者自述可以说明一个项目，不能推成普通用户平均效率；有代码链接的推广帖也不自动成为完整交付。",
+      "platformNames": [
+        "Runway",
+        "可灵AI / Kling AI",
+        "即梦AI",
+        "WaytoAGI",
+        "LINUX DO"
+      ],
+      "links": [
+        {
+          "url": "https://runway.com/news/customers/miro",
+          "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway"
+        },
+        {
+          "url": "https://kling.ai/blog/How-Kling-Powered-LUltimoUomoReale",
+          "title": "Beyond Realism: How Kling Powered L'Ultimo Uomo Reale"
+        },
+        {
+          "url": "https://jimeng.jianying.com/visionary",
+          "title": "未来影像计划：行业活动与获奖作品"
+        },
+        {
+          "url": "https://www.xtlai.cn/h-nd-6.html",
+          "title": "通往 AGI 之路：AIGCxChina 专访 AJ"
+        },
+        {
+          "url": "https://hackerhouse-dali.waytoagi.com/",
+          "title": "大理 Hacker House 活动归档"
+        },
+        {
+          "url": "https://linux.do/t/topic/1776670",
+          "title": "开源推广与公益推广模板说明"
+        }
+      ],
+      "evidenceBoundary": "包括精选客户案例、历史访谈/活动归档和推广内容规范；规范仅支持应提交哪些材料，不证明真实项目均已交付。"
+    },
+    {
+      "id": "prompt_style",
+      "name": "提示词、风格引用与视觉角色素材",
+      "readerQuestion": "我能把哪一部分带入自己的创作，哪些内容需要替换？",
+      "cardMustShow": [
+        "用途或期望风格",
+        "有代表性的效果示例",
+        "交付的是提示、风格代码还是角色引用"
+      ],
+      "detailMustProvide": [
+        "可取得的提示或引用，以及使用示例",
+        "可替换的内容与必须保留的上下文",
+        "适用模型或工具、参考素材要求",
+        "是否公开、可调用及允许再使用的范围"
+      ],
+      "handoff": "复制文字、调用引用或选入角色后，填写自己的题材和材料。",
+      "representativePlatforms": [
+        "midjourney",
+        "openart",
+        "nightcafe",
+        "waytoagi",
+        "kling"
+      ],
+      "boundary": "提示文本、风格代码和视觉角色引用的移植范围不同；取得引用不等于取得训练文件或全部参考图。此类角色服务于图像和视频创作，不与对话角色混算。",
+      "platformNames": [
+        "Midjourney",
+        "OpenArt",
+        "NightCafe",
+        "WaytoAGI",
+        "可灵AI / Kling AI"
+      ],
+      "links": [
+        {
+          "url": "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator",
+          "title": "docs.midjourney.com"
+        },
+        {
+          "url": "https://openart.ai/features/ai-character/",
+          "title": "openart.ai"
+        },
+        {
+          "url": "https://www.waytoagi.com/zh/prompts/246",
+          "title": "www.waytoagi.com"
+        },
+        {
+          "url": "https://kling.ai/quickstart/klingai-element-library-3-user-guide",
+          "title": "kling.ai"
+        },
+        {
+          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+          "title": "Moodboards"
+        },
+        {
+          "url": "https://openart.ai/blog/consistent-characters-in-ai-video/",
+          "title": "How to Keep Consistent Characters in AI Video Scenes"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+          "title": "Promptle: The Daily AI Art Puzzle"
+        }
+      ],
+      "evidenceBoundary": "WaytoAGI提示有正文样本；风格/角色多由功能指南支持。Kling元素资产与生成公开视频的公开范围分开，不能写成公开素材库。"
+    },
+    {
+      "id": "model_resource",
+      "name": "模型与能力资源",
+      "readerQuestion": "这项能力适合什么任务，我的环境能否用，能否按需要使用它的输出？",
+      "cardMustShow": [
+        "资源名称与用途",
+        "类型、版本或底模等关键兼容条件",
+        "在线可用、可下载或受限的实际状态"
+      ],
+      "detailMustProvide": [
+        "用途、限制和有上下文的效果说明",
+        "版本、文件或调用入口",
+        "环境、输入和关键设置要求",
+        "资源许可及依赖许可的适用范围",
+        "如有评测，说明数据和评价条件"
+      ],
+      "handoff": "先判断适配与许可，再选择在线调用或获取相应版本。",
+      "representativePlatforms": [
+        "huggingface",
+        "modelscope",
+        "tusi",
+        "seaart",
+        "civitai",
+        "leonardo",
+        "liblib"
+      ],
+      "boundary": "模型卡、API数据结构与线上卡片不是同一证据；公开介绍不保证可下载，模型许可也不自动覆盖示例素材。",
+      "platformNames": [
+        "Hugging Face",
+        "ModelScope 魔搭",
+        "吐司 / Tensor.Art",
+        "SeaArt",
+        "Civitai",
+        "Leonardo.Ai",
+        "LiblibAI"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md",
+          "title": "github.com"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+          "title": "intercom.help"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/a2c90169daeb4e548322fdc0dc88af46?from=personal_page",
+          "title": "www.liblib.art"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/model-cards",
+          "title": "Model Cards"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope_hub",
+          "title": "modelscope/modelscope_hub README"
+        },
+        {
+          "url": "https://www.tensor.art/models/818294207639855588/Imam-Ali-Shrine-2025-01-12-16:16:29",
+          "title": "Imam Ali Shrine FLUX LoRA版本页"
+        },
+        {
+          "url": "https://www.seaart.ai/models/detail/107d1e226649c0eccfb00774bd0d722c",
+          "title": "set LoRA模型版本页"
+        }
+      ],
+      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；Civitai不作为亲见卡片，Leonardo此训练资料标为Legacy。"
+    },
+    {
+      "id": "input_material",
+      "name": "输入样例与训练数据",
+      "readerQuestion": "开始之前需要准备什么材料，材料变化会怎样影响结果？",
+      "cardMustShow": [
+        "材料用途与对象",
+        "样例预览或结构示例",
+        "仅作示范还是可下载使用"
+      ],
+      "detailMustProvide": [
+        "材料组成、格式和字段含义",
+        "合格与不适合的输入示例",
+        "如何进入对应训练或任务",
+        "来源、使用许可及需要脱敏的内容",
+        "材料版本与对应的配置或训练结果"
+      ],
+      "handoff": "取得有权限使用的样例，或按标准准备自己的输入，再进入相应方法。",
+      "representativePlatforms": [
+        "modelscope",
+        "leonardo",
+        "huggingface",
+        "datawhale"
+      ],
+      "boundary": "Hugging Face已有具体数据集样本；Leonardo与ModelScope的部分依据仍是训练指南或输入示例，不能统一说成公开数据市场。数据可预览不等于可无条件再分发。",
+      "platformNames": [
+        "ModelScope 魔搭",
+        "Leonardo.Ai",
+        "Hugging Face",
+        "Datawhale"
+      ],
+      "links": [
+        {
+          "url": "https://huggingface.co/datasets/nyu-mll/glue",
+          "title": "huggingface.co"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/data-studio",
+          "title": "huggingface.co"
+        },
+        {
+          "url": "https://github.com/datawhalechina/all-in-rag",
+          "title": "github.com"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+          "title": "intercom.help"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope",
+          "title": "modelscope/modelscope README"
+        }
+      ],
+      "evidenceBoundary": "Hugging Face读到数据行结构；其余包含代码库材料组织与训练教程，不统一推成公开托管或可直接下载的数据资产。"
+    },
+    {
+      "id": "task_app",
+      "name": "可交互的任务应用与对话角色",
+      "readerQuestion": "它能替我完成什么，或提供怎样的互动；开始前还缺什么条件？",
+      "cardMustShow": [
+        "具体任务，或对话角色的身份与场景",
+        "输入输出类型，或可以期待的互动方式",
+        "运行资格与可能的消耗；未知时不写固定价格"
+      ],
+      "detailMustProvide": [
+        "任务应用说明必填/可选输入、可改参数与固定条件",
+        "对话角色说明公开人设、开场和场景；隐藏定义不冒充已交付材料",
+        "结果数量、格式或互动范围",
+        "运行前可见的费用或额度条件",
+        "继续操作、保存结果或再次进入的办法"
+      ],
+      "handoff": "任务应用承接输入与结果，对话角色承接持续对话。两者都提供交互入口，但应采用不同的字段和说明。",
+      "representativePlatforms": [
+        "runninghub",
+        "tusi",
+        "seaart",
+        "leonardo",
+        "runway",
+        "huggingface",
+        "modelscope",
+        "waytoagi"
+      ],
+      "boundary": "直接交互不等于取得源配置。团队App、受保护Space、站外智能体入口和SeaArt角色各有权限边界；角色发布指南也不能证明全部人设会向使用者公开。",
+      "platformNames": [
+        "RunningHub",
+        "吐司 / Tensor.Art",
+        "SeaArt",
+        "Leonardo.Ai",
+        "Runway",
+        "Hugging Face",
+        "ModelScope 魔搭",
+        "WaytoAGI"
+      ],
+      "links": [
+        {
+          "url": "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md",
+          "title": "docs.seaart.ai"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope_hub",
+          "title": "modelscope/modelscope_hub README"
+        },
+        {
+          "url": "https://www.waytoagi.com/agents/723",
+          "title": "www.waytoagi.com"
+        },
+        {
+          "url": "https://www.runninghub.cn/post/2074049801244917760",
+          "title": "Klein虚拟试衣与商品局部替换"
+        },
+        {
+          "url": "https://www.tensor.art/template/813284647977979882",
+          "title": "Enhance Image with SUPIR + UPSCALE AI工具"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg",
+          "title": "動画に文字（视频加文字）应用"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai",
+          "title": "Blueprints by Leonardo.Ai"
+        },
+        {
+          "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+          "title": "Publishing Workflows as Apps"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "title": "Spaces Overview"
+        }
+      ],
+      "evidenceBoundary": "角色来自发布指南，未实见用户端全部字段；WaytoAGI样本承接站外服务，Runway与受保护仓库不当成公开源代码市场。"
+    },
+    {
+      "id": "workflow_template",
+      "name": "可复制的流程、应用模板与项目样例",
+      "readerQuestion": "能否把这套方法变成自己的版本，需要补什么才能继续用？",
+      "cardMustShow": [
+        "要完成的任务及代表结果",
+        "交付的是画布、配置、代码还是仅有说明",
+        "依赖与最近适用版本的摘要"
+      ],
+      "detailMustProvide": [
+        "完整可取得的配置或源材料；缺失时不声称完整复制",
+        "输入输出关系、关键步骤和可修改位置",
+        "需要另行准备的模型、数据、外部服务与权限",
+        "导入或搭建说明、预期结果和已知问题",
+        "副本与原作者更新之间的关系"
+      ],
+      "handoff": "取得可复制部分，补足缺项，再修改为自己的任务。",
+      "representativePlatforms": [
+        "liblib",
+        "runninghub",
+        "tusi",
+        "dify",
+        "huggingface",
+        "modelscope",
+        "seaart"
+      ],
+      "boundary": "节点截图、下载链接和运行按钮都不单独证明配置完整；原作者的额度、私有数据、维护服务通常不是交付的一部分，具体以资源说明为准。",
+      "platformNames": [
+        "LiblibAI",
+        "RunningHub",
+        "吐司 / Tensor.Art",
+        "Dify",
+        "Hugging Face",
+        "ModelScope 魔搭",
+        "SeaArt"
+      ],
+      "links": [
+        {
+          "url": "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-10-workflow.md",
+          "title": "docs.seaart.ai"
+        },
+        {
+          "url": "https://marketplace.dify.ai/template/langgenius/Code%20Converter?creationType=templates&language=en-US&templateId=09d8b8c8-9459-4ffb-b5e5-6f2255df410b",
+          "title": "marketplace.dify.ai"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+          "title": "电商产品精修+背景替换（SDXL版）V1.0"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "title": "电商产品精修+背景替换（FLUX）V2.0"
+        },
+        {
+          "url": "https://www.runninghub.cn/post/2028347928716251138",
+          "title": "Google图像工作流示例"
+        },
+        {
+          "url": "https://tensor.art/workflows/824922304248158170",
+          "title": "Enhance Image with SUPIR + UPSCALE工作流"
+        },
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/workspace/app-management",
+          "title": "Manage Apps"
+        },
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/publish/publish-to-marketplace",
+          "title": "Publish Apps to Marketplace"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "title": "Spaces Overview"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope",
+          "title": "modelscope/modelscope README"
+        }
+      ],
+      "evidenceBoundary": "存在下载/导入说明和源文件范例，但未导入或运行。Dify样本标题与设置说明不一致，只记录说明差异，不断言模板实际失败。"
+    },
+    {
+      "id": "plugin_extension",
+      "name": "可安装工具与插件",
+      "readerQuestion": "安装后增加什么能力，它需要访问哪些服务和信息？",
+      "cardMustShow": [
+        "能力用途与运行平台",
+        "版本与兼容条件",
+        "是否需要外部账号或付费服务"
+      ],
+      "detailMustProvide": [
+        "安装包及对应说明、源码入口或来源",
+        "安装、配置和一个具体用法",
+        "权限、数据处理与外部服务要求",
+        "更新、卸载和失效后的处理说明"
+      ],
+      "handoff": "先理解能力和权限，再按适用环境安装配置。",
+      "representativePlatforms": [
+        "dify"
+      ],
+      "boundary": "明确的代表是Dify插件材料；插件不是应用模板，安装完成也不等于服务已配置或任务可成功运行。",
+      "platformNames": [
+        "Dify"
+      ],
+      "links": [
+        {
+          "url": "https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible",
+          "title": "marketplace.dify.ai"
+        },
+        {
+          "url": "https://marketplace.dify.ai/plugin/langgenius/self_refine_agent",
+          "title": "marketplace.dify.ai"
+        },
+        {
+          "url": "https://docs.dify.ai/en/develop-plugin/publishing/marketplace-listing/submit-plugin-to-marketplace",
+          "title": "Publish a Plugin to Marketplace"
+        }
+      ],
+      "evidenceBoundary": "模型提供商与Agent策略是不同插件类型；已读说明，未安装、配置或验证效果。"
+    },
+    {
+      "id": "how_to",
+      "name": "单项操作与排错指南",
+      "readerQuestion": "我卡在某一步，怎样处理，改动会牺牲什么？",
+      "cardMustShow": [
+        "具体操作或错误症状",
+        "适用工具及必要版本",
+        "是否有完整步骤、对照或已验证结果"
+      ],
+      "detailMustProvide": [
+        "开始条件和必要输入",
+        "可定位的步骤、设置位置及调整方向",
+        "改动前后对照",
+        "不适用情况和仍未解决的问题",
+        "作者复核状态与更新时间"
+      ],
+      "handoff": "按与自己条件相符的步骤操作，再检查是否达到文中描述的结果。",
+      "representativePlatforms": [
+        "liblib",
+        "tusi",
+        "seaart",
+        "kling",
+        "openart",
+        "nightcafe",
+        "leonardo",
+        "dify",
+        "runninghub",
+        "linuxdo",
+        "modelscope"
+      ],
+      "boundary": "参数越多不代表教程越好；只有原因推测、报错截图或模型术语时，应标成线索，不能称为已解决方案。",
+      "platformNames": [
+        "LiblibAI",
+        "吐司 / Tensor.Art",
+        "SeaArt",
+        "可灵AI / Kling AI",
+        "OpenArt",
+        "NightCafe",
+        "Leonardo.Ai",
+        "Dify",
+        "RunningHub",
+        "LINUX DO",
+        "ModelScope 魔搭"
+      ],
+      "links": [
+        {
+          "url": "https://tusi.cn/articles/728359301611162291",
+          "title": "tusi.cn"
+        },
+        {
+          "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+          "title": "www.runninghub.cn"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
+          "title": "help.nightcafe.studio"
+        },
+        {
+          "url": "https://www.leonardo.ai/news/how-to-edit-videos-with-ai",
+          "title": "www.leonardo.ai"
+        },
+        {
+          "url": "https://linux.do/t/topic/174250",
+          "title": "linux.do"
+        },
+        {
+          "url": "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html",
+          "title": "modelscope.csdn.net"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+          "title": "电商产品精修+背景替换（SDXL版）V1.0"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg",
+          "title": "動画字幕 / 動画に文字 2アプリ"
+        },
+        {
+          "url": "https://kling.ai/blog/how-to-create-ai-videos",
+          "title": "How to Create AI Videos from Text or Images: Step-by-Step Guide"
+        },
+        {
+          "url": "https://openart.ai/features/ai-product-image-generator/",
+          "title": "AI Product Image Generator"
+        },
+        {
+          "url": "https://docs.dify.ai/en/quick-start",
+          "title": "30-Minute Quick Start"
+        }
+      ],
+      "evidenceBoundary": "包含历史版本指南、官方示例和作者教程；教程步骤存在不一致时保留原边界，不统一整理为已实操通过的配置。"
+    },
+    {
+      "id": "learning_path",
+      "name": "课程与连续学习路径",
+      "readerQuestion": "我需要补哪段能力，先学什么，学完能独立完成什么？",
+      "cardMustShow": [
+        "学习主题与对象",
+        "先备知识或难度",
+        "章节范围、材料类型与有依据的时长"
+      ],
+      "detailMustProvide": [
+        "学习顺序与每节目标",
+        "讲义、演示、练习或代码材料",
+        "配套环境和所需工具",
+        "自学可得到的材料与当期答疑服务分别说明",
+        "版本适用范围和材料缺口"
+      ],
+      "handoff": "按目标选择章节学习，再使用其练习或项目材料。",
+      "representativePlatforms": [
+        "datawhale",
+        "waytoagi",
+        "runway",
+        "openart"
+      ],
+      "boundary": "课程目录不证明每节材料完整或学习有效；报名免费也不代表练习所需生成、算力和服务免费。",
+      "platformNames": [
+        "Datawhale",
+        "WaytoAGI",
+        "Runway",
+        "OpenArt"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/datawhalechina/all-in-rag",
+          "title": "github.com"
+        },
+        {
+          "url": "https://academy.runwayml.com/",
+          "title": "academy.runwayml.com"
+        },
+        {
+          "url": "https://academy.runwayml.com/course/ai-advertising",
+          "title": "academy.runwayml.com"
+        },
+        {
+          "url": "https://openart.ai/tutorials",
+          "title": "openart.ai"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/",
+          "title": "组队学习规则"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+          "title": "课本编写与反馈收集"
+        },
+        {
+          "url": "https://about.waytoagi.com/",
+          "title": "关于 WaytoAGI（正文证据）"
+        },
+        {
+          "url": "https://hackerhouse-dali.waytoagi.com/",
+          "title": "大理 Hacker House 活动归档"
+        }
+      ],
+      "evidenceBoundary": "目录、课程仓库与外部视频入口分别记录；章节仍在规划、视频未播放和时长矛盾均不能用目录数量掩盖。"
+    },
+    {
+      "id": "question_thread",
+      "name": "问题讨论、解决记录与引用式问答",
+      "readerQuestion": "有没有人遇到同类问题，当前解释和办法可靠吗？",
+      "cardMustShow": [
+        "具体症状或待讨论的问题",
+        "工具、环境等最必要条件",
+        "未解决、已有建议或提问者自报解决的实际状态",
+        "作者解答、社区回复或AI生成回答的来源身份"
+      ],
+      "detailMustProvide": [
+        "预期结果、实际结果与脱敏报错",
+        "已有尝试和相关条件",
+        "回复如何补充信息、提出或否定原因",
+        "解决结论来自谁、适用何种条件",
+        "可用时链接到正式说明或已验证改动",
+        "AI生成的回答应保留生成标识与参考资料，能回到原文检查"
+      ],
+      "handoff": "对照条件查找线索；给出结论时保留证据和未解决部分。",
+      "representativePlatforms": [
+        "linuxdo",
+        "datawhale",
+        "huggingface",
+        "modelscope",
+        "nightcafe",
+        "waytoagi"
+      ],
+      "boundary": "帖子被关闭、回复很多或作者说解决了，都不能单独证明方案普遍有效；AI回答有引用也不等于引用确实支持全部结论。",
+      "platformNames": [
+        "LINUX DO",
+        "Datawhale",
+        "Hugging Face",
+        "ModelScope 魔搭",
+        "NightCafe",
+        "WaytoAGI"
+      ],
+      "links": [
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
+          "title": "help.nightcafe.studio"
+        },
+        {
+          "url": "https://www.waytoagi.com/zh/question/82231",
+          "title": "www.waytoagi.com"
+        },
+        {
+          "url": "https://linux.do/t/topic/1537782",
+          "title": "关于应用接入的问题请教佬友"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+          "title": "How to Ask Questions"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
+          "title": "Pull Requests and Discussions"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope/issues/1661",
+          "title": "断点续传功能问题 · Issue #1661"
+        }
+      ],
+      "evidenceBoundary": "包括真实问题样本、提问规范与AI问答样本；规范不代表所有帖子达标，搜索/生成答案不当作已审定结论。"
+    },
+    {
+      "id": "curated_collection",
+      "name": "专题合集、资源导览与作者策展",
+      "readerQuestion": "为什么把这些内容放在一起，应该从哪一项开始？",
+      "cardMustShow": [
+        "主题及筛选角度",
+        "代表条目或封面",
+        "整理者，以及更新状态（如已知）"
+      ],
+      "detailMustProvide": [
+        "集合范围与选择理由",
+        "条目、简短注释和必要的顺序",
+        "原始内容入口及其身份",
+        "失效或缺失资源说明",
+        "公开、个人整理和协作范围"
+      ],
+      "handoff": "沿有说明的条目进入原内容；需要动手时再看其各自材料。",
+      "representativePlatforms": [
+        "huggingface",
+        "nightcafe",
+        "waytoagi",
+        "leonardo",
+        "civitai",
+        "liblib",
+        "linuxdo"
+      ],
+      "boundary": "合集交付选择和组织，不自动携带原资源文件与许可。Civitai协作部分目前主要依据实现说明；TASTE等专题也不能推断全部作品由该平台生成。",
+      "platformNames": [
+        "Hugging Face",
+        "NightCafe",
+        "WaytoAGI",
+        "Leonardo.Ai",
+        "Civitai",
+        "LiblibAI",
+        "LINUX DO"
+      ],
+      "links": [
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe",
+          "title": "help.nightcafe.studio"
+        },
+        {
+          "url": "https://www.leonardo.ai/news/taste-curation-no-3-sherbet",
+          "title": "www.leonardo.ai"
+        },
+        {
+          "url": "https://www.liblib.art/activities/49a6540f5b84400a9ed8ff6bcdfcaaa6/2025_envelopecover-models",
+          "title": "www.liblib.art"
+        },
+        {
+          "url": "https://linux.do/t/topic/122079",
+          "title": "linux.do"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/collections",
+          "title": "Collections"
+        },
+        {
+          "url": "https://about.waytoagi.com/",
+          "title": "关于 WaytoAGI（正文证据）"
+        },
+        {
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
+          "title": "Collaborative Collections"
+        }
+      ],
+      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。Civitai协作机制是实现说明；专题和外部链接的历史状态沿用分组限制。"
+    },
+    {
+      "id": "challenge_brief",
+      "name": "挑战题面、练习任务与征集规则",
+      "readerQuestion": "这项任务要交什么，如何参与和评判，成果会怎样被使用？",
+      "cardMustShow": [
+        "主题、待完成任务与交付对象",
+        "适用时间、认领或提交阶段",
+        "参与资格及奖励性质（如有）"
+      ],
+      "detailMustProvide": [
+        "提交内容和素材/工具限制",
+        "截止、认领、评价与结果公布办法，以该任务实际规则为准",
+        "任务有反馈或奖项时，交代反馈责任、评分含义和兑现条件",
+        "作品、作业或教程的公开与后续使用条件",
+        "历史活动和未完成题目明确标注；有成果时链接实际交付"
+      ],
+      "handoff": "先理解题目并取得参与材料；完成后的作品、方法或反馈应另有入口，不与待认领任务混计。",
+      "representativePlatforms": [
+        "nightcafe",
+        "jimeng",
+        "runway",
+        "tusi",
+        "datawhale",
+        "midjourney"
+      ],
+      "boundary": "赛事、课程作业、Promptle和图片偏好任务评判的对象不同，没有统一质量分。规则、已提交成果、结果与实际兑付要分别核对；任务条数不是已完成内容量。",
+      "platformNames": [
+        "NightCafe",
+        "即梦AI",
+        "Runway",
+        "吐司 / Tensor.Art",
+        "Datawhale",
+        "Midjourney"
+      ],
+      "links": [
+        {
+          "url": "https://aif.runwayml.com/",
+          "title": "aif.runwayml.com"
+        },
+        {
+          "url": "https://tusi.cn/blackboard/forgecup",
+          "title": "tusi.cn"
+        },
+        {
+          "url": "https://contributor.datawhale.cn/projects",
+          "title": "contributor.datawhale.cn"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+          "title": "Creating a Game (Community Challenge)"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+          "title": "Daily Challenge: Eligibility, Rating & Ranking"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+          "title": "Promptle: The Daily AI Art Puzzle"
+        },
+        {
+          "url": "https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/dc943398-71d6-4fd2-bb26-215c4a34ae21.html",
+          "title": "即梦Dreamina×剪映未来影像计划AI短片挑战赛事细则"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/",
+          "title": "组队学习规则"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/homework/",
+          "title": "作业发布与验证"
+        },
+        {
+          "url": "https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks",
+          "title": "Complete Tasks"
+        }
+      ],
+      "evidenceBoundary": "规则、展示档案和题目招募分别支持相应结构；吐司活动页年份未明，Datawhale招募只读到索引，不写成当前完整认领规则。"
+    },
+    {
+      "id": "research_evidence",
+      "name": "研究论文、评测报告与证据说明",
+      "readerQuestion": "这个结论根据什么得出，适用范围在哪里，能否找到原始材料？",
+      "cardMustShow": [
+        "研究或评测的问题",
+        "论文、报告或摘要的明确身份",
+        "所涉方法/模型，以及必要的日期与条件"
+      ],
+      "detailMustProvide": [
+        "原文、作者和出处；AI摘要单独标明",
+        "评测任务、模型/数据版本、设置与指标口径",
+        "主要结果及其适用范围，未取得的实验材料明确留空",
+        "可核查时提供关联数据、实现、演示和讨论入口"
+      ],
+      "handoff": "从结论回到原文与条件，再检查实现或评测材料；材料不完整时保留判断边界。",
+      "representativePlatforms": [
+        "huggingface",
+        "modelscope"
+      ],
+      "boundary": "Hugging Face论文页已有具体样本；ModelScope评测报告依据官方功能指南，尚非一份实际报告的完整审读。论文被关联、生成摘要存在或报告可导出，都不直接证明结论正确。",
+      "platformNames": [
+        "Hugging Face",
+        "ModelScope 魔搭"
+      ],
+      "links": [
+        {
+          "url": "https://huggingface.co/papers/1804.07461",
+          "title": "huggingface.co"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/paper-pages",
+          "title": "huggingface.co"
+        },
+        {
+          "url": "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html",
+          "title": "modelscope.csdn.net"
+        }
+      ],
+      "evidenceBoundary": "论文页有原摘要和资源关系样本；PivotEval只核官方指南描述的报告形式，没有把报告导出能力当成已分析一份实际评测报告。"
+    },
+    {
+      "id": "change_note",
+      "name": "版本更新与维护说明",
+      "readerQuestion": "旧内容还能不能用，变化影响了哪里，需要迁移吗？",
+      "cardMustShow": [
+        "受影响的内容、工具或服务",
+        "新旧版本或生效日期",
+        "主要变化与适用人群"
+      ],
+      "detailMustProvide": [
+        "具体变化及与旧材料的关系",
+        "受影响的输入、依赖或操作",
+        "需要迁移的部分及保留条件",
+        "已知问题、当前处理结果和原文入口",
+        "计划、已经发布与已经核验的状态分别写清"
+      ],
+      "handoff": "查明自己正在使用的版本，再决定继续使用、调整或切换。",
+      "representativePlatforms": [
+        "liblib",
+        "linuxdo",
+        "dify",
+        "huggingface",
+        "seaart",
+        "civitai"
+      ],
+      "boundary": "公告不证明全部账号已生效；提出修改不等于已经合并，发布新版也不意味着旧副本自动更新。",
+      "platformNames": [
+        "LiblibAI",
+        "LINUX DO",
+        "Dify",
+        "Hugging Face",
+        "SeaArt",
+        "Civitai"
+      ],
+      "links": [
+        {
+          "url": "https://linux.do/t/topic/1401642",
+          "title": "linux.do"
+        },
+        {
+          "url": "https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible",
+          "title": "marketplace.dify.ai"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "title": "电商产品精修+背景替换（FLUX）V2.0"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg",
+          "title": "動画に文字（视频加文字）应用"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg",
+          "title": "動画字幕 / 動画に文字 2アプリ"
+        },
+        {
+          "url": "https://linux.do/t/topic/1144530",
+          "title": "LINUX DO Connect 备用端点公告"
+        },
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/publish/publish-to-marketplace",
+          "title": "Publish Apps to Marketplace"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
+          "title": "Pull Requests and Discussions"
+        },
+        {
+          "url": "https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn",
+          "title": "The Creator Collab Update: 4 New Ways to Get Seen and Earn"
+        }
+      ],
+      "evidenceBoundary": "作者版本关系、公告、插件版本历史和协作修改提案均可留下维护信息；提案是否合并、规则何时适用仍须各看原文。"
+    },
+    {
+      "id": "project_workspace",
+      "name": "团队项目资料与运行记录",
+      "readerQuestion": "我们现在用的是哪份材料，谁能访问，下一步从哪里继续？",
+      "cardMustShow": [
+        "项目、合集或会话的清楚名称",
+        "材料归属与当前可见范围",
+        "必要的版本或活动状态"
+      ],
+      "detailMustProvide": [
+        "与项目对应的资产、流程和会话记录",
+        "输入输出或运行轨迹在权限内可追溯",
+        "成员访问及编辑范围",
+        "资料之间的关联和继续处理入口",
+        "对外公开时的授权、脱敏与可交付范围"
+      ],
+      "handoff": "团队成员按权限接续工作；能整理为公开案例的部分另行发布。",
+      "representativePlatforms": [
+        "runway",
+        "leonardo",
+        "dify"
+      ],
+      "boundary": "内部工作资料不是公开社区UGC，也不是可直接导出的教学包；不得把所有运行记录计为外部用户任务。",
+      "platformNames": [
+        "Runway",
+        "Leonardo.Ai",
+        "Dify"
+      ],
+      "links": [
+        {
+          "url": "https://help.runwayml.com/hc/en-us/articles/52913050653203-Introduction-to-Projects",
+          "title": "Introduction to Projects"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/13610244-creating-and-sharing-collections-with-your-team",
+          "title": "Creating and Sharing Collections with Your Team"
+        },
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/monitor/logs",
+          "title": "Logs"
+        }
+      ],
+      "evidenceBoundary": "功能指南支持内部资料形态，未作为公开内容样本或实际活跃数据；公开分享、权限继承和日志完整度另有边界。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "different_card_questions",
+      "title": "按选择条件设计卡片",
+      "text": "成品卡片突出题材和画面；模型卡片交代兼容条件；应用卡片说明输入输出；课程卡片注明范围和难度。Runway课程目录已展示模块数和级别，SeaArt角色发布指南则要求互动设定。字段应随内容用途调整，具体展示以实见页面为准。",
+      "representativePlatforms": [
+        "runway",
+        "tusi",
+        "leonardo",
+        "linuxdo",
+        "seaart"
+      ],
+      "sourceIds": [
+        "o9-c-ta-6",
+        "o9-g-leo-blue",
+        "o9-d-ld-topic"
+      ],
+      "sourceUrls": [
+        "https://academy.runwayml.com/",
+        "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md"
+      ],
+      "links": [
+        {
+          "url": "https://academy.runwayml.com/",
+          "title": "academy.runwayml.com"
+        },
+        {
+          "url": "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md",
+          "title": "docs.seaart.ai"
+        },
+        {
+          "url": "https://www.tensor.art/models/818294207639855588/Imam-Ali-Shrine-2025-01-12-16:16:29",
+          "title": "Imam Ali Shrine FLUX LoRA版本页"
+        },
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai",
+          "title": "Blueprints by Leonardo.Ai"
+        },
+        {
+          "url": "https://linux.do/t/topic/1537782",
+          "title": "关于应用接入的问题请教佬友"
+        }
+      ]
+    },
+    {
+      "id": "different_reuse_handoffs",
+      "title": "详情注明可取得的材料",
+      "text": "复制提示词、调用风格、运行应用和取得源配置，各自需要不同准备。Dify模板、Hugging Face Space有依赖和权限条件，Runway App也不等同于源工作流。详情应列出可取得材料及需自行补齐的项目。",
+      "representativePlatforms": [
+        "dify",
+        "huggingface",
+        "midjourney",
+        "runway"
+      ],
+      "sourceIds": [
+        "o9-d-dify-manage",
+        "o9-d-hf-spaces",
+        "o9-g-mid-board",
+        "o9-g-run-app"
+      ],
+      "sourceUrls": [],
+      "links": [
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/workspace/app-management",
+          "title": "Manage Apps"
+        },
+        {
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "title": "Spaces Overview"
+        },
+        {
+          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+          "title": "Moodboards"
+        },
+        {
+          "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+          "title": "Publishing Workflows as Apps"
+        }
+      ]
+    },
+    {
+      "id": "optional_process_visibility",
+      "title": "分别评价作品、教学与开放范围",
+      "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。",
+      "representativePlatforms": [
+        "nightcafe",
+        "jimeng",
+        "runway"
+      ],
+      "sourceIds": [
+        "o9-g-night-promptle",
+        "o9-c-jm-2",
+        "o9-g-run-miro"
+      ],
+      "sourceUrls": [
+        "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts"
+      ],
+      "links": [
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts",
+          "title": "help.nightcafe.studio"
+        },
+        {
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+          "title": "Promptle: The Daily AI Art Puzzle"
+        },
+        {
+          "url": "https://jimeng.jianying.com/visionary",
+          "title": "未来影像计划：行业活动与获奖作品"
+        },
+        {
+          "url": "https://runway.com/news/customers/miro",
+          "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway"
+        }
+      ]
+    },
+    {
+      "id": "context_over_volume",
+      "title": "操作说明需包含输入和排错条件",
+      "text": "RunningHub样本交代了两份输入的用途，但缺修复步骤；ModelScope问题模板虽有字段，仍可能缺少完整复现命令。核查内容时应查看素材要求、失败条件和调整办法。",
+      "representativePlatforms": [
+        "runninghub",
+        "modelscope",
+        "datawhale"
+      ],
+      "sourceIds": [
+        "o9-c-rh-4",
+        "o9-d-ms-issue",
+        "o9-d-dw-question"
+      ],
+      "sourceUrls": [],
+      "links": [
+        {
+          "url": "https://www.runninghub.cn/post/2074049801244917760",
+          "title": "Klein虚拟试衣与商品局部替换"
+        },
+        {
+          "url": "https://github.com/modelscope/modelscope/issues/1661",
+          "title": "断点续传功能问题 · Issue #1661"
+        },
+        {
+          "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+          "title": "How to Ask Questions"
+        }
+      ]
+    },
+    {
+      "id": "maintain_content_relationships",
+      "title": "保留版本与关联材料",
+      "text": "Liblib样本链接旧版，SeaArt应用关联操作文章，Hugging Face论文页连接实现和数据。Leonardo Legacy训练指南说明数据变化不会自动更新已有结果。关联资料与版本需要随内容一起维护。",
+      "representativePlatforms": [
+        "liblib",
+        "seaart",
+        "leonardo",
+        "dify",
+        "huggingface"
+      ],
+      "sourceIds": [
+        "o9-c-lib-2",
+        "o9-c-sa-3",
+        "o9-c-sa-6",
+        "o9-d-dify-template"
+      ],
+      "sourceUrls": [
+        "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+        "https://huggingface.co/papers/1804.07461"
+      ],
+      "links": [
+        {
+          "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+          "title": "intercom.help"
+        },
+        {
+          "url": "https://huggingface.co/papers/1804.07461",
+          "title": "huggingface.co"
+        },
+        {
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "title": "电商产品精修+背景替换（FLUX）V2.0"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg",
+          "title": "動画に文字（视频加文字）应用"
+        },
+        {
+          "url": "https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg",
+          "title": "動画字幕 / 動画に文字 2アプリ"
+        },
+        {
+          "url": "https://docs.dify.ai/en/cloud/use-dify/publish/publish-to-marketplace",
+          "title": "Publish Apps to Marketplace"
+        }
+      ]
+    }
+  ],
+  "priorities": {
+    "first": [
+      {
+        "title": "先形成少量有过程材料的制作案例",
+        "categoryIds": [
+          "project_case",
+          "inspiration",
+          "input_material"
+        ],
+        "content": "围绕团队或合作作者能够说明清楚的一个具体任务，同时保留成品、输入、关键选择、人工处理和已知失败。案例来自实际记录时才写效果与耗时。",
+        "reason": "两项主营业务需要可理解的用途；现阶段最缺的是能持续交付这些材料的人，而不是更多发布形式。",
+        "boundary": "不要先承诺行业覆盖或固定产出量；没有完整画布时，准确交代可公开的材料即可。"
+      },
+      {
+        "title": "从案例中抽出单项方法和问题说明",
+        "categoryIds": [
+          "how_to",
+          "question_thread",
+          "change_note"
+        ],
+        "content": "把一个常见操作、一个失败症状或一次配置变化写成独立短条目，并指回对应案例与版本。已解决、自述解决和仍在排查分别写清。",
+        "reason": "一份案例可以留下多种有用材料，产品和运营不必每次另找大选题，也能减少重复解释。",
+        "boundary": "不能将推测的原因改写成确定答案；对尚未出现的问题不预造“用户经验”。"
+      },
+      {
+        "title": "让API内容落在具体调用用途和限制上",
+        "categoryIds": [
+          "model_resource",
+          "how_to"
+        ],
+        "content": "采用能够说明来源和条件的最小调用示例、输入输出说明及有限范围的能力比较。成本或稳定性结论只使用已有可核验记录，并注明模型、接口及适用日期。",
+        "reason": "API是现有业务，内容应帮助读者判断能做什么、怎样接入、会受什么限制；单独突出便宜不足以解释使用价值。",
+        "boundary": "此处是内容方向，不新增接口承诺或工程方案，也不把某次调用成功当作长期服务保证。"
+      },
+      {
+        "title": "按任务整理已有材料",
+        "categoryIds": [
+          "curated_collection"
+        ],
+        "content": "用简短说明把成品、方法、输入要求和相关问题放在同一任务入口，指出阅读顺序与资料缺口。",
+        "reason": "少量材料经过整理后，读者更容易找到下一步；当前可以先由运营维护选择和链接。",
+        "boundary": "不需要把16类都做成频道，也不应建立大量没有内容支撑的专题。"
+      }
+    ],
+    "later": [
+      {
+        "title": "在复制范围清楚后，提供画布与简化应用",
+        "categoryIds": [
+          "workflow_template",
+          "task_app"
+        ],
+        "content": "将已有案例整理成可复制配置；针对不改节点的人再提供简化输入说明。内容同时交代继承项、另备材料和版本关系。",
+        "reason": "MakeNow的画布能力与这类内容直接相关，但现阶段还缺已经确认的分享交付及稳定方法。",
+        "boundary": "前提是分享/复制能力、素材权限和配置一致性有明确证据；不能让内容先承诺产品尚未提供的交付。"
+      },
+      {
+        "title": "围绕稳定主题组织课程与练习",
+        "categoryIds": [
+          "learning_path",
+          "challenge_brief"
+        ],
+        "content": "当某一主题已有足够案例和愿意维护的作者，再组织成连续学习材料、有限练习与清楚的反馈说明。",
+        "reason": "学习路径需要连贯内容和答疑责任，单次活动的投稿不能自动补足这些材料。",
+        "boundary": "先明确维护人和可交付材料；不把持续出题、评审和奖励兑付默认为1名运营可以无成本承担。"
+      },
+      {
+        "title": "积累作者与作品的连续系列",
+        "categoryIds": [
+          "inspiration",
+          "project_case",
+          "curated_collection"
+        ],
+        "content": "围绕已经持续合作的作者整理作品系列、方法差异和阶段性变化，让读者同时认识表达与做法。",
+        "reason": "有连续作品后，作者介绍和策展才有可供选择的内容，也更容易保留不同创作风格。",
+        "boundary": "作者故事不能替代真实作品和过程记录；不因被推荐就暗示全部由MakeNow完成或收入已得到证明。"
+      }
+    ],
+    "notNow": [
+      {
+        "title": "综合模型、数据与插件分发市场",
+        "categoryIds": [
+          "model_resource",
+          "input_material",
+          "plugin_extension"
+        ],
+        "content": "暂不以大规模托管、上传和下载量扩充内容目录。相关资源可以在具体案例中引用并说明出处。",
+        "reason": "资源分发会带来依赖、授权、更新和失效维护；这与当前缺案例、缺作者的主要问题并不相同。",
+        "boundary": "不是否定专业资源价值；待现有业务和作者能力确实需要承担这些责任时再讨论。"
+      },
+      {
+        "title": "大型赛事、现金悬赏与复杂评价分配",
+        "categoryIds": [
+          "challenge_brief"
+        ],
+        "content": "暂不以复杂赛事和现金回报作为内容供给基础。",
+        "reason": "题面、评审、异常处理与兑现都需持续投入；竞品公开规则不能证明复制这些动作就能获得优质供给。",
+        "boundary": "本建议不涉及新增奖励规则，也不把积分参与等同真实任务需求。"
+      },
+      {
+        "title": "把内部项目库和运行日志直接变成社区内容",
+        "categoryIds": [
+          "project_workspace"
+        ],
+        "content": "先从获准公开的资料中整理案例，不将项目文件、团队会话或原始运行日志默认向外展示。",
+        "reason": "内部材料帮助团队接续工作，公开内容则需要解释背景、筛选材料和明确使用范围，不能直接按日志条数扩充供给。",
+        "boundary": "团队协作能力可以有产品价值，但当前不能靠更复杂的工作区功能补齐社区内容。"
+      },
+      {
+        "title": "独立评测榜单与大量论文摘要",
+        "categoryIds": [
+          "research_evidence"
+        ],
+        "content": "可以在方法说明中引用有出处的研究；暂不把追逐榜单和批量摘要作为主要内容供给。",
+        "reason": "独立比较需要一致条件、足够记录与维护责任，现有人手更需要把自己的任务案例说清楚。",
+        "boundary": "引用论文不等于完成独立评测；没有完整条件与数据时，不自行给模型排总名次。"
+      }
+    ]
+  },
+  "basis": [
+    {
+      "categoryId": "inspiration",
+      "sourceIds": [
+        "o9-c-jm-1",
+        "o9-c-jm-2",
+        "o9-c-kl-1",
+        "o9-g-leo-public"
+      ],
+      "sourceUrls": [
+        "https://tensor.art/images/726162984440804171?post_id=726162984436609871",
+        "https://www.seaart.ai/explore/detail/cug2q2te878c73e48gqg?source=share_link",
+        "https://openart.ai/story",
+        "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
+        "https://aif.runwayml.com/",
+        "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe"
+      ],
+      "evidenceBoundary": "混合了公开作品样本、官方功能说明和精选展映；官网演示、获奖作品不当成普通作者总体画像。"
+    },
+    {
+      "categoryId": "project_case",
+      "sourceIds": [
+        "o9-g-run-miro",
+        "o9-c-kl-4",
+        "o9-c-jm-2",
+        "o9-d-way-interview",
+        "o9-d-way-dali",
+        "o9-d-ld-promo"
+      ],
+      "sourceUrls": [],
+      "evidenceBoundary": "包括精选客户案例、历史访谈/活动归档和推广内容规范；规范仅支持应提交哪些材料，不证明真实项目均已交付。"
+    },
+    {
+      "categoryId": "prompt_style",
+      "sourceIds": [
+        "o9-g-mid-board",
+        "o9-g-open-character",
+        "o9-g-night-promptle"
+      ],
+      "sourceUrls": [
+        "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator",
+        "https://openart.ai/features/ai-character/",
+        "https://www.waytoagi.com/zh/prompts/246",
+        "https://kling.ai/quickstart/klingai-element-library-3-user-guide"
+      ],
+      "evidenceBoundary": "WaytoAGI提示有正文样本；风格/角色多由功能指南支持。Kling元素资产与生成公开视频的公开范围分开，不能写成公开素材库。"
+    },
+    {
+      "categoryId": "model_resource",
+      "sourceIds": [
+        "o9-d-hf-card",
+        "o9-d-ms-hub",
+        "o9-c-ta-6",
+        "o9-c-sa-5"
+      ],
+      "sourceUrls": [
+        "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md",
+        "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+        "https://www.liblib.art/modelinfo/a2c90169daeb4e548322fdc0dc88af46?from=personal_page"
+      ],
+      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；Civitai不作为亲见卡片，Leonardo此训练资料标为Legacy。"
+    },
+    {
+      "categoryId": "input_material",
+      "sourceIds": [
+        "o9-d-ms-sdk"
+      ],
+      "sourceUrls": [
+        "https://huggingface.co/datasets/nyu-mll/glue",
+        "https://huggingface.co/docs/hub/data-studio",
+        "https://github.com/datawhalechina/all-in-rag",
+        "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai"
+      ],
+      "evidenceBoundary": "Hugging Face读到数据行结构；其余包含代码库材料组织与训练教程，不统一推成公开托管或可直接下载的数据资产。"
+    },
+    {
+      "categoryId": "task_app",
+      "sourceIds": [
+        "o9-c-rh-4",
+        "o9-c-ta-5",
+        "o9-c-sa-3",
+        "o9-g-leo-blue",
+        "o9-g-run-app",
+        "o9-d-hf-spaces"
+      ],
+      "sourceUrls": [
+        "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md",
+        "https://github.com/modelscope/modelscope_hub",
+        "https://www.waytoagi.com/agents/723"
+      ],
+      "evidenceBoundary": "角色来自发布指南，未实见用户端全部字段；WaytoAGI样本承接站外服务，Runway与受保护仓库不当成公开源代码市场。"
+    },
+    {
+      "categoryId": "workflow_template",
+      "sourceIds": [
+        "o9-c-lib-1",
+        "o9-c-lib-2",
+        "o9-c-rh-3",
+        "o9-c-ta-3",
+        "o9-d-dify-manage",
+        "o9-d-dify-template",
+        "o9-d-hf-spaces",
+        "o9-d-ms-sdk"
+      ],
+      "sourceUrls": [
+        "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-10-workflow.md",
+        "https://marketplace.dify.ai/template/langgenius/Code%20Converter?creationType=templates&language=en-US&templateId=09d8b8c8-9459-4ffb-b5e5-6f2255df410b"
+      ],
+      "evidenceBoundary": "存在下载/导入说明和源文件范例，但未导入或运行。Dify样本标题与设置说明不一致，只记录说明差异，不断言模板实际失败。"
+    },
+    {
+      "categoryId": "plugin_extension",
+      "sourceIds": [
+        "o9-d-dify-plugin"
+      ],
+      "sourceUrls": [
+        "https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible",
+        "https://marketplace.dify.ai/plugin/langgenius/self_refine_agent"
+      ],
+      "evidenceBoundary": "模型提供商与Agent策略是不同插件类型；已读说明，未安装、配置或验证效果。"
+    },
+    {
+      "categoryId": "how_to",
+      "sourceIds": [
+        "o9-c-lib-1",
+        "o9-c-sa-6",
+        "o9-c-kl-2",
+        "o9-g-open-product",
+        "o9-d-dify-quick"
+      ],
+      "sourceUrls": [
+        "https://tusi.cn/articles/728359301611162291",
+        "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+        "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
+        "https://www.leonardo.ai/news/how-to-edit-videos-with-ai",
+        "https://linux.do/t/topic/174250",
+        "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html"
+      ],
+      "evidenceBoundary": "包含历史版本指南、官方示例和作者教程；教程步骤存在不一致时保留原边界，不统一整理为已实操通过的配置。"
+    },
+    {
+      "categoryId": "learning_path",
+      "sourceIds": [
+        "o9-d-dw-learning",
+        "o9-d-dw-feedback",
+        "o9-d-way-about",
+        "o9-d-way-dali"
+      ],
+      "sourceUrls": [
+        "https://github.com/datawhalechina/all-in-rag",
+        "https://academy.runwayml.com/",
+        "https://academy.runwayml.com/course/ai-advertising",
+        "https://openart.ai/tutorials"
+      ],
+      "evidenceBoundary": "目录、课程仓库与外部视频入口分别记录；章节仍在规划、视频未播放和时长矛盾均不能用目录数量掩盖。"
+    },
+    {
+      "categoryId": "question_thread",
+      "sourceIds": [
+        "o9-d-ld-topic",
+        "o9-d-dw-question",
+        "o9-d-hf-discussion",
+        "o9-d-ms-issue"
+      ],
+      "sourceUrls": [
+        "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
+        "https://www.waytoagi.com/zh/question/82231"
+      ],
+      "evidenceBoundary": "包括真实问题样本、提问规范与AI问答样本；规范不代表所有帖子达标，搜索/生成答案不当作已审定结论。"
+    },
+    {
+      "categoryId": "curated_collection",
+      "sourceIds": [
+        "o9-d-hf-collection",
+        "o9-d-way-about",
+        "o9-g-civi-coll"
+      ],
+      "sourceUrls": [
+        "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe",
+        "https://www.leonardo.ai/news/taste-curation-no-3-sherbet",
+        "https://www.liblib.art/activities/49a6540f5b84400a9ed8ff6bcdfcaaa6/2025_envelopecover-models",
+        "https://linux.do/t/topic/122079"
+      ],
+      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。Civitai协作机制是实现说明；专题和外部链接的历史状态沿用分组限制。"
+    },
+    {
+      "categoryId": "challenge_brief",
+      "sourceIds": [
+        "o9-g-night-game",
+        "o9-g-night-rules",
+        "o9-g-night-promptle",
+        "o9-c-jm-4",
+        "o9-d-dw-learning",
+        "o9-d-dw-homework",
+        "o9-g-mid-tasks"
+      ],
+      "sourceUrls": [
+        "https://aif.runwayml.com/",
+        "https://tusi.cn/blackboard/forgecup",
+        "https://contributor.datawhale.cn/projects"
+      ],
+      "evidenceBoundary": "规则、展示档案和题目招募分别支持相应结构；吐司活动页年份未明，Datawhale招募只读到索引，不写成当前完整认领规则。"
+    },
+    {
+      "categoryId": "research_evidence",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://huggingface.co/papers/1804.07461",
+        "https://huggingface.co/docs/hub/paper-pages",
+        "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html"
+      ],
+      "evidenceBoundary": "论文页有原摘要和资源关系样本；PivotEval只核官方指南描述的报告形式，没有把报告导出能力当成已分析一份实际评测报告。"
+    },
+    {
+      "categoryId": "change_note",
+      "sourceIds": [
+        "o9-c-lib-2",
+        "o9-c-sa-3",
+        "o9-c-sa-6",
+        "o9-d-ld-connect",
+        "o9-d-dify-template",
+        "o9-d-hf-discussion",
+        "o9-g-civi-update"
+      ],
+      "sourceUrls": [
+        "https://linux.do/t/topic/1401642",
+        "https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible"
+      ],
+      "evidenceBoundary": "作者版本关系、公告、插件版本历史和协作修改提案均可留下维护信息；提案是否合并、规则何时适用仍须各看原文。"
+    },
+    {
+      "categoryId": "project_workspace",
+      "sourceIds": [
+        "o9-g-run-projects",
+        "o9-g-leo-team",
+        "o9-d-dify-logs"
+      ],
+      "sourceUrls": [],
+      "evidenceBoundary": "功能指南支持内部资料形态，未作为公开内容样本或实际活跃数据；公开分享、权限继承和日志完整度另有边界。"
+    }
+  ],
+  "decisionBasis": "多元拾光已有廉价Token/API中转与MakeNow两项业务，稳定人手为2名全栈研发、1名产品、1名运营；尚缺成熟案例与持续作者供给，画布分享/复制此前仍在规划。以下是基于这些条件的内容投入判断，不是功能定版、开发排期或用户验证任务。"
+}

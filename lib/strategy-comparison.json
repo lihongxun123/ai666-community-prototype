@@ -1,0 +1,2793 @@
+{
+  "version": "",
+  "date": "2026-09-10",
+  "title": "平台持续供给：内容组织与四种社区方案",
+  "summary": "四种方案分别侧重筛选解释、应用解法、创作方法和练习反馈。比较内容如何被发现和使用、由谁制作维护，以及 MakeNow 与 API 承担哪些工作。",
+  "status": "条件式比较，未确定定位、招聘或开发排期。",
+  "scope": "比较材料包括竞品运营机制、六条内容样例与四种浏览路径。阅读和收藏为本页演示，不计入用户行为。",
+  "basis": [
+    {
+      "label": "目标",
+      "fact": "先建立目标用户规模与持续活跃。",
+      "limit": "观察周期、有效行为与投入上限还未共同定案。"
+    },
+    {
+      "label": "供给",
+      "fact": "现有内容由平台维护，后续运营继续通过用户侧账号发布；自然UGC按尚无可用供给处理。",
+      "limit": "账号外观不改变供给责任；独立作者、合作产能和用户互评都不是现有资源。"
+    },
+    {
+      "label": "人员",
+      "fact": "2名全栈研发同时负责MakeNow与社区，另有1名产品、1名运营。",
+      "limit": "研发剩余时间、内容制作技能、审校能力与预算未知，四方案不能同时各占用全部人员。"
+    },
+    {
+      "label": "工具",
+      "fact": "用户说明API可支持文档中的模型，尚未逐模型实测；MakeNow一个案例已留下复制和文本保存证据。",
+      "limit": "素材显示、完整再生成与同一任务费用未核完；这些缺口影响可承诺范围，不否认已观察到的能力。"
+    },
+    {
+      "label": "经营数据",
+      "fact": "已有匿名历史访问与部分注册汇总，最新已找到观察日为2026-08-27。",
+      "limit": "缺少9月同口径的活跃、留存与外部内容反馈，缺失值不填0。"
+    }
+  ],
+  "composition": {
+    "title": "同一组内容，四种组织方式",
+    "scope": "六条内容共用一张历史成图和一个 MakeNow 公开画布。切换组织方式仅改变分组、顺序与浏览提示，正文和来源一致。样例由两个素材对象整理，不按六个需求或生成案例计数。",
+    "limit": "素材以制作记录和交付说明为主，可比较发现与关联路径；审美吸引力、点评需求与用户偏好尚无测试结果。",
+    "modes": [
+      {
+        "id": "A",
+        "label": "按专题读",
+        "promise": "先理解问题，再找配套材料。",
+        "headline": "从一张图到一份能看懂的创作记录",
+        "layout": "topics",
+        "groups": [
+          {
+            "title": "先读两篇说明",
+            "description": "先建立判断方法，减少读者自行拼材料的负担。",
+            "ids": [
+              "P23-03",
+              "P23-06"
+            ]
+          },
+          {
+            "title": "对照原始材料",
+            "description": "说明与结果相互印证，保留历史时间。",
+            "ids": [
+              "P23-01",
+              "P23-02"
+            ]
+          },
+          {
+            "title": "带着问题继续",
+            "description": "问题与画布作为延伸，不承诺尚未核实的执行。",
+            "ids": [
+              "P23-04",
+              "P23-05"
+            ]
+          }
+        ],
+        "why": "编辑决定学习顺序，把相关材料串成可读的小专题。不同媒介共存，但不要求读者先选择技术格式。",
+        "tradeoff": "读者少做一次材料拼接，编辑多承担选择、串联和更新工作。纯欣赏者可能需要更直接的作品入口。",
+        "returnPath": "回到保存的专题说明，再查看它所关联的材料和待解释问题。",
+        "supplyWork": "整理专题起点、关系与顺序；关键材料变化时同步修改说明。",
+        "mobile": "按阅读顺序纵向排列，分组标题保留；单条内容的来源和继续阅读入口不依赖侧栏。"
+      },
+      {
+        "id": "B",
+        "label": "按问题找",
+        "promise": "先找到相近问题，再检查已有依据。",
+        "headline": "输入、结果与尚未解释的差异",
+        "layout": "questions",
+        "groups": [
+          {
+            "title": "待讨论的问题",
+            "description": "先说明尚未解决的是什么；不虚构回答或采纳结果。",
+            "ids": [
+              "P23-04"
+            ]
+          },
+          {
+            "title": "已有依据",
+            "description": "把现象、成图和输入摆在一起，避免靠转述判断。",
+            "ids": [
+              "P23-03",
+              "P23-01",
+              "P23-02"
+            ]
+          },
+          {
+            "title": "处理范围与旁例",
+            "description": "交付方法与画布检查帮助判断问题属于哪一环。",
+            "ids": [
+              "P23-06",
+              "P23-05"
+            ]
+          }
+        ],
+        "why": "问题承担发现入口，证据和方法围绕它关联。不同内容类型按作用排列，而不是先分成六个频道。",
+        "tradeoff": "排错者容易进入上下文，平台也更容易收到超出能力范围的支持需求；作品欣赏不是这一结构的首要体验。",
+        "returnPath": "重开保存的问题，沿关联材料复查；没有新处理结果时明确保持未解决。",
+        "supplyWork": "补齐提问背景、标清处理范围、维护问题与证据关系；结论需要实际复核。",
+        "mobile": "以完整问题句为列表主项，材料在详情内顺序展开；保留返回原问题入口。"
+      },
+      {
+        "id": "C",
+        "label": "先看作品",
+        "promise": "结果吸引阅读，再了解输入与制作条件。",
+        "headline": "先看成图，再读过程",
+        "layout": "gallery",
+        "groups": [
+          {
+            "title": "结果与画布现场",
+            "description": "历史成图与现场截图分别标明，不能把截图当作新生成作品。",
+            "ids": [
+              "P23-01",
+              "P23-05"
+            ]
+          },
+          {
+            "title": "这份结果背后的材料",
+            "description": "想继续做的人再阅读输入与规格说明。",
+            "ids": [
+              "P23-02",
+              "P23-03"
+            ]
+          },
+          {
+            "title": "继续讨论与维护",
+            "description": "保留欣赏之外的路径，也允许只观看作品。",
+            "ids": [
+              "P23-04",
+              "P23-06"
+            ]
+          }
+        ],
+        "why": "可见图像先承担选择作用，过程材料留在关联阅读中。展示作品与交付可运行模板分别说明。",
+        "tradeoff": "展示所需文字更少，但选片和素材质量要求更高；漂亮结果不能替代可用文件与复用说明。",
+        "returnPath": "先找到保存的作品，再进入对应输入、说明或公开画布；保存作品不被解释为已运行。",
+        "supplyWork": "取得可展示素材、选片与说明；若承诺复用，再承担执行核验和失效修复。",
+        "mobile": "结果图完整显示，避免为了统一卡高裁掉关键信息；过程链接随正文排列。",
+        "representationLimit": "现有素材只有一张历史插画和一张工具现场截图。这里展示结果优先的浏览结构，尚不能代表视觉作品社区的内容丰富度、审美水平或吸引力。"
+      },
+      {
+        "id": "D",
+        "label": "围绕讨论",
+        "promise": "围绕具体观察交换判断，再补充依据。",
+        "headline": "读完这份材料，你会怎样判断？",
+        "layout": "discussion",
+        "groups": [
+          {
+            "title": "本次讨论题",
+            "description": "仅展示编辑整理的开放问题，当前没有真实参与者回复。",
+            "ids": [
+              "P23-04"
+            ]
+          },
+          {
+            "title": "参与前可看的材料",
+            "description": "让观点有共同依据；不把参与门槛设成必须生成作品。",
+            "ids": [
+              "P23-01",
+              "P23-03",
+              "P23-02"
+            ]
+          },
+          {
+            "title": "后续整理与另一个现场",
+            "description": "可以形成更正和延伸，不填虚构点评或同伴进展。",
+            "ids": [
+              "P23-06",
+              "P23-05"
+            ]
+          }
+        ],
+        "why": "讨论题把材料变成共同语境，允许表达不同判断；长期价值依赖具体回应与后续整理。",
+        "tradeoff": "读者更容易知道可以参与什么，平台则必须有回应能力。没有讨论素材和回应者时，页面结构本身不会产生关系。",
+        "returnPath": "重开保存的讨论题，查看真实补充；本示意不制造新回复或通知。",
+        "supplyWork": "出题、准备依据、回应与归纳分歧；专业点评能力不足时只承诺编辑回应。",
+        "mobile": "问题与材料保持同一纵向路径，讨论记录靠内容关联承接，不把长线程塞进窄卡片。",
+        "representationLimit": "当前仅演示讨论与依据的关联，不是D方案完整样本。材料中没有真实创作练习、具体点评和修订结果，因此不能据此比较练习反馈社区的价值。"
+      }
+    ]
+  },
+  "remaining": [
+    {
+      "question": "实际内容产能",
+      "current": "内容样例已整理，选题、制作与后续维护的完整工时尚未记录。",
+      "nextEvidence": "一份实际生产内容包的制作、编辑、核验与后续处理记录。",
+      "changes": "决定平台自制范围、是否需要合作，以及能承担的更新频率。"
+    },
+    {
+      "question": "工具完整交付",
+      "current": "复制和文本保存已有记录；复查时原件与副本均有图片显示问题，尚未再次生成。",
+      "nextEvidence": "可用素材、明确模型和费用范围下的代表任务及实际结果。",
+      "changes": "主要约束可复用方法和工具解法的承诺；不阻止作品欣赏与说明类内容比较。"
+    },
+    {
+      "question": "当前经营表现",
+      "current": "最新已找到的匿名汇总观察日为8月27日，近期值未取得。",
+      "nextEvidence": "同一观察窗的外部消费、回应和后续行为，平台自身与未知来源分别记录。",
+      "changes": "检验进入、消费与回来发生在哪一环；不能由现有历史访问数推出留存。"
+    },
+    {
+      "question": "共同投入边界",
+      "current": "人员数量明确，可分配时间、阶段预算和观察目标尚缺。",
+      "nextEvidence": "按角色汇总的可用工时、可承受费用范围、观察周期与共同判断标准。",
+      "changes": "决定四方案各自的轻量版本是否能兑现，不要求一次形成全年预算。"
+    }
+  ],
+  "closure": "内容组织、供给责任与工具角色可据现有材料比较；流量、留存、收入和作者合作意愿仍缺实际数据。",
+  "sources": [
+    {
+      "id": "BASE23-01",
+      "title": "平台持续供给的当前前提",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-platform-supply/study.json",
+      "locator": "assumption、measurementAxes、workload",
+      "date": "2026-09-10",
+      "scope": "内部确认及分析，不是数据库库存统计。"
+    },
+    {
+      "id": "BASE23-02",
+      "title": "近期经营资料的定向检索结果",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-data.json",
+      "locator": "scope、records、availability",
+      "date": "2026-09-10重读历史汇总",
+      "scope": "沿用结果，未重新采集经营数据。"
+    },
+    {
+      "id": "BASE23-03",
+      "title": "MakeNow素材与费用检查",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+      "locator": "records、generation",
+      "date": "2026-09-10现场",
+      "scope": "一个公开画布及其副本，不代表全站可用性。"
+    },
+    {
+      "id": "BASE23-04",
+      "title": "四方案原稿",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "options、basis",
+      "date": "2026-09-10",
+      "scope": "名称与讨论脉络的历史对照；重写取代其当前方案地位，原稿保留。"
+    },
+    {
+      "id": "v15-r-neomme",
+      "title": "NeoMME Collection",
+      "url": "https://huggingface.co/collections/Hcompany/neomme",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-r-neomme；对应样本正文",
+      "date": "原观察：2026-09-10，正文与浏览器详情已读并截图；页面日期：动态资源页；为综合，未重新访问",
+      "scope": "同一主题下论文、模型与Demo的实际关联；未测试资源  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "V20-S01",
+      "title": "Runway Watch — After Light",
+      "url": "https://watch.runwayml.com/after-light",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+      "locator": "sources.V20-S01；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "影片嵌入、回到TV、CPP及其他频道、片名与署名；未完整播放，未做视觉截图。  继承材料：v20-input-value.json。"
+    },
+    {
+      "id": "C22-S01",
+      "title": "真实C端作品详情模板",
+      "url": "",
+      "path": "项目资料/ai666-user/src/components/mod/ModWorksDetail/pc/ui/WorksDetailAside/WorksDetailAside.vue",
+      "locator": "逐行读1-65；标题、提示词、参考媒体、评论和动作模板",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "代码存在，非线上验收  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "C22-S03",
+      "title": "教程卡片栏目与摘要",
+      "url": "",
+      "path": "项目资料/ai666-user/src/view/tutorial/discover/ui/TutorialListCard.vue",
+      "locator": "逐行读65-80",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "取值逻辑，不证明实际内容完整  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "U22-S01",
+      "title": "用户关于内容供给的明确说明",
+      "url": "",
+      "path": "本任务对话 · 2026-09-10",
+      "locator": "用户消息",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "供给模式的用户确认，不是数据库查询或用户活跃统计。  继承材料：v22-platform-supply/study.json。"
+    },
+    {
+      "id": "v15-g1",
+      "title": "Website Overview",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-g1；对应样本正文",
+      "date": "原观察：2026-09-10，公开正文已读取；页面日期：未标注；为综合，未重新访问",
+      "scope": "Explore、作品详情、复用、Style Explorer；官方功能说明，非登录实跑。  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "C22-S02",
+      "title": "同款输入与参考材料权限",
+      "url": "",
+      "path": "项目资料/ai666-user/src/components/mod/ModWorksDetail/data/worksDetailRemix.js",
+      "locator": "逐行读1-108；重点14-24、73-103",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "没有调用真实接口或生成  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "v15-r-cookbook",
+      "title": "LLM Cookbook项目说明",
+      "url": "https://github.com/datawhalechina/llm-cookbook",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-r-cookbook；对应样本正文",
+      "date": "原观察：2026-09-10，仓库正文已读；页面日期：未标注，main持续修订；为综合，未重新访问",
+      "scope": "课程组织、在线阅读/PDF/Notebook及贡献方式；未采信旧接口为当前建议  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "v15-r-iterative",
+      "title": "第三章：迭代优化",
+      "url": "https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-r-iterative；对应样本正文",
+      "date": "原观察：2026-09-10，具体章节正文已读；页面日期：未标注，main持续修订；为综合，未重新访问",
+      "scope": "任务、初始提示、结果与修订的文章结构；未运行其代码  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "C22-S04",
+      "title": "教程正文与学习路径",
+      "url": "",
+      "path": "项目资料/ai666-user/src/view/tutorial/detail/detailIndex.vue",
+      "locator": "逐行读72-142、182-205",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "标题提取与正文代码，不是教学效果  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "V20-S02",
+      "title": "Pebble模型发布受阻的公开更新与回复",
+      "url": "https://huggingface.co/posts/Hoglet-33/620130623473492",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+      "locator": "sources.V20-S02；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "进展自述、beta链接、一级建议与作者接话、回复/关注入口；只显示部分回复，未核模型性能。  继承材料：v20-input-value.json。"
+    },
+    {
+      "id": "V20-S03",
+      "title": "Pebble-50M-beta — Model card",
+      "url": "https://huggingface.co/basically-experimental/Pebble-50M-beta",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+      "locator": "sources.V20-S03；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "与动态同一资源的实验状态、评测材料缺失说明和用法入口；不引用下载统计或参数量作分析，未执行推理。  继承材料：v20-input-value.json。"
+    },
+    {
+      "id": "C22-S05",
+      "title": "闪念编辑限制与提交审核事件",
+      "url": "",
+      "path": "项目资料/ai666-user/src/view/idea/post/data/useFlashCompose.js",
+      "locator": "逐行读12-22、154-176",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "未发帖；submit_review不能充当公开内容数  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "C22-S06",
+      "title": "闪念卡片正文、媒体与列表内评论",
+      "url": "",
+      "path": "项目资料/ai666-user/src/view/idea/post/ui/PostListItem.vue",
+      "locator": "逐行读15-78",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "模板承载，不是回应效果  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "v11-ld-home",
+      "title": "LINUX DO 登录首页",
+      "url": "https://linux.do/",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+      "locator": "sources.v11-ld-home；对应样本正文",
+      "date": "原观察：2026-09-09；页面日期：访问 2026-09-09；为综合，未重新访问",
+      "scope": "导航和两条公开置顶卡片；不读取个人消息、草稿或账户资料。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+    },
+    {
+      "id": "v11-ld-question",
+      "title": "工具首字延迟求助",
+      "url": "https://linux.do/t/topic/2880961",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+      "locator": "sources.v11-ld-question；对应样本正文",
+      "date": "原观察：2026-09-09；页面日期：2026-09-09；为综合，未重新访问",
+      "scope": "共 5 帖及通知菜单；作者体验不等于工具性能实测。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+    },
+    {
+      "id": "v11-ld-solved",
+      "title": "关于应用接入的问题请教佬友",
+      "url": "https://linux.do/t/topic/1537782",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+      "locator": "sources.v11-ld-solved；对应样本正文",
+      "date": "原观察：2026-09-09；页面日期：2026-01-29；复核 2026-09-09；为综合，未重新访问",
+      "scope": "采纳展示、作者自述和公告引用；未独立复现。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+    },
+    {
+      "id": "D21-LL-V1",
+      "title": "LiblibAI：电商产品精修与背景替换（SDXL版）V1.0",
+      "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+      "locator": "sources.D21-LL-V1；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "作者公开说明正文；输入、排错和反馈邀请。未返回评论或版本日期。  继承材料：v21-input-domestic.json。"
+    },
+    {
+      "id": "D21-LL-V2",
+      "title": "LiblibAI：电商产品精修与背景替换（FLUX）V2.0",
+      "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+      "locator": "sources.D21-LL-V2；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "作者正文对照 V1，描述输入、依赖和配置变化；未验证源文件或效果。  继承材料：v21-input-domestic.json。"
+    },
+    {
+      "id": "D21-TA-V32P",
+      "title": "KJ-ArtTool V3.2 Polished",
+      "url": "https://tensor.art/models/1038064121498574537",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+      "locator": "sources.D21-TA-V32P；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：Uploaded 2026-08-29；项目 Updated 2026-09-02；为综合，未重新访问",
+      "scope": "精修分支的作者用途说明；Epoch 9 与说明 E10 的对应关系未解释。  继承材料：v21-input-domestic.json。"
+    },
+    {
+      "id": "F26",
+      "title": "FABRIC · Runtime error #26",
+      "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/26",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+      "locator": "sources.F26；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "问题、成员尝试、Owner回应、重开。  继承材料：v20-input-supply.json。"
+    },
+    {
+      "id": "F55",
+      "title": "FABRIC · Admin maintenance migration #55",
+      "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/55",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+      "locator": "sources.F55；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "HF Staff身份、迁移PR与merged状态；日期经公开HTML复核。  继承材料：v20-input-supply.json。"
+    },
+    {
+      "id": "F55-DIFF",
+      "title": "FABRIC · migration #55 Files changed",
+      "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/55/files",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+      "locator": "sources.F55-DIFF；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "GPU运行适配和依赖调整。  继承材料：v20-input-supply.json。"
+    },
+    {
+      "id": "M22-S01",
+      "title": "MakeNow公开画布与同一案例研究副本的UI核对",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+      "locator": "sources.M22-S01；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "实际导航、DOM图片属性与公开截图，继承。私人副本地址不进入报告；未提交生成。继承材料：v22-input-makenow.json。"
+    },
+    {
+      "id": "C22-S08",
+      "title": "工作流、Skill与MCP详情示例字段",
+      "url": "",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/figma_prototype_work/c-end-detail-page-v1/index.html",
+      "locator": "逐行读1770-1810",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "静态原型示例和模拟统计不是内容库存或实际服务  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "v15-cn-rh-flow",
+      "title": "一键换背景：产品图摄影",
+      "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-cn-rh-flow；对应样本正文",
+      "date": "原观察：2026-09-10；已读公开详情正文；页面日期：2024-11-23更新；为综合，未重新访问",
+      "scope": "实例的说明、节点清单和入口；未读下载文件，未运行  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "v15-cn-rh-app",
+      "title": "新版Fill-OneReward万物消除",
+      "url": "https://www.runninghub.cn/ai-detail/1966722305902718977",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-cn-rh-app；对应样本正文",
+      "date": "原观察：2026-09-10；已读公开详情正文；页面日期：未标注；为综合，未重新访问",
+      "scope": "应用功能说明、计费提示与运行入口；未生成  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "C22-S09",
+      "title": "MakeNow公开画布有限交接证据",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-makenow.json",
+      "locator": "重读全文；records M20-01至M20-05、generation、deliveryLevels、supplyWork",
+      "date": "2026-09-10现场，整理，重读，未再次访问",
+      "scope": "一个案例一个账号一个字段；素材与生成未验证  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "V20-S05",
+      "title": "48-Hour AI Film Challenge — Gen:48",
+      "url": "https://runway.com/gen48",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+      "locator": "sources.V20-S05；对应样本正文",
+      "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+      "scope": "指定条目的作品名、奖项、署名、片长和届次；当前Aleph区域显示加载中，未核完整当前名单、投票与评审过程。  继承材料：v20-input-value.json。"
+    },
+    {
+      "id": "o9-g-run-cpp",
+      "title": "Creative Partners Program",
+      "url": "https://runway.com/creative-partners-program",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+      "locator": "sources.o9-g-run-cpp；对应样本正文",
+      "date": "原观察：2026-09-09；页面日期：未标发布日期；为综合，未重新访问",
+      "scope": "策选、访问/合作机会及没有固定时间或创作投入要求 没有实际合作或现金稿酬记录；Spotlights部分动态未加载。 继承材料：site/lib/platform-operations.json。"
+    },
+    {
+      "id": "v15-skills-entry",
+      "title": "vercel-react-best-practices",
+      "url": "https://www.skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-skills-entry；对应样本正文",
+      "date": "原观察：2026-09-10；条目正文已读；页面日期：页面First Seen为2026-01-19，并非本版发布日期；为综合，未重新访问",
+      "scope": "摘要、SKILL.md、安装入口、源码、关联条目与审计展示；未运行安装命令。  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "v15-skills-docs",
+      "title": "Skills Documentation",
+      "url": "https://www.skills.sh/docs",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-skills-docs；对应样本正文",
+      "date": "原观察：2026-09-10；正文已读；页面日期：未标注（持续更新）；为综合，未重新访问",
+      "scope": "技能用途、安装与排行遥测说明；明确不保证每项质量和安全。  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "v15-mcp-about",
+      "title": "The MCP Registry",
+      "url": "https://modelcontextprotocol.io/registry/about",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "sources.v15-mcp-about；对应样本正文",
+      "date": "原观察：2026-09-10；正文已读；页面日期：未标注（持续更新，正文仍称preview）；为综合，未重新访问",
+      "scope": "元数据、包仓库、下游目录、命名空间验证及安全扫描职责边界。  继承材料：site/lib/market-content-forms.json。"
+    },
+    {
+      "id": "C22-S07",
+      "title": "白色聚合内容冻结状态",
+      "url": "",
+      "path": "项目资料/ai666-codex-audit-pack/docs/versions/v1.0/status/modules/white-aggregate-content.md",
+      "locator": "逐行读1-37，重点5-7、19-25、35-37",
+      "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+      "scope": "不解除冻结、不编辑原型  继承材料：v22-input-content.json。"
+    },
+    {
+      "id": "R23-RH-REWARD",
+      "title": "RunningHub 创作者激励计划（复核）",
+      "url": "https://www.runninghub.cn/creator-reward",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-runninghub.json",
+      "locator": "官方页收益说明与内容发布要求；原记录RH21-S06",
+      "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+      "scope": "确认有效运行、收藏、原创及推荐与激励独立；没有结算实绩、成本或维护接管数据。"
+    },
+    {
+      "id": "R23-HF-COL",
+      "title": "Hugging Face Collections（复核）",
+      "url": "https://huggingface.co/docs/hub/collections",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "Collections、Ordering、Notes与公开预览；原记录v15-r-collections-doc",
+      "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+      "scope": "确认不同资源组合、条目顺序、说明、公开预览和协作历史；未实操或验证消费效果。"
+    },
+    {
+      "id": "R23-NC-CHALLENGE",
+      "title": "NightCafe Community Challenges（复核）",
+      "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+      "locator": "Discoverability、Scoring、Challenge Phases；原记录v15-h1",
+      "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+      "scope": "确认主题、投稿、评选、结果与发现条件；未读取实时参赛池、投票或实际留存。"
+    },
+    {
+      "id": "P23-S01",
+      "title": "已脱敏图像案例摘要",
+      "url": "",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/model_service_case_factory/live_runs/2026-06-17T08-44-27-948Z-image-smoke/case_materials.md",
+      "locator": "3—20行；Prompt与size原文",
+      "date": "2026-06-17；重读2026-09-10",
+      "scope": "文件声明输入为虚构/脱敏brief，不含密钥、请求头或余额。只使用已脱敏正文，不读取原始响应与调用日志。"
+    },
+    {
+      "id": "P23-S02",
+      "title": "报告保存的历史插画文件",
+      "url": "/research-images/v20/api-image-20260617.jpg",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/public/research-images/v20/api-image-20260617.jpg",
+      "locator": "JPEG；view_image查看",
+      "date": "生成2026-06-17；查看2026-09-10",
+      "scope": "当前报告中已有本地文件。确认画面为窗边桌面、抽象卡片、箭头与纸张；实际尺寸沿用文件属性记录，没有新生成或改图。"
+    },
+    {
+      "id": "P23-S03",
+      "title": "API交付核对",
+      "url": "",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-api.json",
+      "locator": "API20-01、02、03、06、10及taskChain",
+      "date": "2026-09-10；重读",
+      "scope": "支持历史样本、模型名差异、实际尺寸与摘要不一致等事实。没有运行、当前质量、重试成本或根因证据。"
+    },
+    {
+      "id": "P23-S04",
+      "title": "MakeNow复制与保存检查",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-makenow.json",
+      "locator": "M20-01—M20-05及deliveryLevels",
+      "date": "2026-09-10；重读",
+      "scope": "同一案例、当前账号一个文本字段的复制编辑与保存重开记录；没有两名独立用户或完整生成验收。"
+    },
+    {
+      "id": "P23-S05",
+      "title": "MakeNow素材与费用检查",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+      "locator": "M22-01—M22-05及generation、screenshot",
+      "date": "2026-09-10；重读",
+      "scope": "原件与副本的7张列表缩略图未解码，费用与免费来源未确认，生成0次。原因未定位，不能称复制故障。"
+    },
+    {
+      "id": "P23-S06",
+      "title": "MakeNow公开原件图片未显示截图",
+      "url": "/research-images/v22/makenow-original-image-unavailable.jpg",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/public/research-images/v22/makenow-original-image-unavailable.jpg",
+      "locator": "view_image查看既有公开截图",
+      "date": "截图2026-09-10；查看同日",
+      "scope": "包含公开原件节点列表和公交站台图片占位；不含私人副本地址、账户或余额；不是可交付项目文件。"
+    },
+    {
+      "id": "P23-S07",
+      "title": "平台供给与内容承载分析",
+      "url": "",
+      "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-content.json",
+      "locator": "supplyImplications、recommendations、unknowns及samples相关正文",
+      "date": "2026-09-10；重读相关部分",
+      "scope": "供给按平台组织成立；作品、说明和可用资源分开承诺。用户最新澄清是任务前提，六份旧草案本身不是真实产能或需求证据。"
+    },
+    {
+      "id": "OPT23-S01",
+      "title": "用户已确认的目标、团队、资源与平台长期供给条件",
+      "url": "",
+      "path": "本任务对话",
+      "locator": "目标规模与持续活跃；2研发/1产品/1运营；API覆盖文档模型；平台维护并通过用户侧账号持续发布",
+      "date": "2026-09-10沿用",
+      "scope": "用户提供的经营条件，非数据库查询、预算确认或能力测试。"
+    },
+    {
+      "id": "OPT23-S02",
+      "title": "四方向原稿",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "options A-D、comparison、sources",
+      "date": "2026-09-10；重读",
+      "scope": "仅作名称映射和旧方案追溯；正文已按最新条件重写。"
+    },
+    {
+      "id": "OPT23-S03",
+      "title": "六类平台内容与现有承载对照",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-content.json",
+      "locator": "rows C22-01至C22-06、supplyImplications、sources",
+      "date": "2026-09-10；重读",
+      "scope": "当前代码承载、冻结原型和编辑草案；不证明线上完整使用、内容产能或用户效果。"
+    },
+    {
+      "id": "OPT23-S04",
+      "title": "已有匿名经营汇总及来源拆分",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-data.json",
+      "locator": "conclusion、availability、supplySegmentation",
+      "date": "2026-09-10整理；最新观察日2026-08-27",
+      "scope": "历史汇总和口径可用性；不能视为9月实际活跃或内容效果。"
+    },
+    {
+      "id": "OPT23-S05",
+      "title": "MakeNow素材与费用检查",
+      "url": "https://dream.ai666.net/case-share/6/canvas",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+      "locator": "records M22-01至M22-05、generation、implications",
+      "date": "2026-09-10现场；继承",
+      "scope": "同一个案例一次连续检查；生成提交0，图片无法显示原因未定位；不外推全站。"
+    },
+    {
+      "id": "OPT23-S06",
+      "title": "自身页面与约束核对",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v21-input-own.json",
+      "locator": "rows OWN21-01至OWN21-07、conditions",
+      "date": "2026-09-10；重读",
+      "scope": "代码和既有文档核对；供给条件以用户澄清覆盖旧库存建议。"
+    },
+    {
+      "id": "OPT23-S07",
+      "title": "Hugging Face Collections与Datawhale迭代章节的既有研究",
+      "url": "https://huggingface.co/docs/hub/collections",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "sources v15-r-collections-doc、v15-r-iterative",
+      "date": "依据2026-09-10的访问记录",
+      "scope": "合集与带过程的学习材料结构实例；不证明本站编辑需求、产能或回访。"
+    },
+    {
+      "id": "OPT23-S08",
+      "title": "Hugging Face Spaces与Discourse功能的既有研究",
+      "url": "https://huggingface.co/docs/hub/spaces-overview",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "sources v15-hf-spaces、v15-r-discourse、v15-r-linuxdo",
+      "date": "依据2026-09-10的访问记录",
+      "scope": "应用、上下文与讨论组织实例；不保证本站能提供托管或技术支持，也不推定LINUX DO全部配置。"
+    },
+    {
+      "id": "OPT23-S09",
+      "title": "RunningHub与FLORA创作方法交付的既有研究",
+      "url": "https://flora.ai/updates/project-sharing-open-collaboration",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "sources v15-cn-rh-flow、v15-cn-flora-share、v15-cn-flora-canvas",
+      "date": "继承2026-09-10先前访问；FLORA分享公告日期2025-11-26",
+      "scope": "作品、节点与交接的官方/作者说明，旧研究未执行这些流程；不能证明MakeNow具有同等能力。"
+    },
+    {
+      "id": "OPT23-S10",
+      "title": "NightCafe挑战和Hugging Face课程的既有研究",
+      "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+      "locator": "sources v15-h1、v15-h2、v15-c2",
+      "date": "依据2026-09-10的访问记录",
+      "scope": "练习组织、作品与参与机制实例；不证明个别点评质量、本站导师供给或参与者关系。"
+    },
+    {
+      "id": "OPT23-S11",
+      "title": "平台持续供给研究前提",
+      "url": "",
+      "path": "outputs/aigc-community-deep-research-2026-09-08/v22-platform-supply/study.json",
+      "locator": "assumption、changedDecisions、measurementAxes、workload",
+      "date": "2026-09-10；重读",
+      "scope": "平台供给责任、来源与外部消费分别判断，不把多账号发布当自然作者规模。"
+    }
+  ],
+  "mechanisms": {
+    "title": "10项内容运营做法：适用条件与投入",
+    "summary": "编选、作品过程说明、教程和讨论主要依靠编辑与回应；资源交接、在线应用、作者分成和高频比赛，还需要技术维护、结算或外部参与。采用前需分别核算持续工作。",
+    "method": {
+      "date": "2026-09-10",
+      "round": "",
+      "basis": "综合既有原页、官方规则和自身代码/实操记录。不是18家全部再次实访。",
+      "sampleBoundary": "目的抽样，不用于推算市场普及率、普通作者产能、留存、成功率或收入因果。Tusi/Tensor为同一产品组时仍保持站点与规则边界。",
+      "freshChecks": "已重新读取 RunningHub 激励、Hugging Face Collections 和 NightCafe 挑战的3个官方页面。其余来源保留各自访问日期。",
+      "supplyPremise": "用户确认当前独立自然UGC按尚未形成处理；平台将持续通过用户侧账号发布。不是数据库为0，也不否定真实用户消费。运营组织行为与外部自主行为须分开。",
+      "decisionMeaning": "有条件采用=可以进入内容展示和方案比较，不是研发开工或已证效果；依赖尚缺=先补具体材料或责任；暂不优先=当前不以该机制作为供给起点，不永久排除。",
+      "ownEvidence": "自身能力依据代码检查与 MakeNow 操作记录，具体日期和范围见相应条目。",
+      "scope": "只写研究输入。工时、人数和预算无实测时保留未知，不给经验数字冒充产能。"
+    },
+    "mechanisms": [
+      {
+        "id": "M23-01",
+        "name": "按主题策展，保留不同内容的阅读方式",
+        "stance": "有条件采用",
+        "claim": "平台持续供给适合先承担编选和关联工作。可以把作品、教程、过程和资源放在同一主题下，但不应全部变成同样的封面卡片。",
+        "pageFacts": [
+          "Hugging Face 合集支持混合资源、调整顺序和编写条目说明，公开预览展示部分条目。NeoMME 样本关联了论文、模型和 Demo。",
+          "Runway After Light 单片页提供观看与返回频道入口，未取得工程文件或完整教程。"
+        ],
+        "inference": "共同主题说明条目间的联系，类型与摘要帮助读者选择观看、学习或取得资源的路径。",
+        "userValue": "欣赏者有选择理由；学习者找到过程；有任务的人识别能取得的材料；用户可沿主题继续发现。",
+        "platformWork": [
+          {
+            "role": "运营/编辑",
+            "work": "确定本期主题、入选和排除理由，整理条目摘要，检查链接与署名。"
+          },
+          {
+            "role": "素材作者或合作方",
+            "work": "提供允许展示的内容与准确来源。"
+          }
+        ],
+        "cost": "持续选片、比较和清理重复条目；专题过多会分散更新力量。使用外部资源可减少原创制作，但不能省去筛选、授权核对和失效维护。",
+        "failureConditions": [
+          "合集只有相近标签，没有编选说明。",
+          "同一素材拆成多篇近乎重复内容，增加数量而没有新增信息。",
+          "冷门栏目长期空置，首页被大量入口占满。"
+        ],
+        "counterexample": "欣赏型影片没有源文件仍可完成观看交付；反过来，一页资源链接齐全也不代表其中应用能运行。",
+        "existingCarrier": "社区作品、教程和闪念已有各自的 C端页面；专用资源详情仍为冻结原型。专题可先用编辑内容和研究示意比较。",
+        "gap": "尚未核实真实产品是否具备可维护的多类型专题关系与对应入口，不把研究效果图算成上线功能。",
+        "evidenceToChangeJudgment": "用同一批已有样例对照混排与专题组织，检查读者能否说出条目差异、找到下一条相关内容；另记录编辑整理和一轮更新的工时。",
+        "toolRelation": "工具是可选后续入口。专题的独立价值在选择与关联；没有数据证明它带来额外工具订单。",
+        "sourceIds": [
+          "R23-HF-COL",
+          "v15-r-neomme",
+          "V20-S01",
+          "C22-S01",
+          "C22-S03",
+          "U22-S01"
+        ]
+      },
+      {
+        "id": "M23-02",
+        "name": "作品结果优先，过程与再创作按需展开",
+        "stance": "有条件采用",
+        "claim": "作品列表先保证看得清、认得出，详情再按内容承诺开放提示词、素材和复用条件。",
+        "pageFacts": [
+          "Midjourney 官方说明包含作品发现、提示词与设置查看、复用入口。",
+          "社区作品详情代码已有提示词与参考媒体；同款输入包含模型等参数，并检查参考素材权限。"
+        ],
+        "inference": "先用结果判断兴趣，再决定是否付出学习或操作成本；将欣赏和制作意图放在同一对象上，但保留不同结束点。",
+        "userValue": "观看、寻找风格、收藏和交流；愿意尝试者可更少地重建输入。",
+        "platformWork": [
+          {
+            "role": "编辑",
+            "work": "选取能说明看点的结果与标题，写真实制作背景。"
+          },
+          {
+            "role": "制作者/复核者",
+            "work": "只有在承诺复用时才补齐实际输入、参数、素材用途和适用限制。"
+          }
+        ],
+        "cost": "精选画面的审美判断和素材核验持续发生；开放复用后还增加参数与模型变化的检查。不能把纯展示与可复用案例按同一生产工时估算。",
+        "failureConditions": [
+          "以精修成品暗示一键即可得到同样效果。",
+          "标题承诺教程或画布，详情只给成品图。",
+          "卡片堆满参数，妨碍观看却没有把真实材料交付出去。"
+        ],
+        "counterexample": "Midjourney 的复用入口不等于完整工程交接；本站存在同款代码也不等于实际字段齐全或成功生成。",
+        "existingCarrier": "作品详情和同款字段已有代码，可先补齐素材与使用说明。",
+        "gap": "当前线上材料可用性、生成成功及外部用户观看/收藏/回访尚未完成对应核验。",
+        "evidenceToChangeJudgment": "各选一件纯展示和承诺复用的作品，分别验收可观看、可理解与输入实际可取得；有真实外部行为时再区分欣赏和制作两类结果。",
+        "toolRelation": "再创作可引出调用费用，但工具消费只是其中一种结果。不能用未生成否定观看价值。",
+        "sourceIds": [
+          "v15-g1",
+          "V20-S01",
+          "C22-S01",
+          "C22-S02"
+        ]
+      },
+      {
+        "id": "M23-03",
+        "name": "教程先讲真实过程，系列课程要有连续供给条件",
+        "stance": "有条件采用",
+        "claim": "可以先采用问题、步骤、结果检查和修订说明；完整课程或训练营需另核讲师、练习和答疑能力。",
+        "pageFacts": [
+          "Datawhale 迭代章节连续呈现任务、输出问题和提示修改，并关联实践材料。",
+          "社区教程代码可从正文前三个有效标题生成学习路径，页面已有正文、日期和评论。"
+        ],
+        "inference": "教学竞争点在能否解释选择与错误，而非篇幅、视频数量或课时包装。改善已有标题和过程材料就能检验部分质量问题。",
+        "userValue": "理解方法、排查差异、之后按章节查找；不必每位读者都立即操作。",
+        "platformWork": [
+          {
+            "role": "实际会做的人",
+            "work": "提供输入、过程、失败样例、修改理由和可核结果。"
+          },
+          {
+            "role": "运营编辑",
+            "work": "写清适用起点、章节与检查项，将重复问题补回正文。"
+          }
+        ],
+        "cost": "编辑不能替代复做。工具更新会带来步骤修订、素材重做和答疑；长周期课程增加维护多个章节的一致性工作。",
+        "failureConditions": [
+          "只有成功截图，没有可用过程。",
+          "运营改写工具介绍但没有人核对步骤。",
+          "先承诺系统课程和随问随答，后续没有对应时间。"
+        ],
+        "counterexample": "有完整长文不代表学习有效；旧示例还能阅读，不代表其中当前接口和依赖仍适用。",
+        "existingCarrier": "已有教程可先靠内容改进，不必等新教学系统；真实学习路径取决于正文标题质量。",
+        "gap": "未有完整实做内容包和准确工时，不能推定一名运营可以独立承担课程制作与技术答疑。",
+        "evidenceToChangeJudgment": "由非原作者按一份教程指出无法理解或缺失的材料；记录修订次数与不同角色耗时，再判断适合单篇还是系列。",
+        "toolRelation": "教程可解释通用方法，也可衔接 MakeNow 或 API。需要使用特定工具时，应在适用条件中说明。",
+        "sourceIds": [
+          "v15-r-cookbook",
+          "v15-r-iterative",
+          "C22-S03",
+          "C22-S04"
+        ]
+      },
+      {
+        "id": "M23-04",
+        "name": "用真实进展和可回应的问题组织轻量交流",
+        "stance": "有条件采用",
+        "claim": "运营可以发布真实制作进度、比较题和明确的问题；发布之后需有人继续回应，不将多个运营账号互答当自然交流。",
+        "pageFacts": [
+          "HF Pebble 动态记录了未达预期的进度、资源链接、成员建议与作者回复，未见建议后的实验结果。",
+          "社区闪念代码支持短正文、图片、视频和列表内评论；提交审核事件不代表已公开内容。"
+        ],
+        "inference": "未完成内容也可提供表达和交流价值，前提是读者能明白发生了什么、哪里需要帮助。平台持续填充时，运营承担发起与跟进责任。",
+        "userValue": "了解他人在做什么、表达判断、交换经验；交流未必收束为工具使用或一份教程。",
+        "platformWork": [
+          {
+            "role": "运营/项目制作者",
+            "work": "提供真实观察和必要素材，问具体问题，追踪回复并回传进展。"
+          },
+          {
+            "role": "技术或领域复核人",
+            "work": "针对确有能力判断的问题给出说明；不把猜测写成已验证修复。"
+          }
+        ],
+        "cost": "单条正文可能较短，线程跟进却会跨多天；要处理重复建议、广告和无关回复。问题数量超过回应能力会留下大量无后续话题。",
+        "failureConditions": [
+          "把虚构踩坑或虚构独立用户确认当引导材料。",
+          "提问只为堆互动，没有对应真实疑问。",
+          "只记录发帖量，不安排回传结果或回应时间。"
+        ],
+        "counterexample": "一轮建议与接话只能证明出现交流；不能证明建议正确、作者长期留存或已形成自发社群。",
+        "existingCarrier": "已有闪念和评论承载。供给来源通过内部工作记录区分，不要求在前台堆后台治理字段。",
+        "gap": "外部回应者规模、运营技术答复能力与长期跟进量未知。",
+        "evidenceToChangeJudgment": "先记录平台发起的真实线程里，哪些外部回复提出新问题、建议或作品，哪些只是参与礼貌回应；并核对回应工时与后续结果。",
+        "toolRelation": "工具进展可成为话题来源，但主题的结果可以是理解、表达或认识他人。",
+        "sourceIds": [
+          "V20-S02",
+          "V20-S03",
+          "C22-S05",
+          "C22-S06",
+          "U22-S01"
+        ]
+      },
+      {
+        "id": "M23-05",
+        "name": "把讨论结果整理回来，让再次访问有内容可接续",
+        "stance": "依赖尚缺",
+        "claim": "先采用更新正文、关联原问题和整理结果的编辑办法；未读、跟踪、Wiki和采纳等复杂机制应按已有回应量选择。",
+        "pageFacts": [
+          "LINUX DO 登录页面有最新、新、未读、已读和书签入口，话题菜单可选择通知级别。",
+          "已解决接入话题把采纳回复带回首帖；另一个求助没有取得结果回传。"
+        ],
+        "inference": "阅读进度与更新线索降低回找成本，首帖整理减少后来者读完整串的负担。但有效内容和实际回应先于高级通知机制。",
+        "userValue": "再次找到关注的讨论，知道后来发生什么；检索时更快得到有条件的结论。",
+        "platformWork": [
+          {
+            "role": "运营编辑",
+            "work": "定期整理已经发生的新信息，标明结论条件和仍未解决处。"
+          },
+          {
+            "role": "问题提出者/复核者",
+            "work": "确认是否适用于原问题，并提供允许展示的结果。"
+          }
+        ],
+        "cost": "整理需要理解原讨论，不是自动把最多赞回复置顶；误归纳会抹掉分歧。通知过量会增加打扰和维护压力。",
+        "failureConditions": [
+          "无外部后续仍不断推送更新。",
+          "用运营自答与采纳制造解决率。",
+          "新增Wiki但没有负责检查与修订的人。"
+        ],
+        "counterexample": "采纳是提问者或平台的选择记录，不代替独立技术验证；有通知选项不证明送达或复访。",
+        "existingCarrier": "社区评论和教程正文可承接人工整理；完整阅读进度与通知跟踪能力尚未核实。",
+        "gap": "资料不足：需要哪些返回入口、真实主题更新频次及送达效果尚未知。",
+        "evidenceToChangeJudgment": "先在已有内容中完成一次问题—新材料—正文更正的人工整理，检查能否找到原问题和更正原因；有真实回访需求后再比较专用机制。",
+        "toolRelation": "社区可增加的是解释和维护的累积；不能把这部分直接记为 API 或 MakeNow 使用提升。",
+        "sourceIds": [
+          "v11-ld-home",
+          "v11-ld-question",
+          "v11-ld-solved",
+          "C22-S04",
+          "C22-S06"
+        ]
+      },
+      {
+        "id": "M23-06",
+        "name": "资源按版本交付，更新要说明兼容条件",
+        "stance": "依赖尚缺",
+        "claim": "可以采用版本、输入、依赖和变更说明，但只有材料完整并完成相应检查后才承诺可继续使用。",
+        "pageFacts": [
+          "Liblib 两版电商资源由 SDXL 转向 FLUX，输入与配置要求也随版本改变。",
+          "Tensor 国际站同一模型存在用途不同的多个版本，字段和描述还出现未解释的不一致；不能将其套用到吐司中文站。",
+          "HF FABRIC 的问题、提交和平台迁移记录显示，作者与平台人员都可能投入维护。"
+        ],
+        "inference": "版本不是装饰标签。使用者要知道哪一版适合自己，运营需要知道该找谁补材料或修问题。平台维护内容时，这份责任不会因发布成普通用户账号而转移。",
+        "userValue": "选择适合的资源、识别旧教程适用范围、让问题和修订可追溯。",
+        "platformWork": [
+          {
+            "role": "案例制作者",
+            "work": "交付输入、源对象、依赖、输出和版本说明。"
+          },
+          {
+            "role": "运营",
+            "work": "保持入口和说明一致，收集具体问题。"
+          },
+          {
+            "role": "工具/技术维护者",
+            "work": "核对依赖、定位故障并复测；运营不自动具备这一能力。"
+          }
+        ],
+        "cost": "除初次制作还有兼容、素材、解释与复测。维护旧版与新版会同时占用精力；不能从提交数或时间跨度推算工时。",
+        "failureConditions": [
+          "只改版本号，不说明输入或环境变化。",
+          "收到作者修复声明就恢复可用承诺，没有相应检查。",
+          "平台精选失效资源，却没有接手人。"
+        ],
+        "counterexample": "HF 资源跨年仍有维护记录，旧讨论停止不等于项目停更；单例平台人员迁移也不等于普遍保修。",
+        "existingCarrier": "MakeNow 已验证一个案例的复制和文本保存，随后复查发现原件与副本图片均未正常显示。专用资源详情仍为冻结原型。",
+        "gap": "现有案例完整素材、具体费用、生成输出和维护归属还未补齐，不足以承诺稳定可复用。",
+        "evidenceToChangeJudgment": "先完成同一个案例的材料可取得、对应版本、替换输入、输出检查和一次保存重开；记录发生的问题由谁处理、实际花费多少。",
+        "toolRelation": "运行消耗算力，版本维护消耗人力。低价Token只能改善其中一项，不能代替内容维护和故障支持。",
+        "sourceIds": [
+          "D21-LL-V1",
+          "D21-LL-V2",
+          "D21-TA-V32P",
+          "F26",
+          "F55",
+          "F55-DIFF",
+          "M22-S01",
+          "C22-S08",
+          "U22-S01"
+        ]
+      },
+      {
+        "id": "M23-07",
+        "name": "同一方法提供简易应用和完整流程两种入口",
+        "stance": "依赖尚缺",
+        "claim": "双入口适合确实存在直接使用者和改流程者的内容；不应把每份作品或教程都包装成在线小工具。",
+        "pageFacts": [
+          "RunningHub 换背景资源页提供节点与参数说明，以及运行、下载和应用入口。",
+          "另一个消除应用的作者说明限定了应用默认能力，完整流程提供更广功能；仅核到页面与说明，未实跑。"
+        ],
+        "inference": "减少用户初次需要理解的参数，可以降低操作负担；保留完整流程又允许进一步修改。两层必须说明能力差异，避免简化界面掩盖限制。",
+        "userValue": "新手按明确输入尝试，进阶用户检查和改动处理过程。",
+        "platformWork": [
+          {
+            "role": "方法作者/工具研发",
+            "work": "挑选应开放的输入与控制，维护完整流程和简易入口的一致性。"
+          },
+          {
+            "role": "运营",
+            "work": "准备示例、解释限制、把问题分配给能处理的人。"
+          }
+        ],
+        "cost": "两套入口增加用法说明与回归检查；应用还产生托管、调用和失败处理成本。不是给现成工作流加一个封面就完成交付。",
+        "failureConditions": [
+          "入口多但材料不通，用户仍要重复上传和填写。",
+          "隐藏了关键参数，遇到非示例输入就无法判断失败原因。",
+          "免费体验耗用上涨，却无法识别正常尝试、失败和持续使用。"
+        ],
+        "counterexample": "节点列表和按钮不能证明运行成功；有工具收入也不能证明社区入口带来了增量。",
+        "existingCarrier": "MakeNow 有画布能力与有限交接证据；社区跳转、具体材料传递和归因是不同环节，当前没有完整证据。",
+        "gap": "需先有一个可交付方法，再判断是否值得增加简易应用。当前尚不能把它写成已具备的内容产品。",
+        "evidenceToChangeJudgment": "对同一案例比较需要的输入、可改内容和失败处理，检查简易入口是否真的省去步骤；再核实际耗费与后续使用。",
+        "toolRelation": "该机制更靠近工具变现，但社区是否必要取决于发现、比较、解释与反馈是否提供额外价值；直接工具入口也是对照项。",
+        "sourceIds": [
+          "v15-cn-rh-flow",
+          "v15-cn-rh-app",
+          "C22-S09",
+          "M22-S01"
+        ]
+      },
+      {
+        "id": "M23-08",
+        "name": "主题活动与公开认可分开建设",
+        "stance": "有条件采用",
+        "claim": "可以先做有明确题目的作品编选与讨论；竞赛、投票和奖项需要真实参与、可信规则及持续组织资源。",
+        "pageFacts": [
+          "NightCafe 挑战规则包含主题、投稿、评分或排序及结果阶段；公开发现范围受聊天室设置影响。",
+          "Runway Gen:48 档案按届次保存作品、作者与奖项，未取得原始评审或投票记录。"
+        ],
+        "inference": "共同题目让作品便于比较，阶段和后续点评给人再次关注的理由。公开认可的价值来自选择依据和组织者可信度，不能只复制徽标。",
+        "userValue": "有题可做、有作品可看、获得具体评论；参与和欣赏均可成立。",
+        "platformWork": [
+          {
+            "role": "运营",
+            "work": "设计题目、例子、节奏、投稿条件与结果归档。"
+          },
+          {
+            "role": "作品评阅者",
+            "work": "给具体、有依据的点评；比赛时另需可信评选与争议处理。"
+          }
+        ],
+        "cost": "命题、作品审核、主持、点评与结果整理会持续占时；有奖后增加费用与异常处理。平台供给作品不等于拥有足够外部参赛者。",
+        "failureConditions": [
+          "参赛和评分主要由运营账号完成，却宣传自然比赛热度。",
+          "先上日赛，再靠降低质量补齐频率。",
+          "只有排名，没有可理解的选择理由与作品记录。"
+        ],
+        "counterexample": "活动参与只能证明当期参与，不能证明活动结束后有需求；官方获奖案例是筛选样本，不能代表普通作者平均水平。",
+        "existingCarrier": "社区作品和评论可承接专题点评，完整竞赛与投票流程尚未核实。",
+        "gap": "外部参与者、评阅资源及运营排期未确定，不能承诺固定日赛或稳定奖励回报。",
+        "evidenceToChangeJudgment": "先以现有平台作品组成一个明确题目的编辑专题，完成真实点评；之后有外部参与时单列其投稿和反馈，再决定是否增加投票或奖项。",
+        "toolRelation": "活动可以展示创作能力，也可以只是审美表达；不要求所有作品由自营工具产生，工具限制应有明确目的。",
+        "sourceIds": [
+          "R23-NC-CHALLENGE",
+          "V20-S05",
+          "U22-S01"
+        ]
+      },
+      {
+        "id": "M23-09",
+        "name": "作者合作按交付判断，自动运行分成另看条件",
+        "stance": "自动分成暂不优先",
+        "claim": "当前先明确需要什么内容、材料与维护，再选择买案例或持续合作；自动运行分成依赖有效行为、结算和异常识别能力。",
+        "pageFacts": [
+          "RunningHub 的激励规则参考有效运行、收藏和原创程度，推荐策略独立于激励计划。",
+          "Runway CPP 文档提供策选合作机会，不要求固定时间或创作投入；该记录沿用此前访问日期。"
+        ],
+        "inference": "赠送工具、关系合作、明确稿件采购和按使用结算解决不同问题。希望稳定取得内容时，先验收具体交付比假定作者拿到额度就持续供稿更可靠。",
+        "userValue": "用户得到可兑现的内容与回应，合作者清楚交付边界和自己的权益。",
+        "platformWork": [
+          {
+            "role": "产品/运营",
+            "work": "定义内容包、可展示范围、修订与答疑责任，验收材料。"
+          },
+          {
+            "role": "合作作者",
+            "work": "按约定提供实际作品和过程；合作意向不预记为自然供给。"
+          },
+          {
+            "role": "若采用分成的运营/财务",
+            "work": "维护行为口径、异常处理与结算；当前并未具备这份投入证据。"
+          }
+        ],
+        "cost": "固定合作有采购与管理成本，分成有数据与争议成本，赠送算力也有机会成本；资料不足，不能比较哪种更便宜。",
+        "failureConditions": [
+          "只约定发帖数量，没有原始材料和更新责任。",
+          "将收藏直接当满意度、运行数直接当成功付费。",
+          "平台运营自供内容参与激励后，又把内部动作算成作者生态增长。"
+        ],
+        "counterexample": "RunningHub 规则未披露样本作者的实际收入及维护分工；Runway CPP 也未承诺固定稿量。赠送额度能否换来持续供稿，仍需合作记录。",
+        "existingCarrier": "平台持续供给已确定；合作作者数量和意愿未核，现有团队尚无可复做的成型案例。",
+        "gap": "需要一份验收清楚的内容包及实际工作量，才能判断招聘、买稿、合作或分成的必要性。",
+        "evidenceToChangeJudgment": "记录一份平台内容从制作到一次维护的实际角色和耗时，写出可以交给合作方的具体部分；未授权联系前只完成内部方案。",
+        "toolRelation": "作者收入机制与用户购买工具是两份账；社区增量须另看它是否带来可归因的发现、使用或贡献。",
+        "sourceIds": [
+          "R23-RH-REWARD",
+          "o9-g-run-cpp",
+          "U22-S01"
+        ]
+      },
+      {
+        "id": "M23-10",
+        "name": "Skill、MCP和小工具按交付责任逐级承载",
+        "stance": "有条件采用",
+        "claim": "可以提供有来源、讲条件的资源资料；提供文件、帮助配置或托管运行是不同承诺，不能一开始全部包办。",
+        "pageFacts": [
+          "skills.sh 条目展示方法正文、源码和安装入口；其文档说明安装遥测不能代表活跃使用或质量。",
+          "同轮 MCP Registry 资料说明主要承载发现元数据并指向软件包或服务；收录不等于代码审计或可调用保证。"
+        ],
+        "inference": "技术名词不应成为频道成立的充分理由。读者需要判断用途、交付物、前提与维护方；它们可以与教程和主题项目关联。",
+        "userValue": "了解选择、取得方法或配置材料、在自己的环境使用；也可以只学习其中做法。",
+        "platformWork": [
+          {
+            "role": "运营编辑",
+            "work": "核对来源、用途、访问条件和近期版本，写清资料与实际资源区别。"
+          },
+          {
+            "role": "相应技术复核者",
+            "work": "只有承诺某环境可安装或调用时才执行对应检查；托管服务另有运行责任。"
+          }
+        ],
+        "cost": "即使不托管也需维护失效链接和说明；安装验证、权限、依赖、服务运行及上游费用会随承诺加深，不宜由一个运营岗位默认承担。",
+        "failureConditions": [
+          "收集一批术语和热度数就宣称完整生态。",
+          "条目没有真实文件或文档却写可安装。",
+          "外部服务变化后仍展示旧保证，或把可连接当成功运行。"
+        ],
+        "counterexample": "统一文件格式不能保证跨宿主一致；可打开服务介绍页不等于具备调用权限。目录价值可以是选择辅助，无需冒充托管工具。",
+        "existingCarrier": "冻结白色原型有 Skill 与 MCP 的专用说明字段，真实专用消费模块未在既定检索中定位；不据此断言通用文章与附件完全不能承载。",
+        "gap": "尚无实际发布包和兼容验证。资料整理、文件交付与运行服务需要分别明确负责人。",
+        "evidenceToChangeJudgment": "为一个具体条目核对可取得的交付对象、读者需要的条件以及一次变化后谁更新；有明确使用需求再评估专用功能。",
+        "toolRelation": "便宜Token对部分服务有帮助，不能替代外部账号、权限、宿主和服务维护。第三方资料目录也不自动贡献自营调用收入。",
+        "sourceIds": [
+          "v15-skills-entry",
+          "v15-skills-docs",
+          "v15-mcp-about",
+          "C22-S07",
+          "C22-S08"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "v15-r-neomme",
+        "title": "NeoMME Collection",
+        "url": "https://huggingface.co/collections/Hcompany/neomme",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-r-neomme；对应样本正文",
+        "date": "原观察：2026-09-10，正文与浏览器详情已读并截图；页面日期：动态资源页；为综合，未重新访问",
+        "scope": "同一主题下论文、模型与Demo的实际关联；未测试资源  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "V20-S01",
+        "title": "Runway Watch — After Light",
+        "url": "https://watch.runwayml.com/after-light",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+        "locator": "sources.V20-S01；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "影片嵌入、回到TV、CPP及其他频道、片名与署名；未完整播放，未做视觉截图。  继承材料：v20-input-value.json。"
+      },
+      {
+        "id": "C22-S01",
+        "title": "真实C端作品详情模板",
+        "url": "",
+        "path": "项目资料/ai666-user/src/components/mod/ModWorksDetail/pc/ui/WorksDetailAside/WorksDetailAside.vue",
+        "locator": "逐行读1-65；标题、提示词、参考媒体、评论和动作模板",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "代码存在，非线上验收  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "C22-S03",
+        "title": "教程卡片栏目与摘要",
+        "url": "",
+        "path": "项目资料/ai666-user/src/view/tutorial/discover/ui/TutorialListCard.vue",
+        "locator": "逐行读65-80",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "取值逻辑，不证明实际内容完整  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "U22-S01",
+        "title": "用户关于内容供给的明确说明",
+        "url": "",
+        "path": "本任务对话 · 2026-09-10",
+        "locator": "用户消息",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "供给模式的用户确认，不是数据库查询或用户活跃统计。  继承材料：v22-platform-supply/study.json。"
+      },
+      {
+        "id": "v15-g1",
+        "title": "Website Overview",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-g1；对应样本正文",
+        "date": "原观察：2026-09-10，公开正文已读取；页面日期：未标注；为综合，未重新访问",
+        "scope": "Explore、作品详情、复用、Style Explorer；官方功能说明，非登录实跑。  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "C22-S02",
+        "title": "同款输入与参考材料权限",
+        "url": "",
+        "path": "项目资料/ai666-user/src/components/mod/ModWorksDetail/data/worksDetailRemix.js",
+        "locator": "逐行读1-108；重点14-24、73-103",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "没有调用真实接口或生成  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "v15-r-cookbook",
+        "title": "LLM Cookbook项目说明",
+        "url": "https://github.com/datawhalechina/llm-cookbook",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-r-cookbook；对应样本正文",
+        "date": "原观察：2026-09-10，仓库正文已读；页面日期：未标注，main持续修订；为综合，未重新访问",
+        "scope": "课程组织、在线阅读/PDF/Notebook及贡献方式；未采信旧接口为当前建议  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "v15-r-iterative",
+        "title": "第三章：迭代优化",
+        "url": "https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-r-iterative；对应样本正文",
+        "date": "原观察：2026-09-10，具体章节正文已读；页面日期：未标注，main持续修订；为综合，未重新访问",
+        "scope": "任务、初始提示、结果与修订的文章结构；未运行其代码  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "C22-S04",
+        "title": "教程正文与学习路径",
+        "url": "",
+        "path": "项目资料/ai666-user/src/view/tutorial/detail/detailIndex.vue",
+        "locator": "逐行读72-142、182-205",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "标题提取与正文代码，不是教学效果  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "V20-S02",
+        "title": "Pebble模型发布受阻的公开更新与回复",
+        "url": "https://huggingface.co/posts/Hoglet-33/620130623473492",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+        "locator": "sources.V20-S02；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "进展自述、beta链接、一级建议与作者接话、回复/关注入口；只显示部分回复，未核模型性能。  继承材料：v20-input-value.json。"
+      },
+      {
+        "id": "V20-S03",
+        "title": "Pebble-50M-beta — Model card",
+        "url": "https://huggingface.co/basically-experimental/Pebble-50M-beta",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+        "locator": "sources.V20-S03；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "与动态同一资源的实验状态、评测材料缺失说明和用法入口；不引用下载统计或参数量作分析，未执行推理。  继承材料：v20-input-value.json。"
+      },
+      {
+        "id": "C22-S05",
+        "title": "闪念编辑限制与提交审核事件",
+        "url": "",
+        "path": "项目资料/ai666-user/src/view/idea/post/data/useFlashCompose.js",
+        "locator": "逐行读12-22、154-176",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "未发帖；submit_review不能充当公开内容数  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "C22-S06",
+        "title": "闪念卡片正文、媒体与列表内评论",
+        "url": "",
+        "path": "项目资料/ai666-user/src/view/idea/post/ui/PostListItem.vue",
+        "locator": "逐行读15-78",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "模板承载，不是回应效果  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "v11-ld-home",
+        "title": "LINUX DO 登录首页",
+        "url": "https://linux.do/",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+        "locator": "sources.v11-ld-home；对应样本正文",
+        "date": "原观察：2026-09-09；页面日期：访问 2026-09-09；为综合，未重新访问",
+        "scope": "导航和两条公开置顶卡片；不读取个人消息、草稿或账户资料。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+      },
+      {
+        "id": "v11-ld-question",
+        "title": "工具首字延迟求助",
+        "url": "https://linux.do/t/topic/2880961",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+        "locator": "sources.v11-ld-question；对应样本正文",
+        "date": "原观察：2026-09-09；页面日期：2026-09-09；为综合，未重新访问",
+        "scope": "共 5 帖及通知菜单；作者体验不等于工具性能实测。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+      },
+      {
+        "id": "v11-ld-solved",
+        "title": "关于应用接入的问题请教佬友",
+        "url": "https://linux.do/t/topic/1537782",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+        "locator": "sources.v11-ld-solved；对应样本正文",
+        "date": "原观察：2026-09-09；页面日期：2026-01-29；复核 2026-09-09；为综合，未重新访问",
+        "scope": "采纳展示、作者自述和公告引用；未独立复现。 只读；事实、作者自述和研究判断分开。 继承材料：site/lib/platform-operations.json。"
+      },
+      {
+        "id": "D21-LL-V1",
+        "title": "LiblibAI：电商产品精修与背景替换（SDXL版）V1.0",
+        "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+        "locator": "sources.D21-LL-V1；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "作者公开说明正文；输入、排错和反馈邀请。未返回评论或版本日期。  继承材料：v21-input-domestic.json。"
+      },
+      {
+        "id": "D21-LL-V2",
+        "title": "LiblibAI：电商产品精修与背景替换（FLUX）V2.0",
+        "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+        "locator": "sources.D21-LL-V2；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "作者正文对照 V1，描述输入、依赖和配置变化；未验证源文件或效果。  继承材料：v21-input-domestic.json。"
+      },
+      {
+        "id": "D21-TA-V32P",
+        "title": "KJ-ArtTool V3.2 Polished",
+        "url": "https://tensor.art/models/1038064121498574537",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-domestic.json",
+        "locator": "sources.D21-TA-V32P；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：Uploaded 2026-08-29；项目 Updated 2026-09-02；为综合，未重新访问",
+        "scope": "精修分支的作者用途说明；Epoch 9 与说明 E10 的对应关系未解释。  继承材料：v21-input-domestic.json。"
+      },
+      {
+        "id": "F26",
+        "title": "FABRIC · Runtime error #26",
+        "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/26",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+        "locator": "sources.F26；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "问题、成员尝试、Owner回应、重开。  继承材料：v20-input-supply.json。"
+      },
+      {
+        "id": "F55",
+        "title": "FABRIC · Admin maintenance migration #55",
+        "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/55",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+        "locator": "sources.F55；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "HF Staff身份、迁移PR与merged状态；日期经公开HTML复核。  继承材料：v20-input-supply.json。"
+      },
+      {
+        "id": "F55-DIFF",
+        "title": "FABRIC · migration #55 Files changed",
+        "url": "https://huggingface.co/spaces/dvruette/fabric/discussions/55/files",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-supply.json",
+        "locator": "sources.F55-DIFF；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "GPU运行适配和依赖调整。  继承材料：v20-input-supply.json。"
+      },
+      {
+        "id": "M22-S01",
+        "title": "MakeNow公开画布与同一案例研究副本的UI核对",
+        "url": "https://dream.ai666.net/case-share/6/canvas",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+        "locator": "sources.M22-S01；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "实际导航、DOM图片属性与公开截图，继承。私人副本地址不进入报告；未提交生成。继承材料：v22-input-makenow.json。"
+      },
+      {
+        "id": "C22-S08",
+        "title": "工作流、Skill与MCP详情示例字段",
+        "url": "",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/figma_prototype_work/c-end-detail-page-v1/index.html",
+        "locator": "逐行读1770-1810",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "静态原型示例和模拟统计不是内容库存或实际服务  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "v15-cn-rh-flow",
+        "title": "一键换背景：产品图摄影",
+        "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-cn-rh-flow；对应样本正文",
+        "date": "原观察：2026-09-10；已读公开详情正文；页面日期：2024-11-23更新；为综合，未重新访问",
+        "scope": "实例的说明、节点清单和入口；未读下载文件，未运行  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "v15-cn-rh-app",
+        "title": "新版Fill-OneReward万物消除",
+        "url": "https://www.runninghub.cn/ai-detail/1966722305902718977",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-cn-rh-app；对应样本正文",
+        "date": "原观察：2026-09-10；已读公开详情正文；页面日期：未标注；为综合，未重新访问",
+        "scope": "应用功能说明、计费提示与运行入口；未生成  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "C22-S09",
+        "title": "MakeNow公开画布有限交接证据",
+        "url": "https://dream.ai666.net/case-share/6/canvas",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-makenow.json",
+        "locator": "重读全文；records M20-01至M20-05、generation、deliveryLevels、supplyWork",
+        "date": "2026-09-10现场，整理，重读，未再次访问",
+        "scope": "一个案例一个账号一个字段；素材与生成未验证  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "V20-S05",
+        "title": "48-Hour AI Film Challenge — Gen:48",
+        "url": "https://runway.com/gen48",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-value.json",
+        "locator": "sources.V20-S05；对应样本正文",
+        "date": "原观察：2026-09-10；页面日期：未标注；为综合，未重新访问",
+        "scope": "指定条目的作品名、奖项、署名、片长和届次；当前Aleph区域显示加载中，未核完整当前名单、投票与评审过程。  继承材料：v20-input-value.json。"
+      },
+      {
+        "id": "o9-g-run-cpp",
+        "title": "Creative Partners Program",
+        "url": "https://runway.com/creative-partners-program",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/platform-operations.json",
+        "locator": "sources.o9-g-run-cpp；对应样本正文",
+        "date": "原观察：2026-09-09；页面日期：未标发布日期；为综合，未重新访问",
+        "scope": "策选、访问/合作机会及没有固定时间或创作投入要求 没有实际合作或现金稿酬记录；Spotlights部分动态未加载。 继承材料：site/lib/platform-operations.json。"
+      },
+      {
+        "id": "v15-skills-entry",
+        "title": "vercel-react-best-practices",
+        "url": "https://www.skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-skills-entry；对应样本正文",
+        "date": "原观察：2026-09-10；条目正文已读；页面日期：页面First Seen为2026-01-19，并非本版发布日期；为综合，未重新访问",
+        "scope": "摘要、SKILL.md、安装入口、源码、关联条目与审计展示；未运行安装命令。  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "v15-skills-docs",
+        "title": "Skills Documentation",
+        "url": "https://www.skills.sh/docs",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-skills-docs；对应样本正文",
+        "date": "原观察：2026-09-10；正文已读；页面日期：未标注（持续更新）；为综合，未重新访问",
+        "scope": "技能用途、安装与排行遥测说明；明确不保证每项质量和安全。  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "v15-mcp-about",
+        "title": "The MCP Registry",
+        "url": "https://modelcontextprotocol.io/registry/about",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "sources.v15-mcp-about；对应样本正文",
+        "date": "原观察：2026-09-10；正文已读；页面日期：未标注（持续更新，正文仍称preview）；为综合，未重新访问",
+        "scope": "元数据、包仓库、下游目录、命名空间验证及安全扫描职责边界。  继承材料：site/lib/market-content-forms.json。"
+      },
+      {
+        "id": "C22-S07",
+        "title": "白色聚合内容冻结状态",
+        "url": "",
+        "path": "项目资料/ai666-codex-audit-pack/docs/versions/v1.0/status/modules/white-aggregate-content.md",
+        "locator": "逐行读1-37，重点5-7、19-25、35-37",
+        "date": "原观察：2026-09-10；页面日期：2026-09-10；为综合，未重新访问",
+        "scope": "不解除冻结、不编辑原型  继承材料：v22-input-content.json。"
+      },
+      {
+        "id": "R23-RH-REWARD",
+        "title": "RunningHub 创作者激励计划（复核）",
+        "url": "https://www.runninghub.cn/creator-reward",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v21-input-runninghub.json",
+        "locator": "官方页收益说明与内容发布要求；原记录RH21-S06",
+        "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+        "scope": "确认有效运行、收藏、原创及推荐与激励独立；没有结算实绩、成本或维护接管数据。"
+      },
+      {
+        "id": "R23-HF-COL",
+        "title": "Hugging Face Collections（复核）",
+        "url": "https://huggingface.co/docs/hub/collections",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "Collections、Ordering、Notes与公开预览；原记录v15-r-collections-doc",
+        "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+        "scope": "确认不同资源组合、条目顺序、说明、公开预览和协作历史；未实操或验证消费效果。"
+      },
+      {
+        "id": "R23-NC-CHALLENGE",
+        "title": "NightCafe Community Challenges（复核）",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json",
+        "locator": "Discoverability、Scoring、Challenge Phases；原记录v15-h1",
+        "date": "原观察2026-09-10；2026-09-10重读；页面修订日期未标",
+        "scope": "确认主题、投稿、评选、结果与发现条件；未读取实时参赛池、投票或实际留存。"
+      }
+    ],
+    "stopRules": [
+      "每项补证必须能改变一种取舍：承诺层级、首页展示、内容供给责任、维护范围或成本。只增加相似页面不继续扩查。",
+      "没有完成结果或可用材料时，停止把资源包装为可复用；保留能兑现的展示或说明范围。",
+      "没有外部贡献与有效行为辨识时，不把自动分成和高频比赛当起点；可先完成内部内容包、编选与真实点评。",
+      "欣赏、表达、学习、交流和工具使用分别验收；不以每条内容都促成生成作为统一质量标准。",
+      "工具收入、社区导流和社区增量分别记。公开定价与按钮存在不能证明社区留存或盈利。",
+      "资料整理、机制判断与自身需求验证分开。此轮不选最终方向、不接触外部用户、不启动真实运营。"
+    ]
+  },
+  "contentPack": {
+    "date": "2026-09-10",
+    "title": "四种组织方式共用的六条研究内容",
+    "summary": "一张历史成图与一个 MakeNow 公开画布整理为六条内容。四种展示方式使用相同正文和素材，比较发现顺序、分组、关联和再次访问路径。",
+    "scope": "材料来自脱敏的 case_materials.md、历史操作记录、本地 JPEG 与公开画布截图。图片尺寸和画布操作均注明实际检查日期。",
+    "editorialStatus": "六条正文为研究编辑样例：成图来自历史测试，问题来自材料核对，方法说明属于编辑建议。没有真实用户投稿或公开发布记录。",
+    "comparisonRules": [
+      "六条材料固定供四种组织方式共用，不为某个方案另加更漂亮的作品、更完整的教程或虚构互动。正文、来源和使用限制保持一致。",
+      "比较的是同一内容能否被发现、关联内容能否接上、离开后如何再次找到；没有用户参与的浏览演示不能给出偏好、转化、留存或获客效果结论。",
+      "六条内容主要源于两个样本，不能视为六份独立任务、六种真实需求、六位作者或六份内容产能证据；实际运营不一定值得把这些解释拆成六条发布。",
+      "现有材料偏向工具交付，尚不足以代表审美欣赏、身份表达、陪伴和同行认同等全部社区需要。P23-01保留纯欣赏入口，但一张图不证明作品社区已具备竞争力。",
+      "卡片不填虚构点赞、评论、收藏、使用次数或作者身份。无需把内部审核和治理字段设计为真实社区用户卡片必备内容；本研究单独呈现证据状态。",
+      "不加入没有真实交付文件的Skill或MCP来凑类型，不提供未验证的运行、安装或一键复用动作。"
+    ],
+    "reuseLimits": [
+      "现有本地图片沿用报告已保存资产；没有下载远程媒体。MakeNow截图是公开原件的研究证据，不是可复制的完整项目文件，也不是当前生成成品。",
+      "成图来自2026年6月17日虚构、脱敏输入的历史测试。文件可打开不等于完成一切公开发布审阅；仅用于本地研究报告，不宣布取得新的转载、商用或源文件交付权利。",
+      "Prompt按已脱敏素材摘要保留。参数摘要、模型名称与实际输出分别注明；不承诺当前可复现，也不把模型名差异擅自合并。",
+      "只设置当前确实存在的阅读、关联或图片查看动作。公开画布链接指向原件，报告不会替用户点击复制或执行生成。"
+    ],
+    "content": [
+      {
+        "id": "P23-01",
+        "type": "作品",
+        "title": "窗边桌面上的模型卡片",
+        "summary": "一张以卡片、连线和纸张表达模型比较的文章插画。先看画面；需要了解制作输入时，再读关联资料。",
+        "sourceStatus": "2026年6月17日生成图片，标题与解读为编辑整理",
+        "media": {
+          "src": "/research-images/v20/api-image-20260617.jpg",
+          "alt": "窗边桌面上悬浮的浅色卡片以箭头相连，桌面放着几叠纸张。",
+          "evidenceScope": "已有API历史样本，不是MakeNow生成结果。实际文件尺寸784×1168；生成摘要曾记录1024×1024，差异原因未知。"
+        },
+        "detail": [
+          {
+            "heading": "画面里有什么",
+            "text": "画面观察：窗边自然光照在桌面和纸张上，浅蓝、浅绿与浅橙色卡片悬浮在上方，以箭头连接。卡片使用图像、代码和音频的抽象符号，没有用可读正文解释流程。读者可以只把它当作一幅工作区插画欣赏。"
+          },
+          {
+            "heading": "为什么这样画",
+            "text": "历史输入要求给模型服务社区文章制作插画，用抽象模型卡片、比较路径和示例材料表现工作区。编辑解读：让连线和卡片承担主要信息，能避开在图内堆叠说明文字；柔和自然光让技术主题更接近日常桌面。这是对当前一张图的解读，不是已验证的传播效果。"
+          },
+          {
+            "heading": "这张图的记录",
+            "text": "脱敏摘要记载模型标签为 grok-4.2-image，日期为2026年6月17日，运行状态为成功。实际保存的 JPEG 为784×1168，与请求尺寸1024×1024不同；展示规格应以文件属性为准。"
+          },
+          {
+            "heading": "继续看什么",
+            "text": "想了解画面是怎样描述出来的，可以看关联的原始Prompt。想把它作为自己的文章素材，需要先按实际用途复核；本研究没有将它发布到社区，也没有完成后续改图。"
+          }
+        ],
+        "primaryAction": {
+          "label": "查看这张图片",
+          "kind": "view-image",
+          "target": "/research-images/v20/api-image-20260617.jpg"
+        },
+        "relatedIds": [
+          "P23-02",
+          "P23-03"
+        ],
+        "readerValue": "可以直接欣赏画面，也能自主选择是否继续了解制作输入；不把每次欣赏都导向付费生成。",
+        "operatorWork": "选图、写简短解读、保留来源与日期；如转作正式内容，另做用途复核，不虚构原作者或外部用户评价。",
+        "readiness": "历史图片与研究正文可查看；正式发布和当前复现未完成。",
+        "sourceIds": [
+          "P23-S01",
+          "P23-S02",
+          "P23-S03"
+        ]
+      },
+      {
+        "id": "P23-02",
+        "type": "Prompt资料",
+        "title": "这张工作区插画的输入是怎样写的",
+        "summary": "保留原Prompt，并解释画面、风格、限制和背景分别承担什么作用。它是一份历史输入资料，没有承诺照抄即可得到同图。",
+        "sourceStatus": "脱敏历史 Prompt 原文与编辑说明",
+        "media": null,
+        "detail": [
+          {
+            "heading": "先读输入的结构",
+            "text": "历史Prompt先说用途：为模型服务社区文章制作插画；接着写场景、风格和限制；最后补充文章背景。编辑解释：场景交代要画什么，风格交代怎样呈现，限制交代应避开什么，背景帮助理解内容的用途。四部分可以分别调整，不必把所有要求挤进一句话。"
+          },
+          {
+            "heading": "原始Prompt",
+            "text": "Create a clean editorial illustration for an AI model service community article.\nScene: a calm product workspace showing abstract model cards, comparison paths, and reviewable example materials.\nStyle: modern editorial illustration, soft natural lighting, restrained colors, high detail, no dark background.\nSafety: no readable text, no logos, no brand names, no real people, no copyrighted characters, no API keys, no code secrets.\nContext to inspire the composition: The model service channel should help a professional beginner compare models by task. The first release focuses on discoverability, model detail pages, and reviewable example material. The page should avoid live calls, account balances, real credentials, and unsupported performance promises. Each published example needs a task context, input fixture, output summary, reviewer notes, and a clear next action. The first dry-run batch covers embedding retrieval, long document summaries, code review, and audio transcript\nTarget model label for internal evidence only: grok-4.2-image. Do not render the label as text in the image."
+          },
+          {
+            "heading": "不要只保存Prompt",
+            "text": "历史摘要记载 image_generation 请求、grok-4.2-image 模型标签和1024x1024尺寸。公开文档使用 grok-4-2-image，两种名称是否等价尚未确认，案例保留当时的调用记录。"
+          },
+          {
+            "heading": "如果改成另一篇文章",
+            "text": "编辑建议：先替换用途和场景，再决定是否保留自然光、克制颜色和不出现可读文字等要求。调整Prompt后应重新检查实际输出；这条资料没有提供变更后的结果，也不保证模型会按每个限制执行。"
+          }
+        ],
+        "primaryAction": {
+          "label": "对照原始成图",
+          "kind": "read-related",
+          "target": "P23-01"
+        },
+        "relatedIds": [
+          "P23-01",
+          "P23-03",
+          "P23-04"
+        ],
+        "readerValue": "既能看到完整输入，也能理解哪些部分是任务条件；不把一段Prompt包装成已经交付的工作流。",
+        "operatorWork": "保留原始输入，核对与输出的对应关系，解释可变条件；后续模型名称或运行条件变化时更新说明。",
+        "readiness": "历史资料与解释可读；没有当前运行验收或保证一致的复现承诺。",
+        "sourceIds": [
+          "P23-S01",
+          "P23-S03"
+        ]
+      },
+      {
+        "id": "P23-03",
+        "type": "核对说明",
+        "title": "请求写1024×1024，保存的图片却是784×1168",
+        "summary": "同一历史样本中，参数摘要与落盘文件尺寸不一致。先把记录讲清楚，再判断差异发生在哪一步。",
+        "sourceStatus": "历史记录、文件属性与编辑方法说明",
+        "media": null,
+        "detail": [
+          {
+            "heading": "两组数字分别来自哪里",
+            "text": "2026年6月17日的 case_materials.md 记录 size=1024x1024；对应 JPEG 的实际属性为宽784、高1168、161037字节。此处采用源文件尺寸。"
+          },
+          {
+            "heading": "成功状态能说明什么",
+            "text": "历史汇总记录一个成功任务，且本地文件可以打开。这支持“已有输出文件”，不支持“所有要求都已满足”。如果任务要求方形插画，当前保存的竖幅文件与摘要要求不同；不能因为任务显示成功就把它写成方形成品。"
+          },
+          {
+            "heading": "把检查写成读者能用的说明",
+            "text": "编辑方法：先写输入记录的规格，再写最终文件属性，最后说明差异是否影响当前用途。对文章配图，可能还要检查横竖构图、正文位置和实际显示区域；这些检查应按使用场景开展，不能从本例直接得出所有图片都需要相同尺寸。"
+          },
+          {
+            "heading": "目前还不能解释原因",
+            "text": "待确认：本研究没有读取原始响应和图片转换链，因此不能判断问题发生在请求记录、模型返回、下载、转码或其他环节。下一步如果取得允许查看的脱敏记录，应按这些环节逐一核对；当前不直接指责API忽略参数，也不补写修复结果。"
+          }
+        ],
+        "primaryAction": {
+          "label": "查看对应成图",
+          "kind": "read-related",
+          "target": "P23-01"
+        },
+        "relatedIds": [
+          "P23-01",
+          "P23-02",
+          "P23-04",
+          "P23-06"
+        ],
+        "readerValue": "理解请求规格、运行成功和可交付文件之间的区别，减少转发案例时的规格误写。",
+        "operatorWork": "核对文件属性，保留历史摘要；证据不足时记录问题，不替研发猜根因。",
+        "readiness": "已发生的差异与检查方法可读；根因和修复未验证。",
+        "sourceIds": [
+          "P23-S01",
+          "P23-S02",
+          "P23-S03"
+        ]
+      },
+      {
+        "id": "P23-04",
+        "type": "开放问题",
+        "title": "尺寸为什么变了？这条记录还缺哪一步",
+        "summary": "研究团队提出的一个未解决问题：已有请求摘要和最终文件，要定位尺寸变化，还需要什么中间证据？",
+        "sourceStatus": "研究团队提出的问题；不是用户求助帖，没有已发生的评论",
+        "media": null,
+        "detail": [
+          {
+            "heading": "问题的起点",
+            "text": "历史摘要记录1024×1024，保存的 JPEG 为784×1168，文件可正常打开。缺少原始响应与转换记录，尚未定位尺寸改变的环节。"
+          },
+          {
+            "heading": "什么回答会推进问题",
+            "text": "编辑拟定的讨论范围：如果有人负责这条素材链，最有用的是说明请求实际提交的规格、最初取得的图片属性，以及保存过程中是否有转换。任何说明都应附能公开或脱敏核对的材料；只有“我也遇到过”可以作为线索，不能直接作为本例原因。"
+          },
+          {
+            "heading": "怎样保留后续进展",
+            "text": "待执行的维护方法：取得新证据后，在正文补充它对应的环节、确认了什么、还没确认什么，并关联回原作品和规格说明。如果最后不能找到中间材料，就保留“原因未确认”，不为了结束讨论写出推测结论。"
+          },
+          {
+            "heading": "当前状态",
+            "text": "这个待解问题用于比较讨论内容的上下文展示。尚无外部回复或解决结果。"
+          }
+        ],
+        "primaryAction": {
+          "label": "阅读已有核对记录",
+          "kind": "read-related",
+          "target": "P23-03"
+        },
+        "relatedIds": [
+          "P23-01",
+          "P23-02",
+          "P23-03"
+        ],
+        "readerValue": "看到一个边界清楚、可以据证据继续讨论的问题，而不是缺少上下文的一句求助。",
+        "operatorWork": "整理已知与未知、核对新增材料、更新问题状态；若正式组织讨论，答疑和后续回应都需安排维护者。",
+        "readiness": "研究讨论样本可读；没有真实外部参与、回复或解决结果。",
+        "sourceIds": [
+          "P23-S03"
+        ]
+      },
+      {
+        "id": "P23-05",
+        "type": "画布资料",
+        "title": "母亲节短片画布：现在可以从中读到什么",
+        "summary": "小说、角色和场景结构可读；副本的一个文本字段已验证保存。但现有图片未正常显示，完整制作尚未复现。",
+        "sourceStatus": "同一公开画布的操作记录与编辑说明",
+        "media": {
+          "src": "/research-images/v22/makenow-original-image-unavailable.jpg",
+          "alt": "母亲节主题短片的公开画布：节点列表显示21个节点，公交站台图片位置未显示实际图像。",
+          "evidenceScope": "2026年9月10日公开原件截图，显示图片未正常呈现；原因尚未定位。"
+        },
+        "detail": [
+          {
+            "heading": "先看制作结构",
+            "text": "已观察事实：这条公开画布名为“母亲节主题短片”，节点清单显示21个节点，分类为1个模块、7个图片、13个文本，视频和音频为0。小说、角色和场景信息可读。节点分类能帮助理解制作结构，但不能只凭片名认定已有短片成品。"
+          },
+          {
+            "heading": "副本检查完成到哪里",
+            "text": "公开画布复制到当前账号后，在副本小说输入末尾加入标记。保存并离开首页再打开，标记仍在，公开原件没有该标记。此操作验证了一个文本字段的保存重开，素材、权限与节点交接还需核对。"
+          },
+          {
+            "heading": "为什么还不称为可用模板",
+            "text": "复查时，原件和副本的7张列表缩略图均未正常显示，公交站台图片节点也相同。图片资源、网络与访问条件尚未排查，不能确定是复制问题；未提交图像生成。"
+          },
+          {
+            "heading": "打开原件时能做什么",
+            "text": "目前可把它作为制作结构资料阅读：看小说如何拆为角色和场景，检查自己需要替换什么。报告只提供公开原件链接，不提供项目下载包，也不自动复制或生成。若以后把它推荐为可继续制作的案例，应先补齐可用素材、确认图片动作的模型和费用，再记录真实输出与保存结果。"
+          }
+        ],
+        "primaryAction": {
+          "label": "打开公开画布资料",
+          "kind": "view-source",
+          "target": "https://dream.ai666.net/case-share/6/canvas"
+        },
+        "relatedIds": [
+          "P23-06"
+        ],
+        "readerValue": "能在进入工具前判断这条内容目前交付的是结构资料，避免把可复制入口误解为完整案例已可运行。",
+        "operatorWork": "解释阅读起点、逐项核对素材与依赖、维护推荐版本；费用或文件可用性没有确认时及时缩小承诺。",
+        "readiness": "公开结构资料可读；素材可用性未通过，完整生成、费用与输出未验证。",
+        "sourceIds": [
+          "P23-S04",
+          "P23-S05",
+          "P23-S06"
+        ]
+      },
+      {
+        "id": "P23-06",
+        "type": "维护方法",
+        "title": "把生成记录整理成别人看得懂的内容",
+        "summary": "用已有成图与画布记录说明：作品、输入资料、教程和可用资源应承诺不同的东西，维护工作也不同。",
+        "sourceStatus": "基于两个已检查样本的编辑方法说明；未实测工时或对外服务效果",
+        "media": null,
+        "detail": [
+          {
+            "heading": "先决定这一条交付什么",
+            "text": "编辑方法：如果交付的是作品，首先让读者看清画面，简要说明创作背景即可；如果交付的是输入资料，就保留输入与结果的对应关系；如果承诺教程，要交代起点、关键操作、结果和限制；如果承诺可用画布，还需确认文件、依赖和继续操作的条件。不要仅因页面有按钮就提高内容承诺。"
+          },
+          {
+            "heading": "用现成材料写出完整正文",
+            "text": "已有文章插画能提供成图、Prompt、日期和文件属性，足以写一条有边界的历史案例。尺寸差异可以写清楚，不必等根因查明才能说明已发生的事实。MakeNow画布能讲制作结构和局部保存记录，但图片未正常显示时，不宜写成“复制即可完成”的教程。"
+          },
+          {
+            "heading": "保留别人继续判断的线索",
+            "text": "作品关联输入与规格说明，问题关联已检查材料；出现更正时更新正文，让再次访问的读者能找到最新结论。独立更新页和通知的必要性取决于内容量与维护能力。"
+          },
+          {
+            "heading": "平台供给应计入哪些工作",
+            "text": "平台通过用户侧账号组织内容，需承担选材、制作、核对、发布、回应和失效修订。多账号发布不会增加维护人力，同一素材拆成多条也应按同一选题核算。制作工时尚未记录，暂不能估算周产量。"
+          },
+          {
+            "heading": "这套方法还没有证明什么",
+            "text": "它是根据已有材料整理的可读说明，没有完成独立读者测试，也没有真实评论、留存或使用结果。后续若制作正式内容包，应记录每一步实际花费的时间和得到的反馈，再判断哪些劳动适合内部承担、哪些需要合作。"
+          }
+        ],
+        "primaryAction": {
+          "label": "对照画布交付记录",
+          "kind": "read-related",
+          "target": "P23-05"
+        },
+        "relatedIds": [
+          "P23-01",
+          "P23-02",
+          "P23-03",
+          "P23-05"
+        ],
+        "readerValue": "帮助维护者把已有材料整理成可信、可继续阅读的内容，也让读者知道每种内容应提供什么。",
+        "operatorWork": "按实际交付责任编写和维护；方法有变化时保留例子，避免只积累抽象规则。",
+        "readiness": "方法正文可读；不是已执行SOP、已交付Skill或经过测算的产能方案。",
+        "sourceIds": [
+          "P23-S03",
+          "P23-S04",
+          "P23-S05",
+          "P23-S07"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "P23-S01",
+        "title": "已脱敏图像案例摘要",
+        "url": "",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/model_service_case_factory/live_runs/2026-06-17T08-44-27-948Z-image-smoke/case_materials.md",
+        "locator": "3—20行；Prompt与size原文",
+        "date": "2026-06-17；重读2026-09-10",
+        "scope": "文件声明输入为虚构/脱敏brief，不含密钥、请求头或余额。只使用已脱敏正文，不读取原始响应与调用日志。"
+      },
+      {
+        "id": "P23-S02",
+        "title": "报告保存的历史插画文件",
+        "url": "/research-images/v20/api-image-20260617.jpg",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/public/research-images/v20/api-image-20260617.jpg",
+        "locator": "JPEG；view_image查看",
+        "date": "生成2026-06-17；查看2026-09-10",
+        "scope": "当前报告中已有本地文件。确认画面为窗边桌面、抽象卡片、箭头与纸张；实际尺寸沿用文件属性记录，没有新生成或改图。"
+      },
+      {
+        "id": "P23-S03",
+        "title": "API交付核对",
+        "url": "",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-api.json",
+        "locator": "API20-01、02、03、06、10及taskChain",
+        "date": "2026-09-10；重读",
+        "scope": "支持历史样本、模型名差异、实际尺寸与摘要不一致等事实。没有运行、当前质量、重试成本或根因证据。"
+      },
+      {
+        "id": "P23-S04",
+        "title": "MakeNow复制与保存检查",
+        "url": "https://dream.ai666.net/case-share/6/canvas",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v20-input-makenow.json",
+        "locator": "M20-01—M20-05及deliveryLevels",
+        "date": "2026-09-10；重读",
+        "scope": "同一案例、当前账号一个文本字段的复制编辑与保存重开记录；没有两名独立用户或完整生成验收。"
+      },
+      {
+        "id": "P23-S05",
+        "title": "MakeNow素材与费用检查",
+        "url": "https://dream.ai666.net/case-share/6/canvas",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+        "locator": "M22-01—M22-05及generation、screenshot",
+        "date": "2026-09-10；重读",
+        "scope": "原件与副本的7张列表缩略图未解码，费用与免费来源未确认，生成0次。原因未定位，不能称复制故障。"
+      },
+      {
+        "id": "P23-S06",
+        "title": "MakeNow公开原件图片未显示截图",
+        "url": "/research-images/v22/makenow-original-image-unavailable.jpg",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/public/research-images/v22/makenow-original-image-unavailable.jpg",
+        "locator": "view_image查看既有公开截图",
+        "date": "截图2026-09-10；查看同日",
+        "scope": "包含公开原件节点列表和公交站台图片占位；不含私人副本地址、账户或余额；不是可交付项目文件。"
+      },
+      {
+        "id": "P23-S07",
+        "title": "平台供给与内容承载分析",
+        "url": "",
+        "path": "项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/v22-input-content.json",
+        "locator": "supplyImplications、recommendations、unknowns及samples相关正文",
+        "date": "2026-09-10；重读相关部分",
+        "scope": "供给按平台组织成立；作品、说明和可用资源分开承诺。用户最新澄清是任务前提，六份旧草案本身不是真实产能或需求证据。"
+      }
+    ]
+  },
+  "options": {
+    "version": "",
+    "date": "2026-09-10",
+    "title": "平台持续供给下的四份条件式方案",
+    "status": "研究比较稿，未选定方向；未批准招聘、运营排期、产品开发、工具消费或公开发布。",
+    "summary": "A侧重筛选与解释，B侧重应用问题的复现与解法，C侧重创作结果与方法交付，D侧重练习组织与反馈。四种方向都可包含作品、教程和帖子，但平台持续承担的工作不同。比较重点是这些服务能否长期兑现。",
+    "evidenceBoundary": "方案依据已记录的自身能力与竞品机制推演。获客、回访和收入尚无实际验证。",
+    "changesFromV16": [
+      {
+        "old": "平台、实践作者与未来合作作者并列作为稳定供给来源。",
+        "new": "平台持续组织是已确认条件，所需作者能力逐项列出；没有现成合作人选，不能将任何工作默认转交给外部。"
+      },
+      {
+        "old": "MakeNow分享复制仍按规划状态讨论。",
+        "new": "纳入一个案例已复制、修改文本并保存重开的有限证据；同时纳入原件与副本图片无法显示、完整生成与费用未确认的最新检查。"
+      },
+      {
+        "old": "内容类型、页面形态和团队负担分别列举。",
+        "new": "每条用户路径都对应运营劳动，区分固定内容维护与随使用人数增长的回应成本，明确最低承诺和缩小方式。"
+      },
+      {
+        "old": "普通发布账号容易被视为作者供给或社区活跃。",
+        "new": "以内容实际来源和行为实际来源分开判断。用户侧账号不改变平台的供给责任，也不取消外部消费者的真实价值。"
+      },
+      {
+        "old": "四份方案可被误读成可以同时开的四条产品线。",
+        "new": "四份是资源取舍的替代方案；共用栏目或素材不等于能同时兑现四项主要承诺。"
+      }
+    ],
+    "commonConditions": [
+      {
+        "id": "COM23-01",
+        "condition": "主要目标",
+        "known": "先建立目标用户规模与持续活跃。",
+        "unknown": "观察周期、目标规模、可承受投入与有效行为的最终口径。",
+        "comparisonRule": "分别观察读懂和采用方法、获得帮助、欣赏和继续创作、收到反馈后修订；不以生成次数或工具收入替代全部社区价值。",
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S06"
+        ]
+      },
+      {
+        "id": "COM23-02",
+        "condition": "供给模式",
+        "known": "当前有价值的独立自然UGC按尚未形成处理；平台长期组织内容并通过用户侧账号发布。",
+        "unknown": "运营实际会制作和复核什么，以及现有可投入时间。",
+        "comparisonRule": "不再要求先盘点自然UGC库存。每项最低承诺由平台明确承担，合作供稿只能列为待补能力。平台组织的内容和回应单独计量。",
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S03",
+          "OPT23-S04"
+        ]
+      },
+      {
+        "id": "COM23-03",
+        "condition": "人员和预算",
+        "known": "2名研发同时负责MakeNow与社区，1名产品、1名运营；API支持用户所说文档中的模型。",
+        "unknown": "研发和产品给社区内容的可用时间、内容预算、实际内部调用成本、外部合作条件。",
+        "comparisonRule": "不由人数倒推产量，不把API或研发复核视为免费资源；同一人的时间不能在四方案中重复承诺。外部所需能力不等于已决定招聘岗位。",
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S06"
+        ]
+      },
+      {
+        "id": "COM23-04",
+        "condition": "现有承载",
+        "known": "真实C端已有作品、教程、闪念及互动承载的代码证据；工作流、Skill、MCP专用详情有冻结原型。",
+        "unknown": "各字段当前线上返回与完整使用链路、通用附件可承担的范围。",
+        "comparisonRule": "先以现有内容页及人工编排说明可交付内容；方案中的首页编排是待比较的产品表达，不代表已开发。冻结原型不能计为已上线能力。",
+        "sourceIds": [
+          "OPT23-S03",
+          "OPT23-S06"
+        ]
+      },
+      {
+        "id": "COM23-05",
+        "condition": "用户判断与信任",
+        "known": "平台内容可以被真实外部用户消费，普通账号形式不改变材料的实际来源。",
+        "unknown": "不同叙述、推荐与回应方式对用户判断的实际影响。",
+        "comparisonRule": "不虚构亲历、独立背书或用户验证；对会影响使用的来源和商业关系如实交代。内部统计来源不需要堆成卡片上的后台标签。",
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S03",
+          "OPT23-S04"
+        ]
+      },
+      {
+        "id": "COM23-06",
+        "condition": "近期数据",
+        "known": "已有匿名访问与少量业务注册汇总，已找到材料的最新观察日为8月27日。",
+        "unknown": "9月同口径外部消费、回应、回访和投入；仅有总数时未必能识别运营与外部行为。",
+        "comparisonRule": "历史数据只说明当时情况，不用于给四方案打现成转化分；未知来源单列，领取积分者也不一概判为无价值。",
+        "sourceIds": [
+          "OPT23-S04"
+        ]
+      }
+    ],
+    "comparison": [
+      {
+        "dimension": "读者首先获得什么",
+        "A": "围绕眼前任务的精选做法及选择理由",
+        "B": "可理解的应用问题、复现条件与已核解法",
+        "C": "值得看的创作结果及与它关联的制作方法",
+        "D": "有明确目标的练习、示范、具体点评和修订"
+      },
+      {
+        "dimension": "首页为什么这样组织",
+        "A": "任务专题统领方法条目，降低泛内容选择负担",
+        "B": "按应用问题和处理状态聚集上下文，避免重复问答散落",
+        "C": "先看结果，过程和资源随后展开，兼容欣赏与继续创作",
+        "D": "围绕同一道题展示不同尝试和修改，让反馈可理解"
+      },
+      {
+        "dimension": "内容形式的主次",
+        "A": "专题/方法主导，作品作示例，短问答补适用条件",
+        "B": "问题与解法主导，示例应用/教程/资源证明处理过程",
+        "C": "作品主导，过程/教程/画布分层提供可选深度",
+        "D": "练习与作品修订主导，点评/方法短文围绕学习障碍出现"
+      },
+      {
+        "dimension": "平台最不可省的能力",
+        "A": "筛选、核验、解释差异与更新推荐",
+        "B": "复现问题、排错、标明环境与持续技术维护",
+        "C": "做出结果、审美判断、交付素材和复核制作方法",
+        "D": "设题、看懂作品目标、具体点评和跟进修改"
+      },
+      {
+        "dimension": "对自然UGC的最低依赖",
+        "A": "平台可先完整交付精选内容，外部反馈提高选题质量",
+        "B": "可先交付平台实测解法；真实应用问题仍需后续验证",
+        "C": "平台可供给作品与案例；外部二创是后续增量",
+        "D": "平台能供给练习与示范；参与者反馈关系不能靠运营互演形成"
+      },
+      {
+        "dimension": "随用户增加最容易增长的负担",
+        "A": "选题跨度、过期条目和不同适用条件的解释",
+        "B": "个体环境差异、长尾排错和版本兼容",
+        "C": "失败重试、素材权限/失效、不同输入的复用问题",
+        "D": "逐份作品阅读、点评、追问、修订后的再反馈"
+      },
+      {
+        "dimension": "工具对最低承诺的重要性",
+        "A": "可选示范工具；筛选价值可独立成立",
+        "B": "执行与复现依赖工具，但不必须依赖自营API",
+        "C": "作品欣赏不依赖工具交接；承诺画布复用时强依赖",
+        "D": "可选创作环境；反馈质量不由工具能力替代"
+      },
+      {
+        "dimension": "可能收益",
+        "A": "可以按任务承接广泛来源，并逐步积累可信选择依据",
+        "B": "解法与持续维护有机会形成较强的使用理由",
+        "C": "结果容易被理解，平台视觉工具可成为进一步创作的承接",
+        "D": "回应、进步和识别感有机会形成关系与持续参与"
+      },
+      {
+        "dimension": "必须接受的代价",
+        "A": "长期编辑判断投入，单纯收录很容易被替代",
+        "B": "技术支持容易挤占研发，读者可能期待超出范围的服务",
+        "C": "成品制作、复现与资产维护都要投入；漂亮结果不证明可交付",
+        "D": "人力服务容量限制明显；没有可兑现点评就只剩活动题目"
+      },
+      {
+        "dimension": "轻量版本",
+        "A": "一个有边界的任务专题，方法比较和更正入口完整",
+        "B": "一个限定环境的已核问题，正文解法与范围内追问",
+        "C": "一份来源明确的作品和制作记录；复用未通过就只交付展示/讲解",
+        "D": "一个练习及示范修订，按实际可用时间开放有限反馈范围"
+      },
+      {
+        "dimension": "会直接改变取舍的未知",
+        "A": "平台能否持续核验而非转载，读者是否采用选择理由",
+        "B": "技术维护时间是否可保障，问题是否反复且具有共性",
+        "C": "能否稳定制作并交付可用材料，读者是否愿意继续改",
+        "D": "谁能提供具体反馈，参与者是否愿意返回修订"
+      },
+      {
+        "dimension": "目前不能由资料推出",
+        "A": "编辑内容必然带来搜索流量或留存",
+        "B": "有廉价API就会吸引开发者或卖出调用量",
+        "C": "有MakeNow就应选择视觉生产社区",
+        "D": "活动和积分能够自动产生互评关系"
+      }
+    ],
+    "options": [
+      {
+        "id": "A",
+        "name": "任务方法与精选内容社区",
+        "previous": "保持原A映射：由泛AI实用内容，具体到任务方法与精选内容。",
+        "promise": "围绕一件想做的事，找到经过说明和核对的做法，知道它适合什么条件，以及为什么选它。",
+        "audience": "有零散AI使用需求、愿意阅读具体做法的人。运营、产品、创作者和独立工作者只是候选来源；起步可按少数相邻任务组织，不先宣布服务所有职业。",
+        "needs": [
+          "减少在工具、教程和零散经验间反复筛选",
+          "理解方法前提与替代选择，知道什么时候不值得继续",
+          "收藏有用方法，在相邻任务或工具变化时回来查看"
+        ],
+        "homeOrganization": {
+          "firstView": "用任务专题解释这一组内容能帮助做什么，再展示经过选择的方法条目。作品图、短观察和工具资源出现在对应任务下。",
+          "zones": [
+            "任务入口：具体问题和适用情境",
+            "精选方法：结果例子、选择理由、必要前提",
+            "方法更新：说明变化与受影响内容",
+            "读者问题：补充不同条件，回链到原方法"
+          ],
+          "card": "标题讲做法，摘要说明适用条件，预览证明讲的是什么；不以热度或夸张效果替代判断信息。",
+          "detail": "先回答适不适用，再给方法、示例、检查结果、替代方案和更正记录；资源或工具入口位于需要执行的步骤。",
+          "reason": "用户的困难是选择，不只是发现更多内容。任务专题给上下文，具体条目给可用信息，修订入口解释为何需要再看。"
+        },
+        "contentMix": [
+          {
+            "form": "任务专题和方法比较",
+            "role": "核心组织单位；平台解释为什么收录和如何选择"
+          },
+          {
+            "form": "步骤教程和小案例",
+            "role": "提供可理解的过程与结果检查，支撑推荐理由"
+          },
+          {
+            "form": "作品、短观察和问题",
+            "role": "作品让结果直观；短文补边界，不为了填满频道重复同一材料"
+          },
+          {
+            "form": "Skill/MCP/工作流资料",
+            "role": "仅在能帮助该任务时出现；文章介绍与可使用文件区分"
+          }
+        ],
+        "journey": [
+          {
+            "step": "进入",
+            "action": "从一条关于具体任务的外部内容进入专题。",
+            "next": "先看适用对象与任务边界，再决定是否展开。",
+            "operatorWork": "按任务组织导流内容，并保证落地页回答同一个问题。"
+          },
+          {
+            "step": "选择",
+            "action": "比较两种或多种已有依据的方法，理解所需输入和限制。",
+            "next": "采用一种，或有依据地排除不适合的方法。",
+            "operatorWork": "核对例子，写明选择理由；不能用简单工具名单代替编辑判断。"
+          },
+          {
+            "step": "使用",
+            "action": "阅读步骤、采用思路，必要时到合适工具执行。",
+            "next": "对照结果；工具不是必须点开的转化门。",
+            "operatorWork": "复核关键步骤和入口，保持说明与实际能力一致。"
+          },
+          {
+            "step": "回应与回来",
+            "action": "提出自己的条件、收藏或返回查看修订与相邻任务。",
+            "next": "平台把有共性的问题补回正文。",
+            "operatorWork": "持续读反馈、调整推荐和更正，不把运营提问自答计为外部反馈。"
+          }
+        ],
+        "supply": [
+          {
+            "role": "选题与编辑",
+            "internalTask": "运营组织选题、整理材料、上架并跟踪反馈；产品把关分类和选择逻辑。",
+            "requiredSkill": "理解任务、比较资料、写清适用条件与取舍。",
+            "missingCapability": "尚无持续核验不同方法的实际产能记录。",
+            "maintenance": "检查高价值旧条目，处理失效链接和结论变化。",
+            "reduceScope": "减少任务跨度，先维护一个专题，避免泛工具日报。"
+          },
+          {
+            "role": "方法实践与核验",
+            "internalTask": "由实际会做该任务的人提供过程证据；需要研发时先明确其范围。",
+            "requiredSkill": "能重复做出例子并解释差异，不只是收集成品。",
+            "missingCapability": "现有团队未证明覆盖多类任务；合作实践者是待补能力，不是已有供应商。",
+            "maintenance": "工具或输入变化后核对关键步骤。",
+            "reduceScope": "未复核条目只交付资料整理，不写实测或效果保证。"
+          }
+        ],
+        "toolRelation": {
+          "community": "负责筛选、解释、组织和更正。",
+          "MakeNow": "在视觉任务中作为可选演示与执行环境，不能要求所有读者先开户生成。",
+          "API": "支撑需要调用的示例；应说明适用性，保留外部替代做法。",
+          "withoutTool": "只要筛选与解释足够可信，内容价值可以成立；能否获得独立收入未知。",
+          "unknown": "跨工具核验成本、用户为何离开现有搜索/AI助手、内容对工具使用的实际贡献。"
+        },
+        "acquisition": "假设以具体任务的短说明、方法比较和结果示例承接现有平台流量。到达专题后的第一份价值应可阅读；积分可以独立存在，但不能被当成内容价值的证明。当前未确认哪个任务可带来持续消费。",
+        "returnReason": "相邻任务、已收藏方法的修订、平台对具体条件的回应；这些是设计理由，尚未取得回访效果。",
+        "minimumPromise": "每个精选条目都有真实来源、清楚的适用条件、可解释的推荐理由和更正入口。已复核与资料整理分开说。",
+        "declinePromise": "不承诺所有AI新闻都覆盖、每个工具都实测、任何问题都获得定制解法或所有材料都可直接复用。",
+        "workload": {
+          "fixed": "选题、筛选、编辑、核验，以及已上线精选条目的持续检查。",
+          "variable": "读者条件变多后，解释、补充示例和重新比较会增加。",
+          "growthLimit": "维护中的任务和方法过多时，旧内容质量会先下降；新增条数不是唯一容量指标。"
+        },
+        "economics": {
+          "costDrivers": [
+            "编辑与核验时间",
+            "为实际示例使用的工具费用",
+            "材料取得和授权",
+            "存量更正与回应"
+          ],
+          "revenueHypothesis": "可能通过适用场景带来工具使用，或在可信积累后形成明确的专题/服务收入；均未验证。商业推荐若左右收录，会损伤筛选价值。",
+          "unknown": "读者是否愿意为筛选付费、工具转化可归因程度、每份有效方法的完整成本。"
+        },
+        "failureModes": [
+          "变成工具链接目录，选择负担原样留给用户。",
+          "为泛流量不断扩题，核验跟不上，旧教程和推荐过期。",
+          "大量同质短内容增加条数，却没有形成值得收藏的任务资料。",
+          "自营工具无条件排在前面，使编辑判断不可信。"
+        ],
+        "lightVersion": "围绕一个有边界的任务，用现有教程、作品和闪念承载一组完整方法说明。人工编排专题与关联链接，先看选择理由是否清楚，不先扩建所有内容频道。",
+        "conditionsToCompare": [
+          "平台能否持续提供比工具目录多一步的选择判断。",
+          "能否为所选任务取得可解释、可更新的过程材料。",
+          "有限工时是否覆盖存量更新，而不只够写新稿。"
+        ],
+        "evidenceNeeded": [
+          {
+            "evidence": "一组真实材料做成的任务专题及编辑/核验记录。",
+            "changesJudgment": "区分平台能够做精选方法，还是目前只能做资料汇编。"
+          },
+          {
+            "evidence": "外部读者对适用条件的理解、采用或排除理由，以及之后的查阅行为。",
+            "changesJudgment": "判断筛选价值是否成立；属于后续自身验证，不能由竞品表现替代。"
+          }
+        ],
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S02",
+          "OPT23-S03",
+          "OPT23-S04",
+          "OPT23-S07"
+        ]
+      },
+      {
+        "id": "B",
+        "name": "AI应用解法与实践社区",
+        "previous": "保持原B映射：AI应用解法与实践。",
+        "promise": "把AI应用中的具体问题讲清楚，给出有复现条件和检查方法的解法，并说明变化后该如何处理。",
+        "audience": "正在接入、组合或迭代AI能力的人，包括开发者和有实际自动化任务的使用者；技术水平与应用环境不能默认相同。",
+        "needs": [
+          "从能调用走到能处理自己的输入和输出",
+          "理解失败发生在哪个条件，减少反复试错",
+          "当模型或依赖变化时找到更新过的解法"
+        ],
+        "homeOrganization": {
+          "firstView": "以具体应用问题组织解法，结果演示与处理条件一起出现；问题讨论紧邻对应案例。",
+          "zones": [
+            "应用任务与常见问题入口",
+            "已核解法：输入、结果与环境摘要",
+            "待补条件的讨论：清楚交代哪里未知",
+            "近期变化：哪些旧解法受影响"
+          ],
+          "card": "说明想解决什么、观察到什么差异和核验范围；不凭一个运行按钮宣称解决了用户问题。",
+          "detail": "目标、最小输入、环境或版本、问题表现、处理过程、检查输出和剩余限制；可运行示例作为证据的一部分。",
+          "reason": "应用问题依赖上下文。按作品漂亮程度排序会掩盖复现条件，孤立问答又难积累可再次使用的解法。"
+        },
+        "contentMix": [
+          {
+            "form": "问题与解法条目",
+            "role": "核心知识单位，保留目标、条件、处理与检查方法"
+          },
+          {
+            "form": "教程与示例应用",
+            "role": "让读者理解方法如何落地；运行成功与适合真实任务分别核验"
+          },
+          {
+            "form": "Skill、MCP、工作流或代码资料",
+            "role": "按实际交付说明文件与条件，不因名称流行而独立铺满频道"
+          },
+          {
+            "form": "问题讨论与更新笔记",
+            "role": "收集环境差异，向主文回填更正；运营整理不能冒充独立用户证实"
+          }
+        ],
+        "journey": [
+          {
+            "step": "发现问题",
+            "action": "读者从自己的应用问题进入，看到相似输入与问题表现。",
+            "next": "检查环境是否足够接近。",
+            "operatorWork": "把平台真实实践中的问题整理为可复现材料，不虚构客户案例。"
+          },
+          {
+            "step": "理解与复现",
+            "action": "阅读最小例子和解法，决定是否在自己的环境尝试。",
+            "next": "对照预期输出或检查条件。",
+            "operatorWork": "技术复核者记录环境、输入、结果和未覆盖条件。"
+          },
+          {
+            "step": "处理差异",
+            "action": "说明自己的条件及失败位置，提出范围内追问。",
+            "next": "判断是内容缺漏、环境差异还是需要另行支持的问题。",
+            "operatorWork": "运营收集上下文，具备能力的人排查；明确接手范围，避免评论自动成为无上限客服工单。"
+          },
+          {
+            "step": "返回使用",
+            "action": "应用变化后回查更新，或把解法迁移到相邻问题。",
+            "next": "更正与兼容说明回到原条目。",
+            "operatorWork": "维护版本关联，检查旧示例并回收不再可靠的使用承诺。"
+          }
+        ],
+        "supply": [
+          {
+            "role": "技术实践与审校",
+            "internalTask": "平台提供自己真正完成过的应用问题及过程；研发可按约定范围复核。",
+            "requiredSkill": "问题拆解、复现、结果检查和版本维护。",
+            "missingCapability": "没有证据表明2名研发可在主营之外持续承担公开技术内容与答疑。",
+            "maintenance": "依赖、模型、输入和错误处理变化后更新例子。",
+            "reduceScope": "先限一种环境和一类问题；不做全模型、全框架兼容。"
+          },
+          {
+            "role": "编辑与回应组织",
+            "internalTask": "运营整理问题上下文与正文；产品判断应用问题是否值得形成长期条目。",
+            "requiredSkill": "能识别缺失条件，准确转述技术结论，避免夸大兼容性。",
+            "missingCapability": "运营是否能完成基础技术编辑尚未验证；外部技术作者尚未落实。",
+            "maintenance": "把共性追问补入正文，明确哪些问题没有解决。",
+            "reduceScope": "不承诺每条评论都定制排错，先维护已核例子。"
+          }
+        ],
+        "toolRelation": {
+          "community": "负责问题上下文、可迁移解法、讨论与更新。",
+          "MakeNow": "可承担适合画布表达的视觉应用示例，但不是所有AI应用问题的通用执行器。",
+          "API": "提供实际调用的一种选择；文档覆盖不能证明各场景输出稳定、成本明确或支持范围完整。",
+          "withoutTool": "独立于自营API的解法仍有价值；使用者选择其他服务时，不能把其调用收入算到社区。",
+          "unknown": "文档模型与真实调用能力、别名和费用映射；技术支持时间；哪些问题具有重复需求。"
+        },
+        "acquisition": "假设用具体问题的说明、对照结果与可引用解法吸引正在实践的人；外部渠道可以广，落地主题要具体。通过积分接触到的人也可以成为实践用户，但必须看之后是否存在自己的应用行为。",
+        "returnReason": "下一次输入差异、模型变化或应用迭代需要可靠解法；不能仅由评论数量推断持续实践。",
+        "minimumPromise": "已发布为解法的条目有复现条件、真实核验记录与检查方法；不清楚的环境差异保留为未知，更新能追溯到原条目。",
+        "declinePromise": "不承诺任意环境立即解决、免费长期定制开发、所有模型稳定运行或评论区承担API服务故障的全部处理。",
+        "workload": {
+          "fixed": "选一个真实问题、构造最小例子、运行核验、技术审校与整理。",
+          "variable": "更多环境和个体输入会带来长尾排错；旧示例随依赖变化持续返工。",
+          "growthLimit": "技术维护是主要瓶颈，发布账号变多不增加解决问题的能力。"
+        },
+        "economics": {
+          "costDrivers": [
+            "技术复现与维护工时",
+            "测试与失败重试调用",
+            "示例托管和资源维护（如果提供）",
+            "范围内技术支持"
+          ],
+          "revenueHypothesis": "可能带来自营API的合适使用，或在范围明确后形成支持服务；均需区分社区内容贡献与API既有客户需求。",
+          "unknown": "能归因的增量调用、含支持的实际成本、长期毛利和客户付费意愿；资料不足，不能以Token价差测算社区收益。"
+        },
+        "failureModes": [
+          "公开内容变成免费客服入口，研发被长尾问题拖住。",
+          "示例能跑但与使用者真实任务无关，访问没有后续应用。",
+          "只推荐自营模型、忽略输出质量和维护条件，损伤解法可信度。",
+          "把第三方应用、MCP介绍和平台可提供的托管服务混为一谈。"
+        ],
+        "lightVersion": "选一个平台已经做过、可公开材料完整的问题，在限定环境下交付一篇有结果检查的解法。通过现有教程和讨论承载，资源介绍先链接到原始来源，不先建设应用托管市场。",
+        "conditionsToCompare": [
+          "谁能持续复现与审校，主营排期是否允许。",
+          "问题是否具有共性，哪些追问属于承诺范围。",
+          "实际模型能力、费用和失败处理是否支持所选例子。"
+        ],
+        "evidenceNeeded": [
+          {
+            "evidence": "一次真实应用问题的完整复现、编辑、技术审校和后续差异处理记录。",
+            "changesJudgment": "判断所需技术时间能否由现有团队承担，以及轻量解法能否保持有效。"
+          },
+          {
+            "evidence": "使用者带有目标、输入和环境的真实问题及采用解法后的结果。",
+            "changesJudgment": "判断这是重复应用需求还是平台自说自话；属于后续自身验证。"
+          }
+        ],
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S02",
+          "OPT23-S03",
+          "OPT23-S04",
+          "OPT23-S06",
+          "OPT23-S08"
+        ]
+      },
+      {
+        "id": "C",
+        "name": "视觉创作与方法复用社区",
+        "previous": "保持原C映射：视觉创作与方法复用；明确区分作品欣赏和可交接制作方法。",
+        "promise": "先看到值得欣赏的创作结果，再按需要了解过程；承诺可复用的案例应让读者清楚取得什么、替换什么、怎样继续做。",
+        "audience": "对AI图像、视频和创作方法有兴趣的人，包括欣赏者、学习者与有实际创作需求的人。不能默认所有观看者都需要购买Token或复制画布。",
+        "needs": [
+          "发现风格、表达和创作灵感",
+          "理解好结果怎样产生，哪些条件可以迁移",
+          "对有明确复用承诺的案例，取得可用材料并继续制作自己的结果"
+        ],
+        "homeOrganization": {
+          "firstView": "以图像和视频结果建立直观入口，明确作品、过程和可复用案例的差别；同主题内容关联，不将每个版本当无关新帖。",
+          "zones": [
+            "精选作品：先看结果和创作表达",
+            "方法案例：结果、交付物和适用条件",
+            "制作过程：关键尝试、失败与选择",
+            "素材与方法更新：读者已有副本可能受什么影响"
+          ],
+          "card": "结果预览为主，标题交代看点；可复用案例补交付类型和必要前提，不在卡片塞完整参数。",
+          "detail": "先大图或视频和作品说明，随后按选择展开过程、输入、素材、画布与已核范围。仅供欣赏的作品不被强迫配伪造教程。",
+          "reason": "视觉结果便于快速判断兴趣，继续创作又需要严谨材料；分层让两种消费都成立，同时避免把封面效果误当作可复用能力。"
+        },
+        "contentMix": [
+          {
+            "form": "图片/视频作品",
+            "role": "核心观看入口，承担审美与灵感价值"
+          },
+          {
+            "form": "创作过程和短笔记",
+            "role": "说明真实选择与尝试，支持交流，不伪造制作经历"
+          },
+          {
+            "form": "步骤教程",
+            "role": "把可解释的方法整理成学习路径，说明结果检查与适用范围"
+          },
+          {
+            "form": "画布、工作流、源文件与素材",
+            "role": "只在来源和交付链路已核时作复用承诺；不把方法说明文章冒充完整工程包"
+          }
+        ],
+        "journey": [
+          {
+            "step": "观看",
+            "action": "从外部结果示例或社区作品流进入，欣赏、收藏或评论。",
+            "next": "观看可以完成本次价值，不强制进入工具。",
+            "operatorWork": "制作或取得来源明确的结果，挑选画面并写清表达。"
+          },
+          {
+            "step": "理解",
+            "action": "有兴趣者查看制作过程和素材条件。",
+            "next": "决定只学习思路，还是继续取得可复用材料。",
+            "operatorWork": "整理真实过程、挑出决定性步骤，区分展示与复用。"
+          },
+          {
+            "step": "继续做",
+            "action": "在明确条件下取得副本或文件，替换自己的输入，执行并检查。",
+            "next": "保存或导出自己的结果；未通过的环节不算交付完成。",
+            "operatorWork": "复核材料可访问性、输入、模型、费用与输出；工具问题由相应能力的人接手。"
+          },
+          {
+            "step": "再次使用",
+            "action": "换下一组素材或回来查修订，也可回应作品本身。",
+            "next": "自己的结果和问题可成为真实外部反馈，但不预设会公开投稿。",
+            "operatorWork": "维护旧材料与方法，并把具体问题补回对应版本。"
+          }
+        ],
+        "supply": [
+          {
+            "role": "创作与素材整理",
+            "internalTask": "平台组织选题与编辑，真正会制作的人交付成品和过程。",
+            "requiredSkill": "画面/叙事判断、图像或视频制作、素材来源整理。",
+            "missingCapability": "目前没有稳定成型案例和专职创作能力的证据；潜在合作作者尚未落实。",
+            "maintenance": "保留允许的素材使用范围，维护成品媒体和过程说明。",
+            "reduceScope": "先选一种输出和一种制作任务，不同时承诺图片、长视频与所有风格。"
+          },
+          {
+            "role": "独立复核与工具衔接",
+            "internalTask": "由没有依赖作者隐含经验的复核者按照说明检查；工具侧处理产品问题。",
+            "requiredSkill": "检查输入、文件、节点依赖、模型与结果规格，能区分材料缺漏和工具故障。",
+            "missingCapability": "同一MakeNow样本仅完成有限复制保存；素材显示、完整生成与成本未通过。",
+            "maintenance": "素材失效、模型变化、旧副本更新与失败处理。",
+            "reduceScope": "完整复用未通过就交付作品和制作讲解，暂停该案例的可运行承诺。"
+          }
+        ],
+        "toolRelation": {
+          "community": "负责结果展示、表达、方法解释、材料交付说明和关联讨论。",
+          "MakeNow": "可承接画布副本与继续创作。一个案例已验证复制和文本保存，复查时原件与副本图片均未正常显示，完整复用仍待验证。",
+          "API": "可以提供生成能力，但具体节点到模型、费用和结果检查仍需确认；Token价格不能代替完整制作成本。",
+          "withoutTool": "作品欣赏和方法讲解可独立成立；这不能同时证明自营画布复用方向成立。",
+          "unknown": "代表任务的素材完整性、执行结果、模型/费用、失败重试与独立使用者能否完成。"
+        },
+        "acquisition": "假设用有辨识度的作品、真实过程和前后结果吸引对表达或创作感兴趣的人。导流到作品就应能完整观看，导流到模板则必须满足材料承诺，不能用同一漂亮封面混淆两者。",
+        "returnReason": "继续欣赏某类表达、学习相关做法、换下一批素材或查看方法修订；其中哪种成立需要分别观察。",
+        "minimumPromise": "作品有可看结果和真实来源；标为可复用的案例另外满足材料、条件、核验范围和维护入口。两类内容不混用验收口径。",
+        "declinePromise": "不承诺任何作品都能一键同款、任何素材都获得相同结果、画布复制意味着完整生成成功，或所有观看都会转成工具使用。",
+        "workload": {
+          "fixed": "真实作品制作、素材整理、过程编辑，以及复用案例的独立检查。",
+          "variable": "不同输入造成的失败、素材失效和模型变化；视频等复杂交付会带来更多检查环节。",
+          "growthLimit": "能制作成品的人与能独立复核交付的人都可能成为瓶颈；图卡数量掩盖不了生产和维护量。"
+        },
+        "economics": {
+          "costDrivers": [
+            "创作与后期时间",
+            "调用和失败重试",
+            "素材取得与存储",
+            "文件和模型变更维护",
+            "复用问题处理"
+          ],
+          "revenueHypothesis": "可能由适合继续创作的用户带来工具使用或明确授权的案例服务收入；欣赏价值和工具收入需要分别成立，不将观看直接当潜在付费生成。",
+          "unknown": "完整制作成本、可用结果比例、复用维护负担、真实迁移意愿以及案例带来的增量工具收益。"
+        },
+        "failureModes": [
+          "只有漂亮结果没有可理解过程，学习和复用承诺落空。",
+          "把图片加载失败直接归因复制，修错问题；或只证明保存就宣布完整交付。",
+          "依赖作者在评论里逐人补条件，方法包始终不完整。",
+          "所有作品都要求附源文件，导致制作成本过高并损害纯欣赏内容的供给。"
+        ],
+        "lightVersion": "以一份真实作品和制作记录形成可读、可看的案例。只开放已经确认的学习或材料范围；等代表任务通过输入到保存导出的检查，再增加对应复用承诺。",
+        "conditionsToCompare": [
+          "谁能稳定制作有辨识度的作品，并保留过程材料。",
+          "所选任务是否需要MakeNow且交付链路是否可兑现。",
+          "完整制作与后续复用支持的成本是否在可用工时和预算内。"
+        ],
+        "evidenceNeeded": [
+          {
+            "evidence": "一份真实成品及来源、过程、编辑和维护记录。",
+            "changesJudgment": "判断平台能否承担视觉作品供给，不能由画布功能存在替代。"
+          },
+          {
+            "evidence": "代表任务可用输入、材料、执行结果、实际费用和保存/再次使用记录。",
+            "changesJudgment": "判断可以承诺作品讲解，还是已经可以承诺可复用案例；当前素材问题需先处理。"
+          },
+          {
+            "evidence": "外部观看者和继续创作者的实际反馈分别记录。",
+            "changesJudgment": "判断欣赏、学习、复用哪项有需求；不能把不点工具的人全部判为无价值。"
+          }
+        ],
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S02",
+          "OPT23-S03",
+          "OPT23-S05",
+          "OPT23-S06",
+          "OPT23-S09"
+        ]
+      },
+      {
+        "id": "D",
+        "name": "创作练习与反馈社区",
+        "previous": "保持原D映射：创作练习与反馈。",
+        "promise": "围绕清楚的创作目标练习，看到具体反馈和修改示范，知道下一次可以怎样改。",
+        "audience": "愿意展示尝试、听取反馈并返回修改的人；也包括先旁观学习者。不能把所有想看漂亮作品或领积分的人默认当成练习参与者。",
+        "needs": [
+          "有合适的练习题和完成标准，减少不知做什么的负担",
+          "得到与表达目标有关的具体反馈，而不是只有点赞",
+          "看见自己的改进以及别人为什么这样选择，形成持续参与的理由"
+        ],
+        "homeOrganization": {
+          "firstView": "围绕当前练习呈现目标、示范和不同尝试；修订前后放在一起，点评与作品相邻。",
+          "zones": [
+            "练习题：目标、限制和参与方式",
+            "示范与拆解：如何观察和判断",
+            "尝试与修订：同题作品及具体变化",
+            "共性问题：把点评整理成可再次阅读的方法"
+          ],
+          "card": "图片或视频旁交代创作意图与当前尝试；点评入口围绕具体问题，不把排行榜当全部发现机制。",
+          "detail": "表达目标、初稿、所遇困难、反馈、修改后结果和作者解释；按真实发生顺序关联，不编造参与和点评。",
+          "reason": "反馈脱离目标容易变成喜好表态。把题目、尝试和修订放在一起，读者才知道建议对应什么变化，也能通过旁观学习。"
+        },
+        "contentMix": [
+          {
+            "form": "练习题与示范",
+            "role": "平台稳定供给的起点，说明目标与反馈范围"
+          },
+          {
+            "form": "初稿、过程与修订作品",
+            "role": "承载真实尝试；起步示范可以由平台制作但必须如实说明"
+          },
+          {
+            "form": "具体点评与追问",
+            "role": "主要服务内容，关注目标、选择和可修改部分"
+          },
+          {
+            "form": "共性方法与参考作品",
+            "role": "让一次点评服务更多读者，减少相同问题重复处理"
+          }
+        ],
+        "journey": [
+          {
+            "step": "理解题目",
+            "action": "读者先看目标、示范和参与条件，也可只看作品学习。",
+            "next": "决定尝试或旁观。",
+            "operatorWork": "主理能力的人出题并做真实示范；运营解释流程与反馈范围。"
+          },
+          {
+            "step": "提交尝试",
+            "action": "参与者交代自己的表达目标和希望被帮助的地方。",
+            "next": "进入已说明的点评安排。",
+            "operatorWork": "整理投稿上下文、确认反馈容量；不让报名规模超过实际能回应的范围。"
+          },
+          {
+            "step": "理解反馈",
+            "action": "阅读针对目标的具体建议，理解可保留和可修改的部分。",
+            "next": "自行选择是否修改，并说明原因。",
+            "operatorWork": "点评者认真看作品、提出有依据的建议；运营不能用通用夸奖填补专业反馈。"
+          },
+          {
+            "step": "修订与继续",
+            "action": "返回上传修订或补充解释，观察自己的变化和同题他人的做法。",
+            "next": "再进入有关联的下一练习；不要求每位参与者都公开二创。",
+            "operatorWork": "对照前后稿跟进，将共性问题整理成方法；同伴互评只能作为真实发生后的补充。"
+          }
+        ],
+        "supply": [
+          {
+            "role": "设题与点评",
+            "internalTask": "平台必须明确谁能给出示范、评判依据和具体建议。",
+            "requiredSkill": "创作判断、教学拆解、阅读作品目标、尊重不同表达并提出可操作修改。",
+            "missingCapability": "现有人员没有已证明的稳定主理人与点评能力；合作导师只是可能补齐方式。",
+            "maintenance": "持续跟进修订与共性困难，不只在活动开头出题。",
+            "reduceScope": "按实际可承担范围做主题点评或公开示范点评，不承诺所有作品逐一深评。"
+          },
+          {
+            "role": "活动与讨论组织",
+            "internalTask": "运营发布练习、整理材料、安排回应；产品帮助建立清楚的参与与展示路径。",
+            "requiredSkill": "设定期待、追问上下文、整理讨论和沉淀内容。",
+            "missingCapability": "真实参与者的意愿、投稿量和返回修改尚未观察。",
+            "maintenance": "处理重复问题、未获反馈的期待和点评后的追问。",
+            "reduceScope": "先用现有作品/教程/闪念和人工关联，不先做排名、评委系统或复杂奖励。"
+          }
+        ],
+        "toolRelation": {
+          "community": "负责题目、示范、具体反馈和修订关系。",
+          "MakeNow": "可选创作环境；不能用进入画布代替参与练习或获得帮助。",
+          "API": "可支持示范或参与者创作，算力供给与点评服务分别说明。",
+          "withoutTool": "练习和反馈可以跨工具成立；若主要价值来自高密度指导，经营形态可能更接近指导服务，需要承认其人力特征。",
+          "unknown": "点评能力和可用时间、参与者期待、返稿意愿、算力在练习中的必要程度。"
+        },
+        "acquisition": "假设用明确的练习题、真实示范修改和公开可看的点评内容吸引愿意进步的人。外部内容先展示学习价值；奖励若存在，不能成为模拟参赛和运营互评的理由。",
+        "returnReason": "收到与自己有关的反馈、返回修改、看同题差异以及接续练习；这依赖真实回应，不由活动日历自动产生。",
+        "minimumPromise": "题目、示范和实际能承担的反馈范围说清楚；给出的点评具体、有依据，作品修订可关联回原尝试。平台示范与外部参与分别记录。",
+        "declinePromise": "不承诺所有人都得到不限次数的一对一点评、不保证每次有进步、不把用户互评或导师资源预设为已存在，也不先承诺排行榜与奖励能形成关系。",
+        "workload": {
+          "fixed": "设题、示范、参与说明、作品组织和共性问题整理。",
+          "variable": "每份作品的阅读、追问、点评与修订后再次反馈；参与越深，未必越省工作。",
+          "growthLimit": "反馈容量最直接限制规模。共性点评可复用，但不能假定能替代所有个别回应。"
+        },
+        "economics": {
+          "costDrivers": [
+            "示范制作",
+            "主理与点评时间",
+            "活动组织和返稿跟进",
+            "若提供则发生的工具与奖励成本"
+          ],
+          "revenueHypothesis": "可能形成有范围的指导或练习服务，也可能提高相关工具的使用；付费意愿、指导责任和持续成本均未验证。",
+          "unknown": "参与者是否愿为反馈投入时间或付费、点评投入与可服务人数关系、免费与付费内容边界；不据活动参与量估算收入。"
+        },
+        "failureModes": [
+          "题目和积分很多，作品得到的只有礼貌性夸奖。",
+          "平台用多个账号演出参与与互评，无法观察真实关系。",
+          "没有明确反馈范围，参与增长先转化为等待和失望。",
+          "点评者只套通用标准，忽略作品意图，参与者没有返回修改的理由。"
+        ],
+        "lightVersion": "先完整呈现一个练习、一份真实示范及修订解释。只有在具体点评者与可用时间明确后，才开放对应范围的外部反馈；纯示范可先作为学习内容，不能据此宣称反馈社区已成立。",
+        "conditionsToCompare": [
+          "谁能够提供可信、具体且持续的点评，是否确有可投入时间。",
+          "参与者愿不愿暴露未完成作品并返回修改。",
+          "平台愿承担多大范围的个别反馈，是否接受这是一项持续服务劳动。"
+        ],
+        "evidenceNeeded": [
+          {
+            "evidence": "真实示范从初稿到修改的过程，以及点评者给出建议的依据和耗时记录。",
+            "changesJudgment": "判断平台具备练习示范能力还是只能做作品展示；不先推导招聘数量。"
+          },
+          {
+            "evidence": "少量真实参与者的目标、回应、修订与未继续原因。",
+            "changesJudgment": "判断反馈关系是否成立；这是后续自身验证，不能由竞品挑战机制证明。"
+          }
+        ],
+        "sourceIds": [
+          "OPT23-S01",
+          "OPT23-S02",
+          "OPT23-S03",
+          "OPT23-S04",
+          "OPT23-S06",
+          "OPT23-S10"
+        ]
+      }
+    ],
+    "sharedWorkAndNonSharedWork": [
+      {
+        "work": "素材、正文、来源和关联内容",
+        "shareable": "同一真实制作过程可以派生作品、教程、问题或练习示范，减少重复取材。",
+        "notShareable": "每份内容仍需提供不同阅读价值；四种表达不等于四份独立需求证据。"
+      },
+      {
+        "work": "当前内容页、评论和收藏",
+        "shareable": "多方案可先使用已有作品、教程与闪念承载，再比较首页编排。",
+        "notShareable": "页面共用不能替代技术解法、创作制作或具体点评这些不同的供给能力。"
+      },
+      {
+        "work": "运营组织",
+        "shareable": "内部来源记录、发布、更正和反馈归档可以共用工作方法。",
+        "notShareable": "一个运营账号或多个人物化账号都不会自动增加技术审校和点评产能。"
+      },
+      {
+        "work": "工具",
+        "shareable": "适用的API与MakeNow能力可出现在多个方案的个别任务中。",
+        "notShareable": "B的应用排错、C的素材复用、D的指导服务各有成本，不能只算一次Token费用就认为都已覆盖。"
+      }
+    ],
+    "comparisonConditions": [
+      {
+        "unknown": "实际可投入时间与能力",
+        "affects": "A的核验与更新范围；B的技术支持范围；C的制作和复核范围；D的点评范围。",
+        "minimumEvidence": "对一份真实样本分开记录选材、制作、编辑、复核、回应与修订；再与已有角色可用时间对照。",
+        "ifMissing": "只能比较劳动结构，不能计算周产量、启动周期或同时运营几条线。"
+      },
+      {
+        "unknown": "材料和工具的完整可交付程度",
+        "affects": "主要改变B能否称为已核解法、C能否称为可复用案例；也决定A教程和D示范可以承诺的范围。",
+        "minimumEvidence": "实际输入、可用材料、明确输出检查、必要工具步骤、费用和保存记录。",
+        "ifMissing": "保留阅读、展示或结构讲解的最低承诺，不能补写运行结果。"
+      },
+      {
+        "unknown": "外部用户持续选择的理由",
+        "affects": "A是否比现有搜索与AI助手有用；B是否有重复应用问题；C欣赏/学习/复用各有多少价值；D是否有反馈后修订。",
+        "minimumEvidence": "从后续真实外部消费和回应取得情境与结果，供给来源和行为来源分开。",
+        "ifMissing": "形成条件式方案，不将竞品机制或运营填充量解释为本站需求。"
+      },
+      {
+        "unknown": "阶段预算与收入成本",
+        "affects": "内容合作是否可承担、工具使用是否可持续、是否适合服务型收入。",
+        "minimumEvidence": "已有预算区间及能说明用途的匿名成本汇总，再结合实际样本完整成本。",
+        "ifMissing": "只比较成本来源与商业假设，不给ROI、毛利、回本时间或排名。"
+      }
+    ],
+    "decisionBoundary": "目前可比较内容展示、使用步骤、供给工作和工具投入；主要用户、持续需求与经营效果仍待确认。四个方案保留各自条件，不合并承诺全部服务。",
+    "sources": [
+      {
+        "id": "OPT23-S01",
+        "title": "用户已确认的目标、团队、资源与平台长期供给条件",
+        "url": "",
+        "path": "本任务对话",
+        "locator": "目标规模与持续活跃；2研发/1产品/1运营；API覆盖文档模型；平台维护并通过用户侧账号持续发布",
+        "date": "2026-09-10沿用",
+        "scope": "用户提供的经营条件，非数据库查询、预算确认或能力测试。"
+      },
+      {
+        "id": "OPT23-S02",
+        "title": "四方向原稿",
+        "url": "",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+        "locator": "options A-D、comparison、sources",
+        "date": "2026-09-10；重读",
+        "scope": "仅作名称映射和旧方案追溯；正文已按最新条件重写。"
+      },
+      {
+        "id": "OPT23-S03",
+        "title": "六类平台内容与现有承载对照",
+        "url": "",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-content.json",
+        "locator": "rows C22-01至C22-06、supplyImplications、sources",
+        "date": "2026-09-10；重读",
+        "scope": "当前代码承载、冻结原型和编辑草案；不证明线上完整使用、内容产能或用户效果。"
+      },
+      {
+        "id": "OPT23-S04",
+        "title": "已有匿名经营汇总及来源拆分",
+        "url": "",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-data.json",
+        "locator": "conclusion、availability、supplySegmentation",
+        "date": "2026-09-10整理；最新观察日2026-08-27",
+        "scope": "历史汇总和口径可用性；不能视为9月实际活跃或内容效果。"
+      },
+      {
+        "id": "OPT23-S05",
+        "title": "MakeNow素材与费用检查",
+        "url": "https://dream.ai666.net/case-share/6/canvas",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/v22-input-makenow.json",
+        "locator": "records M22-01至M22-05、generation、implications",
+        "date": "2026-09-10现场；继承",
+        "scope": "同一个案例一次连续检查；生成提交0，图片无法显示原因未定位；不外推全站。"
+      },
+      {
+        "id": "OPT23-S06",
+        "title": "自身页面与约束核对",
+        "url": "",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/v21-input-own.json",
+        "locator": "rows OWN21-01至OWN21-07、conditions",
+        "date": "2026-09-10；重读",
+        "scope": "代码和既有文档核对；供给条件以用户澄清覆盖旧库存建议。"
+      },
+      {
+        "id": "OPT23-S07",
+        "title": "Hugging Face Collections与Datawhale迭代章节的既有研究",
+        "url": "https://huggingface.co/docs/hub/collections",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+        "locator": "sources v15-r-collections-doc、v15-r-iterative",
+        "date": "依据2026-09-10的访问记录",
+        "scope": "合集与带过程的学习材料结构实例；不证明本站编辑需求、产能或回访。"
+      },
+      {
+        "id": "OPT23-S08",
+        "title": "Hugging Face Spaces与Discourse功能的既有研究",
+        "url": "https://huggingface.co/docs/hub/spaces-overview",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+        "locator": "sources v15-hf-spaces、v15-r-discourse、v15-r-linuxdo",
+        "date": "依据2026-09-10的访问记录",
+        "scope": "应用、上下文与讨论组织实例；不保证本站能提供托管或技术支持，也不推定LINUX DO全部配置。"
+      },
+      {
+        "id": "OPT23-S09",
+        "title": "RunningHub与FLORA创作方法交付的既有研究",
+        "url": "https://flora.ai/updates/project-sharing-open-collaboration",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+        "locator": "sources v15-cn-rh-flow、v15-cn-flora-share、v15-cn-flora-canvas",
+        "date": "继承2026-09-10先前访问；FLORA分享公告日期2025-11-26",
+        "scope": "作品、节点与交接的官方/作者说明，旧研究未执行这些流程；不能证明MakeNow具有同等能力。"
+      },
+      {
+        "id": "OPT23-S10",
+        "title": "NightCafe挑战和Hugging Face课程的既有研究",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json",
+        "locator": "sources v15-h1、v15-h2、v15-c2",
+        "date": "依据2026-09-10的访问记录",
+        "scope": "练习组织、作品与参与机制实例；不证明个别点评质量、本站导师供给或参与者关系。"
+      },
+      {
+        "id": "OPT23-S11",
+        "title": "平台持续供给研究前提",
+        "url": "",
+        "path": "outputs/aigc-community-deep-research-2026-09-08/v22-platform-supply/study.json",
+        "locator": "assumption、changedDecisions、measurementAxes、workload",
+        "date": "2026-09-10；重读",
+        "scope": "平台供给责任、来源与外部消费分别判断，不把多账号发布当自然作者规模。"
+      }
+    ]
+  }
+}

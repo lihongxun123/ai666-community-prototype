@@ -1,18 +1,18 @@
 {
   "title": "18个平台的内容形态研究",
-  "lead": "比较一个内容单元包含哪些材料、帮助使用者做到什么，以及它在理解、复制和修改时还缺少哪些条件。逐家拆解字段与公开样本。",
-  "scope": "本篇独立覆盖18家。成品、过程说明、可执行配置和使用后的讨论分别评价；它们不构成固定的质量等级。公开样本、官方示例、规则要求与实际交付分开记录，不把个别优质案例当作全站标准。",
+  "lead": "",
+  "scope": "截图覆盖7家、8组卡片与详情配对；其余字段依据公开样本或官方说明记录。",
   "guide": [
     {
       "title": "成品与过程材料",
-      "text": "一张成绩卡、一组操作记录和一份可执行配置，可能围绕同一次创作产生，却帮助读者完成不同事情。NightCafe的Promptle允许选择是否在题目结束后公开步骤；是否取得过程材料不能由成绩卡存在推定。内容比较应先指出读者拿到的具体材料，再判断适合观看、学习、修改还是继续运行。未取得原始素材或参数时，需要保留这个缺口。",
+      "text": "成绩卡展示结果，操作记录解释过程，可执行配置支持继续创作。NightCafe Promptle允许作者选择是否在题目结束后公开步骤，因此同一场活动的成果未必都附带过程材料。",
       "sourceIds": [
         "o9-g-night-promptle"
       ]
     },
     {
       "title": "说明字段怎样帮助使用",
-      "text": "Hugging Face模型卡将说明文字与结构化信息放在一起，任务、依赖关系和许可等信息各有用途；Dify模板指南区分概要与设置步骤。内容形态的价值因此不只在文章或卡片外观，还在字段是否回答了使用者的问题。用途描述帮助判断是否适合，输入和设置指导动手，版本与限制帮助判断能否继续用。文档中的推荐字段不代表所有作者都已完整填写。",
+      "text": "Hugging Face模型卡包含任务、依赖与许可，Dify模板指南区分概要和设置步骤。用途帮助选择，输入与设置支持操作，版本和限制说明后续使用条件；推荐字段不代表每位作者均已填写。",
       "sourceIds": [
         "o9-d-hf-card",
         "o9-d-dify-template"
@@ -20,7 +20,7 @@
     },
     {
       "title": "复制范围与补充材料",
-      "text": "取得工作流、模板或样例后，使用者仍可能需要自己的输入、模型、服务配置与相应权限。Liblib的规则要求结合工作流和所用模型判断使用范围；Dify的模板设置示例也需要配置外部服务。内容应把可继承部分和需自行补充的部分写清，并区分原配置、生成结果与素材的使用条件。复制入口的存在，不能证明换一个用户仍能完成任务。",
+      "text": "复制工作流、模板或样例后，使用者可能仍需补充素材、模型、外部服务及权限。Liblib要求结合工作流和底层模型判断许可，Dify模板示例需要配置外部服务。详情应分别说明配置、生成结果和素材的继承与使用条件。",
       "sourceIds": [
         "o9-c-lib-4",
         "o9-d-dify-template"
@@ -28,7 +28,7 @@
     },
     {
       "title": "样本质量的判断",
-      "text": "RunningHub的试衣样本有明确输入，但部分效果和原理说明仍待核验；ModelScope问题样本有错误信息，却缺少完整复现命令。二者都提醒我们，篇幅和字段数量不能代替可用性。分析内容时，应看每一部分能否支持判断或操作，并记录缺失的输入、修正步骤和验证结果。这样的拆解用于识别需要补什么，不能据此推断整个平台的平均内容质量。",
+      "text": "RunningHub试衣样本写明输入要求，但效果和原理未核验；ModelScope问题样本附错误信息，却缺完整复现命令。核查时应逐项查看输入、调整步骤与结果记录，样本结论不能外推全站质量。",
       "sourceIds": [
         "o9-c-rh-4",
         "o9-d-ms-issue"
@@ -41,7 +41,7 @@
       "id": "liblib",
       "name": "LiblibAI",
       "homepage": "https://www.liblib.art/",
-      "position": "Liblib样本的一页同时包含方法、操作说明与版本信息。效果图负责说明目标，节点截图解释怎么处理，依赖和许可限制说明是否能继续用。它比作品展示更深，但公开正文仍不是完整、已验证的交付包。",
+      "position": "Liblib样本页包含效果图、节点说明、依赖、许可和版本信息。读者可以了解目标、处理步骤及使用条件；完整配置的可导出性与运行结果尚未核验。",
       "forms": [
         {
           "name": "任务工作流",
@@ -56,7 +56,7 @@
           "example": "SDXL产品精修V1。",
           "depth": "过程教学与工作流说明；未导出配置核验。",
           "nextAction": "正文指导使用者进入对应模块准备素材。",
-          "limits": "没有本轮可验证的完整模型版本、配置文件与成功率。",
+          "limits": "没有可验证的完整模型版本、配置文件与成功率。",
           "sourceIds": [
             "o9-c-lib-1"
           ]
@@ -135,10 +135,10 @@
           }
         ],
         "missing": [
-          "完整可导入配置及依赖版本清单的本轮核验",
+          "完整可导入配置及依赖版本清单的核验",
           "用于对照的原始素材、失败结果与运行成本"
         ],
-        "notProven": "没有证明跨商品可稳定复现，截图中的节点也未在本轮运行。"
+        "notProven": "没有证明跨商品可稳定复现，截图中的节点也未在运行。"
       },
       "reuse": {
         "available": "可读取模块设计、图解、操作文字及旧版链接；是否能完整导出配置未核。",
@@ -172,7 +172,7 @@
       "id": "runninghub",
       "name": "RunningHub",
       "homepage": "https://www.runninghub.cn/",
-      "position": "RunningHub内容页有统一外壳，正文质量却不能由外壳推定。本轮两例都可进入运行，但一例主要外链导流，另一例给出输入输出却混有未经核实的技术和效果描述。可执行入口、教学内容与宣传段落应分别评价。",
+      "position": "RunningHub分别提供直接运行的AI应用和可查看、修改的工作流。详情需要说明输入、参数、依赖与输出检查；同一主题下的两类资源应保留关联和各自的使用条件。",
       "forms": [
         {
           "name": "任务型工作流说明",
@@ -187,7 +187,7 @@
           ],
           "example": "Klein试衣与商品局部替换。",
           "depth": "具有输入指导，配置实际内容未核。",
-          "nextAction": "页面支持进入应用或工作流；本轮未点击生成。",
+          "nextAction": "页面支持进入应用或工作流；未点击生成。",
           "limits": "技术原理属于作者陈述，不能当作模型实现证据。",
           "sourceIds": [
             "o9-c-rh-4"
@@ -222,8 +222,8 @@
           ],
           "example": "已核验的首页商品试穿、产品动画等卡片。",
           "depth": "展示与导航，不能替代详情交付。",
-          "nextAction": "选一个用途进入创作；沿用前轮页面记录。",
-          "limits": "字段较少，缺输入、成本和失败条件；本轮首页超时。",
+          "nextAction": "选一个用途进入创作；沿用页面记录。",
+          "limits": "字段较少，缺输入、成本和失败条件；首页超时。",
           "sourceIds": [
             "o9-c-rh-1"
           ]
@@ -304,7 +304,7 @@
       "id": "tusi",
       "name": "吐司 / Tensor.Art",
       "homepage": "https://tusi.cn/",
-      "position": "Tensor.Art可以在同一作者名下提供模型、节点工作流和封装工具，三者交付的材料不同。模型告诉你依赖什么能力，工作流解释如何组合，工具页引导直接使用。不能因标题相同，就把工具调用次数、工作流运行或模型使用合成一个内容指标。",
+      "position": "Tensor.Art同一作者可发布模型、节点工作流和封装工具。模型说明所用能力，工作流展示组合方法，工具页接受输入并运行。三类对象的使用次数应分别统计。",
       "forms": [
         {
           "name": "模型版本页",
@@ -319,7 +319,7 @@
           ],
           "example": "Imam Ali Shrine的FLUX.1 LoRA版本页。",
           "depth": "资源信息与使用条件；完整训练数据未公开。",
-          "nextAction": "可按底模与触发词选择使用；本轮未运行。",
+          "nextAction": "可按底模与触发词选择使用；未运行。",
           "limits": "页面明确禁止转载；权限列表的勾选状态未在文本中完整保留，不能据名称判断允许。",
           "sourceIds": [
             "o9-c-ta-6"
@@ -339,7 +339,7 @@
           "example": "SUPIR + UPSCALE的32节点工作流。",
           "depth": "可理解组合与局部修改；未导出验证。",
           "nextAction": "查看节点及输入后决定是否运行或修改。",
-          "limits": "节点清单不包含本轮可核验的全部配置与依赖版本。",
+          "limits": "节点清单不包含可核验的全部配置与依赖版本。",
           "sourceIds": [
             "o9-c-ta-3"
           ]
@@ -356,7 +356,7 @@
             "API参数链接"
           ],
           "example": "SUPIR工具页，更新2025-05-21。",
-          "depth": "使用教学，具体输入表单本轮仅加载到Loading状态。",
+          "depth": "使用教学，具体输入表单仅加载到Loading状态。",
           "nextAction": "阅读说明并进入工具；API链接存在未等于已调用。",
           "limits": "作者同时承认可能增加细节；“不改变原图”不能按字面保证。",
           "sourceIds": [
@@ -440,7 +440,7 @@
       "id": "civitai",
       "name": "Civitai",
       "homepage": "https://civitai.com/",
-      "position": "分析：例图负责说明效果，资源标注负责指向材料，合集负责整理；三者都不自动等于可执行教程。本文把实现文档中的字段和前轮公告分别使用，字段存在不能当作所有作品页完整展示。尤其需要防止把“用了哪个模型”误写为“知道全部制作过程”。",
+      "position": "Civitai以例图展示效果，以资源标注说明模型来源，用合集整理作品与资源。实现文档的字段未全部核对到生产页面，模型关联也未覆盖完整制作过程。",
       "forms": [
         {
           "name": "例图及资源归因",
@@ -453,7 +453,7 @@
           ],
           "example": "Image Resource Tracking 的资源返回结构。",
           "depth": "资源追溯层；尚不是完整流程。",
-          "nextAction": "文档支持按所用模型筛选、查找相关资源；本轮未点运行。",
+          "nextAction": "文档支持按所用模型筛选、查找相关资源；未点运行。",
           "limits": "这些是实现记录，不确认界面逐字段展示；手填信息可能不对应真实生成。",
           "sourceIds": [
             "o9-g-civi-img"
@@ -471,7 +471,7 @@
           ],
           "example": "Collaborative Collections 的管理与详情说明。",
           "depth": "策展和协作组织层。",
-          "nextAction": "按权限阅读或参与；本轮未实测。",
+          "nextAction": "按权限阅读或参与；未实测。",
           "limits": "可看不代表能投稿；成员数不能作作者数。",
           "sourceIds": [
             "o9-g-civi-coll"
@@ -486,9 +486,9 @@
             "采用后的展示说明",
             "活动期限"
           ],
-          "example": "Creator Collab Update，前轮已读正文。",
+          "example": "Creator Collab Update，已读正文。",
           "depth": "参与说明；内容应帮助作者理解怎么加入和能得到什么。",
-          "nextAction": "可以据公告寻找相关投稿入口；本轮未复测。",
+          "nextAction": "可以据公告寻找相关投稿入口；未复测。",
           "limits": "不是用户改作样本，也没有某件作品完整的参数、输入和操作录像。",
           "sourceIds": [
             "o9-g-civi-update"
@@ -532,7 +532,7 @@
         "notProven": "不能证明站内多数图像有完整可复现信息，也不证明声明关联一定错误。"
       },
       "reuse": {
-        "available": "文档支持追溯资源和按主题整理；前轮公告支持改作投稿的参与形式。",
+        "available": "文档支持追溯资源和按主题整理；公告支持改作投稿的参与形式。",
         "requires": "仍需有效资源、相容环境与自己的输入；某合集的权限也可能限制参与。",
         "notPortable": "模型关联和合集链接本身不能带走原始素材、完整节点与后期判断；能否导出全部过程，资料不足。",
         "sourceIds": [
@@ -564,7 +564,7 @@
       "id": "seaart",
       "name": "SeaArt",
       "homepage": "https://www.seaart.ai/",
-      "position": "SeaArt的资源页可以包含可运行表单、独立操作文章和模型元信息。三者不应混成“教程”：表单承接输入，文章解释怎么配置和排错，模型页说明底模、触发词与来源。即便工具封装好了，第一次配置仍可能需要大量人工判断。",
+      "position": "SeaArt资源包括可运行表单、操作文章和模型信息。表单接受输入，文章解释配置与排错，模型页注明底模、触发词和来源；封装工具仍可能需要使用者自行判断首次配置。",
       "forms": [
         {
           "name": "任务应用与表单",
@@ -578,7 +578,7 @@
             "修复说明"
           ],
           "example": "日文“视频加文字”应用。",
-          "depth": "在线执行界面及使用说明；本轮未提交。",
+          "depth": "在线执行界面及使用说明；未提交。",
           "nextAction": "准备视频和文字后设置参数。",
           "limits": "文本抓取未保留所有无标签输入值；不能认定默认项正确。",
           "sourceIds": [
@@ -626,7 +626,7 @@
       ],
       "sample": {
         "title": "“视频加文字”应用与关联文章",
-        "scope": "单个作者的一项工具及说明；日文正文，本轮只读。",
+        "scope": "单个作者的一项工具及说明；日文正文，只读。",
         "parts": [
           {
             "element": "输入与开关",
@@ -665,7 +665,7 @@
           "完整默认参数、示例输入输出及跨视频尺寸对照",
           "可导出配置、所用节点版本和每次执行消耗"
         ],
-        "notProven": "作者称历史可恢复设置，不代表跨账号、跨工具或离线可复用；本轮没有验证修复效果。"
+        "notProven": "作者称历史可恢复设置，不代表跨账号、跨工具或离线可复用；没有验证修复效果。"
       },
       "reuse": {
         "available": "应用可承接操作；正文提供参数含义、失败提醒和个人历史复用办法。",
@@ -699,7 +699,7 @@
       "id": "openart",
       "name": "OpenArt",
       "homepage": "https://openart.ai/",
-      "position": "分析：这里可带走的内容有三种深度：商品任务页说明输入和目标，角色指南说明连续制作步骤，合作内容规则规定作者该提供什么。后者不是已经发表的教程样本。公开好看的图片和“开始创作”入口，都不等于可导入的节点配置。",
+      "position": "OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，合作规则约定作者交付。合作规则属于供稿要求，不能算作已发表教程；当前材料未提供可导入节点配置。",
       "forms": [
         {
           "name": "商品图任务说明",
@@ -731,7 +731,7 @@
           ],
           "example": "2026-08-07 一致角色指南。",
           "depth": "过程教学，包含前置材料和再次使用方式。",
-          "nextAction": "按文档准备并保存角色，再用于后续镜头；本轮未生成。",
+          "nextAction": "按文档准备并保存角色，再用于后续镜头；未生成。",
           "limits": "文章自身不是角色资产文件，未提供成功率或失败成本分布。",
           "sourceIds": [
             "o9-g-open-character"
@@ -831,7 +831,7 @@
       "id": "nightcafe",
       "name": "NightCafe",
       "homepage": "https://creator.nightcafe.studio/",
-      "position": "分析：挑战题面、参赛作品和 Promptle 的结果卡承担不同任务。题面规定边界，结果表达作品或成绩，公开步骤才可能支持学习。同一场活动产出的这些材料可以互相连接，但不能把参赛数、成绩卡数和可复用教程数直接相加。",
+      "position": "NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果，作者公开的步骤提供学习材料。三者可相互链接，但应分别统计。",
       "forms": [
         {
           "name": "成员挑战题面",
@@ -845,7 +845,7 @@
           ],
           "example": "Creating a Game 官方配置说明。",
           "depth": "参与规则；告诉作者该做什么、何时交。",
-          "nextAction": "按题面准备作品并参赛；本轮只读规则。",
+          "nextAction": "按题面准备作品并参赛；只读规则。",
           "limits": "不是实际游戏样本；题面未必有示范作品和合格/不合格对照。",
           "sourceIds": [
             "o9-g-night-game"
@@ -964,7 +964,7 @@
       "id": "jimeng",
       "name": "即梦AI",
       "homepage": "https://jimeng.jianying.com/",
-      "position": "即梦公开内容里，提示词示例、同款作品和完整成片交付深度不同。前两者让人理解风格并开始创作，成片与作者阐述呈现表达目标，却通常缺少完整制作材料。不能把获奖作品包装为一句提示词就能复刻的教程。",
+      "position": "即梦的提示词示例和同款作品提供风格参考及创作入口；完整成片与作者阐述解释表达目标。获奖作品通常未附完整制作材料，不能标成提示词复刻教程。",
       "forms": [
         {
           "name": "提示词与效果示例",
@@ -992,7 +992,7 @@
           ],
           "example": "首页创意社区区域。",
           "depth": "结果展示与操作入口；详细继承内容资料不足。",
-          "nextAction": "可从同款入口开始，不能称本轮已复制成功。",
+          "nextAction": "可从同款入口开始，不能称已复制成功。",
           "limits": "卡片本身不交代输入资产与制作流程。",
           "sourceIds": [
             "o9-c-jm-1"
@@ -1092,7 +1092,7 @@
       "id": "kling",
       "name": "可灵AI / Kling AI",
       "homepage": "https://kling.ai/",
-      "position": "可灵的作品卡片、步骤教程和项目案例各自回答不同问题。卡片告诉人们可以看什么，教程帮助准备和检查一次生成，案例展示工具参与某个项目的位置。三种材料不能相互替代，尤其不能把项目成片当作可复制配置。",
+      "position": "可灵作品卡片用于选择内容，步骤教程说明生成前后的操作，项目案例介绍工具参与的制作环节。项目成片未提供完整配置，不能直接作为可复制教程。",
       "forms": [
         {
           "name": "作品推荐卡片",
@@ -1106,7 +1106,7 @@
           ],
           "example": "已核验的公开探索专题中的周年短片和图像作品。",
           "depth": "展示与发现。",
-          "nextAction": "可浏览相关创作；本轮未复测登录后动作。",
+          "nextAction": "可浏览相关创作；未复测登录后动作。",
           "limits": "专题落地页不代表主推荐流，未提供完整提示和项目材料。",
           "sourceIds": [
             "o9-c-kl-1"
@@ -1227,7 +1227,7 @@
       "id": "midjourney",
       "name": "Midjourney",
       "homepage": "https://www.midjourney.com/",
-      "position": "分析：Midjourney 中的作品、风格参考组和评价任务是不同材料。作品展示结果，Moodboard 提供审美条件，Tasks 采集判断；评价任务不是用户教学文章。研究可复用性时，必须问清继承的是图片、风格版本还是完整创作过程。",
+      "position": "Midjourney作品展示结果，Moodboard组织风格参考，Tasks采集成员判断。复用时需注明取得的是图片、风格版本还是过程材料。",
       "forms": [
         {
           "name": "可查看详情的作品",
@@ -1240,7 +1240,7 @@
           ],
           "example": "Complete Tasks 的 Curate Explore 示例。",
           "depth": "展示和提示参考；并非完整工作流。",
-          "nextAction": "文档支持打开详情、收藏和投票；本轮未执行。",
+          "nextAction": "文档支持打开详情、收藏和投票；未执行。",
           "limits": "所读任务页没有承诺每件作品公开全部参考、后期和生成参数。",
           "sourceIds": [
             "o9-g-mid-tasks"
@@ -1358,7 +1358,7 @@
       "id": "leonardo",
       "name": "Leonardo.Ai",
       "homepage": "https://leonardo.ai/",
-      "position": "分析：Leonardo 的三个对象需要分别阅读：公开作品给提示和参考，Blueprint 给受控的任务入口，Collection 给素材组织。它们分别帮助找方向、做任务和继续管理，不能统称“一键复制”。尤其是知道模板输入，不代表拿到了内部模型、提示与全部流程。",
+      "position": "Leonardo公开作品提供提示和参考，Blueprint提供任务输入界面，Collection整理素材。模板输入可见不代表内部模型、提示词与完整流程均已交付。",
       "forms": [
         {
           "name": "公开作品详情",
@@ -1371,7 +1371,7 @@
           ],
           "example": "Commercial Usage 帮助中的公开Feed示例。",
           "depth": "展示与局部方法参考。",
-          "nextAction": "文档支持从作品继续修改或用作参考；本轮未操作。",
+          "nextAction": "文档支持从作品继续修改或用作参考；未操作。",
           "limits": "不保证附有全部生成素材；帮助中的经营人物属于官方假设示例。",
           "sourceIds": [
             "o9-g-leo-public"
@@ -1415,7 +1415,7 @@
       ],
       "sample": {
         "title": "Product Photography：输入、输出与源方法的距离",
-        "scope": "来自官方Blueprint帮助的商品摄影示例，不是本轮完成的商品任务。",
+        "scope": "来自官方Blueprint帮助的商品摄影示例，不是完成的商品任务。",
         "parts": [
           {
             "element": "对象输入",
@@ -1435,7 +1435,7 @@
           },
           {
             "element": "输出承诺",
-            "observed": "Blueprint 通用帮助说明会按任务展示输出类型与生成成本；本轮未核商品摄影示例的准确输出数量及全部类型。",
+            "observed": "Blueprint 通用帮助说明会按任务展示输出类型与生成成本；未核商品摄影示例的准确输出数量及全部类型。",
             "role": "购买判断需要输出范围与费用；缺少准确输出数量时不应只按模板标题估算。",
             "sourceIds": [
               "o9-g-leo-blue"
@@ -1490,7 +1490,7 @@
       "id": "runway",
       "name": "Runway",
       "homepage": "https://runway.com/",
-      "position": "分析：Runway 的公开客户故事解释为什么采用，App 封装解释同事怎样使用，Projects 保存团队在做什么。三种材料的读者和可见范围不同：客户案例不能直接运行，App未必公开，项目资产也不是社区帖子。研究其内容价值，应看每份材料解决哪一个判断。",
+      "position": "Runway客户故事解释采用原因，App封装工作流供成员使用，Projects保存团队项目。客户案例不可直接运行，App可能仅在工作区内可见，项目资产也未必公开。",
       "forms": [
         {
           "name": "客户制作案例",
@@ -1504,7 +1504,7 @@
           ],
           "example": "Miro 的Canvas26活动视频案例。",
           "depth": "应用论证和部分过程，非完整可执行教程。",
-          "nextAction": "读者可判断任务相似性，并进入企业咨询；本轮未联系。",
+          "nextAction": "读者可判断任务相似性，并进入企业咨询；未联系。",
           "limits": "官方精选，未交付完整项目文件或成本台账。",
           "sourceIds": [
             "o9-g-run-miro"
@@ -1540,7 +1540,7 @@
           ],
           "example": "Introduction to Projects。",
           "depth": "团队内部生产上下文。",
-          "nextAction": "按权限共享或移出，继续项目；本轮未实测。",
+          "nextAction": "按权限共享或移出，继续项目；未实测。",
           "limits": "不是公开内容样本，费用从workspace统一管理而非单独项目账单。",
           "sourceIds": [
             "o9-g-run-projects"
@@ -1623,7 +1623,7 @@
       "id": "waytoagi",
       "name": "WaytoAGI",
       "homepage": "https://waytoagi.com/",
-      "position": "这里至少有三种不同的材料：作者实践记录保留探索过程，课程材料组织学习顺序，活动档案连接前后背景。它们都可被阅读，但可复制的深度不同：一张现场照片、一个工具链接和一份操作手册，不能按同一种内容价值计数。",
+      "position": "WaytoAGI的实践记录保留探索过程，课程材料安排学习顺序，活动档案提供背景。现场照片、工具链接和操作手册提供的材料不同，需要分别评价。",
       "forms": [
         {
           "name": "作者实践记录",
@@ -1635,7 +1635,7 @@
           ],
           "example": "访谈讲述成员围绕同一机器人应用继续尝试、补写笔记。",
           "depth": "过程教学；具体笔记的完整字段未逐篇核验。",
-          "nextAction": "读者可照着思路尝试并补充，依据历史访谈，非本轮实测。",
+          "nextAction": "读者可照着思路尝试并补充，依据历史访谈，非实测。",
           "limits": "访谈不能证明每篇都有输入、参数和失败处理。",
           "sourceIds": [
             "o9-d-way-interview"
@@ -1649,10 +1649,10 @@
             "学习资料",
             "延伸资源"
           ],
-          "example": "前轮核验的 About 页对开放知识内容的说明。",
+          "example": "核验的 About 页对开放知识内容的说明。",
           "depth": "导航与学习材料；不等于可直接导入的工作流。",
-          "nextAction": "按需要进入学习主题；本轮未重新打开具体课程目录。",
-          "limits": "本轮复用旧证据，当前每项内容的结构与维护状态资料不足。",
+          "nextAction": "按需要进入学习主题；未重新打开具体课程目录。",
+          "limits": "复用旧证据，当前每项内容的结构与维护状态资料不足。",
           "sourceIds": [
             "o9-d-way-about"
           ]
@@ -1720,7 +1720,7 @@
       },
       "reuse": {
         "available": "能拿走的是选题线索、实践描述和手册中的操作思路；归档还保留相关原始材料入口。",
-        "requires": "需要自己的任务和素材，重新确认工具版本、权限、成本与材料许可；这些条件本轮未逐项核验。",
+        "requires": "需要自己的任务和素材，重新确认工具版本、权限、成本与材料许可；这些条件未逐项核验。",
         "notPortable": "现场答疑、共同工作环境和参与者隐性经验无法随文档复制。是否提供完整工程包或可复制画布，资料不足。",
         "sourceIds": [
           "o9-d-way-dali",
@@ -1748,7 +1748,7 @@
       "id": "datawhale",
       "name": "Datawhale",
       "homepage": "https://www.datawhale.cn/",
-      "position": "课程讲义教方法，练习验证一段能力，提问记录解释实际障碍。三种内容承担不同任务，不能只把它们都算成学习帖子。Datawhale 的优势线索在于它公开了部分材料之间的关系，也公开了对提问条件的要求。",
+      "position": "Datawhale用讲义解释方法、练习检查操作、问题记录整理障碍。公开材料将三者关联，并要求提问者提供具体条件，便于定位问题。",
       "forms": [
         {
           "name": "课程讲义与录播",
@@ -1761,7 +1761,7 @@
           "example": "Python 课程的教材与反馈贡献说明。",
           "depth": "过程教学；代码单元与讲解互相配合。",
           "nextAction": "读者可按课程练习，贡献者可整理教材，依据文档说明。",
-          "limits": "本轮没有逐节运行 Notebook；不同版本的文本与录播可能不同步。",
+          "limits": "没有逐节运行 Notebook；不同版本的文本与录播可能不同步。",
           "sourceIds": [
             "o9-d-dw-feedback"
           ]
@@ -1776,7 +1776,7 @@
           ],
           "example": "Python 学习规则中的编码与完成检查。",
           "depth": "练习和评估记录，不是可直接交付的业务作品。",
-          "nextAction": "按要求完成练习并提供可查询记录；本轮未提交。",
+          "nextAction": "按要求完成练习并提供可查询记录；未提交。",
           "limits": "未取得单题正文及测试用例，不虚构统一题目字段；旧协作页仍留迁移说明。",
           "sourceIds": [
             "o9-d-dw-learning",
@@ -1877,7 +1877,7 @@
       "id": "huggingface",
       "name": "Hugging Face",
       "homepage": "https://huggingface.co/",
-      "position": "模型卡说明一种资源是什么、适合哪里；Space 提供可交互的应用及可能可见的代码；Collection 解释多个资源的关系；讨论和 PR 保存问题与改进。它们既有说明性内容，也有可运行资产，复制的范围受可见性、依赖和许可共同限制。",
+      "position": "Hugging Face模型卡说明用途与条件，Space提供应用和可能可见的代码，Collection整理相关资源，讨论与PR记录问题和修改。复制范围取决于可见性、依赖和许可。",
       "forms": [
         {
           "name": "模型卡",
@@ -1908,7 +1908,7 @@
             "输出界面"
           ],
           "example": "官方 Gradio 热狗图片分类示例。",
-          "depth": "可执行代码示例；本轮未运行。",
+          "depth": "可执行代码示例；未运行。",
           "nextAction": "按说明创建环境或在有权限时复制 Space。",
           "limits": "公开应用不总公开代码，外部依赖和计算资源仍需准备。",
           "sourceIds": [
@@ -1990,7 +1990,7 @@
           }
         ],
         "missing": [
-          "没有本轮在当前环境的实际运行记录。",
+          "没有在当前环境的实际运行记录。",
           "未独立检查示例模型的许可适用范围与多类输入误判。"
         ],
         "notProven": "单个教程不能代表所有 Space 都提供完整代码或都能稳定运行。"
@@ -2027,7 +2027,7 @@
       "id": "modelscope",
       "name": "ModelScope 魔搭",
       "homepage": "https://www.modelscope.cn/",
-      "position": "魔搭公开材料中，可调用示例、仓库资产、训练样例和问题记录是不同内容。模型名称与封面主要帮助发现；输入输出代码才开始说明怎样使用，版本文件让材料可定位，失败记录则暴露仍缺什么。资源数量不能替代这几层材料的完整度。",
+      "position": "魔搭的代码示例说明调用，版本文件保存资产，训练样例提供操作材料，问题记录保留失败条件。模型名称和封面帮助发现资源，实际使用仍需这些材料。",
       "forms": [
         {
           "name": "模型任务示例",
@@ -2039,7 +2039,7 @@
             "输出字段"
           ],
           "example": "官方 SDK README 的人像抠图示例。",
-          "depth": "可执行代码示例，未在本轮运行。",
+          "depth": "可执行代码示例，未在运行。",
           "nextAction": "按文档准备环境后尝试自己的输入。",
           "limits": "最小示例没有覆盖所有输入质量、成本和异常处理。",
           "sourceIds": [
@@ -2058,7 +2058,7 @@
           ],
           "example": "Hub SDK 创建仓库与上传下载接口说明。",
           "depth": "可取得的资产及管理参数，属于客户端文档。",
-          "nextAction": "有权限时按路径或修订获取文件；本轮没有下载。",
+          "nextAction": "有权限时按路径或修订获取文件；没有下载。",
           "limits": "字段可以声明不等于材料许可已获核实；不能当成网站表单实测。",
           "sourceIds": [
             "o9-d-ms-hub"
@@ -2138,7 +2138,7 @@
           }
         ],
         "missing": [
-          "本轮没有获取对应版本下的实际输出与失败输入。",
+          "没有获取对应版本下的实际输出与失败输入。",
           "最小片段没有交代完整成本、硬件和异常处理方案。"
         ],
         "notProven": "一个官方示例不能证明全站模型有同样完整的说明或可用性。"
@@ -2174,66 +2174,105 @@
       "id": "linuxdo",
       "name": "LINUX DO",
       "homepage": "https://linux.do/",
-      "position": "LINUX DO 的内容要按讨论承担的任务区分：求助主题保留排查过程，技术公告给出统一说明，项目推广说明用途与资格。回复不是内容数量的简单累加，有些回复补足环境、结果或旧公告引用，才使主题成为后来者可用的材料。",
+      "position": "LINUX DO内容包括求助与采纳、提示词与返图、共建长文、推广活动、板块申请和管理公告。已核对6个主题；同为帖子，材料和参与方式各不相同。",
       "forms": [
         {
-          "name": "问题主题与追问",
-          "unit": "围绕一次障碍逐步补充的正文和回复。",
+          "name": "技术求助与采纳答案",
+          "unit": "错误描述 → 补充环境 → 排查建议 → 作者反馈；已采纳答案可出现在首帖摘要。",
           "fields": [
-            "错误现象",
-            "环境追问",
-            "排查建议",
-            "处理反馈",
-            "相关链接"
+            "标题、用途分类、快问快答标签、回复数、浏览量和最后活动信息。",
+            "错误描述 → 补充环境 → 排查建议 → 作者反馈；已采纳答案可出现在首帖摘要。"
           ],
-          "example": "2026-01-29 的 NEWAPI 接入问题主题。",
-          "depth": "讨论过程与自报结果，不是已独立复验的操作教程。",
-          "nextAction": "读者可对照自身条件继续排查；本轮未登录参与。",
-          "limits": "个别回复可能条件不足，涉及配置的截图本轮不保存或复述。",
+          "example": "关于应用接入的问题请教佬友",
+          "depth": "后来者能看到适用条件和处理结果；回答者有机会凭有效解答获得认可。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "两条样本的结果记录完整度不同。未复现，不把采纳当作技术正确性保证。",
           "sourceIds": [
-            "o9-d-ld-topic"
+            "v11-ld-solved",
+            "v11-ld-question"
           ]
         },
         {
-          "name": "技术变更公告",
-          "unit": "服务维护方针对一个变化发布的统一说明。",
+          "name": "提示词、结果图与成员回传",
+          "unit": "首帖给提示词和结果图，成员以回复上传自己的图片并评价。",
           "fields": [
-            "变更主题",
-            "原有配置",
-            "新增配置",
-            "适用说明"
+            "仍以话题标题和标签呈现，读者进入详情后才看到图片材料。",
+            "首帖给提示词和结果图，成员以回复上传自己的图片并评价。"
           ],
-          "example": "2025-11-07 的 Connect 备用端点公告。",
-          "depth": "维护公告与配置参考，不是业务案例。",
-          "nextAction": "相关使用者可检查自身接入条件；本轮不执行配置变更。",
-          "limits": "公告是历史版本，当前可用性还需结合最新说明判断。",
+          "example": "壁纸提示词与结果回传",
+          "depth": "同一讨论里出现多个结果，能为尝试方向提供参考。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "没有统一运行环境、完整参数或工作流文件；未核实每张图是否使用首帖方案，也未完成生成。",
           "sourceIds": [
-            "o9-d-ld-connect"
+            "v11-ld-prompt"
           ]
         },
         {
-          "name": "项目推广声明",
-          "unit": "项目介绍加上适用资格、链接和承诺材料。",
+          "name": "可以修订的长文与知识目录",
+          "unit": "正文按主题分节，配操作示意、原页链接、说明与目录；另有修订历史和讨论。",
           "fields": [
-            "推广类型",
-            "项目开源说明",
-            "相关链接",
-            "声明清单",
-            "标签要求"
+            "标题注明长期更新；文档共建分类和精华标签帮助辨认用途。",
+            "正文按主题分节，配操作示意、原页链接、说明与目录；另有修订历史和讨论。"
           ],
-          "example": "2026-03-18 开源推广公告提供的模板。",
-          "depth": "展示与资格声明，不能代替项目安装或运行材料。",
-          "nextAction": "作者可据规则检查材料；是否能投稿取决于当前权限和指南。",
-          "limits": "历史模板展示的是声明结构，未核某个项目是否如实满足全部条件。",
+          "example": "盘点 L 站的徽章：长期更新",
+          "depth": "经验能在原位置继续补充，读者不用从大量楼层重新拼出完整说明。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "本样本存在打卡内容混入。最新活动时间不等于知识更新时间，标题更新日也不等于每段材料都已核查。",
           "sourceIds": [
-            "o9-d-ld-promo",
-            "o9-d-ld-guide"
+            "v11-ld-wiki"
+          ]
+        },
+        {
+          "name": "商业推广与领取活动",
+          "unit": "责任说明、服务介绍、费用口径、领取条件、使用入口及回复；活动也可能要求站外步骤。",
+          "fields": [
+            "标题强调服务或优惠，分类、推广标签和商家头衔提示身份。",
+            "责任说明、服务介绍、费用口径、领取条件、使用入口及回复；活动也可能要求站外步骤。"
+          ],
+          "example": "SoleAPI 新站试运营高级推广",
+          "depth": "读者可发现服务、查看条件；推广方收集线索和处理咨询。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "样本注册赠额在标题与正文不同位置有差异；不能据此承诺优惠。未领资源、未加入群组、未验证服务质量或合规履行。",
+          "sourceIds": [
+            "v11-ld-promotion"
+          ]
+        },
+        {
+          "name": "社区建设申请与投票",
+          "unit": "拟建板块名称、用途、理由、版主人选，以及成员回复和投票入口。",
+          "fields": [
+            "申请类标题配当前票数与讨论活动信息。",
+            "拟建板块名称、用途、理由、版主人选，以及成员回复和投票入口。"
+          ],
+          "example": "1818黄金眼板块申请",
+          "depth": "把“开一个新板块”变成能讨论用途与维护责任的材料。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "仅检查一条申请的首帖与入口；未确认审批结果、投票去重口径或后续供给。",
+          "sourceIds": [
+            "v11-ld-proposal"
+          ]
+        },
+        {
+          "name": "管理公告与规则修订",
+          "unit": "说明调整原因、适用范围和后续要求，讨论可继续引用原公告。",
+          "fields": [
+            "公告标签与置顶让共同规则持续可见。",
+            "说明调整原因、适用范围和后续要求，讨论可继续引用原公告。"
+          ],
+          "example": "秘密花园园丁邀请函",
+          "depth": "管理员公开解释方向与治理变化，为后续判断提供出处。",
+          "nextAction": "读者依据详情核对条件、查看后续讨论；只读，未发帖、编辑或运行。",
+          "limits": "新旧官方页面也可能不一致，规则存在不代表执行效果已经验证。",
+          "sourceIds": [
+            "v11-ld-letter",
+            "v11-ld-antifarming",
+            "v11-ld-registration"
           ]
         }
       ],
       "sample": {
         "title": "NEWAPI 接入问题主题的材料推进",
-        "scope": "单个公开主题，2026-01-29；仅研究文字及链接关系，不保存身份或配置截图。",
+        "scope": "在登录界面复核既有NEWAPI样本，保留历史日期；不保存身份或配置截图。另以当日工具延迟帖作结果记录对照。",
         "parts": [
           {
             "element": "最初问题",
@@ -2267,6 +2306,15 @@
               "o9-d-ld-topic",
               "o9-d-ld-connect"
             ]
+          },
+          {
+            "element": "登录态采纳展示",
+            "observed": "首帖展示已解决摘要并链接第7帖，第8帖提问者自报解决；另一个5帖样本截至观察没有提问者结果反馈。",
+            "role": "分析：结果记录完整度可以比较，两个样本不能计算平台解决率。",
+            "sourceIds": [
+              "v11-ld-solved",
+              "v11-ld-question"
+            ]
           }
         ],
         "missing": [
@@ -2287,10 +2335,13 @@
       },
       "quality": {
         "useful": "分析：可用的问题材料应有条件、尝试、结果和权威说明的连接；如仍不确定，应留下未解决部分。",
-        "weak": "分析：热闹回复、无条件的肯定和一张错误截图，都不能替代因果排查；推广勾选完整也不是项目质量验证。",
+        "weak": "回复、编辑与票数都可能混入不同目的的动作；Wiki打卡和推广领取样本不能代表全站，也不能替代有用结果的材料。",
         "sourceIds": [
           "o9-d-ld-topic",
-          "o9-d-ld-promo"
+          "o9-d-ld-promo",
+          "v11-ld-wiki",
+          "v11-ld-promotion",
+          "v11-ld-proposal"
         ]
       },
       "takeaway": {
@@ -2307,7 +2358,7 @@
       "id": "dify",
       "name": "Dify",
       "homepage": "https://dify.ai/",
-      "position": "Dify 的教程、模板和插件交付不同层次：教程解释搭建过程，模板传递应用结构，插件增加工具能力。运行日志是应用团队的维护资料，不是公开 UGC。拆解这些材料时，要分清用户看到的成品、拿到的配置和仍需自己准备的资源。",
+      "position": "Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能力。运行日志属于应用维护记录。复制模板时仍需补齐未随配置提供的数据、服务和权限。",
       "forms": [
         {
           "name": "应用搭建教程",
@@ -2320,7 +2371,7 @@
             "输出及测试"
           ],
           "example": "官方多平台内容生成器快速入门。",
-          "depth": "过程教学，带具体配置说明；本轮未运行。",
+          "depth": "过程教学，带具体配置说明；未运行。",
           "nextAction": "按教程搭建并测试自己的应用。",
           "limits": "示例输出与模型选择、输入有关；文案中的效率承诺未验证。",
           "sourceIds": [
@@ -2359,7 +2410,7 @@
           ],
           "example": "当前 Marketplace 插件投稿指南。",
           "depth": "可执行扩展；审核材料与宣传介绍分开。",
-          "nextAction": "按权限安装并配置所需服务；本轮未安装。",
+          "nextAction": "按权限安装并配置所需服务；未安装。",
           "limits": "包可安装不代表外部服务免费，也不证明任何输入均可安全处理。",
           "sourceIds": [
             "o9-d-dify-plugin"
@@ -2422,7 +2473,7 @@
           }
         ],
         "missing": [
-          "没有本轮实际输出、不同输入失败情况和运行成本。",
+          "没有实际输出、不同输入失败情况和运行成本。",
           "教程中模型生成的平台建议未作独立规则核验。"
         ],
         "notProven": "官方示例不代表平台用户持续采用，也不证明生成内容可直接发布。"
@@ -2466,7 +2517,7 @@
       "access": "full-page",
       "type": "author-content",
       "supports": "分模块、参数排错及返图邀请。",
-      "limitation": "本轮复读旧样本；未生成。"
+      "limitation": "复读旧样本；未生成。"
     },
     {
       "id": "o9-c-lib-2",
@@ -2502,7 +2553,7 @@
       "access": "prior-research",
       "type": "official-page",
       "supports": "任务编排与卡片入口。",
-      "limitation": "沿用v8已核验正文。本轮读取超时，不称重新观察。"
+      "limitation": "沿用v8已核验正文。读取超时，不称重新观察。"
     },
     {
       "id": "o9-c-rh-3",
@@ -2538,7 +2589,7 @@
       "access": "prior-research",
       "type": "official-rule",
       "supports": "会员/RH币区分和许可适用范围缺口。",
-      "limitation": "沿用v7已核验正文。本轮未复读，不推出全面商用禁令。"
+      "limitation": "沿用v7已核验正文。未复读，不推出全面商用禁令。"
     },
     {
       "id": "o9-c-ta-3",
@@ -2550,7 +2601,7 @@
       "access": "full-page",
       "type": "author-content",
       "supports": "参数取舍、采样排错与节点清单。",
-      "limitation": "本轮未导出或运行；节点类别文本可能不保留所有界面状态。"
+      "limitation": "未导出或运行；节点类别文本可能不保留所有界面状态。"
     },
     {
       "id": "o9-c-ta-4",
@@ -2593,7 +2644,7 @@
       "title": "Image Resource Tracking",
       "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
       "publisher": "Civitai 官方代码库",
-      "date": "未标绝对更新日；本轮读取main",
+      "date": "未标绝对更新日；读取main",
       "accessedAt": "2026-09-09",
       "access": "full-page",
       "type": "implementation-doc",
@@ -2605,7 +2656,7 @@
       "title": "Collaborative Collections",
       "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
       "publisher": "Civitai 官方代码库",
-      "date": "未标绝对更新日；本轮读取main",
+      "date": "未标绝对更新日；读取main",
       "accessedAt": "2026-09-09",
       "access": "full-page",
       "type": "implementation-doc",
@@ -2617,12 +2668,12 @@
       "title": "The Creator Collab Update: 4 New Ways to Get Seen and Earn",
       "url": "https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn",
       "publisher": "Civitai",
-      "date": "前轮浏览器显示发布2026-08-20；时区可能差一天",
+      "date": "浏览器显示发布2026-08-20；时区可能差一天",
       "accessedAt": "2026-09-09",
       "access": "prior-research",
       "type": "official-page",
       "supports": "改作采用后的展示和活动说明",
-      "limitation": "沿用前轮实读，本轮未复读；限时奖励不推为当前常态。"
+      "limitation": "沿用实读，未复读；限时奖励不推为当前常态。"
     },
     {
       "id": "o9-c-sa-3",
@@ -2742,7 +2793,7 @@
       "access": "prior-research",
       "type": "official-rule",
       "supports": "资格、评分/排序与异常票",
-      "limitation": "本轮沿用v8，不同挑战以自身规则为准。"
+      "limitation": "沿用v8，不同挑战以自身规则为准。"
     },
     {
       "id": "o9-c-jm-1",
@@ -2790,7 +2841,7 @@
       "access": "prior-research",
       "type": "official-page",
       "supports": "作品字段、身份标记与展示结构。",
-      "limitation": "沿用v8已核验正文。本轮未重读该URL；不代表登录主推荐。"
+      "limitation": "沿用v8已核验正文。未重读该URL；不代表登录主推荐。"
     },
     {
       "id": "o9-c-kl-2",
@@ -2814,7 +2865,7 @@
       "access": "prior-research",
       "type": "official-page",
       "supports": "受邀作者经历与周年内容组织。",
-      "limitation": "沿用v8已核验正文。本轮未复读；受邀成功样本。"
+      "limitation": "沿用v8已核验正文。未复读；受邀成功样本。"
     },
     {
       "id": "o9-c-kl-4",
@@ -2886,7 +2937,7 @@
       "access": "prior-research",
       "type": "official-rule",
       "supports": "公开Feed提示、参考和后续动作示例",
-      "limitation": "本轮沿用v8；不把文档人物称真实客户，也不作完整法律结论。"
+      "limitation": "沿用v8；不把文档人物称真实客户，也不作完整法律结论。"
     },
     {
       "id": "o9-g-run-app",
@@ -2950,15 +3001,15 @@
     },
     {
       "id": "o9-d-way-about",
-      "title": "关于 WaytoAGI（第八轮正文证据）",
+      "title": "关于 WaytoAGI",
       "url": "https://about.waytoagi.com/",
       "publisher": "WaytoAGI",
-      "date": "页面未标独立更新日；本轮未重新取得正文",
+      "date": "页面未标独立更新日；未重新取得正文",
       "accessedAt": "2026-09-09",
       "access": "prior-research",
       "type": "official-page",
       "supports": "开放知识、进阶训练与企业服务的区分",
-      "limitation": "复用o8-way-about；本轮访问受限，不更新收费与学校数字"
+      "limitation": "复用o8-way-about；访问受限，不更新收费与学校数字"
     },
     {
       "id": "o9-d-dw-learning",
@@ -3223,16 +3274,208 @@
       "type": "implementation-doc",
       "supports": "多平台内容生成器的输入、分流、迭代、结构化输出与测试",
       "limitation": "官方教程，未运行；不采用效率或直接可发布承诺"
+    },
+    {
+      "id": "v11-ld-home",
+      "title": "LINUX DO 登录首页",
+      "url": "https://linux.do/",
+      "publisher": "LINUX DO",
+      "date": "访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-page",
+      "supports": "导航和两条公开置顶卡片；不读取个人消息、草稿或账户资料。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-question",
+      "title": "工具首字延迟求助",
+      "url": "https://linux.do/t/topic/2880961",
+      "publisher": "LINUX DO 成员",
+      "date": "2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "共 5 帖及通知菜单；作者体验不等于工具性能实测。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-solved",
+      "title": "关于应用接入的问题请教佬友",
+      "url": "https://linux.do/t/topic/1537782",
+      "publisher": "LINUX DO 成员",
+      "date": "2026-01-29；复核 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "采纳展示、作者自述和公告引用；未独立复现。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-prompt",
+      "title": "壁纸提示词与结果回传",
+      "url": "https://linux.do/t/topic/2879086",
+      "publisher": "LINUX DO 成员",
+      "date": "2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "首帖和第 2、3 帖；未核标题中的模型版本及生成过程。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-wiki",
+      "title": "盘点 L 站的徽章：长期更新",
+      "url": "https://linux.do/t/topic/342888",
+      "publisher": "LINUX DO 成员",
+      "date": "标题标注 2026-02-17 更新；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "目录、关键段落和最新可见修订；成员文字不作为官方规则。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-promotion",
+      "title": "SoleAPI 新站试运营高级推广",
+      "url": "https://linux.do/t/topic/2866001",
+      "publisher": "LINUX DO",
+      "date": "页面显示 2026-09-06/07；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "首帖、责任标识及末尾 7 条回复；不收录联系人、群号、二维码或领取码。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-proposal",
+      "title": "1818黄金眼板块申请",
+      "url": "https://linux.do/t/topic/2848343",
+      "publisher": "LINUX DO 成员",
+      "date": "2026-09-03；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "author-content",
+      "supports": "首帖、投票入口和首条回复；未核审批结果。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-subscription",
+      "title": "富可敌国官方订阅入口",
+      "url": "https://linux.do/s",
+      "publisher": "LINUX DO",
+      "date": "访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-page",
+      "supports": "嵌入订阅卡的产品、币种、价格与月周期；未核交易。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-rules",
+      "title": "LINUX DO 社区准则",
+      "url": "https://linux.do/guidelines",
+      "publisher": "LINUX DO",
+      "date": "版本 2608252340；复核 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-rule",
+      "supports": "推广、分类及规则边界；部分描述与较早或专题公告有差异。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-letter",
+      "title": "秘密花园园丁邀请函",
+      "url": "https://linux.do/t/topic/847468",
+      "publisher": "LINUX DO",
+      "date": "首发 2025-08-07；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-page",
+      "supports": "作者投稿、成员整理与管理精选的主张，不代表效果已经测量。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-antifarming",
+      "title": "别刷了，别刷了，服务器顶不住了",
+      "url": "https://linux.do/t/topic/1409175",
+      "publisher": "LINUX DO",
+      "date": "2026-01-05；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "historical-report",
+      "supports": "刷分压力与当时计分调整；不冒充当前全部运行配置。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-promotionrule",
+      "title": "新推广方式：开源推广",
+      "url": "https://linux.do/t/topic/1776670",
+      "publisher": "LINUX DO",
+      "date": "2026-03-18；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "historical-report",
+      "supports": "开源与公益推广的声明材料；当前要求还需结合主站准则。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-registration",
+      "title": "注册机制调整",
+      "url": "https://linux.do/t/topic/2317378",
+      "publisher": "LINUX DO",
+      "date": "2026-06-06；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "historical-report",
+      "supports": "邀请渠道与自述审核调整；未重新注册。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-connect",
+      "title": "LINUX DO Connect 文档",
+      "url": "https://wiki.linux.do/Community/LinuxDoConnect",
+      "publisher": "LINUX DO",
+      "date": "未标明确更新时间；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-page",
+      "supports": "身份授权与等级用途；未测真实授权、应用数或服务量。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-credit",
+      "title": "LINUX DO Credit 使用指南",
+      "url": "https://credit.linux.do/docs/how-to-use",
+      "publisher": "LINUX DO",
+      "date": "更新 2026-04-20；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "official-page",
+      "supports": "贡献划转、服务角色和争议处理；不是经营报表。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
+    },
+    {
+      "id": "v11-ld-oldrules",
+      "title": "LINUX DO Wiki 守则",
+      "url": "https://wiki.linux.do/LinuxDo/rules",
+      "publisher": "LINUX DO",
+      "date": "未标明确更新时间；访问 2026-09-09",
+      "accessedAt": "2026-09-09",
+      "access": "full-page",
+      "type": "historical-report",
+      "supports": "仅记录与当前主站指南的差异，不作为优先规则。",
+      "limitation": "只读；事实、作者自述和研究判断分开。"
     }
   ],
   "stats": {
     "profiles": 18,
-    "sources": 64,
-    "distinctUrls": 64,
-    "fullPageSources": 56,
+    "sources": 80,
+    "distinctUrls": 77,
+    "fullPageSources": 72,
     "priorResearchSources": 8,
     "indexOnlySources": 0,
-    "detailItems": 57,
+    "detailItems": 60,
     "examples": 18
   }
 }
