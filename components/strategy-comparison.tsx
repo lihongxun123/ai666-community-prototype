@@ -2,6 +2,7 @@
 import { useState, type ReactNode } from 'react';
 import data from '@/lib/strategy-comparison.json';
 import { ContentArrangementLab } from '@/components/content-arrangement-lab';
+import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
 
 const tabs=[['options','四份方案'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
@@ -15,16 +16,18 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
-  <header className="page-heading v23-intro"><h1>社区方案对照</h1><p className="muted">2026-09-10 · 方案待选定</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>方案 {o.id} 独立文档</a>)}</div></header>
+  <header className="page-heading v23-intro"><h1>社区方案对照</h1><p className="muted">{data.date} · 方案待选定</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>方案 {o.id} 独立文档</a>)}</div></header>
   <details className="study-sources"><summary>五项共同前提：目标、供给、人员、工具、经营数据</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
   <fieldset id="v23-tabs" className="v23-controls is-tabs" aria-label="研究内容">{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} className={tab===id?'is-active':''} onClick={()=>setTab(id)}>{label}</button>)}</fieldset>
   {tab==='options'&&<section aria-label="四种社区方案">
    <h2>四种方案</h2>
    <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>阅读完整方案 {o.id} →</button></article>)}</div>
    <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 精选方法</th><th>B 应用解法</th><th>C 视觉创作</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
+   <StrategyConditionsSummary/>
    <fieldset id="v23-option-picker" className="v23-controls" aria-label="选择要阅读的完整方案">{data.options.options.map(o=><button key={o.id} aria-pressed={o.id===active} className={o.id===active?'is-active':''} onClick={()=>setActive(o.id)}>{o.id} · {o.name}</button>)}</fieldset>
    <article className="v23-option" key={option.id}>
     <h2>{option.id} · {option.name}</h2><p className="lead">{option.promise}</p><RefLinks ids={option.sourceIds}/>
+    <StrategyConditionReview optionId={option.id}/>
     <section><h3>谁会来，希望得到什么</h3><p>{option.audience}</p><List items={option.needs}/></section>
     <section><h3>首页、卡片、详情为什么这样组织</h3><p>{option.homeOrganization.firstView}</p><List items={option.homeOrganization.zones}/><Definition rows={[["卡片",option.homeOrganization.card],["详情",option.homeOrganization.detail],["组织原因",option.homeOrganization.reason]]}/><div className="table-wrap"><table><thead><tr><th>内容形式</th><th>承担的作用</th></tr></thead><tbody>{option.contentMix.map(c=><tr key={c.form}><th>{c.form}</th><td>{c.role}</td></tr>)}</tbody></table></div><button className="text-button" onClick={showContent}>用同一批材料查看 {option.id} 的相关编排 →</button>{['C','D'].includes(option.id)&&<p className="muted">{data.composition.modes.find(m=>m.id===option.id)?.representationLimit}</p>}</section>
     <section><h3>用户每走一步，平台分别要做什么</h3><div className="table-wrap"><table><thead><tr><th>环节</th><th>用户动作</th><th>接下来</th><th>平台工作</th></tr></thead><tbody>{option.journey.map(j=><tr key={j.step}><th>{j.step}</th><td>{j.action}</td><td>{j.next}</td><td>{j.operatorWork}</td></tr>)}</tbody></table></div></section>
