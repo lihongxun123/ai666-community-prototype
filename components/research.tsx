@@ -6,6 +6,7 @@ import { profiles } from '@/lib/profiles';
 import { LinuxDoLoginUpdate } from '@/components/linuxdo-login';
 import { ResearchFramework, ToolSupportProfile } from '@/components/research-framework';
 import { ResearchProgress } from '@/components/research-progress';
+import {RepresentativeEvidence} from '@/components/representative-evidence';
 import { MakeNowStudy } from '@/components/makenow-study';
 import { StrategyComparison } from '@/components/strategy-comparison';
 import { ChinaAIUsers } from '@/components/china-ai-users';
@@ -117,6 +118,7 @@ export default function Research(){
  </details>
  <details className="profile-section-group"><summary>商业化与公开数据</summary>
  {evidenceById.has(p.id)&&<EvidenceUpdateProfile data={evidenceById.get(p.id)!}/>}
+ <RepresentativeEvidence platformId={p.id}/>
  {publicById.has(p.id)&&<PublicDataProfileSection data={publicById.get(p.id)!}/>}
  {businessById.has(p.id)&&<BusinessProfile data={businessById.get(p.id)!}/>}
  </details>

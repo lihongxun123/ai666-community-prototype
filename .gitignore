@@ -44,3 +44,6 @@ next-env.d.ts
 !/public/research-deliveries/2026-09-11-public/
 /public/research-kit/ai-community-report-2026-09-11*.zip
 !/public/research-kit/ai-community-report-2026-09-11-public.zip
+
+!/public/research-deliveries/2026-09-11-evidence/
+!/public/research-kit/ai-community-report-2026-09-11-evidence.zip

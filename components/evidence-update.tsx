@@ -1,4 +1,5 @@
 import type { EvidenceProfile, EvidenceSource, EvidenceUpdate } from '@/lib/evidence-update-types';
+import {RepresentativeEvidence} from '@/components/representative-evidence';
 
 const dimensions = { commercial: '商业化与收费', scale: '规模与统计范围', usage: '具体使用记录' } as const;
 const changes = { new: '补充', corroborated: '复核', correction: '纠偏' } as const;
@@ -13,6 +14,7 @@ export function EvidenceUpdateOverview({data, visibleIds, onSelect}:{data:Eviden
  const profiles=data.profiles.filter(p=>visibleIds.includes(p.id));
  return <div className="evidence-update-report">
   <div className="page-heading"><h1>竞品证据补核</h1></div>
+  <RepresentativeEvidence/>
   <p className="evidence-update-meta">查阅日期：{data.accessedAt} · {data.stats.claims}条核验结论 · {data.stats.uniqueUrls}个来源页面。数量用于追溯，不代表研究完成度。</p>
   <p><a href="/research-kit/competitor-evidence.md" download>下载证据与来源</a></p>
   <nav className="article-toc" aria-label="竞品证据章节">{[['evidence-findings',"判断"],['evidence-coverage','18家补充了什么'],['evidence-methods','进一步取数'],['evidence-missing','仍然缺什么']].map(([id,label])=><a key={id} href="#supplement" onClick={e=>{e.preventDefault();document.getElementById(id)?.scrollIntoView({block:'start',behavior:'smooth'});}}>{label}</a>)}</nav>
