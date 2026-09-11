@@ -2553,4 +2553,3 @@ PR #106显示贡献者提交、维护者指出问题、作者追加修改后合�
 PR 最终审核、合并和发布状态,Cloud 问题的官方判断与解决回访,故障处理时长分布
 
 [Issue 42114: Agent binary tool output handling](https://github.com/langgenius/dify/issues/42114)；[PR 42126: Agent binary output fix proposal](https://github.com/langgenius/dify/pull/42126)；[Issue 42087: Knowledge retrieval succeeds in testing but is empty in workflow](https://github.com/langgenius/dify/issues/42087)
-

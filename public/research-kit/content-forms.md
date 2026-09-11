@@ -4689,4 +4689,3 @@ Wiki 独立贡献者数和有效修订比例,哪些内容产生后续复用
 模板或插件真实复用频次,典型任务的成功率与维护成本
 
 [Dify Cloud Pricing](https://dify.ai/pricing/dify-cloud)；[Issue 42114: Agent binary tool output handling](https://github.com/langgenius/dify/issues/42114)；[Issue 42087: Knowledge retrieval succeeds in testing but is empty in workflow](https://github.com/langgenius/dify/issues/42087)
-

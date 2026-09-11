@@ -1205,4 +1205,3 @@ Windows环境问题由原提交者说明重开终端后完成激活；PR贡献�
 同类问题发生范围,修复后真实用户持续使用,与平台总体稳定性的关系
 
 [Issue 42114: Agent binary tool output handling](https://github.com/langgenius/dify/issues/42114)；[PR 42126: Agent binary output fix proposal](https://github.com/langgenius/dify/pull/42126)；[Issue 42087: Knowledge retrieval succeeds in testing but is empty in workflow](https://github.com/langgenius/dify/issues/42087)
-

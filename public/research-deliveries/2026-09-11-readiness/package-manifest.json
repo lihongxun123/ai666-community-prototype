@@ -426,8 +426,8 @@
     },
     {
       "path": "attachments/competitor-evidence.md",
-      "bytes": 130326,
-      "sha256": "ebc470f5dfb9efc2cb4a7be6daa2585fa56b52d019de67eeb314065303de932d"
+      "bytes": 130325,
+      "sha256": "42df9286b5d07ee13c2e190aff645d6634daf1d68c73c12ffc31a750d90cfe14"
     },
     {
       "path": "attachments/content-delivery-supply.md",
@@ -436,8 +436,8 @@
     },
     {
       "path": "attachments/content-forms.md",
-      "bytes": 230145,
-      "sha256": "af84448d0ad70a59486640373f4851dff7bd15ccc7ce5e1d6c83e11c12be1c2e"
+      "bytes": 230144,
+      "sha256": "b83ed2b268b8f23d4b16e97ed94732e0a45d19024b946f8817a18df3301c47f2"
     },
     {
       "path": "attachments/content-research.json",
@@ -471,8 +471,8 @@
     },
     {
       "path": "attachments/platform-operations.md",
-      "bytes": 140759,
-      "sha256": "198fa94299db9aeb35aa730740f6116663540482359085445263a24286eebd05"
+      "bytes": 140758,
+      "sha256": "5766248bfa7a78e15af4b7b1ef01c5a4fdbf66727950d1ef82e92d20cdad33d3"
     },
     {
       "path": "attachments/platform-review.json",
