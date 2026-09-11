@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-11",
+  "scope": "研究材料与固定报告发布；不证明用户代表性、业务收益或生产交付能力。",
+  "status": "passed",
+  "sourceCommit": "e529e11eca4141928afbc95f58449ff208d0bb16",
+  "deployment": {
+    "id": "appgdep_6aa3e77c0c1c8191b883b26d2dc484bd",
+    "versionId": "appgprj_6aa02aa55c748191be097c052a556095~appgver_2e8b306f4cd88191a90870a92981e55f",
+    "status": "succeeded",
+    "url": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site"
+  },
+  "fixedReport": "/research-deliveries/2026-09-11-readiness/report.html",
+  "validation": {
+    "packageFiles": 183,
+    "zipSha256": "49a738500d387259e36d0667da7500a7dfb141f33b5325a0ad8775dba9464655",
+    "localLinks": 877,
+    "images": 110,
+    "contentAudit": "source-validation.json; independent-review.json",
+    "build": "passed",
+    "typecheck": "passed",
+    "anonymousHttp": [
+      {
+        "route": "/",
+        "status": 200,
+        "bytes": 27961,
+        "sha256": "b93436a259c863fe03d76d325a584cbbbaa73359ee46fbfcaeaef7a398ed5fb6",
+        "matchesBuild": null,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/_next/static/chunks/index-B7GBXP20.js",
+        "status": 200,
+        "bytes": 192352,
+        "sha256": "dc42b7a929238f05df93d439c0eb69896a9c3d33eacf2e4467b910d350a8cff7",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/research-kit/research-readiness.json",
+        "status": 200,
+        "bytes": 12351,
+        "sha256": "ee80f0b88fcdf97dbf73108b3f623244336e28319f1436ea6d9db5da1f618aed",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+        "status": 200,
+        "bytes": 694,
+        "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/_next/static/chunks/layout-segment-context-DXIh1qhs.js",
+        "status": 200,
+        "bytes": 494,
+        "sha256": "430d00f79bd6d851322958fbbe73ab551650c4077c8ba62bab74e70b471786c0",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/_next/static/chunks/framework-D_rUT4EX.js",
+        "status": 200,
+        "bytes": 190152,
+        "sha256": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/research-kit/research-human-input.md",
+        "status": 200,
+        "bytes": 4081,
+        "sha256": "9ecf3eb3c26112dc705424e5eda4baead33adc1fdda213a5990dea01d63c73b2",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/research-deliveries/2026-09-11-readiness/report.html",
+        "status": 200,
+        "bytes": 212326,
+        "sha256": "1cb47ce5e1b4f5180d5db5c1b447a042036631dca5f451e79fed6fea7e7db8dc",
+        "matchesBuild": false,
+        "authoredHtmlMatches": true,
+        "providerInjection": "One Cloudflare challenge script inserted immediately before closing body; complete authored prefix and closing tags match."
+      },
+      {
+        "route": "/research-deliveries/2026-09-11-readiness/appendix/openart.html",
+        "status": 200,
+        "bytes": 71532,
+        "sha256": "31c8cdc3eb0100886be4faaf8e8ee59ebe1a2538a4077b45ace96195d9f2c2e0",
+        "matchesBuild": false,
+        "authoredHtmlMatches": true,
+        "providerInjection": "One Cloudflare challenge script inserted immediately before closing body; complete authored prefix and closing tags match."
+      },
+      {
+        "route": "/_next/static/chunks/research-CsGawGKW.js",
+        "status": 200,
+        "bytes": 3338925,
+        "sha256": "10453fa34c109b0f99c210e9235af846754a550c50b31c6ee4d3451e983adb5a",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      },
+      {
+        "route": "/research-kit/ai-community-report-2026-09-11-readiness.zip",
+        "status": 200,
+        "bytes": 12914570,
+        "sha256": "49a738500d387259e36d0667da7500a7dfb141f33b5325a0ad8775dba9464655",
+        "matchesBuild": true,
+        "authoredHtmlMatches": null,
+        "providerInjection": null
+      }
+    ]
+  }
+}

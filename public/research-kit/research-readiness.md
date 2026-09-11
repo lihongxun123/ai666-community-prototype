@@ -43,6 +43,6 @@
 | H2 | 选择与验证方法 | 已核对 | 各方案的最低承诺、可证伪假设、记录信号及暂停条件已明确；方向未选定。 [依据](research-option-tests.md) |
 | H3 | 外部实际行为 | 待人工 | 待补同窗口、区分来源的真实外部消费、回应与重复使用记录。 [依据](research-human-input.md) |
 | H4 | 资料状态同步 | 已核对 | 进展页、八项问题、专题、主报告、下载和维护入口同步核对。 [依据](research-readiness.md) |
-| H5 | 交付审校与发布 | 待完成发布 | 构建、固定交付包、内容/引用审校和公网发布验证。 [依据](research-readiness.md) |
+| H5 | 交付审校与发布 | 已核对 | 固定报告与下载包、内容及引用审校、构建和匿名公网文件一致性核对通过。 [依据](research-publication.json) |
 
 [待补材料](research-human-input.md) · [固定验收计划](research-plan.md)
