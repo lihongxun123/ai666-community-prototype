@@ -52,7 +52,7 @@ import {ResearchPlatformFilter} from '@/components/research-platform-filter';
 function revealSection(id:string){const target=document.getElementById(id);for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({block:'start'});target?.focus({preventScroll:true});}
 function filterProfiles(query:string,group:string){return profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${operatingById.get(p.id)?.position||''} ${contentById.get(p.id)?.forms.map(c=>c.name).join(' ')||''} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());});}
 export default function Research(){
- const [view,setView]=useState('overview'); const [query,setQuery]=useState(''); const [group,setGroup]=useState('全部'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
+ const [view,setView]=useState('overview'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
  const [studyQuery,setStudyQuery]=useState(''); const [studyGroup,setStudyGroup]=useState('全部');
  const [sectionTarget,setSectionTarget]=useState<{view:string;sectionId:string}|null>(null);
  useEffect(()=>{const read=()=>{const raw=decodeURIComponent(location.hash.slice(1));const hash=raw==='tensor'?'tusi':raw;setView(profiles.some(p=>p.id===hash)||topViews.some(t=>t[0]===hash)?hash:'overview');setSectionTarget(null);setMobile(false);};read();window.addEventListener('hashchange',read);return()=>window.removeEventListener('hashchange',read);},[]);
@@ -64,27 +64,25 @@ export default function Research(){
  const showContent=(id:string)=>navigate(id,'content-observations');
  const showStudy=(kind:'operations'|'content',id:string)=>navigate(kind,`${kind}-${id}`);
  const showEvidence=(id:string)=>navigate(id,'evidence-update');
- const filtered=useMemo(()=>filterProfiles(query,group),[query,group]);
  const studyFiltered=useMemo(()=>filterProfiles(studyQuery,studyGroup),[studyQuery,studyGroup]);
  const platformFilter=<ResearchPlatformFilter query={studyQuery} setQuery={setStudyQuery} group={studyGroup} setGroup={setStudyGroup} count={studyFiltered.length}/>;
  const p=profiles.find(x=>x.id===view); const index=p?profiles.indexOf(p):-1;
  const toggle=(id:string)=>setSelected(prev=>prev.includes(id)?prev.filter(v=>v!==id):prev.length<3?[...prev,id]:prev);
- const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):filtered;
+ const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):profiles;
  return <div className="research-shell">
  <a href="#main" className="skip-link" onClick={e=>{e.preventDefault();document.getElementById('main')?.focus();window.scrollTo({top:0});}}>跳到正文</a>
  <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区观察 · 运营与内容 · 2026.09.10</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>来源与方法</span></button></header>
  {mobile&&<button className="sidebar-scrim" onClick={()=>setMobile(false)} aria-label="关闭目录"/>}
- <ResearchSidebar view={view} navigate={navigate} mobile={mobile} query={query} setQuery={setQuery} group={group} setGroup={setGroup} profiles={profiles} filtered={filtered}/>
+ <ResearchSidebar view={view} navigate={navigate} mobile={mobile} profiles={profiles}/>
  <main id="main" className="report-main" tabIndex={-1}>
  <div className="breadcrumb"><span>研究报告</span><span>/</span><span>{p?p.group:topViews.find(t=>t[0]===view)?.[1]}</span></div>
  {view==='overview'&&<ResearchDirectory navigate={navigate}/>}
  {view==='report'&&<ResearchBrief navigate={navigate}/>}
  {view==='matrix'&&<>
  <div className="page-heading"><h1>平台对照</h1></div>
- <div className="compare-controls"><p>选择最多 3 家并排对照。{selected.length>0?`已选 ${selected.length} 家。`:'未选择时显示目录筛选结果。'}</p>{selected.length>0&&<button className="text-button" onClick={()=>setSelected([])}>清空选择 <X size={14}/></button>}</div>
+ <div className="compare-controls"><p>选择最多 3 家并排对照。{selected.length>0&&`已选 ${selected.length} 家。`}</p>{selected.length>0&&<button className="text-button" onClick={()=>setSelected([])}>清空选择 <X size={14}/></button>}</div>
  <div className="compare-options">{profiles.map(item=><button aria-pressed={selected.includes(item.id)} disabled={selected.length===3&&!selected.includes(item.id)} className={selected.includes(item.id)?'chosen':''} key={item.id} onClick={()=>toggle(item.id)}>{selected.includes(item.id)&&<Check size={13}/>} {item.name}</button>)}</div>
  <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>适用条件</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
- {rows.length===0&&<p className="empty">没有匹配结果，请清除左侧筛选。</p>}
  </>}
 {view==='progress'&&<ResearchProgress navigate={navigate}/>}
 {view==='china-users'&&<ChinaAIUsers navigate={navigate}/>}
