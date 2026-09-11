@@ -1,0 +1,2930 @@
+{
+  "title": "18个平台的供给主题与消费证据",
+  "date": "2026-09-11",
+  "profiles": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "summary": [
+        "国风视觉；商品图处理资源",
+        "看风格、找模型；处理自己的图片",
+        "作者用途明确；消费经历有限"
+      ],
+      "supplyTopics": [
+        {
+          "text": "国风山水、花鸟、建筑和数字水墨插画；公开LoRA作者说明及图例",
+          "sourceIds": [
+            "CN-LIB-2"
+          ]
+        },
+        {
+          "text": "商品精修与背景合成；公开工作流V2说明，链接前一版本",
+          "sourceIds": [
+            "CN-LIB-1"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "电商与商品营销；白底商品图精修、替换展示背景；作者明确提供的任务；未核商家实际采用",
+          "sourceIds": [
+            "CN-LIB-1"
+          ]
+        },
+        {
+          "text": "文创、出版与包装；明信片、书签、壁纸、插画书、包装图稿；作者推荐用途",
+          "sourceIds": [
+            "CN-LIB-2"
+          ]
+        },
+        {
+          "text": "游戏、动画及建筑概念；游戏地图、动画背景、建筑概念画；作者推荐用途，不证明专业交付",
+          "sourceIds": [
+            "CN-LIB-2"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "处理自己的商品或人物图片；研究室此前记录实操转载与教程，涉及换背景、换装和流程失败；原发身份未核，不能当独立买方规模。；既有用户经历记录",
+          "sourceIds": [
+            "CN-LIB-3"
+          ]
+        },
+        {
+          "text": "寻找国风视觉灵感及对应资源；LoRA列明媒介用途和提示词，但未取得该题材的普通观看者记录。；供给用途推断",
+          "sourceIds": [
+            "CN-LIB-2"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "LoRA及模型版本页",
+          "sourceIds": []
+        },
+        {
+          "text": "工作流及模块说明",
+          "sourceIds": []
+        },
+        {
+          "text": "示例图片",
+          "sourceIds": []
+        },
+        {
+          "text": "参数和输入准备说明",
+          "sourceIds": []
+        },
+        {
+          "text": "版本迁移记录",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "训练风格模型的资源作者",
+          "sourceIds": []
+        },
+        {
+          "text": "编写商品图处理方法的工作流作者；职业与团队规模未知",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "供给维护；商品精修V2保留V1链接并解释底模及输入变化；只能确认同一任务有版本延续。",
+          "sourceIds": [
+            "CN-LIB-1"
+          ]
+        },
+        {
+          "text": "反馈邀请；作者邀请返图；公开正文没有提供完整返图、采用和回访统计。",
+          "sourceIds": [
+            "CN-LIB-1"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "题材和行业的内容总量与新增速度",
+          "sourceIds": []
+        },
+        {
+          "text": "独立作者数及维护率",
+          "sourceIds": []
+        },
+        {
+          "text": "阅读、下载、运行对应的用户数和时间窗",
+          "sourceIds": []
+        },
+        {
+          "text": "国风观看者与生产用途使用者是否重叠",
+          "sourceIds": []
+        },
+        {
+          "text": "按题材的有效回访与缺货/求助比例",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "现有证据说明国风与商品图资源已经有供给；不支持再建同样目录就是机会。可比较普通读者的国风系列鉴赏、风格对照，与使用者的商品图失败排查，观察哪种内容能带来次周有效回访。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-LIB-1",
+          "title": "电商产品精修+背景替换（FLUX）V2.0",
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前公开正文：商品图任务、模块、两图输入、版本关系和返图邀请。效果承诺未验证。"
+        },
+        {
+          "id": "CN-LIB-2",
+          "title": "F.1 烟青雅境_新国风美学",
+          "url": "https://www.liblib.art/modelinfo/7f7ef68d806c4a77830db4ccae465de3?from=feed&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFNA%3D%3D&versionUuid=f6963fb306bf42fbabf335dec5009a1f",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前公开作者说明：国风视觉元素、文创/插画/虚拟场景用途、提示词和参数。不是采用者调查。"
+        },
+        {
+          "id": "CN-LIB-3",
+          "title": "AI赋能电商项目实操：从掉坑卡死到觉悟",
+          "url": "https://chuhaiyoushu.club/articles/fe-011-ai-2-45-74a873c5/",
+          "date": null,
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室audience-research.json的已读实操转载记录；本次未重开。原发身份与客户采用未核。"
+        },
+        {
+          "id": "CN-LIB-4",
+          "title": "LiblibAI首页",
+          "url": "https://www.liblib.art/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "本次文本仅返回iframe，没有取得首页分类或数量；不据此认定内容缺失。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "runninghub",
+      "name": "RunningHub",
+      "summary": [
+        "电商、短剧、平面设计与短视频工作流",
+        "找可运行方法；导入和修改流程",
+        "分类可见；运行与行业份额未知"
+      ],
+      "supplyTopics": [
+        {
+          "text": "宠物奇观、热门舞蹈、换装、旅行转场和社媒特效；当前首页短视频专区的具体模板标题",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "短漫剧、国风变身、AI偶像音乐片段；当前首页精选短片标题",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "治愈绘本风、文创IP、休闲座椅与邮票设计；当前首页平面设计区的具体入口",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "服装电商与商品营销；虚拟试穿、模特换装、装箱及产品动画；官方任务专区；采用量未公开",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "短视频与短剧制作；社媒模板、短漫剧、文案转提示词、批量资产与分镜；官方入口",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "文创及平面/产品设计；绘本、IP、邮票与座椅方案；官方示例用途",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "寻找能直接使用的短视频或电商模板；首页大面积组织这些任务，说明平台投入分发；没有证明这些分类的用户最多。；官方编排",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "云端运行自己的图像或视频流程；既有资料记录用户先求助、后称跑通，之后再次遇到LoRA问题；证明资源适配与排错需求，不能映射行业份额。；既有普通用户求助记录",
+          "sourceIds": [
+            "CN-RH-3"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "可观看短片",
+          "sourceIds": []
+        },
+        {
+          "text": "短视频同款模板",
+          "sourceIds": []
+        },
+        {
+          "text": "封装AI应用",
+          "sourceIds": []
+        },
+        {
+          "text": "ComfyUI工作流",
+          "sourceIds": []
+        },
+        {
+          "text": "输入说明及外部教程",
+          "sourceIds": []
+        },
+        {
+          "text": "题材/任务精选专区",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "模板和工作流作者",
+          "sourceIds": []
+        },
+        {
+          "text": "短漫剧与AI音乐片段作者",
+          "sourceIds": []
+        },
+        {
+          "text": "封装应用的维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "选择并组织首页内容的平台编辑",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "平台分发选择；首页明确分出短视频爆款、电商、短剧漫剧和平面设计；这一点本次正文核验成功。",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "数字口径不足；模板卡片标题含若干k/w数字，但未取得来源、指标定义和时间窗；不把它们当站内播放、调用或消费人数。",
+          "sourceIds": [
+            "CN-RH-1"
+          ]
+        },
+        {
+          "text": "详情访问限制；商品虚拟试穿模板及既有Klein案例详情本次超时；没有把入口存在写成实际可运行。",
+          "sourceIds": [
+            "CN-RH-2"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "各任务的作品数、独立作者数和有效应用数",
+          "sourceIds": []
+        },
+        {
+          "text": "首页模板数字的定义",
+          "sourceIds": []
+        },
+        {
+          "text": "按主题的浏览、使用、复用与回访",
+          "sourceIds": []
+        },
+        {
+          "text": "观看短片与运行工作流是否同一批用户",
+          "sourceIds": []
+        },
+        {
+          "text": "被推荐资源与普通资源的表现差异",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "短剧、电商和社媒模板已经是平台明确供给方向，不能作为无人竞争的空白。可调查一个更具体的主题，例如普通用户的宠物连续短片，是否缺每周更新、可交流的作品系列；工具仅作为可选跟做入口。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-RH-1",
+          "title": "RunningHub首页：短视频、电商、短剧与设计专区",
+          "url": "https://www.runninghub.cn/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前公开全文的专题名与具体模板/作品标题；不支持分类规模、热度排序或成功率。"
+        },
+        {
+          "id": "CN-RH-2",
+          "title": "Klein虚拟试衣与商品局部替换",
+          "url": "https://www.runninghub.cn/post/2074049801244917760",
+          "date": "2026-06-13（既有记录）",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "本次访问超时。2026-09-09既有记录支持两图输入、应用与工作流入口，不能声称本次复核成功。"
+        },
+        {
+          "id": "CN-RH-3",
+          "title": "help me use runninghub for workflow so confused — Discussion #176",
+          "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+          "date": "页面显示Jun 15—Jun 22，年份不明",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室audience-research.json的已读用户求助及再次遇错记录；本次未重开。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "tusi",
+      "name": "吐司 / Tensor.Art",
+      "summary": [
+        "写实、动漫、国风；电商、游戏、建筑用途",
+        "找角色与风格；复用资源、连续创作",
+        "中文站与国际站分别观察"
+      ],
+      "supplyTopics": [
+        {
+          "text": "吐司：写实、动漫、2.5D、国风、插画和科幻；国内站Channel分类",
+          "sourceIds": [
+            "CN-TA-1"
+          ]
+        },
+        {
+          "text": "Tensor.Art：角色、动漫、写实、插画与科幻；国际站Channel分类；不能并为国内占比",
+          "sourceIds": [
+            "CN-TA-2"
+          ]
+        },
+        {
+          "text": "短剧九宫格故事分镜、图像细节增强；国内资源与国际工作流两个具体样本",
+          "sourceIds": [
+            "CN-TA-4",
+            "CN-TA-5"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "电商与品牌设计；商品视觉、Logo及营销素材；国内电商设计频道和Featured入口；国际站也有品牌设计入口",
+          "sourceIds": [
+            "CN-TA-1",
+            "CN-TA-2"
+          ]
+        },
+        {
+          "text": "游戏与空间设计；游戏设计；建筑、风景、室内设计；国内频道结构；国际站有Game Design、Space Design",
+          "sourceIds": [
+            "CN-TA-1",
+            "CN-TA-2",
+            "CN-TA-3"
+          ]
+        },
+        {
+          "text": "短剧前期制作；九宫格分镜和视觉方案迭代；模型作者推荐用途，未核制作方采用",
+          "sourceIds": [
+            "CN-TA-4"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "寻找特定角色或风格LoRA；国际站用户曾反馈找不到指定LoRA和资源不能加载；国内同类需求强度未知。；既有普通用户求助记录",
+          "sourceIds": [
+            "CN-TA-6"
+          ]
+        },
+        {
+          "text": "九宫格分镜资源与图像增强方法；当前读取的国内分镜页标8 star，国际SUPIR工作流页标15 star；仅两个对象，没有统一时间窗、曝光和用户去重，不能比较题材市场。；单资源互动字段",
+          "sourceIds": [
+            "CN-TA-4",
+            "CN-TA-5"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "模型与版本",
+          "sourceIds": []
+        },
+        {
+          "text": "AI工具",
+          "sourceIds": []
+        },
+        {
+          "text": "节点工作流",
+          "sourceIds": []
+        },
+        {
+          "text": "作品帖子",
+          "sourceIds": []
+        },
+        {
+          "text": "文章",
+          "sourceIds": []
+        },
+        {
+          "text": "活动与排行",
+          "sourceIds": []
+        },
+        {
+          "text": "题材和用途频道",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "风格/角色模型训练作者",
+          "sourceIds": []
+        },
+        {
+          "text": "功能型模型作者",
+          "sourceIds": []
+        },
+        {
+          "text": "图像处理工作流维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "作品作者；同一账号可能承担多种角色",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "国内外分类差异；国内明确突出国风与电商设计，国际站主频道用Character和Visual Design等命名。相同产品组也需按站点分析。",
+          "sourceIds": [
+            "CN-TA-1",
+            "CN-TA-2"
+          ]
+        },
+        {
+          "text": "单资源关注；分镜页8 star、SUPIR页15 star可确认有限关注，不证明购买、成功使用或持续活跃。",
+          "sourceIds": [
+            "CN-TA-4",
+            "CN-TA-5"
+          ]
+        },
+        {
+          "text": "列表不完整；建筑&空间设计页文本只返回子类及Posts/Models/AI Tools切换，没有列表总量。",
+          "sourceIds": [
+            "CN-TA-3"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "国内外用户、内容和使用的重叠率",
+          "sourceIds": []
+        },
+        {
+          "text": "各频道内容和独立作者总量",
+          "sourceIds": []
+        },
+        {
+          "text": "Star对应用户与曝光时间窗",
+          "sourceIds": []
+        },
+        {
+          "text": "分镜的真实采用与失败率",
+          "sourceIds": []
+        },
+        {
+          "text": "停补后的作者供给是否变化",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "资源目录已经覆盖许多风格与行业；更值得检验的是资源寻找与解释缺口，如把同一国风主题整理成可观看作品、风格说明及选用对照。若只是搬运现成模型，差异和作者授权均不足。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-TA-1",
+          "title": "吐司国内站首页与Channel导航",
+          "url": "https://tusi.cn/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "国内题材/用途频道和Models/Tools/Posts等载体；首页精选不代表全量构成。"
+        },
+        {
+          "id": "CN-TA-2",
+          "title": "Tensor.Art国际站首页与Channel导航",
+          "url": "https://tensor.art/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "国际站分类与Featured功能用途；不能外推国内用户。"
+        },
+        {
+          "id": "CN-TA-3",
+          "title": "吐司建筑&空间设计频道",
+          "url": "https://tusi.cn/channels/106",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "建筑、风景、室内设计子类与多载体切换；没有读到内容总量。"
+        },
+        {
+          "id": "CN-TA-4",
+          "title": "Qwen功能类：短剧专用九宫格故事分镜",
+          "url": "https://tusi.cn/models/982998554907780664",
+          "date": "2026-04-03更新",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "作者用途、参数、示例提示与页面8 star；效果和价格不作为本专题实测结论。"
+        },
+        {
+          "id": "CN-TA-5",
+          "title": "Enhance Image with SUPIR + UPSCALE",
+          "url": "https://tensor.art/workflows/824922304248158170",
+          "date": "2025-01-31更新",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "图像增强、参数取舍、故障说明、32节点和15 star；不代表普遍使用。"
+        },
+        {
+          "id": "CN-TA-6",
+          "title": "I cannot find Loras on the searcher",
+          "url": "https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/",
+          "date": "2025-06-09至06-12",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室用户画像已读的国际站资源寻找经历，本次未重开。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "civitai",
+      "name": "Civitai",
+      "summary": [
+        "模型、例图与合集；历史幻想兴趣线索",
+        "看概念、学训练、下载后外部使用",
+        "当前题材列表读取受阻"
+      ],
+      "supplyTopics": [
+        {
+          "text": "已确认资源组织包含模型、图像与帖子合集；模型与版本可以关联例图。",
+          "sourceIds": []
+        },
+        {
+          "text": "历史用户提到 DnD、Warhammer 和幻想创作；不据此称其为全站主流。当前模型分类、动漫/写实等题材的份额未核到。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "当前行业分布未知。DnD 或 Warhammer 兴趣图不能自动归为游戏从业者或商业游戏资产。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "历史用户会寻找兴趣题材对应的模型、训练参数和流行概念。",
+          "sourceIds": []
+        },
+        {
+          "text": "另一条消费路径是下载资源到本地使用，再回站看方法或分享，消费不一定发生在站内生成器。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "模型与版本说明",
+          "sourceIds": []
+        },
+        {
+          "text": "关联例图及参数/资源归因",
+          "sourceIds": []
+        },
+        {
+          "text": "按主题整理的图片、帖子、模型合集",
+          "sourceIds": []
+        },
+        {
+          "text": "作者经验与使用问题",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "模型训练或合并作者",
+          "sourceIds": []
+        },
+        {
+          "text": "上传作品与参数的个人创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "合集策展者和协作者；不能与关注合集的人混算",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方实现文档；合集允许按权限收录图像、帖子与模型；文档明确关注者和协作者不同。",
+          "sourceIds": [
+            "cv-coll"
+          ]
+        },
+        {
+          "text": "官方实现文档；例图可以关联模型版本。可追溯资源不等于完整流程，也不证明该关联正确。",
+          "sourceIds": [
+            "cv-img"
+          ]
+        },
+        {
+          "text": "历史公开用户自述；2024 年讨论中可见日常兴趣创作、看概念趋势、学习训练与回站分享的描述。",
+          "sourceIds": [
+            "cv-user"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "当前各题材有效资源数、独立作者数、内容消费人数与曝光未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "官网模型、文章及公开标签 API 本次未能读取，不能以错误页推断平台无供给。",
+          "sourceIds": []
+        },
+        {
+          "text": "下载、生成、收藏和外部运行的重复用户关系未知。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可比较“同一兴趣主题的作品合集”与“该主题入门方法及常见失败说明”哪个更带动回访。机会可能在理解和使用资源的成本，不一定在资源数量；须先补当前分类与普通内容样本。",
+      "counterexample": "资源在公开主页显得少，可能是过滤、账号权限或资源收费导致；喜欢免费开放资源的人也未必愿意迁移到另一个工具站。",
+      "sources": [
+        {
+          "id": "cv-coll",
+          "title": "Collaborative Collections",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "合集承载对象、投稿、关注者与协作者的区别；不能证明线上每项均已开放。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "cv-img",
+          "title": "Image Resource Tracking",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "图像与模型版本的资源关联；不提供题材份额。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "cv-user",
+          "title": "Civitai 公开用户讨论：使用与回访原因",
+          "url": "https://www.reddit.com/r/civitai/comments/1e0cdub/anyone_else_think_civitai_is_actually_pretty_great/",
+          "date": "2024-07-11",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "DnD、Warhammer 兴趣创作及回站学习/看趋势的历史自述；本次重开正文，具体匿名观察沿用既有画像。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "cv-block",
+          "title": "Models",
+          "url": "https://civitai.com/models",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "访问限制记录；不提供内容证据。",
+          "access": "本次 web 读取失败"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "seaart",
+      "name": "SeaArt",
+      "summary": [
+        "角色、像素、趣味特效及商品宣传案例",
+        "看作品、玩效果、找可修改的方法",
+        "单作品字段不能代表主题需求"
+      ],
+      "supplyTopics": [
+        {
+          "text": "像素角色、Fan Art、短片、热门片段与技巧；当前作品页专题",
+          "sourceIds": [
+            "CN-SA-2"
+          ]
+        },
+        {
+          "text": "舞蹈、游戏化角色、动作特效与商品宣传；首页示例及模板标题",
+          "sourceIds": [
+            "CN-SA-1"
+          ]
+        },
+        {
+          "text": "像素风女剑士的2D动作游戏情境；Pixel Party中单条公开作品及提示词",
+          "sourceIds": [
+            "CN-SA-3"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "个人兴趣与粉丝创作；像素角色、动漫、meme和角色互动；当前作品与既有用户评论",
+          "sourceIds": [
+            "CN-SA-2",
+            "CN-SA-3",
+            "CN-SA-4"
+          ]
+        },
+        {
+          "text": "社交短视频；舞蹈、特效、游戏化人物与可分享片段；官方模板和作品页",
+          "sourceIds": [
+            "CN-SA-1",
+            "CN-SA-2"
+          ]
+        },
+        {
+          "text": "商品营销；Product Hype Video等宣传片段；首页示例标题；没有买方采用数据",
+          "sourceIds": [
+            "CN-SA-1"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "兴趣图、meme与模型资源；公开评价记录meme生成、寻找模型及长期使用自述；没有按主题人数或实际回访天数。；既有普通用户评论",
+          "sourceIds": [
+            "CN-SA-4"
+          ]
+        },
+        {
+          "text": "AI角色聊天和RPG；已有不同评价明确谈Cyberpub与RPG；这是互动内容需求，与观看图片和生成视频应分别计量。；既有普通用户评论",
+          "sourceIds": [
+            "CN-SA-4"
+          ]
+        },
+        {
+          "text": "像素题材作品；当前单条作品详情显示0 comment，其余278、90、66等数字在文本中无标签；只能确认没有可见评论，不能命名为观看或点赞，也不代表没有消费。；单作品可见字段",
+          "sourceIds": [
+            "CN-SA-3"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "作品图/视频",
+          "sourceIds": []
+        },
+        {
+          "text": "提示词与模型信息",
+          "sourceIds": []
+        },
+        {
+          "text": "Remix入口",
+          "sourceIds": []
+        },
+        {
+          "text": "主题活动和编辑精选",
+          "sourceIds": []
+        },
+        {
+          "text": "工具与模型",
+          "sourceIds": []
+        },
+        {
+          "text": "AI角色互动；后一项本次沿用历史用户记录",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "像素/动漫/粉丝兴趣作者",
+          "sourceIds": []
+        },
+        {
+          "text": "模板和工具作者",
+          "sourceIds": []
+        },
+        {
+          "text": "AI角色创建者",
+          "sourceIds": []
+        },
+        {
+          "text": "平台活动和编辑团队；职业分布未知",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "活动化组织；作品页用Pixel Party、Fan Art、Short Film等组织内容，结合官方精选与活动精选。",
+          "sourceIds": [
+            "CN-SA-2"
+          ]
+        },
+        {
+          "text": "创作过程交付；像素动作作品公开分场景提示、所用模型和Remix入口；不代表它是可交付游戏或已有复用。",
+          "sourceIds": [
+            "CN-SA-3"
+          ]
+        },
+        {
+          "text": "互动不能替代消费；单作品0 comment不能推出无观看需求；同样，无标签数字较高也不能推出两周持续活跃。",
+          "sourceIds": [
+            "CN-SA-3"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "中国用户占比及其题材偏好",
+          "sourceIds": []
+        },
+        {
+          "text": "各专题供给量和外部活跃作者数",
+          "sourceIds": []
+        },
+        {
+          "text": "作品数字的标签、去重与时间窗",
+          "sourceIds": []
+        },
+        {
+          "text": "兴趣观看、角色互动、运行工具三类行为的用户重叠",
+          "sourceIds": []
+        },
+        {
+          "text": "活动后是否继续参与或仅为领奖",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "以题材活动形成重复参与比单纯增加工具类型更接近社区目标；可验证一个主题连续两周的观看、回应和二创。需要有稳定主持与供给，并核对国内受众，不能把国际站动漫/RPG需求直接搬为中国判断。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-SA-1",
+          "title": "SeaArt首页：创作模板与示例",
+          "url": "https://www.seaart.ai/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前模板与示例主题、图像/视频/模型等入口；不支持各主题消费比例。"
+        },
+        {
+          "id": "CN-SA-2",
+          "title": "SeaArt作品探索页",
+          "url": "https://www.seaart.ai/post",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "Pixel Party、Fan Art、Short Film、技巧、热门片段、官方及活动精选。"
+        },
+        {
+          "id": "CN-SA-3",
+          "title": "像素风侍姬2D动作游戏情境作品",
+          "url": "https://www.seaart.ai/postDetail/da4jonle878c738el580",
+          "date": "2026-08-22",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "作品题材、提示词、模型、Remix入口和0 comment；没有给无标签数字添加含义。"
+        },
+        {
+          "id": "CN-SA-4",
+          "title": "SeaArt AI美国区App Store公开评价",
+          "url": "https://apps.apple.com/us/app/seaart-ai-photo-video-maker/id6478189868?see-all=reviews",
+          "date": "各评论日期分别记录",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室用户画像已读的meme、模型寻找、角色互动和RPG记录；本次未重开，不能外推国内用户规模。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "openart",
+      "name": "OpenArt",
+      "summary": [
+        "音乐视频、角色vlog、解释视频、ASMR",
+        "观看与寻找灵感；制作自己的故事",
+        "社区标签可见；用户份额未知"
+      ],
+      "supplyTopics": [
+        {
+          "text": "当前 Community 页把故事内容分为音乐视频、角色 vlog、解释视频和 ASMR 视频。",
+          "sourceIds": []
+        },
+        {
+          "text": "商品图功能页与 Director 导航另呈现短片、广告、社媒内容和微短剧；这是工具用途组织，须与社区实际投稿区分。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "音乐与个人连续角色内容：既有普通用户制作经历支持。",
+          "sourceIds": []
+        },
+        {
+          "text": "商品图和品牌营销：官方目标用途；本次未取得按美妆、服装、电子产品等行业划分的真实用户数。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "兴趣观众可以看故事、角色和 ASMR，也可只看作品；本次未读取各类观看量。",
+          "sourceIds": []
+        },
+        {
+          "text": "制作音乐视频的用户会找角色参考、多镜头衔接和失败处理；这种方法消费不同于成片观赏。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "故事/音乐视频作品",
+          "sourceIds": []
+        },
+        {
+          "text": "图像及视频分享",
+          "sourceIds": []
+        },
+        {
+          "text": "商品参考图与效果对照",
+          "sourceIds": []
+        },
+        {
+          "text": "角色指南与演示教程",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "个人音乐或故事创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "作品分享者",
+          "sourceIds": []
+        },
+        {
+          "text": "获选 OpenArtist 内容合作作者；合作规模沿用既有档案，未重新核对",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "当前官方社区分类；Community 可读四个明确内容标签，但页面未返回各标签作品数、播放或收藏。",
+          "sourceIds": [
+            "oa-community"
+          ]
+        },
+        {
+          "text": "官方用途说明；商品图页针对电商、广告与社媒展示，描述参考图、场景调整和结果挑选。",
+          "sourceIds": [
+            "oa-product"
+          ]
+        },
+        {
+          "text": "既有历史用户自述；已有画像记录音乐视频项目的继续制作、失败和期满迁移意向；属于项目消费线索，不能当社区观众需求量。",
+          "sourceIds": [
+            "oa-user"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "四个社区分类的内容总数、活跃作者和消费者份额未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "不知道多少消费是观看成片、学习做法或直接套用。",
+          "sourceIds": []
+        },
+        {
+          "text": "官方合作内容与自然 UGC 的比例未知。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "在国内可先比较音乐视觉、连续角色短故事和轻松观赏内容的回访能力，并给有意制作的人提供分镜/角色说明。不能因为 OpenArt 有这些栏目就认定中国需求相同。",
+      "counterexample": "音乐视频需求真实存在，不代表用户愿意把制作过程公开或围绕它社交；反复使用还可能只是项目未完成或预付额度未用完。",
+      "sources": [
+        {
+          "id": "oa-community",
+          "title": "OpenArt Community",
+          "url": "https://openart.ai/discovery",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "直接核对音乐视频、角色 vlog、解释视频、ASMR 四类入口；没有分类规模数据。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "oa-product",
+          "title": "AI Product Image Generator",
+          "url": "https://openart.ai/features/ai-product-image-generator/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "电商/广告/社媒商品图用途、输入和挑选步骤；营销效果和成功比例不采用。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "oa-user",
+          "title": "OpenArt 音乐视频项目经历讨论",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+          "date": "2025-11 至 2026 年；评论含相对日期",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "音乐视频项目、角色参考及前后反馈；历史个案。",
+          "access": "本次审阅本地 audience-research.json，未重读原页"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "nightcafe",
+      "name": "NightCafe",
+      "summary": [
+        "奇幻艺术与主题挑战",
+        "欣赏、创作、投票与交流",
+        "兴趣参与机制明确；消费规模未知"
+      ],
+      "supplyTopics": [
+        {
+          "text": "奇幻题材：龙、精灵、神话生物、人物和风景。官方 2026 年 3 月用主题月把挑战、提示指南与作者展示连在一起。",
+          "sourceIds": []
+        },
+        {
+          "text": "每日挑战还有无主题日、超现实、写实和幽默等表达；题材与艺术风格相交。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "核心可核材料属于兴趣创作和社区参与，不宜按商业行业强分。",
+          "sourceIds": []
+        },
+        {
+          "text": "官方博客的旧评论里有人询问将图用于自己的书；是个人用途线索，不能证明出版行业规模。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "看同题不同解释、给作品投票、发现作者和学习提示。",
+          "sourceIds": []
+        },
+        {
+          "text": "参与者可能消费审美乐趣、归属感和练习反馈；这些不要求有商业成品任务。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "每日挑战题面",
+          "sourceIds": []
+        },
+        {
+          "text": "投稿作品与结果画廊",
+          "sourceIds": []
+        },
+        {
+          "text": "主题月指南",
+          "sourceIds": []
+        },
+        {
+          "text": "作者展示和评论",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "普通参赛者",
+          "sourceIds": []
+        },
+        {
+          "text": "稳定兴趣创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "官方出题与教学作者",
+          "sourceIds": []
+        },
+        {
+          "text": "成员活动主持者，依既有运营档案",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方主题运营实例；奇幻主题月连接挑战、指南与作者内容。题材经平台选择，不能据此认定它是自然需求第一名。",
+          "sourceIds": [
+            "nc-fantasy"
+          ]
+        },
+        {
+          "text": "官方互动机制；每日挑战以投稿期和投票期组织内容；作品被随机展示并评分。",
+          "sourceIds": [
+            "nc-guide"
+          ]
+        },
+        {
+          "text": "可见历史评论；挑战指南页有 2023—2024 年评论，讨论比赛公平与图像能否用于书籍；评论存在重复，未计独立人数。",
+          "sourceIds": [
+            "nc-guide"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "各题材独立观众、投票人数、曝光和回访未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "活动激励、自然兴趣与熟人支持各自贡献未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "未取得本次挑战实时作品样本和同窗互动增量。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "对持续活跃目标，可测试一个兴趣主题的连续策展、轻量投票和可选练习。重点检查普通观看者是否回来，而不是只数参赛作品。",
+      "counterexample": "内容多可能是出题和奖励直接带来的投稿供给。投票多也可能来自参赛互惠，不能直接解释为某题材的外部大众需求。",
+      "sources": [
+        {
+          "id": "nc-fantasy",
+          "title": "Fantasy Month on NightCafe",
+          "url": "https://nightcafe.studio/blogs/blog/fantasy-month-nightcafe",
+          "date": "2026-03-05",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "奇幻题材与月度内容运营；官方叙事中的用户故事没有独立核验。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "nc-guide",
+          "title": "NightCafe Daily Challenges Explained — Updated for 2026",
+          "url": "https://nightcafe.studio/blogs/blog/nightcafe-daily-challenges-guide",
+          "date": "原发布日期 2023-03-16；标题标为 2026 更新",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "挑战节奏、投票和结果画廊；可见旧评论不能当作当前需求规模。",
+          "access": "本次读取正文"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "summary": [
+        "图像、风格与创意发现",
+        "找风格和灵感；观看与创作",
+        "按视觉组织；无法推出职业分布"
+      ],
+      "supplyTopics": [
+        {
+          "text": "官方 Explore 以图像/视频和个性化、随机、热门、周期榜单组织；Style Explorer 可按摄影感、动漫等风格发现样例。",
+          "sourceIds": []
+        },
+        {
+          "text": "它的组织轴更接近视觉审美与参考发现，不能直接当作行业分类。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "既有历史用户材料有影视/广告前期、插画构图、书封沟通、零售概念参考。",
+          "sourceIds": []
+        },
+        {
+          "text": "个人壁纸、桌游辅助和水彩参考是另一组用途，不能并入职业设计用户。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "看视觉创意、收藏风格与参考、找类似图、读提示与参数。",
+          "sourceIds": []
+        },
+        {
+          "text": "学习或复用风格与最终图欣赏可以并存；使用 Moodboard 不必意味着公开投稿。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "图像/视频卡片与详情",
+          "sourceIds": []
+        },
+        {
+          "text": "可搜索风格代码及样例",
+          "sourceIds": []
+        },
+        {
+          "text": "Moodboard 参考集合",
+          "sourceIds": []
+        },
+        {
+          "text": "提示和设置",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "公开生成作品的成员",
+          "sourceIds": []
+        },
+        {
+          "text": "风格与参考策展者",
+          "sourceIds": []
+        },
+        {
+          "text": "贡献选图判断的成员；不是所有人都持续发帖",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方产品机制；Explore 支持不同排序、喜欢和参考复用，风格可收藏。它证明消费入口，不提供实际消费量。",
+          "sourceIds": [
+            "mj-overview"
+          ]
+        },
+        {
+          "text": "官方内容对象说明；Moodboard 用一组图片形成可再调用的审美参考，并保存版本代码。",
+          "sourceIds": [
+            "mj-mood"
+          ]
+        },
+        {
+          "text": "既有历史用户自述；同一工具用于壁纸、水彩参考、桌游，也用于专业流程前期；后者通常仍有绘画、3D 或合成步骤。",
+          "sourceIds": [
+            "mj-users",
+            "mj-pro"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "当前公开作品的题材占比、行业占比、浏览收藏及风格复用规模未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "个性化排序和公开权限使首页不能代表总体。",
+          "sourceIds": []
+        },
+        {
+          "text": "职业用途材料主要来自旧版本经历，不据此评价当前模型能力。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可探索“按题材找灵感、按风格收藏、愿意时再动手”的内容组织方式。国内具体题材仍需对照渠道需求和试点回访，不能从摄影/动漫标签推定机会。",
+      "counterexample": "漂亮图片的高热度不一定意味着读者要学习生成。用户也可能只保存图片后离开，不需要注册另一家社区。",
+      "sources": [
+        {
+          "id": "mj-overview",
+          "title": "Website Overview",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "Explore 排序、风格搜索、作品详情和收藏复用机制；不是用户结构统计。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "mj-mood",
+          "title": "Moodboards",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "风格参考集合与版本化调用；不提供内容消费规模。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "mj-users",
+          "title": "What do you use Midjourney for?",
+          "url": "https://www.reddit.com/r/midjourney/comments/112a0cs/",
+          "date": "2023-02-14",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "壁纸、水彩参考和桌游辅助等个人用途。",
+          "access": "本次审阅本地 audience-research.json，未重读原页"
+        },
+        {
+          "id": "mj-pro",
+          "title": "Anyone using Midjourney professionally?",
+          "url": "https://www.reddit.com/r/midjourney/comments/16d5azt/",
+          "date": "2023-09",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "影视、插画、书封和零售概念等历史任务自述。",
+          "access": "本次审阅本地 audience-research.json，未重读原页"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.Ai",
+      "summary": [
+        "游戏素材、设计与商业创意案例",
+        "找资产、准备视觉素材、继续编辑",
+        "具体素材与项目存在；采用率未知"
+      ],
+      "supplyTopics": [
+        {
+          "text": "本次读取一件公开像素游戏素材：围绕贪吃蛇角色、身体、食物和统一风格写提示，提供模型信息和参考/改作入口。",
+          "sourceIds": []
+        },
+        {
+          "text": "官方案例另展示桌游角色、装备、场景与素材风格一致性。公开帖子证明该类供给存在，不证明游戏是最大类目。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "游戏素材：一个普通公开对象与一个官方桌游项目案例。",
+          "sourceIds": []
+        },
+        {
+          "text": "既有画像另有博客配图、社媒促销，以及个人幻想角色；三者对应不同验收标准。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "游戏创作者关心素材能否成组、是否适配具体项目；兴趣用户可能只要角色或设定图。",
+          "sourceIds": []
+        },
+        {
+          "text": "博客与营销用户消费可用配图和操作方法，需要的文字、版式、品牌信息往往还在外部工具处理。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "带提示、模型及尺寸的公开图片",
+          "sourceIds": []
+        },
+        {
+          "text": "参考或 Remix 入口",
+          "sourceIds": []
+        },
+        {
+          "text": "官方项目案例",
+          "sourceIds": []
+        },
+        {
+          "text": "素材一致性方法与后期步骤",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "普通作品分享者",
+          "sourceIds": []
+        },
+        {
+          "text": "独立游戏工作室",
+          "sourceIds": []
+        },
+        {
+          "text": "教程及培训型作者；不能将营销作者视为中立样本",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "当前可读公开作品；像素贪吃蛇页面直接暴露具体用途提示和参考/改作入口；没有可核的观看、收藏或成功改作数。",
+          "sourceIds": [
+            "leo-item"
+          ]
+        },
+        {
+          "text": "官方历史项目案例；BlueFor 案例说明先定义游戏需求，再生成、挑选和整合素材；其中也有未采用的设计。",
+          "sourceIds": [
+            "leo-case"
+          ]
+        },
+        {
+          "text": "既有用户自述；既有档案记录博客/促销补图与幻想角色控制问题；不是当前行业比例。",
+          "sourceIds": [
+            "leo-blog"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "游戏、商业配图、个人幻想各类供给及消费份额未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "公开提示表达作者意图，不能保证生成物达到透明图、分层或游戏集成要求。",
+          "sourceIds": []
+        },
+        {
+          "text": "不会把检索“game assets”返回的结果数当平台整体规模。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可能值得比较“好看的单图”与“同题材可持续查看的一组素材/设定及使用说明”。行业工具使用者是否愿意留在社区仍需验证，不能只依靠项目需求频次推断。",
+      "counterexample": "成组游戏素材往往要求一致性与细节可控，供给少可能源于制作和验收成本高。已有素材也可能经过大量淘汰，不能视作可低成本复制。",
+      "sources": [
+        {
+          "id": "leo-item",
+          "title": "公开作品：像素贪吃蛇游戏素材",
+          "url": "https://app.leonardo.ai/generation/image/complete-pixel-art-snake-set-unity-2d-game-head-a08a6092-df46-40c3-a7e7-77dfcf61bcd4",
+          "date": "搜索索引标 2026-04-06；本次正文未显示日期",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "具体供给主题、任务提示与参考/改作入口；不作结果验收。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "leo-case",
+          "title": "How to generate a full game asset suite with Leonardo.Ai",
+          "url": "https://www.leonardo.ai/news/how-to-generate-a-full-game-asset-suite-with-leonardo-ai",
+          "date": "2024-01-05",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "BlueFor 游戏项目需求、风格一致性、选片与未采用设计；历史精选案例。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "leo-blog",
+          "title": "How I Use Leonardo AI for My Business",
+          "url": "https://theanewcomb.co.uk/how-i-use-leonardo-ai/",
+          "date": "2026-06-30；页面另显示 2026-07-28",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "博客、社媒、促销与 Canva 后期的作者自述；作者有培训推广背景。",
+          "access": "本次审阅本地 audience-research.json，未重读原页"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦AI",
+      "summary": [
+        "国风、科幻及实验视觉精选",
+        "看短片、找风格、尝试创作",
+        "编辑精选不能代表全站"
+      ],
+      "supplyTopics": [
+        {
+          "text": "人物造型、科幻空间、拟人动物、自然奇观和幻想战争场景；官网可读示例标题",
+          "sourceIds": [
+            "CN-JM-1"
+          ]
+        },
+        {
+          "text": "国风文化、生态环境、废土人物与实验影像；未来影像计划精选作品及作者说明",
+          "sourceIds": [
+            "CN-JM-2"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "影视与数字艺术；科幻短剧、艺术短片、展映作品；官方历史活动与获奖作品记录",
+          "sourceIds": [
+            "CN-JM-2"
+          ]
+        },
+        {
+          "text": "游戏和角色视觉；角色造型与场景灵感；官网示例及既有角色三视图用户记录；非行业采购证明",
+          "sourceIds": [
+            "CN-JM-1",
+            "CN-JM-3"
+          ]
+        },
+        {
+          "text": "个人内容表达；个人照片出镜、参考动作、风格创作；既有普通用户任务评论",
+          "sourceIds": [
+            "CN-JM-3"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "观看影像和获取创作灵感；官网用作品展示连接创作同款；能够证明消费到创作的入口存在，没有点击和回访数据。；官方产品路径",
+          "sourceIds": [
+            "CN-JM-1"
+          ]
+        },
+        {
+          "text": "个人出镜与指定动作/角色参考；中国区App Store评论涉及清晰度、动作变形、参考和角色三视图；不能据此判断各题材占比。；既有普通用户评论",
+          "sourceIds": [
+            "CN-JM-3"
+          ]
+        },
+        {
+          "text": "国风文化和实验影像；可读《诗经》实验动画、古画再创作等作品说明，属于入选供给；未取得普通观众的持续观看记录。；官方精选作者案例",
+          "sourceIds": [
+            "CN-JM-2"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "单张作品与短视频",
+          "sourceIds": []
+        },
+        {
+          "text": "创作同款入口",
+          "sourceIds": []
+        },
+        {
+          "text": "画布编辑",
+          "sourceIds": []
+        },
+        {
+          "text": "作者创作说明",
+          "sourceIds": []
+        },
+        {
+          "text": "活动、获奖作品和展映",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "个人图像/视频创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "参与行业活动的数字艺术作者",
+          "sourceIds": []
+        },
+        {
+          "text": "多工具制作短片的作者",
+          "sourceIds": []
+        },
+        {
+          "text": "平台策划和编辑；作者是否专职未知",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方精选；未来影像计划保留历史展映、短剧及获奖作品；不能按获奖题材反推日常用户需求。",
+          "sourceIds": [
+            "CN-JM-2"
+          ]
+        },
+        {
+          "text": "使用反馈；既有普通评论同时有参考失败与认可角色三视图的记录，表明同一主题内不同步骤的价值可能不同。",
+          "sourceIds": [
+            "CN-JM-3"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "探索页全量题材分布和排序规则",
+          "sourceIds": []
+        },
+        {
+          "text": "普通观看者的兴趣主题与回访",
+          "sourceIds": []
+        },
+        {
+          "text": "同款点击、完成与再次使用人数",
+          "sourceIds": []
+        },
+        {
+          "text": "职业作者与兴趣作者的比例",
+          "sourceIds": []
+        },
+        {
+          "text": "活动带来多少新增持续活跃用户",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "国风或科幻的作品供给已存在，机会需要落到具体消费：例如连续更新的古画新演绎及作者过程交流。先验证愿不愿持续看和参与，不能因为展映作品漂亮就认定国风一定留存好。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-JM-1",
+          "title": "即梦AI官网：示例、画布与创意社区",
+          "url": "https://jimeng.jianying.com/",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前公开示例标题、图片/视频、画布和同款入口；不支持行业占比和使用效果。"
+        },
+        {
+          "id": "CN-JM-2",
+          "title": "即梦未来影像计划：行业活动与获奖作品",
+          "url": "https://jimeng.jianying.com/visionary",
+          "date": "页面包含2024-06-17及2025-01-24历史活动",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "国风、科幻、生态及实验影像等精选供给，作者披露部分多工具过程；不是当前开放赛事或用户普查。"
+        },
+        {
+          "id": "CN-JM-3",
+          "title": "即梦AI中国区App Store评论",
+          "url": "https://apps.apple.com/cn/app/%E5%8D%B3%E6%A2%A6ai-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8Bai%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/id6503676563?platform=iphone&see-all=reviews",
+          "date": "各评论分别记录，部分不显示年份",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室用户画像中的已读中国区任务评论；本次未重开，不计行业份额。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "kling",
+      "name": "可灵 Kling AI",
+      "summary": [
+        "影像、叙事短片与创作项目",
+        "观看作品；学习和制作视频",
+        "项目和活动线索；消费结构未定"
+      ],
+      "supplyTopics": [
+        {
+          "text": "科幻、人物叙事、东方美学与音乐影像；官方邀请作者的项目陈述",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        },
+        {
+          "text": "人像、角色、镜头与图像/视频修改；公开探索及教学入口",
+          "sourceIds": [
+            "CN-KL-1"
+          ]
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "影视与视觉特效；短片、插入镜头、背景资产；精选作者自述，未核合同或全成本",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        },
+        {
+          "text": "广告及品牌视频；叙事广告、创意镜头；官方邀请作者案例",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        },
+        {
+          "text": "音乐视频；歌手/独立作者MV；官方精选作者经历",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        },
+        {
+          "text": "个人表达；个人参考图、卡通或多人场景；既有国际普通用户评论",
+          "sourceIds": [
+            "CN-KL-3"
+          ]
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "让人物、动作和镜头符合预期；评论涉及个人照片、多角色西部场景、卡通口型和短片拼接；这些是不同任务片段，不能合并为一个职业画像。；既有普通用户任务评论",
+          "sourceIds": [
+            "CN-KL-3"
+          ]
+        },
+        {
+          "text": "欣赏或学习专业制作案例；周年文章选取广告、MV与影视用途；能说明平台提供何种参照，不能证明普通读者以这些行业为主。；官方编辑选择",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "可观看图片/视频作品",
+          "sourceIds": []
+        },
+        {
+          "text": "题目型探索聚合页",
+          "sourceIds": []
+        },
+        {
+          "text": "制作教程",
+          "sourceIds": []
+        },
+        {
+          "text": "作者项目访谈",
+          "sourceIds": []
+        },
+        {
+          "text": "专业作品案例",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "独立影像作者",
+          "sourceIds": []
+        },
+        {
+          "text": "影视/VFX和广告制作团队",
+          "sourceIds": []
+        },
+        {
+          "text": "音乐视频创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "官方教程及案例编辑；受邀者与普通用户分开",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "案例采用陈述；受邀作者报告MV、广告和影视插入镜头用途，文章发布于2026-06-12；属于选择后的自述。",
+          "sourceIds": [
+            "CN-KL-2"
+          ]
+        },
+        {
+          "text": "公开聚合页限制；AI Kling页推荐作品标题与关键词高度关联，属于题目型聚合页，不是按行业抽样的社区首页。无标签数字不作为消费人数。",
+          "sourceIds": [
+            "CN-KL-1"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "国内与国际站的用户主题差异",
+          "sourceIds": []
+        },
+        {
+          "text": "各行业观看量、制作人数与二次回访",
+          "sourceIds": []
+        },
+        {
+          "text": "公开作品以外的私有生成规模",
+          "sourceIds": []
+        },
+        {
+          "text": "受邀作者与普通作者的供给差异",
+          "sourceIds": []
+        },
+        {
+          "text": "制作案例带来多少社区消费与讨论",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "完整专业短片需要较高供给能力；社区可以先比较镜头拆解、题材连载和失败修改说明是否吸引持续观看。不能用专业成功案例的高制作门槛，直接推导普通兴趣用户也需要制作教学。",
+      "counterexample": "",
+      "sources": [
+        {
+          "id": "CN-KL-1",
+          "title": "AI Kling公开探索与工具资源页",
+          "url": "https://kling.ai/explore/ai_kling",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "作品推荐外壳、图像/视频修改说明；这是关键词聚合入口，不是行业分布数据。"
+        },
+        {
+          "id": "CN-KL-2",
+          "title": "Kling AI Turns Two: In Creators’ Own Words",
+          "url": "https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words",
+          "date": "2026-06-12",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "广告、影视、MV及实验作品的受邀作者陈述，部分作者披露合作计划关系；不视为普通用户随机样本。"
+        },
+        {
+          "id": "CN-KL-3",
+          "title": "KlingAI公开用户评价第2页",
+          "url": "https://www.trustpilot.com/review/klingai.com?page=2",
+          "date": "2026-07至08，体验日期另记",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "沿用研究室用户画像中的个人照片、多角色、卡通口型和短片拼接记录；本次未重开，不能映射中国份额。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "summary": [
+        "电影、营销与多个行业用途",
+        "看成片和案例；制作专业内容",
+        "行业目录是目标市场，非消费份额"
+      ],
+      "supplyTopics": [
+        {
+          "text": "官方用途目录覆盖品牌/商品、餐饮、房产、汽车、时尚、美妆、宠物、婚礼、饮料、珠宝、酒店旅行、音乐视频、微短剧及教育培训。",
+          "sourceIds": []
+        },
+        {
+          "text": "这是面向任务的供给说明，不是社区投稿行业榜。具体可核项目是软件企业 Miro 的活动开场视频和多城市版本。",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "软件企业品牌内容：Miro 活动视频案例有制作流程。",
+          "sourceIds": []
+        },
+        {
+          "text": "其余本地服务、电商、文娱与教育等，本次只确认官方用途分类，没有对应行业的用户或内容份额。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "制作端需要特定镜头、品牌画面、地点准确与多版本交付；看官方案例属于方法消费。",
+          "sourceIds": []
+        },
+        {
+          "text": "成片可能发布到外部平台，观看者不一定是Runway社区成员。本轮未取得观看去向和用户重叠数据，不能把广告受众算作Runway社区用户。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "行业用途页",
+          "sourceIds": []
+        },
+        {
+          "text": "客户项目拆解",
+          "sourceIds": []
+        },
+        {
+          "text": "生成片段与最终视频",
+          "sourceIds": []
+        },
+        {
+          "text": "教程、团队工作流和作者展示，后两项沿用既有内容档案",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "品牌内部制作团队",
+          "sourceIds": []
+        },
+        {
+          "text": "职业/独立视频作者",
+          "sourceIds": []
+        },
+        {
+          "text": "官方教学与案例编辑",
+          "sourceIds": []
+        },
+        {
+          "text": "合作创作者；展示名单不等于稳定活跃作者数",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方用途目录；用途清单显示其按行业与任务拓展获客，未披露对应社区供需规模。",
+          "sourceIds": [
+            "rw-uses"
+          ]
+        },
+        {
+          "text": "官方客户访谈；Miro 说明反复做静态图和镜头，加入 3D/动效，并接受 Runway 团队辅导；用于活动视频和地点版本。",
+          "sourceIds": [
+            "rw-miro"
+          ]
+        },
+        {
+          "text": "既有历史用户自述；已有普通用户完成补镜头、挑片或失败的经历；无法用精选企业案例代替这些普通用户。",
+          "sourceIds": [
+            "rw-user"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "行业用户数、题材曝光、教程阅读、作品观看与持续回访未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "没有得到同一窗口可公开的行业内容总量；项目私有化导致公开页面不一定展示真实供给。",
+          "sourceIds": []
+        },
+        {
+          "text": "用途页没有证明各行业都已达稳定成功率或可低成本交付。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可把行业页作为关键词和任务候选库，例如餐饮展示、旅行场景、宠物内容，再用国内渠道的具体搜索和互动辨别需求。先判定读者想看成片、学方法还是找制作服务，三种需求不能用同一社区方案承接。",
+      "counterexample": "高频商业视频需求可能被封闭的专业制作流程满足，客户和作者未必愿意公开素材。少量公开作品不等于行业供给稀缺。",
+      "sources": [
+        {
+          "id": "rw-uses",
+          "title": "AI Video Use Cases",
+          "url": "https://runway.com/use-cases",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "官方行业与任务分类；不采营销效率承诺、不视为用户份额。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "rw-miro",
+          "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway",
+          "url": "https://runway.com/news/customers/miro",
+          "date": null,
+          "accessedAt": "2026-09-11",
+          "whatSupports": "品牌团队活动视频、多版本与后期/辅导投入；单个精选客户。",
+          "access": "本次读取正文"
+        },
+        {
+          "id": "rw-user",
+          "title": "Trying to make videos with this is incredibly frustrating and stressful",
+          "url": "https://www.reddit.com/r/runwayml/comments/1k3vevr/",
+          "date": "2025-04 左右；历史",
+          "accessedAt": "2026-09-10",
+          "whatSupports": "既有持续图生视频、按镜头选模式的个人经历；不核实职业收入。",
+          "access": "本次审阅本地 audience-research.json，未重读原页"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "waytoagi",
+      "name": "WaytoAGI",
+      "summary": [
+        "AI知识、共学、视频活动与产品实践",
+        "入门学习、看作品、找同伴",
+        "官方组织与成员经历分开"
+      ],
+      "supplyTopics": [
+        {
+          "text": "AI基础知识与工具实践",
+          "sourceIds": []
+        },
+        {
+          "text": "共学课程及活动材料",
+          "sourceIds": []
+        },
+        {
+          "text": "AI视频作品与创作练习",
+          "sourceIds": []
+        },
+        {
+          "text": "项目共创、城市交流及独立产品实践",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "内容创作、教育学习与产品开发：官方知识库、共学和视频活动支持这些用途存在。",
+          "sourceIds": []
+        },
+        {
+          "text": "品牌合作：官方展示消费品牌和媒体合作入口，但合作方名称不能说明知识库用户来自相同行业。",
+          "sourceIds": []
+        },
+        {
+          "text": "独立产品与出海：既有大理活动归档涉及选题、原型、部署、支付及增长；本次归档页访问超时，沿用此前记录。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "初学者需要知道先学什么、怎样开始一次尝试；这是官方服务目标，不能量化需求人数。",
+          "sourceIds": []
+        },
+        {
+          "text": "视频创作者可以观看作品、练习并投稿；有官方持续赛事入口，未取得观看、完播、回访或参赛者职业分布。",
+          "sourceIds": []
+        },
+        {
+          "text": "既有公开成员自述涉及结识同伴、参加共学和交流实践；不等于每名成员都有创业或就业转型需求。",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "可检索知识库",
+          "sourceIds": []
+        },
+        {
+          "text": "学习路径与教程",
+          "sourceIds": []
+        },
+        {
+          "text": "共学直播及材料",
+          "sourceIds": []
+        },
+        {
+          "text": "视频作品与赛事",
+          "sourceIds": []
+        },
+        {
+          "text": "活动记录和实践手册",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "核心成员与编辑",
+          "sourceIds": []
+        },
+        {
+          "text": "投稿的实践者和创作者",
+          "sourceIds": []
+        },
+        {
+          "text": "志愿者与城市组织者",
+          "sourceIds": []
+        },
+        {
+          "text": "提供课题或资源的合作方",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方供给与组织；当前关于页明确区分学习者、创作者、城市组织者和合作方，介绍知识库、晚间共学与视频挑战赛。；角色入口及官方规模自述不能推算内容消费比例。",
+          "sourceIds": [
+            "way-about"
+          ]
+        },
+        {
+          "text": "既有用户经历；现有画像材料有成员回顾参与活动、认识同伴和开始AI实践；有实际经历，缺同一人的持续内容消费记录。；本次未重新访问该自述；沿用2026-09-10研究记录，不能归因就业或业务成果。",
+          "sourceIds": [
+            "way-user"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "知识主题、视频题材、行业教程各有多少有效供给与稳定作者？",
+          "sourceIds": []
+        },
+        {
+          "text": "哪些知识页被持续阅读，哪些活动参与者在结束后仍回来？",
+          "sourceIds": []
+        },
+        {
+          "text": "同一读者会在共学、知识库、视频活动间流动，公开数值不能直接相加。",
+          "sourceIds": []
+        },
+        {
+          "text": "当前视频挑战站一次取回标题，随后访问超时；本次没有获得题材目录和具体作品样本。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "围绕一种视觉兴趣提供有选择理由的作品、轻量实践说明和每周交流，可能承接只想先看懂、尝试一次的人。 其供给同时容纳阅读、实践与同伴连接；持续活跃不必依赖每次完成生产项目。 验证方式：为同一主题分别组织作品赏析、一步尝试、问题讨论，比较外部目标用户的连续两周有效消费或参与。",
+      "counterexample": "若出现以下情况，假设不成立：用户只在活动奖励期出现，或其回访主要依赖外部主持人关系，移到独立社区后没有持续使用。",
+      "sources": [
+        {
+          "id": "way-about",
+          "title": "关于 WaytoAGI · 通往 AGI 之路",
+          "url": "https://about.waytoagi.com/",
+          "date": "动态页；部分统计标注截至2026-07",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "公开知识库、共学、视频挑战、供给角色与合作入口；仅官方自述。"
+        },
+        {
+          "id": "way-user",
+          "title": "从传统制造到AI产品经理：29岁，我用半年完成从零转型",
+          "url": "https://www.woshipm.com/zhichang/6372801.html",
+          "date": "本次未重核发布日期",
+          "accessedAt": "2026-09-10（沿用既有记录）",
+          "whatSupports": "成员回顾参与活动并接触社区的经历；不用于证明职业转型因果或全站需求。"
+        },
+        {
+          "id": "way-dali",
+          "title": "大理出海 Hacker House 第一期档案",
+          "url": "https://hackerhouse-dali.waytoagi.com/",
+          "date": "既有记录只确认5月24—30日，年份未独立确认",
+          "accessedAt": "2026-09-11访问超时；正文沿用site/lib/content-forms.json",
+          "whatSupports": "此前公开活动材料中的产品实践主题，不作为本次成功重核。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "datawhale",
+      "name": "Datawhale",
+      "summary": [
+        "系统课程、实践项目与排错材料",
+        "按路径学习、完成练习、解决问题",
+        "具体学习任务可见；职业未知"
+      ],
+      "supplyTopics": [
+        {
+          "text": "机器学习与深度学习基础",
+          "sourceIds": []
+        },
+        {
+          "text": "大模型、Agent及RAG学习",
+          "sourceIds": []
+        },
+        {
+          "text": "模型部署、微调和推理",
+          "sourceIds": []
+        },
+        {
+          "text": "AI编程与产品原型",
+          "sourceIds": []
+        },
+        {
+          "text": "具身智能、机器人及GPU工具链",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "主要可确认的是技术教育、自学和工程练习；课程主题不是学员所在行业。",
+          "sourceIds": []
+        },
+        {
+          "text": "视频笔记、机器人与软件开发在当前官方仓库目录中有材料；是否用于实际教育机构、制造企业或媒体工作，资料不足。",
+          "sourceIds": []
+        },
+        {
+          "text": "RAG问题样本使用菜谱作为检索数据；菜谱只是练习材料，不能据此归类为餐饮行业客户。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "从原理进入能运行的例子",
+          "sourceIds": []
+        },
+        {
+          "text": "按章节查资料、做练习和定位错误",
+          "sourceIds": []
+        },
+        {
+          "text": "中文检索、环境兼容、API及模型版本变化",
+          "sourceIds": []
+        },
+        {
+          "text": "学习过程中补充勘误，帮助后续读者",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "课程仓库与章节讲义",
+          "sourceIds": []
+        },
+        {
+          "text": "Notebook和示例代码",
+          "sourceIds": []
+        },
+        {
+          "text": "练习及作业",
+          "sourceIds": []
+        },
+        {
+          "text": "学习笔记",
+          "sourceIds": []
+        },
+        {
+          "text": "Issue、勘误与修改提议",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "课程作者与维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "助教与共学组织者",
+          "sourceIds": []
+        },
+        {
+          "text": "提交问题或勘误的学习者",
+          "sourceIds": []
+        },
+        {
+          "text": "联合建设工具链课程的生态伙伴",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方供给目录；当前组织页集中展示Agent、大模型、部署、编程等课程，并列出视频笔记、具身智能和GPU等项目。；首页热门仓库受展示选择影响，不是全站课程普查；stars、forks不是阅读或结课人数。",
+          "sourceIds": [
+            "dw-org"
+          ]
+        },
+        {
+          "text": "直接使用者问题；all-in-rag #102报告中文BM25检索与分词处理前后的结果差异，给出具体查询和返回内容。；证明有人实际练习并排查，不证明其职业、餐饮行业归属、整门课程完成或长期回访；问题仍显示Open。",
+          "sourceIds": [
+            "dw-rag-102"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "每门课独立阅读、实际练习、结课及重复学习人数未公开。",
+          "sourceIds": []
+        },
+        {
+          "text": "同一教程在不同渠道被转载，下载与star不能按人直接去重。",
+          "sourceIds": []
+        },
+        {
+          "text": "公开提问偏向遇到故障的人，沉默读者和顺利完成者没有同等可见性。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "面向较轻量使用者的中文任务解释、结果对照和常见失败说明，可能比再整理一套大而全课程更容易形成回访。 公开需求显示读者会在实际操作与中文数据处理上受阻；新内容价值可来自降低理解和排错成本。 验证方式：选取一个已有公开课题，将原始材料和经过核对的简明解释分组提供，观察再次查阅、提问及连续两周活跃。",
+      "counterexample": "若出现以下情况，假设不成立：问题靠一次答案即可解决且后续无关联需求，或维护版本的工时超出可用产能；此时不宜据此建立长期课程社区。",
+      "sources": [
+        {
+          "id": "dw-org",
+          "title": "Datawhale GitHub组织与项目目录",
+          "url": "https://github.com/datawhalechina",
+          "date": "动态目录；可见2026-09-11更新",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "课程主题、项目形态和开源学习定位，不支持实际学习人数。"
+        },
+        {
+          "id": "dw-rag-102",
+          "title": "BM25检索器需要分词处理中文 #102",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+          "date": "2026-04-12",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "学习者报告中文检索问题并给出前后对照；单个用户问题。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "summary": [
+        "模型、数据、演示应用和技术讨论",
+        "发现与试用应用；部署和研究",
+        "技术任务跨行业；示例不代表采用"
+      ],
+      "supplyTopics": [
+        {
+          "text": "模型与数据资源",
+          "sourceIds": []
+        },
+        {
+          "text": "图像、视频、语音和文本生成",
+          "sourceIds": []
+        },
+        {
+          "text": "文档检索、问答、翻译与分析",
+          "sourceIds": []
+        },
+        {
+          "text": "3D、角色动画及游戏演示",
+          "sourceIds": []
+        },
+        {
+          "text": "训练、评估和模型维护材料",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "Spaces目录有医疗影像、金融分析、游戏AI等行业或应用入口，这是供给分类。",
+          "sourceIds": []
+        },
+        {
+          "text": "模型任务目录主要按输入输出能力组织，不能将文档问答等同某一个行业。",
+          "sourceIds": []
+        },
+        {
+          "text": "公开使用者明确提到虚拟试衣；它既可能用于服装业务，也可能只是个人试穿，使用者未披露职业，行业留空。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "直接试用图片、视频等演示，欣赏或探索效果",
+          "sourceIds": []
+        },
+        {
+          "text": "找到适合自己的模型、数据或代码",
+          "sourceIds": []
+        },
+        {
+          "text": "判断运行资源、输入条件、版本与许可",
+          "sourceIds": []
+        },
+        {
+          "text": "处理演示失效、复制失败和依赖不兼容",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "模型卡与仓库",
+          "sourceIds": []
+        },
+        {
+          "text": "数据集与说明",
+          "sourceIds": []
+        },
+        {
+          "text": "交互式Space及代码",
+          "sourceIds": []
+        },
+        {
+          "text": "任务页和专题集合",
+          "sourceIds": []
+        },
+        {
+          "text": "讨论、PR、技术教程",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "模型公司与研究团队",
+          "sourceIds": []
+        },
+        {
+          "text": "个人模型或数据贡献者",
+          "sourceIds": []
+        },
+        {
+          "text": "演示作者与开源维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "精选集合编辑者",
+          "sourceIds": []
+        },
+        {
+          "text": "补充问题和修复的使用者",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方分类与供给展示；Spaces覆盖创作、分析、科研和行业应用，任务页列出模型按能力分类；热门展示中可见视频、图像编辑、语音和3D演示。；同一个资源可能服务多个行业；精选与热门有排序偏差，模型计数不能当行业供给份额或消费人数。",
+          "sourceIds": [
+            "hf-spaces",
+            "hf-tasks"
+          ]
+        },
+        {
+          "text": "直接使用者需求与失败；一名用户自述为IDM-VTON试衣演示订阅Pro，但运行受到身份或额度识别问题阻碍；讨论中有人提供兼容新版依赖的演示。；原帖为2025年9月的历史经历，本次重读不代表当前故障仍存在；未验证原用户最终成功，也不能把试衣需求自动归为电商。",
+          "sourceIds": [
+            "hf-vton"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "Spaces真正运行者、模型下载者和论坛成员有多少重叠，资料不足。",
+          "sourceIds": []
+        },
+        {
+          "text": "演示点击、点赞和模型下载各自具有不同重复计数，不能合成独立消费人数。",
+          "sourceIds": []
+        },
+        {
+          "text": "行业消费者是否需要长期关注社区，还是只在外部应用使用能力，无法由资源目录确认。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "对普通人而言，资源已多而选择、中文说明和可用性不稳定；经过核对的少量主题资源及更新说明可能形成收藏回访。 有资源供给不等于读者能判断适用条件或成功试用，公开失败经历显示两者之间的差距。 验证方式：围绕个人照片、壁纸或一种轻量文档用途整理专题，分别观察纯浏览、再次访问、进一步提问和试用，而不是仅统计调用次数。",
+      "counterexample": "若出现以下情况，假设不成立：用户更愿意直接留在成熟演示站，整理页不产生后续价值；或者复制及维护成本高于内容可持续供给能力。",
+      "sources": [
+        {
+          "id": "hf-spaces",
+          "title": "Spaces — The AI App Directory",
+          "url": "https://huggingface.co/spaces",
+          "date": "动态目录；可见2026-09-07当周精选",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "应用供给类型、行业及任务筛选、当前精选展示，不支持用户行业占比。"
+        },
+        {
+          "id": "hf-tasks",
+          "title": "Hugging Face Tasks",
+          "url": "https://huggingface.co/tasks",
+          "date": "动态目录",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "模型资源按照多模态、自然语言、视觉、音频等技术任务组织。"
+        },
+        {
+          "id": "hf-vton",
+          "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+          "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+          "date": "2025-09-15至2025-09-23",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "试衣演示的真实使用意图及历史运行障碍；不是当前全站可靠性或付费人数。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "modelscope",
+      "name": "ModelScope 魔搭",
+      "summary": [
+        "模型、创空间、数据和部署实践",
+        "选模型、运行演示、解决部署问题",
+        "官方任务示例可见；当前模型列表未取到正文"
+      ],
+      "supplyTopics": [
+        {
+          "text": "视觉、语言、语音、多模态及科学计算模型",
+          "sourceIds": []
+        },
+        {
+          "text": "人像抠图、图像修复、文字识别等任务样例",
+          "sourceIds": []
+        },
+        {
+          "text": "模型和数据下载、训练及推理",
+          "sourceIds": []
+        },
+        {
+          "text": "创空间、Notebook与部署维护",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "教育和工业应用是官方目标；SDK公开样例覆盖人像处理、文字识别、语音及蛋白质相关模型。",
+          "sourceIds": []
+        },
+        {
+          "text": "这些是可应用的任务与研究方向，不是被验证的行业消费结构。",
+          "sourceIds": []
+        },
+        {
+          "text": "本轮读取的真实问题仅说明小模型部署、下载或加载意图，没有最终行业信息。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "取得合适模型或数据，理解最小调用方法",
+          "sourceIds": []
+        },
+        {
+          "text": "在国内环境开始实验或体验演示",
+          "sourceIds": []
+        },
+        {
+          "text": "按资源版本排查下载、依赖与加载问题",
+          "sourceIds": []
+        },
+        {
+          "text": "把应用部署后查看状态、恢复运行",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "模型与数据仓库",
+          "sourceIds": []
+        },
+        {
+          "text": "模型说明及调用样例",
+          "sourceIds": []
+        },
+        {
+          "text": "Notebook",
+          "sourceIds": []
+        },
+        {
+          "text": "创空间演示",
+          "sourceIds": []
+        },
+        {
+          "text": "训练教程与故障讨论",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "模型机构与研究团队",
+          "sourceIds": []
+        },
+        {
+          "text": "模型适配贡献者",
+          "sourceIds": []
+        },
+        {
+          "text": "创空间作者",
+          "sourceIds": []
+        },
+        {
+          "text": "SDK维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "报告问题的资源使用者",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方任务示例；官方README列出CV、NLP、语音、多模态、科学计算，并给出人像抠图和中文诗歌训练样例。；README示例中有较旧模型与环境说明；本轮只采任务类别，不采用其模型总数或示例版本作为当前规模与可用性证明。",
+          "sourceIds": [
+            "ms-readme"
+          ]
+        },
+        {
+          "text": "直接使用者问题；#1776中，一名用户称用免费资源部署小模型后长时间停留在部署中，并缺少恢复操作。；这是单次自述，不证明当前所有免费资源异常、全站故障率或用户行业；本次未运行复测。",
+          "sourceIds": [
+            "ms-issue"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "动态模型列表本次无可读正文，不能宣称已完成站内全部分类盘点。",
+          "sourceIds": []
+        },
+        {
+          "text": "模型、应用与教程的有效供给量没有按同一行业口径去重。",
+          "sourceIds": []
+        },
+        {
+          "text": "产业使用可能发生在下载后的私有环境，公开讨论无法观察完整消费和回访。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可研究国内使用条件下的资源选择与简明任务说明，让读者按用途理解和收藏；涉及可运行内容时才承诺环境核对和维护。 模型供给已存在，公开使用障碍更接近访问、适配与恢复，不足以证明缺少某一行业模型。 验证方式：选择一个输入明确、作者能维护的小任务，提供效果说明、操作前提和问题记录，观察内容回访与再次提问；不把技术下载用户作为唯一种子人群。",
+      "counterexample": "若出现以下情况，假设不成立：持续排错高度依赖研发，外部普通用户兴趣很弱，或者用户一次下载后长期在别处使用而不返回社区。",
+      "sources": [
+        {
+          "id": "ms-readme",
+          "title": "modelscope/modelscope README",
+          "url": "https://github.com/modelscope/modelscope",
+          "date": "持续维护；部分示例与统计较旧",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "公开技术领域、任务示例及资源使用形态；不使用其旧规模数字。"
+        },
+        {
+          "id": "ms-issue",
+          "title": "使用免费资源部署失败 #1776",
+          "url": "https://github.com/modelscope/modelscope/issues/1776",
+          "date": "2026-08-14",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "小模型部署受阻的用户自述；未记录页面中的个人联系方式。"
+        },
+        {
+          "id": "ms-models",
+          "title": "ModelScope 模型列表",
+          "url": "https://modelscope.cn/models",
+          "date": "动态页",
+          "accessedAt": "2026-09-11（未返回可读正文）",
+          "whatSupports": "仅记录访问限制，不用于证明当前分类或数量。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "linuxdo",
+      "name": "LINUX DO",
+      "summary": [
+        "技术、资源、求助、闲聊及兴趣作品",
+        "解决问题、看作品、回传变体、交流",
+        "普通帖子有参与；不只开发任务"
+      ],
+      "supplyTopics": [
+        {
+          "text": "技术开发、工具配置和故障求助",
+          "sourceIds": []
+        },
+        {
+          "text": "软件、开源项目、课程及资料分享",
+          "sourceIds": []
+        },
+        {
+          "text": "AI前沿信息与个人试用",
+          "sourceIds": []
+        },
+        {
+          "text": "图片提示词、二次元等兴趣内容",
+          "sourceIds": []
+        },
+        {
+          "text": "闲聊、福利、求职与社区共建",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "公开分类按交流用途和兴趣组织，没有可用的产业用户比例。",
+          "sourceIds": []
+        },
+        {
+          "text": "开发与工具接入帖支持技术任务存在，不等于全体成员都是职业开发者。",
+          "sourceIds": []
+        },
+        {
+          "text": "二次元壁纸帖属于审美与娱乐题材；没有依据把其作者或读者归到动漫行业。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "发现工具、资源与最新消息",
+          "sourceIds": []
+        },
+        {
+          "text": "解决具体操作问题并追问结果",
+          "sourceIds": []
+        },
+        {
+          "text": "看作品、尝试提示词、回传变体",
+          "sourceIds": []
+        },
+        {
+          "text": "交流共同兴趣与领取资源",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "主题帖与楼层讨论",
+          "sourceIds": []
+        },
+        {
+          "text": "带截图的求助和结果回报",
+          "sourceIds": []
+        },
+        {
+          "text": "提示词与图片回传",
+          "sourceIds": []
+        },
+        {
+          "text": "资源索引和共建文档",
+          "sourceIds": []
+        },
+        {
+          "text": "资讯、投票及福利活动",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "普通分享者和兴趣用户",
+          "sourceIds": []
+        },
+        {
+          "text": "答疑者",
+          "sourceIds": []
+        },
+        {
+          "text": "文档维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "项目作者及推广方",
+          "sourceIds": []
+        },
+        {
+          "text": "版务与社区组织者",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方公开分类；当前分类同时包含开发、资源、共建、快讯、福利与闲聊等。；累计主题数是发帖存量，不能解释当前阅读量、独立消费者或用户行业。",
+          "sourceIds": [
+            "linux-categories"
+          ]
+        },
+        {
+          "text": "直接用户参与；2026-09-09壁纸主题中，可见多位用户回传图片、替换题材，也有人询问模型入口和生成限制。；仅观察当前公开前20楼；有模仿与交流的证据，没有全帖完读、访问人数和跨周留存。点赞不计为独立消费人数。",
+          "sourceIds": [
+            "linux-wallpaper"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "AI兴趣内容在全站有效阅读中所占份额未知。",
+          "sourceIds": []
+        },
+        {
+          "text": "福利领取、兴趣阅读和技术排错可能由同一人完成，不能将账号分成互斥行业。",
+          "sourceIds": []
+        },
+        {
+          "text": "热帖受到发布时间、作者声望及站内分发影响；不能把一个热门题材判为长期供不应求。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可研究轻量视觉兴趣与工具交流如何促成回访：作品、可选提示词、用户变体及具体问答可能比纯成品图库更有参与理由。 现有样本把观看、模仿、修改和交流连在同一主题中，符合持续有效消费与参与的目标。 验证方式：围绕自有或获许可素材安排连续主题，允许只看、收藏和讨论，分别记录外部用户回访以及补充结果；运营供稿不计外部贡献。",
+      "counterexample": "若出现以下情况，假设不成立：回访主要依赖论坛原有关系和热点，复制内容形式后无人持续讨论；或需要的答疑与治理能力超出现有资源。",
+      "sources": [
+        {
+          "id": "linux-categories",
+          "title": "LINUX DO Categories",
+          "url": "https://linux.do/categories",
+          "date": "动态分类页",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "公开内容分类和不同交流用途；不使用主题数推用户规模。"
+        },
+        {
+          "id": "linux-wallpaper",
+          "title": "干净的二次元壁纸提示词与结果讨论",
+          "url": "https://linux.do/t/topic/2879086",
+          "date": "2026-09-09",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "前20楼中的图片回传、题材变体与使用问题。模型名称只按作者描述，不验证其真实后台能力。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "summary": [
+        "工作流、模板、插件、文档和问题追踪",
+        "搭建应用、测知识检索、处理故障",
+        "维护者与终端使用者应分开"
+      ],
+      "supplyTopics": [
+        {
+          "text": "知识检索与问答应用",
+          "sourceIds": []
+        },
+        {
+          "text": "文档、营销内容及多步骤工作流",
+          "sourceIds": []
+        },
+        {
+          "text": "插件、模型连接与数据处理",
+          "sourceIds": []
+        },
+        {
+          "text": "应用部署、调试和维护",
+          "sourceIds": []
+        },
+        {
+          "text": "企业行业方案与教学案例",
+          "sourceIds": []
+        }
+      ],
+      "industryUses": [
+        {
+          "text": "当前Solutions入口列出制造、消费品、专业服务、物流、公共部门、金融、医药、半导体、教育、互联网媒体等，属于官方行业供给。",
+          "sourceIds": []
+        },
+        {
+          "text": "消费品页介绍品牌营销、部门内部知识和办公流程；匿名企业案例属于厂商自述，不是行业消费抽样。",
+          "sourceIds": []
+        },
+        {
+          "text": "营销教程覆盖跨渠道文案、线索处理和知识库；这是官方操作示例，不等于这些用途的实际需求排名。",
+          "sourceIds": []
+        }
+      ],
+      "consumptionTopics": [
+        {
+          "text": "找到可导入的应用流程和使用说明",
+          "sourceIds": []
+        },
+        {
+          "text": "把自己的文档、数据及模型接入应用",
+          "sourceIds": []
+        },
+        {
+          "text": "解决检索、文件交付与流程失败",
+          "sourceIds": []
+        },
+        {
+          "text": "持续维护已有应用或分享插件；最终使用者也可能只在企业内部系统消费结果",
+          "sourceIds": []
+        }
+      ],
+      "contentForms": [
+        {
+          "text": "工作流模板与DSL",
+          "sourceIds": []
+        },
+        {
+          "text": "插件和连接器",
+          "sourceIds": []
+        },
+        {
+          "text": "官方教程及行业案例",
+          "sourceIds": []
+        },
+        {
+          "text": "知识材料和示例输入输出",
+          "sourceIds": []
+        },
+        {
+          "text": "Issue与维护说明",
+          "sourceIds": []
+        }
+      ],
+      "supplierTypes": [
+        {
+          "text": "平台内容与产品团队",
+          "sourceIds": []
+        },
+        {
+          "text": "模板和插件作者",
+          "sourceIds": []
+        },
+        {
+          "text": "技术生态伙伴",
+          "sourceIds": []
+        },
+        {
+          "text": "应用维护者",
+          "sourceIds": []
+        },
+        {
+          "text": "提供案例的企业与服务商",
+          "sourceIds": []
+        }
+      ],
+      "observedSignals": [
+        {
+          "text": "官方行业方案；消费品方案页展示部门自建Agent、营销内容流程和内部办公用途。；同页正文含培训与应用目标，指标卡却以部署结果措辞呈现；不引用其人数和应用数作已实现规模，也不据此推中国需求。",
+          "sourceIds": [
+            "dify-consumer"
+          ]
+        },
+        {
+          "text": "官方教程；营销教程分别演示多渠道内容、线索研究与分配、营销知识库三类任务。；作者是厂商内容团队；描述的效率和效果未作独立验收，不能代替普通使用者需求。",
+          "sourceIds": [
+            "dify-marketing"
+          ]
+        },
+        {
+          "text": "直接使用者问题；#42087报告同一文档查询在检索测试中有结果、工作流中为空，使用者反复改变设置仍受阻。；文档中出现餐饮品牌查询词，不能据此识别作者从业行业；仅证明知识应用需求和一次具体失败。",
+          "sourceIds": [
+            "dify-issue"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "text": "模板浏览、导入、成功使用及反复使用的完整漏斗未公开。",
+          "sourceIds": []
+        },
+        {
+          "text": "应用维护者和消费答案的终端用户不同，GitHub用户数不能替代业务使用人数。",
+          "sourceIds": []
+        },
+        {
+          "text": "企业可能不公开真实数据、流程和案例，公开行业内容少不等于实际供给少或没有需求。",
+          "sourceIds": []
+        }
+      ],
+      "opportunity": "可探索面向非专业操作者的应用说明、例子对照与使用问答；先判断是否产生持续查阅，不因企业方案多便直接建设行业模板市场。 官方行业方案与真实使用者故障呈现不同信息，社区可以帮助读者判断适用范围、准备材料和理解结果。 验证方式：选一个现有能力可维护的轻量用途，将案例解释、可选模板和问答放在一起，观察重复阅读、主动提问和连续两周活跃；企业实施另作成本评估。",
+      "counterexample": "若出现以下情况，假设不成立：目标用户仅需一次部署服务、后续不消费社区内容，或私有数据、连接权限与长期维护使公开模板无法满足需求。",
+      "sources": [
+        {
+          "id": "dify-blog",
+          "title": "Dify Blog及Solutions导航",
+          "url": "https://dify.ai/blog",
+          "date": "动态页；有不同年份内容",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "当前行业方案入口和官方教程供给。不采用页面中晚于访问日期的条目。"
+        },
+        {
+          "id": "dify-consumer",
+          "title": "Consumer Goods & FMCG — Dify Solutions",
+          "url": "https://dify.ai/solutions/consumer-goods-and-fmcg",
+          "date": "未标注；正文涉及2025财年目标",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "官方消费品行业定位与用途；目标和已实现指标措辞不一致，不用于规模估计。"
+        },
+        {
+          "id": "dify-marketing",
+          "title": "How Marketer Builds Reliable AI Workflows",
+          "url": "https://dify.ai/blog/how-marketer-builds-reliable-ai-workflows",
+          "date": "2026-05-27",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "多渠道内容、线索处理与营销知识库的官方教程。"
+        },
+        {
+          "id": "dify-issue",
+          "title": "Cloud Knowledge Retrieval在工作流中返回空结果 #42087",
+          "url": "https://github.com/langgenius/dify/issues/42087",
+          "date": "2026-09-09",
+          "accessedAt": "2026-09-11",
+          "whatSupports": "具体知识检索使用意图、对照排查与障碍，不用于推用户行业和故障率。"
+        }
+      ],
+      "supplyShare": null,
+      "consumptionShare": null,
+      "demandSupplyRatio": null
+    }
+  ]
+}

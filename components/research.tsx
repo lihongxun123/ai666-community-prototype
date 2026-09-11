@@ -12,6 +12,7 @@ import { MakeNowStudy } from '@/components/makenow-study';
 import { StrategyComparison } from '@/components/strategy-comparison';
 import { ChinaAIUsers } from '@/components/china-ai-users';
 import { AudienceResearch } from '@/components/audience-research';
+import { ContentDemand } from '@/components/content-demand';
 import { type Section } from '@/lib/research-types';
 import { evidence } from '@/lib/synthesis';
 import { BusinessOverview, BusinessProfile } from '@/components/business-research';
@@ -88,6 +89,7 @@ export default function Research(){
 {view==='progress'&&<ResearchProgress navigate={navigate}/>}
 {view==='china-users'&&<ChinaAIUsers navigate={navigate}/>}
 {view==='audience'&&<AudienceResearch navigate={navigate}/>}
+{view==='content-demand'&&<ContentDemand navigate={navigate}/>}
  {view==='makenow'&&<MakeNowStudy navigate={navigate}/>}
  {view==='discussion'&&<><ResearchFramework navigate={navigate}/></>}
  {view==='validation'&&<ValidationOverview/>}
@@ -105,7 +107,7 @@ export default function Research(){
  </>}
  {p&&<article className="platform-dossier" key={p.id}>
  <div className="page-heading profile-heading"><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
- <div className="study-actions"><button className="text-button" onClick={()=>showAudience(p.id)}>{p.name}用户画像与产品价值 →</button></div>
+ <div className="study-actions"><button className="text-button" onClick={()=>showAudience(p.id)}>{p.name}用户画像与产品价值 →</button><button className="text-button" onClick={()=>navigate('content-demand',`cd-platform-${p.id}`)}>行业、主题与消费线索 →</button></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
  <PlatformReview platformId={p.id}/><div className="access-note"><strong>访问与操作核验</strong><p>{p.access}</p></div>
  <nav className="article-toc" aria-label="快速跳转">{[...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs',"采用条件与代价"],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
