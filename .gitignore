@@ -50,3 +50,6 @@ next-env.d.ts
 
 !/public/research-deliveries/2026-09-11-conditions/
 !/public/research-kit/ai-community-report-2026-09-11-conditions.zip
+
+!/public/research-deliveries/2026-09-11-readiness/
+!/public/research-kit/ai-community-report-2026-09-11-readiness.zip

@@ -1,4 +1,5 @@
 'use client';
+import {PlatformReviewDimension} from '@/components/platform-review';
 import raw from '@/lib/audience-research.json';
 import './audience-research.css';
 
@@ -20,7 +21,7 @@ function BulletList({items}:{items:string[]}){return <ul>{items.map((text,i)=><l
 function ProfileDocument({profile:p,navigate}:{profile:Profile;navigate:(id:string)=>void}){return <details className="aud-platform"><summary><span>{p.name}</span><small>{p.personas.length}类任务</small></summary><div className="aud-profile-body" id={`audience-profile-${p.id}`} tabIndex={-1}>
  <div className="aud-profile-heading"><h2>{p.name}</h2><div className="aud-actions"><a href={p.homepage} target="_blank" rel="noreferrer">官网 ↗</a><a href={p.download} download>下载本平台完整档案</a><button onClick={()=>navigate(p.id)}>查看功能、内容形式与既有截图 →</button></div></div><p className="aud-thesis">{p.thesis}</p>
 
- <h3>用户、供给者与付款方</h3><Fields items={[["消费与使用",p.roleMix.consumer],["供给与维护",p.roleMix.supplier],["付款与采购",p.roleMix.payer]]}/>
+ <PlatformReviewDimension platformId={p.id} dimension="audience"/><PlatformReviewDimension platformId={p.id} dimension="usage"/><h3>用户、供给者与付款方</h3><Fields items={[["消费与使用",p.roleMix.consumer],["供给与维护",p.roleMix.supplier],["付款与采购",p.roleMix.payer]]}/>
  <h3>任务画像与内容需要</h3>{p.personas.map(person=><article className="aud-persona" key={person.id}><h4>{person.name}</h4><p className="aud-status">{person.status}可区分用户观察点：{person.independentUserPoints}群体占比：资料不足</p><p className="aud-task">{person.task}</p><Fields items={[["适用范围",person.scope],["任务触发",person.trigger],["期望结果",person.desiredOutcome],["主要困难",person.pains.join('；')],["替代方法",person.alternatives],["需要的内容",person.contentNeeds],["回访理由（推断）",person.returnHypothesis],["实际持续证据",person.returnEvidence],["付款状态",person.payStatus]]}/><EvidenceRefs profile={p} ids={person.evidenceIds}/></article>)}
  <h3>平台提供什么，问题解决到哪里</h3>{p.valueMap.map((v,i)=><article className="aud-value" key={i}><h4>{v.problem}</h4><p className="aud-status">对应：{v.personaIds.map(id=>p.personas.find(x=>x.id===id)?.name||id).join('、')}</p><Fields items={[["平台提供",v.provided],["内容形态",v.contentForm],["起作用的方式",v.mechanism],["已观察结果",v.observedResult],["解决程度",v.resultLevel],["仍未解决或未证明",v.unresolved]]}/><EvidenceRefs profile={p} ids={v.evidenceIds}/></article>)}
 

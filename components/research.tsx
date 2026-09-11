@@ -6,6 +6,7 @@ import { profiles } from '@/lib/profiles';
 import { LinuxDoLoginUpdate } from '@/components/linuxdo-login';
 import { ResearchFramework, ToolSupportProfile } from '@/components/research-framework';
 import { ResearchProgress } from '@/components/research-progress';
+import {PlatformReview} from '@/components/platform-review';
 import {RepresentativeEvidence} from '@/components/representative-evidence';
 import { MakeNowStudy } from '@/components/makenow-study';
 import { StrategyComparison } from '@/components/strategy-comparison';
@@ -71,7 +72,7 @@ export default function Research(){
  const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):profiles;
  return <div className="research-shell">
  <a href="#main" className="skip-link" onClick={e=>{e.preventDefault();document.getElementById('main')?.focus();window.scrollTo({top:0});}}>跳到正文</a>
- <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区观察 · 运营与内容 · 2026.09.10</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>来源与方法</span></button></header>
+ <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区研究 · 2026.09.11</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>来源与方法</span></button></header>
  {mobile&&<button className="sidebar-scrim" onClick={()=>setMobile(false)} aria-label="关闭目录"/>}
  <ResearchSidebar view={view} navigate={navigate} mobile={mobile} profiles={profiles}/>
  <main id="main" className="report-main" tabIndex={-1}>
@@ -92,7 +93,7 @@ export default function Research(){
  {view==='validation'&&<ValidationOverview/>}
  {view==='operations'&&<OperationsDocument data={operatingStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
  {view==='content'&&<ContentDocument data={contentStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
- {view==='supplement'&&<>{platformFilter}<EvidenceUpdateOverview data={evidenceUpdate} visibleIds={studyFiltered.map(p=>p.id)} onSelect={showEvidence}/></>}
+ {view==='supplement'&&<><PlatformReview compact/>{platformFilter}<EvidenceUpdateOverview data={evidenceUpdate} visibleIds={studyFiltered.map(p=>p.id)} onSelect={showEvidence}/></>}
  {view==='tasks'&&<><ContentOverview onSelect={showContent}/></>}
  {view==='data'&&<><div className="study-actions"><button className="text-button" onClick={()=>navigate('supplement')}>经营规则与使用证据 <ArrowRight size={14}/></button></div>{platformFilter}<PublicDataOverview data={publicProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
  {view==='business'&&<>{platformFilter}<BusinessOverview data={businessProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} insights={businessInsights} onSelect={showBusiness}/></>}
@@ -106,7 +107,7 @@ export default function Research(){
  <div className="page-heading profile-heading"><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
  <div className="study-actions"><button className="text-button" onClick={()=>showAudience(p.id)}>{p.name}用户画像与产品价值 →</button></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
- <div className="access-note"><strong>访问与操作核验</strong><p>{p.access}</p></div>
+ <PlatformReview platformId={p.id}/><div className="access-note"><strong>访问与操作核验</strong><p>{p.access}</p></div>
  <nav className="article-toc" aria-label="快速跳转">{[...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs',"采用条件与代价"],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
  <details className="profile-section-group" open><summary>内容与运营</summary>
  {p.id==='linuxdo'&&<LinuxDoLoginUpdate/>}
@@ -141,7 +142,7 @@ export default function Research(){
  </details>
  <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究目录':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'社区方案对照':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
  </article>}
- <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>资料截至 2026.09.10</span></footer>
+ <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>资料截至 2026.09.11</span></footer>
  </main></div>
 }
 function Essay({section,number}:{section:Section;number:number}){return <section className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(number).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>}

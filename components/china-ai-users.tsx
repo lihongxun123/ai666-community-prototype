@@ -1,4 +1,5 @@
 'use client';
+import {ConditionReview} from '@/components/research-completion';
 import {useMemo,useState} from 'react';
 import raw from '@/lib/china-ai-users.json';
 import './china-ai-users.css';
@@ -37,11 +38,12 @@ function EvidenceLedger(){const [family,setFamily]=useState('全部');const [que
 }
 
 export function ChinaAIUsers({navigate}:{navigate:(id:string)=>void}){return <article className="china-users">
- <header className="cn-heading"><h1>中国AI使用者规模与分层研究</h1><p className="cn-meta">研究截至2026年9月10日。全国最新可核验观察期：2025年12月；近期原生App监测：2026年6月。</p><div className="cn-downloads"><a href="/research-kit/china-ai-users.md" download>下载完整研究正文 ↗</a><a href="/research-kit/china-ai-users-data.json" download>下载指标与来源数据 ↗</a>{data.paymentSupplement&&<><button className="cn-action" onClick={()=>go('payers')}>查看付费用户数据 ↓</button><a href="/research-kit/china-ai-payers.md" download>下载付费专项 ↗</a></>}</div></header>
+ <header className="cn-heading"><h1>中国AI使用者规模与分层研究</h1><p className="cn-meta">研究截至2026年9月11日。全国最新可核验观察期：2025年12月；近期原生App监测：2026年6月。</p><div className="cn-downloads"><a href="/research-kit/china-ai-users.md" download>下载完整研究正文 ↗</a><a href="/research-kit/china-ai-users-data.json" download>下载指标与来源数据 ↗</a>{data.paymentSupplement&&<><button className="cn-action" onClick={()=>go('payers')}>查看付费用户数据 ↓</button><a href="/research-kit/china-ai-payers.md" download>下载付费专项 ↗</a></>}</div></header>
  <div className="cn-headline-stats"><div><strong>6.02<small>亿人</small></strong><span>全国生成式AI使用者</span><p>2025年12月 · 半年使用口径</p><References ids={['N24-S02']}/></div><div><strong>42.8<small>%</small></strong><span>占全国人口</span><p>分母是全国人口，不是网民</p><References ids={['N24-S02']}/></div><div><strong>4.99<small>亿</small></strong><span>原生App整体月活</span><p>2026年6月 · 第三方应用监测</p><References ids={['MB24-S01']}/></div></div>
 
  <nav className="cn-toc" aria-label="中国AI用户研究目录">{data.sections.map(s=><button key={s.id} onClick={()=>go(s.id)}>{s.title}</button>)}<button onClick={()=>go('ledger')}>指标与方法台账</button><button onClick={()=>go('sources')}>全部来源</button></nav>
  {data.sections.map(s=><section id={`cn-${s.id}`} tabIndex={-1} className="cn-section" key={s.id}><h2>{s.title}</h2>{s.paragraphs.map((para,i)=><p className="cn-prose" key={i}>{['推断','假设','报告计算'].includes(para.kind)&&<span className="cn-kind">{para.kind}</span>}{para.text}<References ids={para.sourceIds}/></p>)}{s.id==='growth'&&<NationalChart/>}{s.id==='purpose'&&<PurposeChart/>}{s.id==='entry'&&<MobileChart/>}{s.tables.map(t=><DataTable key={t.title} table={t}/>)}{s.id==='ways'&&<Ways/>}{s.id==='tasks'&&<TaskProfiles/>}</section>)}
+ <ConditionReview kind="industry"/>
  <EvidenceLedger/>
  <section id="cn-sources" tabIndex={-1} className="cn-section cn-sources"><h2>全部来源与取证范围</h2><p>{data.referencesNote} {data.sources.length}个不同URL，包括原报告、官方摘要、方法说明和排除记录；并非同样数量的独立调查。</p>{data.sources.map(s=><details key={s.id}><summary>{s.title}<small>{s.publisher} · {s.publishedAt||'发布日期未注明'}</small></summary><div id={`cn-source-${s.id}`} tabIndex={-1}><p><a href={s.url} target="_blank" rel="noreferrer">打开原始页面 / PDF ↗</a></p><dl>{[['来源编号',s.id],['适用范围',s.scope],['方法及限制',s.method],['图表定位',s.locator]].map(([label,text])=><div key={label}><dt>{label}</dt><dd>{text}</dd></div>)}</dl></div></details>)}</section>
  <div className="cn-footer"><button onClick={()=>navigate('strategy')} className="cn-action">回到社区方案对照 →</button><a href="/research-kit/china-ai-users.md" download>下载完整正文</a></div>

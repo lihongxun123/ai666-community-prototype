@@ -1,0 +1,346 @@
+{
+  "date": "2026-09-11",
+  "meaning": "按推进前确定的40项检查计算研究交付完成度；不表示用户代表性、商业效果或成功概率。需要真实业务输入的四项不计完成。",
+  "groups": [
+    {
+      "id": "A",
+      "title": "范围与证据"
+    },
+    {
+      "id": "B",
+      "title": "产品与使用路径"
+    },
+    {
+      "id": "C",
+      "title": "用户画像"
+    },
+    {
+      "id": "D",
+      "title": "行业与付费"
+    },
+    {
+      "id": "E",
+      "title": "内容与运营"
+    },
+    {
+      "id": "F",
+      "title": "商业化与成本"
+    },
+    {
+      "id": "G",
+      "title": "自身交付条件"
+    },
+    {
+      "id": "H",
+      "title": "方案与资料交付"
+    }
+  ],
+  "checks": [
+    {
+      "id": "A1",
+      "title": "研究范围与分类",
+      "status": "passed",
+      "result": "五类18个平台名单一致；吐司/Tensor.Art合组、分别记录规则。",
+      "evidence": "/research-kit/platform-review.json"
+    },
+    {
+      "id": "A2",
+      "title": "事实与推断",
+      "status": "passed",
+      "result": "逐条区分官方、作者、普通用户、实操与推断；不把来源记录当成用户。",
+      "evidence": "/research-kit/audience-research-data.json"
+    },
+    {
+      "id": "A3",
+      "title": "时效与访问",
+      "status": "passed",
+      "result": "18家关键页面已复核；各来源保留访问结果，动态壳或超时不写成正文读取。",
+      "evidence": "/research-kit/platform-review.json"
+    },
+    {
+      "id": "A4",
+      "title": "冲突与证据复用",
+      "status": "passed",
+      "result": "修正、补充、复读和保留未知分别记录；复用案例不重复计用户。",
+      "evidence": "/research-kit/research-corrections.json"
+    },
+    {
+      "id": "A5",
+      "title": "来源可追溯",
+      "status": "passed",
+      "result": "各平台判断可追到来源ID、URL、日期；附件和本地定位完成校验。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "B1",
+      "title": "平台价值与路径",
+      "status": "passed",
+      "result": "18家均有任务、产品提供及使用者剩余工作。",
+      "evidence": "/research-kit/audience-research.md"
+    },
+    {
+      "id": "B2",
+      "title": "代表平台实操边界",
+      "status": "passed",
+      "result": "五类代表的实际观察、分析路径和未验阶段分别列明。",
+      "evidence": "/research-kit/research-path-audit.json"
+    },
+    {
+      "id": "B3",
+      "title": "内容与工具关系",
+      "status": "passed",
+      "result": "逐家核对内容、执行支持、工具归属与收费；同名入口未证实收入归属时保持未知。",
+      "evidence": "/research-kit/community-research-report.md"
+    },
+    {
+      "id": "B4",
+      "title": "替代路径",
+      "status": "passed",
+      "result": "具体任务对应目录/官网、文档、社群、资源库与社区的替代关系。",
+      "evidence": "/research-kit/research-condition-review.md"
+    },
+    {
+      "id": "B5",
+      "title": "维护与演变",
+      "status": "passed",
+      "result": "补充修订、迁移、服务回应、取消订阅及继续贡献记录，意图与结果分别计。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "C1",
+      "title": "既有画像审计",
+      "status": "passed",
+      "result": "55条画像逐项核对引用、来源类型、用户点与未知；新复读不自动加点。",
+      "evidence": "/research-kit/audience-audit.json"
+    },
+    {
+      "id": "C2",
+      "title": "使用与供给角色",
+      "status": "passed",
+      "result": "18家消费、供给、维护和付款角色可区分。",
+      "evidence": "/research-kit/audience-research.md"
+    },
+    {
+      "id": "C3",
+      "title": "普通使用者补证",
+      "status": "passed",
+      "result": "18家均有普通经历检索，未取得的任务/国内样本明确列缺口。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "C4",
+      "title": "持续与失败证据",
+      "status": "passed",
+      "result": "同一人的过程链、失败、建议、修订与完成确认分开。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "C5",
+      "title": "画像与内容关联",
+      "status": "passed",
+      "result": "55条任务画像与62项产品价值关系保留原证据，并补使用/维护条件。",
+      "evidence": "/research-kit/audience-research.md"
+    },
+    {
+      "id": "D1",
+      "title": "全国规模基准",
+      "status": "passed",
+      "result": "复核CNNIC官方目录与第57次报告，现行全国基准仍为2025年12月。",
+      "evidence": "/research-kit/research-condition-review.md"
+    },
+    {
+      "id": "D2",
+      "title": "活跃与触达口径",
+      "status": "passed",
+      "result": "全国调查、应用监测、网页访问、设备及账户分开；月份冲突保留。",
+      "evidence": "/research-kit/china-ai-users.md"
+    },
+    {
+      "id": "D3",
+      "title": "分层依据",
+      "status": "passed",
+      "result": "用途/频率/能力/职业分别讨论，未取得分层人数不外推。",
+      "evidence": "/research-kit/china-ai-users.md"
+    },
+    {
+      "id": "D4",
+      "title": "真实付费依据",
+      "status": "passed",
+      "result": "实际付款、意愿、全球产品与全国范围分开，账户和自然人数不混算。",
+      "evidence": "/research-kit/china-ai-payers.md"
+    },
+    {
+      "id": "D5",
+      "title": "行业到服务范围",
+      "status": "passed",
+      "result": "从具体任务说明内容需要，不用全国比例推算可服务市场。",
+      "evidence": "/research-kit/research-condition-review.md"
+    },
+    {
+      "id": "E1",
+      "title": "内容承载形式",
+      "status": "passed",
+      "result": "覆盖作品、讨论、教程、资源、Skill/MCP、工作流、画布与小应用。",
+      "evidence": "/research-kit/market-content-forms.md"
+    },
+    {
+      "id": "E2",
+      "title": "卡片与详情",
+      "status": "passed",
+      "result": "卡片、详情、下一步及截图分别说明采用条件。",
+      "evidence": "/research-kit/content-forms.md"
+    },
+    {
+      "id": "E3",
+      "title": "供给与维护职责",
+      "status": "passed",
+      "result": "选题、制作、核验、发布、答疑、纠错及下架职责明确。",
+      "evidence": "/research-kit/research-delivery-standard.md"
+    },
+    {
+      "id": "E4",
+      "title": "内容交付样例",
+      "status": "passed",
+      "result": "真实画布与历史图像整理样例可阅读；编辑草案不计作可运行成品。",
+      "evidence": "/research-kit/research-delivery-standard.md"
+    },
+    {
+      "id": "E5",
+      "title": "实际产能",
+      "status": "manual",
+      "result": "待补实际技能、可用时间、生产记录及可维持频率。",
+      "evidence": "/research-kit/research-human-input.md"
+    },
+    {
+      "id": "F1",
+      "title": "18家商业化",
+      "status": "passed",
+      "result": "18家付款方、收费对象、任务限制及收入归属完成规则复核。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "F2",
+      "title": "规模数据",
+      "status": "passed",
+      "result": "公开披露和第三方估计逐项带时间、范围与单位；未披露收入不推算。",
+      "evidence": "/research-kit/business-data.json"
+    },
+    {
+      "id": "F3",
+      "title": "作者供给经济性",
+      "status": "passed",
+      "result": "奖励资格、分成规则、作者实收和维护成本分别记录。",
+      "evidence": "/research-kit/platform-review.md"
+    },
+    {
+      "id": "F4",
+      "title": "成本计算与取舍",
+      "status": "passed",
+      "result": "交付/供给/复用/获客公式、四方案敏感变量及可填写计算器已提供。",
+      "evidence": "/research-kit/research-cost-model.md"
+    },
+    {
+      "id": "F5",
+      "title": "投入边界",
+      "status": "manual",
+      "result": "待补真实供应成本、预算、可分配工时及补贴上限。",
+      "evidence": "/research-kit/research-human-input.md"
+    },
+    {
+      "id": "G1",
+      "title": "自身能力基线",
+      "status": "passed",
+      "result": "文档、原型、代码、登录操作和经营结果按证据层级区分。",
+      "evidence": "/research-kit/platform-supply.md"
+    },
+    {
+      "id": "G2",
+      "title": "MakeNow交接状态",
+      "status": "passed",
+      "result": "确认一例副本创建和文本保存；素材、独立接收者与生成继续未知。",
+      "evidence": "/research-kit/content-delivery-supply.md"
+    },
+    {
+      "id": "G3",
+      "title": "API交付条件",
+      "status": "passed",
+      "result": "API文档核到提交/查询/下载及修改任务；价格与实际重试费用未核。",
+      "evidence": "/research-kit/research-condition-review.md"
+    },
+    {
+      "id": "G4",
+      "title": "可复用资源要求",
+      "status": "passed",
+      "result": "输入、依赖、版本、来源/使用范围、结果和维护要求成文。",
+      "evidence": "/research-kit/research-delivery-standard.md"
+    },
+    {
+      "id": "G5",
+      "title": "完整任务结果",
+      "status": "manual",
+      "result": "待补受控完整任务、实际费用和接收者复现。",
+      "evidence": "/research-kit/research-human-input.md"
+    },
+    {
+      "id": "H1",
+      "title": "四方案比较",
+      "status": "passed",
+      "result": "A—D的内容、使用、供给、成本和采用前提可并排比较。",
+      "evidence": "/research-kit/strategy-comparison.md"
+    },
+    {
+      "id": "H2",
+      "title": "选择与验证方法",
+      "status": "passed",
+      "result": "各方案的最低承诺、可证伪假设、记录信号及暂停条件已明确；方向未选定。",
+      "evidence": "/research-kit/research-option-tests.md"
+    },
+    {
+      "id": "H3",
+      "title": "外部实际行为",
+      "status": "manual",
+      "result": "待补同窗口、区分来源的真实外部消费、回应与重复使用记录。",
+      "evidence": "/research-kit/research-human-input.md"
+    },
+    {
+      "id": "H4",
+      "title": "资料状态同步",
+      "status": "passed",
+      "result": "进展页、八项问题、专题、主报告、下载和维护入口同步核对。",
+      "evidence": "/research-kit/research-readiness.md"
+    },
+    {
+      "id": "H5",
+      "title": "交付审校与发布",
+      "status": "review",
+      "result": "构建、固定交付包、内容/引用审校和公网发布验证。",
+      "evidence": "/research-kit/research-readiness.md"
+    }
+  ],
+  "manual": [
+    {
+      "id": "E5",
+      "title": "内容产能",
+      "need": "可用技能、每周工时，以及真实内容的制作与维护记录。",
+      "impact": "决定可持续频率，是否需要招聘/合作，以及反馈服务能接多少人。"
+    },
+    {
+      "id": "F5",
+      "title": "预算与成本",
+      "need": "阶段预算、代表任务实际结算、可分配工时与补贴上限。",
+      "impact": "决定模板、免费运行和作者支持的承诺范围。"
+    },
+    {
+      "id": "G5",
+      "title": "完整任务与接收者复现",
+      "need": "已有脱敏完整记录，或明确素材、模型、次数与费用范围后执行；随后补独立复现。",
+      "impact": "决定MakeNow/API内容可以标作结构参考、方法说明还是可用交付。"
+    },
+    {
+      "id": "H3",
+      "title": "真实外部行为",
+      "need": "同一窗口的外部来源、消费、实际使用、回应和再次使用汇总。",
+      "impact": "决定各方案是否有本社区用户依据。运营供给与外部消费分开计。"
+    }
+  ]
+}

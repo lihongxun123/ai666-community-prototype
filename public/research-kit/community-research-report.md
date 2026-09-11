@@ -98,7 +98,18 @@ Datawhale的课程与问题记录显示，学习者会实际运行教材并反�
 
 [all-in-rag课程仓库](https://github.com/datawhalechina/all-in-rag)；[第一节执行示例报错 #125](https://github.com/datawhalechina/all-in-rag/issues/125)；[KIMI API失效 #121](https://github.com/datawhalechina/all-in-rag/issues/121)；[BM25检索中文分块问题 #102](https://github.com/datawhalechina/all-in-rag/issues/102)；[Windows激活环境问题 #105](https://github.com/datawhalechina/all-in-rag/issues/105)；[学习反馈 #91](https://github.com/datawhalechina/all-in-rag/issues/91)
 
-55条任务画像中，49条不足5个可区分用户观察点，18条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。
+### 同一产品的使用者可以停留在不同任务环节
+
+角色连续、环境配置、精修和学习反馈需要不同材料。一个用户可能付费，却仍因具体步骤受阻而转用其他工具；付费身份不等于平台解决了完整任务。
+
+- **OpenArt**：用户自述项目从受挫推进，但另有Director失败报告；制作过程包含外部剪辑。
+- **Datawhale**：运行/排错经历与仅表达学习期待分别计量，候选画像不包装成职业占比。
+
+依据：原始自述与任务观察；不从个案计算成功率或留存率。
+
+[OpenArt公开讨论：专辑MV制作及同账号后续](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；[OpenArt Director：2分55秒项目失败回复](https://www.reddit.com/r/generativeAI/comments/1ufo0g7/openart_director/)；[What I learned making a 24-shot psychological thriller with OpenArt Director](https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/)；[all-in-rag课程README](https://github.com/datawhalechina/all-in-rag)；[Windows激活环境问题 #105](https://github.com/datawhalechina/all-in-rag/issues/105)
+
+55条任务画像中，50条不足5个可区分用户观察点，18条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。
 
 [完整用户画像与产品价值](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience) · [全国用户规模与分层](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#china-users)
 
@@ -183,6 +194,17 @@ NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多�
 需要承担的工作：练习需有人出题、检查素材并给具体点评；问题区需有人核对技术条件、追问结果，再整理可复用说明。表单可共用附件与引用功能，列表字段、反馈类型与结果状态分别处理。尚无主持或答疑能力时，应缩小主题范围。
 
 仍需确认：对同一批内容分别记录自主交作品、有效点评、问题补充、作者反馈及后续再次使用；区分平台账号与外部用户。如果参与主要由平台自问自答或奖励驱动，就不足以支持自然讨论或日常挑战的供给假设。
+
+### 详情页需要呈现交付链中的外部工作
+
+如果输出依赖其他工具、模型、素材或后期，详情应说明各自承担哪一步。仅有封面和“同款”按钮，会让使用者误判自己还要准备多少工作。
+
+- **即梦**：活动参与者经排队后转火山API生成、用剪映成片；不能作为即梦工具全链完成。
+- **Runway**：专业团队的连续剧制作包含真人表演和多工具处理，不能作为零基础一键成片依据。
+
+依据：作者过程自述；未进行完整影片验看或独立复现。
+
+[关于第一次做AI小视频的复盘。](https://linux.do/t/topic/2201600)；[作者公开的即梦作品分享入口](https://jimeng.jianying.com/s/qgnzkNNCmsQ/)；[The Finch Files episode 1/40](https://www.reddit.com/r/runwayml/comments/1qoofo0/the_finch_files_episode_140_for_completed/)；[Runway内Kling请求失败及后续](https://www.reddit.com/r/runwayml/comments/1sxdjf8/tried_to_generate_on_kling_failed_due_to_unsafe/)；[Finch作者LinkedIn整片工作流介绍](https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-innovation-activity-7421597817275723776-lNTZ)
 
 ### 页面示例：LiblibAI · 电商产品商业级渲染精修
 
@@ -689,6 +711,17 @@ LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适�
 
 仍需确认：公开资料能够确认维护行为和规则，不能提供平均响应时间、复验通过率、作者失联后的成本或实际利润。自身内容包尚无完整工时与费用，暂不设每周产量和维护人数。
 
+### 持续贡献与持续付费需要分别观察
+
+使用者可能参与排错、分享适配材料，也可能取消订阅后仍愿贡献资源。维护、创作和消费并非始终由同一激励驱动。
+
+- **RunningHub**：求助者称跑通后分享适配JSON，另一人继续提出新LoRA问题；新问题完成仍未知。
+- **Civitai**：公开记录中出现取消会员但仍希望贡献LoRA的表述；意愿不能当成后续实际上传量。
+
+依据：同一主题内的过程和公开表述；与已完成交易或贡献分别记录。
+
+[help me use runninghub for workflow so confused — Discussion #176](https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176)；[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)；[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
+
 合作规则说明可以约定什么，版本记录说明出现过维护工作；尚不能据此判断作者长期履约率、平台人效或活动带来的留存增量。
 
 [18个平台的运营机制](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#operations) · [作者与维护记录](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#tasks)
@@ -813,6 +846,17 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 
 [LINUX DO 订阅入口](https://linux.do/s)；[LINUX DO 社区细则](https://linux.do/guidelines)
 
+### 权益必须落到具体模型、动作和付款条件
+
+无限额度、会员资格与API支持都有适用范围。成本比较应以用户要完成的任务为单位，纳入修改、重试、等待和外部处理。
+
+- **NightCafe**：Unlimited基础生成不覆盖所有增加成本的设置；起始图和ControlNet可能消耗正常额度。
+- **Runway**：联盟页明确每名新付费订阅者15美元；不能理解为同一用户永久续费分成。
+
+依据：2026-09-11官方条款复核；实际结算和净收益未核。
+
+[NightCafe PRO plans — what you get and which plan to choose](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)；[Fast Credits vs Relax Credits](https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits)；[Runway Affiliate Program](https://runway.com/affiliate-program)
+
 全国去重AI付费人数仍未知。规模数据保留统计对象、时间、地域和来源性质，不将全球账户、综合会员、月活与访问次数相加。
 
 [各平台商业化与经营规模](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#business) · [公开访问数据](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#data) · [AI付费用户数据](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#china-users)
@@ -860,13 +904,13 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 
 ## 研究深度与未解问题
 
-现有材料已超过功能罗列，能够将具体任务、产品机制、使用困难和部分收费结果联系起来；但用户样本稀疏、平台观察深度不齐，尚不足以验证主力客群、留存因果或经营优劣。
+研究已覆盖18个平台的任务、内容、运营、收费条件与使用过程；55条任务画像逐项保留证据等级。公开记录能够支持机制与采用条件比较，主力客群占比、因果留存和本项目经营结果仍需真实数据。
 
 | 方面 | 已达到的层次 | 缺口 |
 | --- | --- | --- |
 | 产品与内容结构 | 已经分析到入口、字段、详情、交付对象与后续操作。 | 不同内容形式的实际采用率未测。 |
-| 运营与供给 | 已有合作条款、版本变化、原始问题及维护回应；七家代表另有跨日期使用、贡献或退出参与记录。 | 多数缺少工时、供稿频率与激励净效果。 |
-| 用户与任务 | 55条任务画像另附七家代表的过程记录，分别核对本人反馈、作者说明及官方精选材料。 | 样本稀疏，无法还原平台用户总体。 |
+| 运营与供给 | 18家补查普通内容、规则与维护；使用者反馈、作者说明、服务处理和继续使用分别记录。 | 多数缺少工时、供稿频率与激励净效果。 |
+| 用户与任务 | 55条任务画像另有18家补充检索与过程记录；后续复读不重复计为新用户。 | 样本稀疏，无法还原平台用户总体。 |
 | 实际使用 | 部分平台有生成、保存、再次打开或复用检查。 | 未对18家完成同一任务的全流程验证。 |
 | 经营结果 | 已有定价规则、部分经营披露和第三方访问估计。 | 利润、留存因果和社区收入贡献未验证。 |
 

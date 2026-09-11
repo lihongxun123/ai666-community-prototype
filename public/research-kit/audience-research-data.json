@@ -1,6 +1,6 @@
 {
   "title": "18个平台的用户画像与产品价值",
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "version": "",
   "summary": "",
   "scope": "覆盖18个平台。吐司与Tensor.Art合为一个产品组，分别记录两站规则与使用经历。中国行业统计见独立专题；各平台的职业、任务和付费构成须另查。",
@@ -304,7 +304,7 @@
     "evidenceRecords": 171,
     "sourceRecords": 155,
     "uniqueSourceUrls": 153,
-    "underFivePoints": 49,
+    "underFivePoints": 50,
     "zeroPoints": 18
   },
   "profiles": [
@@ -7092,7 +7092,7 @@
           "kind": "用户自述",
           "claim": "匿名B称参加WaytoAGI东京活动时被文章和视频读者识别，使交流更容易。",
           "sourceId": "P25-waytoagi-s5",
-          "publishedAt": null,
+          "publishedAt": "2025-06-15",
           "observedAt": "2026-09-10",
           "limit": "作者兼内容供给者；没有活动带来商业成交的证据。",
           "independenceKey": "P25-waytoagi-user-B",
@@ -7190,10 +7190,10 @@
           "title": "别再乱学AI了！我花7天实践了张Zara的方法，从此告别焦虑",
           "url": "https://www.woshipm.com/share/6230525.html",
           "publisher": "公开文章或讨论参与者（匿名）",
-          "date": null,
-          "accessedAt": "2026-09-10",
+          "date": "2025-06-15",
+          "accessedAt": "2026-09-11",
           "type": "用户自述",
-          "accessNote": "2026-09-10实际访问层级：正文已读。作者兼内容供给者；没有活动带来商业成交的证据。",
+          "accessNote": "readable",
           "originalType": "user-self-report"
         },
         {
@@ -7334,9 +7334,9 @@
         {
           "id": "P25-datawhale-p1",
           "name": "跟随RAG教材搭环境并运行例子的人",
-          "scope": "仅all-in-rag课程；5位不同公开发帖者，不能推广全社区。",
-          "status": "窄任务画像有5个独立用户点；人口与职业画像不足",
-          "independentUserPoints": 5,
+          "scope": "仅all-in-rag教材。4位公开发帖者有运行/排错经历，另1位只表示正在学习，不能作为同一窄任务的第五点。",
+          "status": "候选任务画像：4个明确运行或排错观察点；另有1个一般学习线索",
+          "independentUserPoints": 4,
           "task": "从章节说明进入环境配置、模型调用和检索示例，得到能解释的结果。",
           "trigger": "想系统补RAG能力，或当前练习运行失败。",
           "desiredOutcome": "自己的机器与输入能够跑通例子，理解输出为何符合问题。",

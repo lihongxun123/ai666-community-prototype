@@ -1,3 +1,4 @@
+import {PlatformReviewDimension} from '@/components/platform-review';
 import type { ReactNode } from 'react';
 import { LinuxDoImages } from '@/components/linuxdo-login';
 import { MarketContentForms } from '@/components/market-content-forms';
@@ -34,7 +35,7 @@ function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind
   <section className="study-guide">{data.guide.map(g => <div key={g.title}><h2>{g.title}</h2><p>{g.text}<Refs ids={g.sourceIds} sources={data.sources}/></p></div>)}</section>
   <section className="study-directory" id={`${kind}-platform-directory`}><h2>平台档案</h2>{filter}<nav className="article-toc" aria-label={`${labels[kind]}平台目录`}>{items.map(p => <a key={p.id} href={`#${kind}`} onClick={e => { e.preventDefault(); jump(p.id); }}>{p.name}</a>)}</nav></section>
   <section className="study-comparison"><h2>{kind === 'operations' ? '运营重点对照' : '内容单位对照'}</h2><div className="table-wrap"><table><thead><tr><th>平台</th><th>{kind === 'operations' ? '主要组织什么工作（分析）' : '内容价值与形式的区别（分析）'}</th></tr></thead><tbody>{items.map(p => <tr key={p.id}><th><button className="text-button" onClick={() => jump(p.id)}>{p.name} ↗</button></th><td>{p.position}</td></tr>)}</tbody></table></div></section>
-  {items.map(p => <section className="study-platform" id={`${kind}-${p.id}`} key={p.id}><div className="section-heading"><h2>{p.name}</h2>{p.id === 'tusi' ? <span><a href="https://tusi.cn/" target="_blank" rel="noreferrer">吐司官网 ↗</a> · <a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art官网 ↗</a></span> : <a href={p.homepage} target="_blank" rel="noreferrer">官网 ↗</a>}</div>{children(p)}<div className="study-actions"><button className="text-button" onClick={() => navigate(p.id)}>查看该平台其他研究与截图 ↗</button><a href={`#${kind}`} onClick={e => { e.preventDefault(); reveal(`${kind}-platform-directory`); }}>返回文档目录 ↑</a></div></section>)}
+  {items.map(p => <section className="study-platform" id={`${kind}-${p.id}`} key={p.id}><div className="section-heading"><h2>{p.name}</h2>{p.id === 'tusi' ? <span><a href="https://tusi.cn/" target="_blank" rel="noreferrer">吐司官网 ↗</a> · <a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art官网 ↗</a></span> : <a href={p.homepage} target="_blank" rel="noreferrer">官网 ↗</a>}</div><PlatformReviewDimension platformId={p.id} dimension={kind}/>{children(p)}<div className="study-actions"><button className="text-button" onClick={() => navigate(p.id)}>查看该平台其他研究与截图 ↗</button><a href={`#${kind}`} onClick={e => { e.preventDefault(); reveal(`${kind}-platform-directory`); }}>返回文档目录 ↑</a></div></section>)}
   {items.length === 0 && <p>没有匹配的平台，请调整档案筛选。</p>}
   <Sources sources={data.sources}/>
   <p className="muted">资料截至{data.accessedAt}。</p>
