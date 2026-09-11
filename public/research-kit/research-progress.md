@@ -71,3 +71,5 @@
 ## 详细证据
 
 [自身供给与素材](platform-supply.md) · [内容交付](content-delivery-supply.md) · [登录操作](makenow-login-study.md) · [行业与API复核](research-condition-review.md) · [完整结构化记录](research-progress-data.json)
+
+[内容供给与创作者合作：方式、发现、交付与续作](creator-supply-2026-09-12/report.html)

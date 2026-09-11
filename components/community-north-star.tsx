@@ -1,3 +1,4 @@
+import {CreatorSupplyLink} from '@/components/creator-supply';
 import data from '@/lib/community-north-star.json';
 import './community-north-star.css';
 
@@ -14,6 +15,7 @@ export function NorthStarOverview({compact=false}:{compact?:boolean}){
    <details><summary>浏览、观看与参与的观测口径建议</summary><p>{data.eventCandidates.status}</p>{[...data.eventCandidates.consumption,...data.eventCandidates.participation,...data.eventCandidates.reuse].map(e=><section key={e.type}><h4>{e.type}</h4><p>{e.proposal}</p><p>{e.caveat}</p></section>)}<ul>{data.eventCandidates.antiAccidental.map(x=><li key={x}>{x}</li>)}</ul></details>
    <section><h3>同时观察什么</h3><div className="table-wrap"><table><thead><tr><th>指标</th><th>口径</th><th>用途</th></tr></thead><tbody>{data.supportingMetrics.map(e=><tr key={e.name}><th>{e.name}</th><td>{e.formula}{'missing' in e&&<small>{e.missing}</small>}</td><td>{e.purpose}</td></tr>)}</tbody></table></div></section>
    <section><h3>投入和体验约束</h3><div className="ns-guardrails">{data.guardrails.map(e=><article key={e.name}><h4>{e.name}</h4><p>{e.measure}</p><p>{e.rule}</p></article>)}</div></section>
+   <CreatorSupplyLink context="progress"/>
    <NorthStarPlan/>
    <section className="ns-inputs"><h3>需要补充的资料</h3>{data.humanInputs.map(e=><article key={e.id}><h4>{e.id} · {e.name}</h4><ul>{e.needed.map(x=><li key={x}>{x}</li>)}</ul><p>{e.canProceed}</p></article>)}<a href="/research-kit/research-human-input.md" download>打开填写清单 ↓</a></section>
   </>}

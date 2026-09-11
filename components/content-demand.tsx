@@ -1,6 +1,7 @@
 'use client';
 import editorial from '@/lib/content-demand-editorial.json';
 import data from '@/lib/content-demand-platforms.json';
+import {CreatorSupplyLink} from '@/components/creator-supply';
 import {ContentDemandIndex} from './content-demand-index';
 import {ContentDemandSamples} from './content-demand-samples';
 import './content-demand.css';
@@ -16,6 +17,7 @@ function Refs({ids}:{ids:string[]}){return <span className="cd-refs">{ids.map(id
 
 export function ContentDemand({navigate}:{navigate?:(id:string,anchor?:string)=>void}){
  return <article className="content-demand">
+  <CreatorSupplyLink context="demand" navigate={navigate}/>
   <DouyinEcosystem/>
   <section id="cd-platforms"><h2>18 个平台的内容机制与资料入口</h2><p>{editorial.reading}</p>
    <div className="cd-table"><table><thead><tr><th>平台</th><th>可见供给主题／用途</th><th>消费线索</th><th>证据状态</th></tr></thead><tbody>{profiles.map(p=><tr key={p.id}><th><Jump id={`cd-platform-${p.id}`}>{p.name} ↓</Jump></th>{p.summary.map((s,i)=><td key={i}>{s}</td>)}</tr>)}</tbody></table></div>

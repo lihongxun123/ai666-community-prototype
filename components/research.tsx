@@ -12,6 +12,7 @@ import { MakeNowStudy } from '@/components/makenow-study';
 import { StrategyComparison } from '@/components/strategy-comparison';
 import { ChinaAIUsers } from '@/components/china-ai-users';
 import { AudienceResearch } from '@/components/audience-research';
+import { CreatorSupply,CreatorSupplyLink } from '@/components/creator-supply';
 import { ContentDemand } from '@/components/content-demand';
 import { type Section } from '@/lib/research-types';
 import { evidence } from '@/lib/synthesis';
@@ -89,9 +90,10 @@ export default function Research(){
 {view==='progress'&&<ResearchProgress navigate={navigate}/>}
 {view==='china-users'&&<ChinaAIUsers navigate={navigate}/>}
 {view==='audience'&&<AudienceResearch navigate={navigate}/>}
+{view==='supply'&&<CreatorSupply/>}
 {view==='content-demand'&&<ContentDemand navigate={navigate}/>}
  {view==='makenow'&&<MakeNowStudy navigate={navigate}/>}
- {view==='discussion'&&<><ResearchFramework navigate={navigate}/></>}
+ {view==='discussion'&&<><CreatorSupplyLink context="discussion" navigate={navigate}/><ResearchFramework navigate={navigate}/></>}
  {view==='validation'&&<ValidationOverview/>}
  {view==='operations'&&<OperationsDocument data={operatingStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
  {view==='content'&&<ContentDocument data={contentStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}

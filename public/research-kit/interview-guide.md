@@ -121,3 +121,5 @@
 - 先确认合作交付和费用上限，再启动合作；内容数量、用户消费和回访分别评估。
 
 [指标与行为口径](community-north-star.md) · [待补资料](research-human-input.md)
+
+[内容供给与创作者合作：方式、发现、交付与续作](creator-supply-2026-09-12/report.html)

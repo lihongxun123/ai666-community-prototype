@@ -1,4 +1,5 @@
 'use client';
+import {CreatorSupplyLink} from '@/components/creator-supply';
 import { useState, type ReactNode } from 'react';
 import data from '@/lib/strategy-comparison.json';
 import {NorthStarDirections} from '@/components/community-north-star';
@@ -18,6 +19,7 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
   <header className="page-heading v23-intro"><h1>方向与内容组织</h1><p className="muted">{data.date} · 候选方向待验证</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>组织方式 {o.id} 独立文档</a>)}</div></header>
+  <CreatorSupplyLink context="strategy" navigate={navigate}/>
   <NorthStarDirections/>
   <details className="study-sources"><summary>目标、供给、人员、工具与投入条件</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
   <fieldset id="v23-tabs" className="v23-controls is-tabs" aria-label="研究内容">{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} className={tab===id?'is-active':''} onClick={()=>setTab(id)}>{label}</button>)}</fieldset>

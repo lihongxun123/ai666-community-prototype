@@ -1,3 +1,4 @@
+import {CreatorSupplyLink} from '@/components/creator-supply';
 import {PlatformReviewDimension} from '@/components/platform-review';
 import type { ReactNode } from 'react';
 import { LinuxDoImages } from '@/components/linuxdo-login';
@@ -32,6 +33,7 @@ function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind
   {kind === 'content' && <div className="study-actions"><button className="text-button" onClick={() => document.getElementById('content-visual-evidence')?.scrollIntoView({behavior:'smooth'})}>先看卡片与详情截图 ↓</button><button className="text-button" onClick={() => reveal('content-form-map')}>查看内容字段分类 ↓</button><button className="text-button" onClick={() => reveal('content-platform-directory')}>平台内容档案 ↓</button></div>}
   {kind === 'content' && <ContentScreenshotGallery visibleIds={data.profiles.map(p=>p.id)}/>}
   {kind === 'content' && <details className="study-sources"><summary>内容字段分类对照</summary><ContentTaxonomy/></details>}
+  <CreatorSupplyLink context={kind === 'operations' ? 'operations' : 'content'} navigate={navigate}/>
   <section className="study-guide">{data.guide.map(g => <div key={g.title}><h2>{g.title}</h2><p>{g.text}<Refs ids={g.sourceIds} sources={data.sources}/></p></div>)}</section>
   <section className="study-directory" id={`${kind}-platform-directory`}><h2>平台档案</h2>{filter}<nav className="article-toc" aria-label={`${labels[kind]}平台目录`}>{items.map(p => <a key={p.id} href={`#${kind}`} onClick={e => { e.preventDefault(); jump(p.id); }}>{p.name}</a>)}</nav></section>
   <section className="study-comparison"><h2>{kind === 'operations' ? '运营重点对照' : '内容单位对照'}</h2><div className="table-wrap"><table><thead><tr><th>平台</th><th>{kind === 'operations' ? '主要组织什么工作（分析）' : '内容价值与形式的区别（分析）'}</th></tr></thead><tbody>{items.map(p => <tr key={p.id}><th><button className="text-button" onClick={() => jump(p.id)}>{p.name} ↗</button></th><td>{p.position}</td></tr>)}</tbody></table></div></section>
