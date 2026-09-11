@@ -1,24 +1,24 @@
 {
   "editorial": {
     "title": "内容供给、消费主题与机会",
-    "date": "2026-09-11",
-    "verdict": "值得把行业和主题作为竞品研究的独立维度。现有证据能看出平台在组织什么供给、用户可能消费什么；还不足以判定哪个主题已出现可进入的供需缺口。抖音指数应成为国内选题研究的优先工具，社区方向仍要由跨周消费与参与来检验。",
+    "date": "2026-09-12",
+    "verdict": "抖音已查得48个计划词的收录状态与9组指数，并补入30条垂类热词、18条竞品内容与求助样本。现在可以比较具体题材、任务和供给质量；哪个主题能形成持续活跃，还需要把同一主题的需求与内容逐条对应。",
     "findings": [
       {
-        "title": "内容的行业归属，不能由生成工具决定",
-        "text": "同一套图像或视频能力，可以供人看故事、做头像、学习方法，也可以用于商品宣传或游戏制作。平台支持电商，不等于多数内容来自电商行业；用户看二次元作品，也不等于他是游戏从业者。"
+        "title": "搜索热度已有实值，AI细分词覆盖仍少",
+        "text": "“猫咪日常”“PPT制作”近期搜索上升，“老照片修复”同比增长、环比下降。48个计划词中39个未收录，不能把缺数理解为没有需求。"
       },
       {
-        "title": "供给丰富和使用方便是两件事",
-        "text": "模型、工作流或作品很多，用户仍可能找不到适合自己的版本、无法复现，或缺少完整系列。潜在空间可能是选题、解释、筛选和维护，而非再增加同类内容数量。"
+        "title": "抖音已有更直接的垂类供需入口",
+        "text": "创作指南分别提供投稿份额与观看份额，并列出热词的视频量。但供需曲线当前未显示数值，视频量的累计口径未核实，尚不能计算哪个垂类存在供需缺口。"
       },
       {
-        "title": "观看需求应单独研究",
-        "text": "音乐、角色故事、主题挑战与投票能够承载观看和兴趣参与。多元拾光以持续活跃为目标，这些行为本身有价值，不需要先转化成生成、下载或付费。"
+        "title": "内容数量之外，可获得性和维护也影响消费",
+        "text": "商品工作流样本有版本与步骤说明，同名工具也可能显示无法运行；共学材料有修复提案，但未必已有提问者确认成功。作品则要看呈现、关联与系列，不能统一按“可运行”评价质量。"
       },
       {
-        "title": "抖音上的热点，只能完成选题判断的一部分",
-        "text": "看完一个效果、想学会一个方法、要解决一个工作问题，是三种不同需求。选题研究应同时看这些意图，并检查社区能否提供后续内容。"
+        "title": "持续供给不等于持续消费",
+        "text": "作品关联、作者更新、问题回复都提供了回来看的入口；18条样本尚未取得同一外部目标用户跨周消费记录。观看、欣赏和参与本身仍是有效行为，不需要先转化为生成或付费。"
       }
     ],
     "taxonomy": [
@@ -99,8 +99,8 @@
         "community": "系列页＋关注更新＋作品图集；制作说明作为可选内容。",
         "supplyPlan": "合作作者供给连续作品，运营维护系列顺序、标签和讨论。",
         "counter": "如果只爱一个作者或某个现成IP，用户未必愿意迁移；稳定角色与连续叙事也会增加制作成本。",
-        "nextProof": "看故事词与制作词的需求是否分开；观察同一系列的跨周消费。",
-        "status": "值得优先测词；需求强弱和缺口未定"
+        "nextProof": "动画短片搜索均值3.3万、环比+16.95%；漫剧与短剧是宽泛参照。继续核完整作品、系列关系、读者追更和制作求助，不以题材总热度推AI需求。",
+        "status": "下一批内容研究：故事观看与制作需求分开"
       },
       {
         "id": "pets",
@@ -117,8 +117,8 @@
         "community": "连载视频或图集＋宠物主题合集＋读者投稿。",
         "supplyPlan": "先做少量连续故事，检查是否能稳定更新；不以大量换脸模板充数。",
         "counter": "普通萌宠视频是直接替代品；萌宠大盘热度不等于AI宠物内容需求。",
-        "nextProof": "比较萌宠故事、宠物拟人、AI宠物的相关内容与评论；核对用户期待后续故事还是只要模板。",
-        "status": "探索候选；不沿用2021年萌宠蓝海结论"
+        "nextProof": "猫咪日常搜索环比+43.14%、综合环比−0.73%；AI宠物相关词未收录。下一批按普通萌宠、AI故事、自家宠物创作分开抽内容与评论。",
+        "status": "下一批内容研究：搜索增长，AI意图待核"
       },
       {
         "id": "visuals",
@@ -136,8 +136,8 @@
         "community": "按题材的专题页＋作品展播＋作者系列＋创作拆解。",
         "supplyPlan": "合作作者提供成片，运营做主题编排和作品介绍；记录授权及更新频率。",
         "counter": "精选作品存在不能证明普通用户需求大；高完成度短片可能超出现有供给能力。",
-        "nextProof": "对比题材词与生成方法词，并看系列消费是否延续到下一周。",
-        "status": "优先比较兴趣消费；供给成本待验证"
+        "nextProof": "科幻短片搜索均值439、环比−8.73%，综合环比+20.20%；国风与奇幻短片未收录。补实际题材词与具体短片，避免按泛风格词推需求。",
+        "status": "保留题材对照；普通内容与供给成本待核"
       },
       {
         "id": "commerce",
@@ -155,8 +155,8 @@
         "community": "按任务检索＋前后对比＋材料清单＋常见失败＋源文件或工具入口。",
         "supplyPlan": "选择单一商品品类做案例包，由能交付成品的合作作者维护。",
         "counter": "这是已有供给的领域；工作交付可能偏服务需求，完成一次后不再回社区。",
-        "nextProof": "检索商品主图、产品摄影、AI商品图等词，查具体修改需求和重复任务。",
-        "status": "可做任务验证；不能称低竞争赛道"
+        "nextProof": "商品主图与产品摄影指数已取得，Liblib/吐司6条工作流样本已逐项记录。下一步补独立使用者的具体修改与重复任务，避免把作者宣传和故障说明当买方需求。",
+        "status": "已有供给案例；需求规模与交付缺口未定"
       },
       {
         "id": "games",
@@ -173,8 +173,8 @@
         "community": "素材列表＋规格预览＋使用示例＋版本更新和问题讨论。",
         "supplyPlan": "需要懂资产验收与实际集成的作者，普通生成图不能替代资源包。",
         "counter": "供给少可能来自后处理和集成难；资源下载后在外部工具消费，站内活跃可能有限。",
-        "nextProof": "区分游戏角色欣赏词和Unity、像素素材、立绘等制作词，补导入使用与返访证据。",
-        "status": "先核供给能力，再决定是否试点"
+        "nextProof": "六个计划词均未收录。应从实际资产、引擎和开发任务入口查规格、导入与返访，抖音指数不宜作为该组唯一取舍依据。",
+        "status": "计划词未收录；不据此淘汰"
       },
       {
         "id": "memory",
@@ -190,8 +190,8 @@
         "community": "案例对照＋素材整理教程＋主题相册或创作分享。",
         "supplyPlan": "使用获得授权或自有示例素材；合作作者提供可重复的处理步骤。",
         "counter": "任务常是一次性的；生成工具可以直接解决，未必适合作为持续活跃主方向。",
-        "nextProof": "查老照片修复、照片动起来、家庭相册等词，重点看完成后还有什么持续需求。",
-        "status": "可做获客内容；作为活跃主方向证据偏弱"
+        "nextProof": "老照片修复搜索环比−38.07%，照片动起来−33.66%。先查效果、服务、教程三种意图；作为兴趣主方向之前，需要找到任务完成后的回访理由。",
+        "status": "已有明确任务词；近期下降与一次性需求待核"
       },
       {
         "id": "learning",
@@ -208,8 +208,8 @@
         "community": "任务专题＋短教程＋提问与已解决记录＋持续更新资料。",
         "supplyPlan": "运营整理具体问题；领域作者验证方法并负责更新。",
         "counter": "教程很多，信息搬运的差异小；答疑负担可能超过内容制作。",
-        "nextProof": "围绕PPT、表格、资料整理等实际任务测词；检查是一次下载需求还是重复学习。",
-        "status": "具体任务候选；筛选、解释与答疑缺口待验证"
+        "nextProof": "PPT制作搜索均值8862、环比+42.50%。现有求助样本多是技术实践，不能替代办公人群；继续补真实PPT任务、模板消费、学习路径和季节性。",
+        "status": "下一批内容研究：PPT任务与非AI需求分开"
       },
       {
         "id": "technical",
@@ -227,13 +227,13 @@
         "community": "工具目录＋可运行示例＋依赖与版本＋问题讨论。",
         "supplyPlan": "需要持续技术维护；先围绕少量已有资源，避免承诺全工具可运行。",
         "counter": "搜索与官方文档常能直接解决；站点代为运行会增加维护和算力成本。",
-        "nextProof": "查任务词与工具词的差别，补用户失败、重试与持续维护记录。",
-        "status": "与资源匹配；不因API便宜就优先"
+        "nextProof": "工作流与工具组6词均未收录。任务样本已区分确认解决、局部改善和未有复验；继续看普通使用者能否完成及是否回来获取更新。",
+        "status": "已有失败与维护样本；工具热词未收录"
       }
     ],
     "douyin": {
       "recommendation": "在国内获客与运营选题中优先使用抖音指数。它适合帮助选择题材、措辞、内容长度和供给者线索；不能单独估计中国AI用户规模，也不能证明用户会迁移到多元拾光。",
-      "access": "2026-09-11 浏览器连接连续失败，尚未取得当前账户中的指数数值、时间筛选与字段解释。公开入口只有脚本页面。本报告不展示模拟指数，也不据此排序主题。",
+      "access": "9月11日晚已通过登录后的创作者中心完成48词查询，并补查7个参照词；9月12日做5次诊断查询，核对创作指南的生产、消费和画像字段。已取得的数值、日期和来源见上方实查表。",
       "officialEvidence": [
         {
           "id": "dy-vertical",
@@ -253,8 +253,15 @@
           "id": "dy-entry",
           "title": "抖音创作者中心：指数入口",
           "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index",
-          "date": null,
-          "finding": "当前研究入口；账户内字段和数值待读取。"
+          "date": "2026-09-11至2026-09-12",
+          "finding": "已读取当前账户可见的关键词搜索与综合指数、关联词及创作指南。实值取自页面显示，所有统计周期分别记录。"
+        },
+        {
+          "id": "dy-guide-live",
+          "title": "抖音创作者中心：当前创作指南",
+          "url": "https://creator.douyin.com/creator-micro/creator-count/vertical-analysis",
+          "date": "2026-09-12",
+          "finding": "已核对供给份额和消费份额定义，取得科技、二次元、摄影摄像三类各10条热门关键词读数；图表占比和画像数值尚未取得。"
         }
       ],
       "fields": [
@@ -404,18 +411,18 @@
           "exclude": "开发者讨论与终端使用者分开；工具品牌热度不等于每项任务需求。"
         }
       ],
-      "keywordNote": "以上48个词为待查询清单，词的可查性、歧义和关联词需要在实际页面校准；不是已经测出的热词。先比较同一组内的需求表达，不将各组指数相加。",
+      "keywordNote": "48词已完成查询。9词返回数值、39词显示未收录；完整状态表见上方，逐词来源与时间可下载。保留这套题材词与方法词配对，后续按实际关联词校准，不把各词指数相加。",
       "recording": [
-        "先记录账户实际提供的字段、说明、单位、筛选和缺失规则，再开始取值。不同入口如字段不同，分别存表。",
-        "建议统一使用截至前一个完整日的近28天；再用近90天看趋势。若界面只支持7／30天等窗口，按实际范围记录，全组保持一致。两者都属于研究窗口建议。",
-        "每个词保留时间、地区、终端、语言或垂类筛选、是否归一化、数值或区间、页面来源。界面未说明则填未知。",
-        "分开记录内容创作、搜索和消费；同一量纲可比较变化，不同量纲并列看，不硬算供需比。",
-        "先从48词缩到3个可比较主题；每个主题核10条热门与10条近期普通内容，重复去重，记录排序入口和排除原因。若没有最新入口，记录实际可见顺序。",
-        "主题不足10条时如实保留可见样本数。普通内容与头部内容分开描述；这60条是首批定向核对计划，不是已经完成的样本，也不代表全站比例。"
+        "已按关键词页实际默认的2026-08-10至2026-09-10记录均值、同比、环比；没有将其称为近30天，也未混入最初另查的AI近30天结果。",
+        "关键词页、关联词、创作指南分别保留查询入口和统计期：主表为区间均值，关联词为8月24日至30日周榜，垂类热词为9月9日榜单。",
+        "接下来优先核角色与故事、宠物兴趣、办公学习三组的具体内容。选择依据是可查信号和不同消费目的，不是三组已经通过机会验证。",
+        "每组在实际可访问入口选择10条热门与10条近期普通内容；若没有最新入口，记录实际排序。重复资源和转载去重，标记是否AI内容、具体观看或使用意图。",
+        "已补的18条是定向案例，其中11条新增、7条复核，覆盖7个平台；还不是上述60条同主题采样。其作用是校准如何判断内容与需求是否接得上。",
+        "最后比较供给完整性、具体未满足诉求、持续更新和参与记录。没有曝光分母不报互动率，没有同一用户跨周记录不报留存率。"
       ]
     },
     "sampling": {
-      "scope": "本轮覆盖18个平台的公开分类、用途页、具体内容和部分历史用户材料；公开访问失败与资料日期分别登记。尚未完成按主题、同窗和同排序的数量抽样。",
+      "scope": "18个平台的分类与用途档案之外，新增了7个平台的18条具体样本：商品素材6条、兴趣作品6条、任务求助6条。11条为新增观察，7条为既有材料复核；不是18名新用户，也不是全站随机样本。",
       "supplyFields": [
         "平台与页面入口",
         "内容唯一链接及观察日期",
@@ -438,24 +445,44 @@
     },
     "next": [
       {
-        "step": "补指数实值",
-        "work": "恢复当前浏览器连接后，先核字段，再查询48词并缩到3个主题。",
-        "output": "同窗词表、趋势、关联需求和普通内容样本；未知项保留。"
+        "step": "把三组题材落到同主题内容",
+        "work": "角色与故事、宠物兴趣、办公学习各核热门与近期普通内容，先标主题、是否AI、消费意图与供给形式，再看评论和后续参与。",
+        "output": "每组目标20条；不足时按实数。对应内容、独立作者与具体未满足诉求。"
       },
       {
-        "step": "对齐竞品供给",
-        "work": "围绕入选主题，在相关平台按相同时间和入口规则抽样；记录独立作者、有效内容和具体缺口。",
-        "output": "每个主题一份供给与消费证据表；能反驳机会假设的材料也收录。"
+        "step": "补跨期与垂类供需读数",
+        "work": "复核近期与较长区间的同词变化；继续核创作指南占比数值、视频量范围与内容年龄，不从曲线位置估数。",
+        "output": "同口径趋势和供给记录；把季节、事件、热门排序与缺失字段列在对应数据旁。"
       },
       {
-        "step": "小规模内容承接",
-        "work": "每个主题准备作品、解释或任务资料中的必要组合，先检查能否持续供给；对比相近发布条件，标明探索而非随机实验。",
-        "output": "从渠道内容到社区主题页的消费与回访记录；不以积分领取、生成或付费做成功门槛。"
+        "step": "按内容承接能力比较",
+        "work": "用样本检查作品、系列、教程、资源分别需要什么展示与维护；记录运营能否持续生产和回应，不仅比较功能是否存在。",
+        "output": "可持续供给清单、耗时、依赖与读者回访理由。"
       },
       {
-        "step": "按持续活跃判断",
-        "work": "记录两个完整自然周的外部目标用户交集，连同目标识别覆盖、供给耗时与获客投入比较。",
-        "output": "继续、修改或停止某个主题的依据；人数少时保留方向性判断，不宣布市场验证成功。"
+        "step": "具备条件后再做小规模承接",
+        "work": "在多元拾光用必要的主题页、系列或任务资料承接渠道用户，记录两个完整自然周的外部目标用户交集。",
+        "output": "比较有效消费与参与、跨周活跃和投入；积分领取、生成与付费不作为成功前提。"
+      }
+    ],
+    "researchPriorities": [
+      {
+        "theme": "角色与故事",
+        "why": "动画短片可查，漫剧与短剧提供扩词线索；竞品已有关联作品和角色创作形式。",
+        "task": "选完整成片、系列页与普通作品，对照追更、找合集、问做法三类诉求。",
+        "missing": "已有兴趣样本没有可计数的读者追更证据，也未形成同题材样本。"
+      },
+      {
+        "theme": "宠物兴趣",
+        "why": "猫咪日常近期搜索增长，能区分纯观看兴趣和自家宠物创作。",
+        "task": "分开记录普通萌宠、AI故事和个性化创作；核观看者究竟缺故事、素材还是方法。",
+        "missing": "尚未补到足够的AI宠物具体供给和读者反馈；不能用猫咪大盘代替。"
+      },
+      {
+        "theme": "办公学习",
+        "why": "PPT制作搜索与综合指数都上升，可作为任务消费的对照。",
+        "task": "补具体PPT求助、素材和案例，区分学生、职场、培训及AI方法，并看开学季影响。",
+        "missing": "技术共学与报错样本不是办公用户画像，需另取内容；现有MakeNow对PPT的直接支撑也未成立。"
       }
     ]
   },
@@ -3384,5 +3411,4720 @@
       "consumptionShare": null,
       "demandSupplyRatio": null
     }
-  ]
+  ],
+  "douyinIndexObservations": {
+    "title": "抖音指数实查",
+    "observedDates": [
+      "2026-09-11",
+      "2026-09-12"
+    ],
+    "timezone": "Asia/Shanghai",
+    "period": "2026-08-10 ~ 2026-09-10",
+    "platform": "抖音",
+    "region": "全国",
+    "method": "通过已登录的抖音创作者中心搜索框逐词查询，等待数值或未收录提示出现后记录。只读取页面显示内容，未调用账户接口。查询在北京时间9月11日晚进行，大小写复核在9月12日零点后进行。",
+    "definition": {
+      "sourceUrl": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index",
+      "search": "反映关键词在抖音的用户搜索热度，数值越大，搜索兴趣越强。",
+      "composite": "反映关键词在平台的综合声量。页面区分搜索指数与综合指数，未取得可将两者换算成搜索人数或内容数量的公式。",
+      "average": "页面显示的所选区间平均值；保留“万”等原始精度。同比、环比按页面标签转录，未自行重算。",
+      "comparisonBaseline": "同比、环比的精确基期及归一化公式未在本次读取中取得。",
+      "period": "统一保留界面默认的2026-08-10至2026-09-10，不称为近30天。最初另查的AI近30天结果没有纳入。"
+    },
+    "counts": {
+      "planned": 48,
+      "indexedPlanned": 9,
+      "notIndexedPlanned": 39,
+      "supplemental": 7,
+      "diagnostic": 5,
+      "totalQueriesIncluded": 60
+    },
+    "notes": [
+      "未收录表示这个入口没有提供该词指数，不表示搜索或需求为零。",
+      "产品摄影由页面匹配为“产品  摄影”；PPT制作匹配为“ppt制作”。展示输入词并保留匹配词。",
+      "AI绘画、AI视频、ComfyUI和AI角色的小写复核仍显示未收录；另查dify也未收录。",
+      "AI、漫剧、短剧、ai创作是补充参照词，与计划48词分开。宽泛题材可包含非AI内容，不能据指数推算AI用户数或兴趣份额。",
+      "各词可能重叠，指数不相加；搜索指数与综合指数不相除作为供需比。"
+    ],
+    "records": [
+      {
+        "keyword": "原创角色",
+        "normalizedKeyword": "原创角色",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%8E%9F%E5%88%9B%E8%A7%92%E8%89%B2&appName=aweme",
+        "observedAt": "2026-09-11T15:53:45.424Z"
+      },
+      {
+        "keyword": "角色故事",
+        "normalizedKeyword": "角色故事",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%A7%92%E8%89%B2%E6%95%85%E4%BA%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:53:47.614Z"
+      },
+      {
+        "keyword": "动画短片",
+        "normalizedKeyword": "动画短片",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "3.3万",
+          "yoy": "-33.50%",
+          "mom": "+16.95%"
+        },
+        "composite": {
+          "averageText": "1.7万",
+          "yoy": "-36.85%",
+          "mom": "+9.12%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%8A%A8%E7%94%BB%E7%9F%AD%E7%89%87&appName=aweme",
+        "observedAt": "2026-09-11T15:53:50.085Z"
+      },
+      {
+        "keyword": "AI角色",
+        "normalizedKeyword": "AI角色",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%A7%92%E8%89%B2&appName=aweme",
+        "observedAt": "2026-09-11T15:54:07.936Z"
+      },
+      {
+        "keyword": "AI角色一致性",
+        "normalizedKeyword": "AI角色一致性",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%A7%92%E8%89%B2%E4%B8%80%E8%87%B4%E6%80%A7&appName=aweme",
+        "observedAt": "2026-09-11T15:54:10.111Z"
+      },
+      {
+        "keyword": "AI短剧教程",
+        "normalizedKeyword": "AI短剧教程",
+        "cohort": "planned",
+        "topic": "原创角色与故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E7%9F%AD%E5%89%A7%E6%95%99%E7%A8%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:54:12.343Z"
+      },
+      {
+        "keyword": "萌宠故事",
+        "normalizedKeyword": "萌宠故事",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%90%8C%E5%AE%A0%E6%95%85%E4%BA%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:54:14.620Z"
+      },
+      {
+        "keyword": "猫咪日常",
+        "normalizedKeyword": "猫咪日常",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "3.2万",
+          "yoy": "+46.02%",
+          "mom": "+43.14%"
+        },
+        "composite": {
+          "averageText": "5.4万",
+          "yoy": "-0.06%",
+          "mom": "-0.73%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E7%8C%AB%E5%92%AA%E6%97%A5%E5%B8%B8&appName=aweme",
+        "observedAt": "2026-09-11T15:54:17.343Z"
+      },
+      {
+        "keyword": "宠物拟人",
+        "normalizedKeyword": "宠物拟人",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%AE%A0%E7%89%A9%E6%8B%9F%E4%BA%BA&appName=aweme",
+        "observedAt": "2026-09-11T15:54:19.636Z"
+      },
+      {
+        "keyword": "AI宠物",
+        "normalizedKeyword": "AI宠物",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%AE%A0%E7%89%A9&appName=aweme",
+        "observedAt": "2026-09-11T15:54:26.822Z"
+      },
+      {
+        "keyword": "AI宠物视频",
+        "normalizedKeyword": "AI宠物视频",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%AE%A0%E7%89%A9%E8%A7%86%E9%A2%91&appName=aweme",
+        "observedAt": "2026-09-11T15:54:29.196Z"
+      },
+      {
+        "keyword": "宠物拟人教程",
+        "normalizedKeyword": "宠物拟人教程",
+        "cohort": "planned",
+        "topic": "宠物故事",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%AE%A0%E7%89%A9%E6%8B%9F%E4%BA%BA%E6%95%99%E7%A8%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:54:31.447Z"
+      },
+      {
+        "keyword": "国风短片",
+        "normalizedKeyword": "国风短片",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%9B%BD%E9%A3%8E%E7%9F%AD%E7%89%87&appName=aweme",
+        "observedAt": "2026-09-11T15:54:33.821Z"
+      },
+      {
+        "keyword": "奇幻短片",
+        "normalizedKeyword": "奇幻短片",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%A5%87%E5%B9%BB%E7%9F%AD%E7%89%87&appName=aweme",
+        "observedAt": "2026-09-11T15:54:35.966Z"
+      },
+      {
+        "keyword": "科幻短片",
+        "normalizedKeyword": "科幻短片",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "439",
+          "yoy": "+11.99%",
+          "mom": "-8.73%"
+        },
+        "composite": {
+          "averageText": "720",
+          "yoy": "+63.27%",
+          "mom": "+20.20%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E7%A7%91%E5%B9%BB%E7%9F%AD%E7%89%87&appName=aweme",
+        "observedAt": "2026-09-11T15:54:38.616Z"
+      },
+      {
+        "keyword": "AI国风",
+        "normalizedKeyword": "AI国风",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%9B%BD%E9%A3%8E&appName=aweme",
+        "observedAt": "2026-09-11T15:55:08.123Z"
+      },
+      {
+        "keyword": "AI短片制作",
+        "normalizedKeyword": "AI短片制作",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E7%9F%AD%E7%89%87%E5%88%B6%E4%BD%9C&appName=aweme",
+        "observedAt": "2026-09-11T15:55:10.283Z"
+      },
+      {
+        "keyword": "AI视频分镜",
+        "normalizedKeyword": "AI视频分镜",
+        "cohort": "planned",
+        "topic": "国风与视觉短片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%A7%86%E9%A2%91%E5%88%86%E9%95%9C&appName=aweme",
+        "observedAt": "2026-09-11T15:55:12.359Z"
+      },
+      {
+        "keyword": "商品主图",
+        "normalizedKeyword": "商品主图",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "298",
+          "yoy": "-23.20%",
+          "mom": "-8.59%"
+        },
+        "composite": {
+          "averageText": "128",
+          "yoy": "-3.76%",
+          "mom": "-16.34%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%95%86%E5%93%81%E4%B8%BB%E5%9B%BE&appName=aweme",
+        "observedAt": "2026-09-11T15:55:14.942Z"
+      },
+      {
+        "keyword": "产品摄影",
+        "normalizedKeyword": "产品  摄影",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "212",
+          "yoy": "+3.41%",
+          "mom": "-20.90%"
+        },
+        "composite": {
+          "averageText": "198",
+          "yoy": "+22.98%",
+          "mom": "-10.00%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E4%BA%A7%E5%93%81%20%20%E6%91%84%E5%BD%B1&appName=aweme",
+        "observedAt": "2026-09-11T15:55:55.332Z"
+      },
+      {
+        "keyword": "商品海报",
+        "normalizedKeyword": "商品海报",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%95%86%E5%93%81%E6%B5%B7%E6%8A%A5&appName=aweme",
+        "observedAt": "2026-09-11T15:55:57.771Z"
+      },
+      {
+        "keyword": "AI商品图",
+        "normalizedKeyword": "AI商品图",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%95%86%E5%93%81%E5%9B%BE&appName=aweme",
+        "observedAt": "2026-09-11T15:55:59.937Z"
+      },
+      {
+        "keyword": "AI产品摄影",
+        "normalizedKeyword": "AI产品摄影",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E4%BA%A7%E5%93%81%E6%91%84%E5%BD%B1&appName=aweme",
+        "observedAt": "2026-09-11T15:56:02.190Z"
+      },
+      {
+        "keyword": "商品图工作流",
+        "normalizedKeyword": "商品图工作流",
+        "cohort": "planned",
+        "topic": "商品宣传素材",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%95%86%E5%93%81%E5%9B%BE%E5%B7%A5%E4%BD%9C%E6%B5%81&appName=aweme",
+        "observedAt": "2026-09-11T15:56:04.424Z"
+      },
+      {
+        "keyword": "像素素材",
+        "normalizedKeyword": "像素素材",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%83%8F%E7%B4%A0%E7%B4%A0%E6%9D%90&appName=aweme",
+        "observedAt": "2026-09-11T15:56:06.841Z"
+      },
+      {
+        "keyword": "游戏立绘",
+        "normalizedKeyword": "游戏立绘",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E6%B8%B8%E6%88%8F%E7%AB%8B%E7%BB%98&appName=aweme",
+        "observedAt": "2026-09-11T15:56:09.008Z"
+      },
+      {
+        "keyword": "Unity素材",
+        "normalizedKeyword": "Unity素材",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=Unity%E7%B4%A0%E6%9D%90&appName=aweme",
+        "observedAt": "2026-09-11T15:56:19.319Z"
+      },
+      {
+        "keyword": "AI游戏素材",
+        "normalizedKeyword": "AI游戏素材",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E6%B8%B8%E6%88%8F%E7%B4%A0%E6%9D%90&appName=aweme",
+        "observedAt": "2026-09-11T15:56:21.513Z"
+      },
+      {
+        "keyword": "AI像素画",
+        "normalizedKeyword": "AI像素画",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%83%8F%E7%B4%A0%E7%94%BB&appName=aweme",
+        "observedAt": "2026-09-11T15:56:23.668Z"
+      },
+      {
+        "keyword": "游戏角色一致性",
+        "normalizedKeyword": "游戏角色一致性",
+        "cohort": "planned",
+        "topic": "游戏资产",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E4%B8%80%E8%87%B4%E6%80%A7&appName=aweme",
+        "observedAt": "2026-09-11T15:56:26.167Z"
+      },
+      {
+        "keyword": "老照片修复",
+        "normalizedKeyword": "老照片修复",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "1.2万",
+          "yoy": "+130.65%",
+          "mom": "-38.07%"
+        },
+        "composite": {
+          "averageText": "4445",
+          "yoy": "+29.44%",
+          "mom": "-36.18%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%80%81%E7%85%A7%E7%89%87%E4%BF%AE%E5%A4%8D&appName=aweme",
+        "observedAt": "2026-09-11T15:56:28.791Z"
+      },
+      {
+        "keyword": "家庭相册",
+        "normalizedKeyword": "家庭相册",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "311",
+          "yoy": "-90.05%",
+          "mom": "+12.27%"
+        },
+        "composite": {
+          "averageText": "217",
+          "yoy": "-80.07%",
+          "mom": "+68.22%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%AE%B6%E5%BA%AD%E7%9B%B8%E5%86%8C&appName=aweme",
+        "observedAt": "2026-09-11T15:56:31.280Z"
+      },
+      {
+        "keyword": "照片动起来",
+        "normalizedKeyword": "照片动起来",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "8307",
+          "yoy": "-4.01%",
+          "mom": "-33.66%"
+        },
+        "composite": {
+          "averageText": "2877",
+          "yoy": "-38.62%",
+          "mom": "-30.05%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E7%85%A7%E7%89%87%E5%8A%A8%E8%B5%B7%E6%9D%A5&appName=aweme",
+        "observedAt": "2026-09-11T15:56:39.379Z"
+      },
+      {
+        "keyword": "AI老照片修复",
+        "normalizedKeyword": "AI老照片修复",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%80%81%E7%85%A7%E7%89%87%E4%BF%AE%E5%A4%8D&appName=aweme",
+        "observedAt": "2026-09-11T15:56:41.458Z"
+      },
+      {
+        "keyword": "AI照片视频",
+        "normalizedKeyword": "AI照片视频",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91&appName=aweme",
+        "observedAt": "2026-09-11T15:56:43.688Z"
+      },
+      {
+        "keyword": "老照片修复教程",
+        "normalizedKeyword": "老照片修复教程",
+        "cohort": "planned",
+        "topic": "个人与家庭照片",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%80%81%E7%85%A7%E7%89%87%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:56:45.821Z"
+      },
+      {
+        "keyword": "PPT制作",
+        "normalizedKeyword": "ppt制作",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "主题／任务词",
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "8862",
+          "yoy": "+86.96%",
+          "mom": "+42.50%"
+        },
+        "composite": {
+          "averageText": "3230",
+          "yoy": "+49.61%",
+          "mom": "+38.45%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ppt%E5%88%B6%E4%BD%9C&appName=aweme",
+        "observedAt": "2026-09-11T15:56:48.264Z"
+      },
+      {
+        "keyword": "表格整理",
+        "normalizedKeyword": "表格整理",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%A1%A8%E6%A0%BC%E6%95%B4%E7%90%86&appName=aweme",
+        "observedAt": "2026-09-11T15:56:50.543Z"
+      },
+      {
+        "keyword": "资料整理",
+        "normalizedKeyword": "资料整理",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86&appName=aweme",
+        "observedAt": "2026-09-11T15:57:05.843Z"
+      },
+      {
+        "keyword": "AI做PPT",
+        "normalizedKeyword": "AI做PPT",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E5%81%9APPT&appName=aweme",
+        "observedAt": "2026-09-11T15:57:07.918Z"
+      },
+      {
+        "keyword": "AI表格处理",
+        "normalizedKeyword": "AI表格处理",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%A1%A8%E6%A0%BC%E5%A4%84%E7%90%86&appName=aweme",
+        "observedAt": "2026-09-11T15:57:10.181Z"
+      },
+      {
+        "keyword": "AI资料整理",
+        "normalizedKeyword": "AI资料整理",
+        "cohort": "planned",
+        "topic": "办公与学习",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86&appName=aweme",
+        "observedAt": "2026-09-11T15:57:12.389Z"
+      },
+      {
+        "keyword": "图片批量处理",
+        "normalizedKeyword": "图片批量处理",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E5%9B%BE%E7%89%87%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86&appName=aweme",
+        "observedAt": "2026-09-11T15:57:14.982Z"
+      },
+      {
+        "keyword": "知识库搭建",
+        "normalizedKeyword": "知识库搭建",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA&appName=aweme",
+        "observedAt": "2026-09-11T15:57:17.185Z"
+      },
+      {
+        "keyword": "视频自动化",
+        "normalizedKeyword": "视频自动化",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "主题／任务词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E8%A7%86%E9%A2%91%E8%87%AA%E5%8A%A8%E5%8C%96&appName=aweme",
+        "observedAt": "2026-09-11T15:57:25.688Z"
+      },
+      {
+        "keyword": "ComfyUI工作流",
+        "normalizedKeyword": "ComfyUI工作流",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ComfyUI%E5%B7%A5%E4%BD%9C%E6%B5%81&appName=aweme",
+        "observedAt": "2026-09-11T15:57:27.914Z"
+      },
+      {
+        "keyword": "Dify工作流",
+        "normalizedKeyword": "Dify工作流",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=Dify%E5%B7%A5%E4%BD%9C%E6%B5%81&appName=aweme",
+        "observedAt": "2026-09-11T15:57:30.401Z"
+      },
+      {
+        "keyword": "AI自动化教程",
+        "normalizedKeyword": "AI自动化教程",
+        "cohort": "planned",
+        "topic": "工作流与工具",
+        "group": "AI／方法词",
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%95%99%E7%A8%8B&appName=aweme",
+        "observedAt": "2026-09-11T15:57:32.766Z"
+      },
+      {
+        "keyword": "AI",
+        "normalizedKeyword": "ai",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "1861.1万",
+          "yoy": "+93.54%",
+          "mom": "+3.03%"
+        },
+        "composite": {
+          "averageText": "820.4万",
+          "yoy": "+80.88%",
+          "mom": "+2.45%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ai&appName=aweme",
+        "observedAt": "2026-09-11T15:57:35.560Z"
+      },
+      {
+        "keyword": "ai创作",
+        "normalizedKeyword": "ai创作",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "93.8万",
+          "yoy": "+315.44%",
+          "mom": "-1.99%"
+        },
+        "composite": {
+          "averageText": "122.3万",
+          "yoy": "+146.65%",
+          "mom": "+2.66%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ai%E5%88%9B%E4%BD%9C&appName=aweme",
+        "observedAt": "2026-09-11T15:59:01.497Z"
+      },
+      {
+        "keyword": "漫剧",
+        "normalizedKeyword": "漫剧",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "291.8万",
+          "yoy": "+8828.18%",
+          "mom": "+17.35%"
+        },
+        "composite": {
+          "averageText": "241.2万",
+          "yoy": "+7813.86%",
+          "mom": "+27.30%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E6%BC%AB%E5%89%A7&appName=aweme",
+        "observedAt": "2026-09-11T15:59:04.172Z"
+      },
+      {
+        "keyword": "短剧",
+        "normalizedKeyword": "短剧",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "indexed",
+        "statusText": "已收录",
+        "period": "2026-08-10 ~ 2026-09-10",
+        "region": "全国",
+        "platform": "抖音",
+        "search": {
+          "averageText": "2597.3万",
+          "yoy": "+94.73%",
+          "mom": "+9.89%"
+        },
+        "composite": {
+          "averageText": "1150.3万",
+          "yoy": "+15.05%",
+          "mom": "+7.78%"
+        },
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=%E7%9F%AD%E5%89%A7&appName=aweme",
+        "observedAt": "2026-09-11T15:59:06.870Z"
+      },
+      {
+        "keyword": "AI绘画",
+        "normalizedKeyword": "AI绘画",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E7%BB%98%E7%94%BB&appName=aweme",
+        "observedAt": "2026-09-11T15:59:09.085Z"
+      },
+      {
+        "keyword": "AI视频",
+        "normalizedKeyword": "AI视频",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=AI%E8%A7%86%E9%A2%91&appName=aweme",
+        "observedAt": "2026-09-11T15:59:11.176Z"
+      },
+      {
+        "keyword": "ComfyUI",
+        "normalizedKeyword": "ComfyUI",
+        "cohort": "supplemental",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ComfyUI&appName=aweme",
+        "observedAt": "2026-09-11T15:59:13.437Z"
+      },
+      {
+        "keyword": "ai绘画",
+        "normalizedKeyword": "ai绘画",
+        "cohort": "diagnostic",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ai%E7%BB%98%E7%94%BB&appName=aweme",
+        "observedAt": "2026-09-11T16:07:15.923Z"
+      },
+      {
+        "keyword": "ai视频",
+        "normalizedKeyword": "ai视频",
+        "cohort": "diagnostic",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ai%E8%A7%86%E9%A2%91&appName=aweme",
+        "observedAt": "2026-09-11T16:07:18.200Z"
+      },
+      {
+        "keyword": "comfyui",
+        "normalizedKeyword": "comfyui",
+        "cohort": "diagnostic",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=comfyui&appName=aweme",
+        "observedAt": "2026-09-11T16:07:20.539Z"
+      },
+      {
+        "keyword": "dify",
+        "normalizedKeyword": "dify",
+        "cohort": "diagnostic",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=dify&appName=aweme",
+        "observedAt": "2026-09-11T16:07:22.780Z"
+      },
+      {
+        "keyword": "ai角色",
+        "normalizedKeyword": "ai角色",
+        "cohort": "diagnostic",
+        "topic": null,
+        "group": null,
+        "status": "not_indexed",
+        "statusText": "暂未收录该关键词",
+        "period": null,
+        "region": null,
+        "platform": "抖音",
+        "search": null,
+        "composite": null,
+        "unit": "指数",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?source=creator&keyword=ai%E8%A7%92%E8%89%B2&appName=aweme",
+        "observedAt": "2026-09-11T16:07:25.042Z"
+      }
+    ],
+    "associations": [
+      {
+        "keyword": "AI",
+        "type": "搜索关联词",
+        "period": "2026-08-24 ~ 2026-08-30",
+        "unit": "关联度",
+        "url": "https://creator.douyin.com/creator-micro/creator-count/arithmetic-index/analysis?keyword=ai&tab=correlation&appName=aweme&source=creator",
+        "selectedTerms": [
+          {
+            "term": "漫剧",
+            "value": 60
+          },
+          {
+            "term": "ai创作",
+            "value": 59
+          },
+          {
+            "term": "短剧",
+            "value": 49
+          }
+        ],
+        "note": "这是默认周榜中的三个有明确含义的词，不是前三名。榜单还混有缩写与URL片段。窗口不同于主表，只用于扩词，关联度不是搜索人数。"
+      }
+    ],
+    "guide": {
+      "url": "https://creator.douyin.com/creator-micro/creator-count/vertical-analysis",
+      "observedAt": "2026-09-12",
+      "title": "创作指南：可以在抖音内部研究供需",
+      "finding": "当前入口有内容生产、消费、互动和人群分析，值得与关键词指数一起使用。已取得三个垂类默认第一页的30条热词读数。供需曲线的说明可读，但悬浮框只显示日期和图例，没有显示数值。",
+      "fields": [
+        {
+          "name": "内容供给",
+          "definition": "该垂类投稿数量占抖音大盘投稿数量的比例。",
+          "status": "定义已核；占比数值未取得",
+          "period": "2026-08-09 ~ 2026-09-09"
+        },
+        {
+          "name": "内容消费",
+          "definition": "该垂类内容观看次数占全网内容观看次数的比例。",
+          "status": "定义已核；占比数值未取得",
+          "period": "2026-08-09 ~ 2026-09-09"
+        },
+        {
+          "name": "内容生产者／内容生产量",
+          "definition": "生产趋势图的两条指标；本次未取得其具体数值和精确计量说明。",
+          "status": "字段可见",
+          "period": "2026-08-09 ~ 2026-09-09"
+        },
+        {
+          "name": "互动率／完播率与视频时长",
+          "definition": "按时长比较互动和完播的图表；计算分母及分组数值未取得。",
+          "status": "字段可见；不据曲线估数",
+          "period": "2026-08-31 ~ 2026-09-06"
+        },
+        {
+          "name": "生产者／消费者画像",
+          "definition": "年龄、性别、城市级别与TGI。消费者可选内容观看或内容互动。",
+          "status": "字段与选择项可见；画像比例未取数",
+          "period": "2026-08"
+        },
+        {
+          "name": "热门关键词",
+          "definition": "同表展示综合指数、搜索指数、视频量。视频量按“w+”原样记录，精确量与是否累计未核。",
+          "status": "30条已取数",
+          "period": "2026-09-09，近1日"
+        }
+      ],
+      "observations": [
+        "供给占比与消费占比可以提示分配差异，但观看包含存量内容和重复观看。即使取得比值，也要排除老内容持续消费、头部集中、主题分类与时间错配，才能讨论未满足需求。",
+        "二次元热词中可见“合集、穿越、修仙、爽文”等表达；摄影摄像可见“出片、剪辑、素材、质感”。这些是内容题材、组织方式或效果词，不全是行业名称，更不全是AI需求。",
+        "科技第一页以手机、品牌、设备和维修为主。只有这一页不能推断整个科技垂类，也不能用科技榜代替AI榜。",
+        "每个榜单共50条，各取默认第一页10条，三张表合计30条；按页面顺序转录。它们是热门入口，未覆盖普通内容或最新内容。",
+        "关键词页均值、关联词周榜、创作指南日榜和画像月报有不同时间窗口。本报告分别列示，没有合并计算。"
+      ],
+      "keywordTables": [
+        {
+          "category": "科技",
+          "url": "https://creator.douyin.com/creator-micro/creator-count/vertical-analysis?tabValue=creativity&areaId=615",
+          "observedAt": "2026-09-11T16:13:40.376Z",
+          "period": "2026-09-09",
+          "selection": "近1日；热门关键词；默认第一页10条；榜单共50条",
+          "rows": [
+            {
+              "rank": 1,
+              "keyword": "手机",
+              "compositeText": "7,944,111",
+              "searchText": "19,392,891",
+              "videoCountText": "115w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 2,
+              "keyword": "苹果",
+              "compositeText": "7,496,354",
+              "searchText": "23,874,298",
+              "videoCountText": "35w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 3,
+              "keyword": "小米",
+              "compositeText": "4,375,819",
+              "searchText": "13,954,303",
+              "videoCountText": "23w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 4,
+              "keyword": "华为",
+              "compositeText": "3,186,341",
+              "searchText": "10,016,921",
+              "videoCountText": "49w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 5,
+              "keyword": "神器",
+              "compositeText": "1,733,228",
+              "searchText": "3,315,171",
+              "videoCountText": "21w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 6,
+              "keyword": "电脑",
+              "compositeText": "1,722,308",
+              "searchText": "5,047,751",
+              "videoCountText": "57w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 7,
+              "keyword": "维修",
+              "compositeText": "1,105,006",
+              "searchText": "1,986,647",
+              "videoCountText": "34w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 8,
+              "keyword": "系统",
+              "compositeText": "981,480",
+              "searchText": "2,383,915",
+              "videoCountText": "26w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 9,
+              "keyword": "电池",
+              "compositeText": "951,859",
+              "searchText": "2,788,433",
+              "videoCountText": "34w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 10,
+              "keyword": "飞机",
+              "compositeText": "930,281",
+              "searchText": "2,742,073",
+              "videoCountText": "39w+",
+              "videoCountPeriod": null
+            }
+          ]
+        },
+        {
+          "category": "二次元",
+          "url": "https://creator.douyin.com/creator-micro/creator-count/vertical-analysis?tabValue=creativity&areaId=607",
+          "observedAt": "2026-09-11T16:13:48.213Z",
+          "period": "2026-09-09",
+          "selection": "近1日；热门关键词；默认第一页10条；榜单共50条",
+          "rows": [
+            {
+              "rank": 1,
+              "keyword": "小说",
+              "compositeText": "2,422,564",
+              "searchText": "4,634,019",
+              "videoCountText": "21w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 2,
+              "keyword": "作者",
+              "compositeText": "1,491,727",
+              "searchText": "1,658,125",
+              "videoCountText": "8w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 3,
+              "keyword": "动漫",
+              "compositeText": "1,105,204",
+              "searchText": "2,022,181",
+              "videoCountText": "65w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 4,
+              "keyword": "合集",
+              "compositeText": "844,551",
+              "searchText": "2,438,736",
+              "videoCountText": "4w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 5,
+              "keyword": "穿越",
+              "compositeText": "800,614",
+              "searchText": "1,837,201",
+              "videoCountText": "8w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 6,
+              "keyword": "大师",
+              "compositeText": "609,764",
+              "searchText": "1,622,468",
+              "videoCountText": "5w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 7,
+              "keyword": "男主",
+              "compositeText": "553,593",
+              "searchText": "1,297,897",
+              "videoCountText": "11w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 8,
+              "keyword": "漫画",
+              "compositeText": "513,513",
+              "searchText": "1,151,271",
+              "videoCountText": "60w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 9,
+              "keyword": "修仙",
+              "compositeText": "488,656",
+              "searchText": "1,349,552",
+              "videoCountText": "9w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 10,
+              "keyword": "爽文",
+              "compositeText": "452,402",
+              "searchText": "799,121",
+              "videoCountText": "4w+",
+              "videoCountPeriod": null
+            }
+          ]
+        },
+        {
+          "category": "摄影摄像",
+          "url": "https://creator.douyin.com/creator-micro/creator-count/vertical-analysis?tabValue=creativity&areaId=627",
+          "observedAt": "2026-09-11T16:14:01.589Z",
+          "period": "2026-09-09",
+          "selection": "近1日；热门关键词；默认第一页10条；榜单共50条",
+          "rows": [
+            {
+              "rank": 1,
+              "keyword": "照片",
+              "compositeText": "2,119,602",
+              "searchText": "5,771,939",
+              "videoCountText": "25w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 2,
+              "keyword": "拍照",
+              "compositeText": "1,412,197",
+              "searchText": "3,566,419",
+              "videoCountText": "43w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 3,
+              "keyword": "剪辑",
+              "compositeText": "696,971",
+              "searchText": "1,889,944",
+              "videoCountText": "12w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 4,
+              "keyword": "摄影",
+              "compositeText": "528,840",
+              "searchText": "1,043,672",
+              "videoCountText": "38w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 5,
+              "keyword": "出片",
+              "compositeText": "521,590",
+              "searchText": "1,351,280",
+              "videoCountText": "13w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 6,
+              "keyword": "镜头",
+              "compositeText": "493,615",
+              "searchText": "938,531",
+              "videoCountText": "12w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 7,
+              "keyword": "剪映",
+              "compositeText": "445,790",
+              "searchText": "558,424",
+              "videoCountText": "9w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 8,
+              "keyword": "素材",
+              "compositeText": "430,204",
+              "searchText": "1,076,284",
+              "videoCountText": "6w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 9,
+              "keyword": "相机",
+              "compositeText": "428,813",
+              "searchText": "1,034,200",
+              "videoCountText": "21w+",
+              "videoCountPeriod": null
+            },
+            {
+              "rank": 10,
+              "keyword": "质感",
+              "compositeText": "416,435",
+              "searchText": "284,632",
+              "videoCountText": "4w+",
+              "videoCountPeriod": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "contentDemandObservations": {
+    "schemaVersion": 1,
+    "title": "内容与使用样本",
+    "updatedAt": "2026-09-12",
+    "observedRange": {
+      "from": "2026-09-11",
+      "to": "2026-09-11"
+    },
+    "stats": {
+      "sampleCount": 18,
+      "platformCount": 7,
+      "newCount": 11,
+      "recheckedCount": 7
+    },
+    "groups": [
+      {
+        "id": "commerce",
+        "label": "商品图与商品宣传",
+        "summary": "资源已经覆盖多种任务；这组没有读到独立使用者回报。一个同名工具显示不支持运行，不能只数目录入口。",
+        "sampleIds": [
+          "commerce-01",
+          "commerce-02",
+          "commerce-03",
+          "commerce-04",
+          "commerce-05",
+          "commerce-06"
+        ]
+      },
+      {
+        "id": "interest",
+        "label": "角色、故事与视觉作品",
+        "summary": "作品回顾、角色表与单图分别承载不同消费。关联作品和场景编号尚不能证明读者持续追看。",
+        "sampleIds": [
+          "interest-sa-01",
+          "interest-sa-02",
+          "interest-sa-03",
+          "interest-leo-01",
+          "interest-leo-02",
+          "interest-leo-03"
+        ]
+      },
+      {
+        "id": "practice",
+        "label": "学习与工具实践",
+        "summary": "直接问题包含已解决、局部改善和没有确认解决的情况。有人回复与使用者完成任务需要分别记录。",
+        "sampleIds": [
+          "practice-linux-connect",
+          "practice-linux-latency",
+          "practice-dw-key",
+          "practice-dw-windows",
+          "practice-dw-chinese-rag",
+          "practice-hf-vton"
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "id": "commerce-01",
+        "groupId": "commerce",
+        "platform": {
+          "id": "liblib",
+          "name": "LiblibAI"
+        },
+        "title": "FLUX背景重绘FLUX换背景，自定画布打光电商主图海报场景",
+        "url": "https://www.liblib.art/modelinfo/c9503c1d6dfb44858410b840c2a3dad8?from=feed&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFMTI%3D&versionUuid=5d29d408fea248bb813e9a05e79cd995",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "商品图",
+          "商品背景合成",
+          "产品打光"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-01",
+          "platformId": "liblib",
+          "platform": "LiblibAI",
+          "title": "FLUX背景重绘FLUX换背景，自定画布打光电商主图海报场景",
+          "url": "https://www.liblib.art/modelinfo/c9503c1d6dfb44858410b840c2a3dad8?from=feed&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFMTI%3D&versionUuid=5d29d408fea248bb813e9a05e79cd995",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": null,
+          "dateNote": "正文提到连续优化，但没有明确发布/更新日期；搜索引擎抓取日期不作发表日期。",
+          "isNewThisRound": true,
+          "entry": {
+            "type": "公开网页搜索",
+            "query": "site:liblib.art/modelinfo 商品 主图 背景 工作流",
+            "sort": "搜索默认排序，规则未知",
+            "selectedBecause": "正文出现透视、边缘、投影与后期细节等具体问题，可检验资源说明是否超出效果宣传。"
+          },
+          "topic": [
+            "商品图",
+            "商品背景合成",
+            "产品打光"
+          ],
+          "use": "根据产品与参考场景调整位置、透视、光影和细节，形成商品主图或海报素材。",
+          "contentForm": "ComfyUI工作流说明＋外部视频教程目录",
+          "author": {
+            "localKey": "commerce-author-01",
+            "type": "工作流作者；正文称本地研究后分享",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "页面作者说明；未核职业或客户关系。"
+          },
+          "metrics": [],
+          "metricsNote": "本次可读正文未返回明确标注的互动或使用数。",
+          "unlabeledNumbers": [],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "作者自述的适用与排错要求",
+              "text": "产品与参考场景的透视、尺度需要调整；作者描述投影损失、底部多画物体、边缘修复和放大耗时，并给出处理方向。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "说明部分完整，执行未验证",
+            "provided": [
+              "参考图与产品关系要求",
+              "遮罩、画布与局部采样的调整说明",
+              "按简单/进阶/更新组织的外部教程入口",
+              "示例过程和作者迭代陈述"
+            ],
+            "missing": [
+              "本次未观看外部教程",
+              "完整配置和模型版本核验",
+              "统一输入下的失败率、耗时与成本",
+              "独立使用者反馈"
+            ],
+            "canRunVerified": null
+          },
+          "evidenceRead": "打开具体页并读取84行公开正文；只读，没有下载或运行。",
+          "interpretation": "有说明材料的供给不等于一键完成。该样本提示商品保真与场景融合可能需要经验，可调查是否有人愿意反复阅读解释与排错内容，不能据作者一句可用资源少认定市场短缺。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "正文提到连续优化，但没有明确发布/更新日期；搜索引擎抓取日期不作发表日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增。"
+        },
+        "purpose": "根据产品与参考场景调整位置、透视、光影和细节，形成商品主图或海报素材。",
+        "forms": [
+          "ComfyUI工作流说明＋外部视频教程目录"
+        ],
+        "author": {
+          "label": "commerce-author-01",
+          "type": "工作流作者；正文称本地研究后分享"
+        },
+        "entry": {
+          "description": "公开网页搜索；site:liblib.art/modelinfo 商品 主图 背景 工作流",
+          "reason": "正文出现透视、边缘、投影与后期细节等具体问题，可检验资源说明是否超出效果宣传。",
+          "scope": "搜索默认排序，规则未知"
+        },
+        "metrics": [],
+        "metricNote": "本次可读正文未返回明确标注的互动或使用数。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "作者自述的适用与排错要求",
+            "text": "产品与参考场景的透视、尺度需要调整；作者描述投影损失、底部多画物体、边缘修复和放大耗时，并给出处理方向。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "说明部分完整，执行未验证",
+          "provided": [
+            "参考图与产品关系要求",
+            "遮罩、画布与局部采样的调整说明",
+            "按简单/进阶/更新组织的外部教程入口",
+            "示例过程和作者迭代陈述"
+          ],
+          "missing": [
+            "本次未观看外部教程",
+            "完整配置和模型版本核验",
+            "统一输入下的失败率、耗时与成本",
+            "独立使用者反馈"
+          ]
+        },
+        "interpretation": "有说明材料的供给不等于一键完成。该样本提示商品保真与场景融合可能需要经验，可调查是否有人愿意反复阅读解释与排错内容，不能据作者一句可用资源少认定市场短缺。",
+        "sources": [
+          {
+            "title": "FLUX背景重绘FLUX换背景，自定画布打光电商主图海报场景",
+            "url": "https://www.liblib.art/modelinfo/c9503c1d6dfb44858410b840c2a3dad8?from=feed&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFMTI%3D&versionUuid=5d29d408fea248bb813e9a05e79cd995",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "打开具体页并读取84行公开正文；只读，没有下载或运行。"
+          }
+        ]
+      },
+      {
+        "id": "commerce-02",
+        "groupId": "commerce",
+        "platform": {
+          "id": "liblib",
+          "name": "LiblibAI"
+        },
+        "title": "电商产品精修+背景替换（FLUX）V2.0",
+        "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "商品精修",
+          "商品背景替换"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-02",
+          "platformId": "liblib",
+          "platform": "LiblibAI",
+          "title": "电商产品精修+背景替换（FLUX）V2.0",
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": null,
+          "dateNote": "页面正文未标明确日期。",
+          "isNewThisRound": false,
+          "previousEvidence": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；本轮重新打开，未把历史记录充当新增。",
+          "entry": {
+            "type": "已有证据复核并由公开搜索再次找到",
+            "query": "site:liblib.art/modelinfo 商品 主图 背景 工作流",
+            "sort": "目的性复核",
+            "selectedBecause": "保留版本连续性，比较精修与背景合成两种用途的材料要求。"
+          },
+          "topic": [
+            "商品精修",
+            "商品背景替换"
+          ],
+          "use": "商品原图精修与两图背景迁移，可分别使用两模块。",
+          "contentForm": "ComfyUI工作流＋节点图解＋版本迁移说明",
+          "author": {
+            "localKey": "commerce-author-02",
+            "type": "商品图处理工作流作者",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "同页链接其V1并解释V2方法；不推断商家或职业设计师身份。"
+          },
+          "metrics": [],
+          "metricsNote": "本次可读正文没有明确标注的互动或使用数。",
+          "unlabeledNumbers": [],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "作者自述的配置与输入要求",
+              "text": "需要产品图和背景图，背景图需绘制遮罩；新版增加配置要求，作者建议按显存条件调整模型，并提到重复尝试。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "模块说明可读，完整交付未验证",
+            "provided": [
+              "V1/V2关联",
+              "精修与背景分模块",
+              "两份输入作用",
+              "节点过程图和可选依赖提示"
+            ],
+            "missing": [
+              "可下载完整配置核验",
+              "同一商品的原始输入与失败对照",
+              "实际运行结果和代价",
+              "返图与作者答复链"
+            ],
+            "canRunVerified": null
+          },
+          "evidenceRead": "打开具体页并读取72行公开正文；作者邀请返图，未读到返图结果。",
+          "interpretation": "版本延续是供给维护线索，不是消费者重复使用证明。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "页面正文未标明确日期。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；本轮重新打开，未把历史记录充当新增。"
+        },
+        "purpose": "商品原图精修与两图背景迁移，可分别使用两模块。",
+        "forms": [
+          "ComfyUI工作流＋节点图解＋版本迁移说明"
+        ],
+        "author": {
+          "label": "commerce-author-02",
+          "type": "商品图处理工作流作者"
+        },
+        "entry": {
+          "description": "已有证据复核并由公开搜索再次找到；site:liblib.art/modelinfo 商品 主图 背景 工作流",
+          "reason": "保留版本连续性，比较精修与背景合成两种用途的材料要求。",
+          "scope": "目的性复核"
+        },
+        "metrics": [],
+        "metricNote": "本次可读正文没有明确标注的互动或使用数。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "作者自述的配置与输入要求",
+            "text": "需要产品图和背景图，背景图需绘制遮罩；新版增加配置要求，作者建议按显存条件调整模型，并提到重复尝试。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "模块说明可读，完整交付未验证",
+          "provided": [
+            "V1/V2关联",
+            "精修与背景分模块",
+            "两份输入作用",
+            "节点过程图和可选依赖提示"
+          ],
+          "missing": [
+            "可下载完整配置核验",
+            "同一商品的原始输入与失败对照",
+            "实际运行结果和代价",
+            "返图与作者答复链"
+          ]
+        },
+        "interpretation": "版本延续是供给维护线索，不是消费者重复使用证明。",
+        "sources": [
+          {
+            "title": "电商产品精修+背景替换（FLUX）V2.0",
+            "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "打开具体页并读取72行公开正文；作者邀请返图，未读到返图结果。"
+          }
+        ]
+      },
+      {
+        "id": "commerce-03",
+        "groupId": "commerce",
+        "platform": {
+          "id": "liblib",
+          "name": "LiblibAI"
+        },
+        "title": "一键全品类电商产品主图丨海报丨详情页（风格参考）",
+        "url": "https://www.liblib.art/modelinfo/704b848dc1804107931c8d534b6165dd?from=search&versionUuid=23e2bfbbd9b94714a8e7a11c2fedc18e",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "商品主图",
+          "商品海报",
+          "详情页"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-03",
+          "platformId": "liblib",
+          "platform": "LiblibAI",
+          "title": "一键全品类电商产品主图丨海报丨详情页（风格参考）",
+          "url": "https://www.liblib.art/modelinfo/704b848dc1804107931c8d534b6165dd?from=search&versionUuid=23e2bfbbd9b94714a8e7a11c2fedc18e",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": null,
+          "dateNote": "具体页正文未标明确日期。",
+          "isNewThisRound": true,
+          "entry": {
+            "type": "公开网页搜索",
+            "query": "site:liblib.art/modelinfo 商品 主图 背景 工作流",
+            "sort": "搜索默认排序，规则未知",
+            "selectedBecause": "覆盖带文案的主图/详情页，区别于只处理背景和精修的资源。"
+          },
+          "topic": [
+            "商品主图",
+            "商品海报",
+            "详情页"
+          ],
+          "use": "用白底产品图、参考版式和标题/卖点文案生成商品视觉素材；作者列家具、厨具、五金及电器用途。",
+          "contentForm": "ComfyUI工作流说明",
+          "author": {
+            "localKey": "commerce-author-03",
+            "type": "工作流作者，正文同时提供定制和教学服务",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "作者服务说明；未保存联系方式，未核是否成交。"
+          },
+          "metrics": [],
+          "metricsNote": "本次正文未返回明确标注的互动或使用数。",
+          "unlabeledNumbers": [],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "作者说明的输入及失败条件",
+              "text": "参考品类和版式需适配产品；文案需按节点格式填写，参考图过于复杂可能影响结果；文字错位与风格不一致需换参考图或改文案。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "任务和输入较明确，运行与适用范围未验证",
+            "provided": [
+              "白底图、参考图、文案三类输入",
+              "输出比例和分辨率说明",
+              "文字错位与风格不一致的处理方向",
+              "作者列举的适用品类"
+            ],
+            "missing": [
+              "完整模型名称在公开正文部分被遮挡",
+              "输入输出逐例对照",
+              "配置、准确率和运行成本",
+              "真实消费者评论与采购结果"
+            ],
+            "canRunVerified": null
+          },
+          "evidenceRead": "打开具体页并读取58行公开正文。",
+          "interpretation": "覆盖品类多是作者声明；多元拾光更应核对文字准确、商品一致和参考图使用条件，不能直接复制全品类承诺。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "具体页正文未标明确日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增。"
+        },
+        "purpose": "用白底产品图、参考版式和标题/卖点文案生成商品视觉素材；作者列家具、厨具、五金及电器用途。",
+        "forms": [
+          "ComfyUI工作流说明"
+        ],
+        "author": {
+          "label": "commerce-author-03",
+          "type": "工作流作者，正文同时提供定制和教学服务"
+        },
+        "entry": {
+          "description": "公开网页搜索；site:liblib.art/modelinfo 商品 主图 背景 工作流",
+          "reason": "覆盖带文案的主图/详情页，区别于只处理背景和精修的资源。",
+          "scope": "搜索默认排序，规则未知"
+        },
+        "metrics": [],
+        "metricNote": "本次正文未返回明确标注的互动或使用数。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "作者说明的输入及失败条件",
+            "text": "参考品类和版式需适配产品；文案需按节点格式填写，参考图过于复杂可能影响结果；文字错位与风格不一致需换参考图或改文案。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "任务和输入较明确，运行与适用范围未验证",
+          "provided": [
+            "白底图、参考图、文案三类输入",
+            "输出比例和分辨率说明",
+            "文字错位与风格不一致的处理方向",
+            "作者列举的适用品类"
+          ],
+          "missing": [
+            "完整模型名称在公开正文部分被遮挡",
+            "输入输出逐例对照",
+            "配置、准确率和运行成本",
+            "真实消费者评论与采购结果"
+          ]
+        },
+        "interpretation": "覆盖品类多是作者声明；多元拾光更应核对文字准确、商品一致和参考图使用条件，不能直接复制全品类承诺。",
+        "sources": [
+          {
+            "title": "一键全品类电商产品主图丨海报丨详情页（风格参考）",
+            "url": "https://www.liblib.art/modelinfo/704b848dc1804107931c8d534b6165dd?from=search&versionUuid=23e2bfbbd9b94714a8e7a11c2fedc18e",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "打开具体页并读取58行公开正文。"
+          }
+        ]
+      },
+      {
+        "id": "commerce-04",
+        "groupId": "commerce",
+        "platform": {
+          "id": "tusi",
+          "name": "吐司中文站"
+        },
+        "title": "电商产品换背景",
+        "url": "https://tusi.cn/workflows/872961173882979005",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "商品换背景"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-04",
+          "platformId": "tusi",
+          "platform": "吐司中文站",
+          "title": "电商产品换背景",
+          "url": "https://tusi.cn/workflows/872961173882979005",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": "2025-06-10",
+          "dateNote": "页面原字段为Updated: Jun 10, 2025 2:55 AM；时区未说明，不作为首发日期。",
+          "isNewThisRound": true,
+          "entry": {
+            "type": "公开网页搜索",
+            "query": "site:tusi.cn/workflows 电商 产品",
+            "sort": "搜索默认排序，规则未知",
+            "selectedBecause": "可与同作者同名封装工具核对，检查资源数量与真正可用供给是否一致。"
+          },
+          "topic": [
+            "商品换背景"
+          ],
+          "use": "上传商品图，填商品和背景提示词，更换背景，必要时另做放大与细节修复。",
+          "contentForm": "21节点工作流＋操作说明；另有同名AI工具",
+          "author": {
+            "localKey": "commerce-author-04",
+            "type": "工作流定制服务作者",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "正文声明定制工作流、LoRA和教程；未核服务交付，未保存联系方式。"
+          },
+          "metrics": [
+            {
+              "rawField": "star",
+              "rawText": "3 star",
+              "value": 3,
+              "unit": "star",
+              "window": "未知；页面未标时间窗",
+              "observedAt": "2026-09-11",
+              "population": "资源标记，不是去重运行用户"
+            }
+          ],
+          "metricsNote": "仅star字段有明确文字标签。",
+          "unlabeledNumbers": [
+            {
+              "rawText": "61",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            },
+            {
+              "rawText": "28",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            }
+          ],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "当前页面状态",
+              "text": "同作者同名AI工具页明确显示This AI Tool does not support running；只说明该工具页当前呈现的状态，不推断主工作流同样失效。",
+              "independentConsumer": false,
+              "relatedUrl": "https://tusi.cn/template/872961545397606983"
+            },
+            {
+              "type": "作者说明的后处理",
+              "text": "作者提示生成细节需完善时另用高清放大与细节修复。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "工作流说明与节点可读；封装工具不可运行提示明确",
+            "provided": [
+              "商品/背景提示词和上传说明",
+              "21节点清单",
+              "示例入口",
+              "后续修复方向"
+            ],
+            "missing": [
+              "主工作流实际可运行性",
+              "完整参数导出核验",
+              "输入规格与失败示例",
+              "独立返图或评论"
+            ],
+            "canRunVerified": null,
+            "relatedToolStatus": "页面声明不支持运行"
+          },
+          "relatedPages": [
+            {
+              "url": "https://tusi.cn/template/872961545397606983",
+              "title": "电商产品换背景AI工具",
+              "updatedAt": "2025-06-10",
+              "observedAt": "2026-09-11",
+              "statusText": "This AI Tool does not support running",
+              "countAsSeparateSupply": false,
+              "relationship": "同作者同名且正文相同；配置完全一致未核。工具页star无明确数值，另有无标签1，不填star=1。"
+            }
+          ],
+          "evidenceRead": "工作流98行正文、同名工具45行正文均可读，没有运行。",
+          "interpretation": "有工作流、有同名工具应分开核可获得性；目录中两个入口不能直接计成两份有效供给。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": "2025-06-10",
+          "latestParticipationAt": null,
+          "note": "页面原字段为Updated: Jun 10, 2025 2:55 AM；时区未说明，不作为首发日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增。"
+        },
+        "purpose": "上传商品图，填商品和背景提示词，更换背景，必要时另做放大与细节修复。",
+        "forms": [
+          "21节点工作流＋操作说明；另有同名AI工具"
+        ],
+        "author": {
+          "label": "commerce-author-04",
+          "type": "工作流定制服务作者"
+        },
+        "entry": {
+          "description": "公开网页搜索；site:tusi.cn/workflows 电商 产品",
+          "reason": "可与同作者同名封装工具核对，检查资源数量与真正可用供给是否一致。",
+          "scope": "搜索默认排序，规则未知"
+        },
+        "metrics": [
+          {
+            "field": "star",
+            "value": 3,
+            "unit": "star",
+            "window": "未知；页面未标时间窗",
+            "note": "资源标记，不是去重运行用户",
+            "kind": "consumption",
+            "rawText": "3 star"
+          }
+        ],
+        "metricNote": "仅star字段有明确文字标签。",
+        "unlabeledNumbers": [
+          {
+            "value": "61",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          },
+          {
+            "value": "28",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "当前页面状态",
+            "text": "同作者同名AI工具页明确显示This AI Tool does not support running；只说明该工具页当前呈现的状态，不推断主工作流同样失效。",
+            "url": "https://tusi.cn/template/872961545397606983"
+          },
+          {
+            "type": "作者说明的后处理",
+            "text": "作者提示生成细节需完善时另用高清放大与细节修复。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "工作流说明与节点可读；封装工具不可运行提示明确",
+          "provided": [
+            "商品/背景提示词和上传说明",
+            "21节点清单",
+            "示例入口",
+            "后续修复方向"
+          ],
+          "missing": [
+            "主工作流实际可运行性",
+            "完整参数导出核验",
+            "输入规格与失败示例",
+            "独立返图或评论"
+          ]
+        },
+        "interpretation": "有工作流、有同名工具应分开核可获得性；目录中两个入口不能直接计成两份有效供给。",
+        "sources": [
+          {
+            "title": "电商产品换背景",
+            "url": "https://tusi.cn/workflows/872961173882979005",
+            "date": "2025-06-10",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "工作流98行正文、同名工具45行正文均可读，没有运行。"
+          },
+          {
+            "title": "电商产品换背景AI工具",
+            "url": "https://tusi.cn/template/872961545397606983",
+            "date": "2025-06-10",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "This AI Tool does not support running；同作者同名且正文相同；配置完全一致未核。工具页star无明确数值，另有无标签1，不填star=1。"
+          }
+        ]
+      },
+      {
+        "id": "commerce-05",
+        "groupId": "commerce",
+        "platform": {
+          "id": "tusi",
+          "name": "吐司中文站"
+        },
+        "title": "60算力15s/电商生成器V1.1/抖音TK电商视频原创15s素材生成器:优化版",
+        "url": "https://tusi.cn/workflows/877000054827695763",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "服装展示视频",
+          "商品宣传短片"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-05",
+          "platformId": "tusi",
+          "platform": "吐司中文站",
+          "title": "60算力15s/电商生成器V1.1/抖音TK电商视频原创15s素材生成器:优化版",
+          "url": "https://tusi.cn/workflows/877000054827695763",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": "2025-07-13",
+          "dateNote": "页面原字段为Updated: Jul 13, 2025 7:06 AM；时区未说明。",
+          "isNewThisRound": true,
+          "entry": {
+            "type": "公开网页搜索",
+            "query": "site:tusi.cn/workflows 电商 产品",
+            "sort": "搜索默认排序，规则未知",
+            "selectedBecause": "覆盖商品展示视频；标题指向抖音/TK用途，正文有修复记录而不只有效果宣称。"
+          },
+          "topic": [
+            "服装展示视频",
+            "商品宣传短片"
+          ],
+          "use": "用模特手拿衣服的图片生成展示片段，作者声称用于追随短视频热点。",
+          "contentForm": "44节点视频工作流＋更新说明＋工具链接",
+          "author": {
+            "localKey": "commerce-author-05",
+            "type": "视频工作流作者",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "作者说明调参与版本修复；未核实际商家身份。"
+          },
+          "metrics": [
+            {
+              "rawField": "star",
+              "rawText": "3 star",
+              "value": 3,
+              "unit": "star",
+              "window": "未知；未标时间窗",
+              "observedAt": "2026-09-11",
+              "population": "资源标记，不是成功制作或投放人数"
+            }
+          ],
+          "metricsNote": "标题的算力、时长和正文成本均是作者陈述，不作为本轮测得的成本。",
+          "unlabeledNumbers": [
+            {
+              "rawText": "39",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            },
+            {
+              "rawText": "40",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            }
+          ],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "作者维护记录",
+              "text": "作者列修复闪烁、增强动作和放开输入尺寸；是否修复成功未测。",
+              "independentConsumer": false
+            },
+            {
+              "type": "作者对发布使用的提醒",
+              "text": "作者提及抖音对AIGC商业内容审查；没有核查现行规则或实际处罚，不把该历史自述写成当前平台政策。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "输入用途与版本变化可读，效果和外部投放未验证",
+            "provided": [
+              "输入图片所含主体的要求",
+              "闪烁/动作/尺寸的修复说明",
+              "44节点清单",
+              "同用途工具入口"
+            ],
+            "missing": [
+              "本次未打开关联工具",
+              "原始素材与修复前后对照",
+              "真实生成代价和完成率",
+              "独立消费者使用或投放结果"
+            ],
+            "canRunVerified": null
+          },
+          "evidenceRead": "打开具体页并读取108行公开正文。",
+          "interpretation": "商品宣传既有静态图也有展示动作，但作者提供工作流与用户能稳定形成可发布内容之间仍有距离。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": "2025-07-13",
+          "latestParticipationAt": null,
+          "note": "页面原字段为Updated: Jul 13, 2025 7:06 AM；时区未说明。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增。"
+        },
+        "purpose": "用模特手拿衣服的图片生成展示片段，作者声称用于追随短视频热点。",
+        "forms": [
+          "44节点视频工作流＋更新说明＋工具链接"
+        ],
+        "author": {
+          "label": "commerce-author-05",
+          "type": "视频工作流作者"
+        },
+        "entry": {
+          "description": "公开网页搜索；site:tusi.cn/workflows 电商 产品",
+          "reason": "覆盖商品展示视频；标题指向抖音/TK用途，正文有修复记录而不只有效果宣称。",
+          "scope": "搜索默认排序，规则未知"
+        },
+        "metrics": [
+          {
+            "field": "star",
+            "value": 3,
+            "unit": "star",
+            "window": "未知；未标时间窗",
+            "note": "资源标记，不是成功制作或投放人数",
+            "kind": "consumption",
+            "rawText": "3 star"
+          }
+        ],
+        "metricNote": "标题的算力、时长和正文成本均是作者陈述，不作为本轮测得的成本。",
+        "unlabeledNumbers": [
+          {
+            "value": "39",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          },
+          {
+            "value": "40",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "作者维护记录",
+            "text": "作者列修复闪烁、增强动作和放开输入尺寸；是否修复成功未测。",
+            "url": null
+          },
+          {
+            "type": "作者对发布使用的提醒",
+            "text": "作者提及抖音对AIGC商业内容审查；没有核查现行规则或实际处罚，不把该历史自述写成当前平台政策。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "输入用途与版本变化可读，效果和外部投放未验证",
+          "provided": [
+            "输入图片所含主体的要求",
+            "闪烁/动作/尺寸的修复说明",
+            "44节点清单",
+            "同用途工具入口"
+          ],
+          "missing": [
+            "本次未打开关联工具",
+            "原始素材与修复前后对照",
+            "真实生成代价和完成率",
+            "独立消费者使用或投放结果"
+          ]
+        },
+        "interpretation": "商品宣传既有静态图也有展示动作，但作者提供工作流与用户能稳定形成可发布内容之间仍有距离。",
+        "sources": [
+          {
+            "title": "60算力15s/电商生成器V1.1/抖音TK电商视频原创15s素材生成器:优化版",
+            "url": "https://tusi.cn/workflows/877000054827695763",
+            "date": "2025-07-13",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "打开具体页并读取108行公开正文。"
+          }
+        ]
+      },
+      {
+        "id": "commerce-06",
+        "groupId": "commerce",
+        "platform": {
+          "id": "tusi",
+          "name": "吐司中文站"
+        },
+        "title": "电商图片扩图",
+        "url": "https://tusi.cn/workflows/880918799094695367",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "商品图片扩图",
+          "宣传素材尺寸适配"
+        ],
+        "industry": "电商与商品营销（页面标注用途）",
+        "original": {
+          "id": "commerce-06",
+          "platformId": "tusi",
+          "platform": "吐司中文站",
+          "title": "电商图片扩图",
+          "url": "https://tusi.cn/workflows/880918799094695367",
+          "observedAt": "2026-09-11",
+          "publishedAt": null,
+          "updatedAt": "2025-07-01",
+          "dateNote": "页面原字段为Updated: Jul 1, 2025 1:34 PM；时区未说明。",
+          "isNewThisRound": true,
+          "entry": {
+            "type": "公开网页搜索",
+            "query": "site:tusi.cn/workflows 电商 产品",
+            "sort": "搜索默认排序，规则未知",
+            "selectedBecause": "补齐素材尺寸适配这一具体任务；与换背景同作者，分析维护和交叉使用时明确去重。"
+          },
+          "topic": [
+            "商品图片扩图",
+            "宣传素材尺寸适配"
+          ],
+          "use": "扩大已有图片范围；作者说明可切换SDXL与Flux，并以局部修复完善瑕疵。",
+          "contentForm": "54节点工作流＋输入说明＋版本切换说明",
+          "author": {
+            "localKey": "commerce-author-04",
+            "type": "工作流定制服务作者",
+            "professionalIdentity": null,
+            "operatorRelationship": null,
+            "evidence": "与commerce-04同一页面作者；不另计独立作者。"
+          },
+          "metrics": [
+            {
+              "rawField": "star",
+              "rawText": "1 star",
+              "value": 1,
+              "unit": "star",
+              "window": "未知；未标时间窗",
+              "observedAt": "2026-09-11",
+              "population": "资源标记，不是运行人数"
+            }
+          ],
+          "metricsNote": "正文邀请用户评论需求，没有读取到实际需求评论。",
+          "unlabeledNumbers": [
+            {
+              "rawText": "17",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            },
+            {
+              "rawText": "9",
+              "position": "Workflow Preview下方",
+              "meaning": null
+            }
+          ],
+          "metricWindow": "未知",
+          "consumerComments": null,
+          "independentConsumerEvidence": null,
+          "usageBarriers": [
+            {
+              "type": "作者说明的版本与补救操作",
+              "text": "作者给非会员切换Flux节点组的办法，并说明生成瑕疵可用其他局部/细节修复工作流处理；会员适用现状和修复效果未测。",
+              "independentConsumer": false
+            }
+          ],
+          "supplyCompleteness": {
+            "status": "基本操作和节点可读，复用结果未验证",
+            "provided": [
+              "上传图与扩图范围输入",
+              "SDXL/Flux节点切换方法",
+              "瑕疵的后续处理方向",
+              "54节点清单"
+            ],
+            "missing": [
+              "输入尺寸及扩图幅度的适用边界",
+              "底模版本与完整配置核验",
+              "实际消费者评论与结果",
+              "处理耗时和费用"
+            ],
+            "canRunVerified": null
+          },
+          "evidenceRead": "打开具体页并读取134行公开正文。",
+          "interpretation": "同一作者围绕多个商品任务供给资源，说明任务拆分存在；不能从三个star字段判断哪项任务需求最多。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": "2025-07-01",
+          "latestParticipationAt": null,
+          "note": "页面原字段为Updated: Jul 1, 2025 1:34 PM；时区未说明。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增。"
+        },
+        "purpose": "扩大已有图片范围；作者说明可切换SDXL与Flux，并以局部修复完善瑕疵。",
+        "forms": [
+          "54节点工作流＋输入说明＋版本切换说明"
+        ],
+        "author": {
+          "label": "commerce-author-04",
+          "type": "工作流定制服务作者"
+        },
+        "entry": {
+          "description": "公开网页搜索；site:tusi.cn/workflows 电商 产品",
+          "reason": "补齐素材尺寸适配这一具体任务；与换背景同作者，分析维护和交叉使用时明确去重。",
+          "scope": "搜索默认排序，规则未知"
+        },
+        "metrics": [
+          {
+            "field": "star",
+            "value": 1,
+            "unit": "star",
+            "window": "未知；未标时间窗",
+            "note": "资源标记，不是运行人数",
+            "kind": "consumption",
+            "rawText": "1 star"
+          }
+        ],
+        "metricNote": "正文邀请用户评论需求，没有读取到实际需求评论。",
+        "unlabeledNumbers": [
+          {
+            "value": "17",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          },
+          {
+            "value": "9",
+            "position": "Workflow Preview下方",
+            "note": "未标明含义，不计入消费指标。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到直接求助或采用回报",
+          "basis": "本次正文没有独立消费者评论。"
+        },
+        "authorObservations": [
+          {
+            "type": "作者说明的版本与补救操作",
+            "text": "作者给非会员切换Flux节点组的办法，并说明生成瑕疵可用其他局部/细节修复工作流处理；会员适用现状和修复效果未测。",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "基本操作和节点可读，复用结果未验证",
+          "provided": [
+            "上传图与扩图范围输入",
+            "SDXL/Flux节点切换方法",
+            "瑕疵的后续处理方向",
+            "54节点清单"
+          ],
+          "missing": [
+            "输入尺寸及扩图幅度的适用边界",
+            "底模版本与完整配置核验",
+            "实际消费者评论与结果",
+            "处理耗时和费用"
+          ]
+        },
+        "interpretation": "同一作者围绕多个商品任务供给资源，说明任务拆分存在；不能从三个star字段判断哪项任务需求最多。",
+        "sources": [
+          {
+            "title": "电商图片扩图",
+            "url": "https://tusi.cn/workflows/880918799094695367",
+            "date": "2025-07-01",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "打开具体页并读取134行公开正文。"
+          }
+        ]
+      },
+      {
+        "id": "interest-sa-01",
+        "groupId": "interest",
+        "platform": {
+          "id": "seaart",
+          "name": "SeaArt"
+        },
+        "title": "Review of Photographic Works",
+        "url": "https://www.seaart.ai/postDetail/d6sie7te878c73dkrp8g",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "写实人物",
+          "个人作品回顾",
+          "摄影展叙事"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-sa-01",
+          "platform": "SeaArt",
+          "platformId": "seaart",
+          "title": "Review of Photographic Works",
+          "url": "https://www.seaart.ai/postDetail/d6sie7te878c73dkrp8g?pt=lg-cluster-35",
+          "canonicalUrl": "https://www.seaart.ai/postDetail/d6sie7te878c73dkrp8g",
+          "publishedAt": "2026-03-17 10:04:15",
+          "publishedTimezone": null,
+          "publishedEvidence": "页面正文明确日期；时区未注明",
+          "cacheNote": "工具显示Crawled today",
+          "topic": [
+            "写实人物",
+            "个人作品回顾",
+            "摄影展叙事"
+          ],
+          "purpose": "作者回顾自己的作品，并把多个历史作品组织成虚构展览短片；个人表达/作品展示，未发现商业交付说明。",
+          "form": [
+            "文字回顾",
+            "关联作品列表",
+            "视频生成提示",
+            "模型信息"
+          ],
+          "author": {
+            "label": "SeaArt作者A",
+            "type": "个人作品发布者；自述持续参赛并获奖",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "web搜索 SeaArt postDetail Story Comment",
+            "reason": "选择有完整作者文字及后续/关联作品线索的对象，不按互动量选取。",
+            "displayStatus": "搜索命中个人公开作品；作者自述其被回顾作品获奖，不等于本帖是编辑精选。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": {
+              "value": 0,
+              "unit": "条评论",
+              "period": null,
+              "periodNote": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+              "retrievedInBatch": "2026-09-11T23:45:44+08:00"
+            }
+          },
+          "unlabelledNumbers": {
+            "values": [
+              238,
+              49,
+              65,
+              0
+            ],
+            "interpretation": null,
+            "note": "正文未给这些数字的单位，未命名为观看、点赞或收藏。"
+          },
+          "commentEvidence": "页面明确显示0 comment及Be the first to comment；没有读者评论可编码。",
+          "series": {
+            "status": "可见关联作品；持续发布是作者自述",
+            "visibleRelatedCount": 6,
+            "relatedUrls": [
+              "https://www.seaart.ai/postDetail/d2qrf7le878c73ffv5j0",
+              "https://www.seaart.ai/postDetail/d47h0ule878c73e1b8fg",
+              "https://www.seaart.ai/postDetail/d4n5305e878c73bhp7k0",
+              "https://www.seaart.ai/postDetail/d6e4015e878c7381c5eg",
+              "https://www.seaart.ai/postDetail/d3q95tle878c73b21bv0",
+              "https://www.seaart.ai/postDetail/d3f8eele878c73annae0"
+            ],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "作品回顾说明",
+              "6个关联作品链接",
+              "分时段视频提示",
+              "所用模型"
+            ],
+            "missing": [
+              "未播放的实际成片质量",
+              "前期原始素材",
+              "完整制作过程",
+              "历史链接各自发布日期",
+              "读者后续消费"
+            ],
+            "judgment": "关联整理较清楚，可借鉴回顾与专题结构；尚未验收视频结果或完整教程。"
+          },
+          "misreadingRisk": "提示中的 I’ll be following you 是虚构角色台词，不是读者评论，不能编码为想看续篇。"
+        },
+        "publication": {
+          "publishedAt": "2026-03-17 10:04:15",
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "页面正文明确日期；时区未注明"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "作者回顾自己的作品，并把多个历史作品组织成虚构展览短片；个人表达/作品展示，未发现商业交付说明。",
+        "forms": [
+          "文字回顾",
+          "关联作品列表",
+          "视频生成提示",
+          "模型信息"
+        ],
+        "author": {
+          "label": "SeaArt作者A",
+          "type": "个人作品发布者；自述持续参赛并获奖"
+        },
+        "entry": {
+          "description": "web搜索 SeaArt postDetail Story Comment",
+          "reason": "选择有完整作者文字及后续/关联作品线索的对象，不按互动量选取。",
+          "scope": "搜索命中个人公开作品；作者自述其被回顾作品获奖，不等于本帖是编辑精选。"
+        },
+        "metrics": [
+          {
+            "field": "评论",
+            "value": 0,
+            "unit": "条评论",
+            "window": "未标明",
+            "note": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+            "kind": "consumption",
+            "rawText": "0 comment"
+          }
+        ],
+        "metricNote": "页面明确显示0 comment及Be the first to comment；没有读者评论可编码。",
+        "unlabeledNumbers": [
+          {
+            "value": 238,
+            "position": "正文无标签数字",
+            "note": "正文未给这些数字的单位，未命名为观看、点赞或收藏。"
+          },
+          {
+            "value": 49,
+            "position": "正文无标签数字",
+            "note": "正文未给这些数字的单位，未命名为观看、点赞或收藏。"
+          },
+          {
+            "value": 65,
+            "position": "正文无标签数字",
+            "note": "正文未给这些数字的单位，未命名为观看、点赞或收藏。"
+          },
+          {
+            "value": 0,
+            "position": "正文无标签数字",
+            "note": "正文未给这些数字的单位，未命名为观看、点赞或收藏。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "页面显示0条评论",
+          "basis": "页面明确显示0 comment及Be the first to comment；没有读者评论可编码。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "可见关联作品；持续发布是作者自述",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "关联整理较清楚，可借鉴回顾与专题结构；尚未验收视频结果或完整教程。",
+          "provided": [
+            "作品回顾说明",
+            "6个关联作品链接",
+            "分时段视频提示",
+            "所用模型"
+          ],
+          "missing": [
+            "未播放的实际成片质量",
+            "前期原始素材",
+            "完整制作过程",
+            "历史链接各自发布日期",
+            "读者后续消费"
+          ]
+        },
+        "interpretation": "提示中的 I’ll be following you 是虚构角色台词，不是读者评论，不能编码为想看续篇。",
+        "sources": [
+          {
+            "title": "Review of Photographic Works",
+            "url": "https://www.seaart.ai/postDetail/d6sie7te878c73dkrp8g?pt=lg-cluster-35",
+            "date": "2026-03-17 10:04:15",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "interest-sa-02",
+        "groupId": "interest",
+        "platform": {
+          "id": "seaart",
+          "name": "SeaArt"
+        },
+        "title": "キャラクターシート（透過）／透明角色表",
+        "url": "https://www.seaart.ai/postDetail/dahiq8de878c73aith8g",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "原创/游戏角色表",
+          "像素主题活动"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-sa-02",
+          "platform": "SeaArt",
+          "platformId": "seaart",
+          "title": "キャラクターシート（透過）／透明角色表",
+          "url": "https://www.seaart.ai/postDetail/dahiq8de878c73aith8g?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
+          "canonicalUrl": "https://www.seaart.ai/postDetail/dahiq8de878c73aith8g",
+          "publishedAt": "2026-09-10 22:20:17",
+          "publishedTimezone": null,
+          "publishedEvidence": "正文日期；时区未注明",
+          "cacheNote": "工具显示Crawled today",
+          "topic": [
+            "原创/游戏角色表",
+            "像素主题活动"
+          ],
+          "purpose": "作者说明由图片与游戏类型生成角色表，并标示透明webp。是角色资源/方法工具的展示，实际输出未运行验证。",
+          "form": [
+            "工具介绍帖子",
+            "AI工具附件与创建入口",
+            "活动标签"
+          ],
+          "author": {
+            "label": "SeaArt作者B",
+            "type": "工具或资源分享者；职业及是否本人制作附件未知",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "https://www.seaart.ai/post → Pixel Party → 第7个可读卡片入口",
+            "reason": "从同一专题选取与角色交付对象相关的普通作者帖子；列表数字未作选择或热度依据。",
+            "displayStatus": "专题编排入口，可见Creative Contest及Pixel Kingdom标签；不可称随机普通内容。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": {
+              "value": 0,
+              "unit": "条评论",
+              "period": null,
+              "periodNote": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+              "retrievedInBatch": "2026-09-11T23:45:44+08:00"
+            }
+          },
+          "unlabelledNumbers": {
+            "values": [
+              8,
+              3,
+              17,
+              0,
+              25,
+              10,
+              7,
+              0
+            ],
+            "interpretation": null,
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          "commentEvidence": "0 comment；无读者原文。",
+          "series": {
+            "status": "本页未见前后篇或版本更新链接",
+            "visibleRelatedCount": 0,
+            "relatedUrls": [],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "输入类型说明",
+              "透明webp输出声明",
+              "Transparent Character Sheet附件",
+              "创建入口"
+            ],
+            "missing": [
+              "详细输入限制",
+              "完整操作参数",
+              "输出验收",
+              "版本历史",
+              "使用者回传"
+            ],
+            "judgment": "有具体工具承载，说明较短；不能把附件或Create按钮当已成功生成角色表。"
+          },
+          "misreadingRisk": "同处Pixel Party专题并不意味着这条是成品角色故事；它主要交付工具入口。"
+        },
+        "publication": {
+          "publishedAt": "2026-09-10 22:20:17",
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "正文日期；时区未注明"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "作者说明由图片与游戏类型生成角色表，并标示透明webp。是角色资源/方法工具的展示，实际输出未运行验证。",
+        "forms": [
+          "工具介绍帖子",
+          "AI工具附件与创建入口",
+          "活动标签"
+        ],
+        "author": {
+          "label": "SeaArt作者B",
+          "type": "工具或资源分享者；职业及是否本人制作附件未知"
+        },
+        "entry": {
+          "description": "https://www.seaart.ai/post → Pixel Party → 第7个可读卡片入口",
+          "reason": "从同一专题选取与角色交付对象相关的普通作者帖子；列表数字未作选择或热度依据。",
+          "scope": "专题编排入口，可见Creative Contest及Pixel Kingdom标签；不可称随机普通内容。"
+        },
+        "metrics": [
+          {
+            "field": "评论",
+            "value": 0,
+            "unit": "条评论",
+            "window": "未标明",
+            "note": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+            "kind": "consumption",
+            "rawText": "0 comment"
+          }
+        ],
+        "metricNote": "0 comment；无读者原文。",
+        "unlabeledNumbers": [
+          {
+            "value": 8,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 3,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 17,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 0,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 25,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 10,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 7,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          },
+          {
+            "value": 0,
+            "position": "正文无标签数字",
+            "note": "附件卡片与帖子均有无标签数字，不合并，不作为使用/曝光数。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "页面显示0条评论",
+          "basis": "0 comment；无读者原文。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "本页未见前后篇或版本更新链接",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "有具体工具承载，说明较短；不能把附件或Create按钮当已成功生成角色表。",
+          "provided": [
+            "输入类型说明",
+            "透明webp输出声明",
+            "Transparent Character Sheet附件",
+            "创建入口"
+          ],
+          "missing": [
+            "详细输入限制",
+            "完整操作参数",
+            "输出验收",
+            "版本历史",
+            "使用者回传"
+          ]
+        },
+        "interpretation": "同处Pixel Party专题并不意味着这条是成品角色故事；它主要交付工具入口。",
+        "sources": [
+          {
+            "title": "キャラクターシート（透過）／透明角色表",
+            "url": "https://www.seaart.ai/postDetail/dahiq8de878c73aith8g?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
+            "date": "2026-09-10 22:20:17",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "interest-sa-03",
+        "groupId": "interest",
+        "platform": {
+          "id": "seaart",
+          "name": "SeaArt"
+        },
+        "title": "ピクセル世界／像素世界",
+        "url": "https://www.seaart.ai/postDetail/da4egjte878c73fam5b0",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "桂林漓江",
+          "像素风景",
+          "船夫与机器人伙伴"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-sa-03",
+          "platform": "SeaArt",
+          "platformId": "seaart",
+          "title": "ピクセル世界／像素世界",
+          "url": "https://www.seaart.ai/postDetail/da4egjte878c73fam5b0?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
+          "canonicalUrl": "https://www.seaart.ai/postDetail/da4egjte878c73fam5b0",
+          "publishedAt": "2026-08-22 00:07:43",
+          "publishedTimezone": null,
+          "publishedEvidence": "正文日期；时区未注明",
+          "cacheNote": "工具显示Crawled today",
+          "topic": [
+            "桂林漓江",
+            "像素风景",
+            "船夫与机器人伙伴"
+          ],
+          "purpose": "用像素审美表现地域风景和角色场景；提示未声明行业交付或旅游营销。",
+          "form": [
+            "视觉作品帖",
+            "提示词",
+            "模型信息",
+            "Remix入口"
+          ],
+          "author": {
+            "label": "SeaArt作者C",
+            "type": "个人作品发布者；职业未知",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "https://www.seaart.ai/post → Pixel Party → 第10个可读卡片入口",
+            "reason": "同专题中选择可区分于工具资源的视觉场景作品。",
+            "displayStatus": "专题编排入口并带每日挑战标签；不是随机或最新列表样本。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": {
+              "value": 0,
+              "unit": "条评论",
+              "period": null,
+              "periodNote": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+              "retrievedInBatch": "2026-09-11T23:45:44+08:00"
+            }
+          },
+          "unlabelledNumbers": {
+            "values": [
+              73,
+              19,
+              12,
+              0
+            ],
+            "interpretation": null,
+            "note": "未给单位，不命名为观看/点赞。"
+          },
+          "commentEvidence": "0 comment；无读者原文。",
+          "series": {
+            "status": "主题与挑战标签可见；未见同一角色前后篇",
+            "visibleRelatedCount": 0,
+            "relatedUrls": [],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "场景与构图描述",
+              "视觉风格提示",
+              "所用模型",
+              "Remix入口"
+            ],
+            "missing": [
+              "独立检查过的输出效果",
+              "完整参数",
+              "连续故事链接",
+              "读者反馈"
+            ],
+            "judgment": "可确认单个场景与提示供给；没有连续叙事的交付证据。"
+          },
+          "misreadingRisk": "出现桂林地点不等于作者或消费者属于旅游行业；每日挑战标签不等于作者每天发帖。"
+        },
+        "publication": {
+          "publishedAt": "2026-08-22 00:07:43",
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "正文日期；时区未注明"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "用像素审美表现地域风景和角色场景；提示未声明行业交付或旅游营销。",
+        "forms": [
+          "视觉作品帖",
+          "提示词",
+          "模型信息",
+          "Remix入口"
+        ],
+        "author": {
+          "label": "SeaArt作者C",
+          "type": "个人作品发布者；职业未知"
+        },
+        "entry": {
+          "description": "https://www.seaart.ai/post → Pixel Party → 第10个可读卡片入口",
+          "reason": "同专题中选择可区分于工具资源的视觉场景作品。",
+          "scope": "专题编排入口并带每日挑战标签；不是随机或最新列表样本。"
+        },
+        "metrics": [
+          {
+            "field": "评论",
+            "value": 0,
+            "unit": "条评论",
+            "window": "未标明",
+            "note": "页面明确显示0 comment；未说明统计周期及删除/折叠处理",
+            "kind": "consumption",
+            "rawText": "0 comment"
+          }
+        ],
+        "metricNote": "0 comment；无读者原文。",
+        "unlabeledNumbers": [
+          {
+            "value": 73,
+            "position": "正文无标签数字",
+            "note": "未给单位，不命名为观看/点赞。"
+          },
+          {
+            "value": 19,
+            "position": "正文无标签数字",
+            "note": "未给单位，不命名为观看/点赞。"
+          },
+          {
+            "value": 12,
+            "position": "正文无标签数字",
+            "note": "未给单位，不命名为观看/点赞。"
+          },
+          {
+            "value": 0,
+            "position": "正文无标签数字",
+            "note": "未给单位，不命名为观看/点赞。"
+          }
+        ],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "页面显示0条评论",
+          "basis": "0 comment；无读者原文。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "主题与挑战标签可见；未见同一角色前后篇",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "可确认单个场景与提示供给；没有连续叙事的交付证据。",
+          "provided": [
+            "场景与构图描述",
+            "视觉风格提示",
+            "所用模型",
+            "Remix入口"
+          ],
+          "missing": [
+            "独立检查过的输出效果",
+            "完整参数",
+            "连续故事链接",
+            "读者反馈"
+          ]
+        },
+        "interpretation": "出现桂林地点不等于作者或消费者属于旅游行业；每日挑战标签不等于作者每天发帖。",
+        "sources": [
+          {
+            "title": "ピクセル世界／像素世界",
+            "url": "https://www.seaart.ai/postDetail/da4egjte878c73fam5b0?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
+            "date": "2026-08-22 00:07:43",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "interest-leo-01",
+        "groupId": "interest",
+        "platform": {
+          "id": "leonardo",
+          "name": "Leonardo.Ai"
+        },
+        "title": "IWO原创AI向导多视图角色表",
+        "url": "https://app.leonardo.ai/generation/image/character-turnaround-model-sheet-four-consistent-0dfb6e48-6613-471a-a2ec-66473c7cc259",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "原创AI吉祥物",
+          "发光拟人角色",
+          "多视图角色设定"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-leo-01",
+          "platform": "Leonardo.Ai",
+          "platformId": "leonardo",
+          "title": "IWO原创AI向导多视图角色表",
+          "url": "https://app.leonardo.ai/generation/image/character-turnaround-model-sheet-four-consistent-0dfb6e48-6613-471a-a2ec-66473c7cc259",
+          "canonicalUrl": "https://app.leonardo.ai/generation/image/character-turnaround-model-sheet-four-consistent-0dfb6e48-6613-471a-a2ec-66473c7cc259",
+          "publishedAt": null,
+          "publishedTimezone": null,
+          "publishedEvidence": null,
+          "cacheNote": "工具显示Crawled 3 days ago",
+          "topic": [
+            "原创AI吉祥物",
+            "发光拟人角色",
+            "多视图角色设定"
+          ],
+          "purpose": "提示要求同一原创角色的四视图及动作示意。商业用途与是否已采用未知；原创是作者提示中的要求，不是版权核验。",
+          "form": [
+            "公开图像",
+            "完整提示",
+            "模型与尺寸",
+            "参考/改作入口"
+          ],
+          "author": {
+            "label": "Leonardo作者D",
+            "type": "公开作品发布者；页面显示No name",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "web搜索 site:app.leonardo.ai/generation/image original character Remix",
+            "reason": "选择明确描述原创角色及一致性要求的公开对象，补角色设定的供给形式。",
+            "displayStatus": "搜索命中的公开生成对象；未见官方或编辑精选标记，身份不能据此完全确认。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": null
+          },
+          "unlabelledNumbers": {
+            "values": [],
+            "interpretation": null,
+            "note": "Generate 40 是生成操作区域数字，不当互动量。"
+          },
+          "commentEvidence": "读取正文没有评论区域或评论数；保留null。",
+          "series": {
+            "status": "单图内多视图，不是多期更新；没有后续公开链接",
+            "visibleRelatedCount": 0,
+            "relatedUrls": [],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "角色形体与配色设定",
+              "多视图要求",
+              "提示与模型",
+              "2752×1536输出尺寸",
+              "参考与Remix入口"
+            ],
+            "missing": [
+              "独立验收的一致性",
+              "参考图原件",
+              "全套参数",
+              "前后版本",
+              "读者反馈"
+            ],
+            "judgment": "角色设计意图交代充分，实际多视图一致性和重复使用未知。"
+          },
+          "misreadingRisk": "四视图是同一内容对象的要求，不能计为四条系列作品或四次创作。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "公开正文未显示发布日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "提示要求同一原创角色的四视图及动作示意。商业用途与是否已采用未知；原创是作者提示中的要求，不是版权核验。",
+        "forms": [
+          "公开图像",
+          "完整提示",
+          "模型与尺寸",
+          "参考/改作入口"
+        ],
+        "author": {
+          "label": "Leonardo作者D",
+          "type": "公开作品发布者；页面显示No name"
+        },
+        "entry": {
+          "description": "web搜索 site:app.leonardo.ai/generation/image original character Remix",
+          "reason": "选择明确描述原创角色及一致性要求的公开对象，补角色设定的供给形式。",
+          "scope": "搜索命中的公开生成对象；未见官方或编辑精选标记，身份不能据此完全确认。"
+        },
+        "metrics": [],
+        "metricNote": "读取正文没有评论区域或评论数；保留null。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到读者评论",
+          "basis": "读取正文没有评论区域或评论数；保留null。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "单图内多视图，不是多期更新；没有后续公开链接",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "角色设计意图交代充分，实际多视图一致性和重复使用未知。",
+          "provided": [
+            "角色形体与配色设定",
+            "多视图要求",
+            "提示与模型",
+            "2752×1536输出尺寸",
+            "参考与Remix入口"
+          ],
+          "missing": [
+            "独立验收的一致性",
+            "参考图原件",
+            "全套参数",
+            "前后版本",
+            "读者反馈"
+          ]
+        },
+        "interpretation": "四视图是同一内容对象的要求，不能计为四条系列作品或四次创作。",
+        "sources": [
+          {
+            "title": "IWO原创AI向导多视图角色表",
+            "url": "https://app.leonardo.ai/generation/image/character-turnaround-model-sheet-four-consistent-0dfb6e48-6613-471a-a2ec-66473c7cc259",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "interest-leo-02",
+        "groupId": "interest",
+        "platform": {
+          "id": "leonardo",
+          "name": "Leonardo.Ai"
+        },
+        "title": "奇幻遗迹：故事Scene 49的视觉提示",
+        "url": "https://app.leonardo.ai/generation/image/master-prompt-image-scene-49-act-2-response-first-09e11216-9428-4c3b-850d-86c560e9535f",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "奇幻冒险",
+          "遗迹龙符文",
+          "场景分镜"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-leo-02",
+          "platform": "Leonardo.Ai",
+          "platformId": "leonardo",
+          "title": "奇幻遗迹：故事Scene 49的视觉提示",
+          "url": "https://app.leonardo.ai/generation/image/master-prompt-image-scene-49-act-2-response-first-09e11216-9428-4c3b-850d-86c560e9535f",
+          "canonicalUrl": "https://app.leonardo.ai/generation/image/master-prompt-image-scene-49-act-2-response-first-09e11216-9428-4c3b-850d-86c560e9535f",
+          "publishedAt": null,
+          "publishedTimezone": null,
+          "publishedEvidence": null,
+          "indexDateClue": "搜索摘要显示Wednesday, 24 June 2026；当前打开的正文没有日期，未作为已核发布日期。",
+          "cacheNote": "工具显示Crawled 4 weeks ago",
+          "topic": [
+            "奇幻冒险",
+            "遗迹龙符文",
+            "场景分镜"
+          ],
+          "purpose": "作者按幕、序列和场景编号描述角色触碰符文的镜头；最终用于故事、动画还是个人练习未知。",
+          "form": [
+            "公开图像",
+            "分镜式提示",
+            "模型与尺寸",
+            "Remix入口"
+          ],
+          "author": {
+            "label": "Leonardo作者E",
+            "type": "公开作品发布者；职业和项目身份未知",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "web搜索 site:app.leonardo.ai/generation/image fantasy dragon Remix",
+            "reason": "选择含具体故事编号的公开对象，用于检查连续叙事线索的证据边界。",
+            "displayStatus": "搜索命中的个人公开对象；未见官方/精选标记。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": null
+          },
+          "unlabelledNumbers": {
+            "values": [],
+            "interpretation": null,
+            "note": "Generate 0为生成操作区域，不当作使用或评论数。"
+          },
+          "commentEvidence": "正文未返回评论字段或原文；保留null。",
+          "series": {
+            "status": "作者文本有Scene 49、Act 2、Sequence 3；未见其他场景链接",
+            "visibleRelatedCount": 0,
+            "relatedUrls": [],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "角色动作、地点和氛围",
+              "分镜编号",
+              "镜头及灯光要求",
+              "模型与3072×5504尺寸"
+            ],
+            "missing": [
+              "前后场景",
+              "成片或连载页",
+              "发布时间",
+              "具体制作计划",
+              "读者反馈"
+            ],
+            "judgment": "可以证实作者按故事结构组织提示；不能确认连续公开作品已完成或被消费。"
+          },
+          "misreadingRisk": "Scene 49不能证明前48个场景已公开，不能换算为49条供给或持续创作频率。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "公开正文未显示发布日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "作者按幕、序列和场景编号描述角色触碰符文的镜头；最终用于故事、动画还是个人练习未知。",
+        "forms": [
+          "公开图像",
+          "分镜式提示",
+          "模型与尺寸",
+          "Remix入口"
+        ],
+        "author": {
+          "label": "Leonardo作者E",
+          "type": "公开作品发布者；职业和项目身份未知"
+        },
+        "entry": {
+          "description": "web搜索 site:app.leonardo.ai/generation/image fantasy dragon Remix",
+          "reason": "选择含具体故事编号的公开对象，用于检查连续叙事线索的证据边界。",
+          "scope": "搜索命中的个人公开对象；未见官方/精选标记。"
+        },
+        "metrics": [],
+        "metricNote": "正文未返回评论字段或原文；保留null。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到读者评论",
+          "basis": "正文未返回评论字段或原文；保留null。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "作者文本有Scene 49、Act 2、Sequence 3；未见其他场景链接",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "可以证实作者按故事结构组织提示；不能确认连续公开作品已完成或被消费。",
+          "provided": [
+            "角色动作、地点和氛围",
+            "分镜编号",
+            "镜头及灯光要求",
+            "模型与3072×5504尺寸"
+          ],
+          "missing": [
+            "前后场景",
+            "成片或连载页",
+            "发布时间",
+            "具体制作计划",
+            "读者反馈"
+          ]
+        },
+        "interpretation": "Scene 49不能证明前48个场景已公开，不能换算为49条供给或持续创作频率。",
+        "sources": [
+          {
+            "title": "奇幻遗迹：故事Scene 49的视觉提示",
+            "url": "https://app.leonardo.ai/generation/image/master-prompt-image-scene-49-act-2-response-first-09e11216-9428-4c3b-850d-86c560e9535f",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "interest-leo-03",
+        "groupId": "interest",
+        "platform": {
+          "id": "leonardo",
+          "name": "Leonardo.Ai"
+        },
+        "title": "祥云与牡丹中的祥龙主题图",
+        "url": "https://app.leonardo.ai/generation/image/splendid-fantasy-artwork-coral-orange-adult-dragon-a9561a73-79ce-430d-ab6c-1c2f8f7af19d",
+        "observedAt": "2026-09-11",
+        "checkedAt": "2026-09-11T23:45:44+08:00",
+        "topics": [
+          "幻想龙",
+          "祥云牡丹",
+          "节庆吉祥视觉"
+        ],
+        "industry": null,
+        "original": {
+          "observedDate": "2026-09-11",
+          "batchCheckedAt": "2026-09-11T23:45:44+08:00",
+          "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+          "commentExpressions": [],
+          "industry": null,
+          "id": "interest-leo-03",
+          "platform": "Leonardo.Ai",
+          "platformId": "leonardo",
+          "title": "祥云与牡丹中的祥龙主题图",
+          "url": "https://app.leonardo.ai/generation/image/splendid-fantasy-artwork-coral-orange-adult-dragon-a9561a73-79ce-430d-ab6c-1c2f8f7af19d",
+          "canonicalUrl": "https://app.leonardo.ai/generation/image/splendid-fantasy-artwork-coral-orange-adult-dragon-a9561a73-79ce-430d-ab6c-1c2f8f7af19d",
+          "publishedAt": null,
+          "publishedTimezone": null,
+          "publishedEvidence": null,
+          "indexDateClue": "搜索摘要显示Tuesday, 14 April 2026；当前正文未显示，未采用为已核发布日期。",
+          "cacheNote": "工具显示Crawled 2 weeks ago",
+          "topic": [
+            "幻想龙",
+            "祥云牡丹",
+            "节庆吉祥视觉"
+          ],
+          "purpose": "提示描述节庆、繁荣与高贵氛围；可确定视觉主题，不能确认它用于商业海报或中国节庆运营。",
+          "form": [
+            "公开单图",
+            "提示",
+            "模型与尺寸",
+            "参考/改作入口"
+          ],
+          "author": {
+            "label": "Leonardo作者F",
+            "type": "个人公开作品发布者；职业未知",
+            "employment": null,
+            "officialRelationship": null
+          },
+          "selection": {
+            "entry": "web搜索 site:app.leonardo.ai/generation/image fantasy dragon Remix",
+            "reason": "与原创角色和编号故事场景比较，保留不承诺连载的单图视觉内容。",
+            "displayStatus": "搜索命中对象；不是全站热门或随机样本。"
+          },
+          "metrics": {
+            "views": null,
+            "likes": null,
+            "saves": null,
+            "shares": null,
+            "remixes": null,
+            "comments": null
+          },
+          "unlabelledNumbers": {
+            "values": [],
+            "interpretation": null,
+            "note": "Generate 40不属于互动统计。"
+          },
+          "commentEvidence": "未返回评论数或评论原文。",
+          "series": {
+            "status": "未见系列或后续链接",
+            "visibleRelatedCount": 0,
+            "relatedUrls": [],
+            "relatedPagesOpened": false,
+            "readerReturn": null
+          },
+          "supplyCompleteness": {
+            "present": [
+              "主题和视觉元素",
+              "模型Phoenix 1.0",
+              "1376×768尺寸",
+              "参考和Remix入口"
+            ],
+            "missing": [
+              "完整创作过程",
+              "作者用途说明",
+              "后续更新",
+              "读者反馈"
+            ],
+            "judgment": "可确认为主题视觉供给，不足以证明国风或节庆题材消费强度。"
+          },
+          "misreadingRisk": "玉珠、牡丹、祥云等视觉元素不证明作者或观看者国籍，不能推断中国消费偏好。"
+        },
+        "publication": {
+          "publishedAt": null,
+          "updatedAt": null,
+          "latestParticipationAt": null,
+          "note": "公开正文未显示发布日期。"
+        },
+        "novelty": {
+          "kind": "new",
+          "label": "新增样本",
+          "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        },
+        "purpose": "提示描述节庆、繁荣与高贵氛围；可确定视觉主题，不能确认它用于商业海报或中国节庆运营。",
+        "forms": [
+          "公开单图",
+          "提示",
+          "模型与尺寸",
+          "参考/改作入口"
+        ],
+        "author": {
+          "label": "Leonardo作者F",
+          "type": "个人公开作品发布者；职业未知"
+        },
+        "entry": {
+          "description": "web搜索 site:app.leonardo.ai/generation/image fantasy dragon Remix",
+          "reason": "与原创角色和编号故事场景比较，保留不承诺连载的单图视觉内容。",
+          "scope": "搜索命中对象；不是全站热门或随机样本。"
+        },
+        "metrics": [],
+        "metricNote": "未返回评论数或评论原文。",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": null,
+          "failure": null,
+          "solution": null,
+          "followUp": null,
+          "status": "未读取到读者评论",
+          "basis": "未返回评论数或评论原文。"
+        },
+        "authorObservations": [
+          {
+            "type": "系列与关联",
+            "text": "未见系列或后续链接",
+            "url": null
+          }
+        ],
+        "supply": {
+          "status": "可确认为主题视觉供给，不足以证明国风或节庆题材消费强度。",
+          "provided": [
+            "主题和视觉元素",
+            "模型Phoenix 1.0",
+            "1376×768尺寸",
+            "参考和Remix入口"
+          ],
+          "missing": [
+            "完整创作过程",
+            "作者用途说明",
+            "后续更新",
+            "读者反馈"
+          ]
+        },
+        "interpretation": "玉珠、牡丹、祥云等视觉元素不证明作者或观看者国籍，不能推断中国消费偏好。",
+        "sources": [
+          {
+            "title": "祥云与牡丹中的祥龙主题图",
+            "url": "https://app.leonardo.ai/generation/image/splendid-fantasy-artwork-coral-orange-adult-dragon-a9561a73-79ce-430d-ab6c-1c2f8f7af19d",
+            "date": null,
+            "accessedAt": "2026-09-11",
+            "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          }
+        ]
+      },
+      {
+        "id": "practice-linux-connect",
+        "groupId": "practice",
+        "platform": {
+          "id": "linuxdo",
+          "name": "LINUX DO"
+        },
+        "title": "应用接入失败后的配置与服务器访问排查",
+        "url": "https://linux.do/t/topic/1537782",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "登录接入与运行环境"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-linux-connect",
+          "platformId": "linuxdo",
+          "platform": "LINUX DO",
+          "title": "应用接入失败后的配置与服务器访问排查",
+          "url": "https://linux.do/t/topic/1537782",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2026-01-29",
+          "latestVisibleParticipationAt": "2026-01-29",
+          "sampleStatus": "复核既有样本",
+          "entrySelectionReason": "既有研究记录含提问、追问与结果回报，可用于区分有人回答和问题解决。",
+          "visibleScope": "公开正文呈现1—9楼；计数仅用于说明读取范围，不作为全帖回复数或用户数。未打开配置截图。",
+          "task": "自行部署NEWAPI后，接入LINUX DO登录并排查连接失败。",
+          "contentForm": "求助帖、配置说明、逐楼追问、结果回报与关联文档链接",
+          "publisherType": "自述自行部署的个人求助者；职业及是否受托运营未知。",
+          "industry": null,
+          "topic": "登录接入与运行环境",
+          "consumerIntent": "让已配置的应用能够正常登录，理解故障发生在哪一层。",
+          "visibleMetrics": [
+            {
+              "field": "浏览人数或浏览次数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "本次可读正文未显示。"
+            },
+            {
+              "field": "点赞、收藏及平台统计回复数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "未读取明确统计字段，不用楼层号代替平台回复指标。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "提问者已经部署并配置应用，却在第三方登录时遇到连接失败，希望定位原因。",
+            "failure": "先补充配置截图，再询问服务器访问条件；一开始并不清楚配置问题与网络问题应怎样区分。",
+            "solution": "回复者要求检查应用配置与服务器连通性；提问者随后明确说问题解决，并将原因归于服务器无法直接访问相关服务。后续回复补充官方备用接口说明。",
+            "followUp": "同一提问者在不到一小时内多次补充信息并回报结果；没有可见的跨日或跨周持续参与证据。"
+          },
+          "visibleSupplySolves": {
+            "status": "提问者自述已解决",
+            "basis": "第8楼明确回报解决；第9楼提供后续参考资料。",
+            "notEstablished": "本次未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
+          },
+          "specificGap": "面向实际部署环境的检查顺序和条件解释，而不只是更多接入教程。",
+          "communityImplication": "问题帖若保留环境、已尝试步骤和最终回报，可以成为后续读者的参考；单次排错成功还不足以证明需要长期社区。",
+          "sources": [
+            {
+              "title": "关于应用接入的问题请教佬友",
+              "url": "https://linux.do/t/topic/1537782",
+              "date": "2026-01-29",
+              "accessedAt": "2026-09-11",
+              "type": "普通用户求助与结果自述",
+              "supports": "接入任务、同帖追问和已解决回报。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2026-01-29",
+          "updatedAt": null,
+          "latestParticipationAt": "2026-01-29",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有样本"
+        },
+        "purpose": "自行部署NEWAPI后，接入LINUX DO登录并排查连接失败。 让已配置的应用能够正常登录，理解故障发生在哪一层。",
+        "forms": [
+          "求助帖、配置说明、逐楼追问、结果回报与关联文档链接"
+        ],
+        "author": {
+          "label": null,
+          "type": "自述自行部署的个人求助者；职业及是否受托运营未知。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "既有研究记录含提问、追问与结果回报，可用于区分有人回答和问题解决。",
+          "scope": "公开正文呈现1—9楼；计数仅用于说明读取范围，不作为全帖回复数或用户数。未打开配置截图。"
+        },
+        "metrics": [
+          {
+            "field": "浏览人数或浏览次数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "本次可读正文未显示。",
+            "kind": "consumption",
+            "rawText": null
+          },
+          {
+            "field": "点赞、收藏及平台统计回复数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "未读取明确统计字段，不用楼层号代替平台回复指标。",
+            "kind": "consumption",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "提问者已经部署并配置应用，却在第三方登录时遇到连接失败，希望定位原因。",
+          "failure": "先补充配置截图，再询问服务器访问条件；一开始并不清楚配置问题与网络问题应怎样区分。",
+          "solution": "回复者要求检查应用配置与服务器连通性；提问者随后明确说问题解决，并将原因归于服务器无法直接访问相关服务。后续回复补充官方备用接口说明。",
+          "followUp": "同一提问者在不到一小时内多次补充信息并回报结果；没有可见的跨日或跨周持续参与证据。",
+          "status": "提问者自述已解决",
+          "basis": "第8楼明确回报解决；第9楼提供后续参考资料。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "提问者自述已解决",
+          "provided": [
+            "第8楼明确回报解决；第9楼提供后续参考资料。"
+          ],
+          "missing": [
+            "面向实际部署环境的检查顺序和条件解释，而不只是更多接入教程。",
+            "本次未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
+          ]
+        },
+        "interpretation": "问题帖若保留环境、已尝试步骤和最终回报，可以成为后续读者的参考；单次排错成功还不足以证明需要长期社区。",
+        "sources": [
+          {
+            "title": "关于应用接入的问题请教佬友",
+            "url": "https://linux.do/t/topic/1537782",
+            "date": "2026-01-29",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "接入任务、同帖追问和已解决回报。"
+          }
+        ]
+      },
+      {
+        "id": "practice-linux-latency",
+        "groupId": "practice",
+        "platform": {
+          "id": "linuxdo",
+          "name": "LINUX DO"
+        },
+        "title": "相同环境中不同客户端首字延迟的求助",
+        "url": "https://linux.do/t/topic/2880961",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "代码工具响应与兼容性"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-linux-latency",
+          "platformId": "linuxdo",
+          "platform": "LINUX DO",
+          "title": "相同环境中不同客户端首字延迟的求助",
+          "url": "https://linux.do/t/topic/2880961",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2026-09-09",
+          "latestVisibleParticipationAt": "2026-09-09",
+          "sampleStatus": "复核既有样本；本次读取范围扩展至公开7楼",
+          "entrySelectionReason": "以尚无解决回报的工具问题，对照上一条已解决问题，避免只采成功个案。",
+          "visibleScope": "公开正文呈现1—7楼。既有记录只看到4条回复，本次有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。",
+          "task": "通过第三方API使用代码工具时，判断首字延迟是否正常并找到可行处理方法。",
+          "contentForm": "简短求助、使用对比及原因猜测讨论",
+          "publisherType": "个人工具使用者；职业、开发水平及是否受托未知。",
+          "industry": null,
+          "topic": "代码工具响应与兼容性",
+          "consumerIntent": "判断问题在客户端、服务商、网络还是模型，并避免反复试错。",
+          "visibleMetrics": [
+            {
+              "field": "内容浏览、点赞、收藏及统计回复数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "正文没有可用的明确统计字段。"
+            },
+            {
+              "field": "用户自述首字等待时间",
+              "value": "7—8",
+              "unit": "秒",
+              "period": "提问者当前一次使用情境，具体测量窗口未说明",
+              "note": "这是任务表现自述，不是内容消费量，也不是独立实测。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "提问者称相同环境中一个客户端很快，另一个需等待首字，希望寻找相同经历和解释。",
+            "failure": "回复对根因提出网络、工具兼容、客户端处理过程等不同猜测；另一人也描述相似延迟。",
+            "solution": null,
+            "followUp": "有回复称重新开窗口恢复，也有正常响应的反例，但提问者没有可见复测和结论。"
+          },
+          "visibleSupplySolves": {
+            "status": "未确认解决",
+            "basis": "有经验与假设，没有共同条件下的对照测试或提问者结果确认。",
+            "notEstablished": "不能判断第三方API普遍更慢、某模型有故障或所有客户端兼容性差。"
+          },
+          "specificGap": "可比较的排查条件和测试方法；现有回复数量不能代替问题定位。",
+          "communityImplication": "运营可组织问题信息和对照条件，但若承诺技术答疑，需要能判断证据的供给者；便宜API本身没有解决此类需求。",
+          "sources": [
+            {
+              "title": "zcode接第三方的api首字很慢正常吗",
+              "url": "https://linux.do/t/topic/2880961",
+              "date": "2026-09-09",
+              "accessedAt": "2026-09-11",
+              "type": "普通用户求助及同伴经验",
+              "supports": "具体延迟困扰、解释分歧、不同结果与缺失回报。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2026-09-09",
+          "updatedAt": null,
+          "latestParticipationAt": "2026-09-09",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有样本；本次读取范围扩展至公开7楼"
+        },
+        "purpose": "通过第三方API使用代码工具时，判断首字延迟是否正常并找到可行处理方法。 判断问题在客户端、服务商、网络还是模型，并避免反复试错。",
+        "forms": [
+          "简短求助、使用对比及原因猜测讨论"
+        ],
+        "author": {
+          "label": null,
+          "type": "个人工具使用者；职业、开发水平及是否受托未知。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "以尚无解决回报的工具问题，对照上一条已解决问题，避免只采成功个案。",
+          "scope": "公开正文呈现1—7楼。既有记录只看到4条回复，本次有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。"
+        },
+        "metrics": [
+          {
+            "field": "内容浏览、点赞、收藏及统计回复数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "正文没有可用的明确统计字段。",
+            "kind": "consumption",
+            "rawText": null
+          },
+          {
+            "field": "用户自述首字等待时间",
+            "value": "7—8",
+            "unit": "秒",
+            "window": "提问者当前一次使用情境，具体测量窗口未说明",
+            "note": "这是任务表现自述，不是内容消费量，也不是独立实测。",
+            "kind": "task-experience",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "提问者称相同环境中一个客户端很快，另一个需等待首字，希望寻找相同经历和解释。",
+          "failure": "回复对根因提出网络、工具兼容、客户端处理过程等不同猜测；另一人也描述相似延迟。",
+          "solution": null,
+          "followUp": "有回复称重新开窗口恢复，也有正常响应的反例，但提问者没有可见复测和结论。",
+          "status": "未确认解决",
+          "basis": "有经验与假设，没有共同条件下的对照测试或提问者结果确认。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "未确认解决",
+          "provided": [
+            "有经验与假设，没有共同条件下的对照测试或提问者结果确认。"
+          ],
+          "missing": [
+            "可比较的排查条件和测试方法；现有回复数量不能代替问题定位。",
+            "不能判断第三方API普遍更慢、某模型有故障或所有客户端兼容性差。"
+          ]
+        },
+        "interpretation": "运营可组织问题信息和对照条件，但若承诺技术答疑，需要能判断证据的供给者；便宜API本身没有解决此类需求。",
+        "sources": [
+          {
+            "title": "zcode接第三方的api首字很慢正常吗",
+            "url": "https://linux.do/t/topic/2880961",
+            "date": "2026-09-09",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "具体延迟困扰、解释分歧、不同结果与缺失回报。"
+          }
+        ]
+      },
+      {
+        "id": "practice-dw-key",
+        "groupId": "practice",
+        "platform": {
+          "id": "datawhale",
+          "name": "Datawhale"
+        },
+        "title": "按入门教程运行示例却不知道应配置哪个密钥",
+        "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "课程起步、授权配置和说明一致性"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-dw-key",
+          "platformId": "datawhale",
+          "platform": "Datawhale",
+          "title": "按入门教程运行示例却不知道应配置哪个密钥",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2026-07-15",
+          "latestVisibleParticipationAt": "2026-09-01（关联PR审阅；非原提问者回访）",
+          "sampleStatus": "复核既有样本；新增核对关联PR #126的解决进度",
+          "entrySelectionReason": "问题具体到课程首节和报错，适合检查教程供给与初学者实际执行之间的缺口。",
+          "visibleScope": "Issue正文及关联PR #126的公开讨论；Issue评论与反应未完整呈现。PR审阅有AI辅助披露，单列贡献证据，不计普通用户新增需求。",
+          "task": "按照RAG课程准备环境并运行第一节模型调用示例。",
+          "contentForm": "带报错与章节位置的问题、修复提议及文档同步审阅",
+          "publisherType": "自述按教程运行的学习者；职业、学习程度未知。关联PR作者和审阅者为贡献者，不能作为终端消费者追加计数。",
+          "industry": null,
+          "topic": "课程起步、授权配置和说明一致性",
+          "consumerIntent": "确认自己是否遗漏设置、应使用哪项配置，并继续课程。",
+          "visibleMetrics": [
+            {
+              "field": "Issue浏览、回复及反应数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "可读页面未给出完整评论数，反应显示不可用；仓库stars和forks不属于该内容消费。"
+            },
+            {
+              "field": "关联PR页面Participants",
+              "value": 2,
+              "unit": "参与者",
+              "period": "PR页面截至2026-09-11可见累计字段",
+              "note": "只表示该PR参与者，不是课程读者、问题用户或成功使用人数。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "提问者照教程运行示例后遇到缺密钥报错，直接询问是否需要自行设置。",
+            "failure": "报错信息与教程预期之间存在理解障碍。关联PR作者将问题定位到默认端点、代码读取变量和准备文档不一致。",
+            "solution": null,
+            "followUp": "关联PR提出同步代码、环境说明和错误提示，当前仍为Open。后续审阅要求继续同步中英文准备页；未见原提问者完成复测。"
+          },
+          "visibleSupplySolves": {
+            "status": "已有修复提议，尚未确认交付给普通读者",
+            "basis": "PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成功，也不等于课程读者已经恢复。",
+            "notEstablished": "不将PR正文中的Closes字样读成Issue已关闭，不将AI辅助审阅计作独立消费者需求。"
+          },
+          "specificGap": "教程、代码、环境入口与错误提示的同步维护；用户并非缺少更多理论内容。",
+          "communityImplication": "可把报错背后的前提解释成短而明确的配置检查，但提供可执行教材就要承担版本一致性维护。",
+          "sources": [
+            {
+              "title": "第一节执行示例报错 #125",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+              "date": "2026-07-15",
+              "accessedAt": "2026-09-11",
+              "type": "普通学习者问题",
+              "supports": "按教程执行、缺密钥报错及直接疑问。"
+            },
+            {
+              "title": "align AIHubmix API key configuration #126",
+              "url": "https://github.com/datawhalechina/all-in-rag/pull/126",
+              "date": "2026-07-23提交；可见2026-09-01审阅",
+              "accessedAt": "2026-09-11",
+              "type": "贡献者修复与审阅；有AI辅助披露",
+              "supports": "代码与文档同步问题、PR仍开放及待补内容；不证明运行或用户验收成功。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2026-07-15",
+          "updatedAt": null,
+          "latestParticipationAt": "2026-09-01（关联PR审阅；非原提问者回访）",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有样本；新增核对关联PR #126的解决进度"
+        },
+        "purpose": "按照RAG课程准备环境并运行第一节模型调用示例。 确认自己是否遗漏设置、应使用哪项配置，并继续课程。",
+        "forms": [
+          "带报错与章节位置的问题、修复提议及文档同步审阅"
+        ],
+        "author": {
+          "label": null,
+          "type": "自述按教程运行的学习者；职业、学习程度未知。关联PR作者和审阅者为贡献者，不能作为终端消费者追加计数。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "问题具体到课程首节和报错，适合检查教程供给与初学者实际执行之间的缺口。",
+          "scope": "Issue正文及关联PR #126的公开讨论；Issue评论与反应未完整呈现。PR审阅有AI辅助披露，单列贡献证据，不计普通用户新增需求。"
+        },
+        "metrics": [
+          {
+            "field": "Issue浏览、回复及反应数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "可读页面未给出完整评论数，反应显示不可用；仓库stars和forks不属于该内容消费。",
+            "kind": "consumption",
+            "rawText": null
+          },
+          {
+            "field": "关联PR页面Participants",
+            "value": 2,
+            "unit": "参与者",
+            "window": "PR页面截至2026-09-11可见累计字段",
+            "note": "只表示该PR参与者，不是课程读者、问题用户或成功使用人数。",
+            "kind": "participation",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "提问者照教程运行示例后遇到缺密钥报错，直接询问是否需要自行设置。",
+          "failure": "报错信息与教程预期之间存在理解障碍。关联PR作者将问题定位到默认端点、代码读取变量和准备文档不一致。",
+          "solution": null,
+          "followUp": "关联PR提出同步代码、环境说明和错误提示，当前仍为Open。后续审阅要求继续同步中英文准备页；未见原提问者完成复测。",
+          "status": "已有修复提议，尚未确认交付给普通读者",
+          "basis": "PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成功，也不等于课程读者已经恢复。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "已有修复提议，尚未确认交付给普通读者",
+          "provided": [
+            "PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成功，也不等于课程读者已经恢复。"
+          ],
+          "missing": [
+            "教程、代码、环境入口与错误提示的同步维护；用户并非缺少更多理论内容。",
+            "不将PR正文中的Closes字样读成Issue已关闭，不将AI辅助审阅计作独立消费者需求。"
+          ]
+        },
+        "interpretation": "可把报错背后的前提解释成短而明确的配置检查，但提供可执行教材就要承担版本一致性维护。",
+        "sources": [
+          {
+            "title": "第一节执行示例报错 #125",
+            "url": "https://github.com/datawhalechina/all-in-rag/issues/125",
+            "date": "2026-07-15",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "按教程执行、缺密钥报错及直接疑问。"
+          },
+          {
+            "title": "align AIHubmix API key configuration #126",
+            "url": "https://github.com/datawhalechina/all-in-rag/pull/126",
+            "date": "2026-07-23提交；可见2026-09-01审阅",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "代码与文档同步问题、PR仍开放及待补内容；不证明运行或用户验收成功。"
+          }
+        ]
+      },
+      {
+        "id": "practice-dw-windows",
+        "groupId": "practice",
+        "platform": {
+          "id": "datawhale",
+          "name": "Datawhale"
+        },
+        "title": "Windows学习者补充环境激活中缺失的步骤",
+        "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "Windows环境准备"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-dw-windows",
+          "platformId": "datawhale",
+          "platform": "Datawhale",
+          "title": "Windows学习者补充环境激活中缺失的步骤",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2026-04-27",
+          "latestVisibleParticipationAt": "2026-04-27",
+          "sampleStatus": "复核既有样本",
+          "entrySelectionReason": "选择用户自己补充解法的材料，与未解决提问对照，观察内容消费如何转成供给。",
+          "visibleScope": "Issue正文；当前Open。评论和反应未完整呈现。",
+          "task": "在Windows上激活课程环境并继续学习。",
+          "contentForm": "章节勘误、环境说明和用户实践补充",
+          "publisherType": "实际尝试过环境配置的学习者兼问题贡献者；职业未知。",
+          "industry": null,
+          "topic": "Windows环境准备",
+          "consumerIntent": "把教程步骤与自己的系统对应，避免因缺少前置操作无法继续。",
+          "visibleMetrics": [
+            {
+              "field": "Issue浏览、评论及反应数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "本次正文没有完整数值；反应显示不可用，不补成零。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "材料标记为文档描述不清，具体指向第一章环境配置步骤。",
+            "failure": "作者描述执行环境激活命令后出错，需要额外初始化与重新打开命令行。",
+            "solution": "同一作者明确标注自己已实践必须关闭并重开命令行的步骤；这是作者自身完成情况。",
+            "followUp": null
+          },
+          "visibleSupplySolves": {
+            "status": "作者自述局部解决",
+            "basis": "问题正文包含经过作者尝试的补充步骤。",
+            "notEstablished": "Issue仍Open，不证明教材已经更新，也未见另一名学习者采用后成功或该作者完成课程。"
+          },
+          "specificGap": "按操作系统写清必要前置条件和恢复操作，而非笼统复制一条安装命令。",
+          "communityImplication": "学习者能够成为维护供给者；应保留环境和验证范围，让后续读者知道解法是否适合自己。",
+          "sources": [
+            {
+              "title": "Windows激活环境命令的问题 #105",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+              "date": "2026-04-27",
+              "accessedAt": "2026-09-11",
+              "type": "普通学习者实践与勘误",
+              "supports": "环境配置受阻和作者自述已验证的局部步骤。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2026-04-27",
+          "updatedAt": null,
+          "latestParticipationAt": "2026-04-27",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有样本"
+        },
+        "purpose": "在Windows上激活课程环境并继续学习。 把教程步骤与自己的系统对应，避免因缺少前置操作无法继续。",
+        "forms": [
+          "章节勘误、环境说明和用户实践补充"
+        ],
+        "author": {
+          "label": null,
+          "type": "实际尝试过环境配置的学习者兼问题贡献者；职业未知。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "选择用户自己补充解法的材料，与未解决提问对照，观察内容消费如何转成供给。",
+          "scope": "Issue正文；当前Open。评论和反应未完整呈现。"
+        },
+        "metrics": [
+          {
+            "field": "Issue浏览、评论及反应数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "本次正文没有完整数值；反应显示不可用，不补成零。",
+            "kind": "consumption",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "材料标记为文档描述不清，具体指向第一章环境配置步骤。",
+          "failure": "作者描述执行环境激活命令后出错，需要额外初始化与重新打开命令行。",
+          "solution": "同一作者明确标注自己已实践必须关闭并重开命令行的步骤；这是作者自身完成情况。",
+          "followUp": null,
+          "status": "作者自述局部解决",
+          "basis": "问题正文包含经过作者尝试的补充步骤。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "作者自述局部解决",
+          "provided": [
+            "问题正文包含经过作者尝试的补充步骤。"
+          ],
+          "missing": [
+            "按操作系统写清必要前置条件和恢复操作，而非笼统复制一条安装命令。",
+            "Issue仍Open，不证明教材已经更新，也未见另一名学习者采用后成功或该作者完成课程。"
+          ]
+        },
+        "interpretation": "学习者能够成为维护供给者；应保留环境和验证范围，让后续读者知道解法是否适合自己。",
+        "sources": [
+          {
+            "title": "Windows激活环境命令的问题 #105",
+            "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+            "date": "2026-04-27",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "环境配置受阻和作者自述已验证的局部步骤。"
+          }
+        ]
+      },
+      {
+        "id": "practice-dw-chinese-rag",
+        "groupId": "practice",
+        "platform": {
+          "id": "datawhale",
+          "name": "Datawhale"
+        },
+        "title": "中文检索练习运行了却没有返回预期内容",
+        "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "中文检索与结果解释"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-dw-chinese-rag",
+          "platformId": "datawhale",
+          "platform": "Datawhale",
+          "title": "中文检索练习运行了却没有返回预期内容",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2026-04-12",
+          "latestVisibleParticipationAt": "2026-04-12",
+          "sampleStatus": "复核既有样本",
+          "entrySelectionReason": "选择运行结果不符合预期的内容，区分程序跑通与完成学习任务。",
+          "visibleScope": "Issue正文中的三组查询结果与简短代码；复现步骤、环境字段未补全，评论和反应未完整呈现。",
+          "task": "在RAG教材的中文材料中检索目标内容并比较检索方法。",
+          "contentForm": "问题反馈、三组结果对照和局部修复代码",
+          "publisherType": "实际练习并补充方法的学习者；职业和行业未知。",
+          "industry": null,
+          "topic": "中文检索与结果解释",
+          "consumerIntent": "理解为何检索结果不相关，以及怎样让中文输入得到更符合目标的返回。",
+          "visibleMetrics": [
+            {
+              "field": "Issue浏览、评论及反应数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "没有取得明确可用的数值；正文中的结果条目数不当成使用次数。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "作者指出检索器需要中文分词处理，并给出具体章节和查询。",
+            "failure": "查询一种菜谱时，无分词方法返回了另一种菜谱的分块。",
+            "solution": "作者展示加分词后目标条目出现，以及混合检索修改后的结果差异；这是局部对照自述。",
+            "followUp": null
+          },
+          "visibleSupplySolves": {
+            "status": "有局部改善对照，完整解决未确认",
+            "basis": "可以看见预期条目出现，但复现环境不完整，仍有其他菜谱条目；Issue仍Open。",
+            "notEstablished": "未重跑、未核教材合并和其他读者复验；不能称检索准确率达标，也不能由菜谱推断餐饮从业者。"
+          },
+          "specificGap": "用符合读者语言的数据说明预期结果、评价方法和改动原因，而不是只提供能执行的示例。",
+          "communityImplication": "结果对照可以成为可读内容；只有条件和版本足够完整，才适合进一步承诺可重复操作。",
+          "sources": [
+            {
+              "title": "BM25检索器需要分词处理中文 #102",
+              "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+              "date": "2026-04-12",
+              "accessedAt": "2026-09-11",
+              "type": "普通学习者运行结果和改进自述",
+              "supports": "中文检索需求、错误结果及局部修改后的对照。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2026-04-12",
+          "updatedAt": null,
+          "latestParticipationAt": "2026-04-12",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有样本"
+        },
+        "purpose": "在RAG教材的中文材料中检索目标内容并比较检索方法。 理解为何检索结果不相关，以及怎样让中文输入得到更符合目标的返回。",
+        "forms": [
+          "问题反馈、三组结果对照和局部修复代码"
+        ],
+        "author": {
+          "label": null,
+          "type": "实际练习并补充方法的学习者；职业和行业未知。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "选择运行结果不符合预期的内容，区分程序跑通与完成学习任务。",
+          "scope": "Issue正文中的三组查询结果与简短代码；复现步骤、环境字段未补全，评论和反应未完整呈现。"
+        },
+        "metrics": [
+          {
+            "field": "Issue浏览、评论及反应数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "没有取得明确可用的数值；正文中的结果条目数不当成使用次数。",
+            "kind": "consumption",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "作者指出检索器需要中文分词处理，并给出具体章节和查询。",
+          "failure": "查询一种菜谱时，无分词方法返回了另一种菜谱的分块。",
+          "solution": "作者展示加分词后目标条目出现，以及混合检索修改后的结果差异；这是局部对照自述。",
+          "followUp": null,
+          "status": "有局部改善对照，完整解决未确认",
+          "basis": "可以看见预期条目出现，但复现环境不完整，仍有其他菜谱条目；Issue仍Open。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "有局部改善对照，完整解决未确认",
+          "provided": [
+            "可以看见预期条目出现，但复现环境不完整，仍有其他菜谱条目；Issue仍Open。"
+          ],
+          "missing": [
+            "用符合读者语言的数据说明预期结果、评价方法和改动原因，而不是只提供能执行的示例。",
+            "未重跑、未核教材合并和其他读者复验；不能称检索准确率达标，也不能由菜谱推断餐饮从业者。"
+          ]
+        },
+        "interpretation": "结果对照可以成为可读内容；只有条件和版本足够完整，才适合进一步承诺可重复操作。",
+        "sources": [
+          {
+            "title": "BM25检索器需要分词处理中文 #102",
+            "url": "https://github.com/datawhalechina/all-in-rag/issues/102",
+            "date": "2026-04-12",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "中文检索需求、错误结果及局部修改后的对照。"
+          }
+        ]
+      },
+      {
+        "id": "practice-hf-vton",
+        "groupId": "practice",
+        "platform": {
+          "id": "huggingface",
+          "name": "Hugging Face"
+        },
+        "title": "想使用试衣演示却被运行条件阻断",
+        "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+        "observedAt": "2026-09-11",
+        "checkedAt": null,
+        "topics": [
+          "虚拟试衣与演示可用性"
+        ],
+        "industry": null,
+        "original": {
+          "id": "practice-hf-vton",
+          "platformId": "huggingface",
+          "platform": "Hugging Face",
+          "title": "想使用试衣演示却被运行条件阻断",
+          "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+          "accessedAt": "2026-09-11",
+          "publishedAt": "2025-09-15",
+          "latestVisibleParticipationAt": "2025-09-23",
+          "sampleStatus": "复核既有历史样本",
+          "entrySelectionReason": "用普通人的具体视觉任务对照技术课程；检查有使用意愿却无法获得结果的情形。",
+          "visibleScope": "公开正文1—6楼；原帖和后续讨论均为2025年9月，不能作为2026年当前故障。未进入私人Space或读取账户。",
+          "task": "在自己的Space中使用IDM-VTON虚拟试衣演示。",
+          "contentForm": "使用求助、尝试步骤、兼容性解释及替代演示链接",
+          "publisherType": "自述为该任务订阅的个人使用者；行业和是否用于商用未知。回复中另有维护者和另一名失败使用者。",
+          "industry": null,
+          "topic": "虚拟试衣与演示可用性",
+          "consumerIntent": "获得可用的试衣效果，并理解订阅、资源与依赖如何共同影响运行。",
+          "visibleMetrics": [
+            {
+              "field": "主题浏览、点赞、统计回复数及Space运行人数",
+              "value": null,
+              "unit": null,
+              "period": null,
+              "note": "本次可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。"
+            }
+          ],
+          "demandEvidence": {
+            "request": "提问者称专门为使用试衣演示订阅，却无法运行，希望确认问题及处理办法。",
+            "failure": "作者已试过重启、复制和不同访问方式但仍受阻。另一成员描述长期失败并放弃，不能将该人的经历归到原提问者。",
+            "solution": null,
+            "followUp": "回复者后来提供适配新版依赖的演示，并说明版本变化可能影响旧资源；未见原提问者采用后成功确认。"
+          },
+          "visibleSupplySolves": {
+            "status": "有人提供替代资源，原需求是否解决未知",
+            "basis": "具体替代演示和解释可见，原使用者结果回报缺失。",
+            "notEstablished": "不能把建议有效或新演示存在写成原用户已成功；也不能推算当前故障率、行业或续费结果。"
+          },
+          "specificGap": "面向终端使用者的可用版本、复制条件和明确失败处理；资源已经存在，仍可能不易消费。",
+          "communityImplication": "可研究普通读者能否从经过核对的资源说明持续受益；若用户只要一次生成结果，站外工具可能已经是更直接的去处。",
+          "sources": [
+            {
+              "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+              "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+              "date": "2025-09-15至2025-09-23",
+              "accessedAt": "2026-09-11",
+              "type": "历史使用者求助及同伴维护",
+              "supports": "试衣消费意图、历史失败、维护者建议与缺少成功回报。"
+            }
+          ]
+        },
+        "publication": {
+          "publishedAt": "2025-09-15",
+          "updatedAt": null,
+          "latestParticipationAt": "2025-09-23",
+          "note": "参与日期为本次读取范围内的可见记录。"
+        },
+        "novelty": {
+          "kind": "rechecked",
+          "label": "已有样本复核",
+          "detail": "复核既有历史样本"
+        },
+        "purpose": "在自己的Space中使用IDM-VTON虚拟试衣演示。 获得可用的试衣效果，并理解订阅、资源与依赖如何共同影响运行。",
+        "forms": [
+          "使用求助、尝试步骤、兼容性解释及替代演示链接"
+        ],
+        "author": {
+          "label": null,
+          "type": "自述为该任务订阅的个人使用者；行业和是否用于商用未知。回复中另有维护者和另一名失败使用者。"
+        },
+        "entry": {
+          "description": "既有公开用户问题与关联材料复核",
+          "reason": "用普通人的具体视觉任务对照技术课程；检查有使用意愿却无法获得结果的情形。",
+          "scope": "公开正文1—6楼；原帖和后续讨论均为2025年9月，不能作为2026年当前故障。未进入私人Space或读取账户。"
+        },
+        "metrics": [
+          {
+            "field": "主题浏览、点赞、统计回复数及Space运行人数",
+            "value": null,
+            "unit": null,
+            "window": "未标明",
+            "note": "本次可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。",
+            "kind": "consumption",
+            "rawText": null
+          }
+        ],
+        "metricNote": "",
+        "unlabeledNumbers": [],
+        "demand": {
+          "request": "提问者称专门为使用试衣演示订阅，却无法运行，希望确认问题及处理办法。",
+          "failure": "作者已试过重启、复制和不同访问方式但仍受阻。另一成员描述长期失败并放弃，不能将该人的经历归到原提问者。",
+          "solution": null,
+          "followUp": "回复者后来提供适配新版依赖的演示，并说明版本变化可能影响旧资源；未见原提问者采用后成功确认。",
+          "status": "有人提供替代资源，原需求是否解决未知",
+          "basis": "具体替代演示和解释可见，原使用者结果回报缺失。"
+        },
+        "authorObservations": [],
+        "supply": {
+          "status": "有人提供替代资源，原需求是否解决未知",
+          "provided": [
+            "具体替代演示和解释可见，原使用者结果回报缺失。"
+          ],
+          "missing": [
+            "面向终端使用者的可用版本、复制条件和明确失败处理；资源已经存在，仍可能不易消费。",
+            "不能把建议有效或新演示存在写成原用户已成功；也不能推算当前故障率、行业或续费结果。"
+          ]
+        },
+        "interpretation": "可研究普通读者能否从经过核对的资源说明持续受益；若用户只要一次生成结果，站外工具可能已经是更直接的去处。",
+        "sources": [
+          {
+            "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+            "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+            "date": "2025-09-15至2025-09-23",
+            "accessedAt": "2026-09-11",
+            "whatSupports": "试衣消费意图、历史失败、维护者建议与缺少成功回报。"
+          }
+        ]
+      }
+    ],
+    "sourceFiles": [
+      {
+        "file": "commerce-samples.json",
+        "sha256": "ce5a1447063de8470560150036f564d7bf121c7eb3e1cb56a460caf70bb56d97"
+      },
+      {
+        "file": "interest-samples.json",
+        "sha256": "ff8c298b93d937432a7fbcdca6147fe76b5628a373870f9a5292b567ef125733"
+      },
+      {
+        "file": "practice-samples.json",
+        "sha256": "80b5d85c04925d24ffdf7651b3eb836b8b863b814edcf3957e31f86ac3c893cc"
+      }
+    ],
+    "selectionNotes": [
+      "按指定主题选择可读的公开内容与用户问题；各入口、选择原因和读取范围在样本内记录。",
+      "查询日期与内容日期分列。未知数值保留null；页面明确显示的0条评论保留0。",
+      "指标保留原字段；PR参与人数和任务响应时间单列，不计为内容消费人数。"
+    ],
+    "accessFailures": [
+      {
+        "platform": "RunningHub",
+        "url": "https://www.runninghub.cn/post/2038094280782258177",
+        "title": "电商商品主图设计+主图详情页一键生成 工作流 V3.0",
+        "observedAt": "2026-09-11",
+        "reason": "具体页面打开超时，搜索摘要可见",
+        "countedAsReadableSample": false,
+        "searchOnlyValuesUsed": false
+      },
+      {
+        "platform": "RunningHub",
+        "url": "https://www.runninghub.cn/post/2050501658743980034",
+        "title": "电商产品产品页+详情页6图一键设计",
+        "observedAt": "2026-09-11",
+        "reason": "具体页面打开超时，搜索摘要可见",
+        "countedAsReadableSample": false,
+        "searchOnlyValuesUsed": false
+      },
+      {
+        "platform": "RunningHub",
+        "url": "https://www.runninghub.cn/post/2014406637557129218",
+        "title": "产品图一键生成电商详情页V2",
+        "observedAt": "2026-09-11",
+        "reason": "具体页面打开超时，搜索摘要可见",
+        "countedAsReadableSample": false,
+        "searchOnlyValuesUsed": false
+      },
+      {
+        "platform": "RunningHub",
+        "url": "https://www.runninghub.cn/post/1964153515574743042",
+        "title": "flux1版基础电商产品精修",
+        "observedAt": "2026-09-11",
+        "reason": "具体页面打开超时，搜索摘要可见",
+        "countedAsReadableSample": false,
+        "searchOnlyValuesUsed": false
+      },
+      {
+        "platform": "吐司中文站",
+        "url": "https://tusi.cn/models/844557253798477578",
+        "title": "电商产品厨房场景",
+        "observedAt": "2026-09-11",
+        "reason": "具体页面打开返回错误，搜索摘要可见",
+        "countedAsReadableSample": false,
+        "searchOnlyValuesUsed": false
+      },
+      {
+        "url": "https://creator.nightcafe.studio/creation/Idt9YgFow9fgwAFjdV4g",
+        "status": "具体作品读取失败",
+        "reason": "不能用第三方文章替代当前对象正文"
+      },
+      {
+        "url": "https://openart.ai/discovery/sd-1007963342603825152",
+        "status": "具体详情读取失败",
+        "reason": "历史提示书提供链接，但本次无可读对象正文"
+      },
+      {
+        "url": "https://www.seaart.ai/postDetail/da4jonle878c738el580",
+        "status": "具体作品读取失败",
+        "reason": "已有研究样本，本次重开失败，不充作新增可读样本"
+      },
+      {
+        "url": "https://www.seaart.ai/explore/detail/cpo9gcle878c738pgbn0",
+        "status": "可读但未纳入",
+        "reason": "标题和提示仅Story，无法可靠判定具体视觉主题与故事内容；不凭标题凑数"
+      },
+      {
+        "url": "https://app.leonardo.ai/generation/image/original-fictional-2d-cartoon-character-40-year-d9a87814-760b-4d7e-a6ae-3a76a4aff721",
+        "status": "搜索摘要可见；当前打开超时",
+        "reason": "不将仅搜索摘要当完整对象采样"
+      }
+    ]
+  }
 }
