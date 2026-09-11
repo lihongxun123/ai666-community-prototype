@@ -4,16 +4,18 @@
 
 研究资料核查截至2026年9月11日；当前汇报日期为2026年9月11日。本站为独立研究交付，不属于社区产品、管理后台或API服务的发布。
 
+当前社区目标为目标用户规模与持续活跃。`/#progress`给出北极星口径与四周试点，实际值和阶段目标待补；旧40项资料验收单独保留为研究历史。
+
 ## 阅读入口
 
 - `/#overview`：研究目录。
-- `/#report`：主报告，包含平台分类、需求、内容、运营、商业化和采用条件。
+- `/#report`：主报告，包含目标人群、消费与参与、内容、运营、工具投入和采用条件。
 - `/#matrix`：18个平台对照，点击进入独立档案。
 - `/#audience`、`/#china-users`：平台用户画像、中国AI用户规模与付费证据。
 - `/#content`、`/#operations`、`/#business`、`/#data`：内容、运营、商业化与访问数据专题。
 - `/#discussion`、`/#progress`、`/#makenow`、`/#strategy`：自身条件、工具关系与方案比较。
-- `/research-deliveries/2026-09-11-readiness/report.html`：独立汇报版，附18份平台档案。
-- `/research-kit/ai-community-report-2026-09-11-readiness.zip`：可离线浏览的完整汇报资料包。
+- `/research-deliveries/2026-09-11-northstar/report.html`：独立汇报版，附18份平台档案。
+- `/research-kit/ai-community-report-2026-09-11-northstar.zip`：可离线浏览的完整汇报资料包。
 
 ## 文件组织
 
@@ -23,10 +25,10 @@
 | `lib/` | 结构化研究正文、来源记录和平台档案 |
 | `public/research-images/` | 经整理的研究截图 |
 | `public/research-kit/` | 专题文档、表格与下载包 |
-| `public/research-deliveries/2026-09-11-readiness/` | 独立汇报的公共发布副本及文件校验清单 |
+| `public/research-deliveries/2026-09-11-northstar/` | 独立汇报的公共发布副本及文件校验清单 |
 | `.openai/hosting.json` | 当前Sites项目标识 |
 
-`2026-09-11-public`保留首次公开交付，现行入口为`2026-09-11-readiness`，`2026-09-11-conditions`保留条件比较交付，`2026-09-11-evidence`保留过程证据交付。
+`2026-09-11-public`保留首次公开交付，现行入口为`2026-09-11-northstar`，`2026-09-11-readiness`保留此前资料验收交付，`2026-09-11-conditions`保留条件比较交付，`2026-09-11-evidence`保留过程证据交付。
 
 上一级研究目录保留采集资料、历史交付快照、生成脚本和发布验证记录。早期汇报版本保留在本地，不打入当前公网部署。文中“项目资料/”表示内部材料来源标识，保留文件名和定位信息，不是公网下载链接。
 

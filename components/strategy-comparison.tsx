@@ -1,11 +1,12 @@
 'use client';
 import { useState, type ReactNode } from 'react';
 import data from '@/lib/strategy-comparison.json';
+import {NorthStarDirections} from '@/components/community-north-star';
 import { ContentArrangementLab } from '@/components/content-arrangement-lab';
 import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
 
-const tabs=[['options','四份方案'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
+const tabs=[['options','四种组织方式'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
 function List({items}:{items:string[]}){return <ul>{items.map(i=><li key={i}>{i}</li>)}</ul>;}
 function Definition({rows}:{rows:[string,ReactNode][]}){return <dl className="v23-definition">{rows.map(([name,value])=><div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>;}
@@ -16,15 +17,16 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
-  <header className="page-heading v23-intro"><h1>社区方案对照</h1><p className="muted">{data.date} · 方案待选定</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>方案 {o.id} 独立文档</a>)}</div></header>
-  <details className="study-sources"><summary>五项共同前提：目标、供给、人员、工具、经营数据</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
+  <header className="page-heading v23-intro"><h1>方向与内容组织</h1><p className="muted">{data.date} · 候选方向待验证</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>组织方式 {o.id} 独立文档</a>)}</div></header>
+  <NorthStarDirections/>
+  <details className="study-sources"><summary>目标、供给、人员、工具与投入条件</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
   <fieldset id="v23-tabs" className="v23-controls is-tabs" aria-label="研究内容">{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} className={tab===id?'is-active':''} onClick={()=>setTab(id)}>{label}</button>)}</fieldset>
-  {tab==='options'&&<section aria-label="四种社区方案">
-   <h2>四种方案</h2><div className="study-actions"><a href="/research-kit/research-option-tests.md" download>各方案的假设、信号和暂停条件</a><a href="/research-kit/research-cost-model.md" download>比较成本与承诺范围</a><a href="/research-kit/research-human-input.md" download>填写待补材料</a></div>
-   <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>阅读完整方案 {o.id} →</button></article>)}</div>
-   <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 精选方法</th><th>B 应用解法</th><th>C 视觉创作</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
+  {tab==='options'&&<section aria-label="四种内容与服务组织方式">
+   <h2>四种组织方式</h2><div className="study-actions"><a href="/research-kit/research-option-tests.md" download>四周试点与判断条件</a><a href="/research-kit/research-cost-model.md" download>比较成本与承诺范围</a><a href="/research-kit/research-human-input.md" download>填写待补材料</a></div>
+   <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>查看组织方式 {o.id} →</button></article>)}</div>
+   <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 筛选发现</th><th>B 解法实践</th><th>C 视觉创作</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
    <StrategyConditionsSummary/>
-   <fieldset id="v23-option-picker" className="v23-controls" aria-label="选择要阅读的完整方案">{data.options.options.map(o=><button key={o.id} aria-pressed={o.id===active} className={o.id===active?'is-active':''} onClick={()=>setActive(o.id)}>{o.id} · {o.name}</button>)}</fieldset>
+   <fieldset id="v23-option-picker" className="v23-controls" aria-label="选择组织方式">{data.options.options.map(o=><button key={o.id} aria-pressed={o.id===active} className={o.id===active?'is-active':''} onClick={()=>setActive(o.id)}>{o.id} · {o.name}</button>)}</fieldset>
    <article className="v23-option" key={option.id}>
     <h2>{option.id} · {option.name}</h2><p className="lead">{option.promise}</p><RefLinks ids={option.sourceIds}/>
     <StrategyConditionReview optionId={option.id}/>
@@ -35,7 +37,7 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
     <section><h3>社区与工具的关系</h3><Definition rows={[["社区",option.toolRelation.community],["MakeNow",option.toolRelation.MakeNow],["API",option.toolRelation.API],["不用自营工具",option.toolRelation.withoutTool],["尚未确认",option.toolRelation.unknown]]}/></section>
     <section><h3>获客与回访设想</h3><p>{option.acquisition}</p><p><strong>再次访问的理由：</strong>{option.returnReason}</p></section>
     <section><h3>轻量版本也必须兑现的承诺</h3><p>{option.minimumPromise}</p><p><strong>承诺范围：</strong>{option.declinePromise}</p><p><strong>可缩小到：</strong>{option.lightVersion}</p></section>
-    <section><h3>持续投入、容量与经营条件</h3><Definition rows={[["固定工作",option.workload.fixed],["随使用增长",option.workload.variable],["容量限制",option.workload.growthLimit]]}/><h4>成本来源</h4><List items={option.economics.costDrivers}/><p><strong>收入假设：</strong>{option.economics.revenueHypothesis}</p><p><strong>资料不足：</strong>{option.economics.unknown}</p></section>
+    <section><h3>持续投入与服务容量</h3><Definition rows={[["固定工作",option.workload.fixed],["随使用增长",option.workload.variable],["容量限制",option.workload.growthLimit]]}/><h4>成本来源</h4><List items={option.economics.costDrivers}/><p><strong>业务关联观察（非验收项）：</strong>{option.economics.revenueHypothesis}</p><p><strong>资料不足：</strong>{option.economics.unknown}</p></section>
     <section><h3>什么情况下不成立</h3><List items={option.failureModes}/><h4>哪些条件会改变判断</h4><List items={option.conditionsToCompare}/><div className="table-wrap"><table><thead><tr><th>需要的证据</th><th>改变哪项判断</th></tr></thead><tbody>{option.evidenceNeeded.map(e=><tr key={e.evidence}><td>{e.evidence}</td><td>{e.changesJudgment}</td></tr>)}</tbody></table></div></section>
    </article>
    <details className="study-sources"><summary>可以共用什么，哪些工作仍需单独承担</summary><div className="table-wrap"><table><thead><tr><th>工作</th><th>可共用</th><th>仍需单独承担</th></tr></thead><tbody>{data.options.sharedWorkAndNonSharedWork.map(w=><tr key={w.work}><th>{w.work}</th><td>{w.shareable}</td><td>{w.notShareable}</td></tr>)}</tbody></table></div></details>

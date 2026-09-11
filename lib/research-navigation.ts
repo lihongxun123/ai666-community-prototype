@@ -3,7 +3,7 @@ export const topViews = [
  ['matrix','平台对照'],['audience','用户画像与产品价值'],['china-users','中国AI用户规模与分层'],
  ['content','内容形态'],['operations','运营思路'],['business','商业化与规模'],
  ['data','公开访问数据'],['tasks','任务、内容与作者'],['discussion','内容与工具关系'],
- ['progress','研究进度与待确认'],['makenow','MakeNow与素材交接'],['strategy','社区方案对照'],
+ ['progress','持续活跃与执行计划'],['makenow','MakeNow与素材交接'],['strategy','方向与内容组织'],
  ['supplement','经营与使用证据'],['evidence','来源与研究方法'],['validation','用户验证准备'],
 ] as const;
 export type ResearchView = typeof topViews[number][0];
@@ -23,10 +23,10 @@ export const topicDescriptions:Record<string,string> = {
  data:'访问趋势、地区、设备和渠道；按来源与月份比较。',
  tasks:'普通内容、评论、作者及问题处理的具体样本。',
  discussion:'展示、解释、文件交付、在线执行与工具收费的关系。',
- progress:'逐项研究进度、交付依据、成本计算及待补材料。',
+ progress:'北极星口径、四周MVP、供给成本及待补材料；历史研究验收另存。',
  makenow:'登录路径、公开案例、源画布、素材和使用范围。',
- strategy:'四种方案的内容组织、用户路径、供给与投入条件。',
+ strategy:'三类候选方向与四种可组合内容组织方式，按持续消费和参与比较。',
  supplement:'收费规则、规模披露、普通用户经历和相反证据。',
  evidence:'来源类型、观察日期、可支持的判断与研究限制。',
- validation:'尚待执行的筛选、访谈、试用和记录材料。',
+ validation:'围绕浏览、观看、回访与参与的招募、访谈和记录材料。',
 };

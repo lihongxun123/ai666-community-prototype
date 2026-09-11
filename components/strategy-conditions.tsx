@@ -9,7 +9,7 @@ function CaseSources({ids}:{ids:string[]}){
 }
 
 export function StrategyConditionsSummary(){
- return <section className="strategy-conditions" id="strategy-conditions-summary"><h3>四份方案的采用条件</h3><div className="table-wrap"><table className="brief-table"><thead><tr><th>方案</th><th>证据影响的判断</th><th>最低可交付范围</th></tr></thead><tbody>{data.options.options.map(o=><tr key={o.id}><th>{o.id} · {o.name}</th><td>{o.evidenceReview.map(r=><p key={r.id}>{r.change}</p>)}<details><summary>依据</summary><CaseSources ids={o.evidenceReview.flatMap(r=>r.caseIds)}/></details></td><td>{o.lightVersion}</td></tr>)}</tbody></table></div></section>;
+ return <section className="strategy-conditions" id="strategy-conditions-summary"><h3>四种组织方式的采用条件</h3><div className="table-wrap"><table className="brief-table"><thead><tr><th>组织方式</th><th>证据影响的判断</th><th>最低可交付范围</th></tr></thead><tbody>{data.options.options.map(o=><tr key={o.id}><th>{o.id} · {o.name}</th><td>{o.evidenceReview.map(r=><p key={r.id}>{r.change}</p>)}<details><summary>依据</summary><CaseSources ids={o.evidenceReview.flatMap(r=>r.caseIds)}/></details></td><td>{o.lightVersion}</td></tr>)}</tbody></table></div></section>;
 }
 
 export function StrategyConditionReview({optionId}:{optionId:string}){

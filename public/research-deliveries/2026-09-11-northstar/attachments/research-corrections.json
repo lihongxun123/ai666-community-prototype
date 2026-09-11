@@ -1,0 +1,2702 @@
+{
+  "date": "2026-09-11",
+  "changes": [
+    {
+      "kind": "当前状态修正",
+      "file": "lib\\content-presentation.json",
+      "before": "用户此前曾说明MakeNow分享复制在规划中；当前是否上线及材料继承范围尚未复核。",
+      "after": "2026年9月10日已验证一个公开画布可复制为个人副本，且一个文本字段修改保存、离开重开后保留；原件未变。素材完整性、跨接收者权限和生成仍未验证。",
+      "reason": "当前是否上线未复核与现有局部实操直接冲突。",
+      "applied": true
+    },
+    {
+      "kind": "当前状态修正",
+      "file": "lib\\research-progress.json",
+      "before": "对应JPG/MP4文件存在；未审看",
+      "after": "历史JPG与MP4文件存在；2026年9月11日复核时已查看JPG并核对为784×1168，与1024×1024请求摘要不一致。MP4质量、全部素材资格与当前复现仍未完成核验。",
+      "reason": "不能继续将已查看图片统称未审看，也不能因JPG检查完成将MP4一并改为已审看。",
+      "applied": true
+    },
+    {
+      "kind": "当前状态修正",
+      "file": "lib\\research-progress.json",
+      "before": "公开首页、公告和技能市场登录门槛已由主代理完成；下一步从登录后市场、详情和项目读取继续，不重复采首页。",
+      "after": "公开入口与登录后市场/详情/项目已读取；单案例副本创建、文本保存和原件回查已完成。下一步仅核未验的素材可用性、独立接收者权限和受控生成。",
+      "reason": "immediateReadPaths当前路线落后于已有MakeNow登录研究。",
+      "applied": true
+    },
+    {
+      "kind": "当前状态修正",
+      "file": "lib\\research-progress.json",
+      "before": "文档与价格可先核对；当前域名待确认，API尚未调用。",
+      "after": "现行文档入口已确认并读取代表接口；当前价格页2026年9月11日复核时直接打开未取得，保留历史标价及日期。未新增API调用，完整任务费用和结果待核。",
+      "reason": "域名待确认已过时；不因更新域名而假称价格读取或API新调用成功。",
+      "applied": true
+    },
+    {
+      "kind": "当前状态修正",
+      "file": "lib\\community-options.json",
+      "before": "此前用户说没有成型案例，画布分享复制在规划。当前材料可用程度、复制能力和客户结构需要复核",
+      "after": "此前关于没有成型案例与分享复制在规划的陈述保留为历史背景；当前已确认一个公开画布的副本创建与文本保存，以及已有历史成图。完整素材、独立接收者复现、客户结构与持续产能仍待核。",
+      "reason": "原字段已标历史，属于需补后续更新，不应删除历史或改写成所有能力已成立。",
+      "applied": true
+    },
+    {
+      "kind": "画像降级",
+      "file": "lib/audience-research.json#P25-datawhale-p1",
+      "before": {
+        "status": "窄任务画像有5个独立用户点；人口与职业画像不足",
+        "scope": "仅all-in-rag课程；5位不同公开发帖者，不能推广全社区。",
+        "independentUserPoints": 5
+      },
+      "after": {
+        "status": "候选任务画像：4个明确运行或排错观察点；另有1个一般学习线索",
+        "scope": "仅all-in-rag教材。4位公开发帖者有运行/排错经历，另1位只表示正在学习，不能作为同一窄任务的第五点。",
+        "independentUserPoints": 4
+      },
+      "reason": "一般学习意愿不满足运行/排错这一窄任务；u5仍保留为背景，未删除相反材料。",
+      "applied": true
+    },
+    {
+      "kind": "收费规则收窄",
+      "file": "lib/business-data.json#runway",
+      "before": "联盟页说明合作先进行试点，创作者从推荐订阅中持续取得佣金，而非按发帖一次付清；没有统一脚本与发帖配额。它购买的是有转化能力的推荐。对多元拾光而言，需要案例制作的作者与需要带来购买者的推广人，不宜只用同一合作标准筛选。",
+      "after": "2026年9月11日联盟页列明：审核后先进行3个月试点，每带来一名用专属码购买付费计划的新订阅者得15美元，观众享25%折扣。持续收入指不断带来新订阅者，不能解读为同一人的每次续费都分佣；实际支付、退款调整与推广者净收益未取得。",
+      "reason": "官网固定金额与新订阅资格已经明确，不能继续写未知比例或暗示续期佣金。",
+      "applied": true
+    }
+  ],
+  "countingRule": "新增记录含既有案例复读和后续，不与55条任务画像的用户点相加；来源页数不等于人数。",
+  "coverage": {
+    "sourceRecords": 96,
+    "caseRecords": 39,
+    "meaning": "过程记录中包含已知案例与后续；不称全部新增。"
+  },
+  "caseReuse": [
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/0/cases/0",
+      "platform": "waytoagi",
+      "caseId": "CR31-C-waytoagi-case-1",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-waytoagi-u1",
+      "countingAction": "同作者活动/职业转变自述已存在。",
+      "sourceIds": [
+        "CR31-C-waytoagi-04"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/0/cases/1",
+      "platform": "waytoagi",
+      "caseId": "CR31-C-waytoagi-case-2",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-waytoagi-u2",
+      "countingAction": "同作者已被识别为内容供给者；补日期。",
+      "sourceIds": [
+        "CR31-C-waytoagi-05"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/1/cases/0",
+      "platform": "datawhale",
+      "caseId": "CR31-C-datawhale-case-1",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-datawhale-u3",
+      "countingAction": "同Windows局部修正，非结课。",
+      "sourceIds": [
+        "CR31-C-datawhale-02"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/1/cases/1",
+      "platform": "datawhale",
+      "caseId": "CR31-C-datawhale-case-2",
+      "classification": "existing-representative",
+      "existingIdentity": "datawhale-review-merge-106",
+      "countingAction": "同PR #106；不要混入issue #102的作者。",
+      "sourceIds": [
+        "CR31-C-datawhale-03"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/2/cases/0",
+      "platform": "huggingface",
+      "caseId": "CR31-C-huggingface-case-1",
+      "classification": "existing-representative",
+      "existingIdentity": "hf-quota-followup-20260911",
+      "countingAction": "原帖不同成员恢复/失败已经分开。",
+      "sourceIds": [
+        "CR31-C-huggingface-03",
+        "CR31-C-huggingface-06"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/2/cases/1",
+      "platform": "huggingface",
+      "caseId": "CR31-C-huggingface-case-2",
+      "classification": "existing-representative",
+      "existingIdentity": "hf-vton-maintenance-20260911",
+      "countingAction": "已记录替代应用暂停及原求助者未确认。",
+      "sourceIds": [
+        "CR31-C-huggingface-04",
+        "CR31-C-huggingface-05"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/3/cases/0",
+      "platform": "modelscope",
+      "caseId": "CR31-C-modelscope-case-1",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-modelscope-u5",
+      "countingAction": "同免费部署失败用户。",
+      "sourceIds": [
+        "CR31-C-modelscope-02"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/3/cases/1",
+      "platform": "modelscope",
+      "caseId": "CR31-C-modelscope-case-2",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-modelscope-u4 + P25-modelscope-u6",
+      "countingAction": "两个issue同匿名D，维持一个用户键。",
+      "sourceIds": [
+        "CR31-C-modelscope-03",
+        "CR31-C-modelscope-04"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/4/cases/0",
+      "platform": "linuxdo",
+      "caseId": "linuxdo-case-01",
+      "classification": "existing-representative",
+      "existingIdentity": "linuxdo-connect-result-20260911",
+      "countingAction": "已确认网络问题恢复；不能倒置另一接入帖建议为实际修复步骤。",
+      "sourceIds": [
+        "CR31-C-linuxdo-02"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/4/cases/1",
+      "platform": "linuxdo",
+      "caseId": "linuxdo-case-02",
+      "classification": "existing-representative",
+      "existingIdentity": "linuxdo-wiki-maintenance-20260911",
+      "countingAction": "同Wiki，修订/评论不是新用户。",
+      "sourceIds": [
+        "CR31-C-linuxdo-03"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/5/cases/0",
+      "platform": "dify",
+      "caseId": "dify-case-01",
+      "classification": "existing-case-new-event",
+      "existingIdentity": "P25-dify-u1",
+      "countingAction": "故障已有；#42126是新增维护事件和另一贡献者，仍待审核。",
+      "sourceIds": [
+        "CR31-C-dify-03",
+        "CR31-C-dify-04"
+      ]
+    },
+    {
+      "inputFile": "input-communities.json",
+      "inputPointer": "/platforms/5/cases/1",
+      "platform": "dify",
+      "caseId": "dify-case-02",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-dify-u3",
+      "countingAction": "同Cloud检索问题，状态Open不表示新问题。",
+      "sourceIds": [
+        "CR31-C-dify-05"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/0/cases/0",
+      "platform": "liblib",
+      "caseId": "CR31-liblib-plugin",
+      "classification": "existing-representative",
+      "existingIdentity": "E29-LIBLIB-API-VAE",
+      "countingAction": "旧证据已经核到commit；本轮未复读不能抹掉既有代码变更证据，仍无用户成功。",
+      "sourceIds": [
+        "CR31-R-liblib-04",
+        "CR31-R-liblib-05"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/0/cases/1",
+      "platform": "liblib",
+      "caseId": "CR31-liblib-v2",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-liblib-E4",
+      "countingAction": "恢复原FLUX V2读取；不是代表案例98a6...的另一个V2工作流。",
+      "sourceIds": [
+        "CR31-R-liblib-03"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/1/cases/0",
+      "platform": "runninghub",
+      "caseId": "CR31-runninghub-share",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-runninghub-E2",
+      "countingAction": "旧证据已包含分享JSON；同B，不新增人。",
+      "sourceIds": [
+        "CR31-R-runninghub-01"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/1/cases/1",
+      "platform": "runninghub",
+      "caseId": "CR31-runninghub-return",
+      "classification": "existing-audience-with-followup",
+      "existingIdentity": "P25-runninghub-E1",
+      "countingAction": "同A的新任务后续找到资源不等于再次跑通。",
+      "sourceIds": [
+        "CR31-R-runninghub-01"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/2/cases/0",
+      "platform": "tusi",
+      "caseId": "CR31-tusi-controlnet",
+      "classification": "new-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "新海外历史Pro案例；不能归国内Canvas。",
+      "sourceIds": [
+        "CR31-R-tusi-04"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/2/cases/1",
+      "platform": "tusi",
+      "caseId": "CR31-tusi-discovery",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-tusi-S1",
+      "countingAction": "同一搜索讨论内角色需按旧匿名键核对；不以页面重读新增用户。",
+      "sourceIds": [
+        "CR31-R-tusi-03"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/3/cases/0",
+      "platform": "civitai",
+      "caseId": "CR31-civitai-cancel",
+      "classification": "new-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "新讨论；若计用户，只计明确当事人，不把服务回复和其他评论全算用户样本。",
+      "sourceIds": [
+        "CR31-R-civitai-02"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/3/cases/1",
+      "platform": "civitai",
+      "caseId": "CR31-civitai-avatar",
+      "classification": "same-source-distinct-actor-review-needed",
+      "existingIdentity": "P25-civitai-S-u5",
+      "countingAction": "旧文从同URL取匿名G降免费/本地训练回复；新稿取半年头像复用者。不能因同URL直接合为同人，也不能未核署名就新增独立人。",
+      "sourceIds": [
+        "CR31-R-civitai-03"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/4/cases/0",
+      "platform": "seaart",
+      "caseId": "CR31-seaart-search",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-seaart-E2",
+      "countingAction": "同长期用户找模型受阻，开发者回复不是成功。",
+      "sourceIds": [
+        "CR31-R-seaart-01"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/4/cases/1",
+      "platform": "seaart",
+      "caseId": "CR31-seaart-billing",
+      "classification": "same-source-new-outcome-review-needed",
+      "existingIdentity": "P25-seaart-E11 / P25-seaart-S5",
+      "countingAction": "旧文采用同帖两名回复者；新稿采用争议结果自述。先核原发/编辑的对应账号再分配独立键，退款回顾不是多次跟访。",
+      "sourceIds": [
+        "CR31-R-seaart-03"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/5/cases/0",
+      "platform": "nightcafe",
+      "caseId": "CR31-nightcafe-card",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-nightcafe-e2",
+      "countingAction": "旧匿名B已明确贺卡转ChatGPT；不是新成功案例。",
+      "sourceIds": [
+        "CR31-R-nightcafe-03"
+      ]
+    },
+    {
+      "inputFile": "input-resources.json",
+      "inputPointer": "/platforms/5/cases/1",
+      "platform": "nightcafe",
+      "caseId": "CR31-nightcafe-streak",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-nightcafe-e1",
+      "countingAction": "旧匿名A已有4至5年自述和离开意向；不能记实际流失。",
+      "sourceIds": [
+        "CR31-R-nightcafe-03"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/0/cases/0",
+      "platform": "openart",
+      "caseId": "CR31-openart-mv-followup",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-openart-e1",
+      "countingAction": "同匿名A前后评论，一人一项目，无新续费。",
+      "sourceIds": [
+        "CR31-T-openart-2"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/0/cases/1",
+      "platform": "openart",
+      "caseId": "CR31-openart-director-process",
+      "classification": "new-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "一个新作者24镜头项目；评论内自称员工身份与方法收录未核。",
+      "sourceIds": [
+        "CR31-T-openart-4"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/0/cases/2",
+      "platform": "openart",
+      "caseId": "CR31-openart-director-failed",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-openart-e3",
+      "countingAction": "同2:55失败项目；无恢复。",
+      "sourceIds": [
+        "CR31-T-openart-3"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/1/cases/0",
+      "platform": "jimeng",
+      "caseId": "CR31-jimeng-first-film",
+      "classification": "new-cross-tool-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "一个人、一个首片、复盘与作品链接两来源；生成发生在火山API，分享位于即梦。",
+      "sourceIds": [
+        "CR31-T-jimeng-3",
+        "CR31-T-jimeng-4"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/1/cases/1",
+      "platform": "jimeng",
+      "caseId": "CR31-jimeng-motion-failure",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-jimeng-S1",
+      "countingAction": "同App Store动作失败与开发者回复；精确匿名键由原日期/文本匹配，不新计。",
+      "sourceIds": [
+        "CR31-T-jimeng-2"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/2/cases/0",
+      "platform": "kling",
+      "caseId": "CR31-kling-long-story",
+      "classification": "new-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "一人回述六片；不按六人/六次独立持续跟访计。",
+      "sourceIds": [
+        "CR31-T-kling-3"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/2/cases/1",
+      "platform": "kling",
+      "caseId": "CR31-kling-production-blocked",
+      "classification": "new-historical-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "2025旧购买受阻；与新长片作者不同，未见后续正式成片。",
+      "sourceIds": [
+        "CR31-T-kling-4"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/2/cases/2",
+      "platform": "kling",
+      "caseId": "CR31-kling-mixed-tasks",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-kling-E3",
+      "countingAction": "同匿名C认可真人但卡通口型失败，正反合一个人。",
+      "sourceIds": [
+        "CR31-T-kling-5"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/3/cases/0",
+      "platform": "midjourney",
+      "caseId": "CR31-midjourney-comic-series",
+      "classification": "new-project-chain-candidate",
+      "existingIdentity": null,
+      "countingAction": "三文章/作品页同作者同系列，一个项目链；读者提问未复现。",
+      "sourceIds": [
+        "CR31-T-midjourney-3",
+        "CR31-T-midjourney-4",
+        "CR31-T-midjourney-5"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/3/cases/1",
+      "platform": "midjourney",
+      "caseId": "CR31-midjourney-precise-image-alternative",
+      "classification": "new-cross-tool-case-candidate",
+      "existingIdentity": null,
+      "countingAction": "一个作者的指定图任务，由Ideogram/Copilot/Photoshop完成；回访MJ不等于续费。",
+      "sourceIds": [
+        "CR31-T-midjourney-6"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/4/cases/0",
+      "platform": "leonardo",
+      "caseId": "CR31-C-leonardo-blog",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-leonardo-e1",
+      "countingAction": "同技术博客作者；反馈转交未修复。",
+      "sourceIds": [
+        "CR31-T-leonardo-2"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/4/cases/1",
+      "platform": "leonardo",
+      "caseId": "CR31-C-leonardo-trainer",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-leonardo-e5",
+      "countingAction": "同专业培训作者单篇三年回顾；两日期不是两次跟访。",
+      "sourceIds": [
+        "CR31-T-leonardo-3"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/4/cases/2",
+      "platform": "leonardo",
+      "caseId": "CR31-C-leonardo-eyebrows",
+      "classification": "existing-audience",
+      "existingIdentity": "P25-leonardo-e2",
+      "countingAction": "同2024匿名B；答题者试验已记录，保持历史模型边界。",
+      "sourceIds": [
+        "CR31-T-leonardo-4"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/5/cases/0",
+      "platform": "runway",
+      "caseId": "CR31-C-runway-finch",
+      "classification": "existing-representative",
+      "existingIdentity": "R29-RUN-FINCH",
+      "countingAction": "4个源跨帖同团队同项目；非4人、非新增40集。",
+      "sourceIds": [
+        "CR31-T-runway-3",
+        "CR31-T-runway-4",
+        "CR31-T-runway-5",
+        "CR31-T-runway-8"
+      ]
+    },
+    {
+      "inputFile": "input-tools.json",
+      "inputPointer": "/platforms/5/cases/1",
+      "platform": "runway",
+      "caseId": "CR31-C-runway-kling-failure",
+      "classification": "existing-representative",
+      "existingIdentity": "R29-RUN-RETRY",
+      "countingAction": "同一Runway入口调用Kling失败；账户正常不是生成成功，也不另计Kling独立案例。",
+      "sourceIds": [
+        "CR31-T-runway-6"
+      ]
+    }
+  ],
+  "sourceReuse": [
+    {
+      "platform": "waytoagi",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 7,
+      "matchedRecords": 5,
+      "sources": [
+        {
+          "sourceId": "CR31-C-waytoagi-01",
+          "url": "https://about.waytoagi.com/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/12/sources/0",
+              "id": "P25-waytoagi-s1",
+              "caseId": null,
+              "platform": "waytoagi"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/12/sources/3",
+              "id": "v7-way-about",
+              "caseId": null,
+              "platform": "waytoagi"
+            }
+          ],
+          "discussionKey": "https://about.waytoagi.com/",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-02",
+          "url": "https://llm.waytoagi.com/docs",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/12/sources/4",
+              "id": "v12-way-api",
+              "caseId": null,
+              "platform": "waytoagi"
+            }
+          ],
+          "discussionKey": "https://llm.waytoagi.com/docs",
+          "accessResult": "search-index-readable; direct-open-timeout"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-03",
+          "url": "https://growth.waytoagi.com/zh",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/12/sources/2",
+              "id": "P25-waytoagi-s3",
+              "caseId": null,
+              "platform": "waytoagi"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/12/sources/1",
+              "id": "bc-way-growth",
+              "caseId": null,
+              "platform": "waytoagi"
+            }
+          ],
+          "discussionKey": "https://growth.waytoagi.com/zh",
+          "accessResult": "search-index-readable; direct-open-timeout"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-04",
+          "url": "https://www.woshipm.com/zhichang/6372801.html",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/12/sources/3",
+              "id": "P25-waytoagi-s4",
+              "caseId": null,
+              "platform": "waytoagi"
+            }
+          ],
+          "discussionKey": "https://www.woshipm.com/zhichang/6372801.html",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-05",
+          "url": "https://www.woshipm.com/share/6230525.html",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/12/sources/4",
+              "id": "P25-waytoagi-s5",
+              "caseId": null,
+              "platform": "waytoagi"
+            }
+          ],
+          "discussionKey": "https://www.woshipm.com/share/6230525.html",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-06",
+          "url": "https://llm.waytoagi.com/docs/zh-CN/agent-tools/gemini-cli",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://llm.waytoagi.com/docs/zh-CN/agent-tools/gemini-cli",
+          "accessResult": "readable; search-crawl-two-months-old"
+        },
+        {
+          "sourceId": "CR31-C-waytoagi-07",
+          "url": "https://llm.waytoagi.com/about",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://llm.waytoagi.com/about",
+          "accessResult": "timeout"
+        }
+      ]
+    },
+    {
+      "platform": "datawhale",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 4,
+      "matchedRecords": 4,
+      "sources": [
+        {
+          "sourceId": "CR31-C-datawhale-01",
+          "url": "https://github.com/datawhalechina/all-in-rag",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/13/sources/0",
+              "id": "P25-datawhale-s1",
+              "caseId": null,
+              "platform": "datawhale"
+            }
+          ],
+          "discussionKey": "https://github.com/datawhalechina/all-in-rag",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-datawhale-02",
+          "url": "https://github.com/datawhalechina/all-in-rag/issues/105",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/13/sources/5",
+              "id": "P25-datawhale-s6",
+              "caseId": null,
+              "platform": "datawhale"
+            }
+          ],
+          "discussionKey": "https://github.com/datawhalechina/all-in-rag/issues/105",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-datawhale-03",
+          "url": "https://github.com/datawhalechina/all-in-rag/pull/106",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/4/cases/0/sources/0",
+              "id": null,
+              "caseId": "datawhale-review-merge-106",
+              "platform": "datawhale"
+            },
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/4/cases/1/sources/1",
+              "id": null,
+              "caseId": "datawhale-repeat-contribution-115",
+              "platform": "datawhale"
+            }
+          ],
+          "discussionKey": "https://github.com/datawhalechina/all-in-rag/pull/106",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-datawhale-04",
+          "url": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/13/sources/2",
+              "id": "P25-datawhale-s3",
+              "caseId": null,
+              "platform": "datawhale"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/13/sources/5",
+              "id": "v7-dw-rocm",
+              "caseId": null,
+              "platform": "datawhale"
+            }
+          ],
+          "discussionKey": "https://raw.githubusercontent.com/datawhalechina/hello-rocm/master/docs/zh/learning/index.md",
+          "accessResult": "readable"
+        }
+      ]
+    },
+    {
+      "platform": "huggingface",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 6,
+      "matchedRecords": 5,
+      "sources": [
+        {
+          "sourceId": "CR31-C-huggingface-01",
+          "url": "https://huggingface.co/docs/hub/billing",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/14/sources/0",
+              "id": "P25-huggingface-s1",
+              "caseId": null,
+              "platform": "huggingface"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/14/sources/1",
+              "id": "bc-hf-billing",
+              "caseId": null,
+              "platform": "huggingface"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/14/sources/5",
+              "id": "v7-hf-billing-source",
+              "caseId": null,
+              "platform": "huggingface"
+            }
+          ],
+          "discussionKey": "https://huggingface.co/docs/hub/billing",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-huggingface-02",
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/14/sources/1",
+              "id": "P25-huggingface-s2",
+              "caseId": null,
+              "platform": "huggingface"
+            }
+          ],
+          "discussionKey": "https://huggingface.co/docs/hub/spaces-overview",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-huggingface-03",
+          "url": "https://discuss.huggingface.co/t/getting-you-have-exceeded-your-pro-gpu-quota-error-even-with-credits-loaded/174850",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/14/sources/8",
+              "id": "P25-huggingface-s9",
+              "caseId": null,
+              "platform": "huggingface"
+            },
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/6/cases/0/sources/0",
+              "id": null,
+              "caseId": "hf-quota-followup-20260911",
+              "platform": "huggingface"
+            }
+          ],
+          "discussionKey": "https://discuss.huggingface.co/t/getting-you-have-exceeded-your-pro-gpu-quota-error-even-with-credits-loaded/174850",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-huggingface-04",
+          "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/14/sources/4",
+              "id": "P25-huggingface-s5",
+              "caseId": null,
+              "platform": "huggingface"
+            },
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/6/cases/1/sources/0",
+              "id": null,
+              "caseId": "hf-vton-maintenance-20260911",
+              "platform": "huggingface"
+            }
+          ],
+          "discussionKey": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-huggingface-05",
+          "url": "https://huggingface.co/spaces/John6666/IDM-VTON-GRADIO5",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/6/cases/1/sources/1",
+              "id": null,
+              "caseId": "hf-vton-maintenance-20260911",
+              "platform": "huggingface"
+            }
+          ],
+          "discussionKey": "https://huggingface.co/spaces/John6666/IDM-VTON-GRADIO5",
+          "accessResult": "readable; not-executed"
+        },
+        {
+          "sourceId": "CR31-C-huggingface-06",
+          "url": "https://huggingface.co/docs/hub/spaces-zerogpu",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://huggingface.co/docs/hub/spaces-zerogpu",
+          "accessResult": "readable"
+        }
+      ]
+    },
+    {
+      "platform": "modelscope",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 10,
+      "matchedRecords": 6,
+      "sources": [
+        {
+          "sourceId": "CR31-C-modelscope-01",
+          "url": "https://github.com/modelscope/modelscope",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/15/sources/0",
+              "id": "P25-modelscope-s1",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://github.com/modelscope/modelscope",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-02",
+          "url": "https://github.com/modelscope/modelscope/issues/1776",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/15/sources/7",
+              "id": "P25-modelscope-s8",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://github.com/modelscope/modelscope/issues/1776",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-03",
+          "url": "https://github.com/modelscope/modelscope/issues/1773",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/15/sources/6",
+              "id": "P25-modelscope-s7",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://github.com/modelscope/modelscope/issues/1773",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-04",
+          "url": "https://github.com/modelscope/modelscope/issues/1786",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/15/sources/8",
+              "id": "P25-modelscope-s9",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://github.com/modelscope/modelscope/issues/1786",
+          "accessResult": "readable; sparse-body"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-05",
+          "url": "https://modelscope.cn/docs/studios/xGPU",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/15/sources/1",
+              "id": "bc-ms-xgpu",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://modelscope.cn/docs/studios/xGPU",
+          "accessResult": "empty-body"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-06",
+          "url": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.modelscope.cn/docs/model-service/API-Inference/intro",
+          "accessResult": "empty-body"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-07",
+          "url": "https://community.modelscope.cn/67088c92cd8b2677c3cd7d04.html",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://community.modelscope.cn/67088c92cd8b2677c3cd7d04.html",
+          "accessResult": "search-index-readable; direct-open-redirects-to-community-home"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-08",
+          "url": "https://community.modelscope.cn/675262372db35d1195183bdb.html",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://community.modelscope.cn/675262372db35d1195183bdb.html",
+          "accessResult": "search-index-readable; direct-open-redirects-to-community-home"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-09",
+          "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/15/sources/3",
+              "id": "bc-ms-cloud",
+              "caseId": null,
+              "platform": "modelscope"
+            }
+          ],
+          "discussionKey": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-modelscope-10",
+          "url": "https://www.modelscope.cn/learn/435341",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.modelscope.cn/learn/435341",
+          "accessResult": "search-index-excerpt-only; direct-open-redirects-to-posts-with-empty-body"
+        }
+      ]
+    },
+    {
+      "platform": "linuxdo",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 4,
+      "matchedRecords": 4,
+      "sources": [
+        {
+          "sourceId": "CR31-C-linuxdo-01",
+          "url": "https://linux.do/guidelines",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/16/sources/0",
+              "id": "P25-linuxdo-s1",
+              "caseId": null,
+              "platform": "linuxdo"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/16/sources/1",
+              "id": "bc-ld-rules",
+              "caseId": null,
+              "platform": "linuxdo"
+            }
+          ],
+          "discussionKey": "https://linux.do/guidelines",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-linuxdo-02",
+          "url": "https://linux.do/t/topic/1537782",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/16/sources/4",
+              "id": "P25-linuxdo-s5",
+              "caseId": null,
+              "platform": "linuxdo"
+            },
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/5/cases/0/sources/0",
+              "id": null,
+              "caseId": "linuxdo-connect-result-20260911",
+              "platform": "linuxdo"
+            }
+          ],
+          "discussionKey": "https://linux.do/t/topic/1537782",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-linuxdo-03",
+          "url": "https://linux.do/t/topic/342888",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/16/sources/6",
+              "id": "P25-linuxdo-s7",
+              "caseId": null,
+              "platform": "linuxdo"
+            },
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/5/cases/1/sources/0",
+              "id": null,
+              "caseId": "linuxdo-wiki-maintenance-20260911",
+              "platform": "linuxdo"
+            }
+          ],
+          "discussionKey": "https://linux.do/t/topic/342888",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-linuxdo-04",
+          "url": "https://linux.do/s",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/16/sources/1",
+              "id": "P25-linuxdo-s2",
+              "caseId": null,
+              "platform": "linuxdo"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/16/sources/2",
+              "id": "bc-ld-subscription",
+              "caseId": null,
+              "platform": "linuxdo"
+            }
+          ],
+          "discussionKey": "https://linux.do/s",
+          "accessResult": "empty-body"
+        }
+      ]
+    },
+    {
+      "platform": "dify",
+      "inputFile": "input-communities.json",
+      "sourceRecords": 6,
+      "matchedRecords": 5,
+      "sources": [
+        {
+          "sourceId": "CR31-C-dify-01",
+          "url": "https://dify.ai/pricing/dify-cloud",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/17/sources/0",
+              "id": "bc-dify-cloud",
+              "caseId": null,
+              "platform": "dify"
+            }
+          ],
+          "discussionKey": "https://dify.ai/pricing/dify-cloud",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-dify-02",
+          "url": "https://github.com/langgenius/dify/blob/main/LICENSE",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/17/sources/2",
+              "id": "bc-dify-license",
+              "caseId": null,
+              "platform": "dify"
+            }
+          ],
+          "discussionKey": "https://github.com/langgenius/dify/blob/main/LICENSE",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-dify-03",
+          "url": "https://github.com/langgenius/dify/issues/42114",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/17/sources/4",
+              "id": "P25-dify-s5",
+              "caseId": null,
+              "platform": "dify"
+            }
+          ],
+          "discussionKey": "https://github.com/langgenius/dify/issues/42114",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-dify-04",
+          "url": "https://github.com/langgenius/dify/pull/42126",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://github.com/langgenius/dify/pull/42126",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-dify-05",
+          "url": "https://github.com/langgenius/dify/issues/42087",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/17/sources/6",
+              "id": "P25-dify-s7",
+              "caseId": null,
+              "platform": "dify"
+            }
+          ],
+          "discussionKey": "https://github.com/langgenius/dify/issues/42087",
+          "accessResult": "readable"
+        },
+        {
+          "sourceId": "CR31-C-dify-06",
+          "url": "https://dify.ai/partners",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/17/sources/2",
+              "id": "P25-dify-s3",
+              "caseId": null,
+              "platform": "dify"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/17/sources/3",
+              "id": "bc-dify-partners",
+              "caseId": null,
+              "platform": "dify"
+            }
+          ],
+          "discussionKey": "https://dify.ai/partners",
+          "accessResult": "readable"
+        }
+      ]
+    },
+    {
+      "platform": "liblib",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 6,
+      "matchedRecords": 6,
+      "sources": [
+        {
+          "sourceId": "CR31-R-liblib-01",
+          "url": "https://www.liblib.art/activities/e0aa50f25b874722ac60be71adb8c9cb/Commercial_Guidelines",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/0/sources/7",
+              "id": "P25-liblib-S8",
+              "caseId": null,
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://www.liblib.art/activities/e0aa50f25b874722ac60be71adb8c9cb/Commercial_Guidelines",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-liblib-02",
+          "url": "https://victor42.eth.limo/post/comfyui-workflow-tutorial-for-newbies/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/0/sources/0",
+              "id": "P25-liblib-S1",
+              "caseId": null,
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://victor42.eth.limo/post/comfyui-workflow-tutorial-for-newbies/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-liblib-03",
+          "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/0/sources/3",
+              "id": "P25-liblib-S4",
+              "caseId": null,
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-liblib-04",
+          "url": "https://github.com/machinad/astrbot_plugin_liblibapi/issues/2",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/0/cases/1/sources/0",
+              "id": null,
+              "caseId": "E29-LIBLIB-API-VAE",
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://github.com/machinad/astrbot_plugin_liblibapi/issues/2",
+          "accessResult": "live_read：原页及无认证公开issues接口复读；仅保存非敏感研究字段。"
+        },
+        {
+          "sourceId": "CR31-R-liblib-05",
+          "url": "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/issues/2/comments",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/0/cases/1/sources/2",
+              "id": null,
+              "caseId": "E29-LIBLIB-API-VAE",
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/issues/2/comments",
+          "accessResult": "live_read：无认证GET；只提炼纯文本结论，不保存评论引用的带签名图片地址。"
+        },
+        {
+          "sourceId": "CR31-R-liblib-06",
+          "url": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/0/sources/4",
+              "id": "P25-liblib-S5",
+              "caseId": null,
+              "platform": "liblib"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/0/sources/2",
+              "id": "lib-business-3",
+              "caseId": null,
+              "platform": "liblib"
+            }
+          ],
+          "discussionKey": "https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        }
+      ]
+    },
+    {
+      "platform": "runninghub",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 3,
+      "matchedRecords": 2,
+      "sources": [
+        {
+          "sourceId": "CR31-R-runninghub-01",
+          "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/1/sources/0",
+              "id": "P25-runninghub-S1",
+              "caseId": null,
+              "platform": "runninghub"
+            }
+          ],
+          "discussionKey": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-runninghub-02",
+          "url": "https://www.runninghub.cn/runninghub-api-doc-cn/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.runninghub.cn/runninghub-api-doc-cn/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-runninghub-03",
+          "url": "https://www.runninghub.cn/creator-reward",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/1/sources/4",
+              "id": "P25-runninghub-S5",
+              "caseId": null,
+              "platform": "runninghub"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/1/sources/3",
+              "id": "rh-business-4",
+              "caseId": null,
+              "platform": "runninghub"
+            }
+          ],
+          "discussionKey": "https://www.runninghub.cn/creator-reward",
+          "accessResult": "index_read：2026-09-11搜索可读长正文；直接原页两次超时，不能宣称现场完整正文访问成功。"
+        }
+      ]
+    },
+    {
+      "platform": "tusi",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 4,
+      "matchedRecords": 3,
+      "sources": [
+        {
+          "sourceId": "CR31-R-tusi-01",
+          "url": "https://tusi.cn/articles/1000707189326777005",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/2/sources/4",
+              "id": "P25-tusi-S5",
+              "caseId": null,
+              "platform": "tusi"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/2/sources/0",
+              "id": "ta-business-1",
+              "caseId": null,
+              "platform": "tusi"
+            }
+          ],
+          "discussionKey": "https://tusi.cn/articles/1000707189326777005",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-tusi-02",
+          "url": "https://tensor.art/articles/1021600128873589993",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/2/sources/5",
+              "id": "P25-tusi-S6",
+              "caseId": null,
+              "platform": "tusi"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/2/sources/1",
+              "id": "ta-business-2",
+              "caseId": null,
+              "platform": "tusi"
+            }
+          ],
+          "discussionKey": "https://tensor.art/articles/1021600128873589993",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-tusi-03",
+          "url": "https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/2/sources/0",
+              "id": "P25-tusi-S1",
+              "caseId": null,
+              "platform": "tusi"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-tusi-04",
+          "url": "https://www.reddit.com/r/TensorArt_HUB/comments/1p80bi5/tensorhub/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/TensorArt_HUB/comments/1p80bi5/tensorhub/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        }
+      ]
+    },
+    {
+      "platform": "civitai",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 3,
+      "matchedRecords": 2,
+      "sources": [
+        {
+          "sourceId": "CR31-R-civitai-01",
+          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/3/sources/0",
+              "id": "P25-civitai-S-biz-civi-rules",
+              "caseId": null,
+              "platform": "civitai"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/3/sources/0",
+              "id": "biz-civi-rules",
+              "caseId": null,
+              "platform": "civitai"
+            }
+          ],
+          "discussionKey": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-civitai-02",
+          "url": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-civitai-03",
+          "url": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/3/sources/8",
+              "id": "P25-civitai-S-u5",
+              "caseId": null,
+              "platform": "civitai"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        }
+      ]
+    },
+    {
+      "platform": "seaart",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 4,
+      "matchedRecords": 4,
+      "sources": [
+        {
+          "sourceId": "CR31-R-seaart-01",
+          "url": "https://apps.apple.com/us/app/seaart-ai-photo-video-maker/id6478189868?see-all=reviews",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/4/sources/0",
+              "id": "P25-seaart-S1",
+              "caseId": null,
+              "platform": "seaart"
+            }
+          ],
+          "discussionKey": "https://apps.apple.com/us/app/seaart-ai-photo-video-maker/id6478189868?see-all=reviews",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-seaart-02",
+          "url": "https://www.seaart.ai/mall",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/4/sources/0",
+              "id": "sea-business-1",
+              "caseId": null,
+              "platform": "seaart"
+            }
+          ],
+          "discussionKey": "https://www.seaart.ai/mall",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-seaart-03",
+          "url": "https://www.reddit.com/r/SeaArtAI/comments/1pt9tu3/scam/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/4/sources/4",
+              "id": "P25-seaart-S5",
+              "caseId": null,
+              "platform": "seaart"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/SeaArtAI/comments/1pt9tu3/scam/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-seaart-04",
+          "url": "https://www.seaart.ai/articleDetail/d535k2de878c73f1h01g",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/4/sources/1",
+              "id": "P25-seaart-S2",
+              "caseId": null,
+              "platform": "seaart"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/4/sources/5",
+              "id": "sea-v7-s1",
+              "caseId": null,
+              "platform": "seaart"
+            }
+          ],
+          "discussionKey": "https://www.seaart.ai/articleDetail/d535k2de878c73f1h01g",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        }
+      ]
+    },
+    {
+      "platform": "nightcafe",
+      "inputFile": "input-resources.json",
+      "sourceRecords": 3,
+      "matchedRecords": 3,
+      "sources": [
+        {
+          "sourceId": "CR31-R-nightcafe-01",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/6/sources/0",
+              "id": "P25-nightcafe-S-biz-night-pro",
+              "caseId": null,
+              "platform": "nightcafe"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/6/sources/0",
+              "id": "biz-night-pro",
+              "caseId": null,
+              "platform": "nightcafe"
+            }
+          ],
+          "discussionKey": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-nightcafe-02",
+          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/6/sources/1",
+              "id": "P25-nightcafe-S-biz-night-credits",
+              "caseId": null,
+              "platform": "nightcafe"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/6/sources/1",
+              "id": "biz-night-credits",
+              "caseId": null,
+              "platform": "nightcafe"
+            }
+          ],
+          "discussionKey": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        },
+        {
+          "sourceId": "CR31-R-nightcafe-03",
+          "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/6/sources/5",
+              "id": "P25-nightcafe-S-u1",
+              "caseId": null,
+              "platform": "nightcafe"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
+          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
+        }
+      ]
+    },
+    {
+      "platform": "openart",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 5,
+      "matchedRecords": 4,
+      "sources": [
+        {
+          "sourceId": "CR31-T-openart-1",
+          "url": "https://openart.ai/pricing",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/5/sources/1",
+              "id": "P25-openart-S-biz-open-price",
+              "caseId": null,
+              "platform": "openart"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/5/sources/1",
+              "id": "biz-open-price",
+              "caseId": null,
+              "platform": "openart"
+            }
+          ],
+          "discussionKey": "https://openart.ai/pricing",
+          "accessResult": "本次原页正文读取；未切账期或结算"
+        },
+        {
+          "sourceId": "CR31-T-openart-2",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/5/sources/5",
+              "id": "P25-openart-S-u1",
+              "caseId": null,
+              "platform": "openart"
+            },
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/9/sources/8",
+              "id": "P25-midjourney-S-u4",
+              "caseId": null,
+              "platform": "midjourney"
+            },
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/9",
+              "id": "P25-leonardo-S-u6",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+          "accessResult": "本次重读主帖及本人回复；未播放所链接视频"
+        },
+        {
+          "sourceId": "CR31-T-openart-3",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ufo0g7/openart_director/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/5/sources/6",
+              "id": "P25-openart-S-u2",
+              "caseId": null,
+              "platform": "openart"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/generativeAI/comments/1ufo0g7/openart_director/",
+          "accessResult": "本次原页读取；剔除明确标记机器人评论"
+        },
+        {
+          "sourceId": "CR31-T-openart-4",
+          "url": "https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/",
+          "accessResult": "本次原帖及回复正文读取；成片未播放、合同未核"
+        },
+        {
+          "sourceId": "CR31-T-openart-5",
+          "url": "https://openart.ai/program/openartist",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/5/sources/3",
+              "id": "P25-openart-S-biz-open-artist",
+              "caseId": null,
+              "platform": "openart"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/5/sources/3",
+              "id": "biz-open-artist",
+              "caseId": null,
+              "platform": "openart"
+            }
+          ],
+          "discussionKey": "https://openart.ai/program/openartist",
+          "accessResult": "本次原页正文读取；未申请"
+        }
+      ]
+    },
+    {
+      "platform": "jimeng",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 6,
+      "matchedRecords": 3,
+      "sources": [
+        {
+          "sourceId": "CR31-T-jimeng-1",
+          "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/7/sources/2",
+              "id": "P25-jimeng-S3",
+              "caseId": null,
+              "platform": "jimeng"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/7/sources/0",
+              "id": "jm-business-1",
+              "caseId": null,
+              "platform": "jimeng"
+            }
+          ],
+          "discussionKey": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html",
+          "accessResult": "本次原页正文读取"
+        },
+        {
+          "sourceId": "CR31-T-jimeng-2",
+          "url": "https://apps.apple.com/cn/app/%E5%8D%B3%E6%A2%A6ai-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8Bai%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/id6503676563?platform=iphone&see-all=reviews",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/7/sources/0",
+              "id": "P25-jimeng-S1",
+              "caseId": null,
+              "platform": "jimeng"
+            }
+          ],
+          "discussionKey": "https://apps.apple.com/cn/app/%E5%8D%B3%E6%A2%A6ai-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8Bai%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/id6503676563?platform=iphone&see-all=reviews",
+          "accessResult": "本次评价正文读取；重复项去重、不保存昵称"
+        },
+        {
+          "sourceId": "CR31-T-jimeng-3",
+          "url": "https://linux.do/t/topic/2201600",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://linux.do/t/topic/2201600",
+          "accessResult": "本次正文和后续回复读取；未采用第三方账号/充值建议"
+        },
+        {
+          "sourceId": "CR31-T-jimeng-4",
+          "url": "https://jimeng.jianying.com/s/qgnzkNNCmsQ/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://jimeng.jianying.com/s/qgnzkNNCmsQ/",
+          "accessResult": "本次打开并重定向至work-detail；仅9行动态壳，未播放"
+        },
+        {
+          "sourceId": "CR31-T-jimeng-5",
+          "url": "https://www.cnblogs.com/fuminer/p/22498715",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.cnblogs.com/fuminer/p/22498715",
+          "accessResult": "本次原页正文读取；提示/剧本资料集合，无生成运行核验"
+        },
+        {
+          "sourceId": "CR31-T-jimeng-6",
+          "url": "https://jimeng.jianying.com/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/7/sources/1",
+              "id": "P25-jimeng-S2",
+              "caseId": null,
+              "platform": "jimeng"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/7/sources/2",
+              "id": "jm-business-3",
+              "caseId": null,
+              "platform": "jimeng"
+            }
+          ],
+          "discussionKey": "https://jimeng.jianying.com/",
+          "accessResult": "本次首页请求超时；作品分享及官方协议可访问"
+        }
+      ]
+    },
+    {
+      "platform": "kling",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 6,
+      "matchedRecords": 3,
+      "sources": [
+        {
+          "sourceId": "CR31-T-kling-1",
+          "url": "https://kling.ai/docs/payment-policy",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/8/sources/4",
+              "id": "P25-kling-S5",
+              "caseId": null,
+              "platform": "kling"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/8/sources/0",
+              "id": "kl-business-1",
+              "caseId": null,
+              "platform": "kling"
+            }
+          ],
+          "discussionKey": "https://kling.ai/docs/payment-policy",
+          "accessResult": "本次原页正文读取"
+        },
+        {
+          "sourceId": "CR31-T-kling-2",
+          "url": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=all",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/8/sources/1",
+              "id": "kl-business-2",
+              "caseId": null,
+              "platform": "kling"
+            }
+          ],
+          "discussionKey": "https://kling.ai/blog/kling-video-3-0-credit-cost-guide?tab=all",
+          "accessResult": "本次原页正文读取；会员/开发者价格入口另点只得壳"
+        },
+        {
+          "sourceId": "CR31-T-kling-3",
+          "url": "https://www.reddit.com/r/aifilmmaking/comments/1w7dhg3/i_made_six_1hour_ai_films_heres_my_experiment/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/aifilmmaking/comments/1w7dhg3/i_made_six_1hour_ai_films_heres_my_experiment/",
+          "accessResult": "本次原帖和部分回复读取；YouTube频道打开失败，未播放"
+        },
+        {
+          "sourceId": "CR31-T-kling-4",
+          "url": "https://www.reddit.com/r/KLINGAIVideo/comments/1j01grp/an_update_and_maybe_an_rip_been_an_amazing_run/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/KLINGAIVideo/comments/1j01grp/an_update_and_maybe_an_rip_been_an_amazing_run/",
+          "accessResult": "本次原页正文读取；无后续电影完成验证"
+        },
+        {
+          "sourceId": "CR31-T-kling-5",
+          "url": "https://www.trustpilot.com/review/klingai.com?page=2",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/8/sources/0",
+              "id": "P25-kling-S1",
+              "caseId": null,
+              "platform": "kling"
+            }
+          ],
+          "discussionKey": "https://www.trustpilot.com/review/klingai.com?page=2",
+          "accessResult": "本次原评价正文读取；不采用AI摘要、总评分/分布或指控为结论"
+        },
+        {
+          "sourceId": "CR31-T-kling-6",
+          "url": "https://kling.ai/app/future-partner/customer",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://kling.ai/app/future-partner/customer",
+          "accessResult": "本次由官方成本页点击，restricted URL失败"
+        }
+      ]
+    },
+    {
+      "platform": "midjourney",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 6,
+      "matchedRecords": 2,
+      "sources": [
+        {
+          "sourceId": "CR31-T-midjourney-1",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/9/sources/0",
+              "id": "P25-midjourney-S-biz-mj-price",
+              "caseId": null,
+              "platform": "midjourney"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/9/sources/0",
+              "id": "biz-mj-price",
+              "caseId": null,
+              "platform": "midjourney"
+            }
+          ],
+          "discussionKey": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+          "accessResult": "本次原页正文读取；未购买"
+        },
+        {
+          "sourceId": "CR31-T-midjourney-2",
+          "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/9/sources/3",
+              "id": "P25-midjourney-S-biz-mj-policy",
+              "caseId": null,
+              "platform": "midjourney"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/9/sources/3",
+              "id": "biz-mj-policy",
+              "caseId": null,
+              "platform": "midjourney"
+            }
+          ],
+          "discussionKey": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
+          "accessResult": "本次原页正文读取"
+        },
+        {
+          "sourceId": "CR31-T-midjourney-3",
+          "url": "https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/",
+          "accessResult": "本次正文与读者/作者评论读取"
+        },
+        {
+          "sourceId": "CR31-T-midjourney-4",
+          "url": "https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/",
+          "accessResult": "本次全文读取；未执行教程或采其速度估计为基准"
+        },
+        {
+          "sourceId": "CR31-T-midjourney-5",
+          "url": "https://michaelbrig.com/the-last-superhero-5/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://michaelbrig.com/the-last-superhero-5/",
+          "accessResult": "本次作品页正文和图片入口读取，未逐图视觉验质"
+        },
+        {
+          "sourceId": "CR31-T-midjourney-6",
+          "url": "https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/",
+          "matchType": "no-match-in-three-canonical-files",
+          "canonicalMatches": [],
+          "discussionKey": "https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/",
+          "accessResult": "本次原帖及作者后续读取；不沿用标题定性"
+        }
+      ]
+    },
+    {
+      "platform": "leonardo",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 5,
+      "matchedRecords": 5,
+      "sources": [
+        {
+          "sourceId": "CR31-T-leonardo-1",
+          "url": "https://www.leonardo.ai/pricing",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/0",
+              "id": "P25-leonardo-S-biz-leo-price",
+              "caseId": null,
+              "platform": "leonardo"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/10/sources/0",
+              "id": "biz-leo-price",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://www.leonardo.ai/pricing",
+          "accessResult": "本次打开完整定价/FAQ；未操作周期切换或账户结算。"
+        },
+        {
+          "sourceId": "CR31-T-leonardo-2",
+          "url": "https://www.reddit.com/r/leonardoai/comments/1rs2isl/feedback_for_leonardoai_devs/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/4",
+              "id": "P25-leonardo-S-u1",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/leonardoai/comments/1rs2isl/feedback_for_leonardoai_devs/",
+          "accessResult": "本次重读主帖及转交/致谢回复；页面相对日期。"
+        },
+        {
+          "sourceId": "CR31-T-leonardo-3",
+          "url": "https://theanewcomb.co.uk/how-i-use-leonardo-ai/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/8",
+              "id": "P25-leonardo-S-u5",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://theanewcomb.co.uk/how-i-use-leonardo-ai/",
+          "accessResult": "本次重读正文；同提示链接回到本页，外部Instagram读取失败。"
+        },
+        {
+          "sourceId": "CR31-T-leonardo-4",
+          "url": "https://www.reddit.com/r/leonardoai/comments/1g8drmh/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/5",
+              "id": "P25-leonardo-S-u2",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/leonardoai/comments/1g8drmh/",
+          "accessResult": "本次重读原帖及多轮回复；历史证据非当前模型测试。"
+        },
+        {
+          "sourceId": "CR31-T-leonardo-5",
+          "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/10/sources/10",
+              "id": "P25-leonardo-S-feature",
+              "caseId": null,
+              "platform": "leonardo"
+            }
+          ],
+          "discussionKey": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+          "accessResult": "本次打开原页；属于Advanced (Legacy) Features & Settings。"
+        }
+      ]
+    },
+    {
+      "platform": "runway",
+      "inputFile": "input-tools.json",
+      "sourceRecords": 8,
+      "matchedRecords": 8,
+      "sources": [
+        {
+          "sourceId": "CR31-T-runway-1",
+          "url": "https://runway.com/pricing",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/11/sources/0",
+              "id": "P25-runway-S-biz-run-price",
+              "caseId": null,
+              "platform": "runway"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/11/sources/0",
+              "id": "biz-run-price",
+              "caseId": null,
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://runway.com/pricing",
+          "accessResult": "本次打开完整页面及年/月价格标签；未进入购买。"
+        },
+        {
+          "sourceId": "CR31-T-runway-2",
+          "url": "https://academy.runwayml.com/guides/prompting-guide",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/11/sources/9",
+              "id": "P25-runway-S-guide",
+              "caseId": null,
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://academy.runwayml.com/guides/prompting-guide",
+          "accessResult": "本次打开原指南。"
+        },
+        {
+          "sourceId": "CR31-T-runway-3",
+          "url": "https://www.reddit.com/r/runwayml/comments/1qoofo0/the_finch_files_episode_140_for_completed/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/2/cases/0/sources/0",
+              "id": null,
+              "caseId": "R29-RUN-FINCH",
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/runwayml/comments/1qoofo0/the_finch_files_episode_140_for_completed/",
+          "accessResult": "本次重读主帖和作者方法/背景/声音回复；未播放整季。"
+        },
+        {
+          "sourceId": "CR31-T-runway-4",
+          "url": "https://www.reddit.com/r/runwayml/comments/1qu66l2/the_finch_files_reality_bleed_episode_540/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/2/cases/0/sources/1",
+              "id": null,
+              "caseId": "R29-RUN-FINCH",
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/runwayml/comments/1qu66l2/the_finch_files_reality_bleed_episode_540/",
+          "accessResult": "本次重读原帖和作者答复。"
+        },
+        {
+          "sourceId": "CR31-T-runway-5",
+          "url": "https://www.reddit.com/r/runwayml/comments/1r5leo9/the_finch_files_she_never_existed_ep_1440/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/2/cases/0/sources/2",
+              "id": null,
+              "caseId": "R29-RUN-FINCH",
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/runwayml/comments/1r5leo9/the_finch_files_she_never_existed_ep_1440/",
+          "accessResult": "本次原页及作者回复可读，页面含移除提示；移除原因不推断。"
+        },
+        {
+          "sourceId": "CR31-T-runway-6",
+          "url": "https://www.reddit.com/r/runwayml/comments/1sxdjf8/tried_to_generate_on_kling_failed_due_to_unsafe/",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/2/cases/1/sources/0",
+              "id": null,
+              "caseId": "R29-RUN-RETRY",
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://www.reddit.com/r/runwayml/comments/1sxdjf8/tried_to_generate_on_kling_failed_due_to_unsafe/",
+          "accessResult": "本次重读主帖/改图/继续失败/账户正常后续；精确日期未显示。"
+        },
+        {
+          "sourceId": "CR31-T-runway-7",
+          "url": "https://runway.com/affiliate-program",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/audience-research.json",
+              "pointer": "/profiles/11/sources/4",
+              "id": "P25-runway-S-biz-run-affiliate",
+              "caseId": null,
+              "platform": "runway"
+            },
+            {
+              "file": "lib/business-data.json",
+              "pointer": "/11/sources/4",
+              "id": "biz-run-affiliate",
+              "caseId": null,
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://runway.com/affiliate-program",
+          "accessResult": "本次原页可读：申请审核、3个月试行、合作权益。"
+        },
+        {
+          "sourceId": "CR31-T-runway-8",
+          "url": "https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-innovation-activity-7421597817275723776-lNTZ",
+          "matchType": "same-url",
+          "canonicalMatches": [
+            {
+              "file": "lib/representative-evidence.json",
+              "pointer": "/platforms/2/cases/0/sources/4",
+              "id": null,
+              "caseId": "R29-RUN-FINCH",
+              "platform": "runway"
+            }
+          ],
+          "discussionKey": "https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-innovation-activity-7421597817275723776-lNTZ",
+          "accessResult": "本次公开正文和作者第2集链接可读；未登录、未采集用户凭据。"
+        }
+      ]
+    }
+  ],
+  "identityRisks": [
+    {
+      "key": "P25-openart-user-B",
+      "platforms": [
+        "openart",
+        "midjourney",
+        "leonardo"
+      ],
+      "existingEvidence": [
+        "P25-openart-e2",
+        "P25-midjourney-e9",
+        "P25-leonardo-e6"
+      ],
+      "sourceUrl": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
+      "rule": "同一位用Midjourney角色参考、OpenArt口型并试过Leonardo API的人，三个工具归属都可记，但全局用户只算一人。不要与同帖MV专辑匿名A混同。"
+    },
+    {
+      "key": "finch-team",
+      "platforms": [
+        "runway",
+        "midjourney",
+        "hailuo"
+      ],
+      "existingEvidence": [
+        "R29-RUN-FINCH"
+      ],
+      "rule": "已确认Runway/Midjourney/Hailuo分工；Hailuo不等于Kling，切勿误归工具。一个团队一个连续项目，三集帖子与LinkedIn不增加独立样本数。"
+    },
+    {
+      "key": "runway-frontdoor-kling-request",
+      "platforms": [
+        "runway",
+        "kling"
+      ],
+      "existingEvidence": [
+        "R29-RUN-RETRY"
+      ],
+      "rule": "同一个请求的入口和底层模型维度可分别解释，不在两个平台各增一个独立用户或失败样本。"
+    },
+    {
+      "key": "jimeng-discovery-volcano-generation",
+      "platforms": [
+        "jimeng",
+        "外部火山API",
+        "剪映"
+      ],
+      "existingEvidence": [],
+      "rule": "复盘与分享页是同一首片任务。新手看到即梦比赛不证明原即梦生成工具跑通；活动获奖、现金回报、付费续费均未证。"
+    },
+    {
+      "key": "liblib-two-v2-workflows",
+      "platforms": [
+        "liblib"
+      ],
+      "existingEvidence": [
+        "P25-liblib-E4",
+        "E29-LIBLIB-WORKFLOW-V2"
+      ],
+      "rule": "FLUX V2模型7b89...与代表案例工作流98a6...是不同资源。不要仅凭标题V2把它们合并，也不要把7b89...的重新可读计作新资源。保留versionUuid参数。"
+    }
+  ],
+  "reviewedSuggestions": [
+    {
+      "id": "AUD-waytoagi-1",
+      "platform": "waytoagi",
+      "decision": "metadata-refresh",
+      "action": "把null日期补为已读发布日期；作者兼内容供给者、商业成交未知已经写对，保留。",
+      "countImpact": "同文章、同匿名B，新增独立来源/用户/案例均为0。",
+      "sourceIds": [
+        "CR31-C-waytoagi-05"
+      ]
+    },
+    {
+      "id": "AUD-waytoagi-2",
+      "platform": "waytoagi",
+      "decision": "supplement-preserve-unknown",
+      "action": "新增本轮访问结果与签约主体未知；before并非精准原句，不做全局替换。超时不否定旧轮可读内容，只限制本轮刷新。",
+      "countImpact": "失败访问是检索日志，不是新经营事实。",
+      "sourceIds": [
+        "CR31-C-waytoagi-01",
+        "CR31-C-waytoagi-02",
+        "CR31-C-waytoagi-03",
+        "CR31-C-waytoagi-07"
+      ]
+    },
+    {
+      "id": "AUD-datawhale-1",
+      "platform": "datawhale",
+      "decision": "needs-scope-correction",
+      "action": "商业分群标签改为按教程实践的学习者，或显式标注学生/初入行者为官方目标假设。旧正文虽已说学历未知，标题仍易被当事实；不要将整个Datawhale限定为唯一RAG课程。",
+      "countImpact": "不增加学员数。",
+      "sourceIds": [
+        "CR31-C-datawhale-01",
+        "CR31-C-datawhale-02"
+      ]
+    },
+    {
+      "id": "AUD-datawhale-2",
+      "platform": "datawhale",
+      "decision": "scope-clarification-not-contradiction",
+      "action": "旧画像C/D的未核合并仍成立；加范围词“本画像的C/D样本”并链接既有代表案例#106/#115。不能把第八章issue#102直接写成#106已修复。",
+      "countImpact": "两PR属于已有同一贡献者，新增案例/贡献者为0。",
+      "sourceIds": [
+        "CR31-C-datawhale-03"
+      ]
+    },
+    {
+      "id": "AUD-datawhale-3",
+      "platform": "datawhale",
+      "decision": "partly-already-correct",
+      "action": "许可已经明示，只补当前README的Extra-chapter投稿范围和复核日期；不要声称首次发现许可。",
+      "countImpact": "规则补充不是课程复现或投稿通过。",
+      "sourceIds": [
+        "CR31-C-datawhale-01"
+      ]
+    },
+    {
+      "id": "AUD-huggingface-1",
+      "platform": "huggingface",
+      "decision": "supplement-current-prerequisites",
+      "action": "补Gradio/Docker托管/复制与免费ZeroGPU例外，并区分使用别人Space、创建/复制、GPU托管三个动作。",
+      "countImpact": "官方页新增或复核不新增真实用户点。",
+      "sourceIds": [
+        "CR31-C-huggingface-02",
+        "CR31-C-huggingface-06"
+      ]
+    },
+    {
+      "id": "AUD-huggingface-2",
+      "platform": "huggingface",
+      "decision": "already-correct",
+      "action": "保留账单机制与分人恢复结论；仅刷新本次访问，不拿论坛首条猜测替代现行文档。",
+      "countImpact": "已有额度案例和试衣暂停案例不得重增。",
+      "sourceIds": [
+        "CR31-C-huggingface-01",
+        "CR31-C-huggingface-03",
+        "CR31-C-huggingface-06"
+      ]
+    },
+    {
+      "id": "AUD-modelscope-1",
+      "platform": "modelscope",
+      "decision": "already-correct",
+      "action": "当前字段已经写明题名、未填模板、不能推根因；新建议是复核通过，不是纠错。",
+      "countImpact": "同#1786和同匿名D为0增量。",
+      "sourceIds": [
+        "CR31-C-modelscope-04"
+      ]
+    },
+    {
+      "id": "AUD-modelscope-2",
+      "platform": "modelscope",
+      "decision": "preserve-unknown",
+      "action": "保留xGPU正文不足；附本轮空白/跳转证据。旧历史发布不能升级成现行权益。",
+      "countImpact": "空白或历史索引不算现行规则已验证。",
+      "sourceIds": [
+        "CR31-C-modelscope-05",
+        "CR31-C-modelscope-06",
+        "CR31-C-modelscope-07",
+        "CR31-C-modelscope-08"
+      ]
+    },
+    {
+      "id": "AUD-linuxdo-1",
+      "platform": "linuxdo",
+      "decision": "temporal-qualification",
+      "action": "为600美元标价加“2026-09-09登录页历史观察；9月11日匿名页仍空”限定。保留旧观察，不以本轮空白撤销历史事实，也不改旧source accessedAt冒充新读。",
+      "countImpact": "0新价格证据；可增加1次访问失败记录。",
+      "sourceIds": [
+        "CR31-C-linuxdo-01",
+        "CR31-C-linuxdo-04"
+      ]
+    },
+    {
+      "id": "AUD-linuxdo-2",
+      "platform": "linuxdo",
+      "decision": "already-correct-with-small-supplement",
+      "action": "既有Wiki案例已区分有效更正与领奖编辑；仅补正文自填日期不能替代修订时间。",
+      "countImpact": "同Wiki及旧参与者不可新增为独立案例/人次。",
+      "sourceIds": [
+        "CR31-C-linuxdo-03"
+      ]
+    },
+    {
+      "id": "AUD-dify-1",
+      "platform": "dify",
+      "decision": "supplement-new-maintenance-event",
+      "action": "向原#42114案例追加关联#42126的另一贡献者、Open待审状态；目前未合并的结论仍正确，不能改为正式修复或发行完成。代表案例目前没有dify项，不存在可覆盖的旧rep条目。",
+      "countImpact": "新增PR来源/维护事件可记1；原故障与原报告者不新增，另一贡献者需独立键确认后单列维护角色。",
+      "sourceIds": [
+        "CR31-C-dify-03",
+        "CR31-C-dify-04"
+      ]
+    },
+    {
+      "id": "AUD-liblib-1",
+      "platform": "liblib",
+      "decision": "access-refresh",
+      "action": "更新FLUX V2的可读状态及完整versionUuid URL；保留V1为另一个版本，勿改audience-liblib.md:194的SDXL V1源。作者供给不提升为买方复现。",
+      "countImpact": "同模型版本源已存在，新增作者/案例为0；只更新读取事件。",
+      "sourceIds": [
+        "CR31-R-liblib-03"
+      ]
+    },
+    {
+      "id": "AUD-runninghub-1",
+      "platform": "runninghub",
+      "decision": "already-correct-with-small-followup",
+      "action": "既有P25-runninghub-E2已经写明次日分享适配工作流链接；新版可补A于Jun22找到资源、Jun25作者回复的后续，但不能称首次发现求助者变供给者。未复读的Reddit订阅证据维持历史标签。",
+      "countImpact": "同2人、同#176，新增用户/来源为0；只可追加旧任务后续事件，第二流程仍未确认成功。",
+      "sourceIds": [
+        "CR31-R-runninghub-01"
+      ]
+    },
+    {
+      "id": "AUD-runninghub-2",
+      "platform": "runninghub",
+      "decision": "supplement-current-api-scope",
+      "action": "补模型/LLM API与AI应用/工作流API可用账户类型；原文区分GPU时长及模型计费已正确。before是主题概括非逐字句。",
+      "countImpact": "规则细化，不是实际API采用。",
+      "sourceIds": [
+        "CR31-R-runninghub-02"
+      ]
+    },
+    {
+      "id": "AUD-tusi-1",
+      "platform": "tusi",
+      "decision": "supplement-distinct-historical-case",
+      "action": "新增Tensor.Art/Hub旧Pro选型个案，但不归入国内Canvas画像或当前价；保持旧缺口。",
+      "countImpact": "候选新增1个海外历史用户案例；不得跟国内迁移统计相加为同一总体。",
+      "sourceIds": [
+        "CR31-R-tusi-04"
+      ]
+    },
+    {
+      "id": "AUD-civitai-1",
+      "platform": "civitai",
+      "decision": "metadata-supplement-not-date-replacement",
+      "action": "保留8月25日文档日期，新增9月4日文内变更与9月11日复读；区分原发布日期、文内实现变更与访问日期。",
+      "countImpact": "同官方文档为0新增独立来源；不视为线上收费验收。",
+      "sourceIds": [
+        "CR31-R-civitai-01"
+      ]
+    },
+    {
+      "id": "AUD-seaart-1",
+      "platform": "seaart",
+      "decision": "supplement-eligibility-not-revenue",
+      "action": "加有效订阅资格（真实付款、超过48小时、一次核验使用）；作者结算未知保留。普通购买者退款与作者提现不互相替代。",
+      "countImpact": "既有退款帖不是新用户；资格规则不是已发放款项。",
+      "sourceIds": [
+        "CR31-R-seaart-03",
+        "CR31-R-seaart-04"
+      ]
+    },
+    {
+      "id": "AUD-nightcafe-1",
+      "platform": "nightcafe",
+      "decision": "already-correct-with-conditions",
+      "action": "原文已说指定模型与基础生成；起始图/ControlNet可能另扣费是适用条件补充，不是推翻旧Unlimited结论。",
+      "countImpact": "0新增案例，补成本前提。",
+      "sourceIds": [
+        "CR31-R-nightcafe-01"
+      ]
+    },
+    {
+      "id": "AUD-openart-1",
+      "platform": "openart",
+      "decision": "supplement-new-author-case",
+      "action": "24镜头作者是新案例；旧MV半程、自述续用与外部后期边界已正确。可记录静帧验收、Descript、本人预算工时；自称员工邀请未验证身份/发表，不标官方已采纳。",
+      "countImpact": "新增1个独立作者任务候选；24镜头/15小时/评论数量不增独立用户，方法收录闭环未完成。",
+      "sourceIds": [
+        "CR31-T-openart-4"
+      ]
+    },
+    {
+      "id": "AUD-openart-2",
+      "platform": "openart",
+      "decision": "supplement-official-claim",
+      "action": "新增官网“精选名册150人”的当日自述；把未知改为实际活跃/付费/报酬分布未核。150不是实际付费人数的纠错，也不能灌入普通UGC人数。",
+      "countImpact": "新增官方数字观察，独立审计/自然用户数为0。",
+      "sourceIds": [
+        "CR31-T-openart-5"
+      ]
+    },
+    {
+      "id": "AUD-jimeng-1",
+      "platform": "jimeng",
+      "decision": "supplement-with-attribution",
+      "action": "保留原App评论职业未知；新作者自称建筑师、视频初学者。明示即梦为活动发现/排队尝试/分享，实际生成改火山API、剪映后期。只记一次跨工具首片任务，保留表达问题与成片未播放。",
+      "countImpact": "新增1个跨工具任务候选；不形成即梦网页生成成功、即梦API成交或专业常态生产证明。",
+      "sourceIds": [
+        "CR31-T-jimeng-3",
+        "CR31-T-jimeng-4"
+      ]
+    },
+    {
+      "id": "AUD-kling-1",
+      "platform": "kling",
+      "decision": "supplement-new-self-report",
+      "action": "新增长片作者回述；不要写已核6部完整作品或6名作者，跨日期发布还未独立检验。",
+      "countImpact": "候选新增1作者案例；6部/数千片段不计6个独立用户。",
+      "sourceIds": [
+        "CR31-T-kling-3"
+      ]
+    },
+    {
+      "id": "AUD-kling-2",
+      "platform": "kling",
+      "decision": "refresh-already-qualified-price",
+      "action": "追加官方7月28日指南9月11日复读与国际页面限定；初次优惠≠持续成本原口径无需作为错误改写。",
+      "countImpact": "同规则页刷新，不计真实购买。",
+      "sourceIds": [
+        "CR31-T-kling-2"
+      ]
+    },
+    {
+      "id": "AUD-midjourney-1",
+      "platform": "midjourney",
+      "decision": "supplement-new-projects",
+      "action": "补同作者漫画2025/2026三页为一个项目链，另添烟字图在替代工具完成。原旧版失败材料保留历史标签，不替换成当前产品普遍结论。",
+      "countImpact": "候选新增2个任务/作者，三页漫画不算三人；漫画读者追问不算成功复现。",
+      "sourceIds": [
+        "CR31-T-midjourney-3",
+        "CR31-T-midjourney-4",
+        "CR31-T-midjourney-5",
+        "CR31-T-midjourney-6"
+      ]
+    },
+    {
+      "id": "AUD-leonardo-1",
+      "platform": "leonardo",
+      "decision": "already-correct-with-prerequisites",
+      "action": "原文已限定选定模型与优先级。只补加购token使用需有效订阅、并发限制和官网模型列举差异；不报告修正了全模型无限。",
+      "countImpact": "0新增用户/案例，当前权益更精确。",
+      "sourceIds": [
+        "CR31-T-leonardo-1"
+      ]
+    },
+    {
+      "id": "AUD-leonardo-2",
+      "platform": "leonardo",
+      "decision": "already-correct",
+      "action": "已写三年自述、培训/Canva背景、外部后期、2024旧模型及答题者改建议。可添考虑Tensor但未迁移细节，不能作为旧文错漏或新增第三用户。",
+      "countImpact": "本轮三案例全部复用旧A/B/E；独立用户与案例增量为0。",
+      "sourceIds": [
+        "CR31-T-leonardo-3",
+        "CR31-T-leonardo-4"
+      ]
+    },
+    {
+      "id": "AUD-runway-1",
+      "platform": "runway",
+      "decision": "needs-correction-in-commission-only",
+      "action": "修改“持续取得佣金”为官网每名新增付费订阅者15美元，未见可据此承诺后续续费持续分成；unknowns从比例未知改实际结算/获客成本未知。Standard/Pro/Max和Free一次性旧文已正确；旧无限仅见历史用户记录，勿删除。",
+      "countImpact": "价格刷新不增购买者；奖励标价不增实际收入。",
+      "sourceIds": [
+        "CR31-T-runway-1",
+        "CR31-T-runway-7"
+      ]
+    },
+    {
+      "id": "AUD-runway-2",
+      "platform": "runway",
+      "decision": "already-correct-representative-case",
+      "action": "现有代表案例已保留多工具、真人表演、40集自述、同一团队和原任务未成功。只补影视背景/DaVinci等细节，并保持旧日期来源；新输入未显示绝对日期不能覆盖旧索引已核日期为空。",
+      "countImpact": "2条新输入均映射既有R29-RUN-FINCH/R29-RUN-RETRY，新增案例/独立用户为0。",
+      "sourceIds": [
+        "CR31-T-runway-3",
+        "CR31-T-runway-4",
+        "CR31-T-runway-5",
+        "CR31-T-runway-8"
+      ]
+    }
+  ],
+  "baseline": {
+    "files": [
+      "site/lib/audience-research.json",
+      "site/lib/business-data.json",
+      "site/lib/representative-evidence.json"
+    ],
+    "profiles": 18,
+    "representativePlatforms": 7,
+    "representativeCases": 14,
+    "representativeSourceUrls": 30,
+    "additionalRead": [
+      "site/public/research-kit/audience-liblib.md",
+      "site/public/research-kit/audience-runninghub.md",
+      "site/public/research-kit/audience-civitai.md",
+      "site/public/research-kit/audience-datawhale.md",
+      "site/public/research-kit/audience-leonardo.md",
+      "site/public/research-kit/audience-runway.md",
+      "site/lib/profiles-china.ts（定向搜索）",
+      "site/lib/profiles-developer.ts（定向搜索）",
+      "site/lib/research-framework.json（定向搜索）",
+      "site/lib/research-brief.json（定向搜索）"
+    ],
+    "excluded": "审查过程中新增的site/lib/platform-review.json为本轮派生输入，不能纳入旧基线证明本轮全部已存在；主线程同期对business-data的更改不倒算成审查开始前的证据。"
+  },
+  "reuseSummary": {
+    "inputPlatforms": 18,
+    "correctionSuggestions": 29,
+    "inputCaseRecords": 39,
+    "inputSourceRecords": 96,
+    "distinctNormalizedInputUrls": 96,
+    "sourceRecordsMatchingThreeBaselineFiles": 74,
+    "sourceRecordsUnmatchedInThreeBaselineFiles": 22,
+    "interpretation": "74条为同URL或同讨论的复核/复用。22条只是三文件中未匹配的候选，其中有动态空壳、超时、索引和原站无法读取；不能直接称22条新增有效证据。另3条在其他旧canonical文件已有来源，见additionalSourceReuse。39条案例不能与旧14条直接相加，按caseReuse逐条合并。"
+  }
+}

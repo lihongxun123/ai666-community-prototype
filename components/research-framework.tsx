@@ -28,7 +28,7 @@ export function ResearchFramework({navigate}:{navigate:(id:string)=>void}) {
   <nav className="study-actions" aria-label="讨论目录">{[['framework-questions','三个问题'],['framework-content','内容与质量'],['framework-tools','18家工具关系'],['framework-economics','模式判断'],['framework-positioning','方案比较所需材料']].map(([id,label])=><button className="text-button" key={id} onClick={()=>jump(id)}>{label}</button>)}<a href="/research-kit/research-framework.md" download>下载历史底稿</a></nav>
 
   <section id="framework-questions" className="study-platform"><div className="section-heading"><h2>三个问题，各自能确认到哪里</h2><span>用户输入 / 事实 / 判断</span></div>
-   {data.agreements.map(a=><article key={a.topic} className="study-mechanism"><h3>{a.topic}</h3><p><strong>当时输入：</strong>{a.input}</p><p><strong>事实与边界：</strong>{a.fact}</p><p><strong>研究判断：</strong>{a.judgment}</p><p><strong>后续材料：</strong>{a.topic==='泛流量与定位'?'现已开始四份整体方案比较，按获客覆盖、首次价值、优先服务任务、供给和付费分别判断。':a.next}</p></article>)}
+   {data.agreements.map(a=><article key={a.topic} className="study-mechanism"><h3>{a.topic}</h3><p><strong>当时输入：</strong>{a.input}</p><p><strong>事实与边界：</strong>{a.fact}</p><p><strong>研究判断：</strong>{a.judgment}</p><p><strong>后续材料：</strong>{a.next}</p></article>)}
   </section>
 
   <section id="framework-content" className="study-platform"><div className="section-heading"><h2>内容不只是图文，但也不是一排平级频道</h2><span>分类是分析，不是开发清单</span></div>
@@ -58,9 +58,9 @@ export function ResearchFramework({navigate}:{navigate:(id:string)=>void}) {
    <p>{data.economics}</p>
   </section>
 
-  <section id="framework-positioning" className="study-platform"><div className="section-heading"><h2>整体方案已进入比较，哪些材料会影响选择</h2><span>已启动</span></div><p>用户已要求开始比较。资料不足保留为条件和假设，不再作为推迟比较的理由；尚未选定最终方向。</p><button className="text-button" onClick={()=>navigate('strategy')}>查看四方案对照 →</button><ul>{data.positioning.distinctions.map(x=><li key={x}>{x}</li>)}</ul>
+  <section id="framework-positioning" className="study-platform"><div className="section-heading"><h2>整体方案已进入比较，哪些材料会影响选择</h2><span>已启动</span></div><p>用户已要求开始比较。资料不足保留为条件和假设，不再作为推迟比较的理由；尚未选定最终方向。</p><button className="text-button" onClick={()=>navigate('strategy')}>查看方向与组织方式 →</button><ul>{data.positioning.distinctions.map(x=><li key={x}>{x}</li>)}</ul>
    <div className="table-wrap"><table><thead><tr><th>待补材料</th><th>记录内容</th><th>用来判断</th></tr></thead><tbody>{data.positioning.inputs.map(x=><tr key={x.item}><th>{x.item}</th><td>{x.need}</td><td>{x.use}</td></tr>)}</tbody></table></div>
-   <p>四份方案已按用户任务、内容结构、工具关系、获客、供给、成本和团队负担展开；新的现状材料可以改变排序。</p><h3>仍可继续补充的竞品证据</h3><ol>{data.researchNext.slice(0,3).map(x=><li key={x}>{x}</li>)}</ol>
+   <p>三种候选方向按持续需要、供给和回访比较；四种组织方式用于安排内容与服务。真实消费、持续活跃及成本会改变投入顺序。</p><h3>仍可继续补充的竞品证据</h3><ol>{data.researchNext.slice(0,3).map(x=><li key={x}>{x}</li>)}</ol>
    <p className="muted">早期定位设想作为历史附录保留。方案比较已经开始，具体采购、招募、产品改版与研发执行尚未启动。</p>
   </section>
  </div>;
