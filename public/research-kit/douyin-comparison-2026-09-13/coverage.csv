@@ -1,0 +1,7 @@
+﻿"author","profile","completeVisibleDates","details","listed","inWindow","coverage"
+"徐兆猛","https://www.douyin.com/user/MS4wLjABAAAABFqXYObbJKtCOUDaIJ2ii6z-tPmsdkjGnP7mJFlzzEQ42jQPfgyyLT9KugK4Upri","false","10","60","8","主页显示60，加载54，仅10个详情核对日期；不是完整发布序列。"
+"foyege","https://www.douyin.com/user/MS4wLjABAAAAq5UIz3urhEf4NK9TdN7EbmSzQfiy8lMdO1doGlEUW5E","false","14","28","10","主页显示28、提取27，即使看到列表末尾也存在数量差；仅14个详情核对日期。"
+"编导_拾光","https://www.douyin.com/user/MS4wLjABAAAAwjUfzN7VbutOK-tL3AmZsHyfNpPQyC50ZarqXfBfrSASOsklHJ0pmBukN8VlzTqS","true","24","24","21","读取时主页显示24，加载24且列表末尾可见，24个详情均核对；仅能描述当时可见列表，不覆盖删除、隐藏或其他账号。"
+"孩子的一棠课","https://www.douyin.com/user/MS4wLjABAAAAeyH3TcMIgPLHxcu7VQzFLjfSd37N1WTBYWd1M1akg0C6H8TFGcco3vJ9NgoVQkiq","false","10","21","7","主页显示21，加载21且列表末尾可见；只核对近期与置顶10个详情，不能由此断言每周发几条。"
+"溯明","https://www.douyin.com/user/MS4wLjABAAAATxC3OS3SgViKtdGnN-15Q9Q5b8fIJz19qju73OtSqofxuoKR1v52hUCrbb4qLCc7","true","42","42","3","主页显示42件，列表已到底；42个详情均已核对日期。仅覆盖当时公开可见条目。"
+"八宝动物园","https://www.douyin.com/user/MS4wLjABAAAAe38gcBrTnpZXDnT3wR4qoA0PayuV1J-5HoDTXHqDBr1qwmGNekxJ92neEzR5zReD","true","112","112","21","主页显示112件，列表已到底；112个详情均已核对日期。仅覆盖当时公开可见条目。"

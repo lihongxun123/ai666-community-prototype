@@ -2,6 +2,7 @@
 import dataset from '@/lib/content-demand-ecosystem.json';
 import {DouyinDepth} from './content-demand-depth';
 import {DouyinPanel} from './content-demand-panel';
+import {DouyinComparison} from './content-demand-comparison';
 import './content-demand-ecosystem.css';
 
 const d=dataset;
@@ -20,8 +21,9 @@ export function DouyinEcosystem(){
   <header className="page-heading"><h1>{e.title}</h1><p>{e.verdict}</p>
    <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>题材与竞品底表</a></div>
   </header>
-  <DouyinPanel />
-  <DouyinDepth />
+  <DouyinComparison />
+  <details className="cd-profile"><summary><strong>作品互动与逐条评论底表</strong><span>63件作品与已读讨论</span></summary><div className="cd-profile-body"><DouyinPanel /></div></details>
+  <details className="cd-profile"><summary><strong>参考方法、作者样本与指数复算</strong></summary><div className="cd-profile-body"><DouyinDepth /></div></details>
   <h2>题材、关键词与竞品供给底表</h2>
   <div className="de-counts">{[[d.counts.cendCards,'抖音内容卡片'],[d.counts.guideRows,'垂类热词记录'],[d.counts.competitorObjects,'竞品内容对象'],[d.counts.lexiconTerms,'去重来源词条']].map(([n,t])=><div key={t}><strong>{n}</strong><span>{t}</span></div>)}</div>
   <p className="de-meta">核对：2026-09-12。卡片、详情、词条分别计数；13 个抖音详情中有 {d.counts.cendDetailOverlap} 个来自上述卡片。竞品对象覆盖 {d.counts.competitorPlatforms} 个平台。</p>

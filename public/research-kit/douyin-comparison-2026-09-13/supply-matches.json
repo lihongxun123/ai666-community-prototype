@@ -1,0 +1,944 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "从真实评论回查具体供给：需求、可用对象与未解决部分",
+  "date": "2026-09-13",
+  "generatedAt": "2026-09-12T16:55:03.584Z",
+  "status": "public_source_comparison_complete_no_runtime_test",
+  "summary": {
+    "demandCount": 4,
+    "matchedPathCount": 12,
+    "sourceCount": 16,
+    "commentPositions": 12,
+    "inventoryPlatformsUsed": [
+      "liblib",
+      "runninghub",
+      "openart",
+      "runway",
+      "dify"
+    ],
+    "additionalPaths": [
+      "抖音原作者合集",
+      "国家民委公开资料",
+      "豆包与人教社/名师共创内容"
+    ],
+    "verdict": "现有平台已提供方法、参数、故障线索、系列作品和引用能力。证据不支持“普遍缺供给”；仍值得验证的是具体场景能否完成、材料是否开放、系列入口是否清楚、争议能否核实并修正。",
+    "highestValueCounterexamples": [
+      "Liblib分镜作者明确写参数、异常分屏与暂不开放下载，不能笼统称无教程或都有源码。",
+      "OpenArt官方既讲角色复用也写一致性偏移处理，不能称平台不提供排错。",
+      "《山海》已有第一季合集，Runway关联作者有可追溯三部曲，不能把刷不到续作当普遍停更。",
+      "机构资料、名师共创和Dify引用能力均存在，但不能自动关闭历史解释争议。"
+    ]
+  },
+  "method": {
+    "localInputs": [
+      {
+        "path": "douyin-panel-2026-09-12/editorial.json",
+        "sha256": "0b4343b5acf63d663cc31508b892919149588ea170e1f88135acaa9fdb40018a"
+      },
+      {
+        "path": "site/lib/content-demand-panel.json",
+        "sha256": "69814f1918833edeb9ab5873d631595aaf232c2409bebf1cc8e9823fd4ee19ed"
+      },
+      {
+        "path": "site/lib/content-demand-platforms.json",
+        "sha256": "7ab923aa5db029b828feed31b3d59dbf6cf9e85d575e8cce7bc93db4298c42e1"
+      },
+      {
+        "path": "site/lib/content-demand-ecosystem.json",
+        "sha256": "5b1725e40cbdf745d8a781ea23dd54e5d22a25bfc4cf140ac13fd31ee2efa36a"
+      }
+    ],
+    "commentSelection": "从现有真实作品评论选择可明确对应供给任务的12个位置。D1与D2出自同一作品，不是独立需求样本；不推算比例或市场规模。",
+    "sourceSelection": "优先既有18平台中的Liblib、RunningHub、OpenArt、Runway、Dify；加入原站合集、机构资料和官方共创作品作为直接替代。每项需求对比三条路径，不将只有官网首页或搜索数量当供给。",
+    "readBoundary": "仅公开网页正文、功能/资源说明及已有真实UI评论记录；未下载媒体、未运行工作流或生成、未登录写入、未联系作者、未调用Sites。",
+    "temporalBoundary": "评论与作品证据采于2026-09-12，原研究窗口为2026-07-13至09-07不含；供给回查发生于2026-09-13，用于现在可以尝试的路径，不证明这些能力在整个原窗口已存在。",
+    "evidenceLabels": {
+      "factsRead": "已读到的页面信息，供应商效果和作者试用说法仍是其主张。",
+      "matchToDemand": "本研究按交付物与完成标准作的对应判断。",
+      "gapsOrConditions": "仅限已读对象与范围；未见不等于平台或全市场没有。",
+      "runtimeTested": "本轮均为false；不报告成功率。",
+      "consumerAdoptionObserved": "没有将竞品供给对应到评论者实际采用，保留null。"
+    },
+    "privacy": "评论匿名转述；不保存页面联系方式、邀请码、私人家庭信息和长篇原文。费用仅保留对象说明及其未核限制。",
+    "sourceDates": "网页未显示发布日则保留null；作品年份与修改时间分开。访问时间为本轮读取/复核工具时刻，UTC；本地日期另列。少数页面先读成功后失败已明示。",
+    "verification": "对照本地workId和评论position，检查每条供给路径的sourceIds与真实URL；不把页面宣传效果当运行结果。"
+  },
+  "demands": [
+    {
+      "id": "D1",
+      "title": "多人在移动和频繁切镜后，人物与空间关系能否保持一致",
+      "role": "有具体镜头任务的制作人",
+      "evidence": [
+        {
+          "workId": "DP-001",
+          "position": 5,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=5]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "质疑方法在八人或频繁切镜条件下失效，并认为演示挑选了较容易的条件。",
+          "experience": "未述亲测"
+        },
+        {
+          "workId": "DP-001",
+          "position": 6,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=6]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "提出人物移动后仍保持一致性的具体问题。",
+          "experience": "未述亲测"
+        },
+        {
+          "workId": "DP-001",
+          "position": 8,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=8]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "认为演示镜头包含纵深移动，与全景图只能原地旋转的能力不一致。",
+          "experience": "未述亲测"
+        },
+        {
+          "workId": "DP-001",
+          "position": 10,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=10]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "询问演示镜头是否存在越轴问题。",
+          "experience": "未述亲测"
+        }
+      ],
+      "signalBoundary": "多人、移动、切镜条件来自同一作品评论，属于明确问题或质疑；这些评论没有亲测过程，不能当技术失败事实。",
+      "completionCriteria": [
+        "分别检查人物身份、服装、人数和相对位置。",
+        "把单张分镜一致与运动片段、跨镜头连续性分开。",
+        "八人/频繁切镜条件必须有可查看的输入、输出和失败记录。"
+      ],
+      "supplyPaths": [
+        {
+          "id": "D1-P1",
+          "label": "Liblib连续镜头与分镜工作流",
+          "sourceIds": [
+            "S01",
+            "S02"
+          ],
+          "targetRole": "制作人",
+          "provided": [
+            "连续分镜格式、镜头方向提示与参数建议。",
+            "针对分辨率、分屏和场景转换的具体限制说明。"
+          ],
+          "matchToDemand": "能承接固定角色的关键帧、镜头规划与静态序列，已经超出只有效果展示的供给。",
+          "gapsOrConditions": [
+            "未提供本次可读的八人运动切镜验证。",
+            "场景序列工具明确不以精细物体操控为主；静态帧不等于视频帧间身份不变。"
+          ],
+          "alternativePath": "先固定角色/分镜并逐镜核对，再进入运动生成；不要把一套静态序列直接承诺为八人视频方案。",
+          "verdict": "现有供给部分匹配，极端条件未知",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D1-P2",
+          "label": "OpenArt角色资产复用与局部调整",
+          "sourceIds": [
+            "S03",
+            "S06"
+          ],
+          "targetRole": "制作人",
+          "provided": [
+            "角色库复用、参考图与跨场景流程。",
+            "脸部变化、物件消失等症状的调整建议。",
+            "先排分镜、再逐镜头反馈的制作入口。"
+          ],
+          "matchToDemand": "对评论中的运动/切镜一致性有直接方法供给，并已有失败症状说明。",
+          "gapsOrConditions": [
+            "官方文章承认复杂或长序列仍可能偏移。",
+            "未见八人同场、频繁切镜的同条件验证，不能转述为已解决。"
+          ],
+          "alternativePath": "用角色资产与分镜复用降低重复设定；保留发生偏移的镜头单独改动，核实际结果。",
+          "verdict": "方法与排错已存在，效果边界仍待验证",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D1-P3",
+          "label": "RunningHub多角度应用入口",
+          "sourceIds": [
+            "S05"
+          ],
+          "targetRole": "新手制作人",
+          "provided": [
+            "上传图片的多角度应用与按用量计费说明。"
+          ],
+          "matchToDemand": "提供低步骤入口，可先尝试静态多角度。",
+          "gapsOrConditions": [
+            "应用说明较薄，未读到人数/动作/切镜条件。",
+            "末次复开失败；没有运行、价格或效果验证。"
+          ],
+          "alternativePath": "访问恢复后才可作为具体试用候选；目前优先使用已能读清输入与限制的路径。",
+          "verdict": "仅入口部分匹配，不能作为已验证解决方案",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        }
+      ],
+      "counterexample": "不能写“竞品只有作品展示，没有一致性教程”。两家已给方法、参数或排错；仍缺的是本轮可核的同条件结果。",
+      "remainingGapType": "适用条件与结果证据待核，尚非全市场供给短缺",
+      "additionalValueHypothesis": "把人数、动作、镜头类型与失败示例组织成同一案例记录，比再做模型名称合集更可能有用。",
+      "nextCheck": "选一个双人三镜头任务起步；逐次只增加人数或切镜复杂度，记录输入版本、运行成本、失败位置与修正结果。此为后续验证设计，本轮未执行。"
+    },
+    {
+      "id": "D2",
+      "title": "新手从哪里开始，能否取得可复用材料并定位错误与成本",
+      "role": "希望照做而非只看效果的制作人",
+      "evidence": [
+        {
+          "workId": "DP-001",
+          "position": 2,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=2]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "自称新手，询问 ComfyUI 能否完成同类效果，以及从哪个工具开始学习。",
+          "experience": "只自述新手处境，未报告尝试或完成任务。"
+        },
+        {
+          "workId": "DP-001",
+          "position": 4,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=4]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "询问所用工具是否收费昂贵。",
+          "experience": "未述亲测"
+        },
+        {
+          "workId": "DP-001",
+          "position": 7,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-001].comments[position=7]",
+          "workUrl": "https://www.douyin.com/video/7673074764340650597",
+          "workTitle": "多人站位与场景一致性教程",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T14:39:22.812Z",
+          "paraphrase": "询问作者是否在工具平台分享过相关内容。",
+          "experience": "未述亲测"
+        }
+      ],
+      "signalBoundary": "同一教程下的新手处境、费用和资源入口问题；与D1共享作品，不能当两批独立需求。费用楼层已有满意但嫌贵的使用自述，不能只保留负面。",
+      "completionCriteria": [
+        "明确一个具体任务的入口、输入材料、步骤与依赖。",
+        "区分网页可运行、可下载工程和可编辑节点三种交付。",
+        "费用说明有时间与条件；错误信息能对应操作和下一步。"
+      ],
+      "supplyPaths": [
+        {
+          "id": "D2-P1",
+          "label": "Liblib在线工作流＋作者参数说明",
+          "sourceIds": [
+            "S01"
+          ],
+          "targetRole": "愿意在线操作的新手/中级制作人",
+          "provided": [
+            "有逐场提示格式、默认尺寸、异常分屏说明。",
+            "作者说明66积分，且暂不开放下载。"
+          ],
+          "matchToDemand": "已经提供操作前提和失败线索；对资源请求可给直接对象入口。",
+          "gapsOrConditions": [
+            "在线可用与工程开放不是一回事。",
+            "下载受限是页面明示边界，不能用平台总体可下载概括此对象。",
+            "作者积分说明不等于当前结算报价。"
+          ],
+          "alternativePath": "若只需完成在线任务，可先按说明使用；若必须取得项目源，换有明确开放许可与文件的对象，不能把此页包装成源文件赠送。",
+          "verdict": "在线复用有供给，离线材料存在明确限制",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D2-P2",
+          "label": "RunningHub已有工作流接入与故障定位文档",
+          "sourceIds": [
+            "S04"
+          ],
+          "targetRole": "已有工作流、能处理节点与脚本的用户",
+          "provided": [
+            "已有JSON的节点修改步骤。",
+            "任务状态、具体失败节点和错误文本示例。"
+          ],
+          "matchToDemand": "反驳平台完全没有复用或排错说明；更贴近已有工程的操作故障。",
+          "gapsOrConditions": [
+            "需要自己的工作流JSON与相应操作能力，不能替代新手任务选择。",
+            "正文提到脚本文件，但本轮未取得可直接运行的完整文件组合。",
+            "没有foyege同款输入、节点清单或视觉错误修复。"
+          ],
+          "alternativePath": "先取得可复用的具体项目，再用该文档定位提交/节点错误；新手先走任务应用或可读教程。",
+          "verdict": "对高级复用有帮助，新手完整任务仍未闭合",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D2-P3",
+          "label": "OpenArt按症状的创作指导",
+          "sourceIds": [
+            "S03"
+          ],
+          "targetRole": "愿意用平台保存角色与场景的制作人",
+          "provided": [
+            "角色建立、参考输入和局部调整步骤。",
+            "区分脸变、风格变化与物件消失。"
+          ],
+          "matchToDemand": "能把“做不出来”分解为具体可尝试的调整，不是泛泛推荐一个模型。",
+          "gapsOrConditions": [
+            "未提供本评论者的实际项目与结果。",
+            "本轮未核价格和使用权限，不能推荐为更便宜路线。"
+          ],
+          "alternativePath": "先让使用者定位一个失败镜头与症状，再选择调整动作；保留修正前后与实际开销。",
+          "verdict": "存在具体帮助，个体是否完成未知",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        }
+      ],
+      "counterexample": "不能把“需要讲解”自动解释为缺工具或缺额度。现有文档已讲步骤，仍可能因为任务不明确、材料不开源或解释层级不合适而没法照做。",
+      "remainingGapType": "具体项目交付与新手解释的匹配",
+      "additionalValueHypothesis": "提供经授权的输入包、版本与报错对照，再跟踪一次用户复试；价值须来自完成任务而非收藏教程。",
+      "nextCheck": "先选能拿到完整输入与明确使用许可的一个对象；确认新手是否能开始、卡在哪一步、经修改是否完成。未获得用户复试结果前不报成功率。"
+    },
+    {
+      "id": "D3",
+      "title": "找到系列前后集、确认同名关系，并避免只刷到第一集",
+      "role": "故事观看者；制作工具仅作为间接供给比较",
+      "evidence": [
+        {
+          "workId": "DP-007",
+          "position": 1,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-007].comments[position=1]",
+          "workUrl": "https://www.douyin.com/video/7663756336345173258",
+          "workTitle": "《山海》第一集",
+          "publishedAt": "2026-07-18 20:00",
+          "observedAt": "2026-09-12T14:41:25.010Z",
+          "paraphrase": "自述近期反复刷到 AI 科幻灾难片，但没有看到更新完成的作品。",
+          "experience": "针对其近期信息流的观看自述，不是所有作品停更的核查，也不能认定只指本作者。"
+        },
+        {
+          "workId": "DP-007",
+          "position": 6,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-007].comments[position=6]",
+          "workUrl": "https://www.douyin.com/video/7663756336345173258",
+          "workTitle": "《山海》第一集",
+          "publishedAt": "2026-07-18 20:00",
+          "observedAt": "2026-09-12T14:41:25.010Z",
+          "paraphrase": "具体称赞设定、剧情和打斗，并声称每集都吸引观看；实际看过几集未知。",
+          "experience": "重复消费自述，未核行为"
+        },
+        {
+          "workId": "DP-006",
+          "position": 4,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-006].comments[position=4]",
+          "workUrl": "https://www.douyin.com/video/7677555740273380635",
+          "workTitle": "《山海》第一季合集",
+          "publishedAt": "2026-08-24 19:17",
+          "observedAt": "2026-09-12T14:41:21.733Z",
+          "paraphrase": "询问作品是否与此前同名动画属于同一故事。",
+          "experience": "未述亲测"
+        }
+      ],
+      "signalBoundary": "没有看到完结是评论者的信息流经历，不证明本作者停更；同名故事关系是直接疑问。已存在《山海》第一季合集。",
+      "completionCriteria": [
+        "能定位系列入口、前后篇和同名作品关系。",
+        "明确合集已交付范围，不将版本重发当新剧情。",
+        "有作品简介与作者来源；完整播放和后续更新分别核实。"
+      ],
+      "supplyPaths": [
+        {
+          "id": "D3-P1",
+          "label": "抖音原作者《山海》第一季合集",
+          "sourceIds": [
+            "S16"
+          ],
+          "targetRole": "想继续同一故事的观看者",
+          "provided": [
+            "已有第一季合集链接与发布时间。"
+          ],
+          "matchToDemand": "与同一故事继续消费最接近，不必默认迁移到新社区才找得到后续。",
+          "gapsOrConditions": [
+            "本轮web复开失败，采用前次真实UI证据。",
+            "未完整观看，不能保证全部故事线闭合，也未解决与此前同名动画的关系。"
+          ],
+          "alternativePath": "优先给原站合集和版本说明；若只是入口难找，原站索引就可能足够。",
+          "verdict": "同系列直接供给已存在",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D3-P2",
+          "label": "Runway展映入口＋作者三部曲项目页",
+          "sourceIds": [
+            "S07",
+            "S08",
+            "S09",
+            "S10"
+          ],
+          "targetRole": "也愿意观看其他科幻故事的读者",
+          "provided": [
+            "ONE在官方展映页有时长和简介。",
+            "作者官网说明第三部身份，并链接前两部与制作信息。"
+          ],
+          "matchToDemand": "提供另一个可继续追索的故事世界，说明AI相关内容不只有孤立第一集。",
+          "gapsOrConditions": [
+            "不同故事不替代《山海》的同名消歧或续作。",
+            "前两部2021/2023、第三部2025；不是2026近期发布样本。",
+            "The Silicon仅标2D动画且页面有预告入口；三部不可全算AI，也未验证三部全片均可播放。"
+          ],
+          "alternativePath": "按作者说明给三部关系与正式观看入口，再核实际播放范围；保留传统与AI混合制作事实。",
+          "verdict": "有具体替代故事链，观看完整性未验证",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D3-P3",
+          "label": "OpenArt多场景成片制作",
+          "sourceIds": [
+            "S06"
+          ],
+          "targetRole": "故事制作人",
+          "provided": [
+            "分镜规划、角色复用、单镜头调整与时间线。"
+          ],
+          "matchToDemand": "能支持制作故事的流程，是间接生产供给。",
+          "gapsOrConditions": [
+            "没有交付观众要看的某个系列续集。",
+            "工具能导出不代表作者会稳定更新或故事好看。"
+          ],
+          "alternativePath": "先定剧本与系列交付，再选工具；不能让观看者为了追故事先学习生成。",
+          "verdict": "制作供给存在，对观看诉求不是直接替代",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        }
+      ],
+      "counterexample": "《山海》已有合集，Runway关联项目也可追索多部作品；因此“AI故事普遍没有后续”不成立。OpenArt有制作链，但不能代替现成故事。",
+      "remainingGapType": "发现入口、版本/同名关系与实际交付完整性",
+      "additionalValueHypothesis": "只有跨作者且有明确前后关系的索引、版本说明或持续更新信息才可能增加原站之外价值，单纯搬运合集不足。",
+      "nextCheck": "先核同一故事的目录、合辑和重发版本，并测试原站入口能否解决问题；若已足够，不额外建设观看站。"
+    },
+    {
+      "id": "D4",
+      "title": "历史与课文关联如何核对，数量争议能否追到出处并修正",
+      "role": "要求解释可信、愿意核对材料的观看者与编辑",
+      "evidence": [
+        {
+          "workId": "DP-004",
+          "position": 4,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-004].comments[position=4]",
+          "workUrl": "https://www.douyin.com/video/7678155357679602995",
+          "workTitle": "《敕勒歌》与三千孤儿叙事",
+          "publishedAt": "2026-08-28 08:00",
+          "observedAt": "2026-09-12T14:40:17.190Z",
+          "paraphrase": "质疑古代诗歌与现代事件之间的联系；同时说明并非否定视频所有方面。",
+          "experience": "未述亲测"
+        },
+        {
+          "workId": "DP-004",
+          "position": 5,
+          "sourcePath": "site/lib/content-demand-panel.json",
+          "sourcePointer": "works[id=DP-004].comments[position=5]",
+          "workUrl": "https://www.douyin.com/video/7678155357679602995",
+          "workTitle": "《敕勒歌》与三千孤儿叙事",
+          "publishedAt": "2026-08-28 08:00",
+          "observedAt": "2026-09-12T14:40:17.190Z",
+          "paraphrase": "提出不同于标题的人数范围及收养条件，并表达祝福；相关数字和事实未核验。",
+          "experience": "未述亲测"
+        }
+      ],
+      "signalBoundary": "评论提出论证关联与数字差异，未证明哪一方正确；高互动不能作为知识可信证据。",
+      "completionCriteria": [
+        "具体主张对应具体来源段落，区分原始材料、机构转述与艺术改编。",
+        "分别核人物/人数/年代与课文关联，不能用其中一项替另一项。",
+        "有核对人、修订内容和待核项，不能只把引用图标当结论。"
+      ],
+      "supplyPaths": [
+        {
+          "id": "D4-P1",
+          "label": "直接回到机构资料核具体主张",
+          "sourceIds": [
+            "S13"
+          ],
+          "targetRole": "观看者或编辑",
+          "provided": [
+            "可公开阅读的事件文章、日期、人数表述和原刊信息。"
+          ],
+          "matchToDemand": "能把数量争议推进到可核对文本；不需要先搭AI系统才取得材料。",
+          "gapsOrConditions": [
+            "机构文章也不是本轮已核完的原始档案。",
+            "文中没有说明古诗与现代事件为何建立联系；仅有历史事实无法补齐文学解释。"
+          ],
+          "alternativePath": "逐句制作主张—来源—支持范围表；数量口径与创作联想分别说明，保留未证部分。",
+          "verdict": "直接资料有供给，编辑核对仍必要",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D4-P2",
+          "label": "Dify知识库检索与引用",
+          "sourceIds": [
+            "S11",
+            "S12"
+          ],
+          "targetRole": "有一批已选材料的内容编辑/服务者",
+          "provided": [
+            "文档元数据、限定检索范围、来源片段与引用。",
+            "检索测试和过程检查入口。"
+          ],
+          "matchToDemand": "已有可追溯的技术供给，可辅助反复查询同一批资料。",
+          "gapsOrConditions": [
+            "先要有人选资料和建库；错误资料也能被引用。",
+            "没有自动裁决事实冲突、证明诗文关联或将勘误更新到抖音的已验能力。"
+          ],
+          "alternativePath": "少量争议先用人工来源表；问题反复出现、材料已稳定时再用可追溯检索。",
+          "verdict": "引用能力已存在，不能替代史料与编辑判断",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        },
+        {
+          "id": "D4-P3",
+          "label": "机构与名师参与的AI经典课文内容",
+          "sourceIds": [
+            "S14",
+            "S15"
+          ],
+          "targetRole": "想读懂经典课文的观看者",
+          "provided": [
+            "有出版社/名师共创公告，以及具体《逍遥游》视频对象。"
+          ],
+          "matchToDemand": "是已有专业参与的内容供给反例，不应假定AI课文都缺专业人员。",
+          "gapsOrConditions": [
+            "不同篇目不是《敕勒歌》争议的答复。",
+            "未完整观看或验证其解释；机构参与不保证所有细节正确，也未见本次纠错记录。"
+          ],
+          "alternativePath": "对同篇内容优先比较现成专业解读；若合作供给，应约定出处、改编说明和纠错责任。",
+          "verdict": "相关专业内容已存在，争议闭环仍未知",
+          "runtimeTested": false,
+          "consumerAdoptionObserved": null
+        }
+      ],
+      "counterexample": "既有机构原文，也有引用工具和名师参与的成片。真正需要核的是某条主张和某个解释，而不是把“知识核验”笼统当成工具平台都不提供。",
+      "remainingGapType": "主张级来源匹配、创作说明与修订跟进",
+      "additionalValueHypothesis": "公开提供少量关键出处、说明哪些是创作联想，并记录一次核实后的修改，可能比增加漂亮图鉴更有用。",
+      "nextCheck": "先核一条具体人数说法和一处古诗关联，记录支持、冲突与未知；只将确认的修正纳入后续内容，不以评论争论数量代表质量。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "platformId": "liblib",
+      "title": "大师级AI视频前后9分镜头一致性in-context工作流",
+      "url": "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "作者说明正文，角色占位符、逐场提示格式、分辨率、积分和下载边界；未进入运行器。",
+      "factsRead": [
+        "给出角色命名及分镜输入格式。",
+        "作者说明默认1024×1536、另一推荐分辨率1280×1920，并报告其他比例可能多出分屏。",
+        "说明显示66积分、可在线运行、暂不开放下载。"
+      ],
+      "limits": [
+        "积分是作者页面说明，不是本次报价核验。",
+        "作者自报测试次数未独立验证。",
+        "没有实际运行，也未核到八人运动切镜测试。"
+      ],
+      "publisher": "蝈蝈大叔（Liblib作者页）",
+      "datePrecision": "not_visible"
+    },
+    {
+      "id": "S02",
+      "platformId": "liblib",
+      "title": "一致性连贯电影镜头丨分镜丨镜头",
+      "url": "https://www.liblib.art/modelinfo/60c89401121e4d81998ed8bb26d94751?from=search",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "作者功能说明、提示结构、LoRA建议与重要限制全文。",
+      "factsRead": [
+        "面向连续图像序列，按下一场景描述推进镜头。",
+        "给出0.7—0.8强度建议及推拉、跟拍等提示。",
+        "说明更适合风景/定场和场景转换，不以精细物体操控为目标。"
+      ],
+      "limits": [
+        "连续图像序列不等于运动视频已经保持人物一致。",
+        "参数和效果为作者说明，未运行验证。"
+      ],
+      "publisher": "野猪A6（Liblib作者页）",
+      "datePrecision": "not_visible"
+    },
+    {
+      "id": "S03",
+      "platformId": "openart",
+      "title": "How to Maintain Brand Consistency in AI Videos",
+      "url": "https://openart.ai/blog/how-to-maintain-consistency-in-ai-videos/",
+      "publishedAt": "2026-08-05",
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "官方文章：角色库、参考图、操作步骤、常见一致性问题和局限；未使用工具。",
+      "factsRead": [
+        "说明保存角色并以角色标记跨场景复用。",
+        "按脸部变化、物件消失等症状提供参考图、短片段及局部调整方向。",
+        "文章承认长片段和复杂场景仍可能出现偏移。"
+      ],
+      "limits": [
+        "属于供应商教程与主张，不是八人实验。",
+        "未采信文章对其他模型的排名、外部测试数值和价格比较。"
+      ],
+      "publisher": "OpenArt / Sameer Sohail"
+    },
+    {
+      "id": "S04",
+      "platformId": "runninghub",
+      "title": "工作流完整接入示例",
+      "url": "https://www.runninghub.cn/runninghub-api-doc-cn/doc-8287342",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "正文步骤与示例：已有工作流JSON、节点修改、提交、轮询、失败节点与结果；页面修改时间。",
+      "factsRead": [
+        "文档说明复用已有工作流JSON并修改节点参数的流程。",
+        "失败示例包含具体节点与错误信息。",
+        "页面建议Python 3.8+，定位有自定义工作流的高级用户。"
+      ],
+      "limits": [
+        "未读取或运行一个实际交付的workflow.py与作者JSON组合。",
+        "运行错误诊断不同于解决人物视觉失真。",
+        "不包含foyege原教程项目。"
+      ],
+      "publisher": "RunningHub官方API文档",
+      "modifiedAtRaw": "2026-06-04 07:45:01",
+      "modifiedTimezone": null
+    },
+    {
+      "id": "S05",
+      "platformId": "runninghub",
+      "title": "一键生成多镜头+多角度",
+      "url": "https://www.runninghub.cn/ai-detail/2069946576503660545",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "首轮读到应用标题、分类、上传图片说明、运行入口与按实际用量计费；末轮复开失败。",
+      "factsRead": [
+        "提供上传图片生成多镜头/角度的应用入口。",
+        "页面显示按实际用量结算。"
+      ],
+      "limits": [
+        "所读说明没有展开八人、动作、切镜参数与错误案例。",
+        "最后一次复开失败，当前可访问性不能保证；不能写成已经跑通。"
+      ],
+      "publisher": "RunningHub作者应用 / kitten HZ",
+      "lastAccessStatus": "failed_after_successful_text_read",
+      "lastSuccessTimePrecision": "same_research_session"
+    },
+    {
+      "id": "S06",
+      "platformId": "openart",
+      "title": "AI Movie Maker – Create Cinematic Films Online with OpenArt",
+      "url": "https://openart.ai/features/ai-movie-maker/",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "官方功能页的分镜、单镜头调整、角色库、时间线与导出说明；未登录生成。",
+      "factsRead": [
+        "说明可从脚本规划分镜，并调整故事节奏。",
+        "说明支持单镜头反馈、角色复用、时间线查看和输出。"
+      ],
+      "limits": [
+        "这是制作工具供给，不是可直接追看的《山海》续作。",
+        "完整故事质量、运行成本和连续更新均未验证。"
+      ],
+      "publisher": "OpenArt",
+      "datePrecision": "not_visible"
+    },
+    {
+      "id": "S07",
+      "platformId": "runway",
+      "title": "Watch AI Short Films — AIF Screening Room / ONE",
+      "url": "https://aif.runwayml.com/screening-room",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "AIFF2025区块中ONE条目的作者、6:18时长及简介；未播放全片。",
+      "factsRead": [
+        "官方展映页列出ONE及6:18时长、创作者与故事简介。"
+      ],
+      "limits": [
+        "这次未测试播放完整性、字幕或区域可访问性。",
+        "2025展映对象不证明作者2026持续活跃。"
+      ],
+      "publisher": "Runway",
+      "dateRaw": "AIFF 2025",
+      "datePrecision": "edition_year",
+      "objectLocator": "AIFF 2025 → ONE"
+    },
+    {
+      "id": "S08",
+      "platformId": "runway",
+      "title": "One - Villavicencio Studio",
+      "url": "https://ricardovillavicencio.com/type/animation/one/",
+      "publishedAt": "2025",
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "创作者项目正文、三部曲关系和制作分工；未下载或播放媒体。",
+      "factsRead": [
+        "作者说明One是The Silicon三部曲第三部。",
+        "列明编剧、分镜、动画、合成、配乐等制作分工。",
+        "技术说明同时使用传统手段、实验影像与AI。"
+      ],
+      "limits": [
+        "作者项目页是制作说明，非完整工程交付。",
+        "不能称三部全部由AI生成；不能从有三部推持续更新频率。"
+      ],
+      "publisher": "Villavicencio Studio",
+      "datePrecision": "year",
+      "platformRelationship": "Runway展映对象的创作者官网"
+    },
+    {
+      "id": "S09",
+      "platformId": "runway",
+      "title": "Do The Evolution - Villavicencio Studio",
+      "url": "https://ricardovillavicencio.com/type/animation/do-the-evolution/",
+      "publishedAt": "2023",
+      "accessedAt": "2026-09-12T16:49:17Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "从One页点击的项目正文、第二部身份、Runway关系与制作分工。",
+      "factsRead": [
+        "页面标注为三部曲第二部。",
+        "列明Runway支持/制作关系，并有前后作品链接。"
+      ],
+      "limits": [
+        "未验证全片播放；不能把标题年份当最近更新。"
+      ],
+      "publisher": "Villavicencio Studio",
+      "datePrecision": "year",
+      "accessTimePrecision": "tool_completion"
+    },
+    {
+      "id": "S10",
+      "platformId": "runway",
+      "title": "The Silicon - Villavicencio Studio",
+      "url": "https://ricardovillavicencio.com/collection/films-series/the-silicon/",
+      "publishedAt": "2021",
+      "accessedAt": "2026-09-12T16:49:17Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "从One页点击的作品年份、技术类型、主题与关联作品入口。",
+      "factsRead": [
+        "标注2021年、2D Animation，提供故事设定与关联作品入口。"
+      ],
+      "limits": [
+        "页内可见teaser标记；不能声称此页已核实全片可看。",
+        "这部页面没有AI技术标注，不归为已确认AI作品。"
+      ],
+      "publisher": "Villavicencio Studio",
+      "datePrecision": "year",
+      "accessTimePrecision": "tool_completion"
+    },
+    {
+      "id": "S11",
+      "platformId": "dify",
+      "title": "Dify Knowledge Pipeline - Engineer Context for Production AI",
+      "url": "https://www.dify.ai/rag",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "官方功能页的来源处理、元数据过滤、引用与检索测试说明。",
+      "factsRead": [
+        "支持把文档等来源组织为知识库，保留结构与元数据。",
+        "提供检索测试、过程检查和引用配置。"
+      ],
+      "limits": [
+        "引用能定位材料，不保证材料真实或结论正确。",
+        "这是需准备知识库的供给能力，不是现成历史答案。"
+      ],
+      "publisher": "Dify",
+      "datePrecision": "not_visible"
+    },
+    {
+      "id": "S12",
+      "platformId": "dify",
+      "title": "Knowledge Retrieval（官方文档源文件）",
+      "url": "https://github.com/langgenius/dify-docs/blob/main/en/cloud/use-dify/nodes/knowledge-retrieval.mdx",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "正文配置、输出、元数据过滤和Chatflow引用行为；未运行Dify。",
+      "factsRead": [
+        "需要已有知识库，检索可限制具体文档。",
+        "输出含片段、标题、元数据；Chatflow可显示引用。"
+      ],
+      "limits": [
+        "未核所有版本或工作流类型的同等引用展示。",
+        "没有已配置的本研究历史知识库或纠错闭环。"
+      ],
+      "publisher": "langgenius/dify-docs",
+      "datePrecision": "not_visible"
+    },
+    {
+      "id": "S13",
+      "platformId": "institutional-source",
+      "title": "【道中华】三千孤儿入内蒙：一段流淌着民族大爱的共和国往事",
+      "url": "https://www.neac.gov.cn/seac/c103391/202308/1166523.shtml",
+      "publishedAt": "2023-08-01",
+      "accessedAt": "2026-09-12T16:50:01Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_public_page",
+      "readScope": "国家民委转载正文：事件时期、人数表述与具体人物段落；未调原始档案。",
+      "factsRead": [
+        "文章写1960至1963年接纳3000多名孤儿，并列具体照料者与人数。",
+        "注明原文载于2021年7月20日《中国民族报》。"
+      ],
+      "limits": [
+        "可供定位与逐句对照，不能代替原始档案全量核验。",
+        "该材料没有建立《敕勒歌》与现代事件的创作关联。"
+      ],
+      "publisher": "国家民委网站 / 道中华",
+      "originalPublicationDate": "2021-07-20"
+    },
+    {
+      "id": "S14",
+      "platformId": "doubao-pep-collaboration",
+      "title": "豆包AI呈现经典课文",
+      "url": "https://www.sina.cn/news/detail/5315518210770083.html",
+      "publishedAt": "2026-06-30",
+      "accessedAt": "2026-09-12T16:49:17Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_official_social_post",
+      "readScope": "显示豆包官方身份的自发公告正文；不采用相关推荐与评论。",
+      "factsRead": [
+        "官方公告称与人民教育出版社及名师共同呈现经典课文。"
+      ],
+      "limits": [
+        "合作存在不保证每个画面或每项史实正确。",
+        "没有这条敕勒歌争议的处理记录。"
+      ],
+      "publisher": "豆包官方，经新浪公开正文呈现",
+      "publishedTimeRaw": "26-06-30 14:42",
+      "accessTimePrecision": "tool_completion"
+    },
+    {
+      "id": "S15",
+      "platformId": "doubao-pep-collaboration",
+      "title": "和苏德超老师读《逍遥游》：用AI让鲲鹏飞过写字楼",
+      "url": "https://weibo.com/2/detail/5336850837538127",
+      "publishedAt": null,
+      "accessedAt": "2026-09-12T16:49:17Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-13",
+      "sourceLevel": "primary_official_social_post",
+      "readScope": "豆包官方作品说明、日期显示和03:57时长；未播放视频，不读取相关推荐。",
+      "factsRead": [
+        "有具体《逍遥游》共创对象，说明结合教师讲解与AI画面。"
+      ],
+      "limits": [
+        "文本日期只显示月日，年份不强填。",
+        "不是同篇《敕勒歌》的直接答复，未核教学成效。"
+      ],
+      "publisher": "豆包官方",
+      "dateRaw": "8-28 11:30",
+      "durationRaw": "03:57",
+      "accessTimePrecision": "tool_completion"
+    },
+    {
+      "id": "S16",
+      "platformId": "douyin",
+      "title": "《山海》第一季合集",
+      "url": "https://www.douyin.com/video/7677555740273380635",
+      "publishedAt": "2026-08-24",
+      "accessedAt": "2026-09-12T14:41:21.733Z",
+      "accessTimezone": "UTC",
+      "accessedOnLocal": "2026-09-12",
+      "sourceLevel": "prior_actual_ui_capture_rechecked_in_local_file",
+      "readScope": "读取现有实际UI记录DP-006的标题、日期、评论；本轮web重开失败。",
+      "factsRead": [
+        "DP-006记录已确认第一季合集，发布时间早于这次采集。"
+      ],
+      "limits": [
+        "本轮没有重新观看；合集各段完整性和播放质量未核。",
+        "不能把第一集下泛称刷不到完结的留言当成本作者缺后续。"
+      ],
+      "publisher": "编导_拾光",
+      "localLocator": "site/lib/content-demand-panel.json / works[id=DP-006]",
+      "webRecheckStatus": "failed_this_session"
+    }
+  ],
+  "failedOrLimitedLookups": [
+    {
+      "url": "https://www.runninghub.cn/ai-detail/2014613196321067009",
+      "title": "赛博生物学家｜一键生成《国家地理》风格科普图鉴",
+      "result": "本轮仅搜索可见标题/分类与应用入口，正文反复超时；未将它列为已完成知识核验的供给。",
+      "notEvidenceOfAbsence": true
+    },
+    {
+      "url": "https://www.runninghub.ai/post/2078821984347197442",
+      "title": null,
+      "result": "公开网页读取失败；未采用他人帖子对工作流效果的说明。",
+      "notEvidenceOfAbsence": true
+    },
+    {
+      "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+      "title": "RunningHub AI应用生成图片视频素材教程",
+      "result": "搜索取得较长摘要，但直接打开失败；不作为主要匹配证据。",
+      "notEvidenceOfAbsence": true
+    },
+    {
+      "url": "https://www.pep.com.cn/products/zhytu/gjshnj/zhyxdb/fjsd/201908/t20190813_1944209.shtml",
+      "title": "中华经典诗词分级诵读本 二级",
+      "result": "搜索能见书目，正文403；不声称已经读到书内《敕勒歌》解释。",
+      "notEvidenceOfAbsence": true
+    }
+  ],
+  "decisionBoundaries": [
+    "先确认用户缺的是成片、材料、解释还是结果验证，再选内容形式。",
+    "能由原平台已存在入口解决的需求，不自动推导新社区机会。",
+    "运行故障排错与视觉内容质量排错不同；教程可见与项目可下载不同。",
+    "系列存在、三部曲可追索与每部全片可播放不同。",
+    "引用显示、材料真实、主张被支持与实际纠错不同。"
+  ]
+}
