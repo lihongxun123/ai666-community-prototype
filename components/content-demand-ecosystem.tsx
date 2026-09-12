@@ -1,6 +1,7 @@
 'use client';
 import dataset from '@/lib/content-demand-ecosystem.json';
 import {DouyinDepth} from './content-demand-depth';
+import {DouyinPanel} from './content-demand-panel';
 import './content-demand-ecosystem.css';
 
 const d=dataset;
@@ -17,8 +18,9 @@ function Sources({urls}:{urls:string[]}){return <div className="de-sources">{[..
 export function DouyinEcosystem(){
  return <div className="de-research">
   <header className="page-heading"><h1>{e.title}</h1><p>{e.verdict}</p>
-   <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>完整资料与来源</a></div>
+   <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>题材与竞品底表</a></div>
   </header>
+  <DouyinPanel />
   <DouyinDepth />
   <h2>题材、关键词与竞品供给底表</h2>
   <div className="de-counts">{[[d.counts.cendCards,'抖音内容卡片'],[d.counts.guideRows,'垂类热词记录'],[d.counts.competitorObjects,'竞品内容对象'],[d.counts.lexiconTerms,'去重来源词条']].map(([n,t])=><div key={t}><strong>{n}</strong><span>{t}</span></div>)}</div>
