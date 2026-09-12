@@ -1,5 +1,6 @@
 'use client';
 import dataset from '@/lib/content-demand-ecosystem.json';
+import {DouyinDepth} from './content-demand-depth';
 import './content-demand-ecosystem.css';
 
 const d=dataset;
@@ -18,6 +19,8 @@ export function DouyinEcosystem(){
   <header className="page-heading"><h1>{e.title}</h1><p>{e.verdict}</p>
    <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>完整资料与来源</a></div>
   </header>
+  <DouyinDepth />
+  <h2>题材、关键词与竞品供给底表</h2>
   <div className="de-counts">{[[d.counts.cendCards,'抖音内容卡片'],[d.counts.guideRows,'垂类热词记录'],[d.counts.competitorObjects,'竞品内容对象'],[d.counts.lexiconTerms,'去重来源词条']].map(([n,t])=><div key={t}><strong>{n}</strong><span>{t}</span></div>)}</div>
   <p className="de-meta">核对：2026-09-12。卡片、详情、词条分别计数；13 个抖音详情中有 {d.counts.cendDetailOverlap} 个来自上述卡片。竞品对象覆盖 {d.counts.competitorPlatforms} 个平台。</p>
   <nav className="cd-toc" aria-label="抖音与内容供给目录">{[['findings','主要判断'],['map','细分内容地图'],['cases','观众与创作者反馈'],['index','关键词实值'],['guide','垂类热词'],['competitors','竞品供给'],['cend','抖音样本'],['words','用词库'],['method','机会判断']].map(([id,label])=><Jump key={id} id={'de-'+id}>{label}</Jump>)}</nav>
@@ -59,7 +62,7 @@ export function DouyinEcosystem(){
   </section>
 
   <section id="de-cend"><h2>抖音 C 端内容样本</h2><p>16 个分类中当次可见序列的前 19–24 张卡片，可能受个性化与编辑排序影响。日期保留页面原文，部分公开课来自更早年份。标签或标题中的 AI 表述仅是线索。</p>
-   {[...new Set(d.cend.map(s=>s.category))].map(category=><details className="cd-profile" key={category}><summary><strong>{category}</strong><span>{d.cend.filter(s=>s.category===category).length} 条卡片</span></summary><div className="cd-profile-body"><Table heads={['标题与话题','时长','点赞','日期','AI 线索']} rows={d.cend.filter(s=>s.category===category).map(s=>[<div key={s.id}><Link url={s.url}>{s.title}</Link><small className="de-meta">{s.tags.join(' · ')}</small></div>,s.duration||'未取得',s.likeCountRaw||'未取得',s.dateText||'未取得',s.aiEvidence||'未确认'])}/></div></details>)}
+   {[...new Set(d.cend.map(s=>s.category))].map(category=><details className="cd-profile" key={category}><summary><strong>{category}</strong><span>{d.cend.filter(s=>s.category===category).length} 条卡片</span></summary><div className="cd-profile-body"><Table heads={['标题与话题','时长','卡片可见计数','日期','AI 线索']} rows={d.cend.filter(s=>s.category===category).map(s=>[<div key={s.id}><Link url={s.url}>{s.title}</Link><small className="de-meta">{s.tags.join(' · ')}</small></div>,s.duration||'未取得',s.visibleCountRaw||'未取得',s.dateText||'未取得',s.aiEvidence||'未确认'])}/></div></details>)}
    <p><a href={base+'douyin-content.csv'} download>下载 343 条抖音卡片</a></p>
   </section>
 

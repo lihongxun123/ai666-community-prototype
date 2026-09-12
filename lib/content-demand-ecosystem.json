@@ -6997,8 +6997,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5925",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5925",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7021,8 +7021,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1669",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1669",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7045,8 +7045,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4438",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4438",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7063,8 +7063,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6825",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6825",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7086,8 +7086,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7110,8 +7110,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "12.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "12.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7134,8 +7134,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7158,8 +7158,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1939",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1939",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7182,8 +7182,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7203,8 +7203,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7226,8 +7226,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8323",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8323",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7250,8 +7250,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7274,8 +7274,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7297,8 +7297,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7320,8 +7320,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "10.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "10.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7344,8 +7344,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7368,8 +7368,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1409",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1409",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7392,8 +7392,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1147",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1147",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7416,8 +7416,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7440,8 +7440,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7464,8 +7464,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -7482,8 +7482,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5750",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5750",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7506,8 +7506,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "526",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "526",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7527,8 +7527,8 @@
       "observedAt": "2026-09-11T16:43:22.016Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7547,8 +7547,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "147",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "147",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7570,8 +7570,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7883",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7883",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7590,8 +7590,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "172",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "172",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7614,8 +7614,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "306",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "306",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7634,8 +7634,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "124",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "124",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7659,8 +7659,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3309",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3309",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7679,8 +7679,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "86",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "86",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7703,8 +7703,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7726,8 +7726,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2697",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2697",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7746,8 +7746,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "152",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "152",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7768,8 +7768,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7788,8 +7788,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "226",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "226",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7812,8 +7812,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2763",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2763",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7834,8 +7834,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7857,8 +7857,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3586",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3586",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7881,8 +7881,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "238",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "238",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7901,8 +7901,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "62",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "62",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -7924,8 +7924,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7947,8 +7947,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7967,8 +7967,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "154",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "154",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -7987,8 +7987,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "77",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "77",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -8012,8 +8012,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2333",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2333",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8037,8 +8037,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -8063,8 +8063,8 @@
       "observedAt": "2026-09-11T16:46:20.704Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1323",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1323",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -8085,8 +8085,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8103,8 +8103,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8123,8 +8123,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "69.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "69.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8146,8 +8146,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2439",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2439",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8166,8 +8166,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8190,8 +8190,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8214,8 +8214,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3898",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3898",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8236,8 +8236,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8254,8 +8254,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5501",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5501",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8276,8 +8276,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3449",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3449",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8300,8 +8300,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4540",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4540",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8323,8 +8323,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "10.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "10.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8344,8 +8344,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "798",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "798",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8368,8 +8368,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8390,8 +8390,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8412,8 +8412,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8436,8 +8436,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8460,8 +8460,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8484,8 +8484,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -8505,8 +8505,8 @@
       "observedAt": "2026-09-11T16:46:23.805Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "18.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "18.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8528,8 +8528,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6479",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6479",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8550,8 +8550,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8572,8 +8572,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8594,8 +8594,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8614,8 +8614,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "21.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "21.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8636,8 +8636,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6664",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6664",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -8660,8 +8660,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8682,8 +8682,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8705,8 +8705,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5180",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5180",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8727,8 +8727,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8751,8 +8751,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8774,8 +8774,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8798,8 +8798,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3811",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3811",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8822,8 +8822,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3525",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3525",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8845,8 +8845,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8867,8 +8867,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5963",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5963",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8891,8 +8891,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8911,8 +8911,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1622",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1622",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -8929,8 +8929,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8279",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8279",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8953,8 +8953,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "54.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "54.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8977,8 +8977,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -8998,8 +8998,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8403",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8403",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9022,8 +9022,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3620",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3620",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9046,8 +9046,8 @@
       "observedAt": "2026-09-11T16:46:27.014Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "669",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "669",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -9070,8 +9070,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "16.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "16.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9094,8 +9094,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2084",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2084",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9118,8 +9118,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9141,8 +9141,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9165,8 +9165,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "17.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "17.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9189,8 +9189,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9213,8 +9213,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2145",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2145",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9237,8 +9237,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2623",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2623",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9261,8 +9261,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3516",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3516",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9284,8 +9284,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9308,8 +9308,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9393",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9393",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9331,8 +9331,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "14.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "14.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9355,8 +9355,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9379,8 +9379,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "132",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "132",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9403,8 +9403,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "643",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "643",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9424,8 +9424,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9448,8 +9448,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "759",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "759",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9472,8 +9472,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "565",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "565",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9496,8 +9496,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1450",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1450",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9520,8 +9520,8 @@
       "observedAt": "2026-09-11T16:52:24.534Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4540",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4540",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9540,8 +9540,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "39.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "39.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9563,8 +9563,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4392",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4392",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9587,8 +9587,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9611,8 +9611,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9635,8 +9635,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9657,8 +9657,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "56.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "56.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9681,8 +9681,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9705,8 +9705,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9726,8 +9726,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9748,8 +9748,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7995",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7995",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9771,8 +9771,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9245",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9245",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9795,8 +9795,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9819,8 +9819,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9837,8 +9837,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "102.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "102.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9860,8 +9860,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9880,8 +9880,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9904,8 +9904,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3180",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3180",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9928,8 +9928,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "500",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "500",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9951,8 +9951,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9975,8 +9975,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -9999,8 +9999,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1566",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1566",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10023,8 +10023,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10047,8 +10047,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "779",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "779",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10071,8 +10071,8 @@
       "observedAt": "2026-09-11T16:52:27.694Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "756",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "756",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10093,8 +10093,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6753",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6753",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10117,8 +10117,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3461",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3461",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10141,8 +10141,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "51.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "51.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10163,8 +10163,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10187,8 +10187,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10208,8 +10208,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4248",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4248",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10231,8 +10231,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5064",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5064",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10255,8 +10255,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2962",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2962",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10279,8 +10279,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5398",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5398",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10303,8 +10303,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3117",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3117",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10327,8 +10327,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10350,8 +10350,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10368,8 +10368,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6462",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6462",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10392,8 +10392,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10416,8 +10416,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5329",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5329",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10440,8 +10440,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4738",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4738",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10461,8 +10461,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10484,8 +10484,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10506,8 +10506,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2441",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2441",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10530,8 +10530,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10554,8 +10554,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10578,8 +10578,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2592",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2592",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10602,8 +10602,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4498",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4498",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10626,8 +10626,8 @@
       "observedAt": "2026-09-11T16:52:30.797Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10648,8 +10648,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "12.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "12.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "小云雀"
     },
     {
@@ -10671,8 +10671,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -10692,8 +10692,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10715,8 +10715,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10738,8 +10738,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -10756,8 +10756,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "28.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "28.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10780,8 +10780,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8575",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8575",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -10804,8 +10804,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "975",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "975",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -10828,8 +10828,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1582",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1582",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -10852,8 +10852,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5524",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5524",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -10874,8 +10874,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10898,8 +10898,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3350",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3350",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10922,8 +10922,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -10946,8 +10946,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -10968,8 +10968,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -10992,8 +10992,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "15.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "15.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -11016,8 +11016,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "14.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "14.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11040,8 +11040,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11061,8 +11061,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11085,8 +11085,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2530",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2530",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "ai"
     },
     {
@@ -11109,8 +11109,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -11133,8 +11133,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4631",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4631",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -11154,8 +11154,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1879",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1879",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -11172,8 +11172,8 @@
       "observedAt": "2026-09-11T16:53:55.925Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1326",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1326",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11195,8 +11195,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11219,8 +11219,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2029",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2029",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11243,8 +11243,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "219",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "219",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11265,8 +11265,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2249",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2249",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11287,8 +11287,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "800",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "800",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11310,8 +11310,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3086",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3086",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11333,8 +11333,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1143",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1143",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11357,8 +11357,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6089",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6089",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11381,8 +11381,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "761",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "761",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11404,8 +11404,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11426,8 +11426,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11449,8 +11449,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11467,8 +11467,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11491,8 +11491,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "837",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "837",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11514,8 +11514,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8662",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8662",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11538,8 +11538,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11561,8 +11561,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1024",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1024",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11582,8 +11582,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11603,8 +11603,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3691",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3691",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11628,8 +11628,8 @@
       "observedAt": "2026-09-11T16:53:59.043Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "30.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "30.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11649,8 +11649,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4131",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4131",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11669,8 +11669,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11693,8 +11693,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "54.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "54.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11711,8 +11711,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "739",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "739",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11729,8 +11729,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "869",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "869",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11752,8 +11752,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7343",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7343",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11776,8 +11776,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3123",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3123",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11800,8 +11800,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2775",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2775",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11823,8 +11823,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "985",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "985",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11847,8 +11847,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "794",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "794",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11865,8 +11865,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1458",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1458",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11889,8 +11889,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11913,8 +11913,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7699",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7699",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11937,8 +11937,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "666",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "666",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11960,8 +11960,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8460",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8460",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -11982,8 +11982,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -12004,8 +12004,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12026,8 +12026,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12047,8 +12047,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12070,8 +12070,8 @@
       "observedAt": "2026-09-11T16:54:02.153Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "398",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "398",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12094,8 +12094,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12118,8 +12118,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12142,8 +12142,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4921",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4921",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12166,8 +12166,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "891",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "891",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12187,8 +12187,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7322",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7322",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12211,8 +12211,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "369",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "369",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12235,8 +12235,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12259,8 +12259,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "598",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "598",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12283,8 +12283,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2900",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2900",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12307,8 +12307,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8539",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8539",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -12329,8 +12329,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12353,8 +12353,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "113.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "113.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "作者声明：内容由 AI 生成"
     },
     {
@@ -12377,8 +12377,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "185",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "185",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12398,8 +12398,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "25.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "25.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12421,8 +12421,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3384",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3384",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12445,8 +12445,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7.0万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7.0万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": "AI"
     },
     {
@@ -12468,8 +12468,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4734",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4734",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12492,8 +12492,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "911",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "911",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12516,8 +12516,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12540,8 +12540,8 @@
       "observedAt": "2026-09-11T16:54:12.492Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5046",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5046",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12564,8 +12564,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12588,8 +12588,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9421",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9421",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12612,8 +12612,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12636,8 +12636,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "438",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "438",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12658,8 +12658,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12682,8 +12682,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1649",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1649",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12705,8 +12705,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6989",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6989",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12729,8 +12729,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12753,8 +12753,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1236",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1236",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12777,8 +12777,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5188",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5188",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12801,8 +12801,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3844",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3844",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12822,8 +12822,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "499",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "499",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12846,8 +12846,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "431",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "431",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12870,8 +12870,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2571",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2571",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12894,8 +12894,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4802",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4802",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12914,8 +12914,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4376",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4376",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12938,8 +12938,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12962,8 +12962,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "476",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "476",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -12984,8 +12984,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2413",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2413",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13008,8 +13008,8 @@
       "observedAt": "2026-09-11T16:54:15.613Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1742",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1742",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13032,8 +13032,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3959",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3959",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13050,8 +13050,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13074,8 +13074,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8878",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8878",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13098,8 +13098,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13122,8 +13122,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2688",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2688",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13146,8 +13146,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7450",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7450",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13168,8 +13168,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "520",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "520",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13192,8 +13192,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13215,8 +13215,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6371",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6371",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13238,8 +13238,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1820",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1820",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13262,8 +13262,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "428",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "428",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13285,8 +13285,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3236",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3236",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13303,8 +13303,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3249",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3249",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13326,8 +13326,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13349,8 +13349,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6662",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6662",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13367,8 +13367,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3.5万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3.5万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13385,8 +13385,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5189",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5189",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13409,8 +13409,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1512",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1512",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13433,8 +13433,8 @@
       "observedAt": "2026-09-11T16:54:18.739Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3872",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3872",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13457,8 +13457,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1303",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1303",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13478,8 +13478,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7069",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7069",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13501,8 +13501,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1350",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1350",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13523,8 +13523,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "859",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "859",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13545,8 +13545,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1171",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1171",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13565,8 +13565,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13587,8 +13587,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "538",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "538",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13608,8 +13608,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13629,8 +13629,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3010",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3010",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13652,8 +13652,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "537",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "537",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13670,8 +13670,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "662",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "662",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13692,8 +13692,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13712,8 +13712,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3096",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3096",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13732,8 +13732,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13756,8 +13756,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4184",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4184",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13780,8 +13780,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1391",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1391",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13801,8 +13801,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "3050",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "3050",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13824,8 +13824,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "450",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "450",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13844,8 +13844,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1652",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1652",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13865,8 +13865,8 @@
       "observedAt": "2026-09-11T16:54:29.649Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6300",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6300",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13887,8 +13887,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8090",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8090",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13911,8 +13911,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.9万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.9万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13932,8 +13932,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5764",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5764",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13955,8 +13955,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "544",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "544",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -13979,8 +13979,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "13.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "13.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14001,8 +14001,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14024,8 +14024,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.8万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.8万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14048,8 +14048,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14071,8 +14071,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6607",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6607",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14095,8 +14095,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2815",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2815",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14117,8 +14117,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14139,8 +14139,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.2万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.2万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14163,8 +14163,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "493",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "493",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14186,8 +14186,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "6952",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "6952",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14206,8 +14206,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2205",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2205",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14230,8 +14230,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4184",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4184",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14254,8 +14254,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2355",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2355",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14278,8 +14278,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2181",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2181",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14302,8 +14302,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2454",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2454",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14323,8 +14323,8 @@
       "observedAt": "2026-09-11T16:54:32.791Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1978",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1978",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14347,8 +14347,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1139",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1139",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14370,8 +14370,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2608",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2608",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14388,8 +14388,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.4万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.4万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14412,8 +14412,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "979",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "979",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14436,8 +14436,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "659",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "659",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14457,8 +14457,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "747",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "747",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14481,8 +14481,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14503,8 +14503,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14527,8 +14527,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "5.3万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "5.3万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14551,8 +14551,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "8261",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "8261",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14573,8 +14573,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "21.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "21.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14596,8 +14596,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2014",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2014",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14620,8 +14620,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "2.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "2.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14644,8 +14644,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9141",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9141",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14666,8 +14666,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "31.1万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "31.1万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14690,8 +14690,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "4355",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "4355",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14714,8 +14714,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "9468",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "9468",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14738,8 +14738,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "7218",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "7218",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14762,8 +14762,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.7万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.7万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     },
     {
@@ -14786,8 +14786,8 @@
       "observedAt": "2026-09-11T16:54:36.245Z",
       "evidenceDepth": "listing",
       "selection": "已登录账户的精选分类，选择当次可见序列前24条；可能受个性化和编辑排序影响。",
-      "likeCountRaw": "1.6万",
-      "metricDefinition": "列表心形图标，经同模板截图核对为点赞；不等于观看人数",
+      "visibleCountRaw": "1.6万",
+      "metricDefinition": "分类卡片原始字段unlabeledCount；按可见计数保留，不统一补为点赞或观看人数",
       "aiEvidence": null
     }
   ],
@@ -65804,7 +65804,7 @@
   "findings": {
     "title": "抖音内容消费与 AIGC 供给研究",
     "date": "2026-09-12",
-    "verdict": "研究范围应从“用户找什么 AI 工具”，扩展到“用户想看懂什么、追看什么、完成什么”。历史、科普、文学、解说、连载故事和日常生活都有对应供给；值得寻找的是具体任务中的内容缺口，而不是一个看起来空白的大类。",
+    "verdict": "比较作者持续提供什么、观众为何消费，以及原平台已经满足和仍未解决的部分。作者与作品分析在前，题材、关键词和竞品对象作为底表保留。",
     "findings": [
       {
         "title": "观众找题材与问题，创作者找制作方法",
@@ -65829,7 +65829,7 @@
       },
       {
         "title": "AI 可以是制作手段，观看者未必在消费“AI”这个标签",
-        "text": "美短猫科普的可见留言主要是养猫经历和品种讨论；聊斋短片的留言在问人物与情节关系。AI 教程才集中出现工具选择、费用、插件与一致性问题。是否公开 AI 过程，应服从内容目的：观众先需要完整解释或故事，制作者才需要参数、源文件和步骤。",
+        "text": "美短猫科普的可见留言主要是养猫经历和品种讨论；聊斋短片的留言在问人物与情节关系。AI 教程才集中出现工具选择、费用、插件与一致性问题。是否公开 AI 过程，应服从内容目的：观众先需要完整解释或故事，制作者才需要参数、源文件和步骤。《山海》的公开反馈也有人关注AI本身的新奇性，观看题材与兴趣AI并不互斥；AI生成声明和制作过程入口应分开处理。",
         "urls": [
           "https://www.douyin.com/video/7654404354560118050",
           "https://www.douyin.com/video/7679390867152604467",
@@ -65839,7 +65839,7 @@
       },
       {
         "title": "系列、问题链与复用材料，比单次曝光更接近持续活跃",
-        "text": "《归雾镇》出现等更新的留言，《山海》以连续故事呈现；NightCafe 作者案例把每日挑战、模板和作品连接起来。这些是可观察的继续参与机制。对社区可以分别检验追看下一篇、围绕同题讨论、使用下一份材料、改进后交回作品，而不是要求所有读者都生成内容。",
+        "text": "《归雾镇》出现等更新的留言，《山海》以连续故事呈现；NightCafe 作者案例把每日挑战、模板和作品连接起来。这些是可观察的继续参与机制。对社区可以分别检验追看下一篇、围绕同题讨论、使用下一份材料、改进后交回作品，而不是要求所有读者都生成内容。主页复核已确认《山海》有后续和合集，追更留言需要结合后续交付判断，不能直接列为供给缺口。",
         "urls": [
           "https://www.douyin.com/video/7675325310220422450",
           "https://www.douyin.com/video/7663756336345173258",

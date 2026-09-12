@@ -1,0 +1,6363 @@
+{
+  "sourceFiles": [
+    {
+      "file": "domain-author-details.json",
+      "sha256": "8e4af9484a408fc19b78ca5774635e0b07dfe544f79a7ac6cf7b035e910a4043"
+    },
+    {
+      "file": "child-profile.json",
+      "sha256": "1130ef0832e6c364c5bd2a15dfe36c556ea9d7f37d16901899799cb313221e39"
+    },
+    {
+      "file": "story-profile.json",
+      "sha256": "cbb8868b4746fca926066c141994e16846d98a1d0083f7cf006d12b820241a9c"
+    },
+    {
+      "file": "tutorial-profile.json",
+      "sha256": "a666e2c4080d3b0320126c5388d847215aefb16d00c804af146718629cf6cf00"
+    },
+    {
+      "file": "comment-observations.json",
+      "sha256": "641529c41b695fca57576d6b9b52c863f2690600adf9f13b0b11cc4cecc3957a"
+    }
+  ],
+  "window": {
+    "startInclusive": "2026-07-13 00:00:00",
+    "endExclusive": "2026-09-07 00:00:00",
+    "timezone": "Asia/Shanghai (+08:00)",
+    "durationDays": 56,
+    "weeks": 8,
+    "rule": "八周为周一至周日；9月7日当天归窗外。发布日期原文按北京时间解释，观察时间以源ISO时间为准。"
+  },
+  "methods": {
+    "unit": "Published object / video URL, distinct from underlying content or new production",
+    "metrics": "Explicit detail fields likeRaw/commentRaw/collectRaw/shareRaw; convert 万/亿 display values only, preserving raw text. Do not extract claimed plays from titles.",
+    "quantiles": "Linear interpolation at (n-1)*p, type 7",
+    "missing": "Unseen/missing numeric value=null; weekly verified objects may be 0 but actual account posting count remains unknown/null",
+    "comparison": "Separate author cohorts; no cross-author absolute ranking. Counts accumulated to observation time, not per-post-age outcomes. No causal or general statistical inference.",
+    "versionMatch": "Same series/episode name plus duration difference <=0.05s; candidate only; no full-watch or frame match",
+    "tutorialFormat": "Manually classified by title/description and date; no full video inspection or experimental control",
+    "profileCompleteness": "Pinned cards are not reverse chronological; visible list end and displayed totals do not prove complete account history. No deletion/unlisted/private-state inference."
+  },
+  "validation": {
+    "detailsN": 48,
+    "uniqueUrlsN": 48,
+    "inWindowN": 38,
+    "windowUnknownDatesN": 0,
+    "knownDurationInWindowN": 36,
+    "missingDurationInWindowIds": [
+      "D-036",
+      "D-042"
+    ],
+    "fullyWatchedN": 0
+  },
+  "authors": [
+    {
+      "author": "孩子的一棠课",
+      "detailsN": 10,
+      "inWindowN": 7,
+      "beforeWindowN": 2,
+      "afterWindowN": 1,
+      "profileCoverage": {
+        "sourceFile": "child-profile.json",
+        "observedAt": "2026-09-12T12:58:44.827Z",
+        "displayedWorkCount": 21,
+        "extractedObjectsN": 21,
+        "videoObjectsN": 20,
+        "noteObjectsN": 1,
+        "unknownTypeObjectsN": 0,
+        "listEndVisible": true,
+        "objectsWithDetailDateN": 10,
+        "objectsWithoutDetailDateN": 11,
+        "completeness": "partial-evidence; visible list end does not certify account history or date-window completeness",
+        "pinned": [
+          {
+            "titleExcerpt": "《敕勒歌》",
+            "matchedDetailId": "D-001",
+            "windowStatus": "in-window"
+          },
+          {
+            "titleExcerpt": "《七律·长征》",
+            "matchedDetailId": "D-002",
+            "windowStatus": "before-window"
+          },
+          {
+            "titleExcerpt": "杜甫草堂的秘密",
+            "matchedDetailId": "D-003",
+            "windowStatus": "in-window"
+          }
+        ]
+      },
+      "weekly": [
+        {
+          "week": 1,
+          "startDate": "2026-07-13",
+          "endDateInclusive": "2026-07-19",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-009"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 43000,
+              "q1": 43000,
+              "median": 43000,
+              "q3": 43000,
+              "iqr": 0,
+              "max": 43000,
+              "mean": 43000,
+              "sum": 43000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 918,
+              "q1": 918,
+              "median": 918,
+              "q3": 918,
+              "iqr": 0,
+              "max": 918,
+              "mean": 918,
+              "sum": 918,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 23000,
+              "q1": 23000,
+              "median": 23000,
+              "q3": 23000,
+              "iqr": 0,
+              "max": 23000,
+              "mean": 23000,
+              "sum": 23000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 15000,
+              "q1": 15000,
+              "median": 15000,
+              "q3": 15000,
+              "iqr": 0,
+              "max": 15000,
+              "mean": 15000,
+              "sum": 15000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 354.081,
+              "q1": 354.081,
+              "median": 354.081,
+              "q3": 354.081,
+              "iqr": 0,
+              "max": 354.081,
+              "mean": 354.081,
+              "sum": 354.081,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 57.458170324074075,
+              "q1": 57.458170324074075,
+              "median": 57.458170324074075,
+              "q3": 57.458170324074075,
+              "iqr": 0,
+              "max": 57.458170324074075,
+              "mean": 57.458170324074075,
+              "sum": 57.458170324074075,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 2,
+          "startDate": "2026-07-20",
+          "endDateInclusive": "2026-07-26",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-008"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 167000,
+              "q1": 167000,
+              "median": 167000,
+              "q3": 167000,
+              "iqr": 0,
+              "max": 167000,
+              "mean": 167000,
+              "sum": 167000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 9691,
+              "q1": 9691,
+              "median": 9691,
+              "q3": 9691,
+              "iqr": 0,
+              "max": 9691,
+              "mean": 9691,
+              "sum": 9691,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 19000,
+              "q1": 19000,
+              "median": 19000,
+              "q3": 19000,
+              "iqr": 0,
+              "max": 19000,
+              "mean": 19000,
+              "sum": 19000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 13000,
+              "q1": 13000,
+              "median": 13000,
+              "q3": 13000,
+              "iqr": 0,
+              "max": 13000,
+              "mean": 13000,
+              "sum": 13000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 481.1,
+              "q1": 481.1,
+              "median": 481.1,
+              "q3": 481.1,
+              "iqr": 0,
+              "max": 481.1,
+              "mean": 481.1,
+              "sum": 481.1,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 52.44425763888889,
+              "q1": 52.44425763888889,
+              "median": 52.44425763888889,
+              "q3": 52.44425763888889,
+              "iqr": 0,
+              "max": 52.44425763888889,
+              "mean": 52.44425763888889,
+              "sum": 52.44425763888889,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 3,
+          "startDate": "2026-07-27",
+          "endDateInclusive": "2026-08-02",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-006",
+            "D-007"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 57000,
+              "q1": 214500,
+              "median": 372000,
+              "q3": 529500,
+              "iqr": 315000,
+              "max": 687000,
+              "mean": 372000,
+              "sum": 744000,
+              "top1Share": 0.9233870967741935
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 1072,
+              "q1": 2944.75,
+              "median": 4817.5,
+              "q3": 6690.25,
+              "iqr": 3745.5,
+              "max": 8563,
+              "mean": 4817.5,
+              "sum": 9635,
+              "top1Share": 0.8887389724961079
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 33000,
+              "q1": 105000,
+              "median": 177000,
+              "q3": 249000,
+              "iqr": 144000,
+              "max": 321000,
+              "mean": 177000,
+              "sum": 354000,
+              "top1Share": 0.9067796610169492
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 17000,
+              "q1": 83000,
+              "median": 149000,
+              "q3": 215000,
+              "iqr": 132000,
+              "max": 281000,
+              "mean": 149000,
+              "sum": 298000,
+              "top1Share": 0.9429530201342282
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 378,
+              "q1": 391.769,
+              "median": 405.538,
+              "q3": 419.307,
+              "iqr": 27.53800000000001,
+              "max": 433.076,
+              "mean": 405.538,
+              "sum": 811.076,
+              "top1Share": 0.5339524286256775
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 41.5830999537037,
+              "q1": 42.31244546006944,
+              "median": 43.04179096643519,
+              "q3": 43.771136472800926,
+              "iqr": 1.4586910127314852,
+              "max": 44.500481979166665,
+              "mean": 43.04179096643519,
+              "sum": 86.08358193287037,
+              "top1Share": 0.5169450547941766
+            }
+          }
+        },
+        {
+          "week": 4,
+          "startDate": "2026-08-03",
+          "endDateInclusive": "2026-08-09",
+          "verifiedUploadObjectsN": 0,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [],
+          "metrics": {
+            "likes": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "comments": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "favorites": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "shares": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "durationSeconds": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "ageAtObservationDays": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            }
+          }
+        },
+        {
+          "week": 5,
+          "startDate": "2026-08-10",
+          "endDateInclusive": "2026-08-16",
+          "verifiedUploadObjectsN": 0,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [],
+          "metrics": {
+            "likes": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "comments": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "favorites": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "shares": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "durationSeconds": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "ageAtObservationDays": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            }
+          }
+        },
+        {
+          "week": 6,
+          "startDate": "2026-08-17",
+          "endDateInclusive": "2026-08-23",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-003"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 250000,
+              "q1": 250000,
+              "median": 250000,
+              "q3": 250000,
+              "iqr": 0,
+              "max": 250000,
+              "mean": 250000,
+              "sum": 250000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 5683,
+              "q1": 5683,
+              "median": 5683,
+              "q3": 5683,
+              "iqr": 0,
+              "max": 5683,
+              "mean": 5683,
+              "sum": 5683,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 47000,
+              "q1": 47000,
+              "median": 47000,
+              "q3": 47000,
+              "iqr": 0,
+              "max": 47000,
+              "mean": 47000,
+              "sum": 47000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 24000,
+              "q1": 24000,
+              "median": 24000,
+              "q3": 24000,
+              "iqr": 0,
+              "max": 24000,
+              "mean": 24000,
+              "sum": 24000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 599.818,
+              "q1": 599.818,
+              "median": 599.818,
+              "q3": 599.818,
+              "iqr": 0,
+              "max": 599.818,
+              "mean": 599.818,
+              "sum": 599.818,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 22.49962991898148,
+              "q1": 22.49962991898148,
+              "median": 22.49962991898148,
+              "q3": 22.49962991898148,
+              "iqr": 0,
+              "max": 22.49962991898148,
+              "mean": 22.49962991898148,
+              "sum": 22.49962991898148,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 7,
+          "startDate": "2026-08-24",
+          "endDateInclusive": "2026-08-30",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-001"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1172000,
+              "q1": 1172000,
+              "median": 1172000,
+              "q3": 1172000,
+              "iqr": 0,
+              "max": 1172000,
+              "mean": 1172000,
+              "sum": 1172000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 30000,
+              "q1": 30000,
+              "median": 30000,
+              "q3": 30000,
+              "iqr": 0,
+              "max": 30000,
+              "mean": 30000,
+              "sum": 30000,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 121000,
+              "q1": 121000,
+              "median": 121000,
+              "q3": 121000,
+              "iqr": 0,
+              "max": 121000,
+              "mean": 121000,
+              "sum": 121000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 306000,
+              "q1": 306000,
+              "median": 306000,
+              "q3": 306000,
+              "iqr": 0,
+              "max": 306000,
+              "mean": 306000,
+              "sum": 306000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 443.501,
+              "q1": 443.501,
+              "median": 443.501,
+              "q3": 443.501,
+              "iqr": 0,
+              "max": 443.501,
+              "mean": 443.501,
+              "sum": 443.501,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 15.541253645833333,
+              "q1": 15.541253645833333,
+              "median": 15.541253645833333,
+              "q3": 15.541253645833333,
+              "iqr": 0,
+              "max": 15.541253645833333,
+              "mean": 15.541253645833333,
+              "sum": 15.541253645833333,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 8,
+          "startDate": "2026-08-31",
+          "endDateInclusive": "2026-09-06",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-005"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 54000,
+              "q1": 54000,
+              "median": 54000,
+              "q3": 54000,
+              "iqr": 0,
+              "max": 54000,
+              "mean": 54000,
+              "sum": 54000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 838,
+              "q1": 838,
+              "median": 838,
+              "q3": 838,
+              "iqr": 0,
+              "max": 838,
+              "mean": 838,
+              "sum": 838,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 14000,
+              "q1": 14000,
+              "median": 14000,
+              "q3": 14000,
+              "iqr": 0,
+              "max": 14000,
+              "mean": 14000,
+              "sum": 14000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 11000,
+              "q1": 11000,
+              "median": 11000,
+              "q3": 11000,
+              "iqr": 0,
+              "max": 11000,
+              "mean": 11000,
+              "sum": 11000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 475.777,
+              "q1": 475.777,
+              "median": 475.777,
+              "q3": 475.777,
+              "iqr": 0,
+              "max": 475.777,
+              "mean": 475.777,
+              "sum": 475.777,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 9.128145972222223,
+              "q1": 9.128145972222223,
+              "median": 9.128145972222223,
+              "q3": 9.128145972222223,
+              "iqr": 0,
+              "max": 9.128145972222223,
+              "mean": 9.128145972222223,
+              "sum": 9.128145972222223,
+              "top1Share": 1
+            }
+          }
+        }
+      ],
+      "verifiedObjectsPerWeek": {
+        "totalN": 8,
+        "validN": 8,
+        "missingN": 0,
+        "min": 0,
+        "q1": 0.75,
+        "median": 1,
+        "q3": 1,
+        "iqr": 0.25,
+        "max": 2,
+        "mean": 0.875,
+        "sum": 7,
+        "top1Share": 0.2857142857142857
+      },
+      "metrics": {
+        "likes": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 43000,
+          "q1": 55500,
+          "median": 167000,
+          "q3": 468500,
+          "iqr": 413000,
+          "max": 1172000,
+          "mean": 347142.85714285716,
+          "sum": 2430000,
+          "top1Share": 0.4823045267489712
+        },
+        "comments": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 838,
+          "q1": 995,
+          "median": 5683,
+          "q3": 9127,
+          "iqr": 8132,
+          "max": 30000,
+          "mean": 8109.285714285715,
+          "sum": 56765,
+          "top1Share": 0.5284946710120673
+        },
+        "favorites": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 14000,
+          "q1": 21000,
+          "median": 33000,
+          "q3": 84000,
+          "iqr": 63000,
+          "max": 321000,
+          "mean": 82571.42857142857,
+          "sum": 578000,
+          "top1Share": 0.5553633217993079
+        },
+        "shares": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 11000,
+          "q1": 14000,
+          "median": 17000,
+          "q3": 152500,
+          "iqr": 138500,
+          "max": 306000,
+          "mean": 95285.71428571429,
+          "sum": 667000,
+          "top1Share": 0.4587706146926537
+        },
+        "durationSeconds": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 354.081,
+          "q1": 405.538,
+          "median": 443.501,
+          "q3": 478.4385,
+          "iqr": 72.90049999999997,
+          "max": 599.818,
+          "mean": 452.1932857142857,
+          "sum": 3165.353,
+          "top1Share": 0.18949482095677794
+        },
+        "ageAtObservationDays": {
+          "totalN": 7,
+          "validN": 7,
+          "missingN": 0,
+          "min": 9.128145972222223,
+          "q1": 19.020441782407406,
+          "median": 41.5830999537037,
+          "q3": 48.47236980902778,
+          "iqr": 29.451928026620376,
+          "max": 57.458170324074075,
+          "mean": 34.73643420469577,
+          "sum": 243.15503943287038,
+          "top1Share": 0.2363026094712587
+        }
+      },
+      "withoutLargestLikeObject": {
+        "likes": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 43000,
+          "q1": 54750,
+          "median": 112000,
+          "q3": 229250,
+          "iqr": 174500,
+          "max": 687000,
+          "mean": 209666.66666666666,
+          "sum": 1258000,
+          "top1Share": 0.5461049284578696
+        },
+        "comments": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 838,
+          "q1": 956.5,
+          "median": 3377.5,
+          "q3": 7843,
+          "iqr": 6886.5,
+          "max": 9691,
+          "mean": 4460.833333333333,
+          "sum": 26765,
+          "top1Share": 0.36207733980945267
+        },
+        "favorites": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 14000,
+          "q1": 20000,
+          "median": 28000,
+          "q3": 43500,
+          "iqr": 23500,
+          "max": 321000,
+          "mean": 76166.66666666667,
+          "sum": 457000,
+          "top1Share": 0.7024070021881839
+        },
+        "shares": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 11000,
+          "q1": 13500,
+          "median": 16000,
+          "q3": 22250,
+          "iqr": 8750,
+          "max": 281000,
+          "mean": 60166.666666666664,
+          "sum": 361000,
+          "top1Share": 0.778393351800554
+        },
+        "durationSeconds": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 354.081,
+          "q1": 391.769,
+          "median": 454.42650000000003,
+          "q3": 479.76925,
+          "iqr": 88.00025,
+          "max": 599.818,
+          "mean": 453.642,
+          "sum": 2721.852,
+          "top1Share": 0.22037127661606876
+        },
+        "ageAtObservationDays": {
+          "totalN": 6,
+          "validN": 6,
+          "missingN": 0,
+          "min": 9.128145972222223,
+          "q1": 27.270497427662036,
+          "median": 43.04179096643519,
+          "q3": 50.458313723958334,
+          "iqr": 23.187816296296297,
+          "max": 57.458170324074075,
+          "mean": 37.935630964506174,
+          "sum": 227.61378578703705,
+          "top1Share": 0.25243712776621463
+        }
+      },
+      "formats": [
+        {
+          "format": "教育/亲子叙事线索",
+          "n": 7,
+          "metrics": {
+            "likes": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 43000,
+              "q1": 55500,
+              "median": 167000,
+              "q3": 468500,
+              "iqr": 413000,
+              "max": 1172000,
+              "mean": 347142.85714285716,
+              "sum": 2430000,
+              "top1Share": 0.4823045267489712
+            },
+            "comments": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 838,
+              "q1": 995,
+              "median": 5683,
+              "q3": 9127,
+              "iqr": 8132,
+              "max": 30000,
+              "mean": 8109.285714285715,
+              "sum": 56765,
+              "top1Share": 0.5284946710120673
+            },
+            "favorites": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 14000,
+              "q1": 21000,
+              "median": 33000,
+              "q3": 84000,
+              "iqr": 63000,
+              "max": 321000,
+              "mean": 82571.42857142857,
+              "sum": 578000,
+              "top1Share": 0.5553633217993079
+            },
+            "shares": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 11000,
+              "q1": 14000,
+              "median": 17000,
+              "q3": 152500,
+              "iqr": 138500,
+              "max": 306000,
+              "mean": 95285.71428571429,
+              "sum": 667000,
+              "top1Share": 0.4587706146926537
+            },
+            "durationSeconds": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 354.081,
+              "q1": 405.538,
+              "median": 443.501,
+              "q3": 478.4385,
+              "iqr": 72.90049999999997,
+              "max": 599.818,
+              "mean": 452.1932857142857,
+              "sum": 3165.353,
+              "top1Share": 0.18949482095677794
+            },
+            "ageAtObservationDays": {
+              "totalN": 7,
+              "validN": 7,
+              "missingN": 0,
+              "min": 9.128145972222223,
+              "q1": 19.020441782407406,
+              "median": 41.5830999537037,
+              "q3": 48.47236980902778,
+              "iqr": 29.451928026620376,
+              "max": 57.458170324074075,
+              "mean": 34.73643420469577,
+              "sum": 243.15503943287038,
+              "top1Share": 0.2363026094712587
+            }
+          },
+          "sourceIds": [
+            "D-001",
+            "D-003",
+            "D-005",
+            "D-006",
+            "D-007",
+            "D-008",
+            "D-009"
+          ]
+        }
+      ],
+      "inWindowSampleIds": [
+        "D-001",
+        "D-003",
+        "D-005",
+        "D-006",
+        "D-007",
+        "D-008",
+        "D-009"
+      ],
+      "boundarySamples": [
+        {
+          "id": "D-002",
+          "titleExcerpt": "《七律·长征》",
+          "publishedAt": "2026-06-26 18:00",
+          "windowStatus": "before-window"
+        },
+        {
+          "id": "D-004",
+          "titleExcerpt": "《愚公移山》",
+          "publishedAt": "2026-09-11 18:00",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-010",
+          "titleExcerpt": "《古人谈读书》",
+          "publishedAt": "2026-07-09 17:00",
+          "windowStatus": "before-window"
+        }
+      ]
+    },
+    {
+      "author": "编导_拾光",
+      "detailsN": 24,
+      "inWindowN": 21,
+      "beforeWindowN": 0,
+      "afterWindowN": 3,
+      "profileCoverage": {
+        "sourceFile": "story-profile.json",
+        "observedAt": "2026-09-12T13:00:37.080Z",
+        "displayedWorkCount": 24,
+        "extractedObjectsN": 24,
+        "videoObjectsN": 24,
+        "noteObjectsN": 0,
+        "unknownTypeObjectsN": 0,
+        "listEndVisible": true,
+        "objectsWithDetailDateN": 24,
+        "objectsWithoutDetailDateN": 0,
+        "completeness": "partial-evidence; visible list end does not certify account history or date-window completeness",
+        "pinned": [
+          {
+            "titleExcerpt": "《山海》第一季1-8集合集。 五色天光降临全球，万物返祖，人类血脉觉醒。地铁检修工陈望因意外感知地脉，加入山海署，与伙伴对抗异兽、追查灾变真相。随着深入地底，他",
+            "matchedDetailId": "D-011",
+            "windowStatus": "in-window"
+          }
+        ]
+      },
+      "weekly": [
+        {
+          "week": 1,
+          "startDate": "2026-07-13",
+          "endDateInclusive": "2026-07-19",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 2,
+          "sampleIds": [
+            "D-033",
+            "D-034"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 1755,
+              "q1": 7066.25,
+              "median": 12377.5,
+              "q3": 17688.75,
+              "iqr": 10622.5,
+              "max": 23000,
+              "mean": 12377.5,
+              "sum": 24755,
+              "top1Share": 0.9291052312664109
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 68,
+              "q1": 236.75,
+              "median": 405.5,
+              "q3": 574.25,
+              "iqr": 337.5,
+              "max": 743,
+              "mean": 405.5,
+              "sum": 811,
+              "top1Share": 0.9161528976572133
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 548,
+              "q1": 2488,
+              "median": 4428,
+              "q3": 6368,
+              "iqr": 3880,
+              "max": 8308,
+              "mean": 4428,
+              "sum": 8856,
+              "top1Share": 0.9381210478771455
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 374,
+              "q1": 1284.75,
+              "median": 2195.5,
+              "q3": 3106.25,
+              "iqr": 1821.5,
+              "max": 4017,
+              "mean": 2195.5,
+              "sum": 4391,
+              "top1Share": 0.9148257800045547
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 87.434,
+              "q1": 191.39225,
+              "median": 295.3505,
+              "q3": 399.3087499999999,
+              "iqr": 207.91649999999993,
+              "max": 503.267,
+              "mean": 295.3505,
+              "sum": 590.701,
+              "top1Share": 0.8519826443496794
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 56.04288081018519,
+              "q1": 56.55694855902778,
+              "median": 57.07101630787037,
+              "q3": 57.585084056712965,
+              "iqr": 1.0281354976851844,
+              "max": 58.09915180555556,
+              "mean": 57.07101630787037,
+              "sum": 114.14203261574075,
+              "top1Share": 0.5090075099779098
+            }
+          }
+        },
+        {
+          "week": 2,
+          "startDate": "2026-07-20",
+          "endDateInclusive": "2026-07-26",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 1,
+          "sampleIds": [
+            "D-032"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 6922,
+              "q1": 6922,
+              "median": 6922,
+              "q3": 6922,
+              "iqr": 0,
+              "max": 6922,
+              "mean": 6922,
+              "sum": 6922,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 619,
+              "q1": 619,
+              "median": 619,
+              "q3": 619,
+              "iqr": 0,
+              "max": 619,
+              "mean": 619,
+              "sum": 619,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1437,
+              "q1": 1437,
+              "median": 1437,
+              "q3": 1437,
+              "iqr": 0,
+              "max": 1437,
+              "mean": 1437,
+              "sum": 1437,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 659,
+              "q1": 659,
+              "median": 659,
+              "q3": 659,
+              "iqr": 0,
+              "max": 659,
+              "mean": 659,
+              "sum": 659,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 468.534,
+              "q1": 468.534,
+              "median": 468.534,
+              "q3": 468.534,
+              "iqr": 0,
+              "max": 468.534,
+              "mean": 468.534,
+              "sum": 468.534,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 53.10883076388889,
+              "q1": 53.10883076388889,
+              "median": 53.10883076388889,
+              "q3": 53.10883076388889,
+              "iqr": 0,
+              "max": 53.10883076388889,
+              "mean": 53.10883076388889,
+              "sum": 53.10883076388889,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 3,
+          "startDate": "2026-07-27",
+          "endDateInclusive": "2026-08-02",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 1,
+          "sampleIds": [
+            "D-031"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 3392,
+              "q1": 3392,
+              "median": 3392,
+              "q3": 3392,
+              "iqr": 0,
+              "max": 3392,
+              "mean": 3392,
+              "sum": 3392,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 251,
+              "q1": 251,
+              "median": 251,
+              "q3": 251,
+              "iqr": 0,
+              "max": 251,
+              "mean": 251,
+              "sum": 251,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 512,
+              "q1": 512,
+              "median": 512,
+              "q3": 512,
+              "iqr": 0,
+              "max": 512,
+              "mean": 512,
+              "sum": 512,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 208,
+              "q1": 208,
+              "median": 208,
+              "q3": 208,
+              "iqr": 0,
+              "max": 208,
+              "mean": 208,
+              "sum": 208,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 457.156,
+              "q1": 457.156,
+              "median": 457.156,
+              "q3": 457.156,
+              "iqr": 0,
+              "max": 457.156,
+              "mean": 457.156,
+              "sum": 457.156,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 46.11158829861111,
+              "q1": 46.11158829861111,
+              "median": 46.11158829861111,
+              "q3": 46.11158829861111,
+              "iqr": 0,
+              "max": 46.11158829861111,
+              "mean": 46.11158829861111,
+              "sum": 46.11158829861111,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 4,
+          "startDate": "2026-08-03",
+          "endDateInclusive": "2026-08-09",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 1,
+          "sampleIds": [
+            "D-030"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 5449,
+              "q1": 5449,
+              "median": 5449,
+              "q3": 5449,
+              "iqr": 0,
+              "max": 5449,
+              "mean": 5449,
+              "sum": 5449,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 374,
+              "q1": 374,
+              "median": 374,
+              "q3": 374,
+              "iqr": 0,
+              "max": 374,
+              "mean": 374,
+              "sum": 374,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1072,
+              "q1": 1072,
+              "median": 1072,
+              "q3": 1072,
+              "iqr": 0,
+              "max": 1072,
+              "mean": 1072,
+              "sum": 1072,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 302,
+              "q1": 302,
+              "median": 302,
+              "q3": 302,
+              "iqr": 0,
+              "max": 302,
+              "mean": 302,
+              "sum": 302,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 390.267,
+              "q1": 390.267,
+              "median": 390.267,
+              "q3": 390.267,
+              "iqr": 0,
+              "max": 390.267,
+              "mean": 390.267,
+              "sum": 390.267,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 40.095595011574076,
+              "q1": 40.095595011574076,
+              "median": 40.095595011574076,
+              "q3": 40.095595011574076,
+              "iqr": 0,
+              "max": 40.095595011574076,
+              "mean": 40.095595011574076,
+              "sum": 40.095595011574076,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 5,
+          "startDate": "2026-08-10",
+          "endDateInclusive": "2026-08-16",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 2,
+          "sampleIds": [
+            "D-028",
+            "D-029"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 5202,
+              "q1": 5391,
+              "median": 5580,
+              "q3": 5769,
+              "iqr": 378,
+              "max": 5958,
+              "mean": 5580,
+              "sum": 11160,
+              "top1Share": 0.5338709677419354
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 291,
+              "q1": 298,
+              "median": 305,
+              "q3": 312,
+              "iqr": 14,
+              "max": 319,
+              "mean": 305,
+              "sum": 610,
+              "top1Share": 0.5229508196721312
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 876,
+              "q1": 928.5,
+              "median": 981,
+              "q3": 1033.5,
+              "iqr": 105,
+              "max": 1086,
+              "mean": 981,
+              "sum": 1962,
+              "top1Share": 0.5535168195718655
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 358,
+              "q1": 367.75,
+              "median": 377.5,
+              "q3": 387.25,
+              "iqr": 19.5,
+              "max": 397,
+              "mean": 377.5,
+              "sum": 755,
+              "top1Share": 0.5258278145695364
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 423.867,
+              "q1": 473.58425,
+              "median": 523.3015,
+              "q3": 573.01875,
+              "iqr": 99.43449999999996,
+              "max": 622.736,
+              "mean": 523.3015,
+              "sum": 1046.603,
+              "top1Share": 0.5950068937314339
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 29.09138474537037,
+              "q1": 29.849896982060187,
+              "median": 30.60840921875,
+              "q3": 31.366921455439815,
+              "iqr": 1.517024473379628,
+              "max": 32.12543369212963,
+              "mean": 30.60840921875,
+              "sum": 61.2168184375,
+              "top1Share": 0.5247811714509217
+            }
+          }
+        },
+        {
+          "week": 6,
+          "startDate": "2026-08-17",
+          "endDateInclusive": "2026-08-23",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 1,
+          "sampleIds": [
+            "D-027"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 7895,
+              "q1": 7895,
+              "median": 7895,
+              "q3": 7895,
+              "iqr": 0,
+              "max": 7895,
+              "mean": 7895,
+              "sum": 7895,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 684,
+              "q1": 684,
+              "median": 684,
+              "q3": 684,
+              "iqr": 0,
+              "max": 684,
+              "mean": 684,
+              "sum": 684,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1508,
+              "q1": 1508,
+              "median": 1508,
+              "q3": 1508,
+              "iqr": 0,
+              "max": 1508,
+              "mean": 1508,
+              "sum": 1508,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 626,
+              "q1": 626,
+              "median": 626,
+              "q3": 626,
+              "iqr": 0,
+              "max": 626,
+              "mean": 626,
+              "sum": 626,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 416.734,
+              "q1": 416.734,
+              "median": 416.734,
+              "q3": 416.734,
+              "iqr": 0,
+              "max": 416.734,
+              "mean": 416.734,
+              "sum": 416.734,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 25.112195347222222,
+              "q1": 25.112195347222222,
+              "median": 25.112195347222222,
+              "q3": 25.112195347222222,
+              "iqr": 0,
+              "max": 25.112195347222222,
+              "mean": 25.112195347222222,
+              "sum": 25.112195347222222,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 7,
+          "startDate": "2026-08-24",
+          "endDateInclusive": "2026-08-30",
+          "verifiedUploadObjectsN": 10,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 7,
+          "candidateGroupsFirstObservedStandaloneN": 3,
+          "sampleIds": [
+            "D-011",
+            "D-018",
+            "D-019",
+            "D-020",
+            "D-021",
+            "D-022",
+            "D-023",
+            "D-024",
+            "D-025",
+            "D-026"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 290,
+              "q1": 387.75,
+              "median": 425,
+              "q3": 464.25,
+              "iqr": 76.5,
+              "max": 27000,
+              "mean": 3204.8,
+              "sum": 32048,
+              "top1Share": 0.8424862705941089
+            },
+            "comments": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 10,
+              "q1": 11.25,
+              "median": 17.5,
+              "q3": 56.5,
+              "iqr": 45.25,
+              "max": 898,
+              "mean": 117.1,
+              "sum": 1171,
+              "top1Share": 0.7668659265584971
+            },
+            "favorites": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 42,
+              "q1": 69.25,
+              "median": 107.5,
+              "q3": 176.25,
+              "iqr": 107,
+              "max": 13000,
+              "mean": 1429,
+              "sum": 14290,
+              "top1Share": 0.9097270818754374
+            },
+            "shares": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 12,
+              "q1": 19,
+              "median": 22,
+              "q3": 73.25,
+              "iqr": 54.25,
+              "max": 11000,
+              "mean": 1141.3,
+              "sum": 11413,
+              "top1Share": 0.9638131954788399
+            },
+            "durationSeconds": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 390.304,
+              "q1": 432.18925,
+              "median": 485.923,
+              "q3": 660.1265000000001,
+              "iqr": 227.93725000000006,
+              "max": 4154.778,
+              "mean": 893.5341000000001,
+              "sum": 8935.341,
+              "top1Share": 0.46498258992018326
+            },
+            "ageAtObservationDays": {
+              "totalN": 10,
+              "validN": 10,
+              "missingN": 0,
+              "min": 14.084110405092593,
+              "q1": 17.837684279513887,
+              "median": 17.837731493055557,
+              "q3": 17.83777653935185,
+              "iqr": 0.00009225983796312676,
+              "max": 19.07215650462963,
+              "mean": 17.58581138888889,
+              "sum": 175.85811388888888,
+              "top1Share": 0.10845195642596193
+            }
+          }
+        },
+        {
+          "week": 8,
+          "startDate": "2026-08-31",
+          "endDateInclusive": "2026-09-06",
+          "verifiedUploadObjectsN": 3,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": 3,
+          "sampleIds": [
+            "D-015",
+            "D-016",
+            "D-017"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 246,
+              "q1": 1198,
+              "median": 2150,
+              "q3": 3515,
+              "iqr": 2317,
+              "max": 4880,
+              "mean": 2425.3333333333335,
+              "sum": 7276,
+              "top1Share": 0.6706981858163826
+            },
+            "comments": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 12,
+              "q1": 59.5,
+              "median": 107,
+              "q3": 153,
+              "iqr": 93.5,
+              "max": 199,
+              "mean": 106,
+              "sum": 318,
+              "top1Share": 0.6257861635220126
+            },
+            "favorites": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 18,
+              "q1": 190,
+              "median": 362,
+              "q3": 728.5,
+              "iqr": 538.5,
+              "max": 1095,
+              "mean": 491.6666666666667,
+              "sum": 1475,
+              "top1Share": 0.7423728813559322
+            },
+            "shares": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 3,
+              "q1": 39,
+              "median": 75,
+              "q3": 199,
+              "iqr": 160,
+              "max": 323,
+              "mean": 133.66666666666666,
+              "sum": 401,
+              "top1Share": 0.8054862842892768
+            },
+            "durationSeconds": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 30.209002,
+              "q1": 291.085001,
+              "median": 551.961,
+              "q3": 607.8475000000001,
+              "iqr": 316.7624990000001,
+              "max": 663.734,
+              "mean": 415.30133400000005,
+              "sum": 1245.9040020000002,
+              "top1Share": 0.5327328581773028
+            },
+            "ageAtObservationDays": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 8.094465011574075,
+              "q1": 8.102808611111112,
+              "median": 8.111152210648148,
+              "q3": 9.577829328703704,
+              "iqr": 1.4750207175925922,
+              "max": 11.044506446759259,
+              "mean": 9.08337455632716,
+              "sum": 27.25012366898148,
+              "top1Share": 0.40530114948913426
+            }
+          }
+        }
+      ],
+      "verifiedObjectsPerWeek": {
+        "totalN": 8,
+        "validN": 8,
+        "missingN": 0,
+        "min": 1,
+        "q1": 1,
+        "median": 1.5,
+        "q3": 2.25,
+        "iqr": 1.25,
+        "max": 10,
+        "mean": 2.625,
+        "sum": 21,
+        "top1Share": 0.47619047619047616
+      },
+      "metrics": {
+        "likes": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 246,
+          "q1": 413,
+          "median": 1888,
+          "q3": 5449,
+          "iqr": 5036,
+          "max": 27000,
+          "mean": 4709.380952380952,
+          "sum": 98897,
+          "top1Share": 0.27301131480226903
+        },
+        "comments": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 10,
+          "q1": 15,
+          "median": 101,
+          "q3": 319,
+          "iqr": 304,
+          "max": 898,
+          "mean": 230.38095238095238,
+          "sum": 4838,
+          "top1Share": 0.18561389003720546
+        },
+        "favorites": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 18,
+          "q1": 106,
+          "median": 512,
+          "q3": 1086,
+          "iqr": 980,
+          "max": 13000,
+          "mean": 1481.5238095238096,
+          "sum": 31112,
+          "top1Share": 0.41784520442273076
+        },
+        "shares": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 3,
+          "q1": 21,
+          "median": 189,
+          "q3": 374,
+          "iqr": 353,
+          "max": 11000,
+          "mean": 893.0952380952381,
+          "sum": 18755,
+          "top1Share": 0.5865102639296188
+        },
+        "durationSeconds": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 30.209002,
+          "q1": 416.734,
+          "median": 468.534,
+          "q3": 622.736,
+          "iqr": 206.002,
+          "max": 4154.778,
+          "mean": 645.297142952381,
+          "sum": 13551.240002,
+          "top1Share": 0.3065976249691397
+        },
+        "ageAtObservationDays": {
+          "totalN": 21,
+          "validN": 21,
+          "missingN": 0,
+          "min": 8.094465011574075,
+          "q1": 17.837678946759258,
+          "median": 17.837781238425926,
+          "q3": 32.12543369212963,
+          "iqr": 14.287754745370375,
+          "max": 58.09915180555556,
+          "mean": 25.852157049162262,
+          "sum": 542.8952980324075,
+          "top1Share": 0.10701723152902938
+        }
+      },
+      "withoutLargestLikeObject": {
+        "likes": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 246,
+          "q1": 412.5,
+          "median": 1821.5,
+          "q3": 5263.75,
+          "iqr": 4851.25,
+          "max": 23000,
+          "mean": 3594.85,
+          "sum": 71897,
+          "top1Share": 0.3199020821452912
+        },
+        "comments": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 10,
+          "q1": 15,
+          "median": 84.5,
+          "q3": 298,
+          "iqr": 283,
+          "max": 743,
+          "mean": 197,
+          "sum": 3940,
+          "top1Share": 0.1885786802030457
+        },
+        "favorites": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 18,
+          "q1": 102.25,
+          "median": 437,
+          "q3": 1075.5,
+          "iqr": 973.25,
+          "max": 8308,
+          "mean": 905.6,
+          "sum": 18112,
+          "top1Share": 0.4587014134275618
+        },
+        "shares": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 3,
+          "q1": 20.5,
+          "median": 139,
+          "q3": 362,
+          "iqr": 341.5,
+          "max": 4017,
+          "mean": 387.75,
+          "sum": 7755,
+          "top1Share": 0.5179883945841393
+        },
+        "durationSeconds": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 30.209002,
+          "q1": 416.734,
+          "median": 462.845,
+          "q3": 569.65475,
+          "iqr": 152.92075000000006,
+          "max": 825.33,
+          "mean": 469.82310010000003,
+          "sum": 9396.462002,
+          "top1Share": 0.08783412307997752
+        },
+        "ageAtObservationDays": {
+          "totalN": 20,
+          "validN": 20,
+          "missingN": 0,
+          "min": 8.094465011574075,
+          "q1": 17.837673538773146,
+          "median": 17.837771840277778,
+          "q3": 34.11797402199075,
+          "iqr": 16.2803004832176,
+          "max": 58.09915180555556,
+          "mean": 26.19115707638889,
+          "sum": 523.8231415277778,
+          "top1Share": 0.11091367906370861
+        }
+      },
+      "formats": [
+        {
+          "format": "合集",
+          "n": 1,
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 27000,
+              "q1": 27000,
+              "median": 27000,
+              "q3": 27000,
+              "iqr": 0,
+              "max": 27000,
+              "mean": 27000,
+              "sum": 27000,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 898,
+              "q1": 898,
+              "median": 898,
+              "q3": 898,
+              "iqr": 0,
+              "max": 898,
+              "mean": 898,
+              "sum": 898,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 13000,
+              "q1": 13000,
+              "median": 13000,
+              "q3": 13000,
+              "iqr": 0,
+              "max": 13000,
+              "mean": 13000,
+              "sum": 13000,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 11000,
+              "q1": 11000,
+              "median": 11000,
+              "q3": 11000,
+              "iqr": 0,
+              "max": 11000,
+              "mean": 11000,
+              "sum": 11000,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 4154.778,
+              "q1": 4154.778,
+              "median": 4154.778,
+              "q3": 4154.778,
+              "iqr": 0,
+              "max": 4154.778,
+              "mean": 4154.778,
+              "sum": 4154.778,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 19.07215650462963,
+              "q1": 19.07215650462963,
+              "median": 19.07215650462963,
+              "q3": 19.07215650462963,
+              "iqr": 0,
+              "max": 19.07215650462963,
+              "mean": 19.07215650462963,
+              "sum": 19.07215650462963,
+              "top1Share": 1
+            }
+          },
+          "sourceIds": [
+            "D-011"
+          ]
+        },
+        {
+          "format": "分集",
+          "n": 18,
+          "metrics": {
+            "likes": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 290,
+              "q1": 419,
+              "median": 2019,
+              "q3": 5387.25,
+              "iqr": 4968.25,
+              "max": 23000,
+              "mean": 3883.1111111111113,
+              "sum": 69896,
+              "top1Share": 0.3290603181870207
+            },
+            "comments": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 10,
+              "q1": 16.25,
+              "median": 104,
+              "q3": 312,
+              "iqr": 295.75,
+              "max": 743,
+              "mean": 214.44444444444446,
+              "sum": 3860,
+              "top1Share": 0.19248704663212435
+            },
+            "favorites": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 42,
+              "q1": 106.75,
+              "median": 437,
+              "q3": 1082.5,
+              "iqr": 975.75,
+              "max": 8308,
+              "mean": 974.7777777777778,
+              "sum": 17546,
+              "top1Share": 0.4734982332155477
+            },
+            "shares": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 12,
+              "q1": 21.5,
+              "median": 139,
+              "q3": 349.25,
+              "iqr": 327.75,
+              "max": 4017,
+              "mean": 409.8888888888889,
+              "sum": 7378,
+              "top1Share": 0.5444564922743291
+            },
+            "durationSeconds": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 390.267,
+              "q1": 423.867,
+              "median": 468.5565,
+              "q3": 605.04225,
+              "iqr": 181.17524999999995,
+              "max": 825.33,
+              "mean": 515.4899444444444,
+              "sum": 9278.819,
+              "top1Share": 0.08894774216416983
+            },
+            "ageAtObservationDays": {
+              "totalN": 18,
+              "validN": 18,
+              "missingN": 0,
+              "min": 8.094465011574075,
+              "q1": 17.837684279513887,
+              "median": 17.837771840277778,
+              "q3": 31.366921455439815,
+              "iqr": 13.529237175925928,
+              "max": 56.04288081018519,
+              "mean": 25.42293541730967,
+              "sum": 457.61283751157407,
+              "top1Share": 0.12246789472720537
+            }
+          },
+          "sourceIds": [
+            "D-015",
+            "D-017",
+            "D-018",
+            "D-019",
+            "D-020",
+            "D-021",
+            "D-022",
+            "D-023",
+            "D-024",
+            "D-025",
+            "D-026",
+            "D-027",
+            "D-028",
+            "D-029",
+            "D-030",
+            "D-031",
+            "D-032",
+            "D-033"
+          ]
+        },
+        {
+          "format": "内容未明",
+          "n": 1,
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 246,
+              "q1": 246,
+              "median": 246,
+              "q3": 246,
+              "iqr": 0,
+              "max": 246,
+              "mean": 246,
+              "sum": 246,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 12,
+              "q1": 12,
+              "median": 12,
+              "q3": 12,
+              "iqr": 0,
+              "max": 12,
+              "mean": 12,
+              "sum": 12,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 18,
+              "q1": 18,
+              "median": 18,
+              "q3": 18,
+              "iqr": 0,
+              "max": 18,
+              "mean": 18,
+              "sum": 18,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 3,
+              "q1": 3,
+              "median": 3,
+              "q3": 3,
+              "iqr": 0,
+              "max": 3,
+              "mean": 3,
+              "sum": 3,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 30.209002,
+              "q1": 30.209002,
+              "median": 30.209002,
+              "q3": 30.209002,
+              "iqr": 0,
+              "max": 30.209002,
+              "mean": 30.209002,
+              "sum": 30.209002,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 8.111152210648148,
+              "q1": 8.111152210648148,
+              "median": 8.111152210648148,
+              "q3": 8.111152210648148,
+              "iqr": 0,
+              "max": 8.111152210648148,
+              "mean": 8.111152210648148,
+              "sum": 8.111152210648148,
+              "top1Share": 1
+            }
+          },
+          "sourceIds": [
+            "D-016"
+          ]
+        },
+        {
+          "format": "预告",
+          "n": 1,
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1755,
+              "q1": 1755,
+              "median": 1755,
+              "q3": 1755,
+              "iqr": 0,
+              "max": 1755,
+              "mean": 1755,
+              "sum": 1755,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 68,
+              "q1": 68,
+              "median": 68,
+              "q3": 68,
+              "iqr": 0,
+              "max": 68,
+              "mean": 68,
+              "sum": 68,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 548,
+              "q1": 548,
+              "median": 548,
+              "q3": 548,
+              "iqr": 0,
+              "max": 548,
+              "mean": 548,
+              "sum": 548,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 374,
+              "q1": 374,
+              "median": 374,
+              "q3": 374,
+              "iqr": 0,
+              "max": 374,
+              "mean": 374,
+              "sum": 374,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 87.434,
+              "q1": 87.434,
+              "median": 87.434,
+              "q3": 87.434,
+              "iqr": 0,
+              "max": 87.434,
+              "mean": 87.434,
+              "sum": 87.434,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 58.09915180555556,
+              "q1": 58.09915180555556,
+              "median": 58.09915180555556,
+              "q3": 58.09915180555556,
+              "iqr": 0,
+              "max": 58.09915180555556,
+              "mean": 58.09915180555556,
+              "sum": 58.09915180555556,
+              "top1Share": 1
+            }
+          },
+          "sourceIds": [
+            "D-034"
+          ]
+        }
+      ],
+      "inWindowSampleIds": [
+        "D-011",
+        "D-015",
+        "D-016",
+        "D-017",
+        "D-018",
+        "D-019",
+        "D-020",
+        "D-021",
+        "D-022",
+        "D-023",
+        "D-024",
+        "D-025",
+        "D-026",
+        "D-027",
+        "D-028",
+        "D-029",
+        "D-030",
+        "D-031",
+        "D-032",
+        "D-033",
+        "D-034"
+      ],
+      "boundarySamples": [
+        {
+          "id": "D-012",
+          "titleExcerpt": "第4集   原创AIGC故事连载《山海第二季》第四集：引兽香 #创作阶梯计划 #AI创作浪潮计划 #即梦AI创作者成长计划 #山海 #抖音创作者大会",
+          "publishedAt": "2026-09-11 18:50",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-013",
+          "titleExcerpt": "第2集 原创AIGC故事连载《缺席证明》第二集：残留。 #抖音创作者大会 #AI创作浪潮计划 #山海 #即梦AI创作者成长计划 #创作阶梯计划",
+          "publishedAt": "2026-09-10 19:26",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-014",
+          "titleExcerpt": "第3集   原创AIGC故事连载《山海第二季》第三集：兽径。 #抖音创作者大会  #AI创作浪潮计划 #山海 #即梦AI创作者成长计划 #创作阶梯计划",
+          "publishedAt": "2026-09-08 18:05",
+          "windowStatus": "after-window"
+        }
+      ]
+    },
+    {
+      "author": "foyege",
+      "detailsN": 14,
+      "inWindowN": 10,
+      "beforeWindowN": 1,
+      "afterWindowN": 3,
+      "profileCoverage": {
+        "sourceFile": "tutorial-profile.json",
+        "observedAt": "2026-09-12T13:02:43.897Z",
+        "displayedWorkCount": 28,
+        "extractedObjectsN": 27,
+        "videoObjectsN": 25,
+        "noteObjectsN": 2,
+        "unknownTypeObjectsN": 0,
+        "listEndVisible": true,
+        "objectsWithDetailDateN": 14,
+        "objectsWithoutDetailDateN": 13,
+        "completeness": "partial-evidence; visible list end does not certify account history or date-window completeness",
+        "pinned": [
+          {
+            "titleExcerpt": "手搓400万播放的AI影后级短片后续：让AI有“灵魂”的提示词万能公式，我手写了5000字提示词，让AI演员的表演第一次有了“灵魂” \n文科生引来史诗级增强，A",
+            "matchedDetailId": "D-035",
+            "windowStatus": "in-window"
+          },
+          {
+            "titleExcerpt": "400万播放的AI爆款演技短片：我把唐国强老师的表演法则，写进了AI提示词\nAI表演提示词终极教程来了！没有垫图，只有一段提示词\n—由小云雀Seedance2.",
+            "matchedDetailId": "D-036",
+            "windowStatus": "in-window"
+          },
+          {
+            "titleExcerpt": "唐国强老师说的没错，AI时代的确不需要真人演员了。视频由小云雀seedance2.5*无限画布制作，台词演技都直接上一个层级了\n #ai电影  #ai演员 #小",
+            "matchedDetailId": "D-037",
+            "windowStatus": "in-window"
+          }
+        ]
+      },
+      "weekly": [
+        {
+          "week": 1,
+          "startDate": "2026-07-13",
+          "endDateInclusive": "2026-07-19",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-047"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 925,
+              "q1": 925,
+              "median": 925,
+              "q3": 925,
+              "iqr": 0,
+              "max": 925,
+              "mean": 925,
+              "sum": 925,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 19,
+              "q1": 19,
+              "median": 19,
+              "q3": 19,
+              "iqr": 0,
+              "max": 19,
+              "mean": 19,
+              "sum": 19,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 379,
+              "q1": 379,
+              "median": 379,
+              "q3": 379,
+              "iqr": 0,
+              "max": 379,
+              "mean": 379,
+              "sum": 379,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 101,
+              "q1": 101,
+              "median": 101,
+              "q3": 101,
+              "iqr": 0,
+              "max": 101,
+              "mean": 101,
+              "sum": 101,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 39.633333,
+              "q1": 39.633333,
+              "median": 39.633333,
+              "q3": 39.633333,
+              "iqr": 0,
+              "max": 39.633333,
+              "mean": 39.633333,
+              "sum": 39.633333,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 55.13146849537037,
+              "q1": 55.13146849537037,
+              "median": 55.13146849537037,
+              "q3": 55.13146849537037,
+              "iqr": 0,
+              "max": 55.13146849537037,
+              "mean": 55.13146849537037,
+              "sum": 55.13146849537037,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 2,
+          "startDate": "2026-07-20",
+          "endDateInclusive": "2026-07-26",
+          "verifiedUploadObjectsN": 0,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [],
+          "metrics": {
+            "likes": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "comments": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "favorites": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "shares": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "durationSeconds": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "ageAtObservationDays": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            }
+          }
+        },
+        {
+          "week": 3,
+          "startDate": "2026-07-27",
+          "endDateInclusive": "2026-08-02",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-036",
+            "D-037"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 42000,
+              "q1": 106500,
+              "median": 171000,
+              "q3": 235500,
+              "iqr": 129000,
+              "max": 300000,
+              "mean": 171000,
+              "sum": 342000,
+              "top1Share": 0.8771929824561403
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 600,
+              "q1": 2465.25,
+              "median": 4330.5,
+              "q3": 6195.75,
+              "iqr": 3730.5,
+              "max": 8061,
+              "mean": 4330.5,
+              "sum": 8661,
+              "top1Share": 0.9307239348804988
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 17000,
+              "q1": 19250,
+              "median": 21500,
+              "q3": 23750,
+              "iqr": 4500,
+              "max": 26000,
+              "mean": 21500,
+              "sum": 43000,
+              "top1Share": 0.6046511627906976
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 8005,
+              "q1": 21253.75,
+              "median": 34502.5,
+              "q3": 47751.25,
+              "iqr": 26497.5,
+              "max": 61000,
+              "mean": 34502.5,
+              "sum": 69005,
+              "top1Share": 0.8839939134845302
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 1,
+              "missingN": 1,
+              "min": 30.133333,
+              "q1": 30.133333,
+              "median": 30.133333,
+              "q3": 30.133333,
+              "iqr": 0,
+              "max": 30.133333,
+              "mean": 30.133333,
+              "sum": 30.133333,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 41.01519798611111,
+              "q1": 41.32266802951389,
+              "median": 41.630138072916665,
+              "q3": 41.93760811631944,
+              "iqr": 0.6149400868055466,
+              "max": 42.24507815972222,
+              "mean": 41.630138072916665,
+              "sum": 83.26027614583333,
+              "top1Share": 0.5073857560324261
+            }
+          }
+        },
+        {
+          "week": 4,
+          "startDate": "2026-08-03",
+          "endDateInclusive": "2026-08-09",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-035",
+            "D-046"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 272,
+              "q1": 1859,
+              "median": 3446,
+              "q3": 5033,
+              "iqr": 3174,
+              "max": 6620,
+              "mean": 3446,
+              "sum": 6892,
+              "top1Share": 0.9605339524085896
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 49,
+              "q1": 91,
+              "median": 133,
+              "q3": 175,
+              "iqr": 84,
+              "max": 217,
+              "mean": 133,
+              "sum": 266,
+              "top1Share": 0.8157894736842105
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 59,
+              "q1": 754.25,
+              "median": 1449.5,
+              "q3": 2144.75,
+              "iqr": 1390.5,
+              "max": 2840,
+              "mean": 1449.5,
+              "sum": 2899,
+              "top1Share": 0.9796481545360469
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 123,
+              "q1": 373,
+              "median": 623,
+              "q3": 873,
+              "iqr": 500,
+              "max": 1123,
+              "mean": 623,
+              "sum": 1246,
+              "top1Share": 0.9012841091492777
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 30.057007,
+              "q1": 107.52625525,
+              "median": 184.9955035,
+              "q3": 262.46475175,
+              "iqr": 154.93849649999999,
+              "max": 339.934,
+              "mean": 184.9955035,
+              "sum": 369.991007,
+              "top1Share": 0.9187628714446024
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 36.239775925925926,
+              "q1": 36.525119447337964,
+              "median": 36.81046296875,
+              "q3": 37.09580649016203,
+              "iqr": 0.5706870428240691,
+              "max": 37.38115001157407,
+              "mean": 36.81046296875,
+              "sum": 73.6209259375,
+              "top1Share": 0.5077516960776689
+            }
+          }
+        },
+        {
+          "week": 5,
+          "startDate": "2026-08-10",
+          "endDateInclusive": "2026-08-16",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-044",
+            "D-045"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 524,
+              "q1": 1557.75,
+              "median": 2591.5,
+              "q3": 3625.25,
+              "iqr": 2067.5,
+              "max": 4659,
+              "mean": 2591.5,
+              "sum": 5183,
+              "top1Share": 0.8989002508199885
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 38,
+              "q1": 62.5,
+              "median": 87,
+              "q3": 111.5,
+              "iqr": 49,
+              "max": 136,
+              "mean": 87,
+              "sum": 174,
+              "top1Share": 0.7816091954022989
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 170,
+              "q1": 1153.25,
+              "median": 2136.5,
+              "q3": 3119.75,
+              "iqr": 1966.5,
+              "max": 4103,
+              "mean": 2136.5,
+              "sum": 4273,
+              "top1Share": 0.9602153054060379
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 134,
+              "q1": 250.5,
+              "median": 367,
+              "q3": 483.5,
+              "iqr": 233,
+              "max": 600,
+              "mean": 367,
+              "sum": 734,
+              "top1Share": 0.8174386920980926
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 77.694,
+              "q1": 147.574,
+              "median": 217.454,
+              "q3": 287.334,
+              "iqr": 139.76,
+              "max": 357.214,
+              "mean": 217.454,
+              "sum": 434.908,
+              "top1Share": 0.8213553211253874
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 30.128623981481482,
+              "q1": 30.363351533564817,
+              "median": 30.59807908564815,
+              "q3": 30.83280663773148,
+              "iqr": 0.4694551041666628,
+              "max": 31.067534189814815,
+              "mean": 30.59807908564815,
+              "sum": 61.1961581712963,
+              "top1Share": 0.5076713166021403
+            }
+          }
+        },
+        {
+          "week": 6,
+          "startDate": "2026-08-17",
+          "endDateInclusive": "2026-08-23",
+          "verifiedUploadObjectsN": 2,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-042",
+            "D-043"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 1457,
+              "q1": 2629.25,
+              "median": 3801.5,
+              "q3": 4973.75,
+              "iqr": 2344.5,
+              "max": 6146,
+              "mean": 3801.5,
+              "sum": 7603,
+              "top1Share": 0.8083651190319611
+            },
+            "comments": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 28,
+              "q1": 71.25,
+              "median": 114.5,
+              "q3": 157.75,
+              "iqr": 86.5,
+              "max": 201,
+              "mean": 114.5,
+              "sum": 229,
+              "top1Share": 0.8777292576419214
+            },
+            "favorites": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 1276,
+              "q1": 1740.5,
+              "median": 2205,
+              "q3": 2669.5,
+              "iqr": 929,
+              "max": 3134,
+              "mean": 2205,
+              "sum": 4410,
+              "top1Share": 0.7106575963718821
+            },
+            "shares": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 208,
+              "q1": 394.75,
+              "median": 581.5,
+              "q3": 768.25,
+              "iqr": 373.5,
+              "max": 955,
+              "mean": 581.5,
+              "sum": 1163,
+              "top1Share": 0.821152192605331
+            },
+            "durationSeconds": {
+              "totalN": 2,
+              "validN": 1,
+              "missingN": 1,
+              "min": 344.873,
+              "q1": 344.873,
+              "median": 344.873,
+              "q3": 344.873,
+              "iqr": 0,
+              "max": 344.873,
+              "mean": 344.873,
+              "sum": 344.873,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 2,
+              "validN": 2,
+              "missingN": 0,
+              "min": 22.12719505787037,
+              "q1": 22.696644505208333,
+              "median": 23.266093952546296,
+              "q3": 23.83554339988426,
+              "iqr": 1.1388988946759255,
+              "max": 24.40499284722222,
+              "mean": 23.266093952546296,
+              "sum": 46.53218790509259,
+              "top1Share": 0.5244755070833728
+            }
+          }
+        },
+        {
+          "week": 7,
+          "startDate": "2026-08-24",
+          "endDateInclusive": "2026-08-30",
+          "verifiedUploadObjectsN": 1,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [
+            "D-041"
+          ],
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1858,
+              "q1": 1858,
+              "median": 1858,
+              "q3": 1858,
+              "iqr": 0,
+              "max": 1858,
+              "mean": 1858,
+              "sum": 1858,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 45,
+              "q1": 45,
+              "median": 45,
+              "q3": 45,
+              "iqr": 0,
+              "max": 45,
+              "mean": 45,
+              "sum": 45,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 1716,
+              "q1": 1716,
+              "median": 1716,
+              "q3": 1716,
+              "iqr": 0,
+              "max": 1716,
+              "mean": 1716,
+              "sum": 1716,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 267,
+              "q1": 267,
+              "median": 267,
+              "q3": 267,
+              "iqr": 0,
+              "max": 267,
+              "mean": 267,
+              "sum": 267,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 324.08,
+              "q1": 324.08,
+              "median": 324.08,
+              "q3": 324.08,
+              "iqr": 0,
+              "max": 324.08,
+              "mean": 324.08,
+              "sum": 324.08,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 17.35002103009259,
+              "q1": 17.35002103009259,
+              "median": 17.35002103009259,
+              "q3": 17.35002103009259,
+              "iqr": 0,
+              "max": 17.35002103009259,
+              "mean": 17.35002103009259,
+              "sum": 17.35002103009259,
+              "top1Share": 1
+            }
+          }
+        },
+        {
+          "week": 8,
+          "startDate": "2026-08-31",
+          "endDateInclusive": "2026-09-06",
+          "verifiedUploadObjectsN": 0,
+          "authorActualUploadsN": null,
+          "candidateVersionLaterObjectsN": 0,
+          "candidateGroupsFirstObservedStandaloneN": null,
+          "sampleIds": [],
+          "metrics": {
+            "likes": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "comments": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "favorites": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "shares": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "durationSeconds": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            },
+            "ageAtObservationDays": {
+              "totalN": 0,
+              "validN": 0,
+              "missingN": 0,
+              "min": null,
+              "q1": null,
+              "median": null,
+              "q3": null,
+              "iqr": null,
+              "max": null,
+              "mean": null,
+              "sum": null,
+              "top1Share": null
+            }
+          }
+        }
+      ],
+      "verifiedObjectsPerWeek": {
+        "totalN": 8,
+        "validN": 8,
+        "missingN": 0,
+        "min": 0,
+        "q1": 0.75,
+        "median": 1.5,
+        "q3": 2,
+        "iqr": 1.25,
+        "max": 2,
+        "mean": 1.25,
+        "sum": 10,
+        "top1Share": 0.2
+      },
+      "metrics": {
+        "likes": {
+          "totalN": 10,
+          "validN": 10,
+          "missingN": 0,
+          "min": 272,
+          "q1": 1058,
+          "median": 3258.5,
+          "q3": 6501.5,
+          "iqr": 5443.5,
+          "max": 300000,
+          "mean": 36446.1,
+          "sum": 364461,
+          "top1Share": 0.8231333393696445
+        },
+        "comments": {
+          "totalN": 10,
+          "validN": 10,
+          "missingN": 0,
+          "min": 19,
+          "q1": 39.75,
+          "median": 92.5,
+          "q3": 213,
+          "iqr": 173.25,
+          "max": 8061,
+          "mean": 939.4,
+          "sum": 9394,
+          "top1Share": 0.8581009154779646
+        },
+        "favorites": {
+          "totalN": 10,
+          "validN": 10,
+          "missingN": 0,
+          "min": 59,
+          "q1": 603.25,
+          "median": 2278,
+          "q3": 3860.75,
+          "iqr": 3257.5,
+          "max": 26000,
+          "mean": 5667.7,
+          "sum": 56677,
+          "top1Share": 0.4587398768459869
+        },
+        "shares": {
+          "totalN": 10,
+          "validN": 10,
+          "missingN": 0,
+          "min": 101,
+          "q1": 152.5,
+          "median": 433.5,
+          "q3": 1081,
+          "iqr": 928.5,
+          "max": 61000,
+          "mean": 7251.6,
+          "sum": 72516,
+          "top1Share": 0.8411936676043907
+        },
+        "durationSeconds": {
+          "totalN": 10,
+          "validN": 8,
+          "missingN": 2,
+          "min": 30.057007,
+          "q1": 37.258333,
+          "median": 200.887,
+          "q3": 341.16875000000005,
+          "iqr": 303.91041700000005,
+          "max": 357.214,
+          "mean": 192.952334125,
+          "sum": 1543.618673,
+          "top1Share": 0.23141337057406794
+        },
+        "ageAtObservationDays": {
+          "totalN": 10,
+          "validN": 10,
+          "missingN": 0,
+          "min": 17.35002103009259,
+          "q1": 25.835900630787037,
+          "median": 33.65365505787037,
+          "q3": 40.106685992476855,
+          "iqr": 14.270785361689818,
+          "max": 55.13146849537037,
+          "mean": 33.70910376851852,
+          "sum": 337.09103768518514,
+          "top1Share": 0.16355068017814983
+        }
+      },
+      "withoutLargestLikeObject": {
+        "likes": {
+          "totalN": 9,
+          "validN": 9,
+          "missingN": 0,
+          "min": 272,
+          "q1": 925,
+          "median": 1858,
+          "q3": 6146,
+          "iqr": 5221,
+          "max": 42000,
+          "mean": 7162.333333333333,
+          "sum": 64461,
+          "top1Share": 0.6515567552473589
+        },
+        "comments": {
+          "totalN": 9,
+          "validN": 9,
+          "missingN": 0,
+          "min": 19,
+          "q1": 38,
+          "median": 49,
+          "q3": 201,
+          "iqr": 163,
+          "max": 600,
+          "mean": 148.11111111111111,
+          "sum": 1333,
+          "top1Share": 0.450112528132033
+        },
+        "favorites": {
+          "totalN": 9,
+          "validN": 9,
+          "missingN": 0,
+          "min": 59,
+          "q1": 379,
+          "median": 1716,
+          "q3": 3134,
+          "iqr": 2755,
+          "max": 26000,
+          "mean": 4408.555555555556,
+          "sum": 39677,
+          "top1Share": 0.6552914786904251
+        },
+        "shares": {
+          "totalN": 9,
+          "validN": 9,
+          "missingN": 0,
+          "min": 101,
+          "q1": 134,
+          "median": 267,
+          "q3": 955,
+          "iqr": 821,
+          "max": 8005,
+          "mean": 1279.5555555555557,
+          "sum": 11516,
+          "top1Share": 0.6951198332754429
+        },
+        "durationSeconds": {
+          "totalN": 9,
+          "validN": 7,
+          "missingN": 2,
+          "min": 30.057007,
+          "q1": 58.663666500000005,
+          "median": 324.08,
+          "q3": 342.4035,
+          "iqr": 283.73983350000003,
+          "max": 357.214,
+          "mean": 216.21219142857143,
+          "sum": 1513.48534,
+          "top1Share": 0.2360207862997867
+        },
+        "ageAtObservationDays": {
+          "totalN": 9,
+          "validN": 9,
+          "missingN": 0,
+          "min": 17.35002103009259,
+          "q1": 24.40499284722222,
+          "median": 31.067534189814815,
+          "q3": 37.38115001157407,
+          "iqr": 12.97615716435185,
+          "max": 55.13146849537037,
+          "mean": 32.76066216949588,
+          "sum": 294.84595952546294,
+          "top1Share": 0.18698397150871998
+        }
+      },
+      "formats": [
+        {
+          "format": "教程线索",
+          "n": 6,
+          "metrics": {
+            "likes": {
+              "totalN": 6,
+              "validN": 6,
+              "missingN": 0,
+              "min": 1457,
+              "q1": 2558.25,
+              "median": 5402.5,
+              "q3": 6501.5,
+              "iqr": 3943.25,
+              "max": 42000,
+              "mean": 10456.666666666666,
+              "sum": 62740,
+              "top1Share": 0.66942939113803
+            },
+            "comments": {
+              "totalN": 6,
+              "validN": 6,
+              "missingN": 0,
+              "min": 28,
+              "q1": 67.75,
+              "median": 168.5,
+              "q3": 213,
+              "iqr": 145.25,
+              "max": 600,
+              "mean": 204.5,
+              "sum": 1227,
+              "top1Share": 0.4889975550122249
+            },
+            "favorites": {
+              "totalN": 6,
+              "validN": 6,
+              "missingN": 0,
+              "min": 1276,
+              "q1": 1997,
+              "median": 2987,
+              "q3": 3860.75,
+              "iqr": 1863.75,
+              "max": 26000,
+              "mean": 6511.5,
+              "sum": 39069,
+              "top1Share": 0.6654892625867056
+            },
+            "shares": {
+              "totalN": 6,
+              "validN": 6,
+              "missingN": 0,
+              "min": 208,
+              "q1": 350.25,
+              "median": 777.5,
+              "q3": 1081,
+              "iqr": 730.75,
+              "max": 8005,
+              "mean": 1859.6666666666667,
+              "sum": 11158,
+              "top1Share": 0.717422477146442
+            },
+            "durationSeconds": {
+              "totalN": 6,
+              "validN": 4,
+              "missingN": 2,
+              "min": 324.08,
+              "q1": 335.9705,
+              "median": 342.4035,
+              "q3": 347.95825,
+              "iqr": 11.987750000000005,
+              "max": 357.214,
+              "mean": 341.52524999999997,
+              "sum": 1366.1009999999999,
+              "top1Share": 0.2614843265615061
+            },
+            "ageAtObservationDays": {
+              "totalN": 6,
+              "validN": 6,
+              "missingN": 0,
+              "min": 17.35002103009259,
+              "q1": 22.696644505208333,
+              "median": 27.73626351851852,
+              "q3": 35.802746056134254,
+              "iqr": 13.10610155092592,
+              "max": 41.01519798611111,
+              "mean": 28.891015187114196,
+              "sum": 173.34609112268518,
+              "top1Share": 0.23660872720275375
+            }
+          },
+          "sourceIds": [
+            "D-035",
+            "D-036",
+            "D-041",
+            "D-042",
+            "D-043",
+            "D-045"
+          ]
+        },
+        {
+          "format": "成品/测试线索",
+          "n": 3,
+          "metrics": {
+            "likes": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 272,
+              "q1": 398,
+              "median": 524,
+              "q3": 150262,
+              "iqr": 149864,
+              "max": 300000,
+              "mean": 100265.33333333333,
+              "sum": 300796,
+              "top1Share": 0.997353688213939
+            },
+            "comments": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 38,
+              "q1": 43.5,
+              "median": 49,
+              "q3": 4055,
+              "iqr": 4011.5,
+              "max": 8061,
+              "mean": 2716,
+              "sum": 8148,
+              "top1Share": 0.9893225331369662
+            },
+            "favorites": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 59,
+              "q1": 114.5,
+              "median": 170,
+              "q3": 8585,
+              "iqr": 8470.5,
+              "max": 17000,
+              "mean": 5743,
+              "sum": 17229,
+              "top1Share": 0.9867084566718904
+            },
+            "shares": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 123,
+              "q1": 128.5,
+              "median": 134,
+              "q3": 30567,
+              "iqr": 30438.5,
+              "max": 61000,
+              "mean": 20419,
+              "sum": 61257,
+              "top1Share": 0.9958045611113832
+            },
+            "durationSeconds": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 30.057007,
+              "q1": 30.09517,
+              "median": 30.133333,
+              "q3": 53.913666500000005,
+              "iqr": 23.818496500000006,
+              "max": 77.694,
+              "mean": 45.96144666666667,
+              "sum": 137.88434,
+              "top1Share": 0.5634722550798734
+            },
+            "ageAtObservationDays": {
+              "totalN": 3,
+              "validN": 3,
+              "missingN": 0,
+              "min": 30.128623981481482,
+              "q1": 33.184199953703704,
+              "median": 36.239775925925926,
+              "q3": 39.242427042824076,
+              "iqr": 6.058227089120372,
+              "max": 42.24507815972222,
+              "mean": 36.20449268904321,
+              "sum": 108.61347806712962,
+              "top1Share": 0.3889487650290716
+            }
+          },
+          "sourceIds": [
+            "D-037",
+            "D-044",
+            "D-046"
+          ]
+        },
+        {
+          "format": "工具/流程介绍线索",
+          "n": 1,
+          "metrics": {
+            "likes": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 925,
+              "q1": 925,
+              "median": 925,
+              "q3": 925,
+              "iqr": 0,
+              "max": 925,
+              "mean": 925,
+              "sum": 925,
+              "top1Share": 1
+            },
+            "comments": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 19,
+              "q1": 19,
+              "median": 19,
+              "q3": 19,
+              "iqr": 0,
+              "max": 19,
+              "mean": 19,
+              "sum": 19,
+              "top1Share": 1
+            },
+            "favorites": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 379,
+              "q1": 379,
+              "median": 379,
+              "q3": 379,
+              "iqr": 0,
+              "max": 379,
+              "mean": 379,
+              "sum": 379,
+              "top1Share": 1
+            },
+            "shares": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 101,
+              "q1": 101,
+              "median": 101,
+              "q3": 101,
+              "iqr": 0,
+              "max": 101,
+              "mean": 101,
+              "sum": 101,
+              "top1Share": 1
+            },
+            "durationSeconds": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 39.633333,
+              "q1": 39.633333,
+              "median": 39.633333,
+              "q3": 39.633333,
+              "iqr": 0,
+              "max": 39.633333,
+              "mean": 39.633333,
+              "sum": 39.633333,
+              "top1Share": 1
+            },
+            "ageAtObservationDays": {
+              "totalN": 1,
+              "validN": 1,
+              "missingN": 0,
+              "min": 55.13146849537037,
+              "q1": 55.13146849537037,
+              "median": 55.13146849537037,
+              "q3": 55.13146849537037,
+              "iqr": 0,
+              "max": 55.13146849537037,
+              "mean": 55.13146849537037,
+              "sum": 55.13146849537037,
+              "top1Share": 1
+            }
+          },
+          "sourceIds": [
+            "D-047"
+          ]
+        }
+      ],
+      "inWindowSampleIds": [
+        "D-035",
+        "D-036",
+        "D-037",
+        "D-041",
+        "D-042",
+        "D-043",
+        "D-044",
+        "D-045",
+        "D-046",
+        "D-047"
+      ],
+      "boundarySamples": [
+        {
+          "id": "D-038",
+          "titleExcerpt": "最全最细AI视频白模教程！ GPT-6 Astra调用Blender建白模，结合Seedance2.5精准控制复杂运镜和动作，避免反复抽卡！\n#ai教程 #bl",
+          "publishedAt": "2026-09-11 18:30",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-039",
+          "titleExcerpt": "AI演出了独属中式美学的留白和悲凉\nAI视频生成最佳组合，GPT 6 Astra加Blender白膜控构图、运镜\n提示词控表演、环境、人物状态\n#aigc #a",
+          "publishedAt": "2026-09-09 17:40",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-040",
+          "titleExcerpt": "AI视频正式迈向工业化电影行业！\n用GPT 6 Astra生成白模视频加Seedance2.5 AI生成，精准控制复杂运镜和动作\n#gpt6 #blender ",
+          "publishedAt": "2026-09-07 13:55",
+          "windowStatus": "after-window"
+        },
+        {
+          "id": "D-048",
+          "titleExcerpt": "太牛了这个AI电影平台，开始有“制片人思维”了！它会自动帮你决定：哪些画面该省，哪里该上最强模型，最后一键成片\n四个生成档位，把电影质感和成本一起算明白\n#ai",
+          "publishedAt": "2026-07-03 17:54",
+          "windowStatus": "before-window"
+        }
+      ]
+    }
+  ],
+  "storyVersionAudit": {
+    "windowUploadObjectsN": 21,
+    "sameMinuteBatchTimestamp": "2026-08-26 00:55",
+    "sameMinuteBatchObjectsN": 8,
+    "candidateVersionPairsN": 7,
+    "candidateGroupsIfSevenPairsCollapsedN": 14,
+    "distinctEpisodeLabelGroupsN": 11,
+    "remainingTypes": [
+      {
+        "id": "D-011",
+        "kind": "合集"
+      },
+      {
+        "id": "D-016",
+        "kind": "内容未明"
+      },
+      {
+        "id": "D-034",
+        "kind": "预告"
+      }
+    ],
+    "compilationPublishedAt": "2026-08-24 19:17",
+    "compilationTitle": "《山海》第一季1-8集合集。 五色天光降临全球，万物返祖，人类血脉觉醒。地铁检修工陈望因意外感知地脉，加入山海署，与伙伴对抗异兽、追查灾变真相。随着深入地底，他",
+    "firstStandaloneEpisode8At": "2026-08-26 00:55",
+    "status": "The 8-object batch is not 8 newly independent productions. Seven have earlier candidates; episode 8 is advertised in an earlier 1-8 compilation. Content identity/edits remain unverified.",
+    "versionPairs": [
+      {
+        "series": "山海第一季",
+        "episode": 1,
+        "episodeName": "预兆",
+        "earlyId": "D-033",
+        "laterId": "D-026",
+        "earlyPublishedAt": "2026-07-18 20:00",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 503.267,
+        "laterDurationSeconds": 503.267,
+        "absoluteDurationDifferenceSeconds": 0,
+        "earlyLikes": {
+          "raw": "2.3万",
+          "value": 23000,
+          "kind": "abbreviated-display"
+        },
+        "laterLikes": {
+          "raw": "468",
+          "value": 468,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 49.14529914529915,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 2,
+        "episodeName": "鼠疫",
+        "earlyId": "D-032",
+        "laterId": "D-025",
+        "earlyPublishedAt": "2026-07-21 18:25",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 468.534,
+        "laterDurationSeconds": 468.579,
+        "absoluteDurationDifferenceSeconds": 0.045000000000015916,
+        "earlyLikes": {
+          "raw": "6922",
+          "value": 6922,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "413",
+          "value": 413,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 16.760290556900728,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 3,
+        "episodeName": "山海署",
+        "earlyId": "D-031",
+        "laterId": "D-024",
+        "earlyPublishedAt": "2026-07-28 18:21",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 457.156,
+        "laterDurationSeconds": 457.156,
+        "absoluteDurationDifferenceSeconds": 0,
+        "earlyLikes": {
+          "raw": "3392",
+          "value": 3392,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "308",
+          "value": 308,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 11.012987012987013,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 4,
+        "episodeName": "饥线",
+        "earlyId": "D-030",
+        "laterId": "D-023",
+        "earlyPublishedAt": "2026-08-03 18:44",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 390.267,
+        "laterDurationSeconds": 390.304,
+        "absoluteDurationDifferenceSeconds": 0.03699999999997772,
+        "earlyLikes": {
+          "raw": "5449",
+          "value": 5449,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "437",
+          "value": 437,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 12.469107551487415,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 5,
+        "episodeName": "边界",
+        "earlyId": "D-029",
+        "laterId": "D-022",
+        "earlyPublishedAt": "2026-08-11 18:01",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 622.736,
+        "laterDurationSeconds": 622.736,
+        "absoluteDurationDifferenceSeconds": 0,
+        "earlyLikes": {
+          "raw": "5958",
+          "value": 5958,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "453",
+          "value": 453,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 13.152317880794701,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 6,
+        "episodeName": "地渊",
+        "earlyId": "D-028",
+        "laterId": "D-021",
+        "earlyPublishedAt": "2026-08-14 18:50",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 423.867,
+        "laterDurationSeconds": 423.867,
+        "absoluteDurationDifferenceSeconds": 0,
+        "earlyLikes": {
+          "raw": "5202",
+          "value": 5202,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "411",
+          "value": 411,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 12.656934306569344,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      },
+      {
+        "series": "山海第一季",
+        "episode": 7,
+        "episodeName": "遗土",
+        "earlyId": "D-027",
+        "laterId": "D-020",
+        "earlyPublishedAt": "2026-08-18 18:20",
+        "laterPublishedAt": "2026-08-26 00:55",
+        "earlyDurationSeconds": 416.734,
+        "laterDurationSeconds": 416.734,
+        "absoluteDurationDifferenceSeconds": 0,
+        "earlyLikes": {
+          "raw": "7895",
+          "value": 7895,
+          "kind": "display-integer"
+        },
+        "laterLikes": {
+          "raw": "380",
+          "value": 380,
+          "kind": "display-integer"
+        },
+        "earlyToLaterLikesRatio": 20.776315789473685,
+        "candidateBasis": "same series/episode subtitle; duration difference <=0.05s; different URLs",
+        "status": "candidate-republication-or-version-not-frame-verified"
+      }
+    ]
+  },
+  "tutorialPairs": [
+    {
+      "name": "表演成品与次日教程",
+      "aId": "D-037",
+      "bId": "D-036",
+      "aPublishedAt": "2026-08-01 15:10",
+      "bPublishedAt": "2026-08-02 20:41",
+      "aFormat": "成品/测试线索",
+      "bFormat": "教程线索",
+      "aLikes": {
+        "raw": "30.0万",
+        "value": 300000,
+        "kind": "abbreviated-display"
+      },
+      "bLikes": {
+        "raw": "4.2万",
+        "value": 42000,
+        "kind": "abbreviated-display"
+      },
+      "aDurationSeconds": 30.133333,
+      "bDurationSeconds": null,
+      "aToBLikesRatio": 7.142857142857143,
+      "interpretation": "成品点赞显示值较高；两条并非随机分配或同龄暴露。",
+      "fullWatchVerified": false
+    },
+    {
+      "name": "群像控场教程与次日测试",
+      "aId": "D-045",
+      "bId": "D-044",
+      "aPublishedAt": "2026-08-12 19:26",
+      "bPublishedAt": "2026-08-13 17:58",
+      "aFormat": "教程线索",
+      "bFormat": "成品/测试线索",
+      "aLikes": {
+        "raw": "4659",
+        "value": 4659,
+        "kind": "display-integer"
+      },
+      "bLikes": {
+        "raw": "524",
+        "value": 524,
+        "kind": "display-integer"
+      },
+      "aDurationSeconds": 357.214,
+      "bDurationSeconds": 77.694,
+      "aToBLikesRatio": 8.891221374045802,
+      "interpretation": "教程点赞显示值较高，与上组方向相反。不能一般化为成品优于教程。",
+      "fullWatchVerified": false
+    },
+    {
+      "name": "两条约30秒成品线索",
+      "aId": "D-037",
+      "bId": "D-046",
+      "aPublishedAt": "2026-08-01 15:10",
+      "bPublishedAt": "2026-08-07 15:18",
+      "aFormat": "成品/测试线索",
+      "bFormat": "成品/测试线索",
+      "aLikes": {
+        "raw": "30.0万",
+        "value": 300000,
+        "kind": "abbreviated-display"
+      },
+      "bLikes": {
+        "raw": "272",
+        "value": 272,
+        "kind": "display-integer"
+      },
+      "aDurationSeconds": 30.133333,
+      "bDurationSeconds": 30.057007,
+      "aToBLikesRatio": 1102.9411764705883,
+      "interpretation": "几乎相同长度但累计计数差异很大，时长本身不能解释；标题/表演内容/曝光未知。",
+      "fullWatchVerified": false
+    }
+  ],
+  "commentEvidence": {
+    "sourceFile": "comment-observations.json",
+    "observedOn": "2026-09-12",
+    "method": "已登录抖音详情页默认可见顺序前五条评论。保存匿名归纳和位置，不保存昵称、头像、位置或联系方式；不是五位独立用户的证明，未展开回复。",
+    "independentUsersN": null,
+    "sources": [
+      {
+        "author": "孩子的一棠课",
+        "matchedDetailId": "D-001",
+        "fragmentsN": 5,
+        "comments": [
+          {
+            "position": 1,
+            "paraphrase": "补充一位收养孤儿者的经历。",
+            "kind": "补充材料",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 2,
+            "paraphrase": "推荐讲述相关事件的电影，并表达受到触动。",
+            "kind": "相关内容与情绪反馈",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 3,
+            "paraphrase": "提出实际接济人数高于标题中的三千。",
+            "kind": "数量解释",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 4,
+            "paraphrase": "提出另一组接济人数和领养条件，与上一条的数字不同。",
+            "kind": "数量解释与分歧",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 5,
+            "paraphrase": "质疑古代民歌与近现代事件的关联方式。",
+            "kind": "内容论证质疑",
+            "verifiedHistoricalFact": false
+          }
+        ],
+        "inference": "高互动与情绪共鸣并不消除出处、数字与解释方式的争议。历史准确性须独立核对，不能把评论中的数字改写成事实。"
+      },
+      {
+        "author": "foyege",
+        "matchedDetailId": "D-045",
+        "fragmentsN": 5,
+        "comments": [
+          {
+            "position": 1,
+            "paraphrase": "提出结合三维制作的替代方法；部分正文为链接，未补写链接内容。",
+            "kind": "替代方案"
+          },
+          {
+            "position": 2,
+            "paraphrase": "新手询问 ComfyUI 是否可行以及学习起点。",
+            "kind": "入门路径"
+          },
+          {
+            "position": 3,
+            "paraphrase": "询问使用的模型及真人限制如何处理。",
+            "kind": "条件与限制"
+          },
+          {
+            "position": 4,
+            "paraphrase": "询问所用工具收费是否昂贵。",
+            "kind": "成本"
+          },
+          {
+            "position": 5,
+            "paraphrase": "称方法在八个人或频繁切镜时不灵，认为示例选择了六个人和一镜到底。",
+            "kind": "适用范围质疑",
+            "failureIndependentlyReproduced": false
+          }
+        ],
+        "inference": "评论提供了可以继续核对的适用条件、成本和失败线索。最后一条是评论者的说法，未独立复现，不能据此认定工具缺陷或发生率。"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "D-001",
+      "sourceIndex": 0,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7678155357679602995",
+      "titleExcerpt": "《敕勒歌》",
+      "publishedAt": "2026-08-28 08:00",
+      "observedAt": "2026-09-12T12:59:24.315Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 15.541253645833333,
+      "durationSeconds": 443.501,
+      "likes": {
+        "raw": "117.2万",
+        "value": 1172000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "3.0万",
+        "value": 30000,
+        "kind": "abbreviated-display"
+      },
+      "favorites": {
+        "raw": "12.1万",
+        "value": 121000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "30.6万",
+        "value": 306000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-002",
+      "sourceIndex": 1,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7655461394413931811",
+      "titleExcerpt": "《七律·长征》",
+      "publishedAt": "2026-06-26 18:00",
+      "observedAt": "2026-09-12T12:59:26.278Z",
+      "windowStatus": "before-window",
+      "week": null,
+      "ageAtObservationDays": 78.12460969907407,
+      "durationSeconds": 659.517,
+      "likes": {
+        "raw": "32.1万",
+        "value": 321000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "9075",
+        "value": 9075,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "7.6万",
+        "value": 76000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "8.1万",
+        "value": 81000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-003",
+      "sourceIndex": 2,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7676126255661452578",
+      "titleExcerpt": "杜甫草堂的秘密",
+      "publishedAt": "2026-08-21 09:00",
+      "observedAt": "2026-09-12T12:59:28.025Z",
+      "windowStatus": "in-window",
+      "week": 6,
+      "ageAtObservationDays": 22.49962991898148,
+      "durationSeconds": 599.818,
+      "likes": {
+        "raw": "25.0万",
+        "value": 250000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "5683",
+        "value": 5683,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "4.7万",
+        "value": 47000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "2.4万",
+        "value": 24000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-004",
+      "sourceIndex": 3,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7682369840186772777",
+      "titleExcerpt": "《愚公移山》",
+      "publishedAt": "2026-09-11 18:00",
+      "observedAt": "2026-09-12T12:59:29.998Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 1.1246527546296297,
+      "durationSeconds": 379,
+      "likes": {
+        "raw": "2.4万",
+        "value": 24000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "379",
+        "value": 379,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "3852",
+        "value": 3852,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "3640",
+        "value": 3640,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-005",
+      "sourceIndex": 4,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7681245516193189146",
+      "titleExcerpt": "《西游记》",
+      "publishedAt": "2026-09-03 17:55",
+      "observedAt": "2026-09-12T12:59:31.812Z",
+      "windowStatus": "in-window",
+      "week": 8,
+      "ageAtObservationDays": 9.128145972222223,
+      "durationSeconds": 475.777,
+      "likes": {
+        "raw": "5.4万",
+        "value": 54000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "838",
+        "value": 838,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1.4万",
+        "value": 14000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "1.1万",
+        "value": 11000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-006",
+      "sourceIndex": 5,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7669055515074252058",
+      "titleExcerpt": "孩子，你的朋友不是“人”",
+      "publishedAt": "2026-08-02 07:00",
+      "observedAt": "2026-09-12T12:59:39.836Z",
+      "windowStatus": "in-window",
+      "week": 3,
+      "ageAtObservationDays": 41.5830999537037,
+      "durationSeconds": 378,
+      "likes": {
+        "raw": "68.7万",
+        "value": 687000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "8563",
+        "value": 8563,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "32.1万",
+        "value": 321000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "28.1万",
+        "value": 281000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-007",
+      "sourceIndex": 6,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7668119425446350122",
+      "titleExcerpt": "《诫子书》",
+      "publishedAt": "2026-07-30 08:59",
+      "observedAt": "2026-09-12T12:59:41.643Z",
+      "windowStatus": "in-window",
+      "week": 3,
+      "ageAtObservationDays": 44.500481979166665,
+      "durationSeconds": 433.076,
+      "likes": {
+        "raw": "5.7万",
+        "value": 57000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "1072",
+        "value": 1072,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "3.3万",
+        "value": 33000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "1.7万",
+        "value": 17000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-008",
+      "sourceIndex": 7,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7665171458712292634",
+      "titleExcerpt": "谁是最可爱的人",
+      "publishedAt": "2026-07-22 10:20",
+      "observedAt": "2026-09-12T12:59:43.860Z",
+      "windowStatus": "in-window",
+      "week": 2,
+      "ageAtObservationDays": 52.44425763888889,
+      "durationSeconds": 481.1,
+      "likes": {
+        "raw": "16.7万",
+        "value": 167000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "9691",
+        "value": 9691,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1.9万",
+        "value": 19000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "1.3万",
+        "value": 13000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-009",
+      "sourceIndex": 8,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7661991631624719667",
+      "titleExcerpt": "《火烧云》",
+      "publishedAt": "2026-07-17 10:00",
+      "observedAt": "2026-09-12T12:59:45.916Z",
+      "windowStatus": "in-window",
+      "week": 1,
+      "ageAtObservationDays": 57.458170324074075,
+      "durationSeconds": 354.081,
+      "likes": {
+        "raw": "4.3万",
+        "value": 43000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "918",
+        "value": 918,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "2.3万",
+        "value": 23000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "1.5万",
+        "value": 15000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-010",
+      "sourceIndex": 9,
+      "author": "孩子的一棠课",
+      "url": "https://www.douyin.com/video/7660450439695011108",
+      "titleExcerpt": "《古人谈读书》",
+      "publishedAt": "2026-07-09 17:00",
+      "observedAt": "2026-09-12T12:59:48.029Z",
+      "windowStatus": "before-window",
+      "week": null,
+      "ageAtObservationDays": 65.16652811342593,
+      "durationSeconds": 418.006,
+      "likes": {
+        "raw": "23.3万",
+        "value": 233000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "4734",
+        "value": 4734,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "14.1万",
+        "value": 141000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "11.2万",
+        "value": 112000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教育/亲子叙事线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-011",
+      "sourceIndex": 10,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7677555740273380635",
+      "titleExcerpt": "《山海》第一季1-8集合集。 五色天光降临全球，万物返祖，人类血脉觉醒。地铁检修工陈望因意外感知地脉，加入山海署，与伙伴对抗异兽、追查灾变真相。随着深入地底，他",
+      "publishedAt": "2026-08-24 19:17",
+      "observedAt": "2026-09-12T13:00:54.322Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 19.07215650462963,
+      "durationSeconds": 4154.778,
+      "likes": {
+        "raw": "2.7万",
+        "value": 27000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "898",
+        "value": 898,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1.3万",
+        "value": 13000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "1.1万",
+        "value": 11000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "合集",
+        "series": "山海第一季",
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-012",
+      "sourceIndex": 11,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7684197003668049193",
+      "titleExcerpt": "第4集   原创AIGC故事连载《山海第二季》第四集：引兽香 #创作阶梯计划 #AI创作浪潮计划 #即梦AI创作者成长计划 #山海 #抖音创作者大会",
+      "publishedAt": "2026-09-11 18:50",
+      "observedAt": "2026-09-12T13:00:56.229Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 1.090928576388889,
+      "durationSeconds": 460.1,
+      "likes": {
+        "raw": "1236",
+        "value": 1236,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "46",
+        "value": 46,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "234",
+        "value": 234,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "33",
+        "value": 33,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第二季",
+        "episode": 4,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-013",
+      "sourceIndex": 12,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7683866472182992171",
+      "titleExcerpt": "第2集 原创AIGC故事连载《缺席证明》第二集：残留。 #抖音创作者大会 #AI创作浪潮计划 #山海 #即梦AI创作者成长计划 #创作阶梯计划",
+      "publishedAt": "2026-09-10 19:26",
+      "observedAt": "2026-09-12T13:00:58.257Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 2.065952048611111,
+      "durationSeconds": 592.76,
+      "likes": {
+        "raw": "124",
+        "value": 124,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "22",
+        "value": 22,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "21",
+        "value": 21,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "7",
+        "value": 7,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "缺席证明",
+        "episode": 2,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-014",
+      "sourceIndex": 13,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7683103445326269747",
+      "titleExcerpt": "第3集   原创AIGC故事连载《山海第二季》第三集：兽径。 #抖音创作者大会  #AI创作浪潮计划 #山海 #即梦AI创作者成长计划 #创作阶梯计划",
+      "publishedAt": "2026-09-08 18:05",
+      "observedAt": "2026-09-12T13:00:59.948Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 4.122221620370371,
+      "durationSeconds": 611.172,
+      "likes": {
+        "raw": "2301",
+        "value": 2301,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "69",
+        "value": 69,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "424",
+        "value": 424,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "93",
+        "value": 93,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第二季",
+        "episode": 3,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-015",
+      "sourceIndex": 14,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7681629455458061577",
+      "titleExcerpt": "第2集   原创AIGC故事连载《山海第二季》第二集：灵炁。 #创作阶梯计划 #瓦卡奖VACAT征集大赛 #AI创作浪潮计划 #抖音精选 #山海",
+      "publishedAt": "2026-09-04 18:45",
+      "observedAt": "2026-09-12T13:01:01.777Z",
+      "windowStatus": "in-window",
+      "week": 8,
+      "ageAtObservationDays": 8.094465011574075,
+      "durationSeconds": 663.734,
+      "likes": {
+        "raw": "2150",
+        "value": 2150,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "107",
+        "value": 107,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "362",
+        "value": 362,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "75",
+        "value": 75,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第二季",
+        "episode": 2,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-016",
+      "sourceIndex": 15,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7681623125796080922",
+      "titleExcerpt": "1 ",
+      "publishedAt": "2026-09-04 18:21",
+      "observedAt": "2026-09-12T13:01:03.551Z",
+      "windowStatus": "in-window",
+      "week": 8,
+      "ageAtObservationDays": 8.111152210648148,
+      "durationSeconds": 30.209002,
+      "likes": {
+        "raw": "246",
+        "value": 246,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "12",
+        "value": 12,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "18",
+        "value": 18,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "3",
+        "value": 3,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "内容未明",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-017",
+      "sourceIndex": 16,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7680534758161386802",
+      "titleExcerpt": "第1集   原创AIGC故事连载《山海第二季》第一集：青榜。 陈望、罗骁、唐苒继续深入地下世界，从青丘、大荒到昆仑、天柱，逐步接触更庞大的上古文明遗迹。与此同时",
+      "publishedAt": "2026-09-01 19:57",
+      "observedAt": "2026-09-12T13:01:05.357Z",
+      "windowStatus": "in-window",
+      "week": 8,
+      "ageAtObservationDays": 11.044506446759259,
+      "durationSeconds": 551.961,
+      "likes": {
+        "raw": "4880",
+        "value": 4880,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "199",
+        "value": 199,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1095",
+        "value": 1095,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "323",
+        "value": 323,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第二季",
+        "episode": 1,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-018",
+      "sourceIndex": 17,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7679406667993222452",
+      "titleExcerpt": "第1集 原创AIGC故事连载《缺席证明》第一集：她是谁？ 所有人的记忆里，没有她。反复坠入的噩梦，在虚实交界的灰域看见的一道身影。\n隔着现实与遗忘的边界，他伸手",
+      "publishedAt": "2026-08-29 19:00",
+      "observedAt": "2026-09-12T13:01:07.139Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 14.084110405092593,
+      "durationSeconds": 672.59,
+      "likes": {
+        "raw": "290",
+        "value": 290,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "67",
+        "value": 67,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "42",
+        "value": 42,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "19",
+        "value": 19,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "缺席证明",
+        "episode": 1,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-019",
+      "sourceIndex": 18,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678014012147207466",
+      "titleExcerpt": "《山海》第一季 第8集：真相。 #山海  #抖音创作者大会   #AI创作浪潮计划  #未来导演扶持计划  #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:13.592Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.837657314814816,
+      "durationSeconds": 825.33,
+      "likes": {
+        "raw": "1888",
+        "value": 1888,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "101",
+        "value": 101,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "513",
+        "value": 513,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "189",
+        "value": 189,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 8,
+        "episodeName": "真相",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-020",
+      "sourceIndex": 19,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013971638652196",
+      "titleExcerpt": "《山海》第一季 第7集：遗土。 #山海  #抖音创作者大会   #AI创作浪潮计划  #未来导演扶持计划  #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:15.461Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.837678946759258,
+      "durationSeconds": 416.734,
+      "likes": {
+        "raw": "380",
+        "value": 380,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "25",
+        "value": 25,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "50",
+        "value": 50,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "21",
+        "value": 21,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 7,
+        "episodeName": "遗土",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-021",
+      "sourceIndex": 20,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013951032020265",
+      "titleExcerpt": "《山海》第一季 第6集：地渊。 #山海  #抖音创作者大会   #AI创作浪潮计划  #未来导演扶持计划  #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:17.304Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.837700277777778,
+      "durationSeconds": 423.867,
+      "likes": {
+        "raw": "411",
+        "value": 411,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "15",
+        "value": 15,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "109",
+        "value": 109,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "15",
+        "value": 15,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 6,
+        "episodeName": "地渊",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-022",
+      "sourceIndex": 21,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013946992790822",
+      "titleExcerpt": "《山海》第一季 第5集：边界。 #山海  #抖音创作者大会  #AI创作浪潮计划  #未来导演扶持计划  #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:19.103Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.83772109953704,
+      "durationSeconds": 622.736,
+      "likes": {
+        "raw": "453",
+        "value": 453,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "10",
+        "value": 10,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "106",
+        "value": 106,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "26",
+        "value": 26,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 5,
+        "episodeName": "边界",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-023",
+      "sourceIndex": 22,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013916504427826",
+      "titleExcerpt": "《山海》第一季 第4集：饥线。 #山海  #抖音创作者大会   #AI创作浪潮计划  #未来导演扶持计划  #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:20.899Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.837741886574076,
+      "durationSeconds": 390.304,
+      "likes": {
+        "raw": "437",
+        "value": 437,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "10",
+        "value": 10,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "123",
+        "value": 123,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "19",
+        "value": 19,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 4,
+        "episodeName": "饥线",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-024",
+      "sourceIndex": 23,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013883499515174",
+      "titleExcerpt": "《山海》第一季 第3集：山海署。 #山海 #抖音创作者大会 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:22.675Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.83776244212963,
+      "durationSeconds": 457.156,
+      "likes": {
+        "raw": "308",
+        "value": 308,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "10",
+        "value": 10,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "62",
+        "value": 62,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "12",
+        "value": 12,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 3,
+        "episodeName": "山海署",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-025",
+      "sourceIndex": 24,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013862859377971",
+      "titleExcerpt": "《山海》第一季 第2集：鼠疫。 #山海 #抖音创作者大会 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:24.299Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.837781238425926,
+      "durationSeconds": 468.579,
+      "likes": {
+        "raw": "413",
+        "value": 413,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "15",
+        "value": 15,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "91",
+        "value": 91,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "23",
+        "value": 23,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 2,
+        "episodeName": "鼠疫",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-026",
+      "sourceIndex": 25,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7678013840239480091",
+      "titleExcerpt": "《山海》第一季第1集：预兆。 #山海  #抖音创作者大会 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-26 00:55",
+      "observedAt": "2026-09-12T13:01:26.246Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.83780377314815,
+      "durationSeconds": 503.267,
+      "likes": {
+        "raw": "468",
+        "value": 468,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "20",
+        "value": 20,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "194",
+        "value": 194,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "89",
+        "value": 89,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 1,
+        "episodeName": "预兆",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-027",
+      "sourceIndex": 26,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7675314431055777074",
+      "titleExcerpt": "第7集   原创AIGC故事连载《山海》第七集：遗土。 #抖音AI创作大赛 #抖音创作者大会  #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-18 18:20",
+      "observedAt": "2026-09-12T13:01:33.678Z",
+      "windowStatus": "in-window",
+      "week": 6,
+      "ageAtObservationDays": 25.112195347222222,
+      "durationSeconds": 416.734,
+      "likes": {
+        "raw": "7895",
+        "value": 7895,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "684",
+        "value": 684,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1508",
+        "value": 1508,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "626",
+        "value": 626,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 7,
+        "episodeName": "遗土",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-028",
+      "sourceIndex": 27,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7673756944410217763",
+      "titleExcerpt": "第6集   原创AIGC故事连载《山海》第六集：地渊。 #抖音AI创作大赛  #AI创作浪潮计划 #未来导演扶持计划 #末日生存 #抖音创作者大会",
+      "publishedAt": "2026-08-14 18:50",
+      "observedAt": "2026-09-12T13:01:35.642Z",
+      "windowStatus": "in-window",
+      "week": 5,
+      "ageAtObservationDays": 29.09138474537037,
+      "durationSeconds": 423.867,
+      "likes": {
+        "raw": "5202",
+        "value": 5202,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "319",
+        "value": 319,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "876",
+        "value": 876,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "358",
+        "value": 358,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 6,
+        "episodeName": "地渊",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-029",
+      "sourceIndex": 28,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7672712056163912994",
+      "titleExcerpt": "第5集   原创AIGC故事连载《山海》第五集：边界。 #抖音AI创作大赛 #开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-11 18:01",
+      "observedAt": "2026-09-12T13:01:37.471Z",
+      "windowStatus": "in-window",
+      "week": 5,
+      "ageAtObservationDays": 32.12543369212963,
+      "durationSeconds": 622.736,
+      "likes": {
+        "raw": "5958",
+        "value": 5958,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "291",
+        "value": 291,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1086",
+        "value": 1086,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "397",
+        "value": 397,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 5,
+        "episodeName": "边界",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-030",
+      "sourceIndex": 29,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7669754322279845172",
+      "titleExcerpt": "第4集   原创AIGC故事连载《山海》第四集：饥线。 #抖音AI创作大赛 赛#开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-08-03 18:44",
+      "observedAt": "2026-09-12T13:01:39.409Z",
+      "windowStatus": "in-window",
+      "week": 4,
+      "ageAtObservationDays": 40.095595011574076,
+      "durationSeconds": 390.267,
+      "likes": {
+        "raw": "5449",
+        "value": 5449,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "374",
+        "value": 374,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1072",
+        "value": 1072,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "302",
+        "value": 302,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 4,
+        "episodeName": "饥线",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-031",
+      "sourceIndex": 30,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7667521960607272232",
+      "titleExcerpt": "第3集   原创AIGC故事连载《山海》第三集：山海署。 #抖音AI创作大赛 #开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-07-28 18:21",
+      "observedAt": "2026-09-12T13:01:41.229Z",
+      "windowStatus": "in-window",
+      "week": 3,
+      "ageAtObservationDays": 46.11158829861111,
+      "durationSeconds": 457.156,
+      "likes": {
+        "raw": "3392",
+        "value": 3392,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "251",
+        "value": 251,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "512",
+        "value": 512,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "208",
+        "value": 208,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 3,
+        "episodeName": "山海署",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-032",
+      "sourceIndex": 31,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7664894016734989578",
+      "titleExcerpt": "第2集  原创AIGC故事连载《山海》第二集：鼠疫。 #抖音AI创作大赛 #开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日",
+      "publishedAt": "2026-07-21 18:25",
+      "observedAt": "2026-09-12T13:01:42.978Z",
+      "windowStatus": "in-window",
+      "week": 2,
+      "ageAtObservationDays": 53.10883076388889,
+      "durationSeconds": 468.534,
+      "likes": {
+        "raw": "6922",
+        "value": 6922,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "619",
+        "value": 619,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1437",
+        "value": 1437,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "659",
+        "value": 659,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 2,
+        "episodeName": "鼠疫",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-033",
+      "sourceIndex": 32,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "titleExcerpt": "第1集   原创AIGC故事连载《山海》第一集：预兆。 #抖音AI创作大赛 #开放赛道  #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "publishedAt": "2026-07-18 20:00",
+      "observedAt": "2026-09-12T13:01:44.902Z",
+      "windowStatus": "in-window",
+      "week": 1,
+      "ageAtObservationDays": 56.04288081018519,
+      "durationSeconds": 503.267,
+      "likes": {
+        "raw": "2.3万",
+        "value": 23000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "743",
+        "value": 743,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "8308",
+        "value": 8308,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "4017",
+        "value": 4017,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "分集",
+        "series": "山海第一季",
+        "episode": 1,
+        "episodeName": "预兆",
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-034",
+      "sourceIndex": 33,
+      "author": "编导_拾光",
+      "url": "https://www.douyin.com/video/7663073604468313382",
+      "titleExcerpt": "《山海》神明归来，正片周六上映 烛龙睁眼，不周迁徙。\n《山海经》从传说，踏上归乡之路。\n旧时代落幕，\n人类，要学着和神明共存。\n正片本周六上映。\n东方神明末日宇",
+      "publishedAt": "2026-07-16 18:39",
+      "observedAt": "2026-09-12T13:01:46.716Z",
+      "windowStatus": "in-window",
+      "week": 1,
+      "ageAtObservationDays": 58.09915180555556,
+      "durationSeconds": 87.434,
+      "likes": {
+        "raw": "1755",
+        "value": 1755,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "68",
+        "value": 68,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "548",
+        "value": 548,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "374",
+        "value": 374,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "预告",
+        "series": "山海第一季",
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-035",
+      "sourceIndex": 34,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7670762031490693818",
+      "titleExcerpt": "手搓400万播放的AI影后级短片后续：让AI有“灵魂”的提示词万能公式，我手写了5000字提示词，让AI演员的表演第一次有了“灵魂” \n文科生引来史诗级增强，A",
+      "publishedAt": "2026-08-06 11:54",
+      "observedAt": "2026-09-12T13:02:51.361Z",
+      "windowStatus": "in-window",
+      "week": 4,
+      "ageAtObservationDays": 37.38115001157407,
+      "durationSeconds": 339.934,
+      "likes": {
+        "raw": "6620",
+        "value": 6620,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "217",
+        "value": 217,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "2840",
+        "value": 2840,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "1123",
+        "value": 1123,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-036",
+      "sourceIndex": 35,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7669413558211778661",
+      "titleExcerpt": "400万播放的AI爆款演技短片：我把唐国强老师的表演法则，写进了AI提示词\nAI表演提示词终极教程来了！没有垫图，只有一段提示词\n—由小云雀Seedance2.",
+      "publishedAt": "2026-08-02 20:41",
+      "observedAt": "2026-09-12T13:02:53.106Z",
+      "windowStatus": "in-window",
+      "week": 3,
+      "ageAtObservationDays": 41.01519798611111,
+      "durationSeconds": null,
+      "likes": {
+        "raw": "4.2万",
+        "value": 42000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "600",
+        "value": 600,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "2.6万",
+        "value": 26000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "8005",
+        "value": 8005,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-037",
+      "sourceIndex": 36,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7668957069785803426",
+      "titleExcerpt": "唐国强老师说的没错，AI时代的确不需要真人演员了。视频由小云雀seedance2.5*无限画布制作，台词演技都直接上一个层级了\n #ai电影  #ai演员 #小",
+      "publishedAt": "2026-08-01 15:10",
+      "observedAt": "2026-09-12T13:02:54.753Z",
+      "windowStatus": "in-window",
+      "week": 3,
+      "ageAtObservationDays": 42.24507815972222,
+      "durationSeconds": 30.133333,
+      "likes": {
+        "raw": "30.0万",
+        "value": 300000,
+        "kind": "abbreviated-display"
+      },
+      "comments": {
+        "raw": "8061",
+        "value": 8061,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1.7万",
+        "value": 17000,
+        "kind": "abbreviated-display"
+      },
+      "shares": {
+        "raw": "6.1万",
+        "value": 61000,
+        "kind": "abbreviated-display"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": true,
+      "classification": {
+        "kind": "成品/测试线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-038",
+      "sourceIndex": 37,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7684223214016896613",
+      "titleExcerpt": "最全最细AI视频白模教程！ GPT-6 Astra调用Blender建白模，结合Seedance2.5精准控制复杂运镜和动作，避免反复抽卡！\n#ai教程 #bl",
+      "publishedAt": "2026-09-11 18:30",
+      "observedAt": "2026-09-12T13:02:56.622Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 1.1062109027777778,
+      "durationSeconds": 637.319,
+      "likes": {
+        "raw": "2609",
+        "value": 2609,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "73",
+        "value": 73,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "2389",
+        "value": 2389,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "573",
+        "value": 573,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-039",
+      "sourceIndex": 38,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7683468076499136379",
+      "titleExcerpt": "AI演出了独属中式美学的留白和悲凉\nAI视频生成最佳组合，GPT 6 Astra加Blender白膜控构图、运镜\n提示词控表演、环境、人物状态\n#aigc #a",
+      "publishedAt": "2026-09-09 17:40",
+      "observedAt": "2026-09-12T13:02:58.201Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 3.140951400462963,
+      "durationSeconds": null,
+      "likes": {
+        "raw": "445",
+        "value": 445,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "40",
+        "value": 40,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "108",
+        "value": 108,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "69",
+        "value": 69,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "成品/测试线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-040",
+      "sourceIndex": 39,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7682668008729064293",
+      "titleExcerpt": "AI视频正式迈向工业化电影行业！\n用GPT 6 Astra生成白模视频加Seedance2.5 AI生成，精准控制复杂运镜和动作\n#gpt6 #blender ",
+      "publishedAt": "2026-09-07 13:55",
+      "observedAt": "2026-09-12T13:02:59.995Z",
+      "windowStatus": "after-window",
+      "week": null,
+      "ageAtObservationDays": 5.297222164351852,
+      "durationSeconds": 37.269002,
+      "likes": {
+        "raw": "3239",
+        "value": 3239,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "209",
+        "value": 209,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1239",
+        "value": 1239,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "1304",
+        "value": 1304,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "工具/流程介绍线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-041",
+      "sourceIndex": 40,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7678195402789837169",
+      "titleExcerpt": "AI视频人物怎么拥有“活人感”的皮肤？一条视频教会你！从此杜绝AI“伪人”模型脸！\n#ai教程  #ai短剧 #aigc #ai演员 #ai模特",
+      "publishedAt": "2026-08-26 12:39",
+      "observedAt": "2026-09-12T13:03:01.817Z",
+      "windowStatus": "in-window",
+      "week": 7,
+      "ageAtObservationDays": 17.35002103009259,
+      "durationSeconds": 324.08,
+      "likes": {
+        "raw": "1858",
+        "value": 1858,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "45",
+        "value": 45,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1716",
+        "value": 1716,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "267",
+        "value": 267,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-042",
+      "sourceIndex": 41,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7676422641646299557",
+      "titleExcerpt": "一个隐藏于每个爆款AI短剧中的“顶级结构”，手把手教你如何用AI从想法写出爆款短剧！\n#AI编剧 #AI短剧 #剧本创作 #短剧创作 #laper",
+      "publishedAt": "2026-08-21 18:00",
+      "observedAt": "2026-09-12T13:03:09.653Z",
+      "windowStatus": "in-window",
+      "week": 6,
+      "ageAtObservationDays": 22.12719505787037,
+      "durationSeconds": null,
+      "likes": {
+        "raw": "6146",
+        "value": 6146,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "201",
+        "value": 201,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "3134",
+        "value": 3134,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "955",
+        "value": 955,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-043",
+      "sourceIndex": 42,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7675375896727785125",
+      "titleExcerpt": "好莱坞群像控场法！ 一个提示词+俯视图彻底解决AI多人物站位和场景一致性问题！轻松拍好群像戏！\n让你的AI打破“第四面墙”\n#ai电影 #ai教程 #ai短剧 ",
+      "publishedAt": "2026-08-19 11:20",
+      "observedAt": "2026-09-12T13:03:11.382Z",
+      "windowStatus": "in-window",
+      "week": 6,
+      "ageAtObservationDays": 24.40499284722222,
+      "durationSeconds": 344.873,
+      "likes": {
+        "raw": "1457",
+        "value": 1457,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "28",
+        "value": 28,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "1276",
+        "value": 1276,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "208",
+        "value": 208,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-044",
+      "sourceIndex": 43,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7673159888415777978",
+      "titleExcerpt": "我宣布，AI可以正式拍电影了。 好莱坞群像控场法：AI测试短片，这质感、运镜、一致性离电影还远吗？\n#ai电影 #ai短剧 #ai演员 #seedance #a",
+      "publishedAt": "2026-08-13 17:58",
+      "observedAt": "2026-09-12T13:03:13.112Z",
+      "windowStatus": "in-window",
+      "week": 5,
+      "ageAtObservationDays": 30.128623981481482,
+      "durationSeconds": 77.694,
+      "likes": {
+        "raw": "524",
+        "value": 524,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "38",
+        "value": 38,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "170",
+        "value": 170,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "134",
+        "value": 134,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "成品/测试线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-045",
+      "sourceIndex": 44,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "titleExcerpt": "谁说AI拍不好多人群像戏，两张图锁死多人物站位和场景一致性，三锁控场法让你的AI演员“指哪打哪”， \n不用再为同一空间里多角色的AI一镜到底效果提心吊胆、全靠碰",
+      "publishedAt": "2026-08-12 19:26",
+      "observedAt": "2026-09-12T13:03:14.954Z",
+      "windowStatus": "in-window",
+      "week": 5,
+      "ageAtObservationDays": 31.067534189814815,
+      "durationSeconds": 357.214,
+      "likes": {
+        "raw": "4659",
+        "value": 4659,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "136",
+        "value": 136,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "4103",
+        "value": 4103,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "600",
+        "value": 600,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "教程线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-046",
+      "sourceIndex": 45,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7670876701828375675",
+      "titleExcerpt": "真人演员最后一道“护城河”在这一刻也被AI攻破了 \n-视频由Seedance2.5 30秒直出生成\n#ai演员 #ai电影 #aigc #seedance25",
+      "publishedAt": "2026-08-07 15:18",
+      "observedAt": "2026-09-12T13:03:16.640Z",
+      "windowStatus": "in-window",
+      "week": 4,
+      "ageAtObservationDays": 36.239775925925926,
+      "durationSeconds": 30.057007,
+      "likes": {
+        "raw": "272",
+        "value": 272,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "49",
+        "value": 49,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "59",
+        "value": 59,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "123",
+        "value": 123,
+        "kind": "display-integer"
+      },
+      "aiDeclared": true,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "成品/测试线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-047",
+      "sourceIndex": 46,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7664092892722386496",
+      "titleExcerpt": "一个新的内容形态正在出现：AI电影！\n只需要输入一个想法，AI可以自动完成从剧本策划到最终成片的全过程，未来，拍电影可能不再需要几十人的团队。\n一个人，也能拥有",
+      "publishedAt": "2026-07-19 17:54",
+      "observedAt": "2026-09-12T13:03:18.878Z",
+      "windowStatus": "in-window",
+      "week": 1,
+      "ageAtObservationDays": 55.13146849537037,
+      "durationSeconds": 39.633333,
+      "likes": {
+        "raw": "925",
+        "value": 925,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "19",
+        "value": 19,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "379",
+        "value": 379,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "101",
+        "value": 101,
+        "kind": "display-integer"
+      },
+      "aiDeclared": false,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "工具/流程介绍线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    },
+    {
+      "id": "D-048",
+      "sourceIndex": 47,
+      "author": "foyege",
+      "url": "https://www.douyin.com/video/7658195346698703336",
+      "titleExcerpt": "太牛了这个AI电影平台，开始有“制片人思维”了！它会自动帮你决定：哪些画面该省，哪里该上最强模型，最后一键成片\n四个生成档位，把电影质感和成本一起算明白\n#ai",
+      "publishedAt": "2026-07-03 17:54",
+      "observedAt": "2026-09-12T13:03:20.689Z",
+      "windowStatus": "before-window",
+      "week": null,
+      "ageAtObservationDays": 71.13148945601851,
+      "durationSeconds": 28,
+      "likes": {
+        "raw": "908",
+        "value": 908,
+        "kind": "display-integer"
+      },
+      "comments": {
+        "raw": "31",
+        "value": 31,
+        "kind": "display-integer"
+      },
+      "favorites": {
+        "raw": "481",
+        "value": 481,
+        "kind": "display-integer"
+      },
+      "shares": {
+        "raw": "200",
+        "value": 200,
+        "kind": "display-integer"
+      },
+      "aiDeclared": false,
+      "videoWatchedInFull": false,
+      "pinnedAtProfileObservation": false,
+      "classification": {
+        "kind": "工具/流程介绍线索",
+        "series": null,
+        "episode": null,
+        "evidence": "title/description only; not a full-watch or frame-by-frame judgment"
+      }
+    }
+  ]
+}

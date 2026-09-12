@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "1.0",
+  "title": "单作者试采：窗口内作品结构与方法修正",
+  "analyzedAt": "2026-09-12",
+  "authorId": "PILOT-A01",
+  "status": "derived-from-existing-public-snapshots",
+  "sources": [
+    {
+      "file": "pilot-author-details.json",
+      "scope": "10条详情标题、发布日期、时长、指标与读取时间；全部videoWatchedInFull=false"
+    },
+    {
+      "file": "profile-visible-works.json",
+      "scope": "主页标60作品、实际加载54个唯一作品入口；完整固定窗覆盖未确认"
+    }
+  ],
+  "window": {
+    "start": "2026-07-13T00:00:00+08:00",
+    "endExclusive": "2026-09-07T00:00:00+08:00"
+  },
+  "coverage": {
+    "profileDisplayedWorks": 60,
+    "loadedUniqueWorkUrls": 54,
+    "detailRecords": 10,
+    "inWindowDatedRecords": 8,
+    "outOfWindowDatedRecords": 2,
+    "loadedWithoutDetailDate": 44,
+    "displayedMinusLoaded": 6,
+    "allDetailsFoundInLoadedProfile": true,
+    "fixedWindowComplete": false,
+    "completePublishedInventory": null,
+    "windowStatement": "8条是已核日期的窗口内记录，不是作者八周全部作品数",
+    "consumerCommentBodiesRead": 0
+  },
+  "calculations": {
+    "method": "明确publishedAt为Asia/Shanghai；逐条按窗口筛选；数字取详情页，不将主页不同快照替换进同一行；中位数排序后取中间两项平均",
+    "metrics": {
+      "durationSeconds": {
+        "n": 8,
+        "total": 4086.2163330000003,
+        "min": 141.803,
+        "max": 987.497,
+        "median": 440.087
+      },
+      "like": {
+        "n": 8,
+        "total": 15447,
+        "min": 143,
+        "max": 8455,
+        "median": 345
+      },
+      "comment": {
+        "n": 8,
+        "total": 1340,
+        "min": 18,
+        "max": 688,
+        "median": 26
+      },
+      "collect": {
+        "n": 8,
+        "total": 11563,
+        "min": 44,
+        "max": 7503,
+        "median": 206
+      },
+      "share": {
+        "n": 8,
+        "total": 4520,
+        "min": 9,
+        "max": 2600,
+        "median": 60.5
+      }
+    },
+    "ratios": {
+      "sumCollectDivSumLike": 0.7485595908590665,
+      "medianPerWorkCollectDivLike": 0.515647361628324,
+      "sumCommentDivSumLike": 0.08674823590341167,
+      "sumShareDivSumLike": 0.292613452450314,
+      "top2LikeShare": 0.7921926587686929,
+      "top2CollectShare": 0.8055003026896134,
+      "excludeTopWorkMedianLikes": 288,
+      "excludeTopWorkSumCollectDivSumLike": 0.5806636155606407
+    },
+    "definitions": {
+      "durationSeconds": "元数据时长，不是实际观看时间",
+      "collectDivLike": "收藏累计显示数÷点赞累计显示数；不是以观看者为分母的收藏率",
+      "commentDivLike": "评论累计显示数÷点赞累计显示数；不是评论人数或讨论率",
+      "sumRatio": "先汇总计数再相除，受高量作品影响",
+      "medianRatio": "先逐件相除，再取中位数，每件权重相同"
+    },
+    "rounding": "JSON保留计算精度；正文百分数适当四舍五入，时长显示至秒",
+    "unavailable": [
+      "曝光",
+      "播放",
+      "独立观看者",
+      "完播",
+      "固定作品龄指标",
+      "作者粉丝变化",
+      "评论正文与参与者身份",
+      "资源下载与使用",
+      "本站回访"
+    ]
+  },
+  "works": [
+    {
+      "sampleId": "pilot-a01-01",
+      "authorId": "PILOT-A01",
+      "rank": 1,
+      "id": "7679048894545743154",
+      "url": "https://www.douyin.com/video/7679048894545743154",
+      "title": "34 个 AI 博主究竟是怎么赚钱的？ #AI新星计划 #AI博主  #抖音创作者大会",
+      "publishedAt": "2026-08-28 19:51",
+      "observedAt": "2026-09-12T12:48:29.344Z",
+      "ageDays": 15.039923,
+      "durationSeconds": 882.033333,
+      "durationLabel": "14:42",
+      "like": 1984,
+      "comment": 94,
+      "collect": 1625,
+      "share": 574,
+      "collectPerLike": 0.8190524193548387,
+      "commentPerLike": 0.047379032258064516,
+      "sharePerLike": 0.28931451612903225,
+      "profileLikeRaw": "1984",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "AI自媒体的收入与经营",
+        "form": "跨作者观察题目",
+        "group": "跨作者内容/经营观察",
+        "consumerPromise": "了解多个AI博主如何经营",
+        "aiRole": "讨论AI创作者生态",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "1984",
+        "comment": "94",
+        "collect": "1625",
+        "share": "574"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-02",
+      "authorId": "PILOT-A01",
+      "rank": 2,
+      "id": "7674170814966631718",
+      "url": "https://www.douyin.com/video/7674170814966631718",
+      "title": "1400条视频深度分析，34个AI博主今年都讲了什么内容？ #AI新星计划 #AI博主 #抖音创作者大会",
+      "publishedAt": "2026-08-15 16:22",
+      "observedAt": "2026-09-12T12:49:04.215Z",
+      "ageDays": 28.185465,
+      "durationSeconds": 987.497,
+      "durationLabel": "16:27",
+      "like": 8455,
+      "comment": 452,
+      "collect": 7503,
+      "share": 2600,
+      "collectPerLike": 0.8874039030159668,
+      "commentPerLike": 0.05345949142519219,
+      "sharePerLike": 0.3075103489059728,
+      "profileLikeRaw": "8453",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "AI自媒体的内容选题",
+        "form": "跨作者内容分析题目",
+        "group": "跨作者内容/经营观察",
+        "consumerPromise": "了解AI博主在讲什么",
+        "aiRole": "讨论AI创作者生态",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "8455",
+        "comment": "452",
+        "collect": "7503",
+        "share": "2600"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-03",
+      "authorId": "PILOT-A01",
+      "rank": 3,
+      "id": "7672743275660397867",
+      "url": "https://www.douyin.com/video/7672743275660397867",
+      "title": "FDE是什么？普通人能干吗？适合创业吗？ #中年辍班 #AI创业 #FDE #创业项目",
+      "publishedAt": "2026-08-11 20:02",
+      "observedAt": "2026-09-12T12:48:31.452Z",
+      "ageDays": 32.032308,
+      "durationSeconds": 352.267,
+      "durationLabel": "5:52",
+      "like": 229,
+      "comment": 22,
+      "collect": 89,
+      "share": 47,
+      "collectPerLike": 0.388646288209607,
+      "commentPerLike": 0.09606986899563319,
+      "sharePerLike": 0.2052401746724891,
+      "profileLikeRaw": "229",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "FDE职业与创业",
+        "form": "概念和机会解释题目",
+        "group": "职业/收入路径判断",
+        "consumerPromise": "理解FDE及个人适配",
+        "aiRole": "讨论AI相关应用或职业",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "229",
+        "comment": "22",
+        "collect": "89",
+        "share": "47"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-04",
+      "authorId": "PILOT-A01",
+      "rank": 4,
+      "id": "7672028430405209379",
+      "url": "https://www.douyin.com/video/7672028430405209379",
+      "title": "低粉AI自媒体，恰饭全揭露 #AI自媒体 #AI创业 #自媒体干货 #中年辍班 #AI博主",
+      "publishedAt": "2026-08-09 21:48",
+      "observedAt": "2026-09-12T12:48:33.206Z",
+      "ageDays": 33.958718,
+      "durationSeconds": 423.3,
+      "durationLabel": "7:03",
+      "like": 402,
+      "comment": 18,
+      "collect": 291,
+      "share": 74,
+      "collectPerLike": 0.7238805970149254,
+      "commentPerLike": 0.04477611940298507,
+      "sharePerLike": 0.18407960199004975,
+      "profileLikeRaw": "402",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "低粉AI自媒体商业合作",
+        "form": "经验/经营解释题目",
+        "group": "职业/收入路径判断",
+        "consumerPromise": "了解低粉账号商业合作",
+        "aiRole": "讨论AI自媒体经营",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "402",
+        "comment": "18",
+        "collect": "291",
+        "share": "74"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-05",
+      "authorId": "PILOT-A01",
+      "rank": 5,
+      "id": "7671150631218071025",
+      "url": "https://www.douyin.com/video/7671150631218071025",
+      "title": "AI炒股没亏，项目要黄以及和抖音的爱恨情仇，是我的七月 #中年辍班 #AI创业 #日常记录",
+      "publishedAt": "2026-08-07 13:02",
+      "observedAt": "2026-09-12T12:48:43.863Z",
+      "ageDays": 36.324119,
+      "durationSeconds": 456.874,
+      "durationLabel": "7:37",
+      "like": 164,
+      "comment": 30,
+      "collect": 44,
+      "share": 19,
+      "collectPerLike": 0.2682926829268293,
+      "commentPerLike": 0.18292682926829268,
+      "sharePerLike": 0.11585365853658537,
+      "profileLikeRaw": "164",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "个人项目与月度经历",
+        "form": "个人复盘题目",
+        "group": "个人经历/活动表达",
+        "consumerPromise": "了解作者近期项目与经历",
+        "aiRole": "AI相关经历的混合叙述",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "164",
+        "comment": "30",
+        "collect": "44",
+        "share": "19"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-06",
+      "authorId": "PILOT-A01",
+      "rank": 6,
+      "id": "7669454903533718847",
+      "url": "https://www.douyin.com/video/7669454903533718847",
+      "title": "真心建议，参加一场黑客松，感受创作的快乐 #抖音AI夜校 #创作者黑客松 #Vivi的AI邪修日记 #黑客松 #eazo",
+      "publishedAt": "2026-08-02 23:22",
+      "observedAt": "2026-09-12T12:48:45.603Z",
+      "ageDays": 40.893583,
+      "durationSeconds": 382.942,
+      "durationLabel": "6:23",
+      "like": 288,
+      "comment": 18,
+      "collect": 121,
+      "share": 18,
+      "collectPerLike": 0.4201388888888889,
+      "commentPerLike": 0.0625,
+      "sharePerLike": 0.0625,
+      "profileLikeRaw": "288",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "黑客松参与体验",
+        "form": "活动推荐题目",
+        "group": "个人经历/活动表达",
+        "consumerPromise": "了解参与创作活动的体验",
+        "aiRole": "AI相关活动；实际AI使用环节未知",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "288",
+        "comment": "18",
+        "collect": "121",
+        "share": "18"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-07",
+      "authorId": "PILOT-A01",
+      "rank": 7,
+      "id": "7668712348479229219",
+      "url": "https://www.douyin.com/video/7668712348479229219",
+      "title": "中年辍班157天达成4万粉，创作过程全开源，附赠skill #中年辍班  #自媒体创作  #AI自媒体  #自媒体skill",
+      "publishedAt": "2026-07-31 23:20",
+      "observedAt": "2026-09-12T12:48:47.626Z",
+      "ageDays": 42.894996,
+      "durationSeconds": 459.5,
+      "durationLabel": "7:40",
+      "like": 143,
+      "comment": 18,
+      "collect": 79,
+      "share": 9,
+      "collectPerLike": 0.5524475524475524,
+      "commentPerLike": 0.1258741258741259,
+      "sharePerLike": 0.06293706293706294,
+      "profileLikeRaw": "143",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "自媒体创作过程与Skill",
+        "form": "过程分享及资源承诺题目",
+        "group": "过程/资源承诺",
+        "consumerPromise": "了解创作过程并取得所称Skill",
+        "aiRole": "AI自媒体相关过程；资源实际内容未知",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": {
+        "titlePromises": "附赠skill",
+        "fileObtained": null,
+        "downloadCount": null,
+        "usageFeedback": null
+      },
+      "rawMetrics": {
+        "like": "143",
+        "comment": "18",
+        "collect": "79",
+        "share": "9"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    },
+    {
+      "sampleId": "pilot-a01-08",
+      "authorId": "PILOT-A01",
+      "rank": 8,
+      "id": "7668274778004678321",
+      "url": "https://www.douyin.com/video/7668274778004678321",
+      "title": "用AI赚钱的5个阶段 #中年辍班 #中年博主 #AI创业 #野生博主的成长之路",
+      "publishedAt": "2026-07-30 19:02",
+      "observedAt": "2026-09-12T12:48:49.506Z",
+      "ageDays": 44.074184,
+      "durationSeconds": 141.803,
+      "durationLabel": "2:22",
+      "like": 3782,
+      "comment": 688,
+      "collect": 1811,
+      "share": 1179,
+      "collectPerLike": 0.4788471708090957,
+      "commentPerLike": 0.18191433104177684,
+      "sharePerLike": 0.31173982020095187,
+      "profileLikeRaw": "3782",
+      "videoWatchedInFull": false,
+      "publishedTimezone": "Asia/Shanghai",
+      "evidenceDepth": "detail-metadata-and-title-only",
+      "contentCoding": {
+        "topic": "AI赚钱路径",
+        "form": "分阶段观点题目",
+        "group": "职业/收入路径判断",
+        "consumerPromise": "理解作者提出的AI赚钱阶段",
+        "aiRole": "讨论AI相关收入路径",
+        "basis": "研究者据标题和标签归纳；未看完全片，未读评论正文，分组为事后探索编码",
+        "actualAiProduction": null
+      },
+      "consumerEvidence": null,
+      "resourceAvailability": null,
+      "rawMetrics": {
+        "like": "3782",
+        "comment": "688",
+        "collect": "1811",
+        "share": "1179"
+      },
+      "metricPeriod": "当前页面累计显示值，平台统计定义未进一步核实，不是固定作品龄或8周内新增数"
+    }
+  ],
+  "titleBasedGroups": [
+    {
+      "group": "跨作者内容/经营观察",
+      "n": 2,
+      "sampleIds": [
+        "pilot-a01-01",
+        "pilot-a01-02"
+      ],
+      "medianDurationSeconds": 934.7651665,
+      "medianLike": 5219.5,
+      "medianComment": 273,
+      "medianCollect": 4564,
+      "medianShare": 1587,
+      "medianPerWorkCollectDivLike": 0.8532281611854028,
+      "comparisonStatus": "标题层事后分组，每组1—3件；不可据此作类型优劣或因果排名"
+    },
+    {
+      "group": "职业/收入路径判断",
+      "n": 3,
+      "sampleIds": [
+        "pilot-a01-03",
+        "pilot-a01-04",
+        "pilot-a01-08"
+      ],
+      "medianDurationSeconds": 352.267,
+      "medianLike": 402,
+      "medianComment": 22,
+      "medianCollect": 291,
+      "medianShare": 74,
+      "medianPerWorkCollectDivLike": 0.4788471708090957,
+      "comparisonStatus": "标题层事后分组，每组1—3件；不可据此作类型优劣或因果排名"
+    },
+    {
+      "group": "个人经历/活动表达",
+      "n": 2,
+      "sampleIds": [
+        "pilot-a01-05",
+        "pilot-a01-06"
+      ],
+      "medianDurationSeconds": 419.908,
+      "medianLike": 226,
+      "medianComment": 24,
+      "medianCollect": 82.5,
+      "medianShare": 18.5,
+      "medianPerWorkCollectDivLike": 0.34421578590785906,
+      "comparisonStatus": "标题层事后分组，每组1—3件；不可据此作类型优劣或因果排名"
+    },
+    {
+      "group": "过程/资源承诺",
+      "n": 1,
+      "sampleIds": [
+        "pilot-a01-07"
+      ],
+      "medianDurationSeconds": 459.5,
+      "medianLike": 143,
+      "medianComment": 18,
+      "medianCollect": 79,
+      "medianShare": 9,
+      "medianPerWorkCollectDivLike": 0.5524475524475524,
+      "comparisonStatus": "标题层事后分组，每组1—3件；不可据此作类型优劣或因果排名"
+    }
+  ],
+  "excludedWindowRecords": [
+    {
+      "rank": 9,
+      "id": "7661583037007678720",
+      "title": "花了400刀只为搞懂 ，AI 算命到底靠不靠谱？ #AI算命 #科普 #科学思维 #vibecoding #破除迷信 #vibecoding大赏",
+      "url": "https://www.douyin.com/video/7661583037007678720",
+      "publishedAt": "2026-07-12 18:15",
+      "durationSeconds": 574.967,
+      "like": 8004,
+      "comment": 1285,
+      "collect": 3569,
+      "share": 1198,
+      "exclusionReason": "发表时间早于2026-07-13；只作窗口校验，不进入主统计"
+    },
+    {
+      "rank": 10,
+      "id": "7660083150453853480",
+      "title": "准备亏 50 万，给所有普通人打个样 AI 时代，一个人怎么从零做出一个硬件产品\n#一人公司 #AI创业 #中年辍班 #普通人创业 #AI项链",
+      "url": "https://www.douyin.com/video/7660083150453853480",
+      "publishedAt": "2026-07-08 17:14",
+      "durationSeconds": 883.434,
+      "like": 1835,
+      "comment": 137,
+      "collect": 428,
+      "share": 130,
+      "exclusionReason": "发表时间早于2026-07-13；只作窗口校验，不进入主统计"
+    }
+  ],
+  "crossSurfaceDifferences": [
+    {
+      "id": "7674170814966631718",
+      "profileLikeRaw": "8453",
+      "detailLike": 8455,
+      "profileObservedAt": "2026-09-12T12:47:53.138Z",
+      "detailObservedAt": "2026-09-12T12:49:04.215Z",
+      "interpretation": "异时刻/异页面显示差异，原因未知；保留两份原值，主统计统一使用详情值。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "P1",
+      "claim": "窗口内最高点赞两件占样本点赞79.22%、收藏80.55%，总量受少数作品影响明显。",
+      "sampleIds": [
+        "pilot-a01-02",
+        "pilot-a01-08"
+      ],
+      "supports": "同时显示逐条值、中位数和集中度，避免用均值代表通常表现。",
+      "doesNotSupport": "整体作者表现、行业分布或同类型内容必然表现好。"
+    },
+    {
+      "id": "P2",
+      "claim": "两条跨作者观察题目的收藏/点赞计数比分别81.91%与88.74%；但同样偏经营主题的FDE和低粉商业合作数据不同。",
+      "sampleIds": [
+        "pilot-a01-01",
+        "pilot-a01-02",
+        "pilot-a01-03",
+        "pilot-a01-04"
+      ],
+      "supports": "将选题具体承诺单独编码，并进一步核对是否存在求资料/收藏回查。",
+      "doesNotSupport": "已确认资料需求、观众职业或长研究内容更能留存。"
+    },
+    {
+      "id": "P3",
+      "claim": "2分22秒的阶段观点有3782点赞；7分40秒的过程/Skill题目为143点赞，发表仅相隔约一天。",
+      "sampleIds": [
+        "pilot-a01-08",
+        "pilot-a01-07"
+      ],
+      "supports": "不能直接从两件长观察视频表现突出推出长视频更优；较近年龄可作下一步对照。",
+      "doesNotSupport": "短视频更优、赠送资源无效；题材、曝光、封面与资源使用均未控制。"
+    },
+    {
+      "id": "P4",
+      "claim": "个人月度复盘的评论/点赞计数比18.29%，阶段观点为18.19%，虽点赞绝对值相差很大。",
+      "sampleIds": [
+        "pilot-a01-05",
+        "pilot-a01-08"
+      ],
+      "supports": "不同动作的结构可能不同，需要进一步读取评论内容。",
+      "doesNotSupport": "已建立强关系、观众认可、争议性质或真实讨论人数。"
+    },
+    {
+      "id": "P5",
+      "claim": "Skill题目显示79收藏，未取得文件、下载或使用反馈。",
+      "sampleIds": [
+        "pilot-a01-07"
+      ],
+      "supports": "资源可获得性、使用与回访应另采证据，不能仅看前台点赞。",
+      "doesNotSupport": "资源无用、无人使用或已完成实际复用。"
+    },
+    {
+      "id": "P6",
+      "claim": "8件均未看完全片，作品龄约15.04—44.07天；无曝光、播放、完播、粉丝变化或评论正文。",
+      "sampleIds": [
+        "pilot-a01-01",
+        "pilot-a01-02",
+        "pilot-a01-03",
+        "pilot-a01-04",
+        "pilot-a01-05",
+        "pilot-a01-06",
+        "pilot-a01-07",
+        "pilot-a01-08"
+      ],
+      "supports": "该样本适合修正采集协议和内容编码，下一步补全固定窗与对照作者。",
+      "doesNotSupport": "因果、互动率、市场规模、商业机会或多元拾光留存结论。"
+    }
+  ],
+  "nextChecks": [
+    "补齐窗口覆盖证据；未加载和无日期对象不填零。",
+    "新增3—5位可核作者完成4—6位可行性审查，采用相同窗口；不预填作品总数。",
+    "按题材/承诺/AI作用独立编码；当前类型为标题推断，详情看完后再核。",
+    "固定选取标题承诺不同且发表较近的作品，读取可见评论与作者后续；正反线索都保留。",
+    "资源题目核文件可得性与实际使用，观看作品核完整性与后续消费；不使用同一深度门槛。",
+    "有同周期公开数据再比较粉丝变化，不从当前点赞推涨粉或收入。"
+  ],
+  "northStarBoundary": "抖音的当前互动和作者供给仅为外部观察。多元拾光仍需自己的连续两周有效活跃外部目标用户证据；付费、工具调用和内容提交不是全部用户的必要条件。"
+}

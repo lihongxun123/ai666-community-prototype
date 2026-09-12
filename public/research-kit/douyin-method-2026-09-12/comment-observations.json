@@ -1,0 +1,32 @@
+{
+  "observedOn": "2026-09-12",
+  "method": "已登录抖音详情页默认可见顺序前五条评论。保存匿名归纳和位置，不保存昵称、头像、位置或联系方式；不是五位独立用户的证明，未展开回复。",
+  "sources": [
+    {
+      "url": "https://www.douyin.com/video/7678155357679602995",
+      "author": "孩子的一棠课",
+      "status": "既有作品重新读取评论",
+      "comments": [
+        {"position":1,"paraphrase":"补充一位收养孤儿者的经历。","kind":"补充材料","verifiedHistoricalFact":false},
+        {"position":2,"paraphrase":"推荐讲述相关事件的电影，并表达受到触动。","kind":"相关内容与情绪反馈","verifiedHistoricalFact":false},
+        {"position":3,"paraphrase":"提出实际接济人数高于标题中的三千。","kind":"数量解释","verifiedHistoricalFact":false},
+        {"position":4,"paraphrase":"提出另一组接济人数和领养条件，与上一条的数字不同。","kind":"数量解释与分歧","verifiedHistoricalFact":false},
+        {"position":5,"paraphrase":"质疑古代民歌与近现代事件的关联方式。","kind":"内容论证质疑","verifiedHistoricalFact":false}
+      ],
+      "inference":"高互动与情绪共鸣并不消除出处、数字与解释方式的争议。历史准确性须独立核对，不能把评论中的数字改写成事实。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "author": "foyege",
+      "status": "既有作品重新读取评论",
+      "comments": [
+        {"position":1,"paraphrase":"提出结合三维制作的替代方法；部分正文为链接，未补写链接内容。","kind":"替代方案"},
+        {"position":2,"paraphrase":"新手询问 ComfyUI 是否可行以及学习起点。","kind":"入门路径"},
+        {"position":3,"paraphrase":"询问使用的模型及真人限制如何处理。","kind":"条件与限制"},
+        {"position":4,"paraphrase":"询问所用工具收费是否昂贵。","kind":"成本"},
+        {"position":5,"paraphrase":"称方法在八个人或频繁切镜时不灵，认为示例选择了六个人和一镜到底。","kind":"适用范围质疑","failureIndependentlyReproduced":false}
+      ],
+      "inference":"评论提供了可以继续核对的适用条件、成本和失败线索。最后一条是评论者的说法，未独立复现，不能据此认定工具缺陷或发生率。"
+    }
+  ]
+}

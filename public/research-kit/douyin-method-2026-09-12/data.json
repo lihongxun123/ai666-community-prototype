@@ -1,0 +1,1457 @@
+{
+  "lead": "题材覆盖已经较宽，真正缺的是同一作者的连续作品、普通表现和使用后的反馈。复算分类样本并补查四位作者后，可以确认：时长、是否附教程、是否连载，都不足以单独判断内容价值。需要进一步比较内容承诺、实际交付和后续消费。",
+  "reference": {
+    "url": "https://www.douyin.com/video/7674170814966631718",
+    "author": "徐兆猛",
+    "title": "1400条视频深度分析，34个AI博主今年都讲了什么内容？",
+    "publishedAt": "2026-08-15",
+    "reviewDepth": "已核对页面说明、章节及关键图表；未取得原始数据表或完整逐字稿，未完整观看全片。图中1,464条和34位作者均为视频作者披露，不计入本研究采集量。",
+    "methods": [
+      {
+        "time": "01:14",
+        "method": "先分作者，再比较作品",
+        "shown": "教程实测、AIGC故事、实操编程、观点与参照作者分组。",
+        "adopt": "增加行业内容中的AI辅助和AI用法未知者，避免只研究名称带AI的博主。"
+      },
+      {
+        "time": "02:28／08:47",
+        "method": "按作者和时间追踪供给",
+        "shown": "作者×月份热图和单作者作品时间线；未结束的8月单列。",
+        "adopt": "固定八个完整自然周，保留低互动作品、置顶、合集与同集版本；发布量和独立内容量分开。"
+      },
+      {
+        "time": "04:54／06:02",
+        "method": "比较分组分布，检查异常作者",
+        "shown": "不同作者组的粉丝与中位点赞关系不同；时长图中保留长短反例。",
+        "adopt": "先看作者内的中位数与分布，再按题材和作品年龄对照。没有曝光时不计算受欢迎概率。"
+      },
+      {
+        "time": "06:54",
+        "method": "让数据反驳预想",
+        "shown": "分享/点赞与近期涨粉的图并未支持作者最初猜想。",
+        "adopt": "收藏、分享、评论分别解释；不用某个互动比值代替涨粉、方法有效或社区回访。"
+      },
+      {
+        "time": "10:12",
+        "method": "同作者对照，公开相反结果",
+        "shown": "五位作者的术语与通俗表达比较，三位同向、两位相反，并提醒不能视为规律。",
+        "adopt": "不只展示支持判断的案例；题材、封面和发布时间一起变化时，不把差异归因于单一因素。"
+      },
+      {
+        "time": "11:22／12:33",
+        "method": "观察AI圈之外的作者",
+        "shown": "普通话题作者的AI内容与其他内容比较，其中一个AI子组只有三条。",
+        "adopt": "区分想了解AI的人、想用AI完成事情的人和只想看成品的人；三条作品只呈现个案。"
+      },
+      {
+        "time": "13:50／14:32",
+        "method": "从内容对象讨论运营",
+        "shown": "区分AI本身、用AI完成的任务与AI成品，再提出创作建议。",
+        "adopt": "借鉴比较方法；时长、改名、标签等运营建议仍需独立验证，不直接转成多元拾光策略。"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "title": "大多数作者只出现一次，无法判断持续供给",
+      "text": "343张分类卡片对应326个作者编码，其中311位只有一条。15位重复作者也各自只有两到三条。它适合发现题材，尚不足以判断系列更新、内容转型或通常表现。",
+      "implication": "以作者公开主页建立连续清单；同一作者要保留普通、低值和高值作品。"
+    },
+    {
+      "title": "精选样本明显偏向中长视频",
+      "text": "336条时长可读作品中，低于三分钟的只有24条，占7.1%；时长中位数为7.83分钟。整体时长与可见计数的秩相关仅0.154，分类内的方向也并不一致。",
+      "implication": "不能据此建议做长视频。补普通搜索与短内容入口，并在同作者、相近题材和发布时间下比较。"
+    },
+    {
+      "title": "卡片可见数字高度集中，均值不能代表典型记录",
+      "text": "卡片可见计数的中位数为7,322，均值约39,731；最大的35条占本批计数和的69.2%。这些结果描述原始数字分布；指标名称与跨分类同义性尚未逐项核实，不能据此认定爆款或内容表现高低。",
+      "implication": "按作者展示中位数、四分位范围及高值集中程度；计数和不是独立观众人数。"
+    },
+    {
+      "title": "多数已查关键词近期没有上涨",
+      "text": "32个关键词中，26个搜索指数环比为负；只有天文、苏轼、历史人文同时同比和环比为正。历史故事同比上升、环比下降，不能只截取增长的一面。",
+      "implication": "先核对词义、时间窗和指数水平，再做同义词与连续日期追踪。当前数据不能排列行业机会大小。"
+    }
+  ],
+  "cases": [
+    {
+      "author": "徐兆猛",
+      "title": "长内容与资源附件，不能单独解释表现",
+      "observed": "已核对10个详情，其中8条位于统一八周窗口。7月30日的AI赚钱阶段观点约2分22秒，3,782赞；次日带Skill的创作过程约7分40秒，143赞。8月15日的作者研究约16分27秒，8,455赞。",
+      "interpretation": "同一个账号能同时出现受欢迎的短内容、长内容和低互动的资源内容。标题所承诺的收益、对象与表达方式值得分别编码；一个资源是否被保存、使用或解决问题，还需另外读反馈。",
+      "counter": "两条相邻作品也不等于实验：题材与分发不同，没有曝光、下载和使用记录。不能由143赞推断Skill没人需要。",
+      "community": "成片、观点和资源可以分别承接消费。展示资源前，应说明具体能完成什么、依赖什么，以及使用者遇到问题后去哪里找答案。",
+      "urls": [
+        "https://www.douyin.com/video/7668274778004678321",
+        "https://www.douyin.com/video/7668712348479229219",
+        "https://www.douyin.com/video/7674170814966631718"
+      ]
+    },
+    {
+      "author": "foyege",
+      "title": "成品和教程谁更受欢迎，同一作者也有相反结果",
+      "observed": "8月1日的约30秒演技短片显示30.0万赞，8月2日的演技拆解显示4.2万赞；但8月12日多人控场教程显示4,659赞，8月13日的约78秒控场测试显示524赞。两组的差异方向相反。",
+      "interpretation": "第一组提示成品可以独立吸引观看，第二组提示方法说明也可能比单独测试更有吸引力。不能把所有成品或所有教程平均后，就认定一种形式适合全部用户。",
+      "counter": "作者标题中的“400万播放”是作者自述，不是这次取得的播放量。这里使用详情页点赞；未完整观看四件作品，形式编码依据标题和说明，未验证教学效果。",
+      "community": "制作人可能需要从成品进入分解说明、参数和失败条件；观看者可以直接消费成品。两类入口相关，但不能强制把所有观众转为工具使用者。",
+      "urls": [
+        "https://www.douyin.com/video/7668957069785803426",
+        "https://www.douyin.com/video/7669413558211778661",
+        "https://www.douyin.com/video/7673074764340650597",
+        "https://www.douyin.com/video/7673159888415777978"
+      ]
+    },
+    {
+      "author": "编导_拾光",
+      "title": "连载确有后续，发文数量却不等于新增故事数量",
+      "observed": "主页24个可见作品均已核对详情日期，21条在研究窗口内。第一季合集已于8月24日发布，8月26日00:55又集中出现第一季八集。前七集能对应到更早的同名集数，随后也有第二季及另一部连载。",
+      "interpretation": "“求后续”需要回到主页核对是否已经交付；同一内容可以通过单集、合集与再次发布形成多个消费入口。八周的21条发布记录不能直接当作21份全新剧情。",
+      "counter": "标题与时长只能建立同集版本候选，未逐帧核对是否完全相同。累计点赞随作品年龄和发布位置变化，不能拿第一集与重发版的差额计算观众流失。",
+      "community": "若抖音已有完整合集，社区再做同样的合集目录，附加价值有限。应继续检查角色索引、相关讨论、勘误或制作资料是否有真实缺口，不能预设观众需要迁移。",
+      "urls": [
+        "https://www.douyin.com/video/7677555740273380635",
+        "https://www.douyin.com/video/7678013840239480091",
+        "https://www.douyin.com/video/7663756336345173258",
+        "https://www.douyin.com/video/7680534758161386802"
+      ]
+    },
+    {
+      "author": "孩子的一棠课",
+      "title": "题材、系列和情感表达之外，还要检查知识质量",
+      "observed": "主页显示21份作品，已读到20个视频和1篇图文及列表末尾。近期与置顶共核对10个视频日期，7条位于研究窗口；其中一个置顶实际发布于6月，9月11日的新片也在窗口之外。课文系列既谈文学，也联系亲子和成长问题。",
+      "interpretation": "内容不是简单的“AI历史视频”：它把课文、人文解释和亲子情感组织成可继续阅读的系列。作者的持续选题和解释能力比一份通用生成模板更值得观察。",
+      "counter": "《敕勒歌》详情显示117.2万赞，可见评论仍存在对历史数量和课文关联方式的分歧。评论没有独立事实核验，高互动不能当作知识正确、适合教学或观众都是家长的证明。",
+      "community": "知识类内容应允许查看出处、区分史实与演绎、补充解释与纠错。若缺少有能力持续做这些工作的供给者，只提供生成额度难以保证内容质量。",
+      "urls": [
+        "https://www.douyin.com/video/7678155357679602995",
+        "https://www.douyin.com/video/7676126255661452578",
+        "https://www.douyin.com/video/7669055515074252058"
+      ]
+    }
+  ],
+  "opportunity": [
+    {
+      "signal": "主题受到观看和讨论",
+      "missing": "观众的问题在原平台是否已经得到满足",
+      "question": "已有完整作品和合集时，多元拾光还能增加什么具体价值？",
+      "stop": "如果新增的只有搬运与重复目录，不能据此判断迁移机会。"
+    },
+    {
+      "signal": "教程有人保存、询问方法",
+      "missing": "使用条件、步骤与实际失败是否得到解释",
+      "question": "能否让使用者确认模型、素材、成本、适用场景，并看到失败后的修订？",
+      "stop": "收藏不代表使用；只有资料下载，没有任务反馈时，复用价值仍未核实。"
+    },
+    {
+      "signal": "可见评论出现提问、纠错或求后续，跨期重复尚未确认",
+      "missing": "请求发生之后作者是否已经提供后续",
+      "question": "按评论日期追踪作者回应、后续作品及问题是否关闭。",
+      "stop": "已经交付的后续或个别重复留言，不能继续算未满足需求。"
+    },
+    {
+      "signal": "若检索结果看似较少，仍需核对同任务替代",
+      "missing": "同一主题的全量供给、可替代内容与生产成本",
+      "question": "是否只是关键词没覆盖，或内容本身低频、难核实、难持续生产？",
+      "stop": "32个词的指数和精选卡片都不能组成供需比，当前不出蓝海排行榜。"
+    }
+  ],
+  "layers": [
+    [
+      "AI展示、实测与解释",
+      "展示能力、比较产品、理解变化",
+      "普通搜索与持续发布作者"
+    ],
+    [
+      "用AI完成制作的教学",
+      "图像、视频、解说、配音、字幕",
+      "有步骤，也有问题反馈的作者"
+    ],
+    [
+      "办公与编程实践",
+      "办公、代码、知识库、小工具",
+      "工具说明与真实任务分开"
+    ],
+    [
+      "AI成品与叙事",
+      "故事、漫剧、音乐、视觉作品",
+      "单篇、连载、合集及版本关系"
+    ],
+    [
+      "行业内容中的AI辅助",
+      "历史、科普、教育、读书、生活",
+      "领域价值为主，有可核AI说明"
+    ],
+    [
+      "同题材参照",
+      "相近题材的其他生产方式",
+      "AI用法未知与明确未用分开"
+    ]
+  ],
+  "date": "2026-09-12",
+  "counts": {
+    "authors": 4,
+    "details": 58,
+    "inWindow": 46,
+    "outside": 12,
+    "commentFragments": 10
+  },
+  "window": {
+    "start": "2026-07-13",
+    "lastDay": "2026-09-06"
+  },
+  "authors": [
+    {
+      "name": "徐兆猛",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAABFqXYObbJKtCOUDaIJ2ii6z-tPmsdkjGnP7mJFlzzEQ42jQPfgyyLT9KugK4Upri",
+      "coverage": "已加载54/主页60；10条核对日期，窗口覆盖部分",
+      "displayed": 60,
+      "loaded": 54,
+      "details": 10,
+      "inWindow": 8,
+      "outside": 2,
+      "weeks": [
+        {
+          "label": "07-13",
+          "n": 0
+        },
+        {
+          "label": "07-20",
+          "n": 0
+        },
+        {
+          "label": "07-27",
+          "n": 3
+        },
+        {
+          "label": "08-03",
+          "n": 2
+        },
+        {
+          "label": "08-10",
+          "n": 2
+        },
+        {
+          "label": "08-17",
+          "n": 0
+        },
+        {
+          "label": "08-24",
+          "n": 1
+        },
+        {
+          "label": "08-31",
+          "n": 0
+        }
+      ],
+      "works": [
+        {
+          "rank": 10,
+          "url": "https://www.douyin.com/video/7660083150453853480",
+          "title": "准备亏 50 万，给所有普通人打个样 AI 时代，一个人怎么从零做出一个硬件产品",
+          "publishedAt": "2026-07-08 17:14",
+          "observedAt": "2026-09-12T12:49:02.276Z",
+          "durationSeconds": 883.434,
+          "likeRaw": "1835",
+          "commentRaw": "137",
+          "collectRaw": "428",
+          "shareRaw": "130",
+          "profileLikeRaw": "1835",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": false
+        },
+        {
+          "rank": 9,
+          "url": "https://www.douyin.com/video/7661583037007678720",
+          "title": "花了400刀只为搞懂 ，AI 算命到底靠不靠谱？",
+          "publishedAt": "2026-07-12 18:15",
+          "observedAt": "2026-09-12T12:49:00.444Z",
+          "durationSeconds": 574.967,
+          "likeRaw": "8004",
+          "commentRaw": "1285",
+          "collectRaw": "3569",
+          "shareRaw": "1198",
+          "profileLikeRaw": "8004",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": false
+        },
+        {
+          "rank": 8,
+          "url": "https://www.douyin.com/video/7668274778004678321",
+          "title": "用AI赚钱的5个阶段",
+          "publishedAt": "2026-07-30 19:02",
+          "observedAt": "2026-09-12T12:48:49.506Z",
+          "durationSeconds": 141.803,
+          "likeRaw": "3782",
+          "commentRaw": "688",
+          "collectRaw": "1811",
+          "shareRaw": "1179",
+          "profileLikeRaw": "3782",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 7,
+          "url": "https://www.douyin.com/video/7668712348479229219",
+          "title": "中年辍班157天达成4万粉，创作过程全开源，附赠skill",
+          "publishedAt": "2026-07-31 23:20",
+          "observedAt": "2026-09-12T12:48:47.626Z",
+          "durationSeconds": 459.5,
+          "likeRaw": "143",
+          "commentRaw": "18",
+          "collectRaw": "79",
+          "shareRaw": "9",
+          "profileLikeRaw": "143",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 6,
+          "url": "https://www.douyin.com/video/7669454903533718847",
+          "title": "真心建议，参加一场黑客松，感受创作的快乐",
+          "publishedAt": "2026-08-02 23:22",
+          "observedAt": "2026-09-12T12:48:45.603Z",
+          "durationSeconds": 382.942,
+          "likeRaw": "288",
+          "commentRaw": "18",
+          "collectRaw": "121",
+          "shareRaw": "18",
+          "profileLikeRaw": "288",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 5,
+          "url": "https://www.douyin.com/video/7671150631218071025",
+          "title": "AI炒股没亏，项目要黄以及和抖音的爱恨情仇，是我的七月",
+          "publishedAt": "2026-08-07 13:02",
+          "observedAt": "2026-09-12T12:48:43.863Z",
+          "durationSeconds": 456.874,
+          "likeRaw": "164",
+          "commentRaw": "30",
+          "collectRaw": "44",
+          "shareRaw": "19",
+          "profileLikeRaw": "164",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 4,
+          "url": "https://www.douyin.com/video/7672028430405209379",
+          "title": "低粉AI自媒体，恰饭全揭露",
+          "publishedAt": "2026-08-09 21:48",
+          "observedAt": "2026-09-12T12:48:33.206Z",
+          "durationSeconds": 423.3,
+          "likeRaw": "402",
+          "commentRaw": "18",
+          "collectRaw": "291",
+          "shareRaw": "74",
+          "profileLikeRaw": "402",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 3,
+          "url": "https://www.douyin.com/video/7672743275660397867",
+          "title": "FDE是什么？普通人能干吗？适合创业吗？",
+          "publishedAt": "2026-08-11 20:02",
+          "observedAt": "2026-09-12T12:48:31.452Z",
+          "durationSeconds": 352.267,
+          "likeRaw": "229",
+          "commentRaw": "22",
+          "collectRaw": "89",
+          "shareRaw": "47",
+          "profileLikeRaw": "229",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 2,
+          "url": "https://www.douyin.com/video/7674170814966631718",
+          "title": "1400条视频深度分析，34个AI博主今年都讲了什么内容？",
+          "publishedAt": "2026-08-15 16:22",
+          "observedAt": "2026-09-12T12:49:04.215Z",
+          "durationSeconds": 987.497,
+          "likeRaw": "8455",
+          "commentRaw": "452",
+          "collectRaw": "7503",
+          "shareRaw": "2600",
+          "profileLikeRaw": "8453",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        },
+        {
+          "rank": 1,
+          "url": "https://www.douyin.com/video/7679048894545743154",
+          "title": "34 个 AI 博主究竟是怎么赚钱的？",
+          "publishedAt": "2026-08-28 19:51",
+          "observedAt": "2026-09-12T12:48:29.344Z",
+          "durationSeconds": 882.033333,
+          "likeRaw": "1984",
+          "commentRaw": "94",
+          "collectRaw": "1625",
+          "shareRaw": "574",
+          "profileLikeRaw": "1984",
+          "videoWatchedInFull": false,
+          "author": "徐兆猛",
+          "inWindow": true
+        }
+      ]
+    },
+    {
+      "name": "foyege",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAq5UIz3urhEf4NK9TdN7EbmSzQfiy8lMdO1doGlEUW5E",
+      "coverage": "已读27/主页28；14条核对日期，窗口覆盖部分",
+      "displayed": 28,
+      "loaded": 27,
+      "details": 14,
+      "inWindow": 10,
+      "outside": 4,
+      "weeks": [
+        {
+          "label": "07-13",
+          "n": 1
+        },
+        {
+          "label": "07-20",
+          "n": 0
+        },
+        {
+          "label": "07-27",
+          "n": 2
+        },
+        {
+          "label": "08-03",
+          "n": 2
+        },
+        {
+          "label": "08-10",
+          "n": 2
+        },
+        {
+          "label": "08-17",
+          "n": 2
+        },
+        {
+          "label": "08-24",
+          "n": 1
+        },
+        {
+          "label": "08-31",
+          "n": 0
+        }
+      ],
+      "works": [
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7658195346698703336",
+          "title": "太牛了这个AI电影平台，开始有“制片人思维”了！它会自动帮你决定：哪些画面该省，哪里该上最强模型，最后一键成片 四个生成档位，把电影质感和成本一起算明白",
+          "publishedAt": "2026-07-03 17:54",
+          "observedAt": "2026-09-12T13:03:20.689Z",
+          "durationSeconds": 28,
+          "likeRaw": "908",
+          "commentRaw": "31",
+          "collectRaw": "481",
+          "shareRaw": "200",
+          "aiDeclared": false,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7664092892722386496",
+          "title": "一个新的内容形态正在出现：AI电影！ 只需要输入一个想法，AI可以自动完成从剧本策划到最终成片的全过程，未来，拍电影可能不再需要几十人的团队。 一个人，也能拥有",
+          "publishedAt": "2026-07-19 17:54",
+          "observedAt": "2026-09-12T13:03:18.878Z",
+          "durationSeconds": 39.633333,
+          "likeRaw": "925",
+          "commentRaw": "19",
+          "collectRaw": "379",
+          "shareRaw": "101",
+          "aiDeclared": false,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7668957069785803426",
+          "title": "唐国强老师说的没错，AI时代的确不需要真人演员了。视频由小云雀seedance2.5*无限画布制作，台词演技都直接上一个层级了",
+          "publishedAt": "2026-08-01 15:10",
+          "observedAt": "2026-09-12T13:02:54.753Z",
+          "durationSeconds": 30.133333,
+          "likeRaw": "30.0万",
+          "commentRaw": "8061",
+          "collectRaw": "1.7万",
+          "shareRaw": "6.1万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7669413558211778661",
+          "title": "400万播放的AI爆款演技短片：我把唐国强老师的表演法则，写进了AI提示词 AI表演提示词终极教程来了！没有垫图，只有一段提示词 —由小云雀Seedance2.",
+          "publishedAt": "2026-08-02 20:41",
+          "observedAt": "2026-09-12T13:02:53.106Z",
+          "durationSeconds": null,
+          "likeRaw": "4.2万",
+          "commentRaw": "600",
+          "collectRaw": "2.6万",
+          "shareRaw": "8005",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7670762031490693818",
+          "title": "手搓400万播放的AI影后级短片后续：让AI有“灵魂”的提示词万能公式，我手写了5000字提示词，让AI演员的表演第一次有了“灵魂” 文科生引来史诗级增强，A",
+          "publishedAt": "2026-08-06 11:54",
+          "observedAt": "2026-09-12T13:02:51.361Z",
+          "durationSeconds": 339.934,
+          "likeRaw": "6620",
+          "commentRaw": "217",
+          "collectRaw": "2840",
+          "shareRaw": "1123",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7670876701828375675",
+          "title": "真人演员最后一道“护城河”在这一刻也被AI攻破了 -视频由Seedance2.5 30秒直出生成",
+          "publishedAt": "2026-08-07 15:18",
+          "observedAt": "2026-09-12T13:03:16.640Z",
+          "durationSeconds": 30.057007,
+          "likeRaw": "272",
+          "commentRaw": "49",
+          "collectRaw": "59",
+          "shareRaw": "123",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7673074764340650597",
+          "title": "谁说AI拍不好多人群像戏，两张图锁死多人物站位和场景一致性，三锁控场法让你的AI演员“指哪打哪”， 不用再为同一空间里多角色的AI一镜到底效果提心吊胆、全靠碰",
+          "publishedAt": "2026-08-12 19:26",
+          "observedAt": "2026-09-12T13:03:14.954Z",
+          "durationSeconds": 357.214,
+          "likeRaw": "4659",
+          "commentRaw": "136",
+          "collectRaw": "4103",
+          "shareRaw": "600",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7673159888415777978",
+          "title": "我宣布，AI可以正式拍电影了。 好莱坞群像控场法：AI测试短片，这质感、运镜、一致性离电影还远吗？",
+          "publishedAt": "2026-08-13 17:58",
+          "observedAt": "2026-09-12T13:03:13.112Z",
+          "durationSeconds": 77.694,
+          "likeRaw": "524",
+          "commentRaw": "38",
+          "collectRaw": "170",
+          "shareRaw": "134",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7675375896727785125",
+          "title": "好莱坞群像控场法！ 一个提示词+俯视图彻底解决AI多人物站位和场景一致性问题！轻松拍好群像戏！ 让你的AI打破“第四面墙”",
+          "publishedAt": "2026-08-19 11:20",
+          "observedAt": "2026-09-12T13:03:11.382Z",
+          "durationSeconds": 344.873,
+          "likeRaw": "1457",
+          "commentRaw": "28",
+          "collectRaw": "1276",
+          "shareRaw": "208",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7676422641646299557",
+          "title": "一个隐藏于每个爆款AI短剧中的“顶级结构”，手把手教你如何用AI从想法写出爆款短剧！",
+          "publishedAt": "2026-08-21 18:00",
+          "observedAt": "2026-09-12T13:03:09.653Z",
+          "durationSeconds": null,
+          "likeRaw": "6146",
+          "commentRaw": "201",
+          "collectRaw": "3134",
+          "shareRaw": "955",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7678195402789837169",
+          "title": "AI视频人物怎么拥有“活人感”的皮肤？一条视频教会你！从此杜绝AI“伪人”模型脸！",
+          "publishedAt": "2026-08-26 12:39",
+          "observedAt": "2026-09-12T13:03:01.817Z",
+          "durationSeconds": 324.08,
+          "likeRaw": "1858",
+          "commentRaw": "45",
+          "collectRaw": "1716",
+          "shareRaw": "267",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7682668008729064293",
+          "title": "AI视频正式迈向工业化电影行业！ 用GPT 6 Astra生成白模视频加Seedance2.5 AI生成，精准控制复杂运镜和动作",
+          "publishedAt": "2026-09-07 13:55",
+          "observedAt": "2026-09-12T13:02:59.995Z",
+          "durationSeconds": 37.269002,
+          "likeRaw": "3239",
+          "commentRaw": "209",
+          "collectRaw": "1239",
+          "shareRaw": "1304",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7683468076499136379",
+          "title": "AI演出了独属中式美学的留白和悲凉 AI视频生成最佳组合，GPT 6 Astra加Blender白膜控构图、运镜 提示词控表演、环境、人物状态",
+          "publishedAt": "2026-09-09 17:40",
+          "observedAt": "2026-09-12T13:02:58.201Z",
+          "durationSeconds": null,
+          "likeRaw": "445",
+          "commentRaw": "40",
+          "collectRaw": "108",
+          "shareRaw": "69",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "foyege",
+          "url": "https://www.douyin.com/video/7684223214016896613",
+          "title": "最全最细AI视频白模教程！ GPT-6 Astra调用Blender建白模，结合Seedance2.5精准控制复杂运镜和动作，避免反复抽卡！",
+          "publishedAt": "2026-09-11 18:30",
+          "observedAt": "2026-09-12T13:02:56.622Z",
+          "durationSeconds": 637.319,
+          "likeRaw": "2609",
+          "commentRaw": "73",
+          "collectRaw": "2389",
+          "shareRaw": "573",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        }
+      ]
+    },
+    {
+      "name": "编导_拾光",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAwjUfzN7VbutOK-tL3AmZsHyfNpPQyC50ZarqXfBfrSASOsklHJ0pmBukN8VlzTqS",
+      "coverage": "已读24/主页24且列表到底；24条均核对日期",
+      "displayed": 24,
+      "loaded": 24,
+      "details": 24,
+      "inWindow": 21,
+      "outside": 3,
+      "weeks": [
+        {
+          "label": "07-13",
+          "n": 2
+        },
+        {
+          "label": "07-20",
+          "n": 1
+        },
+        {
+          "label": "07-27",
+          "n": 1
+        },
+        {
+          "label": "08-03",
+          "n": 1
+        },
+        {
+          "label": "08-10",
+          "n": 2
+        },
+        {
+          "label": "08-17",
+          "n": 1
+        },
+        {
+          "label": "08-24",
+          "n": 10
+        },
+        {
+          "label": "08-31",
+          "n": 3
+        }
+      ],
+      "works": [
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7663073604468313382",
+          "title": "《山海》神明归来，正片周六上映 烛龙睁眼，不周迁徙。 《山海经》从传说，踏上归乡之路。 旧时代落幕， 人类，要学着和神明共存。 正片本周六上映。 东方神明末日宇",
+          "publishedAt": "2026-07-16 18:39",
+          "observedAt": "2026-09-12T13:01:46.716Z",
+          "durationSeconds": 87.434,
+          "likeRaw": "1755",
+          "commentRaw": "68",
+          "collectRaw": "548",
+          "shareRaw": "374",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7663756336345173258",
+          "title": "第1集 原创AIGC故事连载《山海》第一集：预兆。",
+          "publishedAt": "2026-07-18 20:00",
+          "observedAt": "2026-09-12T13:01:44.902Z",
+          "durationSeconds": 503.267,
+          "likeRaw": "2.3万",
+          "commentRaw": "743",
+          "collectRaw": "8308",
+          "shareRaw": "4017",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7664894016734989578",
+          "title": "第2集 原创AIGC故事连载《山海》第二集：鼠疫。",
+          "publishedAt": "2026-07-21 18:25",
+          "observedAt": "2026-09-12T13:01:42.978Z",
+          "durationSeconds": 468.534,
+          "likeRaw": "6922",
+          "commentRaw": "619",
+          "collectRaw": "1437",
+          "shareRaw": "659",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7667521960607272232",
+          "title": "第3集 原创AIGC故事连载《山海》第三集：山海署。",
+          "publishedAt": "2026-07-28 18:21",
+          "observedAt": "2026-09-12T13:01:41.229Z",
+          "durationSeconds": 457.156,
+          "likeRaw": "3392",
+          "commentRaw": "251",
+          "collectRaw": "512",
+          "shareRaw": "208",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7669754322279845172",
+          "title": "第4集 原创AIGC故事连载《山海》第四集：饥线。",
+          "publishedAt": "2026-08-03 18:44",
+          "observedAt": "2026-09-12T13:01:39.409Z",
+          "durationSeconds": 390.267,
+          "likeRaw": "5449",
+          "commentRaw": "374",
+          "collectRaw": "1072",
+          "shareRaw": "302",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7672712056163912994",
+          "title": "第5集 原创AIGC故事连载《山海》第五集：边界。",
+          "publishedAt": "2026-08-11 18:01",
+          "observedAt": "2026-09-12T13:01:37.471Z",
+          "durationSeconds": 622.736,
+          "likeRaw": "5958",
+          "commentRaw": "291",
+          "collectRaw": "1086",
+          "shareRaw": "397",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7673756944410217763",
+          "title": "第6集 原创AIGC故事连载《山海》第六集：地渊。",
+          "publishedAt": "2026-08-14 18:50",
+          "observedAt": "2026-09-12T13:01:35.642Z",
+          "durationSeconds": 423.867,
+          "likeRaw": "5202",
+          "commentRaw": "319",
+          "collectRaw": "876",
+          "shareRaw": "358",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7675314431055777074",
+          "title": "第7集 原创AIGC故事连载《山海》第七集：遗土。",
+          "publishedAt": "2026-08-18 18:20",
+          "observedAt": "2026-09-12T13:01:33.678Z",
+          "durationSeconds": 416.734,
+          "likeRaw": "7895",
+          "commentRaw": "684",
+          "collectRaw": "1508",
+          "shareRaw": "626",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7677555740273380635",
+          "title": "《山海》第一季1-8集合集。 五色天光降临全球，万物返祖，人类血脉觉醒。地铁检修工陈望因意外感知地脉，加入山海署，与伙伴对抗异兽、追查灾变真相。随着深入地底，他",
+          "publishedAt": "2026-08-24 19:17",
+          "observedAt": "2026-09-12T13:00:54.322Z",
+          "durationSeconds": 4154.778,
+          "likeRaw": "2.7万",
+          "commentRaw": "898",
+          "collectRaw": "1.3万",
+          "shareRaw": "1.1万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678014012147207466",
+          "title": "《山海》第一季 第8集：真相。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:13.592Z",
+          "durationSeconds": 825.33,
+          "likeRaw": "1888",
+          "commentRaw": "101",
+          "collectRaw": "513",
+          "shareRaw": "189",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013971638652196",
+          "title": "《山海》第一季 第7集：遗土。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:15.461Z",
+          "durationSeconds": 416.734,
+          "likeRaw": "380",
+          "commentRaw": "25",
+          "collectRaw": "50",
+          "shareRaw": "21",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013951032020265",
+          "title": "《山海》第一季 第6集：地渊。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:17.304Z",
+          "durationSeconds": 423.867,
+          "likeRaw": "411",
+          "commentRaw": "15",
+          "collectRaw": "109",
+          "shareRaw": "15",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013946992790822",
+          "title": "《山海》第一季 第5集：边界。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:19.103Z",
+          "durationSeconds": 622.736,
+          "likeRaw": "453",
+          "commentRaw": "10",
+          "collectRaw": "106",
+          "shareRaw": "26",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013916504427826",
+          "title": "《山海》第一季 第4集：饥线。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:20.899Z",
+          "durationSeconds": 390.304,
+          "likeRaw": "437",
+          "commentRaw": "10",
+          "collectRaw": "123",
+          "shareRaw": "19",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013883499515174",
+          "title": "《山海》第一季 第3集：山海署。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:22.675Z",
+          "durationSeconds": 457.156,
+          "likeRaw": "308",
+          "commentRaw": "10",
+          "collectRaw": "62",
+          "shareRaw": "12",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013862859377971",
+          "title": "《山海》第一季 第2集：鼠疫。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:24.299Z",
+          "durationSeconds": 468.579,
+          "likeRaw": "413",
+          "commentRaw": "15",
+          "collectRaw": "91",
+          "shareRaw": "23",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7678013840239480091",
+          "title": "《山海》第一季第1集：预兆。",
+          "publishedAt": "2026-08-26 00:55",
+          "observedAt": "2026-09-12T13:01:26.246Z",
+          "durationSeconds": 503.267,
+          "likeRaw": "468",
+          "commentRaw": "20",
+          "collectRaw": "194",
+          "shareRaw": "89",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7679406667993222452",
+          "title": "第1集 原创AIGC故事连载《缺席证明》第一集：她是谁？ 所有人的记忆里，没有她。反复坠入的噩梦，在虚实交界的灰域看见的一道身影。 隔着现实与遗忘的边界，他伸手",
+          "publishedAt": "2026-08-29 19:00",
+          "observedAt": "2026-09-12T13:01:07.139Z",
+          "durationSeconds": 672.59,
+          "likeRaw": "290",
+          "commentRaw": "67",
+          "collectRaw": "42",
+          "shareRaw": "19",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7680534758161386802",
+          "title": "第1集 原创AIGC故事连载《山海第二季》第一集：青榜。 陈望、罗骁、唐苒继续深入地下世界，从青丘、大荒到昆仑、天柱，逐步接触更庞大的上古文明遗迹。与此同时",
+          "publishedAt": "2026-09-01 19:57",
+          "observedAt": "2026-09-12T13:01:05.357Z",
+          "durationSeconds": 551.961,
+          "likeRaw": "4880",
+          "commentRaw": "199",
+          "collectRaw": "1095",
+          "shareRaw": "323",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7681623125796080922",
+          "title": "1",
+          "publishedAt": "2026-09-04 18:21",
+          "observedAt": "2026-09-12T13:01:03.551Z",
+          "durationSeconds": 30.209002,
+          "likeRaw": "246",
+          "commentRaw": "12",
+          "collectRaw": "18",
+          "shareRaw": "3",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7681629455458061577",
+          "title": "第2集 原创AIGC故事连载《山海第二季》第二集：灵炁。",
+          "publishedAt": "2026-09-04 18:45",
+          "observedAt": "2026-09-12T13:01:01.777Z",
+          "durationSeconds": 663.734,
+          "likeRaw": "2150",
+          "commentRaw": "107",
+          "collectRaw": "362",
+          "shareRaw": "75",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7683103445326269747",
+          "title": "第3集 原创AIGC故事连载《山海第二季》第三集：兽径。",
+          "publishedAt": "2026-09-08 18:05",
+          "observedAt": "2026-09-12T13:00:59.948Z",
+          "durationSeconds": 611.172,
+          "likeRaw": "2301",
+          "commentRaw": "69",
+          "collectRaw": "424",
+          "shareRaw": "93",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7683866472182992171",
+          "title": "第2集 原创AIGC故事连载《缺席证明》第二集：残留。",
+          "publishedAt": "2026-09-10 19:26",
+          "observedAt": "2026-09-12T13:00:58.257Z",
+          "durationSeconds": 592.76,
+          "likeRaw": "124",
+          "commentRaw": "22",
+          "collectRaw": "21",
+          "shareRaw": "7",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "编导_拾光",
+          "url": "https://www.douyin.com/video/7684197003668049193",
+          "title": "第4集 原创AIGC故事连载《山海第二季》第四集：引兽香",
+          "publishedAt": "2026-09-11 18:50",
+          "observedAt": "2026-09-12T13:00:56.229Z",
+          "durationSeconds": 460.1,
+          "likeRaw": "1236",
+          "commentRaw": "46",
+          "collectRaw": "234",
+          "shareRaw": "33",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        }
+      ]
+    },
+    {
+      "name": "孩子的一棠课",
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAeyH3TcMIgPLHxcu7VQzFLjfSd37N1WTBYWd1M1akg0C6H8TFGcco3vJ9NgoVQkiq",
+      "coverage": "已读21/主页21且列表到底；近期及置顶10条核对日期",
+      "displayed": 21,
+      "loaded": 21,
+      "details": 10,
+      "inWindow": 7,
+      "outside": 3,
+      "weeks": [
+        {
+          "label": "07-13",
+          "n": 1
+        },
+        {
+          "label": "07-20",
+          "n": 1
+        },
+        {
+          "label": "07-27",
+          "n": 2
+        },
+        {
+          "label": "08-03",
+          "n": 0
+        },
+        {
+          "label": "08-10",
+          "n": 0
+        },
+        {
+          "label": "08-17",
+          "n": 1
+        },
+        {
+          "label": "08-24",
+          "n": 1
+        },
+        {
+          "label": "08-31",
+          "n": 1
+        }
+      ],
+      "works": [
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7655461394413931811",
+          "title": "【抖音独家】六年级语文上册《七律·长征》 重走长征路 - 因为要录视频，女儿提前背会了它，但她很自然的认为，背得有点轻松。“腾细浪”“走泥丸”“尽开颜”。没有一",
+          "publishedAt": "2026-06-26 18:00",
+          "observedAt": "2026-09-12T12:59:26.278Z",
+          "durationSeconds": 659.517,
+          "likeRaw": "32.1万",
+          "commentRaw": "9075",
+          "collectRaw": "7.6万",
+          "shareRaw": "8.1万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7660450439695011108",
+          "title": "五年级上册《古人谈读书》 女儿考试后，我第一次清楚地看见，一张试卷会怎样悄悄压在一个孩子心上。 随之而来的，不只是分数，还有我的疑惑：为什么一道题明明讲会了，换",
+          "publishedAt": "2026-07-09 17:00",
+          "observedAt": "2026-09-12T12:59:48.029Z",
+          "durationSeconds": 418.006,
+          "likeRaw": "23.3万",
+          "commentRaw": "4734",
+          "collectRaw": "14.1万",
+          "shareRaw": "11.2万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7661991631624719667",
+          "title": "三年级语文下《火烧云》 暑假一到，孩子离开了学校，但真正的课堂，在课本合上的那一刻才开始。 孩子们有了更多的时间走出去，游历祖国的山河。爬一次山，感受一览众山小",
+          "publishedAt": "2026-07-17 10:00",
+          "observedAt": "2026-09-12T12:59:45.916Z",
+          "durationSeconds": 354.081,
+          "likeRaw": "4.3万",
+          "commentRaw": "918",
+          "collectRaw": "2.3万",
+          "shareRaw": "1.5万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7665171458712292634",
+          "title": "【抖音独家】谁是最可爱的人 - 这是七年级语文书里的一篇课文，小时候的我，和我女儿一样，也不理解”可爱”这个词到底意味着什么。 写这条文案的时候，我还特意问了几",
+          "publishedAt": "2026-07-22 10:20",
+          "observedAt": "2026-09-12T12:59:43.860Z",
+          "durationSeconds": 481.1,
+          "likeRaw": "16.7万",
+          "commentRaw": "9691",
+          "collectRaw": "1.9万",
+          "shareRaw": "1.3万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7668119425446350122",
+          "title": "【抖音独家】《诫子书》 如果在办公室或书房写一幅字，绝大多数人会选“宁静致远”或“淡泊明志”。 这些成语出自七年级上册的一篇背诵课文里——《诫子书》。 全文不过",
+          "publishedAt": "2026-07-30 08:59",
+          "observedAt": "2026-09-12T12:59:41.643Z",
+          "durationSeconds": 433.076,
+          "likeRaw": "5.7万",
+          "commentRaw": "1072",
+          "collectRaw": "3.3万",
+          "shareRaw": "1.7万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7669055515074252058",
+          "title": "孩子，你的朋友不是“人” 2026年，如果让我选一个最心疼女儿的时刻，大概就是那个嘴上说着“没关系”，却号啕大哭的晚上。 也是从那时开始，我有了给她做视频的想法",
+          "publishedAt": "2026-08-02 07:00",
+          "observedAt": "2026-09-12T12:59:39.836Z",
+          "durationSeconds": 378,
+          "likeRaw": "68.7万",
+          "commentRaw": "8563",
+          "collectRaw": "32.1万",
+          "shareRaw": "28.1万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7676126255661452578",
+          "title": "杜甫草堂的秘密 杜甫，是孩子在语文书里遇见最多的诗人之一。 从小学到高中，12年15首诗，他总在不同的年级等着孩子们。 先遇见一个温柔的杜甫。《绝句》里有黄鹂、",
+          "publishedAt": "2026-08-21 09:00",
+          "observedAt": "2026-09-12T12:59:28.025Z",
+          "durationSeconds": 599.818,
+          "likeRaw": "25.0万",
+          "commentRaw": "5683",
+          "collectRaw": "4.7万",
+          "shareRaw": "2.4万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7678155357679602995",
+          "title": "《敕勒歌》——三千孤儿入内蒙 小学二年级，孩子们会第一次在课本里看见草原。阴山、穹庐、苍天、牛羊，二十几个字，就把一个从未去过的远方放进了童年。 这篇课文背后藏",
+          "publishedAt": "2026-08-28 08:00",
+          "observedAt": "2026-09-12T12:59:24.315Z",
+          "durationSeconds": 443.501,
+          "likeRaw": "117.2万",
+          "commentRaw": "3.0万",
+          "collectRaw": "12.1万",
+          "shareRaw": "30.6万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7681245516193189146",
+          "title": "《西游记》开学第一课 每次开学前，孩子都会听到一个词——收心。 我试过对女儿说，但她反问我，什么是收心？我想了几天，然后想到了孙悟空。 - 作为孩子们的必读书目",
+          "publishedAt": "2026-09-03 17:55",
+          "observedAt": "2026-09-12T12:59:31.812Z",
+          "durationSeconds": 475.777,
+          "likeRaw": "5.4万",
+          "commentRaw": "838",
+          "collectRaw": "1.4万",
+          "shareRaw": "1.1万",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": true
+        },
+        {
+          "author": "孩子的一棠课",
+          "url": "https://www.douyin.com/video/7682369840186772777",
+          "title": "八年级语文上《愚公移山》 全文三百多字，里面有一句话，几乎被所有人忽略： “操蛇之神闻之，惧其不已也……” 请注意，不是“感其诚”，而是“惧其不已”。 这四个字",
+          "publishedAt": "2026-09-11 18:00",
+          "observedAt": "2026-09-12T12:59:29.998Z",
+          "durationSeconds": 379,
+          "likeRaw": "2.4万",
+          "commentRaw": "379",
+          "collectRaw": "3852",
+          "shareRaw": "3640",
+          "aiDeclared": true,
+          "videoWatchedInFull": false,
+          "inWindow": false
+        }
+      ]
+    }
+  ],
+  "observations": {
+    "observedOn": "2026-09-12",
+    "method": "已登录抖音详情页默认可见顺序前五条评论。保存匿名归纳和位置，不保存昵称、头像、位置或联系方式；不是五位独立用户的证明，未展开回复。",
+    "sources": [
+      {
+        "url": "https://www.douyin.com/video/7678155357679602995",
+        "author": "孩子的一棠课",
+        "status": "既有作品重新读取评论",
+        "comments": [
+          {
+            "position": 1,
+            "paraphrase": "补充一位收养孤儿者的经历。",
+            "kind": "补充材料",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 2,
+            "paraphrase": "推荐讲述相关事件的电影，并表达受到触动。",
+            "kind": "相关内容与情绪反馈",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 3,
+            "paraphrase": "提出实际接济人数高于标题中的三千。",
+            "kind": "数量解释",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 4,
+            "paraphrase": "提出另一组接济人数和领养条件，与上一条的数字不同。",
+            "kind": "数量解释与分歧",
+            "verifiedHistoricalFact": false
+          },
+          {
+            "position": 5,
+            "paraphrase": "质疑古代民歌与近现代事件的关联方式。",
+            "kind": "内容论证质疑",
+            "verifiedHistoricalFact": false
+          }
+        ],
+        "inference": "高互动与情绪共鸣并不消除出处、数字与解释方式的争议。历史准确性须独立核对，不能把评论中的数字改写成事实。"
+      },
+      {
+        "url": "https://www.douyin.com/video/7673074764340650597",
+        "author": "foyege",
+        "status": "既有作品重新读取评论",
+        "comments": [
+          {
+            "position": 1,
+            "paraphrase": "提出结合三维制作的替代方法；部分正文为链接，未补写链接内容。",
+            "kind": "替代方案"
+          },
+          {
+            "position": 2,
+            "paraphrase": "新手询问 ComfyUI 是否可行以及学习起点。",
+            "kind": "入门路径"
+          },
+          {
+            "position": 3,
+            "paraphrase": "询问使用的模型及真人限制如何处理。",
+            "kind": "条件与限制"
+          },
+          {
+            "position": 4,
+            "paraphrase": "询问所用工具收费是否昂贵。",
+            "kind": "成本"
+          },
+          {
+            "position": 5,
+            "paraphrase": "称方法在八个人或频繁切镜时不灵，认为示例选择了六个人和一镜到底。",
+            "kind": "适用范围质疑",
+            "failureIndependentlyReproduced": false
+          }
+        ],
+        "inference": "评论提供了可以继续核对的适用条件、成本和失败线索。最后一条是评论者的说法，未独立复现，不能据此认定工具缺陷或发生率。"
+      }
+    ]
+  },
+  "stats": {
+    "authors": 326,
+    "singleton": 311,
+    "repeated": 15,
+    "visibleCount": {
+      "totalN": 343,
+      "validN": 343,
+      "missingN": 0,
+      "min": 62,
+      "q1": 2291,
+      "median": 7322,
+      "q3": 28500,
+      "iqr": 26209,
+      "mean": 39730.90087463557,
+      "max": 1133000,
+      "sum": 13627699,
+      "top10PercentN": 35,
+      "top10PercentShare": 0.6917528777235247
+    },
+    "durationBins": [
+      {
+        "label": "<1分钟",
+        "n": 1,
+        "share": 0.002976190476190476
+      },
+      {
+        "label": "1–<3分钟",
+        "n": 23,
+        "share": 0.06845238095238096
+      },
+      {
+        "label": "3–<5分钟",
+        "n": 82,
+        "share": 0.24404761904761904
+      },
+      {
+        "label": "5–<10分钟",
+        "n": 94,
+        "share": 0.27976190476190477
+      },
+      {
+        "label": "10–<20分钟",
+        "n": 76,
+        "share": 0.2261904761904762
+      },
+      {
+        "label": "≥20分钟",
+        "n": 60,
+        "share": 0.17857142857142858
+      }
+    ],
+    "quadrants": [
+      {
+        "quadrant": "同比正、环比负",
+        "n": 12,
+        "keywords": [
+          "历史人物",
+          "历史",
+          "科普",
+          "地图",
+          "历史故事",
+          "非遗",
+          "宇宙",
+          "分镜",
+          "绘本",
+          "儿童英语启蒙",
+          "人文纪录片",
+          "减脂"
+        ]
+      },
+      {
+        "quadrant": "同比负、环比正",
+        "n": 3,
+        "keywords": [
+          "影视剧解说",
+          "植物",
+          "汽车知识"
+        ]
+      },
+      {
+        "quadrant": "同比负、环比负",
+        "n": 14,
+        "keywords": [
+          "电影解说",
+          "科普动画",
+          "动物科普",
+          "听书",
+          "诗词",
+          "配音",
+          "字幕",
+          "剪辑",
+          "修仙",
+          "历史民间故事",
+          "动物纪录片",
+          "数据可视化",
+          "科幻",
+          "育儿"
+        ]
+      },
+      {
+        "quadrant": "同比正、环比正",
+        "n": 3,
+        "keywords": [
+          "天文",
+          "苏轼",
+          "历史人文"
+        ]
+      }
+    ]
+  },
+  "referenceDataAccess": "charts-only; original dataset unavailable"
+}
