@@ -6,7 +6,7 @@ export function RepresentativeEvidence({platformId,compact=false}:{platformId?:s
  if(!platforms.length)return null;
  return <section className="followup-evidence" id={platformId?`followup-${platformId}`:'report-followups'}>
   <h3>{platformId?'持续使用与维护记录':'持续使用、失败处理与作者维护'}</h3>
-  {!platformId&&<><p><a href="/research-kit/representative-evidence.md" download>下载案例与来源</a></p><div className="table-wrap"><table className="brief-table"><thead><tr><th>平台</th><th>已能确认</th><th>尚不能确认</th></tr></thead><tbody>{platforms.map(p=><tr key={p.id}><th>{p.name}</th><td>{p.confirmed}</td><td>{p.missing}</td></tr>)}</tbody></table></div></>}
+  {!platformId&&<><div className="table-wrap"><table className="brief-table"><thead><tr><th>平台</th><th>已能确认</th><th>尚不能确认</th></tr></thead><tbody>{platforms.map(p=><tr key={p.id}><th>{p.name}</th><td>{p.confirmed}</td><td>{p.missing}</td></tr>)}</tbody></table></div></>}
   {platforms.map(p=><div className="followup-platform" key={p.id}>
    {!platformId&&!compact&&<h4>{p.name}</h4>}
    {!compact&&<p>{p.assessment}</p>}

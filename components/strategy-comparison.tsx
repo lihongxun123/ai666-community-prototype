@@ -6,6 +6,7 @@ import {NorthStarDirections} from '@/components/community-north-star';
 import { ContentArrangementLab } from '@/components/content-arrangement-lab';
 import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
+import {ResearchApplications} from './research-applications';
 
 const tabs=[['options','四种组织方式'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
@@ -18,13 +19,14 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
-  <header className="page-heading v23-intro"><h1>社区方案比较</h1><p className="muted">{data.date} · 候选方向待验证</p><div className="v23-downloads"><a href="/research-kit/strategy-comparison.md" download>下载完整比较</a>{data.options.options.map(o=><a key={o.id} href={`/research-kit/strategy-option-${o.id.toLowerCase()}.md`} download>组织方式 {o.id} 独立文档</a>)}</div></header>
+  <header className="page-heading v23-intro"><h1>借鉴与方案比较</h1><p className="muted">{data.date} · 候选方向待验证</p></header>
+  <ResearchApplications navigate={navigate}/>
   <CreatorSupplyLink context="strategy" navigate={navigate}/>
   <NorthStarDirections/>
   <details className="study-sources"><summary>目标、供给、人员、工具与投入条件</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
   <fieldset id="v23-tabs" className="v23-controls is-tabs" aria-label="研究内容">{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} className={tab===id?'is-active':''} onClick={()=>setTab(id)}>{label}</button>)}</fieldset>
   {tab==='options'&&<section aria-label="四种内容与服务组织方式">
-   <h2>四种组织方式</h2><div className="study-actions"><a href="/research-kit/research-option-tests.md" download>四周试点与判断条件</a><a href="/research-kit/research-cost-model.md" download>比较成本与承诺范围</a><a href="/research-kit/research-human-input.md" download>填写待补材料</a></div>
+   <h2>四种组织方式</h2>
    <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>查看组织方式 {o.id} →</button></article>)}</div>
    <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 筛选发现</th><th>B 解法实践</th><th>C 视觉创作</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
    <StrategyConditionsSummary/>

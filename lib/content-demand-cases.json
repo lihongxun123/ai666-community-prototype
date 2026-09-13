@@ -1,5 +1,5 @@
 {
-  "title": "从成片到持续供给",
+  "title": "成片、制作材料和作者投入",
   "date": "2026-09-13",
   "scope": "4个既有作品URL，28个有效时间点；核对可见画面和字幕，未听取音频或连续看完全片。没有新增作品、作者或评论计数。",
   "frames": [
@@ -378,7 +378,7 @@
       "text": "《山海》第一集两个URL在约5、100、300秒出现对应镜头和相同字幕，时长均约8分23秒。较早入口归入已完结合集，较晚入口归入短剧。页面数不宜直接作为独立成片数。"
     },
     {
-      "title": "教学供给要把准备工作一起交付",
+      "title": "教程中的准备工作也影响能否照着做",
       "text": "多人一致性教程实际展示角色编号、站位图、白模预演、参考素材和局部重拍。标题中的“两张图”无法概括全部准备；只提供模型或工程入口，学习者仍可能无法完成同类任务。"
     }
   ],
@@ -589,7 +589,7 @@
       "title": "卢象升：因成本拆开的历史人物作品",
       "evidence": "作者因成本高改为先交上半集，并把加快续更与数据表现联系。未公布金额、工时或工具。",
       "attribution": "作者公开评论",
-      "implication": "完整一集、上半集和下集承诺分开约定；赠送额度是否足以促成续作仍未知。",
+      "implication": "作者自述因成本先交上半集；金额、工时及赠送额度能否促成续作均未知。",
       "urls": [
         "https://www.douyin.com/video/7670827630043663667"
       ]
@@ -610,7 +610,7 @@
       "title": "foyege：群像控制教程与演员片段",
       "evidence": "步骤与材料组织已从画面核对；评论中有人自述试过但贵，作者自己的费用仍未知。",
       "attribution": "作者示范＋观众经历",
-      "implication": "成片、教程、材料包和答疑分别约定；观看者的支出不移作作者账单。",
+      "implication": "观看者自述的支出不能作为作者制作费用。",
       "urls": [
         "https://www.douyin.com/video/7673074764340650597",
         "https://www.douyin.com/video/7668957069785803426"
@@ -621,7 +621,7 @@
       "title": "ONE（The Silicon三部曲第三部）",
       "evidence": "作者列为2D动画与AI混合制作，署名包含编剧、分镜、动画、合成、音乐与声音；人数和成本未披露。",
       "attribution": "创作者工作室项目页",
-      "implication": "先确认各项资产可授权范围；多岗位和团队署名不能直接相加算人数。",
+      "implication": "多岗位和团队署名不能直接相加算人数。",
       "urls": [
         "https://ricardovillavicencio.com/type/animation/one/"
       ]
@@ -641,7 +641,7 @@
       "title": "The Animal Breakdown：动物历史与科普栏目图形",
       "evidence": "7集用了104项图形；图形团队3人，每集全部图形约2周。流程含清单、静图确认、动画与后期。",
       "attribution": "具名客户在供应商页面的访谈",
-      "implication": "两周只指图形环节；科普解释、事实核对和其他后期仍需要责任人。",
+      "implication": "两周只指图形环节；科普解释、事实核对和其他后期的分工与工时不能由此推算。",
       "urls": [
         "https://runway.com/customers/inside-trusted-media-brands-latest-streaming-show-built-with-runway"
       ]
@@ -651,7 +651,7 @@
       "title": "Forever is Made Now：Under Armour广告",
       "evidence": "制作方称4周：1周构思、3周制作；数千张静态候选与授权旧素材、VFX/CG结合。",
       "attribution": "制作方在供应商页面的访谈",
-      "implication": "候选数不等于失败次数。素材准备、风格确认和审阅往返应计入供给安排。",
+      "implication": "候选数不等于失败次数，也不能直接换算制作工时。",
       "urls": [
         "https://runway.com/customers/how-tool-is-reimagining-the-commercial-production-process-with-runway"
       ]

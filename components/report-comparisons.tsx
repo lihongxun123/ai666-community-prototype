@@ -14,5 +14,5 @@ export function CrossPlatformComparison({data,navigate}:{data:ReportComparison;n
  <h3>{data.title}</h3><p>{data.observation}</p>
  <div className="comparison-cases">{data.cases.map((c,i)=>{const pair=c.screenshotIds?.length?screenshots.pairs.find(p=>p.id===c.screenshotIds![0]):undefined;return <article key={`${c.platformId}-${i}`}><h4><a href={`#${c.platformId}`} onClick={e=>{e.preventDefault();navigate(c.platformId);}}>{c.name} ↗</a></h4>{pair&&<figure className="case-image"><a href={pair.detail.src} target="_blank" rel="noreferrer"><img src={pair.detail.src} width={pair.detail.width} height={pair.detail.height} alt={pair.detail.caption} loading="lazy"/></a><figcaption>{pair.platform} · {pair.title}<br/>页面截图 · {screenshots.capturedAt}</figcaption></figure>}<p>{c.fact}</p><ReportSources sources={c.sources}/></article>;})}</div>
  <div className="comparison-insight"><p><strong>分析　</strong>{data.reasoning}</p></div><p className="brief-limit">{data.counterpoint}</p>
- <dl className="comparison-conditions"><div><dt>多元拾光可借鉴</dt><dd>{data.adoption}</dd></div><div><dt>需要承担的工作</dt><dd>{data.requirement}</dd></div><div><dt>仍需确认</dt><dd>{data.missing}</dd></div></dl>
+
  </section>;}

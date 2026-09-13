@@ -1068,8 +1068,8 @@
   "findings": [
     {
       "id": "different_card_questions",
-      "title": "按选择条件设计卡片",
-      "text": "成品卡片突出题材和画面；模型卡片交代兼容条件；应用卡片说明输入输出；课程卡片注明范围和难度。Runway课程目录已展示模块数和级别，SeaArt角色发布指南则要求互动设定。字段应随内容用途调整，具体展示以实见页面为准。",
+      "title": "卡片字段随内容用途变化",
+      "text": "成品卡片主要展示题材和画面，资源与应用还涉及兼容条件、输入输出。Runway课程目录展示模块数和级别，SeaArt角色发布指南要求互动设定。不同内容的选择信息并不相同。",
       "representativePlatforms": [
         "runway",
         "tusi",
@@ -1111,8 +1111,8 @@
     },
     {
       "id": "different_reuse_handoffs",
-      "title": "详情注明可取得的材料",
-      "text": "复制提示词、调用风格、运行应用和取得源配置，各自需要不同准备。Dify模板、Hugging Face Space有依赖和权限条件，Runway App也不等同于源工作流。详情应列出可取得材料及需自行补齐的项目。",
+      "title": "复用入口交付的材料不同",
+      "text": "复制提示词、调用风格、运行应用和取得源配置，各自需要不同准备。Dify模板、Hugging Face Space有依赖和权限条件，Runway App也不等同于源工作流。",
       "representativePlatforms": [
         "dify",
         "huggingface",
@@ -1147,8 +1147,8 @@
     },
     {
       "id": "optional_process_visibility",
-      "title": "分别评价作品、教学与开放范围",
-      "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。",
+      "title": "作品公开范围由作者与许可决定",
+      "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。能够欣赏作品，不代表能取得完整制作材料。",
       "representativePlatforms": [
         "nightcafe",
         "jimeng",
@@ -1183,8 +1183,8 @@
     },
     {
       "id": "context_over_volume",
-      "title": "操作说明需包含输入和排错条件",
-      "text": "RunningHub样本交代了两份输入的用途，但缺修复步骤；ModelScope问题模板虽有字段，仍可能缺少完整复现命令。核查内容时应查看素材要求、失败条件和调整办法。",
+      "title": "输入说明与排错信息影响复现",
+      "text": "RunningHub样本交代了两份输入的用途，但缺修复步骤；ModelScope问题模板虽有字段，仍可能缺少完整复现命令。字段存在不代表材料已经填全。",
       "representativePlatforms": [
         "runninghub",
         "modelscope",
@@ -1213,8 +1213,8 @@
     },
     {
       "id": "maintain_content_relationships",
-      "title": "保留版本与关联材料",
-      "text": "Liblib样本链接旧版，SeaArt应用关联操作文章，Hugging Face论文页连接实现和数据。Leonardo Legacy训练指南说明数据变化不会自动更新已有结果。关联资料与版本需要随内容一起维护。",
+      "title": "资源之间存在版本与关联关系",
+      "text": "Liblib样本链接旧版，SeaArt应用关联操作文章，Hugging Face论文页连接实现和数据。Leonardo Legacy训练指南说明数据变化不会自动更新已有结果。",
       "representativePlatforms": [
         "liblib",
         "seaart",

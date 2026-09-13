@@ -5,7 +5,7 @@ export const publicDataInsights: DataEssay[] = [
     title:"访问次数与单次浏览页数",
     paragraphs:[
       'Semrush 2026 年 7 月估计：Civitai 为 1,283 万次访问、每次 5.34 页；Midjourney 为 1,109 万次、每次 15.89 页；LINUX DO 为 926 万次、每次 18.05 页。前者在这三个域名中访问次数更多，后两者每次访问的页数更多。数字揭示的是不同使用形态，不能把其中任何一项单独作为社区成功标准。',
-      '多元拾光需要按内容承诺解释行为：作品观看、教程阅读、问题回应和画布生成不宜都用运行次数衡量。现有数据能覆盖哪些动作尚需逐项核对；网站访问深度不能直接替代这些记录。'
+      '网站访问深度无法区分作品观看、教程阅读、问题回应与画布生成；它只说明访问过程中发生了多少页面浏览。'
     ],
     refs:[
       {title:'Semrush：Civitai 7 月数据',url:'https://www.semrush.com/website/civitai.com/overview/'},
@@ -28,7 +28,7 @@ export const publicDataInsights: DataEssay[] = [
     title:'不同供应商可能给出相反的涨跌判断',
     paragraphs:[
       'NightCafe 的 2026 年 7 月，Semrush 给出访问环比 +5.41%，Similarweb 的 7 月公开页为 -2.6%。RunningHub.cn 的 Semrush 7 月页为 -4.95%、平均 22:47；首次读取的 Similarweb 7 月旧公开快照为 +3.9%、7:15，随后该网址更新为 8 月。历史快照与新月份已分开保留。',
-      '这些差异足以改变“正在增长”或“用户停留很久”的判断。本报告按提供方和月份展示，既不取均值，也不把其中一个估计当作平台实际账本。对于多元拾光的留存目标，最终需要自己的任务记录和用户回访来定，而不能照抄第三方时长。'
+      '这些差异会改变对增长和停留时间的判断，因此按提供方和月份分别展示。不同估计不取均值，也不视为平台内部实测值。'
     ],
     refs:[
       {title:'Semrush：NightCafe',url:'https://www.semrush.com/website/nightcafe.studio/overview/'},
@@ -41,7 +41,7 @@ export const publicDataInsights: DataEssay[] = [
     title:'域名迁移会改变看到的流量走势',
     paragraphs:[
       "Similarweb 2026年8月显示，runwayml.com环比为-8.02%，runway.com为+329.6%。旧官网跳转新域，登录仍指向app.runwayml.com。域名用途变化影响流量比较，转移与新增访问尚无法拆分。",
-      '可灵也同时涉及 klingai.com 与 kling.ai，RunningHub 有 .cn 与 .ai。多元拾光与 MakeNow 同样需要区分社区入口、工具工作台和 API 调用，再通过自己的账号或任务记录去重。主域、子域和站间跳转相加，容易把一次任务统计成多份规模。'
+      '可灵同时涉及 klingai.com 与 kling.ai，RunningHub 有 .cn 与 .ai。主域、子域和站间跳转的访问数可能重叠，不能相加作为独立用户总数。'
     ],
     refs:[
       {title:'Similarweb：runwayml.com',url:'https://www.similarweb.com/website/runwayml.com/'},
@@ -54,7 +54,7 @@ export const publicDataInsights: DataEssay[] = [
     title:"访问地区与样本寻找",
     paragraphs:[
       'Similarweb 2026 年 8 月的 SeaArt 桌面地区数据中，日本占 35.23%。Dify 主域的桌面中国访问占 52.6%，Cloud 子域为 26.93%；两者查询范围有重叠，不能当作两批互斥用户。只看主域汇总，可能看不到工作台访问的地区构成差异。',
-      '地区信息可作为后续寻找样本与安排沟通的线索，但不能回答职业、预算、任务频率或作品是否商用。当前尚未选择主服务人群；不能因某一地区份额较高就推导应开展多语种运营，也不能把生产任务当成全部用户需要。'
+      '访问地区不能说明用户的职业、预算、任务频率或作品是否商用，也不能据此确认用户使用的语言。'
     ],
     refs:[
       {title:'Similarweb：SeaArt 受众',url:'https://www.similarweb.com/website/seaart.ai/'},
@@ -66,7 +66,7 @@ export const publicDataInsights: DataEssay[] = [
     title:'上游网站提供了更具体的作者寻找线索',
     paragraphs:[
       'RunningHub.cn 的 Semrush 7 月桌面来路中，Bilibili 占 1.45%，YouTube 占 1.31%；Direct 占 85.94%。这些数据说明可见的教程与视频平台入口值得追查，但不能证明来自教程的人更愿意付费，也不能把直接访问等同于老用户。',
-      '可执行的招募假设是：运营先在相关教程中寻找持续展示输入、参数修改、失败处理和最终文件的作者；产品再核实其最近交付和下一次任务。作者合作购买的是可以交接的方法与维护，种子使用者则需要带来自己的素材和真实用途。该通路的招募转化率仍待验证。'
+      '上游网站只提供可能的发现入口，无法确认具体用户看过哪篇教程，也没有说明这些用户后来是否创作、付费或持续使用。'
     ],
     refs:[
       {title:'Semrush：RunningHub.cn 桌面来源',url:'https://www.semrush.com/website/runninghub.cn/overview/'},
@@ -76,7 +76,7 @@ export const publicDataInsights: DataEssay[] = [
   {
     title:"流量之外的证据缺口",
     paragraphs:[
-      '公开流量帮助理解访问形态、地区和作者入口，但不能证明哪类人持续制作或付费。当前继续核对竞品的收费条件、完整使用过程及经营披露；多元拾光自身的分组访谈和试用方案保留为后续附录。',
+      '公开流量能说明访问形态、地区和上游入口，不能识别哪些人持续观看、交流、制作或付费。',
       '使用记录优先追到后续：同一公开账号是否继续制作，问题怎样处理，是否自述取消或续费，案例是否交代重试与人工投入。经营数字则核对原始披露、数据期、统计对象和计算方式；无法核实的部分继续留空。',
       "流量数据可用于选择研究对象和识别变化；付费率、收入归因、毛利和留存仍需经营及用户记录。"
     ],

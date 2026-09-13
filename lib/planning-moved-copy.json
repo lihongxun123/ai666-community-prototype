@@ -1,0 +1,1057 @@
+[
+  {
+    "platformId": "report",
+    "text": "多元拾光以目标用户规模与持续活跃为目标；目标人群仍需由实际消费、参与和回访确定。",
+    "from": "lib/research-brief.json"
+  },
+  {
+    "platformId": "report",
+    "text": "自制、约稿、作者伙伴、授权整理、共创与成员贡献可组合；分别核算首次与持续劳动，按实际续作判断供给。普通账号外观不改变运营供给归属。",
+    "from": "lib/research-brief.json"
+  },
+  {
+    "platformId": "report",
+    "text": "社区可以作为合作编辑、制作伙伴或主题组织者；作者可以保留原平台经营，不强制使用MakeNow或交源文件。没有稳定受众时不承诺曝光，有真实编辑、制作与反馈能力时才把它作为交换条件。",
+    "from": "lib/research-brief.json"
+  },
+  {
+    "platformId": "report",
+    "text": "收费与补贴规则不能据此要求多元拾光社区承担收入指标。MakeNow和API按能否增加目标用户的内容价值、参与机会和再次访问决定投入；调用量与付款另行观察，成本设上限。",
+    "from": "lib/research-brief.json"
+  },
+  {
+    "platformId": "liblib",
+    "text": "合作先明确案例、过程说明、可复现材料、使用许可与维护周期，再讨论独家价值。",
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "runninghub",
+    "text": "案例与便宜API可以互相支持，但需要同一任务实际用到这些资源，不能预设所有视频用户都需要通用Token。",
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "tusi",
+    "text": "活动参与和任务留存分开；后续观察作者是否继续供给、普通用户是否继续复用。该依据来自Tensor.Art，国内外站规则不可互推。",
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "jimeng",
+    "text": "制作任务的首次成功另记结果是否被采用、重试次数和实际用途；积分消耗作为成本记录，不能直接当成使用深度。",
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "nightcafe",
+    "text": "在活动之外观察是否继续创作、带自己的题目或帮助他人；这些是参与观察项，不把它们设为所有人的持续活跃条件。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "leonardo",
+    "text": "作者合作可关注专业作者与产品持续反馈，而非只发送资源；筛选制作教学供给时，观察作者能否教会别人、是否反馈失败，不只看粉丝数。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "leonardo",
+    "text": "承诺复做的案例，验收时同时看成品和别人能否复做；纯观看作品按自身交付验收。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "runway",
+    "text": "采购交付需要写清；只给作者身份和资源，不能保证得到可验收的内容。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "模型和环境概念对非技术创作者仍有门槛，不能直接沿用开发者路径设计MakeNow新手首页。",
+    "from": "lib/profiles-developer.ts"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "在客户与作者资源有限时，先选择自己能承担的小任务，避免直接模仿大平台的完整生态。原文对本项目资源状况的判断需按当前情况复核。",
+    "from": "lib/profiles-developer.ts"
+  },
+  {
+    "platformId": "dify",
+    "text": "分享设计应说明缺失的凭证、数据和环境，并明确方法何时失效、谁维护、旧版本怎样说明。",
+    "from": "lib/profiles-developer.ts"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "志愿分享可以补充供给，不能当作能稳定排期的采购预算。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "datawhale",
+    "text": "使用者可补失败说明，熟练者回答一类问题，作者维护核心案例；角色成长需要明确工作和反馈，不能只加荣誉头衔。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "datawhale",
+    "text": "能力迁移验证中，记录提醒和答疑分钟数，并在第二个真实任务上减少帮助，观察参与者能否独立完成。此项不替代阅读和交流的社区活跃指标。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "API问题可观察解决过程，以及答案能否帮助后来的读者；不以整个论坛的成员画像直接代替目标客户。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "领奖、工具使用、解决问题和再次帮助别人分别观察，不以用户来源判定价值。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "liblib",
+    "text": "分别检验内容回访与制作复用，不据案例数量建设模型市场。",
+    "from": "lib/deep-china.ts"
+  },
+  {
+    "platformId": "jimeng",
+    "text": "承诺制作复用的案例采购需包含分镜选择、筛片和后期操作与判断。",
+    "from": "lib/deep-china.ts"
+  },
+  {
+    "platformId": "huggingface",
+    "text": "可评估案例排错记录的作用；模型托管另需供给、存储和算力预算。",
+    "from": "lib/deep-developer.ts"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "可比较持续查阅与参与，同时另计征集、运行和托管的维护成本。",
+    "from": "lib/deep-developer.ts"
+  },
+  {
+    "platformId": "dify",
+    "text": "MakeNow分享范围按实际交接时缺少的材料、依赖和操作确定。",
+    "from": "lib/deep-developer.ts"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "合作试作分别记录案例整理、答疑和更新工作；原文“尚无稳定负责人”是当时判断，集中方案中需按当前人员情况确认。",
+    "from": "lib/deep-learning.ts"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "先分清不同内容的消费需要，再决定频道与页面字段；不能只靠“图文、视频、工作流”标签组织所有内容。",
+    "from": "lib/content-demand-themes.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "自然观察内容可比较持续了解作者、跟随观察过程的价值，不只把动物当生成素材；现有资料尚未证明同作者追看或跨周回访。",
+    "from": "lib/content-demand-themes.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "原平台已经提供部分观看、查询和交流入口；多元拾光要增加什么具体价值，仍需单独验证。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "liblib",
+    "text": "对于承诺复用的内容，作品需关联调用入口和必要上下文；不能用首页内容丰富代替任务完成记录。",
+    "sourceFile": "lib/profiles-china.ts",
+    "sourceLocation": "用户到底来做什么／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "LiblibAI 2.0 产品教学介绍",
+        "url": "https://insight.liblib.art/teaching/532c1bc80ae84530ac235ba8324a5d9c",
+        "date": "未标更新日",
+        "note": "产品范围与演化；搜索正文可读，直开有动态限制",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "创作者平台",
+        "url": "https://creator.liblib.art/",
+        "date": "访问 2026-09-08",
+        "note": "公开入口可见；后台数据未登录",
+        "type": "官方",
+        "originalRef": 4
+      }
+    ],
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "tusi",
+    "text": "案例供给合作除一次发布外，还需约定有效期、失效通知和必要修改的处理方式。",
+    "sourceFile": "lib/profiles-china.ts",
+    "sourceLocation": "官方承认的摩擦／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "吐司更新日志",
+        "url": "https://tusi.cn/updates",
+        "date": "2026 年多项记录",
+        "note": "产品演化、资源区别与历史摩擦",
+        "type": "官方",
+        "originalRef": 4
+      }
+    ],
+    "from": "lib/profiles-china.ts"
+  },
+  {
+    "platformId": "nightcafe",
+    "text": "可评估成员出题与轮流点评；运营仍需安排规则、进度和争议处理。",
+    "sourceFile": "lib/profiles-global.ts",
+    "sourceLocation": "供给者逐步成为组织者／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "创建成员挑战",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+        "date": "未标更新日",
+        "note": "主题、投稿及组织权限",
+        "type": "官方",
+        "originalRef": 2
+      },
+      {
+        "title": "Daily Challenge 资格与排名",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+        "date": "未标更新日",
+        "note": "资格、评审与反作弊",
+        "type": "官方",
+        "originalRef": 3
+      }
+    ],
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "seaart",
+    "text": "用户在别处也能看到同样效果时，仍为何来多元拾光？可复现资料、明确用途、及时答疑和低试错成本是待验证的答案；更便宜或更多图本身未必足够。",
+    "sourceFile": "lib/profiles-global.ts",
+    "sourceLocation": "同质化供给的反证／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "用户讨论：平台与 Civitai 的区别",
+        "url": "https://www.reddit.com/r/SeaArtAI/comments/1odm8cq/to_all_creators_on_sea_art_make_the_site/",
+        "date": "帖龄显示不一致；不定绝对日期",
+        "note": "同质化与分发价值的个案线索",
+        "type": "用户讨论",
+        "originalRef": 6
+      }
+    ],
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "API方向可试用“一个真实应用 + 参数选择 + 故障复盘”的内容单位。MakeNow方向可参考可复现的评审要求，检查换新素材能否跑通、失败是否有解释；暂不建设技术论文、训练和产业对接全栈社区。",
+    "sourceFile": "lib/profiles-developer.ts",
+    "sourceLocation": "复访与产品启发／两个段落",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "模型使用与新手文档",
+        "url": "https://www.modelscope.cn/learn/434243?lang=en_US",
+        "date": "更新 2026-07-02",
+        "note": "运行与上传路径；索引可读、直开空壳",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "创空间 xGPU",
+        "url": "https://modelscope.cn/docs/studios/xGPU",
+        "date": "未标更新日",
+        "note": "资源与试用条件",
+        "type": "官方",
+        "originalRef": 2
+      },
+      {
+        "title": "第五期贡献勋章权益",
+        "url": "https://www.modelscope.cn/learn/434850",
+        "date": "更新 2026-07-10；权益至 08-06",
+        "note": "已结束的贡献支持",
+        "type": "官方",
+        "originalRef": 3
+      },
+      {
+        "title": "我的云端 AI 工作站征文",
+        "url": "https://www.modelscope.cn/learn/435841",
+        "date": "访问 2026-09-08；精确发布日期未核",
+        "note": "质量、可复现与传播评审；索引读取",
+        "type": "官方",
+        "originalRef": 4
+      },
+      {
+        "title": "Alibaba 发布 ModelScope",
+        "url": "https://www.alibabagroup.com/en-US/document-1525026652642344960",
+        "date": "2022-11-03",
+        "note": "模型积累与上线历史",
+        "type": "官方集团发布",
+        "originalRef": 5
+      },
+      {
+        "title": "历史 Langflow 创空间教程",
+        "url": "https://community.modelscope.cn/67ee69925987ff6c2332021f.html",
+        "date": "约 2025；精确日期未核",
+        "note": "共享与独立空间的使用边界",
+        "type": "平台社区教程",
+        "originalRef": 6
+      },
+      {
+        "title": "历史 UniDiffuser 创空间示例",
+        "url": "https://modelscope.cn/studios/thu-ml/unidiffuser",
+        "date": "旧项目；当前运行未测",
+        "note": "页面存在不等于可运行",
+        "type": "官方",
+        "originalRef": 7
+      }
+    ],
+    "from": "lib/profiles-developer.ts"
+  },
+  {
+    "platformId": "dify",
+    "text": "API方向可做“具体应用、成本和失败复盘”，MakeNow方向可做“任务案例与接手方法”；两类候选人群需分别用真实需求验证，不必一起建设大市场。",
+    "sourceFile": "lib/profiles-developer.ts",
+    "sourceLocation": "重复使用与适用任务／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "Pricing",
+        "url": "https://dify.ai/pricing",
+        "date": "访问 2026-09-08",
+        "note": "Cloud、自部署与 Enterprise 边界",
+        "type": "官方",
+        "originalRef": 5
+      }
+    ],
+    "from": "lib/profiles-developer.ts"
+  },
+  {
+    "platformId": "liblib",
+    "text": "采购承诺制作复用的案例时，把输入整理、生成和后处理一起验收。",
+    "sourceFile": "lib/deep-china.ts",
+    "sourceLocation": "轻入口也有输入要求和质量取舍／第二段",
+    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
+    "sources": [
+      {
+        "title": "ComfyUI 电商换背景工作流使用方法",
+        "url": "https://insight.liblib.art/teaching/54eb95c2d65645c8ab712feba9b0d96d",
+        "date": "未标日期；访问 2026-09-09",
+        "note": "官方教程索引可读；白底输入、精调和放大限制",
+        "type": "官方",
+        "originalRef": 1
+      }
+    ],
+    "from": "lib/deep-china.ts"
+  },
+  {
+    "platformId": "liblib",
+    "text": "不把所有人都导向复杂画布，也不只用一个“同款”按钮承诺稳定结果。",
+    "sourceFile": "lib/deep-china.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "ComfyUI 电商换背景工作流使用方法",
+        "url": "https://insight.liblib.art/teaching/54eb95c2d65645c8ab712feba9b0d96d",
+        "date": "未标日期；访问 2026-09-09",
+        "note": "官方教程索引可读；白底输入、精调和放大限制",
+        "type": "官方",
+        "originalRef": 1
+      }
+    ],
+    "from": "lib/deep-china.ts"
+  },
+  {
+    "platformId": "runninghub",
+    "text": "分别验证开发者与素材创作者的入口，不能默认他们会顺着同一路径转化。",
+    "sourceFile": "lib/deep-china.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "AI 应用生成图片视频素材教程",
+        "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
+        "date": "2026-07-02",
+        "note": "按任务选择、输入与验收",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "人物替换与遮罩流程作者说明",
+        "url": "https://www.runninghub.cn/post/1992222168801144834",
+        "date": "更新 2026-04-25",
+        "note": "平台作者个案；能力范围和预先检查，不代表平均性能",
+        "type": "平台作者",
+        "originalRef": 2
+      }
+    ],
+    "from": "lib/deep-china.ts"
+  },
+  {
+    "platformId": "civitai",
+    "text": "种子用户名单不能只由点击或关注事件自动生成。",
+    "sourceFile": "lib/deep-global.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "Guided tours 实现说明",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md",
+        "date": "未标绝对更新日；访问 2026-09-09",
+        "note": "引导结束与真实成功的区别",
+        "type": "官方代码库",
+        "originalRef": 1
+      },
+      {
+        "title": "Image Resource Tracking",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
+        "date": "未标绝对更新日；访问 2026-09-09",
+        "note": "自动识别与手工归因",
+        "type": "官方代码库",
+        "originalRef": 2
+      },
+      {
+        "title": "Collaborative Collections",
+        "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
+        "date": "未标绝对更新日；访问 2026-09-09",
+        "note": "投稿、审核、关注与协作角色",
+        "type": "官方代码库",
+        "originalRef": 3
+      }
+    ],
+    "from": "lib/deep-global.ts"
+  },
+  {
+    "platformId": "nightcafe",
+    "text": "先确定验证哪类目标，不把兴趣参与直接等同于视频或商品素材制作需求。",
+    "sourceFile": "lib/deep-global.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "Promptle: The Daily AI Art Puzzle",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+        "date": "未标日期；访问 2026-09-09",
+        "note": "Alpha、编辑任务、成绩与自愿公开步骤",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "Daily Challenge downvoting",
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
+        "date": "未标日期；访问 2026-09-09",
+        "note": "官方承认奖励刷票与治理调整",
+        "type": "官方",
+        "originalRef": 2
+      }
+    ],
+    "from": "lib/deep-global.ts"
+  },
+  {
+    "platformId": "midjourney",
+    "text": "不把成熟平台曾做过的所有功能都列入多元拾光路线图，先看它是否匹配任务与维护能力。",
+    "sourceFile": "lib/deep-global.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "An update on Rooms",
+        "url": "https://updates.midjourney.com/an-update-on-rooms/",
+        "date": "2026-02-26",
+        "note": "明确下线 Web Rooms 与原因",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "Moodboards",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+        "date": "未标更新时间；访问 2026-09-09",
+        "note": "ID、历史代码和重复使用",
+        "type": "官方",
+        "originalRef": 2
+      }
+    ],
+    "from": "lib/deep-global.ts"
+  },
+  {
+    "platformId": "leonardo",
+    "text": "MakeNow分享需说明接收者究竟会得到什么，区分结果、方法和客户素材的公开范围。",
+    "sourceFile": "lib/deep-global.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "Blueprints by Leonardo.Ai",
+        "url": "https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai",
+        "date": "页面显示两周前更新；访问 2026-09-09",
+        "note": "分步任务、成本、分享边界与自建待开放",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "Collections",
+        "url": "https://intercom.help/leonardo-ai/en/articles/9047341-collections",
+        "date": "2026-02-18",
+        "note": "生成前选择归档位置与继续管理",
+        "type": "官方",
+        "originalRef": 2
+      }
+    ],
+    "from": "lib/deep-global.ts"
+  },
+  {
+    "platformId": "datawhale",
+    "text": "初期提问只收任务、输入、失败结果和已尝试步骤，其余由运营补问。",
+    "sourceFile": "lib/deep-learning.ts",
+    "sourceLocation": "ux／第二段",
+    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
+    "sources": [
+      {
+        "title": "P2S：如何提问",
+        "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+        "date": "未标更新时间；访问 2026-09-09",
+        "note": "公开提问、完整信息、志愿助教及预约答疑",
+        "type": "官方",
+        "originalRef": 1
+      },
+      {
+        "title": "P2S：文字教程与反馈收集",
+        "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+        "date": "未标更新时间；访问 2026-09-09",
+        "note": "内容转写和反馈修订责任",
+        "type": "官方",
+        "originalRef": 2
+      },
+      {
+        "title": "P2S：进度跟进与答疑讨论",
+        "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/progress_and_discuss/",
+        "date": "未标更新时间；访问 2026-09-09",
+        "note": "任务看板、进度与转交责任",
+        "type": "官方",
+        "originalRef": 3
+      }
+    ],
+    "from": "lib/deep-learning.ts"
+  },
+  {
+    "platformId": "liblib",
+    "text": "若验证模型或工作流制作这一条路径，可从公开展示作品的作者中招募，询问最近操作、失败经历与下一次任务；地区和品牌词只帮助寻找入口，不证明作者有合作意愿，也不用于排除欣赏型消费者。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "runninghub",
+    "text": "制作类作者合作可从教程中寻找展示输入、修改过程和输出文件的人，再核对持续任务、交付范围及失败成本。是否需要不同语言的运营支持，应单独核对沟通和维护工作，不能由桌面与全设备的地区份额直接决定投入。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "tusi",
+    "text": "可分别从吐司的中文 LoRA/工作流内容和 Tensor.Art 的风格系列寻找制作类合作线索，再核实任务频率、材料能否复现及持续合作意愿。两站来源分别记录；这些条件只用于制作合作，不作为全部种子用户门槛。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "civitai",
+    "text": "内容组织可以保留模型、作品或工具的直接返回入口，再观察用户是否确实收藏后回看或继续交流。公开年龄、性别和 Direct 份额不决定用户价值，也不能代替自身回访记录。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "seaart",
+    "text": "若考虑日语内容或作者合作，先核对语言、授权、沟通与持续维护的实际需要和成本。日本桌面访问占比不能单独证明这一市场适合多元拾光；当前仍是候选研究，不代表启动多语种运营。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "openart",
+    "text": "若验证制作类使用，可分别记录手机上的初次操作和桌面端的持续编辑，确认是不是同一任务、遇到什么困难。国家设备构成只能作为查找样本的线索，不预设用户一定跨端，也不把制作路径推广为所有社区使用。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "nightcafe",
+    "text": "持续观看、主题交流、活动参与和生成分别记录，检验各自是否出现跨周回访；生成等待与页面空置不当作有效消费。工具使用只是其中一条路径，现有第三方时长不能作为通过标准。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "jimeng",
+    "text": "制作类访谈可区分手机特效体验与连续制作，记录本人最近一次的输入、修改过程和结果。有意合作的作者另核下一次计划及可交付材料，观察期依据实际任务节奏，不要求所有人同周产生第二个任务。观看与兴趣参与另行观察。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "kling",
+    "text": "若验证 MakeNow 的视频制作支持，可访谈反复改镜头、管理角色或复用素材的创作者，查看最近项目和下一次实际计划。招募范围属于制作路径；可灵整体访问量不能用来估算多元拾光的潜在付费人数。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "midjourney",
+    "text": "若进行桌面制作任务访谈，可从公开作品与作者说明寻找对象，另问职业、商用频次和实际设备。国家的桌面占比不是职业画像，也不排除手机观看或纯欣赏用户。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "leonardo",
+    "text": "如需比较制作型内容供给，可先核对具体群体的重复任务及所缺材料，再判断是否投入；这是一条可选制作试验，不能取代对观看、阅读和交流需要的研究。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "runway",
+    "text": "自身统计应区分社区、MakeNow、API 等入口，并在具备合规身份关联时去重；不能用域名访问数相加作为独立用户数。无法跨入口识别时保留未知，不补算工具或社区回访。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "若内容和活动分布于多个平台，应分别记录发现入口、实际阅读和活动参与；在无法关联身份时只报告各入口记录，不能据官网访问数估计全部触达或直接求和。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "huggingface",
+    "text": "模型与任务实践可尝试提供能被搜索发现的方法说明和可选运行入口。持续阅读、讨论、复用分别观察；API 消费与画布再次使用只是工具路径的结果，不作为所有社区用户的有效条件。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "可把低价 API 与可复现任务说明作为开发实践的一项候选试验，核对实际问题、材料质量、维护成本及重复使用。是否有需要和能否持续供给仍待验证，不按下载数或访问数推算完成任务者，更不预定为整体方向。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "可从公开技术问题寻找重复需求，并在另获执行授权后自愿招募访谈。寻找作者时核对具体主题、最近作品和可承担的责任；论坛发帖数或总体活跃不等于可获得作者、用户或潜在客户。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "dify",
+    "text": "若验证工具相关内容，可依次记录发现案例、进入 MakeNow、修改运行和再次使用，并核对每一步是否满足实际需要。这用于判断一条工具路径；观看、阅读和交流另行观察，工具需求不代替社区持续活跃。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "data",
+    "text": "多元拾光的作品观看、教程阅读、问题回应和画布生成，应分别用相应行为记录衡量。先核对当前能采集哪些动作，再观察有效消费与跨周回访；网站页数和工具运行次数不能代替全部社区行为。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "data",
+    "text": "自身持续活跃需要固定观察期内的内容消费、交流与回访记录。第三方停留时长只能提供竞品背景，不用来设定多元拾光的留存基线或试点通过标准。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "data",
+    "text": "社区入口、MakeNow 工作区和 API 调用分别记录；只有具备合规的身份或任务关联时才合并去重。无法确认同一人跨入口使用时保留未知，不能相加成用户规模。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "data",
+    "text": "访问地区可帮助寻找样本和安排沟通，但不据此选择主服务人群或直接启动多语种运营。是否需要某种语言的内容，应另核用户需要、作者合作和持续维护成本。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "data",
+    "text": "制作方法类合作可从展示输入、参数修改、失败处理和最终文件的公开教程作者中寻找，再核实其近期交付、下一次任务及可承担的维护。招募转化仍未知；带素材和制作任务只适用于制作试用，不作为观看、阅读与兴趣交流用户的共同门槛。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "data",
+    "text": "自身分组访谈与试用仍是待执行方案，可分别补充观看、学习、交流与制作中的持续需要和替代方式。竞品收费与完整使用过程继续作为比较依据，不能把这份方案写成已经取得自身用户证据。",
+    "from": "lib/public-data-insights.ts"
+  },
+  {
+    "platformId": "runninghub",
+    "text": "若内容关联工具运行，分别记录有效观看阅读、页面等待、导出和实际采用；观看或交流用户不必进入制作步骤。跨周回访按各自路径观察，不把长会话直接当成有效活跃。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "seaart",
+    "text": "风格内容可先供欣赏、收藏和讨论，有制作意愿时再提供可修改材料。制作试用可询问近期作品与下一次实际计划；纯观看者另按有效消费与回访观察，不因没有作品或制作任务而排除。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "midjourney",
+    "text": "不照搬高页数目标。欣赏路径观察有效浏览、收藏回看和讨论；制作路径另查作品采用与下一次实际任务。完成作品不是所有社区用户的共同通过条件。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "datawhale",
+    "text": "学习试验可分别观察持续阅读、自主练习、提问与成果提交。可运行案例适合验证实践路径，提交和重复使用只用于对应承诺；不把没有交成果的兴趣学习者一概排除。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "可按具体内容追踪持续阅读、学习参与与方法复用。第二次有任务时是否回来，是复用路径的一项观察；纯阅读或交流用户按自身回访理由观察，不要求产生第二个制作任务。",
+    "from": "lib/public-data.json"
+  },
+  {
+    "platformId": "report",
+    "text": "复盘先看有效观看、阅读、收藏回看、表达、交流和跨周持续活跃，再查看相关工具路径的复用、任务结果与付款。尚未完成整个观察期者单列，经提醒、逐人邀请和自行回访分别记录；小样本保留实际人数和过程，不推算行业留存率或终身价值。",
+    "from": "lib/business-synthesis.ts"
+  },
+  {
+    "platformId": "china-users",
+    "text": "宏观规模作为背景。方向比较看内容是否值得持续消费、参与是否得到回应、平台是否能在预算内维持供给；工具交付按具体承诺另验。",
+    "from": "lib/china-ai-users.json"
+  },
+  {
+    "platformId": "china-users",
+    "text": "平台供给需要多少持续投入；团队与长期平台供给条件已明确。；按内容类型分开的制作、复核、回应和维护记录，以及实际可用时间。；不能根据市场规模推算周产量、招聘数量或同时开展多少条方向。",
+    "from": "lib/china-ai-users.json"
+  },
+  {
+    "platformId": "china-users",
+    "text": "算力、模型、资源、指导、流程支持和组织协作对应不同成本与收入，仍用于理解竞品的经营与供给条件。多元拾光本阶段以持续活跃为目标，不由全国用户数乘套餐价估算社区收入，也不以用户付款作为试点通过条件。",
+    "from": "lib/china-ai-users.json"
+  },
+  {
+    "platformId": "china-users",
+    "text": "问卷中的意愿价格不能代替实际付费，也不应据此筛选社区目标用户。多元拾光需确认内容制作、更新、回应和工具支持的投入上限，再比较能维持的用户规模与回访表现。",
+    "from": "lib/china-ai-users.json"
+  },
+  {
+    "platformId": "operations",
+    "text": "多元拾光是否建设作者市场，取决于能否持续取得并维护这些材料。",
+    "from": "lib/operations-data.json"
+  },
+  {
+    "platformId": "report",
+    "text": "内容与工具相连可能减少操作步骤，也会增加维护和支持工作。多元拾光应比较专题编选、系列作品、方法解释、收藏回看、反馈交流和实际接手分别是否值得用户回来。工具内已有类似内容时，仍需验证社区的选择质量、更新节奏或回应是否有额外价值，不能仅靠增加生成入口证明。",
+    "from": "lib/research-brief.json",
+    "sources": []
+  },
+  {
+    "platformId": "report",
+    "text": "这三种样本分别把学习进度、问题解决和兴趣参与留在社区。执行地点不足以解释社区价值，用户回到哪里补信息、得到反馈或参加活动更值得观察。对多元拾光而言，API和MakeNow既可作为执行入口，也可服务部分内容；内容的适用范围不必与自营工具完全重合。",
+    "from": "lib/research-brief.json",
+    "sources": []
+  },
+  {
+    "platformId": "content",
+    "text": "成品卡片突出题材和画面；模型卡片交代兼容条件；应用卡片说明输入输出；课程卡片注明范围和难度。Runway课程目录已展示模块数和级别，SeaArt角色发布指南则要求互动设定。字段应随内容用途调整，具体展示以实见页面为准。",
+    "from": "lib/content-taxonomy.json",
+    "sources": [
+      {
+        "url": "https://academy.runwayml.com/",
+        "title": "academy.runwayml.com"
+      },
+      {
+        "url": "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-5-ai-characters/how-to-create-your-own-character.md",
+        "title": "docs.seaart.ai"
+      },
+      {
+        "url": "https://www.tensor.art/models/818294207639855588/Imam-Ali-Shrine-2025-01-12-16:16:29",
+        "title": "Imam Ali Shrine FLUX LoRA版本页"
+      },
+      {
+        "url": "https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai",
+        "title": "Blueprints by Leonardo.Ai"
+      },
+      {
+        "url": "https://linux.do/t/topic/1537782",
+        "title": "关于应用接入的问题请教佬友"
+      }
+    ]
+  },
+  {
+    "platformId": "content",
+    "text": "复制提示词、调用风格、运行应用和取得源配置，各自需要不同准备。Dify模板、Hugging Face Space有依赖和权限条件，Runway App也不等同于源工作流。详情应列出可取得材料及需自行补齐的项目。",
+    "from": "lib/content-taxonomy.json",
+    "sources": [
+      {
+        "url": "https://docs.dify.ai/en/cloud/use-dify/workspace/app-management",
+        "title": "Manage Apps"
+      },
+      {
+        "url": "https://huggingface.co/docs/hub/spaces-overview",
+        "title": "Spaces Overview"
+      },
+      {
+        "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
+        "title": "Moodboards"
+      },
+      {
+        "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
+        "title": "Publishing Workflows as Apps"
+      }
+    ]
+  },
+  {
+    "platformId": "content",
+    "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。",
+    "from": "lib/content-taxonomy.json",
+    "sources": [
+      {
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts",
+        "title": "help.nightcafe.studio"
+      },
+      {
+        "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+        "title": "Promptle: The Daily AI Art Puzzle"
+      },
+      {
+        "url": "https://jimeng.jianying.com/visionary",
+        "title": "未来影像计划：行业活动与获奖作品"
+      },
+      {
+        "url": "https://runway.com/news/customers/miro",
+        "title": "How Miro Produced Its Keynote Video for Four Global Markets with Runway"
+      }
+    ]
+  },
+  {
+    "platformId": "content",
+    "text": "RunningHub样本交代了两份输入的用途，但缺修复步骤；ModelScope问题模板虽有字段，仍可能缺少完整复现命令。核查内容时应查看素材要求、失败条件和调整办法。",
+    "from": "lib/content-taxonomy.json",
+    "sources": [
+      {
+        "url": "https://www.runninghub.cn/post/2074049801244917760",
+        "title": "Klein虚拟试衣与商品局部替换"
+      },
+      {
+        "url": "https://github.com/modelscope/modelscope/issues/1661",
+        "title": "断点续传功能问题 · Issue #1661"
+      },
+      {
+        "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+        "title": "How to Ask Questions"
+      }
+    ]
+  },
+  {
+    "platformId": "content",
+    "text": "Liblib样本链接旧版，SeaArt应用关联操作文章，Hugging Face论文页连接实现和数据。Leonardo Legacy训练指南说明数据变化不会自动更新已有结果。关联资料与版本需要随内容一起维护。",
+    "from": "lib/content-taxonomy.json",
+    "sources": [
+      {
+        "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
+        "title": "intercom.help"
+      },
+      {
+        "url": "https://huggingface.co/papers/1804.07461",
+        "title": "huggingface.co"
+      },
+      {
+        "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+        "title": "电商产品精修+背景替换（FLUX）V2.0"
+      },
+      {
+        "url": "https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg",
+        "title": "動画に文字（视频加文字）应用"
+      },
+      {
+        "url": "https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg",
+        "title": "動画字幕 / 動画に文字 2アプリ"
+      },
+      {
+        "url": "https://docs.dify.ai/en/cloud/use-dify/publish/publish-to-marketplace",
+        "title": "Publish Apps to Marketplace"
+      }
+    ]
+  },
+  {
+    "platformId": "content-demand",
+    "text": "与教程作者合作时，可把输入材料、适用模型、步骤、费用条件和失败示例列为交付内容；单独赠送额度不能保证这些材料出现。",
+    "from": "lib/content-demand-panel.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可试做材料整理、入门解释和问题补充，但需核对作者是否愿意提供素材，以及读者是否实际继续使用。",
+    "from": "lib/content-demand-panel.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "招募作者前，另核近期发布、作品质量与合作意愿。",
+    "from": "lib/content-demand-panel.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "合作时分别约定完整一集、上半集与下集承诺，不把赠送额度视为续作保证。",
+    "from": "lib/content-demand-cases.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "合作时分别约定成片、教程、材料包和答疑的交付范围。",
+    "from": "lib/content-demand-cases.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "采购或合作使用混合制作作品前，逐项确认素材、音乐、声音等资产的可授权范围。",
+    "from": "lib/content-demand-cases.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "组织科普内容供给时，除图形制作外，还需明确科普解释、事实核对和其他后期的负责人。",
+    "from": "lib/content-demand-cases.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "安排制作任务时，把素材准备、风格确认和审阅往返计入工作范围。",
+    "from": "lib/content-demand-cases.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可试做争议与具体镜头、人物身份、资料上下文的对照，检验是否帮助观众核查。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可试做同类植物对照、带时间与环境的观察记录，以及围绕连续主题的补充阅读；先验证是否有额外阅读价值。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可比较角色与集数索引、设定回顾和清楚的更新线索，观察是否帮助观众接着看；不能预设迁到多元拾光后会更活跃。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可为同一制作任务整理完整输入、设置、输出与失败对照，检验材料能否帮助独立复做。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可比较四种样稿：历史片段与出处对照、自然观察与物种对照、故事角色与集数索引、教程材料与结果对照。先检查各自能否帮助阅读或使用；四种内容仍是候选，尚未选定社区方向。",
+    "from": "lib/content-demand-closure.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "社区入口、卡片信息和后续推荐，可分别回应观看题材与寻找制作方法的意图。",
+    "from": "lib/content-demand-ecosystem.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "内容组织可区分观看与制作任务：观众阅读完整解释或故事，制作者查参数、源文件与步骤。AI生成声明与制作过程入口分别处理，不把查看制作过程设为观看的必经步骤。",
+    "from": "lib/content-demand-ecosystem.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "可分别检验追看下一篇、围绕同题讨论、使用下一份材料、改进后交回作品，不要求所有读者都生成内容。",
+    "from": "lib/content-demand-ecosystem.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "补一组实际制作记录，逐项明确谁负责、交付什么以及可否复用，尤其记录生成之外的工作。",
+    "from": "lib/content-demand-ecosystem.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "内容验证应观察外部用户是否继续有效观看、阅读或参与，并记录真实跨周返回；不以内部填充、注册或工具调用代替。",
+    "from": "lib/content-demand-themes.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "若试做出处服务，可把具体台词、改编与修订对应起来；新增价值仍需由消费者采用情况验证。",
+    "from": "lib/content-demand-themes.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "作者合作条件应从实际生产方式出发，分别核对成本、分集压力与持续组织子题的能力。",
+    "from": "lib/content-demand-comparison.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "生成补助与编辑工作对应不同问题，应分别考虑制作投入和内容考据。",
+    "from": "lib/content-demand-comparison.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "合作前先核一集的生成、剪辑和考据工时，再约定成片范围、下集计划与纠错责任，不预先要求日更。",
+    "from": "lib/content-demand-comparison.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "若整理饲养体验，让适用条件、来源和商业关系可见；AI可辅助表现与整理，不能据这些评论生成产品功效承诺。",
+    "from": "lib/content-demand-comparison.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "效果鉴赏和方法学习可以关联，但不宜设成同一条必经路径；观看者无需先完成创作任务。",
+    "from": "lib/content-demand-comparison.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "覆盖品类多是作者声明；多元拾光更应核对文字准确、商品一致和参考图使用条件，不能直接复制全品类承诺。",
+    "from": "lib/content-demand-observations.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "目前能确认作品、页面机制和部分评论诉求，尚无多元拾光的真实跨周返回数据。内部填充、注册和工具调用都不能作为用户持续观看、阅读或参与的证明。",
+    "from": "lib/content-demand-themes.json"
+  },
+  {
+    "platformId": "content-demand",
+    "text": "借鉴比较方法；时长、改名、标签等运营建议仍需独立验证，不直接转成多元拾光策略。",
+    "from": "lib/content-demand-depth.json"
+  },
+  {
+    "platformId": "liblib",
+    "text": "若验证图片制作服务，记录实际被采用结果对应的调用、重试和人工修正成本，而不只比较 Token 单价。这是制作交付的成本记录，不是全部社区内容的共同验收条件。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "runninghub",
+    "text": "多元拾光应按实际供给、运行和支持记录核算投入，不能沿用海马云集团或 RunningHub 的毛利率估计自身成本或利润；当前社区试点不以盈利作为通过条件。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "tusi",
+    "text": "如果同时提供 API 与 MakeNow 的付费服务，应分别说明购买的能力、适用入口、额度和服务范围，并核对账单与客服工作。这是相关工具服务的说明要求，不表示社区必须承担销售指标。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "civitai",
+    "text": "观察种子用户时，分别记录本人或组织付款、获得补贴、通过创作取得额度等来源。付款来源与有效消费、持续回访分别判断，不用是否付费筛掉有持续兴趣的用户。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "civitai",
+    "text": "比较作者合作形式时，应了解作者能否预期回报及规则变化的影响。共享池提案和个别作者抱怨可作为追问线索，不能据此预测合作作者的平均收益或流失。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "openart",
+    "text": "访谈可以从具体功能请求继续追问用户想实现的表达或体验。角色一致性曾帮助 OpenArt 识别故事需要，但不能据此预设多元拾光用户也需要同一种工具。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "jimeng",
+    "text": "比较自身 API 的成本优势时，应固定模型和任务条件，核对稳定性、失败重试及完整交付成本，不能只比较 Token 单价或一次活动折扣。是否能支持持续内容供给仍须实际记录。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "kling",
+    "text": "如需采购模型支持制作任务，应把参考准备、失败重试、人工选片与后处理纳入总成本比较；不能由模型报价推断交付成本，也不据此认定采购或制作服务已经启动。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "midjourney",
+    "text": "比较自身 API 与订阅服务时，应分清模型官方授权、第三方转接和终端订阅的范围与使用条件，不能把不同业务形式合并成一条已验证路径。竞品授权合作不代表多元拾光拥有同样资格。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "midjourney",
+    "text": "若尝试邀请或小范围社群测试，应记录自身招募过程和投入，不能照搬 Midjourney 的历史路径并假设成本相同。现有合作方回顾不证明邀请机制的单独效果。",
+    "from": "lib/profiles-global.ts"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "若考虑共创活动，先核对可用案例、作者承诺和组织能力，再确定规模。大型活动会同时增加组织与制作工作；尚未确认稳定供给和可投入工时时，不直接复制其规模，也不将活动已存在当作自己的需求验证。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "waytoagi",
+    "text": "设计自身招募路径时，应区分已有关系与陌生来源，并核算编辑、沟通及维护投入。WaytoAGI 的创始人口述可提供比较线索，但不证明陌生流量下有相同成本或效果。",
+    "from": "lib/profiles-learning.ts"
+  },
+  {
+    "platformId": "huggingface",
+    "text": "可先观察有限案例是否被持续阅读、讨论或复用，再决定增加数量；不把总案例数本身作为有效活跃。制作或运行类案例另验实际使用，仓库下载集中度不能代替自身内容消费记录。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "modelscope",
+    "text": "将竞品免费资源与自身服务比较前，先取得现行完整规则、额度、资格及费用范围。只有搜索索引时，不作定量价格比较，也不据此承诺同等权益。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "可观察公开技术问题，但不能把 LINUX DO 当作可以随意拉群的用户池。任何后续招募或合作都须核对项目类型、推广和引流限制，并另获执行授权；既有公益身份不代表可以改变服务承诺。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "研究可以读取公开需求；社区指南禁止为其他社区引流，因此不把 LINUX DO 设为直接拉群的招募渠道。公开观察与对外招募分别处理。",
+    "from": "lib/deep-learning.ts"
+  },
+  {
+    "platformId": "dify",
+    "text": "自身 API 业务与 MakeNow 的收入和相关成本应分别记录；判断购买理由还需要具体使用过程，不能仅从账单推断用户购买的是低价模型还是制作效率。这些工具业务记录不代替社区持续活跃。",
+    "from": "lib/business-data.json"
+  },
+  {
+    "platformId": "linuxdo",
+    "text": "问题答疑可先整理提问条件、已有尝试与结果反馈，由运营整理材料、产品检查结果记录，涉及工具结论时再由具备能力者核实；回复数量不作为验收。制作类案例可关联成员回传的输入差异、结果图和失败说明，但图片不能证明配置复制或运行成功，能力以现行验证记录为准。开放共建前须明确审改、校对、争议和回退责任；没有稳定维护者时，可先收集修改建议，不把编辑次数直接兑换积分。若考虑推广服务，先披露商业关系、确认维护和投诉责任；没有依据照搬论坛价格，也不据此启动跨站积分交换或争议仲裁。",
+    "from": "lib/linuxdo-login.json"
+  }
+]

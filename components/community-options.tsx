@@ -13,15 +13,15 @@ export function CommunityOptions({navigate}:{navigate:(id:string)=>void}) {
  const o=data.options.find(o=>o.id===active)!;
  const jump=(id:string)=>document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
  return <div className="framework-study options-study">
-  <a href="/research-kit/global-research-gaps.md" download>下载待解问题</a>
+
 
   <IntegratedStrategies navigate={navigate}/>
   <details className="study-sources"><summary>讨论：三种展示结构与四个经营假设</summary>
   <ContentPresentation />
-  <section className="study-platform" id="previous-options"><h2>的四个经营假设</h2><p>保留人群、供给、成本和运营路径的分析。它们不是四个互斥的完整产品方案；需要结合上面的产品形态继续比较。</p><p className="muted">以下为{data.version}记录于{data.date}原始下载保留当时的讨论内容。</p></section>
+  <section className="study-platform" id="previous-options"><h2>四个经营假设</h2><p>保留人群、供给、成本和运营路径的分析。它们不是四个互斥的完整产品方案；需要结合上面的产品形态继续比较。</p><p className="muted">讨论记录：{data.date}。</p></section>
   <div className="table-wrap"><table className="options-summary"><thead><tr><th>方案</th><th>用户选择它的理由</th><th>回访与经营路径</th><th>当前判断</th></tr></thead><tbody>{data.options.map(p=><tr key={p.id}><th><button className="text-button" onClick={()=>{setActive(p.id);jump('option-details');}}>{p.id} · {p.name}</button></th><td>{p.promise}</td><td><p>{p.returnReason}</p><p className="muted">{p.business}</p></td><td>{p.verdict}</td></tr>)}</tbody></table></div>
   <details className="notice"><summary>方案成立的条件</summary><strong>{data.recommendation.headline}</strong><p>{data.recommendation.why}</p><p>{data.recommendation.condition}</p><p className="muted">{data.status}</p></details>
-  <nav className="study-actions" aria-label="经营假设比较目录"><button className="text-button" onClick={()=>jump('options-comparison')}>逐项比较</button><button className="text-button" onClick={()=>jump('option-details')}>四份经营假设</button><button className="text-button" onClick={()=>jump('options-metrics')}>如何评估</button><button className="text-button" onClick={()=>jump('options-decisions')}>条件与组合</button><a href="/research-kit/community-options.md" download>下载对照</a></nav>
+  <nav className="study-actions" aria-label="经营假设比较目录"><button className="text-button" onClick={()=>jump('options-comparison')}>逐项比较</button><button className="text-button" onClick={()=>jump('option-details')}>四份经营假设</button><button className="text-button" onClick={()=>jump('options-metrics')}>如何评估</button><button className="text-button" onClick={()=>jump('options-decisions')}>条件与组合</button></nav>
 
   <section className="study-platform" id="options-comparison"><div className="section-heading"><h2>同一套约束下，逐项比较</h2><span>定性判断，不是市场得分</span></div>
    <div className="table-wrap"><table className="options-comparison"><thead><tr><th>比较项</th>{data.options.map(p=><th key={p.id}>{p.id} · {p.name}</th>)}</tr></thead><tbody>{data.comparison.map(row=><tr key={row.dimension}><th>{row.dimension}</th><td>{row.A}</td><td>{row.B}</td><td>{row.C}</td><td>{row.D}</td></tr>)}</tbody></table></div>
@@ -30,7 +30,7 @@ export function CommunityOptions({navigate}:{navigate:(id:string)=>void}) {
 
   <section id="option-details" className="study-platform"><div className="section-heading"><h2>每个方向怎样运营</h2><span>12周排程均为条件式建议</span></div>
    <div className="compare-options" aria-label="选择完整方案">{data.options.map(p=><button key={p.id} aria-pressed={p.id===active} className={p.id===active?'chosen':''} onClick={()=>setActive(p.id)}>{p.id} · {p.name}</button>)}</div>
-   <article key={o.id} aria-live="polite"><h3>{o.id} · {o.name}</h3><p className="lead">{o.promise}</p><p><strong>用户与任务：</strong>{o.audience}</p><p><strong>持续使用理由：</strong>{o.returnReason}</p><p><strong>区别于相邻方向：</strong>{o.distinction}</p><p><strong>工具关系：</strong>{o.tools}</p><div className="study-actions"><a href={`/research-kit/community-option-${o.id.toLowerCase()}.md`} download>下载方案{o.id}</a></div>
+   <article key={o.id} aria-live="polite"><h3>{o.id} · {o.name}</h3><p className="lead">{o.promise}</p><p><strong>用户与任务：</strong>{o.audience}</p><p><strong>持续使用理由：</strong>{o.returnReason}</p><p><strong>区别于相邻方向：</strong>{o.distinction}</p><p><strong>工具关系：</strong>{o.tools}</p>
     <h3>内容如何组织与供应</h3><p>{o.content}</p><p><strong>最低交付要求：</strong>{o.quality}</p><p><strong>供给来源与回报：</strong>{o.supply}</p><p><strong>信息组织：</strong>{o.organization}</p>
     <h3>从获客到再次使用</h3><div className="table-wrap"><table><thead><tr><th>环节</th><th>运营动作</th><th>应留下什么</th></tr></thead><tbody>{o.journey.map(j=><tr key={j.stage}><th>{j.stage}</th><td>{j.action}</td><td>{j.evidence}</td></tr>)}</tbody></table></div>
     <h3>收益与成本</h3><p>{o.business}</p><p>{o.economics}</p><p><strong>商业承诺的边界：</strong>{o.commercialBoundary}</p>

@@ -2,6 +2,7 @@
 /* oxlint-disable next/no-img-element -- Evidence screenshots keep their native encoding, load lazily and link to the original file. */
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, Menu, X } from 'lucide-react';
+import { isPlanningSection } from '@/lib/research-planning';
 import { profiles } from '@/lib/profiles';
 import { LinuxDoLoginUpdate } from '@/components/linuxdo-login';
 import { ResearchFramework, ToolSupportProfile } from '@/components/research-framework';
@@ -85,7 +86,7 @@ export default function Research(){
  <div className="page-heading"><h1>平台对照</h1></div>
  <div className="compare-controls"><p>选择最多 3 家并排对照。{selected.length>0&&`已选 ${selected.length} 家。`}</p>{selected.length>0&&<button className="text-button" onClick={()=>setSelected([])}>清空选择 <X size={14}/></button>}</div>
  <div className="compare-options">{profiles.map(item=><button aria-pressed={selected.includes(item.id)} disabled={selected.length===3&&!selected.includes(item.id)} className={selected.includes(item.id)?'chosen':''} key={item.id} onClick={()=>toggle(item.id)}>{selected.includes(item.id)&&<Check size={13}/>} {item.name}</button>)}</div>
- <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>复访机制（推断）</th><th>适用条件</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td><td>{item.relevance}<small>暂不复制：{item.notCopy}</small></td></tr>)}</tbody></table></div>
+ <div className="table-wrap"><table className="comparison-table"><thead><tr><th>竞品 / 类型</th><th>用户与核心内容</th><th>首次使用路径</th><th>作者供给与商业</th><th>再次使用的可能原因（分析）</th></tr></thead><tbody>{rows.map(item=><tr key={item.id}><th><button onClick={()=>navigate(item.id)}>{item.name}<ArrowUpRight size={14}/></button><small>{item.group}</small></th><td>{item.job}<small>{item.object}</small></td><td>{item.first}</td><td>{item.supply}<small>{item.business}</small></td><td>{item.repeat}</td></tr>)}</tbody></table></div>
  </>}
 {view==='progress'&&<ResearchProgress navigate={navigate}/>}
 {view==='china-users'&&<ChinaAIUsers navigate={navigate}/>}
@@ -112,7 +113,7 @@ export default function Research(){
  <div className="study-actions"><button className="text-button" onClick={()=>showAudience(p.id)}>{p.name}用户画像与产品价值 →</button><button className="text-button" onClick={()=>navigate('content-demand',`de-platform-${p.id}`)}>内容样本与供给 →</button></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
  <PlatformReview platformId={p.id}/><div className="access-note"><strong>访问与操作核验</strong><p>{p.access}</p></div>
- <nav className="article-toc" aria-label="快速跳转">{[...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['tradeoffs',"采用条件与代价"],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
+ <nav className="article-toc" aria-label="快速跳转">{[...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
  <details className="profile-section-group" open><summary>内容与运营</summary>
  {p.id==='linuxdo'&&<LinuxDoLoginUpdate/>}
  <ToolSupportProfile id={p.id} navigate={navigate}/>
@@ -131,12 +132,12 @@ export default function Research(){
  {p.deep.task&&<section className="task-record" id="task-log"><div className="section-heading"><h2>实际操作</h2><span>{p.deep.task.date}</span></div><p>{p.deep.task.scope}</p><ol>{p.deep.task.steps.map((step,i)=><li key={i}>{step}</li>)}</ol><p><strong>结果：</strong>{p.deep.task.result}</p><p className="muted">已接收生成任务 {p.deep.task.attempts} 次；按钮重试与未接收情况见记录。{p.deep.task.limit}</p></section>}
  <section className="journey"><h2>从发现到再次使用</h2><p className="muted">下表分析产品提供的路径及可能阻塞；实际完成范围以上方记录为准。</p><div className="table-wrap"><table><thead><tr><th>阶段</th><th>用户在做什么</th><th>哪里可能卡住</th></tr></thead><tbody>{p.deep.route.map(r=><tr key={r.stage}><th>{r.stage}</th><td>{r.behavior}</td><td>{r.friction}</td></tr>)}</tbody></table></div></section>
  </details>}
- <details className="profile-section-group"><summary>平台分析与采用条件</summary>
- <nav className="article-toc" aria-label="本档案章节">{p.sections.map((section,i)=><a key={section.title} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(`section-${i}`);}}>{String(i+1).padStart(2,'0')} {section.title}</a>)}</nav>
- <div className="article-body">{p.sections.map((section,i)=><section key={section.title} id={`section-${i}`} className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(i+1).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((para,j)=><p key={j}>{para}</p>)}{section.refs&&<div className="citations"><span>依据</span>{section.refs.map(n=><a key={n} href={p.sources[n-1].url} target="_blank" rel="noreferrer">[{n}] {p.sources[n-1].title}<ArrowUpRight size={12}/></a>)}</div>}</section>)}</div>
+ <details className="profile-section-group"><summary>平台分析与使用体验</summary>
+ <nav className="article-toc" aria-label="本档案章节">{p.sections.filter(s=>!isPlanningSection(s)).map((section,i)=><a key={section.title} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(`section-${i}`);}}>{String(i+1).padStart(2,'0')} {section.title}</a>)}</nav>
+ <div className="article-body">{p.sections.filter(s=>!isPlanningSection(s)).map((section,i)=><section key={section.title} id={`section-${i}`} className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(i+1).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((para,j)=><p key={j}>{para}</p>)}{section.refs&&<div className="citations"><span>依据</span>{section.refs.map(n=><a key={n} href={p.sources[n-1].url} target="_blank" rel="noreferrer">[{n}] {p.sources[n-1].title}<ArrowUpRight size={12}/></a>)}</div>}</section>)}</div>
  {p.deep&&<>
  <section className="essay-section" id="experience"><div className="section-heading"><h2>界面与操作体验</h2><span className="status status-推断">观察与分析</span></div>{p.deep.ux.map((para,i)=><p key={i}>{para}</p>)}</section>
- <section className="tradeoffs" id="tradeoffs"><div className="section-heading"><h2>采用条件与代价</h2><span className="status status-建议">建议</span></div>{p.deep.tradeoffs.map((trade,i)=><article key={trade.title}><h3><span>{String(i+1).padStart(2,'0')}</span>{trade.title}</h3><dl><dt>先做什么</dt><dd>{trade.action}</dd><dt>为什么</dt><dd>{trade.reason}</dd><dt>需要付出</dt><dd>{trade.cost}</dd><dt>何时扩大或调整</dt><dd>{trade.signal}</dd></dl></article>)}</section>
+<p className="research-related"><button className="text-button" onClick={()=>navigate('strategy','adoption-platform-'+p.id)}>查看{p.name}的借鉴做法与采用条件 →</button></p>
  </>}
 
  </details>

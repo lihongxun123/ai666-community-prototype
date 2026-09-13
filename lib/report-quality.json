@@ -1,0 +1,72 @@
+{
+  "title": "比较结论与证据覆盖",
+  "summary": "现有资料已能比较内容交付、参与方式和维护责任；持续消费人群、同条件效果与长期运营成本仍需更具体的证据。",
+  "comparisons": [
+    {
+      "id": "visual-reference-and-method",
+      "need": "看商品图效果，并判断能否套用或修改方法。",
+      "existingChoices": "Liblib样例列出参考图、模型和使用入口；RunningHub样例另给模型、参数与节点，并区分应用和工作流；Tensor.Art该例图只提供展示，未附生成数据。",
+      "remaining": "尚无同素材运行比较。Liblib商用表述有冲突，RunningHub为较早资源；缺生成参数不影响例图供欣赏和参考。"
+    },
+    {
+      "id": "learning-and-execution",
+      "need": "理解制作方法，或接手一套现成流程。",
+      "existingChoices": "Runway课程列学习目标与章节；Datawhale展示提示、输出和修改过程，并附代码材料；RunningHub提供运行入口；Hugging Face区分应用使用与源码开放。",
+      "remaining": "课程未完整学完，所列材料也未逐项运行。下载文件、打开应用和学会方法是不同结果，不能互相替代。"
+    },
+    {
+      "id": "participation-and-response",
+      "need": "围绕作品参与活动，或围绕问题继续交流。",
+      "existingChoices": "NightCafe组织同题投稿、评审和结果，Promptle可在题目结束后自愿公开步骤；LINUX DO保留提问、追问与反馈，另一接入案例有提问者自报解决。",
+      "remaining": "未验证挑战的持续参与效果；首屏、采纳标记和返图都不能证明整体问题解决率，也不等于独立复现。"
+    },
+    {
+      "id": "supply-roles",
+      "need": "获得作品、主题或问题回应，并明确谁负责。",
+      "existingChoices": "Runway编选作品并提供创作伙伴权益，未要求固定投入；NightCafe由成员主持、投稿和评审；LINUX DO由作者、成员与管理者分担投稿、整理和精选。",
+      "remaining": "规则说明了角色，尚未证明稳定稿量、响应速度或组织成本；开放投稿和伙伴身份都不能代替交付记录。"
+    },
+    {
+      "id": "supply-maintenance",
+      "need": "内容发布后，继续跟进版本、故障与更正。",
+      "existingChoices": "Liblib样例关联新旧版本；RunningHub作者补充教学与插件适配日志；Datawhale有教材反馈分工；Hugging Face关联资源与讨论，并有答疑者发布适配版本。",
+      "remaining": "更新说明不等于原使用者恢复成功。完整的反馈、修订、结果确认过程及维护工时仍不齐。"
+    },
+    {
+      "id": "tool-delivery",
+      "need": "从内容说明进入工具，并知道还需准备什么。",
+      "existingChoices": "Liblib说明资源版本与许可；RunningHub样例列输入并提供应用/流程入口，部分答疑发生在站外；Runway在工作区内封装App并组织项目素材。",
+      "remaining": "入口不能补齐素材、配置和许可；工作区能力也不等于公开模板市场。作品欣赏可以成立，不必每条都交付源流程。"
+    },
+    {
+      "id": "tool-community-value",
+      "need": "使用站外工具后，继续学习、求助或参与兴趣交流。",
+      "existingChoices": "Datawhale的已结束共学由合作云提供GPU、组织方提供教材与答疑；LINUX DO承接外部工具求助；NightCafe有2023年转去站外生成、仍回社区参与的用户自述。",
+      "remaining": "这些实例说明社区与工具可以分开使用；历史个案及局部采纳不能估计当前普遍回访、整体留存或经营效果。"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "readers",
+      "title": "持续消费用户",
+      "chapterId": "needs",
+      "organize": "已有欣赏、学习、讨论和站外生成后仍回社区参与的个案，可按使用情境归类。制作与排错记录不能代表所有读者。",
+      "sample": "需要同一读者跨周观看、回看或交流的记录，以及选择这里而非其他平台的理由；评论者不能代表安静读者。"
+    },
+    {
+      "id": "outcomes",
+      "title": "同条件使用结果",
+      "chapterId": "content",
+      "organize": "现有操作可统一列出素材、账户条件、已完成步骤与停止原因，区分入口存在、配置完成和结果生成。",
+      "sample": "需要同任务、同输入和明确账户条件下的结果对照，记录耗时、重试与站外处理；目前不能据此给平台效果排名。"
+    },
+    {
+      "id": "costs",
+      "title": "持续供给与运营成本",
+      "chapterId": "supply",
+      "organize": "规则、分工与版本日志可拆出制作、整理、答疑和维护工作，说明哪些投入持续发生。",
+      "sample": "需要同一作者连续供稿、回应和修订的记录。实际工时与报酬要有作者或经营资料，未公开部分保留未知。"
+    }
+  ],
+  "boundary": "公开竞品研究可按既定范围收口；产品取舍与自身经营验证另行开展。"
+}

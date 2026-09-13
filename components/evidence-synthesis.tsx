@@ -20,7 +20,7 @@ export function EvidenceSynthesis({navigate,embedded=false}:{navigate:(id:string
  const m=data.makenow,v=data.value,s=data.supply,a=data.api;
  return <div className="framework-study">
   <div className="page-heading">{embedded?<h2>{data.title}</h2>:<h1>{data.title}</h1>}</div>
-  <div className="study-actions"><a href="/research-kit/content-delivery-supply.md" download>下载完整研究</a><button className="text-button" onClick={()=>navigate('makenow')}>MakeNow 入口研究</button></div>
+  <div className="study-actions"><button className="text-button" onClick={()=>navigate('makenow')}>MakeNow 入口研究</button></div>
   <nav className="study-actions" aria-label="目录">{[['findings','判断更新'],['questions','八项进展'],['forms','承载形式'],['makenow','副本交接'],['value','消费与回应'],['supply','跨时间维护'],['work','供给工作'],['api','API材料'],['remaining','剩余缺口'],['sources','来源与日期']].map(([id,label])=><button key={id} className="text-button" onClick={()=>jump(id)}>{label}</button>)}</nav>
 
   <section id="v20-findings" className="study-platform"><h2>这次改变了哪些判断</h2>{data.findings.map(f=><article key={f.title}><h3>{f.title}</h3><p><strong>事实：</strong>{f.fact}</p><p><strong>分析：</strong>{f.analysis}</p><Refs ids={f.refs}/></article>)}</section>
