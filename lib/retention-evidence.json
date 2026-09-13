@@ -1,0 +1,694 @@
+{
+  "date": "2026-09-14",
+  "summary": "学习、求助和交流中已经找到跨日期行为与明确自述。近期普通视觉读者的连续记录、用户访问分母和作者实际工时仍缺；现在不能据此排出三个方向的留存名次。",
+  "countingNote": "17条定向记录：6条新收录、11条既有来源复核，覆盖7个平台。新收录包括历史材料，不等于新增用户或近期行为；同一人的多个动作合并阅读，规则和作者维护不算读者回访。LINUX DO只作交流机制对照，不归为视觉作品平台。",
+  "findings": [
+    {
+      "direction": "视觉兴趣与创作",
+      "finding": "NightCafe有用户自述转去Tensor.Art生成后仍回来参加挑战和聊天，但同一人也为积分重复发删图片。另一位用户称徽章曾让自己多次返回，后来仍退出。",
+      "limit": "分别为2023、2024年的历史自述；无法拆出无奖励回访，更缺近期只看作品的普通读者记录。",
+      "sources": [
+        {
+          "title": "NightCafe · VIS-RET-01",
+          "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/comment/k4hjqko/"
+        },
+        {
+          "title": "NightCafe · VIS-RET-03",
+          "url": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/"
+        }
+      ]
+    },
+    {
+      "direction": "交流机制对照",
+      "finding": "LINUX DO一位成员自述从找免费服务转向正价购买后，逐渐分享与答疑；另一位读者因首页闲聊多，通常只看两个固定板块。",
+      "limit": "有动机与阅读入口，没有连续访问日期；不能把技术论坛的经验直接当视觉主题社区的效果。",
+      "sources": [
+        {
+          "title": "LINUX DO · VIS-RET-05",
+          "url": "https://linux.do/t/topic/2180364"
+        },
+        {
+          "title": "LINUX DO · VIS-RET-06",
+          "url": "https://linux.do/t/topic/2257644"
+        }
+      ]
+    },
+    {
+      "direction": "AI应用与资源实践",
+      "finding": "RunningHub使用者在Hugging Face同一讨论中，从初次跑通到再次求助另一流程，跨多个日期回来。另有Liblib站外插件多次修改的提交记录。",
+      "limit": "求助与维护发生在站外，不能归入RunningHub或Liblib站内留存。修复说明、代码提交和问题关闭后仍缺普通使用者回验及维护工时。",
+      "sources": [
+        {
+          "title": "RunningHub · RET-P01",
+          "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176"
+        },
+        {
+          "title": "LiblibAI · RET-P04",
+          "url": "https://github.com/machinad/astrbot_plugin_liblibapi/commit/6fb5a185492c2b9d0e44d10f2cd69eefdacdf3e5"
+        }
+      ]
+    },
+    {
+      "direction": "AI学习与交流",
+      "finding": "Datawhale同一学习者5月20日、27日发表不同章节习题，6月1日回旧帖修正。另一问题从5月31日报错到8月12日进入教材修复；WaytoAGI的既有作者经历则显示学习也依赖站外任务。",
+      "limit": "前者是具体跨日参与，尚不代表学会或结课；后者只能确认维护链，不能确认提问者一直等待或采用了修复。WaytoAGI缺连续访问记录。",
+      "sources": [
+        {
+          "title": "Datawhale · LE-DW-01",
+          "url": "https://github.com/datawhalechina/hello-agents/discussions/611"
+        },
+        {
+          "title": "Datawhale · LE-DW-02",
+          "url": "https://github.com/datawhalechina/hello-agents/issues/642"
+        },
+        {
+          "title": "WaytoAGI · LE-WA-01",
+          "url": "https://www.woshipm.com/zhichang/6372801.html"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "VIS-RET-01",
+      "direction": "视觉兴趣与交流",
+      "platform": "NightCafe",
+      "platformRole": "视觉创作与作品交流",
+      "sourceTitle": "The rider — 站外生成后仍参加社区的回复",
+      "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/comment/k4hjqko/",
+      "canonicalSourceUrl": "https://www.reddit.com/r/aiArt/comments/172lvb0/the_rider/",
+      "publishedAt": null,
+      "sourcePublishedAt": "2023-10-08",
+      "dateNote": "原帖日期索引为 2023-10-08，既有记录覆盖 10 月 8—11 日；本次评论页只显示相对年数，不补精确评论日。",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "priorEvidenceIds": [
+        "P25-nightcafe-e5",
+        "P25-nightcafe-S-u3"
+      ],
+      "actorCode": "P25-nightcafe-user-E",
+      "evidenceType": "self-report",
+      "readScope": "原帖及可读回复；直接定位永久评论。未核其站内作品历史。",
+      "trigger": "生成和 LoRA 训练主要转到 Tensor.Art。",
+      "repeatEvidence": "自述每天仍使用 NightCafe，参加挑战、聊天；同一回复也说会重复发布并删除同一张图片以获取积分。",
+      "alternative": "Tensor.Art；控制、训练和成本优势均为其当时个人判断，未做同条件测试。",
+      "friction": "对 NightCafe 当时的生成控制和测试功能不满意；交流价值与积分任务在同一人的日常使用中并存。",
+      "whatItDoesNotProve": "不能写成无奖励也会回来，不能认定其如今仍活跃，也不能用 2023 年模型评价比较当前产品。",
+      "researchImplication": "可继续核对近期用户是否把制作、看作品、找人聊天分在不同平台；必须同时记录奖励任务，不能只摘取社交动机。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "supportingUrls": []
+    },
+    {
+      "id": "VIS-RET-02",
+      "direction": "视觉兴趣与交流",
+      "platform": "NightCafe",
+      "platformRole": "视觉创作与作品交流",
+      "sourceTitle": "What do you think about the recent update? — 停止积分任务、改用其他工具",
+      "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/comment/o62pp4l/",
+      "canonicalSourceUrl": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
+      "publishedAt": null,
+      "sourcePublishedAt": "2026-02-09",
+      "dateNote": "2026-02-09 为主帖索引日期，回复页只显示相对月份；不把主帖日期当该回复日期。",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "priorEvidenceIds": [
+        "P25-nightcafe-e2",
+        "P25-nightcafe-S-u1"
+      ],
+      "actorCode": "P25-nightcafe-user-B",
+      "evidenceType": "self-report",
+      "readScope": "定位本人叙述的完整回复；未采生成结果或交易记录。",
+      "trigger": "获取免费积分的方法改变；另有一次制作节日电子卡的实际需求。",
+      "repeatEvidence": "自述过去主要做得积分的任务，偶尔生成；规则变化后停止继续赚免费积分。仍考虑短期使用以消耗余额，未声称永久离站。",
+      "alternative": "自述电子卡在 NightCafe 多次尝试不符预期，随后改用 ChatGPT 得到可用图片。",
+      "friction": "平时实际用图较少，文章配图仅少数可用；积分积累、成果消费与稳定创作需求没有同步增长。",
+      "whatItDoesNotProve": "这是停止某类活动，不能计为整个平台流失；未统一提示词、模型、次数，不能作为 ChatGPT 胜出的实测。",
+      "researchImplication": "同条件比较应围绕同一项真实用图需求及最终采用结果，并把为了余额回访与为了新内容回访分开。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "supportingUrls": []
+    },
+    {
+      "id": "VIS-RET-03",
+      "direction": "视觉兴趣与交流",
+      "platform": "NightCafe",
+      "platformRole": "视觉创作与作品交流的历史退出反例",
+      "sourceTitle": "Why I Left NightCafe",
+      "url": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/",
+      "canonicalSourceUrl": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/",
+      "publishedAt": "2024-11-17",
+      "dateNote": "来自 Reddit 原页日期索引；无精确时刻。事件由发帖人回忆，早于发帖，不能算 2024 年当月离站。",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "priorEvidenceIds": [],
+      "actorCode": "VIS-NC-N01",
+      "evidenceType": "self-report",
+      "readScope": "原帖正文完整读取；未核账号删除、账单或跨年行为记录。",
+      "trigger": "自述由兴趣圈接触 NightCafe，先把生成图用作 Photoshop 拆解练习。",
+      "repeatEvidence": "后来多次想离开，却为了继续获得徽章而回来；最终称已删除内容并停止使用。",
+      "alternative": "重新重视自身绘画与编辑练习；未给可核的替代平台使用历史。",
+      "friction": "自述生成文件堆积、成就感下降、重复社交圈与消费负担共同促成退出。",
+      "whatItDoesNotProve": "这是对 AI 持批评态度社群中的历史个案，选样倾向明显。未核删除或消费记录，不能推断平台普遍造成负担或当前流失率。",
+      "researchImplication": "反复回来未必意味着用户持续获得价值；应问清回访后的满足感、采用成果和主动退出原因，不能只看访问次数。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "新收录来源",
+      "supportingUrls": []
+    },
+    {
+      "id": "VIS-RET-04",
+      "direction": "视觉兴趣与交流",
+      "platform": "NightCafe",
+      "platformRole": "视觉挑战的官方治理规则",
+      "sourceTitle": "How is downvoting in the daily challenge handled?",
+      "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
+      "canonicalSourceUrl": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
+      "publishedAt": null,
+      "dateNote": "页面未显示发布日期或更新日；仅确认访问时可读规则。",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "priorEvidenceIds": [],
+      "priorSourceFiles": [
+        "site/lib/deep-global.ts",
+        "site/lib/operations-data.json",
+        "site/lib/planning-moved-copy.json"
+      ],
+      "actorCode": "VIS-NC-ORG",
+      "evidenceType": "official-rule",
+      "readScope": "帮助页正文全部条款；未观察系统实际拦截过程。",
+      "trigger": "官方称过去存在为了挑战积分而快速投票、缺少真实参与的行为。",
+      "repeatEvidence": "没有用户持续行为记录。",
+      "alternative": "该记录未提供替代选择。",
+      "friction": "规则设置强制投票间隔，并对可疑低分及过快投票作识别和无效处理。",
+      "whatItDoesNotProve": "规则存在不等于反作弊已有效，也没有无效票占比、活动留存或人工处理工时；不能把治理规则算作一个用户回访案例。",
+      "researchImplication": "投票量需与具体看图反馈、有效评审和后续交流区分；持续组织需要治理，成本仍须另外取证。",
+      "evidenceLabel": "官方规则",
+      "provenanceLabel": "既有来源复核",
+      "supportingUrls": []
+    },
+    {
+      "id": "VIS-RET-05",
+      "direction": "交流机制对照",
+      "platform": "LINUX DO",
+      "platformRole": "交流机制对照，非视觉社区",
+      "sourceTitle": "说说你为什么喜欢linux.do这个地方！— 第 10 楼",
+      "url": "https://linux.do/t/topic/2180364",
+      "canonicalSourceUrl": "https://linux.do/t/topic/2180364",
+      "publishedAt": "2026-05-15",
+      "dateNote": "第 10 楼网页日期；未转换页面显示时区，保留日期精度。",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "priorEvidenceIds": [],
+      "actorCode": "VIS-LD-N01",
+      "evidenceType": "self-report",
+      "readScope": "公开页第 1—20 楼；本记录仅取第 10 楼本人经历，不合并其他人的好评。",
+      "trigger": "自述入站初衷是使用免费公益服务。",
+      "repeatEvidence": "后来改为正价购买正规渠道服务，逛论坛的过程中逐渐分享想法、回答自己会的问题。只有阶段变化描述，没有具体回访频次。",
+      "alternative": "正价购买的正规渠道，未披露具体供应方；不补成官方订阅或特定模型。",
+      "friction": "未明确描述个人使用障碍；免费资源不再是其唯一参与内容。",
+      "whatItDoesNotProve": "不能确认购买后已完全不用免费服务，未核连续发帖历史；受喜欢社区的提问框架影响，不能据此推断多数用户会由取用转向分享，更不能直接证明视觉内容留存。",
+      "researchImplication": "值得核查在站外已解决工具需求的普通成员，仍来找哪些内容或人；交流能否形成独立价值，应从这种具体转变追下去。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "新收录来源",
+      "supportingUrls": []
+    },
+    {
+      "id": "VIS-RET-06",
+      "direction": "交流机制对照",
+      "platform": "LINUX DO",
+      "platformRole": "普通读者发现内容的机制对照，非视觉社区",
+      "sourceTitle": "加入论坛两年有感 — 第 18 楼读者的固定板块选择",
+      "url": "https://linux.do/t/topic/2257644",
+      "canonicalSourceUrl": "https://linux.do/t/topic/2257644",
+      "publishedAt": "2026-05-28",
+      "dateNote": "第 18 楼网页日期；主帖为 2026-05-27。主帖的两年资历不属于本记录发言人。",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "priorEvidenceIds": [],
+      "actorCode": "VIS-LD-N02",
+      "evidenceType": "self-report",
+      "readScope": "公开页可读第 1—24 楼，楼号有缺口；本记录仅取第 18 楼本人阅读方式。",
+      "trigger": "自述首页闲聊较多。",
+      "repeatEvidence": "称自己通常查看“开发调优”和“精华神贴”两个板块，给出了重复阅读入口，但无连续访问日期。",
+      "alternative": "用站内固定板块代替浏览首页；未提出站外替代。",
+      "friction": "首页内容与本人想找的信息不匹配，需要主动筛选。",
+      "whatItDoesNotProve": "不是已流失用户，也没有证明首页客观低质；未验证固定板块是否长期解决发现问题。不能把原帖作者的全部批评归到该读者。",
+      "researchImplication": "普通阅读的价值不一定表现为发帖或点赞；继续比较时要看能否稳定找到感兴趣的系列、作者或板块，以及读后是否值得再次回来。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "新收录来源",
+      "supportingUrls": []
+    },
+    {
+      "id": "RET-P01",
+      "direction": "AI应用与资源实践",
+      "platform": "RunningHub",
+      "sourceTitle": "help me use runninghub for workflow so confused — Discussion #176",
+      "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+      "publishedAt": null,
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "actorCode": "RP-RH-U01",
+      "evidenceType": "self-report",
+      "trigger": "用户想运行 LTX 图像/音频视频流程；初次跑通后又尝试另一套工作流。",
+      "repeatEvidence": "同一公开账号6月15日自报跑通，6月19日回原帖求助另一流程，6月22日补充找到RunningHub对应资源。另一账号6月16日返回分享适配文件链接。",
+      "alternative": "作者讨论在Hugging Face，实际执行在RunningHub；文件分享改用外部链接。",
+      "friction": "节点和模型适配仍需修改。作者6月25日称此前未收到提醒；及时回应没有得到保障。",
+      "whatItDoesNotProve": "这是跨平台回帖与运行自述，不是RunningHub社区留存率；没有复验文件、结果质量或商业采用。",
+      "publishedAtNote": "原页只显示Jun 15—Jun 25，未显示年份，不从账号名或资源名称推断。",
+      "sourceAccess": "原始讨论正文已读；未读用户图片或运行文件。",
+      "priorEvidenceIds": [
+        "P25-runninghub-E1",
+        "P25-runninghub-E2",
+        "CR31-R-runninghub-01"
+      ],
+      "sourceLocator": "6月15日初次成功；6月16日适配文件；6月19日新求助；6月22日补充资源；6月25日作者回应。",
+      "otherActorCodes": [
+        "RP-RH-U02",
+        "RP-HF-M02"
+      ],
+      "returnLocation": "Hugging Face模型仓库讨论；不是RunningHub站内社区。",
+      "consumerReturnObserved": true,
+      "authorMaintenanceObserved": null,
+      "repeatScope": "同帖跨日期、跨任务的公开账号记录；非自然周留存样本。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "原页只显示Jun 15—Jun 25，未显示年份，不从账号名或资源名称推断。",
+      "readScope": "原始讨论正文已读；未读用户图片或运行文件。",
+      "supportingUrls": []
+    },
+    {
+      "id": "RET-P02",
+      "direction": "AI应用与资源实践",
+      "platform": "RunningHub",
+      "sourceTitle": "Scail-2无劣化与长视频手动分段工作流：更新日志",
+      "url": "https://www.runninghub.cn/post/2065490120324767746",
+      "publishedAt": null,
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "actorCode": "RP-RH-M01",
+      "evidenceType": "self-report",
+      "trigger": "上游插件变化后出现报错、人物不匹配、衔接异常和数据错位。",
+      "repeatEvidence": "作者在同一资源保留6.20、6.22、6.29三条修复日志，且说明上游再变化时可能继续调整。",
+      "alternative": "该记录未提供替代选择。",
+      "friction": "长视频分段方法还依赖上游插件与上下文处理方式，不能只维护结果预览。",
+      "whatItDoesNotProve": "三条作者日志不是三次用户回访或成功；无用户复测确认，无工时。当前未证明工作流可用。",
+      "publishedAtNote": "原发表日期未知；搜索索引同时显示2026-06-29更新及正文三个无年份日期标签。",
+      "sourceAccess": "直接原页超时；本次读取同一官方URL的搜索索引正文，不标为实时详情成功。",
+      "priorEvidenceIds": [
+        "P25-runninghub-E5"
+      ],
+      "sourceLocator": "更新日志6.20/6.22/6.29。",
+      "consumerReturnObserved": null,
+      "authorMaintenanceObserved": true,
+      "repeatScope": "同一作者的维护声明；不推算更新间隔所需工时。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "原发表日期未知；搜索索引同时显示2026-06-29更新及正文三个无年份日期标签。",
+      "readScope": "直接原页超时；本次读取同一官方URL的搜索索引正文，不标为实时详情成功。",
+      "supportingUrls": []
+    },
+    {
+      "id": "RET-P03",
+      "direction": "AI应用与资源实践",
+      "platform": "LiblibAI",
+      "sourceTitle": "AstrBot LiblibAPI插件：图片生成失败 #2 与维护者回应",
+      "url": "https://github.com/machinad/astrbot_plugin_liblibapi/issues/2",
+      "publishedAt": "2025-05-27",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "actorCode": "RP-LL-U01",
+      "evidenceType": "observed-history",
+      "trigger": "使用者提交图片生成失败问题。",
+      "repeatEvidence": "问题现为Closed。公开评论仅有一条维护者回应：推测XL模型VAE配置变化，并称新版已修复；关联提交确实注释了该配置并更新版本。",
+      "alternative": "由非官方AstrBot插件接入Liblib；求助发生在插件GitHub仓库。",
+      "friction": "平台服务、接入插件和用户配置分属不同责任方；维护者修正不等于原用户已采用。",
+      "whatItDoesNotProve": "未见原提问者复测或再次任务。Closed及修复提交都不证明其问题已解决；上游原因仍是维护者判断。",
+      "sourceAccess": "原问题页正文抽取有限；补读无认证公开评论接口及提交差异，不保存用户图片。",
+      "priorEvidenceIds": [
+        "CR31-R-liblib-04",
+        "CR31-R-liblib-05"
+      ],
+      "sourceLocator": "Issue #2；唯一维护者评论；7c99243提交。",
+      "otherActorCodes": [
+        "RP-LL-M01"
+      ],
+      "consumerReturnObserved": null,
+      "authorMaintenanceObserved": true,
+      "sources": [
+        {
+          "title": "Issue #2公开评论",
+          "url": "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/issues/2/comments",
+          "publishedAt": "2025-05-27T18:03:03Z",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "title": "v1.1.4：调整XL模型VAE配置",
+          "url": "https://github.com/machinad/astrbot_plugin_liblibapi/commit/7c99243075d8b76f8acaeb7004c9a179526882ea",
+          "publishedAt": "2025-05-27T18:00:03Z",
+          "accessedAt": "2026-09-14"
+        }
+      ],
+      "evidenceLabel": "公开时间线",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "原问题页正文抽取有限；补读无认证公开评论接口及提交差异，不保存用户图片。",
+      "supportingUrls": [
+        "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/issues/2/comments",
+        "https://github.com/machinad/astrbot_plugin_liblibapi/commit/7c99243075d8b76f8acaeb7004c9a179526882ea"
+      ]
+    },
+    {
+      "id": "RET-P04",
+      "direction": "AI应用与资源实践",
+      "platform": "LiblibAI",
+      "sourceTitle": "AstrBot LiblibAPI插件：多图返回重构及相邻版本提交",
+      "url": "https://github.com/machinad/astrbot_plugin_liblibapi/commit/6fb5a185492c2b9d0e44d10f2cd69eefdacdf3e5",
+      "publishedAt": "2025-05-19T08:08:58Z",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "actorCode": "RP-LL-M01",
+      "evidenceType": "observed-history",
+      "trigger": "维护者扩展模式、自定义API调用及多张图片返回，并整理重复代码。",
+      "repeatEvidence": "公开提交日期显示5月18日增加Flux/自定义调用，5月19日重构多图处理与说明，5月27日再调整VAE配置。当前README仍以v1.1.3开头，5月27日元数据已改v1.1.4。",
+      "alternative": "运行入口是站外插件；资料和维护历史在GitHub。",
+      "friction": "功能扩展、代码维护与文档同步是不同工作，版本说明可能落后于实现。",
+      "whatItDoesNotProve": "作者多次提交不是用户持续使用。没有由用户请求驱动各改动的完整记录；提交间隔不代表工时，近期无提交也不等于停止维护。",
+      "provenanceNote": "新增的是5月18—19日具体提交及其时间证据，不是2026年新行为或新作者。仓库、Issue #2及7c99243修复已在旧研究；Site/lib未检出本条6fb5a18和a7481ad提交。",
+      "sourceAccess": "公开提交页、README与无认证提交列表已读；未安装或运行。",
+      "priorEvidenceIds": [
+        "P25-liblib-E6"
+      ],
+      "relatedEvidenceIds": [
+        "RET-P03"
+      ],
+      "sourceLocator": "6fb5a18的提交说明与README差异；相邻提交元数据。",
+      "consumerReturnObserved": null,
+      "authorMaintenanceObserved": true,
+      "sources": [
+        {
+          "title": "公开提交列表（只提炼日期、提交说明和URL）",
+          "url": "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/commits?per_page=8",
+          "publishedAt": null,
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "title": "增加自定义ComfyUI调用",
+          "url": "https://github.com/machinad/astrbot_plugin_liblibapi/commit/a7481ad6f1931751ba30687b8202b544bb8d8083",
+          "publishedAt": "2025-05-18T19:02:06Z",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "title": "当前README",
+          "url": "https://github.com/machinad/astrbot_plugin_liblibapi",
+          "publishedAt": null,
+          "accessedAt": "2026-09-14"
+        }
+      ],
+      "evidenceLabel": "公开时间线",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "",
+      "readScope": "公开提交页、README与无认证提交列表已读；未安装或运行。",
+      "supportingUrls": [
+        "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/commits?per_page=8",
+        "https://github.com/machinad/astrbot_plugin_liblibapi/commit/a7481ad6f1931751ba30687b8202b544bb8d8083",
+        "https://github.com/machinad/astrbot_plugin_liblibapi"
+      ]
+    },
+    {
+      "id": "RET-P05",
+      "direction": "AI应用与资源实践",
+      "platform": "Hugging Face",
+      "sourceTitle": "Pro Account：公开Demo访问触发GPU额度问题",
+      "url": "https://discuss.huggingface.co/t/pro-account-getting-gpu-quota-exceeded-when-calling-for-hf-provided-url/154104",
+      "publishedAt": "2025-05-08",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "actorCode": "RP-HF-U01",
+      "evidenceType": "self-report",
+      "trigger": "发布者希望公众无需注册也能使用自己的演示；本人登录可用，匿名访问却受限。",
+      "repeatEvidence": "同一账号5月8日提问、5月9日解释公众使用目的、5月10日返回报告已改本地托管并开放外部访问。",
+      "alternative": "本地运行Gradio，并使用外部访问通道；未实际验证这项替代。",
+      "friction": "帖中互助者解释额度按访问者计算；发布者付费未达到其公众无需注册即可使用演示的预期。7月另一参与者指出替代方案仍需本地基础设施，继续询问额度问题。",
+      "whatItDoesNotProve": "回帖说明执行可移出HF而讨论仍留在论坛；不证明原Space恢复、本地方案长期稳定或全年社区留存。",
+      "sourceAccess": "原帖1—7楼已读。没有读取账号凭证、运行Demo或核对交易。",
+      "priorEvidenceIds": [
+        "P25-huggingface-u6"
+      ],
+      "sourceLocator": "第1、3、6楼同一提问者；第7楼为另一参与者。",
+      "otherActorCodes": [
+        "RP-HF-M01",
+        "RP-HF-U04"
+      ],
+      "consumerReturnObserved": true,
+      "authorMaintenanceObserved": null,
+      "returnLocation": "Hugging Face论坛；外部执行方案通过回帖报告。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "原帖1—7楼已读。没有读取账号凭证、运行Demo或核对交易。",
+      "supportingUrls": []
+    },
+    {
+      "id": "RET-P06",
+      "direction": "AI应用与资源实践",
+      "platform": "Hugging Face",
+      "sourceTitle": "ZeroGPU订阅后仍无法使用IDM-VTON及替代应用状态",
+      "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+      "publishedAt": "2025-09-15",
+      "accessedAt": "2026-09-14",
+      "provenance": "rechecked",
+      "actorCode": "RP-HF-U02",
+      "evidenceType": "self-report",
+      "trigger": "提问者称为虚拟试衣订阅PRO，重启、复制和切换访问设置仍失败，并提出退款请求。",
+      "repeatEvidence": "9月22日另一账号称问题持续半年且已放弃；互助者9月15、22、23日继续解释依赖变化并提供Gradio5适配Space。",
+      "alternative": "互助者提供的IDM-VTON-GRADIO5原页在本次读取中显示Paused，并提示到Community请求作者重启。",
+      "friction": "复制资源后仍可能需要依赖适配；他人提供替代链接后，还存在运行和维护条件。",
+      "whatItDoesNotProve": "未见原提问者采用替代方案的成功确认，退款未核。Paused不是停止维护的声明，也不能用来解释2025年失败原因。",
+      "sourceAccess": "原帖1—6楼及替代Space状态页已读；未运行、未检查实际图像结果。",
+      "priorEvidenceIds": [
+        "P25-huggingface-u1",
+        "P25-huggingface-u2",
+        "P25-huggingface-u8",
+        "CR31-C-huggingface-05"
+      ],
+      "sourceLocator": "第1楼失败与退款请求；第3—4楼另一账号经历；第6楼替代应用。",
+      "otherActorCodes": [
+        "RP-HF-U03",
+        "RP-HF-M01"
+      ],
+      "consumerReturnObserved": null,
+      "authorMaintenanceObserved": null,
+      "maintainerParticipationObserved": true,
+      "maintenanceRoleNote": "可见的是第三方互助者的适配说明和替代链接，不是原Space作者的维护记录。",
+      "sources": [
+        {
+          "title": "IDM-VTON-GRADIO5公开状态页",
+          "url": "https://huggingface.co/spaces/John6666/IDM-VTON-GRADIO5",
+          "publishedAt": null,
+          "accessedAt": "2026-09-14"
+        }
+      ],
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "原帖1—6楼及替代Space状态页已读；未运行、未检查实际图像结果。",
+      "supportingUrls": [
+        "https://huggingface.co/spaces/John6666/IDM-VTON-GRADIO5"
+      ]
+    },
+    {
+      "id": "LE-DW-01",
+      "direction": "AI学习与交流",
+      "platform": "Datawhale",
+      "sourceTitle": "第一章习题 #611；第三章习题 #633",
+      "url": "https://github.com/datawhalechina/hello-agents/discussions/611",
+      "publishedAt": "2026-05-20",
+      "accessedAt": "2026-09-14T00:25:02+08:00",
+      "provenance": "new",
+      "actorCode": "L-DW-01",
+      "evidenceType": "observed-history",
+      "trigger": "学习 hello-agents 后公开提交章节习题。",
+      "repeatEvidence": "同一账号5月20日提交第一章，5月27日提交第三章。5月28日同伴指出第一章解释与教材冲突；6月1日原作者回帖承认表述问题，并贴出其称由AI协助修正的解释。",
+      "alternative": "实际使用了AI辅助改写；公开讨论提供同伴质疑，不能由AI改写替代知识核验。",
+      "friction": "第三章7月21日又被指出一处概念问题；已读页面未见原作者回应。两帖均标为尚无采纳答案。",
+      "whatItDoesNotProve": "只证明同一账号跨日发帖与回帖修订，不证明独立作答、掌握知识、结课或长期留存；未回复不等于中断学习。",
+      "sourceTrail": [
+        {
+          "title": "第一章习题 #611",
+          "url": "https://github.com/datawhalechina/hello-agents/discussions/611",
+          "publishedAt": "2026-05-20",
+          "status": "尚无采纳答案；页示6条评论、3条回复",
+          "readScope": "正文、5月28日质疑及6月1日原作者回复；未运行习题代码。"
+        },
+        {
+          "title": "第三章习题 #633",
+          "url": "https://github.com/datawhalechina/hello-agents/discussions/633",
+          "publishedAt": "2026-05-27",
+          "status": "尚无采纳答案；页示1条评论",
+          "readScope": "同账号署名、正文及7月21日纠错；未核答案正确率。"
+        }
+      ],
+      "existingEvidenceIds": [],
+      "countingNote": "两个讨论串合为一个参与者的连续链，不算两个学习者。指定的两份既有JSON未命中这些URL。",
+      "evidenceLabel": "公开时间线",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "",
+      "readScope": "",
+      "supportingUrls": [
+        "https://github.com/datawhalechina/hello-agents/discussions/633"
+      ]
+    },
+    {
+      "id": "LE-DW-02",
+      "direction": "AI学习与交流",
+      "platform": "Datawhale",
+      "sourceTitle": "章节8情景记忆检索问题 #642；已审核代码问题修复 PR #800",
+      "url": "https://github.com/datawhalechina/hello-agents/issues/642",
+      "publishedAt": "2026-05-31",
+      "accessedAt": "2026-09-14T00:25:02+08:00",
+      "provenance": "new",
+      "actorCode": "L-DW-02",
+      "evidenceType": "observed-history",
+      "trigger": "学习者报告按0.2.0版本运行第八章示例时，context类型不符导致记忆检索报错。",
+      "repeatEvidence": "5月31日提问者同时给出改为字典类型后可解决的自述。8月12日维护者将该问题纳入PR #800，合并到主线；issue已关闭。",
+      "alternative": "提问者先做局部修改，维护者后将修正纳入共用教材；没有原提问者采用主线版本的回验。",
+      "friction": "从提问到合并跨了两个多月。PR明确批次范围，其他问题留待后续；不能把状态关闭理解为即时答疑。",
+      "whatItDoesNotProve": "维护链可核，学习者在此期间是否继续、是否等待修复、修复后的学习结果均未知。PR列出的检查不等于完整运行验证。",
+      "sourceTrail": [
+        {
+          "title": "章节8情景记忆检索问题 #642",
+          "url": "https://github.com/datawhalechina/hello-agents/issues/642",
+          "publishedAt": "2026-05-31",
+          "status": "已关闭，关联PR #800",
+          "readScope": "问题正文、版本、自述修正和关闭关联；错误未复现。"
+        },
+        {
+          "title": "fix: 修复 #745 至 #642 已审核的代码问题",
+          "url": "https://github.com/datawhalechina/hello-agents/pull/800",
+          "publishedAt": "2026-08-12",
+          "status": "2026-08-12已合并",
+          "readScope": "范围表、未包含事项、验证说明、合并状态；未运行代码。"
+        }
+      ],
+      "existingEvidenceIds": [],
+      "countingNote": "一名问题提交者与另一名维护者构成一条维护链；不把后者的持续维护记为前者留存。指定的两份既有JSON未命中这些URL。",
+      "evidenceLabel": "公开时间线",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "",
+      "readScope": "",
+      "supportingUrls": [
+        "https://github.com/datawhalechina/hello-agents/pull/800"
+      ]
+    },
+    {
+      "id": "LE-DW-03",
+      "direction": "AI学习与交流",
+      "platform": "Datawhale",
+      "sourceTitle": "中文BM25与RRF修正 PR #106",
+      "url": "https://github.com/datawhalechina/all-in-rag/pull/106",
+      "publishedAt": "2026-05-01",
+      "accessedAt": "2026-09-14T00:25:02+08:00",
+      "provenance": "rechecked",
+      "actorCode": "L-DW-03",
+      "evidenceType": "observed-history",
+      "trigger": "贡献者提交第九章检索实现修正。",
+      "repeatEvidence": "5月1日提交；5月2日维护者追问重复计分问题，同一贡献者追加修改并回复，随后两次提交合并主线。",
+      "alternative": "个人修正经公开PR进入共享教材，补上独立笔记通常没有的审阅环节。",
+      "friction": "初次修正仍需他人指出问题，贡献者须返工；维护者还说明某问题原拟用于错误案例教学。",
+      "whatItDoesNotProve": "只确认审阅、返工与合并。贡献者自报评测未复现，不证明后续学习者成功、结课率或维护成本。",
+      "sourceTrail": [
+        {
+          "title": "fix(C9): 启用 hybrid_search 中真实的 BM25(jieba) 检索 + RRF 替代 round-robin",
+          "url": "https://github.com/datawhalechina/all-in-rag/pull/106",
+          "publishedAt": "2026-05-01",
+          "status": "2026-05-02已合并，2次提交",
+          "readScope": "提交说明、维护者追问、贡献者回复及合并状态；未运行评测。"
+        }
+      ],
+      "existingEvidenceIds": [
+        "CR31-C-datawhale-03",
+        "datawhale-review-merge-106"
+      ],
+      "countingNote": "既有同一PR复核，不新增作者或用户点；不与issue #102的作者合并。",
+      "evidenceLabel": "公开时间线",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "",
+      "supportingUrls": []
+    },
+    {
+      "id": "LE-WA-01",
+      "direction": "AI学习与交流",
+      "platform": "WaytoAGI",
+      "sourceTitle": "从传统制造到AI产品经理：29岁，我用半年完成从零转型",
+      "url": "https://www.woshipm.com/zhichang/6372801.html",
+      "publishedAt": "2026-04-08",
+      "accessedAt": "2026-09-14T00:25:02+08:00",
+      "provenance": "rechecked",
+      "actorCode": "L-WA-01",
+      "evidenceType": "self-report",
+      "trigger": "作者回顾2024年夏参加WaytoAGI相关活动，后来转向AI项目学习。",
+      "repeatEvidence": "作者称2025年离职后前两个月面对大量教程缺乏目标，后改为按项目找技术；文章依次描述本地部署、智能家居与端侧视觉探索。",
+      "alternative": "实际自述转向项目驱动，并接触Home Assistant等外部工具和社区；学习并非一直发生在WaytoAGI内。",
+      "friction": "资料过多、目标不清和实时性限制；这些是回顾性自述，没有观察到明确停学或退群。",
+      "whatItDoesNotProve": "不证明WaytoAGI跨周访问、结课、职业成功的因果关系或项目实际采用。未保存家庭与个人生活细节。",
+      "sourceTrail": [
+        {
+          "title": "从传统制造到AI产品经理：29岁，我用半年完成从零转型",
+          "url": "https://www.woshipm.com/zhichang/6372801.html",
+          "publishedAt": "2026-04-08",
+          "status": "公开原作者文章",
+          "readScope": "日期、活动缘起、学习路线及阶段回顾；图片中工程未核，职业结果未独立验证。"
+        }
+      ],
+      "existingEvidenceIds": [
+        "P25-waytoagi-u1",
+        "P25-waytoagi-s4",
+        "CR31-C-waytoagi-04"
+      ],
+      "countingNote": "既有作者经历复读，不新增学习者；事件年份与2026年发表日期分开。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "",
+      "supportingUrls": []
+    },
+    {
+      "id": "LE-WA-02",
+      "direction": "AI学习与交流",
+      "platform": "WaytoAGI",
+      "sourceTitle": "别再乱学AI了！我花7天实践了张Zara的方法，从此告别焦虑",
+      "url": "https://www.woshipm.com/share/6230525.html",
+      "publishedAt": "2025-06-15",
+      "accessedAt": "2026-09-14T00:25:02+08:00",
+      "provenance": "rechecked",
+      "actorCode": "L-WA-02",
+      "evidenceType": "self-report",
+      "trigger": "已有内容作者尝试新的AI学习方式，并参加WaytoAGI东京活动。",
+      "repeatEvidence": "作者自述每天安排一小时以上看访谈、核对他人笔记并做记录；另回顾从2024年10月开始投入AI编程，在东京活动中被既有读者认出并交流。",
+      "alternative": "具体输入来自YouTube、他人笔记、翻译与对话工具；公开文章和线下活动连接读者，消费路径跨多个平台。",
+      "friction": "作者谈到内容噪声和学习精力限制；这是已有输出经验者的实践，不是普通新手代表。",
+      "whatItDoesNotProve": "没有连续访问日志、后续合作兑现或再次参会记录。标题的7天不是平台留存周期；作者自述的习惯不能推广到普通成员。",
+      "sourceTrail": [
+        {
+          "title": "别再乱学AI了！我花7天实践了张Zara的方法，从此告别焦虑",
+          "url": "https://www.woshipm.com/share/6230525.html",
+          "publishedAt": "2025-06-15",
+          "status": "原作者原创/授权公开文章",
+          "readScope": "发布日期、作者自己的学习方法、编程投入与东京活动经历；没有把文中转述他人的习惯算给该作者。"
+        }
+      ],
+      "existingEvidenceIds": [
+        "P25-waytoagi-u2",
+        "P25-waytoagi-s5",
+        "CR31-C-waytoagi-05"
+      ],
+      "countingNote": "既有作者复核，不新增用户；该文发表于2025年，不作为2026年新增活跃证据。",
+      "evidenceLabel": "本人或作者自述",
+      "provenanceLabel": "既有来源复核",
+      "dateNote": "",
+      "readScope": "",
+      "supportingUrls": []
+    }
+  ]
+}

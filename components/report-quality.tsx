@@ -1,6 +1,7 @@
 'use client';
 
 import data from '@/lib/report-quality.json';
+import {RetentionEvidence} from './retention-research';
 
 type ReportQualityProps = {
   platformCount?: number;
@@ -74,6 +75,7 @@ export function ReportQuality({platformCount, groupCount, onOpen}: ReportQuality
         </table>
       </div>
       <p className="brief-limit">{data.boundary}</p>
+      <RetentionEvidence/>
     </section>
   );
 }

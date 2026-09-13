@@ -7,6 +7,7 @@ import { ContentArrangementLab } from '@/components/content-arrangement-lab';
 import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
 import {ResearchApplications} from './research-applications';
+import {RetentionPlan, RetentionEvidence} from './retention-research';
 
 const tabs=[['options','四种组织方式'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
@@ -20,6 +21,8 @@ export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
   <header className="page-heading v23-intro"><h1>借鉴与方案比较</h1><p className="muted">{data.date} · 候选方向待验证</p></header>
+  <RetentionPlan/>
+  <details className="study-sources"><summary>持续行为研究：已找到哪些证据</summary><RetentionEvidence/></details>
   <ResearchApplications navigate={navigate}/>
   <CreatorSupplyLink context="strategy" navigate={navigate}/>
   <NorthStarDirections/>

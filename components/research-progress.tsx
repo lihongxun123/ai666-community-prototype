@@ -9,7 +9,7 @@ import { PlatformSupply } from '@/components/platform-supply';
 export function ResearchProgress({navigate}:{navigate:(id:string)=>void}) {
  const jump=(target:string)=>document.getElementById(`progress-${target}`)?.scrollIntoView({behavior:'smooth',block:'start'});
  const refs=(ids:string[])=>ids.map(id=>{const s=data.needs.sources.find(x=>x.id===id);return s?<a key={id} href={s.url} target="_blank" rel="noreferrer">〔{s.title}〕</a>:null;});
- return <><header className="page-heading"><h1>目标与验证计划</h1></header><ResearchOutline items={[
+ return <><header className="page-heading"><h1>目标与验证计划</h1><button className="text-button" onClick={()=>navigate('strategy')}>持续活跃：三个候选方向与验证安排 →</button></header><ResearchOutline items={[
  ['ns-metric','指标定义'],['ns-support','辅助指标'],['ns-plan','四周试点'],['ns-inputs','待确认事项'],['research-cost','投入计算'],['progress-materials','材料核查记录']
  ]}/><ResearchCompletion/><ResearchAppendix id="progress-materials" title="产品、供给与工具的核查记录"><details className="study-sources"><summary>平台供给、经营数据与MakeNow素材</summary><PlatformSupply navigate={navigate} embedded/></details><details className="study-sources"><summary>社区内容承载与资源维护</summary><ResearchReconciliation navigate={navigate} embedded/></details><details className="study-sources"><summary>内容案例、画布交接与维护记录</summary><EvidenceSynthesis navigate={navigate} embedded/></details><details className="study-sources"><summary>社区与API材料核查记录</summary><div className="framework-study">
   <div className="page-heading"><h2>{data.headline}</h2></div>
