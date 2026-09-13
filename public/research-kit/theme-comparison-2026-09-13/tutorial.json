@@ -1,0 +1,2043 @@
+{
+  "id": "tutorial",
+  "title": "AI视觉制作教学：从看懂步骤到完成自己的镜头",
+  "summary": "三位主面板作者各有至少4条窗内视觉作品，但教学与成片须分开：foyege 6教学、3成片、1流程介绍；鸟鸟酱4教学；世界草稿1教学、3成片。现有方法与工具已能承接部分操作，仍待核的是材料取得、复杂条件复试和实际成本；尚未选定社区方向。",
+  "asOf": "2026-09-13T08:24:48.721Z",
+  "window": {
+    "timezone": "Asia/Shanghai",
+    "start": "2026-07-13T00:00:00+08:00",
+    "endExclusive": "2026-09-07T00:00:00+08:00",
+    "label": "北京时间2026-07-13至2026-09-06，8周"
+  },
+  "status": "complete_public_evidence_dossier_no_runtime_test",
+  "authors": [
+    {
+      "name": "foyege",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAq5UIz3urhEf4NK9TdN7EbmSzQfiy8lMdO1doGlEUW5E",
+      "role": "制作教学与成片作者",
+      "works": [
+        {
+          "id": "DA-35",
+          "url": "https://www.douyin.com/video/7670762031490693818",
+          "title": "AI表演提示词公式与五千字提示说明",
+          "publishedAt": "2026-08-06 11:54",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 6620,
+            "comment": 217,
+            "collect": 2840,
+            "share": 1123,
+            "views": null,
+            "raw": {
+              "like": "6620",
+              "comment": "217",
+              "collect": "2840",
+              "share": "1123"
+            },
+            "observedAt": "2026-09-12T13:02:51.361Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-35"
+          ]
+        },
+        {
+          "id": "DA-36",
+          "url": "https://www.douyin.com/video/7669413558211778661",
+          "title": "AI表演提示词教程",
+          "publishedAt": "2026-08-02 20:41",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 42000,
+            "comment": 600,
+            "collect": 26000,
+            "share": 8005,
+            "views": null,
+            "raw": {
+              "like": "4.2万",
+              "comment": "600",
+              "collect": "2.6万",
+              "share": "8005"
+            },
+            "observedAt": "2026-09-12T13:02:53.106Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-36"
+          ]
+        },
+        {
+          "id": "DA-37",
+          "url": "https://www.douyin.com/video/7668957069785803426",
+          "title": "AI演员表演短片",
+          "publishedAt": "2026-08-01 15:10",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 300000,
+            "comment": 8061,
+            "collect": 17000,
+            "share": 61000,
+            "views": null,
+            "raw": {
+              "like": "30.0万",
+              "comment": "8061",
+              "collect": "1.7万",
+              "share": "6.1万"
+            },
+            "observedAt": "2026-09-12T13:02:54.753Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-37"
+          ]
+        },
+        {
+          "id": "DA-38",
+          "url": "https://www.douyin.com/video/7684223214016896613",
+          "title": "AI视频白模教程",
+          "publishedAt": "2026-09-11 18:30",
+          "window": "after",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 2609,
+            "comment": 73,
+            "collect": 2389,
+            "share": 573,
+            "views": null,
+            "raw": {
+              "like": "2609",
+              "comment": "73",
+              "collect": "2389",
+              "share": "573"
+            },
+            "observedAt": "2026-09-12T13:02:56.622Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-38"
+          ]
+        },
+        {
+          "id": "DA-39",
+          "url": "https://www.douyin.com/video/7683468076499136379",
+          "title": "白模控制构图与运镜的成片",
+          "publishedAt": "2026-09-09 17:40",
+          "window": "after",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 445,
+            "comment": 40,
+            "collect": 108,
+            "share": 69,
+            "views": null,
+            "raw": {
+              "like": "445",
+              "comment": "40",
+              "collect": "108",
+              "share": "69"
+            },
+            "observedAt": "2026-09-12T13:02:58.201Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-39"
+          ]
+        },
+        {
+          "id": "DA-40",
+          "url": "https://www.douyin.com/video/7682668008729064293",
+          "title": "白模视频结合AI生成",
+          "publishedAt": "2026-09-07 13:55",
+          "window": "after",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 3239,
+            "comment": 209,
+            "collect": 1239,
+            "share": 1304,
+            "views": null,
+            "raw": {
+              "like": "3239",
+              "comment": "209",
+              "collect": "1239",
+              "share": "1304"
+            },
+            "observedAt": "2026-09-12T13:02:59.995Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-40"
+          ]
+        },
+        {
+          "id": "DA-41",
+          "url": "https://www.douyin.com/video/7678195402789837169",
+          "title": "AI人物皮肤质感教程",
+          "publishedAt": "2026-08-26 12:39",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 1858,
+            "comment": 45,
+            "collect": 1716,
+            "share": 267,
+            "views": null,
+            "raw": {
+              "like": "1858",
+              "comment": "45",
+              "collect": "1716",
+              "share": "267"
+            },
+            "observedAt": "2026-09-12T13:03:01.817Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-41"
+          ]
+        },
+        {
+          "id": "DA-42",
+          "url": "https://www.douyin.com/video/7676422641646299557",
+          "title": "AI短剧剧本结构教程",
+          "publishedAt": "2026-08-21 18:00",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 6146,
+            "comment": 201,
+            "collect": 3134,
+            "share": 955,
+            "views": null,
+            "raw": {
+              "like": "6146",
+              "comment": "201",
+              "collect": "3134",
+              "share": "955"
+            },
+            "observedAt": "2026-09-12T13:03:09.653Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-42"
+          ]
+        },
+        {
+          "id": "DA-43",
+          "url": "https://www.douyin.com/video/7675375896727785125",
+          "title": "群像站位与场景一致性教程",
+          "publishedAt": "2026-08-19 11:20",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 1457,
+            "comment": 28,
+            "collect": 1276,
+            "share": 208,
+            "views": null,
+            "raw": {
+              "like": "1457",
+              "comment": "28",
+              "collect": "1276",
+              "share": "208"
+            },
+            "observedAt": "2026-09-12T13:03:11.382Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-43"
+          ]
+        },
+        {
+          "id": "DA-44",
+          "url": "https://www.douyin.com/video/7673159888415777978",
+          "title": "群像控场法测试短片",
+          "publishedAt": "2026-08-13 17:58",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 524,
+            "comment": 38,
+            "collect": 170,
+            "share": 134,
+            "views": null,
+            "raw": {
+              "like": "524",
+              "comment": "38",
+              "collect": "170",
+              "share": "134"
+            },
+            "observedAt": "2026-09-12T13:03:13.112Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-44"
+          ]
+        },
+        {
+          "id": "DA-45",
+          "url": "https://www.douyin.com/video/7673074764340650597",
+          "title": "多人站位与场景一致性：三锁控场法",
+          "publishedAt": "2026-08-12 19:26",
+          "window": "inside",
+          "sourceLevel": "detail_and_selected_video_frames",
+          "origin": "existing",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 4659,
+            "comment": 136,
+            "collect": 4103,
+            "share": 600,
+            "views": null,
+            "raw": {
+              "like": "4659",
+              "comment": "136",
+              "collect": "4103",
+              "share": "600"
+            },
+            "observedAt": "2026-09-12T13:03:14.954Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "约150秒列角色片号、俯视站位、白模预演、五维提示词；180秒展示编号与平面图；240秒的输入面板列7项参考，其中首项为30秒视频。结尾以起始状态、具体修正、接回原片说明局部重拍。",
+            "limit": "核12个时间点；未取得同款工程、参考文件或复试结果。"
+          },
+          "sources": [
+            "work-DA-45"
+          ]
+        },
+        {
+          "id": "DA-46",
+          "url": "https://www.douyin.com/video/7670876701828375675",
+          "title": "AI演员30秒生成短片",
+          "publishedAt": "2026-08-07 15:18",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 272,
+            "comment": 49,
+            "collect": 59,
+            "share": 123,
+            "views": null,
+            "raw": {
+              "like": "272",
+              "comment": "49",
+              "collect": "59",
+              "share": "123"
+            },
+            "observedAt": "2026-09-12T13:03:16.640Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-46"
+          ]
+        },
+        {
+          "id": "DA-47",
+          "url": "https://www.douyin.com/video/7664092892722386496",
+          "title": "AI电影从剧本到成片的平台介绍",
+          "publishedAt": "2026-07-19 17:54",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作流程或工具介绍",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 925,
+            "comment": 19,
+            "collect": 379,
+            "share": 101,
+            "views": null,
+            "raw": {
+              "like": "925",
+              "comment": "19",
+              "collect": "379",
+              "share": "101"
+            },
+            "observedAt": "2026-09-12T13:03:18.878Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-47"
+          ]
+        },
+        {
+          "id": "DA-48",
+          "url": "https://www.douyin.com/video/7658195346698703336",
+          "title": "AI电影平台生成档位与成本说明",
+          "publishedAt": "2026-07-03 17:54",
+          "window": "before",
+          "sourceLevel": "detail_metadata",
+          "origin": "existing",
+          "contentType": "制作流程或工具介绍",
+          "aiEvidence": {
+            "level": "author_text_or_declaration",
+            "text": "作者标题或声明明确关联AI制作；具体模型效果属于作者说法。"
+          },
+          "metrics": {
+            "like": 908,
+            "comment": 31,
+            "collect": 481,
+            "share": 200,
+            "views": null,
+            "raw": {
+              "like": "908",
+              "comment": "31",
+              "collect": "481",
+              "share": "200"
+            },
+            "observedAt": "2026-09-12T13:03:20.689Z",
+            "interpretation": "页面有标签互动数；带万单位为显示近似值，不是播放量和互动率。"
+          },
+          "observation": {
+            "fact": "标题与详情可确认主题和日期。",
+            "limit": "未完整观看；不以标题中的效果承诺认定技术问题已解决。"
+          },
+          "sources": [
+            "work-DA-48"
+          ]
+        }
+      ],
+      "coverage": {
+        "works": 14,
+        "inside": 10,
+        "before": 1,
+        "after": 3,
+        "unknown": 0,
+        "insideTypes": {
+          "制作教学": 6,
+          "成片或效果演示": 3,
+          "制作流程或工具介绍": 1
+        },
+        "detailMetadata": 14,
+        "indexOnly": 0,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": true,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。"
+      },
+      "panelRole": "primary"
+    },
+    {
+      "name": "世界草稿 W/D",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAA9hR0y900ijC08iRI0MVz7qvUNGuo5_RORXjeFmLrzzKKSBM4PaEDy-LhI01hBkAc",
+      "role": "成片创作者兼教学；不能把所有成片算教程",
+      "works": [
+        {
+          "id": "7676057077647939315",
+          "url": "https://www.douyin.com/video/7676057077647939315",
+          "title": "AI天宫图生视频：三个动作",
+          "publishedAt": "2026-08-20 20:08",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 146000,
+            "comment": 1120,
+            "collect": 21000,
+            "share": 4207,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "1120",
+              "video-player-collect": "2.1万",
+              "video-player-digg": "14.6万",
+              "video-player-share": "4207"
+            },
+            "observedAt": "2026-09-13T08:17:08.932Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "说明回应此前成片制作问题；评论涉及参考静帧构图、画面不动和流程费用。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7676057077647939315",
+            "ui-7676057077647939315"
+          ],
+          "evidenceHistory": [
+            {
+              "sourceLevel": "indexed_work_text",
+              "metrics": {
+                "like": null,
+                "comment": null,
+                "collect": null,
+                "share": null,
+                "views": null,
+                "visibleCountersRaw": [
+                  "14.6万",
+                  "1119",
+                  "2.1万",
+                  "4199"
+                ],
+                "observedAt": "2026-09-13T08:17:52Z",
+                "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+              },
+              "sources": [
+                "work-7676057077647939315",
+                "ui-7676057077647939315"
+              ]
+            }
+          ],
+          "durationSeconds": 125.063
+        },
+        {
+          "id": "7669388419163901218",
+          "url": "https://www.douyin.com/video/7669388419163901218",
+          "title": "放大中式建筑的天宫成片",
+          "publishedAt": "2026-08-02 19:04",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 28000,
+            "comment": 575,
+            "collect": 5021,
+            "share": 3544,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "575",
+              "video-player-collect": "5021",
+              "video-player-digg": "2.8万",
+              "video-player-share": "3544"
+            },
+            "observedAt": "2026-09-13T08:24:48.721Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "LibTV相关标签，评论谈空间观感与配乐；是成片消费证据。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7669388419163901218",
+            "ui-7669388419163901218"
+          ],
+          "evidenceHistory": [
+            {
+              "sourceLevel": "indexed_work_text",
+              "metrics": {
+                "like": null,
+                "comment": null,
+                "collect": null,
+                "share": null,
+                "views": null,
+                "visibleCountersRaw": [
+                  "2.7万",
+                  "566",
+                  "4859",
+                  "3378"
+                ],
+                "observedAt": "2026-09-13T08:17:52Z",
+                "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+              },
+              "sources": [
+                "work-7669388419163901218"
+              ]
+            }
+          ],
+          "durationSeconds": null
+        },
+        {
+          "id": "7670164612267937078",
+          "url": "https://www.douyin.com/video/7670164612267937078",
+          "title": "思念之城：东方城阙成片",
+          "publishedAt": "2026-08-04 21:16",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 44000,
+            "comment": 417,
+            "collect": 5159,
+            "share": 9741,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "417",
+              "video-player-collect": "5159",
+              "video-player-digg": "4.4万",
+              "video-player-share": "9741"
+            },
+            "observedAt": "2026-09-13T08:24:45.163Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "作品说明称用Seedance2.5制作东方城阙题材；属于成片入口。",
+            "limit": "未完整观看，不将成片标题中的体验描述当教程步骤或模型性能验证。"
+          },
+          "sources": [
+            "ui-7670164612267937078"
+          ],
+          "durationSeconds": null
+        },
+        {
+          "id": "7672733398560951602",
+          "url": "https://www.douyin.com/video/7672733398560951602",
+          "title": "AI中式天庭审美成片",
+          "publishedAt": "2026-08-11 19:24",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "成片或效果演示",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 1168,
+            "comment": 62,
+            "collect": 120,
+            "share": 72,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "62",
+              "video-player-collect": "120",
+              "video-player-digg": "1168",
+              "video-player-share": "72"
+            },
+            "observedAt": "2026-09-13T08:24:46.723Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "作品说明继续天宫题材，讨论东方世界的审美表达。",
+            "limit": "未完整观看或取得制作输入；不是因为主题连续就证明连续教程供给。"
+          },
+          "sources": [
+            "ui-7672733398560951602"
+          ],
+          "durationSeconds": 31.509002
+        }
+      ],
+      "coverage": {
+        "works": 4,
+        "inside": 4,
+        "before": 0,
+        "after": 0,
+        "unknown": 0,
+        "insideTypes": {
+          "制作教学": 1,
+          "成片或效果演示": 3
+        },
+        "detailMetadata": 4,
+        "indexOnly": 0,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": true,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。",
+        "profileScope": "world-draft-list.json用于获得作品入口；4项核日期，其他卡片不参与窗内供给数量。"
+      },
+      "panelRole": "primary"
+    },
+    {
+      "name": "AI驯化师鸟鸟酱",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAANygr7Vip-GDtyf7w5MY4gHeOQZCPracx5CUVYDSTRZE",
+      "role": "制作教学作者；4条窗内详情",
+      "works": [
+        {
+          "id": "7674906676872498484",
+          "url": "https://www.douyin.com/video/7674906676872498484",
+          "title": "平面图标轨迹的AI线控运镜",
+          "publishedAt": "2026-08-17 18:00",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 191,
+            "comment": 8,
+            "collect": 163,
+            "share": 23,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "8",
+              "video-player-collect": "163",
+              "video-player-digg": "191",
+              "video-player-share": "23"
+            },
+            "observedAt": "2026-09-13T08:17:53.323Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "说明给出按数字顺序描述镜头、避免输出画线箭头的提示；读者质疑是否有效，未见修正结果。",
+            "limit": "未完整观看；作者所称自动搭建三维空间未由三维工程或实验验证。索引评论中的作者回复标识不等于已取得答复正文。"
+          },
+          "sources": [
+            "work-7674906676872498484",
+            "ui-7674906676872498484"
+          ],
+          "evidenceHistory": [
+            {
+              "sourceLevel": "indexed_work_text",
+              "metrics": {
+                "like": null,
+                "comment": null,
+                "collect": null,
+                "share": null,
+                "views": null,
+                "visibleCountersRaw": [
+                  "159",
+                  "7",
+                  "148",
+                  "20"
+                ],
+                "observedAt": "2026-09-13T08:17:52Z",
+                "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+              },
+              "sources": [
+                "work-7674906676872498484",
+                "ui-7674906676872498484"
+              ]
+            }
+          ],
+          "durationSeconds": null
+        },
+        {
+          "id": "7679005030510349606",
+          "url": "https://www.douyin.com/video/7679005030510349606",
+          "title": "AI双人对话：情绪递进与表演提示",
+          "publishedAt": "2026-08-28 17:01",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 36,
+            "comment": 2,
+            "collect": 20,
+            "share": 3,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "2",
+              "video-player-collect": "20",
+              "video-player-digg": "36",
+              "video-player-share": "3"
+            },
+            "observedAt": "2026-09-13T08:23:18.935Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "作者说明列出过肩正反打、听者反馈、具体微动作三项提示，并称完整模板在片尾。",
+            "limit": "未读到视频片尾模板，也未完整观看或复试；模板交付仍未取得。"
+          },
+          "sources": [
+            "ui-7679005030510349606"
+          ],
+          "durationSeconds": null
+        },
+        {
+          "id": "7676742606897909030",
+          "url": "https://www.douyin.com/video/7676742606897909030",
+          "title": "东方美学：视觉符号与镜头参数",
+          "publishedAt": "2026-08-22 14:42",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 32,
+            "comment": 2,
+            "collect": 25,
+            "share": 5,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "2",
+              "video-player-collect": "25",
+              "video-player-digg": "32",
+              "video-player-share": "5"
+            },
+            "observedAt": "2026-09-13T08:23:20.540Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "作者说明以视觉符号和镜头参数组织东方美学生成，并称视频有Midjourney参数。",
+            "limit": "只读说明与详情；具体参数模板未取得，不能认定照做即可达到片中效果。"
+          },
+          "sources": [
+            "ui-7676742606897909030"
+          ],
+          "durationSeconds": 66.896
+        },
+        {
+          "id": "7672334620100250943",
+          "url": "https://www.douyin.com/video/7672334620100250943",
+          "title": "AI多人站位：三维站位图与反向拉镜",
+          "publishedAt": "2026-08-10 17:36",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "author_declaration",
+            "declaration": "作者声明：内容由 AI 生成",
+            "text": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 28,
+            "comment": 3,
+            "collect": 16,
+            "share": 4,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "3",
+              "video-player-collect": "16",
+              "video-player-digg": "28",
+              "video-player-share": "4"
+            },
+            "observedAt": "2026-09-13T08:23:22.155Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "作者说明给出三步：五个模型排站位、结合角色参考生静帧、再将效果图作尾帧并指定后退镜头。",
+            "limit": "关于给模型计算缓冲的解释是作者推断，不是已证模型原理；五人效果和穿帮改善未复试。"
+          },
+          "sources": [
+            "ui-7672334620100250943"
+          ],
+          "durationSeconds": null
+        }
+      ],
+      "coverage": {
+        "works": 4,
+        "inside": 4,
+        "before": 0,
+        "after": 0,
+        "unknown": 0,
+        "insideTypes": {
+          "制作教学": 4
+        },
+        "detailMetadata": 4,
+        "indexOnly": 0,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": true,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。",
+        "profileScope": "bird-list.json前14项为作者作品，后面推荐不计；仅4项详情用于窗内比较。"
+      },
+      "panelRole": "primary"
+    },
+    {
+      "name": "北心AI电商",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAUnbft94T3VzZXHts1MXDpL47QSz1t_nPUvFHyKRqzGnVv9HaaJ49dVKZzJMjo5kQ",
+      "role": "电商内容作者的视觉制作样本，垂直性待核",
+      "works": [
+        {
+          "id": "7679817465485029567",
+          "url": "https://www.douyin.com/video/7679817465485029567",
+          "title": "服装带货视频制作",
+          "publishedAt": "2026-08-30 21:34",
+          "window": "inside",
+          "sourceLevel": "detail_metadata",
+          "origin": "new_ui",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "title_or_tag",
+            "declaration": null,
+            "text": "标题含AI视频、教程等标签；页面声明未取得。"
+          },
+          "metrics": {
+            "like": 512,
+            "comment": 7,
+            "collect": 23,
+            "share": 11,
+            "views": null,
+            "raw": {
+              "feed-comment-icon": "7",
+              "video-player-collect": "23",
+              "video-player-digg": "512",
+              "video-player-share": "11"
+            },
+            "observedAt": "2026-09-13T08:23:23.693Z",
+            "interpretation": "实际详情页有标签计数；万为近似展示值，无播放分母。"
+          },
+          "observation": {
+            "fact": "索引评论询问工具，作者答美图设计室；未取得具体任务工程与用户完成证据。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7679817465485029567",
+            "ui-7679817465485029567"
+          ],
+          "evidenceHistory": [
+            {
+              "sourceLevel": "indexed_work_text",
+              "metrics": {
+                "like": null,
+                "comment": null,
+                "collect": null,
+                "share": null,
+                "views": null,
+                "visibleCountersRaw": [
+                  "526",
+                  "8",
+                  "23",
+                  "11"
+                ],
+                "observedAt": "2026-09-13T08:17:52Z",
+                "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+              },
+              "sources": [
+                "work-7679817465485029567"
+              ]
+            }
+          ],
+          "durationSeconds": null
+        }
+      ],
+      "coverage": {
+        "works": 1,
+        "inside": 1,
+        "before": 0,
+        "after": 0,
+        "unknown": 0,
+        "insideTypes": {
+          "制作教学": 1
+        },
+        "detailMetadata": 1,
+        "indexOnly": 0,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": false,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。"
+      },
+      "panelRole": "supplementary"
+    },
+    {
+      "name": "不切片披萨",
+      "url": null,
+      "role": "窗外生图教学参照",
+      "works": [
+        {
+          "id": "7633251355423435210",
+          "url": "https://www.douyin.com/video/7633251355423435210",
+          "title": "GPT Image 2与稿定AI生图教程",
+          "publishedAt": "2026-04-27 09:53",
+          "window": "before",
+          "sourceLevel": "indexed_work_text",
+          "origin": "new",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "title_or_tag",
+            "text": "作品标题或标签明确关联AI；尚未核界面声明。"
+          },
+          "metrics": {
+            "like": null,
+            "comment": null,
+            "collect": null,
+            "share": null,
+            "views": null,
+            "visibleCountersRaw": [
+              "2220",
+              "47",
+              "2072",
+              "672"
+            ],
+            "observedAt": "2026-09-13T08:17:52Z",
+            "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+          },
+          "observation": {
+            "fact": "评论涉及入口、上传失败、输出差异、分辨率及分层PSD；作者答使用2K，并给通用商品海报提示。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7633251355423435210"
+          ]
+        }
+      ],
+      "coverage": {
+        "works": 1,
+        "inside": 0,
+        "before": 1,
+        "after": 0,
+        "unknown": 0,
+        "insideTypes": {},
+        "detailMetadata": 0,
+        "indexOnly": 1,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": false,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。"
+      },
+      "panelRole": "outside_window_reference"
+    },
+    {
+      "name": "谟音卡卡",
+      "url": null,
+      "role": "窗外入门教学参照",
+      "works": [
+        {
+          "id": "7605632099810397491",
+          "url": "https://www.douyin.com/video/7605632099810397491",
+          "title": "即梦Seedance2.0入口指南",
+          "publishedAt": "2026-02-11 23:37",
+          "window": "before",
+          "sourceLevel": "indexed_work_text",
+          "origin": "new",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "title_or_tag",
+            "text": "作品标题或标签明确关联AI；尚未核界面声明。"
+          },
+          "metrics": {
+            "like": null,
+            "comment": null,
+            "collect": null,
+            "share": null,
+            "views": null,
+            "visibleCountersRaw": [
+              "4639",
+              "193",
+              "3889",
+              "623"
+            ],
+            "observedAt": "2026-09-13T08:17:52Z",
+            "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+          },
+          "observation": {
+            "fact": "教程标题承诺区分入口；评论仍涉及会员成本、排队和片段时长，不代表没有讲操作。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7605632099810397491"
+          ]
+        },
+        {
+          "id": "7604944792107175214",
+          "url": "https://www.douyin.com/video/7604944792107175214",
+          "title": "Seedance2.0八种玩法",
+          "publishedAt": "2026-02-10 03:12",
+          "window": "before",
+          "sourceLevel": "indexed_work_text",
+          "origin": "new",
+          "contentType": "制作教学",
+          "aiEvidence": {
+            "level": "title_or_tag",
+            "text": "作品标题或标签明确关联AI；尚未核界面声明。"
+          },
+          "metrics": {
+            "like": null,
+            "comment": null,
+            "collect": null,
+            "share": null,
+            "views": null,
+            "visibleCountersRaw": [
+              "7.6万",
+              "2723",
+              "7.6万",
+              "2.2万"
+            ],
+            "observedAt": "2026-09-13T08:17:52Z",
+            "interpretation": "索引计数未标语义，保留原文，不映射成点赞或播放。"
+          },
+          "observation": {
+            "fact": "标题明确由易到难并附提示词，未完整观看或取得同款文件。",
+            "limit": "只限索引文字，非完整观看和运行实测。"
+          },
+          "sources": [
+            "work-7604944792107175214"
+          ]
+        }
+      ],
+      "coverage": {
+        "works": 2,
+        "inside": 0,
+        "before": 2,
+        "after": 0,
+        "unknown": 0,
+        "insideTypes": {},
+        "detailMetadata": 0,
+        "indexOnly": 2,
+        "completeProfile": false,
+        "fullVideosWatched": 0,
+        "target": 4,
+        "targetMet": false,
+        "targetDefinition": "至少4条可核日期的窗内视觉作品；不要求都为教程，类型另列。",
+        "weeklySupplyRate": null,
+        "reason": "按任务选取作品；主页未证明完整，不能按样本数推完整周发布率。"
+      },
+      "panelRole": "outside_window_reference"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "至少两位独立作者已给制作步骤；“缺步骤”不能作为该主题的概括。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7673074764340650597",
+        "https://www.douyin.com/video/7672334620100250943",
+        "https://www.douyin.com/video/7679005030510349606"
+      ],
+      "caveat": "foyege有12个时间点画面；鸟鸟酱仅核完整作品说明。后者称片尾有模板不代表模板已取得，反向拉镜的计算解释也未验证。"
+    },
+    {
+      "claim": "静态角度、动作参考和多人连续切镜是不同任务，现有供给不能互相代替。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7674906676872498484",
+        "https://openart.ai/suite/camera-angle-control",
+        "https://openart.ai/suite/motion-sync",
+        "https://www.liblib.art/modelinfo/60c89401121e4d81998ed8bb26d94751?from=search"
+      ],
+      "caveat": "功能与参数说明是已读事实，能力上限和结果质量未运行验证。"
+    },
+    {
+      "claim": "新作者评论补出参考静帧难做、画面不动与费用不透明；不能把它们合并成缺教程。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676057077647939315",
+        "https://www.douyin.com/video/7673074764340650597"
+      ],
+      "caveat": "新增是索引评论摘录，不与旧DP默认评论位置混计；没有普遍发生率。"
+    },
+    {
+      "claim": "同作者两组对照给出相反方向，成片和教程谁更受欢迎不能一概而论。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7668957069785803426",
+        "https://www.douyin.com/video/7669413558211778661",
+        "https://www.douyin.com/video/7673074764340650597",
+        "https://www.douyin.com/video/7673159888415777978"
+      ],
+      "caveat": "8月1日成片约30万赞高于8月2日教程约4.2万；8月12日教程4659赞高于8月13日测试短片524。年龄、曝光、内容和选择均未控制，无因果结论。"
+    },
+    {
+      "claim": "收费说明和错误文档已有供给；尚缺的是同一任务的可核费用、失败输入及修正后结果。",
+      "evidenceUrls": [
+        "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+        "https://openart.ai/suite/pricing",
+        "https://www.runninghub.cn/runninghub-api-doc-cn/doc-8287342"
+      ],
+      "caveat": "未付费、未生成、未取得用户项目；材料缺项不代表平台不能运行。"
+    },
+    {
+      "claim": "同为视觉作者，供给角色差别很大：世界草稿的4件是3成片1教学，不能与连续教学作者等量计数。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676057077647939315",
+        "https://www.douyin.com/video/7669388419163901218",
+        "https://www.douyin.com/video/7670164612267937078",
+        "https://www.douyin.com/video/7672733398560951602"
+      ],
+      "caveat": "foyege10条窗内为6教学、3成片、1流程介绍；鸟鸟酱4条均为教学。样本有选择，不推各作者或市场的真实内容占比。"
+    }
+  ],
+  "alternatives": [
+    {
+      "need": "入门与参考材料",
+      "provider": "Liblib / 蝈蝈大叔",
+      "url": "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+      "provides": "有角色占位符、逐场提示格式和默认尺寸；正文说明在线运行、每次66积分。",
+      "remaining": "暂不开放作者工程下载；完整输入包、当次费用和用户复做结果未取得。",
+      "demandLinks": [
+        "DP-001:T2",
+        "DP-001:T7",
+        "IDX-W1"
+      ],
+      "sourceIds": [
+        "sup-lib1"
+      ]
+    },
+    {
+      "need": "入门与可编辑工程",
+      "provider": "In-Context-LoRA 官方公开模板",
+      "url": "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json",
+      "provides": "能阅读三场景工作流的节点配置，比只有入口更接近可检查材料。",
+      "remaining": "它不是原作者九分镜工程；LoRA文件名需与发布文件对齐，版本和素材许可仍需核。",
+      "demandLinks": [
+        "DP-001:T2",
+        "DP-001:T7"
+      ],
+      "sourceIds": [
+        "sup-gh",
+        "sup-hf"
+      ]
+    },
+    {
+      "need": "多人、移动与切镜一致性",
+      "provider": "OpenArt 官方一致性教程",
+      "url": "https://openart.ai/blog/how-to-maintain-consistency-in-ai-videos/",
+      "provides": "保存角色、复用参考图，并针对脸变、物件消失给出短片段和局部调整办法。",
+      "remaining": "文中承认复杂长序列仍会偏移；未见本案例八人运动或频繁切镜的同条件结果。",
+      "demandLinks": [
+        "DP-001:T5",
+        "DP-001:T6"
+      ],
+      "sourceIds": [
+        "sup-oa",
+        "sup-char"
+      ]
+    },
+    {
+      "need": "跨镜头关键帧准备",
+      "provider": "Liblib / 野猪A6",
+      "url": "https://www.liblib.art/modelinfo/60c89401121e4d81998ed8bb26d94751?from=search",
+      "provides": "按下一场景描述生成连续图像，附镜头方向与LoRA强度建议。",
+      "remaining": "作者更推荐风景、定场和场景转换；静帧连续不能替代运动视频的身份与位置核对。",
+      "demandLinks": [
+        "DP-001:T5",
+        "DP-001:T6",
+        "IDX-W1"
+      ],
+      "sourceIds": [
+        "sup-lib2"
+      ]
+    },
+    {
+      "need": "动作参考与生成不动",
+      "provider": "OpenArt Motion Sync",
+      "url": "https://openart.ai/suite/motion-sync",
+      "provides": "主体图或保存角色配动作视频；公开控件注明MP4/MOV、3—30秒、100MB以内，单边340—3850像素。",
+      "remaining": "需要先有合适动作素材；没有证明能直接修复评论者旧任务，也不能当八人编排工具。",
+      "demandLinks": [
+        "DP-001:T6",
+        "IDX-W3"
+      ],
+      "sourceIds": [
+        "sup-motion"
+      ]
+    },
+    {
+      "need": "视角与参考图准备",
+      "provider": "OpenArt Camera Angle Control",
+      "url": "https://openart.ai/suite/camera-angle-control",
+      "provides": "对上传静态图调整水平±90°、垂直±45°，另选广角或近景。",
+      "remaining": "角度控件不等于三维路径、纵深移动和越轴修正；场景比例仍需人工检查。",
+      "demandLinks": [
+        "DP-001:T8",
+        "DP-001:T10",
+        "IDX-W1"
+      ],
+      "sourceIds": [
+        "sup-camera"
+      ]
+    },
+    {
+      "need": "排错与既有工程接入",
+      "provider": "RunningHub 官方工作流文档",
+      "url": "https://www.runninghub.cn/runninghub-api-doc-cn/doc-8287342",
+      "provides": "在已有JSON上修改节点、提交并查询任务，示例能指出失败节点和错误文字。",
+      "remaining": "适用高级用户已有工程；文档提到脚本不代表文件已取得，节点错误不替代画面不动的视觉诊断。",
+      "demandLinks": [
+        "DP-001:T2",
+        "IDX-W3"
+      ],
+      "sourceIds": [
+        "sup-rh"
+      ]
+    },
+    {
+      "need": "静态多角度的简化入口",
+      "provider": "RunningHub / kittenHZ",
+      "url": "https://www.runninghub.cn/ai-detail/2069946576503660545",
+      "provides": "既有搜索索引显示上传图片的多角度应用及按实际用量计费说明。",
+      "remaining": "未读到当前控件、参数和报价，仅保留待核候选；网页失败不能当应用运行失败。",
+      "demandLinks": [
+        "DP-001:T7",
+        "DP-001:T8"
+      ],
+      "sourceIds": [
+        "sup-app"
+      ]
+    },
+    {
+      "need": "预算与重试成本",
+      "provider": "OpenArt Pricing",
+      "url": "https://openart.ai/suite/pricing",
+      "provides": "Plus页可见12000月积分与两种价格展示；估计视频数量明确排除Director。",
+      "remaining": "没有本任务时长、分辨率、失败重试总账，不能由套餐算出一条片成本，也不能判断比其他平台便宜。",
+      "demandLinks": [
+        "DP-001:T4",
+        "IDX-W2"
+      ],
+      "sourceIds": [
+        "sup-price"
+      ]
+    },
+    {
+      "need": "预算与重试成本",
+      "provider": "Liblib / 蝈蝈大叔",
+      "url": "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+      "provides": "具体对象有66积分说明与尺寸注意事项，已存在对象层费用信息。",
+      "remaining": "这是作者说明，不是当前结算；未见失败扣费规则、九镜总成本或现金换算。",
+      "demandLinks": [
+        "DP-001:T4",
+        "IDX-W2"
+      ],
+      "sourceIds": [
+        "sup-lib1"
+      ]
+    },
+    {
+      "need": "多人站位的准备与原作者方法",
+      "provider": "抖音 / AI驯化师鸟鸟酱",
+      "url": "https://www.douyin.com/video/7672334620100250943",
+      "provides": "作品说明已列三维站位、角色参考静帧与尾帧后退镜头三步，可先对照原作者路径。",
+      "remaining": "工具细节和完整工程未取得；五人效果未复做，不把计算缓冲的作者解释当模型机制。",
+      "demandLinks": [
+        "DP-001:T5",
+        "DP-001:T6",
+        "DP-001:T7"
+      ],
+      "sourceIds": [
+        "ui-7672334620100250943"
+      ]
+    }
+  ],
+  "supply": {
+    "observation": "作者、平台和公开配置分别提供方法演示、在线入口、参数与部分材料；供给并非空白。",
+    "depth": "至少分成入口选择、参考素材准备、静态分镜、动作迁移、复杂切镜、报错和成本七项检查。",
+    "boundary": "新作者面板按日期和作品类型单列；推荐入口和搜索可见样本不能推市场份额、完整发布频率或行业需求规模。",
+    "notChosen": "现有证据用于四主题可比判断，没有选定主题、北极星指标或开始社区招募。"
+  },
+  "communityValue": {
+    "status": "待验证假设，未选方向",
+    "proposition": "若能经授权补齐一个案例的输入包、版本、逐步结果与失败对照，并跟踪学习者复试，可能在原教程之外提供价值。",
+    "counterfactual": "先测试原作者回复、官方教程或直接工具入口是否已足够；能自行解决的任务不必迁入社区。",
+    "minimumDeliverable": "一个双人三镜头案例的材料清单、适用条件、费用记录模板及至少一组失败与修正说明。"
+  },
+  "returnHypothesis": {
+    "status": "待验证",
+    "trigger": "学习者完成第一镜后，带着下一镜的身份、动作或空间问题回来。",
+    "test": "观察同一外部学习者是否跨周带来新的任务材料，以及回复后是否提交可核的修正版。",
+    "notEvidence": "收藏、点赞、关键词求资料、内部互助和作者声称有效都不能代替跨周复试记录。"
+  },
+  "humanNeeded": [
+    {
+      "role": "有制作经验的案例编辑",
+      "work": "把症状区分为人物身份、运动、空间、输入质量或节点错误，按实际材料选择一项修改。"
+    },
+    {
+      "role": "材料维护者或原作者",
+      "work": "确认可分享文件与素材许可，注明版本、尺寸、费用条件及教程对应章节。"
+    },
+    {
+      "role": "外部学习者",
+      "work": "自愿提交脱敏输入设置与失败片段的描述；是否试过、改了什么、结果如何需分别记录。"
+    }
+  ],
+  "demandEvidence": [
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 2,
+      "parentPosition": null,
+      "paraphrase": "自称新手，询问 ComfyUI 能否完成同类效果，以及从哪个工具开始学习。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 4,
+      "parentPosition": null,
+      "paraphrase": "询问所用工具是否收费昂贵。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 5,
+      "parentPosition": null,
+      "paraphrase": "质疑方法在八人或频繁切镜条件下失效，并认为演示挑选了较容易的条件。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 6,
+      "parentPosition": null,
+      "paraphrase": "提出人物移动后仍保持一致性的具体问题。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 7,
+      "parentPosition": null,
+      "paraphrase": "询问作者是否在工具平台分享过相关内容。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 8,
+      "parentPosition": null,
+      "paraphrase": "认为演示镜头包含纵深移动，与全景图只能原地旋转的能力不一致。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": 10,
+      "parentPosition": null,
+      "paraphrase": "询问演示镜头是否存在越轴问题。",
+      "sourceLevel": "existing_ui_comment",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "未报告本人复试过程",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "DP-001",
+      "workUrl": "https://www.douyin.com/video/7673074764340650597",
+      "position": "4.R1",
+      "parentPosition": 4,
+      "paraphrase": "明确自述试过、结果满意，但认为费用高。",
+      "sourceLevel": "existing_ui_reply",
+      "observedAt": "2026-09-12T14:39:22.812Z",
+      "experienceEvidence": "明确自述使用，未核其原始项目",
+      "adoptionOutcome": null
+    },
+    {
+      "workId": "7676057077647939315",
+      "workUrl": "https://www.douyin.com/video/7676057077647939315",
+      "position": "IDX-W1",
+      "parentPosition": null,
+      "paraphrase": "认为真正难点在参考静帧的构图和比例。",
+      "sourceLevel": "new_indexed_comment_excerpt",
+      "observedAt": "2026-09-13T08:17:52Z",
+      "experienceEvidence": "未述亲测",
+      "authorReply": null,
+      "adoptionOutcome": null,
+      "positionBoundary": "此为索引摘录编号，不是实际默认评论位置；不能并入DP顶层位置计数。"
+    },
+    {
+      "workId": "7676057077647939315",
+      "workUrl": "https://www.douyin.com/video/7676057077647939315",
+      "position": "IDX-W2",
+      "parentPosition": null,
+      "paraphrase": "询问整套流程需要多少token。",
+      "sourceLevel": "new_indexed_comment_excerpt",
+      "observedAt": "2026-09-13T08:17:52Z",
+      "experienceEvidence": "未述亲测",
+      "authorReply": "作者回应花费不多，未给可核金额。",
+      "adoptionOutcome": null,
+      "positionBoundary": "此为索引摘录编号，不是实际默认评论位置；不能并入DP顶层位置计数。"
+    },
+    {
+      "workId": "7676057077647939315",
+      "workUrl": "https://www.douyin.com/video/7676057077647939315",
+      "position": "IDX-W3",
+      "parentPosition": null,
+      "paraphrase": "自述可灵输出没有动态，只增加音乐。",
+      "sourceLevel": "new_indexed_comment_excerpt",
+      "observedAt": "2026-09-13T08:17:52Z",
+      "experienceEvidence": "明确自述一次使用问题，输入参数未知",
+      "authorReply": "作者让其看教程，未见复试结果。",
+      "adoptionOutcome": null,
+      "positionBoundary": "此为索引摘录编号，不是实际默认评论位置；不能并入DP顶层位置计数。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "work-DA-35",
+      "title": "AI表演提示词公式与五千字提示说明",
+      "url": "https://www.douyin.com/video/7670762031490693818",
+      "date": "2026-08-06 11:54",
+      "accessedAt": "2026-09-12T13:02:51.361Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-36",
+      "title": "AI表演提示词教程",
+      "url": "https://www.douyin.com/video/7669413558211778661",
+      "date": "2026-08-02 20:41",
+      "accessedAt": "2026-09-12T13:02:53.106Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-37",
+      "title": "AI演员表演短片",
+      "url": "https://www.douyin.com/video/7668957069785803426",
+      "date": "2026-08-01 15:10",
+      "accessedAt": "2026-09-12T13:02:54.753Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-38",
+      "title": "AI视频白模教程",
+      "url": "https://www.douyin.com/video/7684223214016896613",
+      "date": "2026-09-11 18:30",
+      "accessedAt": "2026-09-12T13:02:56.622Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-39",
+      "title": "白模控制构图与运镜的成片",
+      "url": "https://www.douyin.com/video/7683468076499136379",
+      "date": "2026-09-09 17:40",
+      "accessedAt": "2026-09-12T13:02:58.201Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-40",
+      "title": "白模视频结合AI生成",
+      "url": "https://www.douyin.com/video/7682668008729064293",
+      "date": "2026-09-07 13:55",
+      "accessedAt": "2026-09-12T13:02:59.995Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-41",
+      "title": "AI人物皮肤质感教程",
+      "url": "https://www.douyin.com/video/7678195402789837169",
+      "date": "2026-08-26 12:39",
+      "accessedAt": "2026-09-12T13:03:01.817Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-42",
+      "title": "AI短剧剧本结构教程",
+      "url": "https://www.douyin.com/video/7676422641646299557",
+      "date": "2026-08-21 18:00",
+      "accessedAt": "2026-09-12T13:03:09.653Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-43",
+      "title": "群像站位与场景一致性教程",
+      "url": "https://www.douyin.com/video/7675375896727785125",
+      "date": "2026-08-19 11:20",
+      "accessedAt": "2026-09-12T13:03:11.382Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-44",
+      "title": "群像控场法测试短片",
+      "url": "https://www.douyin.com/video/7673159888415777978",
+      "date": "2026-08-13 17:58",
+      "accessedAt": "2026-09-12T13:03:13.112Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-45",
+      "title": "多人站位与场景一致性：三锁控场法",
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "date": "2026-08-12 19:26",
+      "accessedAt": "2026-09-12T13:03:14.954Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-46",
+      "title": "AI演员30秒生成短片",
+      "url": "https://www.douyin.com/video/7670876701828375675",
+      "date": "2026-08-07 15:18",
+      "accessedAt": "2026-09-12T13:03:16.640Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-47",
+      "title": "AI电影从剧本到成片的平台介绍",
+      "url": "https://www.douyin.com/video/7664092892722386496",
+      "date": "2026-07-19 17:54",
+      "accessedAt": "2026-09-12T13:03:18.878Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-DA-48",
+      "title": "AI电影平台生成档位与成本说明",
+      "url": "https://www.douyin.com/video/7658195346698703336",
+      "date": "2026-07-03 17:54",
+      "accessedAt": "2026-09-12T13:03:20.689Z",
+      "readScope": "既有抖音详情页的标题、发布时间与有标签互动数；DA-45另有12个画面时间点，不是完整观看。",
+      "origin": "existing_ui"
+    },
+    {
+      "id": "work-7676057077647939315",
+      "title": "AI天宫图生视频：三个动作",
+      "url": "https://www.douyin.com/video/7676057077647939315",
+      "date": "2026-08-20 20:08",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7669388419163901218",
+      "title": "放大中式建筑的天宫成片",
+      "url": "https://www.douyin.com/video/7669388419163901218",
+      "date": "2026-08-02 19:04",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7674906676872498484",
+      "title": "平面图标轨迹的AI线控运镜",
+      "url": "https://www.douyin.com/video/7674906676872498484",
+      "date": "2026-08-17 18:00",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7679817465485029567",
+      "title": "服装带货视频制作",
+      "url": "https://www.douyin.com/video/7679817465485029567",
+      "date": "2026-08-30 21:34",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7633251355423435210",
+      "title": "GPT Image 2与稿定AI生图教程",
+      "url": "https://www.douyin.com/video/7633251355423435210",
+      "date": "2026-04-27 09:53",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7605632099810397491",
+      "title": "即梦Seedance2.0入口指南",
+      "url": "https://www.douyin.com/video/7605632099810397491",
+      "date": "2026-02-11 23:37",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "work-7604944792107175214",
+      "title": "Seedance2.0八种玩法",
+      "url": "https://www.douyin.com/video/7604944792107175214",
+      "date": "2026-02-10 03:12",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "搜索索引中的具体作品标题、作者、发布时间、计数及部分评论；直接网页未取得可读正文，未观看。",
+      "origin": "new_public_web"
+    },
+    {
+      "id": "sup-lib1",
+      "title": "Liblib：9分镜in-context工作流",
+      "url": "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "正文25—100行：场次输入、尺寸、66积分、分屏异常、暂不开放下载。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-lib2",
+      "title": "Liblib：一致性连贯电影镜头",
+      "url": "https://www.liblib.art/modelinfo/60c89401121e4d81998ed8bb26d94751?from=search",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "正文25—66行：镜头提示、LoRA建议0.7—0.8、适合定场而非精确物体控制。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-oa",
+      "title": "OpenArt：How to Maintain Brand Consistency in AI Videos",
+      "url": "https://openart.ai/blog/how-to-maintain-consistency-in-ai-videos/",
+      "date": "2026-08-05",
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "正文118—236行：角色保存、参考图、局部修正与复杂镜头仍会偏移；未采信外部排名。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-char",
+      "title": "OpenArt：AI Character Generator",
+      "url": "https://openart.ai/features/ai-character/",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "输入路径、角色复用与功能说明；未提交生成。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-motion",
+      "title": "OpenArt：Motion Sync",
+      "url": "https://openart.ai/suite/motion-sync",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "页面28—80行：主体图/保存角色、动作参考视频、格式尺寸时长和界面默认项。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-camera",
+      "title": "OpenArt：Camera Angle Control",
+      "url": "https://openart.ai/suite/camera-angle-control",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "页面39—76行：上传图片、水平/垂直角度、镜头类型、Fast/Ultra。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-price",
+      "title": "OpenArt Pricing",
+      "url": "https://openart.ai/suite/pricing",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "Plus双价格展示、12000月积分、视频数量估计排除Director；未切换周期或结算。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-rh",
+      "title": "RunningHub：工作流完整接入示例",
+      "url": "https://www.runninghub.cn/runninghub-api-doc-cn/doc-8287342",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "正文431—618行：自有JSON、修改节点、失败节点输出；页尾修改2026-06-04 07:45:01。",
+      "origin": "existing_source_rechecked_public_web",
+      "modifiedAt": "2026-06-04 07:45:01",
+      "modifiedTimezone": null
+    },
+    {
+      "id": "sup-gh",
+      "title": "In-Context-LoRA：film-storyboard.json",
+      "url": "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json",
+      "date": null,
+      "accessedAt": "2026-09-13T08:17:52Z",
+      "readScope": "公开配置中的模型、采样、分辨率和随机化；未下载、导入或运行。",
+      "origin": "existing_source_rechecked_public_web"
+    },
+    {
+      "id": "sup-app",
+      "title": "RunningHub：一键生成多镜头+多角度",
+      "url": "https://www.runninghub.cn/ai-detail/2069946576503660545",
+      "date": null,
+      "accessedAt": "2026-09-13T02:29:35Z",
+      "readScope": "复用已有材料核查：直接正文失败，仅索引介绍与按用量计费文字；不是运行失败。",
+      "origin": "existing_source_review",
+      "accessWindowUtc": {
+        "start": "2026-09-13T02:26:40Z",
+        "end": "2026-09-13T02:29:35Z"
+      }
+    },
+    {
+      "id": "sup-hf",
+      "title": "In-Context-LoRA：模型文件列表",
+      "url": "https://huggingface.co/ali-vilab/In-Context-LoRA/tree/main",
+      "date": null,
+      "accessedAt": "2026-09-13T02:29:35Z",
+      "readScope": "复用已有核查：film-storyboard.safetensors文件名；未下载权重。",
+      "origin": "existing_source_review",
+      "accessWindowUtc": {
+        "start": "2026-09-13T02:26:40Z",
+        "end": "2026-09-13T02:29:35Z"
+      }
+    },
+    {
+      "id": "ui-7676057077647939315",
+      "title": "AI天宫图生视频：三个动作",
+      "url": "https://www.douyin.com/video/7676057077647939315",
+      "date": "2026-08-20 20:08",
+      "accessedAt": "2026-09-13T08:17:08.932Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7674906676872498484",
+      "title": "平面图标轨迹的AI线控运镜",
+      "url": "https://www.douyin.com/video/7674906676872498484",
+      "date": "2026-08-17 18:00",
+      "accessedAt": "2026-09-13T08:17:53.323Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7679005030510349606",
+      "title": "AI双人对话：情绪递进与表演提示",
+      "url": "https://www.douyin.com/video/7679005030510349606",
+      "date": "2026-08-28 17:01",
+      "accessedAt": "2026-09-13T08:23:18.935Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7676742606897909030",
+      "title": "东方美学：视觉符号与镜头参数",
+      "url": "https://www.douyin.com/video/7676742606897909030",
+      "date": "2026-08-22 14:42",
+      "accessedAt": "2026-09-13T08:23:20.540Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7672334620100250943",
+      "title": "AI多人站位：三维站位图与反向拉镜",
+      "url": "https://www.douyin.com/video/7672334620100250943",
+      "date": "2026-08-10 17:36",
+      "accessedAt": "2026-09-13T08:23:22.155Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7679817465485029567",
+      "title": "服装带货视频制作",
+      "url": "https://www.douyin.com/video/7679817465485029567",
+      "date": "2026-08-30 21:34",
+      "accessedAt": "2026-09-13T08:23:23.693Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7670164612267937078",
+      "title": "思念之城：东方城阙成片",
+      "url": "https://www.douyin.com/video/7670164612267937078",
+      "date": "2026-08-04 21:16",
+      "accessedAt": "2026-09-13T08:24:45.163Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7672733398560951602",
+      "title": "AI中式天庭审美成片",
+      "url": "https://www.douyin.com/video/7672733398560951602",
+      "date": "2026-08-11 19:24",
+      "accessedAt": "2026-09-13T08:24:46.723Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    },
+    {
+      "id": "ui-7669388419163901218",
+      "title": "放大中式建筑的天宫成片",
+      "url": "https://www.douyin.com/video/7669388419163901218",
+      "date": "2026-08-02 19:04",
+      "accessedAt": "2026-09-13T08:24:48.721Z",
+      "readScope": "研究记录实际浏览器详情：完整作品说明、作者主页、日期、有标签计数、可取得时长；没有完整观看。",
+      "origin": "new_ui"
+    }
+  ],
+  "method": {
+    "selection": "已有343扫描中没有足够可确认的新视觉教学作者；由具体任务公开检索补独立作者，再由研究记录浏览器核详情和主页。",
+    "readLevels": [
+      "existing：先前实际详情、评论和指定画面时间点",
+      "new：新公开索引与官方具体页",
+      "new_ui：研究记录新详情与主页；未完整观看"
+    ],
+    "missing": "未取得=null；日期不从视频ID或聚合页推算；同名作者不在无主页ID时强行合并。",
+    "metricBoundary": "有标签详情数才映射点赞、评论、收藏、分享；索引无标签保留原文。所有万单位均为近似展示值；播放量未取得。",
+    "commentBoundary": "旧DP位置、新索引摘录和新UI评论分别记录，不求和成新需求人数。",
+    "execution": "没有下载媒体、生成、登录写入、花费额度、联系作者或改Site。",
+    "verification": "检查日期窗、去重URL、来源指针和所有null；源文件hash便于复核。"
+  },
+  "humanNeededNote": "这些是待有人承担的工作，可由同一人兼任；不假定已有全职团队或作者合作。",
+  "unknowns": [
+    "完整作者发布序列、推荐分母与观看曝光未取得，不能推周发布率或市场份额。",
+    "世界草稿仅1条教学，跨作者教学深度不对称；多数新作品仅读详情说明。",
+    "新增评论只为索引摘录，没有新的默认评论UI编码；不与旧DP评论合并计人数。",
+    "各供给路径未观察到同一评论者采用、完成与跨周回访。"
+  ],
+  "candidates": [
+    {
+      "author": "世界草稿 W/D",
+      "url": "https://www.douyin.com/video/7670504595109498122",
+      "title": "AI造天宫",
+      "publishedAt": null,
+      "sourceLevel": "profile_card",
+      "origin": "new_ui",
+      "includedInPanel": false,
+      "reason": "只有主页入口及说明，日期未知；不由视频ID推日期。",
+      "sourcePath": "theme-comparison-2026-09-13/world-draft-list.json",
+      "observedAt": "2026-09-13T08:17:45.101Z"
+    }
+  ],
+  "panelCoverage": {
+    "primaryAuthors": 3,
+    "primaryInsideWorks": 18,
+    "primaryInsideTutorialWorks": 11,
+    "supplementaryInsideWorks": 1,
+    "outsideWindowReferenceAuthors": 2,
+    "targetMet": true,
+    "targetBoundary": "3作者各至少4条窗内视觉作品已达成；不是3作者各4条教程。完整观看、完整发布序列和运行复试均未完成。"
+  },
+  "validation": {
+    "checkedAt": "2026-09-13T08:24:48.721Z",
+    "errors": [],
+    "primaryAuthorTargetMet": true,
+    "uniqueWorkUrls": 26,
+    "sourceCount": 41,
+    "scope": "JSON结构、来源指针、日期窗、作品去重与空值；非生成或效果测试"
+  }
+}

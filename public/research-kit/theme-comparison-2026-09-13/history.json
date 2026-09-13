@@ -1,0 +1,1376 @@
+{
+  "id": "history",
+  "title": "历史人物与历史叙事",
+  "summary": "3位独立作者、11件窗口内作品。人物情境叙事、明史单篇/合集、地图系列分别交付不同观看价值。明确AI声明4件；已有出处与系列供给，增量需要针对具体解释或续看障碍证明，不能凭评论提问宣布市场缺口。",
+  "asOf": "2026-09-13",
+  "window": {
+    "startInclusive": "2026-07-13T00:00:00+08:00",
+    "endExclusive": "2026-09-07T00:00:00+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "method": {
+    "unit": "抖音独立作品ID；同成片重发关系未全部核对。",
+    "target": "每作者4件，不以窗外补足；实际3+4+4。",
+    "selection": "既有扫描提供线索，公开web核3位作者及相关作品；研究记录补原页元数据，本研究记录未操控浏览器。",
+    "readScope": "此次没有新观看视频或新读评论；复用溯明3件已有评论，卢象升复用9个画面时间点，均未连续看完全片。",
+    "sourceLevels": {
+      "existing-detail-comments": "既有原页详情与评论，未完整观看",
+      "existing-detail-comments-and-9-frame-checks": "既有详情、评论及9点画面抽查",
+      "new-browser-detail-metadata": "此次研究记录原页核标题、作者、日期、时长和互动；不等于观看"
+    },
+    "metrics": "保留原始万单位并折算为近似数量；沿用各详情读取时间，不拿较旧web索引数字覆盖原页快照。没有播放人数与曝光分母，不算互动率或用户比例。",
+    "dates": "原始完整日期统一转北京时间；网页推荐相对日期不单独用于确认窗口。",
+    "snapshotMerge": "同作品只保留一组详情互动，溯明采用9月12日16:45 UTC快照；评论保留其独立读取时间和来源。新8件采用9月13日研究记录详情，不将多个快照相加。",
+    "duration": "新观镜两件播放器时长为null，采用已读推荐卡片24:31/06:59并标秒级精度；不伪装为播放器测量。",
+    "countScope": "本档案复用3件既有详情，8件此次补详情；这是来源层级，不自动等于总研究库新增8个作品ID。"
+  },
+  "counts": {
+    "authors": 3,
+    "works": 11,
+    "verifiedInWindow": 11,
+    "existingWorks": 3,
+    "newWorks": 8,
+    "allFourMetrics": 11,
+    "viewsAvailable": 0,
+    "explicitAiDeclaration": 4,
+    "aiUseUnknown": 7,
+    "fullWindowAuthorCensus": 1,
+    "newFullyWatchedWorks": 0
+  },
+  "authors": [
+    {
+      "name": "溯明",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAATxC3OS3SgViKtdGnN-15Q9Q5b8fIJz19qju73OtSqofxuoKR1v52hUCrbb4qLCc7",
+      "expression": "人物情境叙事；本组3件均有AI生成声明",
+      "works": [
+        {
+          "url": "https://www.douyin.com/video/7670827630043663667",
+          "title": "卢象升（作者说明为上半部分）",
+          "sourceTitle": "第21集 | 你觉得明末最完美的人是谁？ #用AI打开人文新视界 #卢象升 #历史 #青年创作者成长计划",
+          "publishedAt": "2026-08-06T18:05:00+08:00",
+          "publishedAtRaw": "2026-08-06 18:05",
+          "sourceLevel": "existing-detail-comments-and-9-frame-checks",
+          "origin": "existing",
+          "aiEvidence": {
+            "declaration": "作者声明：内容由 AI 生成",
+            "status": "explicit-ai-generation-declaration",
+            "scope": "作品声明，不代表每一画面均由AI生成"
+          },
+          "metrics": {
+            "like": 4959,
+            "comment": 985,
+            "collect": 798,
+            "share": 317,
+            "views": null
+          },
+          "metricsRaw": {
+            "collect": "798",
+            "comment": "985",
+            "like": "4959",
+            "share": "317",
+            "views": null
+          },
+          "metricApproximate": {
+            "collect": false,
+            "comment": false,
+            "like": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-12T16:45:38.899Z",
+          "durationSeconds": 214.182,
+          "ageDaysAtMetricSnapshot": 37.278227997685185,
+          "pinned": null,
+          "contentForm": "有AI声明的历史人物叙事",
+          "contentFormBasis": "作品说明、已有评论；卢象升另有9点画面核对",
+          "watchedInFull": false,
+          "observation": "复用既有9个画面时间点：含场景化人物叙事，约90秒、190秒有《明史》署源。作者在评论自述因成本高先发半集；有读者质疑服饰。引文依据与视觉形制需分别核验，没有完成全片服饰核对或查到同一故事下半集。",
+          "commentsEvidence": {
+            "workId": "DC-C01",
+            "topLevelReadable": 10,
+            "repliesReadable": 7,
+            "examples": [
+              {
+                "position": 4,
+                "role": "author",
+                "paraphrase": "作者自述首次尝试AI视频、成本高、先发上半部分，数据好会加快下一集。",
+                "response": "未取得成本账或下集兑现证据。"
+              },
+              {
+                "position": "4/r1,r3",
+                "role": "readers",
+                "paraphrase": "回复对帽饰、发型或服装年代提出质疑。",
+                "response": "不直接判成已证史实错误。"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7670827630043663667",
+              "pointer": "url=https://www.douyin.com/video/7670827630043663667"
+            },
+            {
+              "url": "https://www.douyin.com/video/7670827630043663667",
+              "pointer": "works[id=DC-SM-3]"
+            },
+            {
+              "url": "https://www.douyin.com/video/7670827630043663667",
+              "pointer": "id=DC-C01"
+            },
+            {
+              "url": "https://www.douyin.com/video/7670827630043663667",
+              "pointer": "cases[id=history]"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7676009729012878607",
+          "title": "姜维一生",
+          "sourceTitle": "第11集 | 究竟是什么样的信念，才能支撑姜维这一路的颠沛流离？ 今天，我们用AI还原姜维的一生。 #姜维 #微观视角看历史 #用AI打开人文新视界 #三国 #历史",
+          "publishedAt": "2026-08-20T18:30:00+08:00",
+          "publishedAtRaw": "2026-08-20 18:30",
+          "sourceLevel": "existing-detail-comments",
+          "origin": "existing",
+          "aiEvidence": {
+            "declaration": "作者声明：内容由 AI 生成",
+            "status": "explicit-ai-generation-declaration",
+            "scope": "作品声明，不代表每一画面均由AI生成"
+          },
+          "metrics": {
+            "like": 162000,
+            "comment": 3985,
+            "collect": 18000,
+            "share": 26000,
+            "views": null
+          },
+          "metricsRaw": {
+            "collect": "1.8万",
+            "comment": "3985",
+            "like": "16.2万",
+            "share": "2.6万",
+            "views": null
+          },
+          "metricApproximate": {
+            "collect": true,
+            "comment": false,
+            "like": true,
+            "share": true,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-12T16:45:37.402Z",
+          "durationSeconds": 818.767,
+          "ageDaysAtMetricSnapshot": 23.260849560185186,
+          "pinned": null,
+          "contentForm": "有AI声明的历史人物叙事",
+          "contentFormBasis": "作品说明、已有评论；卢象升另有9点画面核对",
+          "watchedInFull": false,
+          "observation": "作品说明称以AI还原姜维一生；已读反馈包括人物认同，也有对人物相见、年龄形象、删去退守过程及动机呈现的质疑。年龄问题有读者解释，未核到作者引用出处或提问者确认接受。高互动与这些局部异议并存。",
+          "commentsEvidence": {
+            "workId": "DP-CAND-02-2",
+            "topLevelReadable": 10,
+            "repliesReadable": 9,
+            "examples": [
+              {
+                "position": 2,
+                "role": "unverified_public_commenter",
+                "paraphrase": "质疑人物是否曾见过先帝。",
+                "response": "所见展开回复未出现源记录标记的作者解决信息；不能推断作者在未采到部分从未回应。"
+              },
+              {
+                "position": 4,
+                "role": "unverified_public_commenter",
+                "paraphrase": "认为视频形象与自己熟悉的青年形象差异很大。",
+                "response": "所见展开回复未出现源记录标记的作者解决信息；不能推断作者在未采到部分从未回应。"
+              },
+              {
+                "position": 8,
+                "role": "unverified_public_commenter",
+                "paraphrase": "遗憾视频省略了退守过程。",
+                "response": "解决情况未知"
+              },
+              {
+                "position": 9,
+                "role": "unverified_public_commenter",
+                "paraphrase": "认为某段未解释清楚，导致人物被呈现为阴谋家。",
+                "response": "解决情况未知"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7676009729012878607",
+              "pointer": "url=https://www.douyin.com/video/7676009729012878607"
+            },
+            {
+              "url": "https://www.douyin.com/video/7676009729012878607",
+              "pointer": "works[id=DC-SM-2]"
+            },
+            {
+              "url": "https://www.douyin.com/video/7676009729012878607",
+              "pointer": "works[id=DP-CAND-02-2]"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7679427156413402409",
+          "title": "诸葛亮·开篇",
+          "sourceTitle": "第12集 | 诸葛亮——开篇。 这是诸葛亮故事的开篇：刘备三顾茅庐终得卧龙，诸葛亮隆中对三分天下。 #诸葛亮 #微观视角看历史 #用AI打开人文新视界 #三国 #历史",
+          "publishedAt": "2026-08-29T20:19:00+08:00",
+          "publishedAtRaw": "2026-08-29 20:19",
+          "sourceLevel": "existing-detail-comments",
+          "origin": "existing",
+          "aiEvidence": {
+            "declaration": "作者声明：内容由 AI 生成",
+            "status": "explicit-ai-generation-declaration",
+            "scope": "作品声明，不代表每一画面均由AI生成"
+          },
+          "metrics": {
+            "like": 554,
+            "comment": 47,
+            "collect": 101,
+            "share": 43,
+            "views": null
+          },
+          "metricsRaw": {
+            "collect": "101",
+            "comment": "47",
+            "like": "554",
+            "share": "43",
+            "views": null
+          },
+          "metricApproximate": {
+            "collect": false,
+            "comment": false,
+            "like": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-12T16:45:35.862Z",
+          "durationSeconds": 296.65,
+          "ageDaysAtMetricSnapshot": 14.185137291666667,
+          "pinned": null,
+          "contentForm": "有AI声明的历史人物叙事",
+          "contentFormBasis": "作品说明、已有评论；卢象升另有9点画面核对",
+          "watchedInFull": false,
+          "observation": "说明明确定位开篇；作者征询正史与演义取舍。已读反馈同时赞赏听感、质疑两角色音色不统一，并有人希望看近代史。作者征询不等于已经采纳，也不能作为无提示的需求调查。",
+          "commentsEvidence": {
+            "workId": "DP-CAND-02-1",
+            "topLevelReadable": 10,
+            "repliesReadable": 7,
+            "examples": [
+              {
+                "position": 1,
+                "role": "unverified_public_commenter",
+                "paraphrase": "提出另一套三国战略解释，认为原战略存在问题。",
+                "response": "解决情况未知"
+              },
+              {
+                "position": 4,
+                "role": "unverified_public_commenter",
+                "paraphrase": "希望观看近代史题材。",
+                "response": "解决情况未知"
+              },
+              {
+                "position": 5,
+                "role": "author",
+                "paraphrase": "作者征询续作应以正史还是掺入演义为主。",
+                "response": "所见展开回复未出现源记录标记的作者解决信息；不能推断作者在未采到部分从未回应。"
+              },
+              {
+                "position": 9,
+                "role": "unverified_public_commenter",
+                "paraphrase": "赞赏AI呈现的叙述气质和听感。",
+                "response": "解决情况未知"
+              },
+              {
+                "position": 10,
+                "role": "unverified_public_commenter",
+                "paraphrase": "质疑两个人物音色来源不统一，希望统一到同一版。",
+                "response": "解决情况未知"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7679427156413402409",
+              "pointer": "url=https://www.douyin.com/video/7679427156413402409"
+            },
+            {
+              "url": "https://www.douyin.com/video/7679427156413402409",
+              "pointer": "works[id=DC-SM-1]"
+            },
+            {
+              "url": "https://www.douyin.com/video/7679427156413402409",
+              "pointer": "works[id=DP-CAND-02-1]"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "target": 4,
+        "verifiedInWindow": 3,
+        "missingToTarget": 1,
+        "completeVisibleWindow": true,
+        "publicVisibleCensus": 42,
+        "windowWeeks": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "selection": "复用42件公开可见全清单；窗口内3件全部纳入，没有用更早的卢象升或姜维作品凑数。",
+        "limit": "仅当时公开可见；删除、私密和其他账号作品未知。"
+      },
+      "statistics": {
+        "likes": {
+          "n": 3,
+          "min": 554,
+          "median": 4959,
+          "max": 162000
+        },
+        "collects": {
+          "n": 3,
+          "min": 101,
+          "median": 798,
+          "max": 18000
+        },
+        "comments": {
+          "n": 3,
+          "min": 47,
+          "median": 985,
+          "max": 3985
+        },
+        "shares": {
+          "n": 3,
+          "min": 43,
+          "median": 317,
+          "max": 26000
+        },
+        "ageDays": {
+          "n": 3,
+          "min": 14.185137291666667,
+          "median": 23.260849560185186,
+          "max": 37.278227997685185
+        }
+      }
+    },
+    {
+      "name": "观镜历史说",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAGzAsWl9tyqGc6Nbgl9NkIhDDgqzTDVFuqLvq-wcg10_Jl6ah_5MIitIwDItlV7Tw",
+      "expression": "明史人物单篇与多人物合集；AI使用未知",
+      "works": [
+        {
+          "url": "https://www.douyin.com/video/7674572487757204786",
+          "title": "朱棣为什么敢发兵靖难",
+          "sourceTitle": "第171集 | 两年半的时间解读明朝，本期为您讲述为什么朱棣敢发兵靖难 #明朝 #朱棣 #朱允炆 #抖音精选 #历史人物",
+          "publishedAt": "2026-08-16T18:20:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-16 18:20",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": null,
+            "status": "no-ai-declaration-observed",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 5145,
+            "comment": 358,
+            "collect": 885,
+            "share": 260,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "5145",
+            "comment": "358",
+            "collect": "885",
+            "share": "260",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": false,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:37.908Z",
+          "durationSeconds": 568.913,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 27.913633194444444,
+          "pinned": null,
+          "contentForm": "历史人物单篇",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "解释行动理由；标题提出因果问题。未读评论、未观看，不能确认论证质量。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7674572487757204786",
+              "pointer": "url=https://www.douyin.com/video/7674572487757204786",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7658254591313612082",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7674922592528092459",
+          "title": "七位顶级武将合集",
+          "sourceTitle": "第172集 | 两年半的时间解读明朝，本期一口气看完七位顶级武将 #明朝 #汤和 #常遇春 #抖音精选 #历史人物",
+          "publishedAt": "2026-08-17T16:59:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-17 16:59",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": null,
+            "status": "no-ai-declaration-observed",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 6086,
+            "comment": 107,
+            "collect": 1225,
+            "share": 296,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "6086",
+            "comment": "107",
+            "collect": "1225",
+            "share": "296",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": false,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:35.555Z",
+          "durationSeconds": 3653.033,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 26.969855960648147,
+          "pinned": null,
+          "contentForm": "多人物专题合集",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "约61分钟，以多人物打包提供较长消费单元；是否复用旧单篇、是否便于跳读，未核。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7674922592528092459",
+              "pointer": "url=https://www.douyin.com/video/7674922592528092459",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7658254591313612082",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7675315145467252014",
+          "title": "徐渭",
+          "sourceTitle": "第173集 | 两年半的时间解读明朝，本期为您讲述大明三才子之一的徐渭 #明朝 #徐渭 #胡宗宪 #抖音精选 #历史人物",
+          "publishedAt": "2026-08-18T18:22:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-18 18:22",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": null,
+            "status": "no-ai-declaration-observed",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 470,
+            "comment": 5,
+            "collect": 107,
+            "share": 29,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "470",
+            "comment": "5",
+            "collect": "107",
+            "share": "29",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": false,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:16:59.789Z",
+          "durationSeconds": 419,
+          "durationSource": "https://jingxuan.douyin.com/m/video/7658254591313612082 / 对应推荐卡片（秒级显示，非播放器实测）",
+          "durationPrecision": "listing-mm-ss",
+          "ageDaysAtMetricSnapshot": 25.913192002314815,
+          "pinned": null,
+          "contentForm": "历史人物单篇",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "同作者四条里点赞最低的普通样本；不能从470赞推断内容质量差或观众不需要该人物。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7675315145467252014",
+              "pointer": "url=https://www.douyin.com/video/7675315145467252014",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7658254591313612082",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7675682303963663658",
+          "title": "大明三才子合集",
+          "sourceTitle": "第174集 | 两年半的时间解读明朝，本期一口气看完大明三才子 #明朝 #杨慎 #解缙 #抖音精选 #徐渭",
+          "publishedAt": "2026-08-19T18:07:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-19 18:07",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": null,
+            "status": "no-ai-declaration-observed",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 1393,
+            "comment": 35,
+            "collect": 418,
+            "share": 89,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "1393",
+            "comment": "35",
+            "collect": "418",
+            "share": "89",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": false,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:16:58.081Z",
+          "durationSeconds": 1471,
+          "durationSource": "https://jingxuan.douyin.com/m/video/7658254591313612082 / 对应推荐卡片（秒级显示，非播放器实测）",
+          "durationPrecision": "listing-mm-ss",
+          "ageDaysAtMetricSnapshot": 24.923588900462963,
+          "pinned": null,
+          "contentForm": "多人物专题合集",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "其标题人物包含前一日单篇的徐渭，但没有做画面、音轨匹配，不能认定整段重发。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7675682303963663658",
+              "pointer": "url=https://www.douyin.com/video/7675682303963663658",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7658254591313612082",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "target": 4,
+        "verifiedInWindow": 4,
+        "missingToTarget": 0,
+        "completeVisibleWindow": false,
+        "publicVisibleCensus": null,
+        "windowWeeks": null,
+        "selection": "既有DC-001提供明史解读线索；新检索核到作者，按同作者推荐序列选择8月16—19日连续4条，详情集号171—174对应。原DC-001身份未在原页核对，不并入这4条。",
+        "limit": "连续4日的小段，不能称完整8周供给；主页作品总量未做此次普查。"
+      },
+      "statistics": {
+        "likes": {
+          "n": 4,
+          "min": 470,
+          "median": 3269,
+          "max": 6086
+        },
+        "collects": {
+          "n": 4,
+          "min": 107,
+          "median": 651.5,
+          "max": 1225
+        },
+        "comments": {
+          "n": 4,
+          "min": 5,
+          "median": 71,
+          "max": 358
+        },
+        "shares": {
+          "n": 4,
+          "min": 29,
+          "median": 174.5,
+          "max": 296
+        },
+        "ageDays": {
+          "n": 4,
+          "min": 24.923588900462963,
+          "median": 26.44152398148148,
+          "max": 27.913633194444444
+        }
+      }
+    },
+    {
+      "name": "地图知天下",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAA37o4wMC1d4_Trtd4kYZz3sI0IF7joJOMDm4UiPBorVKz6W-khj3insFZN4uTBDoU",
+      "expression": "战役系列与朝代地图叙事；AI声明逐件差异",
+      "works": [
+        {
+          "url": "https://www.douyin.com/video/7674461746223975706",
+          "title": "蒙古帝国第4集：征服西辽",
+          "sourceTitle": "第56集 | 地图推演 蒙古帝国 第4集 蒙古西征前奏——征服西辽 #历史 #成吉思汗 #西辽 #蒙古西征 #抖音精选",
+          "publishedAt": "2026-08-16T11:26:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-16 11:26",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": "作者声明：个人观点，仅供参考",
+            "status": "personal-opinion-declaration-only",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 9304,
+            "comment": 398,
+            "collect": 1885,
+            "share": 220,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "9304",
+            "comment": "398",
+            "collect": "1885",
+            "share": "220",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": false,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:45.808Z",
+          "durationSeconds": 422.8,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 28.20122462962963,
+          "pinned": null,
+          "contentForm": "地图战役系列",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "系列第4集，作为后两集的时间前段；标题声明为地图推演，具体地图精度未核。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7674461746223975706",
+              "pointer": "url=https://www.douyin.com/video/7674461746223975706",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7502063141518396699",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7676402623431445800",
+          "title": "南北朝历史·下集",
+          "sourceTitle": "第9集 | 地图推演 南北朝历史 下集 东西魏对峙 侯景之乱 北周 北齐 #历史 #地图 #南北朝历史 #隋朝 #抖音精选",
+          "publishedAt": "2026-08-21T17:19:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-21 17:19",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": "作者声明：内容由 AI 生成",
+            "status": "explicit-ai-generation-declaration",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 19000,
+            "comment": 949,
+            "collect": 4473,
+            "share": 873,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "1.9万",
+            "comment": "949",
+            "collect": "4473",
+            "share": "873",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": true,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:43.933Z",
+          "durationSeconds": 1762.375,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 22.95606403935185,
+          "pinned": null,
+          "contentForm": "地图朝代叙事",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "约29分钟，四件中唯一有AI生成声明；所涉朝代和时长与蒙古系列不同，不能以互动高低归因于AI。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7676402623431445800",
+              "pointer": "url=https://www.douyin.com/video/7676402623431445800",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7502063141518396699",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7678247474389191945",
+          "title": "蒙古帝国第5集：花剌子模",
+          "sourceTitle": "第57集 | 地图推演 蒙古帝国 第5集 蒙古西征 踏平花剌子模 一场横跨万里的复仇与开拓之战#历史 #人文创作焕新计划 #换个角度看世界 #成吉思汗 #抖音精选",
+          "publishedAt": "2026-08-26T16:23:00+08:00",
+          "publishedAtRaw": "发布时间：2026-08-26 16:23",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": "作者声明：个人观点，仅供参考",
+            "status": "personal-opinion-declaration-only",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 18000,
+            "comment": 1068,
+            "collect": 3819,
+            "share": 569,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "1.8万",
+            "comment": "1068",
+            "collect": "3819",
+            "share": "569",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": true,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:41.965Z",
+          "durationSeconds": 685.501,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 17.994930150462963,
+          "pinned": null,
+          "contentForm": "地图战役系列",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "接第4集十日后发布；声明为个人观点，仅供参考，该声明不是AI生成证据。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7678247474389191945",
+              "pointer": "url=https://www.douyin.com/video/7678247474389191945",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7502063141518396699",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7681593630796074275",
+          "title": "蒙古帝国第6集：木华黎",
+          "sourceTitle": "第58集 | 地图推演 蒙古帝国 第6集 木华黎独镇中原 定鼎灭金基业 #历史 #人文创作焕新计划 #微观视角看历史 #蒙金战争 #抖音精选",
+          "publishedAt": "2026-09-04T16:41:00+08:00",
+          "publishedAtRaw": "发布时间：2026-09-04 16:41",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new-web-discovery-plus-root-browser-verification",
+          "aiEvidence": {
+            "declaration": null,
+            "status": "no-ai-declaration-observed",
+            "scope": "逐件记录；未见AI声明不等于未使用AI"
+          },
+          "metrics": {
+            "like": 11000,
+            "comment": 452,
+            "collect": 2157,
+            "share": 288,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "1.1万",
+            "comment": "452",
+            "collect": "2157",
+            "share": "288",
+            "views": null
+          },
+          "metricApproximate": {
+            "like": true,
+            "comment": false,
+            "collect": false,
+            "share": false,
+            "views": false
+          },
+          "metricsObservedAt": "2026-09-13T08:15:40.108Z",
+          "durationSeconds": 509.134,
+          "durationPrecision": "player-decimal-seconds",
+          "ageDaysAtMetricSnapshot": 8.982408657407408,
+          "pinned": null,
+          "contentForm": "地图战役系列",
+          "contentFormBasis": "作品标题与详情时长；未看全片",
+          "watchedInFull": false,
+          "observation": "第5集九日后继续同一系列。已观察到连续交付，不知道是否同一批观众持续观看。",
+          "commentsEvidence": null,
+          "sources": [
+            {
+              "url": "https://www.douyin.com/video/7681593630796074275",
+              "pointer": "url=https://www.douyin.com/video/7681593630796074275",
+              "collector": "研究记录原页补采"
+            },
+            {
+              "url": "https://jingxuan.douyin.com/m/video/7502063141518396699",
+              "file": null,
+              "pointer": "同作者推荐列表，web公开正文"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "target": 4,
+        "verifiedInWindow": 4,
+        "missingToTarget": 0,
+        "completeVisibleWindow": false,
+        "publicVisibleCensus": null,
+        "windowWeeks": null,
+        "selection": "新检索作者作品页的推荐列表，选已核到窗口日期的最近4条；列表更近一条只显示相对日期，不纳入。未按互动挑选。",
+        "limit": "4条属于可见推荐清单，未证明涵盖作者窗口全部发布。既有DC-015八王之乱作者仍未核对，不归到本作者名下。"
+      },
+      "statistics": {
+        "likes": {
+          "n": 4,
+          "min": 9304,
+          "median": 14500,
+          "max": 19000
+        },
+        "collects": {
+          "n": 4,
+          "min": 1885,
+          "median": 2988,
+          "max": 4473
+        },
+        "comments": {
+          "n": 4,
+          "min": 398,
+          "median": 700.5,
+          "max": 1068
+        },
+        "shares": {
+          "n": 4,
+          "min": 220,
+          "median": 428.5,
+          "max": 873
+        },
+        "ageDays": {
+          "n": 4,
+          "min": 8.982408657407408,
+          "median": 20.475497094907407,
+          "max": 28.20122462962963
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "claim": "同作者AI人物叙事也有低互动反例：溯明3件点赞554、4959、约16.2万，中位数4959。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7670827630043663667",
+        "https://www.douyin.com/video/7676009729012878607",
+        "https://www.douyin.com/video/7679427156413402409"
+      ],
+      "caveat": "三件作品龄约14—37天，题材、篇幅和开篇/一生/半集状态不同；没有播放曝光，不能据此判姜维题材或长视频必胜。"
+    },
+    {
+      "claim": "历史观看的诉求不只求知识点：姜维评论要求补退守过程，诸葛亮评论要求统一音色，另有正史/演义取舍及近代史点题。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676009729012878607",
+        "https://www.douyin.com/video/7679427156413402409"
+      ],
+      "caveat": "这些是已有样本中的具体表达，不是跨作者需求占比；关于形象或史实的质疑仍需核实，不能自动判制作失败。"
+    },
+    {
+      "claim": "史料标注已经存在，新增供给不能只承诺“提供出处”：卢象升抽查点已有《明史》署源，原文也能公开检索。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7670827630043663667",
+        "https://www.shidianguji.com/book/LS0024/chapter/LS0024_1419"
+      ],
+      "caveat": "既有核验支持文字依据，不能覆盖画面服饰与动机解释；若做出处服务，增量应是把具体台词、改编和修订对应起来，仍待消费者采用验证。"
+    },
+    {
+      "claim": "合集不是自动更高表现：观镜8月16日的单篇5145赞，高于8月19日三才子合集1393赞；8月18日徐渭单篇470赞，8月17日七武将合集6086赞。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7674572487757204786",
+        "https://www.douyin.com/video/7674922592528092459",
+        "https://www.douyin.com/video/7675315145467252014",
+        "https://www.douyin.com/video/7675682303963663658"
+      ],
+      "caveat": "仅4件、单篇和合集各2件，观看质量及推荐曝光未知；标题有徐渭重叠，未做全片版本比对，不把4个URL视为4份独立原创材料。"
+    },
+    {
+      "claim": "地图作者已有系列接续和较长历史解释：蒙古第4、5、6集分别8月16日、26日、9月4日发布，中间还有南北朝下集。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7674461746223975706",
+        "https://www.douyin.com/video/7676402623431445800",
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275"
+      ],
+      "caveat": "能核到连续交付和不同阅读单元，不能核到追更人数。蒙古三集点赞9304、约1.8万、约1.1万；第四集普通表现也保留，未挑最高赞代替日常。"
+    },
+    {
+      "claim": "11件中4件有明确AI生成声明：溯明3件和地图作者的南北朝下集；其余7件的AI使用状态未知。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7670827630043663667",
+        "https://www.douyin.com/video/7676009729012878607",
+        "https://www.douyin.com/video/7679427156413402409",
+        "https://www.douyin.com/video/7674572487757204786",
+        "https://www.douyin.com/video/7674922592528092459",
+        "https://www.douyin.com/video/7675315145467252014",
+        "https://www.douyin.com/video/7675682303963663658",
+        "https://www.douyin.com/video/7674461746223975706",
+        "https://www.douyin.com/video/7676402623431445800",
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275"
+      ],
+      "caveat": "地图推演不等于非AI，出现AI声明也不证明其地图或史实准确；“个人观点，仅供参考”不是AI声明。"
+    },
+    {
+      "claim": "这轮可以比较交付方式和局部问题，尚不能给三个作者或历史主题作受欢迎度排名。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7670827630043663667",
+        "https://www.douyin.com/video/7676009729012878607",
+        "https://www.douyin.com/video/7679427156413402409",
+        "https://www.douyin.com/video/7674572487757204786",
+        "https://www.douyin.com/video/7674922592528092459",
+        "https://www.douyin.com/video/7675315145467252014",
+        "https://www.douyin.com/video/7675682303963663658",
+        "https://www.douyin.com/video/7674461746223975706",
+        "https://www.douyin.com/video/7676402623431445800",
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275"
+      ],
+      "caveat": "实际样本日期集中8月6日至9月4日，只有溯明有完整公开窗口清单；新两位作者尚无此次评论和连续观看，3位也不能代表历史作者总体。"
+    }
+  ],
+  "alternatives": [
+    {
+      "need": "同一人物和事件继续看，并比较叙述",
+      "provider": "央视网《易中天品三国》",
+      "url": "https://tv.cctv.com/2012/12/15/VIDA1355518366208743.shtml",
+      "provides": "可见选集目录含三顾茅庐、隆中对策等，已有同题材的系列消费入口。",
+      "remaining": "本次只核目录与两集详情入口，没有播放验证、内容逐句比较或用户迁移证据；年代较早不等于不可替代。",
+      "specificUrls": [
+        "https://tv.cctv.com/2010/09/20/VIDE1355518394512263.shtml",
+        "https://tv.cctv.com/2010/09/20/VIDE1355518392861221.shtml"
+      ],
+      "evidenceLevel": "public-page-and-episode-entry"
+    },
+    {
+      "need": "查卢象升一段话的文献依据",
+      "provider": "识典古籍《明史·卢象升》",
+      "url": "https://www.shidianguji.com/book/LS0024/chapter/LS0024_1419",
+      "provides": "可直接读人物传记的公开数字文本，包含任官和同饥叙述；原始材料的可获取性已有供给。",
+      "remaining": "仍需版本校核、通俗释读以及同视频具体句子的对应；数字文本本身不是服饰图像依据。",
+      "specificUrls": [],
+      "evidenceLevel": "public-text-read"
+    },
+    {
+      "need": "从人物生平进入思想解释",
+      "provider": "央视网《五百年来王阳明》",
+      "url": "https://tv.cctv.com/2017/05/03/VIDA2H3uJRkeqF2eXnUahdyX170503.shtml",
+      "provides": "已可见分集目录和“知行合一”具体节目说明，历史人物可以按问题和阶段继续读看。",
+      "remaining": "与短视频的时间成本和消费情境不同；不能证明现有观众愿意转到长讲座，也未认定讲座所有观点为史实。",
+      "specificUrls": [
+        "https://tv.cctv.com/2017/04/17/VIDEZVE5Euu85SSkrolP14KP170417.shtml"
+      ],
+      "evidenceLevel": "public-series-page-and-episode-description"
+    },
+    {
+      "need": "把战役顺序和空间关系连起来",
+      "provider": "地图知天下",
+      "url": "https://www.douyin.com/video/7674461746223975706",
+      "provides": "此次已核蒙古帝国第4—6集的具体作品与日期；同作者主页可作为继续寻找同系列的入口。",
+      "remaining": "公开系列已提供部分接续价值；是否需要更清楚的地图注释、出处或跨集导航尚待观看和消费者反馈。",
+      "specificUrls": [
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275"
+      ],
+      "evidenceLevel": "browser-detail-metadata"
+    },
+    {
+      "need": "历史影像作者了解研究与制作流程（上游参考）",
+      "provider": "SVA课程／Runway具名教师访谈",
+      "url": "https://runway.com/customers/how-sva-is-bringing-runways-tools-into-mfa-computer-arts",
+      "provides": "公开案例说明先读历史报纸、照片和地点，再结合生成影像与传统后期，已有历史影像制作方法供给。",
+      "remaining": "供应商访谈不是可直接使用的中文课程、授权素材包或成本审计；仅作上游方法参考，不把观众需求转成工具学习需求。",
+      "specificUrls": [],
+      "evidenceLevel": "public-vendor-interview"
+    }
+  ],
+  "supply": {
+    "confirmed": "已有长短人物讲述、人物合集、地图系列、公开史料和具名历史影像方法；不是供给空白。",
+    "creatorConstraint": {
+      "claim": "溯明因成本高先发上半集，并将续更与数据联系。",
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "status": "作者自述",
+      "amount": null,
+      "workHours": null,
+      "teamSize": null,
+      "rightsCost": null
+    },
+    "comparison": "观镜四日有171—174连续条目，但包含两件合集；地图在同系列三集间夹入另一朝代作品。条目频率不能直接换成原创制作量或稳定生产成本。",
+    "unknown": [
+      "新两位作者如何查证、选题、写稿、配图和授权",
+      "合集与单篇的素材重用比例",
+      "溯明下半集是否交付及真实单集成本"
+    ]
+  },
+  "communityValue": {
+    "status": "待验证的增量假设",
+    "consumer": "以成片消费为入口，把具体疑问接到带出处的简短解释、改编说明及相邻作品；看懂和继续看可以独立构成价值。",
+    "contributor": "作者负责叙事选择与修订，史料熟悉者补证据，普通读者指出看不懂的位置或不同版本；不要求每个人学习生成工具。",
+    "boundary": "原作者评论和现有系列已能满足部分交流及续看。只有明显减少寻找、辨别或接续成本，才可能值得另建社区入口。"
+  },
+  "returnHypothesis": [
+    {
+      "reason": "沿同一人物/系列继续观看",
+      "evidence": "地图第4—6集和诸葛亮开篇有接续结构。",
+      "urls": [
+        "https://www.douyin.com/video/7674461746223975706",
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275",
+        "https://www.douyin.com/video/7679427156413402409"
+      ],
+      "unverified": "尚未观察同一用户跨集或跨周返回；有系列不等于有追更。"
+    },
+    {
+      "reason": "带着具体史实或叙述疑问回来查看解释",
+      "evidence": "姜维省略过程、人物形象以及诸葛亮音色问题可定位；卢象升已有出处。",
+      "urls": [
+        "https://www.douyin.com/video/7676009729012878607",
+        "https://www.douyin.com/video/7679427156413402409",
+        "https://www.douyin.com/video/7670827630043663667"
+      ],
+      "unverified": "作者是否修订、提问者是否接受，以及是否愿意移到新社区查看均未知。"
+    }
+  ],
+  "humanNeeded": [
+    "优先补新两位作者的实际观看与等规则评论，尤其观镜470赞徐渭、1393赞三才子合集和地图9304赞第4集；目前不能跨作者比较消费障碍。",
+    "围绕同一历史问题，让真实消费者比较原短片、已有系列和可查出处：哪里中断、还想看什么、何种补充实际省事；记录选择，不先询问是否喜欢新社区。",
+    "作者需给出一件成片的工时/费用/授权/返工记录，区分史料、写稿、生成与剪辑；仅赠工具额度是否有用待确认。",
+    "若采用接续或勘误整理，再通过可识别的真实用户跨周行为验证回来的是谁、为何回来；当前评论人数、观看完成与留存均未知。"
+  ],
+  "boundaries": [
+    {
+      "url": "https://www.douyin.com/video/7664551837873261858",
+      "reason": "DC-001为既有王阳明扫描卡，7月20日没有原始完整年份/作者核对；仅用于发现观镜候选，不并入11件。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7662693254986501382",
+      "reason": "既有八王之乱有2026-07-15详情和评论，但作者身份未核；不得凭相似地图题材归给地图知天下。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7673513119460773120",
+      "reason": "李冰AI片有窗口日期和声明，作者尚未核；保留待补，未并入作者比较。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7678155357679602995",
+      "reason": "孩子的一棠课是古诗与现代历史关联的教育叙事边界案例；不拿来补纯历史人物作者数。作者已有时代联系说明，不能再称关联解释缺失。"
+    },
+    {
+      "url": "https://www.douyin.com/video/7598938845460584438",
+      "reason": "博宇讲历史既有两件均窗外，未用于补齐窗口。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "溯明：卢象升（作者说明为上半部分）",
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "date": "2026-08-06T18:05:00+08:00",
+      "accessedAt": "2026-09-12T16:45:38.899Z",
+      "level": "existing-detail-comments-and-9-frame-checks"
+    },
+    {
+      "title": "溯明：姜维一生",
+      "url": "https://www.douyin.com/video/7676009729012878607",
+      "date": "2026-08-20T18:30:00+08:00",
+      "accessedAt": "2026-09-12T16:45:37.402Z",
+      "level": "existing-detail-comments"
+    },
+    {
+      "title": "溯明：诸葛亮·开篇",
+      "url": "https://www.douyin.com/video/7679427156413402409",
+      "date": "2026-08-29T20:19:00+08:00",
+      "accessedAt": "2026-09-12T16:45:35.862Z",
+      "level": "existing-detail-comments"
+    },
+    {
+      "title": "观镜历史说：朱棣为什么敢发兵靖难",
+      "url": "https://www.douyin.com/video/7674572487757204786",
+      "date": "2026-08-16T18:20:00+08:00",
+      "accessedAt": "2026-09-13T08:15:37.908Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "观镜历史说：七位顶级武将合集",
+      "url": "https://www.douyin.com/video/7674922592528092459",
+      "date": "2026-08-17T16:59:00+08:00",
+      "accessedAt": "2026-09-13T08:15:35.555Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "观镜历史说：徐渭",
+      "url": "https://www.douyin.com/video/7675315145467252014",
+      "date": "2026-08-18T18:22:00+08:00",
+      "accessedAt": "2026-09-13T08:16:59.789Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "观镜历史说：大明三才子合集",
+      "url": "https://www.douyin.com/video/7675682303963663658",
+      "date": "2026-08-19T18:07:00+08:00",
+      "accessedAt": "2026-09-13T08:16:58.081Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "地图知天下：蒙古帝国第4集：征服西辽",
+      "url": "https://www.douyin.com/video/7674461746223975706",
+      "date": "2026-08-16T11:26:00+08:00",
+      "accessedAt": "2026-09-13T08:15:45.808Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "地图知天下：南北朝历史·下集",
+      "url": "https://www.douyin.com/video/7676402623431445800",
+      "date": "2026-08-21T17:19:00+08:00",
+      "accessedAt": "2026-09-13T08:15:43.933Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "地图知天下：蒙古帝国第5集：花剌子模",
+      "url": "https://www.douyin.com/video/7678247474389191945",
+      "date": "2026-08-26T16:23:00+08:00",
+      "accessedAt": "2026-09-13T08:15:41.965Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "地图知天下：蒙古帝国第6集：木华黎",
+      "url": "https://www.douyin.com/video/7681593630796074275",
+      "date": "2026-09-04T16:41:00+08:00",
+      "accessedAt": "2026-09-13T08:15:40.108Z",
+      "level": "new-browser-detail-metadata"
+    },
+    {
+      "title": "观镜同作者推荐列表（汤和作品页）",
+      "url": "https://jingxuan.douyin.com/m/video/7658254591313612082",
+      "date": "2026-07-03",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-web-related-list"
+    },
+    {
+      "title": "观镜三才子合集公开元数据",
+      "url": "https://jingxuan.douyin.com/m/video/7675682303963663658",
+      "date": "2026-08-19",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-web-detail-metadata"
+    },
+    {
+      "title": "观镜徐渭公开元数据",
+      "url": "https://jingxuan.douyin.com/m/video/7675315145467252014",
+      "date": "2026-08-18",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-web-detail-metadata"
+    },
+    {
+      "title": "地图知天下同作者推荐列表（官渡之战作品页）",
+      "url": "https://jingxuan.douyin.com/m/video/7502063141518396699",
+      "date": "2025-05-11",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-web-related-list"
+    },
+    {
+      "title": "溯明公开主页索引（计数较旧，不覆盖本地42件原页普查）",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAATxC3OS3SgViKtdGnN-15Q9Q5b8fIJz19qju73OtSqofxuoKR1v52hUCrbb4qLCc7",
+      "date": null,
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-web-search-index"
+    },
+    {
+      "title": "央视网易中天品三国选集",
+      "url": "https://tv.cctv.com/2012/12/15/VIDA1355518366208743.shtml",
+      "date": "2012-12-15",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-page"
+    },
+    {
+      "title": "易中天品三国·隆中对策",
+      "url": "https://tv.cctv.com/2010/09/20/VIDE1355518394512263.shtml",
+      "date": "2010-09-20",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-episode-entry-not-played"
+    },
+    {
+      "title": "易中天品三国·三顾茅庐",
+      "url": "https://tv.cctv.com/2010/09/20/VIDE1355518392861221.shtml",
+      "date": "2010-09-20",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-episode-entry-not-played"
+    },
+    {
+      "title": "识典古籍·明史·卢象升",
+      "url": "https://www.shidianguji.com/book/LS0024/chapter/LS0024_1419",
+      "date": null,
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-original-text"
+    },
+    {
+      "title": "央视网五百年来王阳明选集",
+      "url": "https://tv.cctv.com/2017/05/03/VIDA2H3uJRkeqF2eXnUahdyX170503.shtml",
+      "date": "2017-05-03",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-page"
+    },
+    {
+      "title": "五百年来王阳明·知行合一",
+      "url": "https://tv.cctv.com/2017/04/17/VIDEZVE5Euu85SSkrolP14KP170417.shtml",
+      "date": "2017-04-17",
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-episode-description"
+    },
+    {
+      "title": "SVA历史影像课程的具名教师访谈",
+      "url": "https://runway.com/customers/how-sva-is-bringing-runways-tools-into-mfa-computer-arts",
+      "date": null,
+      "accessedAt": "2026-09-13T08:21:37.012Z",
+      "level": "public-vendor-interview"
+    }
+  ],
+  "withinAuthorGroups": [
+    {
+      "author": "观镜历史说",
+      "group": "历史人物单篇",
+      "n": 2,
+      "urls": [
+        "https://www.douyin.com/video/7674572487757204786",
+        "https://www.douyin.com/video/7675315145467252014"
+      ],
+      "likes": {
+        "n": 2,
+        "min": 470,
+        "median": 2807.5,
+        "max": 5145
+      },
+      "limit": "2件，不推断格式效果"
+    },
+    {
+      "author": "观镜历史说",
+      "group": "多人物专题合集",
+      "n": 2,
+      "urls": [
+        "https://www.douyin.com/video/7674922592528092459",
+        "https://www.douyin.com/video/7675682303963663658"
+      ],
+      "likes": {
+        "n": 2,
+        "min": 1393,
+        "median": 3739.5,
+        "max": 6086
+      },
+      "limit": "标题层级分类；是否剪接旧作未核"
+    },
+    {
+      "author": "地图知天下",
+      "group": "蒙古帝国第4—6集",
+      "n": 3,
+      "urls": [
+        "https://www.douyin.com/video/7674461746223975706",
+        "https://www.douyin.com/video/7678247474389191945",
+        "https://www.douyin.com/video/7681593630796074275"
+      ],
+      "likes": {
+        "n": 3,
+        "min": 9304,
+        "median": 11000,
+        "max": 18000
+      },
+      "limit": "声明分别为个人观点/个人观点/未见声明；AI使用未知"
+    },
+    {
+      "author": "地图知天下",
+      "group": "南北朝下集",
+      "n": 1,
+      "urls": [
+        "https://www.douyin.com/video/7676402623431445800"
+      ],
+      "likes": {
+        "n": 1,
+        "min": 19000,
+        "median": 19000,
+        "max": 19000
+      },
+      "limit": "单件且有AI声明；不能和蒙古三件解释为AI效果实验"
+    }
+  ],
+  "overlapWithPriorResearch": {
+    "matchedIds": [
+      "7670827630043663667",
+      "7676009729012878607",
+      "7679427156413402409"
+    ],
+    "notFoundIds": [
+      "7674572487757204786",
+      "7674922592528092459",
+      "7675315145467252014",
+      "7675682303963663658",
+      "7674461746223975706",
+      "7676402623431445800",
+      "7678247474389191945",
+      "7681593630796074275"
+    ],
+    "rule": "按已有ecosystem cend+details、panel works、comparison works的video/note数字ID比对；非成片内容去重。"
+  }
+}

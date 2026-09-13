@@ -3,6 +3,7 @@ import dataset from '@/lib/content-demand-ecosystem.json';
 import {DouyinDepth} from './content-demand-depth';
 import {DouyinPanel} from './content-demand-panel';
 import {DouyinComparison} from './content-demand-comparison';
+import {ThemeComparison} from './content-demand-themes';
 import './content-demand-ecosystem.css';
 
 const d=dataset;
@@ -21,7 +22,8 @@ export function DouyinEcosystem(){
   <header className="page-heading"><h1>{e.title}</h1><p>{e.verdict}</p>
    <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>题材与竞品底表</a></div>
   </header>
-  <DouyinComparison />
+  <ThemeComparison />
+  <details className="cd-profile"><summary><strong>同作者作品对照与画面研究</strong><span>既有逐集、互动与材料核查</span></summary><div className="cd-profile-body"><DouyinComparison /></div></details>
   <details className="cd-profile"><summary><strong>作品互动与逐条评论底表</strong><span>63件作品与已读讨论</span></summary><div className="cd-profile-body"><DouyinPanel /></div></details>
   <details className="cd-profile"><summary><strong>参考方法、作者样本与指数复算</strong></summary><div className="cd-profile-body"><DouyinDepth /></div></details>
   <h2>题材、关键词与竞品供给底表</h2>

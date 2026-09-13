@@ -1,0 +1,862 @@
+{
+  "id": "story",
+  "title": "故事连载与角色消费",
+  "asOf": "2026-09-13",
+  "window": {
+    "startInclusive": "2026-07-13T00:00:00+08:00",
+    "endExclusive": "2026-09-07T00:00:00+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "summary": "3位作者的12集连续作品对照，另核1件番外二创邀请。连载的组织对象是故事、季、集和角色；原平台已经提供合集、作者解释和二创活动，社区的增量不能只是一份新目录。",
+  "authors": [
+    {
+      "name": "编导_拾光",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAwjUfzN7VbutOK-tL3AmZsHyfNpPQyC50ZarqXfBfrSASOsklHJ0pmBukN8VlzTqS",
+      "role": "原创奇幻故事连载",
+      "works": [
+        {
+          "id": "DA-30",
+          "url": "https://www.douyin.com/video/7669754322279845172",
+          "author": "编导_拾光",
+          "title": "第4集 原创AIGC故事连载《山海》第四集：饥线。 #抖音AI创作大赛 赛#开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+          "publishedAt": "2026-08-03T18:44:00+08:00",
+          "observedAt": "2026-09-12T13:01:39.409Z",
+          "metrics": {
+            "like": 5449,
+            "comment": 374,
+            "collect": 1072,
+            "share": 302,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "5449",
+            "comment": "374",
+            "collect": "1072",
+            "share": "302"
+          },
+          "ageDays": 40.095595011574076,
+          "window": "窗口内",
+          "week": 4,
+          "pinned": null,
+          "kind": "山海第一季较早条目",
+          "sourceLevel": "existing-browser-detail-metadata",
+          "origin": "existing",
+          "aiEvidence": {
+            "status": "creator-title-ai-claim",
+            "declaration": "标题写原创 AIGC 故事连载，未在此底表记录页面声明"
+          },
+          "metricsObservedAt": "2026-09-12T13:01:39.409Z",
+          "observation": "第一季第4—7集较早发布入口。与8月26日同集批量入口分开，不把两组互动相加作为同一成片表现。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "作品详情",
+              "url": "https://www.douyin.com/video/7669754322279845172"
+            }
+          ]
+        },
+        {
+          "id": "DA-29",
+          "url": "https://www.douyin.com/video/7672712056163912994",
+          "author": "编导_拾光",
+          "title": "第5集 原创AIGC故事连载《山海》第五集：边界。 #抖音AI创作大赛 #开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+          "publishedAt": "2026-08-11T18:01:00+08:00",
+          "observedAt": "2026-09-12T13:01:37.471Z",
+          "metrics": {
+            "like": 5958,
+            "comment": 291,
+            "collect": 1086,
+            "share": 397,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "5958",
+            "comment": "291",
+            "collect": "1086",
+            "share": "397"
+          },
+          "ageDays": 32.12543369212963,
+          "window": "窗口内",
+          "week": 5,
+          "pinned": null,
+          "kind": "山海第一季较早条目",
+          "sourceLevel": "existing-browser-detail-metadata",
+          "origin": "existing",
+          "aiEvidence": {
+            "status": "creator-title-ai-claim",
+            "declaration": "标题写原创 AIGC 故事连载，未在此底表记录页面声明"
+          },
+          "metricsObservedAt": "2026-09-12T13:01:37.471Z",
+          "observation": "第一季第4—7集较早发布入口。与8月26日同集批量入口分开，不把两组互动相加作为同一成片表现。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "作品详情",
+              "url": "https://www.douyin.com/video/7672712056163912994"
+            }
+          ]
+        },
+        {
+          "id": "DA-28",
+          "url": "https://www.douyin.com/video/7673756944410217763",
+          "author": "编导_拾光",
+          "title": "第6集 原创AIGC故事连载《山海》第六集：地渊。 #抖音AI创作大赛 #AI创作浪潮计划 #未来导演扶持计划 #末日生存 #抖音创作者大会",
+          "publishedAt": "2026-08-14T18:50:00+08:00",
+          "observedAt": "2026-09-12T13:01:35.642Z",
+          "metrics": {
+            "like": 5202,
+            "comment": 319,
+            "collect": 876,
+            "share": 358,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "5202",
+            "comment": "319",
+            "collect": "876",
+            "share": "358"
+          },
+          "ageDays": 29.09138474537037,
+          "window": "窗口内",
+          "week": 5,
+          "pinned": null,
+          "kind": "山海第一季较早条目",
+          "sourceLevel": "existing-browser-detail-metadata",
+          "origin": "existing",
+          "aiEvidence": {
+            "status": "creator-title-ai-claim",
+            "declaration": "标题写原创 AIGC 故事连载，未在此底表记录页面声明"
+          },
+          "metricsObservedAt": "2026-09-12T13:01:35.642Z",
+          "observation": "第一季第4—7集较早发布入口。与8月26日同集批量入口分开，不把两组互动相加作为同一成片表现。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "作品详情",
+              "url": "https://www.douyin.com/video/7673756944410217763"
+            }
+          ]
+        },
+        {
+          "id": "DA-27",
+          "url": "https://www.douyin.com/video/7675314431055777074",
+          "author": "编导_拾光",
+          "title": "第7集 原创AIGC故事连载《山海》第七集：遗土。 #抖音AI创作大赛 #抖音创作者大会 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+          "publishedAt": "2026-08-18T18:20:00+08:00",
+          "observedAt": "2026-09-12T13:01:33.678Z",
+          "metrics": {
+            "like": 7895,
+            "comment": 684,
+            "collect": 1508,
+            "share": 626,
+            "views": null
+          },
+          "metricsRaw": {
+            "like": "7895",
+            "comment": "684",
+            "collect": "1508",
+            "share": "626"
+          },
+          "ageDays": 25.112195347222222,
+          "window": "窗口内",
+          "week": 6,
+          "pinned": null,
+          "kind": "山海第一季较早条目",
+          "sourceLevel": "existing-browser-detail-metadata",
+          "origin": "existing",
+          "aiEvidence": {
+            "status": "creator-title-ai-claim",
+            "declaration": "标题写原创 AIGC 故事连载，未在此底表记录页面声明"
+          },
+          "metricsObservedAt": "2026-09-12T13:01:33.678Z",
+          "observation": "第一季第4—7集较早发布入口。与8月26日同集批量入口分开，不把两组互动相加作为同一成片表现。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "作品详情",
+              "url": "https://www.douyin.com/video/7675314431055777074"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "selectedWorks": 4,
+        "windowWorksInExistingList": 21,
+        "visibleListReviewed": 24,
+        "completeVisibleList": true,
+        "note": "4集专题比较复用24件可见清单；不把21个窗口入口称为21部独立成片。"
+      }
+    },
+    {
+      "name": "菲菲飞",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAUJUz9EJxjPFe2DbfKhSdoa9v-1lP9mOs9Epeqx-jP9Q",
+      "role": "长篇角色剧集；番外与二创活动",
+      "works": [
+        {
+          "url": "https://www.douyin.com/video/7674551711079402794",
+          "title": "《被裁掉的女孩2》第8集",
+          "publishedAt": "2026-08-16T17:00:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 602000,
+            "comment": 14000,
+            "collect": 41000,
+            "share": 92000,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "1.4万",
+            "video-player-collect": "4.1万",
+            "video-player-digg": "60.2万",
+            "video-player-share": "9.2万"
+          },
+          "metricsObservedAt": "2026-09-13T08:15:18.584Z",
+          "durationSeconds": 628.959,
+          "observation": "连续第8—11集；页面有 AI 声明。标题所称工具为作者披露，未核后台。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7674551711079402794"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7675081903677967635",
+          "title": "《被裁掉的女孩2》第9集",
+          "publishedAt": "2026-08-18T16:00:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 689000,
+            "comment": 15000,
+            "collect": 53000,
+            "share": 115000,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "1.5万",
+            "video-player-collect": "5.3万",
+            "video-player-digg": "68.9万",
+            "video-player-share": "11.5万"
+          },
+          "metricsObservedAt": "2026-09-13T08:15:20.570Z",
+          "durationSeconds": null,
+          "observation": "连续第8—11集；页面有 AI 声明。标题所称工具为作者披露，未核后台。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7675081903677967635"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7675812554425355555",
+          "title": "《被裁掉的女孩2》第10集",
+          "publishedAt": "2026-08-20T16:00:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 534000,
+            "comment": 14000,
+            "collect": 46000,
+            "share": 93000,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "1.4万",
+            "video-player-collect": "4.6万",
+            "video-player-digg": "53.4万",
+            "video-player-share": "9.3万"
+          },
+          "metricsObservedAt": "2026-09-13T08:14:20.291Z",
+          "durationSeconds": 1201.145011,
+          "observation": "连续第8—11集；页面有 AI 声明。标题所称工具为作者披露，未核后台。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7675812554425355555"
+            }
+          ]
+        },
+        {
+          "url": "https://www.douyin.com/video/7677443172443704626",
+          "title": "《被裁掉的女孩2》第11集（结局）",
+          "publishedAt": "2026-08-24T12:00:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 838000,
+            "comment": 19000,
+            "collect": 84000,
+            "share": 165000,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "1.9万",
+            "video-player-collect": "8.4万",
+            "video-player-digg": "83.8万",
+            "video-player-share": "16.5万"
+          },
+          "metricsObservedAt": "2026-09-13T08:15:06.073Z",
+          "durationSeconds": 1703.252993,
+          "observation": "连续第8—11集；页面有 AI 声明。标题所称工具为作者披露，未核后台。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7677443172443704626"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "selectedWorks": 4,
+        "completeVisibleList": false,
+        "note": "连续剧集定向选择，不是完整账号普查。第10、11集另抽读默认评论。"
+      }
+    },
+    {
+      "name": "LANX",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAA_nuhPtgapID5_ayMRJ3UneLzwSTZ8Z3nL4LdSfkkDjw",
+      "role": "动作与感染题材原创动画系列",
+      "works": [
+        {
+          "url": "https://www.douyin.com/video/7672707173901683995",
+          "title": "《DEADLY：畸变》第12集",
+          "publishedAt": "2026-08-11T17:42:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 30000,
+            "comment": 595,
+            "collect": 5300,
+            "share": 5599,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "595",
+            "video-player-collect": "5300",
+            "video-player-digg": "3.0万",
+            "video-player-share": "5599"
+          },
+          "metricsObservedAt": "2026-09-13T08:16:52.859Z",
+          "durationSeconds": 200.5,
+          "observation": "标题自述独立制作，总耗时6天、消耗12000积分；团队人数、工时和账单未取得。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7672707173901683995"
+            }
+          ],
+          "productionClaim": {
+            "attribution": "author-title",
+            "reportedDays": 6,
+            "credits": 12000,
+            "currencyCost": null,
+            "personHours": null,
+            "includesRetries": null
+          }
+        },
+        {
+          "url": "https://www.douyin.com/video/7674686865202482467",
+          "title": "《DEADLY：畸变》第13集",
+          "publishedAt": "2026-08-17T01:44:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 36000,
+            "comment": 632,
+            "collect": 5702,
+            "share": 3086,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "632",
+            "video-player-collect": "5702",
+            "video-player-digg": "3.6万",
+            "video-player-share": "3086"
+          },
+          "metricsObservedAt": "2026-09-13T08:16:54.553Z",
+          "durationSeconds": 288.67,
+          "observation": "标题自述独立制作，总耗时4天、消耗12000积分；团队人数、工时和账单未取得。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7674686865202482467"
+            }
+          ],
+          "productionClaim": {
+            "attribution": "author-title",
+            "reportedDays": 4,
+            "credits": 12000,
+            "currencyCost": null,
+            "personHours": null,
+            "includesRetries": null
+          }
+        },
+        {
+          "url": "https://www.douyin.com/video/7678643465701444898",
+          "title": "《DEADLY：畸变》第14集",
+          "publishedAt": "2026-08-27T19:40:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 38000,
+            "comment": 570,
+            "collect": 6050,
+            "share": 4431,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "570",
+            "video-player-collect": "6050",
+            "video-player-digg": "3.8万",
+            "video-player-share": "4431"
+          },
+          "metricsObservedAt": "2026-09-13T08:16:08.959Z",
+          "durationSeconds": null,
+          "observation": "标题自述独立制作，总耗时4天、消耗12000积分；团队人数、工时和账单未取得。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7678643465701444898"
+            }
+          ],
+          "productionClaim": {
+            "attribution": "author-title",
+            "reportedDays": 4,
+            "credits": 12000,
+            "currencyCost": null,
+            "personHours": null,
+            "includesRetries": null
+          }
+        },
+        {
+          "url": "https://www.douyin.com/video/7680498305897483535",
+          "title": "《DEADLY：畸变》第15集",
+          "publishedAt": "2026-09-01T19:38:00+08:00",
+          "sourceLevel": "new-browser-detail-metadata",
+          "origin": "new",
+          "aiEvidence": {
+            "status": "explicit-ai-generation-declaration",
+            "declaration": "作者声明：内容由 AI 生成"
+          },
+          "metrics": {
+            "like": 66000,
+            "comment": 1424,
+            "collect": 14000,
+            "share": 11000,
+            "views": null
+          },
+          "metricsRaw": {
+            "feed-comment-icon": "1424",
+            "video-player-collect": "1.4万",
+            "video-player-digg": "6.6万",
+            "video-player-share": "1.1万"
+          },
+          "metricsObservedAt": "2026-09-13T08:16:56.205Z",
+          "durationSeconds": 420.4,
+          "observation": "标题自述独立制作，总耗时4天、消耗12000积分；团队人数、工时和账单未取得。",
+          "watchedInFull": false,
+          "sources": [
+            {
+              "title": "原作品详情",
+              "url": "https://www.douyin.com/video/7680498305897483535"
+            }
+          ],
+          "productionClaim": {
+            "attribution": "author-title",
+            "reportedDays": 4,
+            "credits": 12000,
+            "currencyCost": null,
+            "personHours": null,
+            "includesRetries": null
+          }
+        }
+      ],
+      "coverage": {
+        "selectedWorks": 4,
+        "completeVisibleList": false,
+        "note": "连续第12—15集；标题中的工作天数不是完整工时。"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "claim": "观众已经围绕人物关系、结局是否合理和角色成长讨论；生产工具不是这组评论的主要话题。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7675812554425355555",
+        "https://www.douyin.com/video/7677443172443704626"
+      ],
+      "caveat": "8条精选评论转述用于描述不同诉求，未给出占比，也没有识别跨集重复用户。"
+    },
+    {
+      "claim": "作者已经在评论澄清人物关系，番外又明确邀请观众参与二创。问答和参与活动并非原平台的空白。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7675812554425355555",
+        "https://www.douyin.com/video/7680541532486782223"
+      ],
+      "caveat": "二创邀请不等于可无限制商用或搬运，也没有核查收到多少合格投稿。"
+    },
+    {
+      "claim": "同一故事已有较早分集、批量分集和合集。按发布入口统计会夸大独立内容供给。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7677555740273380635",
+        "https://www.douyin.com/video/7675314431055777074",
+        "https://www.douyin.com/video/7678013971638652196"
+      ],
+      "caveat": "已按标题与集号找到7组候选对应入口；其中第一集的一组入口完成3个时间点画面对照，其余6组未做内容一致性核验。"
+    },
+    {
+      "claim": "LANX四件作品均自述12000积分，天数却为6、4、4、4；不能从一个积分数推出每分钟统一成本。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7672707173901683995",
+        "https://www.douyin.com/video/7674686865202482467",
+        "https://www.douyin.com/video/7678643465701444898",
+        "https://www.douyin.com/video/7680498305897483535"
+      ],
+      "caveat": "自述不含可核工时、账单、素材授权和返工明细；第13至14集发布相隔10天也不等于制作耗时10天。"
+    },
+    {
+      "claim": "“求更新”只证明某时刻的期待，连续集数和高互动也不能说明同一批人稳定追更。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7675812554425355555",
+        "https://www.douyin.com/video/7678643465701444898",
+        "https://www.douyin.com/video/7680498305897483535"
+      ],
+      "caveat": "没有账号后台观看留存或可区分用户的跨周追踪。"
+    }
+  ],
+  "alternatives": [
+    {
+      "need": "按顺序看完故事",
+      "provider": "抖音作者合集、分集与全季版本",
+      "url": "https://www.douyin.com/video/7677555740273380635",
+      "provides": "《山海》已有1—8集合集与各集入口；菲菲飞也有第二季全篇入口，标题标记新增内容。",
+      "remaining": "全篇、单集、不同版本的对应关系要核清。整理目录本身是否值得离开抖音尚未验证。",
+      "specificUrls": [
+        "https://www.douyin.com/video/7679008022307409193"
+      ]
+    },
+    {
+      "need": "理解角色与剧情歧义",
+      "provider": "原作者评论与角色账号",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "provides": "作者直接解释人物关系；观众已使用角色账号作为故事线索。",
+      "remaining": "角色账号链接与完整设定未核，不能把所有观众解释写成正式设定。"
+    },
+    {
+      "need": "参与角色二创",
+      "provider": "菲菲飞番外综艺与二创话题",
+      "url": "https://www.douyin.com/video/7680541532486782223",
+      "provides": "作品说明邀请角色配对、关系续写等二创，并给出投稿话题。",
+      "remaining": "实际可复用素材、许可范围、审核和回报未知；尚无已完成二创的样本。"
+    },
+    {
+      "need": "选择下一部类似故事",
+      "provider": "抖音相关作品与搜索",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "provides": "原页推荐已出现《The Accident》《归墟》等其他作者作品。",
+      "remaining": "推荐列表不提供已核实的跨作品设定关系；未验证读者需要人工专题或会跨平台观看。",
+      "specificUrls": [
+        "https://www.douyin.com/video/7675329518130810158",
+        "https://www.douyin.com/video/7678359560649706779"
+      ]
+    }
+  ],
+  "supply": {
+    "confirmed": "三位作者均有连续故事供给；作品说明呈现不同创作设定。制作规模、改编关系与授权条件尚未取得可比证据。",
+    "roles": [
+      {
+        "role": "原作者",
+        "output": "剧情、正片、角色设定和允许公开的创作说明；确认二创边界。"
+      },
+      {
+        "role": "社区编辑",
+        "output": "按季集去重、标正式/番外/预告/合集、记录观看顺序与版本差异；引用具体原作。"
+      },
+      {
+        "role": "观众或获授权的参与者",
+        "output": "评论剧情、提交设定疑问、在明确规则内创作；观看本身同样有效。"
+      }
+    ],
+    "cost": "LANX有积分与日数自述；其他作者采访标题中的费用或总播放量不作为本组成本基准。没有完整每集成本或合作报价。"
+  },
+  "communityValue": {
+    "consumer": "假设价值在少走弯路地找到下一集、理解尚未解释的角色关系、发现同好并阅读持续的讨论。",
+    "carrier": "列表显示作品名、作者、季集、更新时间和是否含剧透；详情以正片为主，补观看顺序、角色索引、作者解释与独立的二创区。",
+    "contributor": "原作者保留叙事与素材控制权；编辑补跨入口组织和讨论维护。先确认整理带来的收益，再讨论入驻或免费额度。",
+    "boundary": "原平台已能追更、评论、建合集和发起二创。没有证明这些组织工作足以带来多元拾光的外部用户回访。"
+  },
+  "returnHypothesis": [
+    {
+      "reason": "回来追已关注故事或阅读下一次讨论",
+      "evidence": "连续剧集与具体结局讨论提供线索。",
+      "urls": [
+        "https://www.douyin.com/video/7675812554425355555",
+        "https://www.douyin.com/video/7677443172443704626"
+      ],
+      "unverified": "观察到的是内容发布和评论，不是同一用户跨周返回。"
+    },
+    {
+      "reason": "参与设定问答或二创进展",
+      "evidence": "已见作者澄清和二创邀请。",
+      "urls": [
+        "https://www.douyin.com/video/7675812554425355555",
+        "https://www.douyin.com/video/7680541532486782223"
+      ],
+      "unverified": "尚未看到问题被整理后提升理解、或参与者在社区持续投稿。"
+    }
+  ],
+  "humanNeeded": [
+    "原作者确认可引用、嵌入、改编与分发的范围，及是否愿意持续回答设定问题。",
+    "获取一集的准备、写稿、生成、剪辑和返工记录，核积分与实际费用关系。",
+    "让外部观众比较原合集与整理后的入口；记录在哪里卡住、是否愿意继续看，而非只询问喜欢哪种界面。",
+    "上线验证时区分站内自然返回与提醒召回，北极星仍统计连续两周有效活跃的外部目标用户。"
+  ],
+  "comments": [
+    {
+      "id": "ST-C1",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "role": "viewer",
+      "theme": "剧情线索",
+      "paraphrase": "根据角色的独立账号推测结局，希望该账号补充后续。",
+      "reading": "默认可见顶层评论；尝试展开回复后未取得可读回复",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C2",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "role": "viewer",
+      "theme": "人物理解",
+      "paraphrase": "自称从第一集看起，仍不清楚 Zack 的身份。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C3",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "role": "viewer",
+      "theme": "人物可信度",
+      "paraphrase": "认为主角过于完美，配角更复杂、真实。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C4",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "role": "viewer",
+      "theme": "后续期待",
+      "paraphrase": "希望下一次更新篇幅更长。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C5",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "role": "author",
+      "theme": "设定澄清",
+      "paraphrase": "解释周以衡与顾安安家没有亲属关系，圈层相识不等于家族关联。",
+      "reading": "页面标记作者的顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C6",
+      "url": "https://www.douyin.com/video/7677443172443704626",
+      "role": "viewer",
+      "theme": "结局意见",
+      "paraphrase": "认为感情线收尾仓促，希望人物有正式告别。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C7",
+      "url": "https://www.douyin.com/video/7677443172443704626",
+      "role": "viewer",
+      "theme": "角色成长",
+      "paraphrase": "认可唐宁在结局中的成长。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    },
+    {
+      "id": "ST-C8",
+      "url": "https://www.douyin.com/video/7677443172443704626",
+      "role": "viewer",
+      "theme": "视听体验",
+      "paraphrase": "称赞配乐。",
+      "reading": "默认可见顶层评论",
+      "observedDate": "2026-09-13",
+      "storage": "研究者转述；未保存评论者账号或位置资料"
+    }
+  ],
+  "extraWorks": [
+    {
+      "url": "https://www.douyin.com/video/7680541532486782223",
+      "title": "《被裁掉的女孩》番外综艺二创邀请",
+      "publishedAt": "2026-09-01T20:24:00+08:00",
+      "sourceLevel": "new-browser-detail-metadata",
+      "origin": "new",
+      "aiEvidence": {
+        "status": "explicit-ai-generation-declaration",
+        "declaration": "作者声明：内容由 AI 生成"
+      },
+      "metrics": {
+        "like": 285000,
+        "comment": 6387,
+        "collect": 16000,
+        "share": 47000,
+        "views": null
+      },
+      "metricsRaw": {
+        "feed-comment-icon": "6387",
+        "video-player-collect": "1.6万",
+        "video-player-digg": "28.5万",
+        "video-player-share": "4.7万"
+      },
+      "metricsObservedAt": "2026-09-13T08:15:22.453Z",
+      "durationSeconds": 431.682,
+      "observation": "说明提出角色配对与关系线二创；尚未核实际投稿或素材授权。",
+      "watchedInFull": false,
+      "sources": [
+        {
+          "title": "原作品详情",
+          "url": "https://www.douyin.com/video/7680541532486782223"
+        }
+      ]
+    }
+  ],
+  "counterexamples": [
+    {
+      "url": "https://www.douyin.com/video/7673081780312255379",
+      "author": "山梦宗",
+      "publishedAt": "2026-08-12T17:56:00+08:00",
+      "sourceLevel": "web-indexed",
+      "observation": "标题邀请长评参与人物剧情；索引互动较低。原页未成功读取，保留为反例线索，不计入12件对照或证明参与机制成功。"
+    }
+  ],
+  "method": {
+    "selection": "三位作者各选连续四集；复用已有分集对照，补两位新作者。不能用三位作者推断全体故事作者分布。",
+    "readScope": "新作品核原页元数据与说明；第10、11集抽读评论；没有新作品完整观看或完整字幕。",
+    "metrics": "万单位按页面精度近似保留。播放次数不可见，不算互动率。",
+    "crossWorkComments": "未进行可区分用户匹配，评论转述不相加为独立人数。"
+  },
+  "sources": [
+    {
+      "title": "《被裁掉的女孩2》第8集",
+      "url": "https://www.douyin.com/video/7674551711079402794",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《被裁掉的女孩2》第9集",
+      "url": "https://www.douyin.com/video/7675081903677967635",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《被裁掉的女孩2》第10集",
+      "url": "https://www.douyin.com/video/7675812554425355555",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《被裁掉的女孩2》第11集（结局）",
+      "url": "https://www.douyin.com/video/7677443172443704626",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《DEADLY：畸变》第12集",
+      "url": "https://www.douyin.com/video/7672707173901683995",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《DEADLY：畸变》第13集",
+      "url": "https://www.douyin.com/video/7674686865202482467",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《DEADLY：畸变》第14集",
+      "url": "https://www.douyin.com/video/7678643465701444898",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "《DEADLY：畸变》第15集",
+      "url": "https://www.douyin.com/video/7680498305897483535",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "番外二创邀请",
+      "url": "https://www.douyin.com/video/7680541532486782223",
+      "accessedAt": "2026-09-13"
+    },
+    {
+      "title": "第4集 原创AIGC故事连载《山海》第四集：饥线。 #抖音AI创作大赛 赛#开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "url": "https://www.douyin.com/video/7669754322279845172",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "title": "第5集 原创AIGC故事连载《山海》第五集：边界。 #抖音AI创作大赛 #开放赛道 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "url": "https://www.douyin.com/video/7672712056163912994",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "title": "第6集 原创AIGC故事连载《山海》第六集：地渊。 #抖音AI创作大赛 #AI创作浪潮计划 #未来导演扶持计划 #末日生存 #抖音创作者大会",
+      "url": "https://www.douyin.com/video/7673756944410217763",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "title": "第7集 原创AIGC故事连载《山海》第七集：遗土。 #抖音AI创作大赛 #抖音创作者大会 #AI创作浪潮计划 #未来导演扶持计划 #末日生存",
+      "url": "https://www.douyin.com/video/7675314431055777074",
+      "accessedAt": "2026-09-12"
+    }
+  ],
+  "counts": {
+    "authors": 3,
+    "works": 12,
+    "verifiedInWindow": 12,
+    "existingWorks": 4,
+    "newWorks": 8,
+    "extraWorks": 1,
+    "selectedCommentParaphrases": 8,
+    "newFullyWatchedWorks": 0
+  }
+}

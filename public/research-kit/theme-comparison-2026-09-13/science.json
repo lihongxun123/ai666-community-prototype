@@ -1,0 +1,1379 @@
+{
+  "id": "science",
+  "title": "动物与自然科普：内容、证据与持续观看",
+  "updatedAt": "2026-09-13",
+  "summary": "四个公开署名、17个唯一作品入口，日期均明确落在统一窗。5件有既有详情级元数据，4件新补原页元数据，8件仍为公开索引。四个署名各至少4件日期明确作品；主题未知、标签标题与实际内容未核仍使科学解释比较深度不齐。当前具体需求来自犬种史争议、榜单标准与遗漏项；新作者观看反馈和回访仍缺。",
+  "window": {
+    "start": "2026-07-13T00:00:00+08:00",
+    "endExclusive": "2026-09-07T00:00:00+08:00",
+    "label": "北京时间2026-07-13至09-06"
+  },
+  "authors": [
+    {
+      "name": "八宝动物园",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAe38gcBrTnpZXDnT3wR4qoA0PayuV1J-5HoDTXHqDBr1qwmGNekxJ92neEzR5zReD",
+      "role": "既有基准作者",
+      "works": [
+        {
+          "id": "DC-BB-20",
+          "url": "https://www.douyin.com/video/7667062107929578767",
+          "title": "西高地犬品种介绍",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-27 17:35",
+          "publishedTimezone": "Asia/Shanghai",
+          "window": "in",
+          "sourceLevel": "existing-detail-metadata",
+          "discovery": "existing-sample-rechecked",
+          "theme": "家养品种介绍；选宠导向，不等于宠物个人经验",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "声明已核；未独立鉴别全部画面或AI参与步骤。"
+          },
+          "metrics": {
+            "likes": 3906,
+            "comments": 792,
+            "collections": 491,
+            "shares": 3833,
+            "views": null,
+            "raw": {
+              "collect": "491",
+              "comment": "792",
+              "like": "3906",
+              "share": "3833",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增",
+            "observedAt": "2026-09-12T16:50:27.044Z"
+          },
+          "observation": "标题以适合家庭饲养作推荐承诺；尚未核对其全部说明和适用条件。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-BB1"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false
+        },
+        {
+          "id": "DC-BB-19",
+          "url": "https://www.douyin.com/video/7667814813216673024",
+          "title": "法国斗牛犬品种介绍",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-29 18:26",
+          "publishedTimezone": "Asia/Shanghai",
+          "window": "in",
+          "sourceLevel": "existing-detail-metadata",
+          "discovery": "existing-sample-rechecked",
+          "theme": "家养品种介绍；选宠导向，不等于宠物个人经验",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "声明已核；未独立鉴别全部画面或AI参与步骤。"
+          },
+          "metrics": {
+            "likes": 6469,
+            "comments": 1027,
+            "collections": 559,
+            "shares": 4951,
+            "views": null,
+            "raw": {
+              "collect": "559",
+              "comment": "1027",
+              "like": "6469",
+              "share": "4951",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增",
+            "observedAt": "2026-09-12T16:50:25.508Z"
+          },
+          "observation": "标题以适合家庭饲养作推荐承诺；尚未核对其全部说明和适用条件。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-BB2"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false
+        },
+        {
+          "id": "DC-BB-18",
+          "url": "https://www.douyin.com/video/7668318521469783347",
+          "title": "金渐层猫品种介绍",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-30 21:52",
+          "publishedTimezone": "Asia/Shanghai",
+          "window": "in",
+          "sourceLevel": "existing-detail-metadata",
+          "discovery": "existing-sample-rechecked",
+          "theme": "家养品种介绍；选宠导向，不等于宠物个人经验",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "声明已核；未独立鉴别全部画面或AI参与步骤。"
+          },
+          "metrics": {
+            "likes": 5616,
+            "comments": 1782,
+            "collections": 574,
+            "shares": 5023,
+            "views": null,
+            "raw": {
+              "collect": "574",
+              "comment": "1782",
+              "like": "5616",
+              "share": "5023",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增",
+            "observedAt": "2026-09-12T16:50:23.778Z"
+          },
+          "observation": "标题以适合家庭饲养作推荐承诺；尚未核对其全部说明和适用条件。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-BB3"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false
+        },
+        {
+          "id": "DC-BB-9",
+          "url": "https://www.douyin.com/video/7676758445789383974",
+          "title": "超大型犬的五档战力排名",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-22 18:26",
+          "publishedTimezone": "Asia/Shanghai",
+          "window": "in",
+          "sourceLevel": "existing-detail-metadata",
+          "discovery": "existing-sample-rechecked",
+          "theme": "犬种榜单、比较",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "声明已核；未独立鉴别全部画面或AI参与步骤。"
+          },
+          "metrics": {
+            "likes": 4295,
+            "comments": 409,
+            "collections": 1133,
+            "shares": 546,
+            "views": null,
+            "raw": {
+              "collect": "1133",
+              "comment": "409",
+              "like": "4295",
+              "share": "546",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增",
+            "observedAt": "2026-09-12T16:49:56.553Z"
+          },
+          "observation": "榜单引出犬种史、评判标准和遗漏项；已读评论见单列证据。",
+          "consumerEvidence": [
+            {
+              "workId": "DP-X05",
+              "position": 1,
+              "paraphrase": "怀疑爱尔兰猎狼犬曾断代、现存血系与历史不同。",
+              "outcome": "已读回复仍有不同说法；未见已完成的来源核对。",
+              "sourceId": "SC-COM"
+            },
+            {
+              "workId": "DP-X05",
+              "position": 6,
+              "paraphrase": "询问另一种大型犬应排在哪一档。",
+              "outcome": "同伴提醒体型不等于能力，未给统一排行标准。",
+              "sourceId": "SC-COM"
+            },
+            {
+              "workId": "DP-X05",
+              "position": 9,
+              "paraphrase": "询问为何缺少另外的犬种。",
+              "outcome": "已读回复继续提名，未给排除依据。",
+              "sourceId": "SC-COM"
+            }
+          ],
+          "sources": [
+            "SC-BB4",
+            "SC-COM"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false
+        }
+      ],
+      "coverage": {
+        "knownWindowWorks": 4,
+        "unknownWindowWorks": 0,
+        "fullyWatched": 0,
+        "withReadableComments": 1,
+        "selection": "从已有21件窗内作品中目的性选3种品种介绍和1条有评论的榜单；不把拟人互换和侏罗纪故事混入科学解释。",
+        "accountTotalInWindow": 21,
+        "note": "既有全量主页统计只用于该作者背景；本专题的选中四件不能代表全账号。"
+      }
+    },
+    {
+      "name": "奥秘百科",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAIyQ961ROR3IUex6TzCwGvMeOI_0NlSe-YMcUcZM4Kis",
+      "role": "新增纵向作品的既有独立署名",
+      "works": [
+        {
+          "id": "SC-AM1",
+          "url": "https://www.douyin.com/video/7661526026660465920",
+          "title": "四种终身生长的生物",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-14 11:30",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": "发布时间：2026-07-14 11:30",
+          "window": "in",
+          "sourceLevel": "new-detail-metadata",
+          "discovery": "new-public-web-check",
+          "theme": "生命过程、奇观式知识",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "本次原页元数据未读到AI生成声明；不能据此认定未使用AI。"
+          },
+          "metrics": {
+            "likes": 329,
+            "comments": 2,
+            "collections": 83,
+            "shares": 6,
+            "views": null,
+            "raw": {
+              "like": "329",
+              "comment": "2",
+              "collect": "83",
+              "share": "6",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增；非数字显示保留原文且数值为null",
+            "observedAt": "2026-09-13T08:23:36.92Z"
+          },
+          "observation": "原页已核2026-07-14 11:30、作者主页和互动累计值；标题提供终身生长这一解释承诺。四种对象、论述准确性与观看反馈未新读。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-AS1",
+            "SC-BROWSER-SC-AM1"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。",
+          "priorEvidence": {
+            "sourceLevel": "new-official-work-index",
+            "publishedAt": "2026-07-14",
+            "dateText": null,
+            "window": "in",
+            "sources": [
+              "SC-AS1"
+            ],
+            "note": "初次索引/列表发现记录；当前字段已由原页元数据增强。"
+          },
+          "authorProfileUrl": "https://www.douyin.com/user/MS4wLjABAAAAIyQ961ROR3IUex6TzCwGvMeOI_0NlSe-YMcUcZM4Kis",
+          "detailObservedAt": "2026-09-13T08:23:36.92Z"
+        },
+        {
+          "id": "SC-AM2",
+          "url": "https://www.douyin.com/video/7662632821609972883",
+          "title": "动物冷知识（标题仅有标签）",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-15",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "动物冷知识；具体对象未知",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "标题的剪映/AI感标签不等于本作品已确认AI生成。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "该作品可识别，但标题没有具体物种或问题，不补写内容。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-AS2"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        },
+        {
+          "id": "SC-AM3",
+          "url": "https://www.douyin.com/video/7667578324625647211",
+          "title": "最毒生物（标题标签）",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-28",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "动物毒性题材",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "标题的剪映/AI感标签不等于本作品已确认AI生成。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "作者用最毒生物组织选题；未读到比较条件、物种列表和科学来源。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-AS3"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        },
+        {
+          "id": "DP-CAND-14",
+          "url": "https://www.douyin.com/video/7673057360361347435",
+          "title": "野生动物零距离（标题标签）",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-12 16:21",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "existing-detail-plus-new-index",
+          "discovery": "existing-sample-rechecked",
+          "theme": "动物冷知识；具体物种未知",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "依据既有DP-CAND-14详情；不外推到同账号其他作品。"
+          },
+          "metrics": {
+            "likes": 21,
+            "comments": 1,
+            "collections": 3,
+            "shares": null,
+            "views": null,
+            "scope": "公开累计快照",
+            "observedAt": "2026-09-12T14:49:18.471Z"
+          },
+          "observation": "既有详情取得AI声明和公开互动；一个评论位置正文为空，没有可分析消费反馈。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-AS4",
+            "SC-AMDETAIL"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        }
+      ],
+      "coverage": {
+        "knownWindowWorks": 4,
+        "unknownWindowWorks": 0,
+        "fullyWatched": 0,
+        "withReadableComments": 0,
+        "selection": "沿既有8月12日作品和公开索引链接补三个日期明确的对象，不按热度选。",
+        "note": "四件有日期；其中两件标题只有通用标签，不能完成逐题材消费比较；主页全部窗内作品数未知。"
+      }
+    },
+    {
+      "name": "动物科普2 4K",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAbIxtJs3MgpNb3C_p9Ac8lhnY2Gsy0Ajc09qZTqbPx007KlqSU5Z3eSdxe3fNJMMw",
+      "role": "新检索的不同公开署名；作为科普名称与戏剧叙事的反例",
+      "works": [
+        {
+          "id": "SC-NAT1",
+          "url": "https://www.douyin.com/video/7667528324398255386",
+          "title": "我差点过早停了下来",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-28",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "主题未知",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "目标页能核标题、作者、日期；无法判断其具体动物题材，不作为科学解释样本。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-NS1"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。",
+          "excludeFromContentComparison": true
+        },
+        {
+          "id": "SC-NAT2",
+          "url": "https://www.douyin.com/video/7676324343634218294",
+          "title": "被逐母狼与幼崽：剧情式解说",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-21",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "野生动物叙事",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "标题借宫斗剧情与反转描述动物，提供的是戏剧式观看承诺；是否有科学解释或真实拍摄证据未核。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-NS2"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        },
+        {
+          "id": "SC-NAT3",
+          "url": "https://www.douyin.com/video/7677067466366913826",
+          "title": "长颈羚与花豹：跨物种母性叙述",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-23 11:42",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": "发布时间：2026-08-23 11:42",
+          "window": "in",
+          "sourceLevel": "new-detail-metadata",
+          "discovery": "new-public-web-check",
+          "theme": "动物行为叙事",
+          "aiEvidence": {
+            "status": "creator-declared",
+            "statement": "作者声明：内容由 AI 生成",
+            "note": "原页声明已核；未独立鉴别画面、科学解释或AI参与步骤。"
+          },
+          "metrics": {
+            "likes": 59,
+            "comments": null,
+            "collections": 13,
+            "shares": 1,
+            "views": null,
+            "raw": {
+              "like": "59",
+              "comment": "抢首评",
+              "collect": "13",
+              "share": "1",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增；非数字显示保留原文且数值为null",
+            "observedAt": "2026-09-13T08:23:38.721Z"
+          },
+          "observation": "原页已核2026-08-23 11:42、作者主页、AI生成声明及互动显示。标题把行为解释为印记与母性，只记录作者归因，不认定生物学机制成立；评论入口显示“抢首评”，不转换成0或其他计数。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-NS3",
+            "SC-BROWSER-SC-NAT3"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。",
+          "priorEvidence": {
+            "sourceLevel": "new-official-work-index",
+            "publishedAt": "2026-08-23",
+            "dateText": null,
+            "window": "in",
+            "sources": [
+              "SC-NS3"
+            ],
+            "note": "初次索引/列表发现记录；当前字段已由原页元数据增强。"
+          },
+          "authorProfileUrl": "https://www.douyin.com/user/MS4wLjABAAAAbIxtJs3MgpNb3C_p9Ac8lhnY2Gsy0Ajc09qZTqbPx007KlqSU5Z3eSdxe3fNJMMw",
+          "detailObservedAt": "2026-09-13T08:23:38.721Z"
+        },
+        {
+          "id": "SC-NAT4",
+          "url": "https://www.douyin.com/video/7678932741337009454",
+          "title": "鬣狗与狒狒群：冲突式解说",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-28",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "野生动物冲突叙事",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "标题强调挑衅、群体底线与结局，科学来源、拍摄素材及观众反应未知。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-NS4"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        }
+      ],
+      "coverage": {
+        "knownWindowWorks": 4,
+        "unknownWindowWorks": 0,
+        "fullyWatched": 0,
+        "withReadableComments": 0,
+        "selection": "从公开搜索结果取得四个日期明确对象；账号名称不作科学资质证明。",
+        "contentComparableWorks": 3,
+        "note": "原页已补主页入口，索引作品使用相同公开署名；未核经营主体，不与相似名称账号合并。四件中一件主题未知。"
+      }
+    },
+    {
+      "name": "Jason（浴桶）的自然笔记",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAA40PiUblJsplbTAnBUEEyC7dH2swyBzSYDiHFgG3ovHW-xFfkiF5S6vuQFPPcpgaN",
+      "role": "新检索的野外自然观察对照",
+      "works": [
+        {
+          "id": "SC-J1",
+          "url": "https://www.douyin.com/video/7663452618571697427",
+          "title": "澳洲雨林旅程与甘蔗蟾蜍",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-17 19:10",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": "发布时间：2026-07-17 19:10",
+          "window": "in",
+          "sourceLevel": "new-detail-metadata",
+          "discovery": "new-public-web-check",
+          "theme": "野外观察、自然探索",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "本次原页元数据未读到AI生成声明；不能据此认定未使用AI。"
+          },
+          "metrics": {
+            "likes": 2385,
+            "comments": 153,
+            "collections": 277,
+            "shares": 218,
+            "views": null,
+            "raw": {
+              "like": "2385",
+              "comment": "153",
+              "collect": "277",
+              "share": "218",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增；非数字显示保留原文且数值为null",
+            "observedAt": "2026-09-13T08:23:33.713Z"
+          },
+          "observation": "原页已核2026-07-17 19:10、作者主页和互动累计值；标题将旅程定位为澳洲荒野探索并提及甘蔗蟾蜍。实际观察画面、解释准确性及评论正文未新读。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-JS1",
+            "SC-BROWSER-SC-J1"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。",
+          "priorEvidence": {
+            "sourceLevel": "new-related-listing",
+            "publishedAt": null,
+            "dateText": "07月17日",
+            "window": "unknown",
+            "sources": [
+              "SC-JS1"
+            ],
+            "note": "初次索引/列表发现记录；当前字段已由原页元数据增强。"
+          },
+          "authorProfileUrl": "https://www.douyin.com/user/MS4wLjABAAAA40PiUblJsplbTAnBUEEyC7dH2swyBzSYDiHFgG3ovHW-xFfkiF5S6vuQFPPcpgaN",
+          "detailObservedAt": "2026-09-13T08:23:33.713Z"
+        },
+        {
+          "id": "SC-J2",
+          "url": "https://www.douyin.com/video/7667790647142731008",
+          "title": "澳洲热带草原：白蚁、针鼹与袋鼠",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-07-29",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "自然观察、旅行系列",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "目标页说明草原寻访对象，并明确抖音精选App独家及与平台联合福利；没有取得合作合同或消费反馈。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-JS2"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        },
+        {
+          "id": "SC-J3",
+          "url": "https://www.douyin.com/video/7673053906288561448",
+          "title": "昆士兰腹地：雨季与夜间寻访",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-12",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "野外探索、生态环境",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "作者以第一人称描述长途驾驶、雨季和夜间寻找动物；这是作者经历声明，未看完全片核对现场。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-JS3"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        },
+        {
+          "id": "SC-J4",
+          "url": "https://www.douyin.com/video/7675974035892751635",
+          "title": "这么大的叶子居然还有毒",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-20 12:59",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": "发布时间：2026-08-20 12:59",
+          "window": "in",
+          "sourceLevel": "new-detail-metadata",
+          "discovery": "new-public-web-check",
+          "theme": "植物特征、毒性问题",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "本次原页元数据未读到AI生成声明；不能据此认定未使用AI。"
+          },
+          "metrics": {
+            "likes": 1384,
+            "comments": 51,
+            "collections": 71,
+            "shares": 66,
+            "views": null,
+            "raw": {
+              "like": "1384",
+              "comment": "51",
+              "collect": "71",
+              "share": "66",
+              "views": null
+            },
+            "scope": "详情页公开累计快照，非窗口内新增；非数字显示保留原文且数值为null",
+            "observedAt": "2026-09-13T08:23:35.305Z"
+          },
+          "observation": "原页已核2026-08-20 12:59、作者主页和互动累计值；标题标签明确海芋与植物科普。物种判定、毒性解释及评论正文未新读，不能由标题推出安全或处置建议。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-JS4",
+            "SC-BROWSER-SC-J4"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。",
+          "priorEvidence": {
+            "sourceLevel": "new-related-listing",
+            "publishedAt": null,
+            "dateText": "08月20日",
+            "window": "unknown",
+            "sources": [
+              "SC-JS4"
+            ],
+            "note": "初次索引/列表发现记录；当前字段已由原页元数据增强。"
+          },
+          "authorProfileUrl": "https://www.douyin.com/user/MS4wLjABAAAA40PiUblJsplbTAnBUEEyC7dH2swyBzSYDiHFgG3ovHW-xFfkiF5S6vuQFPPcpgaN",
+          "detailObservedAt": "2026-09-13T08:23:35.305Z"
+        },
+        {
+          "id": "SC-J5",
+          "url": "https://www.douyin.com/video/7676383364978429227",
+          "title": "喜欢动物有什么用：创作者自述",
+          "titleKind": "研究者简述",
+          "publishedAt": "2026-08-21",
+          "publishedTimezone": "Asia/Shanghai",
+          "dateText": null,
+          "window": "in",
+          "sourceLevel": "new-official-work-index",
+          "discovery": "new-public-web-check",
+          "theme": "自然兴趣、创作者关系",
+          "aiEvidence": {
+            "status": "unknown",
+            "statement": null,
+            "note": "未取得该作品明确AI声明或制作过程，不能由账号和标题推断。"
+          },
+          "metrics": {
+            "likes": null,
+            "comments": null,
+            "collections": null,
+            "shares": null,
+            "views": null,
+            "scope": "未取得目标作品可明确归属的互动字段",
+            "observedAt": null
+          },
+          "observation": "标题讨论自然兴趣对自己的意义；这是关系与价值表达，不能当作观众已经认同或回访。",
+          "consumerEvidence": null,
+          "sources": [
+            "SC-JS5"
+          ],
+          "fullyWatched": false,
+          "fullTranscriptReviewed": false,
+          "durationSeconds": null,
+          "indexingNote": "未把目标标题之后的相关推荐时长、视频总数或相对时间移给目标作品。"
+        }
+      ],
+      "coverage": {
+        "knownWindowWorks": 5,
+        "unknownWindowWorks": 0,
+        "fullyWatched": 0,
+        "withReadableComments": 0,
+        "selection": "沿自然兴趣作品的关联列表发现五件作品；随后原页补齐雨林和海芋两件的2026年日期与主页，五件均落在统一窗口。",
+        "contentComparableWorks": 4,
+        "note": "补充自然观察与作者关系形式，不把第一人称自述当已验证科考，也不因未见AI标签断言未用AI。",
+        "contentComparableDefinition": "四件自然观察或物种题材具有可识别标题；另有一件作者兴趣自述。可识别题材不等于全片科学解释已核。"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "claim": "动物知识没有单一内容形态：本批见到品种介绍与榜单、短冷知识、野生动物戏剧叙述、第一人称自然观察。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676758445789383974",
+        "https://www.douyin.com/video/7661526026660465920",
+        "https://www.douyin.com/video/7676324343634218294",
+        "https://www.douyin.com/video/7673053906288561448"
+      ],
+      "caveat": "这是作者的供给与观看承诺分类；新作者缺评论，不能据此给出用户分群规模或真实观看动机比例。"
+    },
+    {
+      "claim": "犬种榜单已经引出具体证据需求：犬种历史、体型与能力的区分、遗漏项与纳入标准。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676758445789383974"
+      ],
+      "positions": [
+        "DP-X05 p1及已读r1—3",
+        "DP-X05 p6及已读回复",
+        "DP-X05 p9及已读回复"
+      ],
+      "caveat": "有限默认评论，并非全体观众；有不同观点不等于问题已被解决或作者无人回应。"
+    },
+    {
+      "claim": "补充资料可以落到实际问题上：AKC犬种史讨论了恢复培育及相关争议，比继续增加战力名次更能帮助核对某些历史说法。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7676758445789383974",
+        "https://www.akc.org/expert-advice/dog-breeds/irish-wolfhound-history-behind-the-breed/"
+      ],
+      "caveat": "不是对所有品种史的最终裁决，也不能为战力排名提供统一尺度；没有证明原评论者已读或认可这些资料。"
+    },
+    {
+      "claim": "自然观察作者还提供旅程序列与个人兴趣表达，社区可以比较这种关系价值，而不是只把动物当生成素材。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7667790647142731008",
+        "https://www.douyin.com/video/7673053906288561448",
+        "https://www.douyin.com/video/7676383364978429227"
+      ],
+      "caveat": "只核到标题与发布日期；当前没有观众追看同作者或跨周回访证据。"
+    },
+    {
+      "claim": "AI证据逐作品记录：八宝四件、奥秘8月12日及动物科普2的8月23日作品有作者声明；其余11件使用情况未知。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7667062107929578767",
+        "https://www.douyin.com/video/7667814813216673024",
+        "https://www.douyin.com/video/7668318521469783347",
+        "https://www.douyin.com/video/7676758445789383974",
+        "https://www.douyin.com/video/7673057360361347435",
+        "https://www.douyin.com/video/7677067466366913826"
+      ],
+      "caveat": "声明不等于独立鉴别；未声明不等于非AI。没有曝光分母和等龄数据，不能比较AI与非AI效果。"
+    },
+    {
+      "claim": "科普供给仍需要图形清单、人工选择与后期。TMB客户访谈的三人及每集约两周只指图形环节。",
+      "evidenceUrls": [
+        "https://runway.com/customers/inside-trusted-media-brands-latest-streaming-show-built-with-runway"
+      ],
+      "caveat": "供应商刊载客户自述；不能作为本地作者报价、总节目人员或科普准确性的证明。"
+    },
+    {
+      "claim": "目前不能判定本题材供给少、消费多。新页普遍没有作品曝光和消费人数，检索稀疏可能只是索引覆盖不全。",
+      "evidenceUrls": [
+        "https://www.douyin.com/video/7661526026660465920",
+        "https://www.douyin.com/video/7677067466366913826",
+        "https://www.douyin.com/video/7673053906288561448"
+      ],
+      "caveat": "只能形成内容差异与待验证的服务假设，不能给供需比、机会排名或留存预测。"
+    }
+  ],
+  "alternatives": [
+    {
+      "need": "理解犬种历史、核对排名中的事实",
+      "provider": "AKC编辑资料",
+      "url": "https://www.akc.org/expert-advice/dog-breeds/irish-wolfhound-history-behind-the-breed/",
+      "provides": "具名文章讨论爱尔兰猎狼犬的恢复培育过程与历史争议。",
+      "remaining": "不提供战力统一排名；语言转述、争议范围和具体证据链接仍要整理。",
+      "status": "existing-solution-not-observed-consumer-adoption",
+      "sources": [
+        "SC-ALT1",
+        "SC-COM"
+      ]
+    },
+    {
+      "need": "知道遇到的动植物是什么，并保留他人修正",
+      "provider": "iNaturalist",
+      "url": "https://help.inaturalist.org/en/support/solutions/articles/151000170241",
+      "provides": "以观察证据为对象，由他人补充鉴定；官方要求鉴定能被独立解释，不单依赖AI建议。",
+      "remaining": "不是保证即时回复或一定到种级；本批抖音用户是否有观察上传意愿、能否迁移均未知。",
+      "status": "official-mechanism",
+      "sources": [
+        "SC-ALT2"
+      ]
+    },
+    {
+      "need": "制作动物或植物图鉴视觉",
+      "provider": "RunningHub作者应用",
+      "url": "https://www.runninghub.cn/ai-detail/2014613196321067009",
+      "provides": "输入建议、API选择说明与图鉴生成入口。",
+      "remaining": "既有材料未见科学审校和直接使用反馈；17次运行是当时显示字段，周期未知，不代表17位消费者。",
+      "status": "existing-supply-description-not-tested",
+      "sources": [
+        "SC-ALT3"
+      ]
+    },
+    {
+      "need": "制作海洋动物视觉素材",
+      "provider": "Liblib作者模型",
+      "url": "https://www.liblib.art/modelinfo/3b3ef5c172154618be9d74cb4fe154ba",
+      "provides": "LoRA参数与海洋场景提示词。",
+      "remaining": "物种细节和生态关系未核；资源供给不等于真实教学使用。",
+      "status": "existing-supply-description-not-tested",
+      "sources": [
+        "SC-ALT4"
+      ]
+    },
+    {
+      "need": "跟着作者继续看自然探索",
+      "provider": "原作者及抖音精选",
+      "url": "https://www.douyin.com/video/7667790647142731008",
+      "provides": "旅程相关内容入口，标题还有App独家和平台福利说明。",
+      "remaining": "现有平台已经承接观看；社区要说明额外内容与授权，不能把这批观众视为等待迁移。",
+      "status": "creator-claim-on-work-index",
+      "sources": [
+        "SC-JS2",
+        "SC-JS3",
+        "SC-JS5"
+      ]
+    }
+  ],
+  "supply": {
+    "known": [
+      {
+        "text": "TMB科普栏目按制片图形清单、静图反馈、动画和After Effects后期完成图形。",
+        "sourceIds": [
+          "SC-SUP1"
+        ]
+      },
+      {
+        "text": "RunningHub和Liblib已有图鉴与海洋动物素材供给，准确性和教育采用情况未知。",
+        "sourceIds": [
+          "SC-ALT3",
+          "SC-ALT4"
+        ]
+      },
+      {
+        "text": "自然观察作者已与原平台有独家/福利的公开说明，实际合同和素材权利未见。",
+        "sourceIds": [
+          "SC-JS2"
+        ]
+      }
+    ],
+    "proposedRoles": [
+      {
+        "role": "选题与事实核对",
+        "output": "回答什么问题、引用什么依据、哪些仍有争议",
+        "reason": "榜单评论里存在事实与尺度分歧",
+        "evidenceUrls": [
+          "https://www.douyin.com/video/7676758445789383974"
+        ]
+      },
+      {
+        "role": "视觉作者或自然观察者",
+        "output": "区分实际记录、复原示意与虚构情节；明确可交付素材",
+        "reason": "本批混有观察、拟人叙述和AI声明",
+        "evidenceUrls": [
+          "https://www.douyin.com/video/7676324343634218294",
+          "https://www.douyin.com/video/7673053906288561448",
+          "https://www.douyin.com/video/7676758445789383974"
+        ]
+      },
+      {
+        "role": "编辑与反馈承接",
+        "output": "将补充、纠正和下一题串到对应内容；保留来源与更新记录",
+        "reason": "现有楼层继续提名和争论，尚无已解决证据",
+        "evidenceUrls": [
+          "https://www.douyin.com/video/7676758445789383974"
+        ]
+      }
+    ],
+    "cost": {
+      "creatorActualSpend": null,
+      "personHours": null,
+      "retryRate": null,
+      "quote": null
+    },
+    "boundary": "这些是合作分工建议，不是现有作者已经接受的承诺。"
+  },
+  "communityValue": {
+    "possible": [
+      "围绕同一物种或自然问题整理可观看序列，允许用户只看不制作。",
+      "把榜单尺度、争议依据、补充物种与作者回应放回对应内容，减少只争名次。",
+      "对有明确意愿的使用者承接观察笔记或创作材料，避免默认所有观众都成为创作者。"
+    ],
+    "alreadyServed": [
+      "抖音已有连续观看、作者关注与平台活动。",
+      "AKC与iNaturalist已经提供资料或证据协作。",
+      "生成应用已经承接部分视觉制作。"
+    ],
+    "notYetProven": [
+      "用户是否需要另一个社区",
+      "是否愿意多看、参与并跨周回来",
+      "源资料整理与答疑是否能稳定供给"
+    ],
+    "evidenceUrls": [
+      "https://www.douyin.com/video/7676758445789383974",
+      "https://www.douyin.com/video/7667790647142731008",
+      "https://help.inaturalist.org/en/support/solutions/articles/151000170241"
+    ]
+  },
+  "returnHypothesis": [
+    {
+      "hypothesis": "因某一物种或自然问题进入的读者，会为同题后续解释或邻近物种继续回来。",
+      "basis": [
+        "https://www.douyin.com/video/7676758445789383974",
+        "https://www.douyin.com/video/7673053906288561448"
+      ],
+      "status": "待验证",
+      "observe": "同一外部用户是否在后续自然周再次有效观看/阅读相关内容；标明提醒与自然返回。",
+      "counterEvidence": "只有一次榜单围观、没有后续有效消费；现有抖音观看已经满足需求。"
+    },
+    {
+      "hypothesis": "提出事实问题的读者可能为有来源的修订回来。",
+      "basis": [
+        "https://www.douyin.com/video/7676758445789383974"
+      ],
+      "status": "待验证",
+      "observe": "追踪问题—已发布补充—是否回访读取的链条；不要求生成作品。",
+      "counterEvidence": "资料齐全但用户不愿回看，或作者没有能力持续核查。"
+    }
+  ],
+  "humanNeeded": [
+    {
+      "item": "补读新作者作品",
+      "workIds": [
+        "SC-AM1",
+        "SC-AM2",
+        "SC-AM3",
+        "SC-NAT1",
+        "SC-NAT2",
+        "SC-NAT3",
+        "SC-NAT4",
+        "SC-J2",
+        "SC-J3",
+        "SC-J5",
+        "SC-J1",
+        "SC-J4"
+      ],
+      "why": "四件已增强原页元数据，其他多为索引；实际内容和评论仍待补，不能判断解释完整度、画面来源、AI参与步骤和消费诉求。"
+    },
+    {
+      "item": "如做科学解释合作，核可用专业审核人和素材权利",
+      "workIds": [],
+      "why": "公开发布不是可再分发授权，图像生成也不等于事实核对。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SC-BB1",
+      "title": "第11集 | 绝对可以养的狗狗之西高地 如果说要养一只狗狗，那很多家庭的首选一定是西高地#动物科普",
+      "url": "https://www.douyin.com/video/7667062107929578767",
+      "date": "2026-07-27 17:35",
+      "accessedAt": "2026-09-12T16:50:27.044Z",
+      "sourceLevel": "existing-detail-metadata",
+      "rawSource": "outputs/aigc-community-deep-research-2026-09-08/douyin-comparison-2026-09-13/detail-snapshots.json",
+      "locator": "DC-BB-20",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-BB2",
+      "title": "第12集 | 绝对可以养的狗狗之法国斗牛犬 如果说要养一只狗狗，那很多家庭的首选，一定是法国斗牛犬#动物科普",
+      "url": "https://www.douyin.com/video/7667814813216673024",
+      "date": "2026-07-29 18:26",
+      "accessedAt": "2026-09-12T16:50:25.508Z",
+      "sourceLevel": "existing-detail-metadata",
+      "rawSource": "outputs/aigc-community-deep-research-2026-09-08/douyin-comparison-2026-09-13/detail-snapshots.json",
+      "locator": "DC-BB-19",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-BB3",
+      "title": "第6集 | 绝对可以养的猫咪之金渐层 如果说想要养一只猫咪，那很多家庭的首选一定是金渐层#动物世界 #动物科普",
+      "url": "https://www.douyin.com/video/7668318521469783347",
+      "date": "2026-07-30 21:52",
+      "accessedAt": "2026-09-12T16:50:23.778Z",
+      "sourceLevel": "existing-detail-metadata",
+      "rawSource": "outputs/aigc-community-deep-research-2026-09-08/douyin-comparison-2026-09-13/detail-snapshots.json",
+      "locator": "DC-BB-18",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-BB4",
+      "title": "第31集 | 超大型犬中的五大战力天花板 接下来向你走来的是，超大型犬中的，五大战力天花板#动物世界 #动物科普",
+      "url": "https://www.douyin.com/video/7676758445789383974",
+      "date": "2026-08-22 18:26",
+      "accessedAt": "2026-09-12T16:49:56.553Z",
+      "sourceLevel": "existing-detail-metadata",
+      "rawSource": "outputs/aigc-community-deep-research-2026-09-08/douyin-comparison-2026-09-13/detail-snapshots.json",
+      "locator": "DC-BB-9",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-COM",
+      "title": "超大型犬排名：已读评论与回复",
+      "url": "https://www.douyin.com/video/7676758445789383974",
+      "date": "2026-08-22 18:26",
+      "accessedAt": "2026-09-12T14:51:59.126Z",
+      "sourceLevel": "existing-detail-comments",
+      "locator": "DP-X05 p1、p6、p9；对应已读回复",
+      "note": "评论与后续指标复核时间不同；未把两个快照当两个作品。"
+    },
+    {
+      "id": "SC-AS1",
+      "title": "生命无上限：四种终身生长的神奇生物",
+      "url": "https://jingxuan.douyin.com/m/video/7661526026660465920",
+      "date": "2026-07-14",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-AS2",
+      "title": "#剪映让好作品告别AI感 #内容启发搜索 #动物科普 #冷知识",
+      "url": "https://jingxuan.douyin.com/m/video/7662632821609972883",
+      "date": "2026-07-15",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-AS3",
+      "title": "#剪映让好作品告别AI感 #内容启发搜索 #动物科普 #冷知识 #最毒生物",
+      "url": "https://jingxuan.douyin.com/m/video/7667578324625647211",
+      "date": "2026-07-28",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-AS4",
+      "title": "#剪映让好作品告别AI感 #内容启发搜索 #动物科普 #冷知识 #野生动物零距离",
+      "url": "https://jingxuan.douyin.com/m/video/7673057360361347435",
+      "date": "2026-08-12 16:21",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "existing-detail-plus-new-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-AMDETAIL",
+      "title": "奥秘百科8月12日作品详情",
+      "url": "https://www.douyin.com/video/7673057360361347435",
+      "date": "2026-08-12 16:21",
+      "accessedAt": "2026-09-12T14:49:18.471Z",
+      "sourceLevel": "existing-detail-metadata",
+      "locator": "DP-CAND-14",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-NS1",
+      "title": "我差点过早停了下来",
+      "url": "https://jingxuan.douyin.com/m/video/7667528324398255386",
+      "date": "2026-07-28",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-NS2",
+      "title": "动物界“甄嬛传”：被逐母狼为了幼崽卑微求饶，最后结局太反转！",
+      "url": "https://jingxuan.douyin.com/m/video/7676324343634218294",
+      "date": "2026-08-21",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-NS3",
+      "title": "超越物种的生存奇迹：当长颈羚的印记本能，撞上花豹的母性爆发。",
+      "url": "https://jingxuan.douyin.com/m/video/7677067466366913826",
+      "date": "2026-08-23",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-NS4",
+      "title": "别轻易挑战群体的底线！落单鬣狗挑衅狒狒群，结局极度舒适",
+      "url": "https://jingxuan.douyin.com/m/video/7678932741337009454",
+      "date": "2026-08-28",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-JS1",
+      "title": "澳洲雨林旅程与甘蔗蟾蜍",
+      "url": "https://jingxuan.douyin.com/m/video/7676383364978429227",
+      "date": null,
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-related-listing",
+      "locator": "关联作品列表 / 雨林旅程；目标页抓取超时"
+    },
+    {
+      "id": "SC-JS2",
+      "title": "抖音精选App独家：澳洲热带草原寻访",
+      "url": "https://jingxuan.douyin.com/m/video/7667790647142731008",
+      "date": "2026-07-29",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-JS3",
+      "title": "我开了十几个小时深入昆士兰腹地",
+      "url": "https://jingxuan.douyin.com/m/video/7673053906288561448",
+      "date": "2026-08-12",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-JS4",
+      "title": "这么大的叶子居然还有毒",
+      "url": "https://jingxuan.douyin.com/m/video/7673053906288561448",
+      "date": null,
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-related-listing",
+      "locator": "关联作品列表 / 叶片；目标页抓取超时"
+    },
+    {
+      "id": "SC-JS5",
+      "title": "这么喜欢动物，又什么用？",
+      "url": "https://jingxuan.douyin.com/m/video/7676383364978429227",
+      "date": "2026-08-21",
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "new-official-work-index",
+      "locator": "目标页标题、署名与明确发布日期"
+    },
+    {
+      "id": "SC-ALT1",
+      "title": "Irish Wolfhound History: Behind the Ancient Breed of Ireland",
+      "url": "https://www.akc.org/expert-advice/dog-breeds/irish-wolfhound-history-behind-the-breed/",
+      "date": null,
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "primary-publisher-breed-history",
+      "locator": "Reviving the Irish Wolfhound / The Modern Irish Wolfhound",
+      "note": "网页日期未取得；AKC编辑资料，不是对这条抖音评论的直接回复。"
+    },
+    {
+      "id": "SC-ALT2",
+      "title": "What is an Identification? — iNaturalist",
+      "url": "https://help.inaturalist.org/en/support/solutions/articles/151000170241",
+      "date": null,
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "official-help",
+      "locator": "证据支持、社区鉴定及不单靠AI建议",
+      "note": "修改栏只显示月日与星期，年份未据此补写。"
+    },
+    {
+      "id": "SC-ALT3",
+      "title": "赛博生物学家：科普图鉴AI应用",
+      "url": "https://www.runninghub.cn/ai-detail/2014613196321067009",
+      "date": null,
+      "accessedAt": "2026-09-12",
+      "sourceLevel": "existing-platform-author-detail",
+      "locator": "cn-runninghub-02",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-ALT4",
+      "title": "F.1-动物世界-海洋篇",
+      "url": "https://www.liblib.art/modelinfo/3b3ef5c172154618be9d74cb4fe154ba",
+      "date": null,
+      "accessedAt": "2026-09-12",
+      "sourceLevel": "existing-platform-author-detail",
+      "locator": "cn-liblib-05",
+      "locallyRecheckedAt": "2026-09-13"
+    },
+    {
+      "id": "SC-SUP1",
+      "title": "The Animal Breakdown制作访谈",
+      "url": "https://runway.com/customers/inside-trusted-media-brands-latest-streaming-show-built-with-runway",
+      "date": null,
+      "accessedAt": "2026-09-13",
+      "sourceLevel": "named-customer-interview-published-by-vendor",
+      "locator": "graphics workflow / team / challenges",
+      "localCrossReference": "outputs/aigc-community-deep-research-2026-09-08/site/lib/content-demand-cases.json / PE-06"
+    },
+    {
+      "id": "SC-BROWSER-SC-AM1",
+      "title": "四种终身生长的生物：原页元数据",
+      "url": "https://www.douyin.com/video/7661526026660465920",
+      "date": "2026-07-14 11:30",
+      "accessedAt": "2026-09-13T08:23:36.92Z",
+      "sourceLevel": "new-detail-metadata",
+      "localPath": "theme-comparison-2026-09-13/browser-works.json",
+      "locator": "url=https://www.douyin.com/video/7661526026660465920；publishedAt、metricsRaw、author、aiDeclaration",
+      "note": "浏览器读取公开标题、时间、主页与字段；未新增全片观看或评论正文。"
+    },
+    {
+      "id": "SC-BROWSER-SC-NAT3",
+      "title": "长颈羚与花豹：跨物种母性叙述：原页元数据",
+      "url": "https://www.douyin.com/video/7677067466366913826",
+      "date": "2026-08-23 11:42",
+      "accessedAt": "2026-09-13T08:23:38.721Z",
+      "sourceLevel": "new-detail-metadata",
+      "localPath": "theme-comparison-2026-09-13/browser-works.json",
+      "locator": "url=https://www.douyin.com/video/7677067466366913826；publishedAt、metricsRaw、author、aiDeclaration",
+      "note": "浏览器读取公开标题、时间、主页与字段；未新增全片观看或评论正文。"
+    },
+    {
+      "id": "SC-BROWSER-SC-J1",
+      "title": "澳洲雨林旅程与甘蔗蟾蜍：原页元数据",
+      "url": "https://www.douyin.com/video/7663452618571697427",
+      "date": "2026-07-17 19:10",
+      "accessedAt": "2026-09-13T08:23:33.713Z",
+      "sourceLevel": "new-detail-metadata",
+      "localPath": "theme-comparison-2026-09-13/browser-works.json",
+      "locator": "url=https://www.douyin.com/video/7663452618571697427；publishedAt、metricsRaw、author、aiDeclaration",
+      "note": "浏览器读取公开标题、时间、主页与字段；未新增全片观看或评论正文。"
+    },
+    {
+      "id": "SC-BROWSER-SC-J4",
+      "title": "这么大的叶子居然还有毒：原页元数据",
+      "url": "https://www.douyin.com/video/7675974035892751635",
+      "date": "2026-08-20 12:59",
+      "accessedAt": "2026-09-13T08:23:35.305Z",
+      "sourceLevel": "new-detail-metadata",
+      "localPath": "theme-comparison-2026-09-13/browser-works.json",
+      "locator": "url=https://www.douyin.com/video/7675974035892751635；publishedAt、metricsRaw、author、aiDeclaration",
+      "note": "浏览器读取公开标题、时间、主页与字段；未新增全片观看或评论正文。"
+    }
+  ],
+  "coverage": {
+    "authorLabels": 4,
+    "uniqueWorkUrls": 17,
+    "knownWindowWorks": 17,
+    "unknownWindowWorks": 0,
+    "outsideWindowWorks": 0,
+    "existingDetailMetadataWorks": 5,
+    "newIndexOrListingWorks": 8,
+    "fullyWatchedWorks": 0,
+    "worksWithReadableConsumerComments": 1,
+    "aiCreatorDeclaredWorks": 6,
+    "aiIndependentlyVerifiedWorks": 0,
+    "aiUnknownWorks": 11,
+    "metadataFourPerAuthorTargetMetFor": 4,
+    "contentComparableFourPerAuthorTargetMet": false,
+    "reason": "四个署名均有至少四件日期明确作品；动物科普2的一件主题未知，奥秘部分标题仅标签，实际科学解释和新作者评论未等深核查，不能宣称内容比较目标全部完成。",
+    "newDetailMetadataWorks": 4,
+    "totalDetailMetadataWorks": 9
+  },
+  "exclusions": [
+    {
+      "title": "带宠物漂流",
+      "url": "https://www.douyin.com/video/7675265044041098227",
+      "reason": "已有DP-X06主要为宠物形象、旅行体验与商品关联，不直接并成科学解释。"
+    },
+    {
+      "title": "八宝拟人互换/侏罗纪宠物故事",
+      "url": "https://www.douyin.com/video/7663728357015686450",
+      "reason": "保留为虚构兴趣内容的背景，不混入品种知识比较。"
+    }
+  ],
+  "searchLimitations": [
+    "旧卡DC-091、DC-212、DC-218的直链未成功取得作者身份，未作为新增独立作者计数。",
+    "公开索引显示的作者视频总数、推荐作品时长与相对日期不能代表目标作品指标。",
+    "不同公开署名不保证不同经营主体；没有调查私有身份。",
+    "没有曝光、播放或完整观看分母，不报告观看率、需求人数或供需占比。"
+  ]
+}
