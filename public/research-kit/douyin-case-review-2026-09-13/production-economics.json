@@ -1,0 +1,915 @@
+{
+  "title": "AI内容制作投入与合作交付条件",
+  "updatedAt": "2026-09-13",
+  "scope": "八个项目/作者实践档案；Project Luxo三片合为一组，避免把同一供应商来源当独立样本。foyege与山海分别保留成本未知、发布可见的边界档案。",
+  "sources": [
+    {
+      "id": "PS01",
+      "title": "溯明：卢象升作品及作者置评",
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "publishedAt": "2026-08-06 18:05",
+      "accessedAt": "2026-09-12T16:59:47.928Z",
+      "sourceRole": "creator-public-comment-and-work",
+      "sourceLocator": "DC-C01 rootComments[position=4]; replyChecks[parentPosition=4]",
+      "whatSupports": "作者解释成本压力、拆集与条件性续更；已读回复提出历史装束问题。",
+      "publicationTimezone": "Asia/Shanghai",
+      "accessMethod": "根代理公开页面采集，本次只读复核本地原始记录"
+    },
+    {
+      "id": "PS02",
+      "title": "编导_拾光：《山海》第一集",
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "publishedAt": "2026-07-18 20:00",
+      "accessedAt": "2026-09-12T14:41:25.01Z",
+      "sourceRole": "creator-work-and-public-comments",
+      "sourceLocator": "DP-007 title; rootComments[position=1]",
+      "whatSupports": "作品以原创AIGC故事连载发布；一条评论表达跨作品追更未完成经历。",
+      "publicationTimezone": "Asia/Shanghai",
+      "accessMethod": "根代理公开页面采集，本次本地复核"
+    },
+    {
+      "id": "PS03",
+      "title": "编导_拾光：《山海》第一季1—8集合集",
+      "url": "https://www.douyin.com/video/7677555740273380635",
+      "publishedAt": "2026-08-24 19:17",
+      "accessedAt": "2026-09-12T14:41:21.733Z",
+      "sourceRole": "creator-work",
+      "sourceLocator": "DP-006 title; durationSeconds",
+      "whatSupports": "有1—8集合集这一已发布交付物，播放器约69分15秒；不证明制作周期或未来更新承诺。",
+      "publicationTimezone": "Asia/Shanghai",
+      "accessMethod": "根代理公开页面采集，本次本地复核"
+    },
+    {
+      "id": "PS04",
+      "title": "foyege：多人站位与场景一致性教程",
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "publishedAt": "2026-08-12 19:26",
+      "accessedAt": "2026-09-12T14:39:22.812Z",
+      "sourceRole": "creator-method-promise-and-viewer-comments",
+      "sourceLocator": "DP-001 title; p4/r1; p5; p6",
+      "whatSupports": "作者给出方法承诺；观众称试过但贵，并对更多人物、切镜、运动后一致性提出问题。",
+      "publicationTimezone": "Asia/Shanghai",
+      "accessMethod": "根代理公开页面采集，本次本地复核"
+    },
+    {
+      "id": "PS05",
+      "title": "foyege：小云雀与无限画布制作的演员片段",
+      "url": "https://www.douyin.com/video/7668957069785803426",
+      "publishedAt": "2026-08-01 15:10",
+      "accessedAt": "2026-09-12T14:40:08.477Z",
+      "sourceRole": "creator-tool-attribution-and-viewer-comments",
+      "sourceLocator": "DP-002 title; rootComments[position=1,3,5]",
+      "whatSupports": "作者标题声明工具组合；观众对表演自然度有相反评价；没有公开制作账单。",
+      "publicationTimezone": "Asia/Shanghai",
+      "accessMethod": "根代理公开页面采集，本次本地复核"
+    },
+    {
+      "id": "PS06",
+      "title": "One — Villavicencio Studio",
+      "url": "https://ricardovillavicencio.com/type/animation/one/",
+      "publishedAt": null,
+      "accessedAt": "2026-09-13",
+      "sourceRole": "creator-studio-project-page",
+      "sourceLocator": "Year/Technique; ONE; credits",
+      "whatSupports": "2025年项目；三部曲第三部；2D动画与AI混合；公开制作岗位。",
+      "projectYear": 2025,
+      "publicationDateNote": "页面只给项目年份，未见网页发布日期",
+      "accessMethod": "web公开页面",
+      "evidenceExcerpt": "Technique 2d Animation & AI"
+    },
+    {
+      "id": "PS07",
+      "title": "Project Luxo — Runway",
+      "url": "https://runway.com/news/company-news/project-luxo",
+      "publishedAt": "2026-05-26",
+      "accessedAt": "2026-09-13",
+      "sourceRole": "vendor-owned-demonstration",
+      "sourceLocator": "The Rogue / Last Night / Pigeons in Time; page date",
+      "whatSupports": "三部具体影片的官方成片时长、制作时间和一人团队声明。",
+      "accessMethod": "web公开页面",
+      "evidenceExcerpt": "Production Timeline; Team Size: One Person"
+    },
+    {
+      "id": "PS08",
+      "title": "Inside Trusted Media Brands' Latest Streaming Show, Built with Runway",
+      "url": "https://runway.com/customers/inside-trusted-media-brands-latest-streaming-show-built-with-runway",
+      "publishedAt": null,
+      "accessedAt": "2026-09-13",
+      "sourceRole": "named-customer-interview-published-by-vendor",
+      "sourceLocator": "KEY STATS; workflow; team; challenges; season 2",
+      "whatSupports": "《The Animal Breakdown》图形数量、图形制作周期、图形团队、审核顺序与提示词难点。",
+      "publicationDateNote": "正文无明确发表日期；提到9月底完成及4月再启动但没有对应年份，不据此定年",
+      "accessMethod": "web公开页面"
+    },
+    {
+      "id": "PS09",
+      "title": "How Tool is reimagining the commercial production process with Runway",
+      "url": "https://runway.com/customers/how-tool-is-reimagining-the-commercial-production-process-with-runway",
+      "publishedAt": null,
+      "accessedAt": "2026-09-13",
+      "sourceRole": "named-producer-interview-published-by-vendor",
+      "sourceLocator": "Forever is Made Now; AI pipeline; time saved",
+      "whatSupports": "Tool负责人自述四周周期、数千静态候选、AI与授权素材/VFX混合制作。",
+      "publicationDateNote": "正文未见明确网页发布日期；提及2024榜单不能当作发布日期",
+      "accessMethod": "web公开页面"
+    },
+    {
+      "id": "PS10",
+      "title": "12-minute AI film cost retrospective — public creator post",
+      "url": "https://www.reddit.com/r/aifilmmaking/comments/1w9pobo/i_spent_around_1200_making_my_first_12minute_ai/",
+      "publishedAt": null,
+      "accessedAt": "2026-09-13",
+      "sourceRole": "anonymous-creator-first-person-self-report",
+      "sourceLocator": "OP post; OP links own film in thread",
+      "whatSupports": "发帖者自报一人12分钟影片约$1200，其中两项约各$600；反思废片与学习耗费。",
+      "publicationDateNote": "正文仅相对时间；工具摘要的缓存相对时间不一致，保留未知",
+      "accessMethod": "web公开页面",
+      "identityNote": "不保存普通作者账号名；该作者在同帖以发帖者身份关联作品；未核验线下身份或账单",
+      "linkedWork": "https://www.youtube.com/watch?v=8WrWXbzy1Gs",
+      "linkedWorkAccess": "2026-09-13 web抓取限流；片名、完整时长与片尾未独立核对"
+    }
+  ],
+  "cases": [
+    {
+      "id": "PE-01",
+      "title": "卢象升：因成本拆开的历史人物作品",
+      "creator": "溯明",
+      "projectType": "历史叙事",
+      "sourceIds": [
+        "PS01"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "creator-qualitative-cost-pressure",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": null,
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": null
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": null,
+        "roles": []
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "当前上半部作品",
+            "runtimeSeconds": 214.182,
+            "publishedAt": "2026-08-06 18:05",
+            "sourceId": "PS01"
+          }
+        ],
+        "futureCommitment": {
+          "statement": "数据表现好则加快更新下集",
+          "kind": "conditional-intention",
+          "date": null,
+          "completionVerified": false
+        }
+      },
+      "known": [
+        {
+          "fact": "作者在自己作品评论区称首次尝试AI视频，原想做完一集，因成本高先发布上半部分。",
+          "evidence": "PS01 / p4",
+          "attribution": "作者自述，金额与费用构成未披露"
+        },
+        {
+          "fact": "同一楼层两条已读回复指出朝代装束问题。",
+          "evidence": "PS01 / p4/r1、r3",
+          "attribution": "观众纠正，尚无逐帧事实裁决"
+        }
+      ],
+      "missing": [
+        "实际支出、工具抵扣、人工与史料核对时间",
+        "原定完整集时长及已完成存稿",
+        "下一集交付日期与最低数据条件",
+        "服饰修订是否做完"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "把单集范围、是否必须收尾及续更条件写清，再约定供稿；不要把上半集当作完成整集。",
+          "basis": "成本已改变实际发布范围。"
+        },
+        {
+          "condition": "历史装束核对及修改列为独立交付步骤，明确由谁审核及哪些修改计入约定费用。",
+          "basis": "同楼层出现具体纠正需求，不能只验收画面生成。"
+        }
+      ],
+      "limitations": [
+        "一句成本高不能换算成人民币、Token或平均单集成本。",
+        "该例支持成本影响发布决策，不证明所有作者都以流量决定更新。"
+      ]
+    },
+    {
+      "id": "PE-02",
+      "title": "《山海》第一季：从第一集到1—8集合集",
+      "creator": "编导_拾光",
+      "projectType": "AIGC故事连载",
+      "sourceIds": [
+        "PS02",
+        "PS03"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": null,
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": null
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": null,
+        "roles": []
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "第一集：预兆",
+            "runtimeSeconds": 503.267,
+            "publishedAt": "2026-07-18 20:00",
+            "sourceId": "PS02"
+          },
+          {
+            "item": "第一季1—8集合集",
+            "runtimeSeconds": 4154.778,
+            "publishedAt": "2026-08-24 19:17",
+            "sourceId": "PS03",
+            "isCompilation": true
+          }
+        ],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "两个发布入口确认首集和一份1—8集合集；合集不是额外八次独立制作。",
+          "evidence": "PS02、PS03",
+          "attribution": "作者标题与公开播放器"
+        },
+        {
+          "fact": "首集p1抱怨近期看过的AI科幻灾难故事没有更完；对象是其跨作品经历，不能专归因于《山海》。",
+          "evidence": "PS02 / p1",
+          "attribution": "普通评论者经历自述"
+        }
+      ],
+      "missing": [
+        "每集制作开始/结束、并行制作或提前存稿情况",
+        "人时、重试、团队、预算与补贴",
+        "未来季数、排期及对社区的授权"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "连续供稿先看故事单元是否完整、已有存稿及可承诺的下一份，再确定上线节奏。",
+          "basis": "已发布合集证明有连续内容交付物，却没有说明今后的产能。"
+        }
+      ],
+      "limitations": [
+        "两次发布时间之间的间隔不是制作时长，也不能除以八得到周产能。",
+        "当前本地采集未全片观看，成本和长期更新稳定性均未知。"
+      ]
+    },
+    {
+      "id": "PE-03",
+      "title": "foyege：群像控制教程与演员片段",
+      "creator": "foyege",
+      "projectType": "制作方法与成品对照",
+      "sourceIds": [
+        "PS04",
+        "PS05"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": null,
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": "观众提出多人、切镜与运动后的一致性边界；没有作者生成日志。"
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": null,
+        "roles": []
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "群像控制教程",
+            "runtimeSeconds": 357.234,
+            "publishedAt": "2026-08-12 19:26",
+            "sourceId": "PS04"
+          },
+          {
+            "item": "演员片段",
+            "runtimeSeconds": 30.133333,
+            "publishedAt": "2026-08-01 15:10",
+            "sourceId": "PS05"
+          }
+        ],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "方法标题承诺用两张图控制多人站位；另一个作品标题声明使用小云雀与无限画布。",
+          "evidence": "PS04、PS05",
+          "attribution": "作者标题声明，未独立复现"
+        },
+        {
+          "fact": "p4/r1说试过、效果好但贵；p5质疑更多人物和频繁切镜的适用性。",
+          "evidence": "PS04 / p4/r1、p5",
+          "attribution": "前者为观众试用自述，后者没有明确亲测信息"
+        }
+      ],
+      "missing": [
+        "作者真实工具账单、生成候选数、废片、准备与剪辑人时",
+        "教程制作和答疑的额外工时",
+        "工具合作、免费额度或商业关系是否存在"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "合作教程需要适用条件、失败例子、最少复现材料及答疑范围；费用分别说明成品制作与教学交付。",
+          "basis": "观众已经询问跨工具复现与方法边界。"
+        }
+      ],
+      "limitations": [
+        "观众说贵不是foyege本人制作账单。",
+        "作品带工具名或活动标签不足以确认广告合作、分成或补贴。",
+        "只有方法供给与消费反馈，不能列为已有量化生产成本案例。"
+      ]
+    },
+    {
+      "id": "PE-04",
+      "title": "ONE（The Silicon三部曲第三部）",
+      "creator": "Villavicencio Studio / Ricardo Villavicencio",
+      "projectType": "2D动画与AI混合短片",
+      "sourceIds": [
+        "PS06"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": null,
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": null
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": "页面列出多位具名人员及声音团队；岗位有重叠，参与人数与人时不据此汇总。",
+        "roles": [
+          "创作与制片",
+          "制片协调",
+          "编剧",
+          "分镜",
+          "插画与AI",
+          "动画",
+          "合成",
+          "AI动画",
+          "配乐",
+          "拟音与混音"
+        ]
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "作者项目页及预告入口",
+            "projectYear": 2025,
+            "fullFilmVerified": false,
+            "sourceId": "PS06"
+          }
+        ],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "作者项目页列为2025年影片、三部曲第三部，并给出传统动画与AI协作的制作名单。",
+          "evidence": "PS06 / metadata与credits",
+          "attribution": "创作者工作室自述"
+        }
+      ],
+      "missing": [
+        "总成本、人时、制作周期、生成次数",
+        "全片在该入口的可看范围与社区放映授权",
+        "各参与者能否授权工作流、分镜、音乐及源文件"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "逐项确认成片、预告、幕后、分镜和素材可交付范围，由有权的一方确认；不要默认主创一人能授权全部资产。",
+          "basis": "该项目公开呈现多岗位、混合制作。"
+        }
+      ],
+      "limitations": [
+        "它是入选展映的创作者项目，不能写成Runway独立制作或纯AI一人生产。",
+        "展示制作名单不等于完整的合同、人数或费用清单。"
+      ]
+    },
+    {
+      "id": "PE-05",
+      "title": "Project Luxo：三部短片的制作时间声明",
+      "creator": "Runway；The Rogue导演为Felipe Orozco",
+      "projectType": "供应商示范项目组",
+      "sourceIds": [
+        "PS07"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": {
+        "type": "vendor-reported-production-timeline",
+        "films": [
+          {
+            "title": "The Rogue",
+            "runtime": "9:57",
+            "durationSeconds": 597,
+            "production": 3,
+            "unit": "weeks",
+            "headcount": 1
+          },
+          {
+            "title": "Last Night",
+            "runtime": "5:28",
+            "durationSeconds": 328,
+            "production": 7,
+            "unit": "hours",
+            "headcount": 1
+          },
+          {
+            "title": "Pigeons in Time",
+            "runtime": "0:46",
+            "durationSeconds": 46,
+            "production": 4,
+            "unit": "hours",
+            "headcount": 1,
+            "isExcerpt": true
+          }
+        ],
+        "scope": "一处供应商项目页的三项声明；不是三份独立审计。"
+      },
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": null
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": "官方分别称每片一人；外围支持和工时定义未交代。",
+        "roles": []
+      },
+      "delivery": {
+        "released": [],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "官方给出三部影片的时长与制作时间；最短一片明确为较长短片的摘段。",
+          "evidence": "PS07 / 三片条目",
+          "attribution": "供应商宣传性项目披露"
+        }
+      ],
+      "missing": [
+        "实付、内部额度与算力补贴",
+        "工时记录、待机/渲染是否纳入时间",
+        "前期素材、脚本、迭代与各片完整生成日志"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "创作者自报制作时间需说明计时起止及覆盖步骤，成片与摘段分别验收。",
+          "basis": "该组同时包含整片展示和摘段，制作时间口径未完全公开。"
+        }
+      ],
+      "limitations": [
+        "七小时不能等同七个人工小时，三周也不能按标准工日换算。",
+        "不能用三部精选样片预测普通作者成本、日更能力或社区内容量。",
+        "公开页没有美元成本，未把二手报道中的金额写成已核实支出。"
+      ]
+    },
+    {
+      "id": "PE-06",
+      "title": "The Animal Breakdown：动物历史与科普栏目图形",
+      "creator": "Trusted Media Brands创意团队",
+      "projectType": "科普节目中的AI图形制作",
+      "sourceIds": [
+        "PS08"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": {
+        "value": 2,
+        "unit": "weeks",
+        "approximate": true,
+        "scope": "每集全部图形制作；不是每集完整节目周期",
+        "attribution": "受访团队自述，经供应商刊发"
+      },
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": "每个动物先生成若干静图供制片选定，随后做动画；曾遇到新增无关元素。次数未知。"
+      },
+      "team": {
+        "headcount": 3,
+        "headcountScope": "图形团队，非全节目团队",
+        "roles": [
+          "制片提供图形清单和说明",
+          "图形制作",
+          "制片反馈",
+          "After Effects后期"
+        ]
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "7集涉及104项定制图形",
+            "episodeCount": 7,
+            "graphicCount": 104,
+            "sourceId": "PS08"
+          }
+        ],
+        "futureCommitment": {
+          "statement": "访谈称4月恢复第二季工作",
+          "kind": "dated-intention-with-year-unknown",
+          "year": null,
+          "completionVerified": false
+        }
+      },
+      "known": [
+        {
+          "fact": "图形工作按清单、静图确认、动画和后期分段；数量与团队规模限定在图形环节。",
+          "evidence": "PS08 / workflow与team",
+          "attribution": "具名客户访谈，供应商选择性发布"
+        }
+      ],
+      "missing": [
+        "图形团队全职占比和实际人时",
+        "事实审核、配音、编剧的人员与工时",
+        "成本、重试数和第二季完成状态"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "科普合作先确认解释目标、图形清单与静态样张，再约动画；事实核对必须明确负责人。",
+          "basis": "已有流程先锁定风格和静图，再生成动画，生成后仍有后期工作。"
+        }
+      ],
+      "limitations": [
+        "三人不是整档节目总人数，两周不是整集成片工时。",
+        "供应商刊载的成效数据缺少原始监测口径，此处不拿来证明留存。"
+      ]
+    },
+    {
+      "id": "PE-07",
+      "title": "Forever is Made Now：Under Armour广告",
+      "creator": "Tool / Wes Walker",
+      "projectType": "授权旧素材、VFX与AI混合制作",
+      "sourceIds": [
+        "PS09"
+      ],
+      "financial": {
+        "amount": null,
+        "currency": null,
+        "amountType": "not-disclosed",
+        "covers": null,
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": null,
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": {
+        "value": 4,
+        "unit": "weeks",
+        "stages": [
+          {
+            "stage": "构思",
+            "value": 1,
+            "unit": "weeks"
+          },
+          {
+            "stage": "制作",
+            "value": 3,
+            "unit": "weeks"
+          }
+        ],
+        "scope": "整个项目的历时，非人时",
+        "attribution": "Tool负责人Dustin Callif在供应商访谈中自述"
+      },
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": "生成数千张静态候选后筛选、动画化并与授权既有影像剪辑；数千不是失败次数。"
+      },
+      "team": {
+        "headcount": null,
+        "headcountScope": null,
+        "roles": [
+          "导演",
+          "制作公司",
+          "品牌/运动员沟通与审阅",
+          "AI制作",
+          "VFX/CG",
+          "剪辑与声音"
+        ]
+      },
+      "delivery": {
+        "released": [],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "作品混用AI、VFX/CG与授权旧素材；时间含构思和制作。",
+          "evidence": "PS09 / campaign与timeline",
+          "attribution": "参与制作方自述，供应商发表"
+        }
+      ],
+      "missing": [
+        "项目实际预算、人员和人工时长",
+        "授权与AI各自费用",
+        "候选图中失败、淘汰与复用的比例"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "既有素材、授权、人物/声音使用确认和客户反馈时间单独列入合作范围。",
+          "basis": "案例的交付依赖授权资产与多方审阅，不只是新生成镜头。"
+        }
+      ],
+      "limitations": [
+        "受访者估计传统做法更慢、更贵不是对同一项目执行两次的对照实验。",
+        "数千候选不能换算成同等重试或由此套用单张报价计算账单。"
+      ]
+    },
+    {
+      "id": "PE-08",
+      "title": "关联作品8WrWXbzy1Gs的12分钟AI影片成本自述",
+      "creator": "匿名公开发帖者（本地代号CE-01）",
+      "projectType": "辅助证据：个人长片尝试复盘",
+      "sourceIds": [
+        "PS10"
+      ],
+      "financial": {
+        "amount": 1200,
+        "currency": "USD",
+        "approximate": true,
+        "amountType": "creator-reported-spend-unverified",
+        "covers": "发帖者自称本次12分钟作品相关工具支出；费用完整性未知",
+        "paidEvidence": null,
+        "creatorFee": null,
+        "toolSpend": {
+          "total": 1200,
+          "components": [
+            {
+              "item": "Fable",
+              "amount": 600
+            },
+            {
+              "item": "图像与视频生成",
+              "amount": 600
+            }
+          ],
+          "unit": "USD",
+          "approximate": true
+        },
+        "laborCost": null,
+        "rightsCost": null
+      },
+      "elapsedTime": null,
+      "personHours": null,
+      "retries": {
+        "attemptCount": null,
+        "usableCount": null,
+        "ratio": null,
+        "qualitative": "发帖者认为较多花费来自不采用的生成、试错和反复改提示词；没有可计算的尝试/成功次数。"
+      },
+      "team": {
+        "headcount": 1,
+        "headcountScope": "发帖者称独自制作，未独立核验",
+        "roles": []
+      },
+      "delivery": {
+        "released": [
+          {
+            "item": "发帖者关联YouTube作品",
+            "url": "https://www.youtube.com/watch?v=8WrWXbzy1Gs",
+            "runtimeSeconds": 720,
+            "runtimeSource": "发帖者自述约12分钟，影片页面抓取未成功",
+            "fullFilmVerified": false
+          }
+        ],
+        "futureCommitment": null
+      },
+      "known": [
+        {
+          "fact": "发帖者把成片相关花费拆为两项，并将自己今后可减半的判断写为回顾估计。",
+          "evidence": "PS10 / OP",
+          "attribution": "匿名第一人称自述，没有账单或工时证明"
+        }
+      ],
+      "missing": [
+        "准确发表日期、片名、片尾及账号关联的独立验证",
+        "实付凭据、赠额/订阅分摊",
+        "总制作人时、失败次数、成片实看"
+      ],
+      "cooperationConditions": [
+        {
+          "condition": "首个合作件记录准备、候选、采用、返工与剪辑的费用范围，下一件报价依据实际记录再谈。",
+          "basis": "自述提醒费用可消耗在没进入成片的内容；尚不足以给出通用单价。"
+        }
+      ],
+      "limitations": [
+        "辅助自述，不纳入已核实实际成本样本。",
+        "所谓减半只是作者预期，未发生第二次对照制作；不报告每分钟均价。",
+        "页面相对时间与工具缓存信息不一致，发布日期留空。"
+      ]
+    }
+  ],
+  "definitions": {
+    "creatorSelfReport": "制作人公开陈述，未自动升级为已核账单或实际工时。",
+    "vendorPublishedInterview": "具名客户在供应商案例页的自述；同时具有宣传选择性。",
+    "vendorDemonstration": "供应商自己展示的样片与指标，不能外推普通作者。",
+    "tariff": "计费报价，不是项目实际支出；本研究没有用报价反推预算。",
+    "confirmedPaid": "需公开可核的支付与范围证据；本批为0。",
+    "personHours": "实际人工投入小时；本批没有可审计人时。",
+    "null": "未披露或未取得，绝非零。"
+  },
+  "cooperationConditions": [
+    {
+      "id": "PC-01",
+      "title": "先约清楚交付范围",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-04",
+        "PE-05"
+      ],
+      "requirement": "注明完整短片、分集、合集、教程或幕后；每份有自己的完成标准、可公开范围和续作约定。",
+      "doNotAssume": "多一条发布入口就是一份新制作，或一位主创能授权全部项目资产。"
+    },
+    {
+      "id": "PC-02",
+      "title": "把费用和时间拆到实际环节",
+      "evidenceCases": [
+        "PE-04",
+        "PE-06",
+        "PE-07",
+        "PE-08"
+      ],
+      "requirement": "分别记录脚本/资料、样图、视频候选、剪辑声音、事实核对、沟通修改；工具自付、赠额、人工与外部素材分开。",
+      "doNotAssume": "模型单价×成片秒数等于预算，历时等于人时。"
+    },
+    {
+      "id": "PC-03",
+      "title": "在正式制作前确认最容易返工的部分",
+      "evidenceCases": [
+        "PE-03",
+        "PE-06",
+        "PE-07"
+      ],
+      "requirement": "用同一合作件的构图、角色/风格样张或关键难镜头确认效果；约定变更范围后再继续制作。",
+      "doNotAssume": "样片做成一次即可稳定复制，或能通过无限免费重试解决。"
+    },
+    {
+      "id": "PC-04",
+      "title": "续更与答疑另约",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-03"
+      ],
+      "requirement": "写明下一份是否已排期、对数据的依赖、停更告知、教程适用条件和答疑范围。",
+      "doNotAssume": "低价Token自动换来持续供稿，或者作者会无偿无限答疑。"
+    },
+    {
+      "id": "PC-05",
+      "title": "验收同时看内容本身",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-06"
+      ],
+      "requirement": "叙事验收有可看懂的单元和收尾；科普验收事实与图示一致；教程验收适用条件和可复现材料。",
+      "doNotAssume": "所有消费者都需要学会制作或迁移到工具里。"
+    }
+  ],
+  "findings": [
+    {
+      "text": "可以据此要求作者说明制作步骤和交付边界，仍不能确定一份内容应该补贴多少。",
+      "evidenceCases": [
+        "PE-01",
+        "PE-04",
+        "PE-06",
+        "PE-07",
+        "PE-08"
+      ]
+    },
+    {
+      "text": "连续内容值得单独约定完整单元与续更条件；已发布合集不等于未来产能。",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02"
+      ]
+    },
+    {
+      "text": "教程、成片、幕后与可复用文件是不同的交付成本，不能把可观看作品自动变成免费教学包。",
+      "evidenceCases": [
+        "PE-03",
+        "PE-04"
+      ]
+    },
+    {
+      "text": "北极星仍是持续有效活跃。成本记录用于判断能否持续供给，不替代观看、阅读、讨论和跨周回访的观察。",
+      "evidenceCases": [],
+      "classification": "对多元拾光的执行解释，不是这些案例已验证的留存事实"
+    }
+  ],
+  "excludedClaims": [
+    {
+      "claim": "约$4000的Luxo制作成本",
+      "reason": "本次官方原页未披露金额，不从二手摘要升级为实际成本。"
+    },
+    {
+      "claim": "一人一小时或每分钟成本的行业基准",
+      "reason": "缺同口径预算、人时、失败候选和样本代表性。"
+    },
+    {
+      "claim": "山海系芒果TV山海生产平台或《山海奇镜之劈波斩浪》",
+      "reason": "同名不同对象，本批专指编导_拾光的抖音故事。"
+    }
+  ],
+  "validation": {
+    "exactPublicPaymentEvidenceCount": 0,
+    "auditedPersonHourCount": 0,
+    "independentRetentionProofCount": 0,
+    "noOutreach": true,
+    "noCreditUse": true,
+    "noPrivateData": true,
+    "noSiteEdits": true
+  },
+  "limitations": [
+    "只核对公开页面与已有根代理原始DOM记录，未向作者询问未公开信息。",
+    "公开成本与工期是具体项目描述，不代表作者长期产能或行业平均。",
+    "评论位置是已采集楼层定位，不是独立用户数量。"
+  ]
+}

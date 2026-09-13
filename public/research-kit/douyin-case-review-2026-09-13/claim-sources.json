@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "title": "两件AI人文视频：关键主张与可核来源",
+    "createdAtUTC": "2026-09-13T02:33:12Z",
+    "language": "zh-CN",
+    "stage": "已核3个指定静帧及所涉史料；不作全片事实/服饰评级",
+    "scope": "5项：3处史料对应、《敕勒歌》关联、服饰质疑边界。",
+    "browserActions": false,
+    "videoWatchedInFull": false,
+    "videoFramesPersonallyReviewed": [
+      "frames/history-090.png",
+      "frames/history-140.png",
+      "frames/history-190.png"
+    ],
+    "sourceImagesPersonallyComparedToVideo": false,
+    "updatedAtUTC": "2026-09-13 02:40:25 UTC"
+  },
+  "method": [
+    "先区分主张由作者说明、旁白、画面还是评论提出；读者批评不自动成为作者事实错误。",
+    "史料文字、馆藏实物、馆方说明与后来的机构报道分别标级；一级文本不等于叙述毫无偏向。",
+    "此次网页只保留必要转述、定位与链接，不复制整篇；未下载或嵌入带账号UI的素材。",
+    "图像核对必须有视频秒数、同一镜头身份、可见特征与馆藏具体位置；未读取的画面不裁决。",
+    "改编/联想边界、史实准确性、消费者读懂与否是不同问题。"
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "《明史》卷二百六十一·卢象昇传",
+      "url": "https://zh.wikisource.org/wiki/明史/卷261",
+      "publisher": "维基文库电子转录；底层文本为清修《明史》",
+      "kind": "historical_primary_text_later_compilation",
+      "access": "正文已打开阅读；未逐字校对影印底本",
+      "locator": "传首崇祯二年募万人入卫、明年进右参政段；崇祯八年段军中绝饷记载。",
+      "supports": "140秒升任概述与传首任官记载相符；190秒同饥引文出现在崇祯八年段。",
+      "limits": "清代后修史，不是战场摄影或无偏现场记录；不是全国历代官员战亡排名资料。其赞语亦属史家评价。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S02",
+      "title": "《酌中志》卷十九·内臣佩服纪略",
+      "url": "https://www.shidianguji.com/zh/book/CADAL01020684/chapter/1l4f8e9iby1op",
+      "publisher": "识典古籍电子转录；明宦官刘若愚撰，所见本标清潘仕成辑",
+      "kind": "contemporary_participant_historical_text",
+      "access": "全文可读；未校影印底本",
+      "locator": "官帽/平巾段；朝服朝冠段；圆帽段；束发冠与雨帽段",
+      "supports": "内臣按身份、季节、场合使用官帽、平巾、圆帽等，书中并非只有一种太监帽。",
+      "limits": "竹丝、纱罗等材质不能仅凭模糊帧确认；存在圆帽、珠石饰件与有檐雨帽，不能把任一单独特征都当清朝专属。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S03",
+      "title": "明人画出警图 卷（中画000054N000000000）",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1624?dep=P",
+      "publisher": "国立故宫博物院",
+      "kind": "official_collection_original_artwork",
+      "access": "官方目录和图像入口已核；此次未逐人辨认全卷服饰",
+      "locator": "基本资料、主题表、图像与IIIF入口；本幅92.1×2601.3厘米",
+      "supports": "官方馆藏明代宫廷出行图像，可为官员、军士、仪仗、服饰寻找画中位置作图像比对。",
+      "limits": "该卷不是卢象升战役实录；不能将宫廷仪仗中某一人物的衣着推广为所有明军。使用时需记录卷内位置与身份依据。",
+      "imageReuse": "按馆方说明：低阶图像CC0，中阶图像和文字CC BY 4.0；若引用图像应随具体图像保留品名与馆方署名。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S04",
+      "title": "清乾隆 夏朝冠（故杂001494N000000000）",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail?dep=U&id=2660&mode=full",
+      "publisher": "国立故宫博物院",
+      "kind": "official_collection_surviving_object",
+      "access": "官方藏品正文、黄签说明与图像入口已核；未取得视频同角度特写进行形制裁决",
+      "locator": "说明、附件黄签与图像；冠高14厘米、外径28厘米，黄签纪1778年",
+      "supports": "提供有明确时代、主人和实物来源的清代圆冠、朱纬、帽檐等组合参照。",
+      "limits": "这是乾隆皇帝夏朝冠，不能直接称为清太监帽；馆方明说原件部分配饰已失，今所见朝冠顶等为同类帽饰后配。年代晚于卢象升百余年，不能据相似性直接认定视频具体帽名。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S05",
+      "title": "《清太宗实录》卷八·天聪五年正月二十八日",
+      "url": "https://sillok.history.go.kr/mc/id/qsilok_003_0080_0010_0010_0100_0010",
+      "publisher": "韩国国史编纂委员会·明清实录数据库",
+      "kind": "official_historical_record_digital_text",
+      "access": "正文已打开阅读；页面提供原文/原本入口，此次未校原本图像",
+      "locator": "1631年条，致朝鲜书中提及招降薙发官民及薙发归顺人民",
+      "supports": "入关前，清方文书已将剃发与归顺人员联系；1644年前出现剃发不能仅凭年份一律判错。",
+      "limits": "这是清方政治文书的记载，不替其战事指控背书；不证明视频某个人归降，更不证明某种辫子粗细在特定年代的精确形制。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S07",
+      "title": "《乐府诗集》卷八十六·敕勒歌与题解",
+      "url": "https://www.shidianguji.com/mid-page/7254765170982060044",
+      "publisher": "识典古籍电子转录；北宋郭茂倩辑",
+      "kind": "historical_text_anthology",
+      "access": "正文已打开阅读；未校宋元刻本",
+      "locator": "页面《敕勒歌》小标题下的《乐府广题》引文及诗文",
+      "supports": "传世题解记录高欢在玉壁战事后令斛律金唱歌、高欢自和；诗文写草原天野、穹庐、牛羊，未叙述现代孤儿迁入。",
+      "limits": "题解关于唱歌的故事不是现场记录，也不自动证明歌在该次战争中首次创作。古诗主旨可以有解释，但不能用20世纪事件作其产生原因。",
+      "crossCheck": "https://www.shidianguji.com/book/SK3192/chapter/1m1ifxliol5pq 可读同篇；其电子字面有草底/草低、卜令/下令差异，不据转录差异批评视频。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S08",
+      "title": "《三千孤儿入内蒙：一段流淌着民族大爱的共和国往事》",
+      "url": "https://www.neac.gov.cn/seac/c103391/202308/1166523.shtml",
+      "publisher": "国家民委转载道中华；原刊《中国民族报》2021-07-20第05版，周芳执笔",
+      "kind": "official_institutional_account_not_original_register",
+      "access": "2023-08-01转载正文已读；未调原始批复、接收名册或总表",
+      "locator": "1959—1961困难背景；1960-05-09批复；1960—1963接收人数；1961都贵玛段",
+      "supports": "此文将困难背景写为1959—1961、接收期写为1960—1963及3000多名；记述都贵玛19岁照护28名儿童。",
+      "limits": "机构文章不是原始名册审计；不能据此认证恰好3000人，也不能证明全部移送儿童总计只有3000，或采信评论的6万口径。来源标注的电视剧剧照不是历史照片。",
+      "checkedAtUTC": "2026-09-13T02:33:12Z"
+    },
+    {
+      "id": "S11",
+      "title": "《明史》卷二百五十九·袁崇焕传",
+      "url": "https://zh.wikisource.org/wiki/明史/卷259",
+      "publisher": "维基文库电子转录；底层文本为清修《明史》",
+      "kind": "historical_primary_text_later_compilation",
+      "access": "已打开正文读到崇祯二年入援、十二月朔下狱、翌年八月处死段；未校影印底本",
+      "locator": "袁崇焕传，入护京师后、法司论罪前段",
+      "supports": "90秒字幕所引下狱句在所读原文出现；该段谈崇祯二年的下狱，不是处死当日。",
+      "limits": "核到引文存在，不等于核定本传所有因果，尤其不能把传记中的反间叙述或画中宣读动作独立坐实。",
+      "checkedAtUTC": "2026-09-13T02:40:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "H01",
+      "caseId": "DC-C01",
+      "workUrl": "https://www.douyin.com/video/7670827630043663667",
+      "question": "90.33秒的袁崇焕下狱引文能否找到原文？",
+      "frames": [
+        "F090"
+      ],
+      "sources": [
+        "S11"
+      ],
+      "onScreenQuote": "十二月朔，再召对，遂缚下诏狱。",
+      "sourceQuote": "十二月朔再召對，遂縛下詔獄。",
+      "quoteMatch": "规范简繁和标点后相同。",
+      "confirmed": "本帧明确标《明史·袁崇焕传》，所读卷259确有此句，语境为崇祯二年入援后的下狱。",
+      "canConclude": "可以写该帧引文有原文对应。此处是入狱，不能改述为同日处死。",
+      "cannotConclude": "红袍持卷者不能从字幕直接认作袁崇焕；引文不证明画面有人以这种服装、在此位置宣读。也未核前后所有旁白对反间计与因果的讲法。",
+      "needsFrame": [
+        "若进一步谈逮捕因果，应补前后旁白与其他史料；当前不扩展"
+      ],
+      "status": "citation_text_verified",
+      "draftCopy": "01:30.33的下狱句与《明史》卷259对应，且片内明确标出传名。核到的是文字出处，画面造型与动作仍是独立问题。"
+    },
+    {
+      "id": "H02",
+      "caseId": "DC-C01",
+      "workUrl": "https://www.douyin.com/video/7670827630043663667",
+      "question": "140.63秒的升任右参政，是原文、可靠概述，还是连心理动机也已被史料确认？",
+      "frames": [
+        "F140"
+      ],
+      "sources": [
+        "S01"
+      ],
+      "onScreenQuote": "擢大名知府卢象升为右参政",
+      "sourceQuote": "崇禎二年，京師戒嚴，募萬人入衛。明年，進右參政兼副使，整飭大名、廣平、順德三府兵備，號「天雄軍」。",
+      "quoteMatch": "任官事实相符；并非所读本的逐字引文，省略兼副使及兵备范围。",
+      "confirmed": "《明史》传首先记大名知府、崇祯二年募万人入卫，随后次年进右参政兼副使。",
+      "canConclude": "该字幕可作晋任经历的简述。该帧没有可见书名标签，报告应区分两处明确署源引文与此处任官概述。",
+      "cannotConclude": "“崇祯看到了卢象升的忠勇”是作者对晋任的解释，所对照短段并未直接记述皇帝心理或宣诏原话。不能据此说晋任发生于勤王同日，也不能断定字幕为伪造诏书。",
+      "needsFrame": [
+        "完整时间过渡才能核叙述有无压缩时间；115秒的“没有正式兵权”指代尚未核，不并入裁决"
+      ],
+      "status": "appointment_supported_paraphrase_not_verbatim",
+      "draftCopy": "02:20.63晋任右参政的内容与本传相符，完整官衔还包括兼副使；“看到了忠勇”属于作者解释。本帧未见书名，不能计成第三处明确署源引文。"
+    },
+    {
+      "id": "H03",
+      "caseId": "DC-C01",
+      "workUrl": "https://www.douyin.com/video/7670827630043663667",
+      "question": "190.29秒同士卒挨饿的叙述是否有史料依据？",
+      "frames": [
+        "F190"
+      ],
+      "sources": [
+        "S01"
+      ],
+      "onScreenQuote": "军中尝绝三日饷，象升亦水浆不入口，以是得将士心，辄有功",
+      "sourceQuote": "軍中嘗絕三日餉，象昇亦水漿不入口，以是得將士心，戰輒有功。",
+      "quoteMatch": "除简繁、升/昇字形及标点外，视频末句省“战”字；主要叙述对应。",
+      "confirmed": "本帧明确标《明史·卢象升传》；同饥记载位于本传崇祯八年相关叙事中。",
+      "canConclude": "白字通俗转述的核心有该文献依据，不能因情绪化措辞就称无据煽情。若编辑引文，可补回“战”字或标明节引。",
+      "cannotConclude": "这不是所有战争中永久断食的说法；不能改成崇祯十一年蒿水桥最后一战的独属情节。此段也不能验证镜头中盔甲、面貌与动作。",
+      "needsFrame": [
+        "若讨论时间错置，须核前后镜头如何交代年份；单帧不作错置裁决"
+      ],
+      "status": "citation_substance_verified_minor_omission",
+      "draftCopy": "03:10.29的同饥叙述及片内引文可在本传找到；末句省了“战”字，核心含义相符。该条证明作者确有文献依据，不代替造型核验。"
+    },
+    {
+      "id": "H04",
+      "caseId": "DC-C01",
+      "workUrl": "https://www.douyin.com/video/7670827630043663667",
+      "question": "服饰质疑应核哪一层，三帧能否判明清混搭？",
+      "origin": "作者成本说明楼层p4的回复r1/r3质疑太监清式冠服。",
+      "localPointers": [
+        "deep-details.json#/0/replyChecks/2/replies/0",
+        "deep-details.json#/0/replyChecks/2/replies/2"
+      ],
+      "sources": [
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "confirmed": "90和140秒可见相似的持卷人物造型；这三张静帧不足以确认评论所称的全部人物、后脑发式和阵营。明代内臣有圆帽记载；入关前也已有归顺人员剃发记录。",
+      "canConclude": "保留评论p4:r1/r3作为具体质疑，核角色身份、帽体、檐形、缨饰、后脑发式及场合；查到史料出处与查准造型是两件事。",
+      "cannotConclude": "不按圆帽、红袍、珠饰任一单项判时代；不把持卷人认作字幕所谈将领；不以1644前有剃发一律穿帮。清乾隆皇帝冠不能直接命名为清太监帽。",
+      "needsFrame": [
+        "足够清晰的正侧背面",
+        "角色被字幕或上下文明示为哪位内监",
+        "场合/季节",
+        "对应馆藏图中的具体部位"
+      ],
+      "status": "comment_challenge_preserved_visual_verdict_unresolved",
+      "draftCopy": "已确认片内存在可核史料引用；读者指出的冠服和发式问题仍待角色与形制核验。当前三帧不足以认定明清混搭，也不能由引文准确反推造型准确。",
+      "frames": [
+        "F090",
+        "F140",
+        "F190"
+      ]
+    },
+    {
+      "id": "P01",
+      "caseId": "DP-004",
+      "workUrl": "https://www.douyin.com/video/7678155357679602995",
+      "question": "《敕勒歌》与三千孤儿的联系是否缺少作者解释？应怎样改写旧结论？",
+      "origin": "旧报告把诗与事件关联列为待解释；此次重读同一作品完整说明。",
+      "localPointers": [
+        "root-captures.json#/3/title",
+        "root-captures.json#/3/rootComments/3"
+      ],
+      "sources": [
+        "S07",
+        "S08"
+      ],
+      "confirmed": "作者在作品说明中先区分北朝战争与六十多年前的另一个草原故事，再借故乡、草原日常、接纳与民族团结连接两段叙事。文字明确使用个人教学意图。",
+      "canConclude": "可以确认作者的关联意图和跨时代切换已在完整说明中公开出现；质疑可进一步聚焦视频内是否同样清楚区分古诗释义与现代延伸。 《乐府诗集》可核题解中的唱歌场合，现代事件则另有机构资料；三者应分开呈现。",
+      "cannotConclude": "不能继续写作者没有解释关联；不能因跨时代关联就认定历史伪造，也不能因此证明课堂适宜、诗义解释充分或观众都读过展开说明。 机构文章不等于原始接收名册；未以其认证精确人口总数。",
+      "needsFrame": [
+        "关键转场在视频中是否有字幕/旁白提示",
+        "现代延伸何时返回古诗",
+        "观众实际收到的简短标题和展开说明有何差别"
+      ],
+      "status": "author_description_boundary_confirmed",
+      "draftCopy": "作者已在完整作品说明中区分北朝故事和六十多年前的另一段草原历史，再以故乡、接纳与民族团结建立创作联想。待核的是视频内如何提示古诗释义与现代延伸，以及具体史实来源；不能再将“关联说明缺失”列为已证问题。"
+    }
+  ],
+  "priorityCorrections": [
+    "卢象升指定三帧中，两帧明确标出《明史》传名；3处历史内容均有对应，其中晋任是概述、同饥引文少一个战字。",
+    "《敕勒歌》完整作者说明已解释跨时代联想；先改写旧报告对文学解释缺口的表述，勿用机构文章不能解释艺术联想来代替阅读作者说明。",
+    "服饰评论仍是待核主张，不把历史引文准确或读者质疑分别升级为全片正确/错误。",
+    "观看边界为3个指定静帧与既有作者说明，未完整观看、未核全部音轨；没有核115秒指代和212秒结尾。"
+  ],
+  "excludedOrDowngraded": [
+    {
+      "source": "https://www.dpm.org.cn/collection/music/232811.html",
+      "reason": "清宫戏曲服装的忠纱帽，不能当作明朝官员/内监实际服用的同代物证。"
+    },
+    {
+      "source": "https://www.shidianguji.com/zh/book/SK0718/chapter/1l9yt88e6tuz7",
+      "reason": "搜索摘要含神武下正文，直接打开却返回考证段，未把搜索摘要当已读正文。改用可完整打开的《乐府诗集》。"
+    },
+    {
+      "source": "https://ctext.org/wiki.pl?chapter=537649&if=en&remap=gb",
+      "reason": "有搜索摘要，直接打开403；仅作备用检索入口，不标此次已读原页。"
+    },
+    {
+      "source": "https://www.saac.gov.cn/daj/c100182/202105/7bd31e95dc414324a31b04d54ddd72d2.shtml",
+      "reason": "搜索命中的是口述史征集通知，非人口总表，且此次直接打开失败。不能据此说档案已核。"
+    },
+    {
+      "source": "S10：中国国家博物馆陈新甲塘报目录",
+      "reason": "此次检索得到官方线索但原页超时；与最终3帧主张非必要，未纳入最终证据源。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "F090",
+      "file": "frames/history-090.png",
+      "timeSeconds": 90.329086,
+      "capturedAtUTC": "2026-09-13T02:30:27.995Z",
+      "sha256": "4be801a7c75fccb83fdf703070869fa056d55625d29cfe558ad36d68dc5c3c38",
+      "sourceLabelVisible": "《明史·袁崇焕传》",
+      "visibleText": [
+        "督师袁崇焕",
+        "十二月朔，再召对，遂缚下诏狱。"
+      ],
+      "visibleFigure": "红袍人物持展开的黄色卷轴；不能仅据同帧字幕给此人命名为袁崇焕。",
+      "readScope": "单静帧、可见字幕；没有收听连续音轨"
+    },
+    {
+      "id": "F140",
+      "file": "frames/history-140.png",
+      "timeSeconds": 140.629843,
+      "capturedAtUTC": "2026-09-13T02:30:30.471Z",
+      "sha256": "c84edd34ec739f2a4b1708552833bae280670fa28d26c7f58d981b66df5718c7",
+      "sourceLabelVisible": null,
+      "visibleText": [
+        "卢象升募兵勤王，崇祯看到了卢象升的忠勇",
+        "擢大名知府卢象升为右参政"
+      ],
+      "visibleFigure": "与90秒帧相似的红袍持卷人物造型；不能从谈及卢象升的字幕将持卷人认作卢象升本人。",
+      "readScope": "单静帧、可见字幕；本帧未见具体史书名称"
+    },
+    {
+      "id": "F190",
+      "file": "frames/history-190.png",
+      "timeSeconds": 190.29012,
+      "capturedAtUTC": "2026-09-13T02:33:58.629Z",
+      "sha256": "9b39e78aae8ee699b0b88c13f865610bcf362058a4de0c24ac125af34cbe7616",
+      "sourceLabelVisible": "《明史·卢象升传》",
+      "visibleText": [
+        "作为主帅的卢象升也滴水不进，一口饭都不吃，陪着士兵一起挨饿",
+        "军中尝绝三日饷，象升亦水浆不入口，以是得将士心，辄有功"
+      ],
+      "visibleFigure": "戴盔有须男性近景；史料对应不同时确认面貌、盔甲和镜头动作。",
+      "readScope": "单静帧、可见字幕；没有收听连续音轨"
+    }
+  ],
+  "notAudited": [
+    "115秒“一个连正式兵权都没有的文官”的指代及制度含义",
+    "212秒结尾与全片时间线",
+    "画面各角色的精确帽名/盔甲名及实际时代",
+    "《敕勒歌》完整视频音轨与其与作品说明是否一致",
+    "两件作品是否已由作者修订",
+    "现代孤儿接收的原始总表和人口口径"
+  ],
+  "verifiedClaims": [
+    {
+      "id": "H01",
+      "claim": "90.33秒的袁崇焕下狱引文能否找到原文？",
+      "verdict": "01:30.33的下狱句与《明史》卷259对应，且片内明确标出传名。核到的是文字出处，画面造型与动作仍是独立问题。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷259"
+      ],
+      "frameFile": "frames/history-090.png",
+      "frameFiles": [
+        "frames/history-090.png"
+      ],
+      "status": "citation_text_verified"
+    },
+    {
+      "id": "H02",
+      "claim": "140.63秒的升任右参政，是原文、可靠概述，还是连心理动机也已被史料确认？",
+      "verdict": "02:20.63晋任右参政的内容与本传相符，完整官衔还包括兼副使；“看到了忠勇”属于作者解释。本帧未见书名，不能计成第三处明确署源引文。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷261"
+      ],
+      "frameFile": "frames/history-140.png",
+      "frameFiles": [
+        "frames/history-140.png"
+      ],
+      "status": "appointment_supported_paraphrase_not_verbatim"
+    },
+    {
+      "id": "H03",
+      "claim": "190.29秒同士卒挨饿的叙述是否有史料依据？",
+      "verdict": "03:10.29的同饥叙述及片内引文可在本传找到；末句省了“战”字，核心含义相符。该条证明作者确有文献依据，不代替造型核验。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷261"
+      ],
+      "frameFile": "frames/history-190.png",
+      "frameFiles": [
+        "frames/history-190.png"
+      ],
+      "status": "citation_substance_verified_minor_omission"
+    },
+    {
+      "id": "H04",
+      "claim": "服饰质疑应核哪一层，三帧能否判明清混搭？",
+      "verdict": "已确认片内存在可核史料引用；读者指出的冠服和发式问题仍待角色与形制核验。当前三帧不足以认定明清混搭，也不能由引文准确反推造型准确。",
+      "sourceUrls": [
+        "https://www.shidianguji.com/zh/book/CADAL01020684/chapter/1l4f8e9iby1op",
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/1624?dep=P",
+        "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail?dep=U&id=2660&mode=full",
+        "https://sillok.history.go.kr/mc/id/qsilok_003_0080_0010_0010_0100_0010"
+      ],
+      "frameFile": "frames/history-090.png",
+      "frameFiles": [
+        "frames/history-090.png",
+        "frames/history-140.png",
+        "frames/history-190.png"
+      ],
+      "status": "comment_challenge_preserved_visual_verdict_unresolved"
+    },
+    {
+      "id": "P01",
+      "claim": "《敕勒歌》与三千孤儿的联系是否缺少作者解释？应怎样改写旧结论？",
+      "verdict": "作者已在完整作品说明中区分北朝故事和六十多年前的另一段草原历史，再以故乡、接纳与民族团结建立创作联想。待核的是视频内如何提示古诗释义与现代延伸，以及具体史实来源；不能再将“关联说明缺失”列为已证问题。",
+      "sourceUrls": [
+        "https://www.douyin.com/video/7678155357679602995",
+        "https://www.shidianguji.com/mid-page/7254765170982060044",
+        "https://www.neac.gov.cn/seac/c103391/202308/1166523.shtml"
+      ],
+      "frameFile": null,
+      "frameFiles": [],
+      "status": "author_description_boundary_confirmed"
+    }
+  ]
+}

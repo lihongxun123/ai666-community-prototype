@@ -1,0 +1,729 @@
+{
+  "title": "从成片到持续供给",
+  "date": "2026-09-13",
+  "scope": "4个既有作品URL，28个有效时间点；核对可见画面和字幕，未听取音频或连续看完全片。没有新增作品、作者或评论计数。",
+  "frames": [
+    {
+      "currentTime": 6.042405,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-006.png",
+      "observedAt": "2026-09-13T02:30:08.280Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "现代人物在画像前，字幕提出只能选一人的问题。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 40.518352,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-040.png",
+      "observedAt": "2026-09-13T02:30:09.510Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "骑马传令的夜间场景，字幕为圣旨到。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 65.099693,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-065.png",
+      "observedAt": "2026-09-13T02:30:26.728Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "带伤痕的披甲人物特写；该瞬间没有字幕。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 90.329086,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-090.png",
+      "observedAt": "2026-09-13T02:30:27.995Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "红袍持诏者，字幕谈督师袁崇焕；底部标明《明史·袁崇焕传》。持诏者身份不能由字幕推定。",
+      "published": true,
+      "publicFile": "frames/history-090.jpg"
+    },
+    {
+      "currentTime": 115.489722,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-115.png",
+      "observedAt": "2026-09-13T02:30:29.223Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "狱中人物与“一个连正式兵权都没有的文官”字幕；仅凭此帧未确认指代。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 140.629843,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-140.png",
+      "observedAt": "2026-09-13T02:30:30.471Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "红袍持诏场景；字幕解释崇祯看到卢象升的忠勇，底部叙述擢升右参政。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 165.155141,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-165.png",
+      "observedAt": "2026-09-13T02:33:57.397Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "集结人物画面，字幕叙述卢象升决心练兵。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 190.29012,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-190.png",
+      "observedAt": "2026-09-13T02:33:58.629Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "披甲人物特写；字幕叙述与士兵共饥，底部标明《明史·卢象升传》。",
+      "published": true,
+      "publicFile": "frames/history-190.jpg"
+    },
+    {
+      "currentTime": 212.445955,
+      "duration": 214.180998,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "file": "frames/history-212.png",
+      "observedAt": "2026-09-13T02:33:59.880Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "骑马人物举兵刃，画面大字为天雄军。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 5.358663,
+      "duration": 503.269002,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "file": "frames/story-early-005.png",
+      "observedAt": "2026-09-13T02:34:41.668Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "控制室女性对男性说物流园冷库还能用吗。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 100.007918,
+      "duration": 503.269002,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "file": "frames/story-early-100.png",
+      "observedAt": "2026-09-13T02:34:42.767Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "持枪蒙面人物特写，字幕为发现未知高阶异兽。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 300.268547,
+      "duration": 503.269002,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "file": "frames/story-early-300-check.png",
+      "observedAt": "2026-09-13T02:35:03.967Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "人物手握手电特写，字幕为报上去让上面来看。",
+      "published": true,
+      "publicFile": "frames/story-early-300-check.jpg"
+    },
+    {
+      "currentTime": 496.57602,
+      "duration": 503.269002,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "file": "frames/story-early-496-final.png",
+      "observedAt": "2026-09-13T02:35:28.466Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "昏暗走廊里人物回头；不是全片结尾或完结状态证明。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 5.274181,
+      "duration": 503.267,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7678013840239480091",
+      "file": "frames/story-later-005.png",
+      "observedAt": "2026-09-13T02:35:42.020Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "与较早发布约5秒位置对应的控制室女性镜头和同一字幕。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 100.034822,
+      "duration": 503.267,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7678013840239480091",
+      "file": "frames/story-later-100.png",
+      "observedAt": "2026-09-13T02:35:42.885Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "与较早发布约100秒位置对应的持枪人物镜头和同一字幕。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 300.17832,
+      "duration": 503.267,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7678013840239480091",
+      "file": "frames/story-later-300-ready.png",
+      "observedAt": "2026-09-13T02:36:04.320Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "与较早发布约300秒位置对应的握手电镜头和同一字幕。",
+      "published": true,
+      "publicFile": "frames/story-later-300-ready.jpg"
+    },
+    {
+      "currentTime": 5.247281,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-005.png",
+      "observedAt": "2026-09-13T02:36:38.481Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "以节点画布和多个成片窗口展示制作结果。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 30.226579,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-030.png",
+      "observedAt": "2026-09-13T02:36:39.423Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "多人客厅成片旁同时放置白模图和C1至C6站位俯视图。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 60.237833,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-060.png",
+      "observedAt": "2026-09-13T02:36:40.348Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "前后景人物切换，角落继续保留白模与站位参考。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 120.41274,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-120.png",
+      "observedAt": "2026-09-13T02:36:51.017Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "行业难题章节，字幕称前24秒都成立；单帧不足以确认其后具体错误。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 150.040622,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-150.png",
+      "observedAt": "2026-09-13T02:37:51.716Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "方法总图列出角色片号、俯视站位、白模预演、五维提示词。",
+      "published": true,
+      "publicFile": "frames/tutorial-150.jpg"
+    },
+    {
+      "currentTime": 180.388669,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-180.png",
+      "observedAt": "2026-09-13T02:36:51.979Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "场景图上的C1至C6编号与平面站位图并排显示。",
+      "published": true,
+      "publicFile": "frames/tutorial-180.jpg"
+    },
+    {
+      "currentTime": 210.152197,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-210.png",
+      "observedAt": "2026-09-13T02:37:52.604Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "白模预演图示，要求先拍出镜头如何移动再交给模型生成。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 240.331497,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-240-ready.png",
+      "observedAt": "2026-09-13T02:37:15.035Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "输入面板有编号1至7的素材缩略图，其中首项标30.0秒；字幕说明白模、角色三视图、站位图的准备。",
+      "published": true,
+      "publicFile": "frames/tutorial-240-ready.jpg"
+    },
+    {
+      "currentTime": 280.049979,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-280.png",
+      "observedAt": "2026-09-13T02:37:53.526Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "示范片段按秒分配角色动作；所读字幕为7秒之后。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 314.904914,
+      "duration": 357.233333,
+      "paused": false,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-300-ready.png",
+      "observedAt": "2026-09-13T02:37:30.451Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "实际记录在约315秒，输入面板与角色编号提示说明；不是300秒截图。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 332.32239,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-332.png",
+      "observedAt": "2026-09-13T02:37:54.414Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "多人场景旁字幕指出台词没接住；这是作者指出的示例问题，音频未核。",
+      "published": false,
+      "publicFile": null
+    },
+    {
+      "currentTime": 345.396704,
+      "duration": 357.233333,
+      "paused": true,
+      "readyState": 4,
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "file": "frames/tutorial-345-final.png",
+      "observedAt": "2026-09-13T02:37:43.200Z",
+      "capture": "visible-player-page-fullscreen",
+      "observation": "结尾讲解只重拍出错几秒，列起始状态、具体修正、接回原片。",
+      "published": true,
+      "publicFile": "frames/tutorial-345-final.jpg"
+    }
+  ],
+  "findings": [
+    {
+      "title": "历史内容的价值还包括可核对的解释",
+      "text": "卢象升片在抽查画面中至少两次标注《明史》。史料、旁白解释和视觉再现要分开核对；评论里的服饰质疑，不能直接替代史料与画面比对。"
+    },
+    {
+      "title": "追剧需要清楚的集序与版本关系",
+      "text": "《山海》第一集两个URL在约5、100、300秒出现对应镜头和相同字幕，时长均约8分23秒。较早入口归入已完结合集，较晚入口归入短剧。页面数不宜直接作为独立成片数。"
+    },
+    {
+      "title": "教学供给要把准备工作一起交付",
+      "text": "多人一致性教程实际展示角色编号、站位图、白模预演、参考素材和局部重拍。标题中的“两张图”无法概括全部准备；只提供模型或工程入口，学习者仍可能无法完成同类任务。"
+    }
+  ],
+  "cases": [
+    {
+      "id": "history",
+      "title": "历史解释：引用存在，视觉细节仍要另核",
+      "url": "https://www.douyin.com/video/7670827630043663667",
+      "author": "溯明",
+      "read": "3分34秒作品，核对9个时间点。",
+      "fact": "画面以现代提问切入，再用传令、宫廷、战场等情境讲述人物。约90秒和190秒分别出现《明史·袁崇焕传》《明史·卢象升传》标注；约140秒将职官升迁和对皇帝动机的解释放在同一场景。",
+      "interpretation": "这个案例的供给工作包含史料摘录、叙事改写和视觉制作。即便事件有据，服饰和人物动机仍需独立处理；把所有质疑合并成“AI历史不可信”，或把一条书名当成全片准确证明，都不成立。",
+      "community": "可承载为成片＋按时间定位的出处与改编说明＋具体勘误。消费端看故事，查证者能定位一句话，作者可以订正而不必重发整条讨论。",
+      "open": "服饰的具体形制与角色身份仍待专项核对；没有取得整条音轨或全量逐字稿。",
+      "images": [
+        "history-090",
+        "history-190"
+      ]
+    },
+    {
+      "id": "story",
+      "title": "故事连载：一个故事可以有多个发布入口",
+      "url": "https://www.douyin.com/video/7663756336345173258",
+      "secondUrl": "https://www.douyin.com/video/7678013840239480091",
+      "author": "编导_拾光",
+      "read": "较早入口核对4个时间点，较晚入口3个；对照其中3对镜头。",
+      "fact": "两条视频时长分别503.269秒和503.267秒。约5秒的控制室对话、100秒的持枪人物、300秒的握手电镜头及字幕对应。较早页面显示“《山海第一季》已完结”合集，较晚页面显示“短剧 · 山海第一季”。",
+      "interpretation": "现有证据支持两条发布存在内容复用关系，尚不足以证明全片音画完全相同，更不能把其他六对集号一并去重。此前的条目统计仍保留为发布记录，不升级为原创产量。",
+      "community": "系列主页应承载季、集、更新时间、是否完结和不同版本。若同一集有新版，应保留关系和阅读进度，让观众知道从哪里接着看。",
+      "open": "未证明两个入口的收益安排、平台分发效果或观众迁移；互动差异混有发布时间和曝光差异。",
+      "images": [
+        "story-early-300-check",
+        "story-later-300-ready"
+      ]
+    },
+    {
+      "id": "tutorial",
+      "title": "制作教学：方法示范与材料交付是两件工作",
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "author": "foyege",
+      "read": "5分57秒教程，核对12个时间点。",
+      "fact": "约150秒列角色片号、俯视站位、白模预演、五维提示词；180秒展示编号与平面图；240秒的输入面板列7项参考，其中首项为30秒视频。结尾以起始状态、具体修正、接回原片说明局部重拍。",
+      "interpretation": "这份教程已覆盖素材组织和修正思路，不能再只凭评论概括为“没讲步骤”。但看到过程不等于拿到对应参考文件、白模工程、参数和失败版本。工程、案例包和讨论答疑解决的是不同障碍。",
+      "community": "可承载为分章节演示＋输入材料包＋每步预期结果＋失败片段和修正对照。对持续活跃的价值要看学习者是否带着下一镜、下一处错误回来，不能用教程收藏代替。",
+      "open": "未取得作者同款工程，也未复做复杂走位或连续运动；画面中的成功和失败均为作者示例。",
+      "images": [
+        "tutorial-150",
+        "tutorial-180",
+        "tutorial-240-ready",
+        "tutorial-345-final"
+      ]
+    }
+  ],
+  "productRows": [
+    [
+      "历史／知识解释",
+      "成片、出处、改编注释、勘误",
+      "内容编辑＋史料核对者＋影像制作者",
+      "遇到具体疑问可查证，订正后能再次使用；仅有热度不能证明信任增加。"
+    ],
+    [
+      "原创系列故事",
+      "季／集／版本关系、完结状态、更新说明",
+      "作者负责故事与更新；运营维护集序、版本和读者问题",
+      "回到上次看到的地方、接着看新集；持续更新是供给承诺的一部分。"
+    ],
+    [
+      "制作教学与协作",
+      "分步演示、原始输入、参数、失败与修正对照",
+      "作者提供方法与许可材料；编辑整理；能复做的人验收",
+      "从第一次做成，到下一次修改与排错；生成调用本身不代表社区回访。"
+    ]
+  ],
+  "next": [
+    {
+      "title": "把一个已知方法整理成可验收的交付包",
+      "text": "先明确选用作者原工程、上游替代还是在线自建；整理有权使用的输入、固定设置、目标结果、已知限制与失败例。实际运行额度和此前执行次数未核，本次不提交生成。"
+    },
+    {
+      "title": "补作者实际生产记录",
+      "text": "对于拟长期合作的作者，仍缺制作工时、采用与丢弃次数、素材权利、更新承诺和停更条件。公开项目案例只能帮助列问题，不能替代该作者的记录。"
+    },
+    {
+      "title": "再验证内容怎样带来持续活跃",
+      "text": "以上三类承载形式是从案例推导的产品假设。需要外部用户的首次消费、下一次具体需求和跨周回访才能比较，当前不据此定社区方向。"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "袁崇焕下狱：引文与事件",
+      "verdict": "01:30.33的下狱句与《明史》卷259对应，且片内明确标出传名。核到的是文字出处，画面造型与动作仍是独立问题。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷259"
+      ]
+    },
+    {
+      "claim": "卢象升升任右参政：任官与动机解释",
+      "verdict": "02:20.63晋任右参政的内容与本传相符，完整官衔还包括兼副使；“看到了忠勇”属于作者解释。本帧未见书名，不能计成第三处明确署源引文。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷261"
+      ]
+    },
+    {
+      "claim": "与士卒共饥：引文与时间范围",
+      "verdict": "03:10.29的同饥叙述及片内引文可在本传找到；末句省了“战”字，核心含义相符。该条证明作者确有文献依据，不代替造型核验。",
+      "sourceUrls": [
+        "https://zh.wikisource.org/wiki/明史/卷261"
+      ]
+    },
+    {
+      "claim": "冠服与发式：评论提出的造型质疑",
+      "verdict": "已确认片内存在可核史料引用；读者指出的冠服和发式问题仍待角色与形制核验。当前三帧不足以认定明清混搭，也不能由引文准确反推造型准确。",
+      "sourceUrls": [
+        "https://www.shidianguji.com/zh/book/CADAL01020684/chapter/1l4f8e9iby1op",
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/1624?dep=P",
+        "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail?dep=U&id=2660&mode=full",
+        "https://sillok.history.go.kr/mc/id/qsilok_003_0080_0010_0010_0100_0010"
+      ]
+    },
+    {
+      "claim": "《敕勒歌》：古诗与现代事件的叙事关系",
+      "verdict": "作者已在完整作品说明中区分北朝故事和六十多年前的另一段草原历史，再以故乡、接纳与民族团结建立创作联想。待核的是视频内如何提示古诗释义与现代延伸，以及具体史实来源；不能再将“关联说明缺失”列为已证问题。",
+      "sourceUrls": [
+        "https://www.douyin.com/video/7678155357679602995",
+        "https://www.shidianguji.com/mid-page/7254765170982060044",
+        "https://www.neac.gov.cn/seac/c103391/202308/1166523.shtml"
+      ]
+    }
+  ],
+  "delivery": {
+    "asOf": "2026-09-13",
+    "readScope": "依据公开作者说明、官方条款和配置文本；尚无实际运行结果，也未取得完整案例包。缺件仅限所列对象。",
+    "rows": [
+      {
+        "id": "DR-01",
+        "title": "Liblib · 9分镜一致性工作流",
+        "url": "https://www.liblib.art/modelinfo/f9476636e9c04a22a107882f7a2098df?from=pic_detail",
+        "available": "作者提供角色与场次提示格式、默认尺寸和分屏异常说明，介绍在线运行方式，并标明每次消耗66积分。",
+        "missing": "作者明确暂不开放工程下载；完整节点、模型版本和九分镜编排未取得，积分说明也不是当前账户的结算报价。",
+        "consequence": "用户可以参考提示写分镜，但无法直接复制作者的离线工程；三分屏说明不足以保证交付九段人物一致的动态视频。",
+        "next": "先选在线使用或独立搭建。前者核对输入与费用，后者取得授权工程或改用上游模板，并单独核对复杂镜头结果。"
+      },
+      {
+        "id": "DR-02",
+        "title": "Liblib · 连贯电影镜头工作流",
+        "url": "https://www.liblib.art/modelinfo/60c89401121e4d81998ed8bb26d94751?from=search",
+        "available": "作者给出下一场景、镜头方向与光照的提示方法，以及0.7—0.8的LoRA强度建议，适用重点是风景与场景递进。",
+        "missing": "精确LoRA文件、Qwen版本、初始图输入方式和节点工程尚不明确，尺寸、采样设置、费用及许可也缺少对象说明。",
+        "consequence": "用户知道应怎样描述转场，却仍难把参数填入一套确定的流程；精细人物或物件控制也超出作者强调的适用重点。",
+        "next": "先取得这个对象的工程、模型文件名和初始图绑定，再固定设置比较相邻场景；不能仅凭强度建议承诺人物一致。"
+      },
+      {
+        "id": "DR-03",
+        "title": "OpenArt · 角色一致性视频教程",
+        "url": "https://openart.ai/blog/how-to-maintain-consistency-in-ai-videos/",
+        "available": "官方说明如何从图片、文字或预设建立角色，再跨场景引用；教程按脸变、物件消失等症状提供调整建议。",
+        "missing": "案例原参考图、完整场景提示和固定模型配置未提供；角色导出格式、保存条件及具体多场景任务费用仍需核对。",
+        "consequence": "用户能开始制作自己的角色，却不能直接复做教程同一案例；套餐的近似视频数量排除Director，不能换算故事成本。",
+        "next": "准备有使用权的参考材料和逐镜提示，记录模型、时长、尺寸与费用；输出商用按Plus及以上条款另核，保存好项目资产。"
+      },
+      {
+        "id": "DR-04",
+        "title": "RunningHub · 一键多镜头多角度",
+        "url": "https://www.runninghub.cn/ai-detail/2069946576503660545",
+        "available": "搜索索引保留上传图片与按实际用量计费的介绍，并出现工作流入口；同标题同作者的工作流页可作为待核线索。",
+        "missing": "原应用正文连续读取失败，实际输入面板、关联工程、模型参数和文件许可都未取得；索引不能证明当前可运行。",
+        "consequence": "用户目前无法从这些材料判断该传什么图、会出几张或花多少；页面读取失败也不能据此判定应用运行失败。",
+        "next": "先读到原应用的参数面板并核对关联工作流，再补文件、许可和费用。其他同标题应用应另列，不能借来填补这个对象。"
+      },
+      {
+        "id": "DR-05",
+        "title": "上游 · 三场景公开JSON模板",
+        "url": "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json",
+        "available": "公开JSON可查看模型加载、尺寸、采样与保存图片的配置，模型目录也列出分镜权重；它是三场景示例的替代入口。",
+        "missing": "工程所填LoRA名与发布目录不同，T5注释与节点精度不一致；权重未取得，随机种子、环境和提交版本也未固定。",
+        "consequence": "用户可据此另搭流程，但导入前仍要对齐依赖；它不包含Liblib作者的九分镜编排，也不能保证相同输入得到相同结果。",
+        "next": "选择对应权重并调整加载节点，记录模型校验值、种子和软件版本，核对适用许可后再试三场景图片，保留输入与结果。"
+      }
+    ],
+    "configurationFindings": [
+      {
+        "title": "LoRA名称没有直接对应",
+        "text": "JSON加载movie-shots.safetensors，发布目录却列film-storyboard.safetensors。导入时可能无法直接匹配，需要核对权重并重新选择节点文件；这尚非实测报错。",
+        "sourceUrls": [
+          "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json",
+          "https://huggingface.co/ali-vilab/In-Context-LoRA/tree/main"
+        ]
+      },
+      {
+        "title": "T5注释与加载精度不同",
+        "text": "注释要求T5 fp16，实际DualCLIP节点使用fp8文件。用户若只按注释准备依赖，可能与节点不符；应按选定精度检查文件和内存条件。",
+        "sourceUrls": [
+          "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json"
+        ]
+      },
+      {
+        "title": "有配置文件仍需固定执行条件",
+        "text": "种子节点设为randomize，链接指向可变的main分支，JSON的0.4只是格式字段。要比较改动效果，还需保存种子、模型校验值及软件版本。",
+        "sourceUrls": [
+          "https://github.com/ali-vilab/In-Context-LoRA/blob/main/workflow/film-storyboard.json"
+        ]
+      }
+    ]
+  },
+  "economics": [
+    {
+      "id": "PE-01",
+      "title": "卢象升：因成本拆开的历史人物作品",
+      "evidence": "作者因成本高改为先交上半集，并把加快续更与数据表现联系。未公布金额、工时或工具。",
+      "attribution": "作者公开评论",
+      "implication": "完整一集、上半集和下集承诺分开约定；赠送额度是否足以促成续作仍未知。",
+      "urls": [
+        "https://www.douyin.com/video/7670827630043663667"
+      ]
+    },
+    {
+      "id": "PE-02",
+      "title": "《山海》第一季：从第一集到1—8集合集",
+      "evidence": "首集及约69分钟的第一季1—8集合集可见；没有开工日期、存稿、费用或制作日志。",
+      "attribution": "作者发布页面",
+      "implication": "发布日期之间的间隔不能当作制作周期；合集不能再算八份新增制作。",
+      "urls": [
+        "https://www.douyin.com/video/7663756336345173258",
+        "https://www.douyin.com/video/7677555740273380635"
+      ]
+    },
+    {
+      "id": "PE-03",
+      "title": "foyege：群像控制教程与演员片段",
+      "evidence": "步骤与材料组织已从画面核对；评论中有人自述试过但贵，作者自己的费用仍未知。",
+      "attribution": "作者示范＋观众经历",
+      "implication": "成片、教程、材料包和答疑分别约定；观看者的支出不移作作者账单。",
+      "urls": [
+        "https://www.douyin.com/video/7673074764340650597",
+        "https://www.douyin.com/video/7668957069785803426"
+      ]
+    },
+    {
+      "id": "PE-04",
+      "title": "ONE（The Silicon三部曲第三部）",
+      "evidence": "作者列为2D动画与AI混合制作，署名包含编剧、分镜、动画、合成、音乐与声音；人数和成本未披露。",
+      "attribution": "创作者工作室项目页",
+      "implication": "先确认各项资产可授权范围；多岗位和团队署名不能直接相加算人数。",
+      "urls": [
+        "https://ricardovillavicencio.com/type/animation/one/"
+      ]
+    },
+    {
+      "id": "PE-05",
+      "title": "Project Luxo：三部短片的制作时间声明",
+      "evidence": "The Rogue：9分57秒、3周；Last Night：5分28秒、7小时；Pigeons in Time：46秒摘段、4小时。官方均称1人。",
+      "attribution": "Runway同一组供应商示范",
+      "implication": "统计起止、准备工作和实际工时未知；不能从示范推定普通作者日更能力。",
+      "urls": [
+        "https://runway.com/news/company-news/project-luxo"
+      ]
+    },
+    {
+      "id": "PE-06",
+      "title": "The Animal Breakdown：动物历史与科普栏目图形",
+      "evidence": "7集用了104项图形；图形团队3人，每集全部图形约2周。流程含清单、静图确认、动画与后期。",
+      "attribution": "具名客户在供应商页面的访谈",
+      "implication": "两周只指图形环节；科普解释、事实核对和其他后期仍需要责任人。",
+      "urls": [
+        "https://runway.com/customers/inside-trusted-media-brands-latest-streaming-show-built-with-runway"
+      ]
+    },
+    {
+      "id": "PE-07",
+      "title": "Forever is Made Now：Under Armour广告",
+      "evidence": "制作方称4周：1周构思、3周制作；数千张静态候选与授权旧素材、VFX/CG结合。",
+      "attribution": "制作方在供应商页面的访谈",
+      "implication": "候选数不等于失败次数。素材准备、风格确认和审阅往返应计入供给安排。",
+      "urls": [
+        "https://runway.com/customers/how-tool-is-reimagining-the-commercial-production-process-with-runway"
+      ]
+    },
+    {
+      "id": "PE-08",
+      "title": "关联作品8WrWXbzy1Gs的12分钟AI影片成本自述",
+      "evidence": "匿名发帖者自报约12分钟片花费约1200美元；关联影片抓取受限，账单和完整时长未核。",
+      "attribution": "辅助线索：匿名作者自报",
+      "implication": "只能提示需要记录未采用结果；不据此计算每分钟价格或制定补贴。",
+      "urls": [
+        "https://www.reddit.com/r/aifilmmaking/comments/1w9pobo/i_spent_around_1200_making_my_first_12minute_ai/"
+      ]
+    }
+  ],
+  "cooperation": [
+    {
+      "id": "PC-01",
+      "title": "先约清楚交付范围",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-04",
+        "PE-05"
+      ],
+      "requirement": "注明完整短片、分集、合集、教程或幕后；每份有自己的完成标准、可公开范围和续作约定。",
+      "doNotAssume": "多一条发布入口就是一份新制作，或一位主创能授权全部项目资产。"
+    },
+    {
+      "id": "PC-02",
+      "title": "把费用和时间拆到实际环节",
+      "evidenceCases": [
+        "PE-04",
+        "PE-06",
+        "PE-07",
+        "PE-08"
+      ],
+      "requirement": "分别记录脚本/资料、样图、视频候选、剪辑声音、事实核对、沟通修改；工具自付、赠额、人工与外部素材分开。",
+      "doNotAssume": "模型单价×成片秒数等于预算，历时等于人时。"
+    },
+    {
+      "id": "PC-03",
+      "title": "在正式制作前确认最容易返工的部分",
+      "evidenceCases": [
+        "PE-03",
+        "PE-06",
+        "PE-07"
+      ],
+      "requirement": "用同一合作件的构图、角色/风格样张或关键难镜头确认效果；约定变更范围后再继续制作。",
+      "doNotAssume": "样片做成一次即可稳定复制，或能通过无限免费重试解决。"
+    },
+    {
+      "id": "PC-04",
+      "title": "续更与答疑另约",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-03"
+      ],
+      "requirement": "写明下一份是否已排期、对数据的依赖、停更告知、教程适用条件和答疑范围。",
+      "doNotAssume": "低价Token自动换来持续供稿，或者作者会无偿无限答疑。"
+    },
+    {
+      "id": "PC-05",
+      "title": "验收同时看内容本身",
+      "evidenceCases": [
+        "PE-01",
+        "PE-02",
+        "PE-06"
+      ],
+      "requirement": "叙事验收有可看懂的单元和收尾；科普验收事实与图示一致；教程验收适用条件和可复现材料。",
+      "doNotAssume": "所有消费者都需要学会制作或迁移到工具里。"
+    }
+  ]
+}

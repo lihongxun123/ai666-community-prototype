@@ -1,5 +1,6 @@
 'use client';
 import data from '@/lib/content-demand-comparison.json';
+import {DouyinCases} from './content-demand-cases';
 import './content-demand-comparison.css';
 const d=data,base='/research-kit/douyin-comparison-2026-09-13/';
 const fmt=(n:number|null)=>n==null?'—':n.toLocaleString('zh-CN',{maximumFractionDigits:1});
@@ -10,8 +11,9 @@ function WorkRefs({ids}:{ids:string[]}){return <div className="dc-refs">{ids.map
 function Evidence({refs}:{refs:string[]}){return <details className="dc-evidence"><summary>查看对应作品与评论（{refs.length}处）</summary>{refs.map(ref=>{const e=d.topicEvidence.find(x=>x.ref===ref);return e?<div key={ref}><Link url={e.sourceUrl}>{ref}</Link><span className="dc-meta"> · {e.publishedAt} · {e.window}</span><p>{e.text}</p></div>:null;})}</details>}
 export function DouyinComparison(){return <section className="dc-research" id="dc-research">
  <div className="dc-heading"><h2>{d.title}</h2><p>{d.verdict}</p><div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读</a><a href={base+'report.md'} download>下载分析</a><a href={base+'works.csv'} download>连续作品数据</a><a href={base+'data.json'} download>全部分析依据</a></div></div>
- <nav className="dc-nav" aria-label="内容消费深度分析">{[['dc-conclusions','主要发现'],['dc-themes','六类消费需求'],['dc-authors','作者与连续作品'],['dc-new-comments','生产约束与反馈'],['dc-supply','需求对应现有供给'],['dc-next','待补证据']].map(([id,label])=><Jump key={id} id={id}>{label}</Jump>)}</nav>
+ <nav className="dc-nav" aria-label="内容消费深度分析">{[['dc-conclusions','主要发现'],['cr-research','成片与交付'],['dc-themes','六类消费需求'],['dc-authors','作者与连续作品'],['dc-new-comments','生产约束与反馈'],['dc-supply','需求对应现有供给'],['dc-next','待补证据']].map(([id,label])=><Jump key={id} id={id}>{label}</Jump>)}</nav>
  <section id="dc-conclusions" className="dc-findings">{d.findings.map((f,i)=><article key={f.title}><span className="dc-index">{String(i+1).padStart(2,'0')}</span><h3>{f.title}</h3><p>{f.text}</p><WorkRefs ids={f.refs}/>{i===3&&<Jump id="dc-supply">查看逐项供给对照</Jump>}</article>)}</section>
+ <DouyinCases />
  <section id="dc-themes"><h2>六类消费需求，各自需要什么内容</h2><Table heads={['主题','用户要得到什么','明确的需求线索','仍未闭合的部分','持续供给工作']} rows={d.topicComparison.map(x=>{const t=d.topics.find(t=>t.id===x.topicId)!;return [<Jump key={x.topicId} id={'dc-topic-'+x.topicId}>{t.name.split('：')[0]}</Jump>,x.value,x.strongEvidence,x.unresolved,x.supplyBurden];})}/>
  {d.topics.map(t=><details className="dc-dossier" id={'dc-topic-'+t.id} key={t.id}><summary><b>{String(t.number).padStart(2,'0')}</b><strong>{t.name}</strong><span>{t.counts.primaryWorks}件作品</span></summary><div className="dc-dossier-body"><p className="dc-lead">{t.conclusion}</p><p className="dc-meta">主归属{t.counts.primaryWorks}件：窗口内{t.counts.inWindowWorks}、更早{t.counts.beforeWindowWorks}、更晚{t.counts.afterWindowWorks}；{t.counts.readableRoot}条顶层文字（含作者{t.counts.authorRoot}条），{t.counts.originalReadableReplies}条已读回复。{t.counts.additionalReadableFollowupReplies>0?`另有${t.counts.additionalReadableFollowupReplies}条专项补读。`:''}</p>
  {t.sections.map(s=><section key={s.key}><h3>{s.title}</h3>{s.items.map((item,i)=><div className="dc-point" key={i}><p>{item.text}</p><Evidence refs={item.refs}/></div>)}</section>)}
