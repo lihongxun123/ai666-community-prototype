@@ -5,6 +5,7 @@ import { LinuxDoImages } from '@/components/linuxdo-login';
 import { MarketContentForms } from '@/components/market-content-forms';
 import type { Adoption, ContentStudy, OperatingStudy, PlatformIdentity, StudyDocument, StudySource } from '@/lib/study-types';
 import { ContentDepthProfile, ContentScreenshotGallery, ContentTaxonomy } from '@/components/content-evidence';
+import {CategoryOverview,CategoryOperations} from '@/components/category-paths';
 
 type Kind = 'operations' | 'content';
 const labels = { operations: '运营思路研究', content: '内容形态研究' };
@@ -20,13 +21,14 @@ function Definition({ rows }: { rows: [string, string][] }) { return <dl classNa
 function Takeaway({ data }: { data: Adoption }) { return <><h3>多元拾光的采用条件</h3><Definition rows={[["可借鉴的工作", data.suitable], ["需要先具备", data.conditions], ["暂不适合照搬", data.avoid]]}/></>; }
 function Sources({ sources }: { sources: StudySource[] }) { return <section className="study-sources"><h2>来源与适用范围</h2><ol>{sources.map(s => <li key={s.id}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a><p>{s.publisher} · {sourceKinds[s.type]} · {s.date} · 查阅：{s.accessedAt} · {accessKinds[s.access]}</p><p>{s.supports}</p><p className="muted">{s.limitation}</p></li>)}</ol></section>; }
 
-function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind, data, visibleIds, navigate, filter, children }: { kind: Kind; data: StudyDocument<P>; visibleIds: string[]; navigate: (id: string) => void; filter?: ReactNode; children: (p: P) => ReactNode }) {
+function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind, data, visibleIds, navigate, filter, children }: { kind: Kind; data: StudyDocument<P>; visibleIds: string[]; navigate: (id: string,anchor?:string) => void; filter?: ReactNode; children: (p: P) => ReactNode }) {
  const items = data.profiles.filter(p => visibleIds.includes(p.id));
  const other: Kind = kind === 'operations' ? 'content' : 'operations';
  const reveal=(id:string)=>{const target=document.getElementById(id);for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({behavior:'smooth',block:'start'});};
  const jump = (id: string) => reveal(`${kind}-${id}`);
  return <article className="study-document">
   {kind === 'operations' && <div className="page-heading"><h1>{data.title}</h1></div>}
+  {kind === 'operations' && <CategoryOperations navigate={navigate}/>}
 
   <div className="study-actions">{kind === 'content' && null}<button className="text-button" onClick={() => navigate(other)}>阅读另一份：{labels[other]} ↗</button></div>
 
@@ -43,7 +45,7 @@ function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind
  </article>;
 }
 
-export function OperationsDocument({ data, visibleIds, navigate, filter }: { data: StudyDocument<OperatingStudy>; visibleIds: string[]; navigate: (id: string) => void; filter?: ReactNode }) {
+export function OperationsDocument({ data, visibleIds, navigate, filter }: { data: StudyDocument<OperatingStudy>; visibleIds: string[]; navigate: (id: string,anchor?:string) => void; filter?: ReactNode }) {
  return <DocumentFrame kind="operations" data={data} visibleIds={visibleIds} navigate={navigate} filter={filter}>{p => <>
   <h3>参与者与动机</h3><p>{p.audience}</p>
   <h3>平台怎么组织，谁负责什么</h3>{p.system.map(m => <section className="study-mechanism" key={m.title}><span className="muted">{stages[m.stage]}</span><h4>{m.title}</h4><p>{m.confirmed}<Refs ids={m.sourceIds} sources={data.sources}/></p><Definition rows={[["谁来做", m.division], ["何时开始，怎样继续", m.rhythm], ["这样做有什么用（分析）", m.reason], ["何时不起作用，哪些效果还没证实", m.breakpoint]]}/></section>)}
@@ -54,8 +56,8 @@ export function OperationsDocument({ data, visibleIds, navigate, filter }: { dat
  </>}</DocumentFrame>;
 }
 
-export function ContentDocument({ data, visibleIds, navigate, filter }: { data: StudyDocument<ContentStudy>; visibleIds: string[]; navigate: (id: string) => void; filter?: ReactNode }) {
- return <><MarketContentForms/><ContentScreenshotGallery visibleIds={data.profiles.map(p=>p.id)}/><details className="research-appendix" id="content-platform-appendix"><summary>18个平台的内容档案与字段分类</summary><DocumentFrame kind="content" data={data} visibleIds={visibleIds} navigate={navigate} filter={filter}>{p => <>
+export function ContentDocument({ data, visibleIds, navigate, filter }: { data: StudyDocument<ContentStudy>; visibleIds: string[]; navigate: (id: string,anchor?:string) => void; filter?: ReactNode }) {
+ return <><CategoryOverview navigate={navigate}/><details className="research-appendix"><summary>内容形式与字段对照</summary><MarketContentForms embedded/></details><details className="research-appendix"><summary>其他已核验的卡片与详情截图</summary><ContentScreenshotGallery visibleIds={data.profiles.map(p=>p.id)}/></details><details className="research-appendix" id="content-platform-appendix"><summary>平台内容字段、样本与来源</summary><DocumentFrame kind="content" data={data} visibleIds={visibleIds} navigate={navigate} filter={filter}>{p => <>
   <ContentDepthProfile id={p.id}/>
   {p.id === 'linuxdo' && <><h3>登录后的卡片、详情与修订截图</h3><p>2026-09-09 核对的界面截图，本节展示4张。完整7张截图、商业化信息及样本范围见 LINUX DO 平台档案。</p><LinuxDoImages contentOnly/></>}
   <h3>主要内容形态</h3>{p.forms.map(f => <section className="study-form" key={f.name}><h4>{f.name}</h4><p>{f.unit}<Refs ids={f.sourceIds} sources={data.sources}/></p><h5>实际字段与材料</h5><ul>{f.fields.map(x => <li key={x}>{x}</li>)}</ul><Definition rows={[["具体示例或入口", f.example], ["能了解到哪一步", f.depth], ["看完之后的动作", f.nextAction], ["材料与使用限制", f.limits]]}/></section>)}

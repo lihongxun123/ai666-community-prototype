@@ -8,6 +8,7 @@ import { StrategyConditionsSummary, StrategyConditionReview } from '@/components
 import './strategy-comparison.css';
 import {ResearchApplications} from './research-applications';
 import {RetentionPlan, RetentionEvidence} from './retention-research';
+import {CategoryAdoption} from './category-paths';
 
 const tabs=[['options','四种组织方式'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
@@ -15,12 +16,13 @@ function List({items}:{items:string[]}){return <ul>{items.map(i=><li key={i}>{i}
 function Definition({rows}:{rows:[string,ReactNode][]}){return <dl className="v23-definition">{rows.map(([name,value])=><div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>;}
 function RefLinks({ids}:{ids:string[]}){return <p className="study-refs">依据：{ids.map(id=>{const s=data.sources.find(s=>s.id===id);return s?<a key={id} href={`#v23-source-${id}`} title={s.title} onClick={e=>{e.preventDefault();const details=document.getElementById('v23-sources') as HTMLDetailsElement|null;if(details)details.open=true;document.getElementById(`v23-source-${id}`)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{s.title}〔{id}〕 </a>:null;})}</p>;}
 
-export function StrategyComparison({navigate}:{navigate:(id:string)=>void}){
+export function StrategyComparison({navigate}:{navigate:(id:string,anchor?:string)=>void}){
  const [tab,setTab]=useState<Tab>('options'),[active,setActive]=useState('A');
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
   <header className="page-heading v23-intro"><h1>借鉴与方案比较</h1><p className="muted">{data.date} · 候选方向待验证</p></header>
+  <CategoryAdoption navigate={navigate}/>
   <RetentionPlan/>
   <details className="study-sources"><summary>持续行为研究：已找到哪些证据</summary><RetentionEvidence/></details>
   <ResearchApplications navigate={navigate}/>

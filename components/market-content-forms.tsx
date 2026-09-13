@@ -6,7 +6,7 @@ import previous from '@/lib/content-screenshots.json';
 
 function Refs({ids}:{ids:string[]}) {return <span className="study-refs">{ids.map(id=>{const i=data.sources.findIndex(x=>x.id===id);const s=data.sources[i];return <a href={s.url} key={id} target="_blank" rel="noreferrer" title={`${s.title}；${s.access}`}>〔{i+1}〕</a>;})}</span>;}
 
-export function MarketContentForms() {
+export function MarketContentForms({embedded=false}:{embedded?:boolean}={}) {
  const [active,setActive]=useState('gallery');
  const f=data.forms.find(x=>x.id===active)!;
  const jump=(id:string)=>document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
@@ -15,7 +15,7 @@ export function MarketContentForms() {
  const priorId=data.previousImages[active as keyof typeof data.previousImages];
  const prior=previous.pairs.find(x=>x.id===priorId);
  return <article className="framework-study market-forms-study">
-  <div className="page-heading"><h1>{data.title}</h1></div>
+  <div className="page-heading">{embedded?<h2>{data.title}</h2>:<h1>{data.title}</h1>}</div>
   <ResearchOutline items={[
    ['market-form-matrix','15种形式对照'],['market-form-detail','内容、用法与成本'],['content-visual-evidence','卡片与详情截图'],['content-platform-directory','18个平台档案'],['market-form-findings','跨平台发现']
   ]}/>

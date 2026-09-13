@@ -11,6 +11,7 @@ import {PlatformReview} from '@/components/platform-review';
 import {RepresentativeEvidence} from '@/components/representative-evidence';
 import { MakeNowStudy } from '@/components/makenow-study';
 import { StrategyComparison } from '@/components/strategy-comparison';
+import {CategoryProfile} from '@/components/category-paths';
 import { ChinaAIUsers } from '@/components/china-ai-users';
 import { AudienceResearch } from '@/components/audience-research';
 import { CreatorSupply,CreatorSupplyLink } from '@/components/creator-supply';
@@ -112,8 +113,9 @@ export default function Research(){
  <div className="page-heading profile-heading"><h1>{p.name}</h1><p className="focus-line">{p.focus}</p>{p.deep&&<div className="official-links"><a href={p.deep.website} target="_blank" rel="noreferrer">访问官网 <ArrowUpRight size={15}/></a>{p.id==='tusi'&&<a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art 官网 <ArrowUpRight size={15}/></a>}</div>}<p className="lead">{p.thesis}</p></div>
  <div className="study-actions"><button className="text-button" onClick={()=>showAudience(p.id)}>{p.name}用户画像与产品价值 →</button><button className="text-button" onClick={()=>navigate('content-demand',`de-platform-${p.id}`)}>内容样本与供给 →</button></div>
  <div className="profile-summary"><div><span>服务谁</span><p>{p.job}</p></div><div><span>核心内容</span><p>{p.object}</p></div><div><span>首次使用路径</span><p>{p.first}</p></div></div>
- <PlatformReview platformId={p.id}/><div className="access-note"><strong>访问与操作核验</strong><p>{p.access}</p></div>
- <nav className="article-toc" aria-label="快速跳转">{[...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
+ <nav className="article-toc" aria-label="快速跳转">{[['category-path-profile','分类、详情与按钮'],...(p.id==='linuxdo'?[['linuxdo-login',"登录补核"]]:[]),['independent-studies','运营与内容专题'],['evidence-update','经营与使用证据'],...(['runninghub','liblib','tusi'].includes(p.id)?[['content-observations',"内容与任务"]]:[]),['public-data','公开数据与访问行为'],['commercial','商业化、规模与用户'],['page-evidence','页面证据'],...(p.deep?.task?[['task-log','实际操作']]:[]),['experience','界面与操作体验'],['source-list','来源记录']].map(([id,label])=><a key={id} href={`#${p.id}`} onClick={e=>{e.preventDefault();revealSection(id);}}>{label}</a>)}</nav>
+ <CategoryProfile id={p.id}/>
+ <details className="profile-section-group"><summary>用户经历与服务条件</summary><PlatformReview platformId={p.id}/><div className="access-note"><strong>其他访问与操作记录</strong><p>{p.access}</p></div></details>
  <details className="profile-section-group" open><summary>内容与运营</summary>
  {p.id==='linuxdo'&&<LinuxDoLoginUpdate/>}
  <ToolSupportProfile id={p.id} navigate={navigate}/>
