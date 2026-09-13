@@ -16,13 +16,5 @@ export function CreatorSupply(){return <article className="creator-supply">
  {data.sections.map(s=><section id={`cs-${s.id}`} tabIndex={-1} key={s.id}><h2>{s.title}</h2>{s.paragraphs?.map((p,i)=><p key={i}>{p}</p>)}<Refs ids={s.sourceIds}/>{s.table&&<TableView data={s.table}/>}<div className="cs-articles">{s.articles?.map((a,i)=><article key={i}><h3>{a.title}</h3>{a.paragraphs.map((p,j)=><p key={j}>{p}</p>)}{a.table&&<TableView data={a.table}/>}<Refs ids={a.sourceIds}/></article>)}</div></section>)}
  <details id="cs-sources" className="cs-sources"><summary>来源与核对范围</summary>{data.sources.map(s=><article id={`cs-source-${s.id}`} key={s.id} tabIndex={-1}><h3><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></h3><p className="cs-meta">{s.publisher} · 资料日期：{s.date} · 核对：{s.accessedAt}</p><p>{s.fact}</p><p>{s.limit}</p></article>)}</details>
  </article>;}
-const summaries={
- demand:'题材热度决定值得观察什么；是否能持续供给，还取决于作者能力、合作回报、编辑工时和后续消费。40个题材分别缩到可完成的合作内容，再比较。',
- operations:'作者发现、合作提案、首份交付、第二次合作与日常维护需要单独管理。平台编辑、约稿、额度合作、授权整理和自然贡献分别记录，工具使用不是作者入选条件。',
- content:'作品展示、交流、制作方法与可运行文件需要不同的交付和维护责任。不要因为页面能容纳源文件，就要求每位作者都提供源文件。',
- discussion:'作者可以是合作编辑对象、制作伙伴、主题主持或普通成员。社区提供的关系和服务应单独说明，自营工具是其中一种支持。',
- progress:'增加供给侧记录：实际联系、合格首份、第二份完成、作者投入与维护工时。它们解释内容能否持续，不替代外部目标用户的跨周有效活跃。',
- strategy:'各方向同时比较作者来源、合作回报与维护责任；在完成这部分核对前，不预设视觉内容最容易启动。',
- report:'内容的价值包括消费、资料积累和交流。稳定供给需要编辑、作者与维护者的明确分工，赠送额度只能解决其中一部分制作成本。'
-};
-export function CreatorSupplyLink({context,navigate}:{context:keyof typeof summaries;navigate?:(id:string)=>void}){return <aside className="cs-connection"><p>{summaries[context]}</p><a href="#supply" onClick={e=>{if(navigate){e.preventDefault();navigate('supply');}}}>内容供给与创作者合作 →</a></aside>;}
+const relatedLabels={demand:'题材怎样转成持续供给',operations:'作者发现、合作与交付流程',content:'不同内容的交付与维护责任',discussion:'社区与作者的合作关系',progress:'供给记录与外部消费指标',strategy:'作者来源、回报与维护条件',report:'内容供给方式与合作条件'};
+export function CreatorSupplyLink({context,navigate}:{context:keyof typeof relatedLabels;navigate?:(id:string)=>void}){return <div className="research-related"><strong>相关研究</strong><a href="#supply" onClick={e=>{if(navigate){e.preventDefault();navigate('supply');}}}>{relatedLabels[context]} →</a></div>;}

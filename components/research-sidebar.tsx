@@ -9,7 +9,7 @@ export function ResearchSidebar({view,navigate,mobile,profiles}:{view:string;nav
  const currentGroup=navigationGroups.find(g=>g.views.some(id=>id===view))?.id;
  const [expanded,setExpanded]=useState<string[]>([]);
  const [platformsOpen,setPlatformsOpen]=useState(false);
- useEffect(()=>{if(currentGroup&&currentGroup!=='reading')setExpanded([currentGroup]);if(view==='matrix'||profiles.some(p=>p.id===view))setPlatformsOpen(true);},[currentGroup,view,profiles]);
+ useEffect(()=>{if(currentGroup&&currentGroup!=='reading')setExpanded(items=>items.includes(currentGroup)?items:[...items,currentGroup]);if(view==='matrix'||profiles.some(p=>p.id===view))setPlatformsOpen(true);},[currentGroup,view,profiles]);
  const toggle=(id:string)=>setExpanded(items=>items.includes(id)?items.filter(x=>x!==id):[...items,id]);
  const entry=(id:string)=><button key={id} onClick={()=>navigate(id)} aria-current={view===id?'page':undefined} className={view===id?'active':''}><span>{viewTitle(id)}</span>{view===id&&<span className="active-dot"/>}</button>;
  return <aside className={`sidebar research-sidebar ${mobile?'is-open':''}`} aria-label="研究目录">

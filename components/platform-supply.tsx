@@ -3,10 +3,10 @@
 import data from '@/lib/platform-supply.json';
 function jump(id:string){const target=document.getElementById(`v22-${id}`);if(target instanceof HTMLDetailsElement)target.open=true;for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({behavior:'smooth',block:'start'});}
 function Refs({ids}:{ids:string[]}){return <div className="study-refs">{ids.map(id=><a key={id} href={`#v22-${id}`} onClick={e=>{e.preventDefault();jump(id);}}>〔{id}〕</a>)}</div>;}
-export function PlatformSupply({navigate}:{navigate:(id:string)=>void}){
+export function PlatformSupply({navigate,embedded=false}:{navigate:(id:string)=>void;embedded?:boolean}){
  const c=data.content,o=data.operating,m=data.makenow;
  return <article className="framework-study">
-  <div className="page-heading"><h1>{data.title}</h1></div>
+  <div className="page-heading">{embedded?<h2>{data.title}</h2>:<h1>{data.title}</h1>}</div>
   <div className="study-actions"><a href="/research-kit/platform-supply.md" download>下载完整研究与编辑草案</a></div>
   <nav className="study-actions" aria-label="目录">{[['premise','供给前提'],['content','内容与页面'],['samples','六份编辑样例'],['data','已有经营数值'],['measurement','来源与口径'],['makenow','MakeNow检查'],['work','持续工作'],['sources','来源']].map(([id,title])=><button key={id} className="text-button" onClick={()=>jump(id)}>{title}</button>)}</nav>
   <section id="v22-premise" className="study-platform"><h2>谁来供给已明确，需求仍要另看</h2><p>{data.assumption.accountMeaning}</p><div className="table-wrap"><table><thead><tr><th>此前起点</th><th>现在继续什么</th><th>为什么改变</th></tr></thead><tbody>{data.changedDecisions.map(r=><tr key={r.before}><td>{r.before}</td><td>{r.now}</td><td>{r.why}</td></tr>)}</tbody></table></div><p>{data.assumption.trust}</p></section>

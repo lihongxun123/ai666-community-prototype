@@ -1,18 +1,19 @@
 'use client';
-import {ResearchCompletion} from '@/components/research-completion';
 import {ArrowRight} from 'lucide-react';
 import {navigationGroups,topicDescriptions,viewTitle} from '@/lib/research-navigation';
+import {groups} from '@/lib/research-types';
+import {profiles} from '@/lib/profiles';
 import './research-structure.css';
-
-const chapters=[["scope","目标人群与平台参照"],["needs","持续消费与参与价值"],["content","内容发现、保存与回访"],["supply","内容供给与持续运营"],["business","工具投入与平台经营机制"],["implications","候选方向与验证条件"]];
+const chapters=[['scope','有哪些平台，分别服务谁'],['needs','用户为什么消费和参与'],['content','内容如何展示与组织'],['supply','谁供给，怎样持续运营'],['business','工具、收费与投入怎样配合'],['implications','哪些方向值得验证']];
 export function ResearchDirectory({navigate}:{navigate:(id:string,anchor?:string)=>void}){
+ const link=(id:string,title:string)=><a href={'#'+id} onClick={e=>{e.preventDefault();navigate(id);}}>{title}<ArrowRight size={14}/></a>;
  return <article className="research-directory">
-  <header className="page-heading"><h1>研究目录</h1></header>
-  <section className="directory-report"><div className="section-heading"><h2>主报告</h2><a href="#report" onClick={e=>{e.preventDefault();navigate('report');}}>阅读全文 <ArrowRight size={15}/></a></div>
-   <ol>{chapters.map(([id,title],i)=><li key={id}><a href="#report" onClick={e=>{e.preventDefault();navigate('report',`report-${id}`);}}><span>{String(i+1).padStart(2,'0')}</span>{title}<ArrowRight size={14}/></a></li>)}</ol>
-   <div className="brief-links"><a className="directory-download" href="/research-kit/community-research-report.md" download>下载主报告正文</a><a className="directory-download" href="/research-kit/ai-community-report-2026-09-11-northstar.zip" download>下载完整汇报资料包</a></div>
+  <header className="page-heading"><h1>研究总览</h1></header>
+  <section className="directory-report"><div className="section-heading"><h2>竞品调研报告</h2>{link('report','阅读全文')}</div>
+   <ol>{chapters.map(([id,title],i)=><li key={id}><a href="#report" onClick={e=>{e.preventDefault();navigate('report','report-'+id);}}><span>{String(i+1).padStart(2,'0')}</span>{title}<ArrowRight size={14}/></a></li>)}</ol>
+   <div className="brief-links"><a className="directory-download" href="/research-kit/community-research-report.md" download>下载报告正文</a><a className="directory-download" href="/research-kit/ai-community-report-2026-09-11-northstar.zip" download>9月11日汇报资料包</a></div>
   </section>
-  <section className="directory-current"><ResearchCompletion compact/><a href="#progress" onClick={e=>{e.preventDefault();navigate('progress');}}>查看执行计划 →</a></section><section className="directory-platforms"><h2>竞品档案</h2><p>按平台查看产品、用户、运营、商业化、截图和实操记录。</p><button onClick={()=>navigate('matrix')}>打开平台对照与档案 <ArrowRight size={15}/></button></section>
-  {navigationGroups.filter(g=>g.id!=='reading').map(g=><section key={g.id} className="directory-section"><h2>{g.title}</h2><ul>{g.views.map(id=><li key={id}><a href={`#${id}`} onClick={e=>{e.preventDefault();navigate(id);}}>{viewTitle(id)}<ArrowRight size={14}/></a><p>{topicDescriptions[id]}</p></li>)}</ul></section>)}
+  <section className="directory-platforms"><div className="section-heading"><h2>竞品档案</h2>{link('matrix','平台对照')}</div><div className="directory-categories">{groups.map(group=><section key={group}><h3>{group}</h3><ul>{profiles.filter(p=>p.group===group).map(p=><li key={p.id}>{link(p.id,p.name)}</li>)}</ul></section>)}</div></section>
+  {navigationGroups.filter(g=>g.id!=='reading').map(g=><section key={g.id} className="directory-section"><h2>{g.title}</h2><ul>{g.views.map(id=><li key={id}>{link(id,viewTitle(id))}<p>{topicDescriptions[id]}</p></li>)}</ul></section>)}
  </article>;
 }

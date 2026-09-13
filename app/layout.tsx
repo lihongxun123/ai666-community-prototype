@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '多元拾光 · 18 个 AI 社区深度调研',
-  description: '独立阅读 18 个 AI 社区的运营思路研究与内容形态研究，并对照商业化、公开数据与实际操作证据，研究多元拾光与 MakeNow 的可行方向。',
+  title: '多元拾光研究室 · AI社区研究',
+  description: 'AI社区竞品档案、用户与市场、内容与运营研究，以及多元拾光的方案比较和验证计划。',
 };
 
 export default function RootLayout({

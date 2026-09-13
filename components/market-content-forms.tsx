@@ -1,4 +1,5 @@
 'use client';
+import {ResearchOutline,ResearchAppendix} from './research-outline';
 import { useState } from 'react';
 import data from '@/lib/market-content-forms.json';
 import previous from '@/lib/content-screenshots.json';
@@ -15,7 +16,10 @@ export function MarketContentForms() {
  const prior=previous.pairs.find(x=>x.id===priorId);
  return <article className="framework-study market-forms-study">
   <div className="page-heading"><h1>{data.title}</h1></div>
-  <nav className="study-actions" aria-label="市场内容形式目录"><button className="text-button" onClick={()=>jump('market-form-matrix')}>15种形式总览</button><button className="text-button" onClick={()=>jump('market-form-detail')}>逐项阅读</button><button className="text-button" onClick={()=>jump('market-form-findings')}>跨样本发现</button><a href="/research-kit/market-content-forms.md" download>下载文档</a><a href="/research-kit/market-content-forms-with-images.zip" download>下载文档与截图</a></nav>
+  <ResearchOutline items={[
+   ['market-form-matrix','15种形式对照'],['market-form-detail','交付与取舍'],['content-visual-evidence','卡片与详情截图'],['content-platform-directory','18个平台档案'],['market-form-findings','跨平台发现']
+  ]}/>
+  <div className="study-actions"><a href="/research-kit/market-content-forms.md" download>内容形式分析 · Markdown</a><a href="/research-kit/market-content-forms-with-images.zip" download>文档与截图 · ZIP</a></div>
   <p className="muted">资料截至 {data.date}</p>
   <section className="study-platform" id="market-form-matrix"><h2>形式总览</h2><div className="table-wrap"><table><thead><tr><th>承载形式</th><th>实际怎样组织</th><th>为什么采用（分析）</th><th>竞争成立条件（分析）</th></tr></thead><tbody>{data.forms.map(x=><tr key={x.id}><th><button className="text-button" onClick={()=>choose(x.id)}>{x.shortName} →</button></th><td>{x.carrier}</td><td>{x.reason}</td><td>{x.competitiveCondition}</td></tr>)}</tbody></table></div></section>
   <section className="study-platform" id="market-form-detail"><h2>真实样本、交付与代价</h2><div className="compare-options" aria-label="选择内容承载形式">{data.forms.map(x=><button key={x.id} className={active===x.id?'chosen':''} aria-pressed={active===x.id} onClick={()=>setActive(x.id)}>{x.shortName}</button>)}</div>

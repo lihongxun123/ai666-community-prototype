@@ -1,4 +1,5 @@
 'use client';
+import {ResearchOutline,ResearchAppendix} from './research-outline';
 import dataset from '@/lib/content-demand-ecosystem.json';
 import {DouyinDepth} from './content-demand-depth';
 import {DouyinPanel} from './content-demand-panel';
@@ -19,19 +20,23 @@ function Sources({urls}:{urls:string[]}){return <div className="de-sources">{[..
 
 export function DouyinEcosystem(){
  return <div className="de-research">
-  <header className="page-heading"><h1>{e.title}</h1><p>{e.verdict}</p>
-   <div className="cd-downloads"><a href={base+'report.html'} target="_blank" rel="noreferrer">独立阅读／打印</a><a href={base+'report.md'} download>下载分析正文</a><a href={base+'data.json'} download>题材与竞品底表</a></div>
+  <header className="page-heading"><h1>内容供需与主题</h1>
+
   </header>
+  <ResearchOutline items={[
+   ['theme-comparison','四类主题对照'],['cd-platforms','18个平台供给'],['de-map','细分题材地图'],['de-index','关键词指数'],['de-evidence','作品与评论记录'],['de-downloads','报告与数据下载']
+  ]}/>
   <ThemeComparison />
+  <ResearchAppendix id="de-evidence" title="作品、评论与采样记录">
   <details className="cd-profile"><summary><strong>同作者作品对照与画面研究</strong><span>既有逐集、互动与材料核查</span></summary><div className="cd-profile-body"><DouyinComparison /></div></details>
   <details className="cd-profile"><summary><strong>作品互动与逐条评论底表</strong><span>63件作品与已读讨论</span></summary><div className="cd-profile-body"><DouyinPanel /></div></details>
   <details className="cd-profile"><summary><strong>参考方法、作者样本与指数复算</strong></summary><div className="cd-profile-body"><DouyinDepth /></div></details>
-  <h2>题材、关键词与竞品供给底表</h2>
+  <ResearchAppendix id="de-baseline-data" title="题材、关键词与竞品供给底表">
   <div className="de-counts">{[[d.counts.cendCards,'抖音内容卡片'],[d.counts.guideRows,'垂类热词记录'],[d.counts.competitorObjects,'竞品内容对象'],[d.counts.lexiconTerms,'去重来源词条']].map(([n,t])=><div key={t}><strong>{n}</strong><span>{t}</span></div>)}</div>
   <p className="de-meta">核对：2026-09-12。卡片、详情、词条分别计数；13 个抖音详情中有 {d.counts.cendDetailOverlap} 个来自上述卡片。竞品对象覆盖 {d.counts.competitorPlatforms} 个平台。</p>
   <nav className="cd-toc" aria-label="抖音与内容供给目录">{[['findings','主要判断'],['map','细分内容地图'],['cases','观众与创作者反馈'],['index','关键词实值'],['guide','垂类热词'],['competitors','竞品供给'],['cend','抖音样本'],['words','用词库'],['method','机会判断']].map(([id,label])=><Jump key={id} id={'de-'+id}>{label}</Jump>)}</nav>
 
-  <section id="de-findings"><h2>从具体消费任务重新看 AIGC</h2><div className="de-findings">{e.findings.map((f,i)=><article key={f.title}><span className="de-number">{String(i+1).padStart(2,'0')}</span><div><h3>{f.title}</h3><p>{f.text}</p><Sources urls={f.urls}/></div></article>)}</div></section>
+  <section id="de-findings"><h2>观看、学习与制作的不同需要</h2><div className="de-findings">{e.findings.map((f,i)=><article key={f.title}><span className="de-number">{String(i+1).padStart(2,'0')}</span><div><h3>{f.title}</h3><p>{f.text}</p><Sources urls={f.urls}/></div></article>)}</div></section>
 
   <section id="de-map"><h2>{dir.length} 个细分内容方向</h2><p>以下按消费目的区分，不是拟定的社区频道。每项同时说明看什么、怎样使用、谁提供，以及需要补哪条证据。</p>
    <div className="de-sectors">{[...new Set(dir.map(x=>x.sector))].map(sector=><div key={sector}><h3>{sector}</h3><div className="de-topic-links">{dir.filter(x=>x.sector===sector).map(x=><Jump key={x.id} id={'de-topic-'+x.id}>{x.topic}</Jump>)}</div></div>)}</div>
@@ -78,8 +83,19 @@ export function DouyinEcosystem(){
   </section>
 
   <section id="de-method"><h2>如何用抖音体系判断机会</h2><Table heads={['观察入口','回答的问题','使用方法','本次证据']} rows={e.ecosystem.map(x=>[x.surface,x.question,x.use,x.evidence])}/><h3>“供给少、消费多”需要同时满足哪些条件</h3><Table heads={['条件','要看到的证据','容易误判之处']} rows={e.gapTests.map(x=>[x.test,x.evidence,x.trap])}/>
-   <h3>下一步补证据的顺序</h3><ol>{e.next.map(x=><li key={x.title}><strong>{x.title}</strong><p>{x.text}</p></li>)}</ol>
-   <details className="cd-profile"><summary><strong>采样与计数说明</strong></summary><div className="cd-profile-body"><ul><li>180 为本表对象数量，是此前 18 条样本表的 10 倍；其中 1 个已知对象复核，不能表述为全部新增。</li><li>不同对象可共用一个报道来源。可灵的 8 个具名作品来自同一报道；NightCafe 的 7 个列表对象来自同一作者案例，均未增加独立作者或消费者计数。</li><li>13 个抖音详情与列表部分重合；内容、词条、评论片段不能相加为人数。没有逐条看完成片、审核知识真实性或运行工作流。</li><li>Civitai、Midjourney 无本次可读具体对象；WaytoAGI 和魔搭本批为索引片段，可灵为外部报道。官方教程和策选案例不能代表普通用户分布。</li><li>当前没有同窗口全站内容分母、独立消费者数、完播率或跨周回访率。样本规模扩大后，仍以来源和任务验证判断，而不是按样本数量给行业排名。</li></ul></div></details>
+   <h3>13个详情样本提出的补证问题</h3><ol>{e.next.map(x=><li key={x.title}><strong>{x.title}</strong><p>{x.text}</p></li>)}</ol>
+   <details className="cd-profile"><summary><strong>采样与计数说明</strong></summary><div className="cd-profile-body"><ul><li>本表含180个对象，其中1个是已知对象的复核，不能全部计为新增。</li><li>不同对象可共用一个报道来源。可灵的 8 个具名作品来自同一报道；NightCafe 的 7 个列表对象来自同一作者案例，均未增加独立作者或消费者计数。</li><li>13 个抖音详情与列表部分重合；内容、词条、评论片段不能相加为人数。没有逐条看完成片、审核知识真实性或运行工作流。</li><li>Civitai、Midjourney 无本次可读具体对象；WaytoAGI 和魔搭本批为索引片段，可灵为外部报道。官方教程和策选案例不能代表普通用户分布。</li><li>当前没有同窗口全站内容分母、独立消费者数、完播率或跨周回访率。样本规模扩大后，仍以来源和任务验证判断，而不是按样本数量给行业排名。</li></ul></div></details>
   </section>
+ </ResearchAppendix>
+ </ResearchAppendix>
+ <section id="de-downloads"><h2>报告与数据下载</h2><div className="research-resource-links">
+  <a href="/research-kit/theme-comparison-2026-09-13/report.html" target="_blank" rel="noreferrer">四类主题分析 · 网页</a>
+  <a href="/research-kit/theme-comparison-2026-09-13/report.md" download>四类主题分析 · Markdown</a>
+  <a href="/research-kit/theme-comparison-2026-09-13/data.json" download>主题与作品数据 · JSON</a>
+  <a href="/research-kit/douyin-evidence-closure-2026-09-13/report.html" target="_blank" rel="noreferrer">四件重点作品核对 · 网页</a>
+  <a href="/research-kit/douyin-evidence-closure-2026-09-13/data.json" download>判断与来源 · JSON</a>
+  <a href={base+'report.html'} target="_blank" rel="noreferrer">完整内容供需研究 · 网页</a>
+  <a href={base+'data.json'} download>采样底表 · JSON</a>
+ </div></section>
  </div>
 }

@@ -10,7 +10,7 @@ export const developerProfiles: Profile[] = [
  {title:'历史起点不是一个空壳社区',status:'历史',paragraphs:['2021 年官方回顾在已有模型资源基础上推出 Spaces，并通过合作实践活动增加模型、数据与演示。历史意义在于已有可用资产与开发者参与，而非先等大家自发闲聊。','活动规模数字属于当时自报，不能当作当前活跃，更无法分离活动、模型生态与免费资源对增长的贡献。'],refs:[5]},
  {title:'回访与商业承接',status:'推断',paragraphs:['使用者把资源放入自己的项目后，会有版本变化、效果调优与排错需求；作者需要维护，也可能从机构展示、声誉和采用中受益。这样的回访通常是依赖真实项目，而非独立的内容消费。','推理、硬件、团队与账户条件承接商业价值。免费硬件休眠、配额和创建条件说明持续可用有成本；不能把资源数或下载次数等同于成功使用。'],refs:[1,2]},
  {title:'UI／UX 与反证',status:'边界',paragraphs:['模型卡、任务分类、在线演示和相关讨论构成清晰的信息关系。2024 年研究也记录使用者在理解模型、输出与新手指导方面的困难，说明资源丰富仍可能难以选择和使用。','这项研究来自历史样本，不是 2026 年故障率。对多元拾光更直接的验证，是新人是否看得懂一个案例的适用条件，是否知道失败后该补什么。'],refs:[4,6]},
- {title:"团队的可取部分",status:'建议',paragraphs:['只借鉴“可运行资产 + 可理解说明 + 问题回流”。多元拾光的 Token 服务可以支持某些应用试用，但应围绕明确任务而非追求最大模型目录；MakeNow 案例也可以采用相同的说明与维护逻辑。']}
+ {title:"资源说明与维护的适用条件",status:'建议',paragraphs:['可参考资源运行、说明与问题跟进的组织方式。多元拾光的 Token 服务可支持部分应用试用，范围按具体任务确定；MakeNow 案例也需相应说明与维护。']}
  ],gaps:['模型／Space 数量中的可用和活跃比例未核。','官方资源支持对长期贡献的净作用，资料不足。','创建、配置、运行与跨账户复制未执行。'],sources:[s('Spaces Overview','https://huggingface.co/docs/hub/spaces-overview','访问 2026-09-08','创建、复制、可见性和资源条件，已交叉复核'),s('Spaces ZeroGPU','https://huggingface.co/docs/hub/spaces-zerogpu','未标更新日','免费例外、队列与运行边界'),s('Pull Requests & Discussions','https://huggingface.co/docs/hub/en/repositories-pull-requests-discussions','未标更新日','围绕资源协作'),s('Model Cards','https://huggingface.co/docs/hub/model-cards','未标更新日','用途、评估、限制与发现'),s('Summer at Hugging Face','https://huggingface.co/blog/summer-at-huggingface','2021-09-24','Spaces 与合作实践的历史自述'),s('Hugging Face 社区使用问题研究','https://arxiv.org/abs/2401.13177','2024-01-24；SANER 2024','历史研究样本，未当作当前错误率','研究论文')]
 },
 {

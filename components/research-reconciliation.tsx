@@ -3,9 +3,9 @@ import data from '@/lib/research-reconciliation.json';
 function jump(id:string){const target=document.getElementById(`v21-${id}`);if(target instanceof HTMLDetailsElement)target.open=true;for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({behavior:'smooth',block:'start'});}
 function Refs({ids}:{ids:string[]}){return <div className="study-refs">{ids.map(id=><a href={`#v21-${id}`} key={id} onClick={e=>{e.preventDefault();jump(id);}}>〔{id}〕</a>)}</div>;}
 function Paragraphs({items}:{items:string[]}){return <>{items.map(x=><p key={x}>{x}</p>)}</>;}
-export function ResearchReconciliation({navigate}:{navigate:(id:string)=>void}){
+export function ResearchReconciliation({navigate,embedded=false}:{navigate:(id:string)=>void;embedded?:boolean}){
  return <div className="framework-study">
-  <div className="page-heading"><h1>{data.title}</h1></div>
+  <div className="page-heading">{embedded?<h2>{data.title}</h2>:<h1>{data.title}</h1>}</div>
   <div className="study-actions"><a href="/research-kit/research-reconciliation.md" download>下载完整研究</a><button className="text-button" onClick={()=>navigate('strategy')}>查看待比较方案</button></div>
   <nav className="study-actions" aria-label="目录">{[['findings','判断更新'],['own','自身现状'],['data','数据可用性'],['cases','内容维护'],['conditions','经营条件'],['progress','八项进展'],['sources','来源与限制']].map(([id,label])=><button key={id} className="text-button" onClick={()=>jump(id)}>{label}</button>)}</nav>
   <section id="v21-findings" className="study-platform"><h2>内容与使用分析</h2>{data.findings.map(f=><article key={f.title}><h3>{f.title}</h3><p><strong>事实：</strong>{f.fact}</p><p><strong>分析：</strong>{f.analysis}</p><Refs ids={f.sourceIds}/></article>)}</section>

@@ -26,18 +26,17 @@ function DocumentFrame<P extends PlatformIdentity & { position: string }>({ kind
  const reveal=(id:string)=>{const target=document.getElementById(id);for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({behavior:'smooth',block:'start'});};
  const jump = (id: string) => reveal(`${kind}-${id}`);
  return <article className="study-document">
-  <div className="page-heading"><h1>{data.title}</h1></div>
+  {kind === 'operations' && <div className="page-heading"><h1>{data.title}</h1></div>}
 
   <div className="study-actions"><a href={`/research-kit/${files[kind]}`} download>下载完整文档（Markdown）</a>{kind === 'content' && <a href="/research-kit/content-forms-with-images.zip" download>下载文档与截图合集</a>}<button className="text-button" onClick={() => navigate(other)}>阅读另一份：{labels[other]} ↗</button></div>
 
   {kind === 'content' && <div className="study-actions"><button className="text-button" onClick={() => document.getElementById('content-visual-evidence')?.scrollIntoView({behavior:'smooth'})}>先看卡片与详情截图 ↓</button><button className="text-button" onClick={() => reveal('content-form-map')}>查看内容字段分类 ↓</button><button className="text-button" onClick={() => reveal('content-platform-directory')}>平台内容档案 ↓</button></div>}
-  {kind === 'content' && <ContentScreenshotGallery visibleIds={data.profiles.map(p=>p.id)}/>}
   {kind === 'content' && <details className="study-sources"><summary>内容字段分类对照</summary><ContentTaxonomy/></details>}
   <CreatorSupplyLink context={kind === 'operations' ? 'operations' : 'content'} navigate={navigate}/>
   <section className="study-guide">{data.guide.map(g => <div key={g.title}><h2>{g.title}</h2><p>{g.text}<Refs ids={g.sourceIds} sources={data.sources}/></p></div>)}</section>
   <section className="study-directory" id={`${kind}-platform-directory`}><h2>平台档案</h2>{filter}<nav className="article-toc" aria-label={`${labels[kind]}平台目录`}>{items.map(p => <a key={p.id} href={`#${kind}`} onClick={e => { e.preventDefault(); jump(p.id); }}>{p.name}</a>)}</nav></section>
   <section className="study-comparison"><h2>{kind === 'operations' ? '运营重点对照' : '内容单位对照'}</h2><div className="table-wrap"><table><thead><tr><th>平台</th><th>{kind === 'operations' ? '主要组织什么工作（分析）' : '内容价值与形式的区别（分析）'}</th></tr></thead><tbody>{items.map(p => <tr key={p.id}><th><button className="text-button" onClick={() => jump(p.id)}>{p.name} ↗</button></th><td>{p.position}</td></tr>)}</tbody></table></div></section>
-  {items.map(p => <section className="study-platform" id={`${kind}-${p.id}`} key={p.id}><div className="section-heading"><h2>{p.name}</h2>{p.id === 'tusi' ? <span><a href="https://tusi.cn/" target="_blank" rel="noreferrer">吐司官网 ↗</a> · <a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art官网 ↗</a></span> : <a href={p.homepage} target="_blank" rel="noreferrer">官网 ↗</a>}</div><PlatformReviewDimension platformId={p.id} dimension={kind}/>{children(p)}<div className="study-actions"><button className="text-button" onClick={() => navigate(p.id)}>查看该平台其他研究与截图 ↗</button><a href={`#${kind}`} onClick={e => { e.preventDefault(); reveal(`${kind}-platform-directory`); }}>返回文档目录 ↑</a></div></section>)}
+  {items.map(p => <details className="study-platform-archive" key={p.id}><summary>{p.name}</summary><section className="study-platform" id={`${kind}-${p.id}`}><div className="section-heading"><h2>{p.name}</h2>{p.id === 'tusi' ? <span><a href="https://tusi.cn/" target="_blank" rel="noreferrer">吐司官网 ↗</a> · <a href="https://tensor.art/" target="_blank" rel="noreferrer">Tensor.Art官网 ↗</a></span> : <a href={p.homepage} target="_blank" rel="noreferrer">官网 ↗</a>}</div><PlatformReviewDimension platformId={p.id} dimension={kind}/>{children(p)}<div className="study-actions"><button className="text-button" onClick={() => navigate(p.id)}>查看该平台其他研究与截图 ↗</button><a href={`#${kind}`} onClick={e => { e.preventDefault(); reveal(`${kind}-platform-directory`); }}>返回文档目录 ↑</a></div></section></details>)}
   {items.length === 0 && <p>没有匹配的平台，请调整档案筛选。</p>}
   <Sources sources={data.sources}/>
   <p className="muted">资料截至{data.accessedAt}。</p>
@@ -56,9 +55,9 @@ export function OperationsDocument({ data, visibleIds, navigate, filter }: { dat
 }
 
 export function ContentDocument({ data, visibleIds, navigate, filter }: { data: StudyDocument<ContentStudy>; visibleIds: string[]; navigate: (id: string) => void; filter?: ReactNode }) {
- return <><MarketContentForms/><details className="study-sources"><summary>平台内容档案、分类与截图</summary><DocumentFrame kind="content" data={data} visibleIds={visibleIds} navigate={navigate} filter={filter}>{p => <>
+ return <><MarketContentForms/><ContentScreenshotGallery visibleIds={data.profiles.map(p=>p.id)}/><details className="research-appendix" id="content-platform-appendix"><summary>18个平台的内容档案与字段分类</summary><DocumentFrame kind="content" data={data} visibleIds={visibleIds} navigate={navigate} filter={filter}>{p => <>
   <ContentDepthProfile id={p.id}/>
-  {p.id === 'linuxdo' && <><h3>登录后的卡片、详情与修订截图</h3><p>补核于2026-09-09。以下4张截自界面；全7张及商业化、样本范围见该平台档案与独立下载研究。</p><LinuxDoImages contentOnly/></>}
+  {p.id === 'linuxdo' && <><h3>登录后的卡片、详情与修订截图</h3><p>2026-09-09 核对的界面截图，本节展示4张。完整7张截图、商业化信息及样本范围见 LINUX DO 平台档案和下载文档。</p><LinuxDoImages contentOnly/></>}
   <h3>主要内容形态</h3>{p.forms.map(f => <section className="study-form" key={f.name}><h4>{f.name}</h4><p>{f.unit}<Refs ids={f.sourceIds} sources={data.sources}/></p><h5>实际字段与材料</h5><ul>{f.fields.map(x => <li key={x}>{x}</li>)}</ul><Definition rows={[["具体示例或入口", f.example], ["使用者能获得的深度", f.depth], ["看完之后的动作", f.nextAction], ["材料与使用限制", f.limits]]}/></section>)}
   <h3>样本拆解：{p.sample.title}</h3><p>{p.sample.scope}</p><div className="table-wrap"><table className="study-sample-table"><thead><tr><th>材料部分</th><th>实际观察到什么</th><th>这部分的作用（分析）</th></tr></thead><tbody>{p.sample.parts.map(part => <tr key={part.element}><th>{part.element}</th><td>{part.observed}<Refs ids={part.sourceIds} sources={data.sources}/></td><td>{part.role}</td></tr>)}</tbody></table></div><p><strong>尚缺的材料：</strong></p><ul>{p.sample.missing.map(x => <li key={x}>{x}</li>)}</ul><p className="muted">{p.sample.notProven}</p>
   <h3>复用能带走什么</h3><Definition rows={[["可取得或继承", p.reuse.available], ["还需准备", p.reuse.requires], ["无法直接迁移或尚未确认", p.reuse.notPortable]]}/><Refs ids={p.reuse.sourceIds} sources={data.sources}/>

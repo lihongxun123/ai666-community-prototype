@@ -52,7 +52,7 @@ import {ResearchSidebar} from '@/components/research-sidebar';
 import {ResearchBrief} from '@/components/research-brief';
 import {ResearchPlatformFilter} from '@/components/research-platform-filter';
 
-function revealSection(id:string){const target=document.getElementById(id);for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({block:'start'});target?.focus({preventScroll:true});}
+function revealSection(id:string){const target=document.getElementById(id);if(target instanceof HTMLDetailsElement)target.open=true;for(let node=target?.parentElement;node;node=node.parentElement){if(node instanceof HTMLDetailsElement)node.open=true;}target?.scrollIntoView({block:'start'});target?.focus({preventScroll:true});}
 function filterProfiles(query:string,group:string){return profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${operatingById.get(p.id)?.position||''} ${contentById.get(p.id)?.forms.map(c=>c.name).join(' ')||''} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());});}
 export default function Research(){
  const [view,setView]=useState('overview'); const [mobile,setMobile]=useState(false); const [selected,setSelected]=useState<string[]>([]);
@@ -74,11 +74,11 @@ export default function Research(){
  const rows=selected.length?profiles.filter(x=>selected.includes(x.id)):profiles;
  return <div className="research-shell">
  <a href="#main" className="skip-link" onClick={e=>{e.preventDefault();document.getElementById('main')?.focus();window.scrollTo({top:0});}}>跳到正文</a>
- <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI 社区研究 · 2026.09.12</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>来源与方法</span></button></header>
+ <header className="app-header"><button className="mobile-menu icon-button" onClick={()=>setMobile(!mobile)} aria-label="打开目录" aria-expanded={mobile}><Menu size={20}/></button><button className="brand" onClick={()=>navigate('overview')}><span className="brand-icon"><BookOpen size={17}/></span> 多元拾光 <span className="brand-divider">/</span><span className="brand-sub">研究室</span></button><span className="header-meta">AI社区研究</span><button onClick={()=>navigate('evidence')} className="download"><BookOpen size={15}/><span>来源与方法</span></button></header>
  {mobile&&<button className="sidebar-scrim" onClick={()=>setMobile(false)} aria-label="关闭目录"/>}
  <ResearchSidebar view={view} navigate={navigate} mobile={mobile} profiles={profiles}/>
  <main id="main" className="report-main" tabIndex={-1}>
- <div className="breadcrumb"><span>研究报告</span><span>/</span><span>{p?p.group:topViews.find(t=>t[0]===view)?.[1]}</span></div>
+ <div className="breadcrumb"><span>多元拾光研究室</span><span>/</span><span>{p?p.group:topViews.find(t=>t[0]===view)?.[1]}</span></div>
  {view==='overview'&&<ResearchDirectory navigate={navigate}/>}
  {view==='report'&&<ResearchBrief navigate={navigate}/>}
  {view==='matrix'&&<>
@@ -93,17 +93,17 @@ export default function Research(){
 {view==='supply'&&<CreatorSupply/>}
 {view==='content-demand'&&<ContentDemand navigate={navigate}/>}
  {view==='makenow'&&<MakeNowStudy navigate={navigate}/>}
- {view==='discussion'&&<><CreatorSupplyLink context="discussion" navigate={navigate}/><ResearchFramework navigate={navigate}/></>}
+ {view==='discussion'&&<ResearchFramework navigate={navigate}/>}
  {view==='validation'&&<ValidationOverview/>}
  {view==='operations'&&<OperationsDocument data={operatingStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
  {view==='content'&&<ContentDocument data={contentStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
- {view==='supplement'&&<><PlatformReview compact/>{platformFilter}<EvidenceUpdateOverview data={evidenceUpdate} visibleIds={studyFiltered.map(p=>p.id)} onSelect={showEvidence}/></>}
+ {view==='supplement'&&<><EvidenceUpdateOverview filter={platformFilter} data={evidenceUpdate} visibleIds={studyFiltered.map(p=>p.id)} onSelect={showEvidence}/></>}
  {view==='tasks'&&<><ContentOverview onSelect={showContent}/></>}
- {view==='data'&&<><div className="study-actions"><button className="text-button" onClick={()=>navigate('supplement')}>经营规则与使用证据 <ArrowRight size={14}/></button></div>{platformFilter}<PublicDataOverview data={publicProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
- {view==='business'&&<>{platformFilter}<BusinessOverview data={businessProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} insights={businessInsights} onSelect={showBusiness}/></>}
+ {view==='data'&&<><PublicDataOverview filter={platformFilter} data={publicProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} allData={publicProfiles} methods={publicDataMethod} insights={publicDataInsights} onSelect={showData}/></>}
+ {view==='business'&&<><BusinessOverview filter={platformFilter} data={businessProfiles.filter(item=>studyFiltered.some(profile=>profile.id===item.id))} insights={businessInsights} onSelect={showBusiness}/></>}
 {view==='strategy'&&<><StrategyComparison navigate={navigate}/></>}
  {view==='evidence'&&<>
- <div className="page-heading"><h1>来源与研究限制</h1></div>
+ <div className="page-heading"><h1>来源与研究方法</h1></div>
  {evidence.map((section,i)=><Essay key={section.title} section={section} number={i+1}/>)}
  <div className="evidence-register"><h2>逐家来源覆盖</h2><p className="muted">{profiles.reduce((a,p)=>a+p.sources.length,0)} 条来源记录（按档案计，含重复域名与历史资料）。数量不代表证据强弱。</p>{profiles.map(item=><button key={item.id} onClick={()=>navigate(item.id)}><strong>{item.name}</strong><span>{item.sources.length} 条来源</span><span>{item.access}</span><ArrowRight size={15}/></button>)}</div>
  </>}
@@ -126,8 +126,8 @@ export default function Research(){
  {businessById.has(p.id)&&<BusinessProfile data={businessById.get(p.id)!}/>}
  </details>
  {p.deep&&<details className="profile-section-group"><summary>界面与实际操作</summary>
- <section className="research-focus"><h2>这家最值得追问的事</h2><p>{p.deep.question}</p></section>
- <section className="research-gallery" id="page-evidence"><div className="section-heading"><h2>页面证据</h2><span>点击图片查看大图</span></div>{p.deep.images.length?p.deep.images.map(img=><figure key={img.file}><a href={img.file} target="_blank" rel="noreferrer"><img src={img.file} alt={img.title} loading="lazy"/></a><figcaption><div><strong>{img.title}</strong><span>{img.kind} · {img.date}</span></div><p>{img.observation}</p><p className="muted">{img.limitation}</p><a href={img.url} target="_blank" rel="noreferrer">研究原页 <ArrowUpRight size={13}/></a></figcaption></figure>):<p className="access-note">核心页面尚未取得有效截图。保留资料分析，具体访问限制见本档案；不以空白页或验证页代替。</p>}</section>
+ <section className="research-focus"><h2>重点问题</h2><p>{p.deep.question}</p></section>
+ <section className="research-gallery" id="page-evidence"><div className="section-heading"><h2>页面证据</h2><span>点击图片查看大图</span></div>{p.deep.images.length?p.deep.images.map(img=><figure key={img.file}><a href={img.file} target="_blank" rel="noreferrer"><img src={img.file} alt={img.title} loading="lazy"/></a><figcaption><div><strong>{img.title}</strong><span>{img.kind} · {img.date}</span></div><p>{img.observation}</p><p className="muted">{img.limitation}</p><a href={img.url} target="_blank" rel="noreferrer">原始页面 <ArrowUpRight size={13}/></a></figcaption></figure>):<p className="access-note">核心页面截图未取得，访问限制见本档案；不以空白页或验证页代替。</p>}</section>
  {p.deep.task&&<section className="task-record" id="task-log"><div className="section-heading"><h2>实际操作</h2><span>{p.deep.task.date}</span></div><p>{p.deep.task.scope}</p><ol>{p.deep.task.steps.map((step,i)=><li key={i}>{step}</li>)}</ol><p><strong>结果：</strong>{p.deep.task.result}</p><p className="muted">已接收生成任务 {p.deep.task.attempts} 次；按钮重试与未接收情况见记录。{p.deep.task.limit}</p></section>}
  <section className="journey"><h2>从发现到再次使用</h2><p className="muted">下表分析产品提供的路径及可能阻塞；实际完成范围以上方记录为准。</p><div className="table-wrap"><table><thead><tr><th>阶段</th><th>用户在做什么</th><th>哪里可能卡住</th></tr></thead><tbody>{p.deep.route.map(r=><tr key={r.stage}><th>{r.stage}</th><td>{r.behavior}</td><td>{r.friction}</td></tr>)}</tbody></table></div></section>
  </details>}
@@ -142,11 +142,11 @@ export default function Research(){
  </details>
  <details className="profile-section-group"><summary>来源与资料缺口</summary>
  <section className="unknowns"><h2>待验证假设与资料缺口</h2><ul>{p.gaps.map(g=><li key={g}>{g}</li>)}</ul></section>
- <section className="sources" id="source-list"><div className="section-heading"><h2>来源与时间边界</h2><span>采集 09-08 · 补核 09-09</span></div>{p.sources.map((src,i)=><div className="source-row" key={`${src.url}-${i}`}><span className="source-number">{i+1}</span><div><a href={src.url} target="_blank" rel="noreferrer">{src.title}<ArrowUpRight size={14}/></a><p>{src.note}</p><small>{src.type} · {src.date}</small></div></div>)}</section>
+ <section className="sources" id="source-list"><div className="section-heading"><h2>来源与时间边界</h2><span>日期与范围见逐条来源</span></div>{p.sources.map((src,i)=><div className="source-row" key={`${src.url}-${i}`}><span className="source-number">{i+1}</span><div><a href={src.url} target="_blank" rel="noreferrer">{src.title}<ArrowUpRight size={14}/></a><p>{src.note}</p><small>{src.type} · {src.date}</small></div></div>)}</section>
  </details>
- <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究目录':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'社区方案对照':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
+ <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究总览':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'社区方案对照':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
  </article>}
- <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>最近更新 2026.09.12 · 各来源按标注日期</span></footer>
+ <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>资料日期见各页来源</span></footer>
  </main></div>
 }
 function Essay({section,number}:{section:Section;number:number}){return <section className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(number).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>}
