@@ -29,5 +29,5 @@ export function NorthStarDirections(){
 }
 
 export function NorthStarPlan(){
- return <section className="ns-plan" id="ns-plan"><h3>四周试点</h3><p>{data.mvp.duration}</p><p>{data.mvp.scope}</p><p>{data.mvp.sample}</p><ol>{data.mvp.weeks.map(w=><li key={w.week}><span>第 {w.week} 周</span><div><h4>{w.question}</h4><p>{w.work}</p><p><b>记录：</b>{w.output}</p></div></li>)}</ol><details><summary>继续、调整和停止的判断</summary>{data.mvp.decision.map(e=><section key={e.action}><h4>{e.action}</h4><p>{e.condition}</p></section>)}</details><p>{data.mvp.makeNowBoundary}</p></section>;
+ return <section className="ns-plan" id="ns-plan"><h3>四周试点：人工参考</h3><p>{data.mvp.executionOwner}</p><details><summary>查看试点安排</summary><p>{data.mvp.duration}</p><p>{data.mvp.scope}</p><p>{data.mvp.sample}</p><ol>{data.mvp.weeks.map(w=><li key={w.week}><span>第 {w.week} 周</span><div><h4>{w.question}</h4><p>{w.work}</p><p><b>记录：</b>{w.output}</p></div></li>)}</ol><details><summary>继续、调整和停止的判断</summary>{data.mvp.decision.map(e=><section key={e.action}><h4>{e.action}</h4><p>{e.condition}</p></section>)}</details><p>{data.mvp.makeNowBoundary}</p></details></section>;
 }

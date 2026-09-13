@@ -2,6 +2,7 @@
 
 import data from '@/lib/report-quality.json';
 import {RetentionEvidence} from './retention-research';
+import {DeskComparisons} from './desk-comparison';
 
 type ReportQualityProps = {
   platformCount?: number;
@@ -75,6 +76,7 @@ export function ReportQuality({platformCount, groupCount, onOpen}: ReportQuality
         </table>
       </div>
       <p className="brief-limit">{data.boundary}</p>
+      <DeskComparisons/>
       <RetentionEvidence/>
     </section>
   );

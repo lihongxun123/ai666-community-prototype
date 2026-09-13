@@ -1,7 +1,7 @@
 {
   "date": "2026-09-14",
-  "summary": "学习、求助和交流中已经找到跨日期行为与明确自述。近期普通视觉读者的连续记录、用户访问分母和作者实际工时仍缺；现在不能据此排出三个方向的留存名次。",
-  "countingNote": "17条定向记录：6条新收录、11条既有来源复核，覆盖7个平台。新收录包括历史材料，不等于新增用户或近期行为；同一人的多个动作合并阅读，规则和作者维护不算读者回访。LINUX DO只作交流机制对照，不归为视觉作品平台。",
+  "summary": "已有跨日期的学习、求助与交流记录。新增的2026年讨论补到了看图筛选、广告干扰和作品解读，但近期普通视觉读者的连续站内回访仍未补齐。",
+  "countingNote": "20条定向记录：9条新收录、11条既有来源复核，覆盖8个平台。记录不等于独立用户；新收录包含历史材料。跨日投诉不能计成被讨论平台的回访，维护记录不计成读者活跃。新增三帖均来自问题讨论，不能用于估算满意率。",
   "findings": [
     {
       "direction": "视觉兴趣与创作",
@@ -15,6 +15,25 @@
         {
           "title": "NightCafe · VIS-RET-03",
           "url": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/"
+        }
+      ]
+    },
+    {
+      "direction": "近期看图与作品交流",
+      "finding": "2026年Civitai读者描述如何按时间、热度筛图，也有图集浏览者反映广告干扰。NightCafe的一段讨论包含具体画面解读和作者回应。",
+      "limit": "全部来自第三方问题讨论。跨日回复只确认在Reddit延续；NightCafe不续费是意向，尚未确认离站或站内回访。",
+      "sources": [
+        {
+          "title": "Civitai · DVP-01",
+          "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/"
+        },
+        {
+          "title": "Civitai · DVP-02",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/"
+        },
+        {
+          "title": "NightCafe · DVP-03",
+          "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/"
         }
       ]
     },
@@ -97,7 +116,8 @@
       "researchImplication": "可继续核对近期用户是否把制作、看作品、找人聊天分在不同平台；必须同时记录奖励任务，不能只摘取社交动机。",
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "既有来源复核",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "VIS-RET-02",
@@ -127,7 +147,8 @@
       "researchImplication": "同条件比较应围绕同一项真实用图需求及最终采用结果，并把为了余额回访与为了新内容回访分开。",
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "既有来源复核",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "VIS-RET-03",
@@ -153,7 +174,8 @@
       "researchImplication": "反复回来未必意味着用户持续获得价值；应问清回访后的满足感、采用成果和主动退出原因，不能只看访问次数。",
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "新收录来源",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "VIS-RET-04",
@@ -184,7 +206,8 @@
       "researchImplication": "投票量需与具体看图反馈、有效评审和后续交流区分；持续组织需要治理，成本仍须另外取证。",
       "evidenceLabel": "官方规则",
       "provenanceLabel": "既有来源复核",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "VIS-RET-05",
@@ -210,7 +233,8 @@
       "researchImplication": "值得核查在站外已解决工具需求的普通成员，仍来找哪些内容或人；交流能否形成独立价值，应从这种具体转变追下去。",
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "新收录来源",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "VIS-RET-06",
@@ -236,7 +260,8 @@
       "researchImplication": "普通阅读的价值不一定表现为发帖或点赞；继续比较时要看能否稳定找到感兴趣的系列、作者或板块，以及读后是否值得再次回来。",
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "新收录来源",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P01",
@@ -274,7 +299,8 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "原页只显示Jun 15—Jun 25，未显示年份，不从账号名或资源名称推断。",
       "readScope": "原始讨论正文已读；未读用户图片或运行文件。",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P02",
@@ -305,7 +331,8 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "原发表日期未知；搜索索引同时显示2026-06-29更新及正文三个无年份日期标签。",
       "readScope": "直接原页超时；本次读取同一官方URL的搜索索引正文，不标为实时详情成功。",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P03",
@@ -355,7 +382,8 @@
       "supportingUrls": [
         "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/issues/2/comments",
         "https://github.com/machinad/astrbot_plugin_liblibapi/commit/7c99243075d8b76f8acaeb7004c9a179526882ea"
-      ]
+      ],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P04",
@@ -412,7 +440,8 @@
         "https://api.github.com/repos/machinad/astrbot_plugin_liblibapi/commits?per_page=8",
         "https://github.com/machinad/astrbot_plugin_liblibapi/commit/a7481ad6f1931751ba30687b8202b544bb8d8083",
         "https://github.com/machinad/astrbot_plugin_liblibapi"
-      ]
+      ],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P05",
@@ -446,7 +475,8 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "",
       "readScope": "原帖1—7楼已读。没有读取账号凭证、运行Demo或核对交易。",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "RET-P06",
@@ -494,7 +524,8 @@
       "readScope": "原帖1—6楼及替代Space状态页已读；未运行、未检查实际图像结果。",
       "supportingUrls": [
         "https://huggingface.co/spaces/John6666/IDM-VTON-GRADIO5"
-      ]
+      ],
+      "concreteBehavior": ""
     },
     {
       "id": "LE-DW-01",
@@ -536,7 +567,8 @@
       "readScope": "",
       "supportingUrls": [
         "https://github.com/datawhalechina/hello-agents/discussions/633"
-      ]
+      ],
+      "concreteBehavior": ""
     },
     {
       "id": "LE-DW-02",
@@ -578,7 +610,8 @@
       "readScope": "",
       "supportingUrls": [
         "https://github.com/datawhalechina/hello-agents/pull/800"
-      ]
+      ],
+      "concreteBehavior": ""
     },
     {
       "id": "LE-DW-03",
@@ -614,7 +647,8 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "",
       "readScope": "",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "LE-WA-01",
@@ -651,7 +685,8 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "",
       "readScope": "",
-      "supportingUrls": []
+      "supportingUrls": [],
+      "concreteBehavior": ""
     },
     {
       "id": "LE-WA-02",
@@ -688,6 +723,141 @@
       "provenanceLabel": "既有来源复核",
       "dateNote": "",
       "readScope": "",
+      "supportingUrls": [],
+      "concreteBehavior": ""
+    },
+    {
+      "id": "DVP-01",
+      "direction": "视觉兴趣与交流",
+      "platform": "Civitai",
+      "sourceTitle": "What’s happened to the CivitAI images page today?",
+      "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/",
+      "publishedAt": "2026-04-26",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "actorCode": "DVP-CV-A",
+      "actorRole": "自述浏览图片的用户；是否也创作或上传模型未知。",
+      "evidenceType": "self-report",
+      "readScope": "原帖、首个解释回复、楼主追问及其他可读回复；没有展开所有折叠回复，没有读取 Civitai 页面或核原截图。",
+      "concreteBehavior": "楼主按 Everyone → Most Reactions → Day 浏览图集，对高互动图片是否真是当天作品提出疑问；得到回复后回来确认，称自己在图片详情发现一年前的评论。",
+      "observedDiscussion": "公开页可核楼主发问后再次回复，并修正最初理解。关于图片时间、旧评论和筛选结果仍是其自述。",
+      "trigger": "想用时间与热度组合找到图片，遇到展示时间与历史评论不一致。",
+      "repeatEvidence": "同一问题下有本人后续回应；没有核到不同日期的站内浏览。",
+      "crossDay": {
+        "hostPlatformObserved": false,
+        "externalDiscussionObserved": false,
+        "reason": "只核同一主题的一次问题与回复，索引在同一日期；旧评论属于被浏览作品，不是楼主的回访历史。"
+      },
+      "alternative": "未确认替代选择。",
+      "friction": "需要额外检查作品时间，才能判断眼前是否是新内容。其他回复者给出重新索引的解释，未获官方或本次实测确认。",
+      "whatItDoesNotProve": "不证明 Civitai 当前仍有排序故障，不证明刷量或操纵，也不证明该用户每日回来。其质疑中的互动数不作平台指标引用。",
+      "comparisonUse": "同条件阅读比较应核：时间筛选得到的内容能否明确辨认发布时间；回看旧作与发现新作是否容易区分。",
+      "sources": [
+        {
+          "title": "原帖及楼主回应",
+          "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/",
+          "date": "2026-04-26",
+          "accessedAt": "2026-09-14",
+          "locator": "主帖；首条关于旧图的回复下，楼主确认旧评论的回应"
+        }
+      ],
+      "evidenceLabel": "用户自述与公开讨论",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
+      "supportingUrls": []
+    },
+    {
+      "id": "DVP-02",
+      "direction": "视觉兴趣与交流",
+      "platform": "Civitai",
+      "sourceTitle": "I want to support Civitai, but the f'in ads are getting insane",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/",
+      "publishedAt": "2026-07-14",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "actorCode": "DVP-CV-B",
+      "actorRole": "自述购买过积分、浏览图集及模型页的用户；不是已核的纯观看者。",
+      "evidenceType": "self-report",
+      "readScope": "原帖、楼主关于图集筛选及广告的回复、次日永久回复；未展开全部折叠楼层，未实测广告或拦截工具。",
+      "concreteBehavior": "楼主说明想浏览图集，但不感兴趣的广告干扰阅读；曾使用广告拦截工具，又称工具会使图集部分内容消失。随后继续答复他人，解释自己的付费方式并询问是否有可用设置。",
+      "observedDiscussion": "原页可核主帖和永久回复属于同一公开账号；日期索引分别为 7 月 14 日和 15 日。这只能确认 Reddit 争议讨论跨日延续。",
+      "trigger": "浏览体验与其购买过积分后的期待不符。",
+      "repeatEvidence": "次日在第三方论坛继续讨论。未核到 Civitai 两天的访问记录，未核替代浏览器或设置是否采用成功。",
+      "crossDay": {
+        "hostPlatformObserved": false,
+        "externalDiscussionObserved": true,
+        "dateEvidenceLevel": "同源日期索引 + 原页同账号回复关系",
+        "dates": [
+          "2026-07-14",
+          "2026-07-15"
+        ],
+        "reason": "跨日的是 Reddit 公开讨论，不是被独立观察到的 Civitai 回访或留存。"
+      },
+      "alternative": "本人考虑换浏览环境；他人提供建议，但未核最终采用与效果。",
+      "friction": "广告干扰与拦截后内容缺失均为本人报告；同帖也有人说没有遇到类似画面，实际展示存在未核的环境差异。",
+      "whatItDoesNotProve": "不能把广告面积自估当测量，不证明所有用户同样受影响；不能确认其支付权益、已经离开或最终解决。投诉中的多次互动不等于看图价值提升。",
+      "comparisonUse": "比较同一阅读任务时记录实际可见内容、干扰及额外步骤；区分用户完成阅读与为了排障继续回帖。",
+      "sources": [
+        {
+          "title": "主帖与前序图集使用说明",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/",
+          "date": "2026-07-14",
+          "accessedAt": "2026-09-14",
+          "locator": "主帖；楼主回答拦截工具影响图集的楼层"
+        },
+        {
+          "title": "楼主次日解释浏览图集时的干扰",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/comment/oxqcekk/",
+          "date": "2026-07-15",
+          "accessedAt": "2026-09-14",
+          "locator": "以 I agree they help 开头的永久回复；不保存用户名或积分余额"
+        }
+      ],
+      "evidenceLabel": "用户自述与公开讨论",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
+      "supportingUrls": [
+        "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/comment/oxqcekk/"
+      ]
+    },
+    {
+      "id": "DVP-03",
+      "direction": "视觉兴趣与交流",
+      "platform": "NightCafe",
+      "sourceTitle": "OFFICIALLY DONE WITH NIGHTCAFE",
+      "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-09-14",
+      "provenance": "new",
+      "actorCode": "DVP-NC-A",
+      "actorRole": "自述付费的作品创作者；相关观看者仅编码为 DVP-NC-R1，创作身份未知。",
+      "evidenceType": "self-report",
+      "readScope": "主帖；楼主与自称社区管理员的往返；一名观看者指出画面问题后楼主回应的楼层。没有看全部图、核全部提示词或账户处罚。",
+      "concreteBehavior": "楼主因内容审核争议表示订阅到 10 月底后可能不再续费，同时邀请大家评作品。可见一名观看者肯定作品并指出人物看起来惊恐；楼主随后认可该图不被允许的部分理由，仍质疑处罚方式，并解释自己的创作意图。",
+      "observedDiscussion": "可以核到具体画面解读与作者回应，并非只有点赞或泛泛好评。自称管理员的回复还指出楼主未展示完整提示词和历史情形，双方叙述并不一致。",
+      "trigger": "创作表达与内容治理发生冲突，作者寻求他人对作品及处罚的评价。",
+      "repeatEvidence": "楼主在同一 Reddit 主题中多次回应；没有核站内跨日交流，也没有看到订阅期结束后的行为。",
+      "crossDay": {
+        "hostPlatformObserved": false,
+        "externalDiscussionObserved": false,
+        "reason": "原页只显示相对日期，本次绝对日期索引不足以确认相关回复跨日；同帖多轮回应不作为长期回访。"
+      },
+      "alternative": "未确认替代选择。",
+      "friction": "本人认为作品主题与规则执行不一致；管理员一方另有解释。此处记录冲突及互动，不裁定处罚正确与否。",
+      "whatItDoesNotProve": "标题宣布结束不等于已离站；不续费仍是未来意向。具体讨论发生在 Reddit，不证明 NightCafe 站内关系已挽留作者，不能把观看者解释归为平台已解决问题。",
+      "comparisonUse": "公开作品比较应看能否表达具体审美解释、获得作者回应；离开需区分不满、撤回付费意向、实际停止访问，不能混成同一个结果。",
+      "sources": [
+        {
+          "title": "主帖及具体作品讨论",
+          "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/",
+          "date": "2026-09-10",
+          "accessedAt": "2026-09-14",
+          "locator": "主帖 10 月底不续费意向；观看者指出人物惊恐后，楼主以 Yeah I've conceded 开头的回应"
+        }
+      ],
+      "evidenceLabel": "用户自述与公开讨论",
+      "provenanceLabel": "新收录来源",
+      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
       "supportingUrls": []
     }
   ]
