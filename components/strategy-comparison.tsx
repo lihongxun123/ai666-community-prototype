@@ -2,40 +2,33 @@
 import {CreatorSupplyLink} from '@/components/creator-supply';
 import { useState, type ReactNode } from 'react';
 import data from '@/lib/strategy-comparison.json';
-import {NorthStarDirections} from '@/components/community-north-star';
+import {StrategyDirections} from './strategy-directions';
 import { ContentArrangementLab } from '@/components/content-arrangement-lab';
 import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
 import {ResearchApplications} from './research-applications';
 import {RetentionPlan, RetentionEvidence} from './retention-research';
-import {CategoryAdoption} from './category-paths';
 
-const tabs=[['options','四种组织方式'],['content','内容浏览对照'],['mechanisms','做法取舍']] as const;
+const tabs=[['options','内容与服务'],['content','浏览编排示例'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
 function List({items}:{items:string[]}){return <ul>{items.map(i=><li key={i}>{i}</li>)}</ul>;}
 function Definition({rows}:{rows:[string,ReactNode][]}){return <dl className="v23-definition">{rows.map(([name,value])=><div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>;}
 function RefLinks({ids}:{ids:string[]}){return <p className="study-refs">依据：{ids.map(id=>{const s=data.sources.find(s=>s.id===id);return s?<a key={id} href={`#v23-source-${id}`} title={s.title} onClick={e=>{e.preventDefault();const details=document.getElementById('v23-sources') as HTMLDetailsElement|null;if(details)details.open=true;document.getElementById(`v23-source-${id}`)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{s.title}〔{id}〕 </a>:null;})}</p>;}
 
-export function StrategyComparison({navigate}:{navigate:(id:string,anchor?:string)=>void}){
+function ServiceDesignDetails({navigate}:{navigate:(id:string,anchor?:string)=>void}){
  const [tab,setTab]=useState<Tab>('options'),[active,setActive]=useState('A');
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
  return <article className="framework-study v23">
-  <header className="page-heading v23-intro"><h1>借鉴与方案比较</h1><p className="muted">{data.date} · 候选方向待验证</p></header>
-  <CategoryAdoption navigate={navigate}/>
-  <RetentionPlan/>
-  <details className="study-sources"><summary>持续行为研究：已找到哪些证据</summary><RetentionEvidence/></details>
-  <ResearchApplications navigate={navigate}/>
-  <CreatorSupplyLink context="strategy" navigate={navigate}/>
-  <NorthStarDirections/>
+  <h2>内容与服务的详细设计</h2><p>专题编选、解法维护、作品过程和练习反馈可以组合到三个方向中。以下比较各自的交付与维护工作，浏览示例只演示材料怎样排列。</p>
   <details className="study-sources"><summary>目标、供给、人员、工具与投入条件</summary><Definition rows={data.basis.map(b=>[b.label,<><p>{b.fact}</p><p className="muted">{b.limit}</p></>])}/><RefLinks ids={data.sources.filter(s=>s.id.startsWith('BASE23')).map(s=>s.id)}/></details>
   <fieldset id="v23-tabs" className="v23-controls is-tabs" aria-label="研究内容">{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} className={tab===id?'is-active':''} onClick={()=>setTab(id)}>{label}</button>)}</fieldset>
-  {tab==='options'&&<section aria-label="四种内容与服务组织方式">
-   <h2>四种组织方式</h2>
-   <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>查看组织方式 {o.id} →</button></article>)}</div>
-   <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 筛选发现</th><th>B 解法实践</th><th>C 视觉创作</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
+  {tab==='options'&&<section aria-label="内容与服务设计">
+   <h2>四类内容与服务</h2>
+   <div className="v23-small-grid">{data.options.options.map(o=><article key={o.id}><h3>{o.id} · {o.name}</h3><p>{o.promise}</p><button className="text-button" onClick={()=>{setActive(o.id);document.getElementById('v23-option-picker')?.scrollIntoView({behavior:'smooth',block:'start'});}}>查看详细设计 {o.id} →</button></article>)}</div>
+   <details className="study-sources"><summary>展开12个维度的并排比较</summary><div className="table-wrap"><table><thead><tr><th>比较维度</th><th>A 专题编选</th><th>B 解法维护</th><th>C 作品过程</th><th>D 练习反馈</th></tr></thead><tbody>{data.options.comparison.map(r=><tr key={r.dimension}><th>{r.dimension}</th><td>{r.A}</td><td>{r.B}</td><td>{r.C}</td><td>{r.D}</td></tr>)}</tbody></table></div></details>
    <StrategyConditionsSummary/>
-   <fieldset id="v23-option-picker" className="v23-controls" aria-label="选择组织方式">{data.options.options.map(o=><button key={o.id} aria-pressed={o.id===active} className={o.id===active?'is-active':''} onClick={()=>setActive(o.id)}>{o.id} · {o.name}</button>)}</fieldset>
+   <fieldset id="v23-option-picker" className="v23-controls" aria-label="选择内容服务">{data.options.options.map(o=><button key={o.id} aria-pressed={o.id===active} className={o.id===active?'is-active':''} onClick={()=>setActive(o.id)}>{o.id} · {o.name}</button>)}</fieldset>
    <article className="v23-option" key={option.id}>
     <h2>{option.id} · {option.name}</h2><p className="lead">{option.promise}</p><RefLinks ids={option.sourceIds}/>
     <StrategyConditionReview optionId={option.id}/>
@@ -61,3 +54,5 @@ export function StrategyComparison({navigate}:{navigate:(id:string,anchor?:strin
   <details className="study-sources" id="v23-sources"><summary>{data.sources.length}项来源记录与适用范围（可共用底层页面）</summary>{data.sources.map(s=><article className="v23-source" id={`v23-source-${s.id}`} key={s.id}><h3>{s.id} · {s.url?<a href={s.url} target="_blank" rel="noreferrer">{s.title} ↗</a>:s.title}</h3><p>{s.date}</p><p className="v23-path muted">位置：{s.path}；{s.locator}</p><p>{s.scope}</p></article>)}</details>
  </article>;
 }
+
+export function StrategyComparison({navigate}:{navigate:(id:string,anchor?:string)=>void}){return <article className="framework-study v23"><StrategyDirections navigate={navigate}/><section className="direction-reference"><h2>设计资料与验证参考</h2><details id="strategy-service-design"><summary>内容与服务设计、浏览示例与做法取舍</summary><ServiceDesignDetails navigate={navigate}/></details><details id="strategy-research-evidence"><summary>持续行为证据与同条件比较</summary><RetentionEvidence/></details><details id="strategy-verification-reference"><summary>待核问题与人工验证参考</summary><RetentionPlan referenceOnly/></details><details id="strategy-applications-reference"><summary>各平台与专题的采用条件</summary><ResearchApplications navigate={navigate}/></details><CreatorSupplyLink context="strategy" navigate={navigate}/></section></article>;}

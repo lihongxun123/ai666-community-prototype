@@ -12,6 +12,8 @@ import closure from '@/lib/content-demand-closure.json';
 import audience from '@/lib/audience-research.json';
 import china from '@/lib/china-ai-users.json';
 import report from '@/lib/research-brief.json';
+import comparisonBackground from '@/lib/report-comparison-background.json';
+import type {ReportComparison} from './report-comparisons';
 import {businessInsights} from '@/lib/business-synthesis';
 import {ContentPriorities} from './content-evidence';
 import {FrameworkPlanning,ToolModelPlanning,FrameworkContentPlanning} from './research-framework';
@@ -26,12 +28,13 @@ import {EcosystemPlanning} from './content-demand-ecosystem';
 
 type Navigate=(view:string,section?:string)=>void;
 const moved=movedRaw as {platformId:string;text:string;sources?:{title:string;url:string}[]}[];
+const planningComparisons:ReportComparison[]=[...report.sections.flatMap<ReportComparison>(s=>s.comparisons||[]),...comparisonBackground];
 function MovedNotes({id}:{id:string}){return <>{moved.filter(x=>x.platformId===id).map((x,i)=><section key={i}><p>{x.text}</p>{x.sources?.length?<div className="study-refs">{x.sources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div>:null}</section>)}</>;}
 function Notes({rows}:{rows:[string,string|string[]][]}){return <dl className="study-definition">{rows.filter(([,value])=>Array.isArray(value)?value.length:!!value).map(([label,value])=><div key={label}><dt>{label}</dt><dd>{Array.isArray(value)?<ul>{value.map((v,i)=><li key={i}>{v}</li>)}</ul>:value}</dd></div>)}</dl>;}
 function Back({view,label,navigate,id}:{view:string;label:string;navigate:Navigate;id?:string}){return <p className="study-refs"><a href={'#'+view} onClick={e=>{e.preventDefault();navigate(view,id);}}>研究依据：{label} →</a></p>;}
 
 export function ResearchApplications({navigate}:{navigate:Navigate}){return <section className="research-applications" id="research-applications">
- <h2>多元拾光可以借鉴什么</h2>
+ <h2>专题建议与采用条件</h2>
  <p>这里集中讨论可借鉴的做法、需要承担的工作和验证条件。是否采用，仍要看用户是否需要、内容能否持续供给，以及实际投入。</p>
  <ResearchOutline items={[
   ['adoption-platforms','逐个平台看'],['adoption-content','内容怎么组织'],['adoption-audience','服务哪些需要'],['adoption-topics','四类主题怎么尝试'],['adoption-task-plan','商品图试用设想'],['adoption-tools','工具与投入条件'],['adoption-report','综合判断']
@@ -62,5 +65,5 @@ export function ResearchApplications({navigate}:{navigate:Navigate}){return <sec
  <details className="research-appendix"><summary>其他题材、评论诉求与试做条件</summary><details className="study-sources"><summary>六类消费任务的尝试</summary><ComparisonPlanning/></details><details className="study-sources"><summary>从评论看内容和合作职责</summary><PanelPlanning/></details><details className="study-sources"><summary>从成片看供给分工</summary><CasesPlanning/></details><details className="study-sources"><summary>细分题材与尝试条件</summary><EcosystemPlanning/><DepthPlanning/></details><MovedNotes id="content-demand"/><Back view="content-demand" label="作品、互动与供给记录" navigate={navigate}/></details>
  <details id="adoption-task-plan" className="research-appendix"><summary>商品图合作与试用设想</summary><p>这是备选任务的试用计划，尚未执行；不能据此把社区方向定为商品制作。</p><ProductTaskIdeas/><ProductTaskPlanning/><Back view="tasks" label="商品图样本与用户讨论" navigate={navigate}/></details>
  <details id="adoption-tools" className="research-appendix"><summary>工具、合作与投入条件</summary>{businessInsights.map((x,i)=>{const ps=i===0||i===2?x.paragraphs.slice(1):i>=3?x.paragraphs:[];return ps.length?<section key={x.title}><h3>{x.title}</h3>{ps.map((p,j)=><p key={j}>{p}</p>)}<div className="study-refs">{x.refs.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>:null;})}<ToolModelPlanning/><FrameworkPlanning navigate={navigate}/><Back view="discussion" label="18个平台的工具关系" navigate={navigate}/></details>
- <details id="adoption-report" className="research-appendix"><summary>综合判断与待讨论问题</summary>{report.sections.filter(s=>s.id==='implications').map(s=><section key={s.id}><h3>{s.title}</h3><p>{s.answer}</p>{s.claims.map(c=><section key={c.title}><h4>{c.title}</h4><p>{c.text}</p><p>{c.basis}</p><div className="study-refs">{c.sources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>)}</section>)}{report.sections.flatMap(s=>s.comparisons||[]).map(c=><section key={c.id}><h3>{c.title}</h3><Notes rows={[["可借鉴",c.adoption],["要承担的工作",c.requirement],["还需确认",c.missing]]}/></section>)}<MovedNotes id="report"/><ol>{report.discussionQuestions?.map(x=><li key={x}>{x}</li>)}</ol><Back view="report" label="竞品调研报告" navigate={navigate}/></details>
+ <details id="adoption-report" className="research-appendix"><summary>综合判断与待讨论问题</summary>{report.sections.filter(s=>s.id==='implications').map(s=><section key={s.id}><h3>{s.title}</h3><p>{s.answer}</p>{s.claims.map(c=><section key={c.title}><h4>{c.title}</h4><p>{c.text}</p><p>{c.basis}</p><div className="study-refs">{c.sources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>)}</section>)}{planningComparisons.filter(c=>c.adoption||c.requirement||c.missing).map(c=><section key={c.id}><h3>{c.title}</h3><Notes rows={[["可借鉴",c.adoption],["要承担的工作",c.requirement],["还需确认",c.missing]]}/></section>)}<MovedNotes id="report"/><ol>{report.discussionQuestions?.map(x=><li key={x}>{x}</li>)}</ol><Back view="report" label="竞品调研报告" navigate={navigate}/></details>
 </section>;}

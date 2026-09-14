@@ -70,7 +70,7 @@ export function FrameworkPlanning({navigate}:{navigate:(id:string)=>void}){retur
   </section>
 <section id="framework-positioning" className="study-platform"><div className="section-heading"><h2>方案比较所需条件</h2><span>已启动</span></div><p>候选方案处于比较阶段，最终方向未定；缺少的资料列为条件和待验证假设。</p><button className="text-button" onClick={()=>navigate('strategy')}>查看方向与组织方式 →</button><ul>{data.positioning.distinctions.map(x=><li key={x}>{x}</li>)}</ul>
    <div className="table-wrap"><table><thead><tr><th>待补材料</th><th>记录内容</th><th>用来判断</th></tr></thead><tbody>{data.positioning.inputs.map(x=><tr key={x.item}><th>{x.item}</th><td>{x.need}</td><td>{x.use}</td></tr>)}</tbody></table></div>
-   <p>三种候选方向按持续需要、供给和回访比较；四种组织方式用于安排内容与服务。真实消费、持续活跃及成本会改变投入顺序。</p><h3>仍可继续补充的竞品证据</h3><ol>{data.researchNext.slice(0,3).map(x=><li key={x}>{x}</li>)}</ol>
+   <p>三种候选方向按持续需要、供给和回访比较；具体的编选、方法维护、作品过程和练习反馈按需组合。真实消费、持续活跃及成本会改变投入顺序。</p><h3>仍可继续补充的竞品证据</h3><ol>{data.researchNext.slice(0,3).map(x=><li key={x}>{x}</li>)}</ol>
    <p className="muted">早期定位设想见历史附录。候选方案已进入比较；采购、招募、产品改版与研发执行尚未启动。</p>
   </section></div>;}
 

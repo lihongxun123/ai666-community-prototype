@@ -4,7 +4,7 @@ import {navigationGroups,topicDescriptions,viewTitle} from '@/lib/research-navig
 import {groups} from '@/lib/research-types';
 import {profiles} from '@/lib/profiles';
 import './research-structure.css';
-const chapters=[['quality','比较结论与证据覆盖'],['scope','有哪些平台，分别服务谁'],['needs','用户为什么消费和参与'],['content','内容如何展示与组织'],['supply','谁供给，怎样持续运营'],['business','工具、收费与投入怎样配合']];
+const chapters=[['scope','有哪些平台，分别服务谁'],['needs','用户为什么消费和参与'],['content','内容如何展示与组织'],['supply','谁供给，怎样持续运营'],['business','工具、收费与投入怎样配合'],['quality','比较方法与证据覆盖']];
 export function ResearchDirectory({navigate}:{navigate:(id:string,anchor?:string)=>void}){
  const link=(id:string,title:string)=><a href={'#'+id} onClick={e=>{e.preventDefault();navigate(id);}}>{title}<ArrowRight size={14}/></a>;
  return <article className="research-directory">

@@ -16,7 +16,7 @@ export function ContentArrangementLab({items,modes,scope,limit,activeMode,onMode
  </article>;
  const action=()=>{const a=item.primaryAction;if(a.kind==='read-related')return <button className="v23-action" onClick={()=>open(a.target)}>{a.label}</button>;if(['view-source','view-image','download-local'].includes(a.kind)&&a.target)return null;return <p>{a.label}</p>;};
  return <section className="v23-lab">
-  <h2>同一组内容，四种组织方式</h2><p>{scope}</p>
+  <h2>同一组材料的四种浏览编排</h2><p>{scope}</p>
   <fieldset className="v23-controls" aria-label="切换内容组织方式">{modes.map(m=><button key={m.id} aria-pressed={m.id===mode.id} className={m.id===mode.id?'is-active':''} onClick={()=>{onMode(m.id);setStage('discover');}}>{m.id} · {m.label}</button>)}</fieldset>
   <p className="v23-lab-note">内容编排示意。阅读与保存记录仅在本页临时保留，切换研究页或标签后重置。</p>
   {mode.representationLimit&&<p className="v23-reading-boundary">{mode.representationLimit}</p>}

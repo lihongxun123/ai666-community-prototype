@@ -4,13 +4,13 @@ import plan from '@/lib/retention-research.json';
 import evidence from '@/lib/retention-evidence.json';
 import {DeskComparisons} from './desk-comparison';
 
-export function RetentionPlan() {
+export function RetentionPlan({referenceOnly=false}:{referenceOnly?:boolean}={}) {
   return <section className="v23-conclusion" id="retention-plan" aria-labelledby="retention-plan-title">
-    <h2 id="retention-plan-title">{plan.title}</h2>
-    <p>{plan.answer}</p>
+    <h2 id="retention-plan-title">{referenceOnly?'研究任务与人工验证参考':plan.title}</h2>
+    {!referenceOnly&&<p>{plan.answer}</p>}
     <p className="muted">{plan.executionBoundary}</p>
-    <div className="table-wrap"><table><thead><tr><th>候选方向</th><th>为什么再来</th><th>已有选择与进入条件</th><th>最小试验与投入</th></tr></thead>
-      <tbody>{plan.directions.map(row => <tr key={row.name}><th scope="row">{row.name}</th><td>{row.returnReason}</td><td><p>{row.alternative}</p><p>{row.gate}</p></td><td><p>{row.trial}</p><p>{row.burden}</p></td></tr>)}</tbody></table></div>
+    {!referenceOnly&&<div className="table-wrap"><table><thead><tr><th>候选方向</th><th>为什么再来</th><th>已有选择与进入条件</th><th>最小试验与投入</th></tr></thead>
+      <tbody>{plan.directions.map(row => <tr key={row.name}><th scope="row">{row.name}</th><td>{row.returnReason}</td><td><p>{row.alternative}</p><p>{row.gate}</p></td><td><p>{row.trial}</p><p>{row.burden}</p></td></tr>)}</tbody></table></div>}
     <h3>当前研究进展</h3>
     <ol>{plan.stages.map(stage => <li key={stage.name}><h4>{stage.name}</h4><p className="muted">{stage.status}</p><p>{stage.work}</p><p><strong>得到什么：</strong>{stage.output}</p><p><strong>如何判断：</strong>{stage.decision}</p></li>)}</ol>
     <details className="study-sources"><summary>查看三组产品比较结果</summary><DeskComparisons/></details>

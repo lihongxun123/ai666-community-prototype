@@ -1,0 +1,680 @@
+[
+  {
+    "id": "visual-reference-and-method",
+    "title": "效果卡片之后：看作品、套模板、改流程",
+    "question": "同样展示一张商品效果图，用户点开后究竟能做什么？",
+    "observation": "Liblib模板从效果封面进入输入要求与使用入口；RunningHub换背景详情进一步列出模型、参数和节点，并将应用与完整工作流分开。Tensor.Art的商品例图则停在作品展示，详情明确没有生成数据。三者入口都可以是图片，交付深度却不同。",
+    "reasoning": "画面能让用户快速判断是否接近目标，详情再承担执行条件的判断。只想换素材的人需要输入表单和输出示例；要调整方法的人需要模型、节点和参数；来找审美参考的人未必需要流程。差异应由详情材料和按钮表达，不能仅靠封面或“同款”标签区分。",
+    "cases": [
+      {
+        "platformId": "liblib",
+        "name": "LiblibAI：电商产品精修模板",
+        "fact": "模板卡片展示效果、任务标题和模板/底模标签；对应详情列1—4张参考图、提示词支持、推荐模型和使用入口。配对截图确认卡片与同一资源详情的关系、输入字段及入口，未进入生成；正文、许可区与作者评论的商用表述存在冲突。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-cn-lib-template"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "liblib-template"
+        ],
+        "sources": [
+          {
+            "id": "v15-cn-lib-template",
+            "title": "电商产品商业级渲染精修模板",
+            "url": "https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8",
+            "date": "未标注",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "runninghub",
+        "name": "RunningHub：一键换背景工作流",
+        "fact": "商品效果卡片进入换背景详情后，可看到原图与效果、作者说明，以及打开AI应用、运行工作流和下载入口；已读正文另列模型、采样参数和60项节点信息。配对截图证明入口分流和部分详情结构，不能证明节点已经检查或现在仍能运行；资源标注2024年更新。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-cn-rh-flow"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "runninghub-workflow"
+        ],
+        "sources": [
+          {
+            "id": "v15-cn-rh-flow",
+            "title": "一键换背景：产品图摄影",
+            "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+            "date": "2024-11-23更新",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "tusi",
+        "name": "Tensor.Art：MooMooE-commerce商品例图",
+        "fact": "模型页的蓝色瓶子例图进入单图详情后，页面提示没有生成数据。截图证明例图与对应详情的关系，以及该图片未提供生成参数；模型页仍有运行入口，但不能据此补出这张图的提示词或种子。此例来自国际站，不能外推国内吐司或全站作品。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-cn-tensor-model"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "tensor-work"
+        ],
+        "sources": [
+          {
+            "id": "v15-cn-tensor-model",
+            "title": "MooMooE-commerce V1",
+            "url": "https://tensor.art/models/662744072865292090",
+            "date": "页面标2024-09-08更新；版本上传2023-11-21",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          }
+        ]
+      }
+    ],
+    "counterpoint": "没有过程材料的作品仍可供欣赏和参考，不必全部改造成教程。相反，RunningHub样本即使列出了模型、节点和运行入口，也仍是较早资源，现时依赖与输出尚未验证。因此应分别说明“有方法材料”与“在什么条件下验证可用”。",
+    "adoption": "保留同一套图片或视频预览，但在详情分别提供“作品参考”“可直接套用”“完整画布”三种交付。作品页展示完整成品和关联方法；套用页列输入、可改项和结果示例；画布页提供流程、依赖、版本及说明。只有实际有材料的入口才显示相应动作。",
+    "requirement": "投稿时核对作者实际交付的层次，建立作品、模板与源画布的关联。模板需有可分享输入、输出对照和失败说明；源画布需确认复制范围、依赖及许可。效果封面可以共用，不能用它代替交付验收。",
+    "missing": "用同一组商品素材完成“直接套用”与“修改画布”两条路径，记录补素材、改参数、求助和最终验收。如果普通用户仍需频繁打开源画布才能完成任务，就需要调整简化表单及内容说明，而不宜宣称套用入口已降低门槛。"
+  },
+  {
+    "id": "learning-and-execution",
+    "title": "教程解释判断，运行材料传递操作",
+    "question": "用户需要学会一个方法，还是尽快完成一次任务？",
+    "observation": "Runway课程先说明目标、难度和章节，课程按制作顺序编排内容；Datawhale具体章节将初始提示、输出与修订放在一起，并提供代码学习材料。RunningHub工作流把已有处理过程作为资源交付，使用者可转入应用或检查节点。课程与文件可以关联，但承担的任务不同。",
+    "reasoning": "课程按学习依赖组织，让读者理解先做什么、为什么调整；运行材料按执行依赖组织，让使用者判断缺什么、可改什么。面对陌生任务，照着流程运行未必能学会处理偏差；已有经验的人也未必愿意为一次操作完整学课。两类入口应能互相转入，而不应把下载文件当作教学已经完成。",
+    "cases": [
+      {
+        "platformId": "runway",
+        "name": "Runway Academy：分章制作课程",
+        "fact": "Building Custom Workflows公开概览列学习目标、难度、总时长和三个带时长章节，说明学习范围与顺序。现有配对截图来自另一门AI for Advertising课程，确认课程卡片的10模块、Beginner、免费入学等字段及对应详情，不能当作工作流课程的截图。广告课程总时长与模块合计不一致；两门课都未完整学习或验证效果。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-c1"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "runway-course"
+        ],
+        "sources": [
+          {
+            "id": "v15-c1",
+            "title": "Building Custom Workflows",
+            "url": "https://academy.runwayml.com/course/custom-workflows",
+            "date": "未标注",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "datawhale",
+        "name": "Datawhale：迭代讲解与练习材料",
+        "fact": "LLM Cookbook的迭代优化章节保留任务、初始提示、输出和修改过程，项目支持在线阅读、PDF与Notebook等材料；Python课程另将实际编码和作业记录用于参与检查。这里没有配对截图，依据已读章节与课程规则；未执行代码，也不能把规则要求当成所有学员已经完成。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-r-cookbook",
+              "v15-r-iterative"
+            ]
+          },
+          {
+            "dataFile": "site/lib/content-forms.json",
+            "sourceIds": [
+              "o9-d-dw-learning",
+              "o9-d-dw-feedback"
+            ]
+          }
+        ],
+        "screenshotIds": [],
+        "sources": [
+          {
+            "id": "v15-r-cookbook",
+            "title": "LLM Cookbook项目说明",
+            "url": "https://github.com/datawhalechina/llm-cookbook",
+            "date": "未标注，main持续修订",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          },
+          {
+            "id": "v15-r-iterative",
+            "title": "第三章：迭代优化",
+            "url": "https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md",
+            "date": "未标注，main持续修订",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          },
+          {
+            "id": "o9-d-dw-learning",
+            "title": "组队学习规则",
+            "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/",
+            "date": "页脚2022—2024；整页更新日未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "o9-d-dw-feedback",
+            "title": "课本编写与反馈收集",
+            "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+            "date": "页脚2022—2024；整页更新日未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "runninghub",
+        "name": "RunningHub：配置与应用双入口",
+        "fact": "换背景资源详情给出模型、参数和节点清单，并将“打开AI应用”与“运行工作流”并列。它能帮助有准备的使用者从说明进入执行；截图只证明两类入口存在，下载文件、依赖和实际输出尚未验证。本处复用同一组换背景截图，不计作第二个独立样本。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-cn-rh-flow"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "runninghub-workflow"
+        ],
+        "sources": [
+          {
+            "id": "v15-cn-rh-flow",
+            "title": "一键换背景：产品图摄影",
+            "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+            "date": "2024-11-23更新",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "huggingface",
+        "name": "Hugging Face：运行界面与源码权限",
+        "fact": "Spaces文档区分公开、受保护和私有范围，受保护Space可以公开使用但不公开源码。现有H3 Acceleration Arena配对截图显示应用卡片进入视频对照界面，并保留App、Files、Community入口；没有打开Files、播放或投票，不能用该截图判断这一个应用的源码权限或运行成功。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "o9-d-hf-spaces"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "huggingface-space"
+        ],
+        "sources": [
+          {
+            "id": "o9-d-hf-spaces",
+            "title": "Spaces Overview",
+            "url": "https://huggingface.co/docs/hub/spaces-overview",
+            "date": "未标注独立更新日",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ]
+      }
+    ],
+    "counterpoint": "两类形式不是互斥：Datawhale教程可以附Notebook，运行资源也可以附教学。Hugging Face的Spaces文档还区分公开、受保护和私有范围，能公开使用的演示不一定开放源码，因此“能运行”也不能直接写成“可取得完整方法”。",
+    "adoption": "针对同一个MakeNow任务，设置两条互相关联的路径：“直接做”提供样例输入、最少参数、输出检查与失败入口；“学做法”按准备、关键修改、结果对照和人工处理分节，并附对应画布。先完善具体任务页，不必先建设多门课程。",
+    "requirement": "同一作者需保留输入、尝试、修改理由和对照输出；编辑将教学步骤对应到画布版本。必须有人能回答为何失败、何时需要人工修正。可运行材料与讲解需保持一致；课程文件复制不附带助教服务。",
+    "missing": "在同一任务下观察新手与有经验者的首选路径、完成时间、主要错误和返回教程的位置。若两组都主要卡在素材准备或结果判断，优先补这些说明；只有出现连续学习需要，再考虑课程化。"
+  },
+  {
+    "id": "participation-and-response",
+    "title": "作品挑战组织同题创作，问题帖组织连续回应",
+    "question": "社区希望用户交一份作品、评价别人的作品，还是一起解决一个问题？",
+    "observation": "NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多个参与者围绕同一题目产出作品。LINUX DO问题帖从个人困扰开始，经回复逐步补充环境、尝试和结果；后来者阅读的是处理记录，不是同一题目的作品排行。",
+    "reasoning": "挑战需要统一题面和评审条件，才能让作品被比较，作品卡应突出题目、阶段和结果。问题讨论开始时可能连问题条件都不完整，列表应突出问题标题和进展，详情保留引用、追问和作者反馈。两者的“参与”不能混为同一种价值：投票主要表达偏好，排查回复需要解释适用条件。",
+    "cases": [
+      {
+        "platformId": "nightcafe",
+        "name": "NightCafe：挑战题面与赛后材料",
+        "fact": "社区挑战规则规定主题、公开范围、阶段和评分/排序方式。Promptle另提供起始图、目标图、有限步数与成绩卡；提示步骤默认不公开，须作者同意，并在当天题目结束后展示。成绩卡不是完整制作过程，Promptle仍标Alpha。本例无配对截图，依据官方规则；没有亲自参赛、评分或验证持续参与效果。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-h1",
+              "v15-h2"
+            ]
+          },
+          {
+            "dataFile": "site/lib/content-forms.json",
+            "sourceIds": [
+              "o9-g-night-game",
+              "o9-g-night-promptle"
+            ]
+          }
+        ],
+        "screenshotIds": [],
+        "sources": [
+          {
+            "id": "v15-h1",
+            "title": "Community Challenges on NightCafe",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
+            "date": "未标注",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          },
+          {
+            "id": "v15-h2",
+            "title": "Daily Challenge: Eligibility, Rating & Ranking",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+            "date": "未标注",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          },
+          {
+            "id": "o9-g-night-game",
+            "title": "Creating a Game (Community Challenge)",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+            "date": "未标绝对日期",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "o9-g-night-promptle",
+            "title": "Promptle: The Daily AI Art Puzzle",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
+            "date": "未标绝对日期；标Alpha",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          }
+        ]
+      },
+      {
+        "platformId": "linuxdo",
+        "name": "LINUX DO：问题、追问与处理结果",
+        "fact": "知识库管理话题的配对截图显示，列表以标题、分类和最近活动组织，详情保留问题背景、已考虑的方法及楼层回复；它只覆盖首屏，不能证明问题已解决。另一个NEWAPI接入问题样本在登录核对中可见首帖采纳摘要、回复追问与提问者自报解决，两条话题不能混为同一个案例，也没有独立复现该解法。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/market-content-forms.json",
+            "sourceIds": [
+              "v15-r-linuxdo"
+            ]
+          },
+          {
+            "dataFile": "site/lib/content-forms.json",
+            "sourceIds": [
+              "v11-ld-solved",
+              "o9-d-ld-topic",
+              "v11-ld-prompt"
+            ]
+          }
+        ],
+        "screenshotIds": [
+          "linuxdo-topic"
+        ],
+        "sources": [
+          {
+            "id": "v15-r-linuxdo",
+            "title": "AI时代大家是怎么管理自己的知识库的？",
+            "url": "https://linux.do/t/topic/2868771",
+            "date": "2026-09-07起的讨论",
+            "accessedAt": null,
+            "dataFile": "site/lib/market-content-forms.json"
+          },
+          {
+            "id": "o9-d-ld-topic",
+            "title": "关于应用接入的问题请教佬友",
+            "url": "https://linux.do/t/topic/1537782",
+            "date": "2026-01-29",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "v11-ld-prompt",
+            "title": "壁纸提示词与结果回传",
+            "url": "https://linux.do/t/topic/2879086",
+            "date": "2026-09-09",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          }
+        ]
+      }
+    ],
+    "counterpoint": "作品与讨论可以交叉。LINUX DO也有提示词帖子，成员通过回复上传自己的图片；它保留在同一话题中，没有统一运行环境或核验每张图是否使用首帖方法。NightCafe赛后公开步骤则能补充学习内容。因此可以共享评论与材料关联能力，不能把所有返图都算复现成功，也不能把所有讨论都改成竞赛。",
+    "adoption": "若提供练习与问题讨论，分别组织：作品练习页包含题目、输入素材、限制、提交示例和反馈；问题页包含目标、环境/版本、失败表现、已尝试办法及后续结果。作品可关联练习，问题可关联具体画布；采纳与点评各自标明作用。平台维护账号的投稿、回答和自然用户行为分开记录。",
+    "requirement": "练习需有人出题、检查素材并给具体点评；问题区需有人核对技术条件、追问结果，再整理可复用说明。表单可共用附件与引用功能，列表字段、反馈类型与结果状态分别处理。尚无主持或答疑能力时，应缩小主题范围。",
+    "missing": "对同一批内容分别记录自主交作品、有效点评、问题补充、作者反馈及后续再次使用；区分平台账号与外部用户。如果参与主要由平台自问自答或奖励驱动，就不足以支持自然讨论或日常挑战的供给假设。"
+  },
+  {
+    "id": "supply-roles",
+    "title": "编选、合作与成员贡献需要不同的交付约定",
+    "question": "什么内容由平台保证，什么工作可以交给合作作者或成员？",
+    "observation": "Runway提供作品频道和策选合作机会；NightCafe允许成员主持挑战；LINUX DO可见投稿、成员整理和管理者精选。这些做法分别增加可见度、工具使用机会或参与空间，未必附带固定稿量和维护时限。",
+    "reasoning": "供给不能仅按“官方”或“UGC”二分。作品可以由外部作者制作、平台编选，再由另一人整理过程；活动题目来自成员，规则解释仍需主持；技术答案来自用户，编辑仍要让后续读者找得到。应按实际工作和责任确定合作方式。",
+    "cases": [
+      {
+        "platformId": "runway",
+        "name": "Runway",
+        "fact": "After Light作品页呈现影片、署名与返回TV入口，体现编选和展示。Creative Partners Program提供工具权益、早期访问与合作机会，并明确不要求特定时间或创作投入，因此不能按入选作者数推定稳定供稿。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/evidence-synthesis.json",
+            "sourceIds": [
+              "V20-S01"
+            ]
+          },
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "o9-g-run-cpp"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "V20-S01",
+            "title": "Runway Watch — After Light",
+            "url": "https://watch.runwayml.com/after-light",
+            "date": "发布日期未标",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/evidence-synthesis.json"
+          },
+          {
+            "id": "o9-g-run-cpp",
+            "title": "Creative Partners Program",
+            "url": "https://runway.com/creative-partners-program",
+            "date": "未标发布日期",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ],
+        "screenshotIds": []
+      },
+      {
+        "platformId": "nightcafe",
+        "name": "NightCafe",
+        "fact": "成员挑战由主持人设主题、资格与阶段，参与者投稿和评审；公开聊天室的游戏可进入发现入口。平台提供功能，选题、聚集参与者和解释评审仍是具体组织工作。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "o9-g-night-game",
+              "o9-g-night-rules"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "o9-g-night-game",
+            "title": "Creating a Game (Community Challenge)",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
+            "date": "未标绝对日期",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "o9-g-night-rules",
+            "title": "Daily Challenge: Eligibility, Rating & Ranking",
+            "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
+            "date": "未标绝对日期；v8于2026-09-09复核",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ],
+        "screenshotIds": []
+      },
+      {
+        "platformId": "linuxdo",
+        "name": "LINUX DO",
+        "fact": "公开邀请函鼓励作者提供完整内容、为社区读者改写介绍，并由成员协助整理、管理者精选。登录样本可见提问者回传结果、回复者提供依据和Wiki修订，参与者补充的材料不同。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "v11-ld-letter",
+              "v11-ld-solved",
+              "v11-ld-wiki"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "v11-ld-letter",
+            "title": "秘密花园园丁邀请函",
+            "url": "https://linux.do/t/topic/847468",
+            "date": "首发 2025-08-07；访问 2026-09-09",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "v11-ld-solved",
+            "title": "关于应用接入的问题请教佬友",
+            "url": "https://linux.do/t/topic/1537782",
+            "date": "2026-01-29；复核 2026-09-09",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "v11-ld-wiki",
+            "title": "盘点 L 站的徽章：长期更新",
+            "url": "https://linux.do/t/topic/342888",
+            "date": "标题标注 2026-02-17 更新；访问 2026-09-09",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ],
+        "screenshotIds": []
+      }
+    ],
+    "counterpoint": "开放投稿能增加潜在来源，却不能保证持续有人制作和维护；合作计划中的资源权益也未必包含案例交付。官方编选可以提升可读性，但平台若包办制作、核验、回应与更新，同样会遇到产能限制。",
+    "adoption": "平台保证选题、编辑与发布质量；合作内容明确交付结果、过程材料、使用范围和维护期限；成员贡献在实际出现后记录，不列为启动期固定产量。",
+    "requirement": "对每份内容指定实际制作与维护者。多账号发布按实际人力核算；如采购作者内容，稿件、素材和后续答疑分别约定，不能将工具额度默认为完整报酬。",
+    "missing": "目前没有可核的作者履约率、每人稳定稿量、主持人持续参与比例或平台编辑工时。多元拾光也缺少从选题到发布再到更新的完整工时记录，不能据竞品机制估算招聘人数或内容产量。"
+  },
+  {
+    "id": "supply-maintenance",
+    "title": "可复用内容需要版本、问题和修订共同维护",
+    "question": "一份内容发布以后，哪些工作仍需持续投入？",
+    "observation": "LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适配日志，Datawhale把学习反馈转入教材协作，Hugging Face将运行文件和问题讨论关联到资源仓库。实际维护对象包括输入条件、依赖、教程、旧版本和后续回应，更新封面或发布时间不能完成这些工作。",
+    "reasoning": "内容能否继续使用，取决于变化是否被发现、能否找到负责的人，以及修订是否回到用户实际阅读的位置。可运行资源的维护通常更贴近技术支持；教程侧重步骤与错误解释；作品展示主要维护媒体、来源和说明。三类内容不宜采用相同产能假设。",
+    "cases": [
+      {
+        "platformId": "liblib",
+        "name": "LiblibAI",
+        "fact": "电商精修V2保留V1关联，并说明模型、模块和配置变化；V1邀请使用者返图与提意见。已见作者维护说明，但未取得完整的返图、修订和用户确认过程。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "o9-c-lib-1",
+              "o9-c-lib-2"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "o9-c-lib-1",
+            "title": "电商产品精修+背景替换（SDXL版）V1.0",
+            "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0",
+            "date": "未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "o9-c-lib-2",
+            "title": "电商产品精修+背景替换（FLUX）V2.0",
+            "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10",
+            "date": "未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ],
+        "screenshotIds": []
+      },
+      {
+        "platformId": "runninghub",
+        "name": "RunningHub",
+        "fact": "资源说明中有作者汇总问题并关联补充教学的做法，另一条长视频工作流保留跨日期插件适配日志。创作者奖励按有效运行、收藏和原创等条件计算；该奖励规则没有证明平台接管作者维护，也未披露维护工时。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/audience-research.json",
+            "sourceIds": [
+              "P25-runninghub-S3",
+              "P25-runninghub-S4",
+              "P25-runninghub-S5"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "P25-runninghub-S3",
+            "title": "Flux Kontext Dev 模糊变高清及放大修复",
+            "url": "https://www.runninghub.cn/post/1938533049359335425/",
+            "date": "更新2025-06-27",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/audience-research.json"
+          },
+          {
+            "id": "P25-runninghub-S4",
+            "title": "Scail-2 无劣化与长视频手动分段",
+            "url": "https://www.runninghub.cn/post/2065490120324767746",
+            "date": "更新2026-06-29",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/audience-research.json"
+          },
+          {
+            "id": "P25-runninghub-S5",
+            "title": "创作者激励计划",
+            "url": "https://www.runninghub.cn/creator-reward",
+            "date": "发布日期未标",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/audience-research.json"
+          }
+        ],
+        "screenshotIds": []
+      },
+      {
+        "platformId": "datawhale",
+        "name": "Datawhale",
+        "fact": "课程协作资料分别列课程入口、作业、直播、教材反馈与学习进度等工作。提问指南要求环境、错误和尝试信息，教材反馈由贡献者与教学团队讨论修订；助教为志愿者，没有即时回复义务。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/platform-operations.json",
+            "sourceIds": [
+              "o9-d-dw-workflow",
+              "o9-d-dw-question",
+              "o9-d-dw-feedback"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "o9-d-dw-workflow",
+            "title": "团队协作工作流",
+            "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/workflows/",
+            "date": "页脚2022—2024；整页更新日未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "o9-d-dw-question",
+            "title": "How to Ask Questions",
+            "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/",
+            "date": "页脚2022—2024；整页更新日未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          },
+          {
+            "id": "o9-d-dw-feedback",
+            "title": "课本编写与反馈收集",
+            "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/textbook_and_feedback/",
+            "date": "页脚2022—2024；整页更新日未标注",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/platform-operations.json"
+          }
+        ],
+        "screenshotIds": []
+      },
+      {
+        "platformId": "huggingface",
+        "name": "Hugging Face：资源版本与讨论记录",
+        "fact": "模型卡记录用途与限制，Space关联运行文件和资源讨论；官方文档允许通过讨论或PR提出修订，代码提交会触发重建。2025-09-23，一位答疑者发布适配Gradio 5的IDM-VTON演示说明，但未取得原求助者复验成功的记录。该记录证明作者提供了新版本，未证明原问题已经解决。",
+        "sourceRefs": [
+          {
+            "dataFile": "site/lib/content-forms.json",
+            "sourceIds": [
+              "o9-d-hf-card",
+              "o9-d-hf-spaces",
+              "o9-d-hf-discussion"
+            ]
+          },
+          {
+            "dataFile": "site/lib/audience-research.json",
+            "sourceIds": [
+              "P25-huggingface-s5",
+              "P25-huggingface-s12"
+            ]
+          }
+        ],
+        "screenshotIds": [],
+        "sources": [
+          {
+            "id": "o9-d-hf-card",
+            "title": "Model Cards",
+            "url": "https://huggingface.co/docs/hub/model-cards",
+            "date": "未标注独立更新日",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "o9-d-hf-spaces",
+            "title": "Spaces Overview",
+            "url": "https://huggingface.co/docs/hub/spaces-overview",
+            "date": "未标注独立更新日",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "o9-d-hf-discussion",
+            "title": "Pull Requests and Discussions",
+            "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
+            "date": "未标注独立更新日",
+            "accessedAt": "2026-09-09",
+            "dataFile": "site/lib/content-forms.json"
+          },
+          {
+            "id": "P25-huggingface-s5",
+            "title": "Pro Account – ZeroGPU Not Working Despite Subscription",
+            "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446",
+            "date": "2025-09-15",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/audience-research.json"
+          },
+          {
+            "id": "P25-huggingface-s12",
+            "title": "同主题：提供适配Gradio 5的演示",
+            "url": "https://discuss.huggingface.co/t/pro-account-zerogpu-not-working-despite-subscription/168446/6",
+            "date": "2025-09-23",
+            "accessedAt": "2026-09-10",
+            "dataFile": "site/lib/audience-research.json"
+          }
+        ]
+      }
+    ],
+    "counterpoint": "作者写出修复说明或合入修改，仍不等于所有使用者已恢复成功；反过来，某一条讨论未见回复，也不能证明资源永久失效。后续验收应针对具体版本、输入与结果。",
+    "adoption": "以少量内容包记录制作、复核、答疑和更新工作；作品、教程与可运行资源分别列出必须维护的材料。出现问题后，修订应回到详情或教程正文，并保留受影响版本和继续使用的条件。",
+    "requirement": "每份可复用内容有维护责任、问题入口和停止推荐条件。MakeNow素材显示问题由工具或素材维护者排查；运营负责整理说明与反馈，技术适配需有对应能力的人承担。费用核算包含重试、人工修整与支持时间。",
+    "missing": "公开资料能够确认维护行为和规则，不能提供平均响应时间、复验通过率、作者失联后的成本或实际利润。自身内容包尚无完整工时与费用，暂不设每周产量和维护人数。"
+  }
+]
