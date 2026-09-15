@@ -1,0 +1,3533 @@
+{
+  "jimeng": {
+    "title": "即梦AI的内容与创作者机制",
+    "summary": "即梦按创作场景组织图片与短片，并用过程画布、技能和活动连接观看、制作与作者供给。作品可以作为效果参考；技能把一类任务的素材要求和交付规则带入 Agent 创作区。成长计划以审核、编辑精选和站外传播表现分配作者支持。",
+    "sections": [
+      {
+        "title": "以创作场景组织探索内容",
+        "paragraphs": [
+          "探索页把广告营销、影视作品、平面设计、电商、动画动漫和其他并列为一级入口，以预期交付或使用场景帮助用户进入内容。广告营销下可见品牌广告、社媒营销；影视作品下有短片作品、剧集作品、音乐MV和视觉设定；电商下有电商头图与社媒营销。同一个“社媒营销”出现在不同一级目录，说明分类同时考虑内容所处的制作语境，而非单纯按行业互斥归类。",
+          "内容形态决定卡片和下一步：短片卡突出标题、作者和部分作品的“查看创作过程”；图片类以画面为主；技能卡提供作者、说明和添加按钮；活动卡呈现征集或评奖状态、规则入口和作品承接。探索页由不同内容类型分别接住观看、制作和参与。"
+        ],
+        "sources": [
+          {
+            "title": "即梦探索页：广告营销分类样本",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "即梦探索页：技能、动画动漫、平面设计、其他与活动分类样本",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "即梦分类与承载形式既有整理",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-14"
+          }
+        ]
+      },
+      {
+        "title": "作品详情组织成品和连续编辑",
+        "paragraphs": [
+          "“手工皂产品静物摄影”详情呈现作品标题、作者、日期、AI生成标记、提示词、模型和画幅，并提供“做同款”“用作参考图”入口。初始状态旁边是 Agent 创作区；点击作品按钮后，制作模式和参数随之切换。",
+          "点击“做同款”后，编辑区出现作品提示词、图片5.0 Pro、16:9、2K和单张设置；随后点击“用作参考图”，参考图进入编辑区，清晰度由2K变为1.5K，并显示单张限免。由于两个动作连续发生，不能据此判断独立添加参考图是否带入提示词。"
+        ],
+        "sources": [
+          {
+            "title": "手工皂产品静物摄影：详情、做同款与参考图连续状态",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564197063961?workDetailType=Image&itemType=9&type=image",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "即梦图片生成与历史重新编辑记录",
+            "url": "https://jimeng.jianying.com/ai-tool/home/?type=image",
+            "date": "2026-09-09"
+          }
+        ]
+      },
+      {
+        "title": "技能将专业交付条件带入创作区",
+        "paragraphs": [
+          "技能目录包含影视短片、电商、商业广告、通用创作、平面设计、社媒营销、娱乐、动漫游戏、大师风格复刻和专业运镜等任务入口。“珠宝电商图文视频一站式”限定戒指、项链、耳环、手链、吊坠、胸针等珠宝品类，明确排除非珠宝任务。它把商品图、文案和短视频视作一组交付，而不是只产出单张图片。",
+          "该技能的公开说明将交付拆为主图、角度图、细节图、佩戴图、场景图、包装图、卖点图、商品文案和短视频；同时给出产品身份锁、禁止改变珠宝造型、宝石颜色、镶嵌结构和金属材质的要求。文案规则禁止编造证书、克拉数、产地、天然等级、价格、库存、品牌授权或功效，并为图片、视频和文案设置检查项及状态化交付格式。",
+          "同一技能按发布场景提供不同交付组合：Amazon 商品页为九张图、十秒视频与文案；Shopify 为七张图、八秒视频与文案；另设天猫详情、小红书／抖音和纯商品素材组合。品类、渠道和交付规格共同决定内容的组织方式。这些是作者给出的制作约定，实际产出是否满足约定仍需逐项验收。",
+          "添加“珠宝电商图文视频一站式”后，按钮变为“去使用”；点击后，Agent 创作区出现该技能标签。技能因此不只是可阅读的教程，还能作为生成任务的预设指令。该路径已核对到编辑区，尚未输入商品素材或提交生成。"
+        ],
+        "sources": [
+          {
+            "title": "即梦技能目录：珠宝电商图文视频一站式",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "珠宝电商图文视频一站式：技能详情、交付规则与质量检查",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "珠宝技能添加、去使用及带入Agent创作区",
+            "url": "https://jimeng.jianying.com/ai-tool/generate",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "技能目录的供给范围与分类重叠",
+        "paragraphs": [
+          "技能的12个分类窗口共记录297条卡片记录（含跨窗口重复），按标题与署名临时去重得到217项。其中93项署名“即梦AI”，124项使用其他署名，共涉及44个署名。这里统计的是显示使用次数的技能卡片；无计数的固定入口未纳入。页面未提供稳定技能ID，也不能据署名判断作者是否与平台合作。",
+          "分类同时包含任务、行业和表现手法：影视短片26项、电商22项、商业广告25项、通用创作30项、平面设计21项、社媒营销20项、娱乐21项、动漫游戏18项、大师风格复刻25项、专业运镜20项；“发现”55项，“热门推荐”14项。它们不是互斥的行业分组。例如“电影级长镜头”同时出现在影视短片与专业运镜，“照片转极简独立杂志拼贴海报”同时出现在平面设计与娱乐。",
+          "有68项技能进入多个窗口。分类的作用是让同一方法从不同创作意图被找到，不能把各分类数量相加后计算全站行业占比。各窗口显示“没有更多了”，仍只说明当前账号的展示范围，不证明后台资源已全部公开。"
+        ],
+        "sources": [
+          {
+            "title": "即梦探索 → 技能 → 12个分类窗口",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "作者供给包含分析方法、生成规则与质量检查",
+        "paragraphs": [
+          "页面署名“杉杉”的作者主页列出11项技能，覆盖饰品商品图、宠物故事短片、汽车发布会组图、香水广告、参考图分析、提示词优化和图片诊断。同一作者既提供生成任务，也提供生成前的分析与生成后的检查。11项是该主页展示数量，不反映发布频率，也未说明供稿是否受平台委托。",
+          "“Moodboard转动态概念片”的详情公开技能正文，注明V2版本，组织了参考分析、方案确认、执行和结果检查，并将交付限定为概念候选。作者还记录了自测中的音轨问题。这说明技能可以承载操作经验与失败限制；自述测试不是独立使用者的效果验证。",
+          "署名“森海荧光”的“叙事短片导演分镜”将交付拆为导演意图书、分镜表及逐段提示词，详情提供演示视频与可阅读的技能正文。对使用者而言，选择对象不只是成片风格，还包括希望获得哪一种制作材料。",
+          "技能使用信号存在页面口径差异：“Moodboard转动态概念片”在目录及详情显示28次使用，作者主页显示92人在用，均显示2赞。另一个分镜技能在目录显示1.7万次使用，详情为16627次。前一组不能合并计量，后一组存在展示精度差异；这些数值均不能代替成功交付人数或回访人数。"
+        ],
+        "sources": [
+          {
+            "title": "杉杉作者主页 → 技能",
+            "url": "https://jimeng.jianying.com/ai-tool/personal/MS4wLjABAAAABFmnWd7cTc_o3BrOdltPI05fITL1YMgW_YYkEhj7e6s?returnActiveTab=skill",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "即梦技能详情：Moodboard转动态概念片、叙事短片导演分镜",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "电商作品入口与技能入口呈现不同供给结构",
+        "paragraphs": [
+          "电商头图当前排序的前12条详情中，10条署名“即梦AI”，均发布于2026年9月4日；另两条使用其他作者署名。这个入口窗口以官方示例为主，不能将其作者结构推广到整个探索区或技能目录。",
+          "作品涉及手工皂、香水、精油、彩妆、机械键盘、运动鞋和儿童防晒产品。详情将成图、提示词、模型与比例接到“做同款”和“用作参考图”；相较之下，技能目录以制作方法和交付任务组织选择。行业标签相同，并不意味着承载对象、供给方式或下一步操作相同。",
+          "这组证据支持“电商入口具有多品类示例”的判断，尚不能证明各品类需求量。12条是连续展示窗口，未取得曝光人数、下游采用、生成成功和回访数据，不能据点赞或资源数量判定需求是否得到满足。"
+        ],
+        "sources": [
+          {
+            "title": "手工皂产品静物摄影",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564197063961?workDetailType=Image&itemType=9",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "机械键盘产品摄影",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564192902425?workDetailType=Image&itemType=9",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "户外运动鞋",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7618098833666346291?workDetailType=Image&itemType=9",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "电商头图：未显示标题的防晒产品海报",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7553983724652727602?workDetailType=Image&itemType=9",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "过程画布、活动与成长计划连接供给和传播",
+        "paragraphs": [
+          "部分短片详情提供“查看创作过程”，以只读画布展示图片和视频节点、镜头分组、连线和复制项目入口。配合作者关于分镜、选片、调速、音效、局部修图和剪映的自述，可以看到短片生产由生成片段、人工筛选和后期编排共同构成。活动页把规则、投稿入口与参赛作品并置，并出现同步抖音发布、外部赛事或线下展映等安排，将站内征集接到站外分发和行业合作。",
+          "“造梦新章”是面向AI影像创作者的报名审核计划，设新锐、优质和超级创作者三层。公开规则把入选、符合标准的短片投稿、站内编辑精选、月度支持、模型内测、社群、行业项目和商业合作机会组合为成长通道；部分层级的资格参照历史站外作品影响力。计划中的“锋芒回响”又将原创叙事短片、即梦与抖音双平台发布、标识或话题以及抖音点赞或播放表现，与积分、现金、热点策划和创作支持关联。",
+          "成长计划的资源分配有具体层级：新锐创作者首次入选奖励一万积分；优质创作者另有月度五千积分支持；超级创作者的月度支持为一万积分，并列出项目提案、会员与商业合作机会。短片投稿与编辑精选另设奖励。“锋芒回响”要求至少一分钟的原创叙事短片，并将新锐作者的现金门槛主要设在抖音点赞表现上，优质和超级作者则使用播放量或高点赞门槛。平台同时管理站内供给质量和站外传播条件，公开规则尚无对应的实际发放与收入分布材料。"
+        ],
+        "sources": [
+          {
+            "title": "美丑：短片播放器与创作过程画布",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7662299870740483374?workDetailType=ShowcaseVideo&itemType=210",
+            "date": "2026-09-14"
+          },
+          {
+            "title": "AI武侠丝滑打斗篇：作者制作过程自述",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7559413118061890843?itemType=210&workDetailType=ShowcaseVideo",
+            "date": "2025-10-10"
+          },
+          {
+            "title": "即梦AI创作者成长计划・造梦新章",
+            "url": "https://jimeng.jianying.com/ai-tool/activity-detail/2026-709-dreamina-weekly-challenge",
+            "date": "2026-09-15；页面显示活动期为2026-07-23至2026-12-31"
+          },
+          {
+            "title": "即梦活动页：成长计划及同期活动入口",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "作者复盘揭示生成之外的制作负担",
+        "paragraphs": [
+          "一位在即梦分享成片的作者，在LINUX DO复盘中记录了剧本压缩、人物设定、故事板、剪辑、配乐和调色。其实际制作链使用GPT、Seedance API与剪映，不能把整段制作经历归为即梦编辑器使用效果。即梦在这个案例中是作品分享入口，工具使用与作品发布发生在不同环节。",
+          "读者指出不看文案难以理解视频，作者随后承认部分镜头交代不清、节奏不合适；对成片清晰度问题，作者表示尚不清楚原因。这个案例同时具备成片发布和未解决问题：内容供给已发生，叙事与技术结果仍需反馈和修订。它可以说明创作者为什么需要制作复盘、镜头反馈和后期知识，不能据此计算即梦生成成功率或将问题归因于平台。"
+        ],
+        "sources": [
+          {
+            "title": "关于第一次做AI小视频的复盘：原帖与作者回应",
+            "url": "https://linux.do/t/topic/2201600",
+            "date": "2026-05-18至19；2026-09-15核对"
+          }
+        ]
+      },
+      {
+        "title": "普通使用者如何采用结果并继续制作",
+        "paragraphs": [
+          "五位公开署名使用者的自述来自四个页面，覆盖节庆祝福、简单动图、兴趣短片和公司视频任务，其中两人位于同一论坛主题；四位的应用归属明确，另一位仅按主题语境参考。案例按具体任务与结果筛选，偏向愿意记录问题的人；它们用于理解采用过程，不估计普遍失败率或留存。",
+          "2026年2月25日，博客园作者victor.x.qu记录用即梦App的新春数字分身模板制作祝福视频：台词未按预期替换，而是接在模板台词之后。作者仍将就采用，并在之后几天继续尝试。这个例子同时包含输出偏离、降低验收要求和继续使用，不能把“有瑕疵”直接等同于放弃。",
+          "2025年3月31日的App Store评论中，Jersey小初描述简单动图出现变形、穿模，反复生成仍只有部分结果可用，并提到会员和积分支出。开发者回复表达会改进，但没有该任务的解决结果。这是较早版本的个人体验，不作为2026年模型可用率或现行价格的依据。",
+          "2026年3月6日，LINUX DO的oheyrvi说自己被同人视频吸引后开始使用即梦官网，花数日制作出一分钟多的抽象短片，并产生大量未采用片段。帖子中的等待和费用是个人经历；后来试用fast及寻找文件的讨论涉及其他应用，不能计为即梦持续使用。",
+          "2026年3月27日，同站kyuugo自述因公司需求与同事连续两周使用即梦，购买会员与积分，并用剪映处理首尾帧衔接和偏色。另一回帖者lytofb描述把多个创意一起提交，隔天再修；该回帖未另行写明使用入口，只按主题语境参考。这说明使用任务会延伸到重试、后期修正和跨日安排；公司任务产生的持续使用，也不同于兴趣用户自发回访。",
+          "这些案例支持把“生成结果”“采用结果”“继续完成任务”分开判断。尚未取得最终发布、业务验收或项目结束后的持续使用记录。另一条混谈即梦、小云雀的帖子，其无输出经历归因不清，不计入即梦直接结果证据。"
+        ],
+        "sources": [
+          {
+            "title": "春节期间浅试了AI视频生成：本人试用段",
+            "url": "https://www.cnblogs.com/fs7744/p/19634469",
+            "date": "2026-02-25发表；2026-09-15核查"
+          },
+          {
+            "title": "Jersey小初：简单动图使用评论",
+            "url": "https://apps.apple.com/cn/app/%E5%8D%B3%E6%A2%A6ai-%E6%8A%96%E9%9F%B3%E6%97%97%E4%B8%8Bai%E5%9B%BE%E7%89%87%E5%92%8C%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7/id6503676563?platform=iphone&see-all=reviews",
+            "date": "2025-03-31评论；2026-09-15核查"
+          },
+          {
+            "title": "兴趣短片作者使用经历",
+            "url": "https://linux.do/t/topic/1700553",
+            "date": "2026-03-06发表；2026-09-15核查"
+          },
+          {
+            "title": "公司任务、后期修正与隔日继续制作",
+            "url": "https://linux.do/t/topic/1834572",
+            "date": "2026-03-27发表；2026-09-15核查"
+          }
+        ]
+      },
+      {
+        "title": "证据边界",
+        "paragraphs": [
+          "以上材料确认了目录、按钮、页面状态和公开规则。技能目录的点赞和使用数、活动页的参与人数、奖金或积分表述、成长计划的资格与激励，不能推断独立作者规模、真实收益、奖励兑现、作品采用率或跨周活跃。珠宝技能未输入素材和生成；短片画布未复制运行；图片参考图记录为一次连续编辑状态。"
+        ],
+        "sources": [
+          {
+            "title": "即梦技能目录与珠宝技能操作记录",
+            "url": "https://jimeng.jianying.com/ai-tool/explore",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "即梦AI创作者成长计划・造梦新章",
+            "url": "https://jimeng.jianying.com/ai-tool/activity-detail/2026-709-dreamina-weekly-challenge",
+            "date": "2026-09-15"
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/batch1-evidence/jimeng-ecommerce.png",
+        "title": "电商头图目录：不同商品共享画面优先的浏览方式",
+        "url": "https://jimeng.jianying.com/ai-tool/explore",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-soap-reference.png",
+        "title": "手工皂图片：同款后添加参考图，编辑器显示对应素材与参数",
+        "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564197063961?workDetailType=Image&itemType=9",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-jewelry-skill.png",
+        "title": "珠宝技能详情：成品示例与任务说明",
+        "url": "https://jimeng.jianying.com/ai-tool/explore",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-jewelry-use.png",
+        "title": "珠宝技能已带入 Agent 创作区，尚未提交生成",
+        "url": "https://jimeng.jianying.com/ai-tool/generate",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-growth-plan.png",
+        "title": "创作者成长计划：分层支持与征集条件",
+        "url": "https://jimeng.jianying.com/ai-tool/activity-detail/2026-709-dreamina-weekly-challenge",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-author-skills.png",
+        "title": "作者技能目录：商品图、参考分析与质量诊断",
+        "url": "https://jimeng.jianying.com/ai-tool/personal/MS4wLjABAAAABFmnWd7cTc_o3BrOdltPI05fITL1YMgW_YYkEhj7e6s?returnActiveTab=skill",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/jimeng-narrative-skill.png",
+        "title": "叙事短片导演分镜：演示、交付说明与技能正文",
+        "url": "https://jimeng.jianying.com/ai-tool/explore",
+        "date": "2026-09-15"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "技能目录：影视短片",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；26张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "电影级长镜头｜即梦AI｜26赞 · 8715次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "遮挡转场一镜到底｜即梦AI｜20赞 · 81次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "伪纪录手持一镜到底｜即梦AI｜10赞 · 67次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "将古画转变成现实｜KKAI生成影像｜9赞 · 123次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "MVskill｜黄白AI｜7赞 · 90次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "真人电影角色身份组图｜南波万喵｜6赞 · 217次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影级镜头创作导演｜即梦AI｜6赞 · 117次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "万物可机械变形生成｜傅博熊｜3赞 · 17次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "参考图夜景电影场景组图｜南波万喵｜3赞 · 5次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "Moodboard转动态概念片｜杉杉｜2赞 · 28次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "影院级广告导演｜即梦AI｜2赞 · 22次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影预告片导演｜即梦AI｜1赞 · 45次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "悬疑短片三镜叙事组图｜南波万喵｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "叙事短片导演分镜｜森海荧光｜1096赞 · 1.7万次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "一图成片-电影广告全能导演｜渊静-中意｜657赞 · 1.1万次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "剧本资产视频一条龙创作｜娜乌斯嘉｜472赞 · 7584次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI演员微表情导演｜即梦AI｜411赞 · 2487次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "名导十五秒视频风格资产引擎｜即梦AI｜98赞 · 1995次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "15秒视觉特效｜猫叔｜83赞 · 1131次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "深度图电影分镜｜：）｜50赞 · 299次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "15秒极致夸张反转提示词｜猫叔｜39赞 · 323次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "台式手持短片｜即梦AI｜24赞 · 144次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "三幕式短剧工厂｜BOB 二黑｜23赞 · 335次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "传统中国动画美学短片｜即梦AI｜19赞 · 189次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "国风纯意境氛围短片｜即梦AI｜13赞 · 126次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "人文纪录短片｜即梦AI｜6赞 · 124次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：电商",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；22张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "短视频爆款带货｜即梦AI｜14赞 · 625次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高级感饰品商品图生成｜杉杉｜3赞 · 67次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计需求深访｜地质大学博士说AI｜1赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "冰饮冷感微距广告｜杉杉｜0赞 · 7次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "爆款电商短视频题材创意｜Carson｜412赞 · 7227次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "穿搭上身试穿视频生成｜即梦AI｜215赞 · 1932次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高能未来电子产品广告视频｜即梦AI｜202赞 · 1726次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "时尚走秀短视频导演｜即梦AI｜146赞 · 1429次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝电商图文视频一站式｜地质大学博士说AI｜145赞 · 1367次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "TikTok网红带货视频｜即梦AI｜111赞 · 3141次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "素人穿搭配方｜即梦AI｜109赞 · 1398次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "ASMR沉浸式潮玩开箱导演｜即梦AI｜76赞 · 265次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计出款｜地质大学博士说AI｜51赞 · 369次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI造型师高转化模特图｜即梦AI｜42赞 · 1240次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计进化｜地质大学博士说AI｜27赞 · 123次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "万能电商图｜小花｜13赞 · 236次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "商业美食拆解｜即梦AI｜13赞 · 69次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "商品沉浸式旋转广告｜即梦AI｜8赞 · 102次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "亚马逊排版电商图｜小小东｜3赞 · 33次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电商详情页｜小花｜2赞 · 66次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "中秋电商海报｜小小东｜1赞 · 45次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "苹果风电商海报｜小花｜1赞 · 40次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：商业广告",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；25张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "超广角动感运营插画海报｜傅博熊｜24赞 · 176次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "15秒产品快剪广告｜Mae｜10赞 · 104次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "品牌视觉KV动态化｜杉杉｜5赞 · 39次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "喜剧商业广告导演｜即梦AI｜4赞 · 56次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高级感饰品商品图生成｜杉杉｜3赞 · 67次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "产品广告导演｜即梦AI｜2赞 · 50次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "Moodboard转动态概念片｜杉杉｜2赞 · 28次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "影院级广告导演｜即梦AI｜2赞 · 22次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "短片品牌广告片导演｜即梦AI｜2赞 · 21次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影预告片导演｜即梦AI｜1赞 · 45次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "时尚大片创作导演｜渊静-中意｜1赞 · 32次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高奢品牌情绪TVC｜杉杉｜1赞 · 22次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "香水意境广告短片｜杉杉｜1赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "社媒营销活动导演｜即梦AI｜1赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影感对话场景｜即梦AI｜1赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "汽车发布会广告组图｜杉杉｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "一图成片-电影广告全能导演｜渊静-中意｜657赞 · 1.1万次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "顶级波普视觉广告导演｜即梦AI｜285赞 · 2009次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高能未来电子产品广告视频｜即梦AI｜202赞 · 1726次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "时尚走秀短视频导演｜即梦AI｜146赞 · 1429次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "反差叙事剧情广告｜话神闲｜77赞 · 837次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "工业产品商业宣传视频｜即梦AI｜21赞 · 315次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "夏日水下饮品广告｜即梦AI｜15赞 · 92次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "亚马逊排版电商图｜小小东｜3赞 · 33次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "中秋电商海报｜小小东｜1赞 · 45次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：通用创作",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；30张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "图片去AI感与提示词优化｜杉杉｜5赞 · 81次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "Seedance2点5多素材视频提示词｜胡扯Max｜5赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "打斗动作编排｜即梦AI｜3赞 · 35次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "参考图视觉拆解分析｜杉杉｜0赞 · 20次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "图片诊断生成器｜杉杉｜0赞 · 7次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "拍立得相机预览套图｜渊静-中意｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "九十年代中国室内电影场景组图｜南波万喵｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "惊喜镜头｜地质大学博士说AI｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI演员微表情导演｜即梦AI｜411赞 · 2487次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "角色设计｜慕影-中意｜264赞 · 6737次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "世界观美术设定｜慕影-中意｜189赞 · 2824次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "故事开发｜慕影-中意｜160赞 · 2091次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "人像捏脸导演｜即梦AI｜122赞 · 1702次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "剧本撰写｜慕影-中意｜98赞 · 1508次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "15秒视觉特效｜猫叔｜83赞 · 1131次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "深度图电影分镜｜：）｜50赞 · 299次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "二维动画线稿批量上色｜小弹簧晓丹｜50赞 · 275次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "OC魅力诊断师｜即梦AI｜35赞 · 109次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "4K高清精修｜爆蛋BD｜33赞 · 4895次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "风格提取和复用大师｜即梦AI｜23赞 · 404次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影级人脸克隆与场景重绘｜爆蛋BD｜14赞 · 203次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "国风纯意境氛围短片｜即梦AI｜13赞 · 126次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "一句话变电影感摄影图｜即梦AI｜11赞 · 368次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "油彩立体厚涂风｜小小东｜5赞 · 55次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影级智能布光设计｜即梦AI｜4赞 · 48次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "剧本开发｜即梦AI｜3赞 · 69次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "亚马逊排版电商图｜小小东｜3赞 · 33次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI音乐编辑器｜爆蛋BD｜2赞 · 34次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "动态粒子轨迹｜小小东｜2赞 · 26次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "中秋电商海报｜小小东｜1赞 · 45次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：平面设计",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；21张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "照片转极简独立杂志拼贴海报｜即梦AI｜25赞 · 175次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "超广角动感运营插画海报｜傅博熊｜24赞 · 176次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "将古画转变成现实｜KKAI生成影像｜9赞 · 123次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "平面纸片拼贴视频｜黄白AI｜8赞 · 31次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "品牌视觉KV动态化｜杉杉｜5赞 · 39次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "信息图海报生成｜陈困困｜3赞 · 84次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "时尚大片创作导演｜渊静-中意｜1赞 · 32次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计需求深访｜地质大学博士说AI｜1赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "系列套图生成｜渊静-中意｜420赞 · 7549次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "人像捏脸导演｜即梦AI｜122赞 · 1702次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计出款｜地质大学博士说AI｜51赞 · 369次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "先锋服装商拍视觉指导｜即梦AI｜39赞 · 571次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝设计进化｜地质大学博士说AI｜27赞 · 123次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "巨物尺度清透海报｜即梦AI｜19赞 · 223次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "原创潮玩角色全案设计｜即梦AI｜18赞 · 278次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "一句话变电影感摄影图｜即梦AI｜11赞 · 368次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "室内设计沉浸式探索视频｜即梦AI｜11赞 · 146次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "日系生活碎片｜小小东｜6赞 · 259次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "油彩立体厚涂风｜小小东｜5赞 · 55次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "你的专属doll｜即梦AI｜2赞 · 34次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "动态粒子轨迹｜小小东｜2赞 · 26次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：社媒营销",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；20张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "平面纸片拼贴视频｜黄白AI｜8赞 · 31次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "真实宠物故事短片｜杉杉｜4赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "老照片修复｜即梦AI｜1赞 · 152次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "社媒营销活动导演｜即梦AI｜1赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "梗图复刻｜渊静-中意｜0赞 · 10次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "历史时空传送门｜即梦AI｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "爆款电商短视频题材创意｜Carson｜412赞 · 7227次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "穿搭上身试穿视频生成｜即梦AI｜215赞 · 1932次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "TikTok网红带货视频｜即梦AI｜111赞 · 3141次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "素人穿搭配方｜即梦AI｜109赞 · 1398次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "数字人搞笑采访视频生成｜小文｜93赞 · 436次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "ASMR沉浸式潮玩开箱导演｜即梦AI｜76赞 · 265次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "社媒素人App宣传｜即梦AI｜35赞 · 285次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "宠物拟人快切vlog｜即梦AI｜28赞 · 196次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "绿幕猫咪跳舞素材生成｜即梦AI｜25赞 · 113次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "原创潮玩角色全案设计｜即梦AI｜18赞 · 278次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "室内设计沉浸式探索视频｜即梦AI｜11赞 · 146次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "第一视角生活化互动视频｜即梦AI｜7赞 · 109次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "实拍视频首帧换景与动作复刻｜即梦AI｜6赞 · 63次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电影感唯美旅拍视频｜即梦AI｜1赞 · 21次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：娱乐",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；21张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "照片转极简独立杂志拼贴海报｜即梦AI｜25赞 · 175次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "MVskill｜黄白AI｜7赞 · 90次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "喜剧商业广告导演｜即梦AI｜4赞 · 56次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "真实宠物故事短片｜杉杉｜4赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "梗图复刻｜渊静-中意｜0赞 · 10次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "治愈系原创IP孵化助手｜即梦AI｜94赞 · 951次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "数字人搞笑采访视频生成｜小文｜93赞 · 436次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "3D国漫风转身变身特效｜即梦AI｜53赞 · 179次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "15秒极致夸张反转提示词｜猫叔｜39赞 · 323次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "绿幕猫咪跳舞素材生成｜即梦AI｜25赞 · 113次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "怀旧梦核短片｜即梦AI｜16赞 · 52次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "美食飞溅转场成片｜即梦AI｜11赞 · 36次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "萌宠打工Vlog｜即梦AI｜9赞 · 197次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "第一视角生活化互动视频｜即梦AI｜7赞 · 109次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "油彩立体厚涂风｜小小东｜5赞 · 55次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "万物皆可iPhoneDuo｜小花｜2赞 · 217次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI音乐编辑器｜爆蛋BD｜2赞 · 34次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "你的专属doll｜即梦AI｜2赞 · 34次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "动态粒子轨迹｜小小东｜2赞 · 26次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "ios界面风P图｜小花｜1赞 · 29次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "双主角沉浸式互动短片｜即梦AI｜1赞 · 19次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：动漫游戏",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；18张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "像素风游戏UI资产设计专家｜蹦萨奇｜4赞 · 26次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "像素风游戏道具资产生成｜蹦萨奇｜3赞 · 7次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "像素风游戏场景资产生成大师｜蹦萨奇｜1赞 · 50次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "我的世界体素风格｜渊静-中意｜1赞 · 10次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "像素风游戏特效生成｜蹦萨奇｜1赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "像素风游戏角色资产生成大师｜蹦萨奇｜0赞 · 36次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "角色设计｜慕影-中意｜264赞 · 6737次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "世界观美术设定｜慕影-中意｜189赞 · 2824次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "治愈系原创IP孵化助手｜即梦AI｜94赞 · 951次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "角色精灵图动画产线｜AIGC炼丹师｜73赞 · 485次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "3D国漫风转身变身特效｜即梦AI｜53赞 · 179次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "二维动画线稿批量上色｜小弹簧晓丹｜50赞 · 275次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "OC魅力诊断师｜即梦AI｜35赞 · 109次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "治愈系动画大师｜即梦AI｜16赞 · 165次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "开放世界都市游戏风格｜即梦AI｜15赞 · 89次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "像素街机影像｜即梦AI｜7赞 · 49次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "屏幕穿越互动短片玩法｜即梦AI｜4赞 · 65次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "赛璐璐热血日漫风｜即梦AI｜3赞 · 73次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：大师风格复刻",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；25张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "将古画转变成现实｜KKAI生成影像｜9赞 · 123次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "末日丧尸列车｜即梦AI｜3赞 · 27次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "哥特式恐怖｜即梦AI｜2赞 · 27次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "异常阈限空间｜即梦AI｜2赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "末日灾难｜即梦AI｜1赞 · 11次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "诡异恐怖旅馆｜即梦AI｜1赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "名导十五秒视频风格资产引擎｜即梦AI｜98赞 · 1995次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "风格提取和复用大师｜即梦AI｜23赞 · 404次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "传统中国动画美学短片｜即梦AI｜19赞 · 189次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "治愈系动画大师｜即梦AI｜16赞 · 165次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "怀旧梦核短片｜即梦AI｜16赞 · 52次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "开放世界都市游戏风格｜即梦AI｜15赞 · 89次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高饱和国风美学风格｜即梦AI｜13赞 · 207次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "暗黑东方神话奇幻短片｜即梦AI｜9赞 · 53次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "邵氏风格喜剧短片｜即梦AI｜7赞 · 96次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "微缩风格创意短片｜即梦AI｜6赞 · 46次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "古典黑色电影｜即梦AI｜5赞 · 24次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "冷蓝调宿命叙事短片｜即梦AI｜5赞 · 20次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "黑白默片｜即梦AI｜4赞 · 34次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "Technicolor-特艺三彩胶片美学｜曾小寻｜4赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "赛璐璐热血日漫风｜即梦AI｜3赞 · 73次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "纸艺毛毡微缩童话风格｜曾小寻｜3赞 · 20次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "波普超现实主义｜即梦AI｜2赞 · 53次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高能废土公路朋克短片｜即梦AI｜2赞 · 5次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "经典百老汇美学｜即梦AI｜0赞 · 12次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：专业运镜",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；20张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "电影级长镜头｜即梦AI｜26赞 · 8715次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "遮挡转场一镜到底｜即梦AI｜20赞 · 81次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "伪纪录手持一镜到底｜即梦AI｜10赞 · 67次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "FPV精准穿越运镜｜即梦AI｜7赞 · 71次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "躲避危机动作运镜生成｜傅博熊｜7赞 · 26次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "子弹时间镜头｜即梦AI｜7赞 · 11次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "螺旋环绕镜头｜即梦AI｜6赞 · 42次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "希区柯克变焦｜即梦AI｜4赞 · 14次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "贴身固定镜头｜即梦AI｜4赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "八字轨迹双主体环绕｜即梦AI｜3赞 · 51次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "不可能空间穿越运镜｜即梦AI｜3赞 · 19次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "运镜轨迹匹配转场｜即梦AI｜3赞 · 12次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "视差焦点接力运镜｜即梦AI｜2赞 · 6次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "无限递归变焦运镜｜即梦AI｜2赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "物体锁定跟拍｜即梦AI｜1赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "手持跟拍运镜｜即梦AI｜7赞 · 12次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "格莱美运镜｜即梦AI｜5赞 · 16次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "分屏镜头｜即梦AI｜4赞 · 1次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "滚轴运镜｜即梦AI｜2赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "摆荡穿梭跟拍运镜｜即梦AI｜2赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：发现",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；55张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "中式巨物美学｜Madison｜0赞 · 21次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "苹果发布会风产品视频｜靓仔AI进化论｜17赞 · 596次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "日系生活碎片｜小小东｜6赞 · 259次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "几何窗口海报｜小小东｜4赞 · 66次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "万物皆可拼豆风｜加油赵哈哈｜3赞 · 338次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "万物皆可喜茶风｜小小东｜3赞 · 90次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "第一视角奇遇图文导演｜鼠鼠脑洞批发｜3赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "喜茶风中秋美食图｜小小东｜2赞 · 33次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "拼豆手帐风｜Bless｜2赞 · 23次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "复古手账涂鸦｜小小东｜2赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "电商详情图｜小小东｜1赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "真人照片转盲盒公仔｜噢克嘻｜1赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "复古印刷质感｜小小东｜1赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "实拍人物手账贴纸风动态创作｜小洁ai实战｜1赞 · 7次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "等距微缩模型｜小小东｜1赞 · 7次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "复古现代剪纸｜小小东｜1赞 · 6次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "墙面复古广告｜小小东｜1赞 · 5次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "ppt页面动态化｜相信AIGC｜1赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "黑白蜡笔风｜小小东｜1赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "窗口像素风｜小花｜1赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "设计感抓娃娃电商图｜小小东｜1赞 · 2次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "手缝布艺｜小小东｜1赞 · 1次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "宠物Duo发布会｜Madison｜0赞 · 74次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "裸眼3D电商图｜小小东｜0赞 · 33次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "Y2K朋克风｜小花｜0赞 · 25次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "照片卡通贴纸风｜小小东｜0赞 · 17次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "中式刺绣美学｜小小东｜0赞 · 15次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "图片转logo｜小小东｜0赞 · 14次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "实拍图变纪念明信片｜小小东｜0赞 · 13次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "美食复古大片｜小花｜0赞 · 12次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "民俗拓印风｜小小东｜0赞 · 12次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "旅行地纪念徽章｜小小东｜0赞 · 11次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "街头专色手绘｜小小东｜0赞 · 10次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "单色手帐涂鸦｜小小东｜0赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "复古印章明信片｜小小东｜0赞 · 9次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "iPhoneDuo产品折叠图｜小小东｜0赞 · 8次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "伪纪实风｜王子白日梦｜0赞 · 6次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "产品喷漆视频｜小花｜0赞 · 5次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "纪念碑谷风｜小小东｜0赞 · 5次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "美食像素化｜平凡｜0赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "童话风版画｜小小东｜0赞 · 4次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "中国古画转超写实真人摄影｜高新｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "韩系海报批量生成｜zHou45｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "硬边几何｜小小东｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "极简线条风｜小小东｜0赞 · 3次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "字形蒙版｜小小东｜0赞 · 2次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "透视结构线稿｜小小东｜0赞 · 2次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "照片转微缩3D沙盘展示海报｜小小U｜0赞 · 1次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "方块世界风｜平凡｜0赞 · 1次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "金箔压印｜小小东｜0赞 · 1次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "卡通IP人格化生成｜被击落的兔子｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "东方巨物美学｜Bill偷啃｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "童话异想拼贴｜凌晨奔巴士｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "超真实AI人物｜红中传媒｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "摄影涂鸦｜小小东｜0赞 · 0次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "技能目录：热门推荐",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15；14张含使用次数的卡片；当前账号窗口，分类可重叠。数字保留页面显示精度。",
+        "rows": [
+          {
+            "label": "短视频爆款带货｜即梦AI｜14赞 · 625次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "叙事短片导演分镜｜森海荧光｜1096赞 · 1.7万次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "一图成片-电影广告全能导演｜渊静-中意｜657赞 · 1.1万次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "剧本资产视频一条龙创作｜娜乌斯嘉｜472赞 · 7584次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "系列套图生成｜渊静-中意｜420赞 · 7549次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "爆款电商短视频题材创意｜Carson｜412赞 · 7227次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "AI演员微表情导演｜即梦AI｜411赞 · 2487次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "顶级波普视觉广告导演｜即梦AI｜285赞 · 2009次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "角色设计｜慕影-中意｜264赞 · 6737次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "穿搭上身试穿视频生成｜即梦AI｜215赞 · 1932次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "高能未来电子产品广告视频｜即梦AI｜202赞 · 1726次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "故事开发｜慕影-中意｜160赞 · 2091次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "时尚走秀短视频导演｜即梦AI｜146赞 · 1429次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          },
+          {
+            "label": "珠宝电商图文视频一站式｜地质大学博士说AI｜145赞 · 1367次使用",
+            "url": "https://jimeng.jianying.com/ai-tool/explore"
+          }
+        ]
+      },
+      {
+        "title": "电商头图：连续12条详情",
+        "source": "https://jimeng.jianying.com/ai-tool/explore",
+        "scope": "2026-09-15，当前排序索引0至11，非随机样本；未显示标题的条目用内容描述识别。",
+        "rows": [
+          {
+            "label": "1. 手工皂产品静物摄影｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564197063961?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "2. 硬朗工业风格产品广告｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564196998425?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "3. 美妆特写人像｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564196932889?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "4. 精油产品摄影精修｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564196965657?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "5. 香水静物摄影｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564196900121?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "6. 商品精修｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564193000729?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "7. 甜品系美妆产品广告｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564192967961?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "8. 复古甜品风格彩妆产品摄影｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564192935193?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "9. 机械键盘产品摄影｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564192902425?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "10. 商业摄影美妆模特｜即梦AI｜2026-09-04",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7681561564192869657?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "11. 户外运动鞋｜～｜2026-03-17",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7618098833666346291?workDetailType=Image&itemType=9"
+          },
+          {
+            "label": "12. 未显示标题：防晒产品海报｜Adios｜2025-09-25",
+            "url": "https://jimeng.jianying.com/ai-tool/work-detail/7553983724652727602?workDetailType=Image&itemType=9"
+          }
+        ]
+      }
+    ]
+  },
+  "runninghub": {
+    "title": "RunningHub：工作流、应用与视频画布的内容供给",
+    "summary": "RunningHub 用任务分类连接 ComfyUI 工作流、简化 AI 应用、模型和作品。节点详情面向需要控制流程的人，应用表单承接更直接的使用；RHTV 进一步分开成片观看、同款模板与画布项目。不同内容对象对应不同输入要求和继续路径。",
+    "sections": [
+      {
+        "title": "产品对象与个人工作台",
+        "paragraphs": [
+          "RunningHub 主站的导航包括探索、RHTV 无限画布、RHSTORY、快捷创作、AI 应用、ComfyUI 工作流、API 与模型。工作流和 AI 应用用于发现、配置和调用生成能力；模型页补充资源类型与底模条件；探索页承接作品浏览与同款入口。",
+          "个人中心将我的作品、我的发布和我的收藏分开，我的发布按 AI 应用、工作流、模型、作品组织。工作台当前显示 0 个工作流，并提供新建文件夹、导入工作流和排序操作；这说明个人侧有工作流收纳与导入入口，尚未观察非空项目的编辑、版本更新或发布管理。"
+        ],
+        "sources": [
+          {
+            "title": "RunningHub 首页",
+            "url": "https://www.runninghub.ai/zh-cn/",
+            "date": "2026-09-14"
+          },
+          {
+            "title": "RunningHub 个人中心",
+            "url": "https://www.runninghub.ai/zh-cn/user-center",
+            "date": "2026-09-14"
+          },
+          {
+            "title": "RunningHub 工作台",
+            "url": "https://www.runninghub.ai/zh-cn/workspace",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "任务分类和目录窗口",
+        "paragraphs": [
+          "工作流目录按数字人、图片生成、视频生成、视频特效、二次元、音频生成、海报、图片处理、摄影、影视游戏、3D 模型、创意玩法、平面设计、电商产品、室内外设计、风格画作、API、AI 漫剧、视频处理、插件和其他组织。图片处理下可见“图片换背景”以及抠图、去水印、扩图、高清放大、局部重绘、精修、打光、老照片修复等任务；电商产品下另有商品换背景、商品换包装、模特产品展示、图案迁移、重新打光、服装展示和商品替换。",
+          "AI 应用广场同样覆盖数字人、图片/视频生成、视频特效、图片处理、摄影、3D、创意玩法、平面设计与电商产品等类别。工作流和应用在任务分类上重叠，分别承接较完整的节点流程与较少字段的使用界面。",
+          "目录样本保留了电商产品→商品换背景、图片处理两个各30条的推荐窗口。商品换背景中既有泛用图像编辑，也有家具、鞋模、美妆、香水和亚马逊商品图等明确用途。分类能够聚合任务，但条目标题并不都严格对应分类名称，不能仅按目录归属判断每条资源的适用范围。"
+        ],
+        "sources": [
+          {
+            "title": "RunningHub 工作流目录",
+            "url": "https://www.runninghub.ai/zh-cn/page-workflow",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RunningHub AI 应用目录",
+            "url": "https://www.runninghub.ai/zh-cn/ai-apps",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "跨分类供给与作者分布",
+        "paragraphs": [
+          "数字人、音频生成、影视游戏、3D模型、室内外设计、海报、AI漫剧、视频处理、电商产品和图片处理10个一级分类窗口，共有272条卡片记录，按资源ID去重为251项，涉及129个显示署名。九个窗口各取首批30项，AI漫剧窗口显示2项；样本采用国际站推荐排序，没有遍历全量资源。",
+          "有21项资源同时出现在两个分类窗口。例如歌曲生成进入数字人与音频生成，虚拟试衣进入数字人与图片处理，唱歌跳舞工作流进入数字人与视频处理。分类提供的是任务入口，不能当成互斥的行业统计。",
+          "供给的粒度既包括完整任务，也包括制作步骤。空间设计窗口包含室内效果图与辅助出图；数字人窗口包含口型、动作和形象编辑；影视游戏窗口包含人物替换和多参考视频。模型名、用途、速度、版本与输出规格经常同时写进标题，使用者在目录中就开始比较制作条件。",
+          "当前窗口中，署名“kitten HZ”的资源最多，为21项。这个数量只反映所取资源的署名分布，不识别同一人的多个账号，也不能判断平台合作关系。少量作者在特定窗口内密集出现，与全站作者集中度是两个问题。",
+          "AI漫剧窗口显示的2项不能直接解释为漫剧需求未被满足：相关制作方法也出现在影视游戏、数字人和视频处理，平台另有RHSTORY产品。判断供给缺口需要继续核对同一任务能否在其他入口完成，以及使用者缺少的是资源、操作方法还是可采用的结果。"
+        ],
+        "sources": [
+          {
+            "title": "RunningHub国际站：10类工作流目录窗口",
+            "url": "https://www.runninghub.ai/zh-cn/page-workflow",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "电商换背景的工作流和应用样本",
+        "paragraphs": [
+          "“E-commerce product consistency; change background”工作流属于图片换背景、商品换背景任务。详情显示作者 Little Wrangler、下载、打开 AI 应用和运行工作流入口，以及 2779 浏览、49 点赞、230 收藏。作者说明要求商品图与背景参考图、选择比例，并建议两图具有一定相似性；不够匹配时可在后续用 Photoshop 调整。这将任务具体化为双图背景替换和后续修图准备。",
+          "该工作流显示 76 个节点，其中 22 个原生节点、54 个自定义节点；可见图像加载、遮罩、尺寸处理、ControlNet、LoRA、UNET、VAE、预览和保存等环节。节点信息使使用者能在运行前判断流程结构和依赖复杂度。",
+          "点击工作流详情的“打开 AI 应用”，页面抵达同作者、同题的“E-commerce product consistency Change background”应用。应用将节点流程收敛为背景参考图、商品图和比例设置：比例选择为1，手动画幅为4:3，另一比例输入显示2。表单有预置示例素材，底部提供 Standard 运行与按实际用量结算提示。详情同时保留工作流、API、我的生成和历史记录入口，并显示2057次运行、4条作品展示及1条评论。路径核对到表单，尚未提交生成。",
+          "2779 浏览是工作流详情字段，2057 次运行是应用字段，两个对象与计数定义不同，不能计算工作流到应用的转化。应用目录卡片的星标 164 与详情页的 167 也来自不同时间或页面层级，不能合并为统一互动口径。"
+        ],
+        "sources": [
+          {
+            "title": "E-commerce product consistency; change background 工作流",
+            "url": "https://www.runninghub.ai/zh-cn/post/1916419582029139970",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "E-commerce product consistency Change background AI 应用",
+            "url": "https://www.runninghub.ai/zh-cn/ai-detail/1917123308305711105",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RunningHub AI 应用目录",
+            "url": "https://www.runninghub.ai/zh-cn/ai-apps",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "工作流进入换背景应用：完整输入与作品展示",
+            "url": "https://www.runninghub.ai/zh-cn/ai-detail/1917123308305711105",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "RHTV 的成片与同款模板",
+        "paragraphs": [
+          "RHTV 以独立站点承接视频创作画布。主页导航为项目、资产库、社区和插件；首屏提供“从一个想法开始”的输入区、图片或视频上传、Agent、自动与先询问选项，并在无内容时禁用开始创作。主页同时有最近项目、新建项目、创作活动和灵感发现。",
+          "灵感发现分为聚光营地、一键同款和工作流，并可在已加载内容中搜索作品、技能、同款和工作流。同款目录的30张卡片窗口包含图片与视频，标题涵盖产品展示、品牌营销视频、海报、证件照、插画和茶饮营销；其中电商海报样本已打开编辑弹层。搜索范围限于已加载内容，不能用于计算全站同类资源数量。",
+          "“电商产品广告海报”一键同款卡片打开编辑弹层：可见手表示例图、替换或上传参考、已预填的完整提示词，以及 9:16、中、2k 参数。¥0.108 的生成按钮处于禁用状态，未提交生成。与此不同，社区营地的科普短片详情以播放、点赞、分享和相关推荐组织消费；“Your Microwave Was a Total Accident!”已播放片头，播放器显示 00:12 / 02:11。RHTV 由此同时提供成片观看与模板直接编辑两种后续动作。",
+          "成片观看、同款模板与画布制作是三种不同的入口。模板将画面效果直接接到输入表单，画布则保留脚本、素材和剪辑之间的组织关系。"
+        ],
+        "sources": [
+          {
+            "title": "RHTV 首页",
+            "url": "https://rhtv.runninghub.ai/projects",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "Your Microwave Was a Total Accident! RHTV 营地详情",
+            "url": "https://rhtv.runninghub.ai/projects/canvas/camp/2095727295330172929",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "RHTV 画布连接脚本、素材与剪辑",
+        "paragraphs": [
+          "空白画布可添加文本、图片、视频、音频、3D世界、3D模型、导演台、脚本策划、分镜格子、视频合成、快捷剪辑和AI应用节点。资产、工作流、历史、画板与剪辑另有侧栏入口。它将制作对象放在空间画布中，既容纳基础媒体，也容纳脚本和后期处理任务。",
+          "脚本策划节点提供提示词、模型、风格和应用场景。场景包含漫剧制作、竖屏短剧、MV音乐视频、知识口播、电商广告和专业影片。选择知识口播后，节点保留该场景；所选“全能语言模型3.5 flash”的费用浮层按每千tokens区分输入与输出，显示输入0.00075美元、输出0.0045美元。这里的价格是页面提示，未提交脚本生成或核验扣费。",
+          "剪辑面板采用媒体库、播放器、属性区和时间轴；素材入口分本地导入、画布素材、历史记录与我的资产。添加默认文字后形成五秒片段，导出设置显示720P、MP4、30fps与H.264，并提供“导出到画布”。该片段已成功导回为可播放的视频节点，刷新项目后仍保留。测试使用默认文字，证明了剪辑回传与项目保存路径，不涉及AI生成质量。",
+          "导回的视频节点继续提供替换、剪辑、捕捉帧、音频分离、解析、修复和下载入口。成片因此也能成为后续加工素材。上述附加处理尚未逐项执行，复杂多轨剪辑、长视频导出和多节点生成稳定性仍缺少结果证据。"
+        ],
+        "sources": [
+          {
+            "title": "RHTV 项目与画布入口",
+            "url": "https://rhtv.runninghub.ai/projects",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RHTV 首页",
+            "url": "https://rhtv.runninghub.ai/projects",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "RHSTORY 按项目、剧集和镜头组织制作",
+        "paragraphs": [
+          "RHSTORY 将开始创作分为“有想法”“有剧本”“有视频”。想法入口接文字并提供生成剧本；剧本入口支持粘贴及txt、docx、md、xlsx文件；视频入口声明可接收1至100集短剧视频，按列表顺序生成各集剧本，限制为MP4或MOV、单集不超过500MB和五分钟。这些是输入条件与页面规则，尚未验证解析产物。",
+          "工具箱提供视频与图片生成；视频模式关联项目和剧集，图片模式显示项目级素材与结果区。视频模式给出参考素材、提示词、模型与规格，页面声明最多接收30张图片、10个视频、10段音频；图片模式最多接收10张图片。视频界面按镜头组织待生成位置，并显示待生成镜头数和成片时长，另有“保存至成片”和历史入口。图片模式则将结果集中在图片区域，未沿用视频镜头时间结构。",
+          "我的项目区分项目与发布，项目详情进一步分剧集管理、我的视频、我的图片。默认项目含一集，剧集卡片显示“美术阶段”，进入后回到对应项目和剧集的工具箱。“发布至剧场”在未完成成片时禁用，提示至少完成一集成片才可发布。项目管理对象是连续制作中的剧集，公开消费对象则是完成后的成片。",
+          "尚未上传剧本或视频，未提交生成、保存真实成片或发布至剧场；输入解析、角色一致性、多集管理效果与公开剧场分发仍需结果证据。"
+        ],
+        "sources": [
+          {
+            "title": "RHSTORY 创作入口",
+            "url": "https://story.runninghub.ai/zh-cn/ai-comic",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RHSTORY 工具箱",
+            "url": "https://story.runninghub.ai/zh-cn/toolbox",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RHSTORY 项目管理",
+            "url": "https://story.runninghub.ai/zh-cn/ai-comic/projects",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "作者供给、激励与维护",
+        "paragraphs": [
+          "工作流、AI 应用与 RHTV 作品均可呈现作者署名和资源入口。官方创作者激励规则记录有效运行、收藏、原创与周期结算等条件，并区分模型原创审核、内容规范和推荐策略；会员、邀请和 API 则构成平台的商业及分发入口。规则说明激励方向，不包含个别作者的结算、运行质量或收入事实。",
+          "两条工作流维护材料显示作者在发布后仍需处理说明与依赖变化：图像修复资源中有作者对效果变化问题的转述并链接站外教程；长视频分段资源保留与插件更新相关的报错、衔接和数据错位修复日志。可见材料反映内容供给不仅是上传，也包含条件说明、更新记录和对外教学链接。"
+        ],
+        "sources": [
+          {
+            "title": "RunningHub 创作者激励计划",
+            "url": "https://www.runninghub.cn/creator-reward",
+            "date": "2026-09-10"
+          },
+          {
+            "title": "Flux Kontext Dev 模糊变高清及放大修复",
+            "url": "https://www.runninghub.cn/post/1938533049359335425/",
+            "date": "页面更新 2025-06-27；2026-09-10 核查"
+          },
+          {
+            "title": "Scail-2 无劣化与长视频手动分段",
+            "url": "https://www.runninghub.cn/post/2065490120324767746",
+            "date": "页面更新 2026-06-29；2026-09-10 核查"
+          }
+        ]
+      },
+      {
+        "title": "作者维护覆盖依赖、参数、时长与使用指导",
+        "paragraphs": [
+          "中文站“animate终点-V2.0”保留2026年4月至6月的更新说明：替换暂未开源的依赖、修复面部参考、替换模型并拆分流程、修复补帧参数及人物替换。作者另提供站外教程。发布后的供给工作因此包括依赖维护和使用指导，不能只按新增工作流数量衡量。",
+          "该详情的评论中，有使用者询问局部动作能否修改，作者回应可以；没有进一步的操作步骤或修改结果。它证明咨询得到回应，不证明问题已解决。更新记录中的速度和效果描述也属于作者自述，尚未独立复现。",
+          "“超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj”的作者说明将剧本和分镜提示词接到批处理，以上一段末帧衔接下一段首帧，并记录修复仅输出五秒的问题。作者同时提示平台超时会限制可生成时长。用户要判断能否完成长视频，需要看到执行限制与版本记录，仅看成片封面不足以判断。",
+          "“四阶段混元world-Kontext人物+场景-Wan修改动作-InstantID修复ID V2”则把资源、站外教程、邀请奖励及留言答疑放在一起。作者称通常集中回复站外留言；这呈现了内容教学、平台引流与作者服务相连的供给方式，未取得实际答复率或作者收益。"
+        ],
+        "sources": [
+          {
+            "title": "animate终点-V2.0：更新记录与评论",
+            "url": "https://www.runninghub.cn/post/2036253016612937730",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "超长剧本分镜与视频工作流：限制和修复说明",
+            "url": "https://www.runninghub.cn/post/1987869741933113346",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "四阶段工作流V2：教程与答疑入口",
+            "url": "https://www.runninghub.cn/post/1949407703245434882",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "API按客户需求区分共享算力与独占环境",
+        "paragraphs": [
+          "所查Seedance任务接口的中文价格与权益表分消费级会员、企业级共享和企业级独占。消费级要求基础版及以上会员并充值钱包，面向个人和团队内部使用；共享版不要求会员，提供弹性调用；独占版购买GPU租期，面向对性能和环境稳定性要求较高的任务。共享版表列默认100并发，独占版按GPU数量提供并发，不能把这些权益等同于实际吞吐量。",
+          "这张表描述所查任务接口的权益。“标准模型API费用”是表内的扣费项；官方英文入门文档另将Model、LLM直调限定为企业共享Key。两处对象和术语范围不同，不能据这张表断定消费级会员可以直接调用全部模型接口。",
+          "费用区分模型调用与工作流运行。消费级的标准模型API从钱包扣费，运行时长消耗RH币；共享版两项都从钱包扣费。中文版表列共享Lite、Standard、Plus、Ultra运行价格分别为每小时0.4、4、6、9元，按秒计费。独占版租期内免收运行时长费用，但标准模型API仍消耗钱包，租用GPU不等于所有模型调用免费。",
+          "模型价格另按具体规格报价，例如表中的Seedance 2.0全能参考720p为每秒1.2元。这是2026年9月15日页面报价，未核验实际账单。示例接口还提供仅共享版可用的实例保留参数，范围10至180秒，保留期间另行计费；缓存命中影响运行时长，排队影响交付等待；启用实例保留还会增加按实际保留时长计算的费用。",
+          "示例接口采用任务提交、状态查询或回调、获取结果的异步交付方式，并注明结果链接有效期24小时。接入方因此需要保存任务状态并及时转存结果。该时间限制属于所查接口说明，不代表站内作品或所有历史文件的保存期限。",
+          "企业API说明进一步区分环境维护责任：共享环境会升级ComfyUI，开发者需要维护工作流以适应节点变化；独占环境强调版本稳定及升级通知。平台交付的是算力与运行环境，业务接入方仍承担依赖适配、失败处理和结果保存。实际成功率、失败扣费与退款执行、企业客户续费尚无验证结果。"
+        ],
+        "sources": [
+          {
+            "title": "RunningHub API详情 → 价格与权益、接口说明",
+            "url": "https://www.runninghub.ai/zh-cn/call-api/api-detail/2037365179167543298?apiType=4",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RunningHub官方：Enterprise-Level ComfyUI API",
+            "url": "https://pre.runninghub.ai/runninghub-api-doc-en/doc-8287465",
+            "date": "2026-09-15"
+          },
+          {
+            "title": "RunningHub官方API入门：Key与API类型",
+            "url": "https://www.runninghub.ai/runninghub-api-doc-en/",
+            "date": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "title": "公开使用线索与范围",
+        "paragraphs": [
+          "外部公开讨论中，两位使用者描述将外部流程接到 RunningHub 时遇到模型、节点和输入适配问题，随后自述局部跑通；另有一位用户自述订阅后持续使用一个月。非官方客户端 README 提及批量导入、失败重试、自动保存、历史与价格预估；另一个问题单记录购买会员后接入视频工具出现 user not exist。",
+          "这些线索揭示云端运行仍涉及依赖适配、结果检查和接口准入。它们是少量公开个案，不代表用户规模、留存、失败率或满意度。API的实际调用、AIGC大赛运营效果，以及生成资源的编辑与发布结果仍缺少验证。"
+        ],
+        "sources": [
+          {
+            "title": "help me use runninghub for workflow so confused — Discussion #176",
+            "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176",
+            "date": "2026-09-10 核查"
+          },
+          {
+            "title": "Is runninghub best for running comfui on cloud",
+            "url": "https://www.reddit.com/r/comfyui/comments/1qh57f2/is_runninghub_best_for_running_comfui_on_cloud/",
+            "date": "2026-01-19 发表；2026-09-10 核查"
+          },
+          {
+            "title": "RunningHub AI 应用客户端（非官方）",
+            "url": "https://github.com/colorAi/RunningHub-AI-Client",
+            "date": "2026-09-10 核查"
+          },
+          {
+            "title": "接入 RunningHub 生成视频报错 user not exist #231",
+            "url": "https://github.com/ATH-MaaS/Pixelle-Video/issues/231",
+            "date": "2026-07-15 发表；2026-09-10 核查"
+          }
+        ]
+      },
+      {
+        "title": "第三方视频任务暴露了云端调用与客户端接续的断点",
+        "paragraphs": [
+          "2026年1月4日，Pixelle-Video 的 GitHub Issue #48 记录了一次经 RunningHub 调度的视频分镜任务：使用者称首个分镜成功，第二个分镜持续轮询后失败；日志包含 RunningHub 任务创建和状态记录。同一使用者改选插画时没有遇到相同问题，并提出任务重试与断点重试需求。客户端记录取得了任务标识，但最终未取得可用分镜；使用者还称在 RunningHub 找不到该任务，因此只能确认调用链中断，不能确定平台根因。具体所用工作流版本未定位，故障没有修复后成品回报，也不能归为 RunningHub 网页应用的普遍失败。"
+        ],
+        "sources": [
+          {
+            "title": "Pixelle-Video：视频类型分镜生成失败",
+            "url": "https://github.com/ATH-MaaS/Pixelle-Video/issues/48",
+            "date": "2026-09-15",
+            "evidence": "eight-gap-closure-2026-09-15/raw-public-evidence.json"
+          }
+        ]
+      },
+      {
+        "title": "商品换背景串起应用、他人作品与同款输入",
+        "paragraphs": [
+          "Little Wrangler 的“产品换背景”应用收集商品图和背景图，另有上、下、左、右四个扩图参数。2026年9月16日页面显示5095次运行、304次收藏、14次点赞，作品展示区有3件作品，署名分别为应用作者、shenchen2002和Sun。运行次数不等于成功任务数，作品展示也不是全部产出的清单。",
+          "shenchen2002在2026年1月12日发布了茶叶包装换背景结果，并明确表达不满意。打开作品后点击“一键同款”，会回到同一个应用；商品输入恢复为浅绿色茶盒，背景输入为树林中的深色瓶子，四向扩图参数均为256。公开成图则包含放大的茶盒、花园及两侧人物。这条路径把应用、他人署名的具体产出、负面评价和输入恢复联系起来；原始执行日志、人物出现的原因与修改后结果尚未确认，也未重新生成。",
+          "Sun在2025年5月22日发布的关联作品为森林苔藓环境中的绿色瓶子，没有描述或评论。它补充了另一种公开产出，不能据此判断作者满意度或商业验收。两个不同账号的署名也不能用于推算独立人数或需求比例。"
+        ],
+        "sources": [
+          {
+            "title": "产品换背景：应用、作品与输入",
+            "url": "https://www.runninghub.ai/zh-cn/ai-detail/1876811358174928898",
+            "date": "2026-09-16",
+            "evidence": "five-targeted-2026-09-16/runninghub-live.md"
+          },
+          {
+            "title": "商品包装换背景：公开结果与负面评价",
+            "url": "https://www.runninghub.ai/zh-cn/works-details-page/2010675649106677761",
+            "date": "2026-09-16"
+          },
+          {
+            "title": "Sun 的产品换背景作品",
+            "url": "https://www.runninghub.ai/zh-cn/works-details-page/1925450118428807169",
+            "date": "2026-09-16"
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "/batch1-evidence/runninghub-background-app.png",
+        "title": "商品换背景 AI 应用：示例图、运行与作品展示入口",
+        "url": "https://www.runninghub.ai/zh-cn/ai-detail/1917123308305711105",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/runninghub-rhtv-science.png",
+        "title": "RHTV 科普成片：播放器、作者与互动入口",
+        "url": "https://rhtv.runninghub.ai/projects/canvas/camp/2095727295330172929",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/runninghub-rhtv-poster.png",
+        "title": "RHTV 电商海报同款：参考素材、提示词、规格和费用提示",
+        "url": "https://rhtv.runninghub.ai/projects",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/runninghub-workspace.png",
+        "title": "个人工作台：文件夹、工作流导入与排序的空状态",
+        "url": "https://www.runninghub.ai/zh-cn/workspace",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/rhtv-script-pricing.png",
+        "title": "RHTV 脚本节点：场景、模型与输入输出计费",
+        "url": "https://rhtv.runninghub.ai/projects",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/rhtv-editor.png",
+        "title": "RHTV 剪辑：素材库、播放器、属性区和时间轴",
+        "url": "https://rhtv.runninghub.ai/projects",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/rhtv-export-return.png",
+        "title": "五秒文字片段导回画布；非AI生成结果",
+        "url": "https://rhtv.runninghub.ai/projects",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/rhstory-image-toolbox.png",
+        "title": "RHSTORY 图片生成工具箱",
+        "url": "https://story.runninghub.ai/zh-cn/toolbox",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/rhstory-project-detail.png",
+        "title": "RHSTORY 项目、剧集与成片发布条件",
+        "url": "https://story.runninghub.ai/zh-cn/ai-comic/projects",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/runninghub-api-costs.png",
+        "title": "API费用表：从左到右为消费级会员、企业级共享、企业级独占",
+        "url": "https://www.runninghub.ai/zh-cn/call-api/api-detail/2037365179167543298?apiType=4",
+        "date": "2026-09-15"
+      },
+      {
+        "src": "/batch1-evidence/runninghub-category-window.png",
+        "title": "图片处理：一级分类、二级操作与工作流卡片",
+        "url": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "date": "2026-09-15"
+      }
+    ],
+    "catalogs": [
+      {
+        "title": "电商产品 → 商品换背景",
+        "rows": [
+          {
+            "label": "Change Character Background",
+            "url": "https://runninghub.ai/post/2079189096374788097"
+          },
+          {
+            "label": "电商产品主图-自动匹配场景",
+            "url": "https://runninghub.ai/post/2027466614496563202"
+          },
+          {
+            "label": "亚马逊电商A+主图一键工作流 V1.0",
+            "url": "https://runninghub.ai/post/2038817432894181378"
+          },
+          {
+            "label": "Kontext-换背景-参考图模式",
+            "url": "https://runninghub.ai/post/2091803709574807553"
+          },
+          {
+            "label": "Kontext-换背景-参考图模式",
+            "url": "https://runninghub.ai/post/1938797079550418946"
+          },
+          {
+            "label": "Work-Fisher Qwen-Edit-AIO合集",
+            "url": "https://runninghub.ai/post/1976167606266806273"
+          },
+          {
+            "label": "【阡陌】Nunchaku 加速Kontext超强一致性编辑",
+            "url": "https://runninghub.ai/post/1948656782263615490"
+          },
+          {
+            "label": "安-产品一键生成背景简单易用",
+            "url": "https://runninghub.ai/post/1934430671362547713"
+          },
+          {
+            "label": "安-产品一键生成背景简单易用",
+            "url": "https://runninghub.ai/post/2079412071780225025"
+          },
+          {
+            "label": "电商产品换背景（家具类沙发桌椅套件）",
+            "url": "https://runninghub.ai/post/1918965261272289281"
+          },
+          {
+            "label": "E-commerce product consistency; change background.",
+            "url": "https://runninghub.ai/post/1916419582029139970"
+          },
+          {
+            "label": "鞋模一键上脚丨全自动化流程一键生成",
+            "url": "https://runninghub.ai/post/1854940072805011458"
+          },
+          {
+            "label": "最全案例-InsertAnything极速万物迁移(换脸|换装|换鞋|换人等)",
+            "url": "https://runninghub.ai/post/1921844906262740993"
+          },
+          {
+            "label": "真ICEdit官方版一致性图像编辑无需重复抽卡",
+            "url": "https://runninghub.ai/post/1920517668280143874"
+          },
+          {
+            "label": "字节UNO-Flux多主体一致性与可控性图像编辑",
+            "url": "https://runninghub.ai/post/1910359921513197570"
+          },
+          {
+            "label": "电商产品渲染V2_在线版",
+            "url": "https://runninghub.ai/post/1907039726455382017"
+          },
+          {
+            "label": "参考背景出电商产品背景",
+            "url": "https://runninghub.ai/post/1902407265251667970"
+          },
+          {
+            "label": "万物迁移丨换背景2.0版本",
+            "url": "https://runninghub.ai/post/1867976147337363457"
+          },
+          {
+            "label": "【电商】🐳🐧产品换背景【顶级万能版】",
+            "url": "https://runninghub.ai/post/1892037512263798785"
+          },
+          {
+            "label": "FLUX__电商模特产品一致性生成V4",
+            "url": "https://runninghub.ai/post/1898490998631419906"
+          },
+          {
+            "label": "2025」Flux模型生成产品背景图",
+            "url": "https://runninghub.ai/post/1896098010688847873"
+          },
+          {
+            "label": "ACE++换装换产品",
+            "url": "https://runninghub.ai/post/1893562328640602113"
+          },
+          {
+            "label": "产品换背景工作流—家居、3c、化妆品等都可使用",
+            "url": "https://runninghub.ai/post/1892198037039783937"
+          },
+          {
+            "label": "美妆产品一键效果图",
+            "url": "https://runninghub.ai/post/1890399622446096386"
+          },
+          {
+            "label": "万物换背景工作流",
+            "url": "https://runninghub.ai/post/1887676716327043074"
+          },
+          {
+            "label": "香水商品图摄影",
+            "url": "https://runninghub.ai/post/1797501651666341889"
+          },
+          {
+            "label": "FLUX.1_fill+redux万物迁移工作流",
+            "url": "https://runninghub.ai/post/1881348712072114178"
+          },
+          {
+            "label": "指定产品迁移",
+            "url": "https://runninghub.ai/post/1861790432006176769"
+          },
+          {
+            "label": "Migrate designated products",
+            "url": "https://runninghub.ai/post/1862314312395108353"
+          },
+          {
+            "label": "圣诞节商品图摄影OminiControl",
+            "url": "https://runninghub.ai/post/1867390332441952258"
+          }
+        ],
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，推荐排序、无时间筛选的已加载目录窗口；保留目录原始归类，不代表全站供给占比。"
+      },
+      {
+        "title": "图片处理",
+        "rows": [
+          {
+            "label": "Watermark removal & HD enhancement (mask upload）",
+            "url": "https://runninghub.ai/post/2081682445677707265"
+          },
+          {
+            "label": "Light Transfer",
+            "url": "https://runninghub.ai/post/2079195688194756610"
+          },
+          {
+            "label": "VividMuse Krea2 Photo Refine｜HD Restore & Upscale",
+            "url": "https://runninghub.ai/post/2097250980931936258"
+          },
+          {
+            "label": "Krea2 Muse Second Sampling｜HD Portrait Image Gener",
+            "url": "https://runninghub.ai/post/2096897359372754945"
+          },
+          {
+            "label": "Krea2 Style Transfer｜Reference-Based Image Restyle",
+            "url": "https://runninghub.ai/post/2096110421443223553"
+          },
+          {
+            "label": "Z-IMAGE | Think mode | Controlnet | Upscale 8K",
+            "url": "https://runninghub.ai/post/2000431238311706626"
+          },
+          {
+            "label": "Turn Any Image into Layered PSD in ONE Click! 🤯",
+            "url": "https://runninghub.ai/post/2089748102542950401"
+          },
+          {
+            "label": "Retouch | Realistic skin",
+            "url": "https://runninghub.ai/post/1958180717652021249"
+          },
+          {
+            "label": "Upscale | real skin",
+            "url": "https://runninghub.ai/post/1978520232618774529"
+          },
+          {
+            "label": "Professional Portrait Retouching Express Edition",
+            "url": "https://runninghub.ai/post/2085884760970600450"
+          },
+          {
+            "label": "Pose-Locked Outfit Swap | Local Mask Workflow",
+            "url": "https://runninghub.ai/post/2085368503692304386"
+          },
+          {
+            "label": "Portrait Retouching to Enhance Skin Texture and Te",
+            "url": "https://runninghub.ai/post/2085181372968550402"
+          },
+          {
+            "label": "Batch Image Enlargement, Upload Compressed Files,",
+            "url": "https://runninghub.ai/post/2083743015151456258"
+          },
+          {
+            "label": "AI Image Outpainting",
+            "url": "https://runninghub.ai/post/2079108211933138946"
+          },
+          {
+            "label": "FireRed: 2-in-1 Virtual Try-On & Clothing Extraction Workflow",
+            "url": "https://runninghub.ai/post/2078118953481940994"
+          },
+          {
+            "label": "Klein – High-End Portrait Retouching (Skin Perfect",
+            "url": "https://runninghub.ai/post/2078077108212420609"
+          },
+          {
+            "label": "One Click Photo HD Upscale SeedVR2",
+            "url": "https://runninghub.ai/post/2076350799010529281"
+          },
+          {
+            "label": "Berinini Studio Video Editing & Reference Images video BERININI STUDIO VIDEO EDITING & REFERENCE IMAGES",
+            "url": "https://runninghub.ai/post/2077340130851160066"
+          },
+          {
+            "label": "高清修复 4k细节-Krea2最新工作流",
+            "url": "https://runninghub.ai/post/2074820750917328897"
+          },
+          {
+            "label": "视频高清 视频超分 极速 FlashVSR video 视频高清 视频超分 极速 FLASHVSR",
+            "url": "https://runninghub.ai/post/2050831610873954305"
+          },
+          {
+            "label": "总有你喜欢！ Krea 2 + 12 个官方 Lora ！",
+            "url": "https://runninghub.ai/post/2074148242639646721"
+          },
+          {
+            "label": "无损8k放大",
+            "url": "https://runninghub.ai/post/2074161006313558018"
+          },
+          {
+            "label": "boogu image turbo-hotfix版-极速文生图-euler与ddim",
+            "url": "https://runninghub.ai/post/2073991622328668161"
+          },
+          {
+            "label": "qwen2511图转速手绘线条水彩风格",
+            "url": "https://runninghub.ai/post/2072947797464276994"
+          },
+          {
+            "label": "图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步",
+            "url": "https://runninghub.ai/post/2072586404466614273"
+          },
+          {
+            "label": "图生视频-高清动态壁纸高质量 video 图生视频-高清动态壁纸高质量",
+            "url": "https://runninghub.ai/post/2072123157451984897"
+          },
+          {
+            "label": "krea2文生图+高清修复",
+            "url": "https://runninghub.ai/post/2072118286560612353"
+          },
+          {
+            "label": "人物场景迁移保持和参考姿势一致性",
+            "url": "https://runninghub.ai/post/2067157677486206978"
+          },
+          {
+            "label": "LTX2.3图生视频KJ版 音画同步+提示词润色 video LTX2.3图生视频KJ版 音画同步+提示词润色",
+            "url": "https://runninghub.ai/post/2071425665001414658"
+          },
+          {
+            "label": "Z-Image：图片去除Ai感工作流",
+            "url": "https://runninghub.ai/post/2069603159416336386"
+          }
+        ],
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，推荐排序、无时间筛选的已加载目录窗口；保留目录原始归类，不代表全站供给占比。"
+      },
+      {
+        "title": "RHTV 一键同款",
+        "source": "https://rhtv.runninghub.ai/projects",
+        "scope": "2026-09-15，已加载的30条同款模板；图片／视频是卡片标识，详情仅抽查电商海报。",
+        "rows": [
+          {
+            "label": "AI产品碎纸机（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "sasane zurui（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "学功夫练武术（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "飞机窗创意视觉（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "3D创意广告（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "产品街头展示（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "产品衣架展示（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "品牌营销创意视频（视频）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "太空探索主题海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "高对比黑白文字排版人像海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "电商产品广告海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "创意风格化人物平面设计（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "美式商务证件照（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "后蒸汽朋克时代（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "美妆产品广告海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "极简品牌logo设计（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "花卉写真（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "火星科幻场景（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "史诗级电影风格人像海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "运动品牌广告海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "品牌手提袋设计（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "海边写真（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "新中式科幻插画（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "未来 AI 科技发布海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "咖啡营销海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "梦幻震撼海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "Y2K 千禧潮流海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "茶饮营销海报（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "胶片花卉氛围感写真（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          },
+          {
+            "label": "机械科幻人物（图片）",
+            "url": "https://rhtv.runninghub.ai/projects"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：数字人",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "Krea2 turbo White_Marble-AIO（Portrait Master）｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2083195928413360129"
+          },
+          {
+            "label": "Krea2 Ultra-Realistic 4K Text-to-Image｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2096976032158261250"
+          },
+          {
+            "label": "Flux2Klein 9B Face Change｜Multi-Image Editing Acce｜B9",
+            "url": "https://www.runninghub.ai/post/2097225210215170050"
+          },
+          {
+            "label": "图像高清工具 Vosr 2｜AIGC",
+            "url": "https://www.runninghub.ai/post/2097138453619253249"
+          },
+          {
+            "label": "MiniMaxH - Digital Human Video Shopping & Multi‑Image Video! YT@aijuxi｜aijuxi",
+            "url": "https://www.runninghub.ai/post/2096778617362907138"
+          },
+          {
+            "label": "Make ANY Character RAP 🎤 | AI Audio Lip Sync｜Mohamed Nagy",
+            "url": "https://www.runninghub.ai/post/2089332553321234433"
+          },
+          {
+            "label": "Krea2 - Improve realsitic｜iimate24",
+            "url": "https://www.runninghub.ai/post/2091545615162744834"
+          },
+          {
+            "label": "Minimax H3 Turbo 12-Step Lip-Sync MV Generator｜Portskill",
+            "url": "https://www.runninghub.ai/post/2090017619910148098"
+          },
+          {
+            "label": "H3: Make Any Image Talk with Audio Lip Sync｜CongZ AI",
+            "url": "https://www.runninghub.ai/post/2087155880772251649"
+          },
+          {
+            "label": "歌曲生成 MiniMax Music 3｜AIGC",
+            "url": "https://www.runninghub.ai/post/2088100604924428290"
+          },
+          {
+            "label": "文生视频  急速  LTX2.5 音画同出｜AIGC",
+            "url": "https://www.runninghub.ai/post/2087673029162106881"
+          },
+          {
+            "label": "Animate2-数字人唱歌/跳舞-动作迁移-不限时长-循环流｜五柳",
+            "url": "https://www.runninghub.ai/post/2089888856966508545"
+          },
+          {
+            "label": "minimax H3 Turbo 4 steps｜fsh ai",
+            "url": "https://www.runninghub.ai/post/2086732317694996481"
+          },
+          {
+            "label": "加速版 数字人 对口型 Minimax H3 两人｜AIGC",
+            "url": "https://www.runninghub.ai/post/2084897421464702977"
+          },
+          {
+            "label": "加速版！Minimax H3！免费！图像+ 视频 +声音 =多参生视频！｜AIGC",
+            "url": "https://www.runninghub.ai/post/2085004225385639937"
+          },
+          {
+            "label": "理发师 发型设计  - Klein｜AIGC",
+            "url": "https://www.runninghub.ai/post/2083877357357633537"
+          },
+          {
+            "label": "图片编辑 单_双图编辑 Krea2-Identity｜AIGC",
+            "url": "https://www.runninghub.ai/post/2081933493344411650"
+          },
+          {
+            "label": "Krea2 Ink Jade AIO T2I｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2080930773808820226"
+          },
+          {
+            "label": "FireRed: 2-in-1 Virtual Try-On & Clothing Extraction Workflow｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2078118953481940994"
+          },
+          {
+            "label": "Krea2 Turbo Realism Engineer T2I｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2073366147747106818"
+          },
+          {
+            "label": "Aiwood-改进版KJ-Infinitetalk视频对口型工作流｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003461723521026"
+          },
+          {
+            "label": "AIwood-Wan2.2 Multitalk 文生视频版｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003176615706626"
+          },
+          {
+            "label": "Wan-Dancer Automatic Dance from BGM｜Portskill",
+            "url": "https://www.runninghub.ai/post/2078286855817613314"
+          },
+          {
+            "label": "RH_Wan2.1_SCAIL2 Minimal Motion Reference Long Video Gen｜Portskill",
+            "url": "https://www.runninghub.ai/post/2078679071895539713"
+          },
+          {
+            "label": "LTX2.3 Org Edition! Digital human talks, sings, and lip‑syncs.=YT@aijuxi｜aijuxi",
+            "url": "https://www.runninghub.ai/post/2077990430737797122"
+          },
+          {
+            "label": "声音生视频  S2V 数字人 Bernini｜AIGC",
+            "url": "https://www.runninghub.ai/post/2076475335356739586"
+          },
+          {
+            "label": "声音生视频 数字人 Bernini S2V｜AIGC",
+            "url": "https://www.runninghub.ai/post/2079117771983679490"
+          },
+          {
+            "label": "Krea2 i2i and t2i｜Flipado",
+            "url": "https://www.runninghub.ai/post/2076406210370310145"
+          },
+          {
+            "label": "Bernini Studio贝尔尼尼｜Leon",
+            "url": "https://www.runninghub.ai/post/2075050205141094402"
+          },
+          {
+            "label": "LTX 2.3  单图数字人高清工作流｜清尘",
+            "url": "https://www.runninghub.ai/post/2074911807369732098"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：音频生成",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "LTX2.3-MSR  Multi-Image Reference（custom audio)｜Smart Bobo",
+            "url": "https://www.runninghub.ai/post/2079516284873670657"
+          },
+          {
+            "label": "YuE2_Song_and_Score｜Dang Publishing",
+            "url": "https://www.runninghub.ai/post/2099642964157923330"
+          },
+          {
+            "label": "RH_YuE2翻唱工作流｜yifan wang",
+            "url": "https://www.runninghub.ai/post/2099155231471828993"
+          },
+          {
+            "label": "MinimaxMusic MusicCreation｜Song Generation Audio W｜so",
+            "url": "https://www.runninghub.ai/post/2097204129349664770"
+          },
+          {
+            "label": "Mega+TTS3 语音克隆｜声音克隆｜电商设计师阿贵",
+            "url": "https://www.runninghub.ai/post/2097090976150355969"
+          },
+          {
+            "label": "语音编辑全家桶！语音修改！语音设计！ 语音克隆！ 语音转文字！ FireRed Audio｜AIGC",
+            "url": "https://www.runninghub.ai/post/2094045175663312897"
+          },
+          {
+            "label": "MiniMax Music 3 text to music【Aether Latent】｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2088119936001802242"
+          },
+          {
+            "label": "歌曲生成 MiniMax Music 3｜AIGC",
+            "url": "https://www.runninghub.ai/post/2088100604924428290"
+          },
+          {
+            "label": "【数字人口播】静态图一键生成带货数字人视频｜极光工作室",
+            "url": "https://www.runninghub.ai/post/2072520035003879425"
+          },
+          {
+            "label": "LTX2.3+双人_单人对话 动作真实自然+极速生视频+KJ优化版+图生视频音画同步｜lalala",
+            "url": "https://www.runninghub.ai/post/2072580747587833857"
+          },
+          {
+            "label": "LTX2.3+双人_单人对话 动作真实自然+极速生视频+KJ优化版+图生视频音画同步｜nihao",
+            "url": "https://www.runninghub.ai/post/2064588652742791170"
+          },
+          {
+            "label": "ComfyUI_RH_RVC 自传模型工作流｜十字鱼",
+            "url": "https://www.runninghub.ai/post/2060752729634590721"
+          },
+          {
+            "label": "ComfyUI_RH_RVC 基础工作流｜十字鱼",
+            "url": "https://www.runninghub.ai/post/2060185145348550658"
+          },
+          {
+            "label": "LTX2.3 数字人说话唱歌对口型！｜nihao",
+            "url": "https://www.runninghub.ai/post/2059884088110174209"
+          },
+          {
+            "label": "ACE-Step音乐（XL版）｜GensorAI",
+            "url": "https://www.runninghub.ai/post/2058748041024327682"
+          },
+          {
+            "label": "ACE-Step音乐（XL版）｜Gensor AI",
+            "url": "https://www.runninghub.ai/post/2077231494242078721"
+          },
+          {
+            "label": "LTX导演工作流！运镜分镜随心所动！｜Aiwood爱屋研究室",
+            "url": "https://www.runninghub.ai/post/2055019380056043522"
+          },
+          {
+            "label": "LTX导演工作流！运镜分镜随心所动！｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003230265049089"
+          },
+          {
+            "label": "混元Foley视频自动配音效（提示增强）｜野生技能师",
+            "url": "https://www.runninghub.ai/post/2054739137890144258"
+          },
+          {
+            "label": "Qwen3 TTS 声音克隆+Infinite数字人动态加强版 强强联合效果炸裂｜CYZS-AI",
+            "url": "https://www.runninghub.ai/post/2054464629111304194"
+          },
+          {
+            "label": "Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)｜T8star-Aix",
+            "url": "https://www.runninghub.ai/post/2054018548460204033"
+          },
+          {
+            "label": "FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）｜无极",
+            "url": "https://www.runninghub.ai/post/2036715596309602305"
+          },
+          {
+            "label": "FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）｜Wuji",
+            "url": "https://www.runninghub.ai/post/2084922164022050817"
+          },
+          {
+            "label": "FishAudio S2 TTS语气标签自动插入｜超级面爸AIFSH",
+            "url": "https://www.runninghub.ai/post/2033362779276578818"
+          },
+          {
+            "label": "对口型数字人Infinite+Talk｜虾仁不瞎",
+            "url": "https://www.runninghub.ai/post/1977882176555470849"
+          },
+          {
+            "label": "对口型数字人Infinite+Talk｜虾仁",
+            "url": "https://www.runninghub.ai/post/2077395318584651778"
+          },
+          {
+            "label": "对口型数字人Infinite+Talk｜虾仁",
+            "url": "https://www.runninghub.ai/post/2077395518633160705"
+          },
+          {
+            "label": "CosyVoice3 高精度声音克隆｜AI实战工作流",
+            "url": "https://www.runninghub.ai/post/2028655923568320514"
+          },
+          {
+            "label": "一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！｜电磁波Studio",
+            "url": "https://www.runninghub.ai/post/2016013037911678977"
+          },
+          {
+            "label": "AI小说、短剧、漫剧自动配音+分镜Flux2+Qwen3TTS自定义语音｜Wuji",
+            "url": "https://www.runninghub.ai/post/2084922366081232898"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：影视游戏",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA｜Wuji",
+            "url": "https://www.runninghub.ai/post/2098803328581910529"
+          },
+          {
+            "label": "LTX 2.5 MSR 3 References｜Dang Publishing",
+            "url": "https://www.runninghub.ai/post/2098475317236072449"
+          },
+          {
+            "label": "H3_Three_Reference_Video｜Dang Publishing",
+            "url": "https://www.runninghub.ai/post/2095950025644957698"
+          },
+          {
+            "label": "Scail2 TTP迁移替换二合一｜celestial swan",
+            "url": "https://www.runninghub.ai/post/2095390337606184961"
+          },
+          {
+            "label": "Character Replacement-Minimax H3｜thefeed",
+            "url": "https://www.runninghub.ai/post/2088946374975963138"
+          },
+          {
+            "label": "Minimax_h3_Character_interview_workflow｜Portskill",
+            "url": "https://www.runninghub.ai/post/2093609098570158082"
+          },
+          {
+            "label": "Make ANY Character RAP 🎤 | AI Audio Lip Sync｜Mohamed Nagy",
+            "url": "https://www.runninghub.ai/post/2089332553321234433"
+          },
+          {
+            "label": "MiniMax🐚H3 导演台（XUELUO合并双模型 | 红潮模型）｜EtherealHeart 缥缈心",
+            "url": "https://www.runninghub.ai/post/2089260331846615041"
+          },
+          {
+            "label": "SAME CHARACTER. SAME SCENE. 100+ ANGLES! 🤯｜Mohamed Nagy",
+            "url": "https://www.runninghub.ai/post/2090851826207105025"
+          },
+          {
+            "label": "Minimax H3 Turbo 12-Step Lip-Sync MV Generator｜Portskill",
+            "url": "https://www.runninghub.ai/post/2090017619910148098"
+          },
+          {
+            "label": "MiniMax H3 Reference Matrix Turbo Realism｜Tsal Tsrif Hamsic",
+            "url": "https://www.runninghub.ai/post/2087689053264240642"
+          },
+          {
+            "label": "LTX2.3-MSR  Multi-Image Reference（custom audio)｜FlowZed",
+            "url": "https://www.runninghub.ai/post/2086423146748915713"
+          },
+          {
+            "label": "MiniMax H3 - 9 References to Video 15 sec｜Mohamed Nagy",
+            "url": "https://www.runninghub.ai/post/2086711018293669889"
+          },
+          {
+            "label": "Krea2 Couple Characters Portrait Batch Generator｜FlowZed",
+            "url": "https://www.runninghub.ai/post/2084929770690093058"
+          },
+          {
+            "label": "MiniMax H3多条件参考视频工作流低显存加速版 开源Ref2VA｜TianC7",
+            "url": "https://www.runninghub.ai/post/2084402912310185985"
+          },
+          {
+            "label": "One-click ultimate head and face swap, head (face)｜Terry",
+            "url": "https://www.runninghub.ai/post/2083856072938737666"
+          },
+          {
+            "label": "AIGC Cinematic Character Outfit Refz Generator｜Portskill",
+            "url": "https://www.runninghub.ai/post/2082699734988713985"
+          },
+          {
+            "label": "Qwen2511 AIO Character Portrait Generator Modules x30｜Portskill",
+            "url": "https://www.runninghub.ai/post/2082444695220887553"
+          },
+          {
+            "label": "Krea2 Couple Characters Portrait Batch Generator｜Portskill",
+            "url": "https://www.runninghub.ai/post/2079453012048789505"
+          },
+          {
+            "label": "wan2.1 720p图生视频fusionX+NAG｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002938849177602"
+          },
+          {
+            "label": "Aiwood-magref+Lightx2v 4步lora双图参考｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002952624467970"
+          },
+          {
+            "label": "phantom FusionX+NAG｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003192828063746"
+          },
+          {
+            "label": "pulid双人合影｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002939608346626"
+          },
+          {
+            "label": "RH_Qwen2511_Pose Control Multi-view Character Card｜Portskill",
+            "url": "https://www.runninghub.ai/post/2078760056599302145"
+          },
+          {
+            "label": "Hyper-realistic rendering of the animated characters｜Portskill",
+            "url": "https://www.runninghub.ai/post/2079497098916454401"
+          },
+          {
+            "label": "一键多角度Ai运镜+长视频生成｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2075060174733266945"
+          },
+          {
+            "label": "Krea2单图风格参考Style+Reference+seedvr2超清8K放大｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2074739996078206977"
+          },
+          {
+            "label": "Krea2超写实4K文生图｜创意AI生活",
+            "url": "https://www.runninghub.ai/post/2074288481802739714"
+          },
+          {
+            "label": "极致美学+Krea2+Z-image+AIO+双采样｜难辨真假",
+            "url": "https://www.runninghub.ai/post/2074029468489969666"
+          },
+          {
+            "label": "WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）｜难辨真假",
+            "url": "https://www.runninghub.ai/post/2072921920454086658"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：3D模型",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "Krea2 Turbo Realism Engineer T2I｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2073366147747106818"
+          },
+          {
+            "label": "Character Portrait Batch Generator_Qwen2511-AIO｜Portskill",
+            "url": "https://www.runninghub.ai/post/2079410624370851841"
+          },
+          {
+            "label": "RH_Multi angle camera control｜Portskill",
+            "url": "https://www.runninghub.ai/post/2074817811737825281"
+          },
+          {
+            "label": "Krea+2+的幻觉艺术｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2075022762346901506"
+          },
+          {
+            "label": "Krea2三采-全自动文生图全模式｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2074751859335716866"
+          },
+          {
+            "label": "Krea2单图风格参考Style+Reference+seedvr2超清8K放大｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2074739996078206977"
+          },
+          {
+            "label": "极致美学+Krea2+Z-image+AIO+双采样｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2072879661566226434"
+          },
+          {
+            "label": "LTX2.3图生视频 (2)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2071780309431046145"
+          },
+          {
+            "label": "SCAIL2-人物替换_动作迁移-超长视频急速流 (1)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2071423701639323649"
+          },
+          {
+            "label": "姿势迁移+动作复制+高清放大版+图片换人+换背景+QwenEdit+ (1)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2070405964435640322"
+          },
+          {
+            "label": "Image-Edit-Rapid-AIO多功能融合模型｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2067486112062459905"
+          },
+          {
+            "label": "短剧人物主角设计（多类型）｜北岸北地",
+            "url": "https://www.runninghub.ai/post/2066359977970851841"
+          },
+          {
+            "label": "S2V官流双采样文生视频 (1)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2065232096980987906"
+          },
+          {
+            "label": "qwen-image2512q版3d风格｜阿拉丁是阿拉灯",
+            "url": "https://www.runninghub.ai/post/2057869164727062530"
+          },
+          {
+            "label": "【动作迁移】Wan2.2 Animate Plus工作流可多人版｜AI视频",
+            "url": "https://www.runninghub.ai/post/2064529534833217538"
+          },
+          {
+            "label": "短剧人物主角设计（多类型）｜lalala",
+            "url": "https://www.runninghub.ai/post/2064520709744971778"
+          },
+          {
+            "label": "LTX2.3图生视频_KJ版_参数化 (1)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2064185633773539329"
+          },
+          {
+            "label": "短剧人物主角设计（多类型）｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2061688689390084098"
+          },
+          {
+            "label": "Qwen+Edit+2511+镜头多角度控制,一张图片变换多个角度｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2061263817170051073"
+          },
+          {
+            "label": "Klein+TTP+零变形高清修复+4K｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2061256324096286722"
+          },
+          {
+            "label": "短剧人物主角设计（多类型）｜灵犀AI",
+            "url": "https://www.runninghub.ai/post/2061151168889442306"
+          },
+          {
+            "label": "wan2.2+Multitalk+图生视频版｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2059875517922369538"
+          },
+          {
+            "label": "动作迁移-超高一致性 姿势参考-高清放大｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2059442895932977153"
+          },
+          {
+            "label": "Qwen-Edit-2509-光线迁移 (1)｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2058721719896076290"
+          },
+          {
+            "label": "LTX2.3图生视频-音画同步（可扩展多图生成-提示词润色）｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2058713422858113026"
+          },
+          {
+            "label": "FLUX 动漫场景文生图专属工作流  二次修复｜吴限宇宙AIGC",
+            "url": "https://www.runninghub.ai/post/2048766649515384834"
+          },
+          {
+            "label": "超好用🔥动漫转真人洗图-梦幻版丝滑好用｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2056544328746627073"
+          },
+          {
+            "label": "一键毛坯房到精装修效果图-细节可独立调整｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2054741290750881793"
+          },
+          {
+            "label": "ComfyUI_RH_Pixal3D 基础工作流｜十字鱼",
+            "url": "https://www.runninghub.ai/post/2054751333848240129"
+          },
+          {
+            "label": "图生视频低动态高级感镜头，自动补充提示词｜kitten HZ",
+            "url": "https://www.runninghub.ai/post/2054373012950003714"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：室内外设计",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "室内设计辅助出图最强全能图片G Image2一键只出8K高清图｜AIGC 三喜",
+            "url": "https://www.runninghub.ai/post/2064625286284660738"
+          },
+          {
+            "label": "室内设计 效果图 渲染图｜灵希AI",
+            "url": "https://www.runninghub.ai/post/2059980769770172418"
+          },
+          {
+            "label": "装修手稿转实物效果图（室内/建筑设计+批量自动化）｜AI实战工作流",
+            "url": "https://www.runninghub.ai/post/2059139225852932098"
+          },
+          {
+            "label": "超好用🔥一键毛坯房到精装修效果图-细节可独立调整｜快点放假",
+            "url": "https://www.runninghub.ai/post/2053655000986992641"
+          },
+          {
+            "label": "苹果Sharp单图生成3d高斯模型｜亦诚视觉",
+            "url": "https://www.runninghub.ai/post/2008317430430437377"
+          },
+          {
+            "label": "老房-毛坯房改造可参考风格图｜稳号甄选家",
+            "url": "https://www.runninghub.ai/post/1945112086164983810"
+          },
+          {
+            "label": "景观照片一键景观效果图｜万类AI",
+            "url": "https://www.runninghub.ai/post/1934433841731825666"
+          },
+          {
+            "label": "Qwen_Edit_2509一键白膜转材质LoRA｜龚老师",
+            "url": "https://www.runninghub.ai/post/1985491458713075714"
+          },
+          {
+            "label": "景观照片一键景观效果图｜慕色无双",
+            "url": "https://www.runninghub.ai/post/1913988798630326273"
+          },
+          {
+            "label": "REDUX融合场景制作概念场景(蒙版+双提示词）｜TRONai Lab",
+            "url": "https://www.runninghub.ai/post/1889290180514471937"
+          },
+          {
+            "label": "【ACE++/Flux_Redux/Fill】万物迁移_想迁啥就迁啥｜AI晚自习",
+            "url": "https://www.runninghub.ai/post/1907437356884848641"
+          },
+          {
+            "label": "手绘稿一键效果图｜慕色无双",
+            "url": "https://www.runninghub.ai/post/1899564824265707522"
+          },
+          {
+            "label": "One-click realization from rough house to decorati｜Aquila",
+            "url": "https://www.runninghub.ai/post/1898916674090029058"
+          },
+          {
+            "label": "一键室外效果图（透视鸟瞰通用）｜慕色无双",
+            "url": "https://www.runninghub.ai/post/1893328439770824706"
+          },
+          {
+            "label": "FLUX__电商模特产品一致性生成V4｜胡剑AIGC",
+            "url": "https://www.runninghub.ai/post/1898490998631419906"
+          },
+          {
+            "label": "毛坯房转室内效果图｜慕色无双",
+            "url": "https://www.runninghub.ai/post/1882062091547705346"
+          },
+          {
+            "label": "fill局部重绘丨当前最强｜AI大成",
+            "url": "https://www.runninghub.ai/post/1890447528641339393"
+          },
+          {
+            "label": "ComfyUI - Easily Design Your Home｜BIG Rice",
+            "url": "https://www.runninghub.ai/post/1894296478662197249"
+          },
+          {
+            "label": "毛坯房一键精装修｜AIGC・吉希 AI 研究所",
+            "url": "https://www.runninghub.ai/post/2079142612933898241"
+          },
+          {
+            "label": "毛坯房一键精装修｜AIGC・吉希 AI 研究所",
+            "url": "https://www.runninghub.ai/post/1892211979753529346"
+          },
+          {
+            "label": "Room Design Migration｜BIG Rice",
+            "url": "https://www.runninghub.ai/post/1892768797949136898"
+          },
+          {
+            "label": "场景风格复制（XL+FLUX Krea）｜柒安工作室",
+            "url": "https://www.runninghub.ai/post/1867252676089069569"
+          },
+          {
+            "label": "一键室外透视效果图｜慕色无双",
+            "url": "https://www.runninghub.ai/post/1889293615670419457"
+          },
+          {
+            "label": "在场景中添加人物模特｜BIG Rice",
+            "url": "https://www.runninghub.ai/post/1851553154725990401"
+          },
+          {
+            "label": "建筑设计稿上色｜BIG Rice",
+            "url": "https://www.runninghub.ai/post/1879376265605013506"
+          },
+          {
+            "label": "室内设计一键装修毛坯房｜可铯创意cosaer",
+            "url": "https://www.runninghub.ai/post/1880173363489566721"
+          },
+          {
+            "label": "室内设计一键装修毛坯房｜Xiaomi",
+            "url": "https://www.runninghub.ai/post/2078257979241054210"
+          },
+          {
+            "label": "室内设计一键装修毛坯房｜Xiaomi",
+            "url": "https://www.runninghub.ai/post/2078257984802701314"
+          },
+          {
+            "label": "SDXL模型(IPA+CN) 结合Florence 图生图｜Xxxxoeo",
+            "url": "https://www.runninghub.ai/post/1821168937315774466"
+          },
+          {
+            "label": "Inpainting, VAE Encode + SetNoiseMak + T2I model｜Crazy Lychee",
+            "url": "https://www.runninghub.ai/post/1868497326405992450"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：海报",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "Flux2 Klein 超级多合一_文生图、单图多图编辑、重绘、完美扩图｜user_s0gn52jl",
+            "url": "https://www.runninghub.ai/post/2074920093347311618"
+          },
+          {
+            "label": "字体效果模仿-风格迁移｜设计师福音",
+            "url": "https://www.runninghub.ai/post/2040441829853765633"
+          },
+          {
+            "label": "最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0｜设计师李小小",
+            "url": "https://www.runninghub.ai/post/2048806715327520769"
+          },
+          {
+            "label": "电商产品主图-自动匹配场景｜Tfeed",
+            "url": "https://www.runninghub.ai/post/2027466614496563202"
+          },
+          {
+            "label": "电商详情页（眼镜案例）｜AI美研所",
+            "url": "https://www.runninghub.ai/post/2015765538475085825"
+          },
+          {
+            "label": "全能图片V1 Pro 电商详情页一键生成｜米大",
+            "url": "https://www.runninghub.ai/post/2012746996444041218"
+          },
+          {
+            "label": "硬核拆解|万物皆可生成说明书｜欢喜的秋菊",
+            "url": "https://www.runninghub.ai/post/2035713994807320578"
+          },
+          {
+            "label": "美食博主必备：味觉艺术｜复刻顶级杂志风格的高级菜单｜欢喜的秋菊",
+            "url": "https://www.runninghub.ai/post/2025149217555091458"
+          },
+          {
+            "label": "Z-Image vs Z-Image-Turbo｜Lucas",
+            "url": "https://www.runninghub.ai/post/2016334687932784642"
+          },
+          {
+            "label": "Qwen_Edit_2509手机上的3D城市｜龚老师",
+            "url": "https://www.runninghub.ai/post/1989171870014517249"
+          },
+          {
+            "label": "seedVR2 万物高清放大（分块）｜孤海AI",
+            "url": "https://www.runninghub.ai/post/1959541933108572161"
+          },
+          {
+            "label": "千问文生图(小即梦,内有提示词)｜SCAI 创意分享",
+            "url": "https://www.runninghub.ai/post/1957736066219606018"
+          },
+          {
+            "label": "Qwen-lmage 官方版文生图（支持中文字体）｜DeepKey",
+            "url": "https://www.runninghub.ai/post/1952902120161931266"
+          },
+          {
+            "label": "中文字体设计 - 媲美即梦 -  Qwen-Image图生图｜时也",
+            "url": "https://www.runninghub.ai/post/1953067660055613442"
+          },
+          {
+            "label": "Qwen-Image千问中文渲染全系列工作流｜雅咪Yummy",
+            "url": "https://www.runninghub.ai/post/1954942638128599042"
+          },
+          {
+            "label": "Qwen-image洗图模仿海报/风格等｜安仔先生T8-666",
+            "url": "https://www.runninghub.ai/post/1954019308215291905"
+          },
+          {
+            "label": "Qwen-image洗图模仿海报/风格等｜Cyrus",
+            "url": "https://www.runninghub.ai/post/2079411557066407937"
+          },
+          {
+            "label": "中文书法字体设计 - 媲美即梦 - Qwen-Image文生图｜时也",
+            "url": "https://www.runninghub.ai/post/1953065521521618946"
+          },
+          {
+            "label": "千问 Qwen-Image 文生图全尺寸官方工作流 Plus｜小刚AI探索",
+            "url": "https://www.runninghub.ai/post/1953333659426324481"
+          },
+          {
+            "label": "Kontext效率节点-多次连续编辑｜破狼",
+            "url": "https://www.runninghub.ai/post/1947145920976969730"
+          },
+          {
+            "label": "FluxText超级面爸版换字王来啦｜超级面爸AIFSH",
+            "url": "https://www.runninghub.ai/post/1942886556913086465"
+          },
+          {
+            "label": "【海报设计】中文字修改 超级面爸工作流｜小刚AI探索",
+            "url": "https://www.runninghub.ai/post/1944573948103413762"
+          },
+          {
+            "label": "Calligrapher文字风格迁移@超级面爸,有了它Flux图片里的文字徇烂多彩｜超级面爸AIFSH",
+            "url": "https://www.runninghub.ai/post/1943587701985583106"
+          },
+          {
+            "label": "FluxText改字（支持中文）｜HAIGC",
+            "url": "https://www.runninghub.ai/post/1942630895235084289"
+          },
+          {
+            "label": "电影海报设计｜破狼",
+            "url": "https://www.runninghub.ai/post/1938640741998452737"
+          },
+          {
+            "label": "海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）｜HAIGC",
+            "url": "https://www.runninghub.ai/post/1984427840852672514"
+          },
+          {
+            "label": "视频添加自定义动态字幕可根据时间调整渐变色投影超多功能｜HAIGC",
+            "url": "https://www.runninghub.ai/post/1985536865992384514"
+          },
+          {
+            "label": "Photo praise machine｜Little Wrangler",
+            "url": "https://www.runninghub.ai/post/1889559564239495169"
+          },
+          {
+            "label": "FLUX毛绒数字｜翘翘日志",
+            "url": "https://www.runninghub.ai/post/1904904736871469057"
+          },
+          {
+            "label": "MUTOU直出中文融合｜木头",
+            "url": "https://www.runninghub.ai/post/1902220253793771522"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：AI漫剧",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；2条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "Image editing precise commands for photo editing｜Aquila",
+            "url": "https://www.runninghub.ai/post/2001205900209778689"
+          },
+          {
+            "label": "Video Merge｜Aquila",
+            "url": "https://www.runninghub.ai/post/2013176883336192001"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：视频处理",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "LTX2.3-MSR  Multi-Image Reference（custom audio)｜Smart Bobo",
+            "url": "https://www.runninghub.ai/post/2079516284873670657"
+          },
+          {
+            "label": "MinimaxH3视频编辑T2去除帽子｜Bobosiki",
+            "url": "https://www.runninghub.ai/post/2085612528227758082"
+          },
+          {
+            "label": "MinimaxH3视频参考编辑T5人物换发型服装｜Bobosiki",
+            "url": "https://www.runninghub.ai/post/2086812185958920193"
+          },
+          {
+            "label": "Scail2 TTP迁移替换二合一｜celestial swan",
+            "url": "https://www.runninghub.ai/post/2095390337606184961"
+          },
+          {
+            "label": "Character Replacement-Minimax H3｜thefeed",
+            "url": "https://www.runninghub.ai/post/2088946374975963138"
+          },
+          {
+            "label": "Animate2-数字人唱歌/跳舞-动作迁移-不限时长-循环流｜五柳",
+            "url": "https://www.runninghub.ai/post/2089888856966508545"
+          },
+          {
+            "label": "Hailuo H3 Image-to-Video (Image-to-Video)｜AIGC-Singularity",
+            "url": "https://www.runninghub.ai/post/2083862368227954690"
+          },
+          {
+            "label": "Video Face Swap(Keep original audio and frame ）｜Zhiyan Meow",
+            "url": "https://www.runninghub.ai/post/2078630613040599041"
+          },
+          {
+            "label": "LTX2.3 – Video Editing｜Smart Bobo",
+            "url": "https://www.runninghub.ai/post/2079516534069854210"
+          },
+          {
+            "label": "Extract First Frame from Video｜Zhiyan Meow",
+            "url": "https://www.runninghub.ai/post/2079122856608370689"
+          },
+          {
+            "label": "Wan-Dancer: Audio-to-Dance｜Zhiyan Meow",
+            "url": "https://www.runninghub.ai/post/2080210673417895938"
+          },
+          {
+            "label": "Aiwood-改进版KJ-Infinitetalk视频对口型工作流｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003461723521026"
+          },
+          {
+            "label": "AIwood-Wan2.2 Multitalk 文生视频版｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003176615706626"
+          },
+          {
+            "label": "Aiwood-Wan2.2 All-in-on 目前最快2.2文生视频+图生视频工作流｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002713002508289"
+          },
+          {
+            "label": "万相ATI轨迹控制｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003519877545986"
+          },
+          {
+            "label": "wan2.1 720p图生视频fusionX+NAG｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002938849177602"
+          },
+          {
+            "label": "Aiwood-magref+Lightx2v 4步lora双图参考｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002952624467970"
+          },
+          {
+            "label": "VACE+FusionX+NAG｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003488541900801"
+          },
+          {
+            "label": "phantom FusionX+NAG｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077003192828063746"
+          },
+          {
+            "label": "RH_Wan2.1_SCAIL2 Minimal Motion Reference Long Video Gen v2｜Portskill",
+            "url": "https://www.runninghub.ai/post/2079853043861385218"
+          },
+          {
+            "label": "Bernini: Remove Subtitles, Watermarks & Objects from Videos! YT@aijuxi｜aijuxi",
+            "url": "https://www.runninghub.ai/post/2078672472920133634"
+          },
+          {
+            "label": "bernini全能视频编辑  提示词自动反推版｜wuwukasi",
+            "url": "https://www.runninghub.ai/post/2076626263990009858"
+          },
+          {
+            "label": "Berinini Studio Video Editing & Reference Images｜FlowZed",
+            "url": "https://www.runninghub.ai/post/2077340130851160066"
+          },
+          {
+            "label": "Bernini Studio贝尔尼尼｜Leon",
+            "url": "https://www.runninghub.ai/post/2075050205141094402"
+          },
+          {
+            "label": "视频高清 视频超分 极速 FlashVSR｜WorkflowX",
+            "url": "https://www.runninghub.ai/post/2050831610873954305"
+          },
+          {
+            "label": "动作迁移   动作模仿  角色替换  人物替换  wan2.2｜小牛AI",
+            "url": "https://www.runninghub.ai/post/2072935699858415617"
+          },
+          {
+            "label": "Scail-2 V3.1自用替换｜li浩",
+            "url": "https://www.runninghub.ai/post/2072750629885407233"
+          },
+          {
+            "label": "Scail2+卡通角色动作迁移+全节点注释｜why_not_you（诚信互粉）",
+            "url": "https://www.runninghub.ai/post/2077418180737277953"
+          },
+          {
+            "label": "Scail2+卡通角色动作迁移+全节点注释｜why_not_you（诚信互粉）",
+            "url": "https://www.runninghub.ai/post/2072321050989383682"
+          },
+          {
+            "label": "Scail2+卡通角色动作迁移+全节点注释｜why_not_you（诚信互粉）",
+            "url": "https://www.runninghub.ai/post/2077418191684644865"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：电商产品",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "一键换装：完美替换衣物，超高一致性保持。｜机智波玩AI",
+            "url": "https://www.runninghub.ai/post/2011329691990368258"
+          },
+          {
+            "label": "LTX2.3-MSR  Multi-Image Reference（custom audio)｜FlowZed",
+            "url": "https://www.runninghub.ai/post/2086423146748915713"
+          },
+          {
+            "label": "Change Character Background｜thefeed",
+            "url": "https://www.runninghub.ai/post/2079189096374788097"
+          },
+          {
+            "label": "Krea2 文生图多风格优化+双图风格迁移智能优化版｜土豆",
+            "url": "https://www.runninghub.ai/post/2073044999301844994"
+          },
+          {
+            "label": "换装 换衣  电商服装展示 FireRed-Image-Edit 小红书｜MCGAI",
+            "url": "https://www.runninghub.ai/post/2074028456844808193"
+          },
+          {
+            "label": "Qwen-Edit-2509-光线迁移｜龙神呀",
+            "url": "https://www.runninghub.ai/post/2067435409872867329"
+          },
+          {
+            "label": "ltx2.3导演台 去字幕 短剧视频/漫剧视频/电商视频 多宫格 六宫格 九宫格 自动图生视频｜盯ding电商",
+            "url": "https://www.runninghub.ai/post/2064410253088878594"
+          },
+          {
+            "label": "Zimage-turbo保暖内衣｜KIWI",
+            "url": "https://www.runninghub.ai/post/2051484069925531650"
+          },
+          {
+            "label": "云雾v10｜user_rb1d54he",
+            "url": "https://www.runninghub.ai/post/2049162619633799169"
+          },
+          {
+            "label": "电商产品主图-自动匹配场景｜Tfeed",
+            "url": "https://www.runninghub.ai/post/2027466614496563202"
+          },
+          {
+            "label": "电商详情页（眼镜案例）｜AI美研所",
+            "url": "https://www.runninghub.ai/post/2015765538475085825"
+          },
+          {
+            "label": "F.2 Klein万物电商光影融合溶图打光产品场景合成阴影生成细节迁移海报合成｜饭盒",
+            "url": "https://www.runninghub.ai/post/2018259477744586754"
+          },
+          {
+            "label": "最强迁移PLUS版（小件物品也能迁移）FLUX的Redux+ACE｜雅咪Yummy",
+            "url": "https://www.runninghub.ai/post/1906720377211604993"
+          },
+          {
+            "label": "亚马逊电商A+主图一键工作流 V1.0｜设计师李小小",
+            "url": "https://www.runninghub.ai/post/2038817432894181378"
+          },
+          {
+            "label": "产品广告图｜奶油小溪",
+            "url": "https://www.runninghub.ai/post/2029004383341518850"
+          },
+          {
+            "label": "穿搭大师Pro OOTD 姿势控制（完全开源）｜Jay Lin",
+            "url": "https://www.runninghub.ai/post/1994708121975201794"
+          },
+          {
+            "label": "百搭秀Pro  OOTD  平替全能图片V1 Pro（无水印）｜Jay Lin",
+            "url": "https://www.runninghub.ai/post/1992860351335297025"
+          },
+          {
+            "label": "直播带货数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5｜无极",
+            "url": "https://www.runninghub.ai/post/1993682109309059073"
+          },
+          {
+            "label": "直播带货数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5｜Wuji",
+            "url": "https://www.runninghub.ai/post/2084922153564237825"
+          },
+          {
+            "label": "Flux2DEV多图编辑｜Aiwood爱屋研究室",
+            "url": "https://www.runninghub.ai/post/1993501443036479490"
+          },
+          {
+            "label": "Flux2DEV多图编辑｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002945425670145"
+          },
+          {
+            "label": "Qwen edit 2509: 产品迁移溶图，还原细节纹理，戒指耳环珠宝产品增强｜LanXing",
+            "url": "https://www.runninghub.ai/post/1988819451309068289"
+          },
+          {
+            "label": "穿搭解析黑科技：ComfyUI服装平铺视图生成｜小白像李白",
+            "url": "https://www.runninghub.ai/post/1990362142790569985"
+          },
+          {
+            "label": "千问百搭秀 v2 姿势控制 OOTD 完美平替全能图片V1｜Jay Lin",
+            "url": "https://www.runninghub.ai/post/1964901394643865602"
+          },
+          {
+            "label": "Kontext-换背景-参考图模式｜in john",
+            "url": "https://www.runninghub.ai/post/2091803709574807553"
+          },
+          {
+            "label": "Kontext-换背景-参考图模式｜魅力创意",
+            "url": "https://www.runninghub.ai/post/1938797079550418946"
+          },
+          {
+            "label": "Work-Fisher Qwen-Edit-AIO合集｜Work-Fisher",
+            "url": "https://www.runninghub.ai/post/1976167606266806273"
+          },
+          {
+            "label": "千问鞋模大师 适配电商 效果超越全能图片V1｜Jay Lin",
+            "url": "https://www.runninghub.ai/post/1970926881845481473"
+          },
+          {
+            "label": "腾讯IC-Custom产品万物迁移｜破狼",
+            "url": "https://www.runninghub.ai/post/1963393368845946881"
+          },
+          {
+            "label": "Kontext+Controlnet姿态改变工作流｜Aiwood",
+            "url": "https://www.runninghub.ai/post/2077002705515851777"
+          }
+        ]
+      },
+      {
+        "title": "一级分类窗口：图片处理",
+        "source": "https://www.runninghub.ai/zh-cn/page-workflow",
+        "scope": "2026-09-15，国际站推荐排序、无时间筛选；30条首批加载记录，未滚动穷尽。分类之间按ID去重比较。",
+        "rows": [
+          {
+            "label": "Watermark removal & HD enhancement (mask upload）｜Zhiyan Meow",
+            "url": "https://www.runninghub.ai/post/2081682445677707265"
+          },
+          {
+            "label": "Light Transfer｜thefeed",
+            "url": "https://www.runninghub.ai/post/2079195688194756610"
+          },
+          {
+            "label": "VividMuse Krea2 Photo Refine｜HD Restore & Upscale｜Forrest Russell",
+            "url": "https://www.runninghub.ai/post/2097250980931936258"
+          },
+          {
+            "label": "Krea2 Muse Second Sampling｜HD Portrait Image Gener｜Forrest Russell",
+            "url": "https://www.runninghub.ai/post/2096897359372754945"
+          },
+          {
+            "label": "Krea2 Style Transfer｜Reference-Based Image Restyle｜jike",
+            "url": "https://www.runninghub.ai/post/2096110421443223553"
+          },
+          {
+            "label": "Z-IMAGE | Think mode | Controlnet | Upscale  8K｜OffArtwork",
+            "url": "https://www.runninghub.ai/post/2000431238311706626"
+          },
+          {
+            "label": "Turn Any Image into Layered PSD in ONE Click! 🤯｜Mohamed Nagy",
+            "url": "https://www.runninghub.ai/post/2089748102542950401"
+          },
+          {
+            "label": "Retouch  | Realistic skin｜Zhao_tf",
+            "url": "https://www.runninghub.ai/post/1958180717652021249"
+          },
+          {
+            "label": "Upscale | real skin｜Zhao_tf",
+            "url": "https://www.runninghub.ai/post/1978520232618774529"
+          },
+          {
+            "label": "Professional Portrait Retouching Express Edition｜电商设计师阿贵",
+            "url": "https://www.runninghub.ai/post/2085884760970600450"
+          },
+          {
+            "label": "Pose-Locked Outfit Swap | Local Mask Workflow｜bailuolee",
+            "url": "https://www.runninghub.ai/post/2085368503692304386"
+          },
+          {
+            "label": "Portrait Retouching to Enhance Skin Texture and Te｜sni 2010",
+            "url": "https://www.runninghub.ai/post/2085181372968550402"
+          },
+          {
+            "label": "Batch Image Enlargement, Upload Compressed Files,｜sni 2010",
+            "url": "https://www.runninghub.ai/post/2083743015151456258"
+          },
+          {
+            "label": "AI Image Outpainting｜Zhiyan Meow",
+            "url": "https://www.runninghub.ai/post/2079108211933138946"
+          },
+          {
+            "label": "FireRed: 2-in-1 Virtual Try-On & Clothing Extraction Workflow｜Aether Latent",
+            "url": "https://www.runninghub.ai/post/2078118953481940994"
+          },
+          {
+            "label": "Klein – High-End Portrait Retouching (Skin Perfect｜图图的ai世界海外版",
+            "url": "https://www.runninghub.ai/post/2078077108212420609"
+          },
+          {
+            "label": "One Click Photo HD Upscale SeedVR2｜DOUBLE Lil",
+            "url": "https://www.runninghub.ai/post/2076350799010529281"
+          },
+          {
+            "label": "Berinini Studio Video Editing & Reference Images｜FlowZed",
+            "url": "https://www.runninghub.ai/post/2077340130851160066"
+          },
+          {
+            "label": "高清修复 4k细节-Krea2最新工作流｜Tfeed",
+            "url": "https://www.runninghub.ai/post/2074820750917328897"
+          },
+          {
+            "label": "视频高清 视频超分 极速 FlashVSR｜WorkflowX",
+            "url": "https://www.runninghub.ai/post/2050831610873954305"
+          },
+          {
+            "label": "总有你喜欢！ Krea 2 + 12 个官方 Lora ！｜Mr. Wen",
+            "url": "https://www.runninghub.ai/post/2074148242639646721"
+          },
+          {
+            "label": "无损8k放大｜L",
+            "url": "https://www.runninghub.ai/post/2074161006313558018"
+          },
+          {
+            "label": "boogu image turbo-hotfix版-极速文生图-euler与ddim｜Hansen Ai",
+            "url": "https://www.runninghub.ai/post/2073991622328668161"
+          },
+          {
+            "label": "qwen2511图转速手绘线条水彩风格｜lalala",
+            "url": "https://www.runninghub.ai/post/2072947797464276994"
+          },
+          {
+            "label": "图生图+多分镜自动-Qwen-Edit-NextScene-2511-8步｜一枚小学生",
+            "url": "https://www.runninghub.ai/post/2072586404466614273"
+          },
+          {
+            "label": "图生视频-高清动态壁纸高质量｜当个正事干！",
+            "url": "https://www.runninghub.ai/post/2072123157451984897"
+          },
+          {
+            "label": "krea2文生图+高清修复｜lalala",
+            "url": "https://www.runninghub.ai/post/2072118286560612353"
+          },
+          {
+            "label": "人物场景迁移保持和参考姿势一致性｜南方客",
+            "url": "https://www.runninghub.ai/post/2067157677486206978"
+          },
+          {
+            "label": "LTX2.3图生视频KJ版 音画同步+提示词润色｜一枚小学生",
+            "url": "https://www.runninghub.ai/post/2071425665001414658"
+          },
+          {
+            "label": "Z-Image：图片去除Ai感工作流｜北岸北地",
+            "url": "https://www.runninghub.ai/post/2069603159416336386"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1633 @@
+{
+  "observed_on": "2026-09-15",
+  "records": [
+    {
+      "id": "71221d0e83be45e2a0028cddae5e3f0f",
+      "url": "https://www.liblib.art/imageinfo/71221d0e83be45e2a0028cddae5e3f0f?from=feed",
+      "title": "人物",
+      "date": "2026-9-13",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "油画/水彩",
+        "海报/Banner"
+      ],
+      "modelLinks": [
+        {
+          "name": "手绘可爱卡通插画_1.0",
+          "url": "https://www.liblib.art/modelinfo/68af2e4761cc454999896b5fb3b1eb41?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Seedream 5.0_1",
+        "url": "https://www.liblib.art/modelinfo/e35b3cf055b04589a063b79fc563a0c1?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最新",
+      "observed_index": 0,
+      "stratum": 1,
+      "visual": "粉色Q版女性手持鲜花，画面有教师节祝福文字；节日人物海报。",
+      "topics": [
+        "人物",
+        "教师节"
+      ],
+      "uses": [
+        "节日祝福海报"
+      ],
+      "useBasis": "画面文字、提示词与海报/Banner标签一致；未确认实际商用或交付",
+      "image": "work-detail-images/01-71221d0e.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "5e96d8c6389f4e4e9da67bec4949207c",
+      "url": "https://www.liblib.art/imageinfo/5e96d8c6389f4e4e9da67bec4949207c?from=feed",
+      "title": null,
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "厚涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "【青丘】电商超真实模特人像与产品_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/226c0b9a1ef04f45a31042d4a4644f30?from=pic_detail"
+        },
+        {
+          "name": "【青丘】震撼电商产品人物融合大模型--臻尊特效/场景版（产品支持中英文字幕介绍编辑）_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/9cf78c8f6e9749d087c3a99bd2ba284f?from=pic_detail"
+        },
+        {
+          "name": "丹书登极·锦曜文昌 Qwen-Image古风状元CG模型_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/a5c9c1909d8d416290a9af3edb8cabf4?from=pic_detail"
+        },
+        {
+          "name": "师韵鎏香・青笺花影_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/7a02e3fa7a0444b5a69e6dfb17856885?from=pic_detail"
+        },
+        {
+          "name": "师者授业传道解惑也・感恩叙事_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ec91cc1950714ee5a502895ef7b59438?from=pic_detail"
+        },
+        {
+          "name": "樱庭华宴・师恩锦色_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/f6ba9d6336104a34b5cdd10572d294db?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-极致CG质感人像大模型_v1",
+        "url": "https://www.liblib.art/modelinfo/5d5013b2ebd54de387bf9dd7d3095d6f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 22,
+      "stratum": 2,
+      "visual": "华丽和服娃娃风人物，画面明确教师节、桃李满天下文字。",
+      "topics": [
+        "人物",
+        "教师节"
+      ],
+      "uses": [
+        "节日祝福海报"
+      ],
+      "useBasis": "画面与提示词一致。关联模型含电商命名资源，但作品不是商品展示，不按底模名称编码电商。",
+      "image": "work-detail-images/02-5e96d8c6.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "61b5a49eb0e5461fb8dc05c1d2fcf312",
+      "url": "https://www.liblib.art/imageinfo/61b5a49eb0e5461fb8dc05c1d2fcf312?from=feed",
+      "title": "人物",
+      "date": "2026-9-13",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "日常摄影",
+        "艺术照"
+      ],
+      "modelLinks": [
+        {
+          "name": "191写实光影人像_造像写实光影人像V2.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/5b669d6edfc34ac492f9ebd04a63a7f6?from=pic_detail"
+        },
+        {
+          "name": "Krea2高清写实人像_ZV1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/37ab399b795743c191ad07dc360bc089?from=pic_detail"
+        },
+        {
+          "name": "Krea2写实人物姿势加强_造像写实人物姿势V1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ffdf9fff97df4fdcae63e02eeeb58e2b?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Z-Image_Turbo-diffusion",
+        "url": "https://www.liblib.art/modelinfo/34cd9679d06e4f88894ad0fba049225f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 44,
+      "stratum": 3,
+      "visual": "教室中的女性写实人像，穿衬衫领带并举手。",
+      "topics": [
+        "人物",
+        "校园"
+      ],
+      "uses": [
+        "人像艺术照"
+      ],
+      "useBasis": "艺术照标签及提示词确认创作题材；没有教育课程或商业交付用途，不把校园背景等同教育行业。",
+      "image": "work-detail-images/03-61b5a49e.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "c7ea58398934410a8c3eb5521afa668c",
+      "url": "https://www.liblib.art/imageinfo/c7ea58398934410a8c3eb5521afa668c?from=feed",
+      "title": null,
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "厚涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "【青丘】震撼电商产品人物融合大模型--臻尊特效/场景版（产品支持中英文字幕介绍编辑）_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/9cf78c8f6e9749d087c3a99bd2ba284f?from=pic_detail"
+        },
+        {
+          "name": "【青丘】山海幻影·沧澜灵境_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/52624f70c7df414188eecd8f571ec75e?from=pic_detail"
+        },
+        {
+          "name": "丹书登极·锦曜文昌 Qwen-Image古风状元CG模型_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/a5c9c1909d8d416290a9af3edb8cabf4?from=pic_detail"
+        },
+        {
+          "name": "师韵鎏香・青笺花影_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/7a02e3fa7a0444b5a69e6dfb17856885?from=pic_detail"
+        },
+        {
+          "name": "师者授业传道解惑也・感恩叙事_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ec91cc1950714ee5a502895ef7b59438?from=pic_detail"
+        },
+        {
+          "name": "樱庭华宴・师恩锦色_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/f6ba9d6336104a34b5cdd10572d294db?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-极致CG质感人像大模型_v1",
+        "url": "https://www.liblib.art/modelinfo/5d5013b2ebd54de387bf9dd7d3095d6f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 66,
+      "stratum": 4,
+      "visual": "国风女性侧脸与莲花、水纹融合的人像插画。",
+      "topics": [
+        "人物",
+        "国风"
+      ],
+      "uses": [],
+      "useBasis": "画面和提示词支持审美题材；没有明确交付用途。电商、教师节等关联模型名不代表这幅作品的实际用途。",
+      "image": "work-detail-images/04-c7ea5839.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "522092bd0798457a8f99ea1ba9e605b4",
+      "url": "https://www.liblib.art/imageinfo/522092bd0798457a8f99ea1ba9e605b4?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "动漫游戏CG质感角色V2｜次时代3D漫剧_1.0",
+          "url": "https://www.liblib.art/modelinfo/abae2fde02984019b3fa3432727b07a9?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 88,
+      "stratum": 5,
+      "visual": "古风白衣男子倚石栏，山水樱花背景的CG人物。",
+      "topics": [
+        "人物",
+        "国风"
+      ],
+      "uses": [],
+      "useBasis": "未出现剧情、游戏资产交付或角色一致性任务；关联模型虽称漫剧，不能据此认定实际漫剧用途。",
+      "image": "work-detail-images/05-522092bd.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "0654ff9f6f6449ea8f4f323b382e1385",
+      "url": "https://www.liblib.art/imageinfo/0654ff9f6f6449ea8f4f323b382e1385?from=feed",
+      "title": "浅蓝清新简欧客厅玄关设计",
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "古典英式风格客厅_古典英式风格客厅 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/433c99ff08624a1180bf8a81949bae27?from=pic_detail"
+        },
+        {
+          "name": "法式复古风客厅F.1_法式复古风客厅F.1 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/5f9847d506824de6b143d9e2832289ce?from=pic_detail"
+        },
+        {
+          "name": "庄重典雅的中式客家餐厅_庄重典雅的中式客家餐厅 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/a31d2713e1d94237974f499a4edee063?from=pic_detail"
+        },
+        {
+          "name": "高端仪式感贵气风_高端仪式感贵气风 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/5442ed9dc92c446bbd06e4d88887f8c0?from=pic_detail"
+        },
+        {
+          "name": "简欧客餐厅_简欧客餐厅 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/e7a75db107f0490295156b199f1ff663?from=pic_detail"
+        },
+        {
+          "name": "温馨简约的欧式客餐_温馨简约的欧式客餐 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ec37232df58742568c848820f331e317?from=pic_detail"
+        },
+        {
+          "name": "浅蓝清新简欧客厅玄关设计_浅蓝清新简欧客厅玄关设计 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/801694cf976f435899d6b7996f83fe3d?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "F.1基础算法模型-哩布在线可运行_F.1-dev-fp8",
+        "url": "https://www.liblib.art/modelinfo/488cd9d58cd4421b9e8000373d7da123?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 110,
+      "stratum": 6,
+      "visual": "浅蓝沙发、白色装饰墙面的欧式客厅效果图。",
+      "topics": [
+        "室内空间"
+      ],
+      "uses": [
+        "室内风格效果图"
+      ],
+      "useBasis": "标题和提示词均明确客厅设计；没有真实户型、尺寸、施工或客户验收信息。",
+      "image": "work-detail-images/06-0654ff9f.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "5dc12b4445504d0e87fe504430a627ff",
+      "url": "https://www.liblib.art/imageinfo/5dc12b4445504d0e87fe504430a627ff?from=feed",
+      "title": "持剑的天使",
+      "date": "2026-9-12",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "二次元美女影棚风格_1.0",
+          "url": "https://www.liblib.art/modelinfo/07ad03f458ec43438a52330bbc3a1a73?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Seedream 4.5_1",
+        "url": "https://www.liblib.art/modelinfo/98cc00e8775f4e3ea904666a3e668caf?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 134,
+      "stratum": 7,
+      "visual": "带羽翼的铠甲女性举剑，CG幻想角色立像。",
+      "topics": [
+        "人物",
+        "奇幻角色"
+      ],
+      "uses": [],
+      "useBasis": "标题和画面支持天使角色题材；没有游戏、手办或剧情交付的说明。",
+      "image": "work-detail-images/07-5dc12b44.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "996e4ba4e6d849c49ec6af7e0e8973f2",
+      "url": "https://www.liblib.art/imageinfo/996e4ba4e6d849c49ec6af7e0e8973f2?from=feed",
+      "title": null,
+      "date": "2026-9-12",
+      "tool": "WebUI",
+      "tags": [
+        "人/人群",
+        "日常摄影",
+        "艺术照"
+      ],
+      "modelLinks": [],
+      "base": {
+        "name": "小红书抖音美女大模型_千问v2",
+        "url": "https://www.liblib.art/modelinfo/8e167ad6a4f448a5a4812725b4f9daf4?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数 复制参数",
+        "图生视频"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 158,
+      "stratum": 8,
+      "visual": "牛仔服女性街拍，城市涂鸦背景。",
+      "topics": [
+        "人物",
+        "穿搭"
+      ],
+      "uses": [
+        "人像艺术照"
+      ],
+      "useBasis": "艺术照标签与街拍提示词吻合；没有实际服装商品或投放任务。采样参数为--，可见主按钮只有图生视频。",
+      "image": "work-detail-images/08-996e4ba4.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "3ea4ed6796c74d49bfab3378c6f5135d",
+      "url": "https://www.liblib.art/imageinfo/3ea4ed6796c74d49bfab3378c6f5135d?from=feed",
+      "title": "rw",
+      "date": "2026-9-12",
+      "tool": "图片生成",
+      "tags": [
+        "人/人群",
+        "3D建模",
+        "海报/Banner"
+      ],
+      "modelLinks": [
+        {
+          "name": "3D 写实二次元人物插画_1.0",
+          "url": "https://www.liblib.art/modelinfo/f7800dd58ec84e5c92995a5b0fc7fd4b?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Seedream 4.5_1",
+        "url": "https://www.liblib.art/modelinfo/98cc00e8775f4e3ea904666a3e668caf?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 179,
+      "stratum": 9,
+      "visual": "儿童向教师献花的3D祝福海报，教师节与2026文字明确。",
+      "topics": [
+        "人物",
+        "教师节"
+      ],
+      "uses": [
+        "节日祝福海报"
+      ],
+      "useBasis": "画面、提示词和海报标签一致。",
+      "image": "work-detail-images/09-3ea4ed67.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "046d3d23e00f4d1e905f1f5b885d9df7",
+      "url": "https://www.liblib.art/imageinfo/046d3d23e00f4d1e905f1f5b885d9df7?from=feed",
+      "title": "时尚女郎01",
+      "date": "2026-9-08",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "二次元美女影棚风格_1.0",
+          "url": "https://www.liblib.art/modelinfo/07ad03f458ec43438a52330bbc3a1a73?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Seedream 4.5_1",
+        "url": "https://www.liblib.art/modelinfo/98cc00e8775f4e3ea904666a3e668caf?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 199,
+      "stratum": 10,
+      "visual": "衬衫长裤的CG时尚女性站姿。",
+      "topics": [
+        "人物",
+        "穿搭"
+      ],
+      "uses": [],
+      "useBasis": "标题时尚女郎和极短提示词仅表达人物题材；没有服装商品、品牌或商业任务。",
+      "image": "work-detail-images/10-046d3d23.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "c87d4526f251443ebaeb232c616878d7",
+      "url": "https://www.liblib.art/imageinfo/c87d4526f251443ebaeb232c616878d7?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "动漫游戏CG质感角色V2｜次时代3D漫剧_1.0",
+          "url": "https://www.liblib.art/modelinfo/abae2fde02984019b3fa3432727b07a9?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 221,
+      "stratum": 11,
+      "visual": "繁复黑衣古风男子全身CG立像。",
+      "topics": [
+        "人物",
+        "国风"
+      ],
+      "uses": [],
+      "useBasis": "展示角色视觉，未披露漫剧、游戏或商业交付；与同作者另一白衣人物共享关联资源。",
+      "image": "work-detail-images/11-c87d4526.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "e8de9a7648b747ad95b73ffa16f76969",
+      "url": "https://www.liblib.art/imageinfo/e8de9a7648b747ad95b73ffa16f76969?from=feed",
+      "title": "简欧客厅玄关设计",
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "晨光法式角 温柔入梦_晨光法式角 温柔入梦 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/8ea81ec09d3c4fb6a2a55ab1e818a83e?from=pic_detail"
+        },
+        {
+          "name": "古典英式风格客厅_古典英式风格客厅 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/433c99ff08624a1180bf8a81949bae27?from=pic_detail"
+        },
+        {
+          "name": "法式复古风客厅F.1_法式复古风客厅F.1 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/5f9847d506824de6b143d9e2832289ce?from=pic_detail"
+        },
+        {
+          "name": "高端仪式感贵气风_高端仪式感贵气风 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/5442ed9dc92c446bbd06e4d88887f8c0?from=pic_detail"
+        },
+        {
+          "name": "简欧客餐厅_简欧客餐厅 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/e7a75db107f0490295156b199f1ff663?from=pic_detail"
+        },
+        {
+          "name": "温馨简约的欧式客餐_温馨简约的欧式客餐 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ec37232df58742568c848820f331e317?from=pic_detail"
+        },
+        {
+          "name": "简欧客厅玄关设计_简欧客厅玄关设计 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/ea109e97a3bb4996b2646f79121505f4?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "F.1基础算法模型-哩布在线可运行_F.1-dev-fp8",
+        "url": "https://www.liblib.art/modelinfo/488cd9d58cd4421b9e8000373d7da123?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 245,
+      "stratum": 12,
+      "visual": "米色欧式客厅通向餐厅，暖色软装及装饰墙面。",
+      "topics": [
+        "室内空间"
+      ],
+      "uses": [
+        "室内风格效果图"
+      ],
+      "useBasis": "标题提示词明确简欧客厅设计；无具体户型/客户交付证据。",
+      "image": "work-detail-images/12-e8de9a76.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "e847bc389d0f42b696c7bd7231f2ff02",
+      "url": "https://www.liblib.art/imageinfo/e847bc389d0f42b696c7bd7231f2ff02?from=feed",
+      "title": null,
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "人/人群",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "藏在课本里的文学知识_1.0",
+          "url": "https://www.liblib.art/modelinfo/1427a87065ff4e6eb9b8f415f5c48fdd?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 0,
+      "stratum": 1,
+      "visual": "三位3D卡通学生向前奔跑，画面写努力学习、天天向上、09.01向学校出发。",
+      "topics": [
+        "校园",
+        "人物"
+      ],
+      "uses": [
+        "开学主题海报"
+      ],
+      "useBasis": "画面明确开学主题；提示词称青年节和扁平插画，与画面3D/开学表达不完全一致，不能仅按提示词分类。",
+      "image": "work-detail-images/13-e847bc38.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "e7c25af7417c4532b7ec33ebf62f97ef",
+      "url": "https://www.liblib.art/imageinfo/e7c25af7417c4532b7ec33ebf62f97ef?from=feed",
+      "title": null,
+      "date": "2026-9-15",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "2D平涂",
+        "动漫/卡通"
+      ],
+      "modelLinks": [
+        {
+          "name": "First-Illustrious_1.0",
+          "url": "https://www.liblib.art/modelinfo/1c0a64d572a44fe88ecb1503eb60ccd3?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Illustrious-Dimensional Breakthrough_v1.1",
+        "url": "https://www.liblib.art/modelinfo/8629e7b72a774a92984e99b34983f143?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数 复制参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 22,
+      "stratum": 2,
+      "visual": "猫耳、贝雷帽与水手服的动漫女性头像式插画。",
+      "topics": [
+        "人物",
+        "动漫"
+      ],
+      "uses": [],
+      "useBasis": "动漫卡通标签吻合；没有明确头像交付或角色用途，不凭构图推用途。",
+      "image": "work-detail-images/14-e7c25af7.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "a8c3b7d58e4d4a86998f12626e7a9ff5",
+      "url": "https://www.liblib.art/imageinfo/a8c3b7d58e4d4a86998f12626e7a9ff5?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "WebUI",
+      "tags": [
+        "街道街景",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "漫剧电影风格场景_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/8a1965a7014e45599d9d07c332922e9f?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-Image_1.0",
+        "url": "https://www.liblib.art/modelinfo/c62a103bd98a4246a2334e2d952f7b21?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 45,
+      "stratum": 3,
+      "visual": "秋日无人老街巷，落叶和暖光。",
+      "topics": [
+        "建筑街景"
+      ],
+      "uses": [],
+      "useBasis": "画面是街巷，提示词描述院落；关联模型名含漫剧电影，但未展示实际剧情或影视交付。",
+      "image": "work-detail-images/15-a8c3b7d5.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "67219cee0a3545fcba3dec0784074eaf",
+      "url": "https://www.liblib.art/imageinfo/67219cee0a3545fcba3dec0784074eaf?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "图片生成",
+      "tags": [
+        "行星恒星星云",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "写实火星科幻场景_1.0",
+          "url": "https://www.liblib.art/modelinfo/8b95916387c34520ae948426acd03e4d?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 67,
+      "stratum": 4,
+      "visual": "红色星球地表科幻基地与车辆、巨大行星背景。",
+      "topics": [
+        "科幻场景"
+      ],
+      "uses": [],
+      "useBasis": "提示词仅基地；画面可判科幻题材，没有科普说明、科学准确性或影视交付，不能归为科普内容。",
+      "image": "work-detail-images/16-67219cee.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "fec94dd83e164f3995bbe4b71568a9b1",
+      "url": "https://www.liblib.art/imageinfo/fec94dd83e164f3995bbe4b71568a9b1?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "图片生成",
+      "tags": [
+        "人/人群",
+        "Q版/九头身"
+      ],
+      "modelLinks": [
+        {
+          "name": "水墨q游戏角色_1.0",
+          "url": "https://www.liblib.art/modelinfo/c0d1530e9eeb4b9f86881cb387298641?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 90,
+      "stratum": 5,
+      "visual": "Q版女剑客角色板，含正侧背视图及服饰局部细节。",
+      "topics": [
+        "人物",
+        "国风"
+      ],
+      "uses": [
+        "角色设定板"
+      ],
+      "useBasis": "画面有正侧背及细节注释，可识别角色设定形式；关联游戏模型但未确认游戏资产验收。",
+      "image": "work-detail-images/17-fec94dd8.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "f05b5051de25437c9afb4168b5dcbef1",
+      "url": "https://www.liblib.art/imageinfo/f05b5051de25437c9afb4168b5dcbef1?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "WebUI",
+      "tags": [
+        "神话幻想",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "Zimage.二十四节气·秋分_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/0740b78a807144c7ab68073fda3f5df0?from=pic_detail"
+        },
+        {
+          "name": "Zimage.中秋节·花好月圆_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/e9bdcc7913ff47b794a6e50bbbda4cb8?from=pic_detail"
+        },
+        {
+          "name": "Zimage.国际旅游日_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/f5afdc18a2a3417987d5037ab6cf3fa2?from=pic_detail"
+        },
+        {
+          "name": "Zimage.美式长头卡车KenworthW900_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/b0f731b842f54b61945c0565680ef190?from=pic_detail"
+        },
+        {
+          "name": "Zimage.三国雉翎武将_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/40a68fe5f9584f7e8492c1e2982a308e?from=pic_detail"
+        },
+        {
+          "name": "Zimage.亥猪将军_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/9354b2e710c54296ba35185a661e6ed8?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Z-Image_Turbo-diffusion",
+        "url": "https://www.liblib.art/modelinfo/34cd9679d06e4f88894ad0fba049225f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 112,
+      "stratum": 6,
+      "visual": "金色卡牌边框内是冰封骨龙与白色卡车，底部带文字。",
+      "topics": [
+        "奇幻",
+        "交通工具"
+      ],
+      "uses": [
+        "卡牌插画"
+      ],
+      "useBasis": "卡牌边框与提示词共同支持卡牌插画形式；未见游戏项目交付。",
+      "image": "work-detail-images/18-f05b5051.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "bfd273cc6bda4fd894a9615b92d0d860",
+      "url": "https://www.liblib.art/imageinfo/bfd273cc6bda4fd894a9615b92d0d860?from=feed",
+      "title": null,
+      "date": "2026-9-14",
+      "tool": "WebUI",
+      "tags": [
+        "拟人化",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "Zimage.二十四节气·秋分_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/0740b78a807144c7ab68073fda3f5df0?from=pic_detail"
+        },
+        {
+          "name": "Zimage.中秋节·花好月圆_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/e9bdcc7913ff47b794a6e50bbbda4cb8?from=pic_detail"
+        },
+        {
+          "name": "Zimage.国际旅游日_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/f5afdc18a2a3417987d5037ab6cf3fa2?from=pic_detail"
+        },
+        {
+          "name": "Zimage.美式长头卡车KenworthW900_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/b0f731b842f54b61945c0565680ef190?from=pic_detail"
+        },
+        {
+          "name": "Zimage.三国雉翎武将_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/40a68fe5f9584f7e8492c1e2982a308e?from=pic_detail"
+        },
+        {
+          "name": "Zimage.亥猪将军_Zit VIP模型",
+          "url": "https://www.liblib.art/modelinfo/9354b2e710c54296ba35185a661e6ed8?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Z-Image_Turbo-diffusion",
+        "url": "https://www.liblib.art/modelinfo/34cd9679d06e4f88894ad0fba049225f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 135,
+      "stratum": 7,
+      "visual": "月夜森林中的狼人和白色卡车。",
+      "topics": [
+        "奇幻",
+        "交通工具"
+      ],
+      "uses": [],
+      "useBasis": "提示词描述暗黑游戏风格；画面没有实际游戏用途说明。",
+      "image": "work-detail-images/19-bfd273cc.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "ba01b4e9a42942afa8f34766f5f165c0",
+      "url": "https://www.liblib.art/imageinfo/ba01b4e9a42942afa8f34766f5f165c0?from=feed",
+      "title": "人物",
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "人/人群",
+        "油画/水彩",
+        "海报/Banner"
+      ],
+      "modelLinks": [
+        {
+          "name": "马卡龙色扁平国潮插画_1.0",
+          "url": "https://www.liblib.art/modelinfo/0a1d44dad3f74a12876ca831eac35cec?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Seedream 4.5_1",
+        "url": "https://www.liblib.art/modelinfo/98cc00e8775f4e3ea904666a3e668caf?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 1,
+      "stratum": 8,
+      "visual": "母亲陪孩子整理书包，上方写开学准备好啦、陪伴是最好的礼物。",
+      "topics": [
+        "人物",
+        "校园"
+      ],
+      "uses": [
+        "开学主题海报"
+      ],
+      "useBasis": "画面文字和提示词共同支持。",
+      "image": "work-detail-images/20-ba01b4e9.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "61ba0145c8d94190a1f47cbf9a029548",
+      "url": "https://www.liblib.art/imageinfo/61ba0145c8d94190a1f47cbf9a029548?from=feed",
+      "title": null,
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "帝皇之师・万古帝师（本人出镜为视频素材）_1.0",
+          "url": "https://www.liblib.art/modelinfo/08fc693cc47944499f26e6b2b975d533?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 2,
+      "stratum": 9,
+      "visual": "哥特建筑内两位男性，一位带黑色羽翼和恶魔角。",
+      "topics": [
+        "人物",
+        "奇幻"
+      ],
+      "uses": [],
+      "useBasis": "仅有角色画面；模型名称中的视频素材不能证明已制作视频。",
+      "image": "work-detail-images/21-61ba0145.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "f801a366afbc4c4084e4ee0a4587c99e",
+      "url": "https://www.liblib.art/imageinfo/f801a366afbc4c4084e4ee0a4587c99e?from=feed",
+      "title": null,
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "财-QI可爱Q版女孩_v1.0",
+          "url": "https://www.liblib.art/modelinfo/68269fde24094083a66ca69b2fdae3a9?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-Image_1.0",
+        "url": "https://www.liblib.art/modelinfo/c62a103bd98a4246a2334e2d952f7b21?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 4,
+      "stratum": 10,
+      "visual": "Q版女孩与多只拟人小动物的彩色插画。",
+      "topics": [
+        "人物",
+        "动漫"
+      ],
+      "uses": [],
+      "useBasis": "未见贴纸、头像或商品使用说明。",
+      "image": "work-detail-images/22-f801a366.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "a045f5dbed26445689e2b7f82a654e18",
+      "url": "https://www.liblib.art/imageinfo/a045f5dbed26445689e2b7f82a654e18?from=feed",
+      "title": "国风丝路丨锦绣山河",
+      "date": "2026-9-15",
+      "tool": "WebUI",
+      "tags": [
+        "丝带丝绸",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "国风丝路丨锦绣山河_V1.04 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/fe492a30cc834530991573d5248ab6a5?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-Image_1.0",
+        "url": "https://www.liblib.art/modelinfo/c62a103bd98a4246a2334e2d952f7b21?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 7,
+      "stratum": 11,
+      "visual": "刺绣白色丝绸与海水衔接，金色船帆的微缩船队。",
+      "topics": [
+        "国风",
+        "丝绸",
+        "船舶"
+      ],
+      "uses": [],
+      "useBasis": "标题和画面表达丝路意象，未见文旅项目或商品用途。",
+      "image": "work-detail-images/23-a045f5db.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "6d612d8a2fc944e4871a3b46451243cc",
+      "url": "https://www.liblib.art/imageinfo/6d612d8a2fc944e4871a3b46451243cc?from=feed",
+      "title": "国风丝路丨锦绣山河",
+      "date": "2026-9-15",
+      "tool": "WebUI",
+      "tags": [
+        "高铁/地铁/轮船",
+        "丝带丝绸",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "国风丝路丨锦绣山河_V1.04 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/fe492a30cc834530991573d5248ab6a5?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "Qwen-Image_1.0",
+        "url": "https://www.liblib.art/modelinfo/c62a103bd98a4246a2334e2d952f7b21?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数 复制参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 8,
+      "stratum": 12,
+      "visual": "蓝绿色刺绣丝绸形成海浪，金色船帆的微缩船队。",
+      "topics": [
+        "国风",
+        "丝绸",
+        "船舶"
+      ],
+      "uses": [],
+      "useBasis": "丝路主题画面；不能据此认定文旅行业客户。",
+      "image": "work-detail-images/24-6d612d8a.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "4440ac6f7def4d6f9a51a194d7017c8a",
+      "url": "https://www.liblib.art/imageinfo/4440ac6f7def4d6f9a51a194d7017c8a?from=feed",
+      "title": "归零加归零减舞蹈视频",
+      "date": "2026-9-09",
+      "tool": null,
+      "tags": [
+        "拟人化",
+        "3D建模",
+        "动漫/卡通",
+        "三视图/多视图",
+        "运动/舞蹈"
+      ],
+      "modelLinks": [],
+      "base": null,
+      "buttons": [],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最新",
+      "observed_index": 29,
+      "stratum": null,
+      "visual": "黄色卡通水豚在室内活动，头顶橘子并背着小包；已观察到视频播放画面。",
+      "topics": [
+        "动物",
+        "拟人",
+        "舞蹈"
+      ],
+      "uses": [
+        "角色舞蹈短片"
+      ],
+      "useBasis": "标题与说明为舞蹈；未验证与参考舞蹈逐动作一致。页面时长16秒，播放器显示总长15秒。",
+      "image": "work-detail-images/25-4440ac6f.png",
+      "mediaType": "视频",
+      "durationDisplay": "16s",
+      "baseText": null
+    },
+    {
+      "id": "83ae0b1295c642db8f12f787494572b4",
+      "url": "https://www.liblib.art/imageinfo/83ae0b1295c642db8f12f787494572b4?from=feed",
+      "title": "少女童话",
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "少女童话_1 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/6930aa70a9ce46ffbed2afeb315f99c7?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "二次元光感ill模型_1 VIP模型",
+        "url": "https://www.liblib.art/modelinfo/f93a9f3290b743dbb3ae2dd8644a4324?from=pic_detail"
+      },
+      "buttons": [
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 41,
+      "stratum": null,
+      "visual": "蓝白衣饰少女与书本、花叶、悬挂饰物组成童话插画。",
+      "topics": [
+        "人物",
+        "动漫",
+        "童话"
+      ],
+      "uses": [],
+      "useBasis": "未见具体出版、游戏或商品应用说明。",
+      "image": "work-detail-images/26-83ae0b12.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "341e7bd88f34458c993a16916e578598",
+      "url": "https://www.liblib.art/imageinfo/341e7bd88f34458c993a16916e578598?from=feed",
+      "title": null,
+      "date": "2026-9-09",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "清澄次元_version_I",
+          "url": "https://www.liblib.art/modelinfo/d309358f7df243489c43ec40771ab19f?from=pic_detail"
+        },
+        {
+          "name": "光影之梦（自然光感）_2.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/6b755cc4ecfd411680d1b3a38c610257?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "动漫光影-AniShadow [无需lora，自带画风和热门角色]_V5",
+        "url": "https://www.liblib.art/modelinfo/50dd074ee7a84e509088dd3555bba22e?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 53,
+      "stratum": null,
+      "visual": "白发少女手持玩偶，站在户外道路上。",
+      "topics": [
+        "人物",
+        "动漫"
+      ],
+      "uses": [],
+      "useBasis": "画面可识别角色插画；提示词中的校服等描述不全部符合成图。",
+      "image": "work-detail-images/27-341e7bd8.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "d17067f8862e4e60a1a16d0742a6ab5a",
+      "url": "https://www.liblib.art/imageinfo/d17067f8862e4e60a1a16d0742a6ab5a?from=feed",
+      "title": "校园风可爱女角",
+      "date": "2026-9-08",
+      "tool": null,
+      "tags": [
+        "少年青年",
+        "2D平涂",
+        "动漫/卡通",
+        "IP角色"
+      ],
+      "modelLinks": [],
+      "base": null,
+      "buttons": [
+        "图生视频"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 58,
+      "stratum": null,
+      "visual": "绿色头发、穿水手服的女孩半身插画。",
+      "topics": [
+        "人物",
+        "动漫",
+        "校园"
+      ],
+      "uses": [],
+      "useBasis": "页面有IP角色标签，但未见系列设定、授权或实际项目用途。",
+      "image": "work-detail-images/28-d17067f8.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "4f3cfe8a6d58453c960d0c82a162c879",
+      "url": "https://www.liblib.art/imageinfo/4f3cfe8a6d58453c960d0c82a162c879?from=feed",
+      "title": "谁会在意，一道光芒转瞬即逝，毕竟这漫天星河数不尽",
+      "date": "2026-9-09",
+      "tool": null,
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "modelLinks": [],
+      "base": null,
+      "buttons": [
+        "图生视频"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 59,
+      "stratum": null,
+      "visual": "白发带角少女与白色花朵，背景有闪光与星点。",
+      "topics": [
+        "人物",
+        "动漫",
+        "奇幻"
+      ],
+      "uses": [],
+      "useBasis": "标题表达情绪，未提供可确认的实际用途。",
+      "image": "work-detail-images/29-4f3cfe8a.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "bb55592c75da484b91490e329e676a74",
+      "url": "https://www.liblib.art/imageinfo/bb55592c75da484b91490e329e676a74?from=feed",
+      "title": null,
+      "date": "2026-9-08",
+      "tool": "WebUI",
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "modelLinks": [
+        {
+          "name": "キキ风格模型_色彩厚涂_Illustrious",
+          "url": "https://www.liblib.art/modelinfo/c58e3421cb554afd892f08ffb28c52bc?from=pic_detail"
+        },
+        {
+          "name": "ユウ风格模型_Illustrious VIP模型",
+          "url": "https://www.liblib.art/modelinfo/94c015eff2b2427295d2d432b703aeb9?from=pic_detail"
+        },
+        {
+          "name": "精巧动漫二次元插画_V0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/34bfe5ea3c4e4ea1af9090c6058af9fb?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "cute_anime_V0",
+        "url": "https://www.liblib.art/modelinfo/a3ebae8421e64ee59d92b63d651f069d?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "WebUI 做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最新",
+      "observed_index": 104,
+      "stratum": null,
+      "visual": "穿熊耳服饰的女孩躺在多只玩具熊之间。",
+      "topics": [
+        "人物",
+        "动漫",
+        "玩偶"
+      ],
+      "uses": [],
+      "useBasis": "插画中出现玩具熊，不等于玩具商品广告。",
+      "image": "work-detail-images/30-bb55592c.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "5e0a421947534de48493ad3b62081bca",
+      "url": "https://www.liblib.art/imageinfo/5e0a421947534de48493ad3b62081bca?from=feed",
+      "title": "防晒广告片",
+      "date": "2026-9-15",
+      "tool": null,
+      "tags": [
+        "少年青年",
+        "美妆个护",
+        "商业摄影",
+        "写实"
+      ],
+      "modelLinks": [],
+      "base": null,
+      "buttons": [],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 14,
+      "stratum": null,
+      "visual": "视频已见女性室内、室外场景及防晒产品瓶身特写。",
+      "topics": [
+        "人物",
+        "美妆个护"
+      ],
+      "uses": [
+        "防晒产品广告短片"
+      ],
+      "useBasis": "标题与产品特写支持广告短片形式；未确认品牌委托、授权、实际投放或转化效果。",
+      "image": "work-detail-images/31-5e0a4219.png",
+      "mediaType": "视频",
+      "durationDisplay": "58s",
+      "baseText": null
+    },
+    {
+      "id": "66eb1c3811754cc5b9537cc8a26969d2",
+      "url": "https://www.liblib.art/imageinfo/66eb1c3811754cc5b9537cc8a26969d2?from=feed",
+      "title": "深渊火龙",
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "神话幻想",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "CG场景与元素丨漫剧次世代写实UE_1.0",
+          "url": "https://www.liblib.art/modelinfo/805f8c0f82814646a5b535f523bae6c8?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "全能图片模型V2-flash_1",
+        "url": "https://www.liblib.art/modelinfo/59d99ecd31a740e987129a460ba3537e?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 15,
+      "stratum": null,
+      "visual": "红黑火龙盘踞熔岩峡谷，小人物站在桥上。",
+      "topics": [
+        "奇幻",
+        "场景"
+      ],
+      "uses": [],
+      "useBasis": "关联资源含漫剧字样，但作品未说明已经用于漫剧。",
+      "image": "work-detail-images/32-66eb1c38.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "d5f38ef0f9ea496b949228496b7ca2fc",
+      "url": "https://www.liblib.art/imageinfo/d5f38ef0f9ea496b949228496b7ca2fc?from=feed",
+      "title": null,
+      "date": "2026-9-15",
+      "tool": "图片生成",
+      "tags": [
+        "中年老年",
+        "神话幻想",
+        "文字",
+        "3D建模"
+      ],
+      "modelLinks": [
+        {
+          "name": "帝皇之师・万古帝师（本人出镜为视频素材）_1.0",
+          "url": "https://www.liblib.art/modelinfo/08fc693cc47944499f26e6b2b975d533?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "智能图片模型V2_1",
+        "url": "https://www.liblib.art/modelinfo/e82e30b8adf84026b04e1b140fd5500f?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数",
+        "图生视频",
+        "做同款"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 21,
+      "stratum": null,
+      "visual": "皇帝骑金龙，背景为巨大的皇字及书法纹理。",
+      "topics": [
+        "人物",
+        "国风",
+        "书法"
+      ],
+      "uses": [],
+      "useBasis": "可确认文字与人物合成画面，未见封面或商业使用说明。",
+      "image": "work-detail-images/33-d5f38ef0.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "cb76a6e4cbbd430284dd433aa1a7376c",
+      "url": "https://www.liblib.art/imageinfo/cb76a6e4cbbd430284dd433aa1a7376c?from=feed",
+      "title": "奔驰感",
+      "date": "2026-9-15",
+      "tool": null,
+      "tags": [
+        "公交车/汽车",
+        "写实"
+      ],
+      "modelLinks": [
+        {
+          "name": "F.1 圆滚滚风格第二弹，他来了！_v1.0",
+          "url": "https://www.liblib.art/modelinfo/3ae0c63b02674204a46a1a45ba7333a8?from=pic_detail"
+        },
+        {
+          "name": "F.1-圆润“Q“感小车-外饰创意模型_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/627eec7944134fa5a2a6aa3f2b8498ba?from=pic_detail"
+        },
+        {
+          "name": "作品集 || 一键辅助作品集设计排版_汽车外饰设计_v1.0 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/bb8933b91a8a42debabf618290f31234?from=pic_detail"
+        },
+        {
+          "name": "F.1创意质感-kcar_F.1创意质感-kcar VIP模型",
+          "url": "https://www.liblib.art/modelinfo/15d852d882e64899aa79e9d26f5c5b82?from=pic_detail"
+        },
+        {
+          "name": "F.1全能创意质感_F.1全能创意质感 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/42ce098c71b747a69fbc407dc22be1dc?from=pic_detail"
+        },
+        {
+          "name": "全能概念折面设计_折面风格化 VIP模型",
+          "url": "https://www.liblib.art/modelinfo/74aa1af580fb4d13b41b248f60ec9198?from=pic_detail"
+        }
+      ],
+      "base": {
+        "name": "F.1 模型下载版-黑暗森林工作室_fp16",
+        "url": "https://www.liblib.art/modelinfo/8dfd5ff599b7461f9924606eddfdb96a?from=pic_detail"
+      },
+      "buttons": [
+        "生成参数 复制参数",
+        "图生视频"
+      ],
+      "commentObservation": "未观察到评论文本",
+      "sort": "最热",
+      "observed_index": 29,
+      "stratum": null,
+      "visual": "橙色概念车前部特写，车灯和车身呈圆润造型。",
+      "topics": [
+        "交通工具",
+        "汽车"
+      ],
+      "uses": [
+        "汽车外观概念图"
+      ],
+      "useBasis": "提示词明确外观概念设计且与画面相符；不代表车企采用或工程设计完成。",
+      "image": "work-detail-images/34-cb76a6e4.png",
+      "mediaType": "图片",
+      "durationDisplay": null,
+      "baseText": null
+    },
+    {
+      "id": "1d20b3f4c21642ff99846099775c4546",
+      "url": "https://www.liblib.art/imageinfo/1d20b3f4c21642ff99846099775c4546?from=feed",
+      "title": "冰天雪地",
+      "date": "2026-9-15",
+      "tool": "视频生成",
+      "tags": [
+        "航空航天",
+        "商业摄影",
+        "写实",
+        "海报/Banner",
+        "简单动效"
+      ],
+      "modelLinks": [
+        {
+          "name": "一键细节材质展示丨质感物理特性家居电商",
+          "url": "https://www.liblib.art/modelinfo/d4625bd7a1d048d884805612a4dca943?from=feed&versionUuid=1a984e8ef5554ca6b78753aaeac127c9"
+        }
+      ],
+      "base": null,
+      "buttons": [
+        "做同款"
+      ],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 34,
+      "stratum": null,
+      "visual": "雪地背景中展示红黑色舵机产品，背景写有Servo等产品文字；播放器显示5秒。",
+      "topics": [
+        "工业产品",
+        "冰雪"
+      ],
+      "uses": [
+        "产品展示短片"
+      ],
+      "useBasis": "画面主体为舵机及产品文字，可确认产品展示形式；标题冰天雪地和航空航天标签不能替代成图用途。未确认实际投放或产品性能。",
+      "image": "work-detail-images/35-1d20b3f4.png",
+      "mediaType": "视频",
+      "durationDisplay": "5s",
+      "baseText": "可灵 2.5"
+    },
+    {
+      "id": "d6294face2244a75b5ea06d39a2d0e58",
+      "url": "https://www.liblib.art/imageinfo/d6294face2244a75b5ea06d39a2d0e58?from=feed",
+      "title": "超写实电影感镜头，无人机穿梭镜头，平陆运河沿岸生态修复湿地",
+      "date": "2026-9-15",
+      "tool": "视频生成",
+      "tags": [
+        "鸟类",
+        "高铁/地铁/轮船",
+        "海/湖/泉/潭",
+        "写实"
+      ],
+      "modelLinks": [],
+      "base": null,
+      "buttons": [],
+      "commentObservation": "已见“暂无评论”文本",
+      "sort": "最热",
+      "observed_index": 36,
+      "stratum": null,
+      "visual": "播放画面可见湿地河道、鸟群、船舶与岸边植被。",
+      "topics": [
+        "自然",
+        "生态",
+        "船舶"
+      ],
+      "uses": [
+        "生态场景短片"
+      ],
+      "useBasis": "标题和提示词描述平陆运河生态湿地；画面为AI生成，不能证明真实地理现状或宣传项目采用。",
+      "image": "work-detail-images/36-d6294fac.png",
+      "mediaType": "视频",
+      "durationDisplay": "15s",
+      "baseText": "Seedance 2.0 VIP"
+    }
+  ]
+}

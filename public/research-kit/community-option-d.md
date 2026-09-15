@@ -79,7 +79,6 @@
 
 ### 竞品依据与未知
 
-NightCafe把主题、投稿、评价与结果组织成循环，并允许主持人选择外部作品参与。它支持参与机制存在，不证明停奖后留存或本社区活动效果。 [NightCafe成员挑战](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
 Datawhale课程把练习与助教反馈区别于纯笔记打卡；其规则只对应特定课程，不可用代码成绩替代艺术评价。 [Datawhale组队学习规则](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/)
 

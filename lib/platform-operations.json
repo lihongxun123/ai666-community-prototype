@@ -1,5 +1,5 @@
 {
-  "title": "18个平台如何组织参与与持续供给",
+  "title": "15个平台如何组织参与与持续供给",
   "lead": "",
   "scope": "运营效果未取得可比的留存或盈利数据。活动规则、参与资格与作者义务见各平台来源。",
   "guide": [
@@ -18,18 +18,16 @@
     },
     {
       "title": "奖励资格与参与价值",
-      "text": "Midjourney评分奖励设有排名、订阅身份和有效期条件；RunningHub作者回报参考有效运行等行为。运营需说明奖励资格、异常处理和奖励用途。反作弊成本与奖励后的留存没有可比数据。",
+      "text": "RunningHub作者回报参考有效运行等行为。运营需说明奖励资格、异常处理和奖励用途。反作弊成本与奖励后的留存没有可比数据。",
       "sourceIds": [
-        "o9-g-mid-reward",
         "o9-c-rh-2"
       ]
     },
     {
       "title": "发布之后的维护责任",
-      "text": "Dify插件提交需提供审核材料，Civitai协作合集实现文档区分投稿者、管理者和会员资格变化后的权限。内容合作需约定收录、问题处理、依赖更新及负责人退出后的安排。Civitai实际开放范围仍待页面核对。",
+      "text": "内容合作需约定收录、问题处理、依赖更新及负责人退出后的安排。",
       "sourceIds": [
-        "o9-d-dify-plugin",
-        "o9-g-civi-coll"
+        "o9-d-dify-plugin"
       ]
     },
     {
@@ -182,7 +180,7 @@
           "title": "以有效运行等行为计算作者回报",
           "confirmed": "已核验的规则按有效运行人次（含API）、收藏、原创程度计算，周结算、月度打款。",
           "division": "作者供给，平台统计、审核与结算。",
-          "rhythm": "有效使用产生后计入周期；此次规则页超时。",
+          "rhythm": "有效使用产生后计入周期；该次规则页超时。",
           "reason": "分析：把供给回报和内容被使用联系起来。",
           "breakpoint": "未披露系数、去重或有效运行是否付费。",
           "sourceIds": [
@@ -352,122 +350,6 @@
         "国内停补后作者是否继续维护，哪些任务供给减少？",
         "工具和工作流之间有没有明确版本绑定与同步责任？",
         "海外奖励资格变化怎样影响新作者进入和收入集中度？"
-      ]
-    },
-    {
-      "id": "civitai",
-      "name": "Civitai",
-      "homepage": "https://civitai.com/",
-      "position": "Civitai官方实现文档将作品、资源、作者与协作合集关联起来，涉及投稿筛选、材料归因、权限和会员失效处理。生产账号的实际开放范围仍待页面核对。",
-      "audience": "资源作者希望作品被采用，使用者寻找效果和可用方法，合集主持人选择同一主题下的材料；角色可能重合，规模和持续贡献比例未知。",
-      "system": [
-        {
-          "stage": "supply",
-          "title": "作者和合集主持人分别承担供给",
-          "confirmed": "实现说明允许开集接收投稿，或邀请协作人。",
-          "division": "所有者定范围，协作人供材料，管理员负责管理。",
-          "rhythm": "开集、邀请或新投稿时触发；常规编辑频次未知。",
-          "reason": "策展也能成为供给，不必每人训练模型。",
-          "breakpoint": "主分支说明不是生产实测；没有持续活跃主持人数。",
-          "sourceIds": [
-            "o9-g-civi-coll"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "公众投稿与受邀协作分开",
-          "confirmed": "需审核的合集区分公众审核与受邀者直接添加。",
-          "division": "管理员处理队列，所有者决定管理权限。",
-          "rhythm": "每次投稿按身份与合集设置处理。",
-          "reason": "减少把可信协作者和陌生投稿者放入同一队列的重复工作。",
-          "breakpoint": "信任分配仍需判断，资料没有审核时效或争议率。",
-          "sourceIds": [
-            "o9-g-civi-coll"
-          ]
-        },
-        {
-          "stage": "activation",
-          "title": "作品先核对资源归因",
-          "confirmed": "资源关系可来自生成元数据，也可能是上传者手工指定。",
-          "division": "系统解析，作者补充；查验者需分清两类。",
-          "rhythm": "上传、关联或补充资源时产生。",
-          "reason": "浏览者能找到方法起点，也能知道证据有多可靠。",
-          "breakpoint": "关联不是完整制作过程，更不能保证同款成功。",
-          "sourceIds": [
-            "o9-g-civi-img"
-          ]
-        },
-        {
-          "stage": "monetization",
-          "title": "协作受合集所有者会员状态影响",
-          "confirmed": "实现说明以所有者会员资格限制新投稿/新邀请；失效保留旧内容与审核。",
-          "division": "平台校对资格，所有者处理续用条件。",
-          "rhythm": "每日校对并按资格恢复；线上未核。",
-          "reason": "付费资格影响合集能否继续接收新参与。",
-          "breakpoint": "线上生效未核；不能称会员过期就删除共同资产。",
-          "sourceIds": [
-            "o9-g-civi-coll"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "作者收入按月处理",
-          "confirmed": "作者计划把存入池、分配、结算与提现区分开。",
-          "division": "作者选择参与；平台及支付服务处理结算。",
-          "rhythm": "月底分配，次月15日结算；适用作者资格。",
-          "reason": "回报不只是一条奖励通知，还需要可解释的结算进度。",
-          "breakpoint": "未核生产资格、到账或收入是否覆盖维护劳动。",
-          "sourceIds": [
-            "o9-g-civi-pay"
-          ]
-        }
-      ],
-      "case": {
-        "title": "公开审核合集：从邀请到处理新投稿",
-        "observed": "阅读 Collaborative Collections 的实现用例；不是一个已实测的真实合集。",
-        "sequence": [
-          "所有者设定范围并发出邀请",
-          "受邀者按有效邀请加入",
-          "管理者处理适用的投稿队列",
-          "资格失效限制新增，保留既有内容"
-        ],
-        "operatorWork": "文档确认有人维护权限和队列；分析上还要解释拒绝原因、交接审核，但具体服务承诺未披露。",
-        "participantValue": "可能获得主题内展示和持续投稿入口；不能承诺曝光。",
-        "unproven": "没有真实合集的投稿量、采用率、审核工时或复访记录。",
-        "sourceIds": [
-          "o9-g-civi-coll"
-        ]
-      },
-      "incentives": {
-        "supply": "符合作者计划条件才能进入结算链；合集组织者与有提现资格作者不是同一概念。",
-        "participation": "改作公告提供被原作者受众看见的机会，限时奖励不作永久待遇。",
-        "payment": "协作会员与作者收入池属于不同付费/回报关系。",
-        "distortion": "分析：自动关注会放大表面兴趣，手填资源会放大表面归因，均须另看实际采用。",
-        "sourceIds": [
-          "o9-g-civi-coll",
-          "o9-g-civi-img",
-          "o9-g-civi-pay",
-          "o9-g-civi-update"
-        ]
-      },
-      "burden": {
-        "recurringWork": "维护主题、审核材料、调整权限并解释奖励或结算状态。",
-        "hiddenCost": "分析：成员退出后谁接手、外部图像归因是否可靠，会带来未量化的复核成本。",
-        "dependency": "有稳定的资源作者和愿意主持合集的人；功能入口无法替代两类供给。",
-        "sourceIds": [
-          "o9-g-civi-coll",
-          "o9-g-civi-img"
-        ]
-      },
-      "takeaway": {
-        "suitable": "给一份方法设维护人，接收使用变体，并记录哪些材料只是作者声明。",
-        "conditions": "需有可用案例、合作作者，以及能够整理反馈的运营。",
-        "avoid": "先建大规模开放合集、会员协作和分账，会把日常队列与资格争议提前带进小团队。"
-      },
-      "gaps": [
-        "生产权限与公开实现用例是否完全一致？",
-        "主持人离开后合集如何继续维护？",
-        "实际到账与维护成本、贡献集中度如何？"
       ]
     },
     {
@@ -707,121 +589,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "homepage": "https://creator.nightcafe.studio/",
-      "position": "NightCafe用题目、提交、评审和结果组织日常活动，并提供连续活跃奖励与成员自建游戏。不同活动各自规定刷新时间、参与资格和分享范围；活动量与长期留存的关系未取得数据。",
-      "audience": "兴趣作者希望表达并看到排名，评审者参与选择，小游戏主持人组织自己的群体；同一人可以同时承担这些角色，没有比例数据。",
-      "system": [
-        {
-          "stage": "supply",
-          "title": "成员主持自己的主题游戏",
-          "confirmed": "游戏在聊天室内设题，可限定提示、模型和检查规则。",
-          "division": "主持人设条件并推进，成员交作品和评审。",
-          "rhythm": "按每场游戏建立；没有公开统一办赛频次。",
-          "reason": "题目供给可以由成员承担，而不是全部由官方编辑完成。",
-          "breakpoint": "主办者仍需选题和聚人，不能由功能推断有人长期主持。",
-          "sourceIds": [
-            "o9-g-night-game"
-          ]
-        },
-        {
-          "stage": "discovery",
-          "title": "公开范围影响被发现方式",
-          "confirmed": "游戏默认凭链接加入；公开聊天室游戏可经 Find a game 被发现。",
-          "division": "主持人决定公开，平台提供发现入口。",
-          "rhythm": "新游戏设为公开时，聊天室也随之公开。",
-          "reason": "分清邀请式活动与面向陌生人的活动。",
-          "breakpoint": "公开设置不是传播效果；不能推定全部聊天室都公开。",
-          "sourceIds": [
-            "o9-g-night-game"
-          ]
-        },
-        {
-          "stage": "participation",
-          "title": "阶段按时间或完成条件推进",
-          "confirmed": "游戏分等待、投稿、评审和结果；计时结束或主持人操作可推进，也可按全员完成跳转。",
-          "division": "主持人配置，系统执行阶段转换。",
-          "rhythm": "每一阶段到期，或达到已配置的全员完成条件。",
-          "reason": "把需要何时做什么讲清，减少靠临时催促推进。",
-          "breakpoint": "自动推进不能解决低参与、规则误解与评审分歧。",
-          "sourceIds": [
-            "o9-g-night-game"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "每日活动和奖励触发分开",
-          "confirmed": "连续创作按UTC日计，漏一天清零；Promptle 完成也可计入当日活动并领取未领的奖励。",
-          "division": "平台记录与发奖；参与者完成对应动作。",
-          "rhythm": "每日一次资格；Promptle 下一题在UTC零点更新。",
-          "reason": "新题与连续记录是不同的返回动机。",
-          "breakpoint": "奖励存在不能证明用户喜欢题目；未测停奖后参与。",
-          "sourceIds": [
-            "o9-g-night-streak",
-            "o9-g-night-promptle"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "评审方式不能混用",
-          "confirmed": "规则区分平均评分和部分挑战的排序，异常票可作废；Daily Checks另查原创演化链。",
-          "division": "平台处理资格与异常；成员按所选方式评审。",
-          "rhythm": "参赛和投票时触发，以每题规则为准。",
-          "reason": "认可需要一个能解释的判定过程。",
-          "breakpoint": "未核争议处理成本、误判及申诉结果；规则不等于执行审计。",
-          "sourceIds": [
-            "o9-g-night-rules"
-          ]
-        }
-      ],
-      "case": {
-        "title": "成员游戏：一名主持人怎样组织一轮",
-        "observed": "Creating a Game 官方规则用例；未新建或参与真实游戏。",
-        "sequence": [
-          "设主题、资格、评分方式和公开范围",
-          "开放投稿，每名参与者可替换自己的单一条目",
-          "按定时或主持人操作进入评分/排序",
-          "结束后公布排名和分数"
-        ],
-        "operatorWork": "确认的工作是配置与阶段控制；分析上还需解释题目、处理迟到和争议，工时未知。",
-        "participantValue": "可能得到有限时间内完成作品、被评审与比较表达的机会。",
-        "unproven": "这条路径不能证明每场游戏有足够参与者或足够公平，也未证明结果能沉淀为教程。",
-        "sourceIds": [
-          "o9-g-night-game"
-        ]
-      },
-      "incentives": {
-        "supply": "徽章体系覆盖主持、游戏参与和发布等行为；未核具体每项资格与金额。",
-        "participation": "连续创作、排名及部分徽章带来资源或认可，徽章奖励进入收件箱领取。",
-        "payment": "Promptle 免费；资源奖励是站内使用机会，不是作者现金收入。订阅转化资料不足。",
-        "distortion": "分析：为不断档而生成、为奖励而评审，都会让活跃指标偏离兴趣；需把行为和成果分开。",
-        "sourceIds": [
-          "o9-g-night-streak",
-          "o9-g-night-promptle"
-        ]
-      },
-      "burden": {
-        "recurringWork": "提供或维护题目、规则、阶段、奖励记录，并处理评审异常。",
-        "hiddenCost": "分析：自动计分仍需解释争议；活动组织与反作弊成本未公开。",
-        "dependency": "有人愿意主持、有人在同一时间参赛，还要有可理解的结果反馈。",
-        "sourceIds": [
-          "o9-g-night-game",
-          "o9-g-night-rules"
-        ]
-      },
-      "takeaway": {
-        "suitable": "把一场主题活动的题目、参与条件、结束时间和赛后方法整理职责先写清。",
-        "conditions": "需有人出题、解释作品，运营负责主持和归档。",
-        "avoid": "尚无稳定作者时，不用每日活动、断档惩罚和复杂排行给团队增加固定供稿压力。"
-      },
-      "gaps": [
-        "主持人持续办赛的比例与退出原因？",
-        "奖励关闭后仍会参与哪些活动？",
-        "投票争议、规则解释和异常处置耗费多少时间？"
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦AI",
       "homepage": "https://jimeng.jianying.com/",
@@ -1027,122 +794,6 @@
         "创作者计划的实际申请、筛选、退出与版权安排是什么？",
         "教程是否减少失败和求助，还是只带来访问？",
         "品牌案例是否包含付费合作，平台与外部团队各承担多少制作？"
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "homepage": "https://www.midjourney.com/",
-      "position": "Midjourney将成员选图分别用于个人偏好、Explore策展和新版本评价，奖励与订阅条件相关。风格资产支持继续创作，求助由专门入口处理；不同参与动作不能合算为社区贡献。",
-      "audience": "生成使用者需要风格和作品，评价参与者表达偏好或争取资源，讨论成员解决创作问题；同一个人可能兼任，比例未知。",
-      "system": [
-        {
-          "stage": "participation",
-          "title": "不同评价任务服务不同对象",
-          "confirmed": "Tasks 分开个人审美选择、Explore 推荐投票和新版本两图评价。",
-          "division": "平台布置任务；成员按该任务选择或跳过。",
-          "rhythm": "新版本评价在发布前可能出现，其余具体刷新频率未知。",
-          "reason": "收集的行为有明确用途，不是只有点赞计数。",
-          "breakpoint": "投票权重、筛选阈值和实际质量改进未公开。",
-          "sourceIds": [
-            "o9-g-mid-tasks"
-          ]
-        },
-        {
-          "stage": "discovery",
-          "title": "成员参与选择展示作品",
-          "confirmed": "Curate Explore 让成员从图组挑选值得推荐的一张，还可查看作者和提示。",
-          "division": "平台提供候选；成员投票，平台执行分发。",
-          "rhythm": "每次完成一组选择；最终推荐周期未知。",
-          "reason": "浏览者可以同时贡献策展判断并发现创作方法。",
-          "breakpoint": "文档说投票帮助决定展示，不等于单票直接决定全站排序。",
-          "sourceIds": [
-            "o9-g-mid-tasks"
-          ]
-        },
-        {
-          "stage": "monetization",
-          "title": "奖励给有订阅的评价参与者",
-          "confirmed": "每天评分最多的前2,000名获1小时Fast time；须有效订阅接收和使用，奖励30天过期。",
-          "division": "系统记录和通知；参与者满足竞争排名与订阅条件。",
-          "rhythm": "按日排名；问卷奖励另随开放任务变化。",
-          "reason": "这是订阅使用中的资源补充，并非给所有访客的免费生成。",
-          "breakpoint": "不是完成任一评分必得，也没有停奖后的贡献数据。",
-          "sourceIds": [
-            "o9-g-mid-reward",
-            "o9-g-mid-tasks"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "保留个人风格的历史状态",
-          "confirmed": "Moodboard 更新会形成新代码；旧提示中的代码继续指向既有版本。",
-          "division": "使用者维护选图；平台保留版本引用。",
-          "rhythm": "添加或移除参考图、再次生成时触发。",
-          "reason": "可以继续同一审美方向，也能比较变化。",
-          "breakpoint": "能引用不等于出图一致；风格板对续费影响未知。",
-          "sourceIds": [
-            "o9-g-mid-board"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "把实时支持从失败实验中拆出",
-          "confirmed": "官方公告确认网站Rooms已撤下，求助指向帮助页和Discord。",
-          "division": "官方调整入口，社区成员及helpers提供帮助。",
-          "rhythm": "公告日期2026-02-26；后续人力安排未知。",
-          "reason": "把活动、合作和求助视为不同运营工作。",
-          "breakpoint": "不能从单项下线认定社区整体失败，替代效果未核。",
-          "sourceIds": [
-            "o9-g-mid-rooms"
-          ]
-        }
-      ],
-      "case": {
-        "title": "Tasks 中的社区策展与资源奖励",
-        "observed": "当前两份官方帮助的机制实例，没有提交实际评价。",
-        "sequence": [
-          "选择用途明确的任务",
-          "按任务挑图；不满意的适用任务可跳过",
-          "若参与可获奖励的评分，按当日规则判断资格",
-          "在订阅用量页查看奖励及失效时间"
-        ],
-        "operatorWork": "平台需提供候选、区分任务和奖励记录；分析上应避免把刷量与有效审美判断混在一起。",
-        "participantValue": "可能影响所见作品、改善个人偏好资料或获得Fast资源，具体收益取决于任务。",
-        "unproven": "不能把一次评价、一次收藏和一小时奖励等价成创作者作品采用；质量、反作弊与转化未公开。",
-        "sourceIds": [
-          "o9-g-mid-tasks",
-          "o9-g-mid-reward"
-        ]
-      },
-      "incentives": {
-        "supply": "未取得普通公开作品按篇分成的规则，资料不足；不与评价奖励混用。",
-        "participation": "部分任务给Fast time，另一些用于个人审美；必须阅读对应任务说明。",
-        "payment": "获奖资源仍绑定有效订阅，奖励到期不能当作长期余额。",
-        "distortion": "分析：追求每日排名可能促成快速选择；偏好选择也未必代表完成过创作任务。",
-        "sourceIds": [
-          "o9-g-mid-tasks",
-          "o9-g-mid-reward"
-        ]
-      },
-      "burden": {
-        "recurringWork": "安排评价任务、说明用途、维护奖励可查性与专门求助渠道。",
-        "hiddenCost": "分析：候选质量、异常参与及求助响应都需要持续维护，资料没有具体工时。",
-        "dependency": "已有稳定的生成与评价需求；没有这些前提，积分任务可能只吸引争奖者。",
-        "sourceIds": [
-          "o9-g-mid-tasks",
-          "o9-g-mid-rooms"
-        ]
-      },
-      "takeaway": {
-        "suitable": "选图、收藏、生成和评价分别说明用途与奖励，按有效消费或参与记录活跃；不能把奖励动作或累计生成量直接当作持续兴趣。",
-        "conditions": "先明确内容和主题的有效消费规则，并记录下一周是否回来看更新或参与；素材修改和再次制作作为进阶行为另记。",
-        "avoid": "没有成熟内容池时先做大规模评价排行榜，奖励数量可能掩盖缺少真实任务。"
-      },
-      "gaps": [
-        "各类评价的有效性和异常剔除怎样衡量？",
-        "社区策展带来多少作品再用，而非观看？",
-        "个人风格资产与求助对续费分别影响多大？"
       ]
     },
     {
@@ -2134,7 +1785,7 @@
       "title": "RunningHub任务专区首页",
       "url": "https://www.runninghub.cn/",
       "publisher": "RunningHub",
-      "date": "未标注；此前于2026-09-09读取",
+      "date": "未标注；已于2026-09-09读取",
       "accessedAt": "2026-09-09",
       "access": "prior-research",
       "type": "official-page",
@@ -2146,7 +1797,7 @@
       "title": "RunningHub创作者激励计划",
       "url": "https://www.runninghub.cn/creator-reward",
       "publisher": "RunningHub",
-      "date": "未标注；此前于2026-09-09读取",
+      "date": "未标注；已于2026-09-09读取",
       "accessedAt": "2026-09-09",
       "access": "prior-research",
       "type": "official-rule",
@@ -2182,7 +1833,7 @@
       "title": "RunningHub付费服务协议",
       "url": "https://www.runninghub.cn/defray-protocol",
       "publisher": "RunningHub",
-      "date": "未标注；此前于2026-09-09读取",
+      "date": "未标注；已于2026-09-09读取",
       "accessedAt": "2026-09-09",
       "access": "prior-research",
       "type": "official-rule",
@@ -2248,54 +1899,6 @@
       "type": "author-content",
       "supports": "工具说明、细节变化、重复上传与API入口。",
       "limitation": "正文完整，运行表单未完整加载；未核配置与效果。"
-    },
-    {
-      "id": "o9-g-civi-img",
-      "title": "Image Resource Tracking",
-      "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
-      "publisher": "Civitai 官方代码库",
-      "date": "未标绝对更新日；读取main",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "implementation-doc",
-      "supports": "图像资源字段、来源区别及过滤用途",
-      "limitation": "实现说明，不是线上字段覆盖和可复用性证明。"
-    },
-    {
-      "id": "o9-g-civi-coll",
-      "title": "Collaborative Collections",
-      "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
-      "publisher": "Civitai 官方代码库",
-      "date": "未标绝对更新日；读取main",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "implementation-doc",
-      "supports": "角色、邀请、队列、所有者会员门槛及失效处理",
-      "limitation": "未实测生产；不能从文档宣称全量上线和效果。"
-    },
-    {
-      "id": "o9-g-civi-pay",
-      "title": "Creator Program - Developer Guide",
-      "url": "https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md",
-      "publisher": "Civitai 官方代码库",
-      "date": "未标绝对更新日；读取main",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "implementation-doc",
-      "supports": "按月存入、分配、结算与提现链",
-      "limitation": "资格与实际到账未核；默认池金额不是经营披露。"
-    },
-    {
-      "id": "o9-g-civi-update",
-      "title": "The Creator Collab Update: 4 New Ways to Get Seen and Earn",
-      "url": "https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn",
-      "publisher": "Civitai",
-      "date": "浏览器显示发布2026-08-20；时区可能差一天",
-      "accessedAt": "2026-09-09",
-      "access": "prior-research",
-      "type": "official-page",
-      "supports": "改作采用后的展示和活动说明",
-      "limitation": "沿用实读，未复读；限时奖励不推为当前常态。"
     },
     {
       "id": "o9-c-sa-1",
@@ -2418,54 +2021,6 @@
       "limitation": "仅采用正文教法，不采用模型性能、首遍成功、商用或替代实拍比例宣传。"
     },
     {
-      "id": "o9-g-night-game",
-      "title": "Creating a Game (Community Challenge)",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-      "publisher": "NightCafe",
-      "date": "未标绝对日期",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "题面、主持与公开范围、四阶段和推进条件",
-      "limitation": "规则用例，不是已组织游戏的结果。"
-    },
-    {
-      "id": "o9-g-night-promptle",
-      "title": "Promptle: The Daily AI Art Puzzle",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-      "publisher": "NightCafe",
-      "date": "未标绝对日期；标Alpha",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "每日编辑题、卡片/提示分离、赛后披露和活动奖励",
-      "limitation": "仅限试验功能；没有实际留存。"
-    },
-    {
-      "id": "o9-g-night-streak",
-      "title": "Streaks & Badges",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges",
-      "publisher": "NightCafe",
-      "date": "未标绝对日期",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "UTC连续创作、断档、徽章类型与奖励领取",
-      "limitation": "相关推荐含旧免费奖励说明；本稿不把不同奖励合为固定每日额度。"
-    },
-    {
-      "id": "o9-g-night-rules",
-      "title": "Daily Challenge: Eligibility, Rating & Ranking",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-      "publisher": "NightCafe",
-      "date": "未标绝对日期；v8于2026-09-09复核",
-      "accessedAt": "2026-09-09",
-      "access": "prior-research",
-      "type": "official-rule",
-      "supports": "资格、评分/排序与异常票",
-      "limitation": "沿用v8，不同挑战以自身规则为准。"
-    },
-    {
       "id": "o9-c-jm-1",
       "title": "即梦AI官网：示例、画布与创意社区",
       "url": "https://jimeng.jianying.com/",
@@ -2560,54 +2115,6 @@
       "type": "historical-report",
       "supports": "个人/API路径、NextGen合作形式和共创邀请。",
       "limitation": "PDF正文已读；计划不等于签约、支出或展映完成。"
-    },
-    {
-      "id": "o9-g-mid-tasks",
-      "title": "Complete Tasks",
-      "url": "https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks",
-      "publisher": "Midjourney",
-      "date": "未标绝对日期",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "评价任务用途、作品详情、跳过、奖励查看和适用订阅",
-      "limitation": "没有投票权重、异常处理和任务成效。"
-    },
-    {
-      "id": "o9-g-mid-reward",
-      "title": "Earning Free Fast Time",
-      "url": "https://docs.midjourney.com/hc/en-us/articles/28014817524109-Earning-Free-Fast-Time",
-      "publisher": "Midjourney",
-      "date": "未标绝对日期",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "每日前2000名评分者、1小时奖励、订阅与30日期限",
-      "limitation": "非所有任务普遍奖励，不是实际发奖记录。"
-    },
-    {
-      "id": "o9-g-mid-board",
-      "title": "Moodboards",
-      "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-      "publisher": "Midjourney",
-      "date": "未标绝对日期",
-      "accessedAt": "2026-09-09",
-      "access": "full-page",
-      "type": "official-rule",
-      "supports": "参考、ID、代码版本、删除后引用及参数边界",
-      "limitation": "未测试真实风格与跨用户转移。"
-    },
-    {
-      "id": "o9-g-mid-rooms",
-      "title": "An update on Rooms",
-      "url": "https://updates.midjourney.com/an-update-on-rooms/",
-      "publisher": "Midjourney",
-      "date": "发布2026-02-26；v8已读",
-      "accessedAt": "2026-09-09",
-      "access": "prior-research",
-      "type": "official-page",
-      "supports": "网站Rooms下线与后续支持方向",
-      "limitation": "沿用v8，只限此项实验，不能外推全部社区。"
     },
     {
       "id": "o9-g-leo-blue",
@@ -3247,13 +2754,13 @@
     }
   ],
   "stats": {
-    "profiles": 18,
-    "sources": 97,
-    "distinctUrls": 93,
-    "fullPageSources": 83,
-    "priorResearchSources": 14,
+    "profiles": 15,
+    "sources": 85,
+    "distinctUrls": 81,
+    "fullPageSources": 74,
+    "priorResearchSources": 11,
     "indexOnlySources": 0,
-    "detailItems": 85,
-    "examples": 18
+    "detailItems": 70,
+    "examples": 15
   }
 }

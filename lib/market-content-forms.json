@@ -3,7 +3,7 @@
   "date": "2026-09-10",
   "version": "",
   "lead": "",
-  "scope": "18家竞品之外，补充FLORA、skills.sh、Agent Skills、MCP Registry、Smithery和Discourse作专项参照，共比较15种内容形式。",
+  "scope": "15家竞品之外，补充FLORA、skills.sh、Agent Skills、MCP Registry、Smithery和Discourse作专项参照，共比较15种内容形式。",
   "distinction": "“常规”指代表样本中已出现的组织方式；“有竞争力”指它可能改善的具体使用环节。形式的普及率与商业效果未取得可比数据。",
   "criteria": [
     {
@@ -75,29 +75,23 @@
       "name": "作品图文流",
       "representatives": [
         {
-          "name": "Midjourney Explore",
-          "url": "https://www.midjourney.com/explore",
-          "inCore18": true
-        },
-        {
           "name": "Leonardo Community Feed",
           "url": "https://app.leonardo.ai/",
           "inCore18": true
         }
       ],
-      "fact": "Midjourney 官方说明：Explore 展示成员图片和视频，支持搜索及多种排序；作品可查看作者、提示词和设置，并可复用图片或提示词。Leonardo 帮助页也描述从公共作品进入 Remix、放大、图生视频或参考图操作。",
-      "entry": "先用结果图选择内容。Midjourney 提供个性推荐、随机、热度与按周期排行；Leonardo 文档说明从 Community Feed 点图查看提示词。",
+      "fact": "作品可查看作者、提示词和设置，并可复用图片或提示词。Leonardo 帮助页也描述从公共作品进入 Remix、放大、图生视频或参考图操作。",
+      "entry": "先用结果图选择内容。Leonardo 文档说明从 Community Feed 点图查看提示词。",
       "detail": "作品是主视觉，生成信息解释它如何产生，再创作动作连接下一步。这里的参数属于作品上下文，不等于完整项目、所有输入素材或稳定复现保证。",
       "deliverable": "用户获得可欣赏的图像，以及供后续创作使用的提示词、参考图或风格线索；运行工具仍受账户与功能条件约束。",
       "why": "用户先看图选择风格，再查看提示词和参数；直接将这些材料带入工具，可减少重新准备输入的步骤。",
       "advantage": "分析：同一份作品既可欣赏，也可查看做法并尝试；比单独一张效果图多了提示词、参数等可用信息。",
       "baseline": "分析：清楚的作品预览、作者归属、详情入口、发现与找回方式；详情说明可复用哪些内容。",
-      "enhancement": "已观察：Midjourney 的 Style Explorer 将风格码、样图集合和试用入口放在一起。读者可以从样图找到风格码并尝试，这比瀑布流的排版本身更有用。",
+      "enhancement": "读者可以从样图找到风格码并尝试，这比瀑布流的排版本身更有用。",
       "cost": "分析：依赖持续作品供给、内容审核、可检索标签与生成信息完整性；风格相近作品过多会增加筛选负担。",
       "tradeoff": "分析：强视觉容易让封面效果代替适用性判断；开放参数利于学习，也会使部分作者更谨慎地公开作品。",
-      "boundary": "本次确认官方描述，未在登录态逐项实跑；旧版 Leonardo 教程不单独证明当前像素布局。未得到再创作成功率、留存或付费提升数据。",
+      "boundary": "确认官方描述，未在登录态逐项实跑；旧版 Leonardo 教程不单独证明当前像素布局。未得到再创作成功率、留存或付费提升数据。",
       "sourceIds": [
-        "v15-g1",
         "v15-g2",
         "v15-g3"
       ],
@@ -215,14 +209,14 @@
       "fact": "Runway 工作流课程列出学习目标、难度、总时长和三个带时长的章节。Hugging Face 单元页组织文字导读、教学视频、Notebook 和项目任务；练习页给出代码、示例输出及修改提示。",
       "entry": "先判断要学什么、难度是否适合和时间投入，再按章节学习。Runway 用课程概览说明预期技能；Hugging Face 用单元目录提供学习顺序。",
       "detail": "视频解释操作，文字便于查找；Hugging Face 练习材料让读者修改参数、观察差异，再训练和分享自己的模型。不是只把一篇文章切成数页。",
-      "deliverable": "可重复查阅的学习路径和材料；练习完成后可能形成作品、代码或模型。本次没有核验学员提交、教师批改或统一结业认证。",
+      "deliverable": "可重复查阅的学习路径和材料；练习完成后可能形成作品、代码或模型。没有核验学员提交、教师批改或统一结业认证。",
       "why": "有前后依赖的技能适合分章教授。练习材料让读者检验理解，遇到问题时返回对应章节。",
       "advantage": "分析：比零散演示更容易说明先学什么、之后做什么，并让用户在遇到问题时返回相应章节。",
       "baseline": "分析：学习目标、适用程度、章节顺序、必要条件；如果宣称可练习，需提供可获得的材料和明确任务。",
       "enhancement": "已观察：Hugging Face 提供可修改的 Notebook、示例结果和项目任务。分析：材料可用性比课程封面数量更能区分学习内容质量。",
       "cost": "分析：选题、教学拆解、录制和练习校验都需要专业投入；模型与界面变化还会产生持续重录、修订及答疑成本。",
       "tradeoff": "分析：系统性提高进入门槛；学会操作不必然形成持续需求，章节播放完成也不等于掌握技能。",
-      "boundary": "Runway 本次只确认课程公开概览，未确认随课练习包；练习材料证据来自 Hugging Face。未运行课程代码，旧示例的依赖兼容性、完课率和付费收益未知。",
+      "boundary": "Runway 只确认课程公开概览，未确认随课练习包；练习材料证据来自 Hugging Face。未运行课程代码，旧示例的依赖兼容性、完课率和付费收益未知。",
       "sourceIds": [
         "v15-c1",
         "v15-c2",
@@ -427,7 +421,7 @@
       "enhancement": "项目权限、跨工作区协作、克隆改作和批量参数编辑，方便他人接手或继续创作；Technique提供更简化的入口。",
       "cost": "分析：需要运行环境、素材引用、权限与并发编辑支持；复制结构不消除模型调用费，接收方仍需承担自己的生成成本。",
       "tradeoff": "信息与控制更完整，但阅读负担、权限理解和平台依赖增加。下载成片易传播，共享项目更适合需要接续工作的接收者。",
-      "boundary": "FLORA是18家之外的新增形式参照。社区动态正文未取得，未读到具体共享项目内部；Character Lock是Technique详情，不冒充完整共享画布实测。克隆机制依据官方文档，未执行复制或生成。",
+      "boundary": "FLORA是15家之外的新增形式参照。社区动态正文未取得，未读到具体共享项目内部；Character Lock是Technique详情，不冒充完整共享画布实测。克隆机制依据官方文档，未执行复制或生成。",
       "sourceIds": [
         "v15-cn-flora-share",
         "v15-cn-flora-canvas",
@@ -549,28 +543,19 @@
     {
       "id": "challenge",
       "name": "命题挑战与结果归档",
-      "representatives": [
-        {
-          "name": "NightCafe Community Challenges",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
-          "inCore18": true
-        }
-      ],
-      "fact": "NightCafe 挑战由主题和规则限定投稿，包含等待、投稿、评分或排名、结束四种阶段；结束后公布作品名次。社区挑战默认需链接进入，公开聊天室内的挑战可被发现；并非所有挑战都是公开内容池。",
+      "representatives": [],
+      "fact": "结束后公布作品名次。社区挑战默认需链接进入，公开聊天室内的挑战可被发现；并非所有挑战都是公开内容池。",
       "entry": "先看主题、参与条件和阶段，再进入投稿或评选。相同主题提供共同的比较语境，时间和资格决定当前能做什么。",
       "detail": "详情承载规则、作品池和评选状态；结束后显示结果，参与者还能看到自己的作品位置与评分。默认仅收站内创作，主持人可允许上传。",
       "deliverable": "一组回应同一命题的作品、投票反馈与结果记录；活动本身组织内容，而非单纯给帖子附加一个话题标签。",
       "why": "主题帮助参与者确定选题，提交、投票和结果公布提供不同阶段的参与机会。持续吸引力取决于题目和评审可信度。",
       "advantage": "分析：同一道题下，用户可以创作、看作品和互相反馈，也更容易比较不同表达；成员自己组织挑战，还能带来新的题目。",
       "baseline": "分析：主题、时间、资格、投稿入口、作品展示及结果；规则应在创作前可见，结束后仍可回看。",
-      "enhancement": "已观察：NightCafe 提供资格预检查、评分与排序两种机制；评分时优先展示获票较少的作品，并有异常投票处理。",
+      "enhancement": "评分时优先展示获票较少的作品，并有异常投票处理。",
       "cost": "分析：持续命题、规则维护、主持、审核、争议处理和防作弊；有奖励时另需承担奖励兑现成本。",
       "tradeoff": "分析：名次会强化反馈，也可能鼓励迎合评分；限时活动可能带来短期参与，无法直接证明结束后仍有需求。",
-      "boundary": "已读官方机制正文，文档中的公开挑战实例链接本次打不开，因此不声称亲见当前作品池规模或实测投票。资格预检不覆盖全部祖先作品检查；未取得留存、收入或反作弊效果数据。",
-      "sourceIds": [
-        "v15-h1",
-        "v15-h2"
-      ],
+      "boundary": "已读官方机制正文，文档中的公开挑战实例链接打不开，因此不声称亲见当前作品池规模或实测投票。资格预检不覆盖全部祖先作品检查；未取得留存、收入或反作弊效果数据。",
+      "sourceIds": [],
       "shortName": "命题挑战",
       "carrier": "命题规则＋投稿池＋评选阶段＋结果归档",
       "reason": "共同题目和阶段组织创作、观看与反馈",
@@ -867,15 +852,6 @@
       "scope": "真实服务的远程配置、工具清单、匿名限额、OAuth/API认证；未读取账户或调用服务。"
     },
     {
-      "id": "v15-g1",
-      "title": "Website Overview",
-      "publisher": "Midjourney",
-      "url": "https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview",
-      "date": "未标注",
-      "access": "2026-09-10，公开正文已读取",
-      "scope": "Explore、作品详情、复用、Style Explorer；官方功能说明，非登录实跑。"
-    },
-    {
       "id": "v15-g2",
       "title": "How to Write Great Text-to-Image Prompts",
       "publisher": "Leonardo.Ai",
@@ -948,24 +924,6 @@
       "scope": "代码、示例和修改练习；未运行、未验证依赖时效。"
     },
     {
-      "id": "v15-h1",
-      "title": "Community Challenges on NightCafe",
-      "publisher": "NightCafe",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
-      "date": "未标注",
-      "access": "2026-09-10，公开正文已读取；所链实例访问失败",
-      "scope": "主题、发现、阶段、规则、作品结果；不推算实时参与量。"
-    },
-    {
-      "id": "v15-h2",
-      "title": "Daily Challenge: Eligibility, Rating & Ranking",
-      "publisher": "NightCafe",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-      "date": "未标注",
-      "access": "2026-09-10，公开正文已读取",
-      "scope": "资格检查时点、评分分发、排序与异常投票处理；官方机制声明。"
-    },
-    {
       "id": "v15-s1",
       "title": "Hugging Face Posts",
       "publisher": "Hugging Face（含用户发布内容）",
@@ -1034,7 +992,7 @@
     "thread": "linuxdo-topic"
   },
   "limits": [
-    "未统计行业普及率；样本覆盖不能换算成市场份额。Shared Canvas、Skills和MCP的比较引入专项参照，不扩大18家竞品统计。",
+    "未统计行业普及率；样本覆盖不能换算成市场份额。Shared Canvas、Skills和MCP的比较引入专项参照，不扩大15家竞品统计。",
     "以公开正文、官方文档与局部页面为依据。部分动态页面、挑战实例、共享项目内部未读到，已逐项标明；旧教程或截图不作为当前像素布局与运行效果证明。",
     "没有安装、连接、复制项目或提交生成；既有实操结果仍需按原记录的时间和范围阅读。",
     "未取得不同承载形式的可比留存、转化、内容生产耗时和全成本数据。当前可以比较机制与条件，不能确认哪种形式商业表现最好。"

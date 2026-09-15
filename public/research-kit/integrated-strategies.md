@@ -575,10 +575,7 @@ RunningHub提供简易使用与完整工作流入口；FLORA说明项目权限�
 
 ### 竞品依据与推断边界
 
-NightCafe记录了主题、投稿与评选机制；课程样本提供练习组织参照。多元拾光的旁观学习、持续参与、专业反馈和长期进步仍需验证，指导付费仅作未来服务观察。
 
-- [Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges) — NightCafe；官方说明介绍命题、参与、评选与阶段，可参考其活动组织。
-- [Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking) — NightCafe；2026-09-10，公开正文已读取；资格检查时点、评分分发、排序与异常投票处理；官方机制声明。
 - [Unit 1: An Introduction to Diffusion Models](https://huggingface.co/learn/diffusion-course/unit1/1) — Hugging Face；2026-09-10，公开正文已读取；单元组织、视频、Notebook、项目及分享指引；未加入学习群。
 
 ## 四种组织方式可以怎样组合

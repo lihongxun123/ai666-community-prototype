@@ -1,17 +1,17 @@
 {
   "reviewedAt": "2026-09-11",
-  "countingRule": "39条过程记录包含既有案例复读、后续与新任务候选；已逐条登记复用关系，不与55条画像或旧14个代表案例相加。",
+  "countingRule": "39条过程记录包含既有案例复读、后续与新任务候选；已逐条登记复用关系，不与46条画像或旧14个代表案例相加。",
   "stats": {
-    "platforms": 18,
-    "cases": 39,
-    "sourceRecords": 96,
-    "uniqueSourceUrls": 96
+    "platforms": 15,
+    "cases": 33,
+    "sourceRecords": 84,
+    "uniqueSourceUrls": 84
   },
   "platforms": [
     {
       "id": "liblib",
       "name": "LiblibAI",
-      "assessment": "模型与工作流的供给、作者授权和外部维护记录已复核；最重要的缺口仍是普通买方将自己的素材处理后实际采用。现有教程、作者版本说明和修复声明不能补成买方成功样本。此次核查不提高已有用户观察点计数。",
+      "assessment": "模型与工作流的供给、作者授权和外部维护记录已复核；最重要的缺口仍是普通买方将自己的素材处理后实际采用。现有教程、作者版本说明和修复声明不能补成买方成功样本。核查不提高已有用户观察点计数。",
       "dimensions": {
         "audience": {
           "finding": "目前可区分工作流使用者、资源作者和API插件使用者；电商制作是资源指向的任务，不能据此断言购买者的职业。",
@@ -23,7 +23,7 @@
           "unknown": "普通买方职业、任务频次、占比及客户采用仍未知。"
         },
         "content": {
-          "finding": "完整版本链接本次可读：电商V2将精修与背景替换分开，要求产品图和背景图，并保留模型替换与多次尝试的说明。内容价值在输入条件和取舍，不只是效果封面。",
+          "finding": "完整版本链接可读：电商V2将精修与背景替换分开，要求产品图和背景图，并保留模型替换与多次尝试的说明。内容价值在输入条件和取舍，不只是效果封面。",
           "sourceIds": [
             "CR31-R-liblib-03"
           ],
@@ -47,7 +47,7 @@
           "unknown": "该协议未给统一分成比例；各渠道实收、续费和净收益未知。"
         },
         "usage": {
-          "finding": "本次重新确认插件使用者曾报生成失败，评论只有维护者修复声明；不能把关闭状态当成成功回传。",
+          "finding": "重新确认插件使用者曾报生成失败，评论只有维护者修复声明；不能把关闭状态当成成功回传。",
           "sourceIds": [
             "CR31-R-liblib-04",
             "CR31-R-liblib-05"
@@ -68,7 +68,7 @@
           "title": "插件已回复修复，用户恢复仍未确认",
           "actorType": "非官方API插件使用者与维护者",
           "task": "从聊天机器人调用Liblib生成图片。",
-          "problem": "原始问题标题为图片生成失败；具体错误主要在截图，此次核查未读取图片。",
+          "problem": "原始问题标题为图片生成失败；具体错误主要在截图，核查未读取图片。",
           "timeline": [
             {
               "date": "2025-05-27T02:40:47Z",
@@ -83,7 +83,7 @@
               "event": "公开评论接口仍只有一条维护者回复。"
             }
           ],
-          "observedOutcome": "确认问题和回应存在；此次核查未复核代码提交，也没有用户成功确认。",
+          "observedOutcome": "确认问题和回应存在；核查未复核代码提交，也没有用户成功确认。",
           "unresolved": "平台实际接口变化、用户是否升级及新输出是否可用。",
           "sourceIds": [
             "CR31-R-liblib-04",
@@ -92,7 +92,7 @@
           "reuse": {
             "classification": "existing-representative",
             "existingIdentity": "E29-LIBLIB-API-VAE",
-            "countingAction": "旧证据已经核到commit；此次核查未复读不能抹掉既有代码变更证据，仍无用户成功。"
+            "countingAction": "旧证据已经核到commit；核查未复读不能抹掉既有代码变更证据，仍无用户成功。"
           }
         },
         {
@@ -108,7 +108,7 @@
             },
             {
               "date": "2026-09-11",
-              "event": "本次通过完整带版本链接读到双图输入、模型条件和反复尝试提示。"
+              "event": "通过完整带版本链接读到双图输入、模型条件和反复尝试提示。"
             }
           ],
           "observedOutcome": "确认资源说明可继续查阅；不证明任务复现或买方采用。",
@@ -125,11 +125,11 @@
       ],
       "adoption": {
         "usableNow": [
-          "可用其资源详情组织一份任务说明：输入示例、适用边界、失败处理、许可组合。",
+          "围绕主题编选结果、方法和资源，提供观看、收藏与版本回看路径；运行与复现供有需要的用户选择。",
           "可把外部问题单和修复声明作为维护证据格式参考。"
         ],
         "prerequisites": [
-          "选定一个具体电商任务，保留原图与输出验收标准。",
+          "先选定一个目标主题与使用目的；若承诺电商制作，再保留原图与输出验收标准。",
           "逐项核对工作流及其依赖的许可；运行前确认当前价格和模型配置。"
         ],
         "notProven": [
@@ -222,7 +222,7 @@
           "outcome": "返回既有转载、推广或无关页面；未找到足以新增独立买方的原发完整链，保留未知。"
         },
         {
-          "question": "此前访问失败的版本页及插件问题是否已有新结果？",
+          "question": "访问曾失败的版本页及插件问题是否已有新结果？",
           "checked": [
             "完整V2版本URL",
             "GitHub Issue #2和公开评论接口"
@@ -233,7 +233,7 @@
       "corrections": [
         {
           "file": "site/public/research-kit/audience-liblib.md",
-          "before": "简短 URL 重开失败；沿用 v21-input-domestic.json 的同日原页记录，不冒充本次新读取。",
+          "before": "简短 URL 重开失败；沿用 v21-input-domestic.json 的同日原页记录，不冒充新读取。",
           "after": "2026-09-11通过完整带版本URL重新读到V2正文；作者说明已现场复读，买方返图与采用结果仍未取得。",
           "reason": "访问证据状态可更新，效果等级不能同步提高。",
           "sourceIds": [
@@ -245,7 +245,7 @@
     {
       "id": "runninghub",
       "name": "RunningHub",
-      "assessment": "已核普通初学者把外部LTX流程在云端跑通，并继续分享或尝试其他流程；支持主要来自外部作者与同伴。此次核查最有价值的增量是把分享行为、新任务回访和API资格边界写清，仍不把短期成功当项目交付或留存率。",
+      "assessment": "已核普通初学者把外部LTX流程在云端跑通，并继续分享或尝试其他流程；支持主要来自外部作者与同伴。核查最有价值的增量是把分享行为、新任务回访和API资格边界写清，仍不把短期成功当项目交付或留存率。",
       "dimensions": {
         "audience": {
           "finding": "两位自称初学者明确使用RunningHub运行LTX流程，属于真实任务使用者；外部原作者当时还在考虑注册RunningHub，不能把他的支持计作平台服务。",
@@ -357,7 +357,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "把一个复杂方法拆成最小可跑版和完整效果版。",
+          "同一方法同时提供效果说明、问题记录和可选运行入口；观察谁回来找案例、查更新、交流或再次复用。",
           "在资源旁放平台适配说明和用户回传版本，追踪第三人的复用确认。"
         ],
         "prerequisites": [
@@ -435,7 +435,7 @@
         {
           "file": "site/public/research-kit/audience-runninghub.md",
           "before": "HF 同帖2位不同公开账号先求助后称跑通，其中1位数日后再次遇到另一 LoRA 问题；Reddit 另1位自述连续一个月使用订阅。",
-          "after": "HF同帖2位使用者自述跑通：1位次日分享适配JSON链接；另1位数日后又求助MSR LoRA并最终找到站内资源，第二任务完成仍未知。此前Reddit订阅自述此次核查未复读。",
+          "after": "HF同帖2位使用者自述跑通：1位次日分享适配JSON链接；另1位数日后又求助MSR LoRA并最终找到站内资源，第二任务完成仍未知。早先Reddit订阅自述核查未复读。",
           "reason": "补充使用者向供给者转换与跨时点任务的确切边界；不增加同一人的观察点。",
           "sourceIds": [
             "CR31-R-runninghub-01"
@@ -472,7 +472,7 @@
           "unknown": "当前搜索修复状态和总体检索成功率未知。"
         },
         "operations": {
-          "finding": "国内自2026-06-01停止原创作者激励，保留单独付费与算力返还。国际主站自2026-07-22收窄补贴资格；其公告明确Hub不随本次调整。",
+          "finding": "国内自2026-06-01停止原创作者激励，保留单独付费与算力返还。国际主站自2026-07-22收窄补贴资格；其公告明确Hub不随调整。",
           "sourceIds": [
             "CR31-R-tusi-01",
             "CR31-R-tusi-02"
@@ -540,7 +540,7 @@
           "problem": "搜索不返回预期资源。",
           "timeline": [
             {
-              "date": "2025-06-09至06-12（既有档案日期；此次核查原页只显1y ago）",
+              "date": "2025-06-09至06-12（既有档案日期；核查原页只显1y ago）",
               "event": "用户求助；同伴分享作者页、收藏及来源词等查找方法。"
             },
             {
@@ -562,7 +562,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "建立资源发现路径：任务词、来源标签、作者页和收藏，避免只依赖全站搜索。",
+          "用风格、主题、作者和用途组织资源发现，连接作品、收藏与更新；国内外站规则继续分别核对。",
           "分开检查作者现金回报、消费代币和算力返还。"
         ],
         "prerequisites": [
@@ -613,7 +613,7 @@
           "id": "CR31-R-tusi-03",
           "title": "I cannot find Loras on the searcher",
           "url": "https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/",
-          "publishedAt": "既有档案2025-06-09至06-12；本次仅见相对时间",
+          "publishedAt": "既有档案2025-06-09至06-12；仅见相对时间",
           "accessedAt": "2026-09-11",
           "type": "原始用户讨论",
           "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
@@ -664,201 +664,6 @@
           "reason": "补充一个原始选型观察，而非抬高已有画像的代表性。",
           "sourceIds": [
             "CR31-R-tusi-04"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "civitai",
-      "name": "Civitai",
-      "assessment": "新增取消会员的原始讨论显示，停止付款与继续做LoRA可以同时发生；服务方称有取消状态显示故障，并作修复回复。收费机制的官方文档本次已含9月调整，须更新日期边界，但代码说明仍不能替代线上交易验证。",
-      "dimensions": {
-        "audience": {
-          "finding": "用户可能同时下载、生成和创作资源；有作者明确因个人支出取消会员，却仍打算继续做LoRA。付款角色不能与内容贡献角色绑定。",
-          "sourceIds": [
-            "CR31-R-civitai-02"
-          ],
-          "unknown": "本人后来是否继续贡献、普通作者与付款者比例未知。"
-        },
-        "content": {
-          "finding": "一位使用者希望更新半年前的头像作品；相同提示再次混合生成遇到拦截。这表明已有作品和参数也可能在之后的环境下难以复用。",
-          "sourceIds": [
-            "CR31-R-civitai-03"
-          ],
-          "unknown": "模型版本、审核判定及可重现输入不足，不能认定误判。"
-        },
-        "operations": {
-          "finding": "取消讨论中服务回复者承认状态显示问题并称已修复；有其他用户说刷新后更新，也有用户称一直能取消。需同时保留反例和故障范围。",
-          "sourceIds": [
-            "CR31-R-civitai-02"
-          ],
-          "unknown": "原发者的最终状态、实际停止扣费与故障覆盖范围未知。"
-        },
-        "commercial": {
-          "finding": "官方实现文档区分下载／站内生成控制、永久付费、限时抢先及按生成计费；会员主要影响新定价次数。正文还披露9月4日前展示分数与执行分数曾不一致。",
-          "sourceIds": [
-            "CR31-R-civitai-01"
-          ],
-          "unknown": "不能由实现文档推出所有账号线上一致；不推作者收入或付费率。"
-        },
-        "usage": {
-          "finding": "头像个案是旧任务回访遇阻；取消会员个案是付款中断但表达继续创作意愿。两者都比单一活跃标签更有解释力，但没有行为完成的后续核验。",
-          "sourceIds": [
-            "CR31-R-civitai-02",
-            "CR31-R-civitai-03"
-          ],
-          "unknown": "新头像采用、后续资源发布和再次付款未知。"
-        },
-        "alternatives": {
-          "finding": "头像用户只表示等换电脑再转本地，未实际迁移；讨论中的本地生成建议不能当作完成结果。下载路径仍受资源实际许可与可下载状态约束。",
-          "sourceIds": [
-            "CR31-R-civitai-01",
-            "CR31-R-civitai-03"
-          ],
-          "unknown": "本地硬件、安装成本及同一输入的可比结果未测。"
-        }
-      },
-      "cases": [
-        {
-          "id": "CR31-civitai-cancel",
-          "title": "取消付费与继续做LoRA不是同一决定",
-          "actorType": "普通会员／资源创作者与公开服务回复者",
-          "task": "因预算变化取消月度会员，同时保留创作活动。",
-          "problem": "用户称找不到正常取消结果并等待客服回复。",
-          "timeline": [
-            {
-              "date": "2025-05-07（检索日期）",
-              "event": "主帖描述取消困难，同时表达继续做LoRA的意愿。"
-            },
-            {
-              "date": "2025-05-07 20:40 UTC（回复内标注）",
-              "event": "服务回复者称取消已处理，只是前端状态未同步，并更新称已修复。"
-            }
-          ],
-          "observedOutcome": "取得服务回应与不同用户相反经历；没有原提问者最终取消确认或后续创作。",
-          "unresolved": "实际停止扣费与继续贡献均未独立核实。",
-          "sourceIds": [
-            "CR31-R-civitai-02"
-          ],
-          "reuse": {
-            "classification": "new-case-candidate",
-            "existingIdentity": null,
-            "countingAction": "新讨论；若计用户，只计明确当事人，不把服务回复和其他评论全算用户样本。"
-          }
-        },
-        {
-          "id": "CR31-civitai-avatar",
-          "title": "半年后复用旧头像配方，未得到可用更新",
-          "actorType": "普通站内生图使用者",
-          "task": "重新生成自己的AI头像。",
-          "problem": "本人称用同样提示混合生成旧作品时频繁被标记。",
-          "timeline": [
-            {
-              "date": "约主帖前6个月（本人回顾）",
-              "event": "曾生成旧头像作品。"
-            },
-            {
-              "date": "2025-06-13（既有档案日期；当前原页相对时间）",
-              "event": "尝试更新头像并求替代；回帖表示等有新电脑再尝试本地。"
-            }
-          ],
-          "observedOutcome": "有跨时点同任务复用失败自述；没有本地迁移成功或新头像采用。",
-          "unresolved": "实际审核原因、提示／模型版本变化和最终去向。",
-          "sourceIds": [
-            "CR31-R-civitai-03"
-          ],
-          "reuse": {
-            "classification": "same-source-distinct-actor-review-needed",
-            "existingIdentity": "P25-civitai-S-u5",
-            "countingAction": "旧文从同URL取匿名G降免费/本地训练回复；新稿取半年头像复用者。不能因同URL直接合为同人，也不能未核署名就新增独立人。"
-          }
-        }
-      ],
-      "adoption": {
-        "usableNow": [
-          "将资源消费、生成和贡献分别观察，允许停止会员后继续贡献。",
-          "资源页同时说明下载权限、站内运行权限和具体收费条件。"
-        ],
-        "prerequisites": [
-          "使用当前资源版本和明确权利范围。",
-          "把取消后的账户显示与实际计费结果分开验收。",
-          "引用官方代码说明时标注日期与尚未线上实测。"
-        ],
-        "notProven": [
-          "代码描述完全等于生产现状。",
-          "取消会员等于离站或不再贡献。",
-          "旧作品配方在新规则下可稳定复用。"
-        ]
-      },
-      "unresolved": [
-        {
-          "question": "资源许可或平台规则变动后，旧用户如何保留任务可复用性？",
-          "whyItMatters": "资源库价值取决于以后还能否完成相同目标。",
-          "nextEvidence": "同一版本的公开前后记录、实际替代结果与作者维护说明。"
-        },
-        {
-          "question": "停止付款的人是否仍持续供给？",
-          "whyItMatters": "会员留存与社区贡献不能用一个指标评价。",
-          "nextEvidence": "人工预留：经同意的跨月资源发布与付款状态分开记录。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "CR31-R-civitai-01",
-          "title": "Monetization rules: paid access, licensing fees, donation goals",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
-          "publishedAt": "正文自述始写2026-08-05，8月多次重写；现含2026-09-04变化",
-          "accessedAt": "2026-09-11",
-          "type": "官方代码库实现文档",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "资源访问与收费分轴；分数门槛与定价次数；正文指出多入口行为差异。无线上交易实验。"
-        },
-        {
-          "id": "CR31-R-civitai-02",
-          "title": "Just so you know. They are making it extremely difficult to cancel my membership.",
-          "url": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
-          "publishedAt": "2025-05-07（搜索索引及回复内部日期）",
-          "accessedAt": "2026-09-11",
-          "type": "原始用户讨论与服务回应",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "预算取消与继续LoRA意愿；服务方回复显示故障并称修复；并存成功取消反例。服务身份按公开语境，不作后台验证。"
-        },
-        {
-          "id": "CR31-R-civitai-03",
-          "title": "civitai is a waste of money now",
-          "url": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
-          "publishedAt": "2025-06-13（既有档案）；当前页仅相对时间",
-          "accessedAt": "2026-09-11",
-          "type": "原始用户讨论",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "旧头像复用被拦自述及未来本地方案意愿；未核误判或迁移。"
-        }
-      ],
-      "searchLog": [
-        {
-          "question": "有没有停止付款但仍想留在内容生态的用户？",
-          "checked": [
-            "检索：site.reddit.com/r/civitai 2026 cancelled subscription",
-            "取消会员原始主帖与服务回应"
-          ],
-          "outcome": "找到具体预算原因、继续LoRA意愿及相反取消经历；没有后续真实行为。"
-        },
-        {
-          "question": "现行收费文档是否超出既有8月记录？",
-          "checked": [
-            "官方monetization-rules.md"
-          ],
-          "outcome": "已读9月4日分数读取变化及多写入口说明；建议更新文档日期，不把默认值和历史受影响数当经营统计。"
-        }
-      ],
-      "corrections": [
-        {
-          "file": "site/public/research-kit/audience-civitai.md",
-          "before": "发表：2026-08-25；核查：2026-09-10。官方实现文档。",
-          "after": "2026-09-11复读现行正文；文档保留8月重写日期，同时包含2026-09-04分数读取变化及多入口实现差异。仍为官方实现说明，未经线上支付验证。",
-          "reason": "单写8月25日不足以表示当前所读文档的变化范围。",
-          "sourceIds": [
-            "CR31-R-civitai-01"
           ]
         }
       ]
@@ -917,7 +722,7 @@
       "cases": [
         {
           "id": "CR31-seaart-search",
-          "title": "长期使用者原有找模型办法在更新后失效",
+          "title": "长期使用者找模型的惯用路径在更新后失效",
           "actorType": "App Store普通评价者与开发者回复",
           "task": "找到想使用的模型。",
           "problem": "用户称一直难以搜到模型，原本沿他人的关注关系寻找，更新后不再能用该办法。",
@@ -958,7 +763,7 @@
               "event": "称最终全额退款。"
             }
           ],
-          "observedOutcome": "本次原帖可读到结果自述；未读取付款截图或核账户。",
+          "observedOutcome": "原帖可读到结果自述；未读取付款截图或核账户。",
           "unresolved": "具体交易事实、商家处理过程和是否恢复使用。",
           "sourceIds": [
             "CR31-R-seaart-03"
@@ -966,14 +771,14 @@
           "reuse": {
             "classification": "same-source-new-outcome-review-needed",
             "existingIdentity": "P25-seaart-E11 / P25-seaart-S5",
-            "countingAction": "旧文采用同帖两名回复者；新稿采用争议结果自述。先核原发/编辑的对应账号再分配独立键，退款回顾不是多次跟访。"
+            "countingAction": "旧文采用同帖两名回复者；更新材料采用争议结果自述。先核原发/编辑的对应账号再分配独立键，退款回顾不是多次跟访。"
           }
         }
       ],
       "adoption": {
         "usableNow": [
-          "将兴趣图片与角色互动分设任务，不以统一生成次数代替采用。",
-          "作者奖励设置可参考真实付款加实际使用条件，但其有效性要单独验证。"
+          "分别组织兴趣图片、角色表达和使用方法，观察观看、交流与主题回访；不用生成次数或付费替代活跃。",
+          "作者报酬优先对应已验收的内容与维护工作；用户付款不是社区有效消费或创作参与的条件。"
         ],
         "prerequisites": [
           "试用和年费展示需写清周期、额度与取消后的权益状态。",
@@ -1023,7 +828,7 @@
           "id": "CR31-R-seaart-03",
           "title": "Scam",
           "url": "https://www.reddit.com/r/SeaArtAI/comments/1pt9tu3/scam/",
-          "publishedAt": "主帖既有档案2025-12-22；此次核查相关回复仅相对时间",
+          "publishedAt": "主帖既有档案2025-12-22；核查相关回复仅相对时间",
           "accessedAt": "2026-09-11",
           "type": "原始订阅争议与相反回复",
           "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
@@ -1075,7 +880,7 @@
     {
       "id": "openart",
       "name": "OpenArt",
-      "assessment": "已补当前价格/作者计划复核与具体制作闭环。个人MV项目、24镜头短片和Director失败案例表明，工具承担角色资产、候选画面和短片段生成，剧本、镜头验收、声音与后期仍由作者承担。普通使用者、具备分镜经验的独立作者与获选合作作者须分开；无法由这些便利样本推导人群份额、普遍出片率或续费。",
+      "assessment": "价格、作者计划与制作案例的证据已核对。个人MV项目、24镜头短片和Director失败案例表明，工具承担角色资产、候选画面和短片段生成，剧本、镜头验收、声音与后期仍由作者承担。普通使用者、具备分镜经验的独立作者与获选合作作者须分开；无法由这些便利样本推导人群份额、普遍出片率或续费。",
       "dimensions": {
         "audience": {
           "finding": "普通个人有为专辑制作9支MV的任务；新增作者自称写作者，先有完整剧本再拆24个镜头。两者制作经验不同，不能统一标为专业影视用户。",
@@ -1118,7 +923,7 @@
           "unknown": "无受控运行；没有下一账期续费或Director失败任务获修复的确认。"
         },
         "alternatives": {
-          "finding": "已观察到Midjourney准备角色参考、OpenArt做口型，以及下载镜头到Descript后期的任务分工；CapCut在旧MV样本中只是未来计划。不能把评论里的跨站价格或模型归属猜测当事实。",
+          "finding": "CapCut在旧MV样本中只是未来计划。不能把评论里的跨站价格或模型归属猜测当事实。",
           "sourceIds": [
             "CR31-T-openart-2",
             "CR31-T-openart-4"
@@ -1210,8 +1015,8 @@
         }
       ],
       "adoption": {
-        "usableNow": "可把OpenArt作为连续角色和短镜头的候选制作入口，并将作者公开的静帧先行方法纳入待复现材料。",
-        "prerequisites": "有分镜、角色参考、每镜采用标准、重试预算和外部剪辑/声音能力；以登录后的模型与Director实际扣额提示确认预算。",
+        "usableNow": "可将连续角色和短镜头组织成作品系列，关联创作说明与问题讨论；静帧先行方法作为可选复现材料，不要求观看者参与制作。",
+        "prerequisites": "作品与过程选集先核来源、公开范围和可访问性，落实编辑与回应；若承诺镜头复现，再准备分镜、参考、采用标准、重试预算和外部剪辑能力，并核实际模型与扣额。",
         "notProven": "新手一键整片成功、全片角色绝对一致、社区回复导致续费、合作教程已被普通用户复现。"
       },
       "unresolved": [
@@ -1222,7 +1027,7 @@
         },
         {
           "question": "24镜头作者的方法是否进入官方帮助并被陌生用户采用？",
-          "whyItMatters": "决定作品到方法供给是否形成真正的帮助闭环。",
+          "whyItMatters": "可观察作者是否把作品制作方法解释清楚，以及读者的问题是否得到回应。",
           "nextEvidence": "上线教程URL、版本日期，以及非作者的复现与失败修订记录。"
         },
         {
@@ -1239,7 +1044,7 @@
           "publishedAt": "动态页，无发布日期",
           "accessedAt": "2026-09-11",
           "type": "official-pricing",
-          "accessResult": "本次原页正文读取；未切账期或结算",
+          "accessResult": "原页正文读取；未切账期或结算",
           "supports": "当前档位、积分分层、视频估计排除Director、加额入口与价格显示边界。"
         },
         {
@@ -1249,7 +1054,7 @@
           "publishedAt": "帖内日期主要为相对时间；后续本人写2025-10开始订阅",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次重读主帖及本人回复；未播放所链接视频",
+          "accessResult": "重读主帖及本人回复；未播放所链接视频",
           "supports": "项目任务、学习与半程推进；另一用户跨工具角色参考/口型流程。"
         },
         {
@@ -1259,7 +1064,7 @@
           "publishedAt": "仅相对日期；不推精确日",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次原页读取；剔除明确标记机器人评论",
+          "accessResult": "原页读取；剔除明确标记机器人评论",
           "supports": "具体长片失败自述；无解决后续。"
         },
         {
@@ -1269,7 +1074,7 @@
           "publishedAt": "绝对日期未取得；页面相对小时与抓取时间不一致",
           "accessedAt": "2026-09-11",
           "type": "author-first-person",
-          "accessResult": "本次原帖及回复正文读取；成片未播放、合同未核",
+          "accessResult": "原帖及回复正文读取；成片未播放、合同未核",
           "supports": "准备-生成-Descript后期分工；自报成本工时；请求复用帮助内容及作者同意。"
         },
         {
@@ -1279,7 +1084,7 @@
           "publishedAt": "动态页，无发布日期",
           "accessedAt": "2026-09-11",
           "type": "official-program",
-          "accessResult": "本次原页正文读取；未申请",
+          "accessResult": "原页正文读取；未申请",
           "supports": "精选150人名册的官方说法、筛选和持续发帖要求、按帖报酬；不证明人人可赚。"
         }
       ],
@@ -1322,202 +1127,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "assessment": "可明确区分灵感与贺卡制作、挑战练习、积分日常及朋友网络。此次核查复核的普通用户案例显示，任务可能转到外部工具完成，而平台付款又受实际需求量影响；不能用挑战签到来证明作品采用。官方PRO权益当前可读，历史规则争议不等于所有旧积分当前会失效。",
-      "dimensions": {
-        "audience": {
-          "finding": "日常挑战者、少量实用图使用者和付款者的动机不同。存在自述不需要太多图片而取消订阅的人，也存在多年每日参与的免费用户。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "unknown": "各动机占比、职业分布和是否最终离站未知。"
-        },
-        "content": {
-          "finding": "同一讨论中的贺卡任务说明：用户需要的是一张可发送的图，而非更多生成额度。任务采用必须与生成、参赛和积攒积分分开记录。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "unknown": "仅有自述，无参考图与最终作品核对。"
-        },
-        "operations": {
-          "finding": "每日挑战和奖励可能带来持续参与，也可能主要形成攒积分行为；规则调整引发不满时，意愿、取消会员与停止参与须分别记录。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "unknown": "实际无奖励回访、自然交流与活动主持成本未知。"
-        },
-        "commercial": {
-          "finding": "官方PRO分五档；Unlimited只适用指定模型基础生成，带起始图、ControlNet或额外成本设置可能另计。Fast与免费赚取的Relax还有队列和并发差异。",
-          "sourceIds": [
-            "CR31-R-nightcafe-01",
-            "CR31-R-nightcafe-02"
-          ],
-          "unknown": "当前账户结算、税费与模型任务实际成本未核；不套用帖子旧规则。"
-        },
-        "usage": {
-          "finding": "个案自述贺卡在NightCafe多次尝试未成，转用ChatGPT并加字发送；另一位多年每日参与者只表示未来可能停止，不能把两者都算已流失。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "unknown": "同一人的之后使用、续订和活动参与未核。"
-        },
-        "alternatives": {
-          "finding": "可将生成与社交用途分开。贺卡个案确有外部工具采用自述，但它只支持该次任务，不构成两个平台的普遍品质排名。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "unknown": "不同模型、输入、日期和结果标准没有受控比较。"
-        }
-      },
-      "cases": [
-        {
-          "id": "CR31-nightcafe-card",
-          "title": "贺卡任务转到外部工具完成",
-          "actorType": "普通免费使用者；本人自述有家庭经营网站",
-          "task": "将参考照片做成情人节电子贺卡；此前也尝试网站文章配图。",
-          "problem": "本人称NightCafe提示内容问题或生成不符合人物目标，多次修改未成。",
-          "timeline": [
-            {
-              "date": "相关回复显示6mo ago；绝对日期未核",
-              "event": "本人回顾主要赚取免费积分、少量作图及网站配图采用有限。"
-            },
-            {
-              "date": "回复前数日（本人回顾）",
-              "event": "贺卡多次失败后改用ChatGPT得到候选图，再添加文字并发送。"
-            }
-          ],
-          "observedOutcome": "有具体任务采用的本人自述；未查看私人参考图、私信或最终成品。",
-          "unresolved": "究竟什么模型和设置导致差异、后续是否仍使用NightCafe。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "reuse": {
-            "classification": "existing-audience",
-            "existingIdentity": "P25-nightcafe-e2",
-            "countingAction": "旧匿名B已明确贺卡转ChatGPT；不是新成功案例。"
-          }
-        },
-        {
-          "id": "CR31-nightcafe-streak",
-          "title": "长期每日参与者表达退出意愿，实际退出尚未观察",
-          "actorType": "普通免费用户；不是官方精选作者",
-          "task": "每日参加挑战并积累奖励。",
-          "problem": "本人不满积分规则变化，认为现有生成节奏难以用完积累额度。",
-          "timeline": [
-            {
-              "date": "发帖时回顾此前4至5年",
-              "event": "自述长期使用并每日参加挑战。"
-            },
-            {
-              "date": "主帖日期既有档案2026-02-09；相关回复仅相对时间",
-              "event": "表示可能在积分开始过期后停止使用。"
-            }
-          ],
-          "observedOutcome": "确认长期参与回顾和未来退出意愿；未取得实际退出、继续参赛或新付款记录。",
-          "unresolved": "意愿是否变成行为、参与究竟由兴趣还是奖励主导。",
-          "sourceIds": [
-            "CR31-R-nightcafe-03"
-          ],
-          "reuse": {
-            "classification": "existing-audience",
-            "existingIdentity": "P25-nightcafe-e1",
-            "countingAction": "旧匿名A已有4至5年自述和离开意向；不能记实际流失。"
-          }
-        }
-      ],
-      "adoption": {
-        "usableNow": [
-          "在活动中分别记录作品采用、方法学习、同伴交流和奖励行为。",
-          "把可采用的具体任务结果作为价值样本，并允许工具跨平台完成。"
-        ],
-        "prerequisites": [
-          "说明Unlimited适用的模型、输入和额度边界。",
-          "规则变化前后观察同一个人的实际参与，不仅收集态度。",
-          "免费、订阅和生成用途分开分组。"
-        ],
-        "notProven": [
-          "挑战连续签到证明付费意愿。",
-          "表达退出意味着已经离开。",
-          "单次跨工具成功证明普遍效果领先。"
-        ]
-      },
-      "unresolved": [
-        {
-          "question": "积分调整后原每日用户是否真的停止参与？",
-          "whyItMatters": "不满表态不能回答留存效果。",
-          "nextEvidence": "人工预留同意参与者的前后行为记录，不主动跨站识别或追踪陌生个人。"
-        },
-        {
-          "question": "不依赖奖励时用户是否仍愿交流与创作？",
-          "whyItMatters": "决定兴趣社区是否有自然价值。",
-          "nextEvidence": "小规模无额外奖励活动或经同意访谈，分别观察内容采用与同伴联系。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "CR31-R-nightcafe-01",
-          "title": "NightCafe PRO plans — what you get and which plan to choose",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-          "publishedAt": null,
-          "accessedAt": "2026-09-11",
-          "type": "官方动态帮助",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "五档PRO、基础生成的Unlimited限制、非到期积分与按周期权益区别；没有进入结算。"
-        },
-        {
-          "id": "CR31-R-nightcafe-02",
-          "title": "Fast Credits vs Relax Credits",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-          "publishedAt": null,
-          "accessedAt": "2026-09-11",
-          "type": "官方帮助",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "购买所得Fast、免费赚取Relax及后者单任务单图限制。"
-        },
-        {
-          "id": "CR31-R-nightcafe-03",
-          "title": "What do you think about the recent update?",
-          "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-          "publishedAt": "主帖既有档案2026-02-09；此次核查回复多数仅6mo/7mo ago",
-          "accessedAt": "2026-09-11",
-          "type": "原始用户讨论",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。",
-          "supports": "本人取消、长期免费参与、贺卡外部完成等不同用户陈述；不保存私人余额、身份、参考照片。"
-        }
-      ],
-      "searchLog": [
-        {
-          "question": "是否能将任务完成与积分活动区分？",
-          "checked": [
-            "既有audience-nightcafe.md",
-            "更新争议帖本人任务描述与后续"
-          ],
-          "outcome": "可提取贺卡外部完成及长期免费参与的不同路径；这些大多已在旧画像出现，此次核查不重复计新用户。"
-        },
-        {
-          "question": "当前Fast、Relax和Unlimited边界是什么？",
-          "checked": [
-            "PRO帮助页",
-            "Fast与Relax帮助页",
-            "从官方帮助链接进入2026积分更新页"
-          ],
-          "outcome": "两份帮助正文可读；更新页creator.nightcafe.studio/credit-updates-launched-2026打开失败，不将历史网友解释当当前完整规则。"
-        }
-      ],
-      "corrections": [
-        {
-          "file": "site/lib/business-data.json",
-          "before": "所谓无限只适用于指定模型和基础生成，快速配额耗尽后转低优先级。",
-          "after": "该描述仍成立；2026-09-11进一步复核：起始图、ControlNet等增加成本的设置不属于Unlimited基础生成，可能按正常额度扣费。",
-          "reason": "输入方式直接影响任务实际成本，应写进适用条件。",
-          "sourceIds": [
-            "CR31-R-nightcafe-01"
-          ]
-        }
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦 AI",
       "assessment": "已补当前付费规则、普通创作者首次制作及跨日反馈。即梦可以承担活动发现、生成入口和作品分享，但新案例实际改用火山Seedance API生成、剪映成片；这支持即梦到外部制作的真实路径，不能当即梦网页工具成功或团队/API采购已验证。新手仍需承担故事压缩、角色参考、镜头连续性、剪辑及作品表达验收。",
@@ -1552,7 +1161,7 @@
             "CR31-T-jimeng-1",
             "CR31-T-jimeng-3"
           ],
-          "unknown": "本次未登录结算；个人各档实际价格、团队采购/续约、API生产量未知。"
+          "unknown": "未登录结算；个人各档实际价格、团队采购/续约、API生产量未知。"
         },
         "usage": {
           "finding": "首次制作案例从排队转到另一入口，经历剧本删减、镜头失败、外部剪辑，再上传作品；跨日反馈承认节奏与清晰度问题。App Store历史动作失败有开发者通用回复，没有原用户确认修复。",
@@ -1637,8 +1246,8 @@
         }
       ],
       "adoption": {
-        "usableNow": "可用于发现玩法/活动、尝试图片与片段以及分享作品；当前公开材料足以设计一次有分镜和后期的短片验证。",
-        "prerequisites": "先确认所用入口是即梦网页、App还是火山API；准备角色/故事板与可压缩剧本，并有剪辑、预算和发布规格判断能力。",
+        "usableNow": "以玩法、系列作品与幕后过程组织内容，保留可选同题尝试；持续观看与交流可独立成立，短片制作另验具体流程。",
+        "prerequisites": "作品主题先核来源、可访问内容和主持范围；若提供制作示范，再区分即梦网页、App与火山API，准备分镜、剪辑能力、预算和发布规格。",
         "notProven": "一站式新手完整成片、真实团队持续协作、API长期生产、一次比赛带来续费、反馈后改片已完成。"
       },
       "unresolved": [
@@ -1666,7 +1275,7 @@
           "publishedAt": "2026-08-03更新；2026-08-10生效",
           "accessedAt": "2026-09-11",
           "type": "official-rule",
-          "accessResult": "本次原页正文读取",
+          "accessResult": "原页正文读取",
           "supports": "会员/积分/API分立、团队空间及单项资格边界；未核实际结算。"
         },
         {
@@ -1676,7 +1285,7 @@
           "publishedAt": "多日期；动作案例2025-03-31、开发者2025-04-02；其他多仅月日",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次评价正文读取；重复项去重、不保存昵称",
+          "accessResult": "评价正文读取；重复项去重、不保存昵称",
           "supports": "具体任务困难及开发者回复；自报价格/成功率不当当前官方事实。"
         },
         {
@@ -1686,7 +1295,7 @@
           "publishedAt": "2026-05-18主帖；本人反馈延续至2026-05-19",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次正文和后续回复读取；未采用第三方账号/充值建议",
+          "accessResult": "正文和后续回复读取；未采用第三方账号/充值建议",
           "supports": "活动触发、即梦排队、转火山API、剪映、外部反馈与本人承认未解问题。"
         },
         {
@@ -1696,7 +1305,7 @@
           "publishedAt": "未显示作品发布日期",
           "accessedAt": "2026-09-11",
           "type": "public-work-link",
-          "accessResult": "本次打开并重定向至work-detail；仅9行动态壳，未播放",
+          "accessResult": "打开并重定向至work-detail；仅9行动态壳，未播放",
           "supports": "仅支持作者给出的作品分享入口存在；不支持成片质量或即梦生成归因。"
         },
         {
@@ -1706,7 +1315,7 @@
           "publishedAt": "2026-08-15 22:48",
           "accessedAt": "2026-09-11",
           "type": "author-method-notebook",
-          "accessResult": "本次原页正文读取；提示/剧本资料集合，无生成运行核验",
+          "accessResult": "原页正文读取；提示/剧本资料集合，无生成运行核验",
           "supports": "方法供给有角色/场景/连续分镜约束；不证明模板执行或客户验收。"
         },
         {
@@ -1716,8 +1325,8 @@
           "publishedAt": "动态页",
           "accessedAt": "2026-09-11",
           "type": "official-entry",
-          "accessResult": "本次首页请求超时；作品分享及官方协议可访问",
-          "supports": "记录首页访问限制；本次不把既有首页功能记录改标新读。"
+          "accessResult": "首页请求超时；作品分享及官方协议可访问",
+          "supports": "记录首页访问限制；不把既有首页功能记录改标新读。"
         }
       ],
       "searchLog": [
@@ -1848,11 +1457,11 @@
           "timeline": [
             {
               "date": "2025-02-28（页面关联日期；历史）",
-              "event": "发出更新，自称此前数天测试获得可用人物镜头，但充值受阻；希望随后恢复并完成电影。"
+              "event": "发出更新，自称前几天测试获得可用人物镜头，但充值受阻；希望随后恢复并完成电影。"
             },
             {
               "date": "2026-09-11复核",
-              "event": "原帖可读，没有在本次检索结果中找到该电影完成或账户恢复确认。"
+              "event": "原帖可读，没有在检索结果中找到该电影完成或账户恢复确认。"
             }
           ],
           "observedOutcome": "原帖只有试作进展和计划，不能把预计月底完成写成成片；不使用其指控裁决平台行为。",
@@ -1895,8 +1504,8 @@
         }
       ],
       "adoption": {
-        "usableNow": "可将Kling用于有参考和选片标准的短镜头候选，先以人物、动作和口型分任务验证，再决定拼接长片。",
-        "prerequisites": "准备角色/场景资产、逐镜连续性清单、重试预算和外部剪辑；按地区与生成界面核当前费用和所用模型。",
+        "usableNow": "将短镜头与对应过程组织为可观看的主题内容，允许用户讨论叙事、动作和风格；有制作需求时再提供参考与选片标准。",
+        "prerequisites": "作品与过程应有来源、公开许可和编辑维护；若承诺镜头制作，另准备角色、场景、连续性检查、重试预算与外部剪辑，并核具体模型和费用。",
         "notProven": "多元素一律正确、免费输出可商用、首月优惠持续不变、普通用户能完成长片、订阅等于高频使用或稳定收入。"
       },
       "unresolved": [
@@ -1924,7 +1533,7 @@
           "publishedAt": "2026-04-21发布及生效",
           "accessedAt": "2026-09-11",
           "type": "official-rule",
-          "accessResult": "本次原页正文读取",
+          "accessResult": "原页正文读取",
           "supports": "会员、积分期限、商业使用和权益以具体页面为准的边界。"
         },
         {
@@ -1934,7 +1543,7 @@
           "publishedAt": "2026-07-28",
           "accessedAt": "2026-09-11",
           "type": "official-pricing-guide",
-          "accessResult": "本次原页正文读取；会员/开发者价格入口另点只得壳",
+          "accessResult": "原页正文读取；会员/开发者价格入口另点只得壳",
           "supports": "国际站首订/续费对照及预算因素；不是中国区实际结算。"
         },
         {
@@ -1944,7 +1553,7 @@
           "publishedAt": "精确发表日未取得；2026年9月检索",
           "accessedAt": "2026-09-11",
           "type": "author-first-person",
-          "accessResult": "本次原帖和部分回复读取；YouTube频道打开失败，未播放",
+          "accessResult": "原帖和部分回复读取；YouTube频道打开失败，未播放",
           "supports": "Sora转Kling、系列制作回述、短片段拼接、连续性问题和保留早期版本。"
         },
         {
@@ -1954,7 +1563,7 @@
           "publishedAt": "2025-02-28；历史",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次原页正文读取；无后续电影完成验证",
+          "accessResult": "原页正文读取；无后续电影完成验证",
           "supports": "人物测试和依赖、购买受阻自述、未来计划与结果分开。"
         },
         {
@@ -1964,7 +1573,7 @@
           "publishedAt": "2026年7—8月评论；发表/体验日分开",
           "accessedAt": "2026-09-11",
           "type": "user-first-person",
-          "accessResult": "本次原评价正文读取；不采用AI摘要、总评分/分布或指控为结论",
+          "accessResult": "原评价正文读取；不采用AI摘要、总评分/分布或指控为结论",
           "supports": "卡通/真人任务差异、短片拼接、年订阅与使用量不等价。"
         },
         {
@@ -1974,7 +1583,7 @@
           "publishedAt": "未取得",
           "accessedAt": "2026-09-11",
           "type": "official-entry",
-          "accessResult": "本次由官方成本页点击，restricted URL失败",
+          "accessResult": "由官方成本页点击，restricted URL失败",
           "supports": "仅记录合作入口访问受限，资格/报酬未确认。"
         }
       ],
@@ -2008,259 +1617,10 @@
         {
           "file": "lib/business-data.json / kling.commercialization",
           "before": "初次优惠不能当持续成本。",
-          "after": "本次重读2026-07-28官方指南仍显示Standard首月6.99美元、后续8.8美元；明确仅国际该页面参考，最终结算/中国区未知。",
+          "after": "重读2026-07-28官方指南仍显示Standard首月6.99美元、后续8.8美元；明确仅国际该页面参考，最终结算/中国区未知。",
           "reason": "刷新价格证据日期，不将用户旧价或第三方新价写成官方现价。",
           "sourceIds": [
             "CR31-T-kling-2"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "assessment": "已补2025—2026同一漫画作者的作品、教程及读者追问；另找到2026年用户失败后明确转用其他工具完成原任务。Midjourney可承担构图、风格和候选画面，连续漫画仍需要角色表、筛选、拼贴与排字。作品可发布与作者认为达到可售标准是不同结论；旧版或V7个案不能当2026所有版本上限。",
-      "dimensions": {
-        "audience": {
-          "finding": "新增具体画像是持续写漫画并制作页面的独立作者，以及为歌曲制作指定烟字火车图的个人作者；前者有跨年项目、后者有精确视觉目标。二者都不能由发帖推定客户收入或专业占比。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-5",
-            "CR31-T-midjourney-6"
-          ],
-          "unknown": "真实职业、付费套餐、客户和当前人群份额未核。"
-        },
-        "content": {
-          "finding": "同一作者把作品页、2025教程和2026复盘互链，公开角色主提示、参考图/脸部裁切及后期办法；2026年读者求完整提示，作者11天后给提示和多次生成/参考复用方法，读者是否复现未知。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-5"
-          ],
-          "unknown": "非完整工程包；没核全部页图、版权链和买方验收。"
-        },
-        "operations": {
-          "finding": "跨日期的作者答疑说明作品可引出方法需求；收到提示不等于得到相同结果。官方社区规则将产品和社区访问分开，并限制未经授权自动化；不能据第三方聚合工具宣传假定普通开放API可用。",
-          "sourceIds": [
-            "CR31-T-midjourney-2",
-            "CR31-T-midjourney-3"
-          ],
-          "unknown": "答疑对付费与复现的增量未知；没有自然作者与合作作者数量/报酬资料。"
-        },
-        "commercial": {
-          "finding": "2026-09-11官方月付Basic/Standard/Pro/Mega为10/30/60/120美元；年付总额96/288/576/1152美元，自动续订。Relax图片从Standard起，SD视频从Pro起；Stealth仅Pro/Mega。必须按保密和所需输出模式选档，不能用最低价代表全部权益。",
-          "sourceIds": [
-            "CR31-T-midjourney-1"
-          ],
-          "unknown": "地区税费及实际购买未核；作品售卖和平台订阅收入不可由案例推算。"
-        },
-        "usage": {
-          "finding": "漫画作者2025制作前两部分，2026又用V7完成第5部分并公开比较；既有输出却仍报告多人/环境一致性问题。另一2026失败用户称取消订阅、用Ideogram/Copilot/Photoshop完成歌曲图，后来登录新版入口但只表示再试，不算复购。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-5",
-            "CR31-T-midjourney-6"
-          ],
-          "unknown": "跨期使用有记录，连续付费无证；V8效果、原用户重新采用MJ未验证。"
-        },
-        "alternatives": {
-          "finding": "原失败用户明确完成的替代路径是Ideogram起图、Copilot修改、Photoshop微调；漫画作者2025已经用Photoshop修细节/文字，2026提到过去比较和未来再测ChatGPT。将实际采用和未来比较计划分开。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-6"
-          ],
-          "unknown": "没有同预算/同模型版本受控对照；不采单个用户评价作模型排行。"
-        }
-      },
-      "cases": [
-        {
-          "id": "CR31-midjourney-comic-series",
-          "title": "漫画作品跨年续作，方法公开后仍存在控制问题",
-          "actorType": "独立作者个人网站的第一人称创作记录；自有作品与教程有推广目的，未确认平台合作。",
-          "task": "持续制作The Last Superhero系列漫画，保持人物、场景和页面风格。",
-          "problem": "多人物互相串特征、环境和风格漂移，文字/局部细节需另行处理。",
-          "timeline": [
-            {
-              "date": "2025-02-28",
-              "event": "发布教程并链接第1/2部分；称仅达到自身目标的一部分，不足以作为打算出售的漫画，说明Photoshop修图与文字处理。"
-            },
-            {
-              "date": "2026-01-08",
-              "event": "读者表示难以得到类似近景，询问完整提示。"
-            },
-            {
-              "date": "2026-01-19",
-              "event": "作者提供提示，并说明多次生成到合适近景后再做参考图；未见读者复现成功回复。"
-            },
-            {
-              "date": "2026-06-18",
-              "event": "发布第5部分，明确主要使用V7。"
-            },
-            {
-              "date": "2026-06-19",
-              "event": "发布新版复盘，补角色表/脸部参考与叠加方法，仍不满意跨页一致性；说明制作中虽发布V8，因项目已接近完成选择留在V7。"
-            }
-          ],
-          "observedOutcome": "作品/方法跨日期公开与同一作者持续制作可确认；不是不间断订阅或商业售卖证据。",
-          "unresolved": "未逐图验质、核成本或收益；读者是否完成原近景任务未知；作者对V8看法不是本次实测。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-5"
-          ],
-          "reuse": {
-            "classification": "new-project-chain-candidate",
-            "existingIdentity": null,
-            "countingAction": "三文章/作品页同作者同系列，一个项目链；读者提问未复现。"
-          }
-        },
-        {
-          "id": "CR31-midjourney-precise-image-alternative",
-          "title": "指定烟字图失败后，原作者用外部工具完成",
-          "actorType": "普通个人公开求助；同一账号多次回复算1人，订阅取消为自述。",
-          "task": "给歌曲制作火车烟雾组成特定字样的插画。",
-          "problem": "自述Midjourney结果与明确文字/空间要求不符。",
-          "timeline": [
-            {
-              "date": "2026-04-17（搜索索引日期；正文也自述2026年4月）",
-              "event": "贴出相同提示的比较并称已取消订阅。"
-            },
-            {
-              "date": "同帖后续，精确回复日未取得",
-              "event": "本人确认采用Ideogram生成图，再用Copilot与Photoshop完成该作品并提供歌曲视频链接。"
-            },
-            {
-              "date": "更后续回复，精确日未取得",
-              "event": "根据回复者建议登录新版入口，表示会再试，但原作品已完成。"
-            }
-          ],
-          "observedOutcome": "失败任务有本人明确替代完成与后续动作，不应仍标为纯抱怨或没有解决办法。",
-          "unresolved": "未播放歌曲视频或核账；新版MJ重试、重新订阅没有结果。",
-          "sourceIds": [
-            "CR31-T-midjourney-6"
-          ],
-          "reuse": {
-            "classification": "new-cross-tool-case-candidate",
-            "existingIdentity": null,
-            "countingAction": "一个作者的指定图任务，由Ideogram/Copilot/Photoshop完成；回访MJ不等于续费。"
-          }
-        }
-      ],
-      "adoption": {
-        "usableNow": "可用于视觉方向与单页候选，已有作者素材足以建立漫画方法样本；对必须精确的文字/布局任务，可把外部编辑预先纳入交付。",
-        "prerequisites": "预备角色/场景参考、版本锁定、页面排字与修图能力；按保密需要和视频模式核套餐，不依赖未经授权的自动化/API。",
-        "notProven": "风格代码/角色参考保证全书一致、V7失败代表V8上限、教程回复保证陌生人成功、生成作品即有销量或续费。"
-      },
-      "unresolved": [
-        {
-          "question": "读者拿到作者提示后是否复现？",
-          "whyItMatters": "方法可读与方法交付有效不是一回事。",
-          "nextEvidence": "同一读者后续结果/失败细节及作者修订，或授权的独立复现。"
-        },
-        {
-          "question": "漫画作者是否达到可售标准并完成客户交付？",
-          "whyItMatters": "公开发布不等于商业验收。",
-          "nextEvidence": "作者后续明确交付状态与买方/发行证据；不以作品数量代替。"
-        },
-        {
-          "question": "精确图用户试新版后是否回来？",
-          "whyItMatters": "登录新入口只是尝试动作。",
-          "nextEvidence": "本人新结果、继续使用或续费确认，未取得前保留未知。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "CR31-T-midjourney-1",
-          "title": "Comparing Midjourney Plans",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-          "publishedAt": "动态帮助页，无发布日期",
-          "accessedAt": "2026-09-11",
-          "type": "official-pricing",
-          "accessResult": "本次原页正文读取；未购买",
-          "supports": "当前月/年价格、Relax图像/SD视频分档、Stealth及自动续订。"
-        },
-        {
-          "id": "CR31-T-midjourney-2",
-          "title": "Community Guidelines",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
-          "publishedAt": "动态规则，无发布日期",
-          "accessedAt": "2026-09-11",
-          "type": "official-rule",
-          "accessResult": "本次原页正文读取",
-          "supports": "普通开放API缺失、授权例外、禁止未授权自动化/共享，以及社区与产品访问分开。"
-        },
-        {
-          "id": "CR31-T-midjourney-3",
-          "title": "How To Make Comics With AI (Midjourney 2025)",
-          "url": "https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/",
-          "publishedAt": "2025-02-28；评论2026-01-08和01-19",
-          "accessedAt": "2026-09-11",
-          "type": "author-first-person",
-          "accessResult": "本次正文与读者/作者评论读取",
-          "supports": "早期漫画制作、Photoshop/文字处理；读者难复现和作者后续解释。"
-        },
-        {
-          "id": "CR31-T-midjourney-4",
-          "title": "How to Make AI Comics with Midjourney (2026 | V7)",
-          "url": "https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/",
-          "publishedAt": "2026-06-19",
-          "accessedAt": "2026-09-11",
-          "type": "author-first-person",
-          "accessResult": "本次全文读取；未执行教程或采其速度估计为基准",
-          "supports": "同一作者新项目/旧教程关联、角色表、持续控制困难与版本边界。"
-        },
-        {
-          "id": "CR31-T-midjourney-5",
-          "title": "The Last Superhero – Part 5 (AI Comic)",
-          "url": "https://michaelbrig.com/the-last-superhero-5/",
-          "publishedAt": "2026-06-18",
-          "accessedAt": "2026-09-11",
-          "type": "author-work",
-          "accessResult": "本次作品页正文和图片入口读取，未逐图视觉验质",
-          "supports": "作品页公开、主要V7及后续评测承接。"
-        },
-        {
-          "id": "CR31-T-midjourney-6",
-          "title": "Midjourney was a flagship – now it is virtually unusable.",
-          "url": "https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/",
-          "publishedAt": "2026-04-17主帖；后续回复仅相对日期",
-          "accessedAt": "2026-09-11",
-          "type": "user-first-person",
-          "accessResult": "本次原帖及作者后续读取；不沿用标题定性",
-          "supports": "精确文字图任务、替代完成、取消自述和新版入口重试意愿。"
-        }
-      ],
-      "searchLog": [
-        {
-          "question": "能否替换过多2022/2023样本，补2026使用和跨日方法？",
-          "checked": "搜索2026漫画/客户任务，打开同作者2025教程、2026第5部分、2026复盘与评论。",
-          "outcome": "可确认跨年制作及读者提问—作者答复；尚无读者成功确认和客户验收。"
-        },
-        {
-          "question": "失败是否导致实际替代或只是情绪？",
-          "checked": "2026-04精确烟字图讨论主帖和作者回复。",
-          "outcome": "本人确认外部工具完成；承诺再试新版不算重新采用/续费。"
-        },
-        {
-          "question": "当前专业用途的付费和自动化门槛？",
-          "checked": "官方套餐和Community Guidelines。",
-          "outcome": "现行套餐分档可核；普通开放API仍不可假设，所有隐私/使用范围仍受规则约束。"
-        }
-      ],
-      "corrections": [
-        {
-          "file": "lib/audience-research.json / public/research-kit/audience-midjourney.md",
-          "before": "任务记录集中2022—2023历史用户，缺2026同一项目过程。",
-          "after": "补2025—2026同一漫画作者作品/方法/答疑链和2026指定插画的替代完成；保留V7、读者未复现、客户未验收边界。",
-          "reason": "提高近期普通/独立作者证据，避免把旧模型上限当当前结论。",
-          "sourceIds": [
-            "CR31-T-midjourney-3",
-            "CR31-T-midjourney-4",
-            "CR31-T-midjourney-5",
-            "CR31-T-midjourney-6"
           ]
         }
       ]
@@ -2331,7 +1691,7 @@
           "problem": "误触生成花费token、切模型后设置重置、输出尺寸变化，以及提示记录查看不便。",
           "timeline": [
             {
-              "date": "日期未显式显示（本次页为约6个月前）",
+              "date": "日期未显式显示（页为约6个月前）",
               "event": "作者称已订阅数月并额外加购，列举使用中的具体摩擦。"
             },
             {
@@ -2407,11 +1767,11 @@
       ],
       "adoption": {
         "usableNow": [
-          "将可选图像与设计方法作为内容输入；公开用户任务足以指导素材交付字段。",
+          "用图像、设计过程和筛选前后对照支持欣赏与学习，再向有意愿的用户提供素材和方法；分别观察回看、交流和复用。",
           "复用“提示/模型/参数/筛选/后期/最终用途”的方法记录结构。"
         ],
         "prerequisites": [
-          "用户准备素材、检查授权与隐私模式，自行筛选和外部设计。",
+          "观看与过程学习不要求用户提交素材；提供实际复用时，再检查素材授权、隐私、筛选和外部设计步骤。",
           "当前登录界面确认具体模型及Relaxed资格；实际付费时确认周期与税。"
         ],
         "notProven": [
@@ -2444,7 +1804,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "official-pricing",
-          "accessResult": "本次打开完整定价/FAQ；未操作周期切换或账户结算。",
+          "accessResult": "打开完整定价/FAQ；未操作周期切换或账户结算。",
           "supports": "套餐、token、Relaxed范围与并发限制、加购需有效订阅。"
         },
         {
@@ -2454,7 +1814,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "first-person-community",
-          "accessResult": "本次重读主帖及转交/致谢回复；页面相对日期。",
+          "accessResult": "重读主帖及转交/致谢回复；页面相对日期。",
           "supports": "普通作者的任务、数月付费自述和操作摩擦；无修复确认。"
         },
         {
@@ -2464,7 +1824,7 @@
           "publishedAt": "2026-06-30 / 2026-07-28",
           "accessedAt": "2026-09-11",
           "type": "first-person-professional",
-          "accessResult": "本次重读正文；同提示链接回到本页，外部Instagram读取失败。",
+          "accessResult": "重读正文；同提示链接回到本页，外部Instagram读取失败。",
           "supports": "专业培训作者3年自述、具体用途、Canva后期和输出限制。"
         },
         {
@@ -2474,7 +1834,7 @@
           "publishedAt": "2024-10-21（页面日期导航）",
           "accessedAt": "2026-09-11",
           "type": "first-person-community-historical",
-          "accessResult": "本次重读原帖及多轮回复；历史证据非当前模型测试。",
+          "accessResult": "重读原帖及多轮回复；历史证据非当前模型测试。",
           "supports": "角色任务失败、社区答题试验后修正、考虑替代但未完成。"
         },
         {
@@ -2484,7 +1844,7 @@
           "publishedAt": "2026-02-19",
           "accessedAt": "2026-09-11",
           "type": "official-documentation",
-          "accessResult": "本次打开原页；属于Advanced (Legacy) Features & Settings。",
+          "accessResult": "打开原页；属于Advanced (Legacy) Features & Settings。",
           "supports": "旧模型兼容、训练图数与素材准备责任；不证明任意任务成功。"
         }
       ],
@@ -2553,7 +1913,7 @@
           "unknown": "专业/普通/合作作者各自规模和长期留存未知。"
         },
         "content": {
-          "finding": "可观察同一Finch项目的第1、5、14集公开帖子，以及作者解释真人配音、Act 1到Act 2的驱动处理；全片工作流同时涉及Midjourney、Hailuo和DaVinci。公开连续发布不等于40集均已逐集验看。",
+          "finding": "可观察同一Finch项目的第1、5、14集公开帖子，以及作者解释真人配音、Act 1到Act 2的驱动处理；公开连续发布不等于40集均已逐集验看。",
           "sourceIds": [
             "CR31-T-runway-3",
             "CR31-T-runway-4",
@@ -2569,7 +1929,7 @@
             "CR31-T-runway-4",
             "CR31-T-runway-6"
           ],
-          "unknown": "技术答复到成功的平均闭环、官方支持时效及创作者复用率未知。"
+          "unknown": "从技术答复到问题解决的平均时间、官方响应时间及创作者再次使用的比例未知。"
         },
         "commercial": {
           "finding": "9月11日官网当前为Standard/Pro/Max，月付15/35/95美元，年付折算12/28/76美元；月credits为625/2250/9500。Free125为一次性，Standard/Pro月额不结转；Max可结转一个月，加购额不失效。联盟计划公开每位新增付费订阅者奖励15美元，并提供25%折扣码。",
@@ -2615,12 +1975,12 @@
               "event": "发布第5集并继续答复表演方法。"
             },
             {
-              "date": "日期未完整显示（第14集原帖；本次已重读）",
+              "date": "日期未完整显示（第14集原帖；已重读）",
               "event": "发布第14集，仍自述40集完成并寻找观众。"
             },
             {
-              "date": "LinkedIn页面仅相对日期，本次重读",
-              "event": "同一作者介绍整片同时使用Midjourney、Runway与Hailuo。"
+              "date": "LinkedIn页面仅相对日期，重读",
+              "event": ""
             }
           ],
           "observedOutcome": "同项目不同集数公开帖子及方法答复已读取；40集完成属于作者声明，工具责任可分解。",
@@ -2645,7 +2005,7 @@
           "problem": "请求被判不安全，用户不能定位原因。",
           "timeline": [
             {
-              "date": "原帖页面仅相对日期（约5个月前）；本次重读",
+              "date": "原帖页面仅相对日期（约5个月前）；重读",
               "event": "按Runway助手建议修改提示后仍被拒绝。"
             },
             {
@@ -2671,11 +2031,11 @@
       ],
       "adoption": {
         "usableNow": [
-          "把真人表演→驱动视频→生成镜头→剪辑作为可解释的专业创作案例。",
+          "将专业作品和幕后制作关联，供用户持续观看、理解创作选择和提出问题；完整片段复现需要另行核查能力与成本。",
           "借鉴作者在作品发布后补方法、回答具体问题的内容结构。"
         ],
         "prerequisites": [
-          "团队具备脚本、表演、声音与剪辑能力，并可使用多工具。",
+          "作品与幕后说明先核公开许可和编辑维护；只有承诺完整复现时，才需脚本、表演、声音、剪辑与多工具制作能力。",
           "先用短片段验证当前模型、审核与积分消耗；选择结算周期和分工后再估全片。"
         ],
         "notProven": [
@@ -2709,7 +2069,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "official-pricing",
-          "accessResult": "本次打开完整页面及年/月价格标签；未进入购买。",
+          "accessResult": "打开完整页面及年/月价格标签；未进入购买。",
           "supports": "当前Standard/Pro/Max、Free一次性、credits有效期；非历史Unlimited。"
         },
         {
@@ -2719,7 +2079,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "official-documentation",
-          "accessResult": "本次打开原指南。",
+          "accessResult": "打开原指南。",
           "supports": "图像与动作描述分工、逐步迭代；不是成功率实测。"
         },
         {
@@ -2729,7 +2089,7 @@
           "publishedAt": "2026-01-27（页面日期导航）",
           "accessedAt": "2026-09-11",
           "type": "first-person-professional",
-          "accessResult": "本次重读主帖和作者方法/背景/声音回复；未播放整季。",
+          "accessResult": "重读主帖和作者方法/背景/声音回复；未播放整季。",
           "supports": "同一团队作品发布、表演迁移方法、影视经验和外部后期。"
         },
         {
@@ -2739,7 +2099,7 @@
           "publishedAt": "2026-02-02（页面日期导航）",
           "accessedAt": "2026-09-11",
           "type": "first-person-professional",
-          "accessResult": "本次重读原帖和作者答复。",
+          "accessResult": "重读原帖和作者答复。",
           "supports": "同项目第二日期发布及真人表演方法。"
         },
         {
@@ -2749,7 +2109,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "first-person-professional",
-          "accessResult": "本次原页及作者回复可读，页面含移除提示；移除原因不推断。",
+          "accessResult": "原页及作者回复可读，页面含移除提示；移除原因不推断。",
           "supports": "同项目后续集数与寻找观众自述；非第40集验收。"
         },
         {
@@ -2759,7 +2119,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "first-person-community",
-          "accessResult": "本次重读主帖/改图/继续失败/账户正常后续；精确日期未显示。",
+          "accessResult": "重读主帖/改图/继续失败/账户正常后续；精确日期未显示。",
           "supports": "普通任务失败、尝试修正和未恢复原任务的边界。"
         },
         {
@@ -2769,7 +2129,7 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "official-program",
-          "accessResult": "本次原页可读：申请审核、3个月试行、合作权益。",
+          "accessResult": "原页可读：申请审核、3个月试行、合作权益。",
           "supports": "每个新增付费订阅者15美元、25%折扣码、活跃伙伴Max权益；非作者实际收入。"
         },
         {
@@ -2779,8 +2139,8 @@
           "publishedAt": null,
           "accessedAt": "2026-09-11",
           "type": "first-person-professional",
-          "accessResult": "本次公开正文和作者第2集链接可读；未登录、未采集用户凭据。",
-          "supports": "同作者说明Midjourney、Runway与Hailuo多工具分工。"
+          "accessResult": "公开正文和作者第2集链接可读；未登录、未采集用户凭据。",
+          "supports": ""
         }
       ],
       "searchLog": [
@@ -2838,7 +2198,7 @@
     {
       "id": "waytoagi",
       "name": "WaytoAGI",
-      "assessment": "可确认开放知识库、组织式共学和关联商业服务并存；两名公开作者提供不同角色的任务线索。API文档提供收费与接入说明，但本次未取得API、增长团队与社区同一经营或收款主体的证明；不能据品牌与子域名合并收入。",
+      "assessment": "可确认开放知识库、组织式共学和关联商业服务并存；两名公开作者提供不同角色的任务线索。API文档提供收费与接入说明，但未取得API、增长团队与社区同一经营或收款主体的证明；不能据品牌与子域名合并收入。",
       "dimensions": {
         "audience": {
           "finding": "官方面向中文AI学习者、创作者与企业实践者；实际样本包括参加活动后开展项目的学习者，以及利用既有文章在活动中建立联系的作者。后者有内容生产经验，不应当作零基础普通学员。",
@@ -2950,7 +2310,7 @@
             },
             {
               "date": "2026-09-11",
-              "event": "本次复读原文日期及经历，不把标题的7天作为长期留存周期。"
+              "event": "复读原文日期及经历，不把标题的7天作为长期留存周期。"
             }
           ],
           "observedOutcome": "可确认作者自述既有作品帮助破冰；具体合作与业务机会兑现未核验。",
@@ -2967,11 +2327,11 @@
       ],
       "adoption": {
         "usableNow": [
-          "给内容标出适用任务、学习起点与来源；把活动角色区分为学习者、作者和组织者。",
+          "按读者问题、学习起点与主题整理内容，串联相关资料和更新；阅读、收藏回看与问题交流均可构成持续使用。",
           "将免费内容、训练服务、API服务和增长服务分别展示交付与负责方。"
         ],
         "prerequisites": [
-          "每个准备复用的案例需验证工具前提、费用和结果；固定平台供给的编辑与回应时间。",
+          "平台供给先固定编辑、更新与回应时间；只有承诺复用的案例才逐项核对工具前提、费用和结果。",
           "若引用关联API商业模式，先取得经营主体和收入归属证据。"
         ],
         "notProven": [
@@ -3009,7 +2369,7 @@
           "accessedAt": "2026-09-11",
           "type": "同品牌API官方文档",
           "accessResult": "search-index-readable; direct-open-timeout",
-          "supports": "本次搜索索引可读充值、合同/发票与客户端说明；两次直接打开超时，未核实际支付或经营主体。"
+          "supports": "搜索索引可读充值、合同/发票与客户端说明；两次直接打开超时，未核实际支付或经营主体。"
         },
         {
           "id": "CR31-C-waytoagi-03",
@@ -3096,7 +2456,7 @@
         {
           "file": "site/lib/business-data.json",
           "before": "各业务的经营主体和收入归属尚未全部核实。",
-          "after": "保留未知，并补明API与增长服务本次直接访问超时，索引只确认服务说明；未找到同一签约/收款主体证明。",
+          "after": "保留未知，并补明API与增长服务直接访问超时，索引只确认服务说明；未找到同一签约/收款主体证明。",
           "reason": "进一步界定已确认的关联与尚不能合并的收入。",
           "sourceIds": [
             "CR31-C-waytoagi-01",
@@ -3187,7 +2547,7 @@
             },
             {
               "date": "2026-09-11",
-              "event": "本次原页仍可读；未取得与其直接关联的教材合并或他人复验。"
+              "event": "原页仍可读；未取得与其直接关联的教材合并或他人复验。"
             }
           ],
           "observedOutcome": "支持本人对一个环境修复步骤的确认。",
@@ -3235,7 +2595,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "为学习资料列前置条件、最小练习、预期输出和求助字段。",
+          "将章节、示范、学习记录与问题答复连接，分别观察持续阅读、自主练习、提问和返稿；不要求所有学习者提交作品。",
           "将读者报错、作者修改、审阅通过和后人复验分别记录。"
         ],
         "prerequisites": [
@@ -3500,7 +2860,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "资源详情列源码、输入、依赖、授权、运行状态与维护入口。",
+          "将资源说明、专题集合、版本和讨论连接，支持查找、收藏回看及问题跟进；试用、复制和部署按需要进入。",
           "付费权益、执行费用和任务结果分别说明；按本人反馈记录局部恢复。"
         ],
         "prerequisites": [
@@ -3582,7 +2942,7 @@
           "accessedAt": "2026-09-11",
           "type": "官方资源规则",
           "accessResult": "readable",
-          "supports": "当前套餐扩额、动态分配与免费个人托管条件；此次核查不运行。"
+          "supports": "当前套餐扩额、动态分配与免费个人托管条件；核查不运行。"
         }
       ],
       "searchLog": [
@@ -3618,7 +2978,7 @@
         {
           "file": "site/lib/business-data.json",
           "before": "现行账单文档说明额度覆盖多类Hub服务，另购额度也支持ZeroGPU日配额之外的使用",
-          "after": "保留，该描述此次核查复核通过；仅追加访问日期及原帖经历的分人结果。",
+          "after": "保留，该描述核查复核通过；仅追加访问日期及原帖经历的分人结果。",
           "reason": "避免把旧论坛首个推測回复误用为当前收费规则。",
           "sourceIds": [
             "CR31-C-huggingface-01",
@@ -3657,7 +3017,7 @@
           ]
         },
         "operations": {
-          "finding": "同一作者8月两次反馈构建日志及部署状态问题，说明已有资源带来重复维护需求；这些issue本次仍显示Open，未取得本人恢复确认。",
+          "finding": "同一作者8月两次反馈构建日志及部署状态问题，说明已有资源带来重复维护需求；这些issue仍显示Open，未取得本人恢复确认。",
           "sourceIds": [
             "CR31-C-modelscope-03",
             "CR31-C-modelscope-04"
@@ -3667,7 +3027,7 @@
           ]
         },
         "commercial": {
-          "finding": "旧官方宣传记录xGPU共享资源与实验API免费条件；现行动态说明此次核查为空。阿里云Model Studio有独立按量计价文档，不能将其收入归到魔搭社区，也不能将历史免费额度写成当前永久权益。",
+          "finding": "旧官方宣传记录xGPU共享资源与实验API免费条件；现行动态说明核查为空。阿里云Model Studio有独立按量计价文档，不能将其收入归到魔搭社区，也不能将历史免费额度写成当前永久权益。",
           "sourceIds": [
             "CR31-C-modelscope-05",
             "CR31-C-modelscope-06",
@@ -3715,7 +3075,7 @@
             },
             {
               "date": "2026-09-11",
-              "event": "本次原issue仍显示Open；可读正文未含本人恢复结果。"
+              "event": "原issue仍显示Open；可读正文未含本人恢复结果。"
             }
           ],
           "observedOutcome": "确认有实际部署受阻自述和被分派的issue，未确认任务完成。",
@@ -3764,7 +3124,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "模型/工作流/演示分开说明输入、许可、依赖、版本和可运行状态。",
+          "把模型、工作流、演示及学习材料组织成可追踪的专题，记录资源查阅、更新回看与讨论；运行仅作为一条使用路径。",
           "为发布者设计构建、运行、可访问三项检查及故障回传。"
         ],
         "prerequisites": [
@@ -3935,8 +3295,8 @@
         {
           "file": "site/lib/business-data.json",
           "before": "官方xGPU文档的搜索索引提到向创空间开发者提供免费GPU资源，但未取得完整正文",
-          "after": "保留；补此次核查动态文档仍为空，旧发布文章转向社区首页，历史Beta与额度不充当当前规则。",
-          "reason": "此次未取得足以提高现行权益证据强度的资料。",
+          "after": "保留；补核查动态文档仍为空，旧发布文章转向社区首页，历史Beta与额度不充当当前规则。",
+          "reason": "现有记录未取得足以提高现行权益证据强度的资料。",
           "sourceIds": [
             "CR31-C-modelscope-05",
             "CR31-C-modelscope-06",
@@ -3988,7 +3348,7 @@
           ]
         },
         "commercial": {
-          "finding": "当前准则确认高级推广与“富可敌国”订阅称号有关，也明确收益暂不公布。此次公开订阅页返回空内容，未复核当前价格；旧材料中的登录态价格不能写成此次公开核验所得。交易参与者和推广者的收入也不能归为社区收入。",
+          "finding": "当前准则确认高级推广与“富可敌国”订阅称号有关，也明确收益暂不公布。该次公开订阅页返回空内容，未复核当前价格；旧材料中的登录态价格不能写成该次公开核验所得。交易参与者和推广者的收入也不能归为社区收入。",
           "sourceIds": [
             "CR31-C-linuxdo-01",
             "CR31-C-linuxdo-04"
@@ -4039,7 +3399,7 @@
               "event": "提问者确认问题已解决，并指出腾讯云服务器不能直接访问站点；随后另一回复补充备用端点链接。"
             }
           ],
-          "observedOutcome": "公开原帖中有提问者明确确认恢复；确认的是本次连通性问题，未公开完整修复配置。",
+          "observedOutcome": "公开原帖中有提问者明确确认恢复；确认的是连通性问题，未公开完整修复配置。",
           "unresolved": [
             "不能将后出现的备用端点建议归因为已采用的修复方案",
             "无长期稳定性或使用留存回访"
@@ -4062,7 +3422,7 @@
           "timeline": [
             {
               "date": "2026-02-17",
-              "event": "当前帖标题标注此日更新；这是标题中的日期，不是本次核到的最后编辑时间。"
+              "event": "当前帖标题标注此日更新；这是标题中的日期，不是核到的最后编辑时间。"
             },
             {
               "date": "2026-09-07/2026-09-10",
@@ -4091,7 +3451,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "让求助内容写明任务、环境、错误和已尝试动作；保留提问者的结果确认",
+          "让有内容的讨论持续可找、可回应和可更新；统计阅读、问题跟进与交流，采纳答案是专项结果而非所有读者的活跃条件。",
           "为讨论、交易和推广设置明确归属；将权限等级与专业可信度分开表达",
           "知识维护验收看修正和复用价值，而不是编辑次数"
         ],
@@ -4158,7 +3518,7 @@
           "accessedAt": "2026-09-11",
           "type": "official-subscription-page",
           "accessResult": "empty-body",
-          "supports": "此次公开响应为空，当前价格无法复核；没有尝试登录或绕过访问。"
+          "supports": "该次公开响应为空，当前价格无法复核；没有尝试登录或绕过访问。"
         }
       ],
       "searchLog": [
@@ -4183,8 +3543,8 @@
         {
           "file": "lib/business-data.json",
           "before": "旧材料保留 2026-09-09 登录态订阅价格观察。",
-          "after": "保留为 archived 历史观察；此次公开 /s 为空，当前价格未复核。",
-          "reason": "登录态旧快照与此次公开可见性不能混同。",
+          "after": "保留为 archived 历史观察；该次公开 /s 为空，当前价格未复核。",
+          "reason": "登录态旧快照与该次公开可见性不能混同。",
           "sourceIds": [
             "CR31-C-linuxdo-01",
             "CR31-C-linuxdo-04"
@@ -4233,7 +3593,7 @@
           ]
         },
         "operations": {
-          "finding": "自托管 Agent 二进制输出问题已有公开报告、报告者自行验证与关联 PR 42126，但截至此次读取 PR 仍 Open、等待审核，不能写成主线或发行版已修复。Cloud 检索问题 42087 仍 Open，未见可读的确认解决回复。",
+          "finding": "自托管 Agent 二进制输出问题已有公开报告、报告者自行验证与关联 PR 42126，但截至读取 PR 仍 Open、等待审核，不能写成主线或发行版已修复。Cloud 检索问题 42087 仍 Open，未见可读的确认解决回复。",
           "sourceIds": [
             "CR31-C-dify-03",
             "CR31-C-dify-04",
@@ -4304,12 +3664,12 @@
             },
             {
               "date": "2026-09-11",
-              "event": "原问题关联该 PR；此次读取问题和 PR 都仍 Open，PR 等待审核。"
+              "event": "原问题关联该 PR；读取问题和 PR 都仍 Open，PR 等待审核。"
             }
           ],
           "observedOutcome": "存在明确失败任务、自报的部署验证和待审代码变更；尚无上游合并或发行版交付证据。",
           "unresolved": [
-            "报告者自验未由本次研究复现",
+            "报告者自验未由研究复现",
             "PR 与问题报告者不是同一人，不能混写贡献归属",
             "未见合并、发行或原用户在正式版本的结果确认"
           ],
@@ -4336,7 +3696,7 @@
             },
             {
               "date": "2026-09-11",
-              "event": "此次公开读取问题仍 Open，未见可读的结果确认或官方解决回复。"
+              "event": "该次公开读取问题仍 Open，未见可读的结果确认或官方解决回复。"
             }
           ],
           "observedOutcome": "已确认存在具体用户报告和调参过程；尚不能判断根因、覆盖范围或是否已经由其他渠道解决。",
@@ -4357,7 +3717,7 @@
       ],
       "adoption": {
         "usableNow": [
-          "以真实输入到最终输出交付作为工作流案例验收，保留版本、配置条件和失败记录",
+          "将应用用途、方法说明、版本变化与问题过程关联，支持持续阅读、交流和复用；完整输出验收用于承诺可运行的案例。",
           "将问题报告、候选修复、待审 PR、合并与已发布分别记录",
           "拆分工作区订阅、模型调用、基础设施与实施服务成本"
         ],
@@ -4430,7 +3790,7 @@
           "accessedAt": "2026-09-11",
           "type": "original-contribution-review",
           "accessResult": "readable",
-          "supports": "独立贡献者提交待审修改；此次读取仍 Open，未合并。"
+          "supports": "独立贡献者提交待审修改；读取仍 Open，未合并。"
         },
         {
           "id": "CR31-C-dify-05",
@@ -4477,7 +3837,7 @@
         {
           "file": "lib/audience-research.json / lib/representative-evidence.json",
           "before": "Agent 二进制输出案例已有候选修复，但尚未核上游合并与用户回访。",
-          "after": "补充当前可追踪的 PR 42126：由另一贡献者提交，截至此次读取仍 Open、等待审核；报告者部署自验与正式修复分开。",
+          "after": "补充当前可追踪的 PR 42126：由另一贡献者提交，截至读取仍 Open、等待审核；报告者部署自验与正式修复分开。",
           "reason": "已有明确维护事件，成熟度停留在待审变更；不能把自验、关联 PR 和上游发布合成一次完成。",
           "sourceIds": [
             "CR31-C-dify-03",

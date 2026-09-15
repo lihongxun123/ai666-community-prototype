@@ -5,7 +5,7 @@ export const publicDataMethod: DataEssay[] = [
     title: '统计对象与估算方法',
     paragraphs: [
       "把可核对月份的网站访问次数作为横向比较的主指标。Semrush 的 Traffic Analytics 根据点击流样本和模型估算网站流量；Similarweb 也明确区分访问次数与去重访客。一个人多次回来会产生多次访问，网站 Visits 不能换成注册人数、月活用户或付费人数。",
-      '公开数据只能覆盖对应网站和指标的统计范围。工具在独立 App、API、私有部署或第三方平台中的使用，需要另一组数据；内容社区的阅读与生成工具的操作也不构成相同任务。本报告保留 18 家的既有分类，数值对照用于缩小研究范围，不作为经营优劣排名。'
+      '公开数据只能覆盖对应网站和指标的统计范围。工具在独立 App、API、私有部署或第三方平台中的使用，需要另一组数据；内容社区的阅读与生成工具的操作也不构成相同任务。本报告保留 15家的既有分类，数值对照用于缩小研究范围，不作为经营优劣排名。'
     ],
     refs: [
       { title: 'Semrush：Traffic Analytics 的指标与数据来源', url: 'https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview' },

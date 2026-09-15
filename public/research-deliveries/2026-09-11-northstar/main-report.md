@@ -16,15 +16,12 @@
 
 ## 1. 目标人群与平台参照
 
-多元拾光以目标用户规模与持续活跃为目标。现阶段比较视觉兴趣与创作、应用资源实践、学习交流三类候选人群；18个平台按五类内容和使用方式提供参照，7家代表覆盖全部类别。平台分类用于比较机制，目标人群仍需由实际消费、参与和回访确定。
+多元拾光以目标用户规模与持续活跃为目标。现阶段比较视觉兴趣与创作、应用资源实践、学习交流三类候选人群；15个平台按五类内容和使用方式提供参照，7家代表覆盖全部类别。平台分类用于比较机制，目标人群仍需由实际消费、参与和回访确定。
 
 ### 全部平台分类
 
 | 参照用途 | 平台 | 比较的问题 |
 | --- | --- | --- |
-| 流程与资源复用 | LiblibAI、RunningHub、吐司 / Tensor.Art、Civitai、SeaArt | 作品到模型、工作流或应用的连接；输入、依赖、版本和使用条件；资源更新、问题回应与收益条件 |
-| 创作工具与作品 | OpenArt、即梦 AI、可灵 Kling AI、Midjourney、Leonardo.Ai、Runway | 作品发现与制作入口；参考、参数、项目和再次使用；专业案例、作者合作与订阅条件 |
-| 兴趣创作与参与 | NightCafe | 创作题目与投稿入口；评审、回应和结果呈现；活动频率、主持与持续组织工作 |
 | 学习与讨论 | WaytoAGI 通往 AGI 之路、Datawhale、LINUX DO | 知识、教材与讨论的组织方式；作者、编辑、领学、答疑和管理分工；反馈修订、成员参与及福利的作用 |
 | 开发资源与应用 | Hugging Face、魔搭 ModelScope、Dify 社区 | 资源说明与试用入口；配置、依赖、导入和部署条件；版本协作、问题处理与运行成本 |
 
@@ -35,7 +32,6 @@
 | 流程与资源复用 | LiblibAI | 同时呈现效果模板、模型和工作流，适合比较内容如何接到在线使用。 | 商品精修与背景替换案例要求用户准备商品图、背景图并处理遮罩，再按所选模型运行。案例说明一种具体制作任务；现有材料不足以确定这类任务占全站使用的比例。 首页图片模型栏目以效果封面、任务标题和模型标签组织卡片；模板详情补充参考图数量、推荐模型、示例与许可。较复杂的工作流另展示输入要求、模块说明和版本差异。 | 从效果卡片进入详情，判断所需素材、模型和许可，再使用模板或工作流。商品精修样例有从SDXL到FLUX的版本链接；是否能将自己的素材稳定复现，仍需实际运行检验。 |
 | 流程与资源复用 | RunningHub | 同一方法可作为应用或节点工作流使用，且公开作者激励与执行计费规则。 | 虚拟试衣与商品替换样例让用户提供人物或场景图、商品图及修改说明。另一类任务是将已有ComfyUI流程搬到云端，处理缺失模型或节点后继续运行，技术要求有所不同。 首页按电商等任务组织内容，卡片先展示效果、标题与作者。工作流详情提供原图对照、更新时间和说明，并列应用与工作流入口；封装应用的详情另显示计费提示和运行入口。 | 用户先按任务找效果，从详情选择直接填写应用输入，或打开工作流检查节点。前者减少需要理解的设置，后者保留修改方法的入口；下载流程仍可能需要补齐模型与节点依赖。 |
 | 创作工具与作品 | Runway | 公开案例和课程之外，还有项目与工作区内复用，可区分展示和制作。 | Miro活动视频案例涉及为不同场地制作镜头、适配投影尺寸及多个市场。任务包含生成、筛选和后续制作，不能将一次生成等同于成片，也不能把官方精选客户视为典型用户。 公开案例讲任务背景和制作过程；课程卡片先列学习目标、模块数与难度，详情展开技能和学习入口。工作区内的App和Projects则承载输入配置、会话、流程与素材。 | 案例和课程帮助读者理解用途，进入工具后再组织生成与修改。工作区成员可按权限使用封装的App，或在项目中继续处理会话和资产；公开浏览与内部项目使用是不同路径。 |
-| 兴趣创作与参与 | NightCafe | 作品生成与挑战、主持、评审相连，能观察兴趣参与如何形成内容供给。 | 参与者按主题创作图片、提交挑战并评审他人作品；Promptle要求逐步修改图片以接近目标。公开作者访谈还出现主持和分享方法的活动，不能由此推定全部用户的参与方式。 作品条目承载参赛图片与评审结果，挑战详情说明主题、模型限制和时段。Promptle成绩卡展示起点、目标、结果和得分；提示步骤需参与者同意，并在题目结束后开放。 | 成员游戏默认凭链接加入，公开聊天室游戏可从发现入口进入。参与者按题面准备作品，经历投稿、评审和结果阶段；每日题目有更新节奏，但现有资料没有实际完成率。 |
 | 学习与讨论 | Datawhale | 以课程、练习和协作维护承载内容，提供生成工具社区之外的比较对象。 | 公开问题包括运行RAG课程时的鉴权、模型版本、Windows环境及中文检索故障。学习者要把示例跑通并理解修改方法；这些具体障碍不能用于推断其职业或学习完成比例。 课程以讲义、Notebook、录播和文本整理承载过程，练习另有作业入口与完成记录。提问指南要求环境、完整错误和尝试结果；现有材料不支持把所有课程概括为统一首页卡片。 | 从课程仓库进入章节材料，配置环境后编码练习，按要求提交作业或学习记录；遇到障碍时补充环境和报错再提问。阶段共学结束后仍可自学，答疑资源是否延续要另看安排。 |
 | 学习与讨论 | LINUX DO | 讨论、答疑和持续维护帖子是主要承载方式，商业入口与普通参与分开。 | 具体讨论涉及API首字延迟、应用接入失败、提示词修改与效果回传。接入问题中可见答案标记及提问者确认；这些记录支持问题确实被提出，不等于已独立复现解决办法。 首页按最新、未读和热门等入口组织话题行，显示标题、分类、回复和最近活动。详情用首帖、楼层引用与时间轴展开；可长期维护的Wiki帖还保留更新与编辑历史。 | 读者从分类或话题列表定位问题，阅读背景和楼层中的补充，再沿引用查公告或方法。已解决标记、收藏和通知选项支持继续跟进；是否实际收到通知、是否反复回来尚未核验。 |
 | 开发资源与应用 | Hugging Face | 模型、数据、专题集合与在线应用在同一平台相连，适合比较开发资源如何被发现、使用和持续维护。 | 使用者寻找模型与数据，或直接打开他人部署的演示；作者则要把应用交给访客并维护环境。公开试衣和额度讨论说明两类任务存在，组织采购画像主要来自官方产品说明。 模型卡交代用途、限制和许可，Collection按主题关联资源，Space直接承载应用。H3 Arena卡片展示用途和运行状态，详情有应用、Files与Community入口，各自承载不同材料。 | 用户可从任务目录或专题进入资源，查看说明后试用应用或按条件复制。公开应用与源码开放是两种权限；复制后仍需准备私有凭证、模型权限、算力和依赖，不能只带走展示画面。 |
@@ -45,7 +41,6 @@
 | LiblibAI | 作者发布方法、更新版本并邀请返图反馈，平台提供展示和运行入口。特定会员工作流计划另约定授权、推广和收益分配；没有证据表明全部作者均受该计划约束或持续供稿。 | 平台提供模型与工作流的云端使用入口，并另设API服务。方法由作者编排，底层模型与依赖各有条件；使用平台工具不自动取得所有相关素材和模型的商业使用权。 | 付款对象包括个人生成会员、工作流许可和API服务，付款方可分别是使用者、资源购买者或接入方。现有协议与邀请奖励确认收费安排，未披露各项实际收入和付费人数。 |
 | RunningHub | 作者上传应用和工作流、解释输入并更新方法，平台组织任务专区与推荐。公开激励规则将有效运行、收藏和原创性纳入奖励；刷量判定、实际结算及持续供给规模尚未取得。 | 平台提供ComfyUI云端执行及API接入，作者负责流程编排与依赖说明。公开求助记录显示有人仍需自行排查模型和输入节点；云端托管没有消除全部配置与结果整理工作。 | 个人为运行资源或会员权益付费，接入方为API执行付费。工作流计算时长与标准模型按图片、秒或次数计费分别定价；2026-09-09读取的价格规则不能用于计算实际收入。 |
 | Runway | 官方选择客户案例并组织创作伙伴与推荐合作，创作者自行探索与发布。App维护者回到源流程更新方法，项目成员管理素材；创作伙伴计划没有固定供稿时间或创作量承诺。 | 自营制作工具、项目管理和API是产品的一部分，工作流可封装为简化操作界面。Projects在成员范围内共享，外部默认私有；公开案例并不附带完整、可复制的客户项目文件。 | 个人按订阅及额度使用制作能力，企业方案另行商议，开发者按API用量付费。2026-09-09读取的价格页区分这些对象；套餐含量和生成时长都不能直接作为交付价值或收入。 |
-| NightCafe | 成员可主持主题游戏并设置规则，其他成员投稿和评审；平台维护每日题目、阶段推进、连续记录及异常票处理。题目、作品和评价分别需要供给，功能存在不代表主持工作已稳定。 | 平台将图像生成与挑战、聊天室和作品管理放在同一产品内。免费与付费额度对应不同模型和队列条件；个人可能继续参与讨论却改用外部工具生成，两类行为不能合并判断。 | 个人可购买PRO方案与生成额度，付费涉及模型范围、速度和作品管理等权益。2026-09-09读取的规则区分Fast与Relax额度；奖励积分不是现金收入，实际付费率未披露。 |
 | Datawhale | 公开协作文档分别安排课程入口、作业、直播、教材反馈与学习进度。贡献者整理材料并讨论修订，志愿助教引导排查；岗位说明不能证明当前人数、响应速度和长期维护工时。 | 内容主要通过开源仓库、Notebook和外部模型或计算环境使用。未确认存在与这些课程统一绑定的自营收费生成服务；合作方可提供实践资源，学习者仍需处理环境与依赖。 | 2026年6月的ROCm共学记录确认合作方提供GPU等资源，未取得学员付费、现金赞助或社区收入资料。两期活动均已结束，历史资源支持不能直接折算成当期营业收入。 |
 | LINUX DO | 提问者补充条件和结果，回复者给办法，Wiki编辑者维护可积累的说明。社区管理另处理推广规则、邀请与异常刷量；维护依赖多种成员贡献，现有资料没有各角色的持续供给量。 | 站点还提供Connect身份接入和Credit积分服务，模型与API服务可由外部经营者提供。商家推广帖和用户接入讨论不能作为社区自营生成服务或自营中转业务的证据。 | 推广者可为高级推广权限订阅，普通阅读和答疑属于另一种参与关系。2026-09-09登录页显示600美元月价；没有实际购买记录，商家的销售额也不能算作社区收入。 |
 | Hugging Face | 资源作者维护说明、文件和依赖，使用者通过讨论或修改请求反馈。答疑者曾提供Gradio适配演示；2026-09-11复核该应用显示暂停，原求助者仍无成功确认。 | Spaces承载应用运行，Inference Endpoints与Inference Providers提供推理服务，Hub承载模型、数据和版本。应用可由作者开发，平台提供托管与协作；可交互内容仍需要运行和维护资源。 | 收费包括个人订阅、按量计算与存储、组织席位和企业合同，付款方可能是使用者、作者或团队。计费文档区分订阅与计算费用；价格和功能不能换算成收入或付费人数。 |
@@ -62,9 +57,7 @@
 
 [How Miro Produced Its Keynote Video for Four Global Markets with Runway](https://runway.com/news/customers/miro)；[Publishing Workflows as Apps](https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps)；[Introduction to Projects](https://help.runwayml.com/hc/en-us/articles/52913050653203-Introduction-to-Projects)；[Creative Partners Program](https://runway.com/creative-partners-program)；[Apply to the Runway Affiliate Program](https://runway.com/affiliate-program)；[Runway Pricing](https://runway.com/pricing)；[API Pricing & Costs](https://docs.dev.runwayml.com/guides/pricing/)
 
-**NightCafe**：挑战与Promptle主要依据官方规则，尚未完整实操。作者访谈是精选个案，外部工具迁移经历发生于2023年；现有材料不能判断奖励带来的净增活跃或今天的用户分布。
 
-[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)；[Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle)；[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)；[Streaks & Badges](https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges)；[The rider](https://www.reddit.com/r/aiArt/comments/172lvb0/)；[NightCafe Artist Spotlight: Inside gullyDJ's Weird World](https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj)；[NightCafe PRO plans — what you get and which plan to choose](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)；[Fast Credits vs Relax Credits](https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits)
 
 **Datawhale**：作业要求与公开求助能说明课程如何被使用，尚缺报名到完成、再次参加的去重人数。部分课程协作页未标更新日期；旧课程入口可访问，不代表目前仍配有相同助教和资源。
 
@@ -80,7 +73,7 @@
 
 吐司与Tensor.Art作为一个关联产品组，两站规则、权益与实操结果分别记录。分类用于确定比较问题，不代表行业份额或平台优劣。
 
-[18个平台对照](attachments/research-brief.json) · [内容与工具关系](attachments/research-framework.md)
+[15个平台对照](attachments/research-brief.json) · [内容与工具关系](attachments/research-framework.md)
 
 ## 2. 持续消费与参与价值
 
@@ -117,7 +110,7 @@ Datawhale的课程与问题记录显示，学习者会实际运行教材并反�
 
 [OpenArt公开讨论：专辑MV制作及同账号后续](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；[OpenArt Director：2分55秒项目失败回复](https://www.reddit.com/r/generativeAI/comments/1ufo0g7/openart_director/)；[What I learned making a 24-shot psychological thriller with OpenArt Director](https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/)；[all-in-rag课程README](https://github.com/datawhalechina/all-in-rag)；[Windows激活环境问题 #105](https://github.com/datawhalechina/all-in-rag/issues/105)
 
-55条任务画像中，50条不足5个可区分用户观察点，18条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。
+46条任务画像中，42条不足5个可区分用户观察点，16条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。
 
 [完整用户画像与产品价值](attachments/audience-research.md) · [全国用户规模与分层](attachments/china-ai-users.md)
 
@@ -183,11 +176,8 @@ Runway课程先说明目标、难度和章节，课程按制作顺序编排内�
 
 ### 作品挑战组织同题创作，问题帖组织连续回应
 
-NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多个参与者围绕同一题目产出作品。LINUX DO问题帖从个人困扰开始，经回复逐步补充环境、尝试和结果；后来者阅读的是处理记录，不是同一题目的作品排行。
 
-**NightCafe：挑战题面与赛后材料**：社区挑战规则规定主题、公开范围、阶段和评分/排序方式。Promptle另提供起始图、目标图、有限步数与成绩卡；提示步骤默认不公开，须作者同意，并在当天题目结束后展示。成绩卡不是完整制作过程，Promptle仍标Alpha。本例无配对截图，依据官方规则；没有亲自参赛、评分或验证持续参与效果。
 
-[Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)；[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)；[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)；[Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle)
 
 **LINUX DO：问题、追问与处理结果**：知识库管理话题的配对截图显示，列表以标题、分类和最近活动组织，详情保留问题背景、已考虑的方法及楼层回复；它只覆盖首屏，不能证明问题已解决。另一个NEWAPI接入问题样本在登录核对中可见首帖采纳摘要、回复追问与提问者自报解决，两条话题不能混为同一个案例，也没有独立复现该解法。
 
@@ -195,7 +185,6 @@ NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多�
 
 分析：挑战需要统一题面和评审条件，才能让作品被比较，作品卡应突出题目、阶段和结果。问题讨论开始时可能连问题条件都不完整，列表应突出问题标题和进展，详情保留引用、追问和作者反馈。两者的“参与”不能混为同一种价值：投票主要表达偏好，排查回复需要解释适用条件。
 
-作品与讨论可以交叉。LINUX DO也有提示词帖子，成员通过回复上传自己的图片；它保留在同一话题中，没有统一运行环境或核验每张图是否使用首帖方法。NightCafe赛后公开步骤则能补充学习内容。因此可以共享评论与材料关联能力，不能把所有返图都算复现成功，也不能把所有讨论都改成竞赛。
 
 多元拾光可借鉴：若提供练习与问题讨论，分别组织：作品练习页包含题目、输入素材、限制、提交示例和反馈；问题页包含目标、环境/版本、失败表现、已尝试办法及后续结果。作品可关联练习，问题可关联具体画布；采纳与点评各自标明作用。平台维护账号的投稿、回答和自然用户行为分开记录。
 
@@ -312,7 +301,7 @@ Running状态只能说明页面当时报告的运行状态。页面的投票数�
 
 七家代表平台的定向案例复核。记录普通使用者、作者、维护者和官方精选材料，保留同一人的连续行为，不把多篇帖子计为多人。
 
-案例独立存档，未并入原55条画像的观察点计数。没有平台总体抽样，不计算成功率、留存率或社区收入贡献。
+案例独立存档，未并入原46条画像的观察点计数。没有平台总体抽样，不计算成功率、留存率或社区收入贡献。
 
 #### LiblibAI
 
@@ -430,7 +419,6 @@ RunningHub 站内工作流作者；原始用户问题与上游插件作者记录
 - 2026-01-27：发布第1集，称40集已制作完成，计划连续发布；在回复中确认声音由两名团队成员表演。这里的40集完成仍是本人自述。
 - 2026-02-02：同一账号发布第5集，说明表演输入Runway的Act及后续Act-2，并愿意答复制作问题、询问能否分享幕后过程。
 - 2026-02-15：同一账号在第14集帖子中再次说明Runway用于表演，并继续寻找观众。本次打开时，跨贴的视频入口显示已被版主移除，作者说明仍可读。
-- 绝对发布日期未显示；2026-09-11读取：制作人公开幕后说明及可读视频转录展示起始图、表演声音、替换声音和最终输出；另一篇本人说明列出Midjourney、Runway和Hailuo的组合。未播放视频验质。
 
 观察结果：可以确认同一项目在不同日期持续发布与解释过程，制作人明确自述已完成40集。没有逐集观看、核对工程文件或验证所有集数现在均能访问，不能把发帖持续时间当作每天使用Runway的日志。
 
@@ -442,7 +430,6 @@ RunningHub 站内工作流作者；原始用户问题与上游插件作者记录
 - [The Finch Files - Reality Bleed - Episode 5/40](https://www.reddit.com/r/runwayml/comments/1qu66l2/the_finch_files_reality_bleed_episode_540/)。发布/更新：2026-02-02；查阅：2026-09-11。同一账号后续发布、表演输入Runway及Act/Act-2的本人说明，和分享幕后方法的意愿。公开正文读取；日期由同一URL的索引显示。
 - [The Finch Files | She Never Existed | Ep 14/40](https://www.reddit.com/r/runwayml/comments/1r5leo9/the_finch_files_she_never_existed_ep_1440/)。发布/更新：2026-02-15；查阅：2026-09-11。同一账号继续发布第14集、重申完成及寻找观众；正文可见跨贴被移除标记，因此不作为可播放成片核验。日期由同一URL的索引显示。
 - [AI-Driven Performance Capture in The Finch Files](https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-runwayml-activity-7420595408013406208-4UvV)。发布/更新：未显示绝对发布日期；查阅：2026-09-11。制作人本人公开说明及视频转录，支持输入图、表演、替换声音和输出的过程线索。未播放或独立验证视频。
-- [The Finch Files | Episode 1: The Historian (1/40)](https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-innovation-activity-7421597817275723776-lNTZ)。发布/更新：未显示绝对发布日期；查阅：2026-09-11。制作人列出Midjourney、Runway、Hailuo的组合，避免将整部作品归功于单一平台。
 
 ##### 客服建议带来了重试，用户仍未确认任务完成
 
@@ -468,19 +455,16 @@ RunningHub 站内工作流作者；原始用户问题与上游插件作者记录
 
 商业化判断：既有订阅及API价格资料说明收费对象，本次没有补充收入数据。独立团队持续使用与发帖不证明社区促成购买；失败帖对套餐的自述也不是账单。社区对获客、续费或收入的增量贡献仍无可计量证据。
 
-#### NightCafe
 
 精选作者将创作延伸为主题和模板；另一位参与者表达退出，同伴表示接手。 模板实际采用、活动交接、长期回访及报酬未知；活动日期有官方文字冲突。
 
 ##### 每日创作习惯延伸为主题主持和模板供给
 
-NightCafe官方精选作者访谈；受访者为混合媒介创作者，也有艺术治疗相关职业背景。只采用其创作和参与自述，不据此主张健康效果。两篇官方文章讲述同一人，不能计为两个独立用户。
 
 任务：把个人故事与感受转为图片，将每日挑战作为固定创作练习，并为其他参与者提供主题与起始模板。
 
 问题：如何持续找到值得表达的题目，并在模型变化后保留个人表达；该访谈没有呈现一次明确的技术失败及修复过程。
 
-- 2024-08-15（2026年访谈回顾）：受访者自述这天开始使用NightCafe，并因第一次创作获得的表达空间继续使用。不是2024年采集的独立行为记录。
 - 2026-08-15（访谈显示的发布日期）：本人称每日挑战已进入晨间创作日常；官方文章展示其作品并列出三个模板入口，说明其参与My Sacred Space主题接管。
 - 2026-08-17（另一篇官方文章显示的发布日期）：后续官方文章继续介绍该主题与三条模板入口。但两文分别将接管日期写为8月17日和8月15日，无法据此确定活动实际发生日。
 
@@ -490,8 +474,6 @@ NightCafe官方精选作者访谈；受访者为混合媒介创作者，也有�
 
 内容与运营分析：兴趣内容可以从个人作品延伸到主题、参与作品和可再用模板，活动结束后仍保留进入方法。这里证明的是一种供给组合存在，不证明模板带来回访增长。
 
-- [Meet Monika Seelmann: Art Therapist, Storyteller, NightCafe True North](https://nightcafe.studio/blogs/blog/meet-monika-seelmann-art-therapist-storyteller-nightcafe-true-north)。发布/更新：2026-08-15；查阅：2026-09-11。官方精选访谈中的入驻日期回顾、每日创作自述、主题与三个模板链接。正文把活动日写为8月17日；链接读取失败，未确认模板执行或参与结果。
-- [Finding a Sacred Space Through AI Art: How an Art Therapist Uses AI Art for Reflection, Creativity, and Wellbeing](https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy)。发布/更新：2026-08-17；查阅：2026-09-11。同一作者的主题及模板供给说明；正文把活动日写为8月15日，与另一篇冲突。仅用于参与机制与日期核对，不采用健康效果推断。
 
 ##### 投稿受阻后，创作者退出参与，同伴表示继续主持
 
@@ -501,7 +483,6 @@ NightCafe官方精选作者访谈；受访者为混合媒介创作者，也有�
 
 问题：作者称完成调整后上传被过滤器拒绝，认为反复调整和担心处罚已影响参与意愿。未取得审核记录，不能据此认定平台误判。
 
-- 2026-01-10（主帖日期）：作者公布作品和投稿受阻经历，表示不再参与NightCafe挑战，包括原来自己主持的活动，并希望其他主持人继续维持。
 - 帖内后续回复；绝对日期未取得：一名同伴表示会继续运行挑战，同时称已关闭自己的一个频道；作者则自述已把大部分剩余积分赠给同伴。这里不记录个人余额或具体转赠金额。
 - 帖内后续回复；绝对日期未取得：同伴感谢收到积分并肯定作者此前分享方法。另一位主持人描述创作之外还要花时间投票与互动；这说明主持工作存在额外负担，但没有工时测量。
 
@@ -665,15 +646,12 @@ NightCafe官方精选作者访谈；受访者为混合媒介创作者，也有�
 
 ### 编选、合作与成员贡献需要不同的交付约定
 
-Runway提供作品频道和策选合作机会；NightCafe允许成员主持挑战；LINUX DO可见投稿、成员整理和管理者精选。这些做法分别增加可见度、工具使用机会或参与空间，未必附带固定稿量和维护时限。
 
 **Runway**：After Light作品页呈现影片、署名与返回TV入口，体现编选和展示。Creative Partners Program提供工具权益、早期访问与合作机会，并明确不要求特定时间或创作投入，因此不能按入选作者数推定稳定供稿。
 
 [Runway Watch — After Light](https://watch.runwayml.com/after-light)；[Creative Partners Program](https://runway.com/creative-partners-program)
 
-**NightCafe**：成员挑战由主持人设主题、资格与阶段，参与者投稿和评审；公开聊天室的游戏可进入发现入口。平台提供功能，选题、聚集参与者和解释评审仍是具体组织工作。
 
-[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)；[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)
 
 **LINUX DO**：公开邀请函鼓励作者提供完整内容、为社区读者改写介绍，并由成员协助整理、管理者精选。登录样本可见提问者回传结果、回复者提供依据和Wiki修订，参与者补充的材料不同。
 
@@ -724,19 +702,17 @@ LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适�
 使用者可能参与排错、分享适配材料，也可能取消订阅后仍愿贡献资源。维护、创作和消费并非始终由同一激励驱动。
 
 - **RunningHub**：求助者称跑通后分享适配JSON，另一人继续提出新LoRA问题；新问题完成仍未知。
-- **Civitai**：公开记录中出现取消会员但仍希望贡献LoRA的表述；意愿不能当成后续实际上传量。
 
 依据：同一主题内的过程和公开表述；与已完成交易或贡献分别记录。
 
-[help me use runninghub for workflow so confused — Discussion #176](https://huggingface.co/RuneXX/LTX-2.3-Workflows/discussions/176)；[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)；[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 合作规则说明可以约定什么，版本记录说明出现过维护工作；尚不能据此判断作者长期履约率、平台人效或活动带来的留存增量。
 
-[18个平台的运营机制](attachments/platform-operations.md) · [作者与维护记录](attachments/content-research.json)
+[15个平台的运营机制](attachments/platform-operations.md) · [作者与维护记录](attachments/content-research.json)
 
 ## 5. 工具投入与平台经营机制
 
-18个样本中，15家有平台内创作、开发或运行能力资料。收费与补贴规则用于解释它们如何支持工具、作者和运营，不能据此要求多元拾光社区承担收入指标。MakeNow和API按能否增加目标用户的内容价值、参与机会和再次访问决定投入；调用量与付款另行观察，成本设上限。
+15个样本中，15家有平台内创作、开发或运行能力资料。收费与补贴规则用于解释它们如何支持工具、作者和运营，不能据此要求多元拾光社区承担收入指标。MakeNow和API按能否增加目标用户的内容价值、参与机会和再次访问决定投入；调用量与付款另行观察，成本设上限。
 
 | 数据类型 | 可用于比较 | 不能据此得出 |
 | --- | --- | --- |
@@ -751,13 +727,12 @@ LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适�
 
 | 执行关系 | 数量 | 平台 |
 | --- | --- | --- |
-| 平台创作执行 | 12 | LiblibAI、RunningHub、吐司 / Tensor.Art、Civitai、SeaArt、OpenArt、NightCafe、即梦 AI、可灵 Kling AI、Midjourney、Leonardo.Ai、Runway |
 | 平台开发与运行 | 3 | Hugging Face、魔搭 ModelScope、Dify 社区 |
 | 同品牌关联API | 1 | WaytoAGI 通往 AGI 之路 |
 | 讨论与外部工具 | 1 | LINUX DO |
 | 学习与合作实践 | 1 | Datawhale |
 
-- 这18家是按研究需要选择的样本，不用于估算中国或全球AI社区的工具化比例。
+- 这15家是按研究需要选择的样本，不用于估算中国或全球AI社区的工具化比例。
 - 平台有执行能力、执行服务收费、社区促进付款是三个不同问题；15家的计数只回答第一项。
 - 图像、视频、GPU时间、应用工作区、许可和会员均可能收费，不能统一称为出售文本Token。
 - 平台入口、自研模型、外部供应商和成员资源分别记录；工具收入也不直接等于社区贡献或利润。
@@ -766,13 +741,10 @@ LiblibAI资源随模型路线改版，RunningHub作者补充说明与插件适�
 LiblibAI：[会员与生成权益](https://insight.liblib.art/membershipInvitationBonus)；[原创工作流授权销售协议](https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement)；[API服务协议](https://www.liblib.art/activities/API-Service-Agreement)
 RunningHub：[共享API计价](https://www.runninghub.cn/enterprise-api/sharedApi)；[创作者奖励规则](https://www.runninghub.cn/creator-reward)；[可运行应用样本](https://www.runninghub.cn/ai-detail/1966722305902718977)
 吐司 / Tensor.Art：[吐司创作者激励调整](https://tusi.cn/articles/1000707189326777005)；[Tensor.Art创作者政策调整](https://tensor.art/articles/1021600128873589993)；[吐司Canvas更新](https://tusi.cn/updates)
-Civitai：[官方实现文档：生成与引导](https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md)；[官方实现文档：资源商业化](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；[官方实现文档：会员](https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md)
 SeaArt：[基础页面与内容类型](https://docs.seaart.ai/guide-1/1-seaart-ai-basic-page)；[模型与Remix](https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-6-models)；[模型训练说明](https://docs.seaart.ai/guide-1/3-advanced-guide/3-2-lora-training-advance/image-training/quick-training-guide)
 OpenArt：[当前工作台](https://openart.ai/home)；[价格与权益](https://openart.ai/pricing)；[OpenArtist合作计划](https://openart.ai/program/openartist)；[旧工作流入口（重定向）](https://openart.ai/workflows/home)
-NightCafe：[成员挑战规则](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)；[Evolve与局部修改](https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe)；[PRO方案](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)
 即梦：[官网创作与同款入口](https://jimeng.jianying.com/)；[付费服务协议](https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/dreamina/b966ce40-d931-4397-8def-38fe5d03c729.html)
 可灵：[付费条款](https://kling.ai/docs/payment-policy)；[作者专题与工具用途](https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words)
-Midjourney：[网页创作](https://docs.midjourney.com/hc/en-us/articles/33390732264589-Creating-on-Web)；[Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)；[套餐对照](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
 Leonardo.Ai：[价格与产品权益](https://www.leonardo.ai/pricing)；[公开作品后续使用](https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage)；[Blueprints当前能力](https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai)
 Runway：[订阅与权益](https://runway.com/pricing)；[Workflow分享与复制](https://help.runwayml.com/hc/en-us/articles/45763528999699-Introduction-to-Workflows)；[Workflow发布为App](https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps)；[API计价](https://docs.dev.runwayml.com/guides/pricing/)；[Runway Academy](https://academy.runwayml.com/)
 WaytoAGI：[WayToAGI API文档](https://llm.waytoagi.com/docs)；[WayToAGI AI Websites目录](https://www.waytoagi.com/en/sites?tag=38)；[WaytoAGI知识库与工具首页](https://www.waytoagi.com/zh)
@@ -810,7 +782,6 @@ LiblibAI、RunningHub和Runway都把内容与执行入口连接起来。模型�
 
 ### 执行可以在站外，解释、反馈与参与仍可留在社区
 
-Datawhale把课程、作业与答疑组织起来，实践可在本地或合作环境完成；LINUX DO承接外部工具的接入问题与结果反馈。NightCafe同时提供生成工具与主题活动，历史用户记录中也有将生成转移到其他工具后仍回来参加挑战和聊天的情况。
 
 **Datawhale**：2026年6月ROCm共学资料明确由AMD Radeon Cloud提供免费GPU，Datawhale组织教材、日程、作业与答疑。all-in-rag用户问题涉及环境、API和检索检查，运行与结果检查中仍会发现需要修正的问题。该期活动已结束。
 
@@ -820,9 +791,7 @@ Datawhale把课程、作业与答疑组织起来，实践可在本地或合作�
 
 [LINUX DO Connect 文档](https://wiki.linux.do/Community/LinuxDoConnect)；[LINUX DO Credit 使用指南](https://credit.linux.do/docs/how-to-use)；[应用接入求助与采纳结果](https://linux.do/t/topic/1537782)
 
-**NightCafe**：成员挑战规则提供设题、投稿、评审与结果阶段。2023年的一位用户自述把生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天；2026年的另一组讨论也显示积分参与与生成意愿可能不同。前者为历史个案，不能当作当前普遍行为。
 
-[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)；[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)；[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)；[The rider](https://www.reddit.com/r/aiArt/comments/172lvb0/)
 
 分析：这三种样本分别把学习进度、问题解决和兴趣参与留在社区。执行地点不足以解释社区价值，用户回到哪里补信息、得到反馈或参加活动更值得观察。对多元拾光而言，API和MakeNow既可作为执行入口，也可服务部分内容；内容的适用范围不必与自营工具完全重合。
 
@@ -858,12 +827,10 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 
 无限额度、会员资格与API支持都有适用范围。成本比较应以用户要完成的任务为单位，纳入修改、重试、等待和外部处理。
 
-- **NightCafe**：Unlimited基础生成不覆盖所有增加成本的设置；起始图和ControlNet可能消耗正常额度。
 - **Runway**：联盟页明确每名新付费订阅者15美元；不能理解为同一用户永久续费分成。
 
 依据：2026-09-11官方条款复核；实际结算和净收益未核。
 
-[NightCafe PRO plans — what you get and which plan to choose](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)；[Fast Credits vs Relax Credits](https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits)；[Runway Affiliate Program](https://runway.com/affiliate-program)
 
 全国去重AI付费人数仍未知。规模数据保留统计对象、时间、地域和来源性质，不将全球账户、综合会员、月活与访问次数相加。
 
@@ -894,11 +861,9 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 
 分别观察前台有效浏览、观看、收藏后回看、表达、交流和复用，并检查下一周是否仍有这些行为。生成、发布、付款可作为具体路径的辅助记录；免费读者同样可能是持续活跃用户。积分来源不决定用户质量，只领奖而没有内容消费或参与的行为不计入有效活跃。
 
-- **NightCafe**：NightCafe的2026年用户记录中，有人主要完成积分任务而很少生成；2023年的另一位用户自述将生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天。LINUX DO另有采纳回复及提问者确认的接入求助个案。
 
 依据：用户自述与历史登录观察；跨工具回访为2023年个案，当前行为未知，各样本不能估计总体留存。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)；[The rider](https://www.reddit.com/r/aiArt/comments/172lvb0/)；[应用接入求助与采纳结果](https://linux.do/t/topic/1537782)
 
 当前内容由平台维护，后续也按平台持续供给核算。MakeNow已有一个案例的复制与文本保存证据，素材完整性、再次生成和完整费用仍未核实。
 
@@ -912,14 +877,14 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 
 ## 研究深度与未解问题
 
-研究已覆盖18个平台的任务、内容、运营、收费条件与使用过程；55条任务画像逐项保留证据等级。公开记录能够支持机制与采用条件比较，主力客群占比、因果留存和本项目经营结果仍需真实数据。
+研究已覆盖15个平台的任务、内容、运营、收费条件与使用过程；46条任务画像逐项保留证据等级。公开记录能够支持机制与采用条件比较，主力客群占比、因果留存和本项目经营结果仍需真实数据。
 
 | 方面 | 已达到的层次 | 缺口 |
 | --- | --- | --- |
 | 产品与内容结构 | 已经分析到入口、字段、详情、交付对象与后续操作。 | 不同内容形式的有效消费、参与及次周回访尚未在多元拾光验证。 |
-| 运营与供给 | 18家补查普通内容、规则与维护；使用者反馈、作者说明、服务处理和继续使用分别记录。 | 多数缺少工时、供稿频率与激励净效果。 |
-| 用户与任务 | 55条任务画像另有18家补充检索与过程记录；后续复读不重复计为新用户。 | 样本稀疏，无法还原平台用户总体。 |
-| 实际使用 | 部分平台有生成、保存、再次打开或复用检查。 | 未对18家完成同一任务的全流程验证。 |
+| 运营与供给 | 15家补查普通内容、规则与维护；使用者反馈、作者说明、服务处理和继续使用分别记录。 | 多数缺少工时、供稿频率与激励净效果。 |
+| 用户与任务 | 46条任务画像另有15家补充检索与过程记录；后续复读不重复计为新用户。 | 样本稀疏，无法还原平台用户总体。 |
+| 实际使用 | 部分平台有生成、保存、再次打开或复用检查。 | 未对15家完成同一任务的全流程验证。 |
 | 经营机制与资源约束 | 已有定价规则、部分经营披露和第三方访问估计。 | 多元拾光尚缺实际留存、内容产能和支持成本；本阶段不要求社区收入贡献。 |
 
 ## 平台档案
@@ -927,13 +892,10 @@ LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公
 - [LiblibAI](appendix/liblib.html)
 - [RunningHub](appendix/runninghub.html)
 - [吐司 / Tensor.Art](appendix/tusi.html)
-- [Civitai](appendix/civitai.html)
 - [SeaArt](appendix/seaart.html)
 - [OpenArt](appendix/openart.html)
-- [NightCafe](appendix/nightcafe.html)
 - [即梦 AI](appendix/jimeng.html)
 - [可灵 Kling AI](appendix/kling.html)
-- [Midjourney](appendix/midjourney.html)
 - [Leonardo.Ai](appendix/leonardo.html)
 - [Runway](appendix/runway.html)
 - [WaytoAGI 通往 AGI 之路](appendix/waytoagi.html)

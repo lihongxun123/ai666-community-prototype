@@ -4,12 +4,12 @@ export const publicDataInsights: DataEssay[] = [
   {
     title:"访问次数与单次浏览页数",
     paragraphs:[
-      'Semrush 2026 年 7 月估计：Civitai 为 1,283 万次访问、每次 5.34 页；Midjourney 为 1,109 万次、每次 15.89 页；LINUX DO 为 926 万次、每次 18.05 页。前者在这三个域名中访问次数更多，后两者每次访问的页数更多。数字揭示的是不同使用形态，不能把其中任何一项单独作为社区成功标准。',
+      'Semrush 的2026年7月估计显示，LINUX DO 约有926万次访问，单次访问18.05页。',
       '网站访问深度无法区分作品观看、教程阅读、问题回应与画布生成；它只说明访问过程中发生了多少页面浏览。'
     ],
     refs:[
-      {title:'Semrush：Civitai 7 月数据',url:'https://www.semrush.com/website/civitai.com/overview/'},
-      {title:'Semrush：Midjourney 7 月数据',url:'https://www.semrush.com/website/midjourney.com/overview/'},
+
+
       {title:'Semrush：LINUX DO 7 月数据',url:'https://www.semrush.com/website/linux.do/overview/'}
     ]
   },
@@ -27,12 +27,13 @@ export const publicDataInsights: DataEssay[] = [
   {
     title:'不同供应商可能给出相反的涨跌判断',
     paragraphs:[
-      'NightCafe 的 2026 年 7 月，Semrush 给出访问环比 +5.41%，Similarweb 的 7 月公开页为 -2.6%。RunningHub.cn 的 Semrush 7 月页为 -4.95%、平均 22:47；首次读取的 Similarweb 7 月旧公开快照为 +3.9%、7:15，随后该网址更新为 8 月。历史快照与新月份已分开保留。',
+
+      'RunningHub.cn 的7月访问变化，Semrush 估计为下降4.95%，Similarweb 当时快照为增长3.9%；平均访问时长分别为22分47秒和7分15秒。',
       '这些差异会改变对增长和停留时间的判断，因此按提供方和月份分别展示。不同估计不取均值，也不视为平台内部实测值。'
     ],
     refs:[
-      {title:'Semrush：NightCafe',url:'https://www.semrush.com/website/nightcafe.studio/overview/'},
-      {title:'Similarweb：NightCafe',url:'https://www.similarweb.com/website/nightcafe.studio/'},
+
+
       {title:'Semrush：RunningHub.cn',url:'https://www.semrush.com/website/runninghub.cn/overview/'},
       {title:'Similarweb：RunningHub.cn（页面按月更新）',url:'https://www.similarweb.com/website/runninghub.cn/'}
     ]

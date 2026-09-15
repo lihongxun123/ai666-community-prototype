@@ -66,7 +66,7 @@
       "applied": true
     }
   ],
-  "countingRule": "新增记录含既有案例复读和后续，不与55条任务画像的用户点相加；来源页数不等于人数。",
+  "countingRule": "新增记录含既有案例复读和后续，不与46条任务画像的用户点相加；来源页数不等于人数。",
   "coverage": {
     "sourceRecords": 96,
     "caseRecords": 39,
@@ -296,30 +296,6 @@
     },
     {
       "inputFile": "input-resources.json",
-      "inputPointer": "/platforms/3/cases/0",
-      "platform": "civitai",
-      "caseId": "CR31-civitai-cancel",
-      "classification": "new-case-candidate",
-      "existingIdentity": null,
-      "countingAction": "新讨论；若计用户，只计明确当事人，不把服务回复和其他评论全算用户样本。",
-      "sourceIds": [
-        "CR31-R-civitai-02"
-      ]
-    },
-    {
-      "inputFile": "input-resources.json",
-      "inputPointer": "/platforms/3/cases/1",
-      "platform": "civitai",
-      "caseId": "CR31-civitai-avatar",
-      "classification": "same-source-distinct-actor-review-needed",
-      "existingIdentity": "P25-civitai-S-u5",
-      "countingAction": "旧文从同URL取匿名G降免费/本地训练回复；新稿取半年头像复用者。不能因同URL直接合为同人，也不能未核署名就新增独立人。",
-      "sourceIds": [
-        "CR31-R-civitai-03"
-      ]
-    },
-    {
-      "inputFile": "input-resources.json",
       "inputPointer": "/platforms/4/cases/0",
       "platform": "seaart",
       "caseId": "CR31-seaart-search",
@@ -340,30 +316,6 @@
       "countingAction": "旧文采用同帖两名回复者；新稿采用争议结果自述。先核原发/编辑的对应账号再分配独立键，退款回顾不是多次跟访。",
       "sourceIds": [
         "CR31-R-seaart-03"
-      ]
-    },
-    {
-      "inputFile": "input-resources.json",
-      "inputPointer": "/platforms/5/cases/0",
-      "platform": "nightcafe",
-      "caseId": "CR31-nightcafe-card",
-      "classification": "existing-audience",
-      "existingIdentity": "P25-nightcafe-e2",
-      "countingAction": "旧匿名B已明确贺卡转ChatGPT；不是新成功案例。",
-      "sourceIds": [
-        "CR31-R-nightcafe-03"
-      ]
-    },
-    {
-      "inputFile": "input-resources.json",
-      "inputPointer": "/platforms/5/cases/1",
-      "platform": "nightcafe",
-      "caseId": "CR31-nightcafe-streak",
-      "classification": "existing-audience",
-      "existingIdentity": "P25-nightcafe-e1",
-      "countingAction": "旧匿名A已有4至5年自述和离开意向；不能记实际流失。",
-      "sourceIds": [
-        "CR31-R-nightcafe-03"
       ]
     },
     {
@@ -461,32 +413,6 @@
       "countingAction": "同匿名C认可真人但卡通口型失败，正反合一个人。",
       "sourceIds": [
         "CR31-T-kling-5"
-      ]
-    },
-    {
-      "inputFile": "input-tools.json",
-      "inputPointer": "/platforms/3/cases/0",
-      "platform": "midjourney",
-      "caseId": "CR31-midjourney-comic-series",
-      "classification": "new-project-chain-candidate",
-      "existingIdentity": null,
-      "countingAction": "三文章/作品页同作者同系列，一个项目链；读者提问未复现。",
-      "sourceIds": [
-        "CR31-T-midjourney-3",
-        "CR31-T-midjourney-4",
-        "CR31-T-midjourney-5"
-      ]
-    },
-    {
-      "inputFile": "input-tools.json",
-      "inputPointer": "/platforms/3/cases/1",
-      "platform": "midjourney",
-      "caseId": "CR31-midjourney-precise-image-alternative",
-      "classification": "new-cross-tool-case-candidate",
-      "existingIdentity": null,
-      "countingAction": "一个作者的指定图任务，由Ideogram/Copilot/Photoshop完成；回访MJ不等于续费。",
-      "sourceIds": [
-        "CR31-T-midjourney-6"
       ]
     },
     {
@@ -1466,61 +1392,6 @@
       ]
     },
     {
-      "platform": "civitai",
-      "inputFile": "input-resources.json",
-      "sourceRecords": 3,
-      "matchedRecords": 2,
-      "sources": [
-        {
-          "sourceId": "CR31-R-civitai-01",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/3/sources/0",
-              "id": "P25-civitai-S-biz-civi-rules",
-              "caseId": null,
-              "platform": "civitai"
-            },
-            {
-              "file": "lib/business-data.json",
-              "pointer": "/3/sources/0",
-              "id": "biz-civi-rules",
-              "caseId": null,
-              "platform": "civitai"
-            }
-          ],
-          "discussionKey": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        },
-        {
-          "sourceId": "CR31-R-civitai-02",
-          "url": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
-          "matchType": "no-match-in-three-canonical-files",
-          "canonicalMatches": [],
-          "discussionKey": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        },
-        {
-          "sourceId": "CR31-R-civitai-03",
-          "url": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/3/sources/8",
-              "id": "P25-civitai-S-u5",
-              "caseId": null,
-              "platform": "civitai"
-            }
-          ],
-          "discussionKey": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        }
-      ]
-    },
-    {
       "platform": "seaart",
       "inputFile": "input-resources.json",
       "sourceRecords": 4,
@@ -1600,76 +1471,6 @@
       ]
     },
     {
-      "platform": "nightcafe",
-      "inputFile": "input-resources.json",
-      "sourceRecords": 3,
-      "matchedRecords": 3,
-      "sources": [
-        {
-          "sourceId": "CR31-R-nightcafe-01",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/6/sources/0",
-              "id": "P25-nightcafe-S-biz-night-pro",
-              "caseId": null,
-              "platform": "nightcafe"
-            },
-            {
-              "file": "lib/business-data.json",
-              "pointer": "/6/sources/0",
-              "id": "biz-night-pro",
-              "caseId": null,
-              "platform": "nightcafe"
-            }
-          ],
-          "discussionKey": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        },
-        {
-          "sourceId": "CR31-R-nightcafe-02",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/6/sources/1",
-              "id": "P25-nightcafe-S-biz-night-credits",
-              "caseId": null,
-              "platform": "nightcafe"
-            },
-            {
-              "file": "lib/business-data.json",
-              "pointer": "/6/sources/1",
-              "id": "biz-night-credits",
-              "caseId": null,
-              "platform": "nightcafe"
-            }
-          ],
-          "discussionKey": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        },
-        {
-          "sourceId": "CR31-R-nightcafe-03",
-          "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/6/sources/5",
-              "id": "P25-nightcafe-S-u1",
-              "caseId": null,
-              "platform": "nightcafe"
-            }
-          ],
-          "discussionKey": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-          "accessResult": "live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。"
-        }
-      ]
-    },
-    {
       "platform": "openart",
       "inputFile": "input-tools.json",
       "sourceRecords": 5,
@@ -1709,13 +1510,6 @@
               "id": "P25-openart-S-u1",
               "caseId": null,
               "platform": "openart"
-            },
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/9/sources/8",
-              "id": "P25-midjourney-S-u4",
-              "caseId": null,
-              "platform": "midjourney"
             },
             {
               "file": "lib/audience-research.json",
@@ -1955,92 +1749,6 @@
           "canonicalMatches": [],
           "discussionKey": "https://kling.ai/app/future-partner/customer",
           "accessResult": "本次由官方成本页点击，restricted URL失败"
-        }
-      ]
-    },
-    {
-      "platform": "midjourney",
-      "inputFile": "input-tools.json",
-      "sourceRecords": 6,
-      "matchedRecords": 2,
-      "sources": [
-        {
-          "sourceId": "CR31-T-midjourney-1",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/9/sources/0",
-              "id": "P25-midjourney-S-biz-mj-price",
-              "caseId": null,
-              "platform": "midjourney"
-            },
-            {
-              "file": "lib/business-data.json",
-              "pointer": "/9/sources/0",
-              "id": "biz-mj-price",
-              "caseId": null,
-              "platform": "midjourney"
-            }
-          ],
-          "discussionKey": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-          "accessResult": "本次原页正文读取；未购买"
-        },
-        {
-          "sourceId": "CR31-T-midjourney-2",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
-          "matchType": "same-url",
-          "canonicalMatches": [
-            {
-              "file": "lib/audience-research.json",
-              "pointer": "/profiles/9/sources/3",
-              "id": "P25-midjourney-S-biz-mj-policy",
-              "caseId": null,
-              "platform": "midjourney"
-            },
-            {
-              "file": "lib/business-data.json",
-              "pointer": "/9/sources/3",
-              "id": "biz-mj-policy",
-              "caseId": null,
-              "platform": "midjourney"
-            }
-          ],
-          "discussionKey": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
-          "accessResult": "本次原页正文读取"
-        },
-        {
-          "sourceId": "CR31-T-midjourney-3",
-          "url": "https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/",
-          "matchType": "no-match-in-three-canonical-files",
-          "canonicalMatches": [],
-          "discussionKey": "https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/",
-          "accessResult": "本次正文与读者/作者评论读取"
-        },
-        {
-          "sourceId": "CR31-T-midjourney-4",
-          "url": "https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/",
-          "matchType": "no-match-in-three-canonical-files",
-          "canonicalMatches": [],
-          "discussionKey": "https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/",
-          "accessResult": "本次全文读取；未执行教程或采其速度估计为基准"
-        },
-        {
-          "sourceId": "CR31-T-midjourney-5",
-          "url": "https://michaelbrig.com/the-last-superhero-5/",
-          "matchType": "no-match-in-three-canonical-files",
-          "canonicalMatches": [],
-          "discussionKey": "https://michaelbrig.com/the-last-superhero-5/",
-          "accessResult": "本次作品页正文和图片入口读取，未逐图视觉验质"
-        },
-        {
-          "sourceId": "CR31-T-midjourney-6",
-          "url": "https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/",
-          "matchType": "no-match-in-three-canonical-files",
-          "canonicalMatches": [],
-          "discussionKey": "https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/",
-          "accessResult": "本次原帖及作者后续读取；不沿用标题定性"
         }
       ]
     },
@@ -2295,28 +2003,25 @@
       "key": "P25-openart-user-B",
       "platforms": [
         "openart",
-        "midjourney",
         "leonardo"
       ],
       "existingEvidence": [
         "P25-openart-e2",
-        "P25-midjourney-e9",
         "P25-leonardo-e6"
       ],
       "sourceUrl": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
-      "rule": "同一位用Midjourney角色参考、OpenArt口型并试过Leonardo API的人，三个工具归属都可记，但全局用户只算一人。不要与同帖MV专辑匿名A混同。"
+      "rule": "不要与同帖MV专辑匿名A混同。"
     },
     {
       "key": "finch-team",
       "platforms": [
         "runway",
-        "midjourney",
         "hailuo"
       ],
       "existingEvidence": [
         "R29-RUN-FINCH"
       ],
-      "rule": "已确认Runway/Midjourney/Hailuo分工；Hailuo不等于Kling，切勿误归工具。一个团队一个连续项目，三集帖子与LinkedIn不增加独立样本数。"
+      "rule": "Hailuo不等于Kling，切勿误归工具。一个团队一个连续项目，三集帖子与LinkedIn不增加独立样本数。"
     },
     {
       "key": "runway-frontdoor-kling-request",
@@ -2525,16 +2230,6 @@
       ]
     },
     {
-      "id": "AUD-civitai-1",
-      "platform": "civitai",
-      "decision": "metadata-supplement-not-date-replacement",
-      "action": "保留8月25日文档日期，新增9月4日文内变更与9月11日复读；区分原发布日期、文内实现变更与访问日期。",
-      "countImpact": "同官方文档为0新增独立来源；不视为线上收费验收。",
-      "sourceIds": [
-        "CR31-R-civitai-01"
-      ]
-    },
-    {
       "id": "AUD-seaart-1",
       "platform": "seaart",
       "decision": "supplement-eligibility-not-revenue",
@@ -2543,16 +2238,6 @@
       "sourceIds": [
         "CR31-R-seaart-03",
         "CR31-R-seaart-04"
-      ]
-    },
-    {
-      "id": "AUD-nightcafe-1",
-      "platform": "nightcafe",
-      "decision": "already-correct-with-conditions",
-      "action": "原文已说指定模型与基础生成；起始图/ControlNet可能另扣费是适用条件补充，不是推翻旧Unlimited结论。",
-      "countImpact": "0新增案例，补成本前提。",
-      "sourceIds": [
-        "CR31-R-nightcafe-01"
       ]
     },
     {
@@ -2604,19 +2289,6 @@
       "countImpact": "同规则页刷新，不计真实购买。",
       "sourceIds": [
         "CR31-T-kling-2"
-      ]
-    },
-    {
-      "id": "AUD-midjourney-1",
-      "platform": "midjourney",
-      "decision": "supplement-new-projects",
-      "action": "补同作者漫画2025/2026三页为一个项目链，另添烟字图在替代工具完成。原旧版失败材料保留历史标签，不替换成当前产品普遍结论。",
-      "countImpact": "候选新增2个任务/作者，三页漫画不算三人；漫画读者追问不算成功复现。",
-      "sourceIds": [
-        "CR31-T-midjourney-3",
-        "CR31-T-midjourney-4",
-        "CR31-T-midjourney-5",
-        "CR31-T-midjourney-6"
       ]
     },
     {
@@ -2678,7 +2350,6 @@
     "additionalRead": [
       "site/public/research-kit/audience-liblib.md",
       "site/public/research-kit/audience-runninghub.md",
-      "site/public/research-kit/audience-civitai.md",
       "site/public/research-kit/audience-datawhale.md",
       "site/public/research-kit/audience-leonardo.md",
       "site/public/research-kit/audience-runway.md",

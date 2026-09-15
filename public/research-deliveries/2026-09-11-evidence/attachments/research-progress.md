@@ -24,7 +24,6 @@
 
 ### 03 用户需要什么，包括非工具需求｜部分补证
 
-增加5个公开作品/话题实例：审美、故事、认可、进展分享、寻找交流对象；NightCafe规则单列。
 
 边界：作品介绍和作者陈述不是用户动机分布，也不能据此给多元拾光选择人群。
 
@@ -522,7 +521,6 @@ LINUX DO：复读已有应用接入和知识管理主题；打开 /latest，排�
 
 ## 需要什么与已有替代方式
 
-5个作品或话题样本呈现了欣赏、灵感、表达、寻求关注与同行回应；同一影片与模型各有一组入口对照。NightCafe 仅取得规则，未计入实例。动机比例和持续使用仍缺用户数据。
 
 ### 欣赏作品与寻找视觉灵感：同一《After Light》的两种呈现
 
@@ -576,17 +574,13 @@ Hugging Face论坛2026年6月6日的《Where to share?》首帖明确表达‘�
 
 [Where to share? — Beginners — Hugging Face Forums](https://discuss.huggingface.co/t/where-to-share/176592)
 
-### 围绕共同题目一起玩与交流：NightCafe机制补充，尚无实例
 
-NightCafe官方说明将Community Challenge定义为围绕主持人题目投稿并由参与者评选的游戏，规则涉及聊天室、公开发现、投稿/投票阶段和结果列表。尝试读取文档链接的实际游戏页失败，因此这里只能确认文档描述。
 
 分析：这种设计把‘找一个共同题目、看别人怎样理解、表达偏好’组织成周期，而不只是练习生产技能。它可以作为审美社交与轻度娱乐的研究候选。
 
 未知：没有可读的具体投稿和聊天实例，不能写成已经观察到同好关系或建设性点评。玩法存在也不能证明作者愿意长期主持，或证明积分与游戏本身分别贡献多少活跃。
 
-[Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
-[NightCafe帮助文档所链接的Community Challenge示例](https://creator.nightcafe.studio/game/jv5DO6OImCzAAWZjKBGi)
 
 ### 围绕一部AI参与创作的短片寻找视觉灵感，并了解它的创作表达
 
@@ -816,7 +810,6 @@ NightCafe官方说明将Community Challenge定义为围绕主持人题目投稿�
 
 边界：页面修改日期为2025-08-16；示例不是当前实测，返回用量也不等于内部实际成本。没有把整个侧栏都算作已深读。
 
-### Midjourney流程：初次结果之后还有后续操作
 
 [文档原页](https://s.apifox.cn/ec36f88d-4e3d-4790-98e5-c1532253c7fb/5680920m0)
 
@@ -896,7 +889,7 @@ MakeNow 技能、画布和保存记录，以及 API 文档与图像样本，见�
 
 [Runway Watch — After Light](https://watch.runwayml.com/after-light) · 2026-09-10 · 公开页面可读取影片嵌入入口、作者署名和CPP等频道编排；未完整播放影片，不证明观看效果、关注或评论能力。
 
-[After Light — Vallée Duhamel](https://valleeduhamel.com/portfolio-item/afterlight/) · 2026-09-10 · 同片作者作品集原页；读取画面、故事说明与制作署名。作者观点不等于观众反应；团队官网为替代路径参考，不计入原18个竞品。
+[After Light — Vallée Duhamel](https://valleeduhamel.com/portfolio-item/afterlight/) · 2026-09-10 · 同片作者作品集原页；读取画面、故事说明与制作署名。作者观点不等于观众反应；团队官网为替代路径参考，不计入原15个竞品。
 
 [48-Hour AI Film Challenge | Gen:48 by Runway](https://runway.com/gen48) · 2026-09-10 · 第三届历史获奖栏中的RUPU-KK: the Loop及奖项类型；未测试当前投稿、评审、投票，页面上方Aleph Edition动态内容未完整呈现。
 
@@ -910,9 +903,7 @@ MakeNow 技能、画布和保存记录，以及 API 文档与图像样本，见�
 
 [basically-experimental/Pebble-50M-beta — Discussions](https://huggingface.co/basically-experimental/Pebble-50M-beta/discussions) · 2026-09-10 · 从模型页Community链接重新打开后可读；本次返回内容只有New discussion/PR和欢迎信息，未见主题。是一次公开页面观察，不断言长期无讨论。
 
-[Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges) · 2026-09-10 · 官方机制文档：主题、聊天室发现、投票/排名、分阶段和结果展示。只能支持功能设计描述，不能支持实际参与者动机、满意度或长期关系。
 
-[NightCafe帮助文档所链接的Community Challenge示例](https://creator.nightcafe.studio/game/jv5DO6OImCzAAWZjKBGi) · 2026-09-10 · 链接来自官方帮助文档。打开失败，未读取投稿、名次和聊天；只记录证据缺口，不计入实例数量。
 
 [Getting You have exceeded your Pro GPU quota error even with credits loaded](https://discuss.huggingface.co/t/getting-you-have-exceeded-your-pro-gpu-quota-error-even-with-credits-loaded/174850) · 2026-09-10 · 第1至19帖；网页正文及直接无认证HTTP标题、19个日期复核，不转存账号或账户截图。
 

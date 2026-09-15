@@ -81,7 +81,6 @@
 
 页面事实：
 
-- Midjourney 官方说明包含作品发现、提示词与设置查看、复用入口。
 - 社区作品详情代码已有提示词与参考媒体；同款输入包含模型等参数，并检查参考素材权限。
 
 分析：先用结果判断兴趣，再决定是否付出学习或操作成本；将欣赏和制作意图放在同一对象上，但保留不同结束点。
@@ -101,7 +100,6 @@
 - 标题承诺教程或画布，详情只给成品图。
 - 卡片堆满参数，妨碍观看却没有把真实材料交付出去。
 
-反证与局限：Midjourney 的复用入口不等于完整工程交接；本站存在同款代码也不等于实际字段齐全或成功生成。
 
 现有承载：作品详情和同款字段已有代码，可先补齐素材与使用说明。
 
@@ -311,7 +309,6 @@
 
 页面事实：
 
-- NightCafe 挑战规则包含主题、投稿、评分或排序及结果阶段；公开发现范围受聊天室设置影响。
 - Runway Gen:48 档案按届次保存作品、作者与奖项，未取得原始评审或投票记录。
 
 分析：共同题目让作品便于比较，阶段和后续点评给人再次关注的理由。公开认可的价值来自选择依据和组织者可信度，不能只复制徽标。
@@ -1412,7 +1409,6 @@ API：可支持示范或参与者创作，算力供给与点评服务分别说�
 
 ### v15-g1
 
-[Website Overview](https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview)
 
 日期：原观察：2026-09-10，公开正文已读取；页面日期：未标注；为综合，未重新访问
 
@@ -1722,11 +1718,9 @@ API：可支持示范或参与者创作，算力供给与点评服务分别说�
 
 ### R23-NC-CHALLENGE
 
-[NightCafe Community Challenges（复核）](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
 日期：原观察2026-09-10；2026-09-10重读；页面修订日期未标
 
-依据位置：项目资料/ai666-codex-audit-pack/outputs/aigc-community-deep-research-2026-09-08/site/lib/market-content-forms.json；Discoverability、Scoring、Challenge Phases；原记录v15-h1
 
 范围：确认主题、投稿、评选、结果与发现条件；未读取实时参赛池、投票或实际留存。
 
@@ -1892,11 +1886,9 @@ API交付核对
 
 ### OPT23-S10
 
-[NightCafe挑战和Hugging Face课程的既有研究](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
 日期：依据2026-09-10的访问记录
 
-依据位置：outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json；sources v15-h1、v15-h2、v15-c2
 
 范围：练习组织、作品与参与机制实例；不证明个别点评质量、本站导师供给或参与者关系。
 

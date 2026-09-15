@@ -15,7 +15,7 @@ export function LinuxDoLoginUpdate() {
   <div className="section-heading"><h2>{data.title}</h2><span className="status status-事实">{data.date}</span></div>
   <p className="lead">{data.summary}</p><p className="muted">{data.scope}</p>
 
-  <h3>这次补到了什么</h3>{data.findings.map(f => <section className="study-mechanism" key={f.title}><h4>{f.title}</h4><p><strong>已确认：</strong>{f.fact}<Refs ids={f.refs}/></p><p><strong>分析与边界：</strong>{f.analysis}</p></section>)}
+  <h3>登录后取得的证据</h3>{data.findings.map(f => <section className="study-mechanism" key={f.title}><h4>{f.title}</h4><p><strong>已确认：</strong>{f.fact}<Refs ids={f.refs}/></p><p><strong>分析与边界：</strong>{f.analysis}</p></section>)}
   <h3>运营如何持续运转</h3>{data.operations.map(o => <section className="study-mechanism" key={o.title}><h4>{o.title}</h4><p>{o.observed}<Refs ids={o.refs}/></p><p><strong>运营作用（分析）：</strong>{o.meaning}</p><p><strong>持续投入与限制：</strong>{o.cost}</p></section>)}
   <h3>6类内容分别交付什么</h3><div className="table-wrap"><table><thead><tr><th>内容形态</th><th>列表与详情</th><th>价值与限制</th></tr></thead><tbody>{data.forms.map(f => <tr key={f.name}><th>{f.name}<Refs ids={f.refs}/></th><td><p>{f.list}</p><p>{f.detail}</p></td><td><p>{f.value}</p><p className="muted">{f.limit}</p></td></tr>)}</tbody></table></div>
   <h3>样本读到了哪里</h3><p className="muted">按用途选择的6个主题，结果记录完整度各不相同。这里没有计算全站比例。</p><div className="table-wrap"><table><thead><tr><th>样本</th><th>阅读范围</th><th>观察结果</th></tr></thead><tbody>{data.samples.map(s => <tr key={s.source}><th>{s.title}<Refs ids={[s.source]}/></th><td>{s.scope}</td><td><p>{s.observed}</p><p className="muted">{s.result}</p></td></tr>)}</tbody></table></div>

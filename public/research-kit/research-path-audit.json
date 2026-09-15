@@ -151,44 +151,6 @@
       }
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "category": "创作与资源",
-      "access": "曾读取官方公告；访问 civitai.com 被浏览器工具策略阻止。补核官方 GitHub 文档，没有尝试绕过站点限制，也未完成登录生成。",
-      "practical": null,
-      "pathAnalysis": [
-        {
-          "stage": "发现与进入",
-          "behavior": "从效果图找到资源与作者。",
-          "friction": "资源标签可能来自手工声明，不能直接当成复现证明。"
-        },
-        {
-          "stage": "第一次做成",
-          "behavior": "确定版本和费用，再运行自己的输入。",
-          "friction": "无额度、队列、价格或媒体兼容性都可能中断。"
-        },
-        {
-          "stage": "再次使用",
-          "behavior": "继续使用资源，或回到作者与相关合集。",
-          "friction": "关注和保存可能由参与流程触发，不等于主动贡献。"
-        },
-        {
-          "stage": "贡献给别人",
-          "behavior": "提交变体、修正归因或参与协作合集。",
-          "friction": "合集仍需审核，作者要维护能代表资源的例子。"
-        }
-      ],
-      "boundary": "没有统一任务生成记录；阅读、规则及配置观察不作为实际运行或业务成功。",
-      "latestUsage": {
-        "finding": "头像个案是旧任务回访遇阻；取消会员个案是付款中断但表达继续创作意愿。两者都比单一活跃标签更有解释力，但没有行为完成的后续核验。",
-        "sourceIds": [
-          "CR31-R-civitai-02",
-          "CR31-R-civitai-03"
-        ],
-        "unknown": "新头像采用、后续资源发布和再次付款未知。"
-      }
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "category": "创作与资源",
@@ -287,43 +249,6 @@
           "CR31-T-openart-4"
         ],
         "unknown": "无受控运行；没有下一账期续费或Director失败任务获修复的确认。"
-      }
-    },
-    {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "category": "创作与资源",
-      "access": "公开规则和官方帮助页可核；当前 Studio 的浏览器访问被工具策略阻止，未实操。所附帮助页截图不代替登录产品体验。",
-      "practical": null,
-      "pathAnalysis": [
-        {
-          "stage": "发现与进入",
-          "behavior": "看到朋友成绩或当日题目，进入挑战。",
-          "friction": "有趣的小任务降低起步负担，但可能与工作需求无关。"
-        },
-        {
-          "stage": "第一次做成",
-          "behavior": "对照目标完成编辑，查看结果反馈。",
-          "friction": "评分与生产交付标准不同。"
-        },
-        {
-          "stage": "再次使用",
-          "behavior": "参加下一题，或比较别人用了什么方法。",
-          "friction": "回访可能由每日题目和奖励共同驱动。"
-        },
-        {
-          "stage": "贡献给别人",
-          "behavior": "题目结束后自愿公开步骤、讨论不同做法。",
-          "friction": "分享成绩和公开完整方法应是两个选择。"
-        }
-      ],
-      "boundary": "没有统一任务生成记录；阅读、规则及配置观察不作为实际运行或业务成功。",
-      "latestUsage": {
-        "finding": "个案自述贺卡在NightCafe多次尝试未成，转用ChatGPT并加字发送；另一位多年每日参与者只表示未来可能停止，不能把两者都算已流失。",
-        "sourceIds": [
-          "CR31-R-nightcafe-03"
-        ],
-        "unknown": "同一人的之后使用、续订和活动参与未核。"
       }
     },
     {
@@ -426,46 +351,6 @@
           "CR31-T-kling-5"
         ],
         "unknown": "同一作者跨日期公开发布链尚未完成独立核对；六部完成为一次回述，无续费账证。"
-      }
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "category": "工具与作者生态",
-      "access": "官方文档已核：网页与 Discord 没有免费试用。当前标签仍停在注册入口，未进入创作工作区；未订阅或提交生成。",
-      "practical": null,
-      "pathAnalysis": [
-        {
-          "stage": "发现与进入",
-          "behavior": "从效果和风格发现进入。",
-          "friction": "只复制提示词，未必拿到相同参考和偏好设置。"
-        },
-        {
-          "stage": "第一次做成",
-          "behavior": "理解参考与风格，完成自己的图。",
-          "friction": "默认偏好可能影响结果，需要知道本次用了什么。"
-        },
-        {
-          "stage": "再次使用",
-          "behavior": "继续项目或再次使用已整理的风格资料。",
-          "friction": "追随最新风格与复用历史版本并不相同。"
-        },
-        {
-          "stage": "贡献给别人",
-          "behavior": "分享风格、方法或到合适渠道答疑。",
-          "friction": "即时支持和活动需要专门运营，不会随生成自动成立。"
-        }
-      ],
-      "boundary": "没有统一任务生成记录；阅读、规则及配置观察不作为实际运行或业务成功。",
-      "latestUsage": {
-        "finding": "漫画作者2025制作前两部分，2026又用V7完成第5部分并公开比较；既有输出却仍报告多人/环境一致性问题。另一2026失败用户称取消订阅、用Ideogram/Copilot/Photoshop完成歌曲图，后来登录新版入口但只表示再试，不算复购。",
-        "sourceIds": [
-          "CR31-T-midjourney-3",
-          "CR31-T-midjourney-4",
-          "CR31-T-midjourney-5",
-          "CR31-T-midjourney-6"
-        ],
-        "unknown": "跨期使用有记录，连续付费无证；V8效果、原用户重新采用MJ未验证。"
       }
     },
     {

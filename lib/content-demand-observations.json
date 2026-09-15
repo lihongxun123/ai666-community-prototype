@@ -103,7 +103,7 @@
           "evidence": "页面作者说明；未核职业或客户关系。"
         },
         "metrics": [],
-        "metricsNote": "本次可读正文未返回明确标注的互动或使用数。",
+        "metricsNote": "可读正文未返回明确标注的互动或使用数。",
         "unlabeledNumbers": [],
         "metricWindow": "未知",
         "consumerComments": null,
@@ -124,7 +124,7 @@
             "示例过程和作者迭代陈述"
           ],
           "missing": [
-            "本次未观看外部教程",
+            "未观看外部教程",
             "完整配置和模型版本核验",
             "统一输入下的失败率、耗时与成本",
             "独立使用者反馈"
@@ -143,7 +143,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增。"
+        "detail": "主题采样新增。"
       },
       "purpose": "根据产品与参考场景调整位置、透视、光影和细节，形成商品主图或海报素材。",
       "forms": [
@@ -159,7 +159,7 @@
         "scope": "搜索默认排序，规则未知"
       },
       "metrics": [],
-      "metricNote": "本次可读正文未返回明确标注的互动或使用数。",
+      "metricNote": "可读正文未返回明确标注的互动或使用数。",
       "unlabeledNumbers": [],
       "demand": {
         "request": null,
@@ -167,7 +167,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -185,7 +185,7 @@
           "示例过程和作者迭代陈述"
         ],
         "missing": [
-          "本次未观看外部教程",
+          "未观看外部教程",
           "完整配置和模型版本核验",
           "统一输入下的失败率、耗时与成本",
           "独立使用者反馈"
@@ -229,7 +229,7 @@
         "updatedAt": null,
         "dateNote": "页面正文未标明确日期。",
         "isNewThisRound": false,
-        "previousEvidence": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；本轮重新打开，未把历史记录充当新增。",
+        "previousEvidence": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；现有记录中重新打开，未把历史记录充当新增。",
         "entry": {
           "type": "已有证据复核并由公开搜索再次找到",
           "query": "site:liblib.art/modelinfo 商品 主图 背景 工作流",
@@ -250,7 +250,7 @@
           "evidence": "同页链接其V1并解释V2方法；不推断商家或职业设计师身份。"
         },
         "metrics": [],
-        "metricsNote": "本次可读正文没有明确标注的互动或使用数。",
+        "metricsNote": "可读正文没有明确标注的互动或使用数。",
         "unlabeledNumbers": [],
         "metricWindow": "未知",
         "consumerComments": null,
@@ -290,7 +290,7 @@
       "novelty": {
         "kind": "rechecked",
         "label": "已有样本复核",
-        "detail": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；本轮重新打开，未把历史记录充当新增。"
+        "detail": "content-demand-review-2026-09-11/supply-china.json CN-LIB-1；现有记录中重新打开，未把历史记录充当新增。"
       },
       "purpose": "商品原图精修与两图背景迁移，可分别使用两模块。",
       "forms": [
@@ -306,7 +306,7 @@
         "scope": "目的性复核"
       },
       "metrics": [],
-      "metricNote": "本次可读正文没有明确标注的互动或使用数。",
+      "metricNote": "可读正文没有明确标注的互动或使用数。",
       "unlabeledNumbers": [],
       "demand": {
         "request": null,
@@ -314,7 +314,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -398,7 +398,7 @@
           "evidence": "作者服务说明；未保存联系方式，未核是否成交。"
         },
         "metrics": [],
-        "metricsNote": "本次正文未返回明确标注的互动或使用数。",
+        "metricsNote": "正文未返回明确标注的互动或使用数。",
         "unlabeledNumbers": [],
         "metricWindow": "未知",
         "consumerComments": null,
@@ -438,7 +438,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增。"
+        "detail": "主题采样新增。"
       },
       "purpose": "用白底产品图、参考版式和标题/卖点文案生成商品视觉素材；作者列家具、厨具、五金及电器用途。",
       "forms": [
@@ -454,7 +454,7 @@
         "scope": "搜索默认排序，规则未知"
       },
       "metrics": [],
-      "metricNote": "本次正文未返回明确标注的互动或使用数。",
+      "metricNote": "正文未返回明确标注的互动或使用数。",
       "unlabeledNumbers": [],
       "demand": {
         "request": null,
@@ -462,7 +462,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -621,7 +621,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增。"
+        "detail": "主题采样新增。"
       },
       "purpose": "上传商品图，填商品和背景提示词，更换背景，必要时另做放大与细节修复。",
       "forms": [
@@ -666,7 +666,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -770,7 +770,7 @@
             "population": "资源标记，不是成功制作或投放人数"
           }
         ],
-        "metricsNote": "标题的算力、时长和正文成本均是作者陈述，不作为本轮测得的成本。",
+        "metricsNote": "标题的算力、时长和正文成本均是作者陈述，不作为现有记录中测得的成本。",
         "unlabeledNumbers": [
           {
             "rawText": "39",
@@ -807,7 +807,7 @@
             "同用途工具入口"
           ],
           "missing": [
-            "本次未打开关联工具",
+            "未打开关联工具",
             "原始素材与修复前后对照",
             "真实生成代价和完成率",
             "独立消费者使用或投放结果"
@@ -826,7 +826,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增。"
+        "detail": "主题采样新增。"
       },
       "purpose": "用模特手拿衣服的图片生成展示片段，作者声称用于追随短视频热点。",
       "forms": [
@@ -852,7 +852,7 @@
           "rawText": "3 star"
         }
       ],
-      "metricNote": "标题的算力、时长和正文成本均是作者陈述，不作为本轮测得的成本。",
+      "metricNote": "标题的算力、时长和正文成本均是作者陈述，不作为现有记录中测得的成本。",
       "unlabeledNumbers": [
         {
           "value": "39",
@@ -871,7 +871,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -894,7 +894,7 @@
           "同用途工具入口"
         ],
         "missing": [
-          "本次未打开关联工具",
+          "未打开关联工具",
           "原始素材与修复前后对照",
           "真实生成代价和完成率",
           "独立消费者使用或投放结果"
@@ -1019,7 +1019,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增。"
+        "detail": "主题采样新增。"
       },
       "purpose": "扩大已有图片范围；作者说明可切换SDXL与Flux，并以局部修复完善瑕疵。",
       "forms": [
@@ -1064,7 +1064,7 @@
         "solution": null,
         "followUp": null,
         "status": "未读取到直接求助或采用回报",
-        "basis": "本次正文没有独立消费者评论。"
+        "basis": "正文没有独立消费者评论。"
       },
       "authorObservations": [
         {
@@ -1119,7 +1119,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-sa-01",
@@ -1221,7 +1221,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "作者回顾自己的作品，并把多个历史作品组织成虚构展览短片；个人表达/作品展示，未发现商业交付说明。",
       "forms": [
@@ -1311,7 +1311,7 @@
           "url": "https://www.seaart.ai/postDetail/d6sie7te878c73dkrp8g?pt=lg-cluster-35",
           "date": "2026-03-17 10:04:15",
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -1334,7 +1334,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-sa-02",
@@ -1431,7 +1431,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "作者说明由图片与游戏类型生成角色表，并标示透明webp。是角色资源/方法工具的展示，实际输出未运行验证。",
       "forms": [
@@ -1540,7 +1540,7 @@
           "url": "https://www.seaart.ai/postDetail/dahiq8de878c73aith8g?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
           "date": "2026-09-10 22:20:17",
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -1564,7 +1564,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-sa-03",
@@ -1658,7 +1658,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "用像素审美表现地域风景和角色场景；提示未声明行业交付或旅游营销。",
       "forms": [
@@ -1747,7 +1747,7 @@
           "url": "https://www.seaart.ai/postDetail/da4egjte878c73fam5b0?pt=%7B%22auto_play%22:1,%22wide_screen%22:2,%22data_source%22:%22default%22%7D",
           "date": "2026-08-22 00:07:43",
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -1771,7 +1771,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-leo-01",
@@ -1856,7 +1856,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "提示要求同一原创角色的四视图及动作示意。商业用途与是否已采用未知；原创是作者提示中的要求，不是版权核验。",
       "forms": [
@@ -1916,7 +1916,7 @@
           "url": "https://app.leonardo.ai/generation/image/character-turnaround-model-sheet-four-consistent-0dfb6e48-6613-471a-a2ec-66473c7cc259",
           "date": null,
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -1940,7 +1940,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-leo-02",
@@ -2025,7 +2025,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "作者按幕、序列和场景编号描述角色触碰符文的镜头；最终用于故事、动画还是个人练习未知。",
       "forms": [
@@ -2084,7 +2084,7 @@
           "url": "https://app.leonardo.ai/generation/image/master-prompt-image-scene-49-act-2-response-first-09e11216-9428-4c3b-850d-86c560e9535f",
           "date": null,
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -2108,7 +2108,7 @@
       "original": {
         "observedDate": "2026-09-11",
         "batchCheckedAt": "2026-09-11T23:45:44+08:00",
-        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。",
+        "retrievalMethod": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。",
         "commentExpressions": [],
         "industry": null,
         "id": "interest-leo-03",
@@ -2192,7 +2192,7 @@
       "novelty": {
         "kind": "new",
         "label": "新增样本",
-        "detail": "本次主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
+        "detail": "主题采样新增；已按规范化URL核对，现行平台研究未收录同一对象。"
       },
       "purpose": "提示描述节庆、繁荣与高贵氛围；可确定视觉主题，不能确认它用于商业海报或中国节庆运营。",
       "forms": [
@@ -2250,7 +2250,7 @@
           "url": "https://app.leonardo.ai/generation/image/splendid-fantasy-artwork-coral-orange-adult-dragon-a9561a73-79ce-430d-ab6c-1c2f8f7af19d",
           "date": null,
           "accessedAt": "2026-09-11",
-          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为本批核对结束时间，不是各指标精确刷新时刻。"
+          "whatSupports": "web工具读取公开正文；工具可能返回网页索引/缓存，非登录页面实时抓取。batchCheckedAt为样本中核对结束时间，不是各指标精确刷新时刻。"
         }
       ]
     },
@@ -2293,7 +2293,7 @@
             "value": null,
             "unit": null,
             "period": null,
-            "note": "本次可读正文未显示。"
+            "note": "可读正文未显示。"
           },
           {
             "field": "点赞、收藏及平台统计回复数",
@@ -2312,7 +2312,7 @@
         "visibleSupplySolves": {
           "status": "提问者自述已解决",
           "basis": "第8楼明确回报解决；第9楼提供后续参考资料。",
-          "notEstablished": "本次未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
+          "notEstablished": "未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
         },
         "specificGap": "面向实际部署环境的检查顺序和条件解释，而不只是更多接入教程。",
         "communityImplication": "问题帖若保留环境、已尝试步骤和最终回报，可以成为后续读者的参考；单次排错成功还不足以证明需要长期社区。",
@@ -2331,7 +2331,7 @@
         "publishedAt": "2026-01-29",
         "updatedAt": null,
         "latestParticipationAt": "2026-01-29",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
@@ -2357,7 +2357,7 @@
           "value": null,
           "unit": null,
           "window": "未标明",
-          "note": "本次可读正文未显示。",
+          "note": "可读正文未显示。",
           "kind": "consumption",
           "rawText": null
         },
@@ -2389,7 +2389,7 @@
         ],
         "missing": [
           "面向实际部署环境的检查顺序和条件解释，而不只是更多接入教程。",
-          "本次未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
+          "未复现，未确认后续长期稳定；不把单例方法写成所有部署都适用。"
         ]
       },
       "interpretation": "问题帖若保留环境、已尝试步骤和最终回报，可以成为后续读者的参考；单次排错成功还不足以证明需要长期社区。",
@@ -2427,9 +2427,9 @@
         "accessedAt": "2026-09-11",
         "publishedAt": "2026-09-09",
         "latestVisibleParticipationAt": "2026-09-09",
-        "sampleStatus": "复核既有样本；本次读取范围扩展至公开7楼",
+        "sampleStatus": "复核既有样本；读取范围扩展至公开7楼",
         "entrySelectionReason": "以尚无解决回报的工具问题，对照上一条已解决问题，避免只采成功个案。",
-        "visibleScope": "公开正文呈现1—7楼。既有记录只看到4条回复，本次有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。",
+        "visibleScope": "公开正文呈现1—7楼。既有记录只看到4条回复，有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。",
         "task": "通过第三方API使用代码工具时，判断首字延迟是否正常并找到可行处理方法。",
         "contentForm": "简短求助、使用对比及原因猜测讨论",
         "publisherType": "个人工具使用者；职业、开发水平及是否受托未知。",
@@ -2480,12 +2480,12 @@
         "publishedAt": "2026-09-09",
         "updatedAt": null,
         "latestParticipationAt": "2026-09-09",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
         "label": "已有样本复核",
-        "detail": "复核既有样本；本次读取范围扩展至公开7楼"
+        "detail": "复核既有样本；读取范围扩展至公开7楼"
       },
       "purpose": "通过第三方API使用代码工具时，判断首字延迟是否正常并找到可行处理方法。 判断问题在客户端、服务商、网络还是模型，并避免反复试错。",
       "forms": [
@@ -2498,7 +2498,7 @@
       "entry": {
         "description": "既有公开用户问题与关联材料复核",
         "reason": "以尚无解决回报的工具问题，对照上一条已解决问题，避免只采成功个案。",
-        "scope": "公开正文呈现1—7楼。既有记录只看到4条回复，本次有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。"
+        "scope": "公开正文呈现1—7楼。既有记录只看到4条回复，有更多回复；这表示观察范围变化，不把差值解释为本日新增消费。"
       },
       "metrics": [
         {
@@ -2637,7 +2637,7 @@
         "publishedAt": "2026-07-15",
         "updatedAt": null,
         "latestParticipationAt": "2026-09-01（关联PR审阅；非原提问者回访）",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
@@ -2755,7 +2755,7 @@
             "value": null,
             "unit": null,
             "period": null,
-            "note": "本次正文没有完整数值；反应显示不可用，不补成零。"
+            "note": "正文没有完整数值；反应显示不可用，不补成零。"
           }
         ],
         "demandEvidence": {
@@ -2786,7 +2786,7 @@
         "publishedAt": "2026-04-27",
         "updatedAt": null,
         "latestParticipationAt": "2026-04-27",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
@@ -2812,7 +2812,7 @@
           "value": null,
           "unit": null,
           "window": "未标明",
-          "note": "本次正文没有完整数值；反应显示不可用，不补成零。",
+          "note": "正文没有完整数值；反应显示不可用，不补成零。",
           "kind": "consumption",
           "rawText": null
         }
@@ -2919,7 +2919,7 @@
         "publishedAt": "2026-04-12",
         "updatedAt": null,
         "latestParticipationAt": "2026-04-12",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
@@ -3021,7 +3021,7 @@
             "value": null,
             "unit": null,
             "period": null,
-            "note": "本次可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。"
+            "note": "可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。"
           }
         ],
         "demandEvidence": {
@@ -3052,7 +3052,7 @@
         "publishedAt": "2025-09-15",
         "updatedAt": null,
         "latestParticipationAt": "2025-09-23",
-        "note": "参与日期为本次读取范围内的可见记录。"
+        "note": "参与日期为读取范围内的可见记录。"
       },
       "novelty": {
         "kind": "rechecked",
@@ -3078,7 +3078,7 @@
           "value": null,
           "unit": null,
           "window": "未标明",
-          "note": "本次可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。",
+          "note": "可读正文未显示这些统计字段。账户额度自述不记录为内容消费指标。",
           "kind": "consumption",
           "rawText": null
         }
@@ -3182,19 +3182,14 @@
       "searchOnlyValuesUsed": false
     },
     {
-      "url": "https://creator.nightcafe.studio/creation/Idt9YgFow9fgwAFjdV4g",
-      "status": "具体作品读取失败",
-      "reason": "不能用第三方文章替代当前对象正文"
-    },
-    {
       "url": "https://openart.ai/discovery/sd-1007963342603825152",
       "status": "具体详情读取失败",
-      "reason": "历史提示书提供链接，但本次无可读对象正文"
+      "reason": "历史提示书提供链接，但无可读对象正文"
     },
     {
       "url": "https://www.seaart.ai/postDetail/da4jonle878c738el580",
       "status": "具体作品读取失败",
-      "reason": "已有研究样本，本次重开失败，不充作新增可读样本"
+      "reason": "已有研究样本，重开失败，不充作新增可读样本"
     },
     {
       "url": "https://www.seaart.ai/explore/detail/cpo9gcle878c738pgbn0",

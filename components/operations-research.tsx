@@ -2,7 +2,7 @@ import type { OperationsProfile, OperationsResearch, OperationsSource } from '@/
 
 const stageLabels = { supply: '内容供给', discovery: '内容发现', activation: '首次参与', participation: '创作与交流', return: '再次参与', governance: '规则与维护', monetization: '与付费的连接' };
 const sourceLabels = { 'official-rule': '官方规则', 'official-page': '官方页面', 'implementation-doc': '实现说明', 'author-content': '作者内容', 'user-report': '用户自述', 'historical-report': '历史材料' };
-const accessLabels = { 'full-page': '本次读取正文', 'search-index': '仅搜索索引', 'prior-research': "沿用核验" };
+const accessLabels = { 'full-page': '读取正文', 'search-index': '仅搜索索引', 'prior-research': "沿用核验" };
 
 function References({ ids, sources }: { ids: string[]; sources: OperationsSource[] }) {
  return <span className="evidence-inline-refs">{ids.map(id => { const s = sources.find(x => x.id === id); return s ? <a key={id} href={s.url} target="_blank" rel="noreferrer">〔{s.publisher}：{s.title}〕</a> : null; })}</span>;
@@ -13,13 +13,13 @@ export function OperationsOverview({ data, visibleIds, onSelect }: { data: Opera
  const sources = data.profiles.flatMap(p => p.sources);
  return <div className="operations-report">
   <div className="page-heading"><h1>运营思路与内容形态</h1></div>
-  <p className="muted">覆盖18家，资料查阅于{data.accessedAt}。运营主线及其作用是基于公开机制的分析，未将功能或活动存在视为留存已经成立。</p>
+  <p className="muted">覆盖15家，资料查阅于{data.accessedAt}。运营主线及其作用是基于公开机制的分析，未将功能或活动存在视为留存已经成立。</p>
 
-  <nav className="article-toc" aria-label="运营研究章节">{[['ops-reading','怎样比较'],['ops-synthesis','不同的运营方式'],['ops-comparison','18家逐项对照'],['ops-boundaries','证据范围']].map(([id,label]) => <a key={id} href="#operations" onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>{label}</a>)}</nav>
+  <nav className="article-toc" aria-label="运营研究章节">{[['ops-reading','怎样比较'],['ops-synthesis','不同的运营方式'],['ops-comparison','15家逐项对照'],['ops-boundaries','证据范围']].map(([id,label]) => <a key={id} href="#operations" onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }}>{label}</a>)}</nav>
   <section id="ops-reading" className="essay-section"><h2>内容形式相同，承担的作用可以不同</h2><p>图片和视频是可见的成品，真正被使用的内容还可能包括输入素材、提示词、参数、工作流、模型版本、作业要求或问题上下文。比较内容时，需要看它能否被理解、复用、反馈和维护。</p><p>运营分析分别回答三件事：谁持续提供这些材料；平台怎样把材料送到合适的人面前；使用者完成什么动作后，有理由再次参与。社区的热闹程度、工具的重复使用和实际付费各有证据要求。</p></section>
   <section id="ops-synthesis">{data.synthesis.map(s => <article className="essay-section" key={s.title}><h2>{s.title}</h2><p>{s.text}<References ids={s.sourceIds} sources={sources}/></p><div className="profile-links">{s.profileIds.map(id => <button key={id} onClick={() => onSelect(id)}>{data.profiles.find(p => p.id === id)?.name} ↗</button>)}</div></article>)}</section>
-  <section id="ops-comparison"><h2>18家逐项对照</h2><div className="table-wrap"><table className="ops-comparison-table"><thead><tr><th>平台</th><th>运营主线（分析）</th><th>主要内容形态</th><th>产品提供的参与路径</th></tr></thead><tbody>{profiles.map(p => <tr key={p.id}><th><button className="text-button" onClick={() => onSelect(p.id)}>{p.name} ↗</button><small>{p.archetype}</small></th><td>{p.thesis}</td><td>{p.content.map(c => c.form).join('；')}</td><td><ol>{p.journey.steps.map((s,i) => <li key={i}>{s}</li>)}</ol><small>路径存在及其可能作用，不等于漏斗或留存已验证。</small><button className="text-button" onClick={() => onSelect(p.id)}>阅读逐项分析 ↗</button></td></tr>)}</tbody></table></div>{profiles.length === 0 && <p>没有匹配平台，请清除左侧筛选。</p>}</section>
-  <section id="ops-boundaries" className="essay-section"><h2>证据范围</h2><p>这份分析覆盖内容组织与运营机制，没有重新测量18家的活跃、作者收入或运营投入。官方规则、作者说明、历史活动与代码实现分别标明；资料不足的机制不补写为统一运营流程。</p><p>截图与实操按记录日期阅读。</p><p className="muted">18家共列出{data.stats.contentForms}项内容形态、{data.stats.mechanisms}项运营机制说明；这些是分析条目，同类内容可能重复，不是全站盘点或内容占比。来源见对应档案。</p></section>
+  <section id="ops-comparison"><h2>15家逐项对照</h2><div className="table-wrap"><table className="ops-comparison-table"><thead><tr><th>平台</th><th>运营主线（分析）</th><th>主要内容形态</th><th>产品提供的参与路径</th></tr></thead><tbody>{profiles.map(p => <tr key={p.id}><th><button className="text-button" onClick={() => onSelect(p.id)}>{p.name} ↗</button><small>{p.archetype}</small></th><td>{p.thesis}</td><td>{p.content.map(c => c.form).join('；')}</td><td><ol>{p.journey.steps.map((s,i) => <li key={i}>{s}</li>)}</ol><small>路径存在及其可能作用，不等于漏斗或留存已验证。</small><button className="text-button" onClick={() => onSelect(p.id)}>阅读逐项分析 ↗</button></td></tr>)}</tbody></table></div>{profiles.length === 0 && <p>没有匹配平台，请清除左侧筛选。</p>}</section>
+  <section id="ops-boundaries" className="essay-section"><h2>证据范围</h2><p>这份分析覆盖内容组织与运营机制，没有重新测量15家的活跃、作者收入或运营投入。官方规则、作者说明、历史活动与代码实现分别标明；资料不足的机制不补写为统一运营流程。</p><p>截图与实操按记录日期阅读。</p><p className="muted">15家共列出{data.stats.contentForms}项内容形态、{data.stats.mechanisms}项运营机制说明；这些是分析条目，同类内容可能重复，不是全站盘点或内容占比。来源见对应档案。</p></section>
  </div>;
 }
 

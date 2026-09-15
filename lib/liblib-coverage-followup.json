@@ -1,0 +1,663 @@
+{
+  "date": "2026-09-15",
+  "summary": "35份未匹配资源均仍可在全部入口中找到，且详情均有标签。不能将它们称为无标签内容。",
+  "recheck": {
+    "date": "2026-09-15",
+    "timePrecision": "日；采集过程未保存逐页时分秒",
+    "sourceFile": "day-window-recheck-ids-2026-09-15.txt",
+    "count": 106
+  },
+  "details": [
+    {
+      "id": "f08d312e753d4f03b0711d085b54faed",
+      "title": "热血开学漫画海报",
+      "url": "https://www.liblib.art/modelinfo/f08d312e753d4f03b0711d085b54faed",
+      "tags": [
+        "少年青年",
+        "文字",
+        "2D平涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "fb4e9832a67a475aa8dbb4b71865768a",
+      "title": "梦幻笔触厚涂插画",
+      "url": "https://www.liblib.art/modelinfo/fb4e9832a67a475aa8dbb4b71865768a",
+      "tags": [
+        "通用",
+        "厚涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "88741cfed2a74fe781246910229650db",
+      "title": "Qwen Image-东方美学国风插画",
+      "url": "https://www.liblib.art/modelinfo/88741cfed2a74fe781246910229650db",
+      "tags": [
+        "人/人群",
+        "云",
+        "厚涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "3df73163a3e145f0aa277e57a0ffa85e",
+      "title": "漫画风v魔法学院",
+      "url": "https://www.liblib.art/modelinfo/3df73163a3e145f0aa277e57a0ffa85e",
+      "tags": [
+        "人/人群",
+        "厚涂",
+        "超现实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "f0531dcc806e427da3da7298bde5fb5b",
+      "title": "Krea2_艺术动作+姿势",
+      "url": "https://www.liblib.art/modelinfo/f0531dcc806e427da3da7298bde5fb5b",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "a701f967a71a4e22ac00a3c03e4acfff",
+      "title": "Krea2极致细腰美女",
+      "url": "https://www.liblib.art/modelinfo/a701f967a71a4e22ac00a3c03e4acfff",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "df254f01a13b4d87bdb4d3b7d3888e2d",
+      "title": "Krea2苗条细腰甜妹",
+      "url": "https://www.liblib.art/modelinfo/df254f01a13b4d87bdb4d3b7d3888e2d",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "a4f4bad2e8f943f39f47b97cdd0443f9",
+      "title": "东方美学国风服装设计",
+      "url": "https://www.liblib.art/modelinfo/a4f4bad2e8f943f39f47b97cdd0443f9",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "787344da81374ef2a09bc8640582b04e",
+      "title": "婚纱设计",
+      "url": "https://www.liblib.art/modelinfo/787344da81374ef2a09bc8640582b04e",
+      "tags": [
+        "少年青年",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "e4ce5d0bbae64f72ab0ed4d8e8582ee2",
+      "title": "清新的校园氛围。",
+      "url": "https://www.liblib.art/modelinfo/e4ce5d0bbae64f72ab0ed4d8e8582ee2",
+      "tags": [
+        "人/人群",
+        "文字",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "9707076b50c446f9badbb4637b8348bc",
+      "title": "Qwen-image-高冷御姐10-南音浅浅",
+      "url": "https://www.liblib.art/modelinfo/9707076b50c446f9badbb4637b8348bc",
+      "tags": [
+        "少年青年",
+        "厚涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "c2e3d779957f4362a01c04ddd6f71e2c",
+      "title": "千问田园乡村风入户客厅/室内设计",
+      "url": "https://www.liblib.art/modelinfo/c2e3d779957f4362a01c04ddd6f71e2c",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "52dd19a0dea446f0bd987b754c1bde3c",
+      "title": "Qwen奶咖风极简客厅/复式客厅",
+      "url": "https://www.liblib.art/modelinfo/52dd19a0dea446f0bd987b754c1bde3c",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "cf6f50c681db4ac9908165737610f293",
+      "title": "Qwen-轻法式复式楼梯客厅/轻复古田园",
+      "url": "https://www.liblib.art/modelinfo/cf6f50c681db4ac9908165737610f293",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "6bdd92fa50e841df8bdb2d5495f0c93d",
+      "title": "Qwen-复古风客厅/室内设计",
+      "url": "https://www.liblib.art/modelinfo/6bdd92fa50e841df8bdb2d5495f0c93d",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "2b9b12925429446dbc9e0e7b46353911",
+      "title": "写实青春校园/超写实摄影风格",
+      "url": "https://www.liblib.art/modelinfo/2b9b12925429446dbc9e0e7b46353911",
+      "tags": [
+        "人/人群",
+        "文字",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "8e5e8a72c7ff4b94a846a419ddf46fc1",
+      "title": "Qwen千问-中古风胡桃木客厅",
+      "url": "https://www.liblib.art/modelinfo/8e5e8a72c7ff4b94a846a419ddf46fc1",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "02dc2146102c4e8b8dd2f2565f4f2a29",
+      "title": "Qwen-法式奶油复古客厅",
+      "url": "https://www.liblib.art/modelinfo/02dc2146102c4e8b8dd2f2565f4f2a29",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "afd01191e5f34bee8690284cd3eb0580",
+      "title": "Qwen原木日式温馨客厅",
+      "url": "https://www.liblib.art/modelinfo/afd01191e5f34bee8690284cd3eb0580",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "98664120347e4c3e81963fc623f877ca",
+      "title": "Qwen-奶白色复式挑高客厅/室内设计",
+      "url": "https://www.liblib.art/modelinfo/98664120347e4c3e81963fc623f877ca",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "11bbbbea4dd347ebaf6d487fc5cdec9a",
+      "title": "Qwen-复古实木翻斗鞋柜入户玄关/室内设计",
+      "url": "https://www.liblib.art/modelinfo/11bbbbea4dd347ebaf6d487fc5cdec9a",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "f8f553e69b674de4a90b8de9d2592588",
+      "title": "写实青春校园题材",
+      "url": "https://www.liblib.art/modelinfo/f8f553e69b674de4a90b8de9d2592588",
+      "tags": [
+        "人/人群",
+        "文字",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "df2f6defad7b4792a8c56af3390edc1b",
+      "title": "Qwen-奶油简约原木墙客厅/室内设计",
+      "url": "https://www.liblib.art/modelinfo/df2f6defad7b4792a8c56af3390edc1b",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "92723e67c12c47dcbfd81c2c1af17d10",
+      "title": "新中式轻奢客厅",
+      "url": "https://www.liblib.art/modelinfo/92723e67c12c47dcbfd81c2c1af17d10",
+      "tags": [
+        "家居家具",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "e3382a26f46c4c4aa21fbd4de2e263b4",
+      "title": "现代青春校园风人像摄影",
+      "url": "https://www.liblib.art/modelinfo/e3382a26f46c4c4aa21fbd4de2e263b4",
+      "tags": [
+        "人/人群",
+        "文字",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "ddf2fc2c8a84468a9bfe1d3d97c2a0a0",
+      "title": "校园青春切片风格",
+      "url": "https://www.liblib.art/modelinfo/ddf2fc2c8a84468a9bfe1d3d97c2a0a0",
+      "tags": [
+        "人/人群",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "eac54e589bef4111a30aec6cbe88611d",
+      "title": "校园生活记录的写实人像",
+      "url": "https://www.liblib.art/modelinfo/eac54e589bef4111a30aec6cbe88611d",
+      "tags": [
+        "人/人群",
+        "文字",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "2f7a887984e34dc5970964e11a621540",
+      "title": "日常感与青春偶像审美",
+      "url": "https://www.liblib.art/modelinfo/2f7a887984e34dc5970964e11a621540",
+      "tags": [
+        "人/人群",
+        "写实"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "9988bb92a24841e7bc928e9aae9d0b08",
+      "title": "新国风叙事绘本「儿童插画」",
+      "url": "https://www.liblib.art/modelinfo/9988bb92a24841e7bc928e9aae9d0b08",
+      "tags": [
+        "人/人群",
+        "2D平涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "d2ec3fe7a24e4e22b06e42c853bbc0c2",
+      "title": "剪纸画",
+      "url": "https://www.liblib.art/modelinfo/d2ec3fe7a24e4e22b06e42c853bbc0c2",
+      "tags": [
+        "传统物品",
+        "纸艺拼贴"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "213abdc87dc4493e80e4ff7ff8e8e205",
+      "title": "窗花设计",
+      "url": "https://www.liblib.art/modelinfo/213abdc87dc4493e80e4ff7ff8e8e205",
+      "tags": [
+        "传统物品",
+        "纸艺拼贴"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "2dee73770b5a4dd994497572cafe80d4",
+      "title": "荒诞剪纸隐喻海报设计",
+      "url": "https://www.liblib.art/modelinfo/2dee73770b5a4dd994497572cafe80d4",
+      "tags": [
+        "少年青年",
+        "纸艺拼贴"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "96ef60628bba4a6ab5d8d5aa638c5403",
+      "title": "人物角色三视图！超高清！人脸与服饰细节！",
+      "url": "https://www.liblib.art/modelinfo/96ef60628bba4a6ab5d8d5aa638c5403",
+      "tags": [
+        "少年青年",
+        "写实",
+        "三视图/多视图"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "61df0845551943beaf9fa2b8d2da4aaa",
+      "title": "夸张风格游戏角色立绘",
+      "url": "https://www.liblib.art/modelinfo/61df0845551943beaf9fa2b8d2da4aaa",
+      "tags": [
+        "少年青年",
+        "2D平涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    },
+    {
+      "id": "bbf592deeef940bc8bdb6afdb40e2e85",
+      "title": "Qwen-112-2512",
+      "url": "https://www.liblib.art/modelinfo/bbf592deeef940bc8bdb6afdb40e2e85",
+      "tags": [
+        "少年青年",
+        "厚涂"
+      ],
+      "titleVerified": true,
+      "stillInAll": true
+    }
+  ],
+  "controls": [
+    {
+      "id": "634b4a2a0af142c1aba3f16ea1e8d4cd",
+      "title": "千问复古工业风温馨客厅",
+      "tags": [
+        "家居家具",
+        "住宅空间",
+        "写实"
+      ],
+      "category": "建筑及室内设计",
+      "url": "https://www.liblib.art/modelinfo/634b4a2a0af142c1aba3f16ea1e8d4cd"
+    },
+    {
+      "id": "380b0f50e85a409cb658a1f9dc62d3a4",
+      "title": "现代数字摄影与青春人像风格",
+      "tags": [
+        "人/人群",
+        "文字",
+        "日常摄影",
+        "写实"
+      ],
+      "category": "摄影写真",
+      "url": "https://www.liblib.art/modelinfo/380b0f50e85a409cb658a1f9dc62d3a4"
+    }
+  ],
+  "interpretation": "对照资源比未匹配同类多了住宅空间或日常摄影标签，提示细分标签映射可能影响入口覆盖。对照只有两份，不能据此确认全部35份的遗漏原因；平台标签映射、排序资格和版本处理规则仍未公开核实。",
+  "week": {
+    "source": "https://www.liblib.art/image-model",
+    "scope": "全部；发布时间1周；最多运行；从顶部连续滚动10次，虚拟列表按ID去重。",
+    "count": 150,
+    "exhausted": false,
+    "ids": [
+      "c26d0f3ad1ca418694003b985307686a",
+      "6beaa0af63e44e599ec67416ff34df89",
+      "9ae5d7be49f04cb4a6dbdf601c3a74f7",
+      "ac83c776578b48338ae477b7e453463e",
+      "9e3d308c4ccc44bdbbd27958a48b7857",
+      "da0a1a2147254e5ea1c62634bfde2680",
+      "9f7a3c3b1fc2421488394cba2c4330cd",
+      "86b4f5a28fed4d3999cd4c96c379eab1",
+      "586c39f59ae0414b865b81cd5464ad5e",
+      "f4aeea8028fb48688b76457db4b8525a",
+      "fab8498a131d4d808569faa05c69ca99",
+      "5b7d130e0c5145269d82b534b908d00d",
+      "96ef60628bba4a6ab5d8d5aa638c5403",
+      "a84fe01ba34446a780eee57af03cb089",
+      "d6b65cd8e1274d70a4c5cc4f61d4e26f",
+      "8058b002758344429af5395382920bd4",
+      "6ca760be7248429bac171c89eceb66f2",
+      "727deb94d49146f8ad15924408edd5b9",
+      "39d197e8d61b46dcbb2ab7250e8589ea",
+      "fc50ff6ea3ec42de9d252854ed4b00df",
+      "43171388ac3049aea542c5ce37abfa2a",
+      "d73a3415b6af4ea9aa6e608fe2522a7e",
+      "7824359efca44eb6bf8c873ba0f965fb",
+      "9707076b50c446f9badbb4637b8348bc",
+      "1180233f45224c9d8c1b4d3c419975a4",
+      "87ba0f3306af41df9758015553f24d82",
+      "f6ba9d6336104a34b5cdd10572d294db",
+      "7d50511ddfa4432082f876754d99813d",
+      "a6f31ae0557b4b809910e68640b84af4",
+      "984d9faab6cf450bad11dddee73d7072",
+      "7ca4eb0d8ca246d2af3dd03a628d02c3",
+      "8955e79be08045f5ae63be792ada24a9",
+      "875d537697d44cc28169e3edae37fe16",
+      "f654ebcf01574013ae4cf349d6f0dff2",
+      "8a860679264b45ffa5c83329434d7f2a",
+      "883d3c9d56f34a0790792ad343e7c8b1",
+      "b4f171afd71f4246ad8a31ced20aaa03",
+      "85ecbd4dabc94f009f9dbd7fdfa97640",
+      "d1fbe1692c684c598300ecc126cde406",
+      "f24447b1e8104d85ae41e35cbcd140ad",
+      "be4ebe30a85645ac82538ff8e28019a9",
+      "5a6e15cbd0cd43d3ac41db30fc581898",
+      "8f14ccf797b248d89065f80d41c6936f",
+      "e2955ca9c7e1428b8da7c323b6f33698",
+      "1b53c2506c6340498da61f727fcaf9ad",
+      "e13f969a7ceb405c986d2fe4fe7ac9e3",
+      "18cb693bd53c4a108dba92f346706641",
+      "a091a0e1b53e4367ae0aa78e83c46220",
+      "ec5da0fc097642a6ab0bfde68dada1ef",
+      "7a2e55bb82b549a79a6c659652ce305b",
+      "6cc291d69c6e4e6cbf2e26c762201ee4",
+      "d266e762baa84b469f81f75a4edb059c",
+      "33815b655ae949978b10f23176a009ae",
+      "23ac16c6c34c4c749ceb00e52cd63476",
+      "c5fcf3d5702d4428a20cadf3e34f029a",
+      "77de74df900948e9b080d71477bafae4",
+      "31b8f62d5ec0462caefc19b59865f7da",
+      "ecbdfa72066f4e1c8d212fe5b0d770ba",
+      "774dfd35fada4c5ea698f05092efb48b",
+      "06401bd7e03946b8a88f1f881515c268",
+      "744adde6ba8f47b0983f92222efde6a7",
+      "33bfca18dbc24e2b98f4fe6458ff7ca9",
+      "d5ed984849e745c894dc53c64ff87f6f",
+      "786e9bf7c9f645cc9c716d561318fd7e",
+      "c7320574a18b47b0b922a9145cb3a0ce",
+      "26368f0db6874fa3a6ec1d98600426d8",
+      "d2ec3fe7a24e4e22b06e42c853bbc0c2",
+      "bbb997de8ab84db2a20beab46425663e",
+      "b46e9f9dd11d4ba9806f41c2ce8969c2",
+      "45039be7573a4c0d8276f4fc514ea603",
+      "e0c36e0f2d384313b1175e081aed763e",
+      "7c793c5359624305b903ef4ce33383f6",
+      "573838bde527464285fb9f34c90db3b0",
+      "ccac67fe96c246b9bdd348c96c1c26b7",
+      "f9b6c82a0ffe48c68ce937d68d47c3ce",
+      "2e91fdbb163847c88a43783e734fa24c",
+      "1e6b112fcce945b19f4c0ae7d2a5f6fd",
+      "00ed7762b46e485b9c3a75aba313e214",
+      "d94fd7ca20c9455aa56a3596e7008a3e",
+      "b7a745a97b0342eb89182c5fa0ac393e",
+      "7937f63dc1404cb5849b403b9a882b27",
+      "66a1611a35c84b4886feef017dad48a8",
+      "ca226d94df87426cb2dea4f3bf171fa3",
+      "5360ef134ed6480886778c7b11f2a023",
+      "08fd476bf2a84f70b9a1de39013704a0",
+      "4cc65cb1b67649b29beab4e0e2d34687",
+      "de528bf4b23542b380dad1ef851311d2",
+      "7f67d7765e93467eb4d9f2c61e85905a",
+      "74ad82ac7e2545cabd16f8052339345d",
+      "33b8a796ff834abf88012a084d765bb8",
+      "68af2e4761cc454999896b5fb3b1eb41",
+      "82ba225735c343c5b9c1faad0ab82ece",
+      "764be382dc734be7a89803573fbdd179",
+      "04338e1c989e4eea8d2f3aeebfdf0ac3",
+      "892a6023df6d45129684f22fae1f9a37",
+      "92723e67c12c47dcbfd81c2c1af17d10",
+      "cd4e8e9cff8a4d6bbfc4593294c5a8c2",
+      "a4f4bad2e8f943f39f47b97cdd0443f9",
+      "278d2863c96841a69222da185e7769d5",
+      "47c5a8b9b89f434683c505f83f6d5771",
+      "759058233ab44dd3bea0c7a94dedbdae",
+      "7a8cd54909d348ce8d0d8930cfcd61d3",
+      "787344da81374ef2a09bc8640582b04e",
+      "008cbed3300d42179d79dbc1486eab93",
+      "b45e5c92cf4d400398e1791850d4b258",
+      "9db7a5bc8ca04c178bd7b3f6ea5eba44",
+      "f769f08726814101bfcd05a4e3c87075",
+      "08dfe94db26a49fd8e8806076b896432",
+      "9cd0b5fd459d49ac925559758719700c",
+      "658c5d6b2cec45e0a1e08d530466b7af",
+      "316cdb97e73d469fa81ff2cb07c51ee3",
+      "4fb123db7be44f0fb33f64f4ce0ae20f",
+      "f79548f5799548b9ba88482aea526e2c",
+      "e8b38b832cd244f3875df69f7f6f8a3b",
+      "9ec27ec7be77440cabd3afcc27216e01",
+      "2afcc4411db24e27870dcf8167903e41",
+      "698fc8755c8e4fa6b4ac3814e068250a",
+      "94c47fa28a2643b4aace12478188e2f3",
+      "cae5e792483240b5b65dc318503f4246",
+      "e7503f4566ba41f98e35c36e132296a4",
+      "6103869290c84c27a31df7c22f1de3a6",
+      "1a66ca6c72db4b9d907679caf02cfd5d",
+      "0b9e49c07c4846f3ba6d445d56a6ab4d",
+      "45237d0819d54e6895782633fc732b18",
+      "09ada869b12b421fab95f6470f82be82",
+      "7c7e46f0a98e4024aba9bd4fd00a0249",
+      "61848942523d49c59911cc778f771428",
+      "d694fa7428c24ee2a12dcc3f4232e0de",
+      "11b4d7eec5d84ae3bca5e0fca7f8620a",
+      "0c855686ffce46daa44b6434928729c6",
+      "aaec0c0e754a497a980930f43b909559",
+      "69565ce148b3438c9b24482698912de0",
+      "d86f2409b3614c9a8c170297f784d0ad",
+      "ad3459e83fed4ec985feb56710538c8e",
+      "c543f0949b4941ffb340f9b179329a1f",
+      "9bce43568b5247899ed08420ad73efc1",
+      "72dd6f85319846e497fcaa680afd18bf",
+      "fc1f1f0cbc4f48a29fc4c5b083514221",
+      "59bda2344d6b4a4ea91d35ebe99127c4",
+      "077cb72452f543e8a38e32339a0d941d",
+      "0ccb0879203c4fa197bc92e97bb37338",
+      "23c59a47aaa1411fab351d99cf8441ff",
+      "1d22b43884a045d29ac243a78bc671e7",
+      "4a0fee3de1f44d0798b44e1ce6a6682c",
+      "2382b4767a694788b1b7c3946e8d70e4",
+      "26d4ff4723c74e4d8216ebb6915345e1",
+      "4b6b3ef6a6234957a6c5df58c3ad7cc6",
+      "d6307a146e9340858c6b748b3b621269",
+      "30bea6614bc64ff29db00379b21c802e",
+      "80941182365b436f89672240eba8581d"
+    ],
+    "note": "150份是排序列表的局部读取，未到末端，也不是随机抽样。保留ID供继续核对，不能作为一周总量或全站占比分母。"
+  },
+  "workflow": {
+    "source": "https://www.liblib.art/workflows",
+    "scope": "全部；版本发布时间1天；推荐排序；未勾选会员、可下载或可在线运行限制。",
+    "exhausted": true,
+    "categoryScope": "界面可见分类选项，未逐类采集。",
+    "categories": [
+      "高清放大",
+      "局部重绘",
+      "抠图",
+      "去水印",
+      "洗图扩图",
+      "换脸换装",
+      "人像调节",
+      "线稿提取",
+      "万物迁移",
+      "产品精修",
+      "视角控制",
+      "通用功能"
+    ],
+    "resources": [
+      {
+        "id": "a3b6935c521d4e8dbc188469b32fc7ed",
+        "title": "MiniMax H3 单人版语音驱动数字人工作流",
+        "form": "工作流",
+        "url": "https://www.liblib.art/modelinfo/a3b6935c521d4e8dbc188469b32fc7ed"
+      },
+      {
+        "id": "032ef7dc9b5e4dc3ae73e78f48857914",
+        "title": "一键生成材质通道",
+        "form": "AI应用",
+        "url": "https://www.liblib.art/modelinfo/032ef7dc9b5e4dc3ae73e78f48857914"
+      },
+      {
+        "id": "1a1108e61ff94fa0ac9d83c9f45434f9",
+        "title": "高清放大工作流-建筑规划",
+        "form": "工作流",
+        "url": "https://www.liblib.art/modelinfo/1a1108e61ff94fa0ac9d83c9f45434f9"
+      },
+      {
+        "id": "4dd38d20376b4744a42f7b512becd5c0",
+        "title": "电商美妆产品，一键精修",
+        "form": "工作流",
+        "url": "https://www.liblib.art/modelinfo/4dd38d20376b4744a42f7b512becd5c0"
+      },
+      {
+        "id": "736a623d0fc847739953d76727ecb679",
+        "title": "千问全能溶图打光",
+        "form": "工作流",
+        "url": "https://www.liblib.art/modelinfo/736a623d0fc847739953d76727ecb679"
+      },
+      {
+        "id": "acd4e6b379244b5fb3b7a8ee7b4ac506",
+        "title": "图像一键转通道",
+        "form": "工作流",
+        "url": "https://www.liblib.art/modelinfo/acd4e6b379244b5fb3b7a8ee7b4ac506"
+      },
+      {
+        "id": "43cd30b4b5624a7d80271e825f7b697d",
+        "title": "扩图 真正的无痕扩图 无缝扩图 图像扩图+高清人像放大去AI感",
+        "form": "AI应用",
+        "url": "https://www.liblib.art/modelinfo/43cd30b4b5624a7d80271e825f7b697d"
+      },
+      {
+        "id": "29162e4cd0d64f62999998edb92826b5",
+        "title": "印花提取 图案平铺 矢量印花 产品图片纹理重绘",
+        "form": "AI应用",
+        "url": "https://www.liblib.art/modelinfo/29162e4cd0d64f62999998edb92826b5"
+      }
+    ],
+    "note": "该筛选返回8份资源，列表显示没有更多了，卡片标识为5份工作流和3份AI应用。版本发布时间不同于资源首次发布；推荐排序是否覆盖全部合格资源未知。这8份不是平台一天新建工作流总数。"
+  },
+  "next": "优先核实细分标签与入口映射，再扩大一周全部入口的采集；图片模型、工作流、视频特效、作品分别建统计范围。需求结论仍需独立使用结果，不能由分类少或资源多直接推导。"
+}

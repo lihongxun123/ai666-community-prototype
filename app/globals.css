@@ -412,3 +412,19 @@ body {
 .integrated-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0}.integrated-card{border:1px solid var(--report-line);padding:1.2rem;min-width:0}.integrated-card>span{font-size:.875rem;color:#52674c}.integrated-card h4{margin:.6rem 0}.integrated-card ul{font-size:.875rem}.integrated-card p{font-size:.9375rem}.integrated-card .integrated-action{padding-top:1rem;border-top:1px solid var(--report-line);font-weight:600}
 .integrated-detail{padding-left:1.7rem}.integrated-detail>li{padding:.6rem 0}.integrated-detail p{margin:.4rem 0}.integrated-supply-table{min-width:950px!important}
 @media(max-width:900px){.integrated-cards{grid-template-columns:1fr}.integrated-card{padding:1rem}}
+
+/* Shared reading scale for research pages; navigation keeps its own sizing. */
+#main { font-size: .9375rem; }
+#main :where(p, li, dd, dt) { font-size: .9375rem; line-height: 1.8; }
+#main h1 { font-size: clamp(1.75rem, 3vw, 2.375rem); }
+#main h2 { font-size: 1.5rem; }
+#main h3 { font-size: 1.25rem; }
+#main h4 { font-size: 1rem; }
+#main table,
+#main table :where(th, td, p, li, dd, dt, a, button, span, strong) {
+  font-size: .8125rem;
+  line-height: 1.7;
+}
+#main table :where(th, td) { padding: .75rem .875rem; }
+#main table p { margin-block: 0 .5rem; }
+#main :where(.citations, .study-refs, .study-refs a, figcaption) { font-size: .8125rem; }

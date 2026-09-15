@@ -5,7 +5,7 @@ export function DeskComparisons() {
     <h2 id="desk-comparisons-title">{data.title}</h2>
     <p>{data.summary}</p>
     <div className="table-wrap"><table className="brief-table">
-      <thead><tr><th>任务与平台</th><th>本次发现</th><th>比较到哪一步</th></tr></thead>
+      <thead><tr><th>任务与平台</th><th>发现</th><th>比较到哪一步</th></tr></thead>
       <tbody>{data.comparisons.map(item => <tr key={item.id}>
         <th scope="row">{item.title}<p className="muted">{item.platforms.join(' / ')}</p></th>
         <td>{item.finding}</td><td><p>{item.method}</p><p>{item.limit}</p></td>

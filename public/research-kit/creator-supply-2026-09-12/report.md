@@ -347,13 +347,11 @@
 
 持续责任：文章提供投稿前的构图与叙事检查建议。主题作者的报酬、回复义务、模板长期维护和活动后的复盘责任未公开。
 
-与工具的关系：主题与模板接入 NightCafe；该文章不足以确认外部工具作品的参赛资格。
 
 可借鉴：一次合作可形成主题说明、可用素材、作品征集和回看集合；供给对象同时包括读者与创作者。 以是否出现有内容的回应、改作与后续作品判断参与，主题投稿量单独记录。
 
 精选作者不能代表普通作者；页面关于长期参与的宣传不能代替留存数据。 可见模板链接与作者专题不证明已公开完整授权合同或该合作可按固定价格复制。
 
-[NightCafe：NightCafe Creator Takeover：Lessons from Father Figures](https://nightcafe.studio/blogs/blog/lessons-from-father-figures-ai-art-prompts-storytelling)
 
 ### 用公开改造示范提高模板可复用性
 
@@ -361,13 +359,11 @@
 
 持续责任：改动提示词后应更新封面；观察别人生成的公开结果，反复误解的字段要改说明。这是教学建议，未见平台强制维护 SLA 或失效赔付要求。
 
-与工具的关系：配置与结果回流基于 NightCafe 模板功能。
 
 可借鉴：多元拾光可把好看作品与可复用资源分开验收：不同输入、说明、结果样例和当前版本一致性。 用户问题转教程应保存真实提问来源；本案例不能冒充已验证的普通用户痛点样本。
 
 演示模板是刻意设计的教学问题，不是普通用户失败率调查。 官方建议存在不证明作者普遍遵守，也不证明模板复用带来留存。
 
-[NightCafe：How to Create NightCafe Templates People Want to Use](https://nightcafe.studio/blogs/blog/how-to-create-nightcafe-templates)
 
 ### 课程分工与反馈修订
 
@@ -594,17 +590,13 @@
 
 官方规则或具体案例说明存在该机制，未提供普遍供给率、成本或留存效果。
 
-### NightCafe：NightCafe Creator Takeover：Lessons from Father Figures
 
-[来源页面](https://nightcafe.studio/blogs/blog/lessons-from-father-figures-ai-art-prompts-storytelling) · 资料日期：2026-06-15 · 核对：2026-09-12
 
 社区作者参与挑战主题，平台编成方法、提示词与模板入口
 
 官方规则或具体案例说明存在该机制，未提供普遍供给率、成本或留存效果。
 
-### NightCafe：How to Create NightCafe Templates People Want to Use
 
-[来源页面](https://nightcafe.studio/blogs/blog/how-to-create-nightcafe-templates) · 资料日期：2026-09-03 · 核对：2026-09-12
 
 模板改造示范、发布前验证与发布后维护建议
 

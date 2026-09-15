@@ -49,7 +49,7 @@
       }
     ],
     "taxonomyExample": "例如一条宠物拟人短剧：主题是萌宠，形式是视频；观看者可能只想追故事，另一位用户可能想制作自家宠物视频。只有出现明确商用任务时，才标注宠物商业行业。每条内容可有多个标签，标签占比不能相加成人群占比。",
-    "reading": "对照18个平台提供的内容、可见消费线索和证据范围。展开平台可查普通用户线索、来源与缺失数据；本表不能用于全站行业排名。",
+    "reading": "对照15个平台提供的内容、可见消费线索和证据范围。展开平台可查普通用户线索、来源与缺失数据；本表不能用于全站行业排名。",
     "gaps": [
       {
         "condition": "需求是否持续",
@@ -89,8 +89,6 @@
         "theme": "原创角色与连续故事",
         "platformIds": [
           "openart",
-          "midjourney",
-          "nightcafe",
           "tusi"
         ],
         "supply": "角色作品、风格资源、故事视频及主题挑战已经存在。",
@@ -108,10 +106,9 @@
         "platformIds": [
           "runninghub",
           "openart",
-          "seaart",
-          "nightcafe"
+          "seaart"
         ],
-        "supply": "RunningHub首页可见宠物奇观等短视频模板；OpenArt、SeaArt和NightCafe提供角色或主题活动的组织参照。尚未取得宠物AI内容的细分库存与消费量。",
+        "supply": "RunningHub首页可见宠物奇观等短视频模板；尚未取得宠物AI内容的细分库存与消费量。",
         "consumer": "喜欢宠物故事的人；想用自家宠物照片创作的人。",
         "possibleGap": "围绕同一角色的连续内容，配少量可试的个性化案例。",
         "community": "连载视频或图集＋宠物主题合集＋读者投稿。",
@@ -125,8 +122,6 @@
         "theme": "国风、奇幻与视觉短片",
         "platformIds": [
           "jimeng",
-          "nightcafe",
-          "midjourney",
           "kling",
           "runway"
         ],
@@ -164,7 +159,6 @@
         "platformIds": [
           "leonardo",
           "tusi",
-          "civitai",
           "huggingface"
         ],
         "supply": "游戏用途、像素素材和兴趣角色资源可见；兴趣题材与生产资产分开。",
@@ -422,7 +416,7 @@
       ]
     },
     "sampling": {
-      "scope": "18个平台的分类与用途档案之外，新增了7个平台的18条具体样本：商品素材6条、兴趣作品6条、任务求助6条。11条为新增观察，7条为既有材料复核；不是18名新用户，也不是全站随机样本。",
+      "scope": "15个平台的分类与用途档案之外，新增了7个平台的18条具体样本：商品素材6条、兴趣作品6条、任务求助6条。11条为新增观察，7条为既有材料复核；不是18名新用户，也不是全站随机样本。",
       "supplyFields": [
         "平台与页面入口",
         "内容唯一链接及观察日期",
@@ -1047,150 +1041,6 @@
       "demandSupplyRatio": null
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "summary": [
-        "模型、例图与合集；历史幻想兴趣线索",
-        "看概念、学训练、下载后外部使用",
-        "当前题材列表读取受阻"
-      ],
-      "supplyTopics": [
-        {
-          "text": "已确认资源组织包含模型、图像与帖子合集；模型与版本可以关联例图。",
-          "sourceIds": []
-        },
-        {
-          "text": "历史用户提到 DnD、Warhammer 和幻想创作；不据此称其为全站主流。当前模型分类、动漫/写实等题材的份额未核到。",
-          "sourceIds": []
-        }
-      ],
-      "industryUses": [
-        {
-          "text": "当前行业分布未知。DnD 或 Warhammer 兴趣图不能自动归为游戏从业者或商业游戏资产。",
-          "sourceIds": []
-        }
-      ],
-      "consumptionTopics": [
-        {
-          "text": "历史用户会寻找兴趣题材对应的模型、训练参数和流行概念。",
-          "sourceIds": []
-        },
-        {
-          "text": "另一条消费路径是下载资源到本地使用，再回站看方法或分享，消费不一定发生在站内生成器。",
-          "sourceIds": []
-        }
-      ],
-      "contentForms": [
-        {
-          "text": "模型与版本说明",
-          "sourceIds": []
-        },
-        {
-          "text": "关联例图及参数/资源归因",
-          "sourceIds": []
-        },
-        {
-          "text": "按主题整理的图片、帖子、模型合集",
-          "sourceIds": []
-        },
-        {
-          "text": "作者经验与使用问题",
-          "sourceIds": []
-        }
-      ],
-      "supplierTypes": [
-        {
-          "text": "模型训练或合并作者",
-          "sourceIds": []
-        },
-        {
-          "text": "上传作品与参数的个人创作者",
-          "sourceIds": []
-        },
-        {
-          "text": "合集策展者和协作者；不能与关注合集的人混算",
-          "sourceIds": []
-        }
-      ],
-      "observedSignals": [
-        {
-          "text": "官方实现文档；合集允许按权限收录图像、帖子与模型；文档明确关注者和协作者不同。",
-          "sourceIds": [
-            "cv-coll"
-          ]
-        },
-        {
-          "text": "官方实现文档；例图可以关联模型版本。可追溯资源不等于完整流程，也不证明该关联正确。",
-          "sourceIds": [
-            "cv-img"
-          ]
-        },
-        {
-          "text": "历史公开用户自述；2024 年讨论中可见日常兴趣创作、看概念趋势、学习训练与回站分享的描述。",
-          "sourceIds": [
-            "cv-user"
-          ]
-        }
-      ],
-      "unknowns": [
-        {
-          "text": "当前各题材有效资源数、独立作者数、内容消费人数与曝光未知。",
-          "sourceIds": []
-        },
-        {
-          "text": "官网模型、文章及公开标签 API 本次未能读取，不能以错误页推断平台无供给。",
-          "sourceIds": []
-        },
-        {
-          "text": "下载、生成、收藏和外部运行的重复用户关系未知。",
-          "sourceIds": []
-        }
-      ],
-      "opportunity": "可比较“同一兴趣主题的作品合集”与“该主题入门方法及常见失败说明”哪个更带动回访。机会可能在理解和使用资源的成本，不一定在资源数量；须先补当前分类与普通内容样本。",
-      "counterexample": "资源在公开主页显得少，可能是过滤、账号权限或资源收费导致；喜欢免费开放资源的人也未必愿意迁移到另一个工具站。",
-      "sources": [
-        {
-          "id": "cv-coll",
-          "title": "Collaborative Collections",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
-          "date": null,
-          "accessedAt": "2026-09-11",
-          "whatSupports": "合集承载对象、投稿、关注者与协作者的区别；不能证明线上每项均已开放。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "cv-img",
-          "title": "Image Resource Tracking",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
-          "date": null,
-          "accessedAt": "2026-09-11",
-          "whatSupports": "图像与模型版本的资源关联；不提供题材份额。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "cv-user",
-          "title": "Civitai 公开用户讨论：使用与回访原因",
-          "url": "https://www.reddit.com/r/civitai/comments/1e0cdub/anyone_else_think_civitai_is_actually_pretty_great/",
-          "date": "2024-07-11",
-          "accessedAt": "2026-09-11",
-          "whatSupports": "DnD、Warhammer 兴趣创作及回站学习/看趋势的历史自述；本次重开正文，具体匿名观察沿用既有画像。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "cv-block",
-          "title": "Models",
-          "url": "https://civitai.com/models",
-          "date": null,
-          "accessedAt": "2026-09-11",
-          "whatSupports": "访问限制记录；不提供内容证据。",
-          "access": "本次 web 读取失败"
-        }
-      ],
-      "supplyShare": null,
-      "consumptionShare": null,
-      "demandSupplyRatio": null
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "summary": [
@@ -1519,289 +1369,6 @@
           "date": "2025-11 至 2026 年；评论含相对日期",
           "accessedAt": "2026-09-10",
           "whatSupports": "音乐视频项目、角色参考及前后反馈；历史个案。",
-          "access": "本次审阅本地 audience-research.json，未重读原页"
-        }
-      ],
-      "supplyShare": null,
-      "consumptionShare": null,
-      "demandSupplyRatio": null
-    },
-    {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "summary": [
-        "奇幻艺术与主题挑战",
-        "欣赏、创作、投票与交流",
-        "兴趣参与机制明确；消费规模未知"
-      ],
-      "supplyTopics": [
-        {
-          "text": "奇幻题材：龙、精灵、神话生物、人物和风景。官方 2026 年 3 月用主题月把挑战、提示指南与作者展示连在一起。",
-          "sourceIds": []
-        },
-        {
-          "text": "每日挑战还有无主题日、超现实、写实和幽默等表达；题材与艺术风格相交。",
-          "sourceIds": []
-        }
-      ],
-      "industryUses": [
-        {
-          "text": "核心可核材料属于兴趣创作和社区参与，不宜按商业行业强分。",
-          "sourceIds": []
-        },
-        {
-          "text": "官方博客的旧评论里有人询问将图用于自己的书；是个人用途线索，不能证明出版行业规模。",
-          "sourceIds": []
-        }
-      ],
-      "consumptionTopics": [
-        {
-          "text": "看同题不同解释、给作品投票、发现作者和学习提示。",
-          "sourceIds": []
-        },
-        {
-          "text": "参与者可能消费审美乐趣、归属感和练习反馈；这些不要求有商业成品任务。",
-          "sourceIds": []
-        }
-      ],
-      "contentForms": [
-        {
-          "text": "每日挑战题面",
-          "sourceIds": []
-        },
-        {
-          "text": "投稿作品与结果画廊",
-          "sourceIds": []
-        },
-        {
-          "text": "主题月指南",
-          "sourceIds": []
-        },
-        {
-          "text": "作者展示和评论",
-          "sourceIds": []
-        }
-      ],
-      "supplierTypes": [
-        {
-          "text": "普通参赛者",
-          "sourceIds": []
-        },
-        {
-          "text": "稳定兴趣创作者",
-          "sourceIds": []
-        },
-        {
-          "text": "官方出题与教学作者",
-          "sourceIds": []
-        },
-        {
-          "text": "成员活动主持者，依既有运营档案",
-          "sourceIds": []
-        }
-      ],
-      "observedSignals": [
-        {
-          "text": "官方主题运营实例；奇幻主题月连接挑战、指南与作者内容。题材经平台选择，不能据此认定它是自然需求第一名。",
-          "sourceIds": [
-            "nc-fantasy"
-          ]
-        },
-        {
-          "text": "官方互动机制；每日挑战以投稿期和投票期组织内容；作品被随机展示并评分。",
-          "sourceIds": [
-            "nc-guide"
-          ]
-        },
-        {
-          "text": "可见历史评论；挑战指南页有 2023—2024 年评论，讨论比赛公平与图像能否用于书籍；评论存在重复，未计独立人数。",
-          "sourceIds": [
-            "nc-guide"
-          ]
-        }
-      ],
-      "unknowns": [
-        {
-          "text": "各题材独立观众、投票人数、曝光和回访未知。",
-          "sourceIds": []
-        },
-        {
-          "text": "活动激励、自然兴趣与熟人支持各自贡献未知。",
-          "sourceIds": []
-        },
-        {
-          "text": "未取得本次挑战实时作品样本和同窗互动增量。",
-          "sourceIds": []
-        }
-      ],
-      "opportunity": "对持续活跃目标，可测试一个兴趣主题的连续策展、轻量投票和可选练习。重点检查普通观看者是否回来，而不是只数参赛作品。",
-      "counterexample": "内容多可能是出题和奖励直接带来的投稿供给。投票多也可能来自参赛互惠，不能直接解释为某题材的外部大众需求。",
-      "sources": [
-        {
-          "id": "nc-fantasy",
-          "title": "Fantasy Month on NightCafe",
-          "url": "https://nightcafe.studio/blogs/blog/fantasy-month-nightcafe",
-          "date": "2026-03-05",
-          "accessedAt": "2026-09-11",
-          "whatSupports": "奇幻题材与月度内容运营；官方叙事中的用户故事没有独立核验。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "nc-guide",
-          "title": "NightCafe Daily Challenges Explained — Updated for 2026",
-          "url": "https://nightcafe.studio/blogs/blog/nightcafe-daily-challenges-guide",
-          "date": "原发布日期 2023-03-16；标题标为 2026 更新",
-          "accessedAt": "2026-09-11",
-          "whatSupports": "挑战节奏、投票和结果画廊；可见旧评论不能当作当前需求规模。",
-          "access": "本次读取正文"
-        }
-      ],
-      "supplyShare": null,
-      "consumptionShare": null,
-      "demandSupplyRatio": null
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "summary": [
-        "图像、风格与创意发现",
-        "找风格和灵感；观看与创作",
-        "按视觉组织；无法推出职业分布"
-      ],
-      "supplyTopics": [
-        {
-          "text": "官方 Explore 以图像/视频和个性化、随机、热门、周期榜单组织；Style Explorer 可按摄影感、动漫等风格发现样例。",
-          "sourceIds": []
-        },
-        {
-          "text": "它的组织轴更接近视觉审美与参考发现，不能直接当作行业分类。",
-          "sourceIds": []
-        }
-      ],
-      "industryUses": [
-        {
-          "text": "既有历史用户材料有影视/广告前期、插画构图、书封沟通、零售概念参考。",
-          "sourceIds": []
-        },
-        {
-          "text": "个人壁纸、桌游辅助和水彩参考是另一组用途，不能并入职业设计用户。",
-          "sourceIds": []
-        }
-      ],
-      "consumptionTopics": [
-        {
-          "text": "看视觉创意、收藏风格与参考、找类似图、读提示与参数。",
-          "sourceIds": []
-        },
-        {
-          "text": "学习或复用风格与最终图欣赏可以并存；使用 Moodboard 不必意味着公开投稿。",
-          "sourceIds": []
-        }
-      ],
-      "contentForms": [
-        {
-          "text": "图像/视频卡片与详情",
-          "sourceIds": []
-        },
-        {
-          "text": "可搜索风格代码及样例",
-          "sourceIds": []
-        },
-        {
-          "text": "Moodboard 参考集合",
-          "sourceIds": []
-        },
-        {
-          "text": "提示和设置",
-          "sourceIds": []
-        }
-      ],
-      "supplierTypes": [
-        {
-          "text": "公开生成作品的成员",
-          "sourceIds": []
-        },
-        {
-          "text": "风格与参考策展者",
-          "sourceIds": []
-        },
-        {
-          "text": "贡献选图判断的成员；不是所有人都持续发帖",
-          "sourceIds": []
-        }
-      ],
-      "observedSignals": [
-        {
-          "text": "官方产品机制；Explore 支持不同排序、喜欢和参考复用，风格可收藏。它证明消费入口，不提供实际消费量。",
-          "sourceIds": [
-            "mj-overview"
-          ]
-        },
-        {
-          "text": "官方内容对象说明；Moodboard 用一组图片形成可再调用的审美参考，并保存版本代码。",
-          "sourceIds": [
-            "mj-mood"
-          ]
-        },
-        {
-          "text": "既有历史用户自述；同一工具用于壁纸、水彩参考、桌游，也用于专业流程前期；后者通常仍有绘画、3D 或合成步骤。",
-          "sourceIds": [
-            "mj-users",
-            "mj-pro"
-          ]
-        }
-      ],
-      "unknowns": [
-        {
-          "text": "当前公开作品的题材占比、行业占比、浏览收藏及风格复用规模未知。",
-          "sourceIds": []
-        },
-        {
-          "text": "个性化排序和公开权限使首页不能代表总体。",
-          "sourceIds": []
-        },
-        {
-          "text": "职业用途材料主要来自旧版本经历，不据此评价当前模型能力。",
-          "sourceIds": []
-        }
-      ],
-      "opportunity": "可探索“按题材找灵感、按风格收藏、愿意时再动手”的内容组织方式。国内具体题材仍需对照渠道需求和试点回访，不能从摄影/动漫标签推定机会。",
-      "counterexample": "漂亮图片的高热度不一定意味着读者要学习生成。用户也可能只保存图片后离开，不需要注册另一家社区。",
-      "sources": [
-        {
-          "id": "mj-overview",
-          "title": "Website Overview",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview",
-          "date": null,
-          "accessedAt": "2026-09-11",
-          "whatSupports": "Explore 排序、风格搜索、作品详情和收藏复用机制；不是用户结构统计。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "mj-mood",
-          "title": "Moodboards",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-          "date": null,
-          "accessedAt": "2026-09-11",
-          "whatSupports": "风格参考集合与版本化调用；不提供内容消费规模。",
-          "access": "本次读取正文"
-        },
-        {
-          "id": "mj-users",
-          "title": "What do you use Midjourney for?",
-          "url": "https://www.reddit.com/r/midjourney/comments/112a0cs/",
-          "date": "2023-02-14",
-          "accessedAt": "2026-09-10",
-          "whatSupports": "壁纸、水彩参考和桌游辅助等个人用途。",
-          "access": "本次审阅本地 audience-research.json，未重读原页"
-        },
-        {
-          "id": "mj-pro",
-          "title": "Anyone using Midjourney professionally?",
-          "url": "https://www.reddit.com/r/midjourney/comments/16d5azt/",
-          "date": "2023-09",
-          "accessedAt": "2026-09-10",
-          "whatSupports": "影视、插画、书封和零售概念等历史任务自述。",
           "access": "本次审阅本地 audience-research.json，未重读原页"
         }
       ],
@@ -8099,11 +7666,6 @@
         "reason": "具体页面打开返回错误，搜索摘要可见",
         "countedAsReadableSample": false,
         "searchOnlyValuesUsed": false
-      },
-      {
-        "url": "https://creator.nightcafe.studio/creation/Idt9YgFow9fgwAFjdV4g",
-        "status": "具体作品读取失败",
-        "reason": "不能用第三方文章替代当前对象正文"
       },
       {
         "url": "https://openart.ai/discovery/sd-1007963342603825152",

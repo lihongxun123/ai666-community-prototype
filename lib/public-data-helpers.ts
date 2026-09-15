@@ -3,9 +3,9 @@ import type { PublicDataProfile, PublicObservation } from './public-data-types';
 export const comparisonMonth = '2026-07';
 export const comparisonProvider = 'Semrush';
 const preferredDomains: Record<string, string> = {
-  liblib:'liblib.art',runninghub:'runninghub.cn',tusi:'tensor.art',civitai:'civitai.com',
-  seaart:'seaart.ai',openart:'openart.ai',nightcafe:'nightcafe.studio',jimeng:'jimeng.jianying.com',
-  kling:'klingai.com',midjourney:'midjourney.com',leonardo:'leonardo.ai',runway:'runwayml.com',
+  liblib:'liblib.art',runninghub:'runninghub.cn',tusi:'tensor.art',
+  seaart:'seaart.ai',openart:'openart.ai',jimeng:'jimeng.jianying.com',
+  kling:'klingai.com',leonardo:'leonardo.ai',runway:'runwayml.com',
   waytoagi:'waytoagi.com',datawhale:'datawhale.cn',huggingface:'huggingface.co',modelscope:'modelscope.cn',linuxdo:'linux.do',dify:'dify.ai'
 };
 

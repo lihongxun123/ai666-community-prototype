@@ -17,7 +17,7 @@ export function MarketContentForms({embedded=false}:{embedded?:boolean}={}) {
  return <article className="framework-study market-forms-study">
   <div className="page-heading">{embedded?<h2>{data.title}</h2>:<h1>{data.title}</h1>}</div>
   <ResearchOutline items={[
-   ['market-form-matrix','15种形式对照'],['market-form-detail','内容、用法与成本'],['content-visual-evidence','卡片与详情截图'],['content-platform-directory','18个平台档案'],['market-form-findings','跨平台发现']
+   ['market-form-matrix','15种形式对照'],['market-form-detail','内容、用法与成本'],['content-visual-evidence','卡片与详情截图'],['content-platform-directory','15个平台档案'],['market-form-findings','跨平台发现']
   ]}/>
 
   <p className="muted">资料截至 {data.date}</p>

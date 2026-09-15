@@ -1,6 +1,6 @@
-# 18个平台的使用与服务条件
+# 15个平台的使用与服务条件
 
-核查：2026-09-11。新增记录含既有案例复读和后续，不与55条任务画像的用户点相加；来源页数不等于人数。
+核查：2026-09-11。新增记录含既有案例复读和后续，不与46条任务画像的用户点相加；来源页数不等于人数。
 
 ## LiblibAI
 
@@ -319,7 +319,6 @@ Tensor.Art普通使用者及两位同伴
 - [I cannot find Loras on the searcher](https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/)；原始用户讨论；发布既有档案2025-06-09至06-12；本次仅见相对时间；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。搜索困难及手工找资源的自述；不采用旧积分奖励数。
 - [TensorHUB ...](https://www.reddit.com/r/TensorArt_HUB/comments/1p80bi5/tensorhub/)；原始用户讨论；发布2025-11-27（检索日期）；后续具体日期未逐条核；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。长期Pro及每周2至3天的本人自述；ControlNet、电脑占用与替代选择。旧金额和情绪指控均不作当前价格或事实。
 
-## Civitai
 
 新增取消会员的原始讨论显示，停止付款与继续做LoRA可以同时发生；服务方称有取消状态显示故障，并作修复回复。收费机制的官方文档本次已含9月调整，须更新日期边界，但代码说明仍不能替代线上交易验证。
 
@@ -329,7 +328,6 @@ Tensor.Art普通使用者及两位同伴
 
 本人后来是否继续贡献、普通作者与付款者比例未知。
 
-[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)
 
 ### 内容与交付
 
@@ -337,7 +335,6 @@ Tensor.Art普通使用者及两位同伴
 
 模型版本、审核判定及可重现输入不足，不能认定误判。
 
-[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### 供给与维护
 
@@ -345,7 +342,6 @@ Tensor.Art普通使用者及两位同伴
 
 原发者的最终状态、实际停止扣费与故障覆盖范围未知。
 
-[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)
 
 ### 付款与权益
 
@@ -353,7 +349,6 @@ Tensor.Art普通使用者及两位同伴
 
 不能由实现文档推出所有账号线上一致；不推作者收入或付费率。
 
-[Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)
 
 ### 使用过程
 
@@ -361,7 +356,6 @@ Tensor.Art普通使用者及两位同伴
 
 新头像采用、后续资源发布和再次付款未知。
 
-[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)；[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### 替代路径
 
@@ -369,7 +363,6 @@ Tensor.Art普通使用者及两位同伴
 
 本地硬件、安装成本及同一输入的可比结果未测。
 
-[Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### 取消付费与继续做LoRA不是同一决定
 
@@ -386,7 +379,6 @@ Tensor.Art普通使用者及两位同伴
 
 尚缺：实际停止扣费与继续贡献均未独立核实。
 
-[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)
 
 ### 半年后复用旧头像配方，未得到可用更新
 
@@ -403,7 +395,6 @@ Tensor.Art普通使用者及两位同伴
 
 尚缺：实际审核原因、提示／模型版本变化和最终去向。
 
-[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### 采用条件
 
@@ -415,12 +406,8 @@ Tensor.Art普通使用者及两位同伴
 
 ### 检索与来源
 
-- 有没有停止付款但仍想留在内容生态的用户？：检索：site.reddit.com/r/civitai 2026 cancelled subscription；取消会员原始主帖与服务回应；找到具体预算原因、继续LoRA意愿及相反取消经历；没有后续真实行为。
 - 现行收费文档是否超出既有8月记录？：官方monetization-rules.md；已读9月4日分数读取变化及多写入口说明；建议更新文档日期，不把默认值和历史受影响数当经营统计。
 
-- [Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；官方代码库实现文档；发布正文自述始写2026-08-05，8月多次重写；现含2026-09-04变化；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。资源访问与收费分轴；分数门槛与定价次数；正文指出多入口行为差异。无线上交易实验。
-- [Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)；原始用户讨论与服务回应；发布2025-05-07（搜索索引及回复内部日期）；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。预算取消与继续LoRA意愿；服务方回复显示故障并称修复；并存成功取消反例。服务身份按公开语境，不作后台验证。
-- [civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)；原始用户讨论；发布2025-06-13（既有档案）；当前页仅相对时间；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。旧头像复用被拦自述及未来本地方案意愿；未核误判或迁移。
 
 ## SeaArt
 
@@ -572,7 +559,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 ### 替代路径
 
-已观察到Midjourney准备角色参考、OpenArt做口型，以及下载镜头到Descript后期的任务分工；CapCut在旧MV样本中只是未来计划。不能把评论里的跨站价格或模型归属猜测当事实。
 
 整片同简报跨工具成本与质量比较未取得；迁移是否完成未知。
 
@@ -649,7 +635,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 - [What I learned making a 24-shot psychological thriller with OpenArt Director](https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/)；author-first-person；发布绝对日期未取得；页面相对小时与抓取时间不一致；读取2026-09-11。本次原帖及回复正文读取；成片未播放、合同未核。准备-生成-Descript后期分工；自报成本工时；请求复用帮助内容及作者同意。
 - [The OpenArtist Program](https://openart.ai/program/openartist)；official-program；发布动态页，无发布日期；读取2026-09-11。本次原页正文读取；未申请。精选150人名册的官方说法、筛选和持续发帖要求、按帖报酬；不证明人人可赚。
 
-## NightCafe
 
 可明确区分灵感与贺卡制作、挑战练习、积分日常及朋友网络。此次核查复核的普通用户案例显示，任务可能转到外部工具完成，而平台付款又受实际需求量影响；不能用挑战签到来证明作品采用。官方PRO权益当前可读，历史规则争议不等于所有旧积分当前会失效。
 
@@ -659,7 +644,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 各动机占比、职业分布和是否最终离站未知。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 内容与交付
 
@@ -667,7 +651,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 仅有自述，无参考图与最终作品核对。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 供给与维护
 
@@ -675,7 +658,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 实际无奖励回访、自然交流与活动主持成本未知。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 付款与权益
 
@@ -683,15 +665,12 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 当前账户结算、税费与模型任务实际成本未核；不套用帖子旧规则。
 
-[NightCafe PRO plans — what you get and which plan to choose](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)；[Fast Credits vs Relax Credits](https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits)
 
 ### 使用过程
 
-个案自述贺卡在NightCafe多次尝试未成，转用ChatGPT并加字发送；另一位多年每日参与者只表示未来可能停止，不能把两者都算已流失。
 
 同一人的之后使用、续订和活动参与未核。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 替代路径
 
@@ -699,7 +678,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 不同模型、输入、日期和结果标准没有受控比较。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 贺卡任务转到外部工具完成
 
@@ -707,16 +685,13 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 任务：将参考照片做成情人节电子贺卡；此前也尝试网站文章配图。
 
-困难：本人称NightCafe提示内容问题或生成不符合人物目标，多次修改未成。
 
 - 相关回复显示6mo ago；绝对日期未核：本人回顾主要赚取免费积分、少量作图及网站配图采用有限。
 - 回复前数日（本人回顾）：贺卡多次失败后改用ChatGPT得到候选图，再添加文字并发送。
 
 结果：有具体任务采用的本人自述；未查看私人参考图、私信或最终成品。
 
-尚缺：究竟什么模型和设置导致差异、后续是否仍使用NightCafe。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 长期每日参与者表达退出意愿，实际退出尚未观察
 
@@ -733,7 +708,6 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 尚缺：意愿是否变成行为、参与究竟由兴趣还是奖励主导。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 采用条件
 
@@ -745,12 +719,7 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 ### 检索与来源
 
-- 是否能将任务完成与积分活动区分？：既有audience-nightcafe.md；更新争议帖本人任务描述与后续；可提取贺卡外部完成及长期免费参与的不同路径；这些大多已在旧画像出现，此次核查不重复计新用户。
-- 当前Fast、Relax和Unlimited边界是什么？：PRO帮助页；Fast与Relax帮助页；从官方帮助链接进入2026积分更新页；两份帮助正文可读；更新页creator.nightcafe.studio/credit-updates-launched-2026打开失败，不将历史网友解释当当前完整规则。
 
-- [NightCafe PRO plans — what you get and which plan to choose](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)；官方动态帮助；发布未标；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。五档PRO、基础生成的Unlimited限制、非到期积分与按周期权益区别；没有进入结算。
-- [Fast Credits vs Relax Credits](https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits)；官方帮助；发布未标；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。购买所得Fast、免费赚取Relax及后者单任务单图限制。
-- [What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)；原始用户讨论；发布主帖既有档案2026-02-09；此次核查回复多数仅6mo/7mo ago；读取2026-09-11。live_read：2026-09-11公开原页正文复读；未登录、未生成或付费。。本人取消、长期免费参与、贺卡外部完成等不同用户陈述；不保存私人余额、身份、参考照片。
 
 ## 即梦 AI
 
@@ -986,9 +955,7 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 - [Klingai公开用户评价第2页](https://www.trustpilot.com/review/klingai.com?page=2)；user-first-person；发布2026年7—8月评论；发表/体验日分开；读取2026-09-11。本次原评价正文读取；不采用AI摘要、总评分/分布或指控为结论。卡通/真人任务差异、短片拼接、年订阅与使用量不等价。
 - [Kling Talent Network入口](https://kling.ai/app/future-partner/customer)；official-entry；发布未取得；读取2026-09-11。本次由官方成本页点击，restricted URL失败。仅记录合作入口访问受限，资格/报酬未确认。
 
-## Midjourney
 
-已补2025—2026同一漫画作者的作品、教程及读者追问；另找到2026年用户失败后明确转用其他工具完成原任务。Midjourney可承担构图、风格和候选画面，连续漫画仍需要角色表、筛选、拼贴与排字。作品可发布与作者认为达到可售标准是不同结论；旧版或V7个案不能当2026所有版本上限。
 
 ### 用户与任务
 
@@ -996,7 +963,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 真实职业、付费套餐、客户和当前人群份额未核。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)；[Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)
 
 ### 内容与交付
 
@@ -1004,7 +970,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 非完整工程包；没核全部页图、版权链和买方验收。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)
 
 ### 供给与维护
 
@@ -1012,7 +977,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 答疑对付费与复现的增量未知；没有自然作者与合作作者数量/报酬资料。
 
-[Community Guidelines](https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines)；[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)
 
 ### 付款与权益
 
@@ -1020,7 +984,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 地区税费及实际购买未核；作品售卖和平台订阅收入不可由案例推算。
 
-[Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
 
 ### 使用过程
 
@@ -1028,7 +991,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 跨期使用有记录，连续付费无证；V8效果、原用户重新采用MJ未验证。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)；[Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)
 
 ### 替代路径
 
@@ -1036,7 +998,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 没有同预算/同模型版本受控对照；不采单个用户评价作模型排行。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)
 
 ### 漫画作品跨年续作，方法公开后仍存在控制问题
 
@@ -1056,7 +1017,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 尚缺：未逐图验质、核成本或收益；读者是否完成原近景任务未知；作者对V8看法不是本次实测。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)
 
 ### 指定烟字图失败后，原作者用外部工具完成
 
@@ -1064,7 +1024,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 任务：给歌曲制作火车烟雾组成特定字样的插画。
 
-困难：自述Midjourney结果与明确文字/空间要求不符。
 
 - 2026-04-17（搜索索引日期；正文也自述2026年4月）：贴出相同提示的比较并称已取消订阅。
 - 同帖后续，精确回复日未取得：本人确认采用Ideogram生成图，再用Copilot与Photoshop完成该作品并提供歌曲视频链接。
@@ -1074,7 +1033,6 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 
 尚缺：未播放歌曲视频或核账；新版MJ重试、重新订阅没有结果。
 
-[Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)
 
 ### 采用条件
 
@@ -1090,12 +1048,7 @@ App Store普通用户评价；平台开发者回复另列，重复渲染去重�
 - 失败是否导致实际替代或只是情绪？：2026-04精确烟字图讨论主帖和作者回复。；本人确认外部工具完成；承诺再试新版不算重新采用/续费。
 - 当前专业用途的付费和自动化门槛？：官方套餐和Community Guidelines。；现行套餐分档可核；普通开放API仍不可假设，所有隐私/使用范围仍受规则约束。
 
-- [Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)；official-pricing；发布动态帮助页，无发布日期；读取2026-09-11。本次原页正文读取；未购买。当前月/年价格、Relax图像/SD视频分档、Stealth及自动续订。
-- [Community Guidelines](https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines)；official-rule；发布动态规则，无发布日期；读取2026-09-11。本次原页正文读取。普通开放API缺失、授权例外、禁止未授权自动化/共享，以及社区与产品访问分开。
-- [How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；author-first-person；发布2025-02-28；评论2026-01-08和01-19；读取2026-09-11。本次正文与读者/作者评论读取。早期漫画制作、Photoshop/文字处理；读者难复现和作者后续解释。
-- [How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；author-first-person；发布2026-06-19；读取2026-09-11。本次全文读取；未执行教程或采其速度估计为基准。同一作者新项目/旧教程关联、角色表、持续控制困难与版本边界。
 - [The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)；author-work；发布2026-06-18；读取2026-09-11。本次作品页正文和图片入口读取，未逐图视觉验质。作品页公开、主要V7及后续评测承接。
-- [Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)；user-first-person；发布2026-04-17主帖；后续回复仅相对日期；读取2026-09-11。本次原帖及作者后续读取；不沿用标题定性。精确文字图任务、替代完成、取消自述和新版入口重试意愿。
 
 ## Leonardo.Ai
 
@@ -1234,7 +1187,6 @@ Finch为两人独立团队且双方有影视背景，属于专业创作者；另
 
 ### 内容与交付
 
-可观察同一Finch项目的第1、5、14集公开帖子，以及作者解释真人配音、Act 1到Act 2的驱动处理；全片工作流同时涉及Midjourney、Hailuo和DaVinci。公开连续发布不等于40集均已逐集验看。
 
 未逐集观看与验收；观众增长、完播、收入、教学跟做成功未知。
 
@@ -1283,7 +1235,6 @@ Finch实际采用多工具分工而非互斥选一个平台。失败帖中的Kli
 - 2026-01-27（页面日期导航）：发布第1集，称40集已完成，回复说明真人配音、DaVinci处理及Act 1结果驱动Act 2。
 - 2026-02-02（页面日期导航）：发布第5集并继续答复表演方法。
 - 日期未完整显示（第14集原帖；本次已重读）：发布第14集，仍自述40集完成并寻找观众。
-- LinkedIn页面仅相对日期，本次重读：同一作者介绍整片同时使用Midjourney、Runway与Hailuo。
 
 结果：同项目不同集数公开帖子及方法答复已读取；40集完成属于作者声明，工具责任可分解。
 
@@ -1330,7 +1281,6 @@ Finch实际采用多工具分工而非互斥选一个平台。失败帖中的Kli
 - [The Finch Files She Never Existed ep14/40](https://www.reddit.com/r/runwayml/comments/1r5leo9/the_finch_files_she_never_existed_ep_1440/)；first-person-professional；发布未标；读取2026-09-11。本次原页及作者回复可读，页面含移除提示；移除原因不推断。。同项目后续集数与寻找观众自述；非第40集验收。
 - [Runway内Kling请求失败及后续](https://www.reddit.com/r/runwayml/comments/1sxdjf8/tried_to_generate_on_kling_failed_due_to_unsafe/)；first-person-community；发布未标；读取2026-09-11。本次重读主帖/改图/继续失败/账户正常后续；精确日期未显示。。普通任务失败、尝试修正和未恢复原任务的边界。
 - [Runway Affiliate Program](https://runway.com/affiliate-program)；official-program；发布未标；读取2026-09-11。本次原页可读：申请审核、3个月试行、合作权益。。每个新增付费订阅者15美元、25%折扣码、活跃伙伴Max权益；非作者实际收入。
-- [Finch作者LinkedIn整片工作流介绍](https://www.linkedin.com/posts/antneely_thefinchfiles-aifilmmaking-innovation-activity-7421597817275723776-lNTZ)；first-person-professional；发布未标；读取2026-09-11。本次公开正文和作者第2集链接可读；未登录、未采集用户凭据。。同作者说明Midjourney、Runway与Hailuo多工具分工。
 
 ## WaytoAGI
 

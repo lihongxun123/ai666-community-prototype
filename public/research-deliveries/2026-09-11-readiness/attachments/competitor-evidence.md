@@ -1,6 +1,6 @@
 # 竞品证据补核
 
-覆盖18家；查阅日期2026-09-09。自身用户验证材料作为后续附录，不计入竞品证据。
+覆盖15家；查阅日期2026-09-09。自身用户验证材料作为后续附录，不计入竞品证据。
 
 ## 同一社区里，付款方可能不止一类
 
@@ -24,7 +24,6 @@ Pencil明确从12类场景测试中挑选可灵表现好的结果；Dify马士�
 
 ## 投诉后的使用与项目进展
 
-OpenArt的一名用户先自述购买年费后制作受阻，后来又报告项目继续推进；另一人的流程跨越Midjourney、OpenArt和外部辅助工具。Leonardo也有围绕技术博客配图的具体反馈。它们提示连续项目、工具组合、学习和返工值得研究；付款、进度和问题原因仍是自述，不能据几条评论估计满意率、续费率或认定用户已经迁移。 [Reddit 公开用户：公开用户：专辑MV项目初期反馈](https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/nmp0cqc/)；[Reddit 公开用户：同一用户：专辑项目继续制作的后续反馈](https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/o3sj2y3/)；[Reddit 公开用户：公开用户：从完整MV缩到口型片段的跨工具使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；[Reddit 公开用户：Feedback for Leonardo.ai Devs](https://www.reddit.com/r/leonardoai/comments/1rs2isl/feedback_for_leonardoai_devs/)
 
 ## 套餐名称相近，实际可用资源可能不同
 
@@ -186,39 +185,32 @@ SUPIR工作流作者说明参数会在贴近原图与增强效果间取舍，并
 - [TA 2024年度回忆报告](https://tusi.cn/articles/812163171642236235)；吐司；发布/更新：2024-12-28；查阅：2026-09-09；已读取正文。支持：网站用户、日均生成和日发帖是不同口径；历史自报数据。边界：非审计；没有完整去重口径、分母或当前值。
 - [Enhance Image with SUPIR + UPSCALE](https://tensor.art/workflows/824922304248158170)；Tensor.Art公开作者内容；发布/更新：更新2025-01-31；首次发布日期未核；查阅：2026-09-09；已读取正文。支持：相似性/增强取舍及小图错误修正。边界：最后更新时间非首次发布日期；未运行。
 
-## Civitai
 
 官方代码库说明作者资格、收入池、结算及提现规则，生产账号资格和实际兑现未验证。公开讨论中有资源收费抵触，作者收入稳定性仍未知。
 
 ### 商业化与收费
 
-官方开发说明将加入 Creator Program 的条件列为 Creator Score 至少40,000、有效 Bronze/Silver/Gold 会员且未被封禁。赚到 Buzz 与取得提现资格是两个阶段。 [Civitai 官方代码库：Creator Program - Developer Guide](https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md)
 
 - 证据性质：官方实现说明；线上适用待核；new
 - 日期与对象：访问2026-09-09；动态规则未标绝对更新日；官方代码库 Creator Program 实现说明；非线上开户实测
 - 边界：主分支文档描述实现，尚未核对生产账户资格页；不能视为所有作者均可兑现。
 
-实现说明规定月底分配、次月15日结算，最低提现50美元；每 Buzz 的现金分配有0.001美元上限，并随收入池和总存入量变化。它不是承诺按固定汇率赎回所有 Buzz。 [Civitai 官方代码库：Creator Program - Developer Guide](https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md)
 
 - 证据性质：官方实现说明；线上适用待核；new
 - 日期与对象：访问2026-09-09；动态规则未标绝对更新日；符合 Creator Program 条件的作者收入池
 - 边界：手续费和地区收款资格须以实际支付服务确认；未取得作者到账凭据或当月池金额。
 
-2026年8月25日修订的官方实现说明区分一次性资源准入与按次授权费；某版本对该次生成收授权费后，不再同时领取该次生成对应的 tips 与 creator compensation。估算作者收益时不能把这几项机械相加。 [Civitai 官方代码库：Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)
 
 - 证据性质：官方实现说明；线上适用待核；new
 - 日期与对象：2026-08-25文档修订；访问2026-09-09；ModelVersion 收费规则；不包括 ComicChapter
 - 边界：这是代码实现说明，未审计实际订单和分账；不存在可据此计算的作者平均收入。
 
-推荐条款中的 Referral Tokens 与计划奖励 Blue Buzz 均不可兑现、不可转让；有效支付事件后的奖励还需经过7天结算等待。它们不能与作者计划可结算的收入池混为现金分成。 [Civitai 官方代码库：Civitai Referral Program Terms](https://github.com/civitai/civitai/blob/main/docs/features/referral-program-terms.md)
 
 - 证据性质：官方规则；corroborated
-- 日期与对象：2026-04-21生效；访问2026-09-09；Civitai Referral Program 奖励
 - 边界：规则存在不证明推荐渠道盈利，也不证明每个获推荐账号已付费。
 
 ### 具体使用记录
 
-一条2026年8月的公开讨论中，发帖者自述屏蔽采用永久付费墙的作者；回复者则区分付费下载与仅通过 API 提供模型。记录显示作者收费会触及开放资源用户的预期，但不构成拒付比例或实际流失证明。 [Reddit 公开用户讨论：Civitai now has a closed-source models option](https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/)
 
 - 证据性质：用户公开自述；new
 - 日期与对象：搜索索引日期2026-08-23；正文仅显示相对日期；1条公开讨论；发帖者行为自述，未核验账号操作
@@ -226,19 +218,13 @@ SUPIR工作流作者说明参数会在贴近原图与增强效果间取舍，并
 
 ### 分析与缺口
 
-资源供给者与生成消费者的激励并不完全一致。前者可能需要确定的售卖收入，后者中的开放资源使用者可能抵触永久收费；是否愿意付费应按资源类型与使用方式分组。 [Civitai 官方代码库：Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；[Reddit 公开用户讨论：Civitai now has a closed-source models option](https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/)
 
-只有提现人数、实际到账金额、收入集中度与维护工时，才能判断作者生态是否可持续。代码里用于缺失数据的默认池金额不能补成经营数据。 [Civitai 官方代码库：Creator Program - Developer Guide](https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md)
 
 - **当期作者到账规模和收入分布是多少？** 公开实现文档没有实际支付台账；资料不足。 所需证据：官方月度作者结算披露，或经本人同意提供的脱敏到账与维护工时记录。
 - **下载用户与站内生成用户各有多少付费和复访？** 既有网站访问估计无法划分使用方式；新发现讨论也没有样本分母。 所需证据：官方分层活跃与付费数据；或按实际任务招募竞品用户访谈，分别核实下载、站内运行、购买。
 
 ### 来源
 
-- [Creator Program - Developer Guide](https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md)；Civitai 官方代码库；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：加入资格、分配与结算顺序、最低提现和每Buzz分配上限。边界：开发说明不是当月运营披露；main分支可变化。
-- [Monetization rules: paid access, licensing fees, donation goals](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；Civitai 官方代码库；发布/更新：更新2026-08-25（文档自述修订日，非Git发布时间）；查阅：2026-09-09；已读取正文。支持：R4规定授权费与该次生成的其他作者补偿互斥；资源准入与按次费可以并存。边界：只涵盖ModelVersion；文档自称核对过生产副本，未独立实测线上交易。
-- [Civitai Referral Program Terms](https://github.com/civitai/civitai/blob/main/docs/features/referral-program-terms.md)；Civitai 官方代码库；发布/更新：生效2026-04-21；查阅：2026-09-09；已读取正文。支持：推荐奖励无现金价值、不可转让及7天结算等待。边界：不可外推所有Buzz类别。
-- [Civitai now has a closed-source models option](https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/)；Reddit 公开用户讨论；发布/更新：2026-08-23（搜索索引；正文相对日期不一致）；查阅：2026-09-09；已读取正文。支持：永久付费访问引起的反对自述和另一方解释。边界：便利抽样；未经核验的实际行为。日期按索引保留并明确冲突，未据此计算时间趋势。
 
 ## SeaArt
 
@@ -337,7 +323,6 @@ Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16
 - 日期与对象：首条搜索索引2025-11-02；后续正文相对日期约6–7个月前，精确日期未核实；1名公开账号的两条前后反馈
 - 边界：年费、进度均为本人自述；作品列表链接存在但未逐个播放；无续费订单，也不能以年费尚有效当自然留存。
 
-另一位作者自述因音乐视频活动购买年费，后来缩到基础口型同步，并用 Midjourney 制作角色参考图、外部大模型协助分镜提示；其考虑再用 CapCut 完成整片。聚合平台仍可能只承担创作链的一部分。 [Reddit 公开用户：公开用户：从完整MV缩到口型片段的跨工具使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)
 
 - 证据性质：用户公开自述；new
 - 日期与对象：评论搜索索引2026-02-05；正文相对日期约6–7个月前；1名用户自述的跨工具音乐视频任务
@@ -360,29 +345,22 @@ Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16
 - [OpenArt Pricing](https://openart.ai/pricing)；OpenArt；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：Director不在预估视频数内；限时无限截止日；每月加购。边界：动态页未确认账期切换与结算；活动时区未注明。
 - [公开用户：专辑MV项目初期反馈](https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/nmp0cqc/)；Reddit 公开用户；发布/更新：2025-11-02（搜索索引）；查阅：2026-09-09；已读取正文。支持：自述年费、9支MV目标和初期困难。边界：选择性公开发言；本人付款和耗时未经核验。
 - [同一用户：专辑项目继续制作的后续反馈](https://www.reddit.com/r/generativeAI/comments/1ng7d42/comment/o3sj2y3/)；Reddit 公开用户；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：同账号称完成约一半项目、学习后愿继续，附作品列表。边界：仅相对日期，未确认下一次续费；不重复计作第二名用户。
-- [公开用户：从完整MV缩到口型片段的跨工具使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；Reddit 公开用户；发布/更新：2026-02-05（搜索索引；正文相对日期）；查阅：2026-09-09；已读取正文。支持：同一讨论中另一账号对年费、口型同步、Midjourney参考图与外部提示辅助的自述。边界：未检验成片质量；同记录亦用于Midjourney，不重复计数。
 
-## NightCafe
 
 取消和升级规则分别影响积分保留及会员权限。头部作者的使用涉及作品积累、检索和活动角色，不能代替普通用户留存数据。
 
 ### 商业化与收费
 
-官方帮助说明取消不自动退款，PRO到期后未用 Fast Credits仍保留，但只能用于非PRO模型。退款需在付款后7天内提出，已使用额度后不退款，也无按剩余时间比例退款。 [NightCafe：I cancelled my subscription but haven't received a refund](https://help.nightcafe.studio/portal/en/kb/articles/i-cancelled-my-subscription-but-haven-t-received-a-refund)
 
 - 证据性质：官方规则；new
-- 日期与对象：访问2026-09-09；动态规则未标绝对更新日；NightCafe PRO与额度包取消/退款帮助规则
 - 边界：按个案审核；未执行退款或核验地区强制规定。留有积分并不等于保留全部模型权限。
 
-更换套餐会立即收取新套餐全价并发放完整新额度，原套餐未用额度保留；没有自动按剩余时间抵扣，续费日期也会重设。只比较档位差价会低估当次升级的支付额。 [NightCafe：I was charged after changing my subscription plan](https://help.nightcafe.studio/portal/en/kb/articles/i-was-charged-after-changing-my-plan)
 
 - 证据性质：官方规则；new
-- 日期与对象：访问2026-09-09；动态规则未标绝对更新日；NightCafe更换PRO套餐
 - 边界：未进入结算，不推断全部账号的实际收费金额；客服退款仍按个案处理。
 
 ### 具体使用记录
 
-2026年6月19日的官方精选作者访谈中，受访者兼任活动主持与评审，强调PRO的作品搜索对大量历史作品的价值。该文标称其有16万以上创作、2.8万以上关注者，属于头部案例。 [NightCafe / Olivia Platt：NightCafe Artist Spotlight: Inside gullyDJ's Weird World](https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj)
 
 - 证据性质：案例材料；corroborated
 - 日期与对象：2026-06-19文章披露；1名官方精选作者；作品和关注为该作者累计口径
@@ -390,18 +368,13 @@ Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16
 
 ### 分析与缺口
 
-持续参与可能由创作乐趣、历史作品管理与活动中的角色共同支持。这个用户价值与客户项目交付不同，不能仅按‘每天创作’把两类需求归为同一群体。 [NightCafe / Olivia Platt：NightCafe Artist Spotlight: Inside gullyDJ's Weird World](https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj)
 
-订阅到期后的可用模型范围和升级时的即时全额收费，会影响偶发创作者的成本判断；积分余额本身不是用户仍然认可会员的证据。 [NightCafe：I cancelled my subscription but haven't received a refund](https://help.nightcafe.studio/portal/en/kb/articles/i-cancelled-my-subscription-but-haven-t-received-a-refund)；[NightCafe：I was charged after changing my subscription plan](https://help.nightcafe.studio/portal/en/kb/articles/i-was-charged-after-changing-my-plan)
 
 - **挑战参与者和付费创作者分别有多少、多久回来？** 官网累计作品与第三方网站访问均缺少参与者去重和分层；关于页读取失败，未更新累计数字。 所需证据：官方按月参与/生成/付费去重口径，以及奖励用户与无奖励用户的同期记录。
 - **作者主持和评审是否获得现金，覆盖多少人？** 精选访谈未公开合同；资料不足。 所需证据：合作计划条款与已付款的脱敏合作记录。
 
 ### 来源
 
-- [I cancelled my subscription but haven't received a refund](https://help.nightcafe.studio/portal/en/kb/articles/i-cancelled-my-subscription-but-haven-t-received-a-refund)；NightCafe；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：取消后的PRO和Fast Credits边界、7天申请与非按比例退款。边界：官方帮助规则，非实际退款审计。
-- [I was charged after changing my subscription plan](https://help.nightcafe.studio/portal/en/kb/articles/i-was-charged-after-changing-my-plan)；NightCafe；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：新套餐全额即时收费、额度保留与续费日重设。边界：帮助解释没有给实际发生频率。
-- [NightCafe Artist Spotlight: Inside gullyDJ's Weird World](https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj)；NightCafe / Olivia Platt；发布/更新：2026-06-19；查阅：2026-09-09；已读取正文。支持：头部作者规模、主持评审角色与PRO搜索价值。边界：官方挑选且有推广目的；不能代表普通作者或普遍付费原因。
 
 ## 即梦AI
 
@@ -501,25 +474,18 @@ Pencil接入可灵时展示护肤涂抹、多人用餐和食品特写等测试�
 - [Kling is Now on Pencil](https://community.trypencil.com/en/public/blogs/kling-is-now-on-pencil-2026-05-25)；Pencil；发布/更新：2026-05-25；查阅：2026-09-09；已读取正文。支持：12场景中精选结果；护肤、多人、食品任务。边界：商业合作方测试，不是独立基准；没有全量尝试和实际客户验收。
 - [Kling AI Turns Two: In Creators’ Own Words](https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words)；Kling AI官方作者专题；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：作者陈述其广告、短片、影视项目用途。边界：精选采访有选择偏差；只读文字正文，未核成片和付款。
 
-## Midjourney
 
-年付默认选项、一次付款金额和退款条件会影响首购。公开记录中，Midjourney可能只用于角色参考图，后续视频制作由其他工具完成。
 
 ### 商业化与收费
 
-官方订阅说明明确默认选中年付，需一次付全年；套餐表月付为10/30/60/120美元，年付总额96/288/576/1,152美元。年付折算8/24/48/96美元不能写作可按月支付的价格。 [Midjourney：Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)；[Midjourney：How to Subscribe](https://docs.midjourney.com/hc/en-us/articles/31974654274573-How-to-Subscribe)
 
 - 证据性质：官方规则；new
-- 日期与对象：访问2026-09-09；动态规则未标绝对更新日；Midjourney Basic/Standard/Pro/Mega生成订阅
 - 边界：未结算；可能另有税费。此项是官方默认流程说明，不声称账户实测。
 
-退款资格按账号整个使用历史判断：累计GPU时间必须少于20分钟，Fast/Turbo与Relax均计入。它不是每次续费后重新获得20分钟试用。 [Midjourney：Requesting a Refund](https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund)
 
 - 证据性质：官方规则；new
-- 日期与对象：访问2026-09-09；动态规则未标绝对更新日；Midjourney官方退款资格说明
 - 边界：规则不说明实际退款率；未进行退款申请，也未将条款解释为法律结论。
 
-Standard起有不限量Relax图片；Pro/Mega才含Relax视频，套餐表限定为SD视频。更高的Relax能力不代表全部分辨率和所有生成速度都不限量。 [Midjourney：Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
 
 - 证据性质：官方规则；corroborated
 - 日期与对象：访问2026-09-09；动态规则未标绝对更新日；当前套餐表Relax GPU范围
@@ -527,27 +493,19 @@ Standard起有不限量Relax图片；Pro/Mega才含Relax视频，套餐表限定
 
 ### 具体使用记录
 
-一名在OpenArt讨论区分享音乐视频经历的作者自述，用Midjourney制作角色参考图，再到其他工具做口型和剪辑准备。此记录证明的是该用户把Midjourney放在创作链的参考制作环节。 [Reddit 公开用户：公开音乐视频用户的Midjourney角色参考图使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)
 
 - 证据性质：用户公开自述；new
 - 日期与对象：评论搜索索引2026-02-05；正文仅相对日期；与OpenArt档案同一用户记录，非新增独立受访者
-- 边界：未核验Midjourney付款；CapCut为未来考虑，并非已完成迁移；不作跨工具质量排名。
 
 ### 分析与缺口
 
-用户比较的不只是最低标价，还包括一次付款承诺、能否先验证自己的题材及退款条件。年付折扣是否提高首购或退款争议，需要漏斗和客服数据才能回答。 [Midjourney：Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)；[Midjourney：How to Subscribe](https://docs.midjourney.com/hc/en-us/articles/31974654274573-How-to-Subscribe)；[Midjourney：Requesting a Refund](https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund)
 
-工具采用应落在具体步骤：作为参考图工具有价值，不等于它独立解决角色一致、口型、剪辑和整片交付。 [Reddit 公开用户：公开音乐视频用户的Midjourney角色参考图使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)
 
 - **当期订阅人数、付费留存和用途构成是什么？** 未找到可核验的最新分项经营披露；Discord成员与网站visits不能补作分母。 所需证据：公司按统计期披露的订阅人数/续费；竞品用户的脱敏最近任务与订阅历史。
 - **公开图库和社区交流对付费有多少增量？** 套餐与使用个案没有渠道归因或对照组；资料不足。 所需证据：官方获客及转化分组数据，或跟踪竞品用户真实首次发现与付费路径。
 
 ### 来源
 
-- [Comparing Midjourney Plans](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)；Midjourney；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：月价、全年总额、年付折算与SD Relax视频边界。边界：动态套餐；没有付款或活跃统计。
-- [How to Subscribe](https://docs.midjourney.com/hc/en-us/articles/31974654274573-How-to-Subscribe)；Midjourney；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：默认年付与全年预付说明。边界：未进入实际结算。
-- [Requesting a Refund](https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund)；Midjourney；发布/更新：未标注；查阅：2026-09-09；已读取正文。支持：账号终身GPU少于20分钟的退款门槛。边界：规则不等于实际退款结果。
-- [公开音乐视频用户的Midjourney角色参考图使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；Reddit 公开用户；发布/更新：2026-02-05（搜索索引；正文相对日期）；查阅：2026-09-09；已读取正文。支持：Midjourney实际承担参考图步骤的自述。边界：与OpenArt同一记录；未核验Midjourney订阅和实际作品质量。
 
 ## Leonardo.Ai
 
@@ -973,9 +931,7 @@ Cloud 月付表为 Professional每工作区59美元、Team159美元；资源到�
 
 定向检索公开使用经历；4个公开账号、5条主要发言节点。未访谈、未联系、未验证付款和平台日志。跨平台复用同一记录不增加人数。
 
-### GUR-01：Civitai
 
-在资源发现时判断是否接受永久付费访问 [Reddit 公开用户讨论：Civitai now has a closed-source models option](https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/)
 
 - 日期：2026-08-23（搜索索引）；正文相对日期存在差异
 - 付费自述：没有可核实的付款自述
@@ -997,13 +953,9 @@ Cloud 月付表为 Professional每工作区59美元、Team159美元；资源到�
 - 结果：自述继续使用且认可订阅；未取得下一次续费
 - 边界：两条发言来自同一账号，不能计作两名用户；未逐个播放作品，年费有效期内使用不能当续费。
 
-### GUR-03：OpenArt / Midjourney
 
-音乐视频，后缩到基础口型同步片段 [Reddit 公开用户：公开用户：从完整MV缩到口型片段的跨工具使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；[Reddit 公开用户：公开音乐视频用户的Midjourney角色参考图使用](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)
 
 - 日期：评论搜索索引2026-02-05；正文仅相对日期
-- 付费自述：自述因OpenArt音乐视频活动购买年费；Midjourney付款未明确
-- 使用自述：自述Midjourney制作角色参考图，外部大模型协助提示，并制作口型片段
 - 问题自述：完整分镜制作需大量调试
 - 后续反馈：同讨论其他用户交流学习方法；未见平台确认解决
 - 结果：基础片段为自述已做；考虑CapCut组合制作是未来意向
@@ -1023,7 +975,7 @@ Cloud 月付表为 Professional每工作区59美元、Team159美元；资源到�
 
 ## 进一步取数的能力与边界
 
-### 付费数据工具能增加维度，不能保证覆盖这18家
+### 付费数据工具能增加维度，不能保证覆盖这15家
 
 Semrush 的 Traffic Analytics 提供历史、渠道、主要页面及访问路径等维度；其完整产品的免费账户只支持示例域名。公开网站速览页与完整产品权限不是一回事。 [Semrush：Traffic Analytics](https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview)
 
@@ -1033,7 +985,7 @@ Semrush 的 Traffic Analytics 提供历史、渠道、主要页面及访问路�
 
 Similarweb 新版转化数据包含桌面与移动网页，针对被归为电商的网站，并设月访问量门槛：进入时至少20,000，低于10,000才移出。Converted Visits 是购买事件估计。旧版帮助页则以桌面感谢页访问定义转化，也可能包含表单提交。 [Similarweb：Understanding the New Conversion Analysis Metrics](https://support.similarweb.com/hc/en-us/articles/34990684782109-Understanding-the-New-Conversion-Analysis-Metrics)；[Similarweb：Conversion Analysis（旧版模块说明）](https://support.similarweb.com/hc/en-us/articles/360001811838-Conversion-Analysis)
 
-分析：不能承诺购买工具就能拿到18家AI社区的付费率。须确认目标域是否纳入、新旧数据版本、转化定义，以及是否覆盖订阅续费、站外付款和退款。当前没有核实这些域名的适用资格。
+分析：不能承诺购买工具就能拿到15家AI社区的付费率。须确认目标域是否纳入、新旧数据版本、转化定义，以及是否覆盖订阅续费、站外付款和退款。当前没有核实这些域名的适用资格。
 
 ### 独立访客比访问次数更接近人数，但仍有统计范围
 
@@ -1050,7 +1002,7 @@ Semrush 术语表把 Purchase Conversion 描述为可能以某种转化结束的
 ### 方法来源
 
 - [Traffic Analytics](https://www.semrush.com/kb/1506-traffic-and-market-traffic-overview)；Semrush；页面未标注发布日期；查阅：2026-09-09。说明产品能力，不证明特定竞品的付费字段可用
-- [Understanding the New Conversion Analysis Metrics](https://support.similarweb.com/hc/en-us/articles/34990684782109-Understanding-the-New-Conversion-Analysis-Metrics)；Similarweb；页面未标注发布日期；查阅：2026-09-09。不提供本报告18家竞品的适用名单或转化数值
+- [Understanding the New Conversion Analysis Metrics](https://support.similarweb.com/hc/en-us/articles/34990684782109-Understanding-the-New-Conversion-Analysis-Metrics)；Similarweb；页面未标注发布日期；查阅：2026-09-09。不提供本报告15家竞品的适用名单或转化数值
 - [Conversion Analysis（旧版模块说明）](https://support.similarweb.com/hc/en-us/articles/360001811838-Conversion-Analysis)；Similarweb；页面未标注发布日期；新版说明明确区分legacy模块；查阅：2026-09-09。旧版规则不得覆盖新版全设备购买事件估计
 - [Monthly Unique Visitors](https://support.similarweb.com/hc/en-us/articles/214074389-Monthly-Unique-Visitors)；Similarweb；页面未标注发布日期；查阅：2026-09-09。不是产品账号活跃或分群留存定义
 - [View Website Performance](https://support.similarweb.com/hc/en-us/articles/360010749958-View-Website-Performance)；Similarweb；页面未标注发布日期；查阅：2026-09-09。不代表已取得这些完整字段
@@ -1086,13 +1038,11 @@ ControlNet个案有长期Pro使用自述与同帖补充的每周频次，但没�
 
 [I cannot find Loras on the searcher](https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/)；[TensorHUB ...](https://www.reddit.com/r/TensorArt_HUB/comments/1p80bi5/tensorhub/)
 
-### Civitai
 
 头像个案是旧任务回访遇阻；取消会员个案是付款中断但表达继续创作意愿。两者都比单一活跃标签更有解释力，但没有行为完成的后续核验。
 
 新头像采用、后续资源发布和再次付款未知。
 
-[Just so you know. They are making it extremely difficult to cancel my membership.](https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/)；[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### SeaArt
 
@@ -1110,13 +1060,10 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 [OpenArt公开讨论：专辑MV制作及同账号后续](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)；[OpenArt Director：2分55秒项目失败回复](https://www.reddit.com/r/generativeAI/comments/1ufo0g7/openart_director/)；[What I learned making a 24-shot psychological thriller with OpenArt Director](https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/)
 
-### NightCafe
 
-个案自述贺卡在NightCafe多次尝试未成，转用ChatGPT并加字发送；另一位多年每日参与者只表示未来可能停止，不能把两者都算已流失。
 
 同一人的之后使用、续订和活动参与未核。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 即梦 AI
 
@@ -1134,13 +1081,11 @@ MV作者从初期界面、教程和短镜头困难，发展到学习影视术语
 
 [I made six ~1-hour AI films: here’s my experiment with long-form AI filmmaking](https://www.reddit.com/r/aifilmmaking/comments/1w7dhg3/i_made_six_1hour_ai_films_heres_my_experiment/)；[Klingai公开用户评价第2页](https://www.trustpilot.com/review/klingai.com?page=2)
 
-### Midjourney
 
 漫画作者2025制作前两部分，2026又用V7完成第5部分并公开比较；既有输出却仍报告多人/环境一致性问题。另一2026失败用户称取消订阅、用Ideogram/Copilot/Photoshop完成歌曲图，后来登录新版入口但只表示再试，不算复购。
 
 跨期使用有记录，连续付费无证；V8效果、原用户重新采用MJ未验证。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)；[Midjourney was a flagship – now it is virtually unusable.](https://www.reddit.com/r/midjourney/comments/1so1hxp/midjourney_was_a_flagship_now_it_is_virtually/)
 
 ### Leonardo.Ai
 

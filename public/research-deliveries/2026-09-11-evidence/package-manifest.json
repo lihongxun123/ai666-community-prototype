@@ -5,7 +5,7 @@
   "edition": "evidence",
   "files": [
     {
-      "path": "appendix/civitai.html",
+      "path": "",
       "bytes": 54783,
       "sha256": "45f82326266b360680e48c7550116b6d65d475c5e61485a8821130d459da7594"
     },
@@ -50,7 +50,7 @@
       "sha256": "21d20e47397becbf659122c8da0467da02332c472d0b71f1ed928458add9574f"
     },
     {
-      "path": "appendix/midjourney.html",
+      "path": "",
       "bytes": 51662,
       "sha256": "8324562419199fa9153c65cbd6f9ba35063ef592230ce0ea2991407b6965a791"
     },
@@ -60,7 +60,7 @@
       "sha256": "bd5ec4dfd4da50d7322b08fd5608a3791e603070180f9076e95793276da40b24"
     },
     {
-      "path": "appendix/nightcafe.html",
+      "path": "",
       "bytes": 59970,
       "sha256": "662aa27fd64817c0b31fe511e7faeb7a4f5366ae1d2ebd59f80dd9325b7d0bac"
     },
@@ -100,7 +100,7 @@
       "sha256": "83d306437467f2bde7a65dd15c468d59cf9767a7e254834a30a1bc84589be512"
     },
     {
-      "path": "assets/research-images/civitai-evidence.png",
+      "path": "",
       "bytes": 50812,
       "sha256": "cbba144450a9be9013e564d9bdaa151b49025a9e9682e6b076f988f1179a6af8"
     },
@@ -155,7 +155,7 @@
       "sha256": "9cee3f3dfff8a6a549011b86d057c403a157201de880a0c5ffecf24d256ee749"
     },
     {
-      "path": "assets/research-images/midjourney-rooms.png",
+      "path": "",
       "bytes": 56748,
       "sha256": "9a1b8e461d31794e07d98f9c5d9267646c67badb7e16df662f86912f3a2be98e"
     },
@@ -165,7 +165,7 @@
       "sha256": "be6850d8fa19e1bfaec5ecaeea54a2d68d02308f7d1379d843fd3172b469e5ec"
     },
     {
-      "path": "assets/research-images/nightcafe-doc-retry.png",
+      "path": "",
       "bytes": 289758,
       "sha256": "9c0ffecb564c040ae00548400eec829a03f2b602ab98f7755df7c90687d2bb02"
     },
@@ -280,7 +280,7 @@
       "sha256": "8555229374abddfd79bb5d273e199cb9ca489ba04ea4e66c4dacb3fde55a98b8"
     },
     {
-      "path": "attachments/audience-civitai.md",
+      "path": "",
       "bytes": 14712,
       "sha256": "2046e5bc7ab62d3919020898443db7327b5c84266e59655cc2c9d4638b585563"
     },
@@ -325,7 +325,7 @@
       "sha256": "83688d931e1680e73b7540b4d46f0262754b10c962b4fd8d658405db2c092603"
     },
     {
-      "path": "attachments/audience-midjourney.md",
+      "path": "",
       "bytes": 15092,
       "sha256": "a9e99adfe7646a2836f2780b6fd47058c15c6aef9251d309f6c115d4ad5e99ae"
     },
@@ -335,7 +335,7 @@
       "sha256": "c6fc23bcd2987a3069a7c108da224f03c61e41edb8248e074f3eea79fd0393bd"
     },
     {
-      "path": "attachments/audience-nightcafe.md",
+      "path": "",
       "bytes": 14828,
       "sha256": "1cefc198508e1a36bf9f16afa5698e810690cd7b49f1fa8e8b3fa5b3ef6ae539"
     },
@@ -555,7 +555,7 @@
       "sha256": "e2ba336dcd48d61dcc329d31f1111e92ed51543f81586ff056bcdf2ec93a32ec"
     },
     {
-      "path": "research-images/civitai-evidence.png",
+      "path": "",
       "bytes": 50812,
       "sha256": "cbba144450a9be9013e564d9bdaa151b49025a9e9682e6b076f988f1179a6af8"
     },
@@ -610,7 +610,7 @@
       "sha256": "9cee3f3dfff8a6a549011b86d057c403a157201de880a0c5ffecf24d256ee749"
     },
     {
-      "path": "research-images/midjourney-rooms.png",
+      "path": "",
       "bytes": 56748,
       "sha256": "9a1b8e461d31794e07d98f9c5d9267646c67badb7e16df662f86912f3a2be98e"
     },
@@ -620,7 +620,7 @@
       "sha256": "be6850d8fa19e1bfaec5ecaeea54a2d68d02308f7d1379d843fd3172b469e5ec"
     },
     {
-      "path": "research-images/nightcafe-doc-retry.png",
+      "path": "",
       "bytes": 289758,
       "sha256": "9c0ffecb564c040ae00548400eec829a03f2b602ab98f7755df7c90687d2bb02"
     },

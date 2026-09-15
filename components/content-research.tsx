@@ -55,7 +55,7 @@ export function ContentOverview({onSelect}:{onSelect:(id:string)=>void}){
 
 
   <section id="content-ledger"><h2>逐条样本与原始页面</h2><Ledger/></section>
-  <section><h2>仍未解决的事</h2><p>资料不足以确认这三家的付费人数、真实收入、获客成本、用户职业分布、内容成功率和留存。专业流量工具能补访问路径与受众估计；创作者合作与自愿任务记录，才能继续接近“谁愿意持续用、为什么用”。</p></section>
+  <section><h2>影响判断的资料缺口</h2><p>资料不足以确认这三家的付费人数、真实收入、获客成本、用户职业分布、内容成功率和留存。专业流量工具能补访问路径与受众估计；创作者合作与自愿任务记录，才能继续接近“谁愿意持续用、为什么用”。</p></section>
  </div>
 }
 

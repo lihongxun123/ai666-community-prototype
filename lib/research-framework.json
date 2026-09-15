@@ -3,7 +3,7 @@
   "date": "2026-09-09",
   "status": "内容与工具关系研究；社区方向尚未确定",
   "lead": "图片和视频承载观看，帖子与教程承载表达和学习，Skill、MCP、工作流与在线工具还涉及文件、环境和执行。比较各类内容的交付材料、关联方式、维护工作及收费关系。",
-  "scope": "18家平台为围绕多元拾光和MakeNow选取的研究样本。工具与收费资料用于解释能力、资源和运营约束；多元拾光以外部用户有效消费和持续参与为目标，不以样本推算行业占比或要求社区直接变现。",
+  "scope": "15家平台为围绕多元拾光和MakeNow选取的研究样本。工具与收费资料用于解释能力、资源和运营约束；多元拾光以外部用户有效消费和持续参与为目标，不以样本推算行业占比或要求社区直接变现。",
   "agreements": [
     {
       "topic": "内容质量与组织",
@@ -21,7 +21,7 @@
     },
     {
       "topic": "社区背后的工具业务",
-      "input": "用户希望确认18家中有多少提供工具，以及社区是否本质上为了销售工具和Token。",
+      "input": "用户希望确认15家中有多少提供工具，以及社区是否本质上为了销售工具和Token。",
       "fact": "官方工具与计费资料可确认产品和收费入口；大部分平台没有公开社区带来的收入增量、付费提升或独立成本。",
       "judgment": "内容连接工具使用是多数样本的一种路径，也存在欣赏、学习、讨论和资源发现价值。对多元拾光，关键是这些内容是否带来真实持续活跃，以及平台能否承担供给；工具收费事实不能直接决定社区目标。",
       "next": "逐家标明执行能力由谁提供、内容如何进入执行、谁付费、按什么收费，以及仍缺的经营证据。"
@@ -185,8 +185,8 @@
     {
       "kind": "creative",
       "label": "平台创作执行",
-      "count": 12,
-      "definition": "提供图像、视频等创作能力，社区结构从资源UGC到精选案例不同；Civitai主要依据官方实现文档。"
+      "count": 9,
+      "definition": "提供图像、视频等创作能力，社区结构从资源UGC到精选案例不同；"
     },
     {
       "kind": "developer",
@@ -223,7 +223,7 @@
       "objects": "模型、LoRA、工作流、模板、作品、教程。",
       "connection": "从模型或方法详情在线使用、下载；部分工作流另售使用许可。",
       "billing": "个人会员与积分、模型及工作流API、原创工作流许可。运行资源与方法授权分开收费。",
-      "limit": "部分动态页面正文读取不足，路径结合此前报告样本；未取得社区带来的付费增量、作者收入分布或利润。",
+      "limit": "部分动态页面正文读取不足，路径结合既有报告样本；未取得社区带来的付费增量、作者收入分布或利润。",
       "sources": [
         {
           "title": "会员与生成权益",
@@ -290,31 +290,6 @@
       ]
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "kind": "creative",
-      "community": "模型资源、作品与改作社区",
-      "execution": "官方实现文档记载站内生成器与Remix；生产页面访问受限。",
-      "objects": "模型版本、例图、关联资源、文章、合集。",
-      "connection": "符合兼容条件的媒体可Remix；资源下载与站内生成权限可以分开。",
-      "billing": "会员权益与Buzz，资源访问、按次生成许可及创作者商业化权益。",
-      "limit": "这里统计的是官方文档支持的产品能力，未将实现文档当成所有功能线上可用的证明；现行购买资格、覆盖范围和社区收入未知。",
-      "sources": [
-        {
-          "title": "官方实现文档：生成与引导",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md"
-        },
-        {
-          "title": "官方实现文档：资源商业化",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md"
-        },
-        {
-          "title": "官方实现文档：会员",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md"
-        }
-      ]
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "kind": "creative",
@@ -369,31 +344,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "kind": "creative",
-      "community": "作品、成员挑战与评价社区",
-      "execution": "图像/视频生成、演化、局部修改、模型训练。",
-      "objects": "公开作品、每日/成员挑战、排名、聊天室、模板。",
-      "connection": "题面引导创作和参赛；Evolve继承原提示、设置与适用的起始图；部分挑战可接受外部工具作品。",
-      "billing": "PRO、Fast Credits、参与取得的Relax Credits及加额；模型、优先级与私密模板等权益。",
-      "limit": "社区活动与工具相连的规则已确认；未取得活动带来的留存或订阅提升，指定模型无限生成仍有限制。",
-      "sources": [
-        {
-          "title": "成员挑战规则",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges"
-        },
-        {
-          "title": "Evolve与局部修改",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe"
-        },
-        {
-          "title": "PRO方案",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans"
-        }
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦",
       "kind": "creative",
@@ -432,31 +382,6 @@
         {
           "title": "作者专题与工具用途",
           "url": "https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words"
-        }
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "kind": "creative",
-      "community": "作品发现、风格参考；讨论另有Discord",
-      "execution": "网页生成、编辑、变体、放大与图生视频。",
-      "objects": "Explore作品、提示参数、Moodboard与审美评价。",
-      "connection": "复用提示、图片、风格与Moodboard参与生成；公开作品不等于完整制作工程。",
-      "billing": "订阅、Fast GPU时间、额外GPU时间；Relax、隐私与并发权限分档。",
-      "limit": "站外交流不等于网站具备完整讨论社区；付费GPU时间不等于用户等待时长或成品数量，社区增量未披露。",
-      "sources": [
-        {
-          "title": "网页创作",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/33390732264589-Creating-on-Web"
-        },
-        {
-          "title": "Moodboards",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards"
-        },
-        {
-          "title": "套餐对照",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
         }
       ]
     },
@@ -598,7 +523,7 @@
         {
           "title": "Pricing",
           "url": "https://huggingface.co/pricing",
-          "scope": "官方价格入口；读取，具体金额无需作为本次分类依据。"
+          "scope": "官方价格入口；读取，具体金额无需作为分类依据。"
         }
       ]
     },
@@ -802,7 +727,7 @@
     "补作者供给可持续性：奖励调整前后、付费资源与有效使用的公开记录；无法取得效果数据就保留未知。",
     "按来源与日期更新现状，补充会影响方案取舍的材料。"
   ],
-  "countBoundary": "按主要执行关系分类：15家有平台直接执行能力的官方资料，另有1家关联 API 服务。实际运行结果与社区互动程度见各平台记录；不据此计算行业占比或成功率。",
+  "countBoundary": "15家样本中，9家提供平台创作执行能力，3家提供开发与运行能力；关联API、讨论与外部工具生态、学习与合作实践各1家。该分类描述产品关系，不代表行业占比或实际使用效果。",
   "internalSource": {
     "path": "docs/versions/v1.0/AI666_当前产品逻辑与迭代最小上下文_V0.1.md",
     "line": 25,

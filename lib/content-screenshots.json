@@ -118,7 +118,7 @@
       "detail": {
         "file": "runninghub-app-detail.jpg",
         "url": "https://www.runninghub.ai/zh-cn/ai-detail/2086711729156894722",
-        "caption": "应用详情提供介绍、计费说明与立即运行；本次加载状态中，左侧尚未出现输入表单。",
+        "caption": "应用详情提供介绍、计费说明与立即运行；加载状态中，左侧尚未出现输入表单。",
         "fields": [
           "任务类型",
           "运行计数",

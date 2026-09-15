@@ -61,7 +61,7 @@
             "指向imageinfo作品页的画同款链接"
           ],
           "handoff": "这类教程把观看与创作入口放在一起，但正文没有展开操作。视频内容与画同款的继承范围仍待核对。",
-          "limits": "本次只取得搜索索引中的正文；直接打开教学页为空，作品页未取得。嵌入视频未播放，不能称已读完整教程或确认视频时长。所谓1分钟、无需提示等效果承诺不采用。",
+          "limits": "只取得搜索索引中的正文；直接打开教学页为空，作品页未取得。嵌入视频未播放，不能称已读完整教程或确认视频时长。所谓1分钟、无需提示等效果承诺不采用。",
           "sourceUrls": [
             "https://www.liblib.art/teaching/25faceacb75e444da13a9e897ea25e8a",
             "https://www.liblib.art/imageinfo/a17bb10ccc574a718a580c1772cf7c76"
@@ -247,47 +247,6 @@
       ]
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "items": [
-        {
-          "title": "模型资源与版本文件",
-          "cardFields": [
-            "待截图确认：未看到模型卡片，不把API中的名称、类型、标签和计数直接写成卡片字段。"
-          ],
-          "detailFields": [
-            "官方API文档把模型与版本分层：模型有说明和许可字段，版本关联底模、发布时间和实际文件。",
-            "文件记录可有格式、大小、哈希和下载地址；是否支持站内生成另有标记。"
-          ],
-          "handoff": "资源详情交付的是可识别版本的资源及使用条件。分析：读者需先判断依赖与许可，再决定在线调用或下载；单张例图不能替代这些判断。",
-          "limits": "这是官方API说明，非线上模型页实测；样例计数不作经营数据。 文档说明非公开文件会被隐藏，归档等状态还可能移除下载信息；存在模型记录不等于现在能下载或调用。",
-          "sourceUrls": [
-            "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md"
-          ],
-          "evidenceType": "official-api-documentation",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "按内容类型投稿的合集",
-          "cardFields": [
-            "待截图确认：名称、封面、简介和条目数量的卡片展示方式未见，不能用合集编辑字段反推消费卡片。"
-          ],
-          "detailFields": [
-            "实现文档区分图片、帖子和模型合集。",
-            "开放的图片/帖子合集描述了详情页投稿入口；模型合集通过保存选择器加入。",
-            "合集保存的是被组织的条目；投稿和协作权限不是同一字段。"
-          ],
-          "handoff": "分析：合集详情首先回答收集范围，其次才是能否投稿及从哪里投稿。阅读合集、保存条目和加入协作对应不同权限。",
-          "limits": "仅按公开实现文档加深，不保证当前生产账号可用。 合集链接不交付原作品全部素材和配置；不能因可投稿就认为也能修改他人内容。",
-          "sourceUrls": [
-            "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md"
-          ],
-          "evidenceType": "official-implementation-documentation",
-          "checkedAt": "2026-09-09"
-        }
-      ]
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "items": [
@@ -363,7 +322,7 @@
             "节点工作流指南解释保存与共享方法"
           ],
           "handoff": "官方文档支持将工作流整理成更易使用的应用，因此应分开核对源方法与应用输入。原稿单个应用的个人历史恢复，也不能代替这层公开发布关系。",
-          "limits": "发布字段主要位于文档配图，本次未读图，不能编造具体字段。文档所说保存共享不证明一项应用会公开全部源节点，二者版本同步与复制权限待核。",
+          "limits": "发布字段主要位于文档配图，未读图，不能编造具体字段。文档所说保存共享不证明一项应用会公开全部源节点，二者版本同步与复制权限待核。",
           "sourceUrls": [
             "https://docs.seaart.ai/guide-1/portugues/2-funcoes-basicas-do-seaart-ai/2-4-apps-de-ia/como-publicar-como-app",
             "https://docs.seaart.ai/guide-1/2-seaart-ai-basic-function/2-10-workflow.md"
@@ -437,82 +396,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "items": [
-        {
-          "title": "图文帖、提问与提示词",
-          "cardFields": [
-            "官方说明：发布作品时可选择将描述开头叠在信息流图片上。",
-            "普通帖卡片的标题、摘要、附件预览、评论数和布局未见，待截图确认；不能把作品叠字选项写成所有帖子默认样式。"
-          ],
-          "detailFields": [
-            "Posts可承载图组、博客式表达和问题，并插入作品、GIF、合集和挑战等附件。",
-            "支持基本Markdown；标为prompt的代码块可带复制/使用按钮。"
-          ],
-          "handoff": "分析：一篇帖可以先交代问题，再附素材，最后提供可带走的提示。这比单张结果图多了讨论语境，也比完整工作流轻。",
-          "limits": "官方功能说明，不是已抽样到的真实帖子；未确认站内普遍采用率。 复制提示词仍不保证继承模型、起始图、参数或许可；附件链接也不是源文件包。",
-          "sourceUrls": [
-            "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe"
-          ],
-          "evidenceType": "official-help-text",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "公开合集与个人收藏",
-          "cardFields": [
-            "待截图确认：合集卡片未见。官方说明要求公开合集具备简介和主图，但未证明二者都在卡片上完整展示。"
-          ],
-          "detailFields": [
-            "创建字段包含标题，可选简介、标签和主图；公开合集出现在个人主页，并可通过链接查看。",
-            "一个作品可通过生成前选择、单条加入或批量方式归入合集。"
-          ],
-          "handoff": "分析：合集交付主题选择和组合关系，适合连续系列或方法变体；它不是完整项目的同义词，也不能替代每件作品的材料说明。",
-          "limits": "可见性有例外：作者自己的未发布作品置入公开合集后可被所有人看见；他人的未发布作品及已归档作品有不同限制。 公开合集不能等同所有作品已经发布到Explore；未核实际卡片和跨账号材料权限。",
-          "sourceUrls": [
-            "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe"
-          ],
-          "evidenceType": "official-help-text",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "作品与制作参数的公开设置",
-          "cardFields": [
-            "待截图确认：作品卡上是否提示复制保护或评论关闭，正文没有说明。",
-            "不把有可见成图、点赞或评论入口推断为提示和起始图也公开。"
-          ],
-          "detailFields": [
-            "官方编辑说明把Comments与Copy Protection作为独立控制项。",
-            "作者可控制评论，以及他人复制/复用提示和起始图；还可配置默认发布偏好。"
-          ],
-          "handoff": "分析：作品详情应同时评价视觉结果和实际开放的制作材料。没有复用按钮可能是作者选择，不能直接归因为平台没有复用能力。",
-          "limits": "核的是权限说明，未选取公开/保护两条作品做对照。 隐藏设置、内容可见和版权许可属于不同问题；不从按钮状态推出通用授权。",
-          "sourceUrls": [
-            "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts"
-          ],
-          "evidenceType": "official-help-text",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "基于作品改作的教程",
-          "cardFields": [
-            "待截图确认：这是一篇官方帮助文，非新采集作品卡。文档描述作品库的DNA/Evolve入口，但未见当前卡片。"
-          ],
-          "detailFields": [
-            "Inpainting教程用起始图、局部蒙版和改写提示逐步示范。",
-            "文中说明从作品演化可预填原提示与设置，并在适用来源下把结果作为起始图；同时说明失败可能和调节方向。"
-          ],
-          "handoff": "分析：这类详情交付的是一步接一步的修改理由。读者可以学习局部修复，而不是只复制整句提示。",
-          "limits": "页面前后对支持模型的枚举并不完全一致，不采用完整兼容列表。 本例是平台收录的作者教程，不代表所有模型都有相同继承行为；没有运行。",
-          "sourceUrls": [
-            "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe"
-          ],
-          "evidenceType": "official-help-author-tutorial",
-          "checkedAt": "2026-09-09"
-        }
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦AI",
       "items": [
@@ -528,7 +411,7 @@
             "普通社区作品详情的提示、模型、参考图、同款继承字段均待截图确认"
           ],
           "handoff": "能力演示让人理解工具，社区作品让人发现作者与尝试同款。需要区分来源：官网示范不能当普通用户作品样本，示范的功能参数也不能代填作品详情。",
-          "limits": "本次公开HTML正文已读取，未访问登录作品详情。首尾帧属于功能说明，不证明首页每个视频都用了两帧；同款入口未操作。",
+          "limits": "公开HTML正文已读取，未访问登录作品详情。首尾帧属于功能说明，不证明首页每个视频都用了两帧；同款入口未操作。",
           "sourceUrls": [
             "https://jimeng.jianying.com/"
           ],
@@ -661,67 +544,6 @@
             "https://kling.ai/quickstart/klingai-element-library-3-user-guide"
           ],
           "evidenceType": "official-feature-guide/full-page",
-          "checkedAt": "2026-09-09"
-        }
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "items": [
-        {
-          "title": "风格索引与风格代码",
-          "cardFields": [
-            "官方2025-09-04发布说明：每个缩略项用一组提示展示同一SREF代码的效果，可喜欢收藏或Try Style。",
-            "这是历史发布说明，不是卡片实见；代码是否常驻展示、当前排序与详情布局待截图确认。"
-          ],
-          "detailFields": [
-            "当前Style Creator帮助仍描述样式项的尝试、展开详情和收藏入口。",
-            "内容核心是可重复调用的风格引用及效果示例，不能当作某个作者完整图片提示或训练文件。"
-          ],
-          "handoff": "分析：风格索引让用户先选审美，再将自己的题材带入该风格。Try Style会用提示栏当前内容生成，读者需要知道这是执行动作而非纯预览。",
-          "limits": "未读取真实风格详情的全部字段，也未确认是否有作者、许可或下载项。 SREF、Moodboard和完整作品不是同一种内容单位；不能把历史V1展示方式当成当前全部界面。",
-          "sourceUrls": [
-            "https://updates.midjourney.com/style-explorer-v1/",
-            "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator"
-          ],
-          "evidenceType": "official-announcement-and-help",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "风格调试过程与结果",
-          "cardFields": [
-            "待截图确认：官方说明中，每轮有预览缩略图；悬停可看更大预览，结束后的结果留在Create页。",
-            "没有亲见真实会话卡片，不能填入轮次标签、按钮位置或结果计数。"
-          ],
-          "detailFields": [
-            "Style Creator按用户选择生成新的风格预览与代码，各轮可保留不同代码。",
-            "结束会话后不能重开该会话；已有预览和代码仍保存，可用于后续提示。"
-          ],
-          "handoff": "分析：这里交付的不是一次“喜欢”，而是选择过程留下的多个可继续使用结果。它属于个人创作记录，不能直接算为公开UGC供给。",
-          "limits": "预览消耗GPU时间，不能把连续选风格视作完全无成本浏览。 帮助说明该工具预览使用V7；不能从最新模型名称推断全部流程都使用新版本。 代码可调用，不等于已提供输入图片的导出包或原训练材料。",
-          "sourceUrls": [
-            "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator"
-          ],
-          "evidenceType": "official-help-text",
-          "checkedAt": "2026-09-09"
-        },
-        {
-          "title": "图片生成视频、续段与循环",
-          "cardFields": [
-            "待截图确认：帮助说明Create页视频可悬停播放，也有续段入口；这不是Explore卡片观察。",
-            "当前公开视频卡是否显示片长、作者、首帧和参数，资料不足。"
-          ],
-          "detailFields": [
-            "帮助说明作品详情可将图像动画化，视频可自动或手动续段，并可设置循环/结束帧。",
-            "用户可下载视频或GIF；动态作品与起始图、动作提示、续段操作关联。"
-          ],
-          "handoff": "分析：详情交付可继续加工的片段，而非已经剪辑完的故事。起始图是否继承、动作提示是否能改、续段是否重新执行，需要分别确认。",
-          "limits": "从图像进入视频会移除原图像生成参数；不能称完整原参数直接迁移。 这些说明主要针对个人Create/Organize流程，不能外推他人公开视频都能被完整复制。 生成与续段耗费GPU时间；没有生成、播放或导出验证。",
-          "sourceUrls": [
-            "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video"
-          ],
-          "evidenceType": "official-help-text",
           "checkedAt": "2026-09-09"
         }
       ]
@@ -1240,8 +1062,9 @@
     }
   ],
   "stats": {
-    "platforms": 18,
-    "items": 58,
-    "sourceUrls": 74
+    "platforms": 15,
+    "items": 50,
+    "sourceUrls": 67,
+    "profiles": 15
   }
 }

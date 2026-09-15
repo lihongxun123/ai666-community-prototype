@@ -5,37 +5,15 @@
   "findings": [
     {
       "direction": "视觉兴趣与创作",
-      "finding": "NightCafe有用户自述转去Tensor.Art生成后仍回来参加挑战和聊天，但同一人也为积分重复发删图片。另一位用户称徽章曾让自己多次返回，后来仍退出。",
+      "finding": "另一位用户称徽章曾让自己多次返回，后来仍退出。",
       "limit": "分别为2023、2024年的历史自述；无法拆出无奖励回访，更缺近期只看作品的普通读者记录。",
-      "sources": [
-        {
-          "title": "NightCafe · VIS-RET-01",
-          "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/comment/k4hjqko/"
-        },
-        {
-          "title": "NightCafe · VIS-RET-03",
-          "url": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/"
-        }
-      ]
+      "sources": []
     },
     {
       "direction": "近期看图与作品交流",
-      "finding": "2026年Civitai读者描述如何按时间、热度筛图，也有图集浏览者反映广告干扰。NightCafe的一段讨论包含具体画面解读和作者回应。",
-      "limit": "全部来自第三方问题讨论。跨日回复只确认在Reddit延续；NightCafe不续费是意向，尚未确认离站或站内回访。",
-      "sources": [
-        {
-          "title": "Civitai · DVP-01",
-          "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/"
-        },
-        {
-          "title": "Civitai · DVP-02",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/"
-        },
-        {
-          "title": "NightCafe · DVP-03",
-          "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/"
-        }
-      ]
+      "finding": "",
+      "limit": "全部来自第三方问题讨论。跨日回复只确认在Reddit延续；",
+      "sources": []
     },
     {
       "direction": "交流机制对照",
@@ -88,127 +66,6 @@
     }
   ],
   "records": [
-    {
-      "id": "VIS-RET-01",
-      "direction": "视觉兴趣与交流",
-      "platform": "NightCafe",
-      "platformRole": "视觉创作与作品交流",
-      "sourceTitle": "The rider — 站外生成后仍参加社区的回复",
-      "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/comment/k4hjqko/",
-      "canonicalSourceUrl": "https://www.reddit.com/r/aiArt/comments/172lvb0/the_rider/",
-      "publishedAt": null,
-      "sourcePublishedAt": "2023-10-08",
-      "dateNote": "原帖日期索引为 2023-10-08，既有记录覆盖 10 月 8—11 日；本次评论页只显示相对年数，不补精确评论日。",
-      "accessedAt": "2026-09-14",
-      "provenance": "rechecked",
-      "priorEvidenceIds": [
-        "P25-nightcafe-e5",
-        "P25-nightcafe-S-u3"
-      ],
-      "actorCode": "P25-nightcafe-user-E",
-      "evidenceType": "self-report",
-      "readScope": "原帖及可读回复；直接定位永久评论。未核其站内作品历史。",
-      "trigger": "生成和 LoRA 训练主要转到 Tensor.Art。",
-      "repeatEvidence": "自述每天仍使用 NightCafe，参加挑战、聊天；同一回复也说会重复发布并删除同一张图片以获取积分。",
-      "alternative": "Tensor.Art；控制、训练和成本优势均为其当时个人判断，未做同条件测试。",
-      "friction": "对 NightCafe 当时的生成控制和测试功能不满意；交流价值与积分任务在同一人的日常使用中并存。",
-      "whatItDoesNotProve": "不能写成无奖励也会回来，不能认定其如今仍活跃，也不能用 2023 年模型评价比较当前产品。",
-      "researchImplication": "可继续核对近期用户是否把制作、看作品、找人聊天分在不同平台；必须同时记录奖励任务，不能只摘取社交动机。",
-      "evidenceLabel": "本人或作者自述",
-      "provenanceLabel": "既有来源复核",
-      "supportingUrls": [],
-      "concreteBehavior": ""
-    },
-    {
-      "id": "VIS-RET-02",
-      "direction": "视觉兴趣与交流",
-      "platform": "NightCafe",
-      "platformRole": "视觉创作与作品交流",
-      "sourceTitle": "What do you think about the recent update? — 停止积分任务、改用其他工具",
-      "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/comment/o62pp4l/",
-      "canonicalSourceUrl": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-      "publishedAt": null,
-      "sourcePublishedAt": "2026-02-09",
-      "dateNote": "2026-02-09 为主帖索引日期，回复页只显示相对月份；不把主帖日期当该回复日期。",
-      "accessedAt": "2026-09-14",
-      "provenance": "rechecked",
-      "priorEvidenceIds": [
-        "P25-nightcafe-e2",
-        "P25-nightcafe-S-u1"
-      ],
-      "actorCode": "P25-nightcafe-user-B",
-      "evidenceType": "self-report",
-      "readScope": "定位本人叙述的完整回复；未采生成结果或交易记录。",
-      "trigger": "获取免费积分的方法改变；另有一次制作节日电子卡的实际需求。",
-      "repeatEvidence": "自述过去主要做得积分的任务，偶尔生成；规则变化后停止继续赚免费积分。仍考虑短期使用以消耗余额，未声称永久离站。",
-      "alternative": "自述电子卡在 NightCafe 多次尝试不符预期，随后改用 ChatGPT 得到可用图片。",
-      "friction": "平时实际用图较少，文章配图仅少数可用；积分积累、成果消费与稳定创作需求没有同步增长。",
-      "whatItDoesNotProve": "这是停止某类活动，不能计为整个平台流失；未统一提示词、模型、次数，不能作为 ChatGPT 胜出的实测。",
-      "researchImplication": "同条件比较应围绕同一项真实用图需求及最终采用结果，并把为了余额回访与为了新内容回访分开。",
-      "evidenceLabel": "本人或作者自述",
-      "provenanceLabel": "既有来源复核",
-      "supportingUrls": [],
-      "concreteBehavior": ""
-    },
-    {
-      "id": "VIS-RET-03",
-      "direction": "视觉兴趣与交流",
-      "platform": "NightCafe",
-      "platformRole": "视觉创作与作品交流的历史退出反例",
-      "sourceTitle": "Why I Left NightCafe",
-      "url": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/",
-      "canonicalSourceUrl": "https://www.reddit.com/r/ArtistHate/comments/1gt78mb/why_i_left_nightcafe/",
-      "publishedAt": "2024-11-17",
-      "dateNote": "来自 Reddit 原页日期索引；无精确时刻。事件由发帖人回忆，早于发帖，不能算 2024 年当月离站。",
-      "accessedAt": "2026-09-14",
-      "provenance": "new",
-      "priorEvidenceIds": [],
-      "actorCode": "VIS-NC-N01",
-      "evidenceType": "self-report",
-      "readScope": "原帖正文完整读取；未核账号删除、账单或跨年行为记录。",
-      "trigger": "自述由兴趣圈接触 NightCafe，先把生成图用作 Photoshop 拆解练习。",
-      "repeatEvidence": "后来多次想离开，却为了继续获得徽章而回来；最终称已删除内容并停止使用。",
-      "alternative": "重新重视自身绘画与编辑练习；未给可核的替代平台使用历史。",
-      "friction": "自述生成文件堆积、成就感下降、重复社交圈与消费负担共同促成退出。",
-      "whatItDoesNotProve": "这是对 AI 持批评态度社群中的历史个案，选样倾向明显。未核删除或消费记录，不能推断平台普遍造成负担或当前流失率。",
-      "researchImplication": "反复回来未必意味着用户持续获得价值；应问清回访后的满足感、采用成果和主动退出原因，不能只看访问次数。",
-      "evidenceLabel": "本人或作者自述",
-      "provenanceLabel": "新收录来源",
-      "supportingUrls": [],
-      "concreteBehavior": ""
-    },
-    {
-      "id": "VIS-RET-04",
-      "direction": "视觉兴趣与交流",
-      "platform": "NightCafe",
-      "platformRole": "视觉挑战的官方治理规则",
-      "sourceTitle": "How is downvoting in the daily challenge handled?",
-      "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
-      "canonicalSourceUrl": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
-      "publishedAt": null,
-      "dateNote": "页面未显示发布日期或更新日；仅确认访问时可读规则。",
-      "accessedAt": "2026-09-14",
-      "provenance": "rechecked",
-      "priorEvidenceIds": [],
-      "priorSourceFiles": [
-        "site/lib/deep-global.ts",
-        "site/lib/operations-data.json",
-        "site/lib/planning-moved-copy.json"
-      ],
-      "actorCode": "VIS-NC-ORG",
-      "evidenceType": "official-rule",
-      "readScope": "帮助页正文全部条款；未观察系统实际拦截过程。",
-      "trigger": "官方称过去存在为了挑战积分而快速投票、缺少真实参与的行为。",
-      "repeatEvidence": "没有用户持续行为记录。",
-      "alternative": "该记录未提供替代选择。",
-      "friction": "规则设置强制投票间隔，并对可疑低分及过快投票作识别和无效处理。",
-      "whatItDoesNotProve": "规则存在不等于反作弊已有效，也没有无效票占比、活动留存或人工处理工时；不能把治理规则算作一个用户回访案例。",
-      "researchImplication": "投票量需与具体看图反馈、有效评审和后续交流区分；持续组织需要治理，成本仍须另外取证。",
-      "evidenceLabel": "官方规则",
-      "provenanceLabel": "既有来源复核",
-      "supportingUrls": [],
-      "concreteBehavior": ""
-    },
     {
       "id": "VIS-RET-05",
       "direction": "交流机制对照",
@@ -277,7 +134,7 @@
       "trigger": "用户想运行 LTX 图像/音频视频流程；初次跑通后又尝试另一套工作流。",
       "repeatEvidence": "同一公开账号6月15日自报跑通，6月19日回原帖求助另一流程，6月22日补充找到RunningHub对应资源。另一账号6月16日返回分享适配文件链接。",
       "alternative": "作者讨论在Hugging Face，实际执行在RunningHub；文件分享改用外部链接。",
-      "friction": "节点和模型适配仍需修改。作者6月25日称此前未收到提醒；及时回应没有得到保障。",
+      "friction": "节点和模型适配仍需修改。作者6月25日称早先未收到提醒；及时回应没有得到保障。",
       "whatItDoesNotProve": "这是跨平台回帖与运行自述，不是RunningHub社区留存率；没有复验文件、结果质量或商业采用。",
       "publishedAtNote": "原页只显示Jun 15—Jun 25，未显示年份，不从账号名或资源名称推断。",
       "sourceAccess": "原始讨论正文已读；未读用户图片或运行文件。",
@@ -319,7 +176,7 @@
       "friction": "长视频分段方法还依赖上游插件与上下文处理方式，不能只维护结果预览。",
       "whatItDoesNotProve": "三条作者日志不是三次用户回访或成功；无用户复测确认，无工时。当前未证明工作流可用。",
       "publishedAtNote": "原发表日期未知；搜索索引同时显示2026-06-29更新及正文三个无年份日期标签。",
-      "sourceAccess": "直接原页超时；本次读取同一官方URL的搜索索引正文，不标为实时详情成功。",
+      "sourceAccess": "直接原页超时；读取同一官方URL的搜索索引正文，不标为实时详情成功。",
       "priorEvidenceIds": [
         "P25-runninghub-E5"
       ],
@@ -330,7 +187,7 @@
       "evidenceLabel": "本人或作者自述",
       "provenanceLabel": "既有来源复核",
       "dateNote": "原发表日期未知；搜索索引同时显示2026-06-29更新及正文三个无年份日期标签。",
-      "readScope": "直接原页超时；本次读取同一官方URL的搜索索引正文，不标为实时详情成功。",
+      "readScope": "直接原页超时；读取同一官方URL的搜索索引正文，不标为实时详情成功。",
       "supportingUrls": [],
       "concreteBehavior": ""
     },
@@ -491,7 +348,7 @@
       "evidenceType": "self-report",
       "trigger": "提问者称为虚拟试衣订阅PRO，重启、复制和切换访问设置仍失败，并提出退款请求。",
       "repeatEvidence": "9月22日另一账号称问题持续半年且已放弃；互助者9月15、22、23日继续解释依赖变化并提供Gradio5适配Space。",
-      "alternative": "互助者提供的IDM-VTON-GRADIO5原页在本次读取中显示Paused，并提示到Community请求作者重启。",
+      "alternative": "互助者提供的IDM-VTON-GRADIO5原页在读取中显示Paused，并提示到Community请求作者重启。",
       "friction": "复制资源后仍可能需要依赖适配；他人提供替代链接后，还存在运行和维护条件。",
       "whatItDoesNotProve": "未见原提问者采用替代方案的成功确认，退款未核。Paused不是停止维护的声明，也不能用来解释2025年失败原因。",
       "sourceAccess": "原帖1—6楼及替代Space状态页已读；未运行、未检查实际图像结果。",
@@ -725,140 +582,6 @@
       "readScope": "",
       "supportingUrls": [],
       "concreteBehavior": ""
-    },
-    {
-      "id": "DVP-01",
-      "direction": "视觉兴趣与交流",
-      "platform": "Civitai",
-      "sourceTitle": "What’s happened to the CivitAI images page today?",
-      "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/",
-      "publishedAt": "2026-04-26",
-      "accessedAt": "2026-09-14",
-      "provenance": "new",
-      "actorCode": "DVP-CV-A",
-      "actorRole": "自述浏览图片的用户；是否也创作或上传模型未知。",
-      "evidenceType": "self-report",
-      "readScope": "原帖、首个解释回复、楼主追问及其他可读回复；没有展开所有折叠回复，没有读取 Civitai 页面或核原截图。",
-      "concreteBehavior": "楼主按 Everyone → Most Reactions → Day 浏览图集，对高互动图片是否真是当天作品提出疑问；得到回复后回来确认，称自己在图片详情发现一年前的评论。",
-      "observedDiscussion": "公开页可核楼主发问后再次回复，并修正最初理解。关于图片时间、旧评论和筛选结果仍是其自述。",
-      "trigger": "想用时间与热度组合找到图片，遇到展示时间与历史评论不一致。",
-      "repeatEvidence": "同一问题下有本人后续回应；没有核到不同日期的站内浏览。",
-      "crossDay": {
-        "hostPlatformObserved": false,
-        "externalDiscussionObserved": false,
-        "reason": "只核同一主题的一次问题与回复，索引在同一日期；旧评论属于被浏览作品，不是楼主的回访历史。"
-      },
-      "alternative": "未确认替代选择。",
-      "friction": "需要额外检查作品时间，才能判断眼前是否是新内容。其他回复者给出重新索引的解释，未获官方或本次实测确认。",
-      "whatItDoesNotProve": "不证明 Civitai 当前仍有排序故障，不证明刷量或操纵，也不证明该用户每日回来。其质疑中的互动数不作平台指标引用。",
-      "comparisonUse": "同条件阅读比较应核：时间筛选得到的内容能否明确辨认发布时间；回看旧作与发现新作是否容易区分。",
-      "sources": [
-        {
-          "title": "原帖及楼主回应",
-          "url": "https://www.reddit.com/r/civitai/comments/1swcn9q/whats_happened_to_the_civitai_images_page_today/",
-          "date": "2026-04-26",
-          "accessedAt": "2026-09-14",
-          "locator": "主帖；首条关于旧图的回复下，楼主确认旧评论的回应"
-        }
-      ],
-      "evidenceLabel": "用户自述与公开讨论",
-      "provenanceLabel": "新收录来源",
-      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
-      "supportingUrls": []
-    },
-    {
-      "id": "DVP-02",
-      "direction": "视觉兴趣与交流",
-      "platform": "Civitai",
-      "sourceTitle": "I want to support Civitai, but the f'in ads are getting insane",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/",
-      "publishedAt": "2026-07-14",
-      "accessedAt": "2026-09-14",
-      "provenance": "new",
-      "actorCode": "DVP-CV-B",
-      "actorRole": "自述购买过积分、浏览图集及模型页的用户；不是已核的纯观看者。",
-      "evidenceType": "self-report",
-      "readScope": "原帖、楼主关于图集筛选及广告的回复、次日永久回复；未展开全部折叠楼层，未实测广告或拦截工具。",
-      "concreteBehavior": "楼主说明想浏览图集，但不感兴趣的广告干扰阅读；曾使用广告拦截工具，又称工具会使图集部分内容消失。随后继续答复他人，解释自己的付费方式并询问是否有可用设置。",
-      "observedDiscussion": "原页可核主帖和永久回复属于同一公开账号；日期索引分别为 7 月 14 日和 15 日。这只能确认 Reddit 争议讨论跨日延续。",
-      "trigger": "浏览体验与其购买过积分后的期待不符。",
-      "repeatEvidence": "次日在第三方论坛继续讨论。未核到 Civitai 两天的访问记录，未核替代浏览器或设置是否采用成功。",
-      "crossDay": {
-        "hostPlatformObserved": false,
-        "externalDiscussionObserved": true,
-        "dateEvidenceLevel": "同源日期索引 + 原页同账号回复关系",
-        "dates": [
-          "2026-07-14",
-          "2026-07-15"
-        ],
-        "reason": "跨日的是 Reddit 公开讨论，不是被独立观察到的 Civitai 回访或留存。"
-      },
-      "alternative": "本人考虑换浏览环境；他人提供建议，但未核最终采用与效果。",
-      "friction": "广告干扰与拦截后内容缺失均为本人报告；同帖也有人说没有遇到类似画面，实际展示存在未核的环境差异。",
-      "whatItDoesNotProve": "不能把广告面积自估当测量，不证明所有用户同样受影响；不能确认其支付权益、已经离开或最终解决。投诉中的多次互动不等于看图价值提升。",
-      "comparisonUse": "比较同一阅读任务时记录实际可见内容、干扰及额外步骤；区分用户完成阅读与为了排障继续回帖。",
-      "sources": [
-        {
-          "title": "主帖与前序图集使用说明",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/i_want_to_support_civitai_but_the_fin_ads_are/",
-          "date": "2026-07-14",
-          "accessedAt": "2026-09-14",
-          "locator": "主帖；楼主回答拦截工具影响图集的楼层"
-        },
-        {
-          "title": "楼主次日解释浏览图集时的干扰",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/comment/oxqcekk/",
-          "date": "2026-07-15",
-          "accessedAt": "2026-09-14",
-          "locator": "以 I agree they help 开头的永久回复；不保存用户名或积分余额"
-        }
-      ],
-      "evidenceLabel": "用户自述与公开讨论",
-      "provenanceLabel": "新收录来源",
-      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
-      "supportingUrls": [
-        "https://www.reddit.com/r/StableDiffusion/comments/1uw29pm/comment/oxqcekk/"
-      ]
-    },
-    {
-      "id": "DVP-03",
-      "direction": "视觉兴趣与交流",
-      "platform": "NightCafe",
-      "sourceTitle": "OFFICIALLY DONE WITH NIGHTCAFE",
-      "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/",
-      "publishedAt": "2026-09-10",
-      "accessedAt": "2026-09-14",
-      "provenance": "new",
-      "actorCode": "DVP-NC-A",
-      "actorRole": "自述付费的作品创作者；相关观看者仅编码为 DVP-NC-R1，创作身份未知。",
-      "evidenceType": "self-report",
-      "readScope": "主帖；楼主与自称社区管理员的往返；一名观看者指出画面问题后楼主回应的楼层。没有看全部图、核全部提示词或账户处罚。",
-      "concreteBehavior": "楼主因内容审核争议表示订阅到 10 月底后可能不再续费，同时邀请大家评作品。可见一名观看者肯定作品并指出人物看起来惊恐；楼主随后认可该图不被允许的部分理由，仍质疑处罚方式，并解释自己的创作意图。",
-      "observedDiscussion": "可以核到具体画面解读与作者回应，并非只有点赞或泛泛好评。自称管理员的回复还指出楼主未展示完整提示词和历史情形，双方叙述并不一致。",
-      "trigger": "创作表达与内容治理发生冲突，作者寻求他人对作品及处罚的评价。",
-      "repeatEvidence": "楼主在同一 Reddit 主题中多次回应；没有核站内跨日交流，也没有看到订阅期结束后的行为。",
-      "crossDay": {
-        "hostPlatformObserved": false,
-        "externalDiscussionObserved": false,
-        "reason": "原页只显示相对日期，本次绝对日期索引不足以确认相关回复跨日；同帖多轮回应不作为长期回访。"
-      },
-      "alternative": "未确认替代选择。",
-      "friction": "本人认为作品主题与规则执行不一致；管理员一方另有解释。此处记录冲突及互动，不裁定处罚正确与否。",
-      "whatItDoesNotProve": "标题宣布结束不等于已离站；不续费仍是未来意向。具体讨论发生在 Reddit，不证明 NightCafe 站内关系已挽留作者，不能把观看者解释归为平台已解决问题。",
-      "comparisonUse": "公开作品比较应看能否表达具体审美解释、获得作者回应；离开需区分不满、撤回付费意向、实际停止访问，不能混成同一个结果。",
-      "sources": [
-        {
-          "title": "主帖及具体作品讨论",
-          "url": "https://www.reddit.com/r/nightcafe/comments/1wc8sk0/officially_done_with_nightcafe/",
-          "date": "2026-09-10",
-          "accessedAt": "2026-09-14",
-          "locator": "主帖 10 月底不续费意向；观看者指出人物惊恐后，楼主以 Yeah I've conceded 开头的回应"
-        }
-      ],
-      "evidenceLabel": "用户自述与公开讨论",
-      "provenanceLabel": "新收录来源",
-      "dateNote": "日期取自同一原帖的公开索引；正文与回复关系在原页核对。跨日发生地点另列。",
-      "supportingUrls": []
     }
   ]
 }

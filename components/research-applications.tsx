@@ -1,5 +1,6 @@
 'use client';
 import {profiles} from '@/lib/profiles';
+import {LiblibApplications} from './liblib-synthesis';
 import {isPlanningSection} from '@/lib/research-planning';
 import operating from '@/lib/platform-operations.json';
 import operationsCases from '@/lib/operations-data.json';
@@ -39,8 +40,9 @@ export function ResearchApplications({navigate}:{navigate:Navigate}){return <sec
  <ResearchOutline items={[
   ['adoption-platforms','逐个平台看'],['adoption-content','内容怎么组织'],['adoption-audience','服务哪些需要'],['adoption-topics','四类主题怎么尝试'],['adoption-task-plan','商品图试用设想'],['adoption-tools','工具与投入条件'],['adoption-report','综合判断']
  ]}/>
- <details id="adoption-platforms" className="research-appendix"><summary>18个平台：可借鉴的做法与前提</summary>
+ <details id="adoption-platforms" className="research-appendix"><summary>15个平台：可借鉴的做法与前提</summary>
   {[...new Set(profiles.map(p=>p.group))].map(group=><section key={group}><h3>{group}</h3>{profiles.filter(p=>p.group===group).map(p=>{
+   if(p.id==='liblib')return <details key={p.id} id="adoption-platform-liblib" className="study-sources"><summary>LiblibAI</summary><LiblibApplications navigate={navigate}/><Back view="liblib" label="LiblibAI完整档案与来源" navigate={navigate}/></details>;
    const op=operating.profiles.find(x=>x.id===p.id)?.takeaway,co=content.profiles.find(x=>x.id===p.id)?.takeaway;
    const oc=operationsCases.profiles.find(x=>x.id===p.id);
    const bu=business.find(x=>x.id===p.id),rv=review.platforms.find(x=>x.id===p.id),su=supply.profiles.find(x=>x.id===p.id);
@@ -64,6 +66,6 @@ export function ResearchApplications({navigate}:{navigate:Navigate}){return <sec
  <details id="adoption-topics" className="research-appendix"><summary>历史、科普、连载与教学：怎样尝试</summary>{themes.dossiers.map(t=>{const c=closure.cases.find(x=>x.id===t.id);return <section key={t.id}><h3>{t.name}</h3><Notes rows={[["用户需要",t.purpose],["内容形式",t.form],["持续分工",t.role],["具体展示",t.carrier],["社区可能补充什么",t.increment],["第一份内容",t.supply],["再次访问的理由",t.return],["下一步核对",t.next],["需要补充的条件",t.human]]}/>{c&&<section><h4>重点作品核对后，尝试范围怎么收窄</h4><p>{c.headline}</p><Notes rows={[["展示方式",c.carrier],["供给分工",c.supply],["第一次交付",c.next]]}/></section>}<Back view="content-demand" id={'tc-'+t.id} label={t.name+'作品、评论与已有供给'} navigate={navigate}/></section>;})}<p>{themes.next.human}</p><p>{themes.next.experiment}</p><p>{closure.next}</p></details>
  <details className="research-appendix"><summary>其他题材、评论诉求与试做条件</summary><details className="study-sources"><summary>六类消费任务的尝试</summary><ComparisonPlanning/></details><details className="study-sources"><summary>从评论看内容和合作职责</summary><PanelPlanning/></details><details className="study-sources"><summary>从成片看供给分工</summary><CasesPlanning/></details><details className="study-sources"><summary>细分题材与尝试条件</summary><EcosystemPlanning/><DepthPlanning/></details><MovedNotes id="content-demand"/><Back view="content-demand" label="作品、互动与供给记录" navigate={navigate}/></details>
  <details id="adoption-task-plan" className="research-appendix"><summary>商品图合作与试用设想</summary><p>这是备选任务的试用计划，尚未执行；不能据此把社区方向定为商品制作。</p><ProductTaskIdeas/><ProductTaskPlanning/><Back view="tasks" label="商品图样本与用户讨论" navigate={navigate}/></details>
- <details id="adoption-tools" className="research-appendix"><summary>工具、合作与投入条件</summary>{businessInsights.map((x,i)=>{const ps=i===0||i===2?x.paragraphs.slice(1):i>=3?x.paragraphs:[];return ps.length?<section key={x.title}><h3>{x.title}</h3>{ps.map((p,j)=><p key={j}>{p}</p>)}<div className="study-refs">{x.refs.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>:null;})}<ToolModelPlanning/><FrameworkPlanning navigate={navigate}/><Back view="discussion" label="18个平台的工具关系" navigate={navigate}/></details>
+ <details id="adoption-tools" className="research-appendix"><summary>工具、合作与投入条件</summary>{businessInsights.map((x,i)=>{const ps=i===0||i===2?x.paragraphs.slice(1):i>=3?x.paragraphs:[];return ps.length?<section key={x.title}><h3>{x.title}</h3>{ps.map((p,j)=><p key={j}>{p}</p>)}<div className="study-refs">{x.refs.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>:null;})}<ToolModelPlanning/><FrameworkPlanning navigate={navigate}/><Back view="discussion" label="15个平台的工具关系" navigate={navigate}/></details>
  <details id="adoption-report" className="research-appendix"><summary>综合判断与待讨论问题</summary>{report.sections.filter(s=>s.id==='implications').map(s=><section key={s.id}><h3>{s.title}</h3><p>{s.answer}</p>{s.claims.map(c=><section key={c.title}><h4>{c.title}</h4><p>{c.text}</p><p>{c.basis}</p><div className="study-refs">{c.sources.map(r=><a key={r.url} href={r.url} target="_blank" rel="noreferrer">{r.title}</a>)}</div></section>)}</section>)}{planningComparisons.filter(c=>c.adoption||c.requirement||c.missing).map(c=><section key={c.id}><h3>{c.title}</h3><Notes rows={[["可借鉴",c.adoption],["要承担的工作",c.requirement],["还需确认",c.missing]]}/></section>)}<MovedNotes id="report"/><ol>{report.discussionQuestions?.map(x=><li key={x}>{x}</li>)}</ol><Back view="report" label="竞品调研报告" navigate={navigate}/></details>
 </section>;}

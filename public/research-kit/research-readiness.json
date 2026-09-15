@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "meaning": "研究交付完成度按40项检查计算，其中4项因缺少真实业务输入暂不计完成。该数值不表示用户代表性、商业效果或成功概率。",
+  "meaning": "40项证据检查中，36项已有可核材料，4项仍缺真实业务输入。该数值只表示资料覆盖，不表示用户代表性、商业效果或成功概率。",
   "groups": [
     {
       "id": "A",
@@ -40,7 +40,7 @@
       "id": "A1",
       "title": "研究范围与分类",
       "status": "passed",
-      "result": "五类18个平台名单一致；吐司/Tensor.Art合组、分别记录规则。",
+      "result": "五类15个平台名单一致；吐司/Tensor.Art合组、分别记录规则。",
       "evidence": "/research-kit/platform-review.json"
     },
     {
@@ -54,7 +54,7 @@
       "id": "A3",
       "title": "时效与访问",
       "status": "passed",
-      "result": "18家关键页面已复核；各来源保留访问结果，动态壳或超时不写成正文读取。",
+      "result": "15家关键页面已复核；各来源保留访问结果，动态壳或超时不写成正文读取。",
       "evidence": "/research-kit/platform-review.json"
     },
     {
@@ -75,7 +75,7 @@
       "id": "B1",
       "title": "平台价值与路径",
       "status": "passed",
-      "result": "18家均有任务、产品提供及使用者剩余工作。",
+      "result": "15家均有任务、产品提供及使用者剩余工作。",
       "evidence": "/research-kit/audience-research.md"
     },
     {
@@ -110,21 +110,21 @@
       "id": "C1",
       "title": "既有画像审计",
       "status": "passed",
-      "result": "55条画像逐项核对引用、来源类型、用户点与未知；新复读不自动加点。",
+      "result": "46条画像逐项核对引用、来源类型、用户点与未知；新复读不自动加点。",
       "evidence": "/research-kit/audience-audit.json"
     },
     {
       "id": "C2",
       "title": "使用与供给角色",
       "status": "passed",
-      "result": "18家消费、供给、维护和付款角色可区分。",
+      "result": "15家消费、供给、维护和付款角色可区分。",
       "evidence": "/research-kit/audience-research.md"
     },
     {
       "id": "C3",
       "title": "普通使用者补证",
       "status": "passed",
-      "result": "18家均有普通经历检索，未取得的任务/国内样本明确列缺口。",
+      "result": "15家均有普通经历检索，未取得的任务/国内样本明确列缺口。",
       "evidence": "/research-kit/platform-review.md"
     },
     {
@@ -138,7 +138,7 @@
       "id": "C5",
       "title": "画像与内容关联",
       "status": "passed",
-      "result": "55条任务画像与62项产品价值关系保留原证据，并补使用/维护条件。",
+      "result": "46条任务画像与53项产品价值关系保留原证据，并补使用/维护条件。",
       "evidence": "/research-kit/audience-research.md"
     },
     {
@@ -213,9 +213,9 @@
     },
     {
       "id": "F1",
-      "title": "18家商业化",
+      "title": "15家商业化",
       "status": "passed",
-      "result": "18家付款方、收费对象、任务限制及收入归属完成规则复核。",
+      "result": "15家付款方、收费对象、任务限制及收入归属完成规则复核。",
       "evidence": "/research-kit/platform-review.md"
     },
     {

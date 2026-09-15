@@ -19,7 +19,7 @@ function Refs({ids}:{ids:string[]}){return <span className="cd-refs">{ids.map(id
 export function ContentDemand({navigate}:{navigate?:(id:string,anchor?:string)=>void}){
  return <article className="content-demand">
   <DouyinEcosystem/>
-<ResearchAppendix id="cd-platforms" title="18个平台的内容供给与消费线索"><p>{editorial.reading}</p>
+<ResearchAppendix id="cd-platforms" title="15个平台的内容供给与消费线索"><p>{editorial.reading}</p>
    <div className="cd-table"><table><thead><tr><th>平台</th><th>可见供给主题／用途</th><th>消费线索</th><th>证据状态</th></tr></thead><tbody>{profiles.map(p=><tr key={p.id}><th><Jump id={`cd-platform-${p.id}`}>{p.name} ↓</Jump></th>{p.summary.map((s,i)=><td key={i}>{s}</td>)}</tr>)}</tbody></table></div>
    {profiles.map(p=><details id={`cd-platform-${p.id}`} className="cd-profile" key={p.id}><summary><strong>{p.name}</strong><span>{p.summary[0]}</span></summary>
     <div className="cd-profile-body"><div className="cd-columns">{[['供给题材',p.supplyTopics],['行业与使用场景',p.industryUses],['消费主题与意图',p.consumptionTopics],['内容形式',p.contentForms],['谁在供给',p.supplierTypes],['已观察到的信号',p.observedSignals]].map(([label,items])=><div key={label as string}><h3>{label as string}</h3><Items items={items as Item[]} platform={p.id}/></div>)}</div>

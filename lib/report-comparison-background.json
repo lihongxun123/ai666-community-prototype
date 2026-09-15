@@ -241,65 +241,9 @@
     "id": "participation-and-response",
     "title": "作品挑战组织同题创作，问题帖组织连续回应",
     "question": "社区希望用户交一份作品、评价别人的作品，还是一起解决一个问题？",
-    "observation": "NightCafe挑战由题目、资格、提交阶段、评审和结果构成，多个参与者围绕同一题目产出作品。LINUX DO问题帖从个人困扰开始，经回复逐步补充环境、尝试和结果；后来者阅读的是处理记录，不是同一题目的作品排行。",
+    "observation": "LINUX DO问题帖从个人困扰开始，经回复逐步补充环境、尝试和结果；后来者阅读的是处理记录，不是同一题目的作品排行。",
     "reasoning": "挑战需要统一题面和评审条件，才能让作品被比较，作品卡应突出题目、阶段和结果。问题讨论开始时可能连问题条件都不完整，列表应突出问题标题和进展，详情保留引用、追问和作者反馈。两者的“参与”不能混为同一种价值：投票主要表达偏好，排查回复需要解释适用条件。",
     "cases": [
-      {
-        "platformId": "nightcafe",
-        "name": "NightCafe：挑战题面与赛后材料",
-        "fact": "社区挑战规则规定主题、公开范围、阶段和评分/排序方式。Promptle另提供起始图、目标图、有限步数与成绩卡；提示步骤默认不公开，须作者同意，并在当天题目结束后展示。成绩卡不是完整制作过程，Promptle仍标Alpha。本例无配对截图，依据官方规则；没有亲自参赛、评分或验证持续参与效果。",
-        "sourceRefs": [
-          {
-            "dataFile": "site/lib/market-content-forms.json",
-            "sourceIds": [
-              "v15-h1",
-              "v15-h2"
-            ]
-          },
-          {
-            "dataFile": "site/lib/content-forms.json",
-            "sourceIds": [
-              "o9-g-night-game",
-              "o9-g-night-promptle"
-            ]
-          }
-        ],
-        "screenshotIds": [],
-        "sources": [
-          {
-            "id": "v15-h1",
-            "title": "Community Challenges on NightCafe",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
-            "date": "未标注",
-            "accessedAt": null,
-            "dataFile": "site/lib/market-content-forms.json"
-          },
-          {
-            "id": "v15-h2",
-            "title": "Daily Challenge: Eligibility, Rating & Ranking",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-            "date": "未标注",
-            "accessedAt": null,
-            "dataFile": "site/lib/market-content-forms.json"
-          },
-          {
-            "id": "o9-g-night-game",
-            "title": "Creating a Game (Community Challenge)",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-            "date": "未标绝对日期",
-            "accessedAt": "2026-09-09",
-            "dataFile": "site/lib/content-forms.json"
-          },
-          {
-            "id": "o9-g-night-promptle",
-            "title": "Promptle: The Daily AI Art Puzzle",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-            "date": "未标绝对日期；标Alpha",
-            "accessedAt": "2026-09-09",
-            "dataFile": "site/lib/content-forms.json"
-          }
-        ]
-      },
       {
         "platformId": "linuxdo",
         "name": "LINUX DO：问题、追问与处理结果",
@@ -351,7 +295,7 @@
         ]
       }
     ],
-    "counterpoint": "作品与讨论可以交叉。LINUX DO也有提示词帖子，成员通过回复上传自己的图片；它保留在同一话题中，没有统一运行环境或核验每张图是否使用首帖方法。NightCafe赛后公开步骤则能补充学习内容。因此可以共享评论与材料关联能力，不能把所有返图都算复现成功，也不能把所有讨论都改成竞赛。",
+    "counterpoint": "作品与讨论可以交叉。LINUX DO也有提示词帖子，成员通过回复上传自己的图片；它保留在同一话题中，没有统一运行环境或核验每张图是否使用首帖方法。因此可以共享评论与材料关联能力，不能把所有返图都算复现成功，也不能把所有讨论都改成竞赛。",
     "adoption": "若提供练习与问题讨论，分别组织：作品练习页包含题目、输入素材、限制、提交示例和反馈；问题页包含目标、环境/版本、失败表现、已尝试办法及后续结果。作品可关联练习，问题可关联具体画布；采纳与点评各自标明作用。平台维护账号的投稿、回答和自然用户行为分开记录。",
     "requirement": "练习需有人出题、检查素材并给具体点评；问题区需有人核对技术条件、追问结果，再整理可复用说明。表单可共用附件与引用功能，列表字段、反馈类型与结果状态分别处理。尚无主持或答疑能力时，应缩小主题范围。",
     "missing": "对同一批内容分别记录自主交作品、有效点评、问题补充、作者反馈及后续再次使用；区分平台账号与外部用户。如果参与主要由平台自问自答或奖励驱动，就不足以支持自然讨论或日常挑战的供给假设。"
@@ -360,7 +304,7 @@
     "id": "supply-roles",
     "title": "编选、合作与成员贡献需要不同的交付约定",
     "question": "什么内容由平台保证，什么工作可以交给合作作者或成员？",
-    "observation": "Runway提供作品频道和策选合作机会；NightCafe允许成员主持挑战；LINUX DO可见投稿、成员整理和管理者精选。这些做法分别增加可见度、工具使用机会或参与空间，未必附带固定稿量和维护时限。",
+    "observation": "Runway提供作品频道和策选合作机会；LINUX DO可见投稿、成员整理和管理者精选。这些做法分别增加可见度、工具使用机会或参与空间，未必附带固定稿量和维护时限。",
     "reasoning": "供给不能仅按“官方”或“UGC”二分。作品可以由外部作者制作、平台编选，再由另一人整理过程；活动题目来自成员，规则解释仍需主持；技术答案来自用户，编辑仍要让后续读者找得到。应按实际工作和责任确定合作方式。",
     "cases": [
       {
@@ -395,39 +339,6 @@
             "title": "Creative Partners Program",
             "url": "https://runway.com/creative-partners-program",
             "date": "未标发布日期",
-            "accessedAt": "2026-09-09",
-            "dataFile": "site/lib/platform-operations.json"
-          }
-        ],
-        "screenshotIds": []
-      },
-      {
-        "platformId": "nightcafe",
-        "name": "NightCafe",
-        "fact": "成员挑战由主持人设主题、资格与阶段，参与者投稿和评审；公开聊天室的游戏可进入发现入口。平台提供功能，选题、聚集参与者和解释评审仍是具体组织工作。",
-        "sourceRefs": [
-          {
-            "dataFile": "site/lib/platform-operations.json",
-            "sourceIds": [
-              "o9-g-night-game",
-              "o9-g-night-rules"
-            ]
-          }
-        ],
-        "sources": [
-          {
-            "id": "o9-g-night-game",
-            "title": "Creating a Game (Community Challenge)",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-            "date": "未标绝对日期",
-            "accessedAt": "2026-09-09",
-            "dataFile": "site/lib/platform-operations.json"
-          },
-          {
-            "id": "o9-g-night-rules",
-            "title": "Daily Challenge: Eligibility, Rating & Ranking",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-            "date": "未标绝对日期；v8于2026-09-09复核",
             "accessedAt": "2026-09-09",
             "dataFile": "site/lib/platform-operations.json"
           }

@@ -4,7 +4,7 @@
 
 图片和视频承载观看，帖子与教程承载表达和学习，Skill、MCP、工作流与在线工具还涉及文件、环境和执行。比较各类内容的交付材料、关联方式、维护工作及收费关系。
 
-18家平台为围绕多元拾光和 MakeNow 选取的研究样本。分别核对工具能力、收费方式及社区对付费的贡献，不以样本推算行业模式占比。
+15家平台为围绕多元拾光和 MakeNow 选取的研究样本。分别核对工具能力、收费方式及社区对付费的贡献，不以样本推算行业模式占比。
 
 ## 三个问题分别讨论
 
@@ -30,7 +30,7 @@
 
 ### 社区背后的工具业务
 
-用户输入：用户希望确认18家中有多少提供工具，以及社区是否本质上为了销售工具和Token。
+用户输入：用户希望确认15家中有多少提供工具，以及社区是否本质上为了销售工具和Token。
 
 事实与边界：官方工具与计费资料可确认产品和收费入口；大部分平台没有公开社区带来的收入增量、付费提升或独立成本。
 
@@ -93,13 +93,12 @@
 - 质量依据准确性与可用性判断，短排错说明和复杂 Agent 分别采用适用标准。
 - 这些要求用于内容研究，具体产品范围尚待确定。
 
-## 18家社区与工具关系
+## 15家社区与工具关系
 
 按主要执行关系分类：15家有平台直接执行能力的官方资料，另有1家关联 API 服务。实际运行结果与社区互动程度见各平台记录；不据此计算行业占比或成功率。
 
 | 主要关系 | 数量 | 统计定义 |
 | --- | --- | --- |
-| 平台创作执行 | 12 | 提供图像、视频等创作能力，社区结构从资源UGC到精选案例不同；Civitai主要依据官方实现文档。 |
 | 平台开发与运行 | 3 | Hugging Face、ModelScope、Dify提供运行、托管、推理或应用构建；不代表全都直接向社区用户收费。 |
 | 同品牌关联API | 1 | WaytoAGI：同域商业API文档已确认，运营主体和社区转化未确认，单独列出。 |
 | 讨论与外部工具生态 | 1 | LINUX DO：社区基础设施与成员工具相连，尚未确认论坛自营AIGC执行服务。 |
@@ -153,7 +152,6 @@
 
 官方或公开来源：[吐司创作者激励调整](https://tusi.cn/articles/1000707189326777005)；[Tensor.Art创作者政策调整](https://tensor.art/articles/1021600128873589993)；[吐司Canvas更新](https://tusi.cn/updates)
 
-### Civitai
 
 社区结构（分析）：模型资源、作品与改作社区
 
@@ -167,7 +165,6 @@
 
 证据边界：这里统计的是官方文档支持的产品能力，未将实现文档当成所有功能线上可用的证明；现行购买资格、覆盖范围和社区收入未知。
 
-官方或公开来源：[官方实现文档：生成与引导](https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md)；[官方实现文档：资源商业化](https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md)；[官方实现文档：会员](https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md)
 
 ### SeaArt
 
@@ -201,7 +198,6 @@
 
 官方或公开来源：[当前工作台](https://openart.ai/home)；[价格与权益](https://openart.ai/pricing)；[OpenArtist合作计划](https://openart.ai/program/openartist)；[旧工作流入口（重定向）](https://openart.ai/workflows/home)
 
-### NightCafe
 
 社区结构（分析）：作品、成员挑战与评价社区
 
@@ -215,7 +211,6 @@
 
 证据边界：社区活动与工具相连的规则已确认；未取得活动带来的留存或订阅提升，指定模型无限生成仍有限制。
 
-官方或公开来源：[成员挑战规则](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)；[Evolve与局部修改](https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe)；[PRO方案](https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans)
 
 ### 即梦
 
@@ -249,7 +244,6 @@
 
 官方或公开来源：[付费条款](https://kling.ai/docs/payment-policy)；[作者专题与工具用途](https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words)
 
-### Midjourney
 
 社区结构（分析）：作品发现、风格参考；讨论另有Discord
 
@@ -263,7 +257,6 @@
 
 证据边界：站外交流不等于网站具备完整讨论社区；付费GPU时间不等于用户等待时长或成品数量，社区增量未披露。
 
-官方或公开来源：[网页创作](https://docs.midjourney.com/hc/en-us/articles/33390732264589-Creating-on-Web)；[Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)；[套餐对照](https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
 
 ### Leonardo.Ai
 

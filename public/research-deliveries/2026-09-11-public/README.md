@@ -2,6 +2,6 @@
 
 汇报日期：2026-09-11。资料截至2026-09-10。
 
-打开 `report.html` 阅读主报告；附录目录可进入18个平台档案。请整体解压，保留 assets、appendix、attachments、research-images 文件夹。正文与截图可离线查看；外部原始来源需要联网。
+打开 `report.html` 阅读主报告；附录目录可进入15个平台档案。请整体解压，保留 assets、appendix、attachments、research-images 文件夹。正文与截图可离线查看；外部原始来源需要联网。
 
 `main-report.md` 是主报告的可编辑正文，`attachments` 保存专题与数据。主报告中的价格、规则和访问记录仍以各自观察日期为准。当前研究网页继续更新，本包作为交付副本保存。

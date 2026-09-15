@@ -8,7 +8,7 @@
       "group": "创作与资源",
       "access": {
         "terminal": "Chrome desktop 1920x911",
-        "login": "用户已有登录状态；身份和余额不保存",
+        "login": "已登录；身份和余额不保存",
         "scope": "公开社区页面和可逆创作入口"
       },
       "coverage": {
@@ -1633,7 +1633,7 @@
           "fact": "版本、许可、作者说明、讨论、返图并存；样例有作者故障回复",
           "interpretation": "资源不是一次发布后永久可靠",
           "tradeoff": "维护需答疑和兼容成本",
-          "alternative": "先最近核验日+已知问题+反馈入口",
+          "alternative": "",
           "effectUnknown": "维护时效和外部反馈占比未知",
           "evidence": [
             "L9",
@@ -1777,6 +1777,27 @@
           "title": "在线WebUI",
           "url": "https://www.liblib.art/sd",
           "scope": "从1.0版本去WebUI生成进入；底模带入未确认",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-17",
+          "title": "资产与图片发布",
+          "url": "https://www.liblib.art/asset",
+          "scope": "资产按Lib生成器、LibTV、ComfyUI、Webui、AI应用分区，可按图像、日期和我的收藏筛选。 发布菜单分模型模板、图片、视频、工作流。图片表单提供图库/本地上传，最多8张；标题30字、描述500字；分类分主体、风格、垂类、功能，另有活动标签。 仅查看空白表单，未上传或发布。分类选项的必填校验未测试。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-18",
+          "title": "作者资产管理",
+          "url": "https://creator.liblib.art/assetmanage",
+          "scope": "当前页有模型标签，支持平台、状态、模型和最新排序筛选，并有发布模型入口。 账号无可用于验证编辑、审核与下架过程的模型样本。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-19",
+          "title": "作者数据中心",
+          "url": "https://creator.liblib.art/datacenter",
+          "scope": "收入总览区分LibTV和LibArt，作品消费与供给趋势分区，含LibTV作品供给和画布消费。 只记录页面栏目；不采集账户金额，不据此估计作者收入或分成比例。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -1943,7 +1964,7 @@
           "工作流运行按钮未点击；通过打开 AI 应用验证下一步",
           "未执行生成，所以效果、时长、消耗和成功率未知",
           "模型详情样本没有看到直接使用按钮，不据此断言全站模型均无使用入口",
-          "返回异常只在本会话观察，未定位原因"
+          "返回异常只在单次观察观察，未定位原因"
         ],
         "sampling": "包含 16 次浏览、0 赞、1 收藏工作流及 15 次浏览 LoRA，避免仅取精选高互动资源；数字为访问时页面展示，非抽样总体。"
       },
@@ -3106,7 +3127,7 @@
             },
             {
               "action": "浏览器返回",
-              "observed": "本会话意外返回此前的商品背景应用，并非刚才工作流",
+              "observed": "单次观察意外返回早先的商品背景应用，并非刚才工作流",
               "status": "出现异常",
               "evidence": [
                 "RH-RETURN"
@@ -3144,7 +3165,7 @@
             },
             {
               "action": "点击页面返回",
-              "observed": "又到此前商品背景应用，保留异常记录",
+              "observed": "又到早先商品背景应用，保留异常记录",
               "status": "出现异常",
               "evidence": [
                 "RH-RETURN"
@@ -3215,7 +3236,7 @@
           "interpretation": "对象相同也需要拆开用户要做什么与资源能否兼容；一组混合标签无法覆盖两种判断。",
           "tradeoff": "标签与兼容性字段增加维护成本；分类过多时定位负担也增加。",
           "alternative": "更轻量的设计是保留少量用途入口，在资源详情补适用模型与前提。",
-          "effectUnknown": "本次没有分类使用量、检索成功率、转化或留存数据。",
+          "effectUnknown": "没有分类使用量、检索成功率、转化或留存数据。",
           "evidence": [
             "RH-WFLIST",
             "RH-MODELS"
@@ -3226,7 +3247,7 @@
           "fact": "工作流详情通过打开AI应用进入表单；作品通过一键同款进入具体应用；普通样本的作品/评论可为空。",
           "interpretation": "平台把观看、资源理解、表单执行串联；不能只以点赞/评论衡量这些资源的用途。",
           "tradeoff": "同一内容同时要维护工作流、应用、作品关系；低互动资源也可能没有实际使用价值。",
-          "alternative": "更轻量的设计是只维护作品→所用资源→下一步入口，先确保关系准确。",
+          "alternative": "",
           "effectUnknown": "关联入口是否提高用户复用或跨周回访未知。",
           "evidence": [
             "RH-WF",
@@ -3237,7 +3258,7 @@
         },
         {
           "title": "",
-          "fact": "本会话两个返回动作到达此前商品背景应用；作品关闭却恢复最新列表。",
+          "fact": "单次观察两个返回动作到达早先商品背景应用；作品关闭却恢复最新列表。",
           "interpretation": "不同模板的返回行为值得单独验收；目前证据不足以断言原因。",
           "tradeoff": "复杂多页、多标签页会使路径上下文更难保持。",
           "alternative": "可简化为详情关闭后恢复原分类、排序和浏览位置，减少多层跳转。",
@@ -3279,9 +3300,9 @@
         },
         {
           "id": "RH-RETURN",
-          "title": "本会话异常返回落点",
+          "title": "单次观察异常返回落点",
           "url": "https://www.runninghub.ai/zh-cn/ai-detail/1876811358174928898",
-          "scope": "只记录返回到此前商品背景应用，不新增模板结论",
+          "scope": "只记录返回到早先商品背景应用，不新增模板结论",
           "accessedAt": "2026-09-14"
         },
         {
@@ -3317,6 +3338,13 @@
           "title": "多资产四视图制作应用",
           "url": "https://www.runninghub.ai/zh-cn/ai-detail/2099170244660051969",
           "scope": "由一键同款打开，实际URL另有creationId和creationRequest公开资源参数；不复制冗长参数，已核对显示字段",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-11",
+          "title": "个人中心与我的发布",
+          "url": "https://www.runninghub.ai/zh-cn/user-center",
+          "scope": "个人中心分我的作品、我的发布、我的收藏。 我的发布进一步分AI应用、工作流、模型、作品，并有分类、名称检索和最新排序。 只查看空列表；未分享主页、编辑资料或管理内容。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -3413,7 +3441,7 @@
           "label": "首页",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3423,7 +3451,7 @@
           "label": "素材库",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3433,7 +3461,7 @@
           "label": "Forge New",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3443,7 +3471,7 @@
           "label": "模型",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3453,7 +3481,7 @@
           "label": "AI小工具",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3463,7 +3491,7 @@
           "label": "帖子",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3473,7 +3501,7 @@
           "label": "工作流",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3483,7 +3511,7 @@
           "label": "文章",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3493,7 +3521,7 @@
           "label": "活动",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3503,7 +3531,7 @@
           "label": "排行榜",
           "parent": "吐司",
           "kind": "对象类型导航",
-          "changes": "各有独立列表；本次从首页深入五类内容模板。",
+          "changes": "各有独立列表；从首页深入五类内容模板。",
           "evidence": [
             "TU-HOME"
           ]
@@ -3689,7 +3717,7 @@
           "label": "帖子",
           "parent": "吐司插画频道",
           "kind": "同一兴趣下资源对象切换",
-          "changes": "标签外另设内容类型；本次作品模板被点击验证，其余记录入口。",
+          "changes": "标签外另设内容类型；作品模板被点击验证，其余记录入口。",
           "evidence": [
             "TU-CHANNEL"
           ]
@@ -3699,7 +3727,7 @@
           "label": "模型",
           "parent": "吐司插画频道",
           "kind": "同一兴趣下资源对象切换",
-          "changes": "标签外另设内容类型；本次作品模板被点击验证，其余记录入口。",
+          "changes": "标签外另设内容类型；作品模板被点击验证，其余记录入口。",
           "evidence": [
             "TU-CHANNEL"
           ]
@@ -3709,7 +3737,7 @@
           "label": "AI小工具",
           "parent": "吐司插画频道",
           "kind": "同一兴趣下资源对象切换",
-          "changes": "标签外另设内容类型；本次作品模板被点击验证，其余记录入口。",
+          "changes": "标签外另设内容类型；作品模板被点击验证，其余记录入口。",
           "evidence": [
             "TU-CHANNEL"
           ]
@@ -4476,7 +4504,7 @@
             },
             {
               "action": "未点击推荐参数使用或生成",
-              "observed": "仅证实推荐与确认结构；此前提示词仍留在创建输入",
+              "observed": "仅证实推荐与确认结构；早先提示词仍留在创建输入",
               "status": "停在执行前",
               "evidence": [
                 "TU-MODEL-RUN"
@@ -4596,7 +4624,7 @@
           "interpretation": "一个兴趣主题可连接看作品、找资源、完成任务，不要求全部内容变成同一种卡片或动作。",
           "tradeoff": "同主题分类要在各内容类型保持一致；空分类及混合标签维护成本高。",
           "alternative": "更轻量的设计是先用少量明确内容类型关联作品与教程/资源，再按实际供给扩展频道。",
-          "effectUnknown": "本次无跨类型点击率、回访率或留存数据。",
+          "effectUnknown": "无跨类型点击率、回访率或留存数据。",
           "evidence": [
             "TU-CHANNEL",
             "TU-TOOL",
@@ -4631,7 +4659,7 @@
         },
         {
           "title": "",
-          "fact": "吐司与Tensor.Art的频道名和所见作品/模型不同；本次对后者只做有限对照。",
+          "fact": "吐司与Tensor.Art的频道名和所见作品/模型不同；对后者只做有限对照。",
           "interpretation": "同类产品或外观相似不能当作相同内容运营与分类。",
           "tradeoff": "逐域验证增加研究成本。",
           "alternative": "产品组可以合并讨论机制，分类和证据仍标明域名与访问范围。",
@@ -4769,6 +4797,13 @@
           "url": "https://tensor.art/images/1042696091255994683?post_id=1042696085887262206",
           "scope": "Krea2Turbo及主要配置实际带入，seed需选择",
           "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-19",
+          "title": "帖子发布",
+          "url": "https://tusi.cn/new/post",
+          "scope": "发布菜单分上传模型、批量导入、发布帖子、发布文章。 帖子表单可上传图片/视频或从工作台选择；图不超过20M、视频不超过200M；文字10000字；分区标星号，标签最多20个。 未上传/发布，未验证审核；此记录仅为吐司中文站。",
+          "accessedAt": "2026-09-14"
         }
       ],
       "screenshots": [
@@ -4839,33 +4874,6 @@
       ]
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "date": "2026-09-14",
-      "group": "创作与资源",
-      "access": {
-        "terminal": "产品界面访问受限",
-        "login": "未核验当前登录态",
-        "scope": "此前访问受到浏览器安全策略限制，未继续访问；没有新增分类、卡片、详情或按钮路径证据。"
-      },
-      "coverage": {
-        "completed": [],
-        "gaps": [
-          "当前一级与二级分类",
-          "卡片、详情和按钮目的地",
-          "内容关联与返回路径",
-          "当前产品截图"
-        ],
-        "sampling": "当前缺少可比较的页面样本。"
-      },
-      "navigation": [],
-      "surfaces": [],
-      "paths": [],
-      "findings": [],
-      "sources": [],
-      "screenshots": []
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "date": "2026-09-14",
@@ -4901,7 +4909,7 @@
           "label": "Create：Image、Video、Movies、AI Apps",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -4911,7 +4919,7 @@
           "label": "Explore：Inspiration、AI Apps、Models、Workflow",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -4921,7 +4929,7 @@
           "label": "Community：Events、Leaderboard",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -4931,7 +4939,7 @@
           "label": "Creator Center、My Studio",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -4941,7 +4949,7 @@
           "label": "Labs：Story、Novel、Music、Games、Marketplace、Film",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -4951,7 +4959,7 @@
           "label": "More：Decorations、Blog、News、Tutorials、Feedback",
           "parent": null,
           "kind": "按生产/发现/社区分组导航",
-          "changes": "此次深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
+          "changes": "深访Explore三个资源类型及Inspiration列表；其他仅见入口。",
           "evidence": [
             "SA-HOME"
           ]
@@ -5446,7 +5454,7 @@
           "label": "SeaArt Official Featured",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5456,7 +5464,7 @@
           "label": "Trending",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5466,7 +5474,7 @@
           "label": "MiniMax H3",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5476,7 +5484,7 @@
           "label": "SeaArt Movies",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5486,7 +5494,7 @@
           "label": "Featured Topics",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5496,7 +5504,7 @@
           "label": "Short Film",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5506,7 +5514,7 @@
           "label": "Trending: Seedance 2.0",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5516,7 +5524,7 @@
           "label": "Pro Tips",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5526,7 +5534,7 @@
           "label": "Viral Clips",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5536,7 +5544,7 @@
           "label": "Fan Art",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5546,7 +5554,7 @@
           "label": "GPT image 2",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5556,7 +5564,7 @@
           "label": "Campaign Featured",
           "parent": "Inspiration",
           "kind": "编辑精选、热点、主题与媒体分类混合",
-          "changes": "所见Pixel Party策展行与图像/视频作品流；此次未逐类点击。",
+          "changes": "所见Pixel Party策展行与图像/视频作品流；现有记录未逐类点击。",
           "evidence": [
             "SA-INSPIRATION"
           ]
@@ -5978,7 +5986,7 @@
           "interpretation": "评分数量或空评论不能单独证明资源不可用；资源可信度需要结构信息与产出证据并用。",
           "tradeoff": "结构字段也可能由作者误填，关联作品不等于成功验证全部场景。",
           "alternative": "让参数、示例和限制先承担判断用途，评分作为补充；保留空态说明。",
-          "effectUnknown": "本次没有验证内容质量治理或评价真实性。",
+          "effectUnknown": "没有验证内容质量治理或评价真实性。",
           "evidence": [
             "SA-APP",
             "SA-WORKFLOW",
@@ -6077,6 +6085,13 @@
           "url": "https://www.seaart.ai/post",
           "scope": "Pixel Party与主题/热点混合目录；只读列表",
           "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-14",
+          "title": "工作流预览与返图选择",
+          "url": "https://www.seaart.ai/workflow-comfyui/d7jjosle878c73c7dqsg",
+          "scope": "节点预览点击后出现iframe，标注16节点；未确认节点内容可读。 Related Works区Post My Work打开Select Image弹层，限定Workflow-Generated Works，当前无可选结果。 Node Preview后续加载出ComfyUI画布、缩放/适应视图/连线切换和现有提示词，状态Idle。 预览已加载；未修改节点或运行工作流。Post My Work仅查看选择生成结果的空态并取消。",
+          "accessedAt": "2026-09-14"
         }
       ],
       "screenshots": [
@@ -6113,33 +6128,6 @@
           "limitations": "浏览器原始截图直接裁切；避开当前账号、余额、头像。未编辑界面内容。"
         }
       ]
-    },
-    {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "date": "2026-09-14",
-      "group": "创作与资源",
-      "access": {
-        "terminal": "产品界面访问受限",
-        "login": "未核验当前登录态",
-        "scope": "此前访问受到浏览器安全策略限制，未继续访问；没有新增分类、卡片、详情或按钮路径证据。"
-      },
-      "coverage": {
-        "completed": [],
-        "gaps": [
-          "当前一级与二级分类",
-          "卡片、详情和按钮目的地",
-          "内容关联与返回路径",
-          "当前产品截图"
-        ],
-        "sampling": "当前缺少可比较的页面样本。"
-      },
-      "navigation": [],
-      "surfaces": [],
-      "paths": [],
-      "findings": [],
-      "sources": [],
-      "screenshots": []
     },
     {
       "id": "jimeng",
@@ -6770,7 +6758,7 @@
           "steps": [
             {
               "action": "影视作品→短片作品→美丑",
-              "observed": "播放器实际播放到00:32并暂停，片长07:38；本次没有看完全部内容",
+              "observed": "播放器实际播放到00:32并暂停，片长07:38；没有看完全部内容",
               "status": "已操作",
               "evidence": [
                 "J4"
@@ -7012,6 +7000,20 @@
           "url": "https://jimeng.jianying.com/ai-tool/explore",
           "scope": "卡片、摘要、详情长文；未添加、未执行，使用计数口径未知。",
           "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-8",
+          "title": "资产库",
+          "url": "https://jimeng.jianying.com/ai-tool/asset",
+          "scope": "生成历史和画布分开；媒体分图片、视频、音频、文档；搜索、批量操作、同步到剪映和时间/排序入口可见。 未执行同步、批量修改或生成历史删除。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-9",
+          "title": "主体与设置主体",
+          "url": "https://jimeng.jianying.com/ai-tool/elements",
+          "scope": "独立主体页有筛选/时间/排序和新建主体。设置弹窗要求参考主体主图，可从本地或资产添加；名称必填，最多20字；另有描述。空白表单保存禁用。 未添加素材或保存主体。",
+          "accessedAt": "2026-09-14"
         }
       ],
       "screenshots": [
@@ -7128,46 +7130,63 @@
       "group": "工具与作者生态",
       "access": {
         "terminal": "桌面网页",
-        "login": "当前需要重新登录",
-        "scope": "已打开的创作页面显示登录表单，尚未取得当前分类、内容详情和复用路径。"
+        "login": "2026-09-14资产与动作控制页可在登录状态下查看",
+        "scope": "资产库、动作控制与历史结果入口已核对；创意圈分类的完整路径仍未覆盖。"
       },
       "coverage": {
         "completed": [
-          "确认当前访问停在登录页"
+          "资产库分类与筛选",
+          "视频及动作控制输入要求",
+          "历史结果的后续编辑入口"
         ],
         "gaps": [
-          "一级导航",
-          "二级分类",
-          "内容卡片与详情",
-          "主CTA目的地与返回",
-          "模型/作品/特效是否仍是当前频道",
-          "没有足够界面证据，全部待验证"
+          "创意圈一级与二级分发分类",
+          "公开作品卡片、详情及复用路径",
+          "视频与动作控制实际输出效果"
         ],
-        "sampling": "仅记录登录门槛，未取得内容样本。"
+        "sampling": "登录状态下查看资产、视频生成与动作控制；Omni登录门槛截图保留为对应路由的访问记录。"
       },
       "navigation": [],
       "surfaces": [
         {
-          "type": "登录门槛",
-          "entry": "用户已打开的 Omni 编辑路由",
-          "cardFields": [],
+          "type": "素材与生成历史",
+          "entry": "资产库",
+          "cardFields": [
+            "作品类型",
+            "时间",
+            "收藏"
+          ],
           "detailFields": [
-            "欢迎登录",
-            "手机登录",
-            "扫码登录",
-            "手机号输入",
-            "验证码输入",
-            "立即创作禁用",
-            "用户协议/隐私政策"
+            "素材来源分区",
+            "文件夹",
+            "筛选与视图"
           ],
           "actions": [
-            "只读；未发送验证码、提交登录或接受协议"
+            "资产管理",
+            "后续编辑入口"
           ],
-          "connections": "未登录，因此无法观察编辑器背后的内容分发。",
-          "evidence": [
-            "KL1",
-            "KLS1"
-          ]
+          "connections": "生成结果可接续编辑；长期保存与跨场景复用未测试。",
+          "evidence": []
+        },
+        {
+          "type": "视频与动作控制",
+          "entry": "生成",
+          "cardFields": [],
+          "detailFields": [
+            "首尾帧图",
+            "分镜",
+            "时长与分辨率",
+            "动作视频",
+            "人物图",
+            "朝向说明"
+          ],
+          "actions": [
+            "从历史创作取用",
+            "动作库",
+            "生成"
+          ],
+          "connections": "视频与动作控制采用不同输入素材；表单已查，未提交运行。",
+          "evidence": []
         }
       ],
       "paths": [],
@@ -7178,6 +7197,34 @@
           "title": "指定 Omni 标签页的登录状态",
           "url": "https://klingai.com/app/omni/",
           "scope": "实际打开的是包含资源标识的Omni路由；此处URL仅做路径级脱敏，不表示访问过此规范化URL。记录可见登录门槛，不保存手机号、资源标识或会话。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-2",
+          "title": "资产库",
+          "url": "https://klingai.com/app/user-assets/materials?ac=1",
+          "scope": "素材、历史上传、图片编辑、灵动画布、主体、预设提示词分别设入口。素材页可按类型、日期、收藏筛选，提供批量操作、时间降序、平铺视图和文件夹。 只检查组织入口，未移动删除资产或创建文件夹。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-3",
+          "title": "动作控制与历史结果",
+          "url": "https://klingai.com/app/video-motion-control/new?ac=7",
+          "scope": "动作控制工作区同时有官方动作/我的动作库、历史创作入口和结果流。既有图片结果旁提供去Omni创作、生成视频、画质增强、局部重绘、扩图、消除笔。 未执行这些后处理，不能据入口推算编辑成功率。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-4",
+          "title": "视频生成与分镜配置",
+          "url": "https://klingai.com/app/video/new?ac=1",
+          "scope": "视频3.0输入区可添加首尾帧图或历史创作，提供提示词、智能分镜/自定义分镜、1080p/5s/16:9/1张配置和音画同步选项，旁列生成历史。 只读查看，未添加素材或提交视频生成。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-5",
+          "title": "动作控制输入要求",
+          "url": "https://klingai.com/app/video-motion-control/new",
+          "scope": "分别添加要模仿动作的视频和人物图，均可从历史创作取用，视频另有动作库。人物朝向可与视频或图片一致；说明区解释复杂动作与运镜差异，并链接上传规范。 未上传、运行或验证动作一致性。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -7208,7 +7255,7 @@
         ],
         "gaps": [
           "其余用途分类未逐个点击，不能声称全站内容穷尽",
-          "此次选中社区作品均为视频；未独立验证社区静态图片详情",
+          "该次选中社区作品均为视频；未独立验证社区静态图片详情",
           "未生成/上传/分享/收藏/建立角色/购买",
           "所有创作结果、成本和效果未知"
         ],
@@ -8258,7 +8305,7 @@
             "打开 Create Image Part1",
             "后续观察已回列表"
           ],
-          "connections": "详情的下一步是相关教程；本次未见直接带参创作 CTA。",
+          "connections": "详情的下一步是相关教程；未见直接带参创作 CTA。",
           "evidence": [
             "OA9",
             "OAS8"
@@ -8392,7 +8439,7 @@
         },
         {
           "title": "",
-          "fact": "动画样本提示词提及 reference image，但该详情此次没有 References 区，只有设置。",
+          "fact": "动画样本提示词提及 reference image，但该详情现有记录没有 References 区，只有设置。",
           "interpretation": "“可读提示词”不必然等于“复用资料齐全”；需要逐条核实材料是否公开。",
           "tradeoff": "供给维护需检查参考材料，而非仅是否有文案。",
           "alternative": "可能作者未附参考图或界面未公开，具体原因未知。",
@@ -8465,6 +8512,13 @@
           "url": "https://openart.ai/suite/tutorials",
           "scope": "教程分类、单条 iframe 播放详情、工具目录弹层",
           "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-10",
+          "title": "角色世界资产与角色创建表单",
+          "url": "https://openart.ai/suite/characters-and-worlds",
+          "scope": "资产按Characters、Worlds、Objects、Backgrounds、Styles组织，分别有创建入口。 Create Character提供图片起步、文字描述、Build三种方式；Describe表单有描述、模型、风格、图片数量，空描述时Generate禁用。页面说明角色可用于后续图片和视频。 未生成或保存角色，跨作品一致性未验证。",
+          "accessedAt": "2026-09-14"
         }
       ],
       "screenshots": [
@@ -8531,583 +8585,6 @@
           "url": "https://openart.ai/suite/tutorials",
           "what": "教程列表分类",
           "limitations": "裁掉账号身份和余额；部分详情右侧被裁切，字段以 DOM 实读补充。教程截图是列表，详情另有 DOM 证据。"
-        }
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "date": "2026-09-14",
-      "group": "工具与作者生态",
-      "access": {
-        "terminal": "桌面网页",
-        "login": "已有登录",
-        "scope": "Chrome 已登录；当前账号无可用订阅。Explore 三种模板可读；Create、Personalize 实际点击均出现订阅弹层，未绕过。"
-      },
-      "coverage": {
-        "completed": [
-          "完整盘点可见侧栏；Explore 的 Images、Videos、Styles 已切换并各看一条详情；图片 use text 已验证；Tasks 已打开。"
-        ],
-        "gaps": [
-          "未订阅，生成与编辑内部设置未验证",
-          "Top Day 点击未展现更多排序选项",
-          "Moodboards、Style Creator、Edit、Organize 仅入口可见",
-          "未关注、点赞、提交生成或购买"
-        ],
-        "sampling": ""
-      },
-      "navigation": [
-        {
-          "level": 1,
-          "label": "Explore",
-          "parent": null,
-          "kind": "发现/社区入口",
-          "changes": "实际打开",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Create",
-          "parent": null,
-          "kind": "创作工具",
-          "changes": "实际点击，出现订阅门槛",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Edit",
-          "parent": null,
-          "kind": "创作工具",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Organize",
-          "parent": null,
-          "kind": "个人资源",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Personalize",
-          "parent": "Aesthetics",
-          "kind": "个人资源",
-          "changes": "实际点击，出现订阅门槛",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Moodboards",
-          "parent": "Aesthetics",
-          "kind": "个人资源",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Style Creator",
-          "parent": "Aesthetics",
-          "kind": "个人资源",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Tasks",
-          "parent": "Community",
-          "kind": "发现/社区入口",
-          "changes": "实际打开",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Subscribe",
-          "parent": null,
-          "kind": "商业",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Help",
-          "parent": null,
-          "kind": "支持",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Updates",
-          "parent": null,
-          "kind": "支持",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "Dark Mode",
-          "parent": null,
-          "kind": "设置",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 1,
-          "label": "My Account",
-          "parent": null,
-          "kind": "个人资源",
-          "changes": "仅见入口",
-          "evidence": [
-            "MJ1",
-            "MJ5",
-            "MJ6"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Images",
-          "parent": "Explore",
-          "kind": "媒体/可复用风格资源",
-          "changes": "实际切换，内容与详情模板随之改变",
-          "evidence": [
-            "MJ1",
-            "MJ2",
-            "MJ3",
-            "MJ4"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Videos",
-          "parent": "Explore",
-          "kind": "媒体/可复用风格资源",
-          "changes": "实际切换，内容与详情模板随之改变",
-          "evidence": [
-            "MJ1",
-            "MJ2",
-            "MJ3",
-            "MJ4"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Styles",
-          "parent": "Explore",
-          "kind": "媒体/可复用风格资源",
-          "changes": "实际切换，内容与详情模板随之改变",
-          "evidence": [
-            "MJ1",
-            "MJ2",
-            "MJ3",
-            "MJ4"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Top Day",
-          "parent": "Explore",
-          "kind": "时间热度排序",
-          "changes": "可见且尝试点击，未确认更多选项",
-          "evidence": [
-            "MJ1"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Likes",
-          "parent": "Explore",
-          "kind": "个人收藏/点赞集合",
-          "changes": "仅可见",
-          "evidence": [
-            "MJ1"
-          ]
-        },
-        {
-          "level": 2,
-          "label": "Surveys",
-          "parent": "Tasks",
-          "kind": "社区反馈任务",
-          "changes": "实际打开，仅见标题与介绍，未见可参加任务条目",
-          "evidence": [
-            "MJ6"
-          ]
-        }
-      ],
-      "surfaces": [
-        {
-          "type": "图片作品",
-          "entry": "Explore > Images",
-          "cardFields": [
-            "图片",
-            "作者",
-            "Like",
-            "Follow"
-          ],
-          "detailFields": [
-            "大图",
-            "作者",
-            "22h 时间",
-            "提示词",
-            "chaos 10",
-            "ar 9:16",
-            "exp 60",
-            "sref 3282860382",
-            "raw",
-            "stylize 75",
-            "weird 4",
-            "hd",
-            "profile code"
-          ],
-          "actions": [
-            "+ use text 已点击",
-            "Copy Prompt 未点",
-            "Like/Follow/Options 未点"
-          ],
-          "connections": "use text 将正文放入页面公共输入框；参数仍是详情独立芯片，本次输入框只出现正文。关闭弹层回原分类。",
-          "evidence": [
-            "MJ2",
-            "MJS1"
-          ]
-        },
-        {
-          "type": "视频作品",
-          "entry": "Explore > Videos",
-          "cardFields": [
-            "视频画面",
-            "作者",
-            "Like",
-            "Follow"
-          ],
-          "detailFields": [
-            "视频播放器",
-            "作者",
-            "22h 时间",
-            "水彩花园提示词",
-            "源图缩略图",
-            "时长 5.2 秒",
-            "ar 51:91"
-          ],
-          "actions": [
-            "Copy Prompt",
-            "+ use text",
-            "关闭返回"
-          ],
-          "connections": "视频详情直接暴露源图缩略图；未点击源图、未提交生成。",
-          "evidence": [
-            "MJ3",
-            "MJS2"
-          ]
-        },
-        {
-          "type": "风格资源",
-          "entry": "Explore > Styles",
-          "cardFields": [
-            "一组风格示例图",
-            "—sref 数值码",
-            "Try Style"
-          ],
-          "detailFields": [
-            "8 张示例图",
-            "sref 2117165278",
-            "Try Style/Copy/Search/Style Creator/Like 禁用态"
-          ],
-          "actions": [
-            "打开风格详情已完成",
-            "Try Style 未点：tooltip 明确将提交当前或最近提示词"
-          ],
-          "connections": "列表 Try Style 提示当前 prompt + --sref 码，属于潜在立即生成；风格详情提供独立审美资源，不是单件作品。",
-          "evidence": [
-            "MJ4",
-            "MJS3"
-          ]
-        },
-        {
-          "type": "订阅门槛",
-          "entry": "Create / Personalize",
-          "cardFields": [],
-          "detailFields": [
-            "订阅介绍",
-            "Join now",
-            "Look Around a Bit",
-            "already subscribed"
-          ],
-          "actions": [
-            "Look Around a Bit 已用于返回",
-            "Join now 未点"
-          ],
-          "connections": "点击创作/个性化入口仍保留 Explore URL 与背景，弹层阻挡下一步。",
-          "evidence": [
-            "MJ5",
-            "MJS4"
-          ]
-        }
-      ],
-      "paths": [
-        {
-          "task": "图片到提示词复用",
-          "steps": [
-            {
-              "action": "Images 中打开赛博日本面具插画",
-              "observed": "大图+完整提示词+参数芯片",
-              "status": "已核对",
-              "evidence": [
-                "MJ2",
-                "MJS1"
-              ]
-            },
-            {
-              "action": "点击 + use text",
-              "observed": "公共输入框出现正文；输入框仍 disabled，提示 Subscribe to start creating",
-              "status": "已核对",
-              "evidence": [
-                "MJ2"
-              ]
-            },
-            {
-              "action": "关闭详情",
-              "observed": "返回 Explore 分类与内容流",
-              "status": "已核对",
-              "evidence": [
-                "MJ1"
-              ]
-            }
-          ],
-          "limit": "仅带入文本；未带入完整参数、未生成。输入框被订阅禁用，未进一步编辑。"
-        },
-        {
-          "task": "视频到来源理解",
-          "steps": [
-            {
-              "action": "切换 Videos 打开水彩花园视频",
-              "observed": "视频模板包含源图与时长字段",
-              "status": "已核对",
-              "evidence": [
-                "MJ3",
-                "MJS2"
-              ]
-            },
-            {
-              "action": "关闭详情",
-              "observed": "返回 Videos 流",
-              "status": "已核对",
-              "evidence": [
-                "MJ3"
-              ]
-            }
-          ],
-          "limit": "视频下载/再次生成/源图二跳未执行。"
-        },
-        {
-          "task": "风格到创作边界",
-          "steps": [
-            {
-              "action": "切 Styles 打开 sref 2117165278",
-              "observed": "多图风格证明+风格码",
-              "status": "已核对",
-              "evidence": [
-                "MJ4",
-                "MJS3"
-              ]
-            },
-            {
-              "action": "读取 Try Style tooltip",
-              "observed": "说明会提交当前或最近 prompt + sref，停在按钮前",
-              "status": "停在生成前",
-              "evidence": [
-                "MJ4"
-              ]
-            },
-            {
-              "action": "点 Create",
-              "observed": "订阅弹层",
-              "status": "订阅门槛",
-              "evidence": [
-                "MJ5",
-                "MJS4"
-              ]
-            }
-          ],
-          "limit": "未验证订阅后创作体验。"
-        },
-        {
-          "task": "社区供给入口",
-          "steps": [
-            {
-              "action": "点 Tasks",
-              "observed": "进入 /tasks；Surveys 标题与人格/审美反馈介绍",
-              "status": "已核对",
-              "evidence": [
-                "MJ6"
-              ]
-            }
-          ],
-          "limit": "此次未见可执行任务卡，不能证明整个平台没有任务。"
-        }
-      ],
-      "findings": [
-        {
-          "title": "",
-          "fact": "三个 Explore 分类各自有不同复用对象：图片正文、视频源图、风格码。",
-          "interpretation": "其分发并非给同一种卡片换标签，而是按下一步操作所需材料拆模板。",
-          "tradeoff": "风格参数对新人理解有门槛；视频源图帮助解释来路。",
-          "alternative": "用统一作品卡+详情中的资源分组也可表达；分类结构并非唯一原因。",
-          "effectUnknown": "无点击、复用、留存指标，不能证明转化提升。",
-          "evidence": [
-            "MJ2",
-            "MJ3",
-            "MJ4"
-          ]
-        },
-        {
-          "title": "",
-          "fact": "非订阅账号可看详情并把文本放入禁用输入框；Create/Personalize 弹出订阅门槛。",
-          "interpretation": "先开放灵感消费与理解，创作执行另设权限门槛。",
-          "tradeoff": "可看到下一步价值，但本次不能检验完成成本。",
-          "alternative": "也可能是当前账号套餐状态造成，不能泛化所有新账号。",
-          "effectUnknown": "付费转化未知。",
-          "evidence": [
-            "MJ2",
-            "MJ5"
-          ]
-        },
-        {
-          "title": "",
-          "fact": "风格卡 Try Style 的 tooltip 是提交生成，未点击。",
-          "interpretation": "同样叫“试用”的 CTA 可能是立即执行，研究和产品设计都应标清动作结果。",
-          "tradeoff": "路径短但误点成本需要另外评估。",
-          "alternative": "详情弹层提供了先理解再决定的途径。",
-          "effectUnknown": "误触率未知。",
-          "evidence": [
-            "MJ4"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "id": "MJ1",
-          "title": "Explore 分类与全局导航",
-          "url": "https://www.midjourney.com/explore?tab=top",
-          "scope": "实浏览 Images、Videos、Styles 与可见侧栏；仅记录公开界面",
-          "accessedAt": "2026-09-14"
-        },
-        {
-          "id": "MJ2",
-          "title": "图片详情及 use text",
-          "url": "https://www.midjourney.com/jobs/7a1078c4-6db3-48c5-a243-7ec9ed5482f6?index=2",
-          "scope": "图片详情和正文带入",
-          "accessedAt": "2026-09-14"
-        },
-        {
-          "id": "MJ3",
-          "title": "视频详情",
-          "url": "https://www.midjourney.com/jobs/a6414ce5-311a-4a98-aa28-9d604a031fd5?index=0",
-          "scope": "5.2 秒视频、源图、提示词",
-          "accessedAt": "2026-09-14"
-        },
-        {
-          "id": "MJ4",
-          "title": "风格详情",
-          "url": "https://www.midjourney.com/styles/0_2117165278",
-          "scope": "多图风格示例、按钮禁用与列表 tooltip",
-          "accessedAt": "2026-09-14"
-        },
-        {
-          "id": "MJ5",
-          "title": "Create 与 Personalize 入口门槛",
-          "url": "https://www.midjourney.com/explore?tab=styles_top",
-          "scope": "实际点击后保留原 URL、出现订阅弹层",
-          "accessedAt": "2026-09-14"
-        },
-        {
-          "id": "MJ6",
-          "title": "Tasks",
-          "url": "https://www.midjourney.com/tasks",
-          "scope": "Surveys 入口介绍；截图捕获超时，DOM 已读",
-          "accessedAt": "2026-09-14"
-        }
-      ],
-      "screenshots": [
-        {
-          "id": "MJS1",
-          "file": "midjourney-01-image-detail.png",
-          "title": "图片详情",
-          "url": "https://www.midjourney.com/jobs/7a1078c4-6db3-48c5-a243-7ec9ed5482f6?index=2",
-          "what": "大图和提示词参数模板",
-          "limitations": "裁掉个人账号区域"
-        },
-        {
-          "id": "MJS2",
-          "file": "midjourney-02-video-detail.png",
-          "title": "视频详情",
-          "url": "https://www.midjourney.com/jobs/a6414ce5-311a-4a98-aa28-9d604a031fd5?index=0",
-          "what": "视频与来源字段",
-          "limitations": "只截一帧，不能证明播放稳定"
-        },
-        {
-          "id": "MJS3",
-          "file": "midjourney-03-style.png",
-          "title": "风格详情",
-          "url": "https://www.midjourney.com/styles/0_2117165278",
-          "what": "8张风格示例与相邻风格预览",
-          "limitations": "风格码与按钮状态位于裁图外，来自同次 DOM 实读；截图只证明示例布局。"
-        },
-        {
-          "id": "MJS4",
-          "file": "midjourney-04-subscription-gate.png",
-          "title": "订阅门槛",
-          "url": "https://www.midjourney.com/explore?tab=styles_top",
-          "what": "Create 点击出现弹层",
-          "limitations": "裁图略去标题上边缘；不作为价格比较证据"
         }
       ]
     },
@@ -9391,7 +8868,7 @@
           "label": "Trending",
           "parent": "Community Creations",
           "kind": "排序",
-          "changes": "Trending默认有内容；New已切换，此次后续DOM未出现作品，原因未定",
+          "changes": "Trending默认有内容；New已切换，该次后续DOM未出现作品，原因未定",
           "evidence": [
             "LA1"
           ]
@@ -9401,7 +8878,7 @@
           "label": "New",
           "parent": "Community Creations",
           "kind": "排序",
-          "changes": "Trending默认有内容；New已切换，此次后续DOM未出现作品，原因未定",
+          "changes": "Trending默认有内容；New已切换，该次后续DOM未出现作品，原因未定",
           "evidence": [
             "LA1"
           ]
@@ -9411,7 +8888,7 @@
           "label": "Top",
           "parent": "Community Creations",
           "kind": "排序",
-          "changes": "Trending默认有内容；New已切换，此次后续DOM未出现作品，原因未定",
+          "changes": "Trending默认有内容；New已切换，该次后续DOM未出现作品，原因未定",
           "evidence": [
             "LA1"
           ]
@@ -9977,7 +9454,7 @@
             "Generate with this Model已点到Auto表单",
             "ModelOptions/ViewMore未点"
           ],
-          "connections": "存在模型到作品集合入口；本次模型主按钮未保持特定模型，上一步视频prompt残留。",
+          "connections": "存在模型到作品集合入口；模型主按钮未保持特定模型，上一步视频prompt残留。",
           "evidence": [
             "LA10",
             "LA11"
@@ -10208,6 +9685,13 @@
           "url": "https://app.leonardo.ai/generate?model=auto-preset",
           "scope": "实际点击MagicPotions主按钮后落Auto，没有对应模型被选中的可见证据",
           "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-12",
+          "title": "Add to Collection 与 Personal Collections",
+          "url": "https://app.leonardo.ai/generate?model=auto-preset",
+          "scope": "生成器设置中可展开Add to Collection，出现集合搜索、New和View all；View all打开Personal Collections弹层，有搜索、New、Done。 未创建集合或生成；账户空集合不能验证实际归档结果。",
+          "accessedAt": "2026-09-14"
         }
       ],
       "screenshots": [
@@ -10291,10 +9775,10 @@
         ],
         "gaps": [
           "精选工作流卡片链接直接指向带 featured-workflow-id 的 /workflows/create。为保持只读，未进入可能创建工作流的页面；节点配置、真正复制带入与运行结果未知。",
-          "工具与两种应用在本次账号状态下显示 Upgrade。未验证升级后生成、实际扣费、输出质量与保存恢复。",
+          "工具与两种应用在账号状态下显示 Upgrade。未验证升级后生成、实际扣费、输出质量与保存恢复。",
           "Academy 点击开始学习后要求登录；未接受新学习站条款或进入播放器，章节播放与进度记忆未知。",
           "Projects、Assets、Brand、Characters 和 Agent 会话仅记录入口；未查看私有资产或执行动作。",
-          "普通、最新、低互动作品对照缺口：本次可访问样本以任务应用、官方/伙伴精选模板及官方课程为主，卡片未展示互动量，不能把它们代表为自然社区供给。",
+          "普通、最新、低互动作品对照缺口：可访问样本以任务应用、官方/伙伴精选模板及官方课程为主，卡片未展示互动量，不能把它们代表为自然社区供给。",
           "Ad Localization 与 Stitch Videos 缺少独立截图，表单字段以当时页面观察记录为依据。",
           "只覆盖主要可访问模板样本，没有逐个模型、应用或课程执行完整流程；无流量、转化、留存、创作者更新频率数据。"
         ],
@@ -10316,7 +9800,7 @@
           "label": "Agent",
           "parent": null,
           "kind": "创作模式",
-          "changes": "可见独立导航和 New Chat；本次未发送对话。",
+          "changes": "可见独立导航和 New Chat；未发送对话。",
           "evidence": [
             "RW-HOME"
           ]
@@ -10968,7 +10452,7 @@
           "label": "Explore Courses",
           "parent": "Academy",
           "kind": "学习站导航",
-          "changes": "可见入口；本次通过课程卡片与 Courses 面包屑进入课程目录。",
+          "changes": "可见入口；通过课程卡片与 Courses 面包屑进入课程目录。",
           "evidence": [
             "RW-ACADEMY"
           ]
@@ -10978,7 +10462,7 @@
           "label": "Prompt Guide",
           "parent": "Academy",
           "kind": "学习站导航",
-          "changes": "可见入口；本次通过课程卡片与 Courses 面包屑进入课程目录。",
+          "changes": "可见入口；通过课程卡片与 Courses 面包屑进入课程目录。",
           "evidence": [
             "RW-ACADEMY"
           ]
@@ -10988,7 +10472,7 @@
           "label": "My Learning",
           "parent": "Academy",
           "kind": "学习站导航",
-          "changes": "可见入口；本次通过课程卡片与 Courses 面包屑进入课程目录。",
+          "changes": "可见入口；通过课程卡片与 Courses 面包屑进入课程目录。",
           "evidence": [
             "RW-ACADEMY"
           ]
@@ -11028,7 +10512,7 @@
           "label": "Ruby",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11038,7 +10522,7 @@
           "label": "Agent",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11048,7 +10532,7 @@
           "label": "Aleph 2.0",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11058,7 +10542,7 @@
           "label": "Gen-4.5",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11068,7 +10552,7 @@
           "label": "Gen-4",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11078,7 +10562,7 @@
           "label": "Audio",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11088,7 +10572,7 @@
           "label": "Aleph",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11098,7 +10582,7 @@
           "label": "Act-Two",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11108,7 +10592,7 @@
           "label": "Workflows",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11118,7 +10602,7 @@
           "label": "AI for Advertising",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11128,7 +10612,7 @@
           "label": "AI for Games",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11138,7 +10622,7 @@
           "label": "AI for Visual Effects",
           "parent": "Academy / Courses",
           "kind": "模型、工具或应用主题筛选",
-          "changes": "同一行混合不同语义的主题标签；本次读取入口，未逐项点击。",
+          "changes": "同一行混合不同语义的主题标签；读取入口，未逐项点击。",
           "evidence": [
             "RW-COURSES"
           ]
@@ -11159,7 +10643,7 @@
           "actions": [
             "仅观察 Try、Try it now、All Skills 等入口，未提交 Agent 请求。"
           ],
-          "connections": "首页通过 Apps 入门按 Film/Marketing/Social 等目的推荐任务应用。；侧栏提供 Tool、Apps、Workflows 与 Learn 路径。",
+          "connections": "首页通过 Apps 入门按 Film/Marketing/Social 等目的推荐任务应用；侧栏提供 Tool、Apps、Workflows 与 Learn 路径。",
           "evidence": [
             "RW-HOME"
           ]
@@ -11183,7 +10667,7 @@
             "最终主按钮显示 Upgrade，未点击。",
             "Presets 点击后只见提示，未确认预设面板打开。"
           ],
-          "connections": "Help/Guide 和 Helpful Apps 是可见继续入口；本次没有打开它们。",
+          "connections": "Help/Guide 和 Helpful Apps 是可见继续入口；没有打开它们。",
           "evidence": [
             "RW-TOOL",
             "RW-S1"
@@ -11204,7 +10688,7 @@
             "实际选择 Marketing，右侧标题与推荐卡片更换。",
             "实际打开 Ad Localization。"
           ],
-          "connections": "同一应用也能在媒介分类 Image / Video 中找到。；Collections 另以广告、补拍、收尾、模型集合重新组合应用。",
+          "connections": "同一应用也能在媒介分类 Image / Video 中找到；Collections 另以广告、补拍、收尾、模型集合重新组合应用。",
           "evidence": [
             "RW-APPS",
             "RW-S2"
@@ -11223,7 +10707,7 @@
             "底部 Max 21 credits 是费用预估文案，不是账户余额；主按钮 Upgrade。"
           ],
           "actions": [
-            "实际点击卡片进入；默认广告与 Japanese 为页面预填，未由本次上传或生成。",
+            "实际点击卡片进入；默认广告与 Japanese 为页面预填，未由上传或生成。",
             "没有编辑、重置、上传或点击 Upgrade。",
             "点击侧栏 Apps 返回目录，Marketing 选择当时保留。"
           ],
@@ -11257,7 +10741,7 @@
           "cardFields": [
             "模板封面、模板标题、来源 Team Runway 或公开伙伴署名、部分 NEW。",
             "伙伴示例：Asset Reversioning、Sway’s Backplate Generator、Wine Label Generator、Game Item Generator、Human Pose Replication and Transfer、Character Renderer、JSON to Manga、Photo Enhancer。",
-            "本次卡片不展示互动计数。"
+            "卡片不展示互动计数。"
           ],
           "detailFields": [
             "个人目录：Recents / By Project，All / My Workflows / Shared with me / Featured，搜索名称，Recently modified。",
@@ -11268,7 +10752,7 @@
             "实际 View all、来源切换、Back to workflows。",
             "未点击 New Workflow、Create Workflow、Create with Agent 或模板创建链接。"
           ],
-          "connections": "伙伴署名有外部作者主页链接；未访问或联系。；返回个人目录仍可见精选内容，即使个人区域为空。",
+          "connections": "伙伴署名有外部作者主页链接；未访问或联系；返回个人目录仍可见精选内容，即使个人区域为空。",
           "evidence": [
             "RW-WORKFLOWS",
             "RW-FEATURED",
@@ -11286,14 +10770,14 @@
           "detailFields": [
             "AI for Advertising：Runway Team、标题、概要、10 modules、20 minutes、Beginner、Start Learning。",
             "What you’ll learn、Skills you’ll gain、10 个模块名及各自时长；第五模块显示 3 chapters。",
-            "详情总时长 20 minutes 与可见各模块分钟数并非简单加总一致，本次仅记录页面展示，不当作核准课程时长。"
+            "详情总时长 20 minutes 与可见各模块分钟数并非简单加总一致，仅记录页面展示，不当作核准课程时长。"
           ],
           "actions": [
             "实际打开课程详情并点击 Start Learning。",
             "实际跳转到 /signin?redirect=/course/ai-advertising/watch；出现 Login with Runway 及条款提示，未继续。",
             "浏览器返回课程详情，点击 Courses 面包屑回到课程库。"
           ],
-          "connections": "课程目录与教程目录共用主题筛选；页面还显示 Prompt Guide、My Learning、Go to Runway。；学习登录后的播放、下一章节和进度保存未知。",
+          "connections": "课程目录与教程目录共用主题筛选；页面还显示 Prompt Guide、My Learning、Go to Runway；学习登录后的播放、下一章节和进度保存未知。",
           "evidence": [
             "RW-ACADEMY",
             "RW-COURSE",
@@ -11559,7 +11043,7 @@
           "title": "",
           "fact": "Ad Localization 打开后带默认广告与 Japanese；Stitch Videos 打开为空媒体表单；两者当前执行 CTA 均为 Upgrade。",
           "interpretation": "卡片承接的是可操作任务，表单因任务不同而变化；示例降低理解门槛，空表单暴露必要材料。",
-          "tradeoff": "预填示例有助理解，但观察时必须区分演示素材、已有结果与本次产出；账号限制会截断实际体验。",
+          "tradeoff": "预填示例有助理解，但观察时必须区分演示素材、已有结果与产出；账号限制会截断实际体验。",
           "alternative": "可比较默认演示与空白开始两种引导，并明确素材状态。",
           "effectUnknown": "未执行，无法判断输出质量、价格准确性或任务完成率。",
           "evidence": [
@@ -11570,7 +11054,7 @@
         {
           "title": "",
           "fact": "精选工作流按 Team Runway 与 Creative Partners Program 区分来源；伙伴卡片有署名且链接直接指向创建工作流路径。",
-          "interpretation": "在本次入口中，模板价值与执行复用绑定，供给呈现依靠官方和入选伙伴来源标识。",
+          "interpretation": "在入口中，模板价值与执行复用绑定，供给呈现依靠官方和入选伙伴来源标识。",
           "tradeoff": "强执行入口缩短使用路径，但只读浏览者不能据列表推断节点结构与复制效果；精选样本也不等于普通用户供给。",
           "alternative": "可比较列表直接使用与先只读预览再使用两种模板承接方式。",
           "effectUnknown": "模板采用率、伙伴更新频率、普通作者参与路径及运行成功率未知。",
@@ -11620,7 +11104,7 @@
           "id": "RW-LOCALIZATION",
           "title": "Ad Localization 应用表单",
           "url": "https://app.runwayml.com/",
-          "scope": "两次实际进入并核对默认广告、日本语字段与 Upgrade。截图工具 clip 错位，未保留错位文件。",
+          "scope": "两次实际进入并核对默认广告、日本语字段与 Upgrade。",
           "accessedAt": "2026-09-14"
         },
         {
@@ -11670,6 +11154,13 @@
           "title": "Academy 课程与教程目录",
           "url": "https://academy.runwayml.com/courses",
           "scope": "实际由 Courses 面包屑返回；类型和主题标签、课程和教程卡片。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-12",
+          "title": "Assets：Recents 与 Private",
+          "url": "https://app.runwayml.com/",
+          "scope": "Assets分Recents、Private、Shared、Favorited。Recents有Folders、媒体/收藏/标签筛选、网格尺寸和Compact；当前无生成结果。 Private有New Folder、Upload、媒体/Type/Tags筛选、网格/表格视图和Date created排序。 登录后沿Assets导航；公开链接省略账户路径。未创建文件夹、上传或修改共享。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -12380,7 +11871,7 @@
           "fact": "工具、提示词和精选文章采用三套信息结构；工具目录标签混合媒介、用途与业务属性。",
           "interpretation": "用户可以先按想拿到的资源类型选择入口，再按用途缩小范围。",
           "tradeoff": "标签语义并不互斥，目录tag与详情分类地址也不相同。",
-          "alternative": "另一种解释是历史内容迁移保留了不同分类路由；本次未核实后台分类设计。",
+          "alternative": "另一种解释是历史内容迁移保留了不同分类路由；未核实后台分类设计。",
           "effectUnknown": "无法从页面判断分类是否提升找到合适工具的成功率。",
           "evidence": [
             "wa-sites",
@@ -12421,14 +11912,14 @@
           "id": "wa-home",
           "title": "首页",
           "url": "https://www.waytoagi.com/zh",
-          "scope": "实时入口观察",
+          "scope": "页面入口观察",
           "accessedAt": "2026-09-14"
         },
         {
           "id": "wa-sites",
           "title": "AI网站目录",
           "url": "https://www.waytoagi.com/zh/sites",
-          "scope": "实时卡片与分类",
+          "scope": "页面卡片与分类",
           "accessedAt": "2026-09-14"
         },
         {
@@ -12492,6 +11983,34 @@
           "title": "博客目录",
           "url": "https://www.waytoagi.com/zh/blog",
           "scope": "返回博客真实目标",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-12",
+          "title": "活动列表与短片大赛详情",
+          "url": "https://waytoagi.com/zh/events/580",
+          "scope": "活动列表支持应用、音乐、技术、算法、图像、视频等分类，并标进行中/已结束、起止日期、线上线下。短片大赛详情列参赛对象、作品类型、赛道和投稿上限，查看活动详情导向赛事站。相关推荐包含当前活动自身。 未报名或核实奖励兑现。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-13",
+          "title": "AI智能体列表与营销海报条目",
+          "url": "https://waytoagi.com/zh/agents/641",
+          "scope": "智能体列表按图像设计、营销、教育、代码等任务分类。营销海报详情有图像设计→图像生成→文字生成图像面包屑；打开链接导向外部智能体运行平台。概览仅有简短描述，相关推荐含当前条目。 未打开外部运行页或生成。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-14",
+          "title": "飞书知识库与入门课程目录",
+          "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e",
+          "scope": "侧边目录包含从这里启程、AI学习路径与课程、绘画、视频、工作流、编程、个人专栏、研究报告等。首页给出共学、投稿、近期活动和近7日更新入口。 组织自述不等于学习效果。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-15",
+          "title": "入门课程推荐表",
+          "url": "https://waytoagi.feishu.cn/wiki/ZYtkwJQSJiLa5rkMF5scEN4Onhd",
+          "scope": "从AI学习路径与课程进入入门课程推荐，为多维表格，分入门课程、中文付费课、AI绘画、AIGC开发、理论、系统课等表；可见卡片/表格视图及筛选排序。 记录内容未完整加载，未核对单门课程学习过程。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -12894,7 +12413,7 @@
           "label": "所有",
           "parent": "活动",
           "kind": "独立生命周期筛选",
-          "changes": "活动列表另有状态、搜索和分页；本次未逐状态点击。",
+          "changes": "活动列表另有状态、搜索和分页；未逐状态点击。",
           "evidence": [
             "dw-activities"
           ]
@@ -12904,7 +12423,7 @@
           "label": "正在报名",
           "parent": "活动",
           "kind": "独立生命周期筛选",
-          "changes": "活动列表另有状态、搜索和分页；本次未逐状态点击。",
+          "changes": "活动列表另有状态、搜索和分页；未逐状态点击。",
           "evidence": [
             "dw-activities"
           ]
@@ -12914,7 +12433,7 @@
           "label": "已开始",
           "parent": "活动",
           "kind": "独立生命周期筛选",
-          "changes": "活动列表另有状态、搜索和分页；本次未逐状态点击。",
+          "changes": "活动列表另有状态、搜索和分页；未逐状态点击。",
           "evidence": [
             "dw-activities"
           ]
@@ -12924,7 +12443,7 @@
           "label": "已结束",
           "parent": "活动",
           "kind": "独立生命周期筛选",
-          "changes": "活动列表另有状态、搜索和分页；本次未逐状态点击。",
+          "changes": "活动列表另有状态、搜索和分页；未逐状态点击。",
           "evidence": [
             "dw-activities"
           ]
@@ -13149,7 +12668,7 @@
           "fact": "课程卡片给出难度和用途，详情补目标人群、预期成果与章节；开始学习前有登录门槛。",
           "interpretation": "从“想学什么”到“学完能做什么”的信息逐步展开，决定学习与记录学习分处两步。",
           "tradeoff": "学习价值在登录前可判断，但实际学习步骤仍有注册/登录阻力。",
-          "alternative": "登录可能用于学习记录或身份管理；本次未核实其后台用途。",
+          "alternative": "登录可能用于学习记录或身份管理；未核实其后台用途。",
           "effectUnknown": "开始学习转化、课程完成率、学习收益和回访均未知。",
           "evidence": [
             "dw-course",
@@ -13222,6 +12741,27 @@
           "title": "AI+X创造节：AI办公专场",
           "url": "https://www.datawhale.cn/activity/594",
           "scope": "实际活动详情；未报名",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-7",
+          "title": "AI通识课专题与课程目录",
+          "url": "https://www.datawhale.cn/open-ai/summary/1",
+          "scope": "OPEN1+X专题的立即学习进入能应用的DeepSeek通识课。目录分安装、使用能力、组合用法、行业应用，课程链接回到统一learn/content章节路由。 专题与普通课程共用章节承载，未验证学习进度。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-8",
+          "title": "通识课首章与讨论区",
+          "url": "https://www.datawhale.cn/learn/content/122/3451",
+          "scope": "章节页有阅读/讨论模式和22条评论标记，可见期待、安装反馈、补充入口及内容为空的历史抱怨。访问弹出登录提示，未取得完整课程正文。 评论是所见样本，不能计算学习效果或当前正文缺失比例。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-9",
+          "title": "AI+X微认证与考前须知",
+          "url": "https://www.datawhale.cn/exam/exam-intro/34",
+          "scope": "认证主页列参加活动、学习课程、认证测试、获取证书路径。Prompt认证跳到考前须知34，显示不限时、无限作答次数、满分100、80分及以上获联名证书的说明，并有课程外链与开始答题按钮。 仅核对页面规则，未答题、申请或验证证书发放。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -14327,7 +13867,7 @@
           "fact": "所选模型讨论有置顶内容、PR和普通提问；抽测问题139未见回复。",
           "interpretation": "讨论入口完整并不保证每个具体问题得到帮助。",
           "tradeoff": "开放长尾资源会产生回应覆盖差异。",
-          "alternative": "问题可能已有文档答案或被其他渠道解决，本次无法判断。",
+          "alternative": "问题可能已有文档答案或被其他渠道解决，无法判断。",
           "effectUnknown": "响应时长分布、解决率与跨周回访未知。",
           "evidence": [
             "hf-discussions",
@@ -14414,7 +13954,7 @@
           "title": "模型详情",
           "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
           "what": "模型名称、任务/库/许可证标签、Model card/Files/Community与使用说明",
-          "limitations": "重截左侧说明以排除推理账户控件与个性化引导；Use this model按钮不在本图内，动作由代码弹窗和实时DOM证明"
+          "limitations": "重截左侧说明以排除推理账户控件与个性化引导；Use this model按钮不在本图内，动作由代码弹窗和页面DOM证明"
         },
         {
           "id": "huggingface-code-modal.png",
@@ -14430,7 +13970,7 @@
           "title": "数据预览",
           "url": "https://huggingface.co/datasets/stanfordnlp/imdb/viewer/plain_text/test",
           "what": "test数据表和Data Studio面板",
-          "limitations": "切分选择由实时DOM核验；截图未完整覆盖顶部切分栏"
+          "limitations": "切分选择由页面DOM核验；截图未完整覆盖顶部切分栏"
         },
         {
           "id": "huggingface-space-app.png",
@@ -14477,7 +14017,7 @@
           "label": "模型库",
           "parent": null,
           "kind": "资源类型入口",
-          "changes": "本次深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
+          "changes": "深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
           "evidence": [
             "ms-models",
             "ms-studios"
@@ -14488,7 +14028,7 @@
           "label": "数据集",
           "parent": null,
           "kind": "资源类型入口",
-          "changes": "本次深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
+          "changes": "深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
           "evidence": [
             "ms-models",
             "ms-studios"
@@ -14499,7 +14039,7 @@
           "label": "创空间",
           "parent": null,
           "kind": "资源类型入口",
-          "changes": "本次深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
+          "changes": "深入模型和应用两类；数据集只记录可见入口，不据此描述详情。",
           "evidence": [
             "ms-models",
             "ms-studios"
@@ -15048,7 +14588,7 @@
           "id": "ms-models",
           "title": "模型库",
           "url": "https://modelscope.cn/models",
-          "scope": "实时任务分组、筛选与句子相似度结果",
+          "scope": "页面任务分组、筛选与句子相似度结果",
           "accessedAt": "2026-09-14"
         },
         {
@@ -15091,6 +14631,27 @@
           "title": "MiniCPM API/MCP说明弹窗",
           "url": "https://modelscope.cn/studios/OpenBMB/MiniCPM5-2B",
           "scope": "真实只读弹窗；并未调用",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-8",
+          "title": "数据集目录",
+          "url": "https://modelscope.cn/datasets",
+          "scope": "按任务、组织筛选；文本、图像、音频、视频、多模态等任务类别；列表展示协议、更新日期、下载等指标。 未据下载数推算用户人数。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-9",
+          "title": "Qwen-Image-Bench数据预览",
+          "url": "https://modelscope.cn/datasets/Qwen/Qwen-Image-Bench/dataPeview",
+          "scope": "详情提供介绍、数据预览、文件和交流反馈。预览可选子数据集default及用途test；表格包含ID、中英文提示词、评价维度和各模型结果字段，设下载示例文件按钮。 未下载或运行评测，未核数据的完整性。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-10",
+          "title": "Notebook快速开发前置条件",
+          "url": "https://modelscope.cn/models/sentence-transformers/all-MiniLM-L6-v2",
+          "scope": "点击Notebook快速开发弹出要求完成阿里云账号授权绑定的提示，可取消。 已取消，未绑定或启动Notebook。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -15147,7 +14708,7 @@
           "label": "主页",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15158,7 +14719,7 @@
           "label": "工作室",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15169,7 +14730,7 @@
           "label": "Agents beta",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15180,7 +14741,7 @@
           "label": "知识库",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15191,7 +14752,7 @@
           "label": "集成",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15202,7 +14763,7 @@
           "label": "Marketplace",
           "parent": null,
           "kind": "工作区产品区域",
-          "changes": "本次仅公开模板和插件发现；未检索或打开私人资产。",
+          "changes": "仅公开模板和插件发现；未检索或打开私人资产。",
           "evidence": [
             "df-home",
             "df-market"
@@ -15330,7 +14891,7 @@
           "label": "插件",
           "parent": "Marketplace",
           "kind": "市场资源类型",
-          "changes": "页面有两套资源入口；本次深入插件，未把市场模板的结构等同首页模板。",
+          "changes": "页面有两套资源入口；深入插件，未把市场模板的结构等同首页模板。",
           "evidence": [
             "df-market"
           ]
@@ -15340,7 +14901,7 @@
           "label": "模板",
           "parent": "Marketplace",
           "kind": "市场资源类型",
-          "changes": "页面有两套资源入口；本次深入插件，未把市场模板的结构等同首页模板。",
+          "changes": "页面有两套资源入口；深入插件，未把市场模板的结构等同首页模板。",
           "evidence": [
             "df-market"
           ]
@@ -15828,7 +15389,7 @@
           "fact": "首页模板先按办公等用途组织，同时展示Workflow/Chatflow类型；详情允许在创建前检查流程与模型依赖。",
           "interpretation": "可以先判断用途，再理解完成任务的机制和前置条件。",
           "tradeoff": "用途与技术类型并行增加信息量；非技术用户仍可能不懂节点与模型依赖。",
-          "alternative": "部分用户可能只试用模板而不看编排图；本次未采用户行为。",
+          "alternative": "部分用户可能只试用模板而不看编排图；未采用户行为。",
           "effectUnknown": "模板创建成功率、运行成功率、理解成本和后续维护成本未知。",
           "evidence": [
             "df-home",
@@ -15866,7 +15427,7 @@
           "id": "df-home",
           "title": "Dify主页模板",
           "url": "https://cloud.dify.ai/",
-          "scope": "已有会话中公开模板用途与类型",
+          "scope": "登录后公开模板用途与类型",
           "accessedAt": "2026-09-14"
         },
         {
@@ -15902,6 +15463,27 @@
           "title": "Ollama版本历史",
           "url": "https://cloud.dify.ai/marketplace?category=model",
           "scope": "同一插件详情内真实版本表",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-7",
+          "title": "工作室与创建路径",
+          "url": "https://cloud.dify.ai/apps",
+          "scope": "工作室有类型、标签、创建者、最近修改和名称检索。 空态提供从应用模板创建、创建空白应用、导入DSL；另有文本摘要工作流、聊天机器人Chatflow、连接知识库三个学习案例。 未创建或导入应用；创建菜单后未取得稳定表单。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-8",
+          "title": "知识库列表与创建前表单",
+          "url": "https://cloud.dify.ai/datasets/create",
+          "scope": "知识库列表可搜索与标签筛选，空态提供即用型、自定义处理流程、外部API连接三种入口。即用型创建分选择数据源、文本分段清洗、处理完成；支持文件、Notion和Web数据源。当前账户每批1文件、15MB上限，升级提示50MB和批量上传。无文件时下一步禁用。 未上传、授权、创建或处理数据；文件限制仅代表所见账户方案。",
+          "accessedAt": "2026-09-14"
+        },
+        {
+          "id": "FP-9",
+          "title": "模型供应商集成",
+          "url": "https://cloud.dify.ai/integrations/model-provider",
+          "scope": "集成页分模型供应商、工具、数据来源、触发器、Agent策略、扩展和自定义端点。模型卡区分AI消息额度使用中和需要配置API Key，提供显示模型、添加密钥等入口，下方列更多供应商安装入口。 未读取、保存或填写凭据，未安装；未测试接入或推理。",
           "accessedAt": "2026-09-14"
         }
       ],
@@ -16251,7 +15833,7 @@
           "label": "最新",
           "parent": "话题浏览",
           "kind": "时间/热度排序与分组视图",
-          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；本次仅观察入口未检验算法。",
+          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；仅观察入口未检验算法。",
           "evidence": [
             "ld-home",
             "ld-categories"
@@ -16262,7 +15844,7 @@
           "label": "热门",
           "parent": "话题浏览",
           "kind": "时间/热度排序与分组视图",
-          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；本次仅观察入口未检验算法。",
+          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；仅观察入口未检验算法。",
           "evidence": [
             "ld-home",
             "ld-categories"
@@ -16273,7 +15855,7 @@
           "label": "排行榜",
           "parent": "话题浏览",
           "kind": "时间/热度排序与分组视图",
-          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；本次仅观察入口未检验算法。",
+          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；仅观察入口未检验算法。",
           "evidence": [
             "ld-home",
             "ld-categories"
@@ -16284,7 +15866,7 @@
           "label": "类别",
           "parent": "话题浏览",
           "kind": "时间/热度排序与分组视图",
-          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；本次仅观察入口未检验算法。",
+          "changes": "最新是新帖子活动，热门是近期热门，排行榜说明可按过去一年/月/周/日；仅观察入口未检验算法。",
           "evidence": [
             "ld-home",
             "ld-categories"
@@ -16581,7 +16163,7 @@
           "fact": "学习笔记和普通问题共享回复、编辑历史、标签与相关推荐；抽样笔记0回复，目录中也有大量非教程主题。",
           "interpretation": "知识内容可利用既有讨论结构积累，无需独立课程模板。",
           "tradeoff": "系列顺序与课程进度并非该样本的明确承载对象，目录信息纯度也需逐条判断。",
-          "alternative": "作者可能通过合集或别处维护系列，但本次没有验证。",
+          "alternative": "作者可能通过合集或别处维护系列，但没有验证。",
           "effectUnknown": "阅读是否完成、是否学会、是否等来后续、真实编辑协作成本未知。",
           "evidence": [
             "ld-wiki",
@@ -16661,7 +16243,7 @@
           "title": "分类总览局部",
           "url": "https://linux.do/categories",
           "what": "板块标题、用途与近期话题量",
-          "limitations": "裁掉右侧头像话题栏；内置浏览器截图缩放使图较小，只截前两个板块，全量子类以实时DOM盘点为准"
+          "limitations": "裁掉右侧头像话题栏；内置浏览器截图缩放使图较小，只截前两个板块，全量子类以页面DOM盘点为准"
         },
         {
           "id": "linuxdo-related-topics.png",

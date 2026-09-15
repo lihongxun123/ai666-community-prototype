@@ -107,16 +107,6 @@
       ]
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "objects": 0,
-      "detail": 0,
-      "listing": 0,
-      "indexed": 0,
-      "themes": [],
-      "forms": []
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "objects": 18,
@@ -202,43 +192,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "objects": 15,
-      "detail": 8,
-      "listing": 7,
-      "indexed": 0,
-      "themes": [
-        "个人表达",
-        "主题创作",
-        "历史混搭",
-        "科幻",
-        "故事插图",
-        "幻想",
-        "动物幻想",
-        "角色组合",
-        "生活幽默",
-        "关系叙事",
-        "节日生活",
-        "情感表达",
-        "插图动画",
-        "图生视频",
-        "梦境",
-        "混合媒介",
-        "幻想空间",
-        "情绪空间",
-        "故事幻想",
-        "幻想世界"
-      ],
-      "forms": [
-        "作者案例",
-        "提示词教程",
-        "任务教程",
-        "模板",
-        "精选作品"
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦",
       "objects": 10,
@@ -288,16 +241,6 @@
         "媒体文章中的作品条目",
         "媒体文章中的赛事作品条目"
       ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "objects": 0,
-      "detail": 0,
-      "listing": 0,
-      "indexed": 0,
-      "themes": [],
-      "forms": []
     },
     {
       "id": "leonardo",
@@ -3941,270 +3884,6 @@
       "titleKind": "研究者中文转述"
     },
     {
-      "id": "gl-nightcafe-01",
-      "platformId": "nightcafe",
-      "title": "用主题挑战建立个人创作习惯",
-      "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-      "theme": "个人表达；主题创作",
-      "intent": "受访创作者自述用日常挑战、自然图像与记忆展开创作。",
-      "form": "作者案例",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2026-08-17",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "创作者自述",
-        "三个模板入口",
-        "四个精选作品入口",
-        "主题挑战说明"
-      ],
-      "missing": [
-        "这是编辑选择的创作者自述，不能代表普通用户留存，也不构成治疗效果证据。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "来源：官方作者采访；案例中的自述者数：1；记录：受访者把每日主题挑战描述为晨间创作习惯；自述从梦境、记忆和自然中取材。；核对范围：编辑精选个案，不是普通用户留存统计；不证明健康效果",
-      "locator": "平台采访中的个人创作习惯、模板和作品链接",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-02",
-      "platformId": "nightcafe",
-      "title": "过去与未来的跨时代提示词教程",
-      "url": "https://nightcafe.studio/blogs/blog/past-future-ai-art",
-      "theme": "历史混搭；科幻",
-      "intent": "通过时代反差寻找创作题目。",
-      "form": "提示词教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2025-09-12",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "题材是创作游戏，不是历史复原；未见读者跟做数量。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "骑士、机器人等跨时代组合教程",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/past-future-ai-art"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/past-future-ai-art",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-03",
-      "platformId": "nightcafe",
-      "title": "让书中故事突破现实的提示词教程",
-      "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-      "theme": "故事插图；幻想",
-      "intent": "学习把书籍与现实空间组合为故事图像。",
-      "form": "提示词教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2026-04-17",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [
-        {
-          "field": "comments",
-          "value": "9",
-          "period": null,
-          "note": "页面显示9条；当前只读取第1页可见的5条，未翻页，不视为9位独立用户"
-        }
-      ],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "教程存在不证明用户读完、生成成功或继续创作。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "来源：教程评论第1页；读到的留言：5；页面留言总数：9；留言日期：2026-04-29；可见反馈：表达类型：使用经历；留言归纳：读者自述将文字想象转成画面，并混合两次创作制作下一本书的封面。；核对情况：读者自述，未查看其书籍与封面成果；表达类型：使用经历；留言归纳：读者自述为歌曲创作配图，也正在写书。；核对情况：未核对歌曲与书籍成品；表达类型：询问学习入口；留言归纳：读者认为教程有帮助，并询问是否有集中的学习网站。；核对情况：能确认继续寻找资料的表达，不能确认回访；表达类型：普通赞美；留言归纳：表示有帮助并致谢。；核对情况：没有具体使用结果；表达类型：普通赞美；留言归纳：简单积极评价。；核对情况：没有具体使用结果；核对范围：没有追更请求、失败细节或已验证回传；5条可见留言不代表平台人群份额。",
-      "locator": "主题示例和主体、光线、情绪的写法",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-04",
-      "platformId": "nightcafe",
-      "title": "不寻常组合的主题创作教程",
-      "url": "https://nightcafe.studio/blogs/blog/unlikely-duos-ai-art",
-      "theme": "动物幻想；角色组合",
-      "intent": "用反差搭档产生视觉故事。",
-      "form": "提示词教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2025-09-14",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "没有普通参与者反馈和再创作次数。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "组合动物、人物或物件的创作示例",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/unlikely-duos-ai-art"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/unlikely-duos-ai-art",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-05",
-      "platformId": "nightcafe",
-      "title": "日常冤家变搭档的创作教程",
-      "url": "https://nightcafe.studio/blogs/blog/everyday-enemies-ai-art",
-      "theme": "生活幽默；动物幻想",
-      "intent": "把日常矛盾改写成角色关系。",
-      "form": "提示词教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2025-09-11",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "无法得知这类题目是否比其他主题更受欢迎。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "猫与吸尘器等关系反转题目",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/everyday-enemies-ai-art"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/everyday-enemies-ai-art",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-06",
-      "platformId": "nightcafe",
-      "title": "大小反差朋友的创作教程",
-      "url": "https://nightcafe.studio/blogs/blog/small-big-ai-art-prompt-unlikely-friends",
-      "theme": "动物幻想；关系叙事",
-      "intent": "通过体型反差构造友谊场景。",
-      "form": "提示词教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2025-09-08",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "没有浏览、收藏、评论或留存指标。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "体型悬殊搭档与任务写法",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/small-big-ai-art-prompt-unlikely-friends"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/small-big-ai-art-prompt-unlikely-friends",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-07",
-      "platformId": "nightcafe",
-      "title": "母亲节贺卡制作教程",
-      "url": "https://nightcafe.studio/blogs/blog/how-to-create-ai-mothers-day-art-greeting-cards",
-      "theme": "节日生活；情感表达",
-      "intent": "制作母亲节贺卡与分享图。",
-      "form": "任务教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2026-05-06",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "季节性送礼需求不等于全年复访需求；未见真实收件反馈。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "鲜花、咖啡与卡片场景，附创作入口",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/how-to-create-ai-mothers-day-art-greeting-cards"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/how-to-create-ai-mothers-day-art-greeting-cards",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-08",
-      "platformId": "nightcafe",
-      "title": "黑白线稿转彩色动画教程",
-      "url": "https://nightcafe.studio/blogs/blog/how-to-animate-an-image-with-minimax-h3",
-      "theme": "插图动画；图生视频",
-      "intent": "把社区模板生成的黑白线稿变成彩色、有镜头运动的动画。",
-      "form": "任务教程",
-      "depth": "detail",
-      "sourceLevel": "platform-editorial",
-      "publishedAt": "2026-08-21",
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：文章明确说明使用生成式 AI",
-      "metrics": [],
-      "supplied": [
-        "具体任务说明",
-        "图例或示例入口",
-        "教程步骤或创作建议"
-      ],
-      "missing": [
-        "读取了教程文字，未播放验证演示视频，也未实操生成。",
-        "主题消费人数、浏览分母和持续使用情况未知"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "文章步骤从模板图像到运动提示词和结果检查",
-      "sourceUrls": [
-        "https://nightcafe.studio/blogs/blog/how-to-animate-an-image-with-minimax-h3"
-      ],
-      "objectKey": "https://nightcafe.studio/blogs/blog/how-to-animate-an-image-with-minimax-h3",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
       "id": "gl-openart-01",
       "platformId": "openart",
       "title": "旧照片修复与放大教程",
@@ -4681,223 +4360,6 @@
         "https://openart.ai/blog/post/stable-diffusion-prompts-for-cinematic"
       ],
       "objectKey": "https://openart.ai/blog/post/stable-diffusion-prompts-for-cinematic",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-09",
-      "platformId": "nightcafe",
-      "title": "梦境混合媒介模板",
-      "url": "https://creator.nightcafe.studio/template/D0RzpASNri30AGVTCpDS",
-      "theme": "梦境；混合媒介",
-      "intent": "作为个人主题创作的起点；由官方介绍说明",
-      "form": "模板",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页模板列表第1项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/template/D0RzpASNri30AGVTCpDS"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/template/D0RzpASNri30AGVTCpDS",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-10",
-      "platformId": "nightcafe",
-      "title": "超现实避难所模板",
-      "url": "https://creator.nightcafe.studio/template/L9rgyvL1S2d8I8XEKjjG",
-      "theme": "幻想空间；个人表达",
-      "intent": "作为个人主题创作的起点；由官方介绍说明",
-      "form": "模板",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页模板列表第2项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/template/L9rgyvL1S2d8I8XEKjjG"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/template/L9rgyvL1S2d8I8XEKjjG",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-11",
-      "platformId": "nightcafe",
-      "title": "个人精神空间模板",
-      "url": "https://creator.nightcafe.studio/template/KPpfj0dORrffMm3vvpJj",
-      "theme": "个人表达；情绪空间",
-      "intent": "作为个人主题创作的起点；由官方介绍说明",
-      "form": "模板",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页模板列表第3项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/template/KPpfj0dORrffMm3vvpJj"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/template/KPpfj0dORrffMm3vvpJj",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-12",
-      "platformId": "nightcafe",
-      "title": "精神空间主题作品",
-      "url": "https://creator.nightcafe.studio/creation/2P3sSSYpcVt1emM1xddO",
-      "theme": "个人表达；情绪空间",
-      "intent": "欣赏或寻找同主题作品；实际消费用途未知",
-      "form": "精选作品",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页精选作品列表第1项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/creation/2P3sSSYpcVt1emM1xddO"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/creation/2P3sSSYpcVt1emM1xddO",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-13",
-      "platformId": "nightcafe",
-      "title": "梦境混合媒介作品",
-      "url": "https://creator.nightcafe.studio/creation/Kz5le3P28wtfSLSCekrg",
-      "theme": "梦境；混合媒介",
-      "intent": "欣赏或寻找同主题作品；实际消费用途未知",
-      "form": "精选作品",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页精选作品列表第2项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/creation/Kz5le3P28wtfSLSCekrg"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/creation/Kz5le3P28wtfSLSCekrg",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-14",
-      "platformId": "nightcafe",
-      "title": "一千零一夜主题作品",
-      "url": "https://creator.nightcafe.studio/creation/JxoNseAJ6rko8dCiA2WH/1001-night",
-      "theme": "故事幻想",
-      "intent": "欣赏或寻找同主题作品；实际消费用途未知",
-      "form": "精选作品",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页精选作品列表第3项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/creation/JxoNseAJ6rko8dCiA2WH/1001-night"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/creation/JxoNseAJ6rko8dCiA2WH/1001-night",
-      "rechecked": false,
-      "titleKind": "研究者中文转述"
-    },
-    {
-      "id": "gl-nightcafe-15",
-      "platformId": "nightcafe",
-      "title": "另一个世界主题作品",
-      "url": "https://creator.nightcafe.studio/creation/cpPDCsb8BCBPMg5uLx3P",
-      "theme": "幻想世界",
-      "intent": "欣赏或寻找同主题作品；实际消费用途未知",
-      "form": "精选作品",
-      "depth": "listing",
-      "sourceLevel": "platform-editorial-listing",
-      "publishedAt": null,
-      "observedAt": "2026-09-12",
-      "aiEvidence": "来源：声明；依据：官方 AI 创作案例页将其列为模板或作品",
-      "metrics": [],
-      "supplied": [
-        "可识别的对象标题",
-        "对象入口链接"
-      ],
-      "missing": [
-        "对象详情直开失败，未读取完整提示词或参数",
-        "没有可见互动与使用反馈"
-      ],
-      "feedback": "未取得直接使用或观看反馈",
-      "locator": "作者案例页精选作品列表第4项",
-      "sourceUrls": [
-        "https://creator.nightcafe.studio/creation/cpPDCsb8BCBPMg5uLx3P"
-      ],
-      "objectKey": "https://creator.nightcafe.studio/creation/cpPDCsb8BCBPMg5uLx3P",
       "rechecked": false,
       "titleKind": "研究者中文转述"
     },
@@ -56912,15 +56374,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-          "recordId": "gl-nightcafe-01",
-          "originalText": "Daily Challenges",
-          "field": "samples[30].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1457",
@@ -56935,15 +56389,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-          "recordId": "gl-nightcafe-01",
-          "originalText": "morning pages",
-          "field": "samples[30].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1458",
@@ -56958,15 +56404,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/past-future-ai-art",
-          "recordId": "gl-nightcafe-02",
-          "originalText": "Victorian inventors",
-          "field": "samples[31].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1459",
@@ -56981,15 +56419,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "recordId": "gl-nightcafe-03",
-          "originalText": "Stories Breaking Reality",
-          "field": "samples[32].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1460",
@@ -57004,15 +56434,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "recordId": "gl-nightcafe-03",
-          "originalText": "dramatic shadows",
-          "field": "samples[32].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1461",
@@ -57027,15 +56449,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/unlikely-duos-ai-art",
-          "recordId": "gl-nightcafe-04",
-          "originalText": "Unlikely Duos",
-          "field": "samples[33].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1462",
@@ -57050,15 +56464,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/unlikely-duos-ai-art",
-          "recordId": "gl-nightcafe-04",
-          "originalText": "samurai cat",
-          "field": "samples[33].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1463",
@@ -57073,15 +56479,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/everyday-enemies-ai-art",
-          "recordId": "gl-nightcafe-05",
-          "originalText": "Everyday Enemies",
-          "field": "samples[34].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1464",
@@ -57096,15 +56494,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/everyday-enemies-ai-art",
-          "recordId": "gl-nightcafe-05",
-          "originalText": "vacuum cleaner",
-          "field": "samples[34].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1465",
@@ -57119,15 +56509,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/small-big-ai-art-prompt-unlikely-friends",
-          "recordId": "gl-nightcafe-06",
-          "originalText": "Unlikely Friends",
-          "field": "samples[35].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1466",
@@ -57142,15 +56524,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/how-to-create-ai-mothers-day-art-greeting-cards",
-          "recordId": "gl-nightcafe-07",
-          "originalText": "Mother’s Day",
-          "field": "samples[36].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1467",
@@ -57165,15 +56539,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/how-to-create-ai-mothers-day-art-greeting-cards",
-          "recordId": "gl-nightcafe-07",
-          "originalText": "Greeting Cards",
-          "field": "samples[36].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1468",
@@ -57188,15 +56554,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/how-to-animate-an-image-with-minimax-h3",
-          "recordId": "gl-nightcafe-08",
-          "originalText": "black-and-white coloring-page",
-          "field": "samples[37].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1469",
@@ -57211,15 +56569,7 @@
       "sourceType": [
         "官方模板或教程用词"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/how-to-animate-an-image-with-minimax-h3",
-          "recordId": "gl-nightcafe-08",
-          "originalText": "camera movement",
-          "field": "samples[37].evidenceExcerpt",
-          "sourceType": "官方模板或教程用词"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1470",
@@ -57876,15 +57226,7 @@
       "sourceType": [
         "竞品公开评论"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "recordId": "gl-nightcafe-03",
-          "originalText": "cover of my next book",
-          "field": "terms[106].term",
-          "sourceType": "竞品公开评论"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1499",
@@ -57899,15 +57241,7 @@
       "sourceType": [
         "竞品公开评论"
       ],
-      "sources": [
-        {
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "recordId": "gl-nightcafe-03",
-          "originalText": "images for songs",
-          "field": "terms[107].term",
-          "sourceType": "竞品公开评论"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "LX-1500",
@@ -60900,14 +60234,6 @@
           "recordLocator": "douyin-observed.json / samples / DC-090"
         },
         {
-          "id": "gl-nightcafe-03",
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-03"
-        },
-        {
           "id": "gl-openart-03",
           "url": "https://openart.ai/blog/post/stable-diffusion-prompts-for-book-cover",
           "platformId": "openart",
@@ -60924,14 +60250,6 @@
       ],
       "productionSources": [
         {
-          "id": "gl-nightcafe-03",
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-03"
-        },
-        {
           "id": "gl-openart-03",
           "url": "https://openart.ai/blog/post/stable-diffusion-prompts-for-book-cover",
           "platformId": "openart",
@@ -60942,7 +60260,6 @@
       ],
       "aiSupport": "辅助关系图和场景示意；书封生成不能替代阅读与解释。 未知：本组未取得消费者内容的明确AI生成声明，或只有工具/关键词材料",
       "competitorIds": [
-        "gl-nightcafe-03",
         "gl-openart-03"
       ],
       "deliveryForm": "章节精读＋人物关系图＋原文定位。关系与伏笔跨章节出现，图谱和定位能支持反复查阅，避免只剩剧情缩写。",
@@ -60951,7 +60268,7 @@
         "原作阅读与引用核对",
         "观点与改编边界"
       ],
-      "gapEvidence": "抖音已有名著和网文解读；NightCafe有读者自述为书制作封面。 书籍视觉生产与读者深读是不同任务，不能互相证明需求规模。",
+      "gapEvidence": "抖音已有名著和网文解读； 书籍视觉生产与读者深读是不同任务，不能互相证明需求规模。",
       "nextObservation": [
         "观察评论是问人物关系、情节还是求书封方法",
         "检查系列是否按阅读进度组织并存在跨章讨论"
@@ -61195,14 +60512,6 @@
           "evidenceDepth": "detail",
           "role": "competitor-supply",
           "recordLocator": "china-samples.json / samples / cn-liblib-09"
-        },
-        {
-          "id": "gl-nightcafe-02",
-          "url": "https://nightcafe.studio/blogs/blog/past-future-ai-art",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-02"
         }
       ],
       "producerRole": "故事改编者、编剧、视觉作者",
@@ -61227,21 +60536,12 @@
           "evidenceDepth": "detail",
           "role": "competitor-supply",
           "recordLocator": "china-samples.json / samples / cn-liblib-09"
-        },
-        {
-          "id": "gl-nightcafe-02",
-          "url": "https://nightcafe.studio/blogs/blog/past-future-ai-art",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-02"
         }
       ],
       "aiSupport": "支持角色、场景、分镜和动画；故事合理性不能由成图质量代替。 未知：本组未取得消费者内容的明确AI生成声明，或只有工具/关键词材料",
       "competitorIds": [
         "cn-tusi-01",
-        "cn-liblib-09",
-        "gl-nightcafe-02"
+        "cn-liblib-09"
       ],
       "deliveryForm": "独立短篇＋系列目录＋改编说明。民间故事适合单篇完整观看，目录便于连读，改编说明承接版本比较。",
       "returnReason": "相同作者风格、母题或下一篇故事；可观察行为：继续观看、讨论人物选择、比较原作。待观察，不等于已证明复访",
@@ -63586,18 +62886,7 @@
         },
         {
           "term": "Daily Challenges",
-          "sources": [
-            {
-              "id": "gl-nightcafe-01",
-              "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-              "recordLocator": "global-samples.json / samples / gl-nightcafe-01"
-            },
-            {
-              "id": "gl-nightcafe-01",
-              "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-              "recordLocator": "global-samples.json / samples / gl-nightcafe-01"
-            }
-          ]
+          "sources": []
         }
       ],
       "consumerSources": [
@@ -63616,30 +62905,6 @@
           "evidenceDepth": "listing",
           "role": "consumer-content-title",
           "recordLocator": "douyin-observed.json / samples / DC-175"
-        },
-        {
-          "id": "gl-nightcafe-01",
-          "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-01"
-        },
-        {
-          "id": "gl-nightcafe-09",
-          "url": "https://creator.nightcafe.studio/template/D0RzpASNri30AGVTCpDS",
-          "platformId": "nightcafe",
-          "evidenceDepth": "listing",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-09"
-        },
-        {
-          "id": "gl-nightcafe-10",
-          "url": "https://creator.nightcafe.studio/template/L9rgyvL1S2d8I8XEKjjG",
-          "platformId": "nightcafe",
-          "evidenceDepth": "listing",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-10"
         }
       ],
       "producerRole": "角色作者、故事编辑、视觉作者",
@@ -63648,38 +62913,9 @@
         "设计轻量但可持续的小事件",
         "保持画面与情绪连贯"
       ],
-      "productionSources": [
-        {
-          "id": "gl-nightcafe-01",
-          "url": "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-01"
-        },
-        {
-          "id": "gl-nightcafe-09",
-          "url": "https://creator.nightcafe.studio/template/D0RzpASNri30AGVTCpDS",
-          "platformId": "nightcafe",
-          "evidenceDepth": "listing",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-09"
-        },
-        {
-          "id": "gl-nightcafe-10",
-          "url": "https://creator.nightcafe.studio/template/L9rgyvL1S2d8I8XEKjjG",
-          "platformId": "nightcafe",
-          "evidenceDepth": "listing",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-10"
-        }
-      ],
+      "productionSources": [],
       "aiSupport": "可生成角色生活场景与风格变体；消费者效果、心理获益与稳定一致性未验证。 未知：本组未取得消费者内容的明确AI生成声明，或只有工具/关键词材料",
-      "competitorIds": [
-        "gl-nightcafe-01",
-        "gl-nightcafe-09",
-        "gl-nightcafe-10"
-      ],
+      "competitorIds": [],
       "deliveryForm": "固定角色短篇＋生活日记式系列＋主题参与。熟悉感依赖重复出现的角色和小变化；只追求每条视觉奇观难以累积关系。",
       "returnReason": "角色熟悉感和日常节奏形成观看理由；可观察行为：记住角色、评论其经历、参与下一题创作。待观察，不等于已证明复访",
       "humanWork": [
@@ -63775,14 +63011,6 @@
           "evidenceDepth": "detail",
           "role": "competitor-supply",
           "recordLocator": "china-samples.json / samples / cn-dify-06"
-        },
-        {
-          "id": "gl-nightcafe-03",
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-03"
         }
       ],
       "producerRole": "音乐评论者、演唱或制作知识作者",
@@ -63799,20 +63027,11 @@
           "evidenceDepth": "detail",
           "role": "competitor-supply",
           "recordLocator": "china-samples.json / samples / cn-dify-06"
-        },
-        {
-          "id": "gl-nightcafe-03",
-          "url": "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
-          "platformId": "nightcafe",
-          "evidenceDepth": "detail",
-          "role": "competitor-supply",
-          "recordLocator": "global-samples.json / samples / gl-nightcafe-03"
         }
       ],
       "aiSupport": "可辅助转写和视觉示意；配乐生成能力不等于音乐解析能力。 未知：本组未取得消费者内容的明确AI生成声明，或只有工具/关键词材料",
       "competitorIds": [
-        "cn-dify-06",
-        "gl-nightcafe-03"
+        "cn-dify-06"
       ],
       "deliveryForm": "带时间点的音乐解析＋歌词注释＋讨论。关键细节发生在具体时刻，时间定位能让听众对照听并形成自己的判断。",
       "returnReason": "新作品、重听发现和作者观点；可观察行为：返回重听片段、讨论解释、推荐同主题。待观察，不等于已证明复访",
@@ -63820,7 +63039,7 @@
         "音乐专业判断与引用权利",
         "事实背景和观点区分"
       ],
-      "gapEvidence": "有逐句解析与演唱评论标题；NightCafe有歌曲配图的生产者自述。 配图需求不能代表听众需要AI生成歌曲或解析。",
+      "gapEvidence": "有逐句解析与演唱评论标题； 配图需求不能代表听众需要AI生成歌曲或解析。",
       "nextObservation": [
         "观察留言是问技术、谈情绪还是找歌曲",
         "核查解析能否让读者定位到具体可听细节"
@@ -65839,11 +65058,10 @@
       },
       {
         "title": "系列、问题链与复用材料，比单次曝光更接近持续活跃",
-        "text": "《归雾镇》出现等更新的留言，《山海》以连续故事呈现；NightCafe 作者案例把每日挑战、模板和作品连接起来。这些是可观察的继续参与机制。对社区可以分别检验追看下一篇、围绕同题讨论、使用下一份材料、改进后交回作品，而不是要求所有读者都生成内容。主页复核已确认《山海》有后续和合集，追更留言需要结合后续交付判断，不能直接列为供给缺口。",
+        "text": "《归雾镇》出现等更新的留言，《山海》以连续故事呈现；这些是可观察的继续参与机制。对社区可以分别检验追看下一篇、围绕同题讨论、使用下一份材料、改进后交回作品，而不是要求所有读者都生成内容。主页复核已确认《山海》有后续和合集，追更留言需要结合后续交付判断，不能直接列为供给缺口。",
         "urls": [
           "https://www.douyin.com/video/7675325310220422450",
-          "https://www.douyin.com/video/7663756336345173258",
-          "https://nightcafe.studio/blogs/blog/ai-art-and-art-therapy"
+          "https://www.douyin.com/video/7663756336345173258"
         ]
       },
       {
@@ -65877,7 +65095,6 @@
         "title": "抖音上的消费机会，还要证明社区能提供继续来的理由",
         "text": "把抖音热门内容搬到社区，仍要面对用户已能在抖音直接看完的问题。社区可能增加的价值包括出处与素材、系列索引、可编辑交付、问题答复、同题共创和持续纠错。哪一种能带来再次使用，需分开验证；当前不按收入或 Token 消耗给方向排序。",
         "urls": [
-          "https://nightcafe.studio/blogs/blog/turn-stories-into-ai-art-prompt-guide",
           "https://www.douyin.com/video/7673074764340650597"
         ]
       }

@@ -464,172 +464,6 @@
       ]
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "homepage": "https://civitai.com/",
-      "archetype": "围绕模型资源组织例图、改作与作者协作",
-      "thesis": "分析：核心内容是一份资源连同它被使用的证据。合集和改作让原作者吸纳更多例子，也把筛选、解释与回报分配带进社区。",
-      "audience": "模型与 LoRA 作者供给资源，生成者试用并交回作品，合集主持人整理内容；各类用户占比未知。",
-      "content": [
-        {
-          "form": "资源及使用例图",
-          "unit": "模型版本、关联图像与资源归因。",
-          "purpose": "帮助读者从效果找到所用资源。",
-          "example": "Image Resource Tracking 实现说明。",
-          "sourceIds": [
-            "o8-civi-1"
-          ]
-        },
-        {
-          "form": "改作投稿",
-          "unit": "围绕原作或作者主题提交新结果，经采用获得展示。",
-          "purpose": "让使用者成为补充案例的作者。",
-          "example": "Creator Collab Update 公告。",
-          "sourceIds": [
-            "o8-civi-3"
-          ]
-        },
-        {
-          "form": "协作合集",
-          "unit": "有封面、说明及投稿权限的图片、帖子或模型集合。",
-          "purpose": "承接主题策展和多人维护。",
-          "example": "Collaborative Collections 实现说明。",
-          "sourceIds": [
-            "o8-civi-2"
-          ]
-        }
-      ],
-      "mechanisms": [
-        {
-          "stage": "discovery",
-          "title": "沿例图追溯资源",
-          "fact": "实现说明允许按模型关联图像；资源信息可自动检测，也可由上传者手工填写。",
-          "analysis": "效果与方法相邻，能缩短找资源的过程。",
-          "limitation": "手填关联不能证明该图确由该资源生成，更不证明可复现。",
-          "sourceIds": [
-            "o8-civi-1"
-          ]
-        },
-        {
-          "stage": "participation",
-          "title": "把改作纳入作者展示",
-          "fact": "实读公告介绍改作投稿被采用后的展示机会。",
-          "analysis": "原作者提供起点和受众，参与者用具体变体换取被看见的机会。",
-          "limitation": "公告访问失败；沿用正文，不补写实际曝光增量。",
-          "sourceIds": [
-            "o8-civi-3"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "投稿与管理分权",
-          "fact": "实现文档分别设置公开投稿、审核队列和受邀协作者；合集不等同管理员专用的 Contest 模式。",
-          "analysis": "主持人对主题和质量负责，普通成员不必取得管理权。",
-          "limitation": "文档说明实现，未实测生产权限；开放投稿也不总是需要审核。",
-          "sourceIds": [
-            "o8-civi-2"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "保留再次投稿入口",
-          "fact": "实现文档称提交可自动关注合集，挑战合集另有关闭该行为的设置。",
-          "analysis": "保存入口方便连续贡献，但关注可能是提交的副作用。",
-          "limitation": "不能把关注量直接解释为主动订阅或复访意愿。",
-          "sourceIds": [
-            "o8-civi-2"
-          ]
-        },
-        {
-          "stage": "monetization",
-          "title": "资源收益与参与奖励分开",
-          "fact": "作者计划实现说明有资格、结算和提现门槛；并非所有 Buzz 都可兑现。",
-          "analysis": "收入承诺需要覆盖维护资源的劳动，才能支持持续供给。",
-          "limitation": "未核线上资格或到账；公告双倍奖励属于限时活动。",
-          "sourceIds": [
-            "o8-civi-4",
-            "o8-civi-3"
-          ]
-        }
-      ],
-      "journey": {
-        "steps": [
-          "看例图找到资源",
-          "试用并形成自己的变体",
-          "投稿到相关合集并等待适用的审核",
-          "回到同一主题继续提交或查看反馈"
-        ],
-        "limitation": "依据公告和实现说明整理的可用路径，未测完成率与留存。"
-      },
-      "roles": {
-        "official": "维护资源关联、奖励规则及平台治理。",
-        "creators": "提供资源、示例，并参与筛选和解释。",
-        "members": "试用、交回变体或整理合集。",
-        "limitation": "没有各角色工时、供给集中度或有效贡献率。"
-      },
-      "takeaway": {
-        "learn": "把一份方法的例图、输入条件和使用者变体放在同一处。",
-        "prerequisites": "现有团队先要有能维护案例的作者；运营须能核查归因，产品定义可复用标准。",
-        "avoid": "尚无成熟资源供给时，复杂分账与开放合集缺少维护对象。"
-      },
-      "evidenceScope": "新读两份官方代码库说明，复用公告与收益文档；实现、公开宣布和线上兑现分别标记。",
-      "gaps": [
-        "改作被采用后实际得到多少曝光与再使用？",
-        "主持人每周审核多久，多少合集持续更新？",
-        "资源作者是否取得足以覆盖维护成本的收益？"
-      ],
-      "sources": [
-        {
-          "id": "o8-civi-1",
-          "title": "Image Resource Tracking",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
-          "publisher": "Civitai 官方代码库",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "implementation-doc",
-          "supports": "资源关联、检测与手填归因",
-          "limitation": "主分支实现说明，不是线上效果证明。"
-        },
-        {
-          "id": "o8-civi-2",
-          "title": "Collaborative Collections",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
-          "publisher": "Civitai 官方代码库",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "implementation-doc",
-          "supports": "投稿、审核、协作者、自动关注及挑战例外",
-          "limitation": "未实测生产权限与开放范围。"
-        },
-        {
-          "id": "o8-civi-3",
-          "title": "The Creator Collab Update: 4 New Ways to Get Seen and Earn",
-          "url": "https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn",
-          "publisher": "Civitai",
-          "date": "浏览器显示2026-08-20；时区可能差一天",
-          "accessedAt": "2026-09-09",
-          "access": "prior-research",
-          "type": "official-page",
-          "supports": "改作、协作合集、采用后的展示与限时奖励",
-          "limitation": "正文已读；公开抓取失败，未复核当前活动状态。"
-        },
-        {
-          "id": "o8-civi-4",
-          "title": "Creator Program - Developer Guide",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md",
-          "publisher": "Civitai 官方代码库",
-          "date": "未标绝对日期；查阅2026-09-09",
-          "accessedAt": "2026-09-09",
-          "access": "prior-research",
-          "type": "implementation-doc",
-          "supports": "作者资格、结算和兑现条件",
-          "limitation": "复用v7；未证明生产资格或实际提现。"
-        }
-      ]
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "homepage": "https://www.seaart.ai/",
@@ -958,185 +792,6 @@
       ]
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "homepage": "https://creator.nightcafe.studio/",
-      "archetype": "以主题、评审和小型游戏组织兴趣参与",
-      "thesis": "分析：运营给用户一个今天能参与的题目，再安排交作品、看结果和学习方法的时间。价值包含表达和被看见，不能只用生产效率解释。",
-      "audience": "兴趣创作者参赛，成员兼任评审，主持人组织小型挑战；付费者与免费参与者的实际分布未知。",
-      "content": [
-        {
-          "form": "每日挑战作品",
-          "unit": "符合当次主题与资格的作品及评审结果。",
-          "purpose": "让不同作者围绕同一道题表达。",
-          "example": "Daily Challenge 资格、评分与排名说明。",
-          "sourceIds": [
-            "o8-night-1"
-          ]
-        },
-        {
-          "form": "成员发起的小游戏",
-          "unit": "聊天室中的题目、投稿、投票或排序与结果。",
-          "purpose": "供小群体按自己的规则参与。",
-          "example": "Creating a Game 的四阶段。",
-          "sourceIds": [
-            "o8-night-2"
-          ]
-        },
-        {
-          "form": "Promptle 成绩卡与步骤",
-          "unit": "起始图、目标图、最终图和编辑步骤；提示词另选公开。",
-          "purpose": "比较尝试并在赛后学习。",
-          "example": "Promptle 每日改图题。",
-          "sourceIds": [
-            "o8-night-3"
-          ]
-        }
-      ],
-      "mechanisms": [
-        {
-          "stage": "activation",
-          "title": "先给题目再开始创作",
-          "fact": "Studio 可预查指定挑战资格；使用 Daily Challenge Checks 时另检查完整演化链。",
-          "analysis": "减少不知道画什么的犹豫，也让约束在投入前可见。",
-          "limitation": "演化链检查发生在投稿时；各挑战规则不同。",
-          "sourceIds": [
-            "o8-night-1"
-          ]
-        },
-        {
-          "stage": "supply",
-          "title": "让成员承担小活动主持",
-          "fact": "成员游戏可设提示词和模型条件，有投稿、评审和公布结果阶段；公开聊天室游戏可被搜索发现。",
-          "analysis": "平台提供框架，主持人承担选题和聚人工作。",
-          "limitation": "游戏默认仅持链接可加入；未核活跃主持人数量。",
-          "sourceIds": [
-            "o8-night-2"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "投票机制也需要治理",
-          "fact": "评分模式优先展示少票作品并作废异常票；部分挑战采用前十排序。另有帮助页说明曾出现为积分快速投票。",
-          "analysis": "参与奖励会带来噪声，评审公平需要额外维护。",
-          "limitation": "不能给所有挑战套同一算法；治理成效未公开。",
-          "sourceIds": [
-            "o8-night-1",
-            "o8-night-4"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "次日查看方法与新题",
-          "fact": "Promptle 每日更新，最多五步；提示词分享默认关闭且当天结束后才可见，完成可计入连续活跃。",
-          "analysis": "把结果展示、方法学习和下一题分开，提供不同返回理由。",
-          "limitation": "Promptle 仍为 Alpha；规则不证明真实留存。",
-          "sourceIds": [
-            "o8-night-3"
-          ]
-        },
-        {
-          "stage": "monetization",
-          "title": "兴趣参与与资源付费相邻",
-          "fact": "Promptle 免费；核验的 Fast/Relax 规则则区分资源、等待及适用模型。",
-          "analysis": "反复试图改好作品可能形成资源消费需求。",
-          "limitation": "付费作用属于推断，没有活动到订阅的转化数据。",
-          "sourceIds": [
-            "o8-night-3",
-            "o8-night-5"
-          ]
-        }
-      ],
-      "journey": {
-        "steps": [
-          "找到今日题目或成员游戏",
-          "按该题规则交作品",
-          "参与适用的评审并查看结果",
-          "学习自愿公开的方法，再做新题"
-        ],
-        "limitation": "这是不同活动可提供的参与链，非每位成员都会完成。"
-      },
-      "roles": {
-        "official": "维护每日题目、资格检查与评审治理。",
-        "creators": "产出参赛作品，自愿解释步骤。",
-        "members": "评分或排序，也可担任小游戏主持。",
-        "limitation": "主持、审核和争议处理工时未知。"
-      },
-      "takeaway": {
-        "learn": "一道题可以同时产出成品比较和方法讨论，但应允许作者选择公开哪些步骤。",
-        "prerequisites": "团队需要能出题并解释结果的作者，以及持续主持的运营时间。",
-        "avoid": "缺少内容供给时先上每日赛程、积分和排行榜，会增加供稿与治理负担。"
-      },
-      "evidenceScope": "新读四份挑战与游戏规则，复用资源说明；没有新增参赛或生成，未将 Alpha 当成熟增长机制。",
-      "gaps": [
-        "有多少人次日回来学习，而非只领活动奖励？",
-        "成员游戏多久停办，原因与主持工时是什么？",
-        "评审争议与异常票治理耗费多少人力？"
-      ],
-      "sources": [
-        {
-          "id": "o8-night-1",
-          "title": "Daily Challenge: Eligibility, Rating & Ranking",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-          "publisher": "NightCafe",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "资格、演化链、评分公平与部分挑战排序",
-          "limitation": "各挑战以自身规则为准。"
-        },
-        {
-          "id": "o8-night-2",
-          "title": "Creating a Game (Community Challenge)",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-          "publisher": "NightCafe",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "成员主持、发现范围、四阶段与规则选项",
-          "limitation": "不包含实际游戏活跃、完成和持续率。"
-        },
-        {
-          "id": "o8-night-3",
-          "title": "Promptle: The Daily AI Art Puzzle",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-          "publisher": "NightCafe",
-          "date": "未标绝对日期；页面标为Alpha",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "每日任务、成绩卡、可选延后分享提示与连续活跃",
-          "limitation": "试验功能；成绩卡不等同作品自动发布到Explore。"
-        },
-        {
-          "id": "o8-night-4",
-          "title": "How is downvoting in the Daily challenge handled?",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
-          "publisher": "NightCafe",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "为积分快速投票的描述、延迟及异常票处理",
-          "limitation": "官方治理说明，不是效果审计。"
-        },
-        {
-          "id": "o8-night-5",
-          "title": "Fast Credits vs Relax Credits",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-          "publisher": "NightCafe",
-          "date": "未标绝对日期；查阅2026-09-09",
-          "accessedAt": "2026-09-09",
-          "access": "prior-research",
-          "type": "official-rule",
-          "supports": "资源消费与等待条件",
-          "limitation": "复用；不比较当前单次任务价格。"
-        }
-      ]
-    },
-    {
       "id": "jimeng",
       "name": "即梦AI",
       "homepage": "https://jimeng.jianying.com/",
@@ -1454,161 +1109,6 @@
       ]
     },
     {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "homepage": "https://www.midjourney.com/",
-      "archetype": "围绕审美参考、作品迭代与专门求助组织使用",
-      "thesis": "分析：核心是让用户积累自己的视觉判断和创作资产；分享与求助辅助生成。官网 Rooms 下线也显示，实时活动、协作与支持未必适合由同一入口承接。",
-      "audience": "视觉创作者生成和修改图像，风格探索者整理参考，社区成员与 helpers 答疑；职业和用途比例没有公开分布。",
-      "content": [
-        {
-          "form": "作品及其迭代",
-          "unit": "生成图像、变体、编辑结果及图生视频。",
-          "purpose": "保留从初稿到进一步修改的对象。",
-          "example": "Getting Started 的生成与修改路径。",
-          "sourceIds": [
-            "o8-mid-1"
-          ]
-        },
-        {
-          "form": "Moodboard 风格参考组",
-          "unit": "选定图片组成的风格板，含名称、ID 和版本代码。",
-          "purpose": "把难以描述的审美保留下来使用。",
-          "example": "Moodboards 官方指南。",
-          "sourceIds": [
-            "o8-mid-2"
-          ]
-        },
-        {
-          "form": "操作教学与问题讨论",
-          "unit": "首图教程、提示与参考用法，以及 Discord 求助讨论。",
-          "purpose": "解释工具操作和具体创作问题。",
-          "example": "入门指南及 Rooms 下线后的支持入口。",
-          "sourceIds": [
-            "o8-mid-1",
-            "o8-mid-3"
-          ]
-        }
-      ],
-      "mechanisms": [
-        {
-          "stage": "activation",
-          "title": "从能生成到会修改",
-          "fact": "官方入门路径先说明订阅，再引导首图、变体、编辑、参考与视频。",
-          "analysis": "教学按创作动作展开，可让初次结果接上后续操作。",
-          "limitation": "文档路径不等于新手无需指导即可完成。",
-          "sourceIds": [
-            "o8-mid-1"
-          ]
-        },
-        {
-          "stage": "participation",
-          "title": "用参考图交流风格",
-          "fact": "Moodboard 可从上传、URL 或已有图库选图，并通过参数用于生成。",
-          "analysis": "用户能用一组视觉参照表达意图，而非反复猜词。",
-          "limitation": "参考板不是完整制作流程；未验证他人复用同样效果。",
-          "sourceIds": [
-            "o8-mid-2"
-          ]
-        },
-        {
-          "stage": "return",
-          "title": "留住版本和个人资产",
-          "fact": "旧提示中的 Moodboard 代码保留历史风格版本；Organize 提供作品下载、筛选和文件夹。",
-          "analysis": "重返旧项目时有可找回的作品与风格起点。",
-          "limitation": "资产积累可能支持复访，但没有相应留存数据。",
-          "sourceIds": [
-            "o8-mid-1",
-            "o8-mid-2"
-          ]
-        },
-        {
-          "stage": "governance",
-          "title": "拆开不同的社区用途",
-          "fact": "2026年2月26日官方宣布撤下网站 Rooms，解释其同时承担太多目标且扩展不足，并指向帮助页与 Discord。",
-          "analysis": "支持、交流和活动各有组织成本，入口统一并不保证运作顺畅。",
-          "limitation": "这是单项实验的官方复盘，不代表全部社区功能下线。",
-          "sourceIds": [
-            "o8-mid-3"
-          ]
-        },
-        {
-          "stage": "monetization",
-          "title": "使用工具先经过订阅",
-          "fact": "当前入门指南把订阅列为首次创建前的步骤。",
-          "analysis": "教学和作品交流可能帮助付费用户用好工具，社区活动本身并非已确认的收费对象。",
-          "limitation": "无公开证据拆出交流、风格收藏对续费的贡献。",
-          "sourceIds": [
-            "o8-mid-1"
-          ]
-        }
-      ],
-      "journey": {
-        "steps": [
-          "通过教学或社区讨论理解一种效果",
-          "订阅后生成并用参考继续修改",
-          "保存作品和对应风格代码",
-          "回到旧素材继续项目，遇到问题到专门渠道求助"
-        ],
-        "limitation": "指南提供的创作链，不是从免费社区到付费的实测漏斗。"
-      },
-      "roles": {
-        "official": "制作教学、维护生成与资产工具，分配支持入口。",
-        "creators": "制作图像并整理可表达自己风格的参考。",
-        "members": "展示作品、提出问题或帮助他人。",
-        "limitation": "helpers 的排班、报酬和问题解决率未核。"
-      },
-      "takeaway": {
-        "learn": "内容应留下继续创作所需的参考和版本；答疑入口对应具体问题。",
-        "prerequisites": "团队需先明确 MakeNow 案例哪些参数和素材可复用，运营能整理常见问题。",
-        "avoid": "作者和主持资源不足时，把聊天、活动、协作全部塞入同一房间会扩大日常负担。"
-      },
-      "evidenceScope": "新读入门、Moodboards 与 Rooms 官方公告；未执行生成，也未把 Discord 的存在当作已解决求助。",
-      "gaps": [
-        "创作求助的响应速度和真正解决率如何？",
-        "用户主要因模型效果、资产积累还是社区续费？",
-        "Rooms 下线后的活动与协作需求由谁承接？"
-      ],
-      "sources": [
-        {
-          "id": "o8-mid-1",
-          "title": "Getting Started Guide",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide",
-          "publisher": "Midjourney",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "订阅、生成修改、参考、Organize及分享求助入口",
-          "limitation": "产品指南，无完成率与续费归因。"
-        },
-        {
-          "id": "o8-mid-2",
-          "title": "Moodboards",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-          "publisher": "Midjourney",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-rule",
-          "supports": "风格参考组、输入来源、ID与历史代码",
-          "limitation": "参数适用版本有限；未验证跨作者复用效果。"
-        },
-        {
-          "id": "o8-mid-3",
-          "title": "An update on Rooms",
-          "url": "https://updates.midjourney.com/an-update-on-rooms/",
-          "publisher": "Midjourney",
-          "date": "发布2026-02-26",
-          "accessedAt": "2026-09-09",
-          "access": "full-page",
-          "type": "official-page",
-          "supports": "网站Rooms下线、自述原因和支持去向",
-          "limitation": "只涉及网站Rooms，不能推断全部社交失败或新替代品已交付。"
-        }
-      ]
-    },
-    {
       "id": "leonardo",
       "name": "Leonardo.Ai",
       "homepage": "https://leonardo.ai/",
@@ -1766,7 +1266,7 @@
           "access": "full-page",
           "type": "official-rule",
           "supports": "商品示例、分步输入、成本、迭代及分享边界",
-          "limitation": "自建、社区分享与API接入仍标为未来；未核线上全账户状态。"
+          "limitation": "该产品帮助的未来能力表述不能用于否定预制蓝图 API；执行范围以 Blueprints Guide 为准，普通作者发布资格与合作条件未确认。"
         },
         {
           "id": "o8-leo-3",
@@ -1791,6 +1291,18 @@
           "type": "official-rule",
           "supports": "策选、作品分享、权益与申请暂停提示",
           "limitation": "页内仍保留申请步骤，但顶部状态优先；实际交付、付款未核。"
+        },
+        {
+          "id": "o8-leo-api-guide",
+          "title": "Blueprints Guide",
+          "url": "https://docs.leonardo.ai/docs/blueprints-guide",
+          "publisher": "Leonardo.Ai",
+          "date": "页面相对更新时间；绝对日期未核",
+          "accessedAt": "2026-09-16",
+          "access": "full-page",
+          "type": "official-rule",
+          "supports": "预制蓝图版本、输入、成本、执行状态和输出获取已有 API 文档；自建仍标 Coming Soon。",
+          "limitation": "文档不是实测调用结果；不据此推断社区投稿、作者报酬或维护义务。"
         }
       ]
     },
@@ -1863,7 +1375,7 @@
         },
         {
           "stage": "return",
-          "title": "项目接住下一轮修改",
+          "title": "项目接住后续修改",
           "fact": "Projects 汇集会话、流程和资产；项目内内容向成员可见，项目外默认私有。",
           "analysis": "持续工作可以围绕项目推进，不依赖不断公开发帖。",
           "limitation": "没有项目复用、完成率或协作人数分布。",
@@ -1899,7 +1411,7 @@
           "从成片和幕后材料理解做法",
           "学习并构建或使用团队流程",
           "在项目中迭代、共享素材",
-          "为下一轮交付继续使用并维护方法"
+          "为后续交付继续使用并维护方法"
         ],
         "limitation": "公开展示到团队制作的分析路径，不是已确认单一用户漏斗。"
       },
@@ -3050,13 +2562,12 @@
   "synthesis": [
     {
       "title": "资源供给与维护",
-      "text": "RunningHub按电商、设计等任务分类，并分别管理推荐和作者奖励；Liblib作者样本提供参数、排错与版本更新；吐司与Tensor.Art采用不同激励规则。可复用内容需交代效果、输入、配置及维护，运营同时负责资源发现和作者回报。SeaArt奖励资格包括付款与使用条件，但不能据此计算留存；Civitai资源关联与协作合集仍需核对生产页面。",
+      "text": "RunningHub按电商、设计等任务分类，并分别管理推荐和作者奖励；Liblib作者样本提供参数、排错与版本更新；吐司与Tensor.Art采用不同激励规则。可复用内容需交代效果、输入、配置及维护，运营同时负责资源发现和作者回报。SeaArt奖励资格包括付款与使用条件，但不能据此计算留存；",
       "profileIds": [
         "liblib",
         "runninghub",
         "tusi",
-        "seaart",
-        "civitai"
+        "seaart"
       ],
       "sourceIds": [
         "o8-rh-1",
@@ -3089,10 +2600,8 @@
     },
     {
       "title": "活动参与与项目复用",
-      "text": "NightCafe以每日题目、提交、评分和结果组织参与，也允许成员发起挑战；Promptle仍标为Alpha。Midjourney Moodboards、Leonardo Collections和Runway Projects则保存个人或团队下次创作可用的材料。活动需要选题、评分和治理，项目复用需要保存、检索和继续编辑。Midjourney于2026年2月移除网页Rooms，官方说明涉及多用途混用的问题。两类机制都需持续维护，其回访效果尚缺可比数据。",
+      "text": "Promptle仍标为Alpha。活动需要选题、评分和治理，项目复用需要保存、检索和继续编辑。两类机制都需持续维护，其回访效果尚缺可比数据。",
       "profileIds": [
-        "nightcafe",
-        "midjourney",
         "leonardo",
         "runway"
       ],
@@ -3154,13 +2663,13 @@
     }
   ],
   "stats": {
-    "profiles": 18,
-    "contentForms": 67,
-    "mechanisms": 86,
-    "sources": 70,
-    "distinctUrls": 70,
-    "fullPageSources": 64,
-    "priorResearchSources": 6,
+    "profiles": 15,
+    "contentForms": 58,
+    "mechanisms": 71,
+    "sources": 58,
+    "distinctUrls": 58,
+    "fullPageSources": 55,
+    "priorResearchSources": 3,
     "indexOnlySources": 0
   }
 }

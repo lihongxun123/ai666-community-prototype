@@ -56,11 +56,8 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 作品图文流
 
-[Midjourney Explore](https://www.midjourney.com/explore)（18家）；[Leonardo Community Feed](https://app.leonardo.ai/)（18家）
 
-**已确认事实与样本：**Midjourney 官方说明：Explore 展示成员图片和视频，支持搜索及多种排序；作品可查看作者、提示词和设置，并可复用图片或提示词。Leonardo 帮助页也描述从公共作品进入 Remix、放大、图生视频或参考图操作。 [Website Overview](https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview)，[How to Write Great Text-to-Image Prompts](https://intercom.help/leonardo-ai/en/articles/8942657-how-to-write-great-text-to-image-prompts)，[Commercial Usage](https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage)
 
-**发现入口：**先用结果图选择内容。Midjourney 提供个性推荐、随机、热度与按周期排行；Leonardo 文档说明从 Community Feed 点图查看提示词。
 
 **详情如何展开：**作品是主视觉，生成信息解释它如何产生，再创作动作连接下一步。这里的参数属于作品上下文，不等于完整项目、所有输入素材或稳定复现保证。
 
@@ -72,7 +69,6 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 **基础承载分析：**分析：清楚的作品预览、作者归属、详情入口、发现与找回方式；详情说明可复用哪些内容。
 
-**增强做法与分析：**已观察：Midjourney 的 Style Explorer 将风格码、样图集合和试用入口关联；竞争价值在结构关联，不能仅归功于瀑布流。
 
 **持续成本分析：**分析：依赖持续作品供给、内容审核、可检索标签与生成信息完整性；风格相近作品过多会增加筛选负担。
 
@@ -82,7 +78,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 视频作品与合集
 
-[Runway Gen:48 / AIF](https://runway.com/gen48)（18家）
+[Runway Gen:48 / AIF](https://runway.com/gen48)（15家）
 
 **已确认事实与样本：**Gen:48 页面按届次归档获奖影片，条目可见片名、封面、导演、时长及奖项。AIF 2026 影片展示还提供故事简介。Runway 的创作者案例文章把完整影片播放器与分步骤幕后记录放在同页。 [Gen:48](https://runway.com/gen48)，[AIF 2026](https://aif.runwayml.com/)，[Generating a film in 48 hours with director/producer Gabe Michael](https://runway.com/customers/48-hours-to-generate-a-film)
 
@@ -108,7 +104,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 短动态
 
-[Hugging Face Posts](https://huggingface.co/posts)（18家）
+[Hugging Face Posts](https://huggingface.co/posts)（15家）
 
 **已确认事实与样本：**Posts 页面可见作者、时间、正文、图片、链接、表情反应和回复入口。样本同时包含成果发布、尚在测试的体验，以及发布受挫后准备继续实验的更新。功能说明将想法和新发布均列为用途。 [Hugging Face Posts](https://huggingface.co/posts)，[Social Post Explorers — About Posts](https://huggingface.co/social-post-explorers)
 
@@ -134,7 +130,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 长图文、教程与案例
 
-[Datawhale：LLM Cookbook迭代优化章节](https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md)（18家）
+[Datawhale：LLM Cookbook迭代优化章节](https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md)（15家）
 
 **已确认事实与样本：**Datawhale项目同时提供在线阅读、PDF和Notebook材料。迭代优化章节按任务、初始提示、输出问题和后续修改展开，正文穿插代码、结果与解释；仓库允许通过Issue和PR提出问题或修改。 [LLM Cookbook项目说明](https://github.com/datawhalechina/llm-cookbook)，[第三章：迭代优化](https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md)
 
@@ -160,7 +156,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 分章课程
 
-[Runway Academy](https://academy.runwayml.com/course/custom-workflows)（18家）；[Hugging Face Diffusion Course](https://huggingface.co/learn/diffusion-course/unit1/1)（18家）
+[Runway Academy](https://academy.runwayml.com/course/custom-workflows)（15家）；[Hugging Face Diffusion Course](https://huggingface.co/learn/diffusion-course/unit1/1)（15家）
 
 **已确认事实与样本：**Runway 工作流课程列出学习目标、难度、总时长和三个带时长的章节。Hugging Face 单元页组织文字导读、教学视频、Notebook 和项目任务；练习页给出代码、示例输出及修改提示。 [Building Custom Workflows](https://academy.runwayml.com/course/custom-workflows)，[Unit 1: An Introduction to Diffusion Models](https://huggingface.co/learn/diffusion-course/unit1/1)，[Introduction to Diffusers](https://huggingface.co/learn/diffusion-course/unit1/2)
 
@@ -186,7 +182,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 主题讨论、问答与Wiki
 
-[LINUX DO：知识库管理讨论](https://linux.do/t/topic/2868771)（18家）；[Discourse：主题与Wiki机制](https://www.discourse.org/features)（专项参照）
+[LINUX DO：知识库管理讨论](https://linux.do/t/topic/2868771)（15家）；[Discourse：主题与Wiki机制](https://www.discourse.org/features)（专项参照）
 
 **已确认事实与样本：**LINUX DO实际话题将问题、不同成员回复、引用和作者追问保留在同一页面。Discourse官方说明支持帖子修订历史、引用上下文和多人编辑Wiki；Solved插件可让话题采纳答案。这些是不同能力，不能把某个普通讨论帖默认称为Wiki或已解决问答。 [AI时代大家是怎么管理自己的知识库的？](https://linux.do/t/topic/2868771)，[Discourse Features](https://www.discourse.org/features)，[Configuring wiki settings](https://meta.discourse.org/t/configuring-wiki-settings/30802)，[Discourse Plugin Directory](https://www.discourse.org/plugins)
 
@@ -212,7 +208,7 @@ Hugging Face Posts支持分享进展与想法，LINUX DO话题保留追问和回
 
 ## 专题合集与策展
 
-[Hugging Face：NeoMME合集](https://huggingface.co/collections/Hcompany/neomme)（18家）
+[Hugging Face：NeoMME合集](https://huggingface.co/collections/Hcompany/neomme)（15家）
 
 **已确认事实与样本：**Hugging Face合集支持把模型、数据集、应用和论文放在同一页，并允许排序、说明与图片补充。NeoMME实际合集把论文、多个模型版本和检索Demo关联在一起；发现页的合集卡片先预览其中部分条目。 [Collections](https://huggingface.co/docs/hub/collections)，[Collections发现页](https://huggingface.co/collections)，[NeoMME Collection](https://huggingface.co/collections/Hcompany/neomme)
 
@@ -246,7 +242,7 @@ NeoMME卡片先给主题、来源和部分条目预览；论文、模型、Demo�
 
 ## 提示词与变量模板
 
-[WaytoAGI：Deep Research产品对比](https://www.waytoagi.com/zh/prompts/1940)（18家）
+[WaytoAGI：Deep Research产品对比](https://www.waytoagi.com/zh/prompts/1940)（15家）
 
 **已确认事实与样本：**WaytoAGI具体条目提供用途说明、完整提示词、待替换的产品与需求位置，以及同主题的其他提示词入口。Datawhale的具体章节进一步展示提示词怎样按输出问题迭代；两者分别偏直接取用与方法讲解。 [Deep Research：产品对比](https://www.waytoagi.com/zh/prompts/1940)，[第三章：迭代优化](https://github.com/datawhalechina/llm-cookbook/blob/main/docs/C1/3.%20%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%20Iterative.md)
 
@@ -272,7 +268,7 @@ NeoMME卡片先给主题、来源和部分条目预览；论文、模型、Demo�
 
 ## 模型版本资源页
 
-[Tensor.Art：MooMooE-commerce V1](https://tensor.art/models/662744072865292090)（18家）；[LiblibAI：电商产品商业级渲染精修模板](https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8)（18家）
+[Tensor.Art：MooMooE-commerce V1](https://tensor.art/models/662744072865292090)（15家）；[LiblibAI：电商产品商业级渲染精修模板](https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8)（15家）
 
 **已确认事实与样本：**Tensor具体模型页将CHECKPOINT类型、V1版本、例图、运行/下载、SD1.5基座、训练参数与权限区分开。吐司官方公告确认模型及Tools仍可运行、下载和单独付费。Liblib模板结构沿用9月9日截图，未冒充读取。 [MooMooE-commerce V1](https://tensor.art/models/662744072865292090)，[致吐司创作者的一封信](https://tusi.cn/articles/1000707189326777005)，[电商产品商业级渲染精修模板](https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8)
 
@@ -298,7 +294,7 @@ NeoMME卡片先给主题、来源和部分条目预览；论文、模型、Demo�
 
 ## 工作流文件与节点图
 
-[RunningHub：一键换背景工作流](https://www.runninghub.ai/zh-cn/post/1845758651062743041)（18家）；[RunningHub：万物消除AI应用](https://www.runninghub.cn/ai-detail/1966722305902718977)（18家）
+[RunningHub：一键换背景工作流](https://www.runninghub.ai/zh-cn/post/1845758651062743041)（15家）；[RunningHub：万物消除AI应用](https://www.runninghub.cn/ai-detail/1966722305902718977)（15家）
 
 **已确认事实与样本：**换背景详情列出示例图、关键模型、采样参数、节点清单及下载、运行工作流、打开AI应用入口。万物消除应用页显示按用量结算；作者说明应用默认消除，完整工作流另有重绘和扩图。 [一键换背景：产品图摄影](https://www.runninghub.ai/zh-cn/post/1845758651062743041)，[新版Fill-OneReward万物消除](https://www.runninghub.cn/ai-detail/1966722305902718977)
 
@@ -346,11 +342,11 @@ NeoMME卡片先给主题、来源和部分条目预览；论文、模型、Demo�
 
 **取舍分析：**信息与控制更完整，但阅读负担、权限理解和平台依赖增加。下载成片易传播，共享项目更适合需要接续工作的接收者。
 
-**证据边界：**FLORA是18家之外的新增形式参照。社区动态正文未取得，未读到具体共享项目内部；Character Lock是Technique详情，不冒充完整共享画布实测。克隆机制依据官方文档，未执行复制或生成。
+**证据边界：**FLORA是15家之外的新增形式参照。社区动态正文未取得，未读到具体共享项目内部；Character Lock是Technique详情，不冒充完整共享画布实测。克隆机制依据官方文档，未执行复制或生成。
 
 ## 在线AI应用与Demo
 
-[Hugging Face Spaces：Ultralytics YOLO11](https://huggingface.co/spaces/Ultralytics/YOLO11)（18家）；[Dify：应用发布与分享](https://docs.dify.ai/en/quick-start)（18家）
+[Hugging Face Spaces：Ultralytics YOLO11](https://huggingface.co/spaces/Ultralytics/YOLO11)（15家）；[Dify：应用发布与分享](https://docs.dify.ai/en/quick-start)（15家）
 
 **已确认事实与样本：**Spaces以应用目录承载可托管的ML应用；目录能看到运行、休眠和构建错误等状态。YOLO11真实条目显示作者、点赞、Running及嵌入应用入口。Dify官方示例则把编排好的内容生成流程发布为可分享应用。 [Spaces：Image Classification目录](https://huggingface.co/spaces?filter=image-classification)，[Ultralytics YOLO11 Space](https://huggingface.co/spaces/Ultralytics/YOLO11)，[Spaces Overview](https://huggingface.co/docs/hub/spaces-overview)，[30-Minute Quick Start](https://docs.dify.ai/en/quick-start)
 
@@ -436,9 +432,7 @@ Smithery Exa条目区分Tools、Resources和Prompts，并给出仓库与使用�
 
 ## 命题挑战与结果归档
 
-[NightCafe Community Challenges](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)（18家）
 
-**已确认事实与样本：**NightCafe 挑战由主题和规则限定投稿，包含等待、投稿、评分或排名、结束四种阶段；结束后公布作品名次。社区挑战默认需链接进入，公开聊天室内的挑战可被发现；并非所有挑战都是公开内容池。 [Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)，[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)
 
 **发现入口：**先看主题、参与条件和阶段，再进入投稿或评选。相同主题提供共同的比较语境，时间和资格决定当前能做什么。
 
@@ -452,7 +446,6 @@ Smithery Exa条目区分Tools、Resources和Prompts，并给出仓库与使用�
 
 **基础承载分析：**分析：主题、时间、资格、投稿入口、作品展示及结果；规则应在创作前可见，结束后仍可回看。
 
-**增强做法与分析：**已观察：NightCafe 提供资格预检查、评分与排序两种机制；评分时优先展示获票较少的作品，并有异常投票处理。
 
 **持续成本分析：**分析：持续命题、规则维护、主持、审核、争议处理和防作弊；有奖励时另需承担奖励兑现成本。
 
@@ -462,7 +455,7 @@ Smithery Exa条目区分Tools、Resources和Prompts，并给出仓库与使用�
 
 ## 资料不足与适用边界
 
-- 未统计行业普及率；样本覆盖不能换算成市场份额。Shared Canvas、Skills和MCP的比较引入专项参照，不扩大18家竞品统计。
+- 未统计行业普及率；样本覆盖不能换算成市场份额。Shared Canvas、Skills和MCP的比较引入专项参照，不扩大15家竞品统计。
 
 - 以公开正文、官方文档与局部页面为依据。部分动态页面、挑战实例、共享项目内部未读到，已逐项标明；旧教程或截图不作为当前像素布局与运行效果证明。
 
@@ -536,7 +529,6 @@ Smithery Exa条目区分Tools、Resources和Prompts，并给出仓库与使用�
 
 32. Exa：[Exa MCP Server官方仓库README](https://github.com/exa-labs/exa-mcp-server)。未标注（main持续更新）。2026-09-10；正文已读。真实服务的远程配置、工具清单、匿名限额、OAuth/API认证；未读取账户或调用服务。
 
-33. Midjourney：[Website Overview](https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview)。未标注。2026-09-10，公开正文已读取。Explore、作品详情、复用、Style Explorer；官方功能说明，非登录实跑。
 
 34. Leonardo.Ai：[How to Write Great Text-to-Image Prompts](https://intercom.help/leonardo-ai/en/articles/8942657-how-to-write-great-text-to-image-prompts)。2024-03-20。2026-09-10，公开正文已读取。从 Community Feed 看图进入提示词；历史教程不证明当前布局。
 
@@ -554,9 +546,7 @@ Smithery Exa条目区分Tools、Resources和Prompts，并给出仓库与使用�
 
 41. Hugging Face：[Introduction to Diffusers](https://huggingface.co/learn/diffusion-course/unit1/2)。未标注。2026-09-10，练习正文已读取。代码、示例和修改练习；未运行、未验证依赖时效。
 
-42. NightCafe：[Community Challenges on NightCafe](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)。未标注。2026-09-10，公开正文已读取；所链实例访问失败。主题、发现、阶段、规则、作品结果；不推算实时参与量。
 
-43. NightCafe：[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)。未标注。2026-09-10，公开正文已读取。资格检查时点、评分分发、排序与异常投票处理；官方机制声明。
 
 44. Hugging Face（含用户发布内容）：[Hugging Face Posts](https://huggingface.co/posts)。未标注。2026-09-10，公开正文已读取。更新流、图片链接、回复入口；样本内容未经技术核验。
 

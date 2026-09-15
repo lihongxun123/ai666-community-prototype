@@ -25,7 +25,7 @@ A筛选发现可用于各方向的首页和专题；B解法实践、C视觉创�
 - 现有资源（用户已说明）：资源包括低价 API 与 MakeNow。可调用2位全栈研发、1位产品和1位运营，实际可分配工时尚未确认。
 - 内容与获客现状（用户陈述，待抽样复核）：现有获客来自抖音、小红书等泛流量和积分激励；内容质量、数量与组织不满足预期，尚无分群数据判断各渠道效果。
 - 历史限制（不能自动当今日事实）：此前关于没有成型案例与分享复制在规划的陈述保留为历史背景；当前已确认一个公开画布的副本创建与文本保存，以及已有历史成图。完整素材、独立接收者复现、客户结构与持续产能仍待核。；已有候选素材也不等于公开案例或用户需求成立。
-- 竞品证据（机制与产品能力已研究）：18家资料支持不同内容、工具与运营机制的存在；缺少社区增量收入、长期留存和完整供给成本，不能据此预测多元拾光规模。
+- 竞品证据（机制与产品能力已研究）：15家资料支持不同内容、工具与运营机制的存在；缺少社区增量收入、长期留存和完整供给成本，不能据此预测多元拾光规模。
 
 - 各组织方式比较有效消费、持续参与和供给工作；活动、专题和工具入口按同一优先人群组合。
 - 每种组织方式都允许泛渠道进入，按兴趣、学习、问题和创作等来访需要承接，不用渠道名称或付款行为定义用户价值。
@@ -362,7 +362,6 @@ Liblib存在方法许可商品；吐司调整旧激励并转向画布/Agent。�
 
 ### 竞品依据与未知
 
-NightCafe把主题、投稿、评价与结果组织成循环，并允许主持人选择外部作品参与。它支持参与机制存在，不证明停奖后留存或本社区活动效果。 [NightCafe成员挑战](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
 Datawhale课程把练习与助教反馈区别于纯笔记打卡；其规则只对应特定课程，不可用代码成绩替代艺术评价。 [Datawhale组队学习规则](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/)
 
@@ -459,5 +458,4 @@ Datawhale课程把练习与助教反馈区别于纯笔记打卡；其规则只�
 - [Leonardo Blueprints](https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai)：2026-09-09复核。现成任务与成本，自建/社区分享仍列为后续；不算开放UGC供给。
 - [Liblib原创工作流许可协议](https://www.liblib.art/activities/dd75ccf1b2674157ba11be35cb6a4a89/Original_ComfyUI_License_Agreement)：协议2025-09-08更新；2026-09-09研究记录。方法许可商品存在，不证明销量、利润或应该立即复制交易市场。
 - [吐司创作者激励调整](https://tusi.cn/articles/1000707189326777005)：2026-05-20更新；06-01生效；复核。部分旧激励退出与保留项目，不合并Tensor.Art政策，不证明新模式成功。
-- [NightCafe成员挑战](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)：2026-09-09复核。主题、阶段、评价及外部作品选择；不证明停奖留存或指导付费。
 - [Datawhale组队学习规则](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/)：2026-09-09复核；特定课程规则。练习与助教，不把编程评分外推为艺术判断，也不推导付费意愿。

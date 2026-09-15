@@ -1,0 +1,243 @@
+{
+  "title": "LiblibAI 电商一致性任务替代供给核查",
+  "observed_on": "2026-09-15",
+  "method": "公开网页检索与详情页文本核对；未登录运行、下载、支付、联系作者或查看隐藏评论。资源为定向反例池，不代表平台目录、作者数或成功率。",
+  "demand_reference": "demand-observations-2026-09-15.md",
+  "protocol_reference": "supply-inference-protocol.md",
+  "tasks": [
+    {
+      "key": "fabric_texture",
+      "label": "面料/商品纹理跨图一致性"
+    },
+    {
+      "key": "local_commerce",
+      "label": "可下载、本地运行的电商场景工作流"
+    },
+    {
+      "key": "text_logo",
+      "label": "保留商品文字或 Logo"
+    },
+    {
+      "key": "multi_product_same_background",
+      "label": "多产品同背景"
+    }
+  ],
+  "resources": [
+    {
+      "id": "3d8120fa8b4b45d785011f671f420a5c",
+      "author": "野猪A6",
+      "title": "产品一致性+不同人物+不同场景图丨产品换背景",
+      "url": "https://www.liblib.art/modelinfo/3d8120fa8b4b45d785011f671f420a5c?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "multi_product_same_background",
+        "text_logo"
+      ],
+      "author_claim": "上传产品后可连续生成不同人物、场景，且产品保持一致；无需描述提示词。",
+      "inputs_dependencies": "商品图；具体节点、模型、是否可下载均未在所读详情文本披露。",
+      "download_local_evidence": "未见明确下载或本地运行说明。",
+      "limits_or_counterevidence": "只覆盖单一产品跨场景的声明，未说明多产品共享同一背景，也未给文字/纹理验收。",
+      "independent_user_evidence": "所读详情页未取得可归因的独立成功或失败反馈；未运行。",
+      "evidence_level": "作者声明"
+    },
+    {
+      "id": "c9f5fd35e9d64a51a5fe750b4b9d827a",
+      "author": "O.o？",
+      "title": "产品一键生成效果图",
+      "url": "https://www.liblib.art/modelinfo/c9f5fd35e9d64a51a5fe750b4b9d827a?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "local_commerce",
+        "multi_product_same_background"
+      ],
+      "author_claim": "上传产品图和参考图，自动识别并替换产品；作者称整体一致性较好。",
+      "inputs_dependencies": "产品图、参考图、BizyAir Text Guided SAM 关键词；建议白底清晰产品、竖构图、产品和参考图角度相近；云端服务限制 1536×1536。",
+      "download_local_evidence": "作者说明需本地使用；页面有下载入口，但显示未适配节点、暂无法在线运行。文件未下载。",
+      "limits_or_counterevidence": "依赖BizyAir云端，预览列出16个缺失节点；生成内容不可商用。作者的一致性描述未经过独立验收。",
+      "independent_user_evidence": "2024-12-05一位使用者报告manager找不到部分节点，未见修复回报。",
+      "evidence_level": "当前在线兼容障碍与历史本地问题；效果未知"
+    },
+    {
+      "id": "d12b6598caac43a7817365d4e08dce06",
+      "author": "洋葱侠",
+      "title": "一键万物一致性多视角工作流（图生图）",
+      "url": "https://www.liblib.art/modelinfo/d12b6598caac43a7817365d4e08dce06?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "local_commerce",
+        "fabric_texture"
+      ],
+      "author_claim": "一键生成多主体、多风格的一致性多视角图；自动抠图、补充提示词。",
+      "inputs_dependencies": "加载图像；默认 Juggernaut XL；本地 ComfyUI、关键插件；1024 默认输出，作者建议显存不足时降至 768。",
+      "download_local_evidence": "详情两处明确写“需下载到本地使用”及平台未支持关键插件、需本地运行。",
+      "limits_or_counterevidence": "未给面料或商品文字的专门保持承诺，4090 性能提示表明本地门槛不能忽略。",
+      "independent_user_evidence": "详情只邀请返图，未取得独立验收回报；未运行。",
+      "evidence_level": "本地运行路径有作者说明；质量未知"
+    },
+    {
+      "id": "8adeb82f94224d54ac9ebe8289756161",
+      "author": "即绘",
+      "title": "FLUX 全自动商品换背景_全细节保留",
+      "url": "https://www.liblib.art/modelinfo/8adeb82f94224d54ac9ebe8289756161?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "text_logo",
+        "fabric_texture",
+        "multi_product_same_background"
+      ],
+      "author_claim": "白底商品图加场景参考图后自动融合，并“完全保持”商品细节（包括文字）。",
+      "inputs_dependencies": "白底产品图、场景参考图；Hunyuan 或 SDXL 初稿路径；首次重绘后须在 chooser 四选一再继续。",
+      "download_local_evidence": "所读详情未写下载或本地使用；只给出外部云端版本链接。",
+      "limits_or_counterevidence": "“完全保持”没有样本验收、纹理分类或用户回报支撑；需人工在节点处选择，非无监督批处理证据。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "作者声明"
+    },
+    {
+      "id": "a89de88273a04dca9b5925cb37c09c53",
+      "author": "LISIRGOGOGO",
+      "title": "〖FLUX超细节〗电商设计工作流/局部重绘+高清放大",
+      "url": "https://www.liblib.art/modelinfo/a89de88273a04dca9b5925cb37c09c53?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "fabric_texture",
+        "text_logo"
+      ],
+      "author_claim": "一张白底产品图可延展海报、详情页和主图，支持局部重绘、放大。",
+      "inputs_dependencies": "清晰浅色干净背景的白底产品图；产品和素材图；遮罩涂抹区域；生成素材和抽卡对比。",
+      "download_local_evidence": "所读文本未提供本地下载说明。",
+      "limits_or_counterevidence": "作者明确称 AI 不能一次出满意结果，需多次抽卡；未保证文字、Logo 或面料一致。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "作者自述，含失败/重试边界"
+    },
+    {
+      "id": "31e4b43be10f4bbcb1cb7c28300d7fa5",
+      "author": "曾小寻",
+      "title": "Seedream 4.5最新版平替 Pro2.0全能生图一致性编辑图片",
+      "url": "https://www.liblib.art/modelinfo/31e4b43be10f4bbcb1cb7c28300d7fa5?from=feed&versionUuid=03c9518632174106bf00583ea9c0a2fe",
+      "form": "工作流",
+      "task_tags": [
+        "text_logo",
+        "multi_product_same_background"
+      ],
+      "author_claim": "支持中文文字、海报、多图融合，锁定包括商品 Logo 的主体特征，并可输入 10–15 张参考图。",
+      "inputs_dependencies": "文本+图像输入；最多 10–15 张参考图（均为作者描述）；具体下载、模型、费用未见说明。",
+      "download_local_evidence": "所读详情未见下载或本地运行说明。",
+      "limits_or_counterevidence": "文字准确率、速度和商品 Logo 稳定性均为作者对模型能力的转述；没有针对电商多 SKU 同背景的验证。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "作者声明"
+    },
+    {
+      "id": "0a9d4ea478a74790a4f6273744cd1ea5",
+      "author": "非人类Metatron",
+      "title": "CAD2XL商品置换工作流 LayerStyle Hyper",
+      "url": "https://www.liblib.art/modelinfo/0a9d4ea478a74790a4f6273744cd1ea5",
+      "form": "工作流",
+      "task_tags": [
+        "local_commerce",
+        "multi_product_same_background"
+      ],
+      "author_claim": "面向商业设计及广告辅助，提供商品置换。",
+      "inputs_dependencies": "本地 ComfyUI；缺失节点；SegmentAnythingUltraV2、GroundingDINO、SAM 等模型文件；推荐 Hyper-SD；可配 LoRA/ControlNet。",
+      "download_local_evidence": "详情列出 JSON 文件名，并明确要求下载到本地、拖入 ComfyUI、安装缺失节点；称本地运行版开源。",
+      "limits_or_counterevidence": "配置说明“正在完善”；依赖多项外部节点和模型，且使用条款限制再托管/售卖。未提供面料或文字保持保证。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "本地工作流形态有明确证据；任务成功未知"
+    },
+    {
+      "id": "83f4f84b66df4798a5f7d134a6589984",
+      "author": "dasheng1999",
+      "title": "flux细化+模型放大（附详细搭建思路）",
+      "url": "https://www.liblib.art/modelinfo/83f4f84b66df4798a5f7d134a6589984",
+      "form": "工作流",
+      "task_tags": [
+        "local_commerce",
+        "fabric_texture",
+        "text_logo"
+      ],
+      "author_claim": "通过分割、ControlNet、BrushNet、细节迁移、Flux 放大改善电商换背景的细节与写实度。",
+      "inputs_dependencies": "产品图（作者更习惯先自行抠图）、可选带背景图、描述词、LoRA、G-DinoSAM、BrushNet、ControlNet、两段工作流；作者称 FLUX 常规配置约需 32GB 内存和 16GB 显存。",
+      "download_local_evidence": "历史公开缓存有两个JSON文件链接线索；2026-09-15复查详情链接跳至首页，当前文件可得性未知。",
+      "limits_or_counterevidence": "作者自述 Flux+放大后产品“跟原图差很远”，需要 PS 合成调色；这是最直接的纹理/主体保持反例，不能计为无后处理成功。",
+      "independent_user_evidence": "反例来自作者自己，未取得独立用户验收；未运行。",
+      "evidence_level": "历史作者说明；当前目标详情未取得，不判定已下架"
+    },
+    {
+      "id": "6975c74b202f461dbba541099aa01f90",
+      "author": "黄尔林",
+      "title": "电商产品换背景",
+      "url": "https://www.liblib.art/modelinfo/6975c74b202f461dbba541099aa01f90?from=feed",
+      "form": "工作流",
+      "task_tags": [
+        "multi_product_same_background"
+      ],
+      "author_claim": "输入原图、产品蒙版、参考图即可运行。",
+      "inputs_dependencies": "原图、产品蒙版、参考图。",
+      "download_local_evidence": "所读详情未见下载或本地说明。",
+      "limits_or_counterevidence": "可将相同参考图用于多个商品，是多产品同背景的可测试替代路径，但没有批量/一致性或产品文字的承诺。",
+      "independent_user_evidence": "详情仅邀请返图，未取得可归因的完成反馈；未运行。",
+      "evidence_level": "作者说明"
+    },
+    {
+      "id": "e44fbd158cfb405db75226f11ecd7eeb",
+      "author": "雅咪Yummy",
+      "title": "电商产品换背景升级版-XL模型换背景+FLUX优化+IC打光",
+      "url": "https://www.liblib.art/modelinfo/e44fbd158cfb405db75226f11ecd7eeb?from=search&versionUuid=0a1001f818ef4bd09416a9b224affa58",
+      "form": "工作流",
+      "task_tags": [
+        "text_logo",
+        "fabric_texture",
+        "multi_product_same_background"
+      ],
+      "author_claim": "一张白底产品图和一张参考图可无提示词换背景，带 IC-light 打光和细节还原节点。",
+      "inputs_dependencies": "参考图、白底产品图；可选 FLUX 二次优化；IC-light；细节还原节点。",
+      "download_local_evidence": "当前页面提供ComfyUI运行与49.53KB下载入口。讨论有独立使用者的本地运行回报，未实际下载或运行。",
+      "limits_or_counterevidence": "作者提示FLUX优化可能改动细节文字；页面许可标为生成内容不可商用。细节还原比例是作者声明，未作独立验证。",
+      "independent_user_evidence": "2025-04-11一位使用者报告翻译节点安装不匹配，04-12反馈替换文本输入节点后本地花两天跑通、效果很好。另有比例过大与商品悬空反馈，未确认解决。",
+      "evidence_level": "独立用户运行成功自报；文字和同背景交付未验收"
+    },
+    {
+      "id": "1d7da60f93a64e10914252324db61a6c",
+      "author": "晌午不营业",
+      "title": "电商产品换背景_美妆枯木场景+ICLight打光+高清放大",
+      "url": "https://www.liblib.art/modelinfo/1d7da60f93a64e10914252324db61a6c?from=feed&versionUuid=5922450d267945198ba1fc3b86b2e04d",
+      "form": "工作流",
+      "task_tags": [
+        "text_logo",
+        "fabric_texture"
+      ],
+      "author_claim": "以换背景、ICLight 重打光、TTP 放大三流程提高控制。",
+      "inputs_dependencies": "美妆产品与枯木场景；文生图、风格迁移、ControlNet；换场景需换 LoRA。",
+      "download_local_evidence": "所读详情未见下载或本地说明。",
+      "limits_or_counterevidence": "作者称若要文案不变需调整先后顺序，但细节可能不如另一顺序，说明文案保持与细节质量有尚未量化的取舍。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "作者说明，含直接限制"
+    },
+    {
+      "id": "9d70f567782d4b5a99e0a2eaa4175e5f",
+      "author": "指鹿AI",
+      "title": "产品换背景融图专用",
+      "url": "https://www.liblib.art/modelinfo/9d70f567782d4b5a99e0a2eaa4175e5f?from=personal_page",
+      "form": "LoRA",
+      "task_tags": [
+        "fabric_texture",
+        "text_logo",
+        "multi_product_same_background"
+      ],
+      "author_claim": "QwenImage-Edit 电商换背景、打光、融图，保持产品一致性；建议细致描述主体与场景。",
+      "inputs_dependencies": "QwenImageEdit、LoRA 权重、触发词、提示词；建议高分辨率修复；其主页另列在线工作流与模型/插件包。",
+      "download_local_evidence": "本条是 LoRA，不是可直接验证的本地工作流；详情仅称外部打包材料含工作流、模型、插件，未核验可下载性。",
+      "limits_or_counterevidence": "文字多时作者建议提高 CFG，细节崩坏时建议重修，说明文字与材质任务没有无条件保证；商用需联系作者。",
+      "independent_user_evidence": "所读详情页未取得独立成功或失败反馈；未运行。",
+      "evidence_level": "作者声明；仅作配套供给，不计为本地工作流有效供给"
+    }
+  ],
+  "synthesis": {
+    "distinct_authors": 12,
+    "explicit_local_or_download_paths": 5,
+    "independently_reproduced_or_accepted_task_successes": 0,
+    "independent_user_run_success_self_reports": 1,
+    "conclusion": "12份候选资源中，5份有本地说明、文件线索或独立运行回报，其中一份当前详情未取得。换背景工作流有一名使用者替换节点后本地跑通的自报；未作独立复现或商品交付验收。面料、文字和多商品同背景是否满足要求仍未知。",
+    "success_definition": "用户自报运行成功与独立复现或交付验收分别计量，不代表成功率。",
+    "next_verification": "按具体商品任务核对现行输入、许可、依赖与结果；运行成功和商业交付分别记录。"
+  }
+}

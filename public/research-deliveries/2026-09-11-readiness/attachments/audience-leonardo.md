@@ -150,9 +150,7 @@ Leonardo 的普通用户记录涉及幻想与角色插画，以及博客、促�
 
 ### P25-leonardo-e6 · 用户自述
 
-匿名F说尝试过Leonardo API生成图像，但自己的视觉风格更倾向Midjourney。[^leonardo-10]
 
-发表：2026；相对日期。观察：2026-09-10。访问范围：正文读取；与OpenArt B、Midjourney I同一个匿名用户。
 
 **解释边界：**只是一轮尝试线索；没有调用日志、生产集成或长期付费。
 
@@ -213,7 +211,6 @@ remove.bg API迁移公告描述向Leonardo账户/API体系迁移的安排。[^le
 
 [^leonardo-9]: 公开独立作者博客（匿名化），[How I Use Leonardo AI for My Business](https://theanewcomb.co.uk/how-i-use-leonardo-ai/)。发表：2026-06-30；页面另显示2026-07-28；核查：2026-09-10。作者公开使用经历。正文定位读取；有培训服务与Canva专家背景，带自我推广；不能当无商业关系的中立测评。
 
-[^leonardo-10]: Reddit公开讨论，[OpenArt讨论中的Leonardo API尝试](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)。发表：2026；相对日期；核查：2026-09-10。公开用户原始讨论。正文读取；与OpenArt B、Midjourney I同一个匿名用户。
 
 [^leonardo-11]: Leonardo.Ai，[How to train and use Elements and Datasets on Leonardo.Ai](https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai)。发表：2026-02-19；既有正文日期；核查：2026-09-10。官方或公开原始页面。正文访问与既有正文审阅；Legacy栏目说明；不同模型兼容受限，没有训练实测。
 

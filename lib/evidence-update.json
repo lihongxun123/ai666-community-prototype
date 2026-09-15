@@ -293,7 +293,7 @@
         {
           "id": "ta-v7-c2",
           "dimension": "commercial",
-          "statement": "Tensor.Art调整后仅计算符合规则的Pro用户使用，普通未开Pro段工具不再获激励；Buffet单独付费仍保留，Hub不在这次调整范围内。",
+          "statement": "Tensor.Art调整后仅计算符合规则的Pro用户使用，普通未开Pro段工具不再获激励；Buffet单独付费仍保留，Hub不在该次调整范围内。",
           "change": "corroborated",
           "evidenceClass": "official-rule",
           "period": "公告2026-07-15；生效2026-07-22",
@@ -426,156 +426,6 @@
           "accessLevel": "full-page",
           "supports": "相似性/增强取舍及小图错误修正。",
           "limitation": "最后更新时间非首次发布日期；未运行。"
-        }
-      ]
-    },
-    {
-      "id": "civitai",
-      "name": "Civitai",
-      "summary": "官方代码库说明作者资格、收入池、结算及提现规则，生产账号资格和实际兑现未验证。公开讨论中有资源收费抵触，作者收入稳定性仍未知。",
-      "claims": [
-        {
-          "id": "g7-civi-qualification",
-          "dimension": "commercial",
-          "statement": "官方开发说明将加入 Creator Program 的条件列为 Creator Score 至少40,000、有效 Bronze/Silver/Gold 会员且未被封禁。赚到 Buzz 与取得提现资格是两个阶段。",
-          "change": "new",
-          "evidenceClass": "implementation-doc",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "官方代码库 Creator Program 实现说明；非线上开户实测",
-          "limitation": "主分支文档描述实现，尚未核对生产账户资格页；不能视为所有作者均可兑现。",
-          "sourceIds": [
-            "g7-civi-program"
-          ]
-        },
-        {
-          "id": "g7-civi-settlement",
-          "dimension": "commercial",
-          "statement": "实现说明规定月底分配、次月15日结算，最低提现50美元；每 Buzz 的现金分配有0.001美元上限，并随收入池和总存入量变化。它不是承诺按固定汇率赎回所有 Buzz。",
-          "change": "new",
-          "evidenceClass": "implementation-doc",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "符合 Creator Program 条件的作者收入池",
-          "limitation": "手续费和地区收款资格须以实际支付服务确认；未取得作者到账凭据或当月池金额。",
-          "sourceIds": [
-            "g7-civi-program"
-          ]
-        },
-        {
-          "id": "g7-civi-no-double-count",
-          "dimension": "commercial",
-          "statement": "2026年8月25日修订的官方实现说明区分一次性资源准入与按次授权费；某版本对该次生成收授权费后，不再同时领取该次生成对应的 tips 与 creator compensation。估算作者收益时不能把这几项机械相加。",
-          "change": "new",
-          "evidenceClass": "implementation-doc",
-          "period": "2026-08-25文档修订；访问2026-09-09",
-          "scope": "ModelVersion 收费规则；不包括 ComicChapter",
-          "limitation": "这是代码实现说明，未审计实际订单和分账；不存在可据此计算的作者平均收入。",
-          "sourceIds": [
-            "g7-civi-monetization"
-          ]
-        },
-        {
-          "id": "g7-civi-referral-noncash",
-          "dimension": "commercial",
-          "statement": "推荐条款中的 Referral Tokens 与计划奖励 Blue Buzz 均不可兑现、不可转让；有效支付事件后的奖励还需经过7天结算等待。它们不能与作者计划可结算的收入池混为现金分成。",
-          "change": "corroborated",
-          "evidenceClass": "official-rule",
-          "period": "2026-04-21生效；访问2026-09-09",
-          "scope": "Civitai Referral Program 奖励",
-          "limitation": "规则存在不证明推荐渠道盈利，也不证明每个获推荐账号已付费。",
-          "sourceIds": [
-            "g7-civi-referral"
-          ]
-        },
-        {
-          "id": "g7-civi-paywall-response",
-          "dimension": "usage",
-          "statement": "一条2026年8月的公开讨论中，发帖者自述屏蔽采用永久付费墙的作者；回复者则区分付费下载与仅通过 API 提供模型。记录显示作者收费会触及开放资源用户的预期，但不构成拒付比例或实际流失证明。",
-          "change": "new",
-          "evidenceClass": "user-report",
-          "period": "搜索索引日期2026-08-23；正文仅显示相对日期",
-          "scope": "1条公开讨论；发帖者行为自述，未核验账号操作",
-          "limitation": "未取得购买、屏蔽或流失日志；评论中的‘95%不付费’等估计未采用；不沿用标题的开源定义。",
-          "sourceIds": [
-            "g7-civi-user-paywall"
-          ]
-        }
-      ],
-      "analysis": [
-        {
-          "text": "资源供给者与生成消费者的激励并不完全一致。前者可能需要确定的售卖收入，后者中的开放资源使用者可能抵触永久收费；是否愿意付费应按资源类型与使用方式分组。",
-          "sourceIds": [
-            "g7-civi-monetization",
-            "g7-civi-user-paywall"
-          ]
-        },
-        {
-          "text": "只有提现人数、实际到账金额、收入集中度与维护工时，才能判断作者生态是否可持续。代码里用于缺失数据的默认池金额不能补成经营数据。",
-          "sourceIds": [
-            "g7-civi-program"
-          ]
-        }
-      ],
-      "gaps": [
-        {
-          "question": "当期作者到账规模和收入分布是多少？",
-          "whyMissing": "公开实现文档没有实际支付台账；资料不足。",
-          "nextEvidence": "官方月度作者结算披露，或经本人同意提供的脱敏到账与维护工时记录。"
-        },
-        {
-          "question": "下载用户与站内生成用户各有多少付费和复访？",
-          "whyMissing": "既有网站访问估计无法划分使用方式；新发现讨论也没有样本分母。",
-          "nextEvidence": "官方分层活跃与付费数据；或按实际任务招募竞品用户访谈，分别核实下载、站内运行、购买。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "g7-civi-program",
-          "sourceKind": "官方实现说明",
-          "title": "Creator Program - Developer Guide",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md",
-          "publisher": "Civitai 官方代码库",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "加入资格、分配与结算顺序、最低提现和每Buzz分配上限",
-          "limitation": "开发说明不是当月运营披露；main分支可变化。"
-        },
-        {
-          "id": "g7-civi-monetization",
-          "sourceKind": "官方实现说明",
-          "updatedAt": "2026-08-25（文档自述修订日，非Git发布时间）",
-          "title": "Monetization rules: paid access, licensing fees, donation goals",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
-          "publisher": "Civitai 官方代码库",
-          "publishedAt": "更新2026-08-25（文档自述修订日，非Git发布时间）",
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "R4规定授权费与该次生成的其他作者补偿互斥；资源准入与按次费可以并存",
-          "limitation": "只涵盖ModelVersion；文档自称核对过生产副本，未独立实测线上交易。"
-        },
-        {
-          "id": "g7-civi-referral",
-          "sourceKind": "仓库所载条款",
-          "effectiveAt": "2026-04-21",
-          "title": "Civitai Referral Program Terms",
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/referral-program-terms.md",
-          "publisher": "Civitai 官方代码库",
-          "publishedAt": "生效2026-04-21",
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "推荐奖励无现金价值、不可转让及7天结算等待",
-          "limitation": "不可外推所有Buzz类别。"
-        },
-        {
-          "id": "g7-civi-user-paywall",
-          "title": "Civitai now has a closed-source models option",
-          "url": "https://www.reddit.com/r/StableDiffusion/comments/1vwilol/civitai_now_has_a_closedsource_models_option/",
-          "publisher": "Reddit 公开用户讨论",
-          "publishedAt": "2026-08-23（搜索索引；正文相对日期不一致）",
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "永久付费访问引起的反对自述和另一方解释",
-          "limitation": "便利抽样；未经核验的实际行为。日期按索引保留并明确冲突，未据此计算时间趋势。"
         }
       ]
     },
@@ -747,12 +597,12 @@
     {
       "id": "openart",
       "name": "OpenArt",
-      "summary": "同一用户的连续记录显示，故事项目继续推进仍需学习、选片与外部编辑。投资方披露8M MAU与70M+ ARR，付费留存未公布。",
+      "summary": "同一用户的连续记录显示，故事项目继续开展仍需学习、选片与外部编辑。投资方披露8M MAU与70M+ ARR，付费留存未公布。",
       "claims": [
         {
           "id": "g7-open-scale-timing",
           "dimension": "scale",
-          "statement": "Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16日公司文章再次给出相近数字。此前数字可增加一个更早的披露时间，不能称为9月当期规模。",
+          "statement": "Canaan于2026年1月30日已披露 OpenArt 达到8M MAU、70M+美元ARR；3月16日公司文章再次给出相近数字。早期披露数字可增加一个更早的披露时间，不能称为9月当期规模。",
           "change": "corroborated",
           "evidenceClass": "official-disclosure",
           "period": "2026-01-30投资方披露；2026-03-16公司再述",
@@ -806,7 +656,7 @@
         {
           "id": "g7-open-multi-tool-user",
           "dimension": "usage",
-          "statement": "另一位作者自述因音乐视频活动购买年费，后来缩到基础口型同步，并用 Midjourney 制作角色参考图、外部大模型协助分镜提示；其考虑再用 CapCut 完成整片。聚合平台仍可能只承担创作链的一部分。",
+          "statement": "其考虑再用 CapCut 完成整片。聚合平台仍可能只承担创作链的一部分。",
           "change": "new",
           "evidenceClass": "user-report",
           "period": "评论搜索索引2026-02-05；正文相对日期约6–7个月前",
@@ -915,116 +765,8 @@
           "publishedAt": "2026-02-05（搜索索引；正文相对日期）",
           "accessedAt": "2026-09-09",
           "accessLevel": "full-page",
-          "supports": "同一讨论中另一账号对年费、口型同步、Midjourney参考图与外部提示辅助的自述",
-          "limitation": "未检验成片质量；同记录亦用于Midjourney，不重复计数。"
-        }
-      ]
-    },
-    {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "summary": "取消和升级规则分别影响积分保留及会员权限。头部作者的使用涉及作品积累、检索和活动角色，不能代替普通用户留存数据。",
-      "claims": [
-        {
-          "id": "g7-night-cancel",
-          "dimension": "commercial",
-          "statement": "官方帮助说明取消不自动退款，PRO到期后未用 Fast Credits仍保留，但只能用于非PRO模型。退款需在付款后7天内提出，已使用额度后不退款，也无按剩余时间比例退款。",
-          "change": "new",
-          "evidenceClass": "official-rule",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "NightCafe PRO与额度包取消/退款帮助规则",
-          "limitation": "按个案审核；未执行退款或核验地区强制规定。留有积分并不等于保留全部模型权限。",
-          "sourceIds": [
-            "g7-night-refund"
-          ]
-        },
-        {
-          "id": "g7-night-upgrade",
-          "dimension": "commercial",
-          "statement": "更换套餐会立即收取新套餐全价并发放完整新额度，原套餐未用额度保留；没有自动按剩余时间抵扣，续费日期也会重设。只比较档位差价会低估当次升级的支付额。",
-          "change": "new",
-          "evidenceClass": "official-rule",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "NightCafe更换PRO套餐",
-          "limitation": "未进入结算，不推断全部账号的实际收费金额；客服退款仍按个案处理。",
-          "sourceIds": [
-            "g7-night-change"
-          ]
-        },
-        {
-          "id": "g7-night-author-context",
-          "dimension": "usage",
-          "statement": "2026年6月19日的官方精选作者访谈中，受访者兼任活动主持与评审，强调PRO的作品搜索对大量历史作品的价值。该文标称其有16万以上创作、2.8万以上关注者，属于头部案例。",
-          "change": "corroborated",
-          "evidenceClass": "case-study",
-          "period": "2026-06-19文章披露",
-          "scope": "1名官方精选作者；作品和关注为该作者累计口径",
-          "limitation": "案例含会员推广；未确认其自费订阅、合作报酬、普通作者收入或平台整体留存。",
-          "sourceIds": [
-            "g7-night-spotlight"
-          ]
-        }
-      ],
-      "analysis": [
-        {
-          "text": "持续参与可能由创作乐趣、历史作品管理与活动中的角色共同支持。这个用户价值与客户项目交付不同，不能仅按‘每天创作’把两类需求归为同一群体。",
-          "sourceIds": [
-            "g7-night-spotlight"
-          ]
-        },
-        {
-          "text": "订阅到期后的可用模型范围和升级时的即时全额收费，会影响偶发创作者的成本判断；积分余额本身不是用户仍然认可会员的证据。",
-          "sourceIds": [
-            "g7-night-refund",
-            "g7-night-change"
-          ]
-        }
-      ],
-      "gaps": [
-        {
-          "question": "挑战参与者和付费创作者分别有多少、多久回来？",
-          "whyMissing": "官网累计作品与第三方网站访问均缺少参与者去重和分层；关于页读取失败，未更新累计数字。",
-          "nextEvidence": "官方按月参与/生成/付费去重口径，以及奖励用户与无奖励用户的同期记录。"
-        },
-        {
-          "question": "作者主持和评审是否获得现金，覆盖多少人？",
-          "whyMissing": "精选访谈未公开合同；资料不足。",
-          "nextEvidence": "合作计划条款与已付款的脱敏合作记录。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "g7-night-refund",
-          "title": "I cancelled my subscription but haven't received a refund",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/i-cancelled-my-subscription-but-haven-t-received-a-refund",
-          "publisher": "NightCafe",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "取消后的PRO和Fast Credits边界、7天申请与非按比例退款",
-          "limitation": "官方帮助规则，非实际退款审计。"
-        },
-        {
-          "id": "g7-night-change",
-          "title": "I was charged after changing my subscription plan",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/i-was-charged-after-changing-my-plan",
-          "publisher": "NightCafe",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "新套餐全额即时收费、额度保留与续费日重设",
-          "limitation": "帮助解释没有给实际发生频率。"
-        },
-        {
-          "id": "g7-night-spotlight",
-          "title": "NightCafe Artist Spotlight: Inside gullyDJ's Weird World",
-          "url": "https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj",
-          "publisher": "NightCafe / Olivia Platt",
-          "publishedAt": "2026-06-19",
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "头部作者规模、主持评审角色与PRO搜索价值",
-          "limitation": "官方挑选且有推广目的；不能代表普通作者或普遍付费原因。"
+          "supports": "",
+          "limitation": "未检验成片质量；"
         }
       ]
     },
@@ -1269,140 +1011,6 @@
           "accessLevel": "full-page",
           "supports": "作者陈述其广告、短片、影视项目用途。",
           "limitation": "精选采访有选择偏差；只读文字正文，未核成片和付款。"
-        }
-      ]
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "summary": "年付默认选项、一次付款金额和退款条件会影响首购。公开记录中，Midjourney可能只用于角色参考图，后续视频制作由其他工具完成。",
-      "claims": [
-        {
-          "id": "g7-mj-billing-default",
-          "dimension": "commercial",
-          "statement": "官方订阅说明明确默认选中年付，需一次付全年；套餐表月付为10/30/60/120美元，年付总额96/288/576/1,152美元。年付折算8/24/48/96美元不能写作可按月支付的价格。",
-          "change": "new",
-          "evidenceClass": "official-rule",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "Midjourney Basic/Standard/Pro/Mega生成订阅",
-          "limitation": "未结算；可能另有税费。此项是官方默认流程说明，不声称账户实测。",
-          "sourceIds": [
-            "g7-mj-price",
-            "g7-mj-subscribe"
-          ]
-        },
-        {
-          "id": "g7-mj-refund",
-          "dimension": "commercial",
-          "statement": "退款资格按账号整个使用历史判断：累计GPU时间必须少于20分钟，Fast/Turbo与Relax均计入。它不是每次续费后重新获得20分钟试用。",
-          "change": "new",
-          "evidenceClass": "official-rule",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "Midjourney官方退款资格说明",
-          "limitation": "规则不说明实际退款率；未进行退款申请，也未将条款解释为法律结论。",
-          "sourceIds": [
-            "g7-mj-refund-source"
-          ]
-        },
-        {
-          "id": "g7-mj-video-limits",
-          "dimension": "commercial",
-          "statement": "Standard起有不限量Relax图片；Pro/Mega才含Relax视频，套餐表限定为SD视频。更高的Relax能力不代表全部分辨率和所有生成速度都不限量。",
-          "change": "corroborated",
-          "evidenceClass": "official-rule",
-          "period": "访问2026-09-09；动态规则未标绝对更新日",
-          "scope": "当前套餐表Relax GPU范围",
-          "limitation": "具体等待、模型支持及输出可用率未实测；不能用无限字样推算有效产量。",
-          "sourceIds": [
-            "g7-mj-price"
-          ]
-        },
-        {
-          "id": "g7-mj-reference-role",
-          "dimension": "usage",
-          "statement": "一名在OpenArt讨论区分享音乐视频经历的作者自述，用Midjourney制作角色参考图，再到其他工具做口型和剪辑准备。此记录证明的是该用户把Midjourney放在创作链的参考制作环节。",
-          "change": "new",
-          "evidenceClass": "user-report",
-          "period": "评论搜索索引2026-02-05；正文仅相对日期",
-          "scope": "与OpenArt档案同一用户记录，非新增独立受访者",
-          "limitation": "未核验Midjourney付款；CapCut为未来考虑，并非已完成迁移；不作跨工具质量排名。",
-          "sourceIds": [
-            "g7-mj-user-reference"
-          ]
-        }
-      ],
-      "analysis": [
-        {
-          "text": "用户比较的不只是最低标价，还包括一次付款承诺、能否先验证自己的题材及退款条件。年付折扣是否提高首购或退款争议，需要漏斗和客服数据才能回答。",
-          "sourceIds": [
-            "g7-mj-price",
-            "g7-mj-subscribe",
-            "g7-mj-refund-source"
-          ]
-        },
-        {
-          "text": "工具采用应落在具体步骤：作为参考图工具有价值，不等于它独立解决角色一致、口型、剪辑和整片交付。",
-          "sourceIds": [
-            "g7-mj-user-reference"
-          ]
-        }
-      ],
-      "gaps": [
-        {
-          "question": "当期订阅人数、付费留存和用途构成是什么？",
-          "whyMissing": "未找到可核验的最新分项经营披露；Discord成员与网站visits不能补作分母。",
-          "nextEvidence": "公司按统计期披露的订阅人数/续费；竞品用户的脱敏最近任务与订阅历史。"
-        },
-        {
-          "question": "公开图库和社区交流对付费有多少增量？",
-          "whyMissing": "套餐与使用个案没有渠道归因或对照组；资料不足。",
-          "nextEvidence": "官方获客及转化分组数据，或跟踪竞品用户真实首次发现与付费路径。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "g7-mj-price",
-          "title": "Comparing Midjourney Plans",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-          "publisher": "Midjourney",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "月价、全年总额、年付折算与SD Relax视频边界",
-          "limitation": "动态套餐；没有付款或活跃统计。"
-        },
-        {
-          "id": "g7-mj-subscribe",
-          "title": "How to Subscribe",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/31974654274573-How-to-Subscribe",
-          "publisher": "Midjourney",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "默认年付与全年预付说明",
-          "limitation": "未进入实际结算。"
-        },
-        {
-          "id": "g7-mj-refund-source",
-          "title": "Requesting a Refund",
-          "url": "https://docs.midjourney.com/hc/en-us/articles/25386088618253-Requesting-a-Refund",
-          "publisher": "Midjourney",
-          "publishedAt": null,
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "账号终身GPU少于20分钟的退款门槛",
-          "limitation": "规则不等于实际退款结果。"
-        },
-        {
-          "id": "g7-mj-user-reference",
-          "title": "公开音乐视频用户的Midjourney角色参考图使用",
-          "url": "https://www.reddit.com/r/generativeAI/comments/1ng7d42/",
-          "publisher": "Reddit 公开用户",
-          "publishedAt": "2026-02-05（搜索索引；正文相对日期）",
-          "accessedAt": "2026-09-09",
-          "accessLevel": "full-page",
-          "supports": "Midjourney实际承担参考图步骤的自述",
-          "limitation": "与OpenArt同一记录；未核验Midjourney订阅和实际作品质量。"
         }
       ]
     },
@@ -2207,7 +1815,7 @@
           "publishedAt": "2026-04",
           "accessedAt": "2026-09-09",
           "accessLevel": "full-page",
-          "supports": "PDF第3页运营主体与定位、第22页2026-03用户/组织/讨论口径；本次继续核对物理第5页调查规模自述与第34页起的问卷附录",
+          "supports": "PDF第3页运营主体与定位、第22页2026-03用户/组织/讨论口径；进一步核实物理第5页调查规模自述与第34页起的问卷附录",
           "limitation": "平台署名自述；未把宣传性因果解释当证明。"
         },
         {
@@ -2537,13 +2145,13 @@
     }
   ],
   "stats": {
-    "profiles": 18,
-    "claims": 78,
-    "sources": 78,
-    "uniqueUrls": 77,
+    "profiles": 15,
+    "claims": 66,
+    "sources": 61,
+    "uniqueUrls": 61,
     "newlyReferencedUrls": 42,
-    "fullPageSources": 77,
-    "indexOnlySources": 1,
+    "fullPageSources": 60,
+    "indexOnlySources": 0,
     "corrections": 1,
     "userReports": 11
   },
@@ -2598,7 +2206,7 @@
     },
     {
       "title": "投诉后的使用与项目进展",
-      "text": "OpenArt的一名用户先自述购买年费后制作受阻，后来又报告项目继续推进；另一人的流程跨越Midjourney、OpenArt和外部辅助工具。Leonardo也有围绕技术博客配图的具体反馈。它们提示连续项目、工具组合、学习和返工值得研究；付款、进度和问题原因仍是自述，不能据几条评论估计满意率、续费率或认定用户已经迁移。",
+      "text": "OpenArt的一名用户先自述购买年费后制作受阻，后来又报告项目继续开展；Leonardo也有围绕技术博客配图的具体反馈。它们提示连续项目、工具组合、学习和返工值得研究；付款、进度和问题原因仍是自述，不能据几条评论估计满意率、续费率或认定用户已经迁移。",
       "sourceIds": [
         "g7-open-user-first",
         "g7-open-user-followup",
@@ -2623,7 +2231,7 @@
     "title": "数据工具能提供什么",
     "items": [
       {
-        "title": "付费数据工具能增加维度，不能保证覆盖这18家",
+        "title": "付费数据工具能增加维度，不能保证覆盖这15家",
         "fact": "Semrush 的 Traffic Analytics 提供历史、渠道、主要页面及访问路径等维度；其完整产品的免费账户只支持示例域名。公开网站速览页与完整产品权限不是一回事。",
         "implication": "如果需要采购，先索取指定域名、月份、地区、设备范围及目标字段的样例。先验证覆盖，再决定购买；没有购买或取得付费导出。",
         "sourceIds": [
@@ -2633,7 +2241,7 @@
       {
         "title": "转化估计有新旧版本，不能一概理解为订阅支付",
         "fact": "Similarweb 新版转化数据包含桌面与移动网页，针对被归为电商的网站，并设月访问量门槛：进入时至少20,000，低于10,000才移出。Converted Visits 是购买事件估计。旧版帮助页则以桌面感谢页访问定义转化，也可能包含表单提交。",
-        "implication": "不能承诺购买工具就能拿到18家AI社区的付费率。须确认目标域是否纳入、新旧数据版本、转化定义，以及是否覆盖订阅续费、站外付款和退款。当前没有核实这些域名的适用资格。",
+        "implication": "不能承诺购买工具就能拿到15家AI社区的付费率。须确认目标域是否纳入、新旧数据版本、转化定义，以及是否覆盖订阅续费、站外付款和退款。当前没有核实这些域名的适用资格。",
         "sourceIds": [
           "method-similarweb-new-conversion",
           "method-similarweb-legacy-conversion"
@@ -2705,7 +2313,7 @@
         "accessedAt": "2026-09-09",
         "accessLevel": "full-page",
         "supports": "新版转化的设备范围、电商分类、访问门槛与估计性质",
-        "limitation": "不提供本报告18家竞品的适用名单或转化数值"
+        "limitation": "不提供本报告15家竞品的适用名单或转化数值"
       },
       {
         "id": "method-similarweb-legacy-conversion",
@@ -2759,9 +2367,7 @@
     "records": [
       {
         "id": "GUR-01",
-        "competitors": [
-          "civitai"
-        ],
+        "competitors": [],
         "sourceIds": [
           "g7-civi-user-paywall"
         ],
@@ -2795,8 +2401,7 @@
       {
         "id": "GUR-03",
         "competitors": [
-          "openart",
-          "midjourney"
+          "openart"
         ],
         "sourceIds": [
           "g7-open-user-lipsync",
@@ -2804,8 +2409,8 @@
         ],
         "period": "评论搜索索引2026-02-05；正文仅相对日期",
         "task": "音乐视频，后缩到基础口型同步片段",
-        "paymentSelfReport": "自述因OpenArt音乐视频活动购买年费；Midjourney付款未明确",
-        "actionSelfReport": "自述Midjourney制作角色参考图，外部大模型协助提示，并制作口型片段",
+        "paymentSelfReport": "自述因OpenArt音乐视频活动购买年费；",
+        "actionSelfReport": "",
         "problemSelfReport": "完整分镜制作需大量调试",
         "response": "同讨论其他用户交流学习方法；未见平台确认解决",
         "outcome": "基础片段为自述已做；考虑CapCut组合制作是未来意向",

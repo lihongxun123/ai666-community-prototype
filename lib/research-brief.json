@@ -5,16 +5,16 @@
   "sections": [
     {
       "id": "scope",
-      "title": "目标人群与平台参照",
-      "answer": "报告比较18个平台的内容、用户任务和使用方式，按五类分组，选取7家代表进行重点分析。",
-      "assessment": "足够说明选择这些平台的理由；尚未选定定位，不能把18家都定为直接竞争者。",
+      "title": "平台分类与比较范围",
+      "answer": "研究覆盖15个平台，按主要使用目的分为五类：流程与资源复用、创作工具与作品、兴趣创作与参与、学习与讨论、开发资源与应用。七个代表平台覆盖全部五类，分别比较其内容入口、使用路径和运营机制。",
+      "assessment": "足够说明选择这些平台的理由；尚未选定定位，不能把15家都定为直接竞争者。",
       "table": null,
       "claims": [],
       "limit": "吐司与Tensor.Art作为一个关联产品组，两站规则、权益与实操结果分别记录。分类用于确定比较问题，不代表行业份额或平台优劣。",
       "links": [
         {
           "view": "matrix",
-          "label": "18个平台对照"
+          "label": "15个平台对照"
         },
         {
           "view": "discussion",
@@ -24,14 +24,13 @@
       "evidence": [
         {
           "dataPath": "site/lib/profiles.ts",
-          "scope": "18个平台范围"
+          "scope": "15个平台范围"
         },
         {
           "platformIds": [
             "liblib",
             "runninghub",
             "tusi",
-            "civitai",
             "seaart"
           ],
           "scope": "这些样本围绕模型、工作流或简化应用连接作品与运行。与MakeNow及社区资源内容最需要比较的是：结果如何帮助选择方法、接手需要哪些材料、运行失败由谁处理、作者报酬如何与使用关联。"
@@ -41,16 +40,13 @@
             "openart",
             "jimeng",
             "kling",
-            "midjourney",
             "leonardo",
             "runway"
           ],
           "scope": "这些样本以创作和编辑工具为基础，作品、参考、教程、作者合作或项目材料帮助用户开始和继续创作。重点比较工具自身已提供的内容价值，以及独立社区还需要承担的解释、交流与维护工作。"
         },
         {
-          "platformIds": [
-            "nightcafe"
-          ],
+          "platformIds": [],
           "scope": "该样本主要用于研究主题、衍生作品、评审和聊天室如何组织参与，补足单看生产效率容易忽略的表达与认可需要。单独归组是为了清楚呈现研究问题，并不否认其生成工具与资源收费。"
         },
         {
@@ -79,17 +75,14 @@
         "rows": [
           [
             "流程与资源复用",
-            "LiblibAI、RunningHub、吐司 / Tensor.Art、Civitai、SeaArt",
             "作品到模型、工作流或应用的连接；输入、依赖、版本和使用条件；资源更新、问题回应与收益条件"
           ],
           [
             "创作工具与作品",
-            "OpenArt、即梦 AI、可灵 Kling AI、Midjourney、Leonardo.Ai、Runway",
             "作品发现与制作入口；参考、参数、项目和再次使用；专业案例、作者合作与订阅条件"
           ],
           [
             "兴趣创作与参与",
-            "NightCafe",
             "创作题目与投稿入口；评审、回应和结果呈现；活动频率、主持与持续组织工作"
           ],
           [
@@ -107,13 +100,13 @@
     },
     {
       "id": "needs",
-      "title": "持续消费与参与价值",
-      "answer": "内容可独立提供观看、理解、资料或任务价值；更新、系列、作者与成员回应可能带来继续访问。用户可以安静消费，不需要都成为创作者；社区必须说明比既有平台多提供了什么。",
+      "title": "用户任务与参与动机",
+      "answer": "用户进入AI社区，可能是为了看作品、找资源、完成创作或解决学习问题。同一产品中的用户也可能处于不同环节：有人只消费内容，有人开始尝试，有人需要排错和维护支持。公开用户记录能够说明具体困难，但不能据此计算各类人群占比或回访率。",
       "assessment": "可以提出目标人群与回访理由的候选判断；公开样本不足以估计观看者、参与者或付费者的总体比例。",
       "claims": [
         {
-          "title": "连续视觉创作需要角色、镜头和跨工具制作支持，单次生成成功不足以满足整项任务。",
-          "text": "OpenArt的公开用户记录涉及连续角色、音乐视频及跨镜头制作。平台提供生成和角色能力后，用户仍需学习镜头语言、筛选片段并完成部分外部编辑；继续使用与满意、续费应分别判断。",
+          "title": "连续创作还需要角色、镜头与剪辑支持",
+          "text": "OpenArt的公开用户记录涉及连续角色、音乐视频及跨镜头制作。生成和角色能力覆盖了部分步骤，用户仍需学习镜头语言、筛选片段并完成部分外部编辑。这些记录说明用户尝试的任务，尚不能确认其满意度或续费情况。",
           "examples": [
             {
               "platform": "OpenArt",
@@ -158,7 +151,7 @@
           ]
         },
         {
-          "title": "课程学习涉及环境配置、运行排错和结果检查。",
+          "title": "学习需求延伸到环境配置与排错",
           "text": "Datawhale的课程与问题记录显示，学习者会实际运行教材并反馈环境、调用和检索问题。课程、勘误与答疑共同支持学习，但现有样本尚不能判断结课率、独立应用能力或职业分布。",
           "examples": [
             {
@@ -243,7 +236,7 @@
           ]
         },
         {
-          "title": "同一产品的使用者可以停留在不同任务环节",
+          "title": "付费不代表整项任务已经解决",
           "text": "角色连续、环境配置、精修和学习反馈需要不同材料。一个用户可能付费，却仍因具体步骤受阻而转用其他工具；付费身份不等于平台解决了完整任务。",
           "examples": [
             {
@@ -300,7 +293,7 @@
           ]
         }
       ],
-      "limit": "55条任务画像中，50条不足5个可区分用户观察点，18条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。",
+      "limit": "46条任务画像中，42条不足5个可区分用户观察点，16条暂无直接用户点。用户自述、官方目标和研究者实操各自记录，群体占比未知。",
       "links": [
         {
           "view": "audience",
@@ -315,13 +308,13 @@
     },
     {
       "id": "content",
-      "title": "分类、内容承载与下一步路径",
-      "answer": "同一平台可以按用途、资源或技术条件组织内容，再用不同卡片帮助用户选择。详情承接完整观看、理解与使用条件；下一步可能是另一部作品、一篇解释，也可能是工具表单或画布。",
+      "title": "内容分类、卡片与详情路径",
+      "answer": "一级分类体现平台优先分发什么，二级分类帮助用户缩小范围。作品侧重题材、风格和效果，资源还需要模型类型、版本或兼容条件；卡片提供选择线索，详情提供完整内容与使用条件。浏览其他作品、继续阅读和进入工具，是不同的后续路径。",
       "assessment": "证据已从页面外观推进到筛选、详情和下一步的实际状态；含普通、新发布及低互动样本，但各平台覆盖深度不同。",
       "claims": [
         {
           "title": "制作案例中的站外步骤与交付条件",
-          "text": "如果输出依赖其他工具、模型、素材或后期，详情应说明各自承担哪一步。仅有封面和“同款”按钮，会让使用者误判自己还要准备多少工作。",
+          "text": "制作案例包含的工作可能分布在多个工具中：生成片段、筛选结果、后期编辑和成品发布各有要求。成品展示与“同款”入口只能说明部分路径；作者披露的素材、依赖与制作过程，才能解释完成作品还需要哪些步骤。",
           "examples": [
             {
               "platform": "即梦",
@@ -377,7 +370,7 @@
           ]
         }
       ],
-      "limit": "9月14日的分类与操作核查覆盖15家；Civitai、NightCafe受访问限制，可灵停在登录页。生成结果和持续回访不在这组页面证据之内。",
+      "limit": "9月14日的分类与操作核查覆盖15家；生成结果和持续回访不在这组页面证据之内。",
       "links": [
         {
           "view": "content",
@@ -926,21 +919,17 @@
     },
     {
       "id": "supply",
-      "title": "内容供给与持续运营",
-      "answer": "供给既来自官方、入选伙伴和普通成员，也包含发布后的版本、链接、章节和答案维护。新页面能显示资源如何署名、更新和接收反馈，不能据此折算为稳定供稿量或作者合作成本。",
+      "title": "内容来源与持续维护",
+      "answer": "供给来源包括平台编辑、合作作者和成员贡献，发布后还涉及版本更新、链接维护、课程勘误和问题回应。创作者权益、活动规则和贡献记录可以解释合作方式；持续产量与维护投入需要另有记录。",
       "assessment": "维护责任已可定位到具体对象与动作；平均响应、持续供稿、复验通过率和编辑工时仍无统计。",
       "claims": [
         {
           "title": "创作伙伴权益不等于固定供稿",
-          "text": "Runway的创作伙伴计划不要求固定作品投入；NightCafe的主题内容仍需平台组织和维护。两种做法都表明，提供工具或参与机会，与约定作品交付是不同的合作关系。",
+          "text": "Runway的创作伙伴计划不要求固定作品投入；两种做法都表明，提供工具或参与机会，与约定作品交付是不同的合作关系。",
           "examples": [
             {
               "platform": "Runway",
               "text": "CPP明确无固定作品投入；获得工具支持与形成约稿产能是两件事。"
-            },
-            {
-              "platform": "NightCafe",
-              "text": "作者主题可被编成说明、模板和挑战入口，平台仍需组织和维护。"
             }
           ],
           "basis": "官方规则确认了合作形式；未取得作者的实际履约率和平台持续投入。",
@@ -950,14 +939,6 @@
               "title": "Runway Creative Partners Program",
               "url": "https://runway.com/creative-partners-program",
               "date": "未标日期",
-              "accessedAt": "2026-09-12",
-              "dataFile": "creator-supply.json"
-            },
-            {
-              "id": "supply-takeover",
-              "title": "NightCafe Creator Takeover",
-              "url": "https://nightcafe.studio/blogs/blog/lessons-from-father-figures-ai-art-prompts-storytelling",
-              "date": "2026-06-15",
               "accessedAt": "2026-09-12",
               "dataFile": "creator-supply.json"
             }
@@ -970,10 +951,6 @@
             {
               "platform": "RunningHub",
               "text": "求助者称跑通后分享适配JSON，另一人继续提出新LoRA问题；新问题完成仍未知。"
-            },
-            {
-              "platform": "Civitai",
-              "text": "公开记录中出现取消会员但仍希望贡献LoRA的表述；意愿不能当成后续实际上传量。"
             }
           ],
           "basis": "同一主题内的过程和公开表述；与已完成交易或贡献分别记录。",
@@ -985,22 +962,6 @@
               "date": "Jun 15—Jun 25；当前页未显年份",
               "accessedAt": "2026-09-11",
               "dataFile": "platform-review.json"
-            },
-            {
-              "id": "CR31-R-civitai-02",
-              "title": "Just so you know. They are making it extremely difficult to cancel my membership.",
-              "url": "https://www.reddit.com/r/civitai/comments/1kgnjsu/just_so_you_know_they_are_making_it_extremely/",
-              "date": "2025-05-07（搜索索引及回复内部日期）",
-              "accessedAt": "2026-09-11",
-              "dataFile": "platform-review.json"
-            },
-            {
-              "id": "CR31-R-civitai-03",
-              "title": "civitai is a waste of money now",
-              "url": "https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/",
-              "date": "2025-06-13（既有档案）；当前页仅相对时间",
-              "accessedAt": "2026-09-11",
-              "dataFile": "platform-review.json"
             }
           ]
         }
@@ -1008,12 +969,8 @@
       "limit": "精选来源不代表自然供给，合作权益也不代表作者已经履约。稳定供稿量与维护工时尚未取得。",
       "links": [
         {
-          "view": "supply",
-          "label": "供给方式、作者发现与合作安排"
-        },
-        {
           "view": "operations",
-          "label": "18个平台的运营机制"
+          "label": "15个平台的运营机制"
         },
         {
           "view": "tasks",
@@ -1223,12 +1180,12 @@
     },
     {
       "id": "business",
-      "title": "工具投入与平台经营机制",
-      "answer": "18家资料中，15家有平台内创作、开发或运行能力。工具可以通过模型、算力、订阅或服务收费，内容负责展示用途、传递方法或组织交流；两者关联紧密，但不能据平台收入推算社区的收入贡献。",
+      "title": "工具支持与商业化",
+      "answer": "15个平台中，15家有创作、开发或运行能力的公开资料，收费涉及订阅、算力、资源或服务。社区提供发现、学习和交流入口，但产品收入、网站访问量与社区活跃是不同指标，现有披露不足以拆出社区的收入贡献。",
       "assessment": "已有市场规模、付款对象、权益与作者支持证据。路径观察说明内容怎样接到执行，以及免费浏览、参考材料和付费动作的分界。",
       "claims": [
         {
-          "title": "生成能力已有实际收入规模，但不能据产品收入认定收入来自社区。",
+          "title": "产品收入已披露，社区贡献未拆分",
           "text": "快手披露，可灵2026年第二季度营业收入超过8.5亿元人民币。这证明产品已有商业收入规模，但个人订阅、团队及API收入份额、社区贡献和产品利润尚未公开。",
           "examples": [
             {
@@ -1261,7 +1218,7 @@
           ]
         },
         {
-          "title": "社区的付款方可以是商业推广者，普通阅读和讨论不必直接按Token或会员收费。",
+          "title": "商业推广也可以成为付款场景",
           "text": "LINUX DO将普通成员讨论与商家推广采购分开，高级推广已有公开订阅商品。其可确认的是收费路径，论坛收入、付费推广方数量及推广效果仍未知。",
           "examples": [
             {
@@ -1303,13 +1260,9 @@
           ]
         },
         {
-          "title": "权益适用的模型、动作和付款条件",
-          "text": "无限额度、会员资格与API支持都有适用范围。成本比较应以用户要完成的任务为单位，纳入修改、重试、等待和外部处理。",
+          "title": "会员权益受模型、动作与付款条件限制",
+          "text": "公开权益中的无限额度、会员资格和API支持各有适用范围。套餐价格不等于完成任务的总成本，修改、重试、等待和外部处理仍可能增加投入。",
           "examples": [
-            {
-              "platform": "NightCafe",
-              "text": "Unlimited基础生成不覆盖所有增加成本的设置；起始图和ControlNet可能消耗正常额度。"
-            },
             {
               "platform": "Runway",
               "text": "联盟页明确每名新付费订阅者15美元；不能理解为同一用户永久续费分成。"
@@ -1317,22 +1270,6 @@
           ],
           "basis": "2026-09-11官方条款复核；实际结算和净收益未核。",
           "sources": [
-            {
-              "id": "CR31-R-nightcafe-01",
-              "title": "NightCafe PRO plans — what you get and which plan to choose",
-              "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-              "date": "未标",
-              "accessedAt": "2026-09-11",
-              "dataFile": "platform-review.json"
-            },
-            {
-              "id": "CR31-R-nightcafe-02",
-              "title": "Fast Credits vs Relax Credits",
-              "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-              "date": "未标",
-              "accessedAt": "2026-09-11",
-              "dataFile": "platform-review.json"
-            },
             {
               "id": "biz-run-affiliate",
               "title": "Runway Affiliate Program",
@@ -1529,7 +1466,7 @@
           "id": "tool-community-value",
           "title": "执行可以在站外，解释、反馈与参与仍可留在社区",
           "question": "用户最终使用外部工具时，社区是否还有独立价值？",
-          "observation": "Datawhale把课程、作业与答疑组织起来，实践可在本地或合作环境完成；LINUX DO承接外部工具的接入问题与结果反馈。NightCafe同时提供生成工具与主题活动，历史用户记录中也有将生成转移到其他工具后仍回来参加挑战和聊天的情况。",
+          "observation": "Datawhale把课程、作业与答疑组织起来，实践可在本地或合作环境完成；LINUX DO承接外部工具的接入问题与结果反馈。",
           "reasoning": "这三种样本分别围绕学习进度、问题解决和兴趣参与组织社区。工具在哪里运行，不足以解释社区价值；补充信息、获得反馈和参加活动也是可观察的回访原因。",
           "cases": [
             {
@@ -1630,62 +1567,6 @@
                 }
               ],
               "screenshotIds": []
-            },
-            {
-              "platformId": "nightcafe",
-              "name": "NightCafe",
-              "fact": "成员挑战规则提供设题、投稿、评审与结果阶段。2023年的一位用户自述把生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天；2026年的另一组讨论也显示积分参与与生成意愿可能不同。前者为历史个案，不能当作当前普遍行为。",
-              "sourceRefs": [
-                {
-                  "dataFile": "site/lib/platform-operations.json",
-                  "sourceIds": [
-                    "o9-g-night-game",
-                    "o9-g-night-rules"
-                  ]
-                },
-                {
-                  "dataFile": "site/lib/audience-research.json",
-                  "sourceIds": [
-                    "P25-nightcafe-S-u1",
-                    "P25-nightcafe-S-u3"
-                  ]
-                }
-              ],
-              "sources": [
-                {
-                  "id": "o9-g-night-game",
-                  "title": "Creating a Game (Community Challenge)",
-                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-                  "date": "未标绝对日期",
-                  "accessedAt": "2026-09-09",
-                  "dataFile": "site/lib/platform-operations.json"
-                },
-                {
-                  "id": "o9-g-night-rules",
-                  "title": "Daily Challenge: Eligibility, Rating & Ranking",
-                  "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-                  "date": "未标绝对日期；v8于2026-09-09复核",
-                  "accessedAt": "2026-09-09",
-                  "dataFile": "site/lib/platform-operations.json"
-                },
-                {
-                  "id": "P25-nightcafe-S-u1",
-                  "title": "What do you think about the recent update?",
-                  "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-                  "date": "2026-02-09起；索引日期",
-                  "accessedAt": "2026-09-10",
-                  "dataFile": "site/lib/audience-research.json"
-                },
-                {
-                  "id": "P25-nightcafe-S-u3",
-                  "title": "The rider",
-                  "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
-                  "date": "2023-10-08至11；索引日期",
-                  "accessedAt": "2026-09-10",
-                  "dataFile": "site/lib/audience-research.json"
-                }
-              ],
-              "screenshotIds": []
             }
           ],
           "counterpoint": "站外执行也会分散流程和数据，社区未必能确认用户完成了什么。一个采纳结果或回访自述能够说明价值发生过，无法证明平台总体留存或经营可持续。",
@@ -1768,30 +1649,9 @@
         {
           "title": "有效内容消费与参与是社区价值的直接观察对象，领取积分不能单独算活跃。",
           "text": "分别观察前台有效浏览、观看、收藏后回看、表达、交流和复用，并检查下一周是否仍有这些行为。生成、发布、付款可作为具体路径的辅助记录；免费读者同样可能是持续活跃用户。积分来源不决定用户质量，只领奖而没有内容消费或参与的行为不计入有效活跃。",
-          "examples": [
-            {
-              "platform": "NightCafe",
-              "text": "NightCafe的2026年用户记录中，有人主要完成积分任务而很少生成；2023年的另一位用户自述将生成移到Tensor.Art后，仍回NightCafe参加挑战和聊天。LINUX DO另有采纳回复及提问者确认的接入求助个案。"
-            }
-          ],
+          "examples": [],
           "basis": "用户自述与历史登录观察；跨工具回访为2023年个案，当前行为未知，各样本不能估计总体留存。",
           "sources": [
-            {
-              "id": "P25-nightcafe-S-u1",
-              "title": "What do you think about the recent update?",
-              "url": "https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/",
-              "date": "2026-02-09起；索引日期",
-              "accessedAt": "2026-09-10",
-              "dataFile": "site/lib/audience-research.json"
-            },
-            {
-              "id": "P25-nightcafe-S-u3",
-              "title": "The rider",
-              "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
-              "date": "2023-10-08至11；索引日期",
-              "accessedAt": "2026-09-10",
-              "dataFile": "site/lib/audience-research.json"
-            },
             {
               "id": "P25-linuxdo-s5",
               "title": "应用接入求助与采纳结果",
@@ -1802,20 +1662,6 @@
             }
           ],
           "evidence": [
-            {
-              "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#audience",
-              "reportSection": "NightCafe：活动参与与持续使用",
-              "dataPath": "site/lib/audience-research.json",
-              "platformId": "nightcafe",
-              "recordIds": [
-                "P25-nightcafe-e2",
-                "P25-nightcafe-e5"
-              ],
-              "sourceIds": [
-                "P25-nightcafe-S-u1",
-                "P25-nightcafe-S-u3"
-              ]
-            },
             {
               "reportUrl": "https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#linuxdo",
               "reportSection": "接入求助与采纳结果",
@@ -1840,22 +1686,22 @@
         "rows": [
           [
             "A · 筛选与解释",
-            "把任务输入、账户或服务区域、必要付费条件放到方法比较中。卡片说明是阅读方法、取得文件还是在线使用；详情注明检查日期。入口不可用时保留方法说明，调整执行入口与推荐理由。；实测推荐须明确实践者和审查责任人，留存输入、关键设置与结果检查。学习文章可以只交付方法解释；没有独立复核的作者案例保留作者说明身份，不把它直接写成平台验证结论。；更正须指明受影响条目、具体条件、来源和修改内容，审核后进入正文。问题记录保留尝试、答复、实际调整和本人结果；没有回传就保留未确认。运营整理与真实读者反馈分别记录，奖励若设置，应围绕被接纳的有效贡献。",
+            "把任务输入、账户或服务区域、必要付费条件放到方法比较中。卡片说明是阅读方法、取得文件还是在线使用；详情注明检查日期。入口不可用时保留方法说明，调整执行入口与推荐理由；实测推荐须明确实践者和审查责任人，留存输入、关键设置与结果检查。学习文章可以只交付方法解释；没有独立复核的作者案例保留作者说明身份，不把它直接写成平台验证结论；更正须指明受影响条目、具体条件、来源和修改内容，审核后进入正文。问题记录保留尝试、答复、实际调整和本人结果；没有回传就保留未确认。运营整理与真实读者反馈分别记录，奖励若设置，应围绕被接纳的有效贡献。",
             "围绕一个任务编排专题，把已有材料整理为方法比较、步骤说明和关联问答；依据不足的比较项保留未知。只有明确实践者、审查人并完成关键结果检查的方法，才标为平台实测推荐。通过现有内容页人工维护来源、入口和更正，不要求先开发开放编辑或奖励系统。"
           ],
           [
             "B · 应用解法",
-            "解法详情增加本人执行的动作、输出检查与日期；仅有诊断或作者说明的内容按排查记录呈现。卡片说清已确认的范围，使用者回传结果单独记录。；示例卡片交代运行位置和最近检查日期，详情说明必要设置与依赖。资源暂停时保留说明和问题记录，撤下当前可运行的承诺；替代链接只按已查证的状态介绍。；供给职责分开编写、技术复核、结果检查与后续维护，允许同一人承担多项，但每项须有实际记录。没有维护负责人时，只发布截至核验日期的例子，不开放持续排错承诺。",
+            "解法详情增加本人执行的动作、输出检查与日期；仅有诊断或作者说明的内容按排查记录呈现。卡片说清已确认的范围，使用者回传结果单独记录；示例卡片交代运行位置和最近检查日期，详情说明必要设置与依赖。资源暂停时保留说明和问题记录，撤下当前可运行的承诺；替代链接只按已查证的状态介绍；供给职责分开编写、技术复核、结果检查与后续维护，允许同一人承担多项，但每项须有实际记录。没有维护负责人时，只发布截至核验日期的例子，不开放持续排错承诺。",
             "以一个材料完整的真实问题为起点，先确认编写、结果检查和维护责任，在限定环境下呈现输入、处理动作与输出对照。通过现有教程和讨论承载，外部资源注明来源、必要设置及检查日期。只有排查过程而没有结果时，发布排查记录；未落实维护责任时，不开放持续排错服务。"
           ],
           [
             "C · 创作方法",
-            "保留作品流，同时为确有连续内容的项目提供集合入口；成片、分集和对应幕后过程相互关联。项目卡说明已有可访问内容，制作讲解写清各工具与人工环节承担什么，不把整个作品归功于单一模型。；方法详情对应具体材料版本，写清依赖、可替换输入、已检查输出和入口检查日期。更新说明解释哪些副本受影响、如何继续使用；确认入口不可用或无法核对时调整执行动作，保留作品和过程。失败反馈记录修改与重试结果。；主题先作为可观看、可了解做法的作品集合。只有明确主持人、回应范围、投稿问题处理与结束安排后，才开放参与。模板是可选材料；没有合适模板或主持能力时保留编辑选集，不许诺活动服务。",
+            "保留作品流，同时为确有连续内容的项目提供集合入口；成片、分集和对应幕后过程相互关联。项目卡说明已有可访问内容，制作讲解写清各工具与人工环节承担什么，不把整个作品归功于单一模型；方法详情对应具体材料版本，写清依赖、可替换输入、已检查输出和入口检查日期。更新说明解释哪些副本受影响、如何继续使用；确认入口不可用或无法核对时调整执行动作，保留作品和过程。失败反馈记录修改与重试结果；主题先作为可观看、可了解做法的作品集合。只有明确主持人、回应范围、投稿问题处理与结束安排后，才开放参与。模板是可选材料；没有合适模板或主持能力时保留编辑选集，不许诺活动服务。",
             "围绕一份真实作品整理可观看结果与对应制作说明；已有连续内容时用集合和关联链接组织，不预定产量。材料只开放能确认的交付范围，完整复用通过后再承诺相应执行步骤。主题可先采用编辑选集，主持与参与支持落实后再开放投稿；无需为这几种内容同时开发独立频道。"
           ],
           [
             "D · 练习反馈",
-            "练习入口分别说明仅参考示范、自主参与、申请具体反馈；作品卡片与详情不默认存在点评或修订。反馈型社区须有明确接手者和实际回应；仅有题目与示范时，可以提供学习材料，但不足以兑现反馈承诺。；开放反馈前确认点评者、回应范围和可用时间；负责人退出时暂停接受该项反馈，先说明已有提交如何处理。接替者确认范围后再恢复，未落实时保留题目与示范供自主练习。；作品详情保留目标、建议、作者是否尝试及实际结果；没有返稿就不补造前后对比。共性方法只提炼已有材料支持的判断，不以任务奖励要求用户交出改善结论。",
+            "练习入口分别说明仅参考示范、自主参与、申请具体反馈；作品卡片与详情不默认存在点评或修订。反馈型社区须有明确接手者和实际回应；仅有题目与示范时，可以提供学习材料，但不足以兑现反馈承诺；开放反馈前确认点评者、回应范围和可用时间；负责人退出时暂停接受该项反馈，先说明已有提交如何处理。接替者确认范围后再恢复，未落实时保留题目与示范供自主练习；作品详情保留目标、建议、作者是否尝试及实际结果；没有返稿就不补造前后对比。共性方法只提炼已有材料支持的判断，不以任务奖励要求用户交出改善结论。",
             "在点评者、可用时间和处理范围明确的条件下，围绕一个题目和真实示范开放有限反馈，完成已接手的回应。缺少接手者时，只能准备自主练习材料，尚不足以验证反馈型方案。平台示范与外部尝试分开记录，不用示范稿模拟用户返稿。"
           ]
         ]
@@ -1878,7 +1724,7 @@
     }
   ],
   "depth": {
-    "judgment": "报告已比较18个平台的任务、内容、运营、收费条件与部分使用过程，并为55条任务画像标明证据等级。现有资料能解释平台怎样运作，尚不能估计主要客群占比或各项机制带来的留存变化。",
+    "judgment": "报告已比较15个平台的任务、内容、运营、收费条件与部分使用过程，并为46条任务画像标明证据等级。现有资料能解释平台怎样运作，尚不能估计主要客群占比或各项机制带来的留存变化。",
     "rows": [
       [
         "产品与内容结构",
@@ -1887,18 +1733,18 @@
       ],
       [
         "运营与供给",
-        "18家补查普通内容、规则与维护；使用者反馈、作者说明、服务处理和继续使用分别记录。",
+        "15家补查普通内容、规则与维护；使用者反馈、作者说明、服务处理和继续使用分别记录。",
         "多数缺少工时、供稿频率与激励净效果。"
       ],
       [
         "用户与任务",
-        "55条任务画像另有18家补充检索与过程记录；后续复读不重复计为新用户。",
+        "46条任务画像另有15家补充检索与过程记录；后续复读不重复计为新用户。",
         "样本稀疏，无法还原平台用户总体。"
       ],
       [
         "实际使用",
         "部分平台有生成、保存、再次打开或复用检查。",
-        "未对18家完成同一任务的全流程验证。"
+        "未对15家完成同一任务的全流程验证。"
       ],
       [
         "经营机制与资源约束",
@@ -1917,15 +1763,15 @@
   "keyFindings": [
     {
       "view": "content",
-      "text": "分类决定用户先按什么找；卡片和详情分别提供选择所需的信息。观看、阅读与创作各有后续路径。"
-    },
-    {
-      "view": "business",
-      "text": "内容可以连接工具，也可以独立承担观看、学习和交流。订阅与升级发生在哪里已经可见，社区对收入和留存的贡献仍无法拆分。"
+      "text": "作品、模型、工作流和课程需要不同的选择信息。分类反映用途与资源类型，卡片提供预览和筛选线索，详情再承接观看、阅读、参与或使用。"
     },
     {
       "view": "supply",
-      "text": "供给不止于发布。模型版本、资源链接、课程章节和问题答案都需要持续维护，开放投稿并不会自动解决这些工作。"
+      "text": "内容供给包含发布后的工作：模型要更新版本，资源要维护链接，课程要纠错，问题要得到回应。作者计划和开放投稿能扩大来源，不能据此推算稳定产量。"
+    },
+    {
+      "view": "business",
+      "text": "18个研究样本中，15家有平台创作、开发或运行能力的公开资料。工具可以承接收费，社区也可以支持观看、学习和交流；社区对收入与留存的贡献仍缺少独立数据。"
     }
   ],
   "representatives": [
@@ -2106,7 +1952,7 @@
           "id": "o9-c-rh-1",
           "title": "RunningHub任务专区首页",
           "url": "https://www.runninghub.cn/",
-          "date": "未标注；此前于2026-09-09读取",
+          "date": "未标注；已于2026-09-09读取",
           "accessedAt": "2026-09-09",
           "dataFile": "site/lib/platform-operations.json"
         },
@@ -2285,127 +2131,6 @@
         }
       ],
       "category": "创作工具与作品"
-    },
-    {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "selectionReason": "作品生成与挑战、主持、评审相连，能观察兴趣参与如何形成内容供给。",
-      "task": "参与者按主题创作图片、提交挑战并评审他人作品；Promptle要求逐步修改图片以接近目标。公开作者访谈还出现主持和分享方法的活动，不能由此推定全部用户的参与方式。",
-      "content": "作品条目承载参赛图片与评审结果，挑战详情说明主题、模型限制和时段。Promptle成绩卡展示起点、目标、结果和得分；提示步骤需参与者同意，并在题目结束后开放。",
-      "path": "成员游戏默认凭链接加入，公开聊天室游戏可从发现入口进入。参与者按题面准备作品，经历投稿、评审和结果阶段；每日题目有更新节奏，但现有资料没有实际完成率。",
-      "supply": "成员可主持主题游戏并设置规则，其他成员投稿和评审；平台维护每日题目、阶段推进、连续记录及异常票处理。题目、作品和评价分别需要供给，功能存在不代表主持工作已稳定。",
-      "tool": "平台将图像生成与挑战、聊天室和作品管理放在同一产品内。免费与付费额度对应不同模型和队列条件；个人可能继续参与讨论却改用外部工具生成，两类行为不能合并判断。",
-      "payment": "个人可购买PRO方案与生成额度，付费涉及模型范围、速度和作品管理等权益。2026-09-09读取的规则区分Fast与Relax额度；奖励积分不是现金收入，实际付费率未披露。",
-      "limit": "挑战与Promptle主要依据官方规则，尚未完整实操。作者访谈是精选个案，外部工具迁移经历发生于2023年；现有材料不能判断奖励带来的净增活跃或今天的用户分布。",
-      "evidence": [
-        {
-          "dataFile": "site/lib/content-forms.json",
-          "sourceIds": [
-            "o9-g-night-game",
-            "o9-g-night-promptle",
-            "o9-g-night-rules"
-          ],
-          "supports": "挑战题面、作品与评审结果、Promptle成绩卡和可选步骤。材料为规则文档，Promptle仍标Alpha，不充作实操截图。"
-        },
-        {
-          "dataFile": "site/lib/platform-operations.json",
-          "sourceIds": [
-            "o9-g-night-game",
-            "o9-g-night-promptle",
-            "o9-g-night-streak",
-            "o9-g-night-rules"
-          ],
-          "supports": "成员主持、公开与链接加入、阶段推进、按UTC日的活动节奏及异常评审处理；没有参与率或停奖对照。"
-        },
-        {
-          "dataFile": "site/lib/audience-research.json",
-          "sourceIds": [
-            "P25-nightcafe-S-u3",
-            "P25-nightcafe-S-biz-night-artist"
-          ],
-          "recordIds": [
-            "P25-nightcafe-e5",
-            "P25-nightcafe-e7"
-          ],
-          "supports": "2023-10-08至11外部生成与留在社区参与的自述，以及2026-06-19官方作者访谈中的主持、教学和PRO搜索用途；均不代表主流分布。"
-        },
-        {
-          "dataFile": "site/lib/business-data.json",
-          "sourceIds": [
-            "biz-night-pro",
-            "biz-night-credits",
-            "biz-night-artist"
-          ],
-          "supports": "PRO与Fast、Relax额度的权益和队列差异，及作者作品管理用途。动态方案读取2026-09-09，不采用历史广告说明推断当前收入结构。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "o9-g-night-game",
-          "title": "Creating a Game (Community Challenge)",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/platform-operations.json"
-        },
-        {
-          "id": "o9-g-night-promptle",
-          "title": "Promptle: The Daily AI Art Puzzle",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-          "date": "未标绝对日期；标Alpha",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/platform-operations.json"
-        },
-        {
-          "id": "o9-g-night-rules",
-          "title": "Daily Challenge: Eligibility, Rating & Ranking",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-          "date": "未标绝对日期；v8于2026-09-09复核",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/platform-operations.json"
-        },
-        {
-          "id": "o9-g-night-streak",
-          "title": "Streaks & Badges",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges",
-          "date": "未标绝对日期",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/platform-operations.json"
-        },
-        {
-          "id": "P25-nightcafe-S-u3",
-          "title": "The rider",
-          "url": "https://www.reddit.com/r/aiArt/comments/172lvb0/",
-          "date": "2023-10-08至11；索引日期",
-          "accessedAt": "2026-09-10",
-          "dataFile": "site/lib/audience-research.json"
-        },
-        {
-          "id": "biz-night-artist",
-          "title": "NightCafe Artist Spotlight: Inside gullyDJ's Weird World",
-          "url": "https://nightcafe.studio/blogs/blog/nightcafe-artist-spotlight-gullydj",
-          "date": "2026-06-19",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/business-data.json"
-        },
-        {
-          "id": "biz-night-pro",
-          "title": "NightCafe PRO plans — what you get and which plan to choose",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-          "date": "动态帮助页，访问2026-09-09",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/business-data.json"
-        },
-        {
-          "id": "biz-night-credits",
-          "title": "Fast Credits vs Relax Credits",
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/fast-credits-vs-relax-credits",
-          "date": "未标日期",
-          "accessedAt": "2026-09-09",
-          "dataFile": "site/lib/business-data.json"
-        }
-      ],
-      "category": "兴趣创作与参与"
     },
     {
       "id": "datawhale",
@@ -2950,27 +2675,24 @@
     }
   ],
   "toolCensus": {
-    "title": "18个样本的工具支持关系",
+    "title": "15个样本的工具支持关系",
     "asOf": "依据截至2026-09-10已归档材料",
     "unit": "平台或关联产品组；吐司与Tensor.Art合计1个对象。",
     "classificationBasis": "按主要执行关系互斥归类，不按是否出现工具链接或开源代码计数。",
-    "conclusion": "12家提供平台创作执行，3家提供开发与运行能力，共15家有平台执行能力资料。另有1家同品牌关联API、1家外部工具讨论社区和1家学习合作实践组织。",
+    "conclusion": "9家提供平台创作执行，3家提供开发与运行能力，共12家有平台执行能力资料。关联API、外部工具讨论社区和学习合作实践组织各1家。",
     "categories": [
       {
         "kind": "creative",
         "label": "平台创作执行",
-        "count": 12,
+        "count": 9,
         "platformIds": [
           "liblib",
           "runninghub",
           "tusi",
-          "civitai",
           "seaart",
           "openart",
-          "nightcafe",
           "jimeng",
           "kling",
-          "midjourney",
           "leonardo",
           "runway"
         ],
@@ -2979,7 +2701,7 @@
           "dataFile": "site/lib/research-framework.json",
           "jsonPath": "countRules[kind=creative]; platforms[kind=creative]"
         },
-        "limitation": "Civitai部分能力依据官方实现文档；不是12家全部登录实测通过，也不代表全部模型由平台自研。"
+        "limitation": "具备执行能力不等于全部登录实测通过，也不代表模型由平台自研。"
       },
       {
         "kind": "developer",
@@ -3044,13 +2766,10 @@
       "liblib",
       "runninghub",
       "tusi",
-      "civitai",
       "seaart",
       "openart",
-      "nightcafe",
       "jimeng",
       "kling",
-      "midjourney",
       "leonardo",
       "runway",
       "waytoagi",
@@ -3061,7 +2780,7 @@
       "dify"
     ],
     "countLimitations": [
-      "这18家是按研究需要选择的样本，不用于估算中国或全球AI社区的工具化比例。",
+      "这15家是按研究需要选择的样本，不用于估算中国或全球AI社区的工具化比例。",
       "平台有执行能力、执行服务收费、社区促进付款是三个不同问题；15家的计数只回答第一项。",
       "图像、视频、GPU时间、应用工作区、许可和会员均可能收费，不能统一称为出售文本Token。",
       "平台入口、自研模型、外部供应商和成员资源分别记录；工具收入也不直接等于社区贡献或利润。",
@@ -3074,7 +2793,7 @@
         "name": "LiblibAI",
         "kind": "creative",
         "execution": "平台提供图像、视频和工作流运行；模型与方法可来自作者及外部供应方。",
-        "limit": "部分动态页面正文读取不足，路径结合此前报告样本；未取得社区带来的付费增量、作者收入分布或利润。",
+        "limit": "部分动态页面正文读取不足，路径结合既有报告样本；未取得社区带来的付费增量、作者收入分布或利润。",
         "sources": [
           {
             "id": "framework-liblib-1",
@@ -3160,36 +2879,6 @@
         ]
       },
       {
-        "id": "civitai",
-        "name": "Civitai",
-        "kind": "creative",
-        "execution": "官方实现文档记载站内生成器与Remix；生产页面访问受限。",
-        "limit": "这里统计的是官方文档支持的产品能力，未将实现文档当成所有功能线上可用的证明；现行购买资格、覆盖范围和社区收入未知。",
-        "sources": [
-          {
-            "id": "framework-civitai-1",
-            "title": "官方实现文档：生成与引导",
-            "url": "https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-civitai-2",
-            "title": "官方实现文档：资源商业化",
-            "url": "https://github.com/civitai/civitai/blob/main/docs/features/monetization-rules.md",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-civitai-3",
-            "title": "官方实现文档：会员",
-            "url": "https://github.com/civitai/civitai/blob/main/docs/features/buzz-memberships.md",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          }
-        ]
-      },
-      {
         "id": "seaart",
         "name": "SeaArt",
         "kind": "creative",
@@ -3257,36 +2946,6 @@
         ]
       },
       {
-        "id": "nightcafe",
-        "name": "NightCafe",
-        "kind": "creative",
-        "execution": "图像/视频生成、演化、局部修改、模型训练。",
-        "limit": "社区活动与工具相连的规则已确认；未取得活动带来的留存或订阅提升，指定模型无限生成仍有限制。",
-        "sources": [
-          {
-            "id": "framework-nightcafe-1",
-            "title": "成员挑战规则",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/community-challenges",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-nightcafe-2",
-            "title": "Evolve与局部修改",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-nightcafe-3",
-            "title": "PRO方案",
-            "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-pro-plans",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          }
-        ]
-      },
-      {
         "id": "jimeng",
         "name": "即梦",
         "kind": "creative",
@@ -3327,36 +2986,6 @@
             "id": "framework-kling-2",
             "title": "作者专题与工具用途",
             "url": "https://kling.ai/blog/kling-ai-turns-two-in-creators-own-words",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          }
-        ]
-      },
-      {
-        "id": "midjourney",
-        "name": "Midjourney",
-        "kind": "creative",
-        "execution": "网页生成、编辑、变体、放大与图生视频。",
-        "limit": "站外交流不等于网站具备完整讨论社区；付费GPU时间不等于用户等待时长或成品数量，社区增量未披露。",
-        "sources": [
-          {
-            "id": "framework-midjourney-1",
-            "title": "网页创作",
-            "url": "https://docs.midjourney.com/hc/en-us/articles/33390732264589-Creating-on-Web",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-midjourney-2",
-            "title": "Moodboards",
-            "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-            "date": "日期见原页；档案核对截至2026-09-10",
-            "dataFile": "site/lib/research-framework.json"
-          },
-          {
-            "id": "framework-midjourney-3",
-            "title": "套餐对照",
-            "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
             "date": "日期见原页；档案核对截至2026-09-10",
             "dataFile": "site/lib/research-framework.json"
           }
@@ -3441,7 +3070,7 @@
         "name": "WaytoAGI",
         "kind": "associated",
         "execution": "同品牌同域llm.waytoagi.com提供API服务和计费文档，与知识社区存在关联；是否由同一主体经营尚未核实。",
-        "limit": "本次工具普查未成功重读About和增长站，训练营与企业服务信息沿用此前快照，适用时间见对应来源。API运营主体、收入归属、供给真实性、稳定性和收入占比仍未核实。目录中的大量工具和Agents由第三方提供，同域API文档也介绍外部客户端的使用方式；收录不代表自营。",
+        "limit": "工具普查未成功重读About和增长站，训练营与企业服务信息沿用已有快照，适用时间见对应来源。API运营主体、收入归属、供给真实性、稳定性和收入占比仍未核实。目录中的大量工具和Agents由第三方提供，同域API文档也介绍外部客户端的使用方式；收录不代表自营。",
         "sources": [
           {
             "id": "framework-waytoagi-1",
@@ -3640,11 +3269,6 @@
       "homepage": "https://tusi.cn/"
     },
     {
-      "id": "civitai",
-      "name": "Civitai",
-      "homepage": "https://civitai.com/"
-    },
-    {
       "id": "seaart",
       "name": "SeaArt",
       "homepage": "https://www.seaart.ai/"
@@ -3655,11 +3279,6 @@
       "homepage": "https://openart.ai/"
     },
     {
-      "id": "nightcafe",
-      "name": "NightCafe",
-      "homepage": "https://creator.nightcafe.studio/"
-    },
-    {
       "id": "jimeng",
       "name": "即梦 AI",
       "homepage": "https://jimeng.jianying.com/"
@@ -3668,11 +3287,6 @@
       "id": "kling",
       "name": "可灵 Kling AI",
       "homepage": "https://kling.ai/"
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "homepage": "https://www.midjourney.com/"
     },
     {
       "id": "leonardo",

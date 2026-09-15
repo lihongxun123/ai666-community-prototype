@@ -40,11 +40,6 @@
     "from": "lib/profiles-china.ts"
   },
   {
-    "platformId": "nightcafe",
-    "text": "在活动之外观察是否继续创作、带自己的题目或帮助他人；这些是参与观察项，不把它们设为所有人的持续活跃条件。",
-    "from": "lib/profiles-global.ts"
-  },
-  {
     "platformId": "leonardo",
     "text": "作者合作可关注专业作者与产品持续反馈，而非只发送资源；筛选制作教学供给时，观察作者能否教会别人、是否反馈失败，不只看粉丝数。",
     "from": "lib/profiles-global.ts"
@@ -189,47 +184,12 @@
     "from": "lib/profiles-china.ts"
   },
   {
-    "platformId": "nightcafe",
-    "text": "可评估成员出题与轮流点评；运营仍需安排规则、进度和争议处理。",
-    "sourceFile": "lib/profiles-global.ts",
-    "sourceLocation": "供给者逐步成为组织者／第二段",
-    "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
-    "sources": [
-      {
-        "title": "创建成员挑战",
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-        "date": "未标更新日",
-        "note": "主题、投稿及组织权限",
-        "type": "官方",
-        "originalRef": 2
-      },
-      {
-        "title": "Daily Challenge 资格与排名",
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-        "date": "未标更新日",
-        "note": "资格、评审与反作弊",
-        "type": "官方",
-        "originalRef": 3
-      }
-    ],
-    "from": "lib/profiles-global.ts"
-  },
-  {
     "platformId": "seaart",
     "text": "用户在别处也能看到同样效果时，仍为何来多元拾光？可复现资料、明确用途、及时答疑和低试错成本是待验证的答案；更便宜或更多图本身未必足够。",
     "sourceFile": "lib/profiles-global.ts",
     "sourceLocation": "同质化供给的反证／第二段",
     "sourceScope": "沿用原章节的引用；来源说明竞品背景，不证明本项目建议有效。",
-    "sources": [
-      {
-        "title": "用户讨论：平台与 Civitai 的区别",
-        "url": "https://www.reddit.com/r/SeaArtAI/comments/1odm8cq/to_all_creators_on_sea_art_make_the_site/",
-        "date": "帖龄显示不一致；不定绝对日期",
-        "note": "同质化与分发价值的个案线索",
-        "type": "用户讨论",
-        "originalRef": 6
-      }
-    ],
+    "sources": [],
     "from": "lib/profiles-global.ts"
   },
   {
@@ -379,92 +339,6 @@
     "from": "lib/deep-china.ts"
   },
   {
-    "platformId": "civitai",
-    "text": "种子用户名单不能只由点击或关注事件自动生成。",
-    "sourceFile": "lib/deep-global.ts",
-    "sourceLocation": "ux／第二段",
-    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
-    "sources": [
-      {
-        "title": "Guided tours 实现说明",
-        "url": "https://github.com/civitai/civitai/blob/main/docs/features/guided-tours.md",
-        "date": "未标绝对更新日；访问 2026-09-09",
-        "note": "引导结束与真实成功的区别",
-        "type": "官方代码库",
-        "originalRef": 1
-      },
-      {
-        "title": "Image Resource Tracking",
-        "url": "https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md",
-        "date": "未标绝对更新日；访问 2026-09-09",
-        "note": "自动识别与手工归因",
-        "type": "官方代码库",
-        "originalRef": 2
-      },
-      {
-        "title": "Collaborative Collections",
-        "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
-        "date": "未标绝对更新日；访问 2026-09-09",
-        "note": "投稿、审核、关注与协作角色",
-        "type": "官方代码库",
-        "originalRef": 3
-      }
-    ],
-    "from": "lib/deep-global.ts"
-  },
-  {
-    "platformId": "nightcafe",
-    "text": "先确定验证哪类目标，不把兴趣参与直接等同于视频或商品素材制作需求。",
-    "sourceFile": "lib/deep-global.ts",
-    "sourceLocation": "ux／第二段",
-    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
-    "sources": [
-      {
-        "title": "Promptle: The Daily AI Art Puzzle",
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-        "date": "未标日期；访问 2026-09-09",
-        "note": "Alpha、编辑任务、成绩与自愿公开步骤",
-        "type": "官方",
-        "originalRef": 1
-      },
-      {
-        "title": "Daily Challenge downvoting",
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-is-downvoting-in-the-daily-challenge-handled",
-        "date": "未标日期；访问 2026-09-09",
-        "note": "官方承认奖励刷票与治理调整",
-        "type": "官方",
-        "originalRef": 2
-      }
-    ],
-    "from": "lib/deep-global.ts"
-  },
-  {
-    "platformId": "midjourney",
-    "text": "不把成熟平台曾做过的所有功能都列入多元拾光路线图，先看它是否匹配任务与维护能力。",
-    "sourceFile": "lib/deep-global.ts",
-    "sourceLocation": "ux／第二段",
-    "sourceScope": "原段未单列引用，保留所在档案的来源；具体建议仍待验证。",
-    "sources": [
-      {
-        "title": "An update on Rooms",
-        "url": "https://updates.midjourney.com/an-update-on-rooms/",
-        "date": "2026-02-26",
-        "note": "明确下线 Web Rooms 与原因",
-        "type": "官方",
-        "originalRef": 1
-      },
-      {
-        "title": "Moodboards",
-        "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-        "date": "未标更新时间；访问 2026-09-09",
-        "note": "ID、历史代码和重复使用",
-        "type": "官方",
-        "originalRef": 2
-      }
-    ],
-    "from": "lib/deep-global.ts"
-  },
-  {
     "platformId": "leonardo",
     "text": "MakeNow分享需说明接收者究竟会得到什么，区分结果、方法和客户素材的公开范围。",
     "sourceFile": "lib/deep-global.ts",
@@ -540,11 +414,6 @@
     "from": "lib/public-data.json"
   },
   {
-    "platformId": "civitai",
-    "text": "内容组织可以保留模型、作品或工具的直接返回入口，再观察用户是否确实收藏后回看或继续交流。公开年龄、性别和 Direct 份额不决定用户价值，也不能代替自身回访记录。",
-    "from": "lib/public-data.json"
-  },
-  {
     "platformId": "seaart",
     "text": "若考虑日语内容或作者合作，先核对语言、授权、沟通与持续维护的实际需要和成本。日本桌面访问占比不能单独证明这一市场适合多元拾光；当前仍是候选研究，不代表启动多语种运营。",
     "from": "lib/public-data.json"
@@ -555,11 +424,6 @@
     "from": "lib/public-data.json"
   },
   {
-    "platformId": "nightcafe",
-    "text": "持续观看、主题交流、活动参与和生成分别记录，检验各自是否出现跨周回访；生成等待与页面空置不当作有效消费。工具使用只是其中一条路径，现有第三方时长不能作为通过标准。",
-    "from": "lib/public-data.json"
-  },
-  {
     "platformId": "jimeng",
     "text": "制作类访谈可区分手机特效体验与连续制作，记录本人最近一次的输入、修改过程和结果。有意合作的作者另核下一次计划及可交付材料，观察期依据实际任务节奏，不要求所有人同周产生第二个任务。观看与兴趣参与另行观察。",
     "from": "lib/public-data.json"
@@ -567,11 +431,6 @@
   {
     "platformId": "kling",
     "text": "若验证 MakeNow 的视频制作支持，可访谈反复改镜头、管理角色或复用素材的创作者，查看最近项目和下一次实际计划。招募范围属于制作路径；可灵整体访问量不能用来估算多元拾光的潜在付费人数。",
-    "from": "lib/public-data.json"
-  },
-  {
-    "platformId": "midjourney",
-    "text": "若进行桌面制作任务访谈，可从公开作品与作者说明寻找对象，另问职业、商用频次和实际设备。国家的桌面占比不是职业画像，也不排除手机观看或纯欣赏用户。",
     "from": "lib/public-data.json"
   },
   {
@@ -650,11 +509,6 @@
     "from": "lib/public-data.json"
   },
   {
-    "platformId": "midjourney",
-    "text": "不照搬高页数目标。欣赏路径观察有效浏览、收藏回看和讨论；制作路径另查作品采用与下一次实际任务。完成作品不是所有社区用户的共同通过条件。",
-    "from": "lib/public-data.json"
-  },
-  {
     "platformId": "datawhale",
     "text": "学习试验可分别观察持续阅读、自主练习、提问与成果提交。可运行案例适合验证实践路径，提交和重复使用只用于对应承诺；不把没有交成果的兴趣学习者一概排除。",
     "from": "lib/public-data.json"
@@ -676,7 +530,7 @@
   },
   {
     "platformId": "china-users",
-    "text": "平台供给需要多少持续投入；团队与长期平台供给条件已明确。；按内容类型分开的制作、复核、回应和维护记录，以及实际可用时间。；不能根据市场规模推算周产量、招聘数量或同时开展多少条方向。",
+    "text": "平台供给需要多少持续投入；团队与长期平台供给条件已明确；按内容类型分开的制作、复核、回应和维护记录，以及实际可用时间；不能根据市场规模推算周产量、招聘数量或同时开展多少条方向。",
     "from": "lib/china-ai-users.json"
   },
   {
@@ -747,10 +601,6 @@
         "title": "Spaces Overview"
       },
       {
-        "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-        "title": "Moodboards"
-      },
-      {
         "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
         "title": "Publishing Workflows as Apps"
       }
@@ -758,17 +608,9 @@
   },
   {
     "platformId": "content",
-    "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。",
+    "text": "专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。",
     "from": "lib/content-taxonomy.json",
     "sources": [
-      {
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts",
-        "title": "help.nightcafe.studio"
-      },
-      {
-        "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-        "title": "Promptle: The Daily AI Art Puzzle"
-      },
       {
         "url": "https://jimeng.jianying.com/visionary",
         "title": "未来影像计划：行业活动与获奖作品"
@@ -980,16 +822,6 @@
     "from": "lib/business-data.json"
   },
   {
-    "platformId": "civitai",
-    "text": "观察种子用户时，分别记录本人或组织付款、获得补贴、通过创作取得额度等来源。付款来源与有效消费、持续回访分别判断，不用是否付费筛掉有持续兴趣的用户。",
-    "from": "lib/business-data.json"
-  },
-  {
-    "platformId": "civitai",
-    "text": "比较作者合作形式时，应了解作者能否预期回报及规则变化的影响。共享池提案和个别作者抱怨可作为追问线索，不能据此预测合作作者的平均收益或流失。",
-    "from": "lib/profiles-global.ts"
-  },
-  {
     "platformId": "openart",
     "text": "访谈可以从具体功能请求继续追问用户想实现的表达或体验。角色一致性曾帮助 OpenArt 识别故事需要，但不能据此预设多元拾光用户也需要同一种工具。",
     "from": "lib/profiles-global.ts"
@@ -1003,16 +835,6 @@
     "platformId": "kling",
     "text": "如需采购模型支持制作任务，应把参考准备、失败重试、人工选片与后处理纳入总成本比较；不能由模型报价推断交付成本，也不据此认定采购或制作服务已经启动。",
     "from": "lib/business-data.json"
-  },
-  {
-    "platformId": "midjourney",
-    "text": "比较自身 API 与订阅服务时，应分清模型官方授权、第三方转接和终端订阅的范围与使用条件，不能把不同业务形式合并成一条已验证路径。竞品授权合作不代表多元拾光拥有同样资格。",
-    "from": "lib/business-data.json"
-  },
-  {
-    "platformId": "midjourney",
-    "text": "若尝试邀请或小范围社群测试，应记录自身招募过程和投入，不能照搬 Midjourney 的历史路径并假设成本相同。现有合作方回顾不证明邀请机制的单独效果。",
-    "from": "lib/profiles-global.ts"
   },
   {
     "platformId": "waytoagi",

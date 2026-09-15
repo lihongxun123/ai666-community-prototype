@@ -1,5 +1,5 @@
 {
-  "title": "18家竞品的内容形态总览",
+  "title": "15家竞品的内容形态总览",
   "checkedAt": "2026-09-09",
   "lead": "",
   "scope": "16类内容可在同一页面组合。卡片与详情字段为设计建议，竞品实有字段见对应截图和来源。",
@@ -32,10 +32,8 @@
         "seaart",
         "jimeng",
         "kling",
-        "midjourney",
         "leonardo",
         "openart",
-        "nightcafe",
         "runway"
       ],
       "boundary": "欣赏价值本身成立，不必强行为每件艺术作品附教程；但不能将无过程材料的成品标成可复现案例。",
@@ -45,10 +43,8 @@
         "SeaArt",
         "即梦AI",
         "可灵AI / Kling AI",
-        "Midjourney",
         "Leonardo.Ai",
         "OpenArt",
-        "NightCafe",
         "Runway"
       ],
       "links": [
@@ -65,16 +61,8 @@
           "title": "openart.ai"
         },
         {
-          "url": "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
-          "title": "docs.midjourney.com"
-        },
-        {
           "url": "https://aif.runwayml.com/",
           "title": "aif.runwayml.com"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
-          "title": "help.nightcafe.studio"
         },
         {
           "url": "https://jimeng.jianying.com/",
@@ -172,25 +160,17 @@
       ],
       "handoff": "复制文字、调用引用或选入角色后，填写自己的题材和材料。",
       "representativePlatforms": [
-        "midjourney",
         "openart",
-        "nightcafe",
         "waytoagi",
         "kling"
       ],
       "boundary": "提示文本、风格代码和视觉角色引用的移植范围不同；取得引用不等于取得训练文件或全部参考图。此类角色服务于图像和视频创作，不与对话角色混算。",
       "platformNames": [
-        "Midjourney",
         "OpenArt",
-        "NightCafe",
         "WaytoAGI",
         "可灵AI / Kling AI"
       ],
       "links": [
-        {
-          "url": "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator",
-          "title": "docs.midjourney.com"
-        },
         {
           "url": "https://openart.ai/features/ai-character/",
           "title": "openart.ai"
@@ -204,16 +184,8 @@
           "title": "kling.ai"
         },
         {
-          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-          "title": "Moodboards"
-        },
-        {
           "url": "https://openart.ai/blog/consistent-characters-in-ai-video/",
           "title": "How to Keep Consistent Characters in AI Video Scenes"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-          "title": "Promptle: The Daily AI Art Puzzle"
         }
       ],
       "evidenceBoundary": "WaytoAGI提示有正文样本；风格/角色多由功能指南支持。Kling元素资产与生成公开视频的公开范围分开，不能写成公开素材库。"
@@ -240,7 +212,6 @@
         "modelscope",
         "tusi",
         "seaart",
-        "civitai",
         "leonardo",
         "liblib"
       ],
@@ -250,15 +221,10 @@
         "ModelScope 魔搭",
         "吐司 / Tensor.Art",
         "SeaArt",
-        "Civitai",
         "Leonardo.Ai",
         "LiblibAI"
       ],
       "links": [
-        {
-          "url": "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md",
-          "title": "github.com"
-        },
         {
           "url": "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
           "title": "intercom.help"
@@ -284,7 +250,7 @@
           "title": "set LoRA模型版本页"
         }
       ],
-      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；Civitai不作为亲见卡片，Leonardo此训练资料标为Legacy。"
+      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；"
     },
     {
       "id": "input_material",
@@ -560,7 +526,6 @@
         "seaart",
         "kling",
         "openart",
-        "nightcafe",
         "leonardo",
         "dify",
         "runninghub",
@@ -574,7 +539,6 @@
         "SeaArt",
         "可灵AI / Kling AI",
         "OpenArt",
-        "NightCafe",
         "Leonardo.Ai",
         "Dify",
         "RunningHub",
@@ -589,10 +553,6 @@
         {
           "url": "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
           "title": "www.runninghub.cn"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
-          "title": "help.nightcafe.studio"
         },
         {
           "url": "https://www.leonardo.ai/news/how-to-edit-videos-with-ai",
@@ -719,7 +679,6 @@
         "datawhale",
         "huggingface",
         "modelscope",
-        "nightcafe",
         "waytoagi"
       ],
       "boundary": "帖子被关闭、回复很多或作者说解决了，都不能单独证明方案普遍有效；AI回答有引用也不等于引用确实支持全部结论。",
@@ -728,14 +687,9 @@
         "Datawhale",
         "Hugging Face",
         "ModelScope 魔搭",
-        "NightCafe",
         "WaytoAGI"
       ],
       "links": [
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
-          "title": "help.nightcafe.studio"
-        },
         {
           "url": "https://www.waytoagi.com/zh/question/82231",
           "title": "www.waytoagi.com"
@@ -778,28 +732,20 @@
       "handoff": "沿有说明的条目进入原内容；需要动手时再看其各自材料。",
       "representativePlatforms": [
         "huggingface",
-        "nightcafe",
         "waytoagi",
         "leonardo",
-        "civitai",
         "liblib",
         "linuxdo"
       ],
-      "boundary": "合集交付选择和组织，不自动携带原资源文件与许可。Civitai协作部分目前主要依据实现说明；TASTE等专题也不能推断全部作品由该平台生成。",
+      "boundary": "合集交付选择和组织，不自动携带原资源文件与许可。TASTE等专题也不能推断全部作品由该平台生成。",
       "platformNames": [
         "Hugging Face",
-        "NightCafe",
         "WaytoAGI",
         "Leonardo.Ai",
-        "Civitai",
         "LiblibAI",
         "LINUX DO"
       ],
       "links": [
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe",
-          "title": "help.nightcafe.studio"
-        },
         {
           "url": "https://www.leonardo.ai/news/taste-curation-no-3-sherbet",
           "title": "www.leonardo.ai"
@@ -819,13 +765,9 @@
         {
           "url": "https://about.waytoagi.com/",
           "title": "关于 WaytoAGI（正文证据）"
-        },
-        {
-          "url": "https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md",
-          "title": "Collaborative Collections"
         }
       ],
-      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。Civitai协作机制是实现说明；专题和外部链接的历史状态沿用分组限制。"
+      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。专题和外部链接的历史状态沿用分组限制。"
     },
     {
       "id": "challenge_brief",
@@ -845,21 +787,17 @@
       ],
       "handoff": "先理解题目并取得参与材料；完成后的作品、方法或反馈应另有入口，不与待认领任务混计。",
       "representativePlatforms": [
-        "nightcafe",
         "jimeng",
         "runway",
         "tusi",
-        "datawhale",
-        "midjourney"
+        "datawhale"
       ],
       "boundary": "赛事、课程作业、Promptle和图片偏好任务评判的对象不同，没有统一质量分。规则、已提交成果、结果与实际兑付要分别核对；任务条数不是已完成内容量。",
       "platformNames": [
-        "NightCafe",
         "即梦AI",
         "Runway",
         "吐司 / Tensor.Art",
-        "Datawhale",
-        "Midjourney"
+        "Datawhale"
       ],
       "links": [
         {
@@ -875,18 +813,6 @@
           "title": "contributor.datawhale.cn"
         },
         {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge",
-          "title": "Creating a Game (Community Challenge)"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking",
-          "title": "Daily Challenge: Eligibility, Rating & Ranking"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-          "title": "Promptle: The Daily AI Art Puzzle"
-        },
-        {
           "url": "https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/dc943398-71d6-4fd2-bb26-215c4a34ae21.html",
           "title": "即梦Dreamina×剪映未来影像计划AI短片挑战赛事细则"
         },
@@ -897,10 +823,6 @@
         {
           "url": "https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/homework/",
           "title": "作业发布与验证"
-        },
-        {
-          "url": "https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks",
-          "title": "Complete Tasks"
         }
       ],
       "evidenceBoundary": "规则、展示档案和题目招募分别支持相应结构；吐司活动页年份未明，Datawhale招募只读到索引，不写成当前完整认领规则。"
@@ -968,8 +890,7 @@
         "linuxdo",
         "dify",
         "huggingface",
-        "seaart",
-        "civitai"
+        "seaart"
       ],
       "boundary": "公告不证明全部账号已生效；提出修改不等于已经合并，发布新版也不意味着旧副本自动更新。",
       "platformNames": [
@@ -977,8 +898,7 @@
         "LINUX DO",
         "Dify",
         "Hugging Face",
-        "SeaArt",
-        "Civitai"
+        "SeaArt"
       ],
       "links": [
         {
@@ -1012,10 +932,6 @@
         {
           "url": "https://huggingface.co/docs/hub/repositories-pull-requests-discussions",
           "title": "Pull Requests and Discussions"
-        },
-        {
-          "url": "https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn",
-          "title": "The Creator Collab Update: 4 New Ways to Get Seen and Earn"
         }
       ],
       "evidenceBoundary": "作者版本关系、公告、插件版本历史和协作修改提案均可留下维护信息；提案是否合并、规则何时适用仍须各看原文。"
@@ -1116,13 +1032,11 @@
       "representativePlatforms": [
         "dify",
         "huggingface",
-        "midjourney",
         "runway"
       ],
       "sourceIds": [
         "o9-d-dify-manage",
         "o9-d-hf-spaces",
-        "o9-g-mid-board",
         "o9-g-run-app"
       ],
       "sourceUrls": [],
@@ -1136,10 +1050,6 @@
           "title": "Spaces Overview"
         },
         {
-          "url": "https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards",
-          "title": "Moodboards"
-        },
-        {
           "url": "https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps",
           "title": "Publishing Workflows as Apps"
         }
@@ -1148,29 +1058,17 @@
     {
       "id": "optional_process_visibility",
       "title": "作品公开范围由作者与许可决定",
-      "text": "NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。能够欣赏作品，不代表能取得完整制作材料。",
+      "text": "专业成片还可能经过人工处理。能够欣赏作品，不代表能取得完整制作材料。",
       "representativePlatforms": [
-        "nightcafe",
         "jimeng",
         "runway"
       ],
       "sourceIds": [
-        "o9-g-night-promptle",
         "o9-c-jm-2",
         "o9-g-run-miro"
       ],
-      "sourceUrls": [
-        "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts"
-      ],
+      "sourceUrls": [],
       "links": [
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts",
-          "title": "help.nightcafe.studio"
-        },
-        {
-          "url": "https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle",
-          "title": "Promptle: The Daily AI Art Puzzle"
-        },
         {
           "url": "https://jimeng.jianying.com/visionary",
           "title": "未来影像计划：行业活动与获奖作品"
@@ -1391,9 +1289,7 @@
         "https://tensor.art/images/726162984440804171?post_id=726162984436609871",
         "https://www.seaart.ai/explore/detail/cug2q2te878c73e48gqg?source=share_link",
         "https://openart.ai/story",
-        "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video",
-        "https://aif.runwayml.com/",
-        "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe"
+        "https://aif.runwayml.com/"
       ],
       "evidenceBoundary": "混合了公开作品样本、官方功能说明和精选展映；官网演示、获奖作品不当成普通作者总体画像。"
     },
@@ -1413,12 +1309,9 @@
     {
       "categoryId": "prompt_style",
       "sourceIds": [
-        "o9-g-mid-board",
-        "o9-g-open-character",
-        "o9-g-night-promptle"
+        "o9-g-open-character"
       ],
       "sourceUrls": [
-        "https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator",
         "https://openart.ai/features/ai-character/",
         "https://www.waytoagi.com/zh/prompts/246",
         "https://kling.ai/quickstart/klingai-element-library-3-user-guide"
@@ -1434,11 +1327,10 @@
         "o9-c-sa-5"
       ],
       "sourceUrls": [
-        "https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md",
         "https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai",
         "https://www.liblib.art/modelinfo/a2c90169daeb4e548322fdc0dc88af46?from=personal_page"
       ],
-      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；Civitai不作为亲见卡片，Leonardo此训练资料标为Legacy。"
+      "evidenceBoundary": "具体资源样本、推荐文档结构与开发接口说明的层级不同；"
     },
     {
       "categoryId": "input_material",
@@ -1511,7 +1403,6 @@
       "sourceUrls": [
         "https://tusi.cn/articles/728359301611162291",
         "https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide",
-        "https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe",
         "https://www.leonardo.ai/news/how-to-edit-videos-with-ai",
         "https://linux.do/t/topic/174250",
         "https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html"
@@ -1543,7 +1434,6 @@
         "o9-d-ms-issue"
       ],
       "sourceUrls": [
-        "https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe",
         "https://www.waytoagi.com/zh/question/82231"
       ],
       "evidenceBoundary": "包括真实问题样本、提问规范与AI问答样本；规范不代表所有帖子达标，搜索/生成答案不当作已审定结论。"
@@ -1552,27 +1442,21 @@
       "categoryId": "curated_collection",
       "sourceIds": [
         "o9-d-hf-collection",
-        "o9-d-way-about",
-        "o9-g-civi-coll"
+        "o9-d-way-about"
       ],
       "sourceUrls": [
-        "https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe",
         "https://www.leonardo.ai/news/taste-curation-no-3-sherbet",
         "https://www.liblib.art/activities/49a6540f5b84400a9ed8ff6bcdfcaaa6/2025_envelopecover-models",
         "https://linux.do/t/topic/122079"
       ],
-      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。Civitai协作机制是实现说明；专题和外部链接的历史状态沿用分组限制。"
+      "evidenceBoundary": "资源索引、视觉策展与协作合集不是同一种供给责任。专题和外部链接的历史状态沿用分组限制。"
     },
     {
       "categoryId": "challenge_brief",
       "sourceIds": [
-        "o9-g-night-game",
-        "o9-g-night-rules",
-        "o9-g-night-promptle",
         "o9-c-jm-4",
         "o9-d-dw-learning",
-        "o9-d-dw-homework",
-        "o9-g-mid-tasks"
+        "o9-d-dw-homework"
       ],
       "sourceUrls": [
         "https://aif.runwayml.com/",
@@ -1599,8 +1483,7 @@
         "o9-c-sa-6",
         "o9-d-ld-connect",
         "o9-d-dify-template",
-        "o9-d-hf-discussion",
-        "o9-g-civi-update"
+        "o9-d-hf-discussion"
       ],
       "sourceUrls": [
         "https://linux.do/t/topic/1401642",

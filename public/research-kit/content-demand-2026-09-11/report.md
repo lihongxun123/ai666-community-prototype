@@ -34,20 +34,17 @@
 
 例如一条宠物拟人短剧：主题是萌宠，形式是视频；观看者可能只想追故事，另一位用户可能想制作自家宠物视频。只有出现明确商用任务时，才标注宠物商业行业。每条内容可有多个标签，标签占比不能相加成人群占比。
 
-## 18个平台
+## 15个平台
 
-对照18个平台提供的内容、可见消费线索和证据范围。展开平台可查普通用户线索、来源与缺失数据；本表不能用于全站行业排名。
+对照15个平台提供的内容、可见消费线索和证据范围。展开平台可查普通用户线索、来源与缺失数据；本表不能用于全站行业排名。
 
 | 平台 | 供给 | 消费 | 证据 |
 | --- | --- | --- | --- |
 | LiblibAI | 国风视觉；商品图处理资源 | 看风格、找模型；处理自己的图片 | 作者用途明确；消费经历有限 |
 | RunningHub | 电商、短剧、平面设计与短视频工作流 | 找可运行方法；导入和修改流程 | 分类可见；运行与行业份额未知 |
 | 吐司 / Tensor.Art | 写实、动漫、国风；电商、游戏、建筑用途 | 找角色与风格；复用资源、连续创作 | 中文站与国际站分别观察 |
-| Civitai | 模型、例图与合集；历史幻想兴趣线索 | 看概念、学训练、下载后外部使用 | 当前题材列表读取受阻 |
 | SeaArt | 角色、像素、趣味特效及商品宣传案例 | 看作品、玩效果、找可修改的方法 | 单作品字段不能代表主题需求 |
 | OpenArt | 音乐视频、角色vlog、解释视频、ASMR | 观看与寻找灵感；制作自己的故事 | 社区标签可见；用户份额未知 |
-| NightCafe | 奇幻艺术与主题挑战 | 欣赏、创作、投票与交流 | 兴趣参与机制明确；消费规模未知 |
-| Midjourney | 图像、风格与创意发现 | 找风格和灵感；观看与创作 | 按视觉组织；无法推出职业分布 |
 | Leonardo.Ai | 游戏素材、设计与商业创意案例 | 找资产、准备视觉素材、继续编辑 | 具体素材与项目存在；采用率未知 |
 | 即梦AI | 国风、科幻及实验视觉精选 | 看短片、找风格、尝试创作 | 编辑精选不能代表全站 |
 | 可灵 Kling AI | 影像、叙事短片与创作项目 | 观看作品；学习和制作视频 | 项目和活动线索；消费结构未定 |
@@ -244,7 +241,6 @@
 - [Enhance Image with SUPIR + UPSCALE](https://tensor.art/workflows/824922304248158170)：图像增强、参数取舍、故障说明、32节点和15 star；不代表普遍使用。 资料日期：2025-01-31更新；读取：2026-09-11。
 - [I cannot find Loras on the searcher](https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/)：沿用研究室用户画像已读的国际站资源寻找经历，本次未重开。 资料日期：2025-06-09至06-12；读取：2026-09-10。
 
-### Civitai
 
 #### 供给题材
 
@@ -275,9 +271,6 @@
 
 #### 已观察信号
 
-- 官方实现文档；合集允许按权限收录图像、帖子与模型；文档明确关注者和协作者不同。 [Collaborative Collections](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)
-- 官方实现文档；例图可以关联模型版本。可追溯资源不等于完整流程，也不证明该关联正确。 [Image Resource Tracking](https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md)
-- 历史公开用户自述；2024 年讨论中可见日常兴趣创作、看概念趋势、学习训练与回站分享的描述。 [Civitai 公开用户讨论：使用与回访原因](https://www.reddit.com/r/civitai/comments/1e0cdub/anyone_else_think_civitai_is_actually_pretty_great/)
 
 #### 可检验的机会
 
@@ -293,10 +286,6 @@
 
 #### 来源
 
-- [Collaborative Collections](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)：合集承载对象、投稿、关注者与协作者的区别；不能证明线上每项均已开放。 资料日期：未标明；读取：2026-09-11。
-- [Image Resource Tracking](https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md)：图像与模型版本的资源关联；不提供题材份额。 资料日期：未标明；读取：2026-09-11。
-- [Civitai 公开用户讨论：使用与回访原因](https://www.reddit.com/r/civitai/comments/1e0cdub/anyone_else_think_civitai_is_actually_pretty_great/)：DnD、Warhammer 兴趣创作及回站学习/看趋势的历史自述；本次重开正文，具体匿名观察沿用既有画像。 资料日期：2024-07-11；读取：2026-09-11。
-- [Models](https://civitai.com/models)：访问限制记录；不提供内容证据。 资料日期：未标明；读取：2026-09-11。
 
 ### SeaArt
 
@@ -413,7 +402,6 @@
 - [AI Product Image Generator](https://openart.ai/features/ai-product-image-generator/)：电商/广告/社媒商品图用途、输入和挑选步骤；营销效果和成功比例不采用。 资料日期：未标明；读取：2026-09-11。
 - [OpenArt 音乐视频项目经历讨论](https://www.reddit.com/r/generativeAI/comments/1ng7d42/)：音乐视频项目、角色参考及前后反馈；历史个案。 资料日期：2025-11 至 2026 年；评论含相对日期；读取：2026-09-10。
 
-### NightCafe
 
 #### 供给题材
 
@@ -446,9 +434,6 @@
 
 #### 已观察信号
 
-- 官方主题运营实例；奇幻主题月连接挑战、指南与作者内容。题材经平台选择，不能据此认定它是自然需求第一名。 [Fantasy Month on NightCafe](https://nightcafe.studio/blogs/blog/fantasy-month-nightcafe)
-- 官方互动机制；每日挑战以投稿期和投票期组织内容；作品被随机展示并评分。 [NightCafe Daily Challenges Explained — Updated for 2026](https://nightcafe.studio/blogs/blog/nightcafe-daily-challenges-guide)
-- 可见历史评论；挑战指南页有 2023—2024 年评论，讨论比赛公平与图像能否用于书籍；评论存在重复，未计独立人数。 [NightCafe Daily Challenges Explained — Updated for 2026](https://nightcafe.studio/blogs/blog/nightcafe-daily-challenges-guide)
 
 #### 可检验的机会
 
@@ -464,10 +449,7 @@
 
 #### 来源
 
-- [Fantasy Month on NightCafe](https://nightcafe.studio/blogs/blog/fantasy-month-nightcafe)：奇幻题材与月度内容运营；官方叙事中的用户故事没有独立核验。 资料日期：2026-03-05；读取：2026-09-11。
-- [NightCafe Daily Challenges Explained — Updated for 2026](https://nightcafe.studio/blogs/blog/nightcafe-daily-challenges-guide)：挑战节奏、投票和结果画廊；可见旧评论不能当作当前需求规模。 资料日期：原发布日期 2023-03-16；标题标为 2026 更新；读取：2026-09-11。
 
-### Midjourney
 
 #### 供给题材
 
@@ -499,9 +481,6 @@
 
 #### 已观察信号
 
-- 官方产品机制；Explore 支持不同排序、喜欢和参考复用，风格可收藏。它证明消费入口，不提供实际消费量。 [Website Overview](https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview)
-- 官方内容对象说明；Moodboard 用一组图片形成可再调用的审美参考，并保存版本代码。 [Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)
-- 既有历史用户自述；同一工具用于壁纸、水彩参考、桌游，也用于专业流程前期；后者通常仍有绘画、3D 或合成步骤。 [What do you use Midjourney for?](https://www.reddit.com/r/midjourney/comments/112a0cs/) [Anyone using Midjourney professionally?](https://www.reddit.com/r/midjourney/comments/16d5azt/)
 
 #### 可检验的机会
 
@@ -517,10 +496,6 @@
 
 #### 来源
 
-- [Website Overview](https://docs.midjourney.com/hc/en-us/articles/33329460426765-Website-Overview)：Explore 排序、风格搜索、作品详情和收藏复用机制；不是用户结构统计。 资料日期：未标明；读取：2026-09-11。
-- [Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)：风格参考集合与版本化调用；不提供内容消费规模。 资料日期：未标明；读取：2026-09-11。
-- [What do you use Midjourney for?](https://www.reddit.com/r/midjourney/comments/112a0cs/)：壁纸、水彩参考和桌游辅助等个人用途。 资料日期：2023-02-14；读取：2026-09-10。
-- [Anyone using Midjourney professionally?](https://www.reddit.com/r/midjourney/comments/16d5azt/)：影视、插画、书封和零售概念等历史任务自述。 资料日期：2023-09；读取：2026-09-10。
 
 ### Leonardo.Ai
 
@@ -2098,7 +2073,6 @@ PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成
 
 下一批内容研究：故事观看与制作需求分开
 
-平台参照：[OpenArt](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#openart)、[Midjourney](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#midjourney)、[NightCafe](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#nightcafe)、[吐司 / Tensor.Art](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#tusi)
 
 - **竞品供给**：角色作品、风格资源、故事视频及主题挑战已经存在。
 
@@ -2118,9 +2092,7 @@ PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成
 
 下一批内容研究：搜索增长，AI意图待核
 
-平台参照：[RunningHub](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#runninghub)、[OpenArt](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#openart)、[SeaArt](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#seaart)、[NightCafe](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#nightcafe)
 
-- **竞品供给**：RunningHub首页可见宠物奇观等短视频模板；OpenArt、SeaArt和NightCafe提供角色或主题活动的组织参照。尚未取得宠物AI内容的细分库存与消费量。
 
 - **消费人群**：喜欢宠物故事的人；想用自家宠物照片创作的人。
 
@@ -2138,7 +2110,6 @@ PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成
 
 保留题材对照；普通内容与供给成本待核
 
-平台参照：[即梦AI](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#jimeng)、[NightCafe](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#nightcafe)、[Midjourney](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#midjourney)、[可灵 Kling AI](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#kling)、[Runway](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#runway)
 
 - **竞品供给**：精选短片、艺术作品、主题挑战和电影项目可见。
 
@@ -2178,7 +2149,6 @@ PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成
 
 计划词未收录；不据此淘汰
 
-平台参照：[Leonardo.Ai](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#leonardo)、[吐司 / Tensor.Art](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#tusi)、[Civitai](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#civitai)、[Hugging Face](https://ai666-community-research-20260908.hongxun-li.chatgpt.site/#huggingface)
 
 - **竞品供给**：游戏用途、像素素材和兴趣角色资源可见；兴趣题材与生产资产分开。
 
@@ -2415,7 +2385,7 @@ PR #126仍Open；代码构造或静态检查记录不等于模型真实调用成
 
 ## 采样口径
 
-18个平台的分类与用途档案之外，新增了7个平台的18条具体样本：商品素材6条、兴趣作品6条、任务求助6条。11条为新增观察，7条为既有材料复核；不是18名新用户，也不是全站随机样本。
+15个平台的分类与用途档案之外，新增了7个平台的18条具体样本：商品素材6条、兴趣作品6条、任务求助6条。11条为新增观察，7条为既有材料复核；不是18名新用户，也不是全站随机样本。
 
 ### 供给记录
 

@@ -24,7 +24,7 @@ export function PublicDataOverview({ data, allData, methods, insights, onSelect,
   return <div className="public-data-report">
     <div className="page-heading"><h1>访问与渠道数据</h1></div>{filter}
     <nav className="article-toc" aria-label="公开数据章节">{[['data-comparison','同月对照'],['data-insights','数据带来的判断'],['data-method','统计方法与局限'],['data-coverage','逐家来源与缺口']].map(([id,label]) => <a href="#data" key={id} onClick={event=>{event.preventDefault();document.getElementById(id)?.scrollIntoView({block:'start'});}}>{label}</a>)}</nav>
-    <p className="data-scope-note">核验于 2026-09-09。{comparable} / 18 家取得下表指定域名的 Semrush 2026 年 7 月 Visits；其余保留缺口及其他公开证据。M 表示百万，K 表示千。Visits 是访问次数估计。</p>
+    <p className="data-scope-note">核验于 2026-09-09。{comparable} / 15家取得下表指定域名的 Semrush 2026 年 7 月 Visits；其余保留缺口及其他公开证据。M 表示百万，K 表示千。Visits 是访问次数估计。</p>
     <section id="data-comparison">
       <div className="section-heading"><h2>同来源、同月份的网页访问</h2><span>{comparisonProvider} · {comparisonMonth}全球、全设备</span></div>
       <div className="data-metric-controls" aria-label="切换对比指标">{choices.map(choice => <button key={choice.key} aria-pressed={metricKey===choice.key} onClick={()=>setMetricKey(choice.key)}>{choice.label}</button>)}</div>
@@ -58,7 +58,7 @@ export function PublicDataProfileSection({ data }: { data: PublicDataProfile }) 
     <VisitTrends profile={data}/>
     <h3>数据支持的判断</h3>{data.interpretations.map((paragraph,index)=><p className="data-interpretation" key={index}>{paragraph}</p>)}
     <div className="citations business-citations">{data.sources.filter(source=>data.observations.some(observation=>observation.sourceId===source.id&&observation.evidenceStatus==='page')).map(source=><a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.publisher} · {source.title}</a>)}</div>
-    <h3>逐项数值与统计范围</h3><p className="data-scope-note">按来源保留完整记录。不同月份、设备、域名及提供方的数值分别阅读；原页面更新后可能与本次记录不同。</p>
+    <h3>逐项数值与统计范围</h3><p className="data-scope-note">按来源保留完整记录。不同月份、设备、域名及提供方的数值分别阅读；原页面更新后可能与记录不同。</p>
     {data.sources.map(source=>{
       const observations=data.observations.filter(observation=>observation.sourceId===source.id);
       if(!observations.length) return null;

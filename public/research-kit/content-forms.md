@@ -1,4 +1,4 @@
-# 18个平台的内容形式与复用条件
+# 15个平台的内容形式与复用条件
 
 资料截至2026-09-09。
 
@@ -10,7 +10,6 @@
 
 读者的问题：这是什么效果或表达，值不值得看完、收藏或继续了解？
 
-代表平台：LiblibAI、吐司 / Tensor.Art、SeaArt、即梦AI、可灵AI / Kling AI、Midjourney、Leonardo.Ai、OpenArt、NightCafe、Runway
 
 **卡片建议交代**
 
@@ -29,7 +28,6 @@
 
 边界：欣赏价值本身成立，不必强行为每件艺术作品附教程；但不能将无过程材料的成品标成可复现案例。
 
-依据：[tensor.art](https://tensor.art/images/726162984440804171?post_id=726162984436609871) · [www.seaart.ai](https://www.seaart.ai/explore/detail/cug2q2te878c73e48gqg?source=share_link) · [openart.ai](https://openart.ai/story) · [docs.midjourney.com](https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video) · [aif.runwayml.com](https://aif.runwayml.com/) · [help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe) · [即梦AI官网：示例、画布与创意社区](https://jimeng.jianying.com/) · [未来影像计划：行业活动与获奖作品](https://jimeng.jianying.com/visionary) · [AI Kling公开探索专题](https://kling.ai/explore/ai_kling) · [Commercial Usage](https://intercom.help/leonardo-ai/en/articles/8044018-commercial-usage)
 
 证据范围：混合了公开作品样本、官方功能说明和精选展映；官网演示、获奖作品不当成普通作者总体画像。
 
@@ -65,7 +63,6 @@
 
 读者的问题：我能把哪一部分带入自己的创作，哪些内容需要替换？
 
-代表平台：Midjourney、OpenArt、NightCafe、WaytoAGI、可灵AI / Kling AI
 
 **卡片建议交代**
 
@@ -84,7 +81,6 @@
 
 边界：提示文本、风格代码和视觉角色引用的移植范围不同；取得引用不等于取得训练文件或全部参考图。此类角色服务于图像和视频创作，不与对话角色混算。
 
-依据：[docs.midjourney.com](https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator) · [openart.ai](https://openart.ai/features/ai-character/) · [www.waytoagi.com](https://www.waytoagi.com/zh/prompts/246) · [kling.ai](https://kling.ai/quickstart/klingai-element-library-3-user-guide) · [Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards) · [How to Keep Consistent Characters in AI Video Scenes](https://openart.ai/blog/consistent-characters-in-ai-video/) · [Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle)
 
 证据范围：WaytoAGI提示有正文样本；风格/角色多由功能指南支持。Kling元素资产与生成公开视频的公开范围分开，不能写成公开素材库。
 
@@ -92,7 +88,6 @@
 
 读者的问题：这项能力适合什么任务，我的环境能否用，能否按需要使用它的输出？
 
-代表平台：Hugging Face、ModelScope 魔搭、吐司 / Tensor.Art、SeaArt、Civitai、Leonardo.Ai、LiblibAI
 
 **卡片建议交代**
 
@@ -112,9 +107,7 @@
 
 边界：模型卡、API数据结构与线上卡片不是同一证据；公开介绍不保证可下载，模型许可也不自动覆盖示例素材。
 
-依据：[github.com](https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md) · [intercom.help](https://intercom.help/leonardo-ai/en/articles/10501488-how-to-train-and-use-elements-loras-and-datasets-on-leonardo-ai) · [www.liblib.art](https://www.liblib.art/modelinfo/a2c90169daeb4e548322fdc0dc88af46?from=personal_page) · [Model Cards](https://huggingface.co/docs/hub/model-cards) · [modelscope/modelscope_hub README](https://github.com/modelscope/modelscope_hub) · [Imam Ali Shrine FLUX LoRA版本页](https://www.tensor.art/models/818294207639855588/Imam-Ali-Shrine-2025-01-12-16:16:29) · [set LoRA模型版本页](https://www.seaart.ai/models/detail/107d1e226649c0eccfb00774bd0d722c)
 
-证据范围：具体资源样本、推荐文档结构与开发接口说明的层级不同；Civitai不作为亲见卡片，Leonardo此训练资料标为Legacy。
 
 ### 输入样例与训练数据
 
@@ -231,7 +224,6 @@
 
 读者的问题：我卡在某一步，怎样处理，改动会牺牲什么？
 
-代表平台：LiblibAI、吐司 / Tensor.Art、SeaArt、可灵AI / Kling AI、OpenArt、NightCafe、Leonardo.Ai、Dify、RunningHub、LINUX DO、ModelScope 魔搭
 
 **卡片建议交代**
 
@@ -251,7 +243,6 @@
 
 边界：参数越多不代表教程越好；只有原因推测、报错截图或模型术语时，应标成线索，不能称为已解决方案。
 
-依据：[tusi.cn](https://tusi.cn/articles/728359301611162291) · [www.runninghub.cn](https://www.runninghub.cn/blog/ai-prompts-use-cases/runninghub-ai-apps-guide) · [help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe) · [www.leonardo.ai](https://www.leonardo.ai/news/how-to-edit-videos-with-ai) · [linux.do](https://linux.do/t/topic/174250) · [modelscope.csdn.net](https://modelscope.csdn.net/69f16a720a2f6a37c5a6b88c.html) · [电商产品精修+背景替换（SDXL版）V1.0](https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0) · [動画字幕 / 動画に文字 2アプリ](https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg) · [How to Create AI Videos from Text or Images: Step-by-Step Guide](https://kling.ai/blog/how-to-create-ai-videos) · [AI Product Image Generator](https://openart.ai/features/ai-product-image-generator/) · [30-Minute Quick Start](https://docs.dify.ai/en/quick-start)
 
 证据范围：包含历史版本指南、官方示例和作者教程；教程步骤存在不一致时保留原边界，不统一整理为已实操通过的配置。
 
@@ -287,7 +278,6 @@
 
 读者的问题：有没有人遇到同类问题，当前解释和办法可靠吗？
 
-代表平台：LINUX DO、Datawhale、Hugging Face、ModelScope 魔搭、NightCafe、WaytoAGI
 
 **卡片建议交代**
 
@@ -309,7 +299,6 @@
 
 边界：帖子被关闭、回复很多或作者说解决了，都不能单独证明方案普遍有效；AI回答有引用也不等于引用确实支持全部结论。
 
-依据：[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe) · [www.waytoagi.com](https://www.waytoagi.com/zh/question/82231) · [关于应用接入的问题请教佬友](https://linux.do/t/topic/1537782) · [How to Ask Questions](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Question/question/) · [Pull Requests and Discussions](https://huggingface.co/docs/hub/repositories-pull-requests-discussions) · [断点续传功能问题 · Issue #1661](https://github.com/modelscope/modelscope/issues/1661)
 
 证据范围：包括真实问题样本、提问规范与AI问答样本；规范不代表所有帖子达标，搜索/生成答案不当作已审定结论。
 
@@ -317,7 +306,6 @@
 
 读者的问题：为什么把这些内容放在一起，应该从哪一项开始？
 
-代表平台：Hugging Face、NightCafe、WaytoAGI、Leonardo.Ai、Civitai、LiblibAI、LINUX DO
 
 **卡片建议交代**
 
@@ -335,17 +323,13 @@
 
 后续动作：沿有说明的条目进入原内容；需要动手时再看其各自材料。
 
-边界：合集交付选择和组织，不自动携带原资源文件与许可。Civitai协作部分目前主要依据实现说明；TASTE等专题也不能推断全部作品由该平台生成。
 
-依据：[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe) · [www.leonardo.ai](https://www.leonardo.ai/news/taste-curation-no-3-sherbet) · [www.liblib.art](https://www.liblib.art/activities/49a6540f5b84400a9ed8ff6bcdfcaaa6/2025_envelopecover-models) · [linux.do](https://linux.do/t/topic/122079) · [Collections](https://huggingface.co/docs/hub/collections) · [关于 WaytoAGI（正文证据）](https://about.waytoagi.com/) · [Collaborative Collections](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)
 
-证据范围：资源索引、视觉策展与协作合集不是同一种供给责任。Civitai协作机制是实现说明；专题和外部链接的历史状态沿用分组限制。
 
 ### 挑战题面、练习任务与征集规则
 
 读者的问题：这项任务要交什么，如何参与和评判，成果会怎样被使用？
 
-代表平台：NightCafe、即梦AI、Runway、吐司 / Tensor.Art、Datawhale、Midjourney
 
 **卡片建议交代**
 
@@ -365,7 +349,6 @@
 
 边界：赛事、课程作业、Promptle和图片偏好任务评判的对象不同，没有统一质量分。规则、已提交成果、结果与实际兑付要分别核对；任务条数不是已完成内容量。
 
-依据：[aif.runwayml.com](https://aif.runwayml.com/) · [tusi.cn](https://tusi.cn/blackboard/forgecup) · [contributor.datawhale.cn](https://contributor.datawhale.cn/projects) · [Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge) · [Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking) · [Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle) · [即梦Dreamina×剪映未来影像计划AI短片挑战赛事细则](https://sf1-cdn-tos.douyinstatic.com/obj/ies-hotsoon-draft/vco/dc943398-71d6-4fd2-bb26-215c4a34ae21.html) · [组队学习规则](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Schedule/team_learning/) · [作业发布与验证](https://datawhalechina.github.io/learn-python-the-smart-way-v2/Contribute/contribute_detail/homework/) · [Complete Tasks](https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks)
 
 证据范围：规则、展示档案和题目招募分别支持相应结构；吐司活动页年份未明，Datawhale招募只读到索引，不写成当前完整认领规则。
 
@@ -400,7 +383,6 @@
 
 读者的问题：旧内容还能不能用，变化影响了哪里，需要迁移吗？
 
-代表平台：LiblibAI、LINUX DO、Dify、Hugging Face、SeaArt、Civitai
 
 **卡片建议交代**
 
@@ -420,7 +402,6 @@
 
 边界：公告不证明全部账号已生效；提出修改不等于已经合并，发布新版也不意味着旧副本自动更新。
 
-依据：[linux.do](https://linux.do/t/topic/1401642) · [marketplace.dify.ai](https://marketplace.dify.ai/plugin/langgenius/openai_api_compatible) · [电商产品精修+背景替换（FLUX）V2.0](https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10) · [動画に文字（视频加文字）应用](https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg) · [動画字幕 / 動画に文字 2アプリ](https://www.seaart.ai/ja/articleDetail/d5rjqlde878c73ahljvg) · [LINUX DO Connect 备用端点公告](https://linux.do/t/topic/1144530) · [Publish Apps to Marketplace](https://docs.dify.ai/en/cloud/use-dify/publish/publish-to-marketplace) · [Pull Requests and Discussions](https://huggingface.co/docs/hub/repositories-pull-requests-discussions) · [The Creator Collab Update: 4 New Ways to Get Seen and Earn](https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn)
 
 证据范围：作者版本关系、公告、插件版本历史和协作修改提案均可留下维护信息；提案是否合并、规则何时适用仍须各看原文。
 
@@ -464,13 +445,10 @@
 
 复制提示词、调用风格、运行应用和取得源配置，各自需要不同准备。Dify模板、Hugging Face Space有依赖和权限条件，Runway App也不等同于源工作流。详情应列出可取得材料及需自行补齐的项目。
 
-[Manage Apps](https://docs.dify.ai/en/cloud/use-dify/workspace/app-management) · [Spaces Overview](https://huggingface.co/docs/hub/spaces-overview) · [Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards) · [Publishing Workflows as Apps](https://help.runwayml.com/hc/en-us/articles/47865876793747-Publishing-Workflows-as-Apps)
 
 ### 分别评价作品、教学与开放范围
 
-NightCafe允许作者控制提示词和起始图的复制，Promptle步骤也非默认公开；专业成片还可能经过人工处理。作品的表达质量、教学材料完整度和公开许可应分别评价。
 
-[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts) · [Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle) · [未来影像计划：行业活动与获奖作品](https://jimeng.jianying.com/visionary) · [How Miro Produced Its Keynote Video for Four Global Markets with Runway](https://runway.com/news/customers/miro)
 
 ### 操作说明需包含输入和排错条件
 
@@ -778,7 +756,6 @@ Spaces周选中的应用卡片，使用状态标签和用途摘要，未依赖�
 
 ## 成品与过程材料
 
-成绩卡展示结果，操作记录解释过程，可执行配置支持继续创作。NightCafe Promptle允许作者选择是否在题目结束后公开步骤，因此同一场活动的成果未必都附带过程材料。[^22]
 
 ## 说明字段怎样帮助使用
 
@@ -797,13 +774,10 @@ RunningHub试衣样本写明输入要求，但效果和原理未核验；ModelSc
 - [LiblibAI](#liblib)
 - [RunningHub](#runninghub)
 - [吐司 / Tensor.Art](#tusi)
-- [Civitai](#civitai)
 - [SeaArt](#seaart)
 - [OpenArt](#openart)
-- [NightCafe](#nightcafe)
 - [即梦AI](#jimeng)
 - [可灵AI / Kling AI](#kling)
-- [Midjourney](#midjourney)
 - [Leonardo.Ai](#leonardo)
 - [Runway](#runway)
 - [WaytoAGI](#waytoagi)
@@ -1457,9 +1431,7 @@ Tensor.Art同一作者可发布模型、节点工作流和封装工具。模型�
 - 工具和工作流复制后各继承哪些参数，如何核对版本？
 - 模型与工作流的权限状态能否在用户复用前完整说明？
 
-<a id="civitai"></a>
 
-## Civitai
 
 ### 补充：卡片、详情与后续使用
 
@@ -1478,7 +1450,6 @@ Tensor.Art同一作者可发布模型、节点工作流和封装工具。模型�
 
 证据边界：这是官方API说明，非线上模型页实测；样例计数不作经营数据。 文档说明非公开文件会被隐藏，归档等状态还可能移除下载信息；存在模型记录不等于现在能下载或调用。
 
-查阅：2026-09-09。[github.com](https://github.com/civitai/civitai-developer-docs/blob/main/site/reference/models.md)
 
 #### 按内容类型投稿的合集
 
@@ -1496,13 +1467,10 @@ Tensor.Art同一作者可发布模型、节点工作流和封装工具。模型�
 
 证据边界：仅按公开实现文档加深，不保证当前生产账号可用。 合集链接不交付原作品全部素材和配置；不能因可投稿就认为也能修改他人内容。
 
-查阅：2026-09-09。[github.com](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)
 
 ### 既有研究与样本
 
-[官网](https://civitai.com/)
 
-Civitai以例图展示效果，以资源标注说明模型来源，用合集整理作品与资源。实现文档的字段未全部核对到生产页面，模型关联也未覆盖完整制作过程。
 
 ### 主要内容形态
 
@@ -1773,7 +1741,6 @@ SeaArt资源包括可运行表单、操作文章和模型信息。表单接受�
 - 推荐权重
 - 来源与许可栏目
 
-**具体示例或入口：**服装LoRA“set”页面标来源Civitai。
 
 **使用者能获得的深度：**资源元信息与使用说明。
 
@@ -2041,9 +2008,7 @@ OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，�
 - 公开角色或模板实际继承哪些字段？
 - 内容中选择与后期的劳动通常占多少？
 
-<a id="nightcafe"></a>
 
-## NightCafe
 
 ### 补充：卡片、详情与后续使用
 
@@ -2063,7 +2028,6 @@ OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，�
 
 证据边界：官方功能说明，不是已抽样到的真实帖子；未确认站内普遍采用率。 复制提示词仍不保证继承模型、起始图、参数或许可；附件链接也不是源文件包。
 
-查阅：2026-09-09。[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/posts-on-nightcafe)
 
 #### 公开合集与个人收藏
 
@@ -2080,7 +2044,6 @@ OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，�
 
 证据边界：可见性有例外：作者自己的未发布作品置入公开合集后可被所有人看见；他人的未发布作品及已归档作品有不同限制。 公开合集不能等同所有作品已经发布到Explore；未核实际卡片和跨账号材料权限。
 
-查阅：2026-09-09。[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/collections-on-nightcafe)
 
 #### 作品与制作参数的公开设置
 
@@ -2098,7 +2061,6 @@ OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，�
 
 证据边界：核的是权限说明，未选取公开/保护两条作品做对照。 隐藏设置、内容可见和版权许可属于不同问题；不从按钮状态推出通用授权。
 
-查阅：2026-09-09。[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/how-to-hide-prompts)
 
 #### 基于作品改作的教程
 
@@ -2115,13 +2077,10 @@ OpenArt商品任务页说明输入和目标，角色指南讲解连续制作，�
 
 证据边界：页面前后对支持模型的枚举并不完全一致，不采用完整兼容列表。 本例是平台收录的作者教程，不代表所有模型都有相同继承行为；没有运行。
 
-查阅：2026-09-09。[help.nightcafe.studio](https://help.nightcafe.studio/portal/en/kb/articles/inpainting-on-nightcafe)
 
 ### 既有研究与样本
 
-[官网](https://creator.nightcafe.studio/)
 
-NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果，作者公开的步骤提供学习材料。三者可相互链接，但应分别统计。
 
 ### 主要内容形态
 
@@ -2671,9 +2630,7 @@ NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果
 - 社区普通作品是否提供同等级的输入与失败说明？
 - 专业项目怎样区分生成、人工后期和其他工具贡献？
 
-<a id="midjourney"></a>
 
-## Midjourney
 
 ### 补充：卡片、详情与后续使用
 
@@ -2693,7 +2650,6 @@ NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果
 
 证据边界：未读取真实风格详情的全部字段，也未确认是否有作者、许可或下载项。 SREF、Moodboard和完整作品不是同一种内容单位；不能把历史V1展示方式当成当前全部界面。
 
-查阅：2026-09-09。[updates.midjourney.com](https://updates.midjourney.com/style-explorer-v1/) · [docs.midjourney.com](https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator)
 
 #### 风格调试过程与结果
 
@@ -2711,7 +2667,6 @@ NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果
 
 证据边界：预览消耗GPU时间，不能把连续选风格视作完全无成本浏览。 帮助说明该工具预览使用V7；不能从最新模型名称推断全部流程都使用新版本。 代码可调用，不等于已提供输入图片的导出包或原训练材料。
 
-查阅：2026-09-09。[docs.midjourney.com](https://docs.midjourney.com/hc/en-us/articles/41308374558221-Style-Creator)
 
 #### 图片生成视频、续段与循环
 
@@ -2729,13 +2684,10 @@ NightCafe挑战题面规定任务，参赛作品与Promptle成绩卡展示结果
 
 证据边界：从图像进入视频会移除原图像生成参数；不能称完整原参数直接迁移。 这些说明主要针对个人Create/Organize流程，不能外推他人公开视频都能被完整复制。 生成与续段耗费GPU时间；没有生成、播放或导出验证。
 
-查阅：2026-09-09。[docs.midjourney.com](https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video)
 
 ### 既有研究与样本
 
-[官网](https://www.midjourney.com/)
 
-Midjourney作品展示结果，Moodboard组织风格参考，Tasks采集成员判断。复用时需注明取得的是图片、风格版本还是过程材料。
 
 ### 主要内容形态
 
@@ -4438,11 +4390,8 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [^11]: Tensor.Art公开作者内容，[Imam Ali Shrine FLUX LoRA版本页](https://www.tensor.art/models/818294207639855588/Imam-Ali-Shrine-2025-01-12-16:16:29)，上传及更新2025-01-13，查阅2026-09-09。读取正文；author-content。支持：底模、训练字段、触发词与权限栏目。范围：文本未保留各许可勾选状态，仅采用明确的禁止转载文字。
 
-[^12]: Civitai 官方代码库，[Image Resource Tracking](https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md)，未标绝对更新日；读取main，查阅2026-09-09。读取正文；implementation-doc。支持：图像资源字段、来源区别及过滤用途。范围：实现说明，不是线上字段覆盖和可复用性证明。
 
-[^13]: Civitai 官方代码库，[Collaborative Collections](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)，未标绝对更新日；读取main，查阅2026-09-09。读取正文；implementation-doc。支持：角色、邀请、队列、所有者会员门槛及失效处理。范围：未实测生产；不能从文档宣称全量上线和效果。
 
-[^14]: Civitai，[The Creator Collab Update: 4 New Ways to Get Seen and Earn](https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn)，浏览器显示发布2026-08-20；时区可能差一天，查阅2026-09-09。沿用核验；official-page。支持：改作采用后的展示和活动说明。范围：沿用实读，未复读；限时奖励不推为当前常态。
 
 [^15]: SeaArt公开作者内容，[動画に文字（视频加文字）应用](https://www.seaart.ai/ja/app/d5rgjjle878c73a8b3vg)，正文记修复2026-02-21；发布日未标，查阅2026-09-09。读取正文；author-content。支持：表单项目、历史复用和修复记录。范围：部分输入标签缺失；没有提交运行。
 
@@ -4456,13 +4405,9 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [^20]: OpenArt，[AI Product Image Generator](https://openart.ai/features/ai-product-image-generator/)，未标发布日期，查阅2026-09-09。读取正文；official-page。支持：商品输入、场景描述、比较下载和FAQ结构。范围：仅采用正文教法，不采用模型性能、首遍成功、商用或替代实拍比例宣传。
 
-[^21]: NightCafe，[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：题面、主持与公开范围、四阶段和推进条件。范围：规则用例，不是已组织游戏的结果。
 
-[^22]: NightCafe，[Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle)，未标绝对日期；标Alpha，查阅2026-09-09。读取正文；official-rule。支持：每日编辑题、卡片/提示分离、赛后披露和活动奖励。范围：仅限试验功能；没有实际留存。
 
-[^23]: NightCafe，[Streaks & Badges](https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：UTC连续创作、断档、徽章类型与奖励领取。范围：相关推荐含旧免费奖励说明；本稿不把不同奖励合为固定每日额度。
 
-[^24]: NightCafe，[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)，未标绝对日期；v8于2026-09-09复核，查阅2026-09-09。沿用前轮核验；official-rule。支持：资格、评分/排序与异常票。范围：沿用v8，不同挑战以自身规则为准。
 
 [^25]: 即梦AI，[即梦AI官网：示例、画布与创意社区](https://jimeng.jianying.com/)，未标注，查阅2026-09-09。读取正文；official-page。支持：示例、同款与创作入口。范围：公开页面，不是登录实操。
 
@@ -4478,9 +4423,7 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [^31]: Kling AI，[Beyond Realism: How Kling Powered L'Ultimo Uomo Reale](https://kling.ai/blog/How-Kling-Powered-LUltimoUomoReale)，发布2026-08-20，查阅2026-09-09。读取正文；official-page。支持：影片目标、团队观点、制作难点与案例结构。范围：未独立核奖项、效果和交易。
 
-[^32]: Midjourney，[Complete Tasks](https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：评价任务用途、作品详情、跳过、奖励查看和适用订阅。范围：没有投票权重、异常处理和任务成效。
 
-[^33]: Midjourney，[Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：参考、ID、代码版本、删除后引用及参数边界。范围：未测试真实风格与跨用户转移。
 
 [^34]: Leonardo.Ai，[Blueprints by Leonardo.Ai](https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai)，页面显示两周多前更新；绝对日期未核，查阅2026-09-09。读取正文；official-rule。支持：商品示例、输入、输出、成本及分享/自建边界。范围：帮助示例而非实测；未公开内部流程，不采用稳定效果宣传。
 
@@ -4570,13 +4513,11 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [I cannot find Loras on the searcher](https://www.reddit.com/r/TensorArt_HUB/comments/1l7jinf/i_cannot_find_loras_on_the_searcher/)
 
-### Civitai
 
 一位使用者希望更新半年前的头像作品；相同提示再次混合生成遇到拦截。这表明已有作品和参数也可能在之后的环境下难以复用。
 
 模型版本、审核判定及可重现输入不足，不能认定误判。
 
-[civitai is a waste of money now](https://www.reddit.com/r/civitai/comments/1la9yyw/civitai_is_a_waste_of_money_now/)
 
 ### SeaArt
 
@@ -4594,13 +4535,11 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [What I learned making a 24-shot psychological thriller with OpenArt Director](https://www.reddit.com/r/aifilmmaking/comments/1voq2yu/what_i_learned_making_a_24shot_psychological/)
 
-### NightCafe
 
 同一讨论中的贺卡任务说明：用户需要的是一张可发送的图，而非更多生成额度。任务采用必须与生成、参赛和积攒积分分开记录。
 
 仅有自述，无参考图与最终作品核对。
 
-[What do you think about the recent update?](https://www.reddit.com/r/nightcafe/comments/1qzw54q/what_do_you_think_about_the_recent_update/)
 
 ### 即梦 AI
 
@@ -4618,13 +4557,11 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 [I made six ~1-hour AI films: here’s my experiment with long-form AI filmmaking](https://www.reddit.com/r/aifilmmaking/comments/1w7dhg3/i_made_six_1hour_ai_films_heres_my_experiment/)
 
-### Midjourney
 
 同一作者把作品页、2025教程和2026复盘互链，公开角色主提示、参考图/脸部裁切及后期办法；2026年读者求完整提示，作者11天后给提示和多次生成/参考复用方法，读者是否复现未知。
 
 非完整工程包；没核全部页图、版权链和买方验收。
 
-[How To Make Comics With AI (Midjourney 2025)](https://michaelbrig.com/how-to-make-comics-with-ai-midjourney-2025/)；[How to Make AI Comics with Midjourney (2026 | V7)](https://michaelbrig.com/how-to-make-ai-comics-with-midjourney-2026-v7/)；[The Last Superhero – Part 5 (AI Comic)](https://michaelbrig.com/the-last-superhero-5/)
 
 ### Leonardo.Ai
 
@@ -4636,7 +4573,6 @@ Dify教程讲解搭建过程，模板传递应用结构，插件增加工具能�
 
 ### Runway
 
-可观察同一Finch项目的第1、5、14集公开帖子，以及作者解释真人配音、Act 1到Act 2的驱动处理；全片工作流同时涉及Midjourney、Hailuo和DaVinci。公开连续发布不等于40集均已逐集验看。
 
 未逐集观看与验收；观众增长、完播、收入、教学跟做成功未知。
 

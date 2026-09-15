@@ -69,5 +69,5 @@ export function ContentDocument({ data, visibleIds, navigate, filter }: { data: 
 }
 
 export function StudyProfileLinks({ operations, content, onOpen }: { operations: OperatingStudy; content: ContentStudy; onOpen: (kind: Kind, id: string) => void }) {
- return <section id="independent-studies" className="study-profile-links"><h2>两份专题研究</h2><h3>运营思路</h3><p>{operations.position}</p><button className="text-button" onClick={() => onOpen('operations', operations.id)}>阅读该平台运营机制、分工与投入 ↗</button><h3>内容形态</h3><p>{content.position}</p><button className="text-button" onClick={() => onOpen('content', content.id)}>阅读该平台内容字段、样本与复用限制 ↗</button></section>;
+ return <section id="independent-studies" className="study-profile-links"><h2>运营机制与内容形式</h2><h3>运营重点</h3><p>{operations.position}</p><button className="text-button" onClick={() => onOpen('operations', operations.id)}>运营机制、分工与投入 ↗</button><h3>内容形式</h3><p>{content.position}</p><button className="text-button" onClick={() => onOpen('content', content.id)}>内容字段、样本与复用条件 ↗</button></section>;
 }

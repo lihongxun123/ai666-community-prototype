@@ -273,10 +273,8 @@ API：可支持示范或参与者创作，算力供给与点评服务分别说�
 
 ### OPT23-S10
 
-[NightCafe挑战和Hugging Face课程的既有研究](https://help.nightcafe.studio/portal/en/kb/articles/community-challenges)
 
 日期：依据2026-09-10的访问记录
 
-依据位置：outputs/aigc-community-deep-research-2026-09-08/site/lib/integrated-strategies.json；sources v15-h1、v15-h2、v15-c2
 
 范围：练习组织、作品与参与机制实例；不证明个别点评质量、本站导师供给或参与者关系。

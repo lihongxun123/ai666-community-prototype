@@ -1,4 +1,4 @@
-# 18个平台的运营思路研究
+# 15个平台的运营思路研究
 
 ## 作者合作的交付要求
 
@@ -6,11 +6,9 @@
 
 ## 奖励资格与参与价值
 
-Midjourney评分奖励设有排名、订阅身份和有效期条件；RunningHub作者回报参考有效运行等行为。运营需说明奖励资格、异常处理和奖励用途。反作弊成本与奖励后的留存没有可比数据。[^42][^6]
 
 ## 发布之后的维护责任
 
-Dify插件提交需提供审核材料，Civitai协作合集实现文档区分投稿者、管理者和会员资格变化后的权限。内容合作需约定收录、问题处理、依赖更新及负责人退出后的安排。Civitai实际开放范围仍待页面核对。[^77][^16]
 
 ## 常态运营与专项活动
 
@@ -21,13 +19,10 @@ Dify插件提交需提供审核材料，Civitai协作合集实现文档区分投
 - [LiblibAI](#liblib)
 - [RunningHub](#runninghub)
 - [吐司 / Tensor.Art](#tusi)
-- [Civitai](#civitai)
 - [SeaArt](#seaart)
 - [OpenArt](#openart)
-- [NightCafe](#nightcafe)
 - [即梦AI](#jimeng)
 - [可灵AI / Kling AI](#kling)
-- [Midjourney](#midjourney)
 - [Leonardo.Ai](#leonardo)
 - [Runway](#runway)
 - [WaytoAGI](#waytoagi)
@@ -374,13 +369,9 @@ SUPIR工作流解释小图报错与替代采样器；工具页另说明重复上
 - 工具和工作流之间有没有明确版本绑定与同步责任？
 - 海外奖励资格变化怎样影响新作者进入和收入集中度？
 
-<a id="civitai"></a>
 
-## Civitai
 
-[官网](https://civitai.com/)
 
-Civitai官方实现文档将作品、资源、作者与协作合集关联起来，涉及投稿筛选、材料归因、权限和会员失效处理。生产账号的实际开放范围仍待页面核对。
 
 ### 参与者与动机
 
@@ -749,13 +740,9 @@ CPP 列 Affiliate 预批准，Creative Fund 仍为预告；OpenArtist 另有按�
 - 稿费及每份持续可用教程的全成本是多少？
 - 外部内容实际带来多少自有任务与续费？
 
-<a id="nightcafe"></a>
 
-## NightCafe
 
-[官网](https://creator.nightcafe.studio/)
 
-NightCafe用题目、提交、评审和结果组织日常活动，并提供连续活跃奖励与成员自建游戏。不同活动各自规定刷新时间、参与资格和分享范围；活动量与长期留存的关系未取得数据。
 
 ### 参与者与动机
 
@@ -1099,13 +1086,9 @@ The RealReal影片案例分别讨论表演、角色一致性和复杂场景。[^
 - 教程是否减少失败和求助，还是只带来访问？
 - 品牌案例是否包含付费合作，平台与外部团队各承担多少制作？
 
-<a id="midjourney"></a>
 
-## Midjourney
 
-[官网](https://www.midjourney.com/)
 
-Midjourney将成员选图分别用于个人偏好、Explore策展和新版本评价，奖励与订阅条件相关。风格资产支持继续创作，求助由专门入口处理；不同参与动作不能合算为社区贡献。
 
 ### 参与者与动机
 
@@ -2274,13 +2257,9 @@ Dify模板作者提供使用说明，插件作者交付可审查的运行包，�
 
 [^14]: Tensor.Art公开作者内容，[Enhance Image with SUPIR + UPSCALE AI工具](https://www.tensor.art/template/813284647977979882)，更新2025-05-21，查阅2026-09-09。读取正文；author-content。支持：工具说明、细节变化、重复上传与API入口。范围：正文完整，运行表单未完整加载；未核配置与效果。
 
-[^15]: Civitai 官方代码库，[Image Resource Tracking](https://github.com/civitai/civitai/blob/main/docs/features/image-resources.md)，未标绝对更新日；读取main，查阅2026-09-09。读取正文；implementation-doc。支持：图像资源字段、来源区别及过滤用途。范围：实现说明，不是线上字段覆盖和可复用性证明。
 
-[^16]: Civitai 官方代码库，[Collaborative Collections](https://github.com/civitai/civitai/blob/main/docs/features/collaborative-collections.md)，未标绝对更新日；读取main，查阅2026-09-09。读取正文；implementation-doc。支持：角色、邀请、队列、所有者会员门槛及失效处理。范围：未实测生产；不能从文档宣称全量上线和效果。
 
-[^17]: Civitai 官方代码库，[Creator Program - Developer Guide](https://github.com/civitai/civitai/blob/main/docs/features/creator-program.md)，未标绝对更新日；读取main，查阅2026-09-09。读取正文；implementation-doc。支持：按月存入、分配、结算与提现链。范围：资格与实际到账未核；默认池金额不是经营披露。
 
-[^18]: Civitai，[The Creator Collab Update: 4 New Ways to Get Seen and Earn](https://civitai.com/articles/33872/the-creator-collab-update-4-new-ways-to-get-seen-and-earn)，浏览器显示发布2026-08-20；时区可能差一天，查阅2026-09-09。沿用核验；official-page。支持：改作采用后的展示和活动说明。范围：沿用实读，未复读；限时奖励不推为当前常态。
 
 [^19]: SeaArt官方文档，[SeaArt.AI Creator Incentive Program](https://docs.seaart.ai/guide-1/6-permanent-events/seaart.ai-creator-incentive-program)，更新未标注；含2025年3月调整，查阅2026-09-09。读取正文；official-rule。支持：分类激励、时间权重与治理结算。范围：未披露执行效果。
 
@@ -2302,13 +2281,9 @@ Dify模板作者提供使用说明，插件作者交付可审查的运行包，�
 
 [^28]: OpenArt，[AI Product Image Generator](https://openart.ai/features/ai-product-image-generator/)，未标发布日期，查阅2026-09-09。读取正文；official-page。支持：商品输入、场景描述、比较下载和FAQ结构。范围：仅采用正文教法，不采用模型性能、首遍成功、商用或替代实拍比例宣传。
 
-[^29]: NightCafe，[Creating a Game (Community Challenge)](https://help.nightcafe.studio/portal/en/kb/articles/creating-a-game-community-challenge)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：题面、主持与公开范围、四阶段和推进条件。范围：规则用例，不是已组织游戏的结果。
 
-[^30]: NightCafe，[Promptle: The Daily AI Art Puzzle](https://help.nightcafe.studio/portal/en/kb/articles/promptle-daily-ai-art-puzzle)，未标绝对日期；标Alpha，查阅2026-09-09。读取正文；official-rule。支持：每日编辑题、卡片/提示分离、赛后披露和活动奖励。范围：仅限试验功能；没有实际留存。
 
-[^31]: NightCafe，[Streaks & Badges](https://help.nightcafe.studio/portal/en/kb/articles/streaks-and-badges)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：UTC连续创作、断档、徽章类型与奖励领取。范围：相关推荐含旧免费奖励说明；本稿不把不同奖励合为固定每日额度。
 
-[^32]: NightCafe，[Daily Challenge: Eligibility, Rating & Ranking](https://help.nightcafe.studio/portal/en/kb/articles/daily-challenge-eligibility-rating-ranking)，未标绝对日期；v8于2026-09-09复核，查阅2026-09-09。沿用前轮核验；official-rule。支持：资格、评分/排序与异常票。范围：沿用v8，不同挑战以自身规则为准。
 
 [^33]: 即梦AI，[即梦AI官网：示例、画布与创意社区](https://jimeng.jianying.com/)，未标注，查阅2026-09-09。读取正文；official-page。支持：示例、同款与创作入口。范围：公开页面，不是登录实操。
 
@@ -2326,13 +2301,9 @@ Dify模板作者提供使用说明，插件作者交付可审查的运行包，�
 
 [^40]: 快手官方投资者关系，[Kling AI Advances to the 2.0 Era, Empowering Everyone to Tell Great Stories with AI](https://ir.kuaishou.com/system/files-encrypted/nasdaq_kms/assets/2025/05/08/22-26-02/Kling%20AI%20Advances%20to%20the%202.0%20Era,%20Empowering%20Everyone%20to%20Tell%20Great%20Stories%20with%20AI%20v2.pdf)，稿件2025-04-15；文件路径上传月份不作发布日期，查阅2026-09-09。读取正文；historical-report。支持：个人/API路径、NextGen合作形式和共创邀请。范围：PDF正文已读；计划不等于签约、支出或展映完成。
 
-[^41]: Midjourney，[Complete Tasks](https://docs.midjourney.com/hc/en-us/articles/33390759197197-Complete-Tasks)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：评价任务用途、作品详情、跳过、奖励查看和适用订阅。范围：没有投票权重、异常处理和任务成效。
 
-[^42]: Midjourney，[Earning Free Fast Time](https://docs.midjourney.com/hc/en-us/articles/28014817524109-Earning-Free-Fast-Time)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：每日前2000名评分者、1小时奖励、订阅与30日期限。范围：非所有任务普遍奖励，不是实际发奖记录。
 
-[^43]: Midjourney，[Moodboards](https://docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards)，未标绝对日期，查阅2026-09-09。读取正文；official-rule。支持：参考、ID、代码版本、删除后引用及参数边界。范围：未测试真实风格与跨用户转移。
 
-[^44]: Midjourney，[An update on Rooms](https://updates.midjourney.com/an-update-on-rooms/)，发布2026-02-26；v8已读，查阅2026-09-09。沿用核验；official-page。支持：网站Rooms下线与后续支持方向。范围：沿用v8，只限此项实验，不能外推全部社区。
 
 [^45]: Leonardo.Ai，[Blueprints by Leonardo.Ai](https://intercom.help/leonardo-ai/en/articles/12760267-blueprints-by-leonardo-ai)，页面显示两周多前更新；绝对日期未核，查阅2026-09-09。读取正文；official-rule。支持：商品示例、输入、输出、成本及分享/自建边界。范围：帮助示例而非实测；未公开内部流程，不采用稳定效果宣传。
 
