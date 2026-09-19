@@ -1,0 +1,742 @@
+{
+  "title": "AI行业如何连接工具、创作资源与内容消费",
+  "date": "2026-09-16",
+  "summary": "AI能力正在进入更完整的生成、编辑与分发过程，但工具使用者、内容消费者和内容供给者仍是不同且可重叠的角色。国内证据能确认广泛的AI使用和平台AI主题观看增长；尚不能据此估算AI兴趣社区受众或持续作者规模。",
+  "scope": "国内行业与用户任务为主；海外调查和资源社区研究独立标示，仅用于机制比较。不是行业公司大全，不包含多元拾光方案或收益投资判断。",
+  "northStar": "周活用户数（WAU）",
+  "roleRule": "角色按行为识别，可重叠，不是互斥人群。轻创作/专业程度与消费者/供给者身份分别记录；未公开发布的生成结果不计公共内容供给。",
+  "readingNote": "模型发布记录证明厂商提供或宣称什么；调查说明其样本内的使用与态度；公司披露说明平台级经营观察。三者不能相互替代。",
+  "findings": [
+    {
+      "title": "生成能力正扩展到持续修改与成片控制",
+      "text": "Seedance与可灵的发布说明把参考素材、动作控制、长叙事、生成后编辑纳入同一创作过程；Qwen的发布记录把图像生成与编辑连接起来。这支持一个行业判断：工具竞争的任务单位在扩大，作品供给需要同时关注素材组织和修改能力。厂商没有给出普通创作者稳定交付的总体成功率。",
+      "geography": "国内",
+      "evidenceType": "事实与分析",
+      "sourceIds": [
+        "M26-SEED25",
+        "S02",
+        "M26-QWEN"
+      ]
+    },
+    {
+      "title": "模型、复用资源与兴趣内容承担不同工作",
+      "text": "模型提供生成与编辑能力；RunningHub的应用和工作流、Comfy的模板、Hugging Face的模型卡让能力成为可选择、可复用的资源；B站等内容平台组织作品、知识与讨论。三层可以出现在同一公司或产品中，不能据产品有作品流就判定它已形成持续消费社区。",
+      "geography": "国内主体；海外机制分列比较",
+      "evidenceType": "分析",
+      "sourceIds": [
+        "M26-RH",
+        "M26-COMFY-T",
+        "M26-HF-CARD",
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "title": "工具使用、内容消费、内容供给是重叠角色",
+      "text": "全国AI用途统计覆盖提问、图片视频处理、办公与娱乐，同一人可以完成多项任务。观看者也可能使用AI，创作者也会看教程和同行作品；角色应按具体行为识别。现有资料没有三个角色的全国重叠矩阵，不能把AI用户规模按固定比例切成三类人。",
+      "geography": "国内",
+      "evidenceType": "事实与分析",
+      "sourceIds": [
+        "N24-S02",
+        "S01"
+      ]
+    },
+    {
+      "title": "国内已有AI主题消费增长，但题材内的需求仍未拆开",
+      "text": "B站披露AI相关内容观看时长增长，证明这个主题在该平台获得了更多观看时间。它没有区分看模型新闻、学创作、欣赏AI作品的观众。AI主题受关注、AI作品被看完、同一观众持续追看，分别需要不同证据。",
+      "geography": "国内",
+      "evidenceType": "事实与边界",
+      "sourceIds": [
+        "S01"
+      ]
+    },
+    {
+      "title": "轻创作与持续供给之间仍有任务缺口",
+      "text": "图像视频处理这一全国用途包含广泛的个人使用，不能全部视为发布作者。可灵的动作参考、Qwen的海报漫画任务说明工具在降低表达入口门槛；要成为持续供给者，还涉及选题、筛选成品和响应受众。这些供给环节的国内时间成本与退出原因仍待用户证据。",
+      "geography": "国内",
+      "evidenceType": "事实与待验证分析",
+      "sourceIds": [
+        "N24-S02",
+        "S02",
+        "M26-QWEN"
+      ]
+    },
+    {
+      "title": "资源型供给还包含说明、维护与答疑",
+      "text": "Comfy模板有依赖更新，云端分享包含输入输出与素材，Hugging Face模型卡说明任务与限制。历史论坛研究又观察到模型理解、教程与具体解法的求助。由此可将资源作者的供给拆成资源本身、可用说明和后续维护，避免只记录发布件数。",
+      "geography": "海外机制；国内适用性待验证",
+      "evidenceType": "事实与分析",
+      "sourceIds": [
+        "M26-COMFY-T",
+        "M26-COMFY-S",
+        "M26-HF-CARD",
+        "M26-HF-REUSE"
+      ]
+    },
+    {
+      "title": "创作者愿意用AI，与观众接受AI内容不是同一个问题",
+      "text": "Adobe样本关注会定期发布的人，Reuters六国调查关注公众使用与新闻态度。前者显示多种创作任务并存，后者显示新闻接受程度受人类参与影响。两类研究说明供给者与消费者的判断条件不同；它们均不能替代国内兴趣内容受众研究。",
+      "geography": "海外比较",
+      "evidenceType": "事实与分析",
+      "sourceIds": [
+        "I03",
+        "I04"
+      ]
+    },
+    {
+      "title": "分发热度与周活之间缺少的是行为连接",
+      "text": "小红书热点榜混合多种信号，QuestMobile记录不同AI入口的应用行为，B站披露平台内容观看。它们分别说明发现、工具接触和消费规模，不能合成社区周活用户数。判断持续活跃需要同一用户在周内消费、创作或互动及跨周返回的记录。",
+      "geography": "国内",
+      "evidenceType": "分析与证据边界",
+      "sourceIds": [
+        "S03",
+        "MB24-S02",
+        "S01"
+      ]
+    }
+  ],
+  "industryLayers": [
+    {
+      "name": "模型与创作工具",
+      "serves": "需要即时完成任务的工具使用者，以及制作作品的轻创作者和专业创作者。",
+      "value": "把想法、文字或参考素材变成结果，再修改至可用。",
+      "examples": {
+        "domestic": [
+          "Seedance：参考、延长与定向编辑",
+          "可灵：生成、编辑、动作控制",
+          "Qwen-Image：图片生成与编辑"
+        ],
+        "overseas": [
+          "Adobe调查提供海外创作者的多工具使用背景，不作国内份额比较"
+        ]
+      },
+      "change": "公开产品更新将参考、编辑、叙事连续性纳入创作任务；是否缩短真实成片工时尚缺独立验证。",
+      "sourceIds": [
+        "M26-SEED25",
+        "S02",
+        "M26-QWEN",
+        "I03"
+      ]
+    },
+    {
+      "name": "创作资源与协作",
+      "serves": "需要选择模型、复用方法和排查失败原因的使用者，以及提供模型、工作流、素材说明和答疑的供给者。",
+      "value": "把个人的成功经验整理为他人能够理解、选择、运行和修改的资源。",
+      "examples": {
+        "domestic": [
+          "RunningHub：模型、AI应用与ComfyUI工作流分别组织"
+        ],
+        "overseas": [
+          "Comfy：模板、输入输出素材与更新",
+          "Hugging Face：用途、限制、任务和版本信息"
+        ]
+      },
+      "change": "资源交付从单一成品扩到可复现过程；海外历史研究显示说明与解答构成实际求助主题，国内需求强度仍未知。",
+      "sourceIds": [
+        "M26-RH",
+        "M26-COMFY-T",
+        "M26-COMFY-S",
+        "M26-HF-CARD",
+        "M26-HF-REUSE"
+      ]
+    },
+    {
+      "name": "内容分发与兴趣消费",
+      "serves": "观看、阅读、搜寻灵感和讨论的消费者，也服务需要观众反馈的作品供给者。",
+      "value": "让有题材、表达和连续性的内容被发现，并产生继续观看与交流的理由。",
+      "examples": {
+        "domestic": [
+          "B站：AI相关内容、作者投稿与内容消费",
+          "小红书：搜索和互动等混合信号参与热点发现"
+        ],
+        "overseas": [
+          "Reuters调查显示新闻消费还受来源信任与人类参与影响"
+        ]
+      },
+      "change": "内容平台组织作品与讨论；平台级增长尚不能解释哪个主题让观众每周回来。",
+      "sourceIds": [
+        "S01",
+        "S03",
+        "I04"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "工具使用者",
+      "geography": "国内",
+      "trigger": "出现待完成的问题、图文处理或工作材料任务。",
+      "consumes": "答案、示例、模板、操作说明和结果检查方法。",
+      "repeat": "相同任务周期性出现，或需要解决相邻问题；这是重复使用动因假设。",
+      "barrier": "已有AI入口已能满足一部分任务；缺少可靠依据、适用说明时还要另行核对。",
+      "evidence": "全国用途覆盖多种任务，移动行为资料显示AI分布于多个入口；没有证据要求每个工具使用者进入社区。",
+      "sourceIds": [
+        "N24-S02",
+        "MB24-S02"
+      ],
+      "overlap": "可能只使用工具，也可能同时观看内容或发布作品。"
+    },
+    {
+      "name": "内容消费者",
+      "geography": "国内",
+      "trigger": "对某个故事、风格、创作者或知识问题产生兴趣。",
+      "consumes": "图像成品、短片、系列内容、教程、观点及讨论；具体题材偏好须由样本确认。",
+      "repeat": "主题更新、后续作品或讨论有新的阅读观看价值；持续追看是待验证关系。",
+      "barrier": "AI题材热度未区分学习、围观、欣赏；低质量、同质内容与发现困难的国内发生率仍缺资料。",
+      "evidence": "B站披露AI相关内容观看增长；热点规则说明发现方式。尚无全国AI作品观看者分母和跨周回访数据。",
+      "sourceIds": [
+        "S01",
+        "S03"
+      ],
+      "overlap": "可以完全不创作；观看教程时也可能成为工具使用者。"
+    },
+    {
+      "name": "轻创作者",
+      "geography": "国内",
+      "trigger": "看见想尝试的效果，或为一次表达、分享和个人任务制作内容。",
+      "consumes": "直观效果示例、可替换素材的参考、简单方法和编辑能力。",
+      "repeat": "换主题或素材再次表达，或获得具体反馈；不能由一次生成推断持续投稿。",
+      "barrier": "生成结果能否符合意图、修改是否容易，以及是否愿意发布和维护。",
+      "evidence": "全国图片视频处理用途与厂商提供的参考、编辑入口说明任务存在；国内轻创作者数量、发布率和转为持续作者的比例未知。",
+      "sourceIds": [
+        "N24-S02",
+        "S02",
+        "M26-QWEN"
+      ],
+      "overlap": "同时是工具使用者；发布时成为内容供给者，未发布时仍不计供给。"
+    },
+    {
+      "name": "持续作品供给者与专业资源作者",
+      "geography": "国内角色假设；海外机制作比较",
+      "trigger": "持续更新主题、向受众交付作品，或让他人复用模型和工作流。",
+      "consumes": "作品参考、可控创作工具、兼容资源、版本说明、评价与排错信息。",
+      "repeat": "新的作品任务、受众回应、复用失败和资源更新；具体频率取决于供给任务。",
+      "barrier": "作品质量、时间和输入素材；资源另有说明、依赖、权限与维护负担。",
+      "evidence": "B站分别统计作者与投稿；海外创作者调查和HF历史论坛研究显示质量、工具选择、说明与解答任务。现有证据不能推算国内持续作者供给能力。",
+      "sourceIds": [
+        "S01",
+        "I03",
+        "M26-COMFY-T",
+        "M26-COMFY-S",
+        "M26-HF-REUSE"
+      ],
+      "overlap": "既生产也消费内容；专业程度与是否持续供给是两个维度，专业用户不一定公开发布。"
+    }
+  ],
+  "questions": [
+    {
+      "question": "国内AI相关内容观看中，模型资讯、学习制作和欣赏作品分别占多少？",
+      "missing": "按内容任务区分的观众样本及消费行为；不能从平台主题总观看时长拆分。",
+      "affects": "消费者画像与内容需求结构。"
+    },
+    {
+      "question": "用户是因题材、创作者、方法价值还是AI新奇感而返回？",
+      "missing": "同一用户连续两周的观看阅读与返回原因记录，包含停止返回和需求已满足的反例。",
+      "affects": "周活用户数变化的解释。"
+    },
+    {
+      "question": "哪些消费者会进行轻创作，哪些创作结果最终发布？",
+      "missing": "观看、尝试、生成、筛选、发布之间的连续行为；同一用户角色可重叠。",
+      "affects": "消费与供给之间是否存在稳定转换。"
+    },
+    {
+      "question": "作品作者和资源作者的持续成本各在哪里？",
+      "missing": "每件可用作品的筛选修改时间；每项复用资源的说明、依赖更新和答疑时间。",
+      "affects": "可持续供给能力，不能只看生成数或发帖数。"
+    },
+    {
+      "question": "国内观众在不同内容品类下如何理解AI标识和来源？",
+      "missing": "兴趣娱乐、知识教程、纪实新闻分别取证；海外新闻态度只能提出比较问题。",
+      "affects": "信任与内容接受条件。"
+    },
+    {
+      "question": "已有工具和社媒在哪些任务上已满足用户，哪些任务仍需跨平台完成？",
+      "missing": "实际任务路径、切换原因、完成结果与放弃原因，包含无需额外社区的案例。",
+      "affects": "三层之间的关系及真实需求缺口。"
+    }
+  ],
+  "metrics": [
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M24",
+      "label": "回答问题",
+      "value": 76,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "非全体居民、非周活、非社区内容消费比例。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M25",
+      "label": "生成处理图片/视频",
+      "value": 47.8,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "图片和视频合并且包含处理；不能称为公开创作者比例。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M26",
+      "label": "生成处理文本",
+      "value": 37.6,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "未给发布、频次或专业程度。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M27",
+      "label": "生成处理工作总结/会议纪要/PPT",
+      "value": 32.5,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "不是职业办公人员占比。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M28",
+      "label": "生活助手",
+      "value": 30.6,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "不能转为兴趣社区用户数。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M29",
+      "label": "娱乐",
+      "value": 30.1,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "使用AI娱乐，不等于观看AI生成作品。"
+    },
+    {
+      "group": "国内生成式AI使用目的",
+      "id": "SEG24-M30",
+      "label": "生成处理代码",
+      "value": 10.8,
+      "unit": "%",
+      "period": "2025-12",
+      "denominator": "中国大陆生成式AI用户；可多选/重叠用途",
+      "sourceIds": [
+        "N24-S02"
+      ],
+      "addedOrReused": "reused",
+      "limit": "不等于职业开发者或API用户比例。"
+    },
+    {
+      "group": "海外创作者的AI用途",
+      "id": "M26-ADOBE-EDIT",
+      "label": "编辑、放大与增强",
+      "value": 55,
+      "unit": "%",
+      "period": "2025-09",
+      "denominator": "Adobe/Harris Poll八国逾16000名受访创作者；用途不互斥",
+      "sourceIds": [
+        "I03"
+      ],
+      "addedOrReused": "reused",
+      "limit": "海外新兴及半专业创作者样本，非中国、非全体网民。"
+    },
+    {
+      "group": "海外创作者的AI用途",
+      "id": "M26-ADOBE-ASSET",
+      "label": "生成图像视频等资产",
+      "value": 52,
+      "unit": "%",
+      "period": "2025-09",
+      "denominator": "Adobe/Harris Poll八国逾16000名受访创作者；用途不互斥",
+      "sourceIds": [
+        "I03"
+      ],
+      "addedOrReused": "reused",
+      "limit": "与编辑和构思可重叠，不能画成占比饼图。"
+    },
+    {
+      "group": "海外创作者的AI用途",
+      "id": "M26-ADOBE-IDEA",
+      "label": "构思与头脑风暴",
+      "value": 48,
+      "unit": "%",
+      "period": "2025-09",
+      "denominator": "Adobe/Harris Poll八国逾16000名受访创作者；用途不互斥",
+      "sourceIds": [
+        "I03"
+      ],
+      "addedOrReused": "reused",
+      "limit": "自报使用，不代表增加的有效产出。"
+    },
+    {
+      "group": "海外公众过去一周AI用途",
+      "id": "M26-RISJ-INFO",
+      "label": "获取信息",
+      "value": 24,
+      "unit": "%",
+      "period": "2025-06至07",
+      "denominator": "Reuters/YouGov六国在线受访者的跨国平均；每国约2000人",
+      "sourceIds": [
+        "I04"
+      ],
+      "addedOrReused": "reused",
+      "limit": "六国不含中国；非仅以AI使用者为分母。"
+    },
+    {
+      "group": "海外公众过去一周AI用途",
+      "id": "M26-RISJ-MEDIA",
+      "label": "制作媒体内容",
+      "value": 21,
+      "unit": "%",
+      "period": "2025-06至07",
+      "denominator": "Reuters/YouGov六国在线受访者的跨国平均；每国约2000人",
+      "sourceIds": [
+        "I04"
+      ],
+      "addedOrReused": "reused",
+      "limit": "包含多种媒体创作，用途可重叠；非观看比例。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "N24-S02",
+      "title": "第57次《中国互联网络发展状况统计报告》",
+      "url": "https://www.cnnic.net.cn/NMediaFile/2026/0304/MAIN1772588317069TUXN3827X8.pdf",
+      "date": "2026-02-05",
+      "scope": "国内；2025年12月中国大陆生成式AI用户及其使用目的",
+      "method": "复用china-ai-users.json中2026-09-10核验的正文p41–46、附录p65–67；2026-09-16重新读取完整官方发布页。用途表对应正文p45图43（PDF第53页），本日未重新取得PDF全文。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "site/lib/china-ai-users.json#N24-S02",
+      "relatedUrl": "https://www.cnnic.net.cn/n4/2026/0304/c88-11549.html",
+      "claim": "2025年12月生成式AI用户规模为6.02亿；用途包括回答问题、图像视频处理、文本、办公、生活和娱乐。",
+      "limit": "使用目的可重叠；不是月活或周活统计，也不是内容消费者、专业作者或社区受众规模。专项AI有效样本数未披露。"
+    },
+    {
+      "id": "MB24-S02",
+      "title": "QuestMobile 2026年AI应用市场发展半年报",
+      "url": "https://www.questmobile.com.cn/research/report/2076954943839809537/",
+      "date": "2026-07-14",
+      "scope": "国内；AI原生App、插件、终端厂商AI、PC网页、PC客户端五类入口",
+      "method": "2026-09-16重读原发布机构摘要与第一章1–6节的网页文本；沿用既有数据记录中的方法限制。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "site/lib/china-ai-users.json#MB24-S02",
+      "claim": "AI功能分布在独立App、既有应用、手机与PC等入口，用户可以在既有行为路径中接触AI。",
+      "limit": "摘要写2026年5月、正文第一章写6月但列相同规模；不采用该组数值作新图表。公开正文未充分披露跨端去重、当期样本框与权重；不能把五类规模相加。"
+    },
+    {
+      "id": "I03",
+      "title": "Adobe Creators’ Toolkit Report",
+      "url": "https://news.adobe.com/news/2025/10/adobe-max-2025-creators-survey",
+      "date": "2025-10-28",
+      "scope": "海外比较；美国、英国、法国、德国、韩国、日本、印度、澳大利亚创作者",
+      "method": "重读官方发布页KEY FINDINGS与Methodology。Adobe/Harris Poll于2025年9月调查逾16000名创作者，以新兴及半专业创作者为主；定义为每月至少数次向社媒受众创作并发布数字内容。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "industry-sources.md#I03",
+      "claim": "编辑增强、生成资产、构思是三种不同AI用途；受访者提及成本、输出可靠性和训练来源顾虑。",
+      "limit": "厂商委托的线上自报研究，不含中国，不能外推国内采用率；也不能代表只观看者或全职专业创意行业。"
+    },
+    {
+      "id": "I04",
+      "title": "Generative AI and news report 2025",
+      "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2025-how-people-think-about-ais-role-journalism-and-society",
+      "date": "2025-10-07",
+      "scope": "海外比较；阿根廷、丹麦、法国、日本、英国、美国成年在线样本",
+      "method": "重读Executive summary、Methodology及生成式AI使用、新闻接受程度段落。YouGov于2025-06-05至07-15调查，每国约2000人，按年龄、性别、地区、政治倾向配额和加权；非概率在线面板。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "industry-sources.md#I04",
+      "claim": "获取信息和制作媒体是不同使用任务；新闻接受度随人类参与程度变化。",
+      "limit": "六国平均不能代表全球或中国；新闻信任不能直接移植到娱乐图像、短片或兴趣作品。自报使用与态度不是实际点击或留存日志。"
+    },
+    {
+      "id": "S01",
+      "title": "Bilibili 2025年度业绩公告：Content and Community",
+      "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526094863/d119863dex992.htm",
+      "date": "2026-03-05",
+      "scope": "国内平台；2025年B站内容消费与创作者供给",
+      "method": "重读SEC原文BUSINESS REVIEW AND OUTLOOK、Content and Community，正文p6–7。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "social-sources.md#S01",
+      "claim": "公司披露AI相关内容观看时长同比增长73%，月活创作者约400万、月均视频投稿约2400万。观看与投稿分别计量。",
+      "limit": "AI相关内容包含科技题材，未拆出AI生成作品；作者数据为全平台，不能作为AI作者数量或AI作品观众分母。平台解释并非用户访谈。"
+    },
+    {
+      "id": "S02",
+      "title": "快手科技2025年第四季度及全年业绩",
+      "url": "https://ir.kuaishou.com/zh-hans/node/11286/pdf",
+      "date": "2026-03-25",
+      "scope": "可灵创作工具的产品与业务说明",
+      "method": "重读官方PDF第1–2页文本，重点为业务回顾、AI业务、可灵多模态生成与编辑说明。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "social-sources.md#S02",
+      "claim": "可灵生成、编辑与动作参考面向多类创作任务。",
+      "limit": "公司产品自述；未实测生成质量与稳定交付结果。"
+    },
+    {
+      "id": "S03",
+      "title": "小红书热点榜单说明",
+      "url": "https://fe.xiaohongshu.com/ditto/vincent/c45978d1a53d4dec963167ebd6f1802e?fullscreen=true&naviHidden=yes",
+      "date": null,
+      "scope": "国内平台；热点榜单排序说明",
+      "method": "复用social-sources.md中2026-09-16已读完整35行规则的记录；复核访问取得页面索引，正文重取超时。",
+      "status": "read",
+      "addedOrReused": "reused",
+      "reusedFrom": "social-sources.md#S03",
+      "claim": "榜单结合搜索、传播、互动、点击等信号，并动态更新。",
+      "limit": "只说明榜单的混合信号，不给主题人群分母；热度排名不能解释为未满足需求或跨周回访。发布日期未标。"
+    },
+    {
+      "id": "M26-SEED25",
+      "title": "一镜成片，随心参考｜Seedance 2.5正式发布",
+      "url": "https://seed.bytedance.com/zh/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "date": "2026-07-31",
+      "scope": "国内模型厂商；视频生成、参考与编辑能力的产品说明",
+      "method": "读取官方发布正文：发布摘要、30秒及延长、多模态参考、时间戳编辑与上线入口段；未观看网页视频，未调用模型。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "厂商把长叙事、多模态参考和定向编辑作为升级重点，生成后的延长与修改成为显式任务。",
+      "limit": "只证明官方发布与宣称的能力方向；演示与参数不能证明普通创作者的成片成功率、工时或观看效果。API上线措辞为发布当日计划，不据此断言今日可用。"
+    },
+    {
+      "id": "M26-QWEN",
+      "title": "Qwen-Image官方仓库：Introduction与News",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "date": "2026-02-10（所引发布记录）",
+      "scope": "国内模型团队；图像生成、编辑及开放资源入口",
+      "method": "读取官方README的Introduction、News中2025-12至2026-02条目及资源链接；未运行模型或评测。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "Qwen-Image-2.0发布记录将海报、漫画、信息图等任务与生成编辑统一处理并列；仓库另提供可下载模型、演示与部署资源入口。",
+      "limit": "产品定位与厂商声明不是任务成功率；不同版本的开放权重状态不能混用，不把2.0发布等同于2.0开放权重。"
+    },
+    {
+      "id": "M26-RH",
+      "title": "RunningHub官方文档：AI应用、ComfyUI工作流与模型API目录",
+      "url": "https://www.runninghub.cn/runninghub-api-doc-cn/",
+      "date": null,
+      "scope": "国内资源与工具平台；模型、应用、工作流三类交付",
+      "method": "读取官方文档页可取得的导航正文，包含AI应用、ComfyUI工作流、模型分类及发起任务/工作流JSON入口；未测试接口。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "官方文档将AI应用、ComfyUI工作流和模型能力分开组织，分别供外部产品或流程使用。",
+      "limit": "只采用已读目录能支持的资源组织事实；不由文档推断实际使用率、交付稳定性、持续协作或用户留存。"
+    },
+    {
+      "id": "M26-COMFY-T",
+      "title": "ComfyUI Built-in Workflow Templates",
+      "url": "https://docs.comfy.org/interface/features/template",
+      "date": null,
+      "scope": "海外产品机制；面向全球的工作流模板与节点作者",
+      "method": "读取官方文档Templates、更新依赖、贡献模板、Custom node templates段。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "模板库包含原生支持模型的工作流与自定义节点示例；官方模板贡献要求避免第三方节点，模板包单独更新。",
+      "limit": "这是复用与维护机制说明；未验证全部模板可运行，不代表中国用户偏好，也不量化其降低的学习成本。"
+    },
+    {
+      "id": "M26-COMFY-S",
+      "title": "Comfy Cloud：Share workflows",
+      "url": "https://docs.comfy.org/cloud/share-workflow",
+      "date": null,
+      "scope": "海外产品机制；云端工作流分享与更新",
+      "method": "读取Overview、How to share a workflow、Update a shared workflow全部正文。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "分享链接包含工作流、输入输出和引用素材；作者更新后，同一链接会展示新内容。",
+      "limit": "该功能仅属Comfy Cloud；可分享不等于素材可公开或有权转授，也不证明受者已成功复现。"
+    },
+    {
+      "id": "M26-HF-CARD",
+      "title": "Hugging Face Hub：Model Cards",
+      "url": "https://huggingface.co/docs/hub/model-cards",
+      "date": null,
+      "scope": "海外产品机制；面向全球的模型说明与发现",
+      "method": "读取模型卡定义、用途限制、元数据、基础模型、新版本、许可、评测与任务标签段。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "模型卡把用途、限制、训练与评测信息连接到资源发现；元数据支持按任务、基础模型、许可等筛选。",
+      "limit": "文档规定不代表每张模型卡都完整准确；说明与元数据不能替代实际复用验证。"
+    },
+    {
+      "id": "M26-HF-REUSE",
+      "title": "Deep Learning Model Reuse in the HuggingFace Community: Challenges, Benefit and Trends",
+      "url": "https://arxiv.org/html/2401.13177v1",
+      "date": "2024-01-24",
+      "scope": "海外历史机制研究；2020-07至2023-06 Hugging Face公开论坛讨论",
+      "method": "读取作者论文HTML摘要、III-B方法、III-C挑战与表I、初学/中级比较。研究采集11175个主题，初始抽样372个，编码持续至455个主题达到作者所述饱和；不是455名用户问卷。",
+      "status": "read",
+      "addedOrReused": "added",
+      "claim": "讨论中出现模型理解、教程、特定任务解法、输出解释等需求；社区价值包含专家解答与协作排错。",
+      "limit": "公开求助讨论选择了遇到问题并发帖的人；历史预训练模型社区不等于2026年中国视觉创作用户，主题编码占比不能改写为用户比例。"
+    }
+  ],
+  "chartRules": [
+    "国内使用目的、海外创作者用途、海外公众用途分组展示；不可跨分母直接比较大小。",
+    "用途有重叠，使用横向条形图，不绘制总和为100%的饼图。",
+    "国内用途7条直接复用china-ai-users.json现有指标，不增加全国资料库的指标计数。",
+    "不将全国AI规模、应用月活、平台观看时长和社区周活合并为漏斗。"
+  ],
+  "audit": {
+    "sourceDocuments": 14,
+    "sourceFamilyCount": 13,
+    "originalResearchFamilyCount": 5,
+    "countLabel": "14份原始资料文档，归入13个来源族；其中5个来源族包含原始调查、行为监测或论坛实证。不能称为14项独立研究。",
+    "sourceFamilies": [
+      {
+        "id": "cnnic57",
+        "name": "CNNIC第57次统计报告",
+        "kind": "全国调查",
+        "sourceIds": [
+          "N24-S02"
+        ]
+      },
+      {
+        "id": "questmobile2026h1",
+        "name": "QuestMobile 2026 AI半年报",
+        "kind": "行为监测研究",
+        "sourceIds": [
+          "MB24-S02"
+        ]
+      },
+      {
+        "id": "adobe2025creators",
+        "name": "Adobe/Harris Poll创作者调查",
+        "kind": "海外委托调查",
+        "sourceIds": [
+          "I03"
+        ]
+      },
+      {
+        "id": "risj2025",
+        "name": "Reuters/YouGov六国调查",
+        "kind": "海外公众调查",
+        "sourceIds": [
+          "I04"
+        ]
+      },
+      {
+        "id": "bilibili2025",
+        "name": "Bilibili 2025年度业绩",
+        "kind": "公司披露",
+        "sourceIds": [
+          "S01"
+        ]
+      },
+      {
+        "id": "kuaishou2025",
+        "name": "快手2025年度业绩",
+        "kind": "公司披露",
+        "sourceIds": [
+          "S02"
+        ]
+      },
+      {
+        "id": "xhs-hot-ranking",
+        "name": "小红书热点榜单规则",
+        "kind": "平台规则",
+        "sourceIds": [
+          "S03"
+        ]
+      },
+      {
+        "id": "bytedance-seedance25",
+        "name": "Seedance 2.5产品发布",
+        "kind": "产品发布",
+        "sourceIds": [
+          "M26-SEED25"
+        ]
+      },
+      {
+        "id": "qwen-image",
+        "name": "Qwen-Image官方仓库",
+        "kind": "产品与模型文档",
+        "sourceIds": [
+          "M26-QWEN"
+        ]
+      },
+      {
+        "id": "runninghub",
+        "name": "RunningHub官方文档",
+        "kind": "产品文档",
+        "sourceIds": [
+          "M26-RH"
+        ]
+      },
+      {
+        "id": "comfy",
+        "name": "Comfy模板与分享文档",
+        "kind": "同一产品的两个机制文档",
+        "sourceIds": [
+          "M26-COMFY-T",
+          "M26-COMFY-S"
+        ]
+      },
+      {
+        "id": "hf-model-cards",
+        "name": "Hugging Face模型卡文档",
+        "kind": "产品文档",
+        "sourceIds": [
+          "M26-HF-CARD"
+        ]
+      },
+      {
+        "id": "hf-reuse-study2024",
+        "name": "Taraghi等人的HF社区复用研究",
+        "kind": "海外历史论坛实证",
+        "sourceIds": [
+          "M26-HF-REUSE"
+        ]
+      }
+    ],
+    "addedDocuments": 7,
+    "reusedDocuments": 7,
+    "newSurveysConducted": 0,
+    "currentReadScope": "直接复核12份原始网页/文档的所列章节；N24-S02全文与S03规则正文分别明确复用既有核验记录。N24-S02官方发布页已重新直接读取。",
+    "sourceCountingRule": "按独立原始资料文档记录；同一报告的发布页与全文合并为一份，既有资料复用不增加原库计数。Comfy两页是不同机制文档，不称为两项独立调查。",
+    "excludedCandidates": [
+      {
+        "title": "中国网络视听发展研究报告（2026）发布版",
+        "url": "https://www.cnsa.cn/art/2026/4/20/art_2020_49023.html",
+        "reason": "已定位原始发布入口，正文与PDF未取得；不计已读、不采用搜索片段中的数量。"
+      },
+      {
+        "title": "中国网络视听发展研究报告（2025）发布版",
+        "url": "https://www.cnsa.cn/art/2025/4/5/art_2020_49022.html",
+        "reason": "原始页超时，保留候选，不计已读。"
+      }
+    ]
+  }
+}

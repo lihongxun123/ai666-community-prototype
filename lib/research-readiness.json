@@ -75,7 +75,7 @@
       "id": "B1",
       "title": "平台价值与路径",
       "status": "passed",
-      "result": "15家均有任务、产品提供及使用者剩余工作。",
+      "result": "15家均列明用户任务、产品提供的帮助及使用者仍需完成的工作。",
       "evidence": "/research-kit/audience-research.md"
     },
     {
@@ -110,7 +110,7 @@
       "id": "C1",
       "title": "既有画像审计",
       "status": "passed",
-      "result": "46条画像逐项核对引用、来源类型、用户点与未知；新复读不自动加点。",
+      "result": "46条画像逐项核对引用、来源类型、用户证据与未知项；重复阅读不增加证据数量。",
       "evidence": "/research-kit/audience-audit.json"
     },
     {
@@ -257,14 +257,14 @@
       "id": "G2",
       "title": "MakeNow交接状态",
       "status": "passed",
-      "result": "确认一例副本创建和文本保存；素材、独立接收者与生成继续未知。",
+      "result": "确认一例副本创建和文本保存；素材、独立接收者与生成结果仍未确认。",
       "evidence": "/research-kit/content-delivery-supply.md"
     },
     {
       "id": "G3",
       "title": "API交付条件",
       "status": "passed",
-      "result": "API文档核到提交/查询/下载及修改任务；价格与实际重试费用未核。",
+      "result": "API文档包含提交/查询/下载及修改任务的说明；价格与实际重试费用未核。",
       "evidence": "/research-kit/research-condition-review.md"
     },
     {

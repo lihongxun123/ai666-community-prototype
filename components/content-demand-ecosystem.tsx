@@ -20,15 +20,16 @@ function Sources({urls}:{urls:string[]}){return <div className="de-sources">{[..
 
 export function DouyinEcosystem(){
  return <div className="de-research">
-  <header className="page-heading"><h1>内容供需与主题</h1>
+  <header className="page-heading"><h1>内容需求与社媒生态</h1>
 
   </header>
+  <div className="ms-lead"><strong>作品消费与实际应用均有需求证据，原平台已承接部分任务。</strong><p>14领域与8项任务的比较，分别记录已解决的需要、具体障碍和结果未知的情况。下方四类主题和关键词记录保留各自采样范围，作为专题依据。</p><div className="ms-links"><Link url="/domain-research#research-conclusions">综合判断与领域比较</Link><Link url="/task-research">用户任务与结果</Link><Link url="/media-reports#report-catalog">报告与阅读范围</Link></div></div>
   <ResearchOutline items={[
    ['theme-comparison','四类主题对照'],['cd-platforms','15个平台供给'],['de-map','细分题材地图'],['de-index','关键词指数'],['de-evidence','作品与评论记录']
   ]}/>
   <ThemeComparison />
   <ResearchAppendix id="de-evidence" title="作品、评论与采样记录">
-  <details className="cd-profile"><summary><strong>同作者作品对照与画面研究</strong><span>既有逐集、互动与材料核查</span></summary><div className="cd-profile-body"><DouyinComparison /></div></details>
+  <details className="cd-profile"><summary><strong>同作者作品对照与画面研究</strong><span>分集、互动与材料核对范围</span></summary><div className="cd-profile-body"><DouyinComparison /></div></details>
   <details className="cd-profile"><summary><strong>作品互动与逐条评论底表</strong><span>63件作品与已读讨论</span></summary><div className="cd-profile-body"><DouyinPanel /></div></details>
   <details className="cd-profile"><summary><strong>参考方法、作者样本与指数复算</strong></summary><div className="cd-profile-body"><DouyinDepth /></div></details>
   <ResearchAppendix id="de-baseline-data" title="题材、关键词与竞品供给底表">
@@ -83,7 +84,7 @@ export function DouyinEcosystem(){
   </section>
 
   <section id="de-method"><h2>这些数据能说明什么，不能说明什么</h2><Table heads={['观察入口','回答的问题','使用方法','证据']} rows={e.ecosystem.filter((_,i)=>i!==4).map(x=>[x.surface,x.question,x.use,x.evidence])}/><h3>“供给少、消费多”需要同时满足哪些条件</h3><Table heads={['条件','要看到的证据','容易误判之处']} rows={e.gapTests.filter((_,i)=>![2,4,5].includes(i)).map(x=>[x.test,x.evidence,x.trap])}/>
-   <h3>13个详情样本提出的补证问题</h3><ol>{e.next.filter((_,i)=>i!==3).map(x=><li key={x.title}><strong>{x.title}</strong><p>{x.text}</p></li>)}</ol>
+   <h3>13个详情样本尚未回答的问题</h3><ol>{e.next.filter((_,i)=>i!==3).map(x=><li key={x.title}><strong>{x.title}</strong><p>{x.text}</p></li>)}</ol>
    <details className="cd-profile"><summary><strong>采样与计数说明</strong></summary><div className="cd-profile-body"><ul><li>本表含{d.competitors.length}个对象，其中1个是已知对象的复核，不能全部计为新增。</li><li>不同对象可共用一个报道来源。可灵的 8 个具名作品来自同一报道，未据作品数增加独立消费者计数。</li><li>13 个抖音详情与列表部分重合；内容、词条、评论片段不能相加为人数。没有逐条看完成片、审核知识真实性或运行工作流。</li><li>WaytoAGI 和魔搭样本中为索引片段，可灵为外部报道。官方教程和策选案例不能代表普通用户分布。</li><li>同一观察窗口内的全站内容分母、独立消费者数、完播率和跨周回访率均未取得。因此，这些样本用于识别来源与任务，不用于按样本数量排列行业机会。</li></ul></div></details>
   </section>
  </ResearchAppendix>

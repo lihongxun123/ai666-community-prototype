@@ -8,9 +8,9 @@ export function LiblibSupplyAxes(){
     <h4>供给主题与明确用途</h4>
     <p>699份资源按主题和用途分别统计。例如，人物是题材，证件照是用途；空间风格可以用于多个场景。每份资源允许归入多个主题，但在每个主题内只计一次。标签占比以699份资源为分母，不能相加为100%。</p>
     <div className="table-wrap"><table><thead><tr><th>主题信号</th><th>资源数</th><th>占观察集合</th><th>可核对实例</th></tr></thead><tbody>{data.summary.topics.counts.map(g=><tr key={g.name}><th>{g.name}</th><td>{g.count}</td><td>{g.sharePct}%</td><td>{data.resources.filter(r=>r.topics.includes(g.name)).slice(0,2).map(r=><p key={r.id}><a href={r.url} target="_blank" rel="noreferrer">{r.title} ↗</a></p>)}</td></tr>)}</tbody></table></div>
-    <p>{unmatched}份资源未被现有题材规则识别。统计以标题词、已记录的标题语义判断及详情标签为依据，不等于全部资源已完成内容判读，也不代表各行业用户占比。</p>
+    <p>{unmatched}份资源未被现有题材规则识别。归类依据为标题词、标题含义及已有详情标签，部分资源尚缺内容判读。这里统计资源主题，行业用户构成另需用户数据。</p>
     <div className="table-wrap"><table><thead><tr><th>标题或详情明确提及的用途</th><th>资源数</th><th>占观察集合</th></tr></thead><tbody>{data.summary.scenarios.counts.map(g=><tr key={g.name}><th>{g.name}</th><td>{g.count}</td><td>{g.sharePct}%</td></tr>)}</tbody></table></div>
-    <p>{tasks}份资源识别到明确用途词，其余{699-tasks}份未确认用途。详情中的作者用途说明与标签仅说明发布者如何介绍资源，尚不能证明用户已完成任务或持续使用。</p>
+    <p>{tasks}份资源识别到明确用途词，其余{699-tasks}份未确认用途。用途依据作者说明与标签识别；用户的任务完成和持续使用情况仍待核实。</p>
     <h4>使用条件的证据覆盖</h4>
     <p>62份有效详情来自标题用途待核的资源，属于定向选取，不能代表699份的条件分布。表格统计基础模型、参考图输入与提示词支持等字段的证据覆盖；其余637份没有可用详情记录。运行次数和下载次数不作为使用条件。</p>
     <div className="table-wrap"><table><thead><tr><th>详情字段</th><th>已观察资源数</th><th>占62份有效详情</th></tr></thead><tbody>{data.summary.conditions.observedFieldCounts.filter(r=>conditionNames[r.name]).map(r=><tr key={r.name}><th>{conditionNames[r.name]}</th><td>{r.count}</td><td>{r.sharePct}%</td></tr>)}</tbody></table></div>

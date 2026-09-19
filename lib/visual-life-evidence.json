@@ -1,0 +1,330 @@
+{
+  "date": "2026-09-16",
+  "scope": "定向补充视觉审美与家居兴趣。10个作品URL、3位作者；同一屏风的展示与教程共用一个内容对象。详情标题、正文、可见评论与局部画面分别记录，未完整观看或复做。",
+  "baseline": "social-inventory.json 中615个存量抖音URL保持原快照，新增与复查分开计数。",
+  "groups": [
+    {
+      "id": "world",
+      "author": "世界草稿 W/D",
+      "themes": [
+        "aesthetics"
+      ],
+      "workIds": [
+        "VL01",
+        "VL02",
+        "VL03"
+      ],
+      "finding": "东方巨构成片同时吸引审美欣赏、沉浸想象和制作讨论；同题供给竞争已进入作者讨论。",
+      "boundary": "三件均为旧库复查；增加审美标签的证据，保留既有制作学习标签。"
+    },
+    {
+      "id": "infinite",
+      "author": "无限树",
+      "themes": [
+        "aesthetics"
+      ],
+      "workIds": [
+        "VL04",
+        "VL05",
+        "VL06"
+      ],
+      "finding": "天宫按系列组织，已从第2集点击到第3集、再到第4集。评论有审美评价、代入式玩笑与制作成本问题。",
+      "boundary": "系列编号与发布日期顺序不同；是否有叙事依赖未做全片判断。"
+    },
+    {
+      "id": "circle",
+      "author": "圆子改造家",
+      "themes": [
+        "life"
+      ],
+      "workIds": [
+        "VL07",
+        "VL08",
+        "VL09",
+        "VL10"
+      ],
+      "finding": "同一作者提供AI转场展示、家居改造展示、屏风与床幔教程；观看、购买参考和制作学习并存。",
+      "boundary": "4个URL对应3个内容对象。仅AI改造视频有作者确认使用即梦的证据，其余作品不认定为AI成片。"
+    }
+  ],
+  "works": [
+    {
+      "id": "VL01",
+      "url": "https://www.douyin.com/video/7669388419163901218",
+      "title": "中式建筑放大一万倍：天宫",
+      "author": "世界草稿 W/D",
+      "publishedAt": "2026-08-02 19:04",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "world-palace",
+      "aiEvidence": "作者声明内容由AI生成；正文含LibTV标签。",
+      "readScope": "详情正文、默认可见根评论与作者回复、弹幕文字；未完整观看。",
+      "metrics": {
+        "likes": "2.8万",
+        "comments": "575",
+        "favorites": "5039",
+        "shares": "3570",
+        "views": null
+      },
+      "observations": [
+        "观众表达宏大感、偏好大场景，并讨论大屏画质体验。",
+        "评论建议增加俯瞰和环绕运镜；作者表示会改进。",
+        "评论建议调整配乐；作者表示会尝试。"
+      ],
+      "result": "已有欣赏与审美交流；改进承诺不视为成片已改好。"
+    },
+    {
+      "id": "VL02",
+      "url": "https://www.douyin.com/video/7670164612267937078",
+      "title": "思念之城：东方城阙",
+      "author": "世界草稿 W/D",
+      "publishedAt": "2026-08-04 21:16",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "world-longing",
+      "aiEvidence": "作者声明内容由AI生成；正文自述使用Seedance2.5。",
+      "readScope": "详情正文、可见根评论与作者回复、弹幕文字；未完整观看。",
+      "metrics": {
+        "likes": "4.4万",
+        "comments": "422",
+        "favorites": "5189",
+        "shares": "9765",
+        "views": null
+      },
+      "observations": [
+        "观众表达大场景偏好、与既有影视的联想、希望身临其境。",
+        "有观众询问VR形式，作者回复可以；未展示VR成品。",
+        "有观众希望拍电影，作者在一条回复中指出不可控、目前太难；其他回复语境不同。",
+        "提示词与制作成本也被询问。"
+      ],
+      "result": "沉浸欣赏与制作诉求并存；VR与长片为需求线索，非已验证产品机会。"
+    },
+    {
+      "id": "VL03",
+      "url": "https://www.douyin.com/video/7672733398560951602",
+      "title": "AI中式天庭审美",
+      "author": "世界草稿 W/D",
+      "publishedAt": "2026-08-11 19:24",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "world-heaven",
+      "aiEvidence": "作者声明内容由AI生成。",
+      "readScope": "详情正文、可见评论；展开同质化根评论首批3条回复，页面仍有展开更多。未完整观看。",
+      "metrics": {
+        "likes": "1178",
+        "comments": "62",
+        "favorites": "125",
+        "shares": "75",
+        "views": null
+      },
+      "observations": [
+        "观众欣赏雾的运动，也有人指出现代人物进入构图。",
+        "一位评论者表示同题作品多，准备放弃天宫系列。",
+        "作者先表示也准备不做；评论者随后建议发展其不同的系列，作者回复会继续深挖，但出图困难。",
+        "另有关于成本和流量下降的评论；只是个人经历表述。"
+      ],
+      "result": "存在供给同质化与差异化制作困难的直接讨论；不能截取前一句宣布作者已经停更，不能由三个指标快照推断全题材衰退。"
+    },
+    {
+      "id": "VL04",
+      "url": "https://www.douyin.com/video/7674208471100689714",
+      "title": "天宫第2集：赴一场云端旧梦",
+      "author": "无限树",
+      "publishedAt": "2026-08-15 18:48",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "infinite-2",
+      "aiEvidence": "作者声明内容由AI生成。",
+      "readScope": "详情正文、首批5条根评论、弹幕文字、00:14附近画面截图观察；未完整观看。",
+      "metrics": {
+        "likes": "6155",
+        "comments": "229",
+        "favorites": "1277",
+        "shares": "459",
+        "views": null
+      },
+      "observations": [
+        "画面为云海宫阙、长桥与人物，评论和弹幕出现向往、代入玩笑、构图评价与制作成本问题。",
+        "详情右侧天宫系列提供多集入口；点击第3集成功。"
+      ],
+      "result": "审美系列已有连续发现路径，功能存在不代表持续回访。"
+    },
+    {
+      "id": "VL05",
+      "url": "https://www.douyin.com/video/7671629942262489850",
+      "title": "天宫第3集：云海漫过天阶",
+      "author": "无限树",
+      "publishedAt": "2026-08-08 20:02",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "infinite-3",
+      "aiEvidence": "作者声明内容由AI生成。",
+      "readScope": "从第2集右侧链接进入；详情正文、首批5条根评论与弹幕文字，未完整观看。",
+      "metrics": {
+        "likes": "4884",
+        "comments": "209",
+        "favorites": "1075",
+        "shares": "357",
+        "views": null
+      },
+      "observations": [
+        "观众表达壮观、渺小感与修仙联想，也有人问制作费用。",
+        "从右侧系列点击第4集成功。"
+      ],
+      "result": "以意境继续观看的路径已存在；集号次序不等于发布时间先后。"
+    },
+    {
+      "id": "VL06",
+      "url": "https://www.douyin.com/video/7672363657719844147",
+      "title": "天宫第4集：花影长街与云上仙城",
+      "author": "无限树",
+      "publishedAt": "2026-08-10 19:29",
+      "themes": [
+        "aesthetics"
+      ],
+      "contentObject": "infinite-4",
+      "aiEvidence": "作者声明内容由AI生成。",
+      "readScope": "从第3集右侧链接进入；详情正文、首批5条根评论，未完整观看。",
+      "metrics": {
+        "likes": "1966",
+        "comments": "80",
+        "favorites": "614",
+        "shares": "149",
+        "views": null
+      },
+      "observations": [
+        "有观众希望进入画面参加聚会，另有中式意境评价及小说人物联想。",
+        "一条评论提到本地AI结果差距，回复未展开，不判断原因或解决情况。"
+      ],
+      "result": "纯消费评价与工具结果讨论同时出现。"
+    },
+    {
+      "id": "VL07",
+      "url": "https://www.douyin.com/video/7543189166478134528",
+      "title": "AI改造前后转场",
+      "author": "圆子改造家",
+      "publishedAt": "2025-08-27 17:06",
+      "themes": [
+        "life"
+      ],
+      "contentObject": "circle-ai-transition",
+      "aiEvidence": "页面疑似AI提示；作者确认评论中用即梦首尾帧制作的方法，并回复使用即梦。",
+      "readScope": "详情正文、可见根评论与作者回复；展开制作方法根评论首批3条回复，仍有更多。未完整观看或实际复做。",
+      "metrics": {
+        "likes": "1.3万",
+        "comments": "341",
+        "favorites": "7323",
+        "shares": "5639",
+        "views": null
+      },
+      "observations": [
+        "一条获作者认可的评论说明：用同角度装修前后图片做首尾帧并配描述词；作者确认。",
+        "展开回复后，另有提示词请求与排队时间长的反馈。",
+        "转角桌与地面材料被询问，作者分别回答桌板品牌材质及木地板。",
+        "有观众质疑复杂造型实际落地难度。",
+        "正文含源氏木语品牌活动标签；未验证付费合作关系。"
+      ],
+      "result": "能确认AI参与视频表达，不能写成AI在20秒内完成实体装修或全案设计。方法与部分物品问题已回答；提示词和可落地性需分别判断。"
+    },
+    {
+      "id": "VL08",
+      "url": "https://www.douyin.com/video/7631769166025968959",
+      "title": "卧室阳台改造：珐琅质感屏风",
+      "author": "圆子改造家",
+      "publishedAt": "2026-04-23 17:30",
+      "themes": [
+        "life"
+      ],
+      "contentObject": "circle-screen",
+      "aiEvidence": "未见作品AI生成声明。页面的内容由AI生成字样属于章节要点摘要区，不能作为视频生成依据。",
+      "readScope": "详情正文、章节摘要与可见评论至没有更多；有一条位置无正文，未完整观看。",
+      "metrics": {
+        "likes": "289",
+        "comments": "11",
+        "favorites": "17",
+        "shares": "3",
+        "views": null
+      },
+      "observations": [
+        "正文介绍屏风改造与搭配，页面另有AI章节摘要。",
+        "评论有欣赏、动手能力评价及装修服务联系意向；未确认服务交付或转化。"
+      ],
+      "result": "展示服务生活灵感，也能产生服务询问；AI摘要与AI制作要分开。"
+    },
+    {
+      "id": "VL09",
+      "url": "https://www.douyin.com/video/7634419742442310918",
+      "title": "同一屏风制作教程",
+      "author": "圆子改造家",
+      "publishedAt": "2026-04-30 16:30",
+      "themes": [
+        "life"
+      ],
+      "contentObject": "circle-screen",
+      "aiEvidence": "未见作品AI生成声明；AI标识位于章节摘要区。",
+      "readScope": "详情正文与全部3条可见评论，未完整观看或复做。",
+      "metrics": {
+        "likes": "398",
+        "comments": "3",
+        "favorites": "42",
+        "shares": "10",
+        "views": null
+      },
+      "observations": [
+        "正文列出框架、PVC板、勾线及玻璃颜料步骤。",
+        "页面章节摘要提供带时间点的材料准备、连接装饰、绘图上色段落；尚未点击章节跳转。",
+        "三条评论为称赞或表情，没有复做结果。"
+      ],
+      "result": "同作者已提供从展示到教程的补充内容；与VL08归一个屏风对象，不能计作两个独立改造项目。"
+    },
+    {
+      "id": "VL10",
+      "url": "https://www.douyin.com/video/7618057253672865062",
+      "title": "法式床幔教程",
+      "author": "圆子改造家",
+      "publishedAt": "2026-03-17 17:58",
+      "themes": [
+        "life"
+      ],
+      "contentObject": "circle-canopy",
+      "aiEvidence": "已读范围未见作品AI生成声明。",
+      "readScope": "详情正文及首批可见评论、作者回复，未完整观看或实际制作。",
+      "metrics": {
+        "likes": "448",
+        "comments": "17",
+        "favorites": "140",
+        "shares": "51",
+        "views": null
+      },
+      "observations": [
+        "正文列出材料与五步做法；评论仍问布料链接、店铺和床款。",
+        "作者回答床款品牌与名称；布料及店铺问题在已读范围未见答案。",
+        "有观众评价床头画多余，属于审美意见而非功能故障。"
+      ],
+      "result": "步骤已经供给，购买匹配仍可继续核查；不能由教程存在推定用户制作完成。"
+    }
+  ],
+  "access": [
+    {
+      "platform": "小红书",
+      "url": "https://www.xiaohongshu.com/explore",
+      "action": "搜索AI家居",
+      "observed": "出现登录后查看搜索结果；推荐页可读，搜索未读。",
+      "state": "awaiting-login",
+      "interpretation": "无作品样本结果，不判断供给量或消费需求。"
+    }
+  ],
+  "stats": {
+    "reviewedWorks": 10,
+    "reusedWorks": 3,
+    "newWorks": 7,
+    "authors": 3,
+    "contentObjects": 9,
+    "combinedUniqueUrls": 622
+  }
+}

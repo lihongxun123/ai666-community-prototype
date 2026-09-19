@@ -1,0 +1,502 @@
+{
+  "date": "2026-09-18",
+  "scope": "资料范围：已归档竞品机制与任务案例；观察日期与读取范围见对应档案。",
+  "items": [
+    {
+      "id": "practice",
+      "verdict": "沿用比较基准，未判定最优",
+      "reason": "以实践案例为主线，比较其他组合。现有材料支持这一内容结构，其价值是否高于资源、交流或互助仍待验证。",
+      "counter": "设计师对AI示意图的反馈不一：有人反复调整方向，也有人认为减少了沟通。Adobe已有完整制作教程，因此仍需区分具体缺口，不能一概归为缺教程或审美点评。",
+      "revision": "首版案例写清目标、输入、备选做法、选择理由和结果状态，提供原站入口。",
+      "changeIf": "如果案例只是重复原教程，没有帮助读者比较适用条件或作出判断，以案例为主线的理由就会减弱。",
+      "unknown": "案例的内容要求已有依据；比较多个案例是否比自行搜索更有帮助，仍待验证。",
+      "cases": [
+        {
+          "id": "T-01",
+          "title": "为二手商品准备可上架的展示图",
+          "basis": "厂商采用案例与自然求助",
+          "observed": "Depop工具链已处理背景和尺寸；实拍保留商品状态，原论坛可解释抠图、图层与合成。",
+          "remaining": "厂商案例记录了工具采用情况；公开求助反映了保真问题，但不少记录止于建议或操作进展，尚缺同一商品修图后通过上架验收的记录。",
+          "sources": [
+            {
+              "label": "Depop商品图处理",
+              "url": "https://www.photoroom.com/customer-stories/depop"
+            },
+            {
+              "label": "实拍与AI氛围图分工",
+              "url": "https://www.photoroom.com/customer-stories/watches-inc"
+            },
+            {
+              "label": "商品主体与背景合成求助",
+              "url": "https://community.adobe.com/questions-712/photoshop-gf-problems-1167168"
+            },
+            {
+              "label": "反光处理版本问题",
+              "url": "https://community.adobe.com/bug-reports-674/p-gen-remove-now-changes-elements-outside-the-painted-mask-664503/index5.html"
+            }
+          ]
+        },
+        {
+          "id": "T-31",
+          "title": "制作供讨论与选择的视觉创意草案",
+          "basis": "自然讨论与原社区解决记录",
+          "observed": "团队、客户、模板及原修图社区已提供帮助。有同行认为AI示意图减少了沟通往返，也有人因用示意图代替需求说明而反复调整方向。",
+          "remaining": "公开讨论反映了沟通目标与决策权的重要性；公益修图帖子在原社区已有solved标记。尚无外部审美点评改善交付的证据。",
+          "sources": [
+            {
+              "label": "AI示意图的沟通正反例",
+              "url": "https://www.reddit.com/r/graphic_design/comments/1u0u01y/clients_sending_ai_examples_as_the_brief_or_in/"
+            },
+            {
+              "label": "原修图社区完成标记",
+              "url": "https://www.reddit.com/r/PhotoshopRequest/comments/1lehgjq/our_nonprofit_lost_access_to_photoshop_which/"
+            },
+            {
+              "label": "Adobe海报制作方法",
+              "url": "https://www.adobe.com/learn/firefly/web/create-cinematic-posters-photoshop-firefly-assets"
+            }
+          ]
+        },
+        {
+          "id": "T-29",
+          "title": "判断稿件修改建议并形成可审阅的修订稿",
+          "basis": "编辑访谈与原社区互读",
+          "observed": "已有服务包括校对解释、修订追踪、作者确认及编辑。使用者能在原工具中剔除没有实际改动的建议，也能在原写作圈互读。",
+          "remaining": "已有材料说明了接受或拒绝部分修改的理由。互读记录包含回应和正在修改的自述，终稿效果证据较少。中文编辑组织已提供相关服务，用户是否愿意迁移或使用新服务仍待验证。",
+          "sources": [
+            {
+              "label": "编辑的修改取舍",
+              "url": "https://www.chinawriter.com.cn/n1/2025/0717/c403994-40523921.html"
+            },
+            {
+              "label": "原写作社区互读",
+              "url": "https://www.reddit.com/r/WritingWithAI/comments/1upth5b/reciprocal_beta_reading_share_story_blurbs_jul_7/"
+            },
+            {
+              "label": "过滤无变化修改项",
+              "url": "https://www.reddit.com/r/writers/comments/16nnyyd/i_used_chatgpt_to_act_as_a_beta_readereditor/"
+            },
+            {
+              "label": "出版社改稿满足对照",
+              "url": "https://wyb.chinawriter.com.cn/Pad/content/202605/27/content84004.html"
+            }
+          ]
+        }
+      ],
+      "mechanisms": [
+        {
+          "name": "RunningHub｜任务—详情—原工具",
+          "path": "按图片处理、电商等用途发现流程/应用 → 在详情核对节点、输入和条件 → 可进入运行或简化应用 → 是否成功、复用或交付由用户自行验收。作者维护说明，平台按任务分发。",
+          "transfer": "案例应包含任务、条件、关键取舍、结果边界及原工具入口；编辑承担条件核对、失效更正。",
+          "limit": "档案未运行流程或读取下载文件，不能承诺同款复现、云端费用或项目交付。",
+          "archive": "/#runninghub",
+          "sourceRecord": "`site/lib/platform-digests.json#runninghub` 的 `distribution/journey/supply`；[公开工作流详情](https://www.runninghub.ai/zh-cn/post/1845758651062743041)。",
+          "sources": [
+            {
+              "label": "公开工作流详情",
+              "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041"
+            }
+          ]
+        },
+        {
+          "name": "即梦｜参考观看、同款试做、画布编辑分成连续动作",
+          "path": "浏览图片/影视作品 → 从参考图或同款进入创作 → 可在画布重绘、扩图等编辑 → 保存素材供下一段制作使用。日常作者提供作品和后续入口，平台提供作品、同款、画布。",
+          "transfer": "案例页把“看参考”“去试做”“看过程”分开，并说明外部工具责任；材料保留适用条件和编辑理由。",
+          "limit": "作品消费和同款入口不等于完成任务，不能据此写完成率。",
+          "archive": "/#jimeng",
+          "sourceRecord": "`site/lib/platform-digests.json#jimeng` 的 `distribution/journey/supply`；`site/lib/profiles.ts#jimeng`。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "creator",
+      "verdict": "保留独立入口",
+      "reason": "作者意图与反馈边界有真实材料支撑，适合保留作品交流；尚不足以判定应成为全站主入口。",
+      "counter": "手作者可以享受意外造型；个人记忆材料主要来自受控研究，未证明愿意公开分享。作品有偏差并不自动产生点评需求。",
+      "revision": "把只展示、讨论某个问题和邀请建议分成作者自选方式；允许私下使用，不设发布门槛。",
+      "changeIf": "如果作者只希望自用或在原圈层交流，保留展示和收藏即可，降低主动讨论承诺。",
+      "unknown": "已有材料反映表达与反馈偏好。作者是否愿意跨圈层交流、持续发布作品或公开私密内容，仍待验证。",
+      "cases": [
+        {
+          "id": "T-36",
+          "title": "完成一个表达个人设想的角色故事版本",
+          "basis": "作者自然求助与发布记录",
+          "observed": "原游戏圈、B站与作者自身已有发布、征求意见和持续修改路径，声音与人物语言也有讨论。",
+          "remaining": "国内已有公开求助，作者会限定反馈范围；具体建议是否促成更新、修改后效果如何，仍缺记录。",
+          "sources": [
+            {
+              "label": "角色设计求助与边界",
+              "url": "https://www.bilibili.com/opus/1089174552047517713"
+            },
+            {
+              "label": "原作者作品发布记录",
+              "url": "https://www.taptap.cn/moment/760600459948855193"
+            },
+            {
+              "label": "同人配音取舍自述",
+              "url": "https://www.bilibili.com/video/BV1gKrjYuEEj/"
+            }
+          ]
+        },
+        {
+          "id": "T-39",
+          "title": "制作承载个人回忆的图像表达",
+          "basis": "受控研究与邻近任务参照 · 交流形式为设计假设",
+          "observed": "受控研究中，参与者根据个人记忆决定修改或跳过。国内纪念照工具推荐请求已获原论坛回应；旧照修补作为相近任务参考。",
+          "remaining": "关于个人记忆的取舍，材料主要来自受控研究。公开材料尚未证明用户会再创作记忆场景、持续需要这类服务或愿意公开分享。",
+          "sources": [
+            {
+              "label": "个人记忆照片编辑研究",
+              "url": "https://arxiv.org/pdf/2602.03104"
+            },
+            {
+              "label": "纪念照片工具推荐",
+              "url": "https://www.v2ex.com/t/1222814"
+            }
+          ]
+        },
+        {
+          "id": "T-41",
+          "title": "形成自己愿意制作的手作创意方案",
+          "basis": "创作者探索与取舍自述",
+          "observed": "作者已能通过自行取舍、现成图案和原兴趣社区满足部分需求；也有人表示接受意外造型，并享受实际制作。",
+          "remaining": "已有作者对探索结果感到满意，即使造型有偏差也未必需要纠错。是否需要额外交流、继续制作或持续供稿，仍待验证。",
+          "sources": [
+            {
+              "label": "沿用现成局部图案",
+              "url": "https://www.reddit.com/r/crochet/comments/141z7r1/i_attempted_to_get_chatgpt_to_produce_a_usable/"
+            },
+            {
+              "label": "创作者接受意外造型",
+              "url": "https://www.reddit.com/r/crochet/comments/121ok0v/i_asked_chatgpt_to_write_a_pattern_for_a_giraffe/"
+            }
+          ]
+        }
+      ],
+      "mechanisms": [
+        {
+          "name": "吐司｜兴趣频道把作品、资源和知识放入同一主题语境",
+          "path": "创作者从兴趣频道发现作品/风格 → 查看模型、参数或工具 → 自行选择小工具或工作流继续创作 → 将结果留在画布或素材库。作者维护资源、参数与兼容信息，平台组织频道。",
+          "transfer": "以主题和作者意图连接作品、方法与讨论；只在作者明确开放时关联参数、过程或资源，运营需维护讨论边界。",
+          "limit": "国内站、Tensor.Art和画布规则不可互代；频道相邻呈现不能证明作者之间已有稳定交流。",
+          "archive": "/#tusi",
+          "sourceRecord": "`site/lib/platform-digests.json#tusi` 的 `distribution/journey/supply`；`site/lib/profiles.ts#tusi`。",
+          "sources": []
+        },
+        {
+          "name": "SeaArt｜作品、应用与作者相连，生成、发布、返图仍是不同动作",
+          "path": "用户选择模型、应用或角色内容 → 准备输入并提交生成/互动 → 查看关联作品或调整设置 → 再保存、Remix或继续跟随作者。作者供给示例与资源，平台承担分类推荐。",
+          "transfer": "作品页保留作者、创作意图、关联资源及可选讨论；发布、征求反馈、复制资源必须分作独立授权动作。",
+          "limit": "档案已记载角色样本的阻断、调整和结果不一致；不能把关联作品或 Remix 写成稳定复现，更不能将互动量当同行反馈。",
+          "archive": "/#seaart",
+          "sourceRecord": "`site/lib/platform-digests.json#seaart` 的 `distribution/journey/supply`；`site/lib/profiles.ts#seaart`。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "resource",
+      "verdict": "优先作为辅助能力",
+      "reason": "现有工具与资源平台已覆盖较多需求。相比另建通用资源目录，先将方法放进具体任务和案例更有依据。",
+      "counter": "Stitch Fiddle已有图像转网格与比例编辑；原钩针社区能解释针目。将现成功能再罗列一次，未证明能减少使用障碍。",
+      "revision": "资源条目增加输入条件、版本、授权和关联案例；原站能解决的操作直接引导回去。",
+      "changeIf": "若发现原站长期缺少的跨工具适配问题，并能持续维护解法，再重新考虑资源为主入口。",
+      "unknown": "现有材料支持资源说明与维护的设计，用户是否愿意迁移到另一资源库仍待验证。",
+      "cases": [
+        {
+          "id": "T-01",
+          "title": "为二手商品准备可上架的展示图",
+          "basis": "厂商采用案例与自然求助",
+          "observed": "Depop工具链已处理背景和尺寸；实拍保留商品状态，原论坛可解释抠图、图层与合成。",
+          "remaining": "厂商案例记录了工具采用情况；公开求助反映了保真问题，但不少记录止于建议或操作进展，尚缺同一商品修图后通过上架验收的记录。",
+          "sources": [
+            {
+              "label": "Depop商品图处理",
+              "url": "https://www.photoroom.com/customer-stories/depop"
+            },
+            {
+              "label": "实拍与AI氛围图分工",
+              "url": "https://www.photoroom.com/customer-stories/watches-inc"
+            },
+            {
+              "label": "商品主体与背景合成求助",
+              "url": "https://community.adobe.com/questions-712/photoshop-gf-problems-1167168"
+            },
+            {
+              "label": "反光处理版本问题",
+              "url": "https://community.adobe.com/bug-reports-674/p-gen-remove-now-changes-elements-outside-the-painted-mask-664503/index5.html"
+            }
+          ]
+        },
+        {
+          "id": "T-28",
+          "title": "将未整理的古籍文本归集为可审阅的篇目与索引初稿",
+          "basis": "编辑实践自述",
+          "observed": "有古籍编辑自述，已通过OCR、模型分类提取和本人复核完成初稿。",
+          "remaining": "依据来自编辑完成初稿的自述。这项任务是否仍需帮助、有何剩余障碍，以及普通作者能否复用，尚不清楚。",
+          "sources": [
+            {
+              "label": "古籍编辑归集实践",
+              "url": "https://www.im-pg.com/zbzx/14960.shtml"
+            }
+          ]
+        },
+        {
+          "id": "T-40",
+          "title": "将参考图转为可制作的纺织图案方案",
+          "basis": "自然答疑、制作自述与工具方法",
+          "observed": "原钩针社区解释针目后获理解回应；棒针作者能自行看图改衣，Stitch Fiddle已提供平面网格与比例编辑。",
+          "remaining": "已有较具体的基础读图帮助。国内仍缺从AI参考图、外部协助修改结构到完成实物的完整记录；平面转换功能也不足以证明立体结构能制作。",
+          "sources": [
+            {
+              "label": "原钩针社区读图答疑",
+              "url": "https://www.reddit.com/r/CrochetHelp/comments/1u9e7i4/help_chatgpt_is_so_confusing_and_i_am_struggling/"
+            },
+            {
+              "label": "棒针作者看图改衣",
+              "url": "https://bbs.bianzhirensheng.com/thread-2239458-1-1.html"
+            },
+            {
+              "label": "图片转配色网格",
+              "url": "https://www.stitchfiddle.com/en/help/1pej-wc93j/import-picture"
+            },
+            {
+              "label": "网格与针目比例",
+              "url": "https://www.stitchfiddle.com/en/help/1pe1-ftobtg/gauge-proportions"
+            }
+          ]
+        }
+      ],
+      "mechanisms": [
+        {
+          "name": "RunningHub｜用途目录与详情说明帮助选择资源",
+          "path": "按用途筛选流程、模型或应用 → 核对节点、说明、输入与条件 → 转入运行、应用、API或下载入口 → 根据自身验收决定继续或换资源。作者维护资源说明，平台提供分类。",
+          "transfer": "本站只编排任务、适用条件、来源、版本/维护提示和原站入口；每条外链须有失效检查责任。",
+          "limit": "目录/详情存在不证明资源可用、可复现或持续维护；运行、计费与支持归原平台或作者。",
+          "archive": "/#runninghub",
+          "sourceRecord": "`site/lib/platform-digests.json#runninghub` 的 `distribution/journey/supply`；[工作流详情](https://www.runninghub.ai/zh-cn/post/1845758651062743041)。",
+          "sources": [
+            {
+              "label": "工作流详情",
+              "url": "https://www.runninghub.ai/zh-cn/post/1845758651062743041"
+            }
+          ]
+        },
+        {
+          "name": "魔搭 ModelScope｜资源详情与创空间分开，配置条件决定能否使用",
+          "path": "按任务/场景筛模型、数据或创空间 → 查看详情、文件、依赖与可见性 → 绑定账号或配置云资源后尝试运行 → 依版本、日志和问题记录维护。作者维护文件、分支和部署，平台提供分类与托管。",
+          "transfer": "资源卡分开写可发现、可试用、可接入的条件，保留版本、依赖、授权和反馈入口；编辑不代替作者承诺部署支持。",
+          "limit": "体验可能休眠、部署中或另有账号/云资源条件；目录条目不能当作成功运行或质量证据。",
+          "archive": "/#modelscope",
+          "sourceRecord": "`site/lib/platform-digests.json#modelscope` 的 `distribution/journey/supply`；`site/lib/profiles.ts#modelscope`。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "vertical",
+      "verdict": "作为聚焦方式，暂不选行业冠军",
+      "reason": "行业任务已有实际采用，不同品类对真实性、交付和专业知识的要求各异。是否值得优先建设对应社区，仍需进一步判断。",
+      "counter": "餐饮经营者已有全菜单实拍方案可选。数字人口播材料只有宣传标题与简介，证据弱于商家实际采用记录。",
+      "revision": "候选专题先展示真实资料、AI与非AI办法、交付要求，再决定具体品类和专业承接范围。",
+      "changeIf": "只有同类业务反复出现具体问题，且原渠道未满足、可取得材料和供给时，才加强独立行业入口。",
+      "unknown": "现有材料能区分任务和替代办法，但还不足以排列行业机会，也未证明专业供给能够持续。",
+      "cases": [
+        {
+          "id": "T-02",
+          "title": "为一批商品制作风格一致的目录图",
+          "basis": "厂商采用案例与商家访谈",
+          "observed": "Wolt等已有批处理与团队单件修正；商家采用访谈也有白底换背景和网站使用自述。",
+          "remaining": "已有材料支持批量处理与实际采用。逐款再次修改、实际上架版本和小团队返工成本的记录仍少，大团队成效不足以说明小商家的需要。",
+          "sources": [
+            {
+              "label": "Wolt目录图处理",
+              "url": "https://www.photoroom.com/customer-stories/wolt"
+            },
+            {
+              "label": "商家换背景采用访谈",
+              "url": "https://www.photoroom.com/customer-stories/clay-dazing"
+            }
+          ]
+        },
+        {
+          "id": "T-05",
+          "title": "为菜品制作可用于菜单的介绍与配图",
+          "basis": "工具功能与经营者实拍自述",
+          "observed": "Nara已有生成、编辑和餐厅确认流程；自然讨论中有经营参与者选择逐菜实拍与专业摄影。",
+          "remaining": "官方功能和实拍替代办法已有依据。国内仍缺菜单翻译或配图经外部纠正后，餐厅是否采用、顾客是否理解的连续记录。",
+          "sources": [
+            {
+              "label": "餐饮社区的实拍选择",
+              "url": "https://www.reddit.com/r/restaurantowners/comments/1sqrz38/ai_menus/"
+            },
+            {
+              "label": "Nara菜单编辑与确认",
+              "url": "https://naramenu.com/zh/features/"
+            }
+          ]
+        },
+        {
+          "id": "T-06",
+          "title": "制作介绍门店的数字人口播内容",
+          "basis": "供给线索 · 仅视频标题与简介",
+          "observed": "现有线索为制作服务的视频标题与简介，能确认宣传入口，未确认商家实际采用。",
+          "remaining": "依据仅为制作服务的视频标题与简介，商家需要、实际采用、人物授权与后续效果均未知。",
+          "sources": [
+            {
+              "label": "数字人制作线索：仅标题简介",
+              "url": "https://www.bilibili.com/video/BV1uq7e6oErb/"
+            }
+          ]
+        }
+      ],
+      "mechanisms": [
+        {
+          "name": "LiblibAI｜以业务任务、输入、依赖和版本差异限定适用范围",
+          "path": "经营者从商品精修/背景替换任务进入详情 → 对照输入、依赖和配置说明选版本 → 前往原工具尝试 → 有素材/版本差异时回查说明或反馈。作者供给版本化方法，平台承接详情和入口。",
+          "transfer": "行业案例写业务约束、素材/合规边界、替代方案和验收口径；素材应授权或脱敏，版本差异须有人维护。",
+          "limit": "现有记录未验证源文件和效果，也未全量核验评论/版本日期；不可外推销售或经营提升。",
+          "archive": "/#liblib",
+          "sourceRecord": "[SDXL](https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0)、[FLUX](https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10)；现行档案 `v21-input-domestic.json:sources.D21-LL-V1,D21-LL-V2`。",
+          "sources": [
+            {
+              "label": "SDXL",
+              "url": "https://www.liblib.art/modelinfo/6f92484476484efeb7bd5a0db113cbc0"
+            },
+            {
+              "label": "FLUX",
+              "url": "https://www.liblib.art/modelinfo/7b89bfd25f7f418b82381e893a85c789?from=feed&versionUuid=791ecaae74b44c00a1b4423128084c10"
+            }
+          ]
+        },
+        {
+          "name": "RunningHub｜应用把复杂流程压缩为按用途填写输入的入口",
+          "path": "从用途/案例进入应用详情 → 阅读功能、输入和计费提示 → 可进入运行入口提交任务 → 结果是否符合业务要求由用户验收。作者/平台承担封装、运行与说明维护。",
+          "transfer": "案例末端可提供原工具指引，但须写清输入、第三方费用、工具责任和验收方式；本站仅承诺选型解释与回查路径。",
+          "limit": "档案未提交生成，不能将外部工具成功率、报价或售后迁移成社区能力。",
+          "archive": "/#runninghub",
+          "sourceRecord": "[新版 Fill-OneReward 万物消除](https://www.runninghub.cn/ai-detail/1966722305902718977)；`site/lib/platform-digests.json#runninghub`；现行档案 `site/lib/market-content-forms.json:sources.v15-cn-rh-app`。",
+          "sources": [
+            {
+              "label": "新版 Fill-OneReward 万物消除",
+              "url": "https://www.runninghub.cn/ai-detail/1966722305902718977"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "verdict": "按问题与回应能力开放",
+      "reason": "原社区已有具体的求助与回应路径。新社区能增加什么价值，还需单独判断。",
+      "counter": "旧照局部修补、针目理解和写作互读已有原渠道回应；部分记录只有理解或计划修改，终稿效果未公开。",
+      "revision": "提问先带目标与已试方法，先查已有答案，分开经验回复和约定服务；采用结果由求助者补充。",
+      "changeIf": "若没有匹配回应者，退回原站指引与答案编选；不以无人更新判定问题失败。",
+      "unknown": "现有材料支持提问、回应和结果记录的设计。响应能力、持续参与意愿和新增改善，需通过实际参与验证。",
+      "cases": [
+        {
+          "id": "T-29",
+          "title": "判断稿件修改建议并形成可审阅的修订稿",
+          "basis": "编辑访谈与原社区互读",
+          "observed": "已有服务包括校对解释、修订追踪、作者确认及编辑。使用者能在原工具中剔除没有实际改动的建议，也能在原写作圈互读。",
+          "remaining": "已有材料说明了接受或拒绝部分修改的理由。互读记录包含回应和正在修改的自述，终稿效果证据较少。中文编辑组织已提供相关服务，用户是否愿意迁移或使用新服务仍待验证。",
+          "sources": [
+            {
+              "label": "编辑的修改取舍",
+              "url": "https://www.chinawriter.com.cn/n1/2025/0717/c403994-40523921.html"
+            },
+            {
+              "label": "原写作社区互读",
+              "url": "https://www.reddit.com/r/WritingWithAI/comments/1upth5b/reciprocal_beta_reading_share_story_blurbs_jul_7/"
+            },
+            {
+              "label": "过滤无变化修改项",
+              "url": "https://www.reddit.com/r/writers/comments/16nnyyd/i_used_chatgpt_to_act_as_a_beta_readereditor/"
+            },
+            {
+              "label": "出版社改稿满足对照",
+              "url": "https://wyb.chinawriter.com.cn/Pad/content/202605/27/content84004.html"
+            }
+          ]
+        },
+        {
+          "id": "T-38",
+          "title": "得到保留人物身份的修整照片",
+          "basis": "自然求助与局部使用结果",
+          "observed": "中文论坛有人表示局部旧照修补结果可用；家庭人像作者通过原教程、AI和手工修图满足了需求。",
+          "remaining": "已有实际使用和部分局部结果的记录。人物是否保真、被摄者是否认可，以及求助回应起了多大作用仍不清楚；寻找替代办法也可能出于费用考虑。",
+          "sources": [
+            {
+              "label": "旧照局部修补求助",
+              "url": "https://www.v2ex.com/t/1194730"
+            },
+            {
+              "label": "家庭人像工具满足",
+              "url": "https://www.v2ex.com/t/1155171"
+            }
+          ]
+        },
+        {
+          "id": "T-40",
+          "title": "将参考图转为可制作的纺织图案方案",
+          "basis": "自然答疑、制作自述与工具方法",
+          "observed": "原钩针社区解释针目后获理解回应；棒针作者能自行看图改衣，Stitch Fiddle已提供平面网格与比例编辑。",
+          "remaining": "已有较具体的基础读图帮助。国内仍缺从AI参考图、外部协助修改结构到完成实物的完整记录；平面转换功能也不足以证明立体结构能制作。",
+          "sources": [
+            {
+              "label": "原钩针社区读图答疑",
+              "url": "https://www.reddit.com/r/CrochetHelp/comments/1u9e7i4/help_chatgpt_is_so_confusing_and_i_am_struggling/"
+            },
+            {
+              "label": "棒针作者看图改衣",
+              "url": "https://bbs.bianzhirensheng.com/thread-2239458-1-1.html"
+            },
+            {
+              "label": "图片转配色网格",
+              "url": "https://www.stitchfiddle.com/en/help/1pej-wc93j/import-picture"
+            },
+            {
+              "label": "网格与针目比例",
+              "url": "https://www.stitchfiddle.com/en/help/1pe1-ftobtg/gauge-proportions"
+            }
+          ]
+        }
+      ],
+      "mechanisms": [
+        {
+          "name": "LINUX DO｜补条件、回应、回报留在同一可回查主题",
+          "path": "从板块/标签找相似主题或提出问题 → 补环境与已试方法 → 成员给排查建议 → 提问者回报结果或在相似主题继续帮助。成员供给经验，版主/规则维护秩序。",
+          "transfer": "模板至少收集目标、环境、已试方法、偏差；普通经验、专业服务、采用状态分开，运营处理合并、纠错和隐私边界。",
+          "limit": "档案只支持个别主题有追问/回报，不给全站解决率或响应时效；不能承诺即时响应。",
+          "archive": "/#linuxdo",
+          "sourceRecord": "`site/lib/platform-digests.json#linuxdo` 的 `journey/supply`；[应用接入问题主题](https://linux.do/t/topic/1537782)；现行档案 `site/lib/platform-operations.json:sources.v11-ld-solved`。",
+          "sources": [
+            {
+              "label": "应用接入问题主题",
+              "url": "https://linux.do/t/topic/1537782"
+            }
+          ]
+        },
+        {
+          "name": "魔搭 ModelScope｜问题入口存在，回应与恢复仍待确认",
+          "path": "用户提交加载或部署问题，说明错误或请求后台协助。两条记录可确认问题提交，未记录维护者回应和恢复结果。",
+          "transfer": "问题绑定资源、版本、环境、错误现象和后续状态；需指定维护人、状态更新与公开处理边界，才能沉淀为帮助材料。",
+          "limit": "两条公开问题记录均未证实回应与恢复；不能据此称为已解决链条。诊断、版本维护与状态跟进属于社区方案需另行落实的责任。",
+          "archive": "/#modelscope",
+          "sourceRecord": "[加载问题 #1769](https://github.com/modelscope/modelscope/issues/1769)、[免费资源部署失败 #1776](https://github.com/modelscope/modelscope/issues/1776)；现行档案 `site/public/research-deliveries/2026-09-11-evidence/attachments/audience-research.json:P25-modelscope-s5,s8`。",
+          "sources": [
+            {
+              "label": "加载问题 #1769",
+              "url": "https://github.com/modelscope/modelscope/issues/1769"
+            },
+            {
+              "label": "免费资源部署失败 #1776",
+              "url": "https://github.com/modelscope/modelscope/issues/1776"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

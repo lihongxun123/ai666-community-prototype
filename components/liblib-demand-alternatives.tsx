@@ -8,5 +8,5 @@ export function LiblibDemandAlternatives(){return <section>
   <h4>相关工具存在，具体问题是否解决仍要看结果</h4>
   <p>45份工作流目录资源中的3份详情，分别面向布料、箱包和光影融合。它们可作为相关任务的候选工具，但说明书、应用入口和作者示例不能代替使用者对成品的确认。</p>
   <div className="table-wrap"><table><thead><tr><th>资源及承诺用途</th><th>使用路径与许可</th><th>结果证据</th></tr></thead><tbody>{resources.map(r=><tr key={r.id}><th><a href={`https://www.liblib.art/modelinfo/${r.id}?versionUuid=${r.version}`} target="_blank" rel="noreferrer">{r.title} ↗</a><p>{r.scope}</p></th><td>{r.access}<p>{r.license}。</p></td><td>{r.evidence}</td></tr>)}</tbody></table></div>
-  <p>观察日期：2026年9月15日。前两份为同一作者发布；许可字段由作者填写。在线生成数是页面累计字段，不是成功人数。三份详情均未提供可归因的使用者完成结果，因此不能据此认定面料一致性、比例控制或商品落地感已解决，也不能反向认定这些任务没有可用供给。</p>
+  <p>观察日期：2026年9月15日。前两份为同一作者发布；许可字段由作者填写。在线生成数是页面累计字段，不是成功人数。三份详情均缺少可归因的使用者完成结果。面料一致性、比例控制和商品落地感的解决程度，以及其他供给能否满足这些要求，仍待核实。</p>
 </section>;}

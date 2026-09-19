@@ -1,13 +1,19 @@
 'use client';
-import {CreatorSupplyLink} from '@/components/creator-supply';
+
+import {CandidateComparison} from './candidate-comparison';
+import {DirectionReview} from './direction-review';
+
+
+
+
 import { useState, type ReactNode } from 'react';
 import data from '@/lib/strategy-comparison.json';
-import {StrategyDirections} from './strategy-directions';
+
 import { ContentArrangementLab } from '@/components/content-arrangement-lab';
 import { StrategyConditionsSummary, StrategyConditionReview } from '@/components/strategy-conditions';
 import './strategy-comparison.css';
-import {ResearchApplications} from './research-applications';
-import {RetentionPlan, RetentionEvidence} from './retention-research';
+
+
 
 const tabs=[['options','内容与服务'],['content','浏览编排示例'],['mechanisms','做法取舍']] as const;
 type Tab=typeof tabs[number][0];
@@ -15,7 +21,7 @@ function List({items}:{items:string[]}){return <ul>{items.map(i=><li key={i}>{i}
 function Definition({rows}:{rows:[string,ReactNode][]}){return <dl className="v23-definition">{rows.map(([name,value])=><div key={name}><dt>{name}</dt><dd>{value}</dd></div>)}</dl>;}
 function RefLinks({ids}:{ids:string[]}){return <p className="study-refs">依据：{ids.map(id=>{const s=data.sources.find(s=>s.id===id);return s?<a key={id} href={`#v23-source-${id}`} title={s.title} onClick={e=>{e.preventDefault();const details=document.getElementById('v23-sources') as HTMLDetailsElement|null;if(details)details.open=true;document.getElementById(`v23-source-${id}`)?.scrollIntoView({behavior:'smooth',block:'start'});}}>{s.title}〔{id}〕 </a>:null;})}</p>;}
 
-function ServiceDesignDetails({navigate}:{navigate:(id:string,anchor?:string)=>void}){
+export function ServiceDesignDetails({navigate}:{navigate:(id:string,anchor?:string)=>void}){
  const [tab,setTab]=useState<Tab>('options'),[active,setActive]=useState('A');
  const option=data.options.options.find(o=>o.id===active)??data.options.options[0];
  const showContent=()=>{setTab('content');document.getElementById('v23-tabs')?.scrollIntoView({behavior:'smooth',block:'start'});};
@@ -55,4 +61,4 @@ function ServiceDesignDetails({navigate}:{navigate:(id:string,anchor?:string)=>v
  </article>;
 }
 
-export function StrategyComparison({navigate}:{navigate:(id:string,anchor?:string)=>void}){return <article className="framework-study v23"><StrategyDirections navigate={navigate}/><section className="direction-reference"><h2>设计资料与验证参考</h2><details id="strategy-service-design"><summary>内容与服务设计、浏览示例与做法取舍</summary><ServiceDesignDetails navigate={navigate}/></details><details id="strategy-research-evidence"><summary>持续行为证据与同条件比较</summary><RetentionEvidence/></details><details id="strategy-verification-reference"><summary>验证问题与试验设计</summary><RetentionPlan referenceOnly/></details><details id="strategy-applications-reference"><summary>各平台与专题的采用条件</summary><ResearchApplications navigate={navigate}/></details><CreatorSupplyLink context="strategy" navigate={navigate}/></section></article>;}
+export function StrategyComparison(_props:{navigate:(id:string,anchor?:string)=>void}){return <article className="framework-study v23"><header className="page-heading"><h1>方案与验证：方向与承接条件</h1><p>实践主线、创作交流与九个重点主题</p></header><section className="study-platform"><h2>实践为主线，创作交流保留独立入口</h2><p>电商、设计、本地经营、历史、科普、角色、写作、人像与手作保留为重点主题。内容帮助用户理解方法和条件；具体答疑、点评与协作依赖问题范围及供给能力。</p><p><a href="/research-decisions" target="_blank" rel="noopener noreferrer">方向简版 ↗</a></p></section><section className="study-platform"><h2>五套方案与组合选择</h2><p><a href="/community-options" target="_blank" rel="noopener noreferrer">比较实践案例、创作者交流、方法资源、行业应用与问题互助五套方案 ↗</a></p><p>五套方案比较不同重心下的内容、供给、运营和产品路径。下方六类定位提供机制参照；决策页分别说明原站指引、案例比较、自愿讨论，以及需要明确承接条件的服务。</p></section><DirectionReview/><CandidateComparison/></article>;}

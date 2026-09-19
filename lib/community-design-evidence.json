@@ -1,0 +1,111 @@
+{
+  "visuals": [
+    {
+      "id": "practice",
+      "image": "/research-images/v10/liblib-template-detail.jpg",
+      "title": "LiblibAI：模板详情中的使用条件",
+      "observed": "详情集中展示效果示例、使用模板、版本、参考图要求和许可。",
+      "implication": "案例详情先交代输入与适用条件，再链接工具。许可冲突应单独提示、核对。",
+      "source": "/#liblib",
+      "date": "截图采集：2026-09-09",
+      "sourcePage": "https://www.liblib.art/modelinfo/b3c0dc71aabb4496af0d178bfa347bc8",
+      "caveat": "该样本的正文用途、商用标签与作者答复存在冲突，许可待确认。模板未运行验证。"
+    },
+    {
+      "id": "practice",
+      "image": "/research-images/v10/runninghub-workflow-detail.jpg",
+      "title": "RunningHub：同一效果，两种使用深度",
+      "observed": "同一工作流详情同时提供“打开AI应用”和“运行工作流”。",
+      "implication": "读者可以先用简化入口，熟悉后再查看完整方法；帮助深度由任务决定。",
+      "source": "/#runninghub",
+      "date": "截图采集：2026-09-09",
+      "sourcePage": "https://www.runninghub.ai/zh-cn/post/1845758651062743041",
+      "caveat": ""
+    },
+    {
+      "id": "resource",
+      "image": "/research-images/v10/runway-course-detail.jpg",
+      "title": "Runway：学习资源先交代范围",
+      "observed": "官方课程页列出课程主题、模块数、时长、适合程度和学习入口。",
+      "implication": "资源卡应告诉读者学什么、需要什么基础、要投入多少时间，详情再承接具体步骤。",
+      "source": "/#runway",
+      "date": "截图采集：2026-09-09",
+      "sourcePage": "https://academy.runwayml.com/course/ai-advertising",
+      "caveat": ""
+    },
+    {
+      "id": "vertical",
+      "image": "/batch1-evidence/jimeng-ecommerce.png",
+      "title": "即梦：用电商用途组织视觉供给",
+      "observed": "“电商头图”下汇集多个商品品类的展示图。",
+      "implication": "行业入口可先按用途组织，再细分任务。漂亮示例与真实交付之间，还需商品保真、文字核验和授权条件。",
+      "source": "/#jimeng",
+      "date": "归档资料截至2026-09-10",
+      "sourcePage": "https://jimeng.jianying.com/",
+      "caveat": ""
+    },
+    {
+      "id": "help",
+      "image": "/research-images/v10/linuxdo-topic-card.jpg",
+      "title": "LINUX DO：标题先说明具体问题",
+      "observed": "列表用“AI时代大家是怎么管理自己的知识库的？”呈现问题，同时显示分类与讨论信息。",
+      "implication": "互助首页先让用户辨认相似问题；回复质量和最终结果另由讨论内容判断。",
+      "source": "/#linuxdo",
+      "date": "截图采集：2026-09-09",
+      "sourcePage": "https://linux.do/",
+      "caveat": ""
+    },
+    {
+      "id": "creator",
+      "image": "/research-images/v10/tensor-work-detail.jpg",
+      "title": "Tensor.Art：作品展示与制作资料分层",
+      "observed": "从模型例图进入单图详情，可见作品大图、发布者与发布时间；该图提示“没有生成数据”。",
+      "implication": "作品展示可以独立承载表达；制作资料按作者提供情况关联。作者意图、系列关系和自选反馈仍是本方案的拟议设计。",
+      "caveat": "该图是Tensor.Art的历史模型例图，仅用于说明展示与方法资料的区别。",
+      "source": "/#tusi",
+      "sourcePage": "https://tensor.art/images/662742037059162229?model_id=662744072865292090",
+      "date": "截图采集：2026-09-09"
+    }
+  ],
+  "social": [
+    {
+      "id": "DP-001",
+      "title": "多人站位与场景一致性教程",
+      "url": "https://www.douyin.com/video/7673074764340650597",
+      "published": "2026-08-12",
+      "read": "2026-09-12",
+      "schemes": [
+        "practice",
+        "resource",
+        "help"
+      ],
+      "comments": [
+        "新手询问能否使用 ComfyUI 完成同类效果，以及从什么工具开始。",
+        "评论质疑八人或频繁切镜的适用性，但未说明亲测经历。",
+        "费用讨论中有试用后认可效果、同时认为昂贵的自述；原提问者的采用结果未记录。"
+      ],
+      "meaning": "教程附上入门入口、模型与场景条件，并保留复杂条件的提问。效果演示之外，读者还需要判断方法是否适合自己。",
+      "positions": "顶层第2、4、5条及第4条下回复",
+      "archive": "/?section=dp-comments#content-demand"
+    },
+    {
+      "id": "DP-003",
+      "title": "人物皮肤真实感教程",
+      "url": "https://www.douyin.com/video/7678195402789837169",
+      "published": "2026-08-26",
+      "read": "2026-09-12",
+      "schemes": [
+        "practice",
+        "creator",
+        "resource"
+      ],
+      "comments": [
+        "评论追问效果是否依赖模型版本。",
+        "讨论涉及放大后的细节，以及参考图质量和细节描述。"
+      ],
+      "meaning": "作品可关联制作条件与局部细节；方法讨论另设入口，避免把每一件作品都变成教程。",
+      "positions": "顶层第1、3、4、5条及相关回复",
+      "archive": "/?section=dp-comments#content-demand"
+    }
+  ]
+}

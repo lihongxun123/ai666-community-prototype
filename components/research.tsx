@@ -1,4 +1,6 @@
 'use client';
+import {PlanningReferenceNotice} from './research-stage';
+
 import {CompetitorTopic,topicIds} from './competitor-topics';
 import {PlatformDigest,PlatformDigestNav,digestById} from './platform-digest';
 import {LiblibReadingNav} from './liblib-reading-nav';
@@ -17,6 +19,8 @@ import { StrategyComparison } from '@/components/strategy-comparison';
 import {CategoryProfile} from '@/components/category-paths';
 import {FunctionProfile,functionProfiles} from '@/components/function-pages';
 import { ChinaAIUsers } from '@/components/china-ai-users';
+import { IndustryResearch } from './industry-research';
+import { SocialResearch } from './social-research';
 import { AudienceResearch } from '@/components/audience-research';
 import { CreatorSupply,CreatorSupplyLink } from '@/components/creator-supply';
 import { ContentDemand } from '@/components/content-demand';
@@ -62,11 +66,12 @@ function revealSection(id:string){const target=document.getElementById(id);if(ta
 function filterProfiles(query:string,group:string){return profiles.filter(p=>{const business=businessById.get(p.id);return (group==='全部'||p.group===group)&&`${p.name} ${p.focus} ${p.job} ${p.object} ${operatingById.get(p.id)?.position||''} ${contentById.get(p.id)?.forms.map(c=>c.name).join(' ')||''} ${business?.payer||''} ${business?.segments.map(segment=>`${segment.name} ${segment.job}`).join(' ')||''}`.toLowerCase().includes(query.trim().toLowerCase());});}
 export default function Research({evidenceView=false}:{evidenceView?:boolean}){
  const [topicDetail,setTopicDetail]=useState(false);
+ const [marketDetail,setMarketDetail]=useState(false);
  const [view,setView]=useState('overview'); const [mobile,setMobile]=useState(false);
  const [studyQuery,setStudyQuery]=useState(''); const [studyGroup,setStudyGroup]=useState('全部');
  const [sectionTarget,setSectionTarget]=useState<{view:string;sectionId:string}|null>(null);
- useEffect(()=>{const read=()=>{const raw=decodeURIComponent(location.hash.slice(1));const hash=raw==='matrix'?'report':raw==='tensor'?'tusi':raw;const anchor=new URLSearchParams(location.search).get('section');setTopicDetail(topicIds.includes(hash)&&!!anchor);if(!evidenceView&&hash!=='liblib'&&profiles.some(p=>p.id===hash)&&anchor&&!anchor.startsWith(hash+'-digest-')){location.replace('/platform-evidence?section='+encodeURIComponent(anchor)+'#'+hash);return;}if(evidenceView&&!profiles.some(p=>p.id===hash)){location.replace('/#'+(hash||'overview'));return;}setView(profiles.some(p=>p.id===hash)||topViews.some(t=>t[0]===hash)?hash:'overview');const sectionId=new URLSearchParams(location.search).get('section');if(hash==='liblib'&&sectionId&&/^(liblib-function-|liblib-supply-(?!model)|liblib-demand-|liblib-week-supply|liblib-cross-entry-supply|function-coverage)/.test(sectionId)){location.replace('/liblib-evidence?section='+encodeURIComponent(sectionId));return;}setSectionTarget(sectionId?{view:hash,sectionId}:null);setMobile(false);};read();window.addEventListener('hashchange',read);return()=>window.removeEventListener('hashchange',read);},[]);
- const navigateHere=(id:string,anchor?:string)=>{setTopicDetail(topicIds.includes(id)&&!!anchor);if(evidenceView){location.assign('/'+(anchor?'?section='+encodeURIComponent(anchor):'')+'#'+id);return;}window.history.pushState(null,'',`${location.pathname}${anchor?'?section='+encodeURIComponent(anchor):''}#${id}`);if(anchor){setStudyQuery('');setStudyGroup('全部');}setSectionTarget(anchor?{view:id,sectionId:anchor}:null);setView(id);setMobile(false);window.scrollTo({top:0,behavior:'instant'});};
+ useEffect(()=>{const read=()=>{const raw=decodeURIComponent(location.hash.slice(1));const hash=raw==='matrix'?'report':raw==='tensor'?'tusi':raw;const anchor=new URLSearchParams(location.search).get('section');setTopicDetail(topicIds.includes(hash)&&!!anchor);setMarketDetail(!!anchor&&(hash==='china-users'||hash==='content-demand'));if(!evidenceView&&hash!=='liblib'&&profiles.some(p=>p.id===hash)&&anchor&&!anchor.startsWith(hash+'-digest-')){location.replace('/platform-evidence?section='+encodeURIComponent(anchor)+'#'+hash);return;}if(evidenceView&&!profiles.some(p=>p.id===hash)){location.replace('/#'+(hash||'overview'));return;}setView(profiles.some(p=>p.id===hash)||topViews.some(t=>t[0]===hash)?hash:'overview');const sectionId=new URLSearchParams(location.search).get('section');if(hash==='liblib'&&sectionId&&/^(liblib-function-|liblib-supply-(?!model)|liblib-demand-|liblib-week-supply|liblib-cross-entry-supply|function-coverage)/.test(sectionId)){location.replace('/liblib-evidence?section='+encodeURIComponent(sectionId));return;}setSectionTarget(sectionId?{view:hash,sectionId}:null);setMobile(false);};read();window.addEventListener('hashchange',read);return()=>window.removeEventListener('hashchange',read);},[]);
+ const navigateHere=(id:string,anchor?:string)=>{setTopicDetail(topicIds.includes(id)&&!!anchor);setMarketDetail(!!anchor&&(id==='china-users'||id==='content-demand'));if(evidenceView){location.assign('/'+(anchor?'?section='+encodeURIComponent(anchor):'')+'#'+id);return;}window.history.pushState(null,'',`${location.pathname}${anchor?'?section='+encodeURIComponent(anchor):''}#${id}`);if(anchor){setStudyQuery('');setStudyGroup('全部');}setSectionTarget(anchor?{view:id,sectionId:anchor}:null);setView(id);setMobile(false);window.scrollTo({top:0,behavior:'instant'});};
  const navigate=(id:string,anchor?:string)=>{if(!evidenceView&&id===view&&(!anchor||anchor.startsWith(id+'-digest-'))){navigateHere(id,anchor);return;}window.open(`/${anchor?'?section='+encodeURIComponent(anchor):''}#${id}`,'_blank','noopener,noreferrer');};
  useEffect(()=>{if(evidenceView)document.querySelectorAll<HTMLDetailsElement>('.evidence-view details').forEach(d=>d.open=true);if(sectionTarget?.view===view){revealSection(sectionTarget.sectionId);setSectionTarget(null);}},[view,sectionTarget]);
  const showAudience=(id:string)=>navigate('audience',`audience-profile-${id}`);
@@ -89,14 +94,14 @@ export default function Research({evidenceView=false}:{evidenceView?:boolean}){
  {view==='report'&&<ResearchBrief navigate={navigate}/>}
  {topicIds.includes(view)&&!topicDetail&&<CompetitorTopic topic={view}/>}
 
-{view==='progress'&&<ResearchProgress navigate={navigate}/>}
-{view==='china-users'&&<ChinaAIUsers navigate={navigate}/>}
+{view==='progress'&&<><PlanningReferenceNotice/><ResearchProgress navigate={navigate}/></>}
+{view==='china-users'&&(marketDetail?<ChinaAIUsers navigate={navigate}/>:<IndustryResearch/>)}
 {view==='audience'&&topicDetail&&<AudienceResearch navigate={navigate}/>}
-{view==='supply'&&<CreatorSupply/>}
-{view==='content-demand'&&<ContentDemand navigate={navigate}/>}
- {view==='makenow'&&<MakeNowStudy navigate={navigate}/>}
+{view==='supply'&&<><PlanningReferenceNotice/><CreatorSupply/></>}
+{view==='content-demand'&&(marketDetail?<ContentDemand navigate={navigate}/>:<SocialResearch/>)}
+ {view==='makenow'&&<><PlanningReferenceNotice/><MakeNowStudy navigate={navigate}/></>}
  {view==='discussion'&&topicDetail&&<ResearchFramework navigate={navigate}/>}
- {view==='validation'&&<ValidationOverview/>}
+ {view==='validation'&&<><PlanningReferenceNotice/><ValidationOverview/></>}
  {view==='operations'&&topicDetail&&<OperationsDocument data={operatingStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
  {view==='content'&&topicDetail&&<ContentDocument data={contentStudy} visibleIds={studyFiltered.map(p=>p.id)} navigate={navigate} filter={platformFilter}/>}
  {view==='supplement'&&topicDetail&&<><EvidenceUpdateOverview filter={platformFilter} data={evidenceUpdate} visibleIds={studyFiltered.map(p=>p.id)} onSelect={showEvidence}/></>}
@@ -140,7 +145,7 @@ export default function Research({evidenceView=false}:{evidenceView?:boolean}){
  <div className="article-body">{p.sections.filter(s=>!isPlanningSection(s)).map((section,i)=><section key={section.title} id={`section-${i}`} className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(i+1).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((para,j)=><p key={j}>{para}</p>)}{section.refs&&<div className="citations"><span>依据</span>{section.refs.map(n=><a key={n} href={p.sources[n-1].url} target="_blank" rel="noreferrer">[{n}] {p.sources[n-1].title}<ArrowUpRight size={12}/></a>)}</div>}</section>)}</div>
  {p.deep&&<>
  <section className="essay-section" id="experience"><div className="section-heading"><h2>界面与操作体验</h2><span className="status status-推断">观察与分析</span></div>{p.deep.ux.map((para,i)=><p key={i}>{para}</p>)}</section>
-<p className="research-related"><button className="text-button" onClick={()=>navigate('strategy','adoption-platform-'+p.id)}>查看{p.name}的借鉴做法与采用条件 →</button></p>
+<p className="research-related"><button className="text-button" onClick={()=>navigate('report')}>查看15家竞品的机制比较 →</button></p>
  </>}
 
  </details>
@@ -149,9 +154,9 @@ export default function Research({evidenceView=false}:{evidenceView?:boolean}){
  <section className="sources" id="source-list"><div className="section-heading"><h2>来源与时间边界</h2><span>日期与范围见逐条来源</span></div>{p.sources.map((src,i)=><div className="source-row" key={`${src.url}-${i}`}><span className="source-number">{i+1}</span><div><a href={src.url} target="_blank" rel="noreferrer">{src.title}<ArrowUpRight size={14}/></a><p>{src.note}</p><small>{src.type} · {src.date}</small></div></div>)}</section>
  </details>
  </>}
- <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究总览':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'社区方案对照':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
+ <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究总览':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'方案与验证':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
  </article>}
- <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>资料日期见各页来源</span></footer>
+ <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>整理日期：2026-09-19 · 资料日期见各页来源</span></footer>
  </main></div>
 }
 function Essay({section,number}:{section:Section;number:number}){return <section className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(number).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>}

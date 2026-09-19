@@ -1,0 +1,127 @@
+{
+  "date": "2026-09-16",
+  "stats": {
+    "rawRecords": {
+      "ecosystemCend": 343,
+      "panel": 63,
+      "depth": 58,
+      "comparison": 212,
+      "themeDossierWorks": 59,
+      "closure": 4
+    },
+    "inputPools": {
+      "ecosystemCend": {
+        "inputRecords": 343,
+        "uniqueUrlsBeforeCrossPoolMerge": 343,
+        "mainPool": true
+      },
+      "ecosystemDetailsSupplement": {
+        "inputRecords": 13,
+        "uniqueUrlsBeforeCrossPoolMerge": 13,
+        "mainPool": false
+      },
+      "panel": {
+        "inputRecords": 63,
+        "uniqueUrlsBeforeCrossPoolMerge": 63,
+        "mainPool": true
+      },
+      "depth": {
+        "inputRecords": 58,
+        "uniqueUrlsBeforeCrossPoolMerge": 58,
+        "mainPool": true
+      },
+      "comparison": {
+        "inputRecords": 212,
+        "uniqueUrlsBeforeCrossPoolMerge": 212,
+        "mainPool": true
+      },
+      "comparisonTopicAnchors": {
+        "inputRecords": 78,
+        "uniqueUrlsBeforeCrossPoolMerge": 63,
+        "mainPool": false
+      },
+      "themeDossierWorks": {
+        "inputRecords": 59,
+        "uniqueUrlsBeforeCrossPoolMerge": 59,
+        "mainPool": true
+      },
+      "closure": {
+        "inputRecords": 4,
+        "uniqueUrlsBeforeCrossPoolMerge": 4,
+        "mainPool": true
+      }
+    },
+    "mainPoolRawTotal": 739,
+    "mainPoolUniqueUrls": 613,
+    "allInputRawTotal": 830,
+    "uniqueUrls": 615,
+    "confirmedClassifiedWorkCount": 293,
+    "unclassifiedWorkCount": 322,
+    "authorInferredNotClassifiedWorkCount": 129,
+    "identifiableAuthorLabels": 60,
+    "unresolvedAuthorCodeCount": 301,
+    "detailRows": 212,
+    "cardRows": 287,
+    "detailDefinition": "comparison 的 212 条作者主页详情快照；非全部完整观看。",
+    "cardDefinition": "comparison 六个作者主页可见卡片数；非全部详情或观看。"
+  },
+  "sixThemeCoverage": [
+    {
+      "id": "history",
+      "name": "历史解说",
+      "works": 11,
+      "identifiableAuthors": 3,
+      "authorsWithThreeWorks": 3,
+      "breadthMet": false
+    },
+    {
+      "id": "natural",
+      "name": "自然科普",
+      "works": 17,
+      "identifiableAuthors": 4,
+      "authorsWithThreeWorks": 4,
+      "breadthMet": false
+    },
+    {
+      "id": "stories",
+      "name": "角色故事",
+      "works": 38,
+      "identifiableAuthors": 10,
+      "authorsWithThreeWorks": 3,
+      "breadthMet": false
+    },
+    {
+      "id": "aesthetics",
+      "name": "视觉审美",
+      "works": 4,
+      "identifiableAuthors": 1,
+      "authorsWithThreeWorks": 1,
+      "breadthMet": false
+    },
+    {
+      "id": "life",
+      "name": "生活兴趣",
+      "works": 211,
+      "identifiableAuthors": 23,
+      "authorsWithThreeWorks": 1,
+      "breadthMet": false
+    },
+    {
+      "id": "learning",
+      "name": "制作学习",
+      "works": 22,
+      "identifiableAuthors": 5,
+      "authorsWithThreeWorks": 3,
+      "breadthMet": false
+    },
+    {
+      "id": "unclassified",
+      "name": "待分类",
+      "works": 322,
+      "identifiableAuthors": 25,
+      "authorsWithThreeWorks": 4,
+      "breadthMet": false
+    }
+  ],
+  "scope": "仅读取既有本地资料。统一 works 按规范 URL 去 query/hash 后归并；作者为页面署名而非实名身份。"
+}

@@ -17,7 +17,7 @@ export function SupplyVisuals(){
  <Evidence id="liblib-supply-evidence" label="编码口径与样本明细"/>
  </figure>;
 }
-export function DistributionVisual(){return <figure className="liblib-visual"><figcaption><strong>分类入口承担不同选择</strong><span>入口、用途与筛选并非互斥行业分类</span></figcaption><div className="visual-columns">{[
+export function DistributionVisual(){return <figure className="liblib-visual"><figcaption><strong>分类入口承担不同选择</strong><span>入口按内容对象、用途和使用条件组织</span></figcaption><div className="visual-columns">{[
  ['内容对象','图片模型 · 视频特效','发现灵感 · 工作流','决定先看哪一种内容'],
  ['用途与专题','摄影写真 · 电商营销','建筑室内 · 节日专题','按任务或主题缩小范围'],
  ['使用条件','资源类型 · 底模','许可 · 排序','判断能否使用、怎样选择'],

@@ -28,7 +28,7 @@ function SampleDetails({ sample: s }: { sample: Sample }) {
       <span className="cds-sample-meta"><span>{s.novelty.label}</span><span>{s.forms.join(' · ')}</span></span>
     </summary>
     <div className="cds-body">
-      <div className="cds-source-line"><External url={s.url}>原始页面</External><span>查询：{s.observedAt}</span>{s.checkedAt && <span>批次核对：{s.checkedAt.replace('T', ' ')}</span>}</div>
+      <div className="cds-source-line"><External url={s.url}>原始页面</External><span>查询：{s.observedAt}</span>{s.checkedAt && <span>核对：{s.checkedAt.replace('T', ' ')}</span>}</div>
       <dl className="cds-dates">
         <div><dt>发布</dt><dd>{s.publication.publishedAt || '未标明'}</dd></div>
         <div><dt>更新</dt><dd>{s.publication.updatedAt || '未标明'}</dd></div>

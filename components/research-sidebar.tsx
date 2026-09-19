@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {navigationGroups,viewTitle} from '@/lib/research-navigation';
+import {navigationGroups,viewTitle,researchReadingLinks} from '@/lib/research-navigation';
 import {groups} from '@/lib/research-types';
 import type {Profile} from '@/lib/research-types';
 import './research-structure.css';
@@ -15,11 +15,11 @@ export function ResearchSidebar({view,navigate,mobile,profiles}:{view:string;nav
  return <aside className={`sidebar research-sidebar ${mobile?'is-open':''}`} aria-label="研究目录">
   <div className="research-sidebar-scroll"><nav className="top-nav" aria-label="报告与专题">
    <div className="nav-primary">{navigationGroups[0].views.map(entry)}</div>
-   {navigationGroups.slice(1).filter(g=>g.id!=='evidence').map(g=><div className="nav-group" key={g.id}><button className="nav-group-toggle" onClick={()=>toggle(g.id)} aria-expanded={expanded.includes(g.id)} aria-controls={`nav-${g.id}`}><span>{g.title}{g.id==='competitors'&&<small className="research-complete">已完成</small>}</span><span aria-hidden="true">{expanded.includes(g.id)?'−':'+'}</span></button>{expanded.includes(g.id)&&<div id={`nav-${g.id}`} className="nav-group-links">{g.views.map(entry)}{g.id==='competitors'&&<div className="nav-platform-subgroup"><button className="nav-group-toggle" onClick={()=>setPlatformsOpen(!platformsOpen)} aria-expanded={platformsOpen} aria-controls="platform-directory"><span>按平台查阅</span><span aria-hidden="true">{platformsOpen?'−':'+'}</span></button>
+   {navigationGroups.slice(1).filter(g=>g.id!=='evidence').map(g=>g.views.length===1&&!researchReadingLinks.some(link=>link.group===g.id)&&g.id!=='competitors'?<div className="nav-primary" key={g.id}>{entry(g.views[0])}</div>:<div className="nav-group" key={g.id}><button className="nav-group-toggle" onClick={()=>toggle(g.id)} aria-expanded={expanded.includes(g.id)} aria-controls={`nav-${g.id}`}><span>{g.title}{g.id==='competitors'&&<small className="research-complete">已完成</small>}</span><span aria-hidden="true">{expanded.includes(g.id)?'−':'+'}</span></button>{expanded.includes(g.id)&&<div id={`nav-${g.id}`} className="nav-group-links">{g.views.map(entry)}{researchReadingLinks.filter(link=>link.group===g.id).map(link=><a className="research-route-link" key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">{link.title}<span aria-hidden="true"> ↗</span></a>)}{g.id==='competitors'&&<div className="nav-platform-subgroup"><button className="nav-group-toggle" onClick={()=>setPlatformsOpen(!platformsOpen)} aria-expanded={platformsOpen} aria-controls="platform-directory"><span>按平台查阅</span><span aria-hidden="true">{platformsOpen?'−':'+'}</span></button>
     {platformsOpen&&<div id="platform-directory">
     <nav className="profile-nav" aria-label="平台档案">{groups.map((category,index)=><section className="profile-category" key={category} aria-labelledby={`profile-category-${index}`}><h3 id={`profile-category-${index}`}>{category}</h3>{profiles.filter(item=>item.group===category).map(item=><button key={item.id} onClick={()=>navigate(item.id)} aria-current={view===item.id?'page':undefined} className={view===item.id?'active':''}><span className="nav-number">{String(profiles.indexOf(item)+1).padStart(2,'0')}</span><span>{item.name}</span>{view===item.id&&<span className="active-dot"/>}</button>)}</section>)}</nav></div>}
    </div>}</div>}</div>)}
-   <div className="nav-support">{entry('evidence')}</div>
+   <div className="nav-support">{entry('evidence')}{researchReadingLinks.filter(link=>link.group==='evidence').map(link=><a className="research-route-link" key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">{link.title}<span aria-hidden="true"> ↗</span></a>)}</div>
   </nav></div>
  </aside>;
 }

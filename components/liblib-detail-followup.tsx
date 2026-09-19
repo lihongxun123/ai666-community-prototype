@@ -2,7 +2,7 @@ import details from '@/lib/liblib-detail-followup.json';
 const source=(id:string)=>details.records.find(r=>r.id===id)?.url ?? `https://www.liblib.art/modelinfo/${id}`;
 export function LiblibDetailFollowup(){return <section id="liblib-detail-supply">
   <h4>详情中的用途与限制</h4>
-  <p>标题未命中关键词，不代表资源没有具体主题。未归类的263份资源中，62份已取得详情文本，补出了用途、标签和运行条件；201份仍缺有效详情。这组核对对象不是随机样本，不用于外推全站比例。</p>
+  <p>详情能补充标题中未体现的主题。未归类的263份资源中，62份已取得详情文本，补出了用途、标签和运行条件；201份仍缺有效详情。这组资源为定向选取，全站比例需另行统计。</p>
   <div className="table-wrap"><table><thead><tr><th>资源</th><th>详情补出的信息</th><th>可以支持的判断</th></tr></thead><tbody>
     <tr><th><a href={source('7d50511ddfa4432082f876754d99813d')} target="_blank" rel="noreferrer">城市通票 ↗</a></th><td>标签包含城市景观、旅行、钢笔/铅笔；作者说明用于旅行海报、文创明信片和手账素材。</td><td>这是文旅视觉与素材供给线索，尚无旅游从业者使用或交付的证据。</td></tr>
     <tr><th><a href={source('f654ebcf01574013ae4cf349d6f0dff2')} target="_blank" rel="noreferrer">法式复古轻奢风 ↗</a></th><td>标签为住宅空间、写实；作者列出家居空间、样板间、品牌视觉和家居电商主图等用途。</td><td>抽象风格名下面有空间设计用途；跨行业适用范围仍是作者宣称。</td></tr>

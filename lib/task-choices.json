@@ -1,0 +1,501 @@
+{
+  "date": "2026-09-18",
+  "scope": "覆盖九主题23项任务，分别比较原工具与渠道已有满足、剩余问题及适合的内容与帮助。主题范围不代表市场最优；条件服务仍需明确问题、授权材料、承接能力与判断责任，稳定供给和使用者迁移尚未验证。 23项为任务分类，同一作者或报道可涉及多项任务，不能按任务数计算独立需求样本。",
+  "items": [
+    {
+      "id": "T-01",
+      "theme": "电商",
+      "task": "为二手商品准备可上架的展示图",
+      "existing": "Depop工具链已处理背景和尺寸；实拍保留商品状态，原论坛可解释抠图、图层与合成。",
+      "remaining": "厂商案例记录了工具采用情况；公开求助反映了保真问题，但不少记录止于建议或操作进展，尚缺同一商品修图后通过上架验收的记录。",
+      "primary": "案例比较",
+      "support": "先给原站操作指引；真实细节仍偏离时，才考虑对应品类与修图能力的条件服务。",
+      "boundary": "不承诺自动还原成色、材质与瑕疵；版本故障交原工具排查，不包装成审美点评。",
+      "evidence": [
+        {
+          "label": "Depop商品图处理",
+          "url": "https://www.photoroom.com/customer-stories/depop"
+        },
+        {
+          "label": "实拍与AI氛围图分工",
+          "url": "https://www.photoroom.com/customer-stories/watches-inc"
+        },
+        {
+          "label": "商品主体与背景合成求助",
+          "url": "https://community.adobe.com/questions-712/photoshop-gf-problems-1167168"
+        },
+        {
+          "label": "反光处理版本问题",
+          "url": "https://community.adobe.com/bug-reports-674/p-gen-remove-now-changes-elements-outside-the-painted-mask-664503/index5.html"
+        }
+      ],
+      "basis": "厂商采用案例与自然求助"
+    },
+    {
+      "id": "T-02",
+      "theme": "电商",
+      "task": "为一批商品制作风格一致的目录图",
+      "existing": "Wolt等已有批处理与团队单件修正；商家采用访谈也有白底换背景和网站使用自述。",
+      "remaining": "已有材料支持批量处理与实际采用。逐款再次修改、实际上架版本和小团队返工成本的记录仍少，大团队成效不足以说明小商家的需要。",
+      "primary": "案例比较",
+      "support": "原站指引承接批量操作；比较统一风格与逐件保真的取舍。",
+      "boundary": "不把整批风格一致视为逐件真实；不提供未经核验的批量保真保证。",
+      "evidence": [
+        {
+          "label": "Wolt目录图处理",
+          "url": "https://www.photoroom.com/customer-stories/wolt"
+        },
+        {
+          "label": "商家换背景采用访谈",
+          "url": "https://www.photoroom.com/customer-stories/clay-dazing"
+        }
+      ],
+      "basis": "厂商采用案例与商家访谈"
+    },
+    {
+      "id": "T-03",
+      "theme": "电商",
+      "task": "制作供讨论新品意向的产品概念图",
+      "existing": "义乌商户已有生成概念图、沟通兴趣和后续打样的使用自述。",
+      "remaining": "依据为商户采用报道；询盘及打样意向不能证明投产、成交或额外社区需求。",
+      "primary": "案例比较",
+      "support": "作者愿意时讨论哪些概念值得继续，保留经营者自己选择。",
+      "boundary": "标明概念与实物的差别；不将其扩展为市场需求验证、工业设计或制造可行性服务。",
+      "evidence": [
+        {
+          "label": "义乌商户概念图与介绍",
+          "url": "https://szb1.ywcity.cn/att/202510/19/9a997356-3dea-4667-9649-96ff97720e48.pdf"
+        }
+      ],
+      "basis": "商户采用报道"
+    },
+    {
+      "id": "T-05",
+      "theme": "本地经营",
+      "task": "为菜品制作可用于菜单的介绍与配图",
+      "existing": "Nara已有生成、编辑和餐厅确认流程；自然讨论中有经营参与者选择逐菜实拍与专业摄影。",
+      "remaining": "官方功能和实拍替代办法已有依据。国内仍缺菜单翻译或配图经外部纠正后，餐厅是否采用、顾客是否理解的连续记录。",
+      "primary": "原站指引",
+      "support": "辅以案例比较，分清真实菜品说明、语言版本与展示拍摄。",
+      "boundary": "不以完整性评分代替正确性，不默认生成菜图优于实拍；不承诺通用菜单审校。",
+      "evidence": [
+        {
+          "label": "餐饮社区的实拍选择",
+          "url": "https://www.reddit.com/r/restaurantowners/comments/1sqrz38/ai_menus/"
+        },
+        {
+          "label": "Nara菜单编辑与确认",
+          "url": "https://naramenu.com/zh/features/"
+        }
+      ],
+      "basis": "工具功能与经营者实拍自述"
+    },
+    {
+      "id": "T-06",
+      "theme": "本地经营",
+      "task": "制作介绍门店的数字人口播内容",
+      "existing": "现有线索为制作服务的视频标题与简介，能确认宣传入口，未确认商家实际采用。",
+      "remaining": "依据仅为制作服务的视频标题与简介，商家需要、实际采用、人物授权与后续效果均未知。",
+      "primary": "原站指引",
+      "support": "仅作为工具或服务线索，注明只读取了标题与简介。",
+      "boundary": "仅保留供给线索，不列为已证实需求；不承诺代做数字人或传播效果。",
+      "evidence": [
+        {
+          "label": "数字人制作线索：仅标题简介",
+          "url": "https://www.bilibili.com/video/BV1uq7e6oErb/"
+        }
+      ],
+      "basis": "供给线索 · 仅视频标题与简介"
+    },
+    {
+      "id": "T-07",
+      "theme": "本地经营",
+      "task": "为一次品牌传播准备内容素材",
+      "existing": "传统品牌资产、Canva模板及内部创意团队已有制作路径。",
+      "remaining": "依据为传统品牌制作案例；生成式参与未确认，也未见原团队之后的具体缺口。",
+      "primary": "原站指引",
+      "support": "可保留品牌资产与模板方法阅读，作为传统方案对照。",
+      "boundary": "不把传统设计采用计为AIGC需求，不另设通用品牌策划服务。",
+      "evidence": [
+        {
+          "label": "Canva品牌制作案例",
+          "url": "https://www.canva.com/newsroom/news/how-a-dream-business-idea-came-to-life-with-canva-mobile/"
+        }
+      ],
+      "basis": "传统方法参照 · 生成式采用未确认"
+    },
+    {
+      "id": "T-08",
+      "theme": "本地经营",
+      "task": "制作让顾客看懂项目与预约条件的服务介绍",
+      "existing": "Squarespace帮助页已有价格、项目与预约信息的组织方法。",
+      "remaining": "依据仅为工具帮助页；商家实际困扰、生成式采用及顾客理解结果未知。",
+      "primary": "原站指引",
+      "support": "有明确素材与问题时再作案例比较。",
+      "boundary": "不把建站功能当需求；不承诺预约转化提升或替商家确定服务规则。",
+      "evidence": [
+        {
+          "label": "服务与预约信息组织",
+          "url": "https://support.squarespace.com/hc/en-us/articles/115012547847-Building-a-salon-site"
+        }
+      ],
+      "basis": "工具功能说明 · 实际使用问题待确认"
+    },
+    {
+      "id": "T-09",
+      "theme": "本地经营",
+      "task": "将插画创意转为可手绘的美甲款式",
+      "existing": "既有报道中美甲师用生成插画作参考，由本人技法完成转化。",
+      "remaining": "依据为美甲师采用报道；缺少单款返工、外部建议到客户验收的完整记录，尚不能判断作者需要额外的专业帮助。",
+      "primary": "自愿讨论",
+      "support": "可编选参考图、简化取舍与手绘过程；特定可制作性问题才匹配相应美甲经验。",
+      "boundary": "不把插画效果图当可执行款式，不默认邀请点评或保证复刻、工时。",
+      "evidence": [
+        {
+          "label": "插画转手绘美甲报道",
+          "url": "https://jil.nju.edu.cn/WeChinawgzg/fj/20240314/i260868.html"
+        }
+      ],
+      "basis": "从业者采用报道 · 交流形式为设计假设"
+    },
+    {
+      "id": "T-10",
+      "theme": "本地经营",
+      "task": "制作与实际环境一致的店铺展示图",
+      "existing": "门店实拍是直接替代；平台视觉工具已有真实照片输入，原平台承担真实性治理。",
+      "remaining": "已有门店图片与实际不符的报道及平台回应；未核实同一门店的图片是否修改、是否恢复一致，以及经营者是否认可。",
+      "primary": "原站指引",
+      "support": "案例比较说明实拍、局部处理与生成展示的适用边界。",
+      "boundary": "不生成店内不存在的环境、设施和规模；不将平台治理问题改写成普遍修图服务需求。",
+      "evidence": [
+        {
+          "label": "店铺图不符实际报道",
+          "url": "https://m.thepaper.cn/newsDetail_forward_31338702"
+        },
+        {
+          "label": "美团商家视觉工具",
+          "url": "https://www.meituan.com/news/NN260206199002398"
+        }
+      ],
+      "basis": "失真报道与平台工具说明"
+    },
+    {
+      "id": "T-11",
+      "theme": "本地经营",
+      "task": "制作供顾客理解产品的多语言介绍名片",
+      "existing": "义乌商户已有平台生成多语言内容并使用的报道。",
+      "remaining": "采用有商户报道；没有具体误译、外部纠错、商户采用及顾客理解结果，语言审核的额外需求未定。",
+      "primary": "原站指引",
+      "support": "比较原文、用途与语言版本；明确疑点且具备对应语言能力时才考虑条件服务。",
+      "boundary": "不以多语言生成等同准确沟通；不提供无语言与品类边界的审校承诺。",
+      "evidence": [
+        {
+          "label": "义乌商户多语言介绍",
+          "url": "https://szb1.ywcity.cn/att/202510/19/9a997356-3dea-4667-9649-96ff97720e48.pdf"
+        }
+      ],
+      "basis": "商户采用报道"
+    },
+    {
+      "id": "T-25",
+      "theme": "历史",
+      "task": "将一个历史人物故事制作成叙事视频",
+      "existing": "独立作者已有生成、配音、剪辑和发布路径；部分作品标注史料。",
+      "remaining": "创作采用有研究与作者记录；课堂出现具体盔甲核对提问，但未见答复修订，不能转成独立作者普遍需求。",
+      "primary": "案例比较",
+      "support": "自愿讨论具体出处与叙事选择；有疑点、时期范围和核对者时才考虑条件服务。",
+      "boundary": "没有完整视听与专业依据不裁定冠服争议对错；不把观众质疑等同创作者求助。",
+      "evidence": [
+        {
+          "label": "AI视频创作者访谈",
+          "url": "https://xwcbpl.whu.edu.cn/e/public/DownFile/?classid=9&id=485"
+        },
+        {
+          "label": "历史画面的核对提问",
+          "url": "https://paper.people.com.cn/zgcsb/pc/content/202603/23/content_30146711.html"
+        }
+      ],
+      "basis": "创作访谈与课堂核对提问"
+    },
+    {
+      "id": "T-26",
+      "theme": "历史",
+      "task": "将文物资料制作成保留形态与史实的动态叙事",
+      "existing": "上海博物馆与制作团队已有数字资产、文献及专家约束；机构内部能组织制作和核对。",
+      "remaining": "机构已有较明确的解决办法。独立作者能否取得同类素材、获得专业回应并完成修订，仍不清楚。",
+      "primary": "案例比较",
+      "support": "原站指引标注资料来源与可用条件；具体器物问题满足来源和人员条件再承接。",
+      "boundary": "不把机构专家列为可调用供给；不承诺无资料的准确复原或把动态展示视为历史事实。",
+      "evidence": [
+        {
+          "label": "上海博物馆动态叙事",
+          "url": "https://m.thepaper.cn/newsDetail_forward_32527275"
+        }
+      ],
+      "basis": "机构制作案例"
+    },
+    {
+      "id": "T-27",
+      "theme": "科普",
+      "task": "为一段科普讲解制作准确对应的插图",
+      "existing": "专业作者已有手绘结合AI；《落火》团队用资料、脚本校审、PS和局部重绘修订；制图模板与编辑工具已有供给。",
+      "remaining": "制作与局部修订已有过程记录；公开工具求助仍缺后续结果，是否有外部专业人员接手、作者是否认可、学习效果是否改善均未确认。",
+      "primary": "案例比较",
+      "support": "先给原站制图方法；服务须分开源文与表述核对、图像执行，并分别落实能力。",
+      "boundary": "先确定脚本含义再改图；分清科学直接示意与叙事辅助图。不以视觉修好、成片或作者满意代替科学正确及学习效果。",
+      "evidence": [
+        {
+          "label": "《落火》制作与修订",
+          "url": "https://nlt.gcsce.net/ojs/index.php/GCCCE/article/download/1598/1105"
+        },
+        {
+          "label": "PaperTok受控研究",
+          "url": "https://prosocialcomputing.com/assets/pdf/publications/cristobal-chi2026-papertok.pdf"
+        },
+        {
+          "label": "BioRender制图供给",
+          "url": "https://www.biorender.com/solutions/academia"
+        },
+        {
+          "label": "科学插图工具求助",
+          "url": "https://www.reddit.com/r/generativeAI/comments/1ve9xt6/what_ai_image_generator_do_you_recommend_for/"
+        }
+      ],
+      "basis": "制作过程、受控研究与工具求助"
+    },
+    {
+      "id": "T-28",
+      "theme": "写作",
+      "task": "将未整理的古籍文本归集为可审阅的篇目与索引初稿",
+      "existing": "有古籍编辑自述，已通过OCR、模型分类提取和本人复核完成初稿。",
+      "remaining": "依据来自编辑完成初稿的自述。这项任务是否仍需帮助、有何剩余障碍，以及普通作者能否复用，尚不清楚。",
+      "primary": "原站指引",
+      "support": "可编选输入、归集方法与编辑检查的案例。",
+      "boundary": "不将初稿视为定本，不承诺无原文的古籍校勘或自动可靠索引。",
+      "evidence": [
+        {
+          "label": "古籍编辑归集实践",
+          "url": "https://www.im-pg.com/zbzx/14960.shtml"
+        }
+      ],
+      "basis": "编辑实践自述"
+    },
+    {
+      "id": "T-29",
+      "theme": "写作",
+      "task": "判断稿件修改建议并形成可审阅的修订稿",
+      "existing": "已有服务包括校对解释、修订追踪、作者确认及编辑。使用者能在原工具中剔除没有实际改动的建议，也能在原写作圈互读。",
+      "remaining": "已有材料说明了接受或拒绝部分修改的理由。互读记录包含回应和正在修改的自述，终稿效果证据较少。中文编辑组织已提供相关服务，用户是否愿意迁移或使用新服务仍待验证。",
+      "primary": "案例比较",
+      "support": "自愿讨论授权片段的具体取舍；取得上下文并找到具备相应知识的人后，再考虑承接。",
+      "boundary": "不把修改数量当质量，不自动接受AI改人名或字义；不提供统一去AI味或通用专业审核。",
+      "evidence": [
+        {
+          "label": "编辑的修改取舍",
+          "url": "https://www.chinawriter.com.cn/n1/2025/0717/c403994-40523921.html"
+        },
+        {
+          "label": "原写作社区互读",
+          "url": "https://www.reddit.com/r/WritingWithAI/comments/1upth5b/reciprocal_beta_reading_share_story_blurbs_jul_7/"
+        },
+        {
+          "label": "过滤无变化修改项",
+          "url": "https://www.reddit.com/r/writers/comments/16nnyyd/i_used_chatgpt_to_act_as_a_beta_readereditor/"
+        },
+        {
+          "label": "出版社改稿满足对照",
+          "url": "https://wyb.chinawriter.com.cn/Pad/content/202605/27/content84004.html"
+        }
+      ],
+      "basis": "编辑访谈与原社区互读"
+    },
+    {
+      "id": "T-30",
+      "theme": "写作",
+      "task": "为已有小说补足一处情节逻辑缺口",
+      "existing": "模型提供备选，作者与编辑已有选择路径；原社区、作者朋友和出版社也可承担意见与改稿。",
+      "remaining": "编辑报道有采用某个情节备选的自述；其他材料有事后赞同及计划修改，未核完整作品质量或新增帮助效果。",
+      "primary": "案例比较",
+      "support": "作者自愿时讨论局部因果、人物动机和铺垫，接受与拒绝均保留理由。",
+      "boundary": "不把认可建议当完成修改，不保证故事质量；不替作者决定结局或默认全文公开。",
+      "evidence": [
+        {
+          "label": "编辑的情节备选取舍",
+          "url": "https://www.chinawriter.com.cn/n1/2025/0717/c403994-40523921.html"
+        },
+        {
+          "label": "科幻写作课程实践",
+          "url": "https://www.kpcswa.org.cn/xwzx/hydt/zppl/art/2026/art_245d5ba0888c444cb7c9b92d29552946.html"
+        },
+        {
+          "label": "长稿预检与已有编辑",
+          "url": "https://www.reddit.com/r/WritingWithAI/comments/1kh9dzo/ai_beta_reader_a_case_study_what_have_you_tried/"
+        }
+      ],
+      "basis": "编辑采用自述与写作实践"
+    },
+    {
+      "id": "T-31",
+      "theme": "设计",
+      "task": "制作供讨论与选择的视觉创意草案",
+      "existing": "团队、客户、模板及原修图社区已提供帮助。有同行认为AI示意图减少了沟通往返，也有人因用示意图代替需求说明而反复调整方向。",
+      "remaining": "公开讨论反映了沟通目标与决策权的重要性；公益修图帖子在原社区已有solved标记。尚无外部审美点评改善交付的证据。",
+      "primary": "案例比较",
+      "support": "原站指引处理图层、扩图等操作；自愿讨论需求、保留项和由谁决定修改。",
+      "boundary": "不把所有返工归为审美不足，不默认专业点评服务；工具入口问题与客户目标变化分别处理。",
+      "evidence": [
+        {
+          "label": "AI示意图的沟通正反例",
+          "url": "https://www.reddit.com/r/graphic_design/comments/1u0u01y/clients_sending_ai_examples_as_the_brief_or_in/"
+        },
+        {
+          "label": "原修图社区完成标记",
+          "url": "https://www.reddit.com/r/PhotoshopRequest/comments/1lehgjq/our_nonprofit_lost_access_to_photoshop_which/"
+        },
+        {
+          "label": "Adobe海报制作方法",
+          "url": "https://www.adobe.com/learn/firefly/web/create-cinematic-posters-photoshop-firefly-assets"
+        }
+      ],
+      "basis": "自然讨论与原社区解决记录"
+    },
+    {
+      "id": "T-36",
+      "theme": "角色",
+      "task": "完成一个表达个人设想的角色故事版本",
+      "existing": "原游戏圈、B站与作者自身已有发布、征求意见和持续修改路径，声音与人物语言也有讨论。",
+      "remaining": "国内已有公开求助，作者会限定反馈范围；具体建议是否促成更新、修改后效果如何，仍缺记录。",
+      "primary": "自愿讨论",
+      "support": "案例比较展示人物意图与取舍；作者明确提出的技术卡点另给原站指引。",
+      "boundary": "不将作品分享自动转为点评，不强加工具路线争论，不把纯观看者列为服务对象。",
+      "evidence": [
+        {
+          "label": "角色设计求助与边界",
+          "url": "https://www.bilibili.com/opus/1089174552047517713"
+        },
+        {
+          "label": "原作者作品发布记录",
+          "url": "https://www.taptap.cn/moment/760600459948855193"
+        },
+        {
+          "label": "同人配音取舍自述",
+          "url": "https://www.bilibili.com/video/BV1gKrjYuEEj/"
+        }
+      ],
+      "basis": "作者自然求助与发布记录"
+    },
+    {
+      "id": "T-37",
+      "theme": "角色",
+      "task": "制作保持角色辨识度的新造型或场景图",
+      "existing": "生成参考功能与原圈层已有路径；个人作者也可选择手绘替换临时AI素材。",
+      "remaining": "自然材料出现角色设计及绘画建议请求；仍缺同一图像的一致性问题经建议修复并通过验收的完整记录。",
+      "primary": "自愿讨论",
+      "support": "先明确作者希望保留的特征；具体参考与偏差清楚时，补原站方法或条件排错。",
+      "boundary": "不把学绘画意愿改成AI训练需求；不承诺跨场景绝对一致或将人物设计问题全部归于一致性。",
+      "evidence": [
+        {
+          "label": "角色设计与绘画求助",
+          "url": "https://www.bilibili.com/opus/1089174552047517713"
+        },
+        {
+          "label": "原游戏圈开发日志",
+          "url": "https://www.cngal.org/articles/index/5612"
+        }
+      ],
+      "basis": "作者自然求助与开发日志"
+    },
+    {
+      "id": "T-38",
+      "theme": "人像",
+      "task": "得到保留人物身份的修整照片",
+      "existing": "中文论坛有人表示局部旧照修补结果可用；家庭人像作者通过原教程、AI和手工修图满足了需求。",
+      "remaining": "已有实际使用和部分局部结果的记录。人物是否保真、被摄者是否认可，以及求助回应起了多大作用仍不清楚；寻找替代办法也可能出于费用考虑。",
+      "primary": "原站指引",
+      "support": "案例比较区分破损、清晰度与身份保留；本人愿意且承接范围明确时再考虑试改。",
+      "boundary": "不默认收集或公开原照，不把分享当征求批评；身份与可接受程度由本人决定。",
+      "evidence": [
+        {
+          "label": "旧照局部修补求助",
+          "url": "https://www.v2ex.com/t/1194730"
+        },
+        {
+          "label": "家庭人像工具满足",
+          "url": "https://www.v2ex.com/t/1155171"
+        }
+      ],
+      "basis": "自然求助与局部使用结果"
+    },
+    {
+      "id": "T-39",
+      "theme": "人像",
+      "task": "制作承载个人回忆的图像表达",
+      "existing": "受控研究中，参与者根据个人记忆决定修改或跳过。国内纪念照工具推荐请求已获原论坛回应；旧照修补作为相近任务参考。",
+      "remaining": "关于个人记忆的取舍，材料主要来自受控研究。公开材料尚未证明用户会再创作记忆场景、持续需要这类服务或愿意公开分享。",
+      "primary": "自愿讨论",
+      "support": "交流仅为可选设计；优先支持阅读、自用或原站指引，也允许不修改。",
+      "boundary": "不强制展示私人照片或回忆，不把修旧照等同重建记忆；不预设每个回忆都应生成或接受点评。",
+      "evidence": [
+        {
+          "label": "个人记忆照片编辑研究",
+          "url": "https://arxiv.org/pdf/2602.03104"
+        },
+        {
+          "label": "纪念照片工具推荐",
+          "url": "https://www.v2ex.com/t/1222814"
+        }
+      ],
+      "basis": "受控研究与邻近任务参照 · 交流形式为设计假设"
+    },
+    {
+      "id": "T-40",
+      "theme": "手作",
+      "task": "将参考图转为可制作的纺织图案方案",
+      "existing": "原钩针社区解释针目后获理解回应；棒针作者能自行看图改衣，Stitch Fiddle已提供平面网格与比例编辑。",
+      "remaining": "已有较具体的基础读图帮助。国内仍缺从AI参考图、外部协助修改结构到完成实物的完整记录；平面转换功能也不足以证明立体结构能制作。",
+      "primary": "案例比较",
+      "support": "读图与网格先回原社区、原工具；材料、密度、尺寸与结构需相应技法经验，需要时还应试作，再确定服务范围。",
+      "boundary": "不把基础读图一律升为职业设计审核，不保证效果图可做；钩针、棒针及立体结构不可混用。",
+      "evidence": [
+        {
+          "label": "原钩针社区读图答疑",
+          "url": "https://www.reddit.com/r/CrochetHelp/comments/1u9e7i4/help_chatgpt_is_so_confusing_and_i_am_struggling/"
+        },
+        {
+          "label": "棒针作者看图改衣",
+          "url": "https://bbs.bianzhirensheng.com/thread-2239458-1-1.html"
+        },
+        {
+          "label": "图片转配色网格",
+          "url": "https://www.stitchfiddle.com/en/help/1pej-wc93j/import-picture"
+        },
+        {
+          "label": "网格与针目比例",
+          "url": "https://www.stitchfiddle.com/en/help/1pe1-ftobtg/gauge-proportions"
+        }
+      ],
+      "basis": "自然答疑、制作自述与工具方法"
+    },
+    {
+      "id": "T-41",
+      "theme": "手作",
+      "task": "形成自己愿意制作的手作创意方案",
+      "existing": "作者已能通过自行取舍、现成图案和原兴趣社区满足部分需求；也有人表示接受意外造型，并享受实际制作。",
+      "remaining": "已有作者对探索结果感到满意，即使造型有偏差也未必需要纠错。是否需要额外交流、继续制作或持续供稿，仍待验证。",
+      "primary": "自愿讨论",
+      "support": "案例比较区分准确复现与探索趣味；明确要制作时再转具体技法方法。",
+      "boundary": "不强加专业点评或把所有偏差当失败；面向动手创作者，纯观看娱乐不作为目标需求。",
+      "evidence": [
+        {
+          "label": "沿用现成局部图案",
+          "url": "https://www.reddit.com/r/crochet/comments/141z7r1/i_attempted_to_get_chatgpt_to_produce_a_usable/"
+        },
+        {
+          "label": "创作者接受意外造型",
+          "url": "https://www.reddit.com/r/crochet/comments/121ok0v/i_asked_chatgpt_to_write_a_pattern_for_a_giraffe/"
+        }
+      ],
+      "basis": "创作者探索与取舍自述"
+    }
+  ]
+}
