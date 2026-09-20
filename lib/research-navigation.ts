@@ -13,7 +13,7 @@ export const navigationGroups: {id:string;title:string;views:ResearchView[]}[] =
  {id:'market',title:'行业与用户',views:['china-users']},
  {id:'social',title:'社媒与需求',views:['content-demand']},
  {id:'competitors',title:'竞品研究',views:['report','audience','content','operations','business','data','tasks','discussion','supplement']},
- {id:'planning',title:'社区方案',views:['strategy']},
+ {id:'planning',title:'社区方案',views:[]},
  {id:'evidence',title:'研究方法',views:['evidence']},
 ];
 export const topicDescriptions:Record<string,string> = {
@@ -26,7 +26,7 @@ export const topicDescriptions:Record<string,string> = {
  supply:'自制、约稿和作者合作的分工、投入与交付要求。',
  operations:'各平台怎样组织供给、分发内容、激励参与和维护社区。',
  discussion:'内容展示、文件交付和在线工具如何配合。',
- strategy:'实践案例为主线，创作交流保留独立入口；九主题已选，具体帮助按承接、授权与维护条件判断。',
+ strategy:'比较任务决策、项目共学、创作者研讨、方法共建与具体互助；按用户价值、已有替代和供给条件选择组合。',
  makenow:'画布复制、素材交接、保存与生成能力的检查记录。',
  progress:'周活统计口径、现有能力与验证所需条件。',
  validation:'访谈、招募和行为观察的提纲与记录表。',
@@ -36,14 +36,14 @@ export const topicDescriptions:Record<string,string> = {
 };
 
 export const researchReadingLinks = [
- {group:'planning',href:'/community-options/presentation',title:'方案演示'},
+ {group:'reading',href:'/research-achievements',title:'研究成果'},
  {group:'planning',href:'/community-options',title:'五套方案'},
- {group:'planning',href:'/community-options/design/practice',title:'方案详解'},
+ {group:'planning',href:'/community-options/presentation',title:'汇报演示'},
+ {group:'planning',href:'/community-options/library',title:'研究依据'},
+ {group:'market',href:'/community-options/background',title:'近期应用'},
  {group:'market',href:'/?section=cn-answer#china-users',title:'使用与付费'},
  {group:'social',href:'/domain-research',title:'领域比较'},
  {group:'social',href:'/task-research',title:'任务与结果'},
  {group:'social',href:'/media-reports',title:'报告与案例'},
- {group:'planning',href:'/research-decisions',title:'方向简版'},
- {group:'planning',href:'/research-decisions/tasks',title:'主题与任务'},
  {group:'evidence',href:'/research-status',title:'证据状态'},
 ] as const;

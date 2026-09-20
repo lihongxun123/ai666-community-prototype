@@ -156,7 +156,7 @@ export default function Research({evidenceView=false}:{evidenceView?:boolean}){
  </>}
  <div className="page-turn"><button onClick={()=>navigate(index===0?'overview':profiles[index-1].id)}><ArrowLeft size={17}/><span><small>上一篇</small>{index===0?'研究总览':profiles[index-1].name}</span></button><button onClick={()=>navigate(index===profiles.length-1?'strategy':profiles[index+1].id)}><span><small>下一篇</small>{index===profiles.length-1?'方案与验证':profiles[index+1].name}</span><ArrowRight size={17}/></button></div>
  </article>}
- <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>整理日期：2026-09-19 · 资料日期见各页来源</span></footer>
+ <footer className="report-footer"><span>多元拾光 · AI社区研究</span><span>整理日期：2026-09-21 · 资料日期见各页来源</span></footer>
  </main></div>
 }
 function Essay({section,number}:{section:Section;number:number}){return <section className="essay-section"><div className="section-heading"><h2><span className="section-index">{String(number).padStart(2,'0')}</span>{section.title}</h2><span className={`status status-${section.status}`}>{section.status}</span></div>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>}

@@ -1,0 +1,107 @@
+[
+  {
+    "found": "白底商品、版式参考和卖点组成成套工作流。",
+    "limit": "作者说明；尚缺同一商品实际采用结果。",
+    "action": "把原始素材、参考版式、输出用途拆成明确字段。",
+    "name": "LiblibAI",
+    "url": "https://www.liblib.art/modelinfo/704b848dc1804107931c8d534b6165dd?from=search&versionUuid=23e2bfbbd9b94714a8e7a11c2fedc18e"
+  },
+  {
+    "found": "商品图工作流与10屏商详应用，具作品和评论入口。",
+    "limit": "旧工作流仅作历史参照；新应用未取得成图反馈。",
+    "action": "把复杂工作流封装成任务表单，关联作品与反馈。",
+    "name": "RunningHub",
+    "url": "https://www.runninghub.cn/post/1907039726455382017"
+  },
+  {
+    "found": "吐司有更新日志；Tensor历史工作流公开节点。",
+    "limit": "现行电商入口待补；两站证据不互相替代。",
+    "action": "分别核对任务模板、运行条件与维护状态。",
+    "name": "吐司 / Tensor.Art",
+    "url": "https://tusi.cn/updates"
+  },
+  {
+    "found": "2026指南介绍商品主体锁定与背景生成。",
+    "limit": "指南与历史作品；尚缺现行套图验收。",
+    "action": "把主体保留、背景参考和提示词分开说明。",
+    "name": "SeaArt",
+    "url": "https://www.seaart.ai/pt/blog/ai-product-photography-guide"
+  },
+  {
+    "found": "2026指南区分主图、场景图和人工商品核对。",
+    "limit": "官方教学；渠道要求需查对应平台规则。",
+    "action": "按用途组织步骤，生成后检查标签、颜色、形状。",
+    "name": "OpenArt",
+    "url": "https://openart.ai/zh-cn/blog/amazon-product-photography/"
+  },
+  {
+    "found": "官方营销商品图3.0版本文档入口。",
+    "limit": "仅确认入口与版本，完整任务步骤待补。",
+    "action": "继续核读输入条件及与创作工具的关系。",
+    "name": "即梦",
+    "url": "https://www.volcengine.com/docs/85621/1965106?lang=zh"
+  },
+  {
+    "found": "商品参考图与场景描述的专题教程。",
+    "limit": "待核官方域名归属；暂不作为能力定论。",
+    "action": "场景生成后核对标签、颜色和形状。",
+    "name": "Kling",
+    "url": "https://kling.ai/topics/ai-product-photography"
+  },
+  {
+    "found": "公开商品摄影样本保留提示词、模型及输出尺寸。",
+    "limit": "概念样本；未取得同一真实商品保真对照。",
+    "action": "作品关联方法与参考素材。",
+    "name": "Leonardo",
+    "url": "https://app.leonardo.ai/generation/image/high-end-commercial-editorial-product-photography-0e73dcf1-147b-4556-92f0-244c029d4de6"
+  },
+  {
+    "found": "产品重拍教程区分实物照片与概念探索。",
+    "limit": "官方说明；尚缺完整商品页交付案例。",
+    "action": "将已有产品重拍和未制作产品的概念图区分。",
+    "name": "Runway",
+    "url": "https://runway.com/resources/ai-product-mockups"
+  },
+  {
+    "found": "按商品图生成分类的外部工具目录。",
+    "limit": "未取得作者交付过程与当前工具实测。",
+    "action": "任务词入口，连接素材要求与工具。",
+    "name": "WaytoAGI",
+    "url": "https://www.waytoagi.com/zh/sites/183"
+  },
+  {
+    "found": "本轮未取得同任务案例；参考资料为课程维护记录。",
+    "limit": "非电商任务证据。",
+    "action": "借鉴作者修订、维护者审查机制。",
+    "name": "Datawhale",
+    "url": "https://github.com/datawhalechina/all-in-rag/pull/106"
+  },
+  {
+    "found": "上传商品图、填写背景条件的技术示例。",
+    "limit": "历史示例已停止维护，不列为现行方案。",
+    "action": "公开输入条件、代码与维护状态。",
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/spaces/Shopify/background-replacement"
+  },
+  {
+    "found": "已有档案记录通用图片编辑应用，非商品图专用。",
+    "limit": "本轮未取得现行电商任务实例。",
+    "action": "素材、输出与交流在同一应用页。",
+    "name": "ModelScope",
+    "url": "https://modelscope.cn/studios/Boogu/boogu-image-edit-gradio"
+  },
+  {
+    "found": "已读模板提供配置、依赖与测试说明；非电商图模板。",
+    "limit": "本轮未取得同商品图工作流。",
+    "action": "方法卡交代输入变量、依赖和版本。",
+    "name": "Dify",
+    "url": "https://marketplace.dify.ai/"
+  },
+  {
+    "found": "2026年8月作者帖介绍套图流程；关联EcomGen项目说明提供商品事实、分镜确认、局部编辑与审核导出。",
+    "limit": "作者与项目说明，未运行；实际效果和上架验收待核。",
+    "action": "允许人工确认图序和表达目标；案例保留局部修改与反馈。",
+    "name": "LINUX DO",
+    "url": "https://linux.do/t/topic/2829843"
+  }
+]

@@ -1,0 +1,1421 @@
+{
+  "date": "2026-09-20",
+  "status": "已按当前工具能力校准；配置尚待确认",
+  "rows": [
+    {
+      "name": "电商",
+      "ids": [
+        "T-01",
+        "T-02",
+        "T-03"
+      ],
+      "placement": "保留任务，暂缓样板",
+      "demand": "厂商采用、商户报道与自然求助并存；任务直接关联上架和商品沟通。",
+      "existing": "Photoroom 已提供生成后商品细节检查、局部刷选和参考图修正。",
+      "extra": "按品类解释保真、风格和批处理的取舍。",
+      "supply": "已有资源作者与摄影方法可发现，授权和持续合作未落实。",
+      "proposal": "撤下旧墨镜样板，暂停以换背景困难支持电商优先；商业任务保留。",
+      "change": "若原站方法足以帮助选择，降低独立社区入口权重。"
+    },
+    {
+      "name": "设计",
+      "ids": [
+        "T-31"
+      ],
+      "placement": "主线比较候选",
+      "demand": "自然讨论涉及草案、客户需求和修改决定；也有减少沟通的满足案例。",
+      "existing": "设计团队、模板与原社区已经处理不少问题。",
+      "extra": "解释需求约束、备选方案及取舍理由。",
+      "supply": "设计者与机构有案例，公开素材和修改过程需授权。",
+      "proposal": "以明确命题的草案比较为先，不默认开点评服务。",
+      "change": "拿不到目标与修改理由时，收窄为作品参考。"
+    },
+    {
+      "name": "写作",
+      "ids": [
+        "T-28",
+        "T-29",
+        "T-30"
+      ],
+      "placement": "主线比较候选",
+      "demand": "编辑采用自述、互读与局部修改理由可定位。",
+      "existing": "编辑、同行、工具修订和出版社已有满足。",
+      "extra": "比较同一片段建议，解释接受与拒绝的理由。",
+      "supply": "局部文本较便于组织对照，但公开授权未落实。",
+      "proposal": "先做稿件修订；古籍和小说分别保留。",
+      "change": "若只有生成成文、没有真实取舍，降为方法链接。"
+    },
+    {
+      "name": "角色",
+      "ids": [
+        "T-36",
+        "T-37"
+      ],
+      "placement": "创作入口优先候选",
+      "demand": "作者自然求助、系列发布和主动限定反馈范围。",
+      "existing": "原圈层已能发布、反馈；参考图方法已有官方说明。",
+      "extra": "围绕作者意图组织系列、过程和相关讨论。",
+      "supply": "已有连续发布作者；迁入和回应意愿未验证。",
+      "proposal": "先呈现角色故事，角色一致性关联方法。",
+      "change": "作者不愿讨论时，保留自愿发布，不强配点评。"
+    },
+    {
+      "name": "人像",
+      "ids": [
+        "T-38",
+        "T-39"
+      ],
+      "placement": "分任务保留",
+      "demand": "保真修整有自然求助与局部可用自述；回忆表达主要来自受控研究。",
+      "existing": "教程、工具与原论坛已有操作帮助。",
+      "extra": "让使用者明确保留项，比较修整方式。",
+      "supply": "人物与照片授权影响公开案例可用性。",
+      "proposal": "保真修整作为专题；回忆表达暂留候选。",
+      "change": "只有具备授权和本人判断的过程，才进入首页案例。"
+    },
+    {
+      "name": "本地经营",
+      "ids": [
+        "T-05",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10",
+        "T-11"
+      ],
+      "placement": "分场景专题",
+      "demand": "菜品、门店、美甲与多语言有不同依据；口播仅供给线索，品牌素材含传统方法。",
+      "existing": "实拍、经营者自身经验与平台工具已承担部分工作。",
+      "extra": "围绕一个经营场景组织真实资料与呈现取舍。",
+      "supply": "不同语言、品类和技法无法共用同一审核者。",
+      "proposal": "优先菜单与实景的对照选题；其余按材料逐项进入。",
+      "change": "出现可公开的完整商户任务链时，可提升对应场景。"
+    },
+    {
+      "name": "历史",
+      "ids": [
+        "T-25",
+        "T-26"
+      ],
+      "placement": "专业专题候选",
+      "demand": "独立作者作品与机构制作可见，独立作者主动考据求助薄。",
+      "existing": "机构有专家与数字资产，作者已有发布路径。",
+      "extra": "讲清出处、叙事与画面取舍。",
+      "supply": "历史时期与器物核对者尚未落实。",
+      "proposal": "先做有出处的制作案例，不承诺考据服务。",
+      "change": "取得作者主动提出的疑点和合适回应者，可提高优先级。"
+    },
+    {
+      "name": "科普",
+      "ids": [
+        "T-27"
+      ],
+      "placement": "专业专题候选",
+      "demand": "有图文失配、制作过程与局部修订材料。",
+      "existing": "作者知识、手绘、资料校审及编辑工具已有作用。",
+      "extra": "对照源文、讲解与画面，说明修改原因。",
+      "supply": "学科判断与图像执行需要不同能力。",
+      "proposal": "选单段讲解与单幅插图，避免笼统科学审核。",
+      "change": "若形成源文、画面修改与学科判断可核对的案例，可与主线候选重新排序；专业服务另需落实承接者。"
+    },
+    {
+      "name": "手作",
+      "ids": [
+        "T-40",
+        "T-41"
+      ],
+      "placement": "专业专题候选",
+      "demand": "自然读图答疑与创作自述较具体，也有人满意于意外效果。",
+      "existing": "原兴趣社区、现成图案、网格工具已有帮助。",
+      "extra": "区分平面图案转换、结构判断与创作乐趣。",
+      "supply": "需按钩针、棒针等技法匹配作者；稳定合作未落实。",
+      "proposal": "优先图案—实物对照，结构改编保留条件。",
+      "change": "有实际制作过程及技法作者时，可升级为持续专题。"
+    },
+    {
+      "name": "通用内容处理",
+      "ids": [
+        "T-16",
+        "T-17",
+        "T-18",
+        "T-19",
+        "T-20",
+        "T-21"
+      ],
+      "placement": "跨主题能力",
+      "demand": "长转短有语义取舍的自然讨论；其他任务以工具与流程线索为主。",
+      "existing": "自动切片、字幕、编辑和平台适配已有供给。",
+      "extra": "解释选段、上下文和内容保留；基础操作接回原工具。",
+      "supply": "可复用各主题作者的原稿和改编过程，授权仍需确认。",
+      "proposal": "优先长转短；字幕和尺寸适配随案例承接。",
+      "change": "有中文作者完整改编链时提高重点；其他五项分别核查。"
+    },
+    {
+      "name": "教学与学习任务",
+      "ids": [
+        "T-22",
+        "T-23"
+      ],
+      "placement": "独立挑战候选",
+      "demand": "中国学校实践支持教学使用和学科适配问题，尚非普通教师需求总体。",
+      "existing": "校内教研、教师判断和已有培训承担不少支持。",
+      "extra": "按学科与学情比较教学设计修改。",
+      "supply": "需教师提供可公开材料及教研判断；人员未落实。",
+      "proposal": "以问题链和学习活动挑战现有主题配置。",
+      "change": "若形成目标、修改与结果可核对的公开案例，并说明相对原教研的额外价值，可与主线候选重新排序；持续专题再落实合作。"
+    },
+    {
+      "name": "音乐与MV",
+      "ids": [
+        "T-33",
+        "T-34",
+        "T-35"
+      ],
+      "placement": "保留方向，暂缓MV样板",
+      "demand": "有个人制作和方法不适用求助；持续创作意愿与频率未知。",
+      "existing": "原论坛已解释、诊断，剪辑与替代方法可用。",
+      "extra": "展示实际入口下的镜头衔接与创作取舍。",
+      "supply": "可发现作者和回应记录，作品授权与持续供给未落实。",
+      "proposal": "当前工具已提供部分视频延长能力。先取得近期MV片段与衔接问题，再决定内容样板。",
+      "change": "若取得意图、制作取舍与结果可核对的公开作品，可与主线候选重新排序；持续专题再落实合作。"
+    },
+    {
+      "name": "包装视觉",
+      "ids": [
+        "T-04"
+      ],
+      "placement": "其他保留候选",
+      "demand": "主要为工具与行业线索，交付采用证据薄。",
+      "existing": "既有包装设计流程可承接视觉与打样。",
+      "extra": "若有材料可比较视觉方案与约束。",
+      "supply": "包装规范、素材授权和作者均需具体确认。",
+      "proposal": "保留视觉评审，不恢复制造与工业服务。",
+      "change": "真实小品牌视觉评审链出现后，重新比较。"
+    },
+    {
+      "name": "房源表达",
+      "ids": [
+        "T-12"
+      ],
+      "placement": "其他保留候选",
+      "demand": "主要是海外用途依据，国内采用与真实性问题未充分核对。",
+      "existing": "房产营销与原工具已有制作方法。",
+      "extra": "真实房源条件下比较展示方式。",
+      "supply": "房源资料、权限与从业者需确认。",
+      "proposal": "作为真实空间表达候选。",
+      "change": "国内真实发布前后链可能提升优先级。"
+    },
+    {
+      "name": "建筑概念",
+      "ids": [
+        "T-13"
+      ],
+      "placement": "其他保留候选",
+      "demand": "专业团队案例支持制作，不代表普遍外部交流需要。",
+      "existing": "建筑团队已有沟通和评审。",
+      "extra": "可公开草案的表达与修改取舍。",
+      "supply": "涉及专业团队知识与资料授权。",
+      "proposal": "保留视觉概念，专业设计服务不在本轮配置。",
+      "change": "若出现普通创作者可复用的过程，再比较。"
+    },
+    {
+      "name": "室内方案",
+      "ids": [
+        "T-14"
+      ],
+      "placement": "其他保留候选",
+      "demand": "已有材料主要是传统工具协作案例。",
+      "existing": "设计师、客户和成熟工具已有路径。",
+      "extra": "在具体空间约束下展示方案取舍。",
+      "supply": "设计师授权、图纸和客户要求需具备。",
+      "proposal": "暂不将传统案例写成生成式需求。",
+      "change": "取得明确生成式采用及修改过程后再提升。"
+    },
+    {
+      "name": "空间资料整理",
+      "ids": [
+        "T-15"
+      ],
+      "placement": "其他保留候选",
+      "demand": "主要为传统数据整理依据，生成式采用未确认。",
+      "existing": "现有数据工具与团队协作。",
+      "extra": "待具体生成式任务成立后判断。",
+      "supply": "缺少对应作者的完整材料。",
+      "proposal": "保留线索，暂不用于首页机会论证。",
+      "change": "取得明确使用与剩余问题再比较。"
+    },
+    {
+      "name": "文博复原",
+      "ids": [
+        "T-24"
+      ],
+      "placement": "其他保留候选",
+      "demand": "偏机构与间接线索，个人使用条件不明确。",
+      "existing": "机构资料与专业审核已有体系。",
+      "extra": "公开资料下解释复原设想与依据。",
+      "supply": "资产权限、史实核对者和制作条件需具备。",
+      "proposal": "与历史关联，保留独立资料边界。",
+      "change": "独立作者能取得资料和核对支持时重新比较。"
+    },
+    {
+      "name": "汽车广告画面",
+      "ids": [
+        "T-32"
+      ],
+      "placement": "其他保留候选",
+      "demand": "专业团队参照，个人及小团队采用未核。",
+      "existing": "广告团队已有品牌与制作流程。",
+      "extra": "可公开的广告视觉方法比较。",
+      "supply": "品牌素材及专业团队授权尚未落实。",
+      "proposal": "只保留广告表达任务，企业工业服务仍排除。",
+      "change": "获得适合目标用户的完整案例后重新比较。"
+    }
+  ],
+  "initial": [
+    {
+      "id": "T-01",
+      "entry": "任务首页",
+      "content": "商品图 · 暂缓样板",
+      "why": "撤下旧墨镜样板，暂停以换背景困难支持电商优先；商业任务保留。"
+    },
+    {
+      "id": "T-29",
+      "entry": "任务首页",
+      "content": "稿件修订 · 收窄保留",
+      "why": "聚焦作者意图与读者感受的取舍，尝试自愿互读。尚未核到对应终稿。"
+    },
+    {
+      "id": "T-31",
+      "entry": "任务首页",
+      "content": "设计草案 · 收窄保留",
+      "why": "聚焦需求澄清与修改取舍，保留AI示意图能减少沟通的正面案例。"
+    },
+    {
+      "id": "T-36",
+      "entry": "作品专题",
+      "content": "角色故事 · 收窄保留",
+      "why": "围绕具体角色、镜头和作者目标比较做法，不把单次求助推广为普遍缺口。"
+    },
+    {
+      "id": "T-17",
+      "entry": "跨主题方法",
+      "content": "长视频转短片 · 收窄保留",
+      "why": "保留选段理由与语境修复案例，降低其作为独立社区核心机会的优先级。"
+    },
+    {
+      "id": "T-35",
+      "entry": "跨主题视频方法",
+      "content": "MV片段衔接 · 暂缓样板",
+      "why": "音乐方向保留；取得近期具体片段及衔接问题后，再决定是否组织样板。"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-01",
+      "group": "G1",
+      "origin_ids": [
+        "OM-01",
+        "OM-02"
+      ],
+      "task": "为二手商品准备可上架的展示图",
+      "substeps_or_boundary": "清理背景、调整尺寸、核对商品实际状态",
+      "roles": [
+        "二手商品卖家"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-01",
+          "source_ids": [
+            "SCAN-R02",
+            "OMIT-BILI-01"
+          ]
+        },
+        {
+          "origin_id": "OM-02",
+          "source_ids": [
+            "SCAN-R02",
+            "OMIT-BILI-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "电商",
+      "placement": "暂缓首批样板，保留研究任务",
+      "initial": false
+    },
+    {
+      "id": "T-02",
+      "group": "G1",
+      "origin_ids": [
+        "OM-03"
+      ],
+      "task": "为一批商品制作风格一致的目录图",
+      "substeps_or_boundary": "统一处理、单件纠正、检查整批一致性",
+      "roles": [
+        "商品目录运营"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-03",
+          "source_ids": [
+            "SCAN-R03",
+            "OMIT-BILI-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "电商",
+      "placement": "主线优先候选",
+      "initial": false
+    },
+    {
+      "id": "T-03",
+      "group": "G1",
+      "origin_ids": [
+        "OM-36"
+      ],
+      "task": "制作供讨论新品意向的产品概念图",
+      "substeps_or_boundary": "表达构想、比较备选、标明概念属性",
+      "roles": [
+        "零售商家"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-36",
+          "source_ids": [
+            "LOCAL-04"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "电商",
+      "placement": "主线优先候选",
+      "initial": false
+    },
+    {
+      "id": "T-04",
+      "group": "G1",
+      "origin_ids": [
+        "OM-38"
+      ],
+      "task": "制作供打样评审的包装视觉方案",
+      "substeps_or_boundary": "盒型适配、图案与文字核对；报价及量产交接另列后续环节",
+      "roles": [
+        "小品牌包装采购/设计协作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-38",
+          "source_ids": [
+            "IND-PACK-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "包装视觉",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-05",
+      "group": "G2",
+      "origin_ids": [
+        "OM-04"
+      ],
+      "task": "为菜品制作可用于菜单的介绍与配图",
+      "substeps_or_boundary": "信息、图文对应及所需语言版本",
+      "roles": [
+        "餐饮经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-04",
+          "source_ids": [
+            "SCAN-R01",
+            "FOOD-02",
+            "OMIT-BILI-02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-06",
+      "group": "G2",
+      "origin_ids": [
+        "OM-05"
+      ],
+      "task": "制作介绍门店的数字人口播内容",
+      "substeps_or_boundary": "脚本、人物授权、口播及门店信息核对",
+      "roles": [
+        "门店内容制作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-05",
+          "source_ids": [
+            "SCAN-S01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-07",
+      "group": "G2",
+      "origin_ids": [
+        "OM-06"
+      ],
+      "task": "为一次品牌传播准备内容素材",
+      "substeps_or_boundary": "日常品牌介绍或促销情境、视觉与发布版本；不限定为促销",
+      "roles": [
+        "小型品牌经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-06",
+          "source_ids": [
+            "BUS-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-08",
+      "group": "G2",
+      "origin_ids": [
+        "OM-07"
+      ],
+      "task": "制作让顾客看懂项目与预约条件的服务介绍",
+      "substeps_or_boundary": "项目说明、条件与预约信息组织",
+      "roles": [
+        "美业经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-07",
+          "source_ids": [
+            "BUS-03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-09",
+      "group": "G2",
+      "origin_ids": [
+        "OM-34"
+      ],
+      "task": "将插画创意转为可手绘的美甲款式",
+      "substeps_or_boundary": "选图、简化、小尺度适配",
+      "roles": [
+        "美甲师"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-34",
+          "source_ids": [
+            "LOCAL-03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-10",
+      "group": "G2",
+      "origin_ids": [
+        "OM-35"
+      ],
+      "task": "制作与实际环境一致的店铺展示图",
+      "substeps_or_boundary": "呈现门店、核查环境差异",
+      "roles": [
+        "门店经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-35",
+          "source_ids": [
+            "LOCAL-02",
+            "FOOD-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-11",
+      "group": "G2",
+      "origin_ids": [
+        "OM-37"
+      ],
+      "task": "制作供顾客理解产品的多语言介绍名片",
+      "substeps_or_boundary": "产品信息、翻译与名片版式",
+      "roles": [
+        "门店经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-37",
+          "source_ids": [
+            "LOCAL-04"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "本地经营",
+      "placement": "分场景专题",
+      "initial": false
+    },
+    {
+      "id": "T-12",
+      "group": "G3",
+      "origin_ids": [
+        "OM-08"
+      ],
+      "task": "制作供看房者了解房源的介绍材料",
+      "substeps_or_boundary": "空间展示与房源信息对应",
+      "roles": [
+        "房源经营者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-08",
+          "source_ids": [
+            "SCAN-R01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "房源表达",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-13",
+      "group": "G3",
+      "origin_ids": [
+        "OM-09"
+      ],
+      "task": "制作供客户讨论建筑概念的视觉方案",
+      "substeps_or_boundary": "概念表达与备选比较",
+      "roles": [
+        "建筑设计师"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-09",
+          "source_ids": [
+            "BUS-12"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "建筑概念",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-14",
+      "group": "G3",
+      "origin_ids": [
+        "OM-10"
+      ],
+      "task": "呈现室内方案修改供客户确认",
+      "substeps_or_boundary": "修改前后及设计意图对应",
+      "roles": [
+        "室内设计师"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-10",
+          "source_ids": [
+            "BUS-06"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "室内方案",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-15",
+      "group": "G3",
+      "origin_ids": [
+        "OM-11"
+      ],
+      "task": "将空间数据整理为支持方案讨论的说明",
+      "substeps_or_boundary": "数据、解释及调整依据；生成式参与待核",
+      "roles": [
+        "空间研究人员"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-11",
+          "source_ids": [
+            "BUS-05"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "空间资料整理",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-16",
+      "group": "G4",
+      "origin_ids": [
+        "OM-43"
+      ],
+      "task": "将零散素材整理为一份内容大纲",
+      "substeps_or_boundary": "归类、选题、结构与出处",
+      "roles": [
+        "创作者、学习者、内容运营"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-43",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": false
+    },
+    {
+      "id": "T-17",
+      "group": "G4",
+      "origin_ids": [
+        "OM-44"
+      ],
+      "task": "将已有长内容改编为可独立理解的短内容",
+      "substeps_or_boundary": "取舍信息、重组上下文、控制长度",
+      "roles": [
+        "创作者、商家、内容运营"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-44",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": true
+    },
+    {
+      "id": "T-18",
+      "group": "G4",
+      "origin_ids": [
+        "OM-45"
+      ],
+      "task": "为一段视频制作准确且同步的字幕",
+      "substeps_or_boundary": "识别、纠错、断句与时序",
+      "roles": [
+        "视频创作者、课程制作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-45",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": false
+    },
+    {
+      "id": "T-19",
+      "group": "G4",
+      "origin_ids": [
+        "OM-46"
+      ],
+      "task": "制作保留原意的另一语言内容版本",
+      "substeps_or_boundary": "术语、语气与语言适配",
+      "roles": [
+        "创作者、商家"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-46",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": false
+    },
+    {
+      "id": "T-20",
+      "group": "G4",
+      "origin_ids": [
+        "OM-47"
+      ],
+      "task": "为既定发布平台制作适配版本",
+      "substeps_or_boundary": "画幅、布局与封面；内容主旨保持一致",
+      "roles": [
+        "创作者、商家、内容运营"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-47",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": false
+    },
+    {
+      "id": "T-21",
+      "group": "G4",
+      "origin_ids": [
+        "OM-48"
+      ],
+      "task": "将同一主题组织为图文与视频发布组合",
+      "substeps_or_boundary": "按媒介分配表达方式并保持信息一致",
+      "roles": [
+        "创作者、商家、学习者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-48",
+          "source_ids": []
+        }
+      ],
+      "evidence_status": "新增候选待核",
+      "theme": "通用内容处理",
+      "placement": "跨主题能力",
+      "initial": false
+    },
+    {
+      "id": "T-22",
+      "group": "G5",
+      "origin_ids": [
+        "OM-16"
+      ],
+      "task": "为一个教学主题设计问题链与学习活动",
+      "substeps_or_boundary": "教学目标、问题与活动对应",
+      "roles": [
+        "教师"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-16",
+          "source_ids": [
+            "PC01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "教学与学习任务",
+      "placement": "独立挑战候选",
+      "initial": false
+    },
+    {
+      "id": "T-23",
+      "group": "G5",
+      "origin_ids": [
+        "OM-17"
+      ],
+      "task": "理解创客作业所需概念并完成对应学习任务",
+      "substeps_or_boundary": "理解、尝试与学习反馈",
+      "roles": [
+        "学习者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-17",
+          "source_ids": [
+            "PC01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "教学与学习任务",
+      "placement": "独立挑战候选",
+      "initial": false
+    },
+    {
+      "id": "T-24",
+      "group": "G5",
+      "origin_ids": [
+        "OM-18"
+      ],
+      "task": "制作表达文博复原设想的展示方案",
+      "substeps_or_boundary": "复原表达；沉浸体验作为形式标签，不扩至项目工程",
+      "roles": [
+        "文博制作人员"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-18",
+          "source_ids": [
+            "PC02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "文博复原",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-25",
+      "group": "G5",
+      "origin_ids": [
+        "OM-29"
+      ],
+      "task": "将一个历史人物故事制作成叙事视频",
+      "substeps_or_boundary": "资料、脚本、配音与场景对应",
+      "roles": [
+        "历史内容创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-29",
+          "source_ids": [
+            "EXP-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "历史",
+      "placement": "专业专题候选",
+      "initial": false
+    },
+    {
+      "id": "T-26",
+      "group": "G5",
+      "origin_ids": [
+        "OM-41"
+      ],
+      "task": "将文物资料制作成保留形态与史实的动态叙事",
+      "substeps_or_boundary": "资料核对、动态表达与偏差修正",
+      "roles": [
+        "文博影像创作团队"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-41",
+          "source_ids": [
+            "CULT-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "历史",
+      "placement": "专业专题候选",
+      "initial": false
+    },
+    {
+      "id": "T-27",
+      "group": "G5",
+      "origin_ids": [
+        "OM-42"
+      ],
+      "task": "为一段科普讲解制作准确对应的插图",
+      "substeps_or_boundary": "知识、手绘与生成图像协调",
+      "roles": [
+        "科普图文创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-42",
+          "source_ids": [
+            "CULT-03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "科普",
+      "placement": "专业专题候选",
+      "initial": false
+    },
+    {
+      "id": "T-28",
+      "group": "G6",
+      "origin_ids": [
+        "OM-19"
+      ],
+      "task": "将未整理的古籍文本归集为可审阅的篇目与索引初稿",
+      "substeps_or_boundary": "分类、信息提取与索引核对",
+      "roles": [
+        "出版编辑"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-19",
+          "source_ids": [
+            "PP01",
+            "CULT-02",
+            "EDIT-01",
+            "EDIT-02",
+            "EDIT-R02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "写作",
+      "placement": "主线比较候选",
+      "initial": false
+    },
+    {
+      "id": "T-29",
+      "group": "G6",
+      "origin_ids": [
+        "OM-19"
+      ],
+      "task": "判断稿件修改建议并形成可审阅的修订稿",
+      "substeps_or_boundary": "语法、文风、引文与事实分别判断；按稿件类型比较",
+      "roles": [
+        "出版编辑"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-19",
+          "source_ids": [
+            "PP01",
+            "CULT-02",
+            "EDIT-01",
+            "EDIT-02",
+            "EDIT-R02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "写作",
+      "placement": "主线比较候选",
+      "initial": true
+    },
+    {
+      "id": "T-30",
+      "group": "G6",
+      "origin_ids": [
+        "OM-19"
+      ],
+      "task": "为已有小说补足一处情节逻辑缺口",
+      "substeps_or_boundary": "提出备选、选择设定并补入故事",
+      "roles": [
+        "出版编辑"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-19",
+          "source_ids": [
+            "PP01",
+            "CULT-02",
+            "EDIT-01",
+            "EDIT-02",
+            "EDIT-R02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "写作",
+      "placement": "主线比较候选",
+      "initial": false
+    },
+    {
+      "id": "T-31",
+      "group": "G6",
+      "origin_ids": [
+        "OM-20",
+        "OM-22"
+      ],
+      "task": "制作供讨论与选择的视觉创意草案",
+      "substeps_or_boundary": "构思、生成及扩图；行业作为条件标签",
+      "roles": [
+        "创意从业者",
+        "品牌创意人员"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-20",
+          "source_ids": [
+            "PP02",
+            "OMIT-CREATIVE-01"
+          ]
+        },
+        {
+          "origin_id": "OM-22",
+          "source_ids": [
+            "BUS-10",
+            "OMIT-CREATIVE-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "设计",
+      "placement": "主线比较候选",
+      "initial": true
+    },
+    {
+      "id": "T-32",
+      "group": "G6",
+      "origin_ids": [
+        "OM-21"
+      ],
+      "task": "制作供汽车广告选用的背景与镜头备选",
+      "substeps_or_boundary": "保持车辆主体要求、比较背景与镜头",
+      "roles": [
+        "汽车广告制作人员"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-21",
+          "source_ids": [
+            "PP03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "汽车广告画面",
+      "placement": "其他保留候选",
+      "initial": false
+    },
+    {
+      "id": "T-33",
+      "group": "G7",
+      "origin_ids": [
+        "OM-23"
+      ],
+      "task": "将自写歌词制作成表达意图相符的歌曲",
+      "substeps_or_boundary": "曲风、发音与歌词表达",
+      "roles": [
+        "个人写作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-23",
+          "source_ids": [
+            "SCAN-U01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "音乐与MV",
+      "placement": "创作主题挑战候选",
+      "initial": false
+    },
+    {
+      "id": "T-34",
+      "group": "G7",
+      "origin_ids": [
+        "OM-24"
+      ],
+      "task": "为一首歌制作画面与节奏相符的MV",
+      "substeps_or_boundary": "画面、剪辑与音乐对应",
+      "roles": [
+        "个人创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-24",
+          "source_ids": [
+            "SCAN-U02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "音乐与MV",
+      "placement": "创作主题挑战候选",
+      "initial": false
+    },
+    {
+      "id": "T-35",
+      "group": "G7",
+      "origin_ids": [
+        "OM-25"
+      ],
+      "task": "学会并应用适合目标的MV镜头衔接方法",
+      "substeps_or_boundary": "识别目标、选择方法、尝试与修正；独立学习目的",
+      "roles": [
+        "参赛学习者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-25",
+          "source_ids": [
+            "SCAN-U02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "音乐与MV",
+      "placement": "暂缓首批样板，保留研究任务",
+      "initial": false
+    },
+    {
+      "id": "T-36",
+      "group": "G7",
+      "origin_ids": [
+        "OM-27"
+      ],
+      "task": "完成一个表达个人设想的角色故事版本",
+      "substeps_or_boundary": "结局或角色情境创作",
+      "roles": [
+        "同人创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-27",
+          "source_ids": [
+            "EXP-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "角色",
+      "placement": "创作入口优先候选",
+      "initial": true
+    },
+    {
+      "id": "T-37",
+      "group": "G7",
+      "origin_ids": [
+        "OM-28"
+      ],
+      "task": "制作保持角色辨识度的新造型或场景图",
+      "substeps_or_boundary": "造型、场景与角色一致性",
+      "roles": [
+        "角色创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-28",
+          "source_ids": [
+            "EXP-01"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "角色",
+      "placement": "创作入口优先候选",
+      "initial": false
+    },
+    {
+      "id": "T-38",
+      "group": "G7",
+      "origin_ids": [
+        "OM-30"
+      ],
+      "task": "得到保留人物身份的修整照片",
+      "substeps_or_boundary": "修整与身份核对",
+      "roles": [
+        "个人照片使用者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-30",
+          "source_ids": [
+            "EXP-02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "人像",
+      "placement": "分任务保留",
+      "initial": false
+    },
+    {
+      "id": "T-39",
+      "group": "G7",
+      "origin_ids": [
+        "OM-31"
+      ],
+      "task": "制作承载个人回忆的图像表达",
+      "substeps_or_boundary": "场景、文字与记忆线索",
+      "roles": [
+        "个人照片使用者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-31",
+          "source_ids": [
+            "EXP-02"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "人像",
+      "placement": "分任务保留",
+      "initial": false
+    },
+    {
+      "id": "T-40",
+      "group": "G7",
+      "origin_ids": [
+        "OM-32"
+      ],
+      "task": "将参考图转为可制作的纺织图案方案",
+      "substeps_or_boundary": "图案、材料与制作条件",
+      "roles": [
+        "手作学习者与设计者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-32",
+          "source_ids": [
+            "EXP-03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "手作",
+      "placement": "专业专题候选",
+      "initial": false
+    },
+    {
+      "id": "T-41",
+      "group": "G7",
+      "origin_ids": [
+        "OM-33"
+      ],
+      "task": "形成自己愿意制作的手作创意方案",
+      "substeps_or_boundary": "参考、AI备选与个人取舍",
+      "roles": [
+        "手作创作者"
+      ],
+      "evidence_links": [
+        {
+          "origin_id": "OM-33",
+          "source_ids": [
+            "EXP-03"
+          ]
+        }
+      ],
+      "evidence_status": "继承原线索；规范化任务整体及完成条件尚未逐项验证",
+      "theme": "手作",
+      "placement": "专业专题候选",
+      "initial": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "商品图：原平台已内嵌编辑",
+      "url": "https://www.photoroom.com/customer-stories/depop",
+      "finding": "厂商披露Depop已将抠图、阴影与尺寸处理嵌入上架流程；单纯抠图测试表现平淡，加入阴影后报告上架改善。",
+      "effect": "商品任务值得比较，但新增社区应解释适用条件，基础制作优先沿用成熟路径。",
+      "limit": "海外厂商案例，不是国内商户或新社区的采用证明。"
+    },
+    {
+      "name": "教学：学科判断已有真实实践",
+      "url": "https://www.cnaes.edu.cn/post/151158",
+      "finding": "原研究为单校40名教师、10周单组前后测；教师会筛选生成方案，也指出学科思维不足。",
+      "effect": "教学应作为独立挑战候选，不由科普或写作代替。",
+      "limit": "校内实践与教研支持不等于新社区迁移需求。"
+    },
+    {
+      "name": "长转短：原工具已有选段与编辑",
+      "url": "https://help.descript.com/repurpose/create-clips-from-your-content",
+      "finding": "官方说明支持按主题、目标或标准引导选段，并继续编辑生成片段。",
+      "effect": "把语义取舍作为跨主题方法；基础自动切片可接回原工具。",
+      "limit": "功能说明不能替代具体作者采用及保意结果。"
+    },
+    {
+      "name": "手作：平面转换与结构设计要分开",
+      "url": "https://www.stitchfiddle.com/en/help/1pej-wc93j/import-picture",
+      "finding": "图片转图表用于配色类图案，实际尺寸受材料、针具与密度影响。",
+      "effect": "内容应呈现图案与实物，避免将图像转网格解释成立体可制作。",
+      "limit": "已有供给说明，不证明独立审核服务需求。"
+    }
+  ],
+  "round2": {
+    "summary": "首组保留商品单图、稿件修订、视觉草案、角色故事、长转短；以MV衔接替换批量目录图的独立位置。目录图仍是电商延展，教学保留独立挑战候选。",
+    "reason": "首组用于检验不同内容与交流路径。同一商品任务的深浅变化留在延展中，将一个位置交给有明确学习求助和条件差异的视频任务。",
+    "decisions": [
+      {
+        "task": "商品展示图",
+        "decision": "保留主样本",
+        "basis": "原图、保留项与多种做法能组成方法比较；原平台也已满足基础编辑。",
+        "content": "展示原图条件、方法差异与核对项。"
+      },
+      {
+        "task": "批量目录图",
+        "decision": "移至商品延展",
+        "basis": "Wolt说明平台批量处理与团队单件修正已可工作；目前不足以代表小商家外部求助。",
+        "content": "关联商品图任务，后续补逐款修改与实际使用结果。"
+      },
+      {
+        "task": "稿件修订",
+        "decision": "保留主样本",
+        "basis": "已有接受与拒绝建议的理由；终稿改善和新社区采用尚未验证。",
+        "content": "同一片段、建议、取舍与修订版本。"
+      },
+      {
+        "task": "视觉草案",
+        "decision": "保留主样本",
+        "basis": "能呈现需求与修改决策；缺明确需求的成图无法解释方法价值。",
+        "content": "需求、约束、备选与选择者的理由。"
+      },
+      {
+        "task": "角色故事",
+        "decision": "保留作品样本",
+        "basis": "作者意图与自愿反馈有记录；不把公开作品都变成点评任务。",
+        "content": "作品、意图、作者希望讨论的问题。"
+      },
+      {
+        "task": "长转短",
+        "decision": "保留共用方法",
+        "basis": "原工具能引导选段并编辑；新增内容应解释语义与上下文取舍。",
+        "content": "原段、短版、补充上下文与弃用理由。"
+      },
+      {
+        "task": "MV镜头衔接",
+        "decision": "进入首组",
+        "basis": "自然求助明确，原作者回应具体，学习者遇到入口差异并采用替代操作；最终交付仍未知。",
+        "content": "素材、实际工具入口、衔接方法、替代路径与结果状态。"
+      },
+      {
+        "task": "教学设计",
+        "decision": "保留并列挑战候选",
+        "basis": "学科与学情有独立标准；本轮继续沿用学校实践依据，没有取得更完整的独立作者案例。",
+        "content": "教学目标、学情、初稿、教师修改理由；同等完整案例出现后再比较。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "批量编辑与单件修正 · 厂商案例",
+        "url": "https://www.photoroom.com/customer-stories/wolt"
+      },
+      {
+        "label": "MV制作、求助与替代操作 · 原帖",
+        "url": "https://linux.do/t/topic/1200862"
+      },
+      {
+        "label": "音乐视频制作取舍 · 作者自述",
+        "url": "https://www.binwang.me/2026-01-02-Music-Video-Generation-with-AI.html"
+      }
+    ],
+    "limits": "本轮重新读取三个原页；写作、设计、角色与教学沿用已归档材料，未新增独立案例。音乐材料中可见技术背景作者，不代表非技术人群总体。没有连续观看成片或实测工具，结果按作者自述记录。"
+  }
+}

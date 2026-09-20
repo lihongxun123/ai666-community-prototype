@@ -1,0 +1,14 @@
+/* eslint-disable next/no-img-element -- Concept artwork and the standalone SVG retain their original pixels and text without image transformation. */
+import Link from 'next/link';
+import './achievements.css';
+const rows=[
+ ['行业','3层产业结构 · 4类角色 · 12项指标','行业阅读层的结构与指标数；14份引用材料，来自13组来源。','/?section=cn-answer#china-users'],
+ ['社媒','3个平台 · 抖音存量615条链接','抖音存量830条记录去重为615条链接；293条已分类，322条待分类。小红书、B站及后续补样另计。','/media-reports'],
+ ['细读','212条详情记录 · 287条作者页卡片','两种采集深度存在交叉；详情记录不等同完整观看或独立作品数。','/task-research'],
+ ['竞品','15家平台档案','覆盖分类、内容、产品路径、作者供给及运营机制。','/#report'],
+ ['范围','19个主题候选 · 41条任务线索','前轮主题决策库；经归并、筛选与范围调整形成当前九类场景。','/community-options/themes/decision'],
+ ['方案','5套方案 · 9类场景','每套包含定位、用户路径、内容与运营；商业逻辑暂缓。','/community-options'],
+ ['概念','36张当前概念稿','方案一16张，其他四套各5张；共用页面只计一次，历史版本不重复计数。','/community-options/proposals/a'],
+ ['阅读','55个页面入口 · 40屏汇报','页面入口含当前报告、方案及历史参考；五套展开分别计页，页内锚点不重复计数。','/community-options/presentation'],
+];
+export default function Page(){return <main className="ra-page"><header className="ra-nav"><Link href="/#overview">多元拾光 / 研究室</Link><Link href="/community-options">五套方案 ↗</Link></header><section className="ra-hero"><span>研究成果 · 2026.09</span><h1>从资料，到选择。</h1><p>行业、社媒、竞品与社区方案，放在同一张图里。</p></section><figure className="ra-map"><img src="/research-achievements.svg" alt="研究成果全景：3层产业结构，3个社媒平台和抖音存量615条链接，15家竞品，9类场景，5套方案和36张概念稿"/><figcaption><span>研究对象、采集记录与设计产物分别统计。</span><a href="/research-achievements.svg" target="_blank" rel="noopener noreferrer">打开完整图 ↗</a></figcaption></figure><section className="ra-section"><span>已经形成的成果</span><h2>材料有出处，方案有承接。</h2><div className="ra-grid"><article><b>判断服务对象</b><p>面向创作者、实际应用者与学习者。社媒消费提供需求线索，社区围绕创作与使用组织服务。</p></article><article><b>辨认机会与已有供给</b><p>把任务、竞品做法和剩余障碍放在一起比较。成熟功能可跟进，差异化来自具体组织与体验。</p></article><article><b>展开五套选择</b><p>任务创作、项目共学、创作者研讨、方法共建、问题互助。产品概念与内容、运营建议相互对应。</p></article></div></section><section className="ra-section"><span>数字与范围</span><h2>每个数字，具体指什么。</h2><div className="ra-table"><table><thead><tr><th>部分</th><th>数量</th><th>统计说明</th><th>成果</th></tr></thead><tbody>{rows.map(([name,count,note,href])=><tr key={name}><th>{name}</th><td>{count}</td><td>{note}</td><td><Link href={href} target="_blank" rel="noopener noreferrer">查看 ↗</Link></td></tr>)}</tbody></table></div></section><section className="ra-section"><span>可核对的模型用量</span><h2>14.41亿 Token，其中14.01亿为缓存输入。</h2><p>本研究主会话日志累计至2026年9月21日03:30。缓存内容会被反复读取，因此累计处理量很大；这个数字不等于付费额度，也不是全部研究任务的完整账单。</p><div className="ra-token"><article><strong>3,671<span>万</span></strong><p>非缓存输入</p></article><article><strong>317<span>万</span></strong><p>输出 · 含推理输出</p></article><article><strong>14.01<span>亿</span></strong><p>缓存输入</p></article></div><p className="ra-note">按最新累计记录读取，不累加历史快照；推理输出不重复计入。独立子任务、图像生成及无用量记录的工具调用未纳入，完整总额暂缺。</p></section><footer className="ra-footer"><p>当前交付为研究与产品概念方案。方案一已确认，方案二至五待评审；上线效果与商业结果尚未验证。</p><Link href="/community-options">进入五套方案 →</Link></footer></main>}

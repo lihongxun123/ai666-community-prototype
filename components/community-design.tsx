@@ -6,13 +6,15 @@ import '@/components/market-social.css';
 import './community-design.css';
 export default function CommunityDesign({id}:{id:string}) {
  const d=designs.find(x=>x.id===id)!;
+ const current:Record<string,string>={practice:'a',creator:'c',resource:'d',help:'e'};
+ const currentHref=current[id]?'/community-options/proposals/'+current[id]:'/community-options/scenarios';
  const r=review.items.find(x=>x.id===id)!;
  return <main className="ms-report blueprint-report cd-report">
- <p><a href="/community-options">五套方案</a> / 方案详解</p>
- <nav className="blueprint-picker" aria-label="选择方案">{designs.map(x=><a key={x.id} href={'/community-options/design/'+x.id} aria-current={id===x.id?'page':undefined}>{x.name}</a>)}</nav>
- <header className="page-heading"><p className="ms-caption">社区方向设计 · 拟议方案</p><h1>{d.name}</h1><p>{d.decision}</p></header>
+ <p><a href="/community-options">当前五套方案</a> / 专题设计参考</p><aside className="ms-lead"><strong>专题设计参考</strong><p>本页保留较早的专题方案与案例。当前五套按任务创作、项目共学、创作者研讨、方法共建、问题互助组织，行业作为共同聚焦维度。</p><a href={currentHref}>查看当前方案与取舍 →</a></aside>
+ <nav className="blueprint-picker" aria-label="较早专题设计">{designs.map(x=><a key={x.id} href={'/community-options/design/'+x.id} aria-current={id===x.id?'page':undefined}>{x.name}</a>)}</nav>
+ <header className="page-heading"><p className="ms-caption">专题设计 · 拟议参考</p><h1>{d.name}</h1><p>{d.decision}</p></header>
  <nav className="ms-links cd-nav" aria-label="本页目录">{[['value','用户与价值'],['experience','内容与路径'],['operate','供给与运营'],['product','产品与取舍'],['evidence','案例依据']].map(([key,label])=><a href={'#'+key} key={key}>{label}</a>)}</nav>
- <p className="ms-caption">以下为单独方向的完整备选设计。推荐组合以实践为主线、创作交流独立；首版暂缓专业服务撮合。<a href="/community-options/presentation" target="_blank" rel="noopener noreferrer">查看组合方案与取舍 ↗</a></p>
+ <p className="ms-caption">以下为专题设计参考；当前方案与供给条件见方案比较。<a href="/community-options/presentation" target="_blank" rel="noopener noreferrer">查看组合方案与取舍 ↗</a></p>
  <section id="value"><h2>用户为什么来</h2><p>{d.scenario}</p><div className="ms-lead"><strong>希望带来的结果</strong><p>{d.outcome}</p></div><p className="ms-caption">情境与页面示例用于解释方案；真实材料见下方“案例依据”。</p></section>
  <section id="experience"><h2>内容怎样组织</h2><div className="cd-home">{d.home.map(([name,body],i)=><article key={name}><span>0{i+1}</span><h3>{name}</h3><p>{body}</p></article>)}</div><div className="cd-example"><p className="ms-caption">设计示例</p><h3>{d.example.title}</h3><p>{d.example.body}</p><div className="cd-fields">{d.example.fields.map(f=><span key={f}>{f}</span>)}</div></div><h3>从进入到获得结果</h3><ol className="blueprint-flow">{d.journey.map(([name,body],i)=><li key={name}><span>0{i+1}</span><strong>{name}</strong><p>{body}</p></li>)}</ol></section>
  <section id="operate"><h2>谁供给，怎样持续运转</h2><div className="ms-grid three">{d.supply.map(([name,body])=><article key={name}><h3>{name}</h3><p>{body}</p></article>)}</div><div className="cd-ops">{d.ops.map(([name,body],i)=><div key={name}><span>0{i+1}</span><h3>{name}</h3><p>{body}</p></div>)}</div></section>

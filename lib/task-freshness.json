@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-20",
+  "rows": [
+    {
+      "id": "T-01",
+      "task": "商品图",
+      "status": "暂缓样板",
+      "capability": "Photoroom 已提供生成后商品细节检查、局部刷选和参考图修正。",
+      "problem": "本轮尚未取得近期商家的原图、失败版本与修正结果对照。",
+      "decision": "撤下旧墨镜样板，暂停以换背景困难支持电商优先；商业任务保留。",
+      "sources": [
+        [
+          "Product Fixer · 当前功能，9月20日核读，未标发布日期",
+          "https://www.photoroom.com/tools/product-fixer"
+        ]
+      ]
+    },
+    {
+      "id": "T-29",
+      "task": "稿件修订",
+      "status": "收窄保留",
+      "capability": "Sudowrite 可结合 Story Bible 给出批注，支持接受、忽略和继续讨论。",
+      "problem": "7月互读帖中，读者具体讨论人物塑造、开篇信息量与重复句式；作者回应准备修改。",
+      "decision": "聚焦作者意图与读者感受的取舍，尝试自愿互读。尚未核到对应终稿。",
+      "sources": [
+        [
+          "Sudowrite Feedback · 2026-05-13 更新",
+          "https://docs.sudowrite.com/using-sudowrite/1ow1qkGqof9rtcyGnrWUBS/feedback/7Ew1KgpEwabQSgvijq8QNr"
+        ],
+        [
+          "作者互读帖 · 2026-07-07；回复日期不一",
+          "https://www.reddit.com/r/WritingWithAI/comments/1upth5b/reciprocal_beta_reading_share_story_blurbs_jul_7/"
+        ]
+      ]
+    },
+    {
+      "id": "T-31",
+      "task": "设计草案",
+      "status": "收窄保留",
+      "capability": "Photoshop 已支持参考图引导与选区生成编辑。",
+      "problem": "6月设计者讨论客户用AI图代替需求说明，修改后又改变方向；也有人认为AI示意图帮助沟通。",
+      "decision": "聚焦需求澄清与修改取舍，保留AI示意图能减少沟通的正面案例。",
+      "sources": [
+        [
+          "Photoshop 参考图 · 2026-08-18 更新",
+          "https://helpx.adobe.com/photoshop/desktop/create-open-import-images/create-images/use-reference-images-for-consistent-results.html"
+        ],
+        [
+          "设计者讨论 · 2026-06-09",
+          "https://www.reddit.com/r/graphic_design/comments/1u0u01y/clients_sending_ai_examples_as_the_brief_or_in/"
+        ]
+      ]
+    },
+    {
+      "id": "T-36",
+      "task": "角色故事",
+      "status": "收窄保留",
+      "capability": "Runway 提供参考媒体与可复用角色等参考资源，支持条件随模型变化。",
+      "problem": "9月作者仍在询问跨镜头角色一致性的制作方法，并回应建议；未见最终作品验证。",
+      "decision": "围绕具体角色、镜头和作者目标比较做法，不把单次求助推广为普遍缺口。",
+      "sources": [
+        [
+          "Runway 参考媒体 · 9月20日核读，未标发布日期",
+          "https://help.runwayml.com/hc/en-us/articles/52963720640275-Using-reference-media-to-guide-your-generations"
+        ],
+        [
+          "创作者求助 · 2026-09-19",
+          "https://www.reddit.com/r/aifilmmaking/comments/1wkpj4n/how_much_to_invest_into_character_consistency/"
+        ]
+      ]
+    },
+    {
+      "id": "T-17",
+      "task": "长视频转短片",
+      "status": "收窄保留",
+      "capability": "Opus ClipAnything 支持视觉、声音等线索与自然语言选段，已超出单纯转录切片。",
+      "problem": "6月使用者自述仍需大量审阅，部分候选从半句话开始、独立观看不成立；未提供原片复测。",
+      "decision": "保留选段理由与语境修复案例，降低其作为独立社区核心机会的优先级。",
+      "sources": [
+        [
+          "Opus ClipAnything · 9月20日核读，未标发布日期",
+          "https://www.opus.pro/clipanything"
+        ],
+        [
+          "使用者求助 · 2026-06-20",
+          "https://www.reddit.com/r/opusclip/comments/1uavudm/tired_of_getting_30_clips_from_opus_clip_and_only/"
+        ]
+      ]
+    },
+    {
+      "id": "T-35",
+      "task": "MV片段衔接",
+      "status": "暂缓样板",
+      "capability": "Flow 的 Veo 3.1 Lite 已支持延长指定模型生成的8秒视频；具体入口和模型有区别。",
+      "problem": "旧中转入口不能延长的记录，已不足以说明当前MV制作困难。",
+      "decision": "音乐方向保留；取得近期具体片段及衔接问题后，再决定是否组织样板。",
+      "sources": [
+        [
+          "Google Flow 模型功能 · 9月20日核读，未标发布日期",
+          "https://support.google.com/flow/answer/16352836?hl=en"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "b-submit": "b-submit-v2",
+  "b-feedback": "b-feedback-v3",
+  "b-review": "b-review-v2",
+  "c-work": "c-work-v2",
+  "c-discussion": "c-discussion-v2",
+  "c-versions": "c-versions-v2",
+  "c-collection": "c-collection-v2",
+  "d-reproduce": "d-reproduce-v2",
+  "d-maintain": "d-maintain-v2",
+  "e-discover": "e-discover-v2",
+  "e-question": "e-question-v2",
+  "e-ask": "e-ask-v2",
+  "b-project": "b-project-v2",
+  "d-discover": "d-discover-v2",
+  "d-versions": "d-versions-v3",
+  "e-compare": "e-compare-v2",
+  "e-result": "e-result-v4"
+}

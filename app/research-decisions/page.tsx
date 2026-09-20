@@ -1,36 +1,10 @@
-/* eslint-disable next/no-html-link-for-pages */
+import Link from 'next/link';
+import {scenarios} from '../community-options/content-system/configuration';
 import '@/components/market-social.css';
-const themes = [
- ['电商','比较商品真实特征、展示效果与制作方法','T-01'],
- ['设计','讲清需求、备选草案与修改理由','T-31'],
- ['本地经营','按餐饮、零售、美业匹配真实资料与表达','T-05'],
- ['历史','把叙事选择与史料、文物出处放在一起','T-25'],
- ['科普','对照源文、脚本与画面，分开知识核对和制图','T-27'],
- ['角色','围绕作者意图分享作品，选择需要的反馈','T-36'],
- ['写作','呈现片段修改及接受、拒绝建议的理由','T-29'],
- ['人像','保留人物身份与私人记忆，由本人决定修改和分享','T-38'],
- ['手作','区分参考创意、读图与结构，说明材料和技法','T-40'],
-];
 export default function Page(){return <main className="ms-report blueprint-report">
- <p><a href="/#overview">多元拾光研究室</a> / <a href="/#strategy">方案与验证</a></p>
- <header className="page-heading"><h1>社区方向决策</h1><p>2026年9月18日 · 方向已选，内容、运营与产品为设计方案</p></header>
- <div className="ms-lead"><strong>以 AI 实践为主线，创作交流保留独立入口。</strong><p>服务创作者、实际应用者和学习者：找到可参考的案例，看懂做法和取舍，再决定自己使用、交流或寻求帮助。</p></div>
- <p><a href="/community-options" target="_blank" rel="noopener noreferrer">比较五套社区方案：主定位、辅助能力与取舍 ↗</a></p>
- <nav className="ms-links" aria-label="决策页目录"><a href="#choices">用户价值</a><a href="#themes">内容方向</a><a href="#supply">供给与运营</a><a href="#evidence">待定事项</a></nav>
- <section id="choices"><h2>用户为什么来，来了做什么</h2><div className="ms-grid three">
-  <article><h3>找办法 · 实践入口</h3><p>按任务看案例，对照输入、结果与适用条件，收藏方法或前往原工具使用。</p><small>建议价值：减少从零筛选和判断方法的负担。</small></article>
-  <article><h3>表达与交流 · 独立入口</h3><p>发布作品、说明创作意图，选择展示或征求具体意见；反馈围绕作者提出的问题。</p><small>建议价值：作品获得理解，创作者保留自己的取舍。</small></article>
-  <article><h3>解决卡点 · 按需帮助</h3><p>常规资料仍不能解决时，说明问题和材料；找到合适的承接者后，再约定诊断、评议或协作。</p><small>普通讨论自愿参与；专业服务首版暂缓。</small></article>
- </div><p className="ms-caption">阅读、收藏和私下使用均为完整路径。新增社区是否带来实际改善与持续使用，仍需真实参与验证。</p></section>
- <section id="themes"><h2>九个主题，按具体任务组织内容</h2><p>重点积累有过程、有取舍的案例。教学、音乐／MV与通用整理改编保持开放覆盖；企业与工业表达排除，纯娱乐观众不作为服务对象。</p>
- <div className="ms-grid three">{themes.map(([name,value,id],index)=><article key={name} id={`theme-${index}`}><h3>{name}</h3><p>{value}</p><a href={`/research-decisions/tasks#${id}`} target="_blank" rel="noopener noreferrer">任务与依据 ↗</a></article>)}</div>
- <p id="task-choices"><a href="/research-decisions/tasks" target="_blank" rel="noopener noreferrer">查看全部23项任务：已有办法、剩余问题与设计建议 ↗</a></p>
- <p className="ms-caption">主题顺序沿用研究目录。任务材料包括实际采用、工具方法与应用线索，具体依据在任务页分别标注。</p></section>
- <section id="supply"><h2>内容怎样来，运营与产品怎样承接</h2><div className="ms-grid two">
-  <article><h3>编选已有方法</h3><p>编辑定位原始资料，整理用途、条件与来源。产品按任务提供案例比较、收藏和原站入口。</p><small>原站已有可用答案时直接引导使用。</small></article>
-  <article><h3>与作者共同整理案例</h3><p>按公开作品、解释能力和具体经验寻找作者；支持投稿、授权节选与联合制作。运营协助讲清关键取舍，维护更正。</p><small>署名、展示与约定报酬是合作选项；参与意愿需逐人确认。</small></article>
-  <article><h3>围绕作品组织交流</h3><p>作者选择讨论问题和可见范围，运营匹配相关经验。产品将作品、回复与后续修改关联，保留接受或拒绝的理由。</p><small>分享作品与承担长期答疑分别约定。</small></article>
-  <article><h3>专业服务作为后续选项</h3><p>先匹配专业能力，再确认材料、交付、时限与退出条件。产品分别呈现普通回应、专业意见和采用结果。</p><small>首版暂缓专业服务撮合；具备承接者和履约安排后再开放。</small></article>
- </div><p className="ms-links"><a href="/community-blueprints" target="_blank" rel="noopener noreferrer">详细方案与备选机制 ↗</a><a href="/#report" target="_blank" rel="noopener noreferrer">15家竞品机制参照 ↗</a></p></section>
- <section id="evidence"><h2>实施前还需确定什么</h2><ol><li>从哪些品类、文本类型或技法起步，能取得哪些可公开的案例。</li><li>由谁编选、维护与专业承接，合作回报和授权怎样约定。</li><li>哪些帮助免费提供，哪些需要单独约定交付与费用。</li></ol><p>研究为方向组合提供了依据；具体讨论形式和服务安排仍是设计建议。作者合作、使用者迁移及成果改善保留为实际参与后的验证项。</p><p className="ms-links"><a href="/research-status" target="_blank" rel="noopener noreferrer">逐项证据状态与来源 ↗</a><a href="/domain-research#research-conclusions" target="_blank" rel="noopener noreferrer">行业与社媒依据 ↗</a></p></section>
-</main>}
+<p><Link href="/#overview">研究总览</Link> / 当前方案</p><header><h1>社区方向与当前范围</h1><p>以实践为主线，创作交流保留独立入口。</p></header>
+<nav className="ms-links"><a href="#choices">服务与方案</a><a href="#themes">九类任务</a><a href="#supply">产品与运营</a><a href="#evidence">待验证事项</a></nav>
+<section id="choices"><h2>帮助使用者找到做法，也让作者交流作品</h2><p>服务创作者、实际应用者、学习者及贡献方法的人。用户可以只阅读、收藏和私下实践；纯娱乐观众不在服务范围。</p><p>五套机制仍可比较：任务决策、项目共学、创作者研讨、方法共建、具体互助。当前推荐以任务决策组织实践内容，创作者研讨保留独立入口；共学、维护与互助按供给条件配置。</p><Link href="/community-options">五套方案与取舍 →</Link></section>
+<section id="themes"><h2>九类任务，共用一套内容结构</h2><p>九类用于检验任务差异，尚未定为九个固定频道，也不是市场机会排名。历史、科普归入知识；手作、家居退出本轮；职场学习与IP纳入当前范围。</p><div className="ms-grid three">{scenarios.map(s=><article key={s.id} id={'theme-'+s.id}><h3>{s.name}</h3><p>{s.task}</p><p>{s.check}</p><Link href={s.detail}>任务与依据 →</Link></article>)}</div><p id="task-choices"><Link href="/research-decisions/tasks">前轮23项任务记录 →</Link> · <Link href="/research-status">当前证据状态 →</Link></p></section>
+<section id="supply"><h2>产品负责连接，运营负责组织</h2><div className="ms-grid two"><article><h3>同一任务连接四类内容</h3><p>案例解释结果与取舍，教程说明步骤，资产交代使用条件，讨论保留问题与改版。内容可被多个专题收录，原文和版本只维护一份。</p><Link href="/community-options/content-system#architecture">共同产品结构 →</Link></article><article><h3>编辑编排，作者分别贡献</h3><p>作者可单独投稿作品、方法或问题；编辑补齐专题路径，核对展示许可与资产条件。回应由愿意参与且具备相关经验的人承担。</p><Link href="/community-options/content-system#supply">运营安排与异常处理 →</Link></article></div><p><Link href="/community-options/home-draft">进入社区样板 →</Link> · <Link href="/community-options/product-sample/concepts">九类概念稿 →</Link></p></section>
+<section id="evidence"><h2>哪些仍要靠实际使用确认</h2><p>作者合作、可公开素材与文件许可、用户持续参与、方法采用后的效果仍待验证。MakeNow已有画布，项目复制、导入和成果回流需逐项确认；自有电商Agent与工作流工具属于规划。专业服务撮合暂缓。</p><Link href="/research-status">逐类查看已有依据与缺口 →</Link></section></main>}

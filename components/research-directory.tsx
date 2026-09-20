@@ -7,10 +7,10 @@ import {profiles} from '@/lib/profiles';
 import './research-structure.css';
 import './editorial-sample.css';
 const modules=[
- {id:'market',title:'行业与用户',question:'行业如何运转，服务对象分别需要什么？',text:'从模型工具、可复用资源到内容消费，梳理创作者、实际应用者、学习者、资源贡献者和协作者的任务。社媒观看记录用于观察创作者面对的市场需求，全国使用与付费数据提供背景。',links:[['china-users','行业与角色']]},
- {id:'social',title:'社媒与需求',question:'社媒消费如何反映创作者市场需求、选题与合作对象？',text:'围绕14个领域与8项任务，研究抖音、小红书、B站的需求、供给和已有解决办法。这两组分类与社区方案的九个主题分别统计，范围也不同。',links:[['content-demand','社媒与内容']]},
+ {id:'market',title:'行业与用户',question:'行业如何运转，服务对象分别需要什么？',text:'从产业分工、用户任务、使用与付费数据，判断社区服务对象；近期应用研究补充2026年的变化。',links:[['china-users','行业与角色']]},
+ {id:'social',title:'社媒与需求',question:'社媒消费如何反映创作者市场需求、选题与合作对象？',text:'从抖音、小红书、B站的作品与反馈，研究具体需求和已有做法。领域比较、任务研究与报告资料分别查阅。',links:[['content-demand','社媒与内容']]},
  {id:'competitors',title:'竞品研究',question:'平台怎样把内容、用户与工具连接起来？',text:'15 家平台的分类、内容详情、使用路径、供给机制与收费方式。先读综合报告，再按平台或专题查阅。',links:[['report','竞品报告'],['content','内容与页面'],['operations','平台运营']]},
- {id:'planning',title:'社区方案',question:'已选主题怎样组织内容、提供帮助？',text:'实践案例是主线，创作交流保留独立入口，九个重点主题已选。提供具体帮助前，需明确承接者、授权与维护责任。北极星指标为周活用户数。',links:[['strategy','方案与承接']]},
+ {id:'planning',title:'社区方案',question:'五种重心，怎样选择与组合？',text:'任务创作、项目共学、创作者研讨、方法共建、问题互助。每套展开产品概念、用户路径、内容组织和运营方式。',links:[]},
 ];
 export function ResearchDirectory({navigate:_navigate}:{navigate:(id:string,anchor?:string)=>void}){
  const link=(id:string,title:string)=><a href={'?#'+id} target="_blank" rel="noopener noreferrer" title="在新标签页打开">{title}<ArrowRight size={14}/></a>;

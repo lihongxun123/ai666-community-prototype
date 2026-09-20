@@ -1,0 +1,115 @@
+[
+  {
+    "id": "a",
+    "name": "任务决策",
+    "legacy": "practice",
+    "alternative": "搜索、原工具说明、社媒教程与专业同行",
+    "value": "提供原教程之外、能影响任务选择的品类与方法比较",
+    "evidence": "现有商品图工具已串联策划与编辑；珠宝使用者提出品类差异。写作官方教程已覆盖通用改稿，作者也能在原工具内取舍定稿。",
+    "condition": "能核对条件的编辑与作者；比较内容确实比原教程多提供选择依据。",
+    "change": "若原工具已能帮助用户选定做法，新增内容仅重复教程，则缩为专题内容。",
+    "sources": [
+      {
+        "label": "商品图与写作的原渠道比较",
+        "href": "/community-options/review#increment"
+      },
+      {
+        "label": "商品图品类反馈",
+        "href": "https://linux.do/t/topic/2829843"
+      }
+    ],
+    "limit": "已有覆盖与反馈支持缩小选题；额外比较是否改善选择，尚无使用者验证。"
+  },
+  {
+    "id": "b",
+    "name": "项目共学",
+    "legacy": "learning",
+    "alternative": "单位培训、课程与既有学习组织",
+    "value": "围绕真实材料设置练习、反馈与复盘",
+    "evidence": "2026年两所学校报道了材料整理、项目实操和课件评析；2023年一位技术学习者的个人笔记记录了自主整理与同伴讨论。",
+    "condition": "有主理人、明确练习成果和反馈安排；目标人群需要连续练习。",
+    "change": "若能获得持续带练者，且主要问题集中在练习与反馈，B可成为主线；自学足够时保留独立阅读材料。",
+    "sources": [
+      {
+        "label": "北京化工大学实操培训",
+        "href": "https://jiaowuchu.buct.edu.cn/2026/0615/c620a220671/pagem.htm"
+      },
+      {
+        "label": "浙江机电职业技术大学项目培训",
+        "href": "https://ztjywz.zime.edu.cn/info/1034/3279.htm"
+      },
+      {
+        "label": "技术学习者个人笔记（2023年）",
+        "href": "https://blog.csdn.net/royi_0825/article/details/132869996"
+      }
+    ],
+    "limit": "培训为组织方报道，后续教学效果未核；2023年个体笔记仅作机制参照，近期普通应用者持续参与仍缺证据。"
+  },
+  {
+    "id": "c",
+    "name": "创作者研讨",
+    "legacy": "creator",
+    "alternative": "抖音、B站、原兴趣圈与作品平台",
+    "value": "按创作意图连接作品与讨论，形成相关同行关系",
+    "evidence": "2026年两期互读帖中，同一AI辅助写作作者继续分享章节，收到具体意见后回应并称正在修订。",
+    "condition": "有愿意分享的作者，以及理解作品语境的同行。",
+    "change": "若已有持续讨论的作者群，且原圈层缺少相应交流，C可成为主线；缺少参与者时保留作品专题。",
+    "sources": [
+      {
+        "label": "6月30日互读帖",
+        "href": "https://www.reddit.com/r/WritingWithAI/comments/1ujnxnq/reciprocal_beta_reading_share_story_blurbs_jun_30/"
+      },
+      {
+        "label": "7月7日互读与回应",
+        "href": "https://www.reddit.com/r/WritingWithAI/comments/1upth5b/reciprocal_beta_reading_share_story_blurbs_jul_7/"
+      }
+    ],
+    "limit": "英语原社区中的互动已发生；改后稿、中文参与者新增渠道意愿和本社区回应供给仍未知。"
+  },
+  {
+    "id": "d",
+    "name": "方法共建",
+    "legacy": "resource",
+    "alternative": "LiblibAI、RunningHub、ModelScope与原作者教程",
+    "value": "维护适用条件、版本差异、失败情况与替代方法",
+    "evidence": "Datawhale有具体修改被合入并获礼物邀请；另有作者按意见重写后仍未合入。LINUX DO工具作者持续回应与更新。",
+    "condition": "明确维护者、修订责任和授权；共同维护能改善方法可用性。",
+    "change": "若方法反复失效影响使用，并有持续维护者，D可成为主线；否则先作为案例中的方法基础。",
+    "sources": [
+      {
+        "label": "贡献采纳与奖励邀请",
+        "href": "https://github.com/datawhalechina/easy-data-x-ai/pull/57"
+      },
+      {
+        "label": "未合入的重写稿",
+        "href": "https://github.com/datawhalechina/all-in-rag/pull/135"
+      },
+      {
+        "label": "参与与供给安排",
+        "href": "/community-options/review#participation"
+      }
+    ],
+    "limit": "具体贡献、采纳与维护已有原站记录；这些技术样本未证明视觉作者会增加渠道或持续供稿。"
+  },
+  {
+    "id": "e",
+    "name": "具体问题互助",
+    "legacy": "help",
+    "alternative": "原帖评论、工具支持、专业论坛与熟人",
+    "value": "补齐背景、连接经验者，保留问题与后续结果",
+    "evidence": "成绩表作者回答过操作问题，备课评论有采用自述；原论坛也提供具体排查与回应。",
+    "condition": "问题与回答者匹配，有纠错方式；理解、采用、完成分别记录。",
+    "change": "若具体问题持续出现，有人愿意承接且有采用后的结果，E可成为主线。",
+    "sources": [
+      {
+        "label": "成绩表作者的经验与回复",
+        "href": "https://www.xiaohongshu.com/explore/697394930000000022020f2f"
+      },
+      {
+        "label": "LINUX DO问题与回应机制",
+        "href": "/#linuxdo"
+      }
+    ],
+    "limit": "一次回复不等于长期承接；接收帮助者的完整成果仍缺记录。"
+  }
+]

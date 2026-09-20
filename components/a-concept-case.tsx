@@ -1,0 +1,1 @@
+export default function AConceptCase(){return <section id="concrete-case"><h2>首页如何组织内容</h2><p>九个主题、具体选题和独立的创作交流入口。点开卡片，可看内容结构与原始来源。</p><a href="/community-options/home-draft" target="_blank" rel="noopener noreferrer">打开首页内容草案 ↗</a></section>}

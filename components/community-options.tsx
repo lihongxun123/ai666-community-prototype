@@ -15,7 +15,7 @@ export function CommunityOptions({navigate}:{navigate:(id:string)=>void}) {
  return <div className="framework-study options-study">
 
 
-  <IntegratedStrategies navigate={navigate}/>
+  <section className="study-platform"><h1>社区方案研究依据</h1><p><a href="/community-options" target="_blank" rel="noopener noreferrer">进入当前五套方案与概念稿 ↗</a></p><p>以下保留主题推导、早期方案和经营假设，供追溯讨论依据。</p></section><IntegratedStrategies navigate={navigate}/>
   <details className="study-sources"><summary>讨论：三种展示结构与四个经营假设</summary>
   <ContentPresentation />
   <section className="study-platform" id="previous-options"><h2>四个经营假设</h2><p>保留人群、供给、成本和运营路径的分析。它们不是四个互斥的完整产品方案；需要结合上面的产品形态继续比较。</p><p className="muted">讨论记录：{data.date}。</p></section>
