@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 export const editorialPlan = [
   {id:'ecommerce',name:'电商营销',level:'重点专题',reason:'有拍摄到发布的客户案例、现成套图路径和品类反馈；适合具体比较。',entry:'一件商品，要做哪几张图？',home:'展示同一商品的原图与用途明确的成套成果，按品类进入。',cards:'套图案例 → 品类方法 → 可改版式 → 局部问题',tool:'MakeNow承接经核对的视觉素材；Agent和自动套图保留为规划。',people:'编辑组织品类与用途；作者解释取舍；商家确认商品事实。',hold:'不承诺自动生成即可上架，也不把平台案例当本站效果。',source:'/community-options/cases/ecommerce#cases'},
   {id:'design',name:'设计与视觉',level:'重点专题',reason:'已有具名品牌系列项目，能说明主视觉与延展关系；仍需授权工程。',entry:'一张主视觉，怎样扩成一套？',home:'优先看整套，再看固定元素、可变元素和不同画幅。',cards:'系列案例 → 设计简报 → 主版资产 → 版式修改',tool:'MakeNow用于兼容的视觉编排；原始工程不兼容时保留原工具。',people:'编辑选择能解释取舍的系列；作者说明延展规则；品牌方确认约束。',hold:'未授权的源文件只展示来源；不承诺直接商用或客户验收。',source:'/community-options/scenarios/design#brand-cases'},

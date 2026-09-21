@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 const A=({href,children}:{href:string;children:React.ReactNode})=><a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>;
 const rows=[['设定','获授权参考、人物关系、不可变项','列出脸部、服装、比例、道具和禁用变化','设定页与参考版本','来源与公开范围明确'],['分镜','梗概、六个事件、对白','写视角、动作、道具与阅读顺序','分镜及缺失项','每格有事件'],['制作','设定与单格约束','逐格完成，保留候选和选择理由','格图与候选','单格符合设定'],['连读','全套格图与对白','检查人物、视线、服装、道具和叙事','问题格标注','顺序读得通'],['交付','采用格、许可、公开选择','作者确认并整理资料','故事成品、设定与修改说明','作者确认采用']];

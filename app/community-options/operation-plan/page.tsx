@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../content-plan/content-plan.css';
 const roles = [
  ['平台编辑','选择任务、邀请作者、核对材料、编排专题、维护推荐入口。','对专题是否清楚、入口是否可用负责。'],

@@ -1,6 +1,6 @@
 import EditorialPlan from './editorial-plan';
 import SharedDesign from './shared-design';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import {scenarios} from './configuration';
 import '../cases/ecommerce/style.css';
 const external={target:'_blank',rel:'noopener noreferrer'} as const;

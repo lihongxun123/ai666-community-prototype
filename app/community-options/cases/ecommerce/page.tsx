@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import platforms from '@/lib/ecommerce-task-check.json';
 import './style.css';
 import Comparison from './comparison';

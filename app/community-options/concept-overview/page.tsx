@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import Image from 'next/image';
 import './concept.css';
 

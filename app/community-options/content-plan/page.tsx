@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import './content-plan.css';
 const priorities=[
  ['重点组织','电商营销','主图、详情页与活动素材','先做完整样板；现有研究含发布流程、品类反馈和批量使用问题。','/community-options/cases/ecommerce#cases'],

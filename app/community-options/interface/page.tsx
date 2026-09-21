@@ -1,7 +1,7 @@
 'use client';
 /* Local design assets retain native image ratios; no remote optimizer is used in this preview. */
 /* oxlint-disable next/no-img-element */
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import {useEffect,useRef,useState} from 'react';
 import './style.css';
 type Item={id:number;name:string;scene:string;group:string;image?:string;ratio?:string;kind:string;author:string;uses:number;input:string;output:string;text?:string};

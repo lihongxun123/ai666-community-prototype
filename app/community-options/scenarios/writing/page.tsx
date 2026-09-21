@@ -1,6 +1,6 @@
 import Continuation from './continuation';
 import TopicReadingPlan from '../topic-reading-plan';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 const rows=[['明确交付','读者、用途、长度、发布日期、不能改的事实','编辑简报','事实范围或读者不明，不写正文'],['建立底稿','已有稿先核对；无稿则整理可用材料、区分事实与观点，列提纲后形成底稿','核对过的底稿、来源与编辑约束','事实有来源，作者确认底稿表达；待核内容不写成事实'],['提出版本','简报与具体修改目标','基线版和目标改写版','重要改动有理由'],['作者取舍','可定位反馈','选定版本与变更记录','不以“更顺”替代反馈'],['交付检查','链接、附件、样式、隐私','可发送/发布文本','残留、事实、格式均通过']];
 export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>写作与编辑 · 专题方案</span><h1>从个人材料或草稿，写到作者定稿</h1><p className="ec-lead">从个人材料形成底稿，或直接修改已有文本。围绕用途与读者保留修改理由，由作者决定最终表达。</p><nav><a href="#reading-plan">专题编排</a><a href="#evidence">证据</a><a href="#task">改稿路径</a><a href="#content">内容卡</a><a href="#peer-feedback">自改与讨论</a><a href="#handoff">材料交接</a><a href="#recovery">中断处理</a><a href="#operations">平台分工</a><a href="#delivery">交付与复用</a></nav></header>

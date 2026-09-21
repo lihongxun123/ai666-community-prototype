@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import {scenarios} from '../community-options/content-system/configuration';
 import '@/components/market-social.css';
 export default function Page(){return <main className="ms-report blueprint-report">

@@ -1,5 +1,5 @@
 /* eslint-disable next/no-img-element -- Concept artwork and the standalone SVG retain their original pixels and text without image transformation. */
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import './achievements.css';
 const rows=[
  ['行业','3层产业结构 · 4类角色 · 12项指标','行业阅读层的结构与指标数；14份引用材料，来自13组来源。','/?section=cn-answer#china-users'],

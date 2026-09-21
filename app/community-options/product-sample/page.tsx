@@ -1,6 +1,6 @@
 'use client';
 import {useState} from 'react';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import './style.css';
 const pages=['专题','案例','资产','问题与改版'];
 export default function Page(){const [page,setPage]=useState(0);const [guide,setGuide]=useState(false);const [notes,setNotes]=useState(false);const [kind,setKind]=useState('全部');const [asset,setAsset]=useState('工作流');function go(n:number){setPage(n);setGuide(false);window.scrollTo({top:0,behavior:'instant'})}

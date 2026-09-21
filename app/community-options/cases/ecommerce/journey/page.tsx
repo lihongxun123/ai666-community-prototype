@@ -1,6 +1,6 @@
 'use client';
 import {useState} from 'react';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../style.css';
 const steps=[
 {name:'明确需求',user:'我卖什么，需要做哪些图？',input:'商品品类、图片用途、目标渠道、真实卖点、已有素材。',action:'提供按任务选择的入口；从案例进入时带上来源，让用户确认适用品类与图型。',output:'任务简报：商品、用途、图型清单、已确认事实与待补素材。',gate:'没有素材时可先看案例和准备清单；没有证实的卖点留空。'},

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import ContentMap from './content-map';
 import '../cases/ecommerce/style.css';
 const rows=[

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 const A=({href,children}:{href:string;children:React.ReactNode})=><a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>;
 const rows=[['确认','原片权属、保留特征、允许修改范围','写脸部、发型、服饰和记忆线索','确认清单','本人或知情者同意范围'],['准备','原片、可靠辅助参考、公开选择','区分原片、参考和推测材料','素材与权限说明','无依据区域标记缺失'],['处理','污损、曝光或局部缺失','从局部开始，记录范围和方法','候选图与区域说明','未改动禁区'],['核对','原片、候选、确认清单','分别检查清晰度与相似度','核对意见','知情者能说明保留项'],['交付','采用图、用途、公开范围','确认采用或保留原片，附说明','成片与说明','用途、权限和推测内容明确']];

@@ -1,6 +1,6 @@
 import TopicReadingPlan from '../topic-reading-plan';
 import Depth from './depth';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 function Source({href,children}:{href:string;children:React.ReactNode}){return <a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>}
 export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>设计与视觉表达 · 专题方案</span></header><h1>从一张主视觉，做到一套能修改的设计</h1><p className="ec-lead">帮助创作者明确设计目标、组织素材、调整系列版式，并交付可继续使用的文件。</p><nav>{[['reading-plan','专题编排'],['evidence','过程案例'],['brand-cases','品牌案例'],['branches','任务分支'],['checkpoints','制作与交付'],['bundle','内容包'],['cards','卡片与入口'],['delivery','交付与维护']].map(([id,label])=><a key={id} href={'#'+id}>{label}</a>)}</nav>

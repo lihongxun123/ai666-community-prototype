@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import {scenarios} from './scenarios';
 import FocusTopics from './focus-topics';
 import {caseChoices} from '../content-system/case-choices';

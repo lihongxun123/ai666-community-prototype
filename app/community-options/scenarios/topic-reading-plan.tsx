@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 const plans={
   design:{title:'专题先看系列，再看怎样做',intro:'首页展示整套效果与用途。进入专题后，按已有主版、新主题、多画幅三种起点选内容；每张卡只保留用途、适用条件和一个主要入口。',cards:[
     ['先看成果','同一主视觉，如何保持系列感？','主视觉与延展并排预览，注明品牌约束、用途和作者。','小象超市系列与LABO-H提案可作研究参照；被舍弃候选及授权工程仍缺。','#brand-cases','看系列与取舍'],

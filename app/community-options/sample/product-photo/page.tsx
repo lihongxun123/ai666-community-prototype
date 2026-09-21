@@ -1,1 +1,1 @@
-import Link from 'next/link';import '../../briefs/briefs.css';export default function Page(){return <main className="proposal-brief"><h1>这份样板已撤下</h1><p>2024年的墨镜案例不再用于说明当前社区机会。</p><Link href="/community-options/freshness">查看当前任务校准 →</Link></main>}
+import Link from '@/components/research-link';import '../../briefs/briefs.css';export default function Page(){return <main className="proposal-brief"><h1>这份样板已撤下</h1><p>2024年的墨镜案例不再用于说明当前社区机会。</p><Link href="/community-options/freshness">查看当前任务校准 →</Link></main>}

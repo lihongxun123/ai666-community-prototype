@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import data from '@/lib/theme-decisions.json';
 import choices from '@/lib/task-choices.json';
 import '@/components/market-social.css';

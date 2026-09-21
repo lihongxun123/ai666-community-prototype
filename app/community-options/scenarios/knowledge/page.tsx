@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 const rows=[['定题','问题、读者、使用时刻','任务卡与不回答范围','问题/读者缺失不检索'],['资料包','原文、作者、日期、许可','来源卡与冲突清单','核心结论可回到原文'],['解释','事实、推断、未知分开','提纲与图注文案','推断不得伪装为事实'],['图文','术语、数据、图片依据','解释图文初稿','每张图承担一个解释任务'],['核对发布','链接、引用、版权、读者问题','成稿与勘误记录','逐项核读后才发布']];
 export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>知识内容创作 · 专题初稿</span><h1>把资料讲清楚，也让读者找得到出处</h1><p className="ec-lead">主任务是将一组可追溯材料交给明确读者作理解或判断；不是把大纲直接变成成稿。科学阅读重在数据条件与证据等级，历史表达重在史料出处与推测边界。</p><nav><a href="#evidence">证据</a><a href="#task">路径</a><a href="#content">内容卡</a><a href="#delivery">交付</a></nav></header>

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
 const A=({href,children}:{href:string;children:React.ReactNode})=><a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>;
 const rows=[['主题与许可','原创或获授权主题、文化来源、用途','确认可引用元素和禁用复制','来源与使用条件','授权和出处可追溯'],['设定','基础形象、固定特征、候选','定轮廓、比例、配色和标志物','设定页与取舍','固定项清楚'],['试做','一个复杂动作或表情','先处理高风险姿态，记录修正','动作对照','仍可辨识'],['延展','表情、动作和两种数字应用','按设定扩展并并排检查','系列图与问题标注','整套一致'],['交付','采用系列、文件、许可、用途','确认资产状态与版本','设定、系列、应用预览','来源、许可、版本齐全']];

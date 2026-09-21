@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import AConceptCase from '@/components/a-concept-case';
 import {ProposalEvidence} from '@/components/proposal-comparison';
 import data from '@/lib/presentation-narrative.json';

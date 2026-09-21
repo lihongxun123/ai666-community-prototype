@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 const capabilities=[
  ['发现与专题','场景、任务、内容类型分别筛选；编辑选择首页专题','商品按用途；知识按问题；写作按修改目标'],
  ['案例与教程','来源、输入条件、关键取舍、步骤、完成检查','知识核对出处，角色检查连续性，人像核对相似度与许可'],

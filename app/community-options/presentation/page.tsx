@@ -3,7 +3,7 @@
 /* eslint-disable next/no-img-element -- These are archived evidence screenshots, shown without image transformation. */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, X } from 'lucide-react';
 import './presentation.css';
 import './narrative.css';

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/research-link';
 import {notFound} from 'next/navigation';
 import options from '@/lib/options-expanded.json';
 import versions from '@/lib/concept-versions.json';
