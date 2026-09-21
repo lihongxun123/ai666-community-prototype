@@ -36,5 +36,5 @@ export default function Page(){const [step,setStep]=useState(0);const [route,set
 <section id="scope"><h2>先明确整条路径，再按能力接入</h2><p><strong>已有前提：</strong>用户确认拥有 MakeNow 画布。<strong>规划能力：</strong>自有电商 Agent、工作流工具。社区与画布之间的项目关联、复制、权限及结果回传尚需核对。</p>
 <h3>优先接通的目标路径</h3><p>电商营销专题 → 案例与素材要求 → MakeNow 画布项目 → 修改与检查 → 导出并继续复用。工作流和 Agent 沿用这份任务简报与项目关系，逐步增加自动执行。</p>
 <h3>完成验收时，要实际走通这些事</h3><ul><li>从案例进入制作后，用户能看到此前选择的任务与来源，无需重复填写。</li><li>关闭后重新进入能继续项目，单图修改不会覆盖其他已选结果。</li><li>不可用资产有明确替代路径，规划功能不会触发真实执行。</li><li>最终输出对应已选图序；检查记录与项目版本可追溯。</li><li>用户可以只完成制作，不分享；发起求助前能选择公开范围。</li></ul>
-<p>本轮深化的是产品方案与交接要求，尚未实施这些能力，也不承诺商品平台审核通过。上架、订单和销售管理不纳入本专题的当前交付范围。</p><p><Link href="/community-options/product-sample">返回四页产品样板 →</Link></p></section>
+<p>本专题覆盖营销素材制作；上架审核、订单和销售管理由对应业务平台承接。</p><p><Link href="/community-options/product-sample">返回四页产品样板 →</Link></p></section>
 </main>}

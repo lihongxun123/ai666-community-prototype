@@ -36,7 +36,6 @@ export const topicDescriptions:Record<string,string> = {
 };
 
 export const researchReadingLinks = [
- {group:'reading',href:'/research-achievements',title:'研究成果'},
  {group:'planning',href:'/community-options/fusion',title:'融合方案'},
  {group:'planning',href:'/community-options',title:'五套方案'},
  {group:'planning',href:'/community-options/presentation',title:'汇报演示'},

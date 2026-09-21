@@ -13,16 +13,16 @@ export default function Comparison(){return <>
 <a href={test} target="_blank" rel="noopener noreferrer">来源、提示词与完整披露 · SketchTo ↗</a>
 </section>
 <section id="workflow"><h2>开源工具怎样设计这条流程</h2>
-<p>EcomGen 的公开项目说明已包含商品事实、参考素材、分镜确认、局部编辑和人工审核。下面是其描述的任务路径；本轮没有运行项目。</p>
+<p>EcomGen 的公开项目说明已包含商品事实、参考素材、分镜确认、局部编辑和人工审核。下图按公开说明整理，未实测运行。</p>
 <div className="ec-flow">商品事实与素材 → AI规划／手动／套图 → 确认分镜 → 生成与修改 → 审核导出</div>
 <div className="ec-two"><div><h3>制作前，把要求写进项目</h3><p>明确真实商品、参考风格与禁止声明；允许手动选择模板，并在生成前修改分镜内容。</p><h3>制作后，保留修改空间</h3><p>项目说明支持蒙版、局部重绘、输出分支和编辑历史，审核后再导出。</p><p><a href={repo} target="_blank" rel="noopener noreferrer">EcomGen 项目说明 ↗</a> · <a href="https://linux.do/t/topic/2829843" target="_blank" rel="noopener noreferrer">作者介绍与使用反馈 ↗</a></p></div><figure><a href="https://cdn3.ldstatic.com/original/4X/0/5/b/05bd64866f81e3344043072fb1f940831f1ebf32.jpeg" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.ldstatic.com/original/4X/0/5/b/05bd64866f81e3344043072fb1f940831f1ebf32.jpeg" alt="EcomGen作者发布的分镜确认界面" loading="lazy"/></a><figcaption>作者原帖截图 · 分镜确认界面。可点击查看大图。</figcaption></figure></div>
 <p><strong>对我们的影响：</strong>任务分类、素材说明和修改历史已有开源设计参照，实际使用效果仍需验证。社区应把案例中的选择理由、失败位置和后续反馈组织好，并连接适用工具。是否自建制作工作台，留到方案取舍时讨论。</p>
 </section>
-<section id="decisions"><h2>下一次遇到商品图，先判断这三件事</h2><p>以下是基于本轮材料提出的内容组织建议，可用真实案例继续检验。</p>
+<section id="decisions"><h2>下一次遇到商品图，先判断这三件事</h2><p>内容组织建议如下。</p>
 <div className="ec-three ec-choice">
 <article><h3>商品不能改什么？</h3><p>标签、孔位、配件、纹理分别列出。原图保留作对照，修改要求定位到具体区域。</p><b>内容呈现：原图＋局部放大＋修改理由</b></article>
 <article><h3>这张图需要说明什么？</h3><p>先确认每张图的表达目标。饰品质感与功能演示需要不同结构，套图模板允许删改。</p><b>内容呈现：图序＋文案预览＋采纳理由</b></article>
 <article><h3>换商品后还能复用什么？</h3><p>区分可以复用的版式与必须重新核对的商品信息，记录例外和失效版本。</p><b>内容呈现：适用条件＋重复结果＋异常处理</b></article>
-</div><p>真实商品的同条件方法对照、连续修改及最终采用，仍缺一条可完整核对的记录。本轮补充了可见对照与成熟工作流，不把它们计作新增真实交付案例。</p>
+</div><p>真实商品的同条件方法对照、连续修改及最终采用，仍缺一条可完整核对的记录。可见对照与工作流说明尚不构成真实交付证据。</p>
 </section>
 </>}

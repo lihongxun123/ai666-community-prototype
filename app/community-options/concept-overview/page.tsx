@@ -32,10 +32,10 @@ export default function ConceptOverview(){
  <div className="co-copy"><div><span className="co-eyebrow">0{active+1} / {group.name}</span><h2>{group.title}</h2></div><p>{group.text}</p></div>
  <div className="co-switch" aria-label="当前分组页面">{group.images.map((item,i)=><button key={item[0]} aria-pressed={selected===i} onClick={()=>setSelected(i)}>{item[1]}</button>)}</div>
  <figure><a href={src} target="_blank" rel="noopener noreferrer" aria-label={current[1]+'，新页面打开原图'}><Image key={src} src={src} alt={current[1]+'概念稿'} width={1536} height={1200} unoptimized /></a><figcaption><span>{current[1]}</span><a href={src} target="_blank" rel="noopener noreferrer">查看原图 ↗</a></figcaption></figure>
- <p className="co-caption">已认可的概念方向。图中数据与效果为示例，细节以已确认的共用规则为准。</p>
+
  </section>
  <section id="journeys" className="co-journeys"><span className="co-eyebrow">用户路径</span><h2>三种起点，都能接着往下做</h2><div className="co-paths">{paths.map((p,i)=><article key={p.title}><span className="co-number">0{i+1}</span><h3>{p.title}</h3><p>{p.desc}</p><ol>{p.steps.map(([id,label],j)=><li key={j}><button onClick={()=>follow(id,label)}>{label}<span>↗</span></button></li>)}</ol><p className="co-result">{p.result}</p></article>)}</div></section>
- <section className="co-position"><div><span className="co-eyebrow">方案取舍</span><h2>平台整理资源，<br/>社区补充经验。</h2></div><div><p>专题围绕任务组织内容；应用和工作流承接制作；圈子让教程、问题与实践有持续交流的地方。</p><p>我们服务创作者、实际应用者和学习者。价值来自任务选择、资源质量与持续维护，仍需后续验证。</p><p className="co-caption">当前停留在产品方案与概念稿阶段。</p></div></section>
+ <section className="co-position"><div><span className="co-eyebrow">方案取舍</span><h2>平台整理资源，<br/>社区补充经验。</h2></div><div><p>专题围绕任务组织内容；应用和工作流承接制作；圈子让教程、问题与实践有持续交流的地方。</p><p>我们服务创作者、实际应用者和学习者。价值来自任务选择、资源质量与持续维护，仍需后续验证。</p></div></section>
  <footer className="co-footer"><Link href="/#strategy">返回研究室</Link><Link href="/community-options/presentation">研究与方案演示 ↗</Link></footer>
  </main>
 }

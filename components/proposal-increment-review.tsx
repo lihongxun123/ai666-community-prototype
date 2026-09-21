@@ -30,7 +30,7 @@ export default function ProposalIncrementReview(){return <>
   <section id="priorities"><h2>九类保留，三类先做重点专题</h2><p>定向补证已收口。建议优先编排电商营销、设计与视觉、写作与编辑三个专题；其余六类按已有材料覆盖。这个顺序是内容配置建议，市场规模和社区转化率尚无可比数据。</p><div className="ms-grid three">
     <article><h3>先比较：商品图、写作</h3><p>已有原渠道、作者取舍与反馈材料，适合检验“额外比较究竟改变什么选择”。写作同时可验证相关同行反馈。</p></article>
     <article><h3>重点编排：电商营销、设计、写作</h3><p>分别组织品类与用途、主视觉与系列、目标与改稿。角色、人像、知识保留案例和方法入口，后续按材料成熟度加深。</p></article>
-    <article><h3>保留边界：本地经营、职场学习、IP</h3><p>教育已有实际试讲过程；品牌活动可作系列设计参照，企业汇报和IP仍需分别核对人工改动与实际采用。公开检索本轮到此收口。</p></article>
+    <article><h3>保留边界：本地经营、职场学习、IP</h3><p>教育已有实际试讲过程；品牌活动可作系列设计参照，企业汇报和IP仍需分别核对人工改动与实际采用。</p></article>
   </div><p><a href="/community-options/content-system#editorial-plan" target="_blank" rel="noopener noreferrer">九类具体编排：入口、卡片、制作与分工 ↗</a></p><h3>三条薄弱分支，这次改变了什么</h3><div className="ms-grid three">
     <article><h3>本地经营：加上品牌与顾客接受度</h3><p>2026年9月的店主采访记录了AI菜单海报印制后遭遇反对。生成和印刷完成之外，仍要考虑店铺风格与当地顾客。</p><p className="ms-caption">美国个案仅作反例。国内新增品牌活动系列参照，单店连续使用缺口保留。</p><Source href={sources.shop}>店主采访</Source><p><a href="/community-options/scenarios/local-business#brand-case" target="_blank" rel="noopener noreferrer">国内品牌活动参照 ↗</a></p></article>
     <article><h3>职场学习：讲义分支更具体</h3><p>校方记录了课程简报、逐页规划与课件制作，并根据试点中的提问困难和信息过载，增加讲解、缩小任务。</p><p className="ms-caption">支持教育应用过程；尚无源课件对照或独立效果评估，也未补成职场交付案例。</p><Source href={sources.school}>课程试讲与调整</Source><p><a href="/community-options/scenarios/work-learning#workplace-case" target="_blank" rel="noopener noreferrer">企业汇报的交付边界 ↗</a></p></article>

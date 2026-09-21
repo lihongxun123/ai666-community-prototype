@@ -36,14 +36,14 @@ export default function Page(){return <main className="cp-page">
 <section id="priorities"><small>01 / 内容布局</small><h2>先做深三类，其余保持开放</h2><p>这里区分平台主动编排的力度，不关闭任何场景。每个领域都可投稿；单篇好内容可以进入推荐，不必等整个专题齐全。</p>
 <div className="cp-levels"><article><h3>重点组织</h3><p>主动串起案例、方法与制作入口，形成一条清楚的任务路径。</p></article><article><h3>常规覆盖</h3><p>围绕已有可靠材料补充，不要求每个任务集齐所有内容形式。</p></article><article><h3>开放贡献</h3><p>先收具体作品、经验和问题；有连续材料后再加深编排。</p></article></div>
 <div className="cp-table"><table><thead><tr><th>建议力度</th><th>场景与任务</th><th>为何这样安排</th><th>已有依据</th></tr></thead><tbody>{priorities.map(([level,name,task,reason,url])=><tr key={name}><td>{level}</td><th>{name}<span>{task}</span></th><td>{reason}</td><td><Link href={url} {...external}>查看 ↗</Link></td></tr>)}</tbody></table></div>
-<p className="cp-note">三类重点沿用已有“专题取舍”建议。常规覆盖与开放贡献是本轮对编排力度的细分，尚待确认。排序依据材料成熟度、任务差异和概念承接；未测量各领域市场规模或供需缺口。</p>
+<p className="cp-note">重点专题、常规覆盖与开放贡献分别对应不同的内容投入。排序依据材料成熟度、任务差异和概念承接；未测量各领域市场规模或供需缺口。</p>
 <Link href="/community-options/content-system#editorial-plan" {...external}>九类专题取舍依据 ↗</Link></section>
 <section id="ecommerce"><small>02 / 代表样板</small><h2>电商营销：从一件商品到一组可用素材</h2><p>面向要自己制作素材的商家、设计师与内容人员。先完成一张图，再按用途扩展海报或批量；不要求每个人从头读完专题。</p>
 <div className="cp-route"><span>明确用途</span><b>→</b><span>看案例</span><b>→</b><span>选方法</span><b>→</b><span>制作与检查</span><b>→</b><span>继续调整</span></div>
 <div className="cp-cards">{ecommerce.map(([type,title,body,next],i)=><article key={title}><div className="cp-card-top"><span>{type}</span><small>0{i+1}</small></div><h3>{title}</h3><p>{body}</p><p className="cp-next">{next}</p></article>)}</div>
 <p className="cp-note">以上八项是拟组织的内容，不是八份已备妥的资产。同一篇案例可包含方法和对照，专题只维护关联。应用、工作流和画布是否可用，以实际资源为准。</p>
 <div className="cp-two"><article><h3>先让这四件事成立</h3><p>一个有过程的案例、一条可尝试的制作路径、一份针对结果的检查方法，以及提问入口。素材尚未取得许可时，保留原来源与方法介绍。</p></article><article><h3>已有材料支持到哪里</h3><p>站内收录了厂商披露的商品发布流程、批量预设及使用者反馈，支持按用途、品类和修改组织内容。本站可发布的原图、工程与实际采用对照，还需分别取得。</p><Link href="/community-options/cases/ecommerce#cases" {...external}>案例与证据范围 ↗</Link></article></div>
-<Link href="/community-options/concept-overview">对照已确认专题概念稿 →</Link></section>
+<Link href="/community-options/concept-overview">查看专题概念稿 →</Link></section>
 <section id="writing"><small>03 / 差异检验</small><h2>写作编辑：有用，体现为改得有理由</h2><p>用户要的是保留原意、适合读者的文字。主图和套图不是核心，原文、改动与作者选择才是。</p>
 <div className="cp-cards">{writing.map(([type,title,body])=><article key={title}><span className="cp-tag">{type}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
 <div className="cp-table"><table><thead><tr><th>比较项</th><th>电商营销</th><th>写作编辑</th></tr></thead><tbody>
@@ -59,5 +59,5 @@ export default function Page(){return <main className="cp-page">
 <section id="placement"><small>05 / 对应产品</small><h2>一份内容，可以从多个地方被找到</h2><div className="cp-table"><table><thead><tr><th>入口</th><th>组织什么</th><th>用户接着做什么</th></tr></thead><tbody>
 <tr><th>发现</th><td>代表作品、实用资源与精选专题</td><td>进入内容或专题</td></tr><tr><th>专题</th><td>同一任务的案例、方法和资源</td><td>选择路径，尝试制作</td></tr><tr><th>AI应用</th><td>按用途展示的应用</td><td>直接使用</td></tr><tr><th>圈子</th><td>教程、讨论、求助与案例交流</td><td>阅读、提问、分享</td></tr></tbody></table></div>
 <p>一篇教程可以同时被圈子和专题引用，不另发两份。应用和工作流也可以被多个任务收录，原资源与作者归属保持清楚。</p></section>
-<footer><h2>本轮建议</h2><p>保留九类覆盖；先围绕电商营销、视觉设计和写作编辑主动组织。以电商样板检验内容是否能接着用，以写作样板避免把所有场景套成图片制作。</p><p className="cp-note">运营建议已补充作者合作、专题维护与圈子答疑的分工，下一步结合实际团队讨论。</p><Link href="/community-options/operation-plan">查看运营建议 →</Link> · <Link href="/community-options/concept-overview">返回方案一概念 →</Link></footer>
+<footer><h2>内容编排建议</h2><p>保留九类覆盖；先围绕电商营销、视觉设计和写作编辑主动组织。以电商样板检验内容是否能接着用，以写作样板避免把所有场景套成图片制作。</p><p className="cp-note">运营分工涵盖作者合作、专题维护与圈子答疑。</p><Link href="/community-options/operation-plan">查看运营建议 →</Link> · <Link href="/community-options/concept-overview">返回方案一概念 →</Link></footer>
 </main>}

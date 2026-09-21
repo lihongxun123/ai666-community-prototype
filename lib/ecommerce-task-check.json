@@ -70,7 +70,7 @@
     "url": "https://www.waytoagi.com/zh/sites/183"
   },
   {
-    "found": "本轮未取得同任务案例；参考资料为课程维护记录。",
+    "found": "未取得同任务案例；参考资料为课程维护记录。",
     "limit": "非电商任务证据。",
     "action": "借鉴作者修订、维护者审查机制。",
     "name": "Datawhale",
@@ -85,14 +85,14 @@
   },
   {
     "found": "已有档案记录通用图片编辑应用，非商品图专用。",
-    "limit": "本轮未取得现行电商任务实例。",
+    "limit": "未取得现行电商任务实例。",
     "action": "素材、输出与交流在同一应用页。",
     "name": "ModelScope",
     "url": "https://modelscope.cn/studios/Boogu/boogu-image-edit-gradio"
   },
   {
     "found": "已读模板提供配置、依赖与测试说明；非电商图模板。",
-    "limit": "本轮未取得同商品图工作流。",
+    "limit": "未取得同商品图工作流。",
     "action": "方法卡交代输入变量、依赖和版本。",
     "name": "Dify",
     "url": "https://marketplace.dify.ai/"

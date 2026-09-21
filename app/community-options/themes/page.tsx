@@ -8,8 +8,8 @@ function Source({ href, children }: { href: string; children: React.ReactNode })
 
 export default function Page() { return <main className="ms-report proposal-brief">
   <p><Link href="/community-options/presentation#theme-sources">返回主讲 · 主题来源</Link></p>
-  <header><p>研究依据 / 产品组织</p><h1>九个主题如何形成</h1><p>具体使用线索整理成任务，任务按领域归类，再结合已确认的范围安排内容和产品入口。</p></header>
-  <nav className="brief-nav"><a href="#sources">来源</a><a href="#selection">取舍过程</a><a href="#themes">九主题对应</a><Source href="/community-options/themes/decision">本轮主题与任务建议</Source><a href="#product">产品组织</a></nav>
+  <header><p>研究依据 / 产品组织</p><h1>九个主题如何形成</h1><p>具体使用线索整理成任务，任务按领域归类，再按研究范围安排内容和产品入口。</p></header>
+  <nav className="brief-nav"><a href="#sources">来源</a><a href="#selection">取舍过程</a><a href="#themes">九主题对应</a><Source href="/community-options/themes/decision">主题与任务建议</Source><a href="#product">产品组织</a></nav>
   <section id="sources"><h2>三类材料，各回答一个问题</h2><div className="brief-path">
     <div><h3>行业报告</h3><p>使用发生在哪些人群和场景，为寻找具体任务提供范围。</p><Source href="/community-options/background">国内背景</Source></div>
     <div><h3>作品与使用记录</h3><p>作者做了什么、怎么做、遇到什么问题，以及原渠道怎样回应。</p><Source href="/domain-research">应用领域研究</Source></div>
@@ -19,7 +19,7 @@ export default function Page() { return <main className="ms-report proposal-brie
     <div><h3>42条线索 → 41项任务</h3><p>以交付结果统一颗粒度。署名与AI标识另作跨任务要求。</p></div>
     <div><h3>确认九主题、23项任务</h3><p>用户选择重点主题，通用内容处理、教育与音乐等11项开放覆盖；另7项保留候选，尚未纳入九主题重点。企业与工业表达已移出范围。</p></div>
     <div><h3>逐项核查与调整</h3><p>继续检查原工具已有帮助、真实问题和反例，分别安排案例比较、原站方法指引或自愿讨论。</p></div>
-  </div><p><Source href="/research-records/task-normalization.txt">任务规范化原记录 · 9月17日</Source> · <Source href="/research-records/scope-record.txt">范围决策记录 · 9月18日版本</Source></p><p className="brief-meta">记录日期为文档日期。范围曾由对话选择确认，后续补证继续校准任务；本轮优先级建议另行呈现。</p><h3>以商品图为例</h3><p>“替换背景”和“调整尺寸”原是两条线索，整理时合并为“为二手商品准备可上架的展示图”。背景与尺寸成为处理步骤；成色、磨损、颜色和标识成为核对重点。</p><p>任务成立后，继续比较实拍整理、人工合成、AI局部编辑和商品套图，再设计任务页、方法比较页与案例详情页。</p><Source href="/research-decisions/tasks#T-01">商品图任务与原始依据</Source><p className="brief-meta">九主题体现已确认的研究取舍，并非市场规模排名。后续补证发生在选择之后，部分任务也只有供给或邻近场景线索。进入首页的优先级还要结合具体内容质量和社区选择。</p></section>
+  </div><p><Source href="/research-records/task-normalization.txt">任务规范化原记录 · 9月17日</Source> · <Source href="/research-records/scope-record.txt">范围决策记录 · 9月18日版本</Source></p><p className="brief-meta">记录日期为文档日期；下表列出范围取舍及依据。</p><h3>以商品图为例</h3><p>“替换背景”和“调整尺寸”原是两条线索，整理时合并为“为二手商品准备可上架的展示图”。背景与尺寸成为处理步骤；成色、磨损、颜色和标识成为核对重点。</p><p>任务成立后，继续比较实拍整理、人工合成、AI局部编辑和商品套图，再设计任务页、方法比较页与案例详情页。</p><Source href="/research-decisions/tasks#T-01">商品图任务与原始依据</Source><p className="brief-meta">九类场景按研究取舍组织，部分任务仅有供给或邻近场景线索，并非市场规模排名。进入首页的优先级还要结合具体内容质量和社区选择。</p></section>
   <section id="themes"><h2>主题、任务与入口逐项对应</h2><p>下列组织方式是产品建议。每个主题保留任务依据，选入重点范围的决定与证据强弱分别呈现。</p>
     {provenance.themes.map(theme => <article key={theme.name} id={'theme-'+theme.name} className="brief-evidence">
       <h3>{theme.name}</h3><p>{theme.reason}</p><div className="brief-comparison"><div><strong>任务入口</strong><p>{theme.taskEntry}</p></div><div><strong>作品专题示例</strong><p>{theme.workEntry}</p></div></div>
