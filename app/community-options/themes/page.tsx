@@ -7,7 +7,7 @@ import '../briefs/briefs.css';
 function Source({ href, children }: { href: string; children: React.ReactNode }) { return <a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>; }
 
 export default function Page() { return <main className="ms-report proposal-brief">
-  <p><Link href="/community-options/presentation#theme-sources">返回主讲 · 主题来源</Link></p>
+  <p><Link href="/research-brief">简版研究报告</Link></p>
   <header><p>研究依据 / 产品组织</p><h1>九个主题如何形成</h1><p>具体使用线索整理成任务，任务按领域归类，再按研究范围安排内容和产品入口。</p></header>
   <nav className="brief-nav"><a href="#sources">来源</a><a href="#selection">取舍过程</a><a href="#themes">九主题对应</a><Source href="/community-options/themes/decision">主题与任务建议</Source><a href="#product">产品组织</a></nav>
   <section id="sources"><h2>三类材料，各回答一个问题</h2><div className="brief-path">

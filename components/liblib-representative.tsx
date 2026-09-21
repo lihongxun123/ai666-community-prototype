@@ -48,7 +48,7 @@ export function LiblibRepresentative(){return <>
  ['API 接入','向外部产品提供生成能力','API 会员与积分独立于网站体系，不能用网站套餐计算接入成本。'],
  ['作者分配','使用或付费贡献对应的回报规则','规则存在不等于实际结算收入；不同资源和动作的分配依据不同。']
  ]}/>
- <p>统一账号也不意味着权益完全互通。已记录的星流停服及迁移公告属于星流服务，不能延伸成 LiblibAI、LibTV 或 API 停止服务。具体日期、处理条件与收费来源保留在详细记录中。</p>
+ <p>统一账号也不意味着权益完全互通。停服及迁移公告仅涉及星流服务。具体日期、处理条件与收费来源保留在详细记录中。</p>
  <p>平台的留存、盈利与整体供需状况仍待经营数据验证。关键缺项包括任务完成与采用、持续使用与回访、付费转化与续费，以及作者收入和维护成本。</p>
  <div className="study-refs"><Ref id="liblib-function-9">会员</Ref><Ref id="liblib-function-10">积分</Ref><Ref id="liblib-function-11">API</Ref><Ref id="liblib-function-12">关联产品</Ref><Ref id="liblib-function-14">许可</Ref></div></section>
  </>;}

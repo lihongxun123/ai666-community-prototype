@@ -2,12 +2,159 @@ import TopicReadingPlan from '../topic-reading-plan';
 import Depth from './depth';
 import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
-function Source({href,children}:{href:string;children:React.ReactNode}){return <a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>}
-export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>设计与视觉表达 · 专题方案</span></header><h1>从一张主视觉，做到一套能修改的设计</h1><p className="ec-lead">帮助创作者明确设计目标、组织素材、调整系列版式，并交付可继续使用的文件。</p><nav>{[['reading-plan','专题编排'],['evidence','过程案例'],['brand-cases','品牌案例'],['branches','任务分支'],['checkpoints','制作与交付'],['bundle','内容包'],['cards','卡片与入口'],['delivery','交付与维护']].map(([id,label])=><a key={id} href={'#'+id}>{label}</a>)}</nav>
-<TopicReadingPlan kind="design"/><section id="evidence"><h2>生成图之后，还有具体的设计工作</h2><article><small>官方教程 · 2026-07-23 · 非客户验收记录</small><h3>海报好看，换到完整画面却比例失衡</h3><p>Jesús Ramirez 演示将三份 Firefly 素材放入 Photoshop，分层组织并保留编辑能力。竖版参考的构图扩展后，人物与背景比例不再合适；教程展示了重新定位、补全空白和选择候选的过程。</p><p><strong>专题启发：</strong>过程案例应展示改了哪里、为什么改，以及最终哪些部分还能编辑。</p><Source href="https://www.adobe.com/learn/firefly/web/create-cinematic-posters-photoshop-firefly-assets">查看原教程、视频与练习文件入口</Source></article>
-<article><small>官方教程 · 2026-08-07 · 与经营宣传共用的参照</small><h3>统一品牌风格，部分版式还要调整</h3><p>Adobe 的饮料宣传示例用参考图与颜色要求调整主视觉，进入 Express 添加文字，再生成多种尺寸。教程说明部分新页面的文字可能需要调整，并示范了一个尺寸的移动与缩放。</p><p><strong>专题启发：</strong>系列预览和可编辑版式应关联，并保留人工检查与调整入口。这份教程已有完整任务组织，可作为跟进参照。</p><Source href="https://www.adobe.com/learn/firefly/web/create-social-campaign-adobe-express">查看多尺寸制作过程</Source></article>
-<article><small>设计者讨论 · 2026年6月 · 个人自述</small><h3>AI参考图既能帮助沟通，也可能带来反复改向</h3><p>原帖作者描述客户让其润色 AI 图后又更换方向；同帖也有人认为这类参考减少了沟通。方案可保留参考图，并写清借鉴元素和设计目标；帖子未公开终稿，不能据此判断哪种合作方式更有效。</p><Source href="https://www.reddit.com/r/graphic_design/comments/1u0u01y/clients_sending_ai_examples_as_the_brief_or_in/">查看原帖与不同意见</Source></article></section>
-<Depth />
+function Source({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children} ↗
+    </a>
+  );
+}
+export default function Page() {
+  return (
+    <main className="ec-study">
+      <header>
+        <Link href="/community-options/scenarios">← 九类场景</Link>
+        <span>设计与视觉表达 · 专题方案</span>
+      </header>
+      <h1>从一张主视觉，做到一套能修改的设计</h1>
+      <p className="ec-lead">
+        帮助创作者明确设计目标、组织素材、调整系列版式，并交付可继续使用的文件。
+      </p>
+      <nav>
+        {[
+          ['reading-plan', '专题编排'],
+          ['evidence', '过程案例'],
+          ['brand-cases', '品牌案例'],
+          ['branches', '任务分支'],
+          ['checkpoints', '制作与交付'],
+          ['bundle', '内容包'],
+          ['cards', '卡片与入口'],
+          ['delivery', '交付与维护'],
+        ].map(([id, label]) => (
+          <a key={id} href={'#' + id}>
+            {label}
+          </a>
+        ))}
+      </nav>
+      <TopicReadingPlan kind="design" />
+      <section id="evidence">
+        <h2>生成图之后，还有具体的设计工作</h2>
+        <article>
+          <small>官方教程 · 2026-07-23 · 非客户验收记录</small>
+          <h3>海报好看，换到完整画面却比例失衡</h3>
+          <p>
+            Jesús Ramirez 演示将三份 Firefly 素材放入
+            Photoshop，分层组织并保留编辑能力。竖版参考的构图扩展后，人物与背景比例不再合适；教程展示了重新定位、补全空白和选择候选的过程。
+          </p>
+          <p>
+            <strong>专题启发：</strong>
+            过程案例应展示改了哪里、为什么改，以及最终哪些部分还能编辑。
+          </p>
+          <Source href="https://www.adobe.com/learn/firefly/web/create-cinematic-posters-photoshop-firefly-assets">
+            查看原教程、视频与练习文件入口
+          </Source>
+        </article>
+        <article>
+          <small>官方教程 · 2026-08-07 · 与经营宣传共用的参照</small>
+          <h3>统一品牌风格，部分版式还要调整</h3>
+          <p>
+            Adobe 的饮料宣传示例用参考图与颜色要求调整主视觉，进入 Express
+            添加文字，再生成多种尺寸。教程说明部分新页面的文字可能需要调整，并示范了一个尺寸的移动与缩放。
+          </p>
+          <p>
+            <strong>专题启发：</strong>
+            系列预览和可编辑版式应关联，并保留人工检查与调整入口。这份教程已有完整任务组织，可作为跟进参照。
+          </p>
+          <Source href="https://www.adobe.com/learn/firefly/web/create-social-campaign-adobe-express">
+            查看多尺寸制作过程
+          </Source>
+        </article>
+        <article>
+          <small>设计者讨论 · 2026年6月 · 个人自述</small>
+          <h3>AI参考图既能帮助沟通，也可能带来反复改向</h3>
+          <p>
+            原帖作者描述客户让其润色 AI
+            图后又更换方向；同帖也有人认为这类参考减少了沟通。方案可保留参考图，并写清借鉴元素和设计目标；帖子未公开终稿，不能据此判断哪种合作方式更有效。
+          </p>
+          <Source href="https://www.reddit.com/r/graphic_design/comments/1u0u01y/clients_sending_ai_examples_as_the_brief_or_in/">
+            查看原帖与不同意见
+          </Source>
+        </article>
+      </section>
+      <Depth />
 
-<section id="cards"><h2>让用户先判断是否适合，再进入制作</h2><div className="ec-three ec-choice"><article><h3>系列案例卡</h3><p>预览主视觉和两种延展，标出用途、交付形式与作者。主动作：看制作过程。</p></article><article><h3>工程资产卡</h3><p>展示可改元素、格式、兼容工具与许可。主动作：查看条件；确认可用后才显示使用入口。</p></article><article><h3>改稿讨论卡</h3><p>展示具体问题区域和期望变化。主动作：看对照与建议，不把整份私人文件公开。</p></article></div><p>从案例进入资产时保留来源关系；有兼容项目才连接 MakeNow。仅有教程时提供方法入口；文件失效时保留说明并推荐替代内容。</p></section>
-<section id="delivery"><h2>交付标准与平台职责</h2><div className="ec-two"><article><h3>用户检查</h3><ul><li>信息与原始要求一致，文字能读清。</li><li>不同画幅里主体、比例和重点合理。</li><li>需交付的元素可编辑，依赖及许可交代清楚。</li><li>尺寸清单与导出文件一一对应。</li></ul></article><article><h3>平台维护</h3><ul><li>编辑核对过程完整性、来源和资产状态。</li><li>作者说明版本、兼容条件与修改理由。</li><li>更新影响模板时复查使用入口。</li><li>点评关联明确目标，超出能力时不承诺代改。</li></ul></article></div><h3>卡住时怎样继续</h3><ul><li>参考方向改变：先更新简报，再新建候选，保留此前已确认版本。</li><li>缺字体或素材：说明替代项与视觉差异，重新检查版式。</li><li>某一尺寸不合适：只改该版式；主视觉改变时再复查其他尺寸。</li><li>工程无法打开：保留预览与原工具说明，不把扁平图片标成可编辑模板。</li></ul><p><strong>现阶段判断：</strong>近期教程、品牌提案与代理项目支持制作路径设计。连续改稿、客户采用、可授权资产与MakeNow兼容性仍需核对。</p></section><footer>来源核读：2026-09-20。产品路径为设计建议，未执行制作、客户交付或工具集成。</footer></main>}
+      <section id="cards">
+        <h2>让用户先判断是否适合，再进入制作</h2>
+        <div className="ec-three ec-choice">
+          <article>
+            <h3>系列案例卡</h3>
+            <p>
+              预览主视觉和两种延展，标出用途、交付形式与作者。主动作：看制作过程。
+            </p>
+          </article>
+          <article>
+            <h3>工程资产卡</h3>
+            <p>
+              展示可改元素、格式、兼容工具与许可。主动作：查看条件；确认可用后才显示使用入口。
+            </p>
+          </article>
+          <article>
+            <h3>改稿讨论卡</h3>
+            <p>
+              展示具体问题区域和期望变化。主动作：看对照与建议，不把整份私人文件公开。
+            </p>
+          </article>
+        </div>
+        <p>
+          从案例进入资产时保留来源关系；有兼容项目才连接
+          MakeNow。仅有教程时提供方法入口；文件失效时保留说明并推荐替代内容。
+        </p>
+      </section>
+      <section id="delivery">
+        <h2>交付标准与平台职责</h2>
+        <div className="ec-two">
+          <article>
+            <h3>用户检查</h3>
+            <ul>
+              <li>信息与原始要求一致，文字能读清。</li>
+              <li>不同画幅里主体、比例和重点合理。</li>
+              <li>需交付的元素可编辑，依赖及许可交代清楚。</li>
+              <li>尺寸清单与导出文件一一对应。</li>
+            </ul>
+          </article>
+          <article>
+            <h3>平台维护</h3>
+            <ul>
+              <li>编辑核对过程完整性、来源和资产状态。</li>
+              <li>作者说明版本、兼容条件与修改理由。</li>
+              <li>更新影响模板时复查使用入口。</li>
+              <li>点评关联明确目标，超出能力时不承诺代改。</li>
+            </ul>
+          </article>
+        </div>
+        <h3>卡住时怎样继续</h3>
+        <ul>
+          <li>参考方向改变：先更新简报，再新建候选，保留此前已确认版本。</li>
+          <li>缺字体或素材：说明替代项与视觉差异，重新检查版式。</li>
+          <li>某一尺寸不合适：只改该版式；主视觉改变时再复查其他尺寸。</li>
+          <li>
+            工程无法打开：保留预览与原工具说明，不把扁平图片标成可编辑模板。
+          </li>
+        </ul>
+        <p>
+          <strong>判断：</strong>
+          近期教程、品牌提案与代理项目支持制作路径设计。连续改稿、客户采用、可授权资产与MakeNow兼容性仍需核对。
+        </p>
+      </section>
+      <footer>
+        来源核读：2026-09-20。专题方案尚未验证制作、客户交付或工具集成。
+      </footer>
+    </main>
+  );
+}

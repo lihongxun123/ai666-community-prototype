@@ -3,7 +3,7 @@ import '@/components/market-social.css';
 import '../briefs/briefs.css';
 function Source({href,children}:{href:string;children:React.ReactNode}){return <a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>}
 export default function Page(){return <main className="ms-report proposal-brief">
-<p><Link href="/community-options/presentation#china">返回主讲 · 国内背景</Link></p>
+<p><Link href="/research-brief">简版研究报告</Link></p>
 <header><p>国内背景 / 依据与分析</p><h1>AI使用怎样连接到社区机会</h1><p>工作、学习、生活与创作都有实际使用。社区的选择依据，在于具体任务、已有帮助，以及用户愿意交流的理由。</p><p className="brief-meta">资料核读截至2026年9月20日；各项数据保留各自统计期。</p></header>
 <nav className="brief-nav"><a href="#usage">人群与用途</a><a href="#supply">工具供给</a><a href="#tasks">实际任务</a><a href="#help">已有帮助</a><a href="#implications">方案含义</a></nav>
 <section id="usage"><h2>近期资料覆盖了哪些使用</h2><div className="brief-options">

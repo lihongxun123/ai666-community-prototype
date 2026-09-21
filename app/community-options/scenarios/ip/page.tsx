@@ -1,11 +1,249 @@
 import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
-const A=({href,children}:{href:string;children:React.ReactNode})=><a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>;
-const rows=[['主题与许可','原创或获授权主题、文化来源、用途','确认可引用元素和禁用复制','来源与使用条件','授权和出处可追溯'],['设定','基础形象、固定特征、候选','定轮廓、比例、配色和标志物','设定页与取舍','固定项清楚'],['试做','一个复杂动作或表情','先处理高风险姿态，记录修正','动作对照','仍可辨识'],['延展','表情、动作和两种数字应用','按设定扩展并并排检查','系列图与问题标注','整套一致'],['交付','采用系列、文件、许可、用途','确认资产状态与版本','设定、系列、应用预览','来源、许可、版本齐全']];
-export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>IP 与文创开发 · 任务深化稿</span></header><h1>让原创形象延展成可追溯的数字应用</h1><p className="ec-lead">从主题依据、角色设定到表情动作和应用版式，重点是每次变更都能回到设定、许可和采用理由。</p><nav>{[['evidence','依据'],['task','主任务'],['branch','差异任务'],['supply','供给'],['recovery','中断与复用'],['scope','责任与边界']].map(([id,t])=><a key={id} href={'#'+id}>{t}</a>)}</nav>
-<section id="evidence"><h2>过程记录与课程成果支持不同部分</h2><article><small>山东大学作者日记 · 2026-08-13</small><p>作者记录“芯小收”从收报机原型到 26 个表情动作、透明背景调整和投稿；“挥手”因天线、手臂和围巾配合反复修改。页面写明已投稿、等待审核，未公开源文件或审核结果，也未披露 AI 使用。</p><A href="https://www.sdrj.sdu.edu.cn/info/1003/45468.htm">查看作者过程</A></article><article><small>蚌埠学院课程报道 · 2026-06-29</small><p>报道说明《文创产品开发与设计》课程将 AIGC 用于文化调研、符号提取、概念生成和视觉呈现，列出 IP、海报和衍生品等环节。它是课程说明，不是单一作品的修改记录、市场销售或作者采用证据。</p><A href="https://art.bbc.edu.cn/2026/0629/c828a128709/page.htm">查看课程报道</A></article><article><small>江西工程学院课程成果 · 2026-03-04</small><p>页面称 IP 角色实训使用 AIGC 辅助，展示具名 IP 的文化来源、表情、服装和衍生延展说明。它补足课程级任务范围，不能证明文件可下载或商业结果。</p><A href="https://bsart.jxue.edu.cn/2026/0213/c420a44319/page.htm">查看作品说明</A></article></section>
-<section id="ai-process"><h2>AI制作案例：成品与投稿结果分开看</h2><article><small>Mintimate · 2026-01-02发布，8月30日更新 · 作者自述</small><h3>TDP社群角色的生成与后期处理</h3><p>作者先选择角色，再生成不同场景；发现白边妨碍抠图后，在下一次描述中补充要求，并用Affinity处理背景。文中记录投稿被退回，末段明确这套Demo尚未正式上架。</p><p>本例支持记录实际问题与处理。尚无同一动作完整修前修后、最终审核通过或使用反馈；文章开头的泛化上架说法不作为这套Demo的成功证明。</p><A href="https://mintimate.cn/2026/01/02/genWechatEmoji/">作者制作与投稿记录</A></article></section><section id="task"><h2>主任务：角色设定、表情动作与两种数字应用</h2><p>六种表情、三个动作和两种应用只用于控制样本，不是市场需求事实。</p><div className="ec-flow">主题与许可 → 设定 → 高风险动作试做 → 系列延展 → 应用版式 → 全套核对</div><div className="ec-scroll"><table><thead><tr><th>环节</th><th>输入</th><th>动作</th><th>产物</th><th>完成检查</th></tr></thead><tbody>{rows.map(r=><tr key={r[0]}>{r.map(c=><td key={c}>{c}</td>)}</tr>)}</tbody></table></div></section>
-<section id="branch"><h2>差异任务</h2><div className="ec-two"><article><h3>文化元素转角色特征</h3><p>输入可追溯来源和可用范围；提取元素并记录保留、简化和舍弃理由。产物为来源对照和候选；放行条件是出处、授权与设计判断一致。</p></article><article><h3>小尺寸应用适配</h3><p>输入已确认形象和应用尺寸；检查裁切、透明边缘和文字层级。产物为两种尺寸预览；放行条件是辨识特征仍清楚。</p></article></div></section>
-<section id="supply"><h2>五种拟议供给及最低材料</h2><div className="ec-scroll"><table><thead><tr><th>内容</th><th>最低材料</th><th>卡片动作</th></tr></thead><tbody>{[['文化元素怎样进入设定','可追溯来源、候选、选择理由','看设定对照'],['复杂动作怎样试做','基础形象、问题动作、修正和采用理由','看动作修正'],['表情延展怎样检查','系列预览、固定项、问题标注','并排比较'],['两种数字应用怎样适配','尺寸预览、可编辑范围、许可','看使用条件'],['可复用设定或画布','获授权文件、依赖、兼容条件','查看资产状态']].map(r=><tr key={r[0]}>{r.map(c=><td key={c}>{c}</td>)}</tr>)}</tbody></table></div></section>
-<section id="recovery"><h2>中断恢复与二次使用</h2><ul><li>动作偏离：回到基础设定，只重做问题动作，已采用表情保留。</li><li>文化出处或授权不清：暂停该题材，保留来源问题，不继续复制资产。</li><li>缩小后不清楚：保留识别特征并简化装饰，再复查应用尺寸。</li><li>二次使用复用设定和应用结构；换主题、用途或许可时重新确认。</li></ul></section>
-<section id="scope"><h2>责任、工具与证据边界</h2><div className="ec-two"><article><h3>作者与使用者</h3><p>作者提供文化来源、设定、过程、采用理由和文件说明；使用者确认用途、授权和最终系列。</p></article><article><h3>编辑</h3><p>编辑核对参考来源、资产许可、版本和入口；课程作品只作研究参照，不提取为本站资产。</p></article></div><p>MakeNow 已有画布；角色参考、局部编辑、项目复制、导入、版本关联和导出均未核实。外部工具可组织同任务，不等于多元拾光已具备对应功能。当前材料支持任务拆分，不能判断市场缺口、供给量或商业表现。</p></section><footer>来源核读：2026-09-20。未执行生成、投稿、实物生产、上传或工具集成。</footer></main>}
+const A = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    {children} ↗
+  </a>
+);
+const rows = [
+  [
+    '主题与许可',
+    '原创或获授权主题、文化来源、用途',
+    '确认可引用元素和禁用复制',
+    '来源与使用条件',
+    '授权和出处可追溯',
+  ],
+  [
+    '设定',
+    '基础形象、固定特征、候选',
+    '定轮廓、比例、配色和标志物',
+    '设定页与取舍',
+    '固定项清楚',
+  ],
+  [
+    '试做',
+    '一个复杂动作或表情',
+    '先处理高风险姿态，记录修正',
+    '动作对照',
+    '仍可辨识',
+  ],
+  [
+    '延展',
+    '表情、动作和两种数字应用',
+    '按设定扩展并并排检查',
+    '系列图与问题标注',
+    '整套一致',
+  ],
+  [
+    '交付',
+    '采用系列、文件、许可、用途',
+    '确认资产状态与版本',
+    '设定、系列、应用预览',
+    '来源、许可、版本齐全',
+  ],
+];
+export default function Page() {
+  return (
+    <main className="ec-study">
+      <header>
+        <Link href="/community-options/scenarios">← 九类场景</Link>
+        <span>IP 与文创开发 · 专题方案</span>
+      </header>
+      <h1>让原创形象延展成可追溯的数字应用</h1>
+      <p className="ec-lead">
+        从主题依据、角色设定到表情动作和应用版式，重点是每次变更都能回到设定、许可和采用理由。
+      </p>
+      <nav>
+        {[
+          ['evidence', '依据'],
+          ['task', '主任务'],
+          ['branch', '差异任务'],
+          ['supply', '供给'],
+          ['recovery', '中断与复用'],
+          ['scope', '责任与边界'],
+        ].map(([id, t]) => (
+          <a key={id} href={'#' + id}>
+            {t}
+          </a>
+        ))}
+      </nav>
+      <section id="evidence">
+        <h2>作者记录与课程成果各有边界</h2>
+        <article>
+          <small>山东大学作者日记 · 2026-08-13</small>
+          <p>
+            作者记录“芯小收”从收报机原型到 26
+            个表情动作、透明背景调整和投稿；“挥手”因天线、手臂和围巾配合反复修改。页面写明已投稿、等待审核，未公开源文件或审核结果，也未披露
+            AI 使用。
+          </p>
+          <A href="https://www.sdrj.sdu.edu.cn/info/1003/45468.htm">
+            查看作者过程
+          </A>
+        </article>
+        <article>
+          <small>蚌埠学院课程报道 · 2026-06-29</small>
+          <p>
+            报道说明《文创产品开发与设计》课程将 AIGC
+            用于文化调研、符号提取、概念生成和视觉呈现，列出
+            IP、海报和衍生品等环节。它是课程说明，不是单一作品的修改记录、市场销售或作者采用证据。
+          </p>
+          <A href="https://art.bbc.edu.cn/2026/0629/c828a128709/page.htm">
+            查看课程报道
+          </A>
+        </article>
+        <article>
+          <small>江西工程学院课程成果 · 2026-03-04</small>
+          <p>
+            页面称 IP 角色实训使用 AIGC 辅助，展示具名 IP
+            的文化来源、表情、服装和衍生延展说明。它补足课程级任务范围，不能证明文件可下载或商业结果。
+          </p>
+          <A href="https://bsart.jxue.edu.cn/2026/0213/c420a44319/page.htm">
+            查看作品说明
+          </A>
+        </article>
+      </section>
+      <section id="ai-process">
+        <h2>AI制作案例：成品与投稿结果分开看</h2>
+        <article>
+          <small>Mintimate · 2026-01-02发布，8月30日更新 · 作者自述</small>
+          <h3>TDP社群角色的生成与后期处理</h3>
+          <p>
+            作者先选择角色，再生成不同场景；发现白边妨碍抠图后，在下一次描述中补充要求，并用Affinity处理背景。文中记录投稿被退回，末段明确这套Demo尚未正式上架。
+          </p>
+          <p>
+            本例支持记录实际问题与处理。尚无同一动作完整修前修后、最终审核通过或使用反馈；文章开头的泛化上架说法不作为这套Demo的成功证明。
+          </p>
+          <A href="https://mintimate.cn/2026/01/02/genWechatEmoji/">
+            作者制作与投稿记录
+          </A>
+        </article>
+      </section>
+      <section id="task">
+        <h2>主任务：角色设定、表情动作与两种数字应用</h2>
+        <p>六种表情、三个动作和两种应用只用于控制样本，不是市场需求事实。</p>
+        <div className="ec-flow">
+          主题与许可 → 设定 → 高风险动作试做 → 系列延展 → 应用版式 → 全套核对
+        </div>
+        <div className="ec-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>环节</th>
+                <th>输入</th>
+                <th>动作</th>
+                <th>产物</th>
+                <th>完成检查</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r[0]}>
+                  {r.map((c) => (
+                    <td key={c}>{c}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="branch">
+        <h2>差异任务</h2>
+        <div className="ec-two">
+          <article>
+            <h3>文化元素转角色特征</h3>
+            <p>
+              输入可追溯来源和可用范围；提取元素并记录保留、简化和舍弃理由。产物为来源对照和候选；放行条件是出处、授权与设计判断一致。
+            </p>
+          </article>
+          <article>
+            <h3>小尺寸应用适配</h3>
+            <p>
+              输入已确认形象和应用尺寸；检查裁切、透明边缘和文字层级。产物为两种尺寸预览；放行条件是辨识特征仍清楚。
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="supply">
+        <h2>内容样本及最低材料</h2>
+        <div className="ec-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>内容</th>
+                <th>最低材料</th>
+                <th>卡片动作</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                [
+                  '文化元素怎样进入设定',
+                  '可追溯来源、候选、选择理由',
+                  '看设定对照',
+                ],
+                [
+                  '复杂动作怎样试做',
+                  '基础形象、问题动作、修正和采用理由',
+                  '看动作修正',
+                ],
+                ['表情延展怎样检查', '系列预览、固定项、问题标注', '并排比较'],
+                [
+                  '两种数字应用怎样适配',
+                  '尺寸预览、可编辑范围、许可',
+                  '看使用条件',
+                ],
+                [
+                  '可复用设定或画布',
+                  '获授权文件、依赖、兼容条件',
+                  '查看资产状态',
+                ],
+              ].map((r) => (
+                <tr key={r[0]}>
+                  {r.map((c) => (
+                    <td key={c}>{c}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="recovery">
+        <h2>中断恢复与二次使用</h2>
+        <ul>
+          <li>动作偏离：回到基础设定，只重做问题动作，已采用表情保留。</li>
+          <li>
+            文化出处或授权不清：暂停该题材，保留来源问题，不继续复制资产。
+          </li>
+          <li>缩小后不清楚：保留识别特征并简化装饰，再复查应用尺寸。</li>
+          <li>二次使用复用设定和应用结构；换主题、用途或许可时重新确认。</li>
+        </ul>
+      </section>
+      <section id="scope">
+        <h2>责任、工具与证据边界</h2>
+        <div className="ec-two">
+          <article>
+            <h3>作者与使用者</h3>
+            <p>
+              作者提供文化来源、设定、过程、采用理由和文件说明；使用者确认用途、授权和最终系列。
+            </p>
+          </article>
+          <article>
+            <h3>编辑</h3>
+            <p>
+              编辑核对参考来源、资产许可、版本和入口；课程作品只作研究参照，不提取为本站资产。
+            </p>
+          </article>
+        </div>
+        <p>
+          MakeNow
+          已有画布；角色参考、局部编辑、项目复制、导入、版本关联和导出均未核实。外部工具可组织同类任务，不等于多元拾光具备对应功能。当前材料支持任务拆分，不能判断供给量或商业表现。
+        </p>
+      </section>
+      <footer>
+        来源核读：2026-09-20。专题方案尚未验证生成、投稿、实物生产、上传或工具集成。
+      </footer>
+    </main>
+  );
+}

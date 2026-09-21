@@ -49,14 +49,14 @@ export function ReportQuality({platformCount, groupCount, onOpen}: ReportQuality
         </table>
       </div>
 
-      <h3>哪些可整理补齐，哪些需要新证据</h3>
+      <h3>证据覆盖与限制</h3>
       <div className="table-wrap">
         <table className="brief-table" aria-label="证据覆盖与补充方式">
           <thead>
             <tr>
               <th scope="col">研究问题</th>
-              <th scope="col">整理已有材料可补齐</th>
-              <th scope="col">需要新采样或一手资料</th>
+              <th scope="col">已有依据</th>
+              <th scope="col">仍缺少的证据</th>
             </tr>
           </thead>
           <tbody>

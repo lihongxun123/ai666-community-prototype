@@ -19,7 +19,7 @@ export default function Page(){
  function close(){setActive(null);setHandoff(false);trigger.current?.focus()}
  function reset(){setTopic('all');setKind('全部');setQuery('');setActive(null);setHandoff(false)}
  return <main className="hd">
- <aside className="hd-review"><Link href="/community-options/presentation#a-product">← 社区方案</Link><span>交互样板 · 卡片为拟议内容，资产未接入</span><button aria-expanded={notes} onClick={()=>setNotes(!notes)}>设计说明</button></aside>
+ <aside className="hd-review"><Link href="/research-brief">← 社区方案</Link><span>交互样板 · 卡片为拟议内容，资产未接入</span><button aria-expanded={notes} onClick={()=>setNotes(!notes)}>设计说明</button></aside>
  {notes&&<aside className="hd-notes"><button onClick={()=>setNotes(false)}>关闭说明</button><h2>平台组织专题，作者提供经验与资产</h2><p>首页内容草案以电商营销、视觉设计、写作编辑为推荐专题，九类场景均可筛选。案例讲取舍，教程讲步骤，资产讲使用条件，讨论定位问题。专题排序为编排建议，非市场排名。</p><p>MakeNow已有画布；复制、导入、版本和导出待逐项核对，电商Agent与工作流工具为规划。此页没有实际上传、运行、下载和提交。私人原片与内部文件默认不公开。</p><p>本页属于研究室信息架构探索，不替代真实C端产品基线。</p><a href="/community-options/scenarios#content-map" target="_blank" rel="noopener noreferrer">九类设计依据 ↗</a></aside>}
  <header className="hd-head"><strong>多元拾光</strong><nav><button onClick={reset}>发现方法</button><a href="#creation">创作交流</a></nav></header>
  <section className="hd-intro"><span>从想做的事情开始</span><h1>看懂怎么做，带着方法继续创作。</h1><p>案例、教程、可复用材料和具体问题，放在一起找。</p></section>

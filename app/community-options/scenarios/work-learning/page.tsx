@@ -1,8 +1,176 @@
 import Depth from './depth';
 import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
-export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>职场与学习表达 · 专题方案</span></header><h1>把已有资料，变成听众用得上的汇报与讲义</h1><p className="ec-lead">先确定要讲给谁、讲完要解决什么，再选择资料、安排结构和制作页面。</p><nav><a href="#evidence">已有方案</a><a href="#task">任务路径</a><a href="#handoff">制作与交付</a><a href="#packages">内容包</a><a href="#recovery">返工与复用</a><a href="#content">卡片</a><a href="#delivery">交付检查</a></nav>
-<section id="evidence"><h2>现有工具已把大纲、生成和编辑串起来</h2><article><small>Microsoft 官方帮助 · 2026-09-20 核读，页面未标发布日期</small><h3>先改大纲，再生成演示稿</h3><p>Copilot 的帮助页说明了听众与风格设定、大纲修改及生成后编辑，并介绍 Word 结构和组织模板的使用。不同模式能力有区别：该页的 Agent Mode 仍将引用文件标为即将支持。功能说明不代表某份汇报已经被采用。</p><a href="https://support.microsoft.com/en-us/powerpoint/copilot/create-a-new-presentation-with-copilot-in-powerpoint" target="_blank" rel="noopener noreferrer">查看官方制作路径 ↗</a></article><article><small>FSU 校方在 Google 博客的自述 · 2026-06-22</small><h3>课程材料可以转成不同复习形式</h3><p>校方介绍学生用 NotebookLM 制作卡片、练习题、学习指南和音频摘要。它支持“按学习用途组织同一份材料”的方向；原文没有公开可复核的个体前后成绩或完整作业版本。</p><a href="https://blog.google/products-and-platforms/products/education/florida-state-university-notebooklm/" target="_blank" rel="noopener noreferrer">查看校方使用说明 ↗</a></article><p><strong>专题建议：</strong>以听众、用途和资料条件组织案例。重点展示如何删减材料、调整解释顺序和核对结论，通用生成入口可直接借鉴成熟工具。</p></section>
-<section id="teaching-case"><h2>教学案例：试讲后，调整提问与信息量</h2><article><small>宁波东方理工大学 · 2026-07-10 · 校方报道</small><h3>大学化学从课程规划到课堂使用</h3><p>教师组织课程简报、逐页规划与课件制作，在春季章节试点及夏令营使用。针对学生不会提问和信息过载，增加前置讲解、缩小任务并强化总结。</p><p>这条记录补充了真实教学过程；原始课件、逐页改稿和独立效果评估尚未公开。企业汇报的交付采用仍另待核查。</p><a href="https://science.eitech.edu.cn/2026/0710/c1203a6485/page.htm" target="_blank" rel="noopener noreferrer">课程试讲与调整原文 ↗</a></article></section><section id="workplace-case"><h2>企业汇报：文件交付与业务采用分开看</h2><article><small>比特意图 · 2026-08-03 · 厂商匿名客户案例</small><h3>图型底稿转换后，仍需人工精修</h3><p>厂商描述将AI生成的图型PDF转为可编辑PPTX，再由设计师调整品牌信息和敏感页。原始业务资料、同页改前改后及客户确认未公开，不能据此判断汇报是否被采用。</p><a href="https://www.eeebit.com/insights/cases/pptbot-training-deck-editable/" target="_blank" rel="noopener noreferrer">制作与交付自述 ↗</a></article><p>案例分别标明底稿完成、内部批准、已汇报或获采用。企业汇报继续作为方法参照，首批重点内容先采用材料更清楚的任务。</p></section><section id="task"><h2>同一份资料，两条交付路径</h2><div className="ec-two"><article><h3>职场：让听众作出判断</h3><p>输入：获授权资料、听众、会议目标、时长与模板。输出：汇报稿、讲者备注、来源和待决事项。先确定需要回答的问题，再决定每页放什么。</p><div className="ec-flow">听众问题 → 证据与大纲 → 页面 → 试讲 → 资料负责人复核</div></article><article><h3>学习：让自己或同学理解材料</h3><p>输入：课程范围、已学基础和可使用资料。输出：讲义、例题或复习卡及出处。先列学习问题，再选择解释和练习形式。</p><div className="ec-flow">学习目标 → 概念关系 → 讲解与练习 → 对照教材 → 修订</div></article></div><p>以上为拟议任务规格。首批案例优先用公开或获授权的材料，内部项目文件留在用户自己的工作环境。</p></section>
-<Depth /><section id="content"><h2>社区提供可以复用的组织方法</h2><div className="ec-three ec-choice"><article><h3>交付案例卡</h3><p>先展示用途、听众、关键页面与资料条件。详情解释原资料怎样变成大纲、哪些内容被舍弃。</p></article><article><h3>结构资产卡</h3><p>提供汇报骨架、讲义结构或练习模板；标明可改字段、格式、使用条件与示例来源。</p></article><article><h3>页面诊断卡</h3><p>围绕一页难懂、图表不清或讲解跳跃的问题，展示修改前后和采用理由。</p></article></div><p>选题可以是“十页材料如何压成一次短汇报”“同一概念怎样给初学者讲清”“原数据更新后如何查漏”。这是一组供给建议，尚无本站授权素材包。</p><p>社区关联来源、方法与讨论；演示稿继续在适合的工具中制作。MakeNow 可承接已核对兼容的视觉素材，文档导入、幻灯片编辑和演示导出尚未确认。</p></section>
-<section id="delivery"><h2>交付前，检查听众实际会用到什么</h2><ul><li>主结论对应资料，数字和图表能够定位原始口径。</li><li>汇报明确待决事项；讲义明确概念、例子与练习答案的依据。</li><li>在规定时长内讲得完，必要解释留在备注或补充页。</li><li>资料更新后知道哪些页受影响；公开版本移除私有信息。</li></ul><p>作者负责结构与取舍，资料负责人确认事实，专题编辑核对来源、授权与资产状态。教学已有实际试讲与调整报道，仍缺公开源课件和前后对照；企业汇报仍缺从资料、返工到采用的连续记录。</p></section><footer>来源核读：2026-09-20。此页为内容与产品建议，未验证工具集成或真实交付成效。</footer></main>}
+export default function Page() {
+  return (
+    <main className="ec-study">
+      <header>
+        <Link href="/community-options/scenarios">← 九类场景</Link>
+        <span>职场与学习表达 · 专题方案</span>
+      </header>
+      <h1>把已有资料，变成听众用得上的汇报与讲义</h1>
+      <p className="ec-lead">
+        先确定要讲给谁、讲完要解决什么，再选择资料、安排结构和制作页面。
+      </p>
+      <nav>
+        <a href="#evidence">已有方案</a>
+        <a href="#task">任务路径</a>
+        <a href="#handoff">制作与交付</a>
+        <a href="#packages">内容包</a>
+        <a href="#recovery">返工与复用</a>
+        <a href="#content">卡片</a>
+        <a href="#delivery">交付检查</a>
+      </nav>
+      <section id="evidence">
+        <h2>现有工具已把大纲、生成和编辑串起来</h2>
+        <article>
+          <small>Microsoft 官方帮助 · 2026-09-20 核读，页面未标发布日期</small>
+          <h3>先改大纲，再生成演示稿</h3>
+          <p>
+            Copilot 的帮助页说明了听众与风格设定、大纲修改及生成后编辑，并介绍
+            Word 结构和组织模板的使用。不同模式能力有区别：该页的 Agent Mode
+            仍将引用文件标为即将支持。功能说明不代表某份汇报已经被采用。
+          </p>
+          <a
+            href="https://support.microsoft.com/en-us/powerpoint/copilot/create-a-new-presentation-with-copilot-in-powerpoint"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            查看官方制作路径 ↗
+          </a>
+        </article>
+        <article>
+          <small>FSU 校方在 Google 博客的自述 · 2026-06-22</small>
+          <h3>课程材料可以转成不同复习形式</h3>
+          <p>
+            校方介绍学生用 NotebookLM
+            制作卡片、练习题、学习指南和音频摘要。它支持“按学习用途组织同一份材料”的方向；原文没有公开可复核的个体前后成绩或完整作业版本。
+          </p>
+          <a
+            href="https://blog.google/products-and-platforms/products/education/florida-state-university-notebooklm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            查看校方使用说明 ↗
+          </a>
+        </article>
+        <p>
+          <strong>建议：</strong>
+          按听众、用途和资料条件组织案例，展示材料删减、解释顺序和结论核对；通用生成入口可借鉴成熟工具。
+        </p>
+      </section>
+      <section id="teaching-case">
+        <h2>教学案例：试讲后，调整提问与信息量</h2>
+        <article>
+          <small>宁波东方理工大学 · 2026-07-10 · 校方报道</small>
+          <h3>大学化学从课程规划到课堂使用</h3>
+          <p>
+            教师组织课程简报、逐页规划与课件制作，在春季章节试点及夏令营使用。针对学生不会提问和信息过载，增加前置讲解、缩小任务并强化总结。
+          </p>
+          <p>
+            这条记录补充了真实教学过程；原始课件、逐页改稿和独立效果评估尚未公开。企业汇报的交付采用仍另待核查。
+          </p>
+          <a
+            href="https://science.eitech.edu.cn/2026/0710/c1203a6485/page.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            课程试讲与调整原文 ↗
+          </a>
+        </article>
+      </section>
+      <section id="workplace-case">
+        <h2>企业汇报：文件交付与业务采用分开看</h2>
+        <article>
+          <small>比特意图 · 2026-08-03 · 厂商匿名客户案例</small>
+          <h3>图型底稿转换后，仍需人工精修</h3>
+          <p>
+            厂商描述将AI生成的图型PDF转为可编辑PPTX，再由设计师调整品牌信息和敏感页。原始业务资料、同页改前改后及客户确认未公开，不能据此判断汇报是否被采用。
+          </p>
+          <a
+            href="https://www.eeebit.com/insights/cases/pptbot-training-deck-editable/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            制作与交付自述 ↗
+          </a>
+        </article>
+        <p>
+          案例分别标明底稿完成、内部批准、已汇报或获采用。企业汇报继续作为方法参照，首批重点内容先采用材料更清楚的任务。
+        </p>
+      </section>
+      <section id="task">
+        <h2>同一份资料，两条交付路径</h2>
+        <div className="ec-two">
+          <article>
+            <h3>职场：让听众作出判断</h3>
+            <p>
+              输入：获授权资料、听众、会议目标、时长与模板。输出：汇报稿、讲者备注、来源和待决事项。先确定需要回答的问题，再决定每页放什么。
+            </p>
+            <div className="ec-flow">
+              听众问题 → 证据与大纲 → 页面 → 试讲 → 资料负责人复核
+            </div>
+          </article>
+          <article>
+            <h3>学习：让自己或同学理解材料</h3>
+            <p>
+              输入：课程范围、已学基础和可使用资料。输出：讲义、例题或复习卡及出处。先列学习问题，再选择解释和练习形式。
+            </p>
+            <div className="ec-flow">
+              学习目标 → 概念关系 → 讲解与练习 → 对照教材 → 修订
+            </div>
+          </article>
+        </div>
+        <p>
+          以上为拟议任务规格。首批案例优先用公开或获授权的材料，内部项目文件留在用户自己的工作环境。
+        </p>
+      </section>
+      <Depth />
+      <section id="content">
+        <h2>社区提供可以复用的组织方法</h2>
+        <div className="ec-three ec-choice">
+          <article>
+            <h3>交付案例卡</h3>
+            <p>
+              先展示用途、听众、关键页面与资料条件。详情解释原资料怎样变成大纲、哪些内容被舍弃。
+            </p>
+          </article>
+          <article>
+            <h3>结构资产卡</h3>
+            <p>
+              提供汇报骨架、讲义结构或练习模板；标明可改字段、格式、使用条件与示例来源。
+            </p>
+          </article>
+          <article>
+            <h3>页面诊断卡</h3>
+            <p>
+              围绕一页难懂、图表不清或讲解跳跃的问题，展示修改前后和采用理由。
+            </p>
+          </article>
+        </div>
+        <p>
+          选题可以是“十页材料如何压成一次短汇报”“同一概念怎样给初学者讲清”“原数据更新后如何查漏”。这是一组供给建议，尚无本站授权素材包。
+        </p>
+        <p>
+          社区关联来源、方法与讨论；演示稿继续在适合的工具中制作。MakeNow
+          可承接已核对兼容的视觉素材，文档导入、幻灯片编辑和演示导出尚未确认。
+        </p>
+      </section>
+      <section id="delivery">
+        <h2>交付前，检查听众实际会用到什么</h2>
+        <ul>
+          <li>主结论对应资料，数字和图表能够定位原始口径。</li>
+          <li>汇报明确待决事项；讲义明确概念、例子与练习答案的依据。</li>
+          <li>在规定时长内讲得完，必要解释留在备注或补充页。</li>
+          <li>资料更新后知道哪些页受影响；公开版本移除私有信息。</li>
+        </ul>
+        <p>
+          作者负责结构与取舍，资料负责人确认事实，专题编辑核对来源、授权与资产状态。教学已有实际试讲与调整报道，仍缺公开源课件和前后对照；企业汇报仍缺从资料、返工到采用的连续记录。
+        </p>
+      </section>
+      <footer>
+        来源核读：2026-09-20。专题方案尚未验证工具集成或真实交付成效。
+      </footer>
+    </main>
+  );
+}

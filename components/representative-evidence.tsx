@@ -15,7 +15,7 @@ export function RepresentativeEvidence({platformId,compact=false}:{platformId?:s
      <h4>{c.title}</h4><p className="followup-meta">{c.actorType}</p>
      <dl><dt>任务</dt><dd>{c.task}</dd><dt>问题</dt><dd>{c.problem}</dd></dl>
      <ol className="followup-timeline">{c.timeline.map((t,i)=><li key={i}><span>{t.date}</span><p>{t.event}</p></li>)}</ol>
-     <dl><dt>观察结果</dt><dd>{c.observedOutcome}</dd><dt>仍未解决</dt><dd>{c.unresolved}</dd><dt>对内容与运营的启发</dt><dd>{c.implication}</dd></dl>
+     <dl><dt>观察结果</dt><dd>{c.observedOutcome}</dd><dt>结果与限制</dt><dd>{c.unresolved}</dd><dt>对内容与运营的启发</dt><dd>{c.implication}</dd></dl>
      <div className="brief-evidence">{c.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noreferrer" title={`${s.publishedAt||'页面未标日期'} · 查阅${s.accessedAt} · ${s.supports}`}>{s.title} ↗</a>)}</div>
     </article>)}
     <p className="followup-commercial"><strong>商业化判断：</strong>{p.commercialBoundary}</p>

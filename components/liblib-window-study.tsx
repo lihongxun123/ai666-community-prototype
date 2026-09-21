@@ -37,8 +37,8 @@ export function LiblibWindowStudy(){return <section id="liblib-supply-distributi
   <p>12份不同署名作者的资源说明中，5份有本地说明、文件线索或独立运行回报。换背景工作流还出现一位使用者替换节点后本地跑通的回报；另一个工作流依赖BizyAir云端，页面显示暂无法在线运行。平台已有本地路径，具体资源的依赖、许可与效果需要分别判断。</p>
   <p>商品保持的限制更具体：部分流程需要后期合成，部分重绘或放大步骤可能改变文字和产品细节。这些限制来自作者说明，仍缺独立使用者的交付结果，同类任务的整体成功率未知。</p>
   <details open><summary>12份候选替代资源的适用条件</summary><div className="table-wrap"><table><thead><tr><th>资源与来源</th><th>输入与运行条件</th><th>效果与限制</th></tr></thead><tbody>{alternatives.resources.map(r=><tr key={r.id}><td><a href={r.url} target="_blank" rel="noreferrer">{r.title} ↗</a><p>{r.author} · {r.form}</p></td><td><p>{r.inputs_dependencies}</p><p>{r.download_local_evidence}</p></td><td><p>{r.limits_or_counterevidence}</p><p>{r.independent_user_evidence}</p></td></tr>)}</tbody></table></div></details>
-  <p>来源为2026-09-15读取的公开详情及检索缓存，读取日期不代表内容更新日期。两段式换背景资源的详情链接跳转至首页，其说明仅保留为历史缓存依据；无法据此确认已下架。</p>
+  <p>来源：2026-09-15查阅的公开详情及检索缓存；内容更新日期另列。两段式换背景资源的详情链接跳转至首页，其说明仅保留为历史缓存依据；无法据此确认已下架。</p>
   <h4>使用结果能说明什么</h4>
-  <p>电商场景渲染的公开讨论中，1条反馈称商品未变形，另有毛绒坐垫效果不理想、沙发布料不一致两条具体反馈。这些是既有讨论的结构化复核，不增加独立用户样本。正向体验不能证明纹理和文字都保持，历史失败也不能证明当前版本仍然失败。</p>
+  <p>电商场景渲染的公开讨论中，1条反馈称商品未变形，另有毛绒坐垫效果不理想、沙发布料不一致两条具体反馈。这些是既有讨论的结构化复核，不增加独立用户样本。纹理与文字保真仍需单独检查；历史失败仅适用于当时版本。</p>
   <p>多产品同背景有明确提问和作者答复，面料与文字保持也有相应资源说明，但仍缺按这些任务要求完成验收的记录。本地跑通的正向回报与节点不兼容的障碍同时存在；两者支持资源级比较，尚不能判断平台级供不应求。<a href="/liblib-evidence?section=liblib-demand-evidence" target="_blank" rel="noopener noreferrer">具体任务与使用结果</a></p>
 </section>;}

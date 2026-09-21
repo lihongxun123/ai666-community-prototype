@@ -28,8 +28,8 @@ const sourceLinks = [
 ];
 function Table({rows}:{rows:string[][]}){return <div className="ms-table"><table><thead><tr><th>方向</th><th>具体任务</th><th>现有材料</th><th>下一项核查</th></tr></thead><tbody>{rows.map(r=><tr key={r[0]}>{r.map((v,i)=><td key={i}>{v}</td>)}</tr>)}</tbody></table></div>}
 export function DualTrackResearch(){return <section id="report-topics">
- <h2>两条主线：社媒消费观察与实用应用</h2><p>兴趣消费观察要求AI参与核心内容表达，用于判断创作者市场需求、选题和合作对象；实用线要求有明确任务和可检查的成果。多元拾光不触达或服务纯娱乐观众。14个领域是研究范围，尚未形成市场机会排名。</p>
- <div className="ms-grid two"><article><h3>社媒消费观察：识别创作者面对的内容需求</h3><p>研究对象是作品、系列与讨论。教程和工具作为创作支撑，观看者观察只用于判断市场需求、选题和合作对象。</p></article><article><h3>实用应用：输入、方法与成果</h3><p>研究对象是输入、方法、输出与修正。能力说明、实际应用和验收结果分别记录。</p></article></div>
+ <h2>两条主线：社媒消费观察与实用应用</h2><p>兴趣消费观察用于判断创作者面对的内容需求、选题和合作对象，要求AI参与核心表达；实用线要求有明确任务和可检查的成果。多元拾光不服务纯娱乐观众。14个领域仅为研究范围，不是市场机会排名。</p>
+ <div className="ms-grid two"><article><h3>社媒消费观察：创作者面对的内容需求</h3><p>观察作品、系列与讨论；教程和工具作为创作支撑。观看者观察只用于判断市场需求、选题和合作对象。</p></article><article><h3>实用应用：输入、方法与成果</h3><p>观察输入、方法、输出与修正，分别记录能力说明、实际应用和验收结果。</p></article></div>
  <h3>兴趣内容消费 · 六类</h3><Table rows={interest}/><h3>实用任务应用 · 八类</h3><Table rows={practical}/>
  <h2>代表样本的观察与判断</h2><div className="ms-grid two"><article><h3>故事连载</h3><p>《DEADLY：畸变》的原平台已有相邻集、合集、评论和修正版。评论中可见围绕角色与剧情的讨论和玩笑回复。</p><p><strong>判断：</strong>系列、版本与补充内容值得深入，需说明原平台以外的具体价值。</p><small>系列路径与普通短片反馈分别取样，跨周行为仍缺记录。</small></article><article><h3>电商视觉</h3><p>作者工作流写明精修、换景与人工补修。女装店主采访中，一位用AI图上新，另一位因面料与版型偏差放弃上线。</p><p><strong>判断：</strong>按商品真实性拆任务，服装虚拟上身单独验收。</p><small>两位店主为媒体采访中的化名受访者；同一商品的完整交付与消费者反馈仍缺。</small></article></div>
  <h2 id="field-findings">从作品评论与商家经历看需求</h2>

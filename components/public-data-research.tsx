@@ -53,7 +53,7 @@ function VisitTrends({ profile }: { profile: PublicDataProfile }) {
 
 export function PublicDataProfileSection({ data }: { data: PublicDataProfile }) {
   const highlights=['visits','mom_pct','duration_seconds','pages_per_visit','bounce_pct','direct_pct'].map(key=>comparisonMetric(data,key)||data.observations.filter(observation=>observation.key===key&&observation.evidenceStatus==='page'&&observation.numericValue!==null&&/^2026-\d{2}$/.test(observation.period)).sort((a,b)=>b.period.localeCompare(a.period))[0]).filter(Boolean) as PublicObservation[];
-  return <section className="public-data-report public-data-profile" id="public-data"><div className="section-heading"><h2>公开数据与访问行为</h2><span>资料截至2026.09.09</span></div><p className="data-summary">{data.summary}</p><p className="data-scope-note">观察域名：{data.domains.join('、')}。比较时须核对月份、来源和统计对象。第三方流量估计与平台公开活动数，不能代替内部用户或支付记录。</p>
+  return <section className="public-data-report public-data-profile" id="public-data"><div className="section-heading"><h2>公开数据与访问行为</h2><span>资料截至2026.09.09</span></div><p className="data-summary">{data.summary}</p><p className="data-scope-note">观察域名：{data.domains.join('、')}。比较时须核对月份、来源和统计对象。第三方流量与公开活动数据用于观察趋势；用户及支付规模需平台记录。</p>
     {highlights.length>0&&<div className="data-highlights">{highlights.map((observation,index)=><div key={index}><span>{observation.metric}</span><strong>{observation.value}</strong><small>{observation.provider} · {observation.period}<br/>{observation.domain ?? 'App 指标'}</small><small>{observation.scope}</small><SourceLink profile={data} observation={observation}/></div>)}</div>}
     <VisitTrends profile={data}/>
     <h3>数据支持的判断</h3>{data.interpretations.map((paragraph,index)=><p className="data-interpretation" key={index}>{paragraph}</p>)}

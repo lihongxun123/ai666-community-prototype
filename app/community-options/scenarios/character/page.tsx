@@ -1,11 +1,223 @@
 import Link from '@/components/research-link';
 import '../../cases/ecommerce/style.css';
-const A=({href,children}:{href:string;children:React.ReactNode})=><a href={href} target="_blank" rel="noopener noreferrer">{children} ↗</a>;
-const rows=[['设定','获授权参考、人物关系、不可变项','列出脸部、服装、比例、道具和禁用变化','设定页与参考版本','来源与公开范围明确'],['分镜','梗概、六个事件、对白','写视角、动作、道具与阅读顺序','分镜及缺失项','每格有事件'],['制作','设定与单格约束','逐格完成，保留候选和选择理由','格图与候选','单格符合设定'],['连读','全套格图与对白','检查人物、视线、服装、道具和叙事','问题格标注','顺序读得通'],['交付','采用格、许可、公开选择','作者确认并整理资料','故事成品、设定与修改说明','作者确认采用']];
-export default function Page(){return <main className="ec-study"><header><Link href="/community-options/scenarios">← 九类场景</Link><span>角色与故事创作 · 任务深化稿</span></header><h1>同一角色怎样完成一段可连读的故事</h1><p className="ec-lead">专题组织角色设定、分镜、问题格和采用版本；六格只是代表样本规格，实际格数由叙事用途决定。</p><nav>{[['evidence','依据'],['task','主任务'],['branch','差异任务'],['supply','供给'],['recovery','中断与复用'],['scope','责任与边界']].map(([id,t])=><a key={id} href={'#'+id}>{t}</a>)}</nav>
-<section id="evidence"><h2>已有工具组织复用，作者仍会遇到连续性问题</h2><article><small>OpenArt 官方角色页 · 核读 2026-09-20</small><p>页面提供参考图、文字和预设三种角色定义方式，称角色可在图像、视频和项目间复用，也提示输出会有小幅变化。它支持“角色复用已有工具路径”，不证明任意多角色故事都稳定完成。</p><A href="https://openart.ai/features/ai-character/">查看角色页</A></article><article><small>Reddit 原作者求助及后续 · 页面显示约 8 个月前，后续回复约 17 天前核读</small><p>作者为五本教材寻找六个跨场景角色，称多角色场景容易失去一致性；其后续自述改用 Google Flow 和角色参考图后有改善。个人反馈不能折算成功率，也没有公开完整书稿或逐格修正。</p><A href="https://www.reddit.com/r/generativeAI/comments/1qis7dv/what_ai_can_produce_consistent_characters_for_a/">查看原帖与后续</A></article></section>
-<section id="task"><h2>主任务：一位角色的六格图文故事</h2><div className="ec-flow">设定 → 分镜 → 逐格制作 → 连读检查 → 只改问题格 → 确认交付</div><div className="ec-scroll"><table><thead><tr><th>环节</th><th>输入</th><th>动作</th><th>产物</th><th>完成检查</th></tr></thead><tbody>{rows.map(r=><tr key={r[0]}>{r.map(c=><td key={c}>{c}</td>)}</tr>)}</tbody></table></div></section>
-<section id="branch"><h2>差异任务</h2><div className="ec-two"><article><h3>双人互动格</h3><p>输入两人关系、站位、视线和道具；先确认互动格，再延展。产物为互动对照和关系约束；放行条件是两人可分辨、动作与对白相符。</p></article><article><h3>换装或换时空</h3><p>输入固定身份项、可变服装和场景理由；先更新设定再制作。产物为版本差异和受影响格；放行条件是换装没有改掉核心特征。</p></article></div></section>
-<section id="supply"><h2>五种拟议供给及最低材料</h2><div className="ec-scroll"><table><thead><tr><th>内容</th><th>最低材料</th><th>卡片动作</th></tr></thead><tbody>{[['六格从梗概到分镜','设定、六个节点、采用理由','看分镜与过程'],['双人互动为什么失真','问题格、关系约束、修正前后','看问题格'],['换装后怎样保留身份','两版设定、受影响格、作者判断','比较版本'],['可复用设定页','获授权文件、可变项、许可、依赖','查看使用条件'],['局部求助示例','可公开局部、期待变化、已尝试方法','看回应与结果']].map(r=><tr key={r[0]}>{r.map(c=><td key={c}>{c}</td>)}</tr>)}</tbody></table></div></section>
-<section id="recovery"><h2>中断恢复与二次使用</h2><ul><li>人物漂移：回到设定页，只重做偏离格，已采用格不覆盖。</li><li>故事读不通：先改节点或对白，再决定是否重做画面。</li><li>素材或授权不足：保留分镜和方法，撤下制作入口。</li><li>新故事复用设定结构和检查清单；新用途重新确认授权与公开范围。</li></ul></section>
-<section id="scope"><h2>责任、工具与证据边界</h2><div className="ec-two"><article><h3>作者与使用者</h3><p>作者提供设定、过程、采用理由和文件说明；使用者确认人物关系、授权与公开范围。</p></article><article><h3>编辑</h3><p>编辑核对来源、许可、版本与卡片关系；多角色、换装和复杂姿态保留具体问题。</p></article></div><p>MakeNow 已有画布。角色库、参考引用、项目复制、版本关联、导入和导出均未核实；能力与权限确认后才出现制作或复制入口。当前材料支持任务和供给规格，不能判断供给规模、未满足需求或完成率。</p></section><footer>来源核读：2026-09-20。页面为研究建议，未执行生成、上传、发布或独立视觉验收。</footer></main>}
+const A = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    {children} ↗
+  </a>
+);
+const rows = [
+  [
+    '设定',
+    '获授权参考、人物关系、不可变项',
+    '列出脸部、服装、比例、道具和禁用变化',
+    '设定页与参考版本',
+    '来源与公开范围明确',
+  ],
+  [
+    '分镜',
+    '梗概、六个事件、对白',
+    '写视角、动作、道具与阅读顺序',
+    '分镜及缺失项',
+    '每格有事件',
+  ],
+  [
+    '制作',
+    '设定与单格约束',
+    '逐格完成，保留候选和选择理由',
+    '格图与候选',
+    '单格符合设定',
+  ],
+  [
+    '连读',
+    '全套格图与对白',
+    '检查人物、视线、服装、道具和叙事',
+    '问题格标注',
+    '顺序读得通',
+  ],
+  [
+    '交付',
+    '采用格、许可、公开选择',
+    '作者确认并整理资料',
+    '故事成品、设定与修改说明',
+    '作者确认采用',
+  ],
+];
+export default function Page() {
+  return (
+    <main className="ec-study">
+      <header>
+        <Link href="/community-options/scenarios">← 九类场景</Link>
+        <span>角色与故事创作 · 专题方案</span>
+      </header>
+      <h1>同一角色怎样完成一段可连读的故事</h1>
+      <p className="ec-lead">
+        专题组织角色设定、分镜、问题格和采用版本；六格只是代表样本规格，实际格数由叙事用途决定。
+      </p>
+      <nav>
+        {[
+          ['evidence', '依据'],
+          ['task', '主任务'],
+          ['branch', '差异任务'],
+          ['supply', '供给'],
+          ['recovery', '中断与复用'],
+          ['scope', '责任与边界'],
+        ].map(([id, t]) => (
+          <a key={id} href={'#' + id}>
+            {t}
+          </a>
+        ))}
+      </nav>
+      <section id="evidence">
+        <h2>已有工具组织复用，作者仍会遇到连续性问题</h2>
+        <article>
+          <small>OpenArt 官方角色页 · 核读 2026-09-20</small>
+          <p>
+            页面提供参考图、文字和预设三种角色定义方式，称角色可在图像、视频和项目间复用，也提示输出会有小幅变化。它支持“角色复用已有工具路径”，不证明任意多角色故事都稳定完成。
+          </p>
+          <A href="https://openart.ai/features/ai-character/">查看角色页</A>
+        </article>
+        <article>
+          <small>
+            Reddit 原作者求助及后续 · 页面显示约 8 个月前，后续回复约 17
+            天前核读
+          </small>
+          <p>
+            作者为五本教材寻找六个跨场景角色，称多角色场景容易失去一致性；其后续自述改用
+            Google Flow
+            和角色参考图后有改善。个人反馈不能折算成功率，也没有公开完整书稿或逐格修正。
+          </p>
+          <A href="https://www.reddit.com/r/generativeAI/comments/1qis7dv/what_ai_can_produce_consistent_characters_for_a/">
+            查看原帖与后续
+          </A>
+        </article>
+      </section>
+      <section id="task">
+        <h2>主任务：一位角色的六格图文故事</h2>
+        <div className="ec-flow">
+          设定 → 分镜 → 逐格制作 → 连读检查 → 只改问题格 → 确认交付
+        </div>
+        <div className="ec-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>环节</th>
+                <th>输入</th>
+                <th>动作</th>
+                <th>产物</th>
+                <th>完成检查</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r[0]}>
+                  {r.map((c) => (
+                    <td key={c}>{c}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="branch">
+        <h2>差异任务</h2>
+        <div className="ec-two">
+          <article>
+            <h3>双人互动格</h3>
+            <p>
+              输入两人关系、站位、视线和道具；先确认互动格，再延展。产物为互动对照和关系约束；放行条件是两人可分辨、动作与对白相符。
+            </p>
+          </article>
+          <article>
+            <h3>换装或换时空</h3>
+            <p>
+              输入固定身份项、可变服装和场景理由；先更新设定再制作。产物为版本差异和受影响格；放行条件是换装没有改掉核心特征。
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="supply">
+        <h2>内容样本及最低材料</h2>
+        <div className="ec-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>内容</th>
+                <th>最低材料</th>
+                <th>卡片动作</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                [
+                  '六格从梗概到分镜',
+                  '设定、六个节点、采用理由',
+                  '看分镜与过程',
+                ],
+                [
+                  '双人互动为什么失真',
+                  '问题格、关系约束、修正前后',
+                  '看问题格',
+                ],
+                [
+                  '换装后怎样保留身份',
+                  '两版设定、受影响格、作者判断',
+                  '比较版本',
+                ],
+                [
+                  '可复用设定页',
+                  '获授权文件、可变项、许可、依赖',
+                  '查看使用条件',
+                ],
+                [
+                  '局部求助示例',
+                  '可公开局部、期待变化、已尝试方法',
+                  '看回应与结果',
+                ],
+              ].map((r) => (
+                <tr key={r[0]}>
+                  {r.map((c) => (
+                    <td key={c}>{c}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="recovery">
+        <h2>中断恢复与二次使用</h2>
+        <ul>
+          <li>人物漂移：回到设定页，只重做偏离格，已采用格不覆盖。</li>
+          <li>故事读不通：先改节点或对白，再决定是否重做画面。</li>
+          <li>素材或授权不足：保留分镜和方法，撤下制作入口。</li>
+          <li>新故事复用设定结构和检查清单；新用途重新确认授权与公开范围。</li>
+        </ul>
+      </section>
+      <section id="scope">
+        <h2>责任、工具与证据边界</h2>
+        <div className="ec-two">
+          <article>
+            <h3>作者与使用者</h3>
+            <p>
+              作者提供设定、过程、采用理由和文件说明；使用者确认人物关系、授权与公开范围。
+            </p>
+          </article>
+          <article>
+            <h3>编辑</h3>
+            <p>
+              编辑核对来源、许可、版本与卡片关系；多角色、换装和复杂姿态保留具体问题。
+            </p>
+          </article>
+        </div>
+        <p>
+          MakeNow
+          已有画布。角色库、参考引用、项目复制、版本关联、导入和导出均未核实；确认能力与权限后才出现制作或复制入口。当前材料支持任务规格，不能判断供给规模或完成率。
+        </p>
+      </section>
+      <footer>
+        来源核读：2026-09-20。专题方案尚未验证生成、上传、发布或视觉效果。
+      </footer>
+    </main>
+  );
+}

@@ -33,7 +33,7 @@ export function ResearchFramework({navigate}:{navigate:(id:string)=>void}) {
   <section id="framework-content" className="study-platform"><div className="section-heading"><h2>内容分类与承载方式</h2></div>
    <div className="table-wrap"><table><thead><tr><th>层次</th><th>包括什么</th><th>回答的问题与边界</th></tr></thead><tbody>{data.layers.map(x=><tr key={x.layer}><th>{x.layer}</th><td>{x.examples}</td><td><p>{x.meaning}</p><p className="muted">{x.boundary}</p></td></tr>)}</tbody></table></div>
    <p className="muted">格式与能力定义参照官方文档；上述分层是本报告的组织分析。<Sources sources={data.definitionSources}/></p>
-   <h3>不同内容的交付要求</h3><p>展示作品、解释方法、提供材料和在线执行是不同承诺，不是四个质量等级。艺术作品可以只有作品；声称可复用或可执行时，才增加对应要求。</p>
+   <h3>不同内容的交付要求</h3><p>作品展示、方法解释、材料交付与在线执行承担不同用途。艺术作品可以只有作品；声称可复用或可执行时，才增加对应要求。</p>
    <div className="table-wrap"><table><thead><tr><th>承诺</th><th>最低要求</th><th>证据与限制</th></tr></thead><tbody>{data.promises.map(x=><tr key={x.promise}><th>{x.promise}</th><td>{x.minimum}</td><td><p>{x.evidence}</p><p className="muted">{x.notRequired}</p></td></tr>)}</tbody></table></div>
    <div className="study-actions"><button className="text-button" onClick={()=>navigate('content')}>对照内容形态文档与真实截图 →</button><button className="text-button" onClick={()=>navigate('operations')}>对照作者供给与运营研究 →</button></div>
   </section>

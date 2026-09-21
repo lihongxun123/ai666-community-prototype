@@ -1,0 +1,4 @@
+import options from './options-expanded.json';
+const aImages=[['home-v8-card-spacing','发现首页'],['topics-index-v1','专题首页'],['topic-ecommerce-v1','电商营销专题'],['ai-apps-v3-combined','AI应用列表'],['app-product-scene-before-v1','表单生成'],['app-local-edit-selection-v1','局部编辑'],['app-writing-input-v1','文字文档'],['app-batch-scene-before-v1','批量处理'],['app-video-input-v1','音视频'],['app-steps-input-v1','分步任务'],['app-product-scene-result-v1','生成结果'],['work-case-detail-v1','作品详情'],['workflow-detail-v1','工作流详情'],['circles-index-v1','圈子首页'],['circle-home-v1','电商圈子'],['circle-post-detail-v1','帖子详情']];
+export const proposalNavigation=[{id:'a',name:'任务创作',images:aImages.map(x=>x[1])},...options.filter(x=>x.code!=='A').map(x=>({id:x.code.toLowerCase(),name:x.name,images:x.page_briefs.map(p=>p.page)}))];
+export const proposalSections=[['journeys','用户路径'],['content','内容组织'],['operations','运营方式'],['choice','取舍与依据']] as const;

@@ -36,6 +36,6 @@ export default function ConceptOverview(){
  </section>
  <section id="journeys" className="co-journeys"><span className="co-eyebrow">用户路径</span><h2>三种起点，都能接着往下做</h2><div className="co-paths">{paths.map((p,i)=><article key={p.title}><span className="co-number">0{i+1}</span><h3>{p.title}</h3><p>{p.desc}</p><ol>{p.steps.map(([id,label],j)=><li key={j}><button onClick={()=>follow(id,label)}>{label}<span>↗</span></button></li>)}</ol><p className="co-result">{p.result}</p></article>)}</div></section>
  <section className="co-position"><div><span className="co-eyebrow">方案取舍</span><h2>平台整理资源，<br/>社区补充经验。</h2></div><div><p>专题围绕任务组织内容；应用和工作流承接制作；圈子让教程、问题与实践有持续交流的地方。</p><p>我们服务创作者、实际应用者和学习者。价值来自任务选择、资源质量与持续维护，仍需后续验证。</p></div></section>
- <footer className="co-footer"><Link href="/#strategy">返回研究室</Link><Link href="/community-options/presentation">研究与方案演示 ↗</Link></footer>
+ <footer className="co-footer"><Link href="/#strategy">返回研究室</Link><Link href="/research-brief">研究与方案演示 ↗</Link></footer>
  </main>
 }
