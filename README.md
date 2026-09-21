@@ -1,8 +1,10 @@
 # 多元拾光研究室
 
+2026-09-21 融合方案：新增 `/community-options/fusion`，展示五个一级入口、七步电商营销路径、内容关联及首页概念稿。融合方向已确认，首页待评审；原五套保留。
+
 2026-09-21 更新：五套社区方案统一到 `/community-options`，完整展开为 `/community-options/proposals/a` 至 `e`。每套包含产品概念、用户路径、内容组织、运营分工和取舍依据；A沿用16张已认可概念稿，B—E各5张评审概念稿，共36张。B—E待用户评审，商业逻辑暂缓。
 
-`/community-options/presentation` 为40屏汇报；`/community-options/library` 集中研究依据与早期参考；`/research-achievements` 汇总研究成果、统计范围与主会话用量。社区方案侧栏只保留五套方案、汇报演示、研究依据三个同级入口。
+`/community-options/presentation` 为40屏汇报；`/community-options/library` 集中研究依据与早期参考；`/research-achievements` 汇总研究成果、统计范围与主会话用量。社区方案侧栏包含融合方案、五套方案、汇报演示和研究依据。
 
 本轮核对55个页面入口，修订正文、导航与统计口径。615条为抖音存量链接，非三平台总样本；Token为主会话截至9月21日03:30的累计记录，含缓存输入，不代表全部任务或计费总额。
 

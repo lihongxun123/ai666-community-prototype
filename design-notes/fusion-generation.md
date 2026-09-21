@@ -1,0 +1,9 @@
+# 融合首页概念稿
+
+使用内置 imagegen，参考已确认 A 首页。home-v1 为初稿，home-v2 为当前评审稿。生成图片中的人物、数据与效果均为设计示例。
+
+## 初稿提示词
+Create a polished desktop website HOME PAGE UI concept for Chinese AI creation community 多元拾光. Reference image is the approved design baseline; preserve logo, one-line black/white header and restrained Apple-like typography. Exact top nav: 发现 专题 AI应用 圈子 模型广场. Search then compact 活动 商城 邀请 bell and points/checkin/avatar capsule. Black white grey UI only; colorful content imagery allowed. No blue letters. At top under header: TWO EQUAL WIDTH HALVES. Left one banner creative paper-art workshop with minimal text 创作交流 / 一起完成一件作品 and 查看活动. Right four 2x2 topic tiles 电商营销 视觉设计 写作编辑 角色故事; no separate 精选专题 heading. Below horizontal all scene tabs: 全部 电商营销 本地经营 知识内容 角色故事 人像影像 视觉设计 写作编辑 职场学习 IP文创; at right 推荐 最新 and filter icon. Below beautiful 4-column equal-width masonry with consistent 20px gaps and different image aspect ratios: wide perfume identical-product-before-after AI应用 商品换景 card, tall architectural orange/cream branding poster 作品 视觉设计 card, square anime storyboard 作品 角色故事 card, landscape draft annotated handwritten text 求助 写作编辑 card, square workflow visual 工作流 商品保真 v1.3 card, portrait 3-step visual exercise 共学 电商营销 card. Each has short readable Chinese title, author avatar/name, and correct metrics: applications use 使用, workflows use 复用, artworks heart/comment, questions 回应, projects 参与. Small relevant content tag, no buttons cluttering cards, no huge slogans. Keep original natural generous whitespace, refine composition into high-end consumer community not dashboard. Mixed aspect cards stagger naturally, keep top row aligned. No process explanations, no 'concept demo' labels, no metrics totals dashboard. 1536x1024 landscape screenshot, crisp Chinese.
+
+## 修订
+保持导航、内容和整体视觉；清除蓝色文字，缩短求助标题，共学改为单列，卡片支持不同高度。几何尺寸以最终设计规范为准。
