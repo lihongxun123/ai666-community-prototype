@@ -16,7 +16,27 @@ export const commonGroups=[
  {id:'network',title:'网络与服务',samples:[demo('offline','断网','保留已加载内容，不自动重发写入'),demo('read-timeout','读取超时','仅限读取请求，可手动重试'),demo('service-unavailable','服务暂不可用','不承诺恢复时间，不连续自动重试')]}
 
 ];
-// Only exact page/state pairs represented in the catalogue are removed from business boards.
-// Empty and failure semantics remain business-specific even when a shared sample exists.
-const loadingPages=new Set(commonGroups[0].samples.map(s=>s.page));
-export function isCoveredCommonState(page:string,state:string){return state==='loading'&&(loadingPages.has(page)||Boolean(loadingLayouts[page]))||page==='topics'&&['empty','error'].includes(state)||page==='topic'&&state==='error';}
+// Shared feedback is reviewed once in the common-state board. Business lifecycle
+// states (including settlement, moderation and upstream authorization) stay on their pages.
+const sharedFeedback = new Set([
+ 'loading','empty','error','more-error','image-error','media-error',
+ 'action-error','failure','load-failed','guest','login-expired','account-switched',
+ 'validation','invalid','uploading','upload-failed','save-failed','save-error',
+ 'submit-failed','submit-error','conflict','no-permission','permission-denied',
+]);
+const commonPairs = new Set(commonGroups.flatMap(g=>g.samples)
+ .filter(s=>s.page&&s.state).map(s=>s.page+':'+s.state));
+export function isCoveredCommonState(page:string,state:string,section='c'){
+ if(section==='c'&&['create','shop','publish-status'].includes(page)&&state==='failure')return false;
+ // Error here is a cross-product account-link result, not a generic read failure.
+ if(state==='error'&&((section==='c'&&['account-link','return-result'].includes(page))||(section==='cross'&&page==='link')))return false;
+ if(sharedFeedback.has(state))return true;
+ if(section==='c'){
+  if(commonPairs.has(page+':'+state))return true;
+  if(state==='forbidden'||state==='guest')return true;
+  if(page==='pc-handoff'&&state==='copy-failed')return true;
+  // Removed content in personal records still needs its own recovery actions.
+  if(state==='removed'&&['post','tutorial','work','circle','author','app','resource','topic'].includes(page))return true;
+ }
+ return false;
+}

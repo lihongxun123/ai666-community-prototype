@@ -95,8 +95,8 @@ export default function Review() {
     const group =
         sections.find((s) => s.id === q.get('section')) || sections[0],
       p = group.pages.find((p) => p.id === q.get('view'));
+    setSection(group.id);
     if (p) {
-      setSection(group.id);
       setModule(readerModule(group.id,p));
       setPageId(p.id==='tutorials'&&group.id==='c'?'community':p.id);
       if(p.id==='tutorials'&&group.id==='c'){const legacy=new URLSearchParams(q.get('context')||'');legacy.set('tab','tutorials');setContext(legacy.toString());}
@@ -107,10 +107,11 @@ export default function Review() {
     pages = group.pages.filter((p) => readerModule(section,p) === module && !(section==='c'&&p.id==='tutorials')),
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);
-  const pageStates =
-    section === 'c'
-      ? page.states.filter((s) => !isCoveredCommonState(page.id, s))
-      : page.states;
+  const pageStates = page.states.filter(s=>!isCoveredCommonState(page.id,s,section));
+  const hasBusinessStates=pageStates.some(s=>s!=='normal');
+  useEffect(()=>{
+    if(ready&&flat&&!hasBusinessStates){setFlat(false);setInspected(null);setSelectedState('normal');}
+  },[ready,flat,hasBusinessStates]);
   const appSample = section === 'c' && appReviewPages.includes(page.id);
   const homeSample = section === 'c' && page.id === 'home';
   const url =
@@ -183,7 +184,7 @@ export default function Review() {
   },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,multi]);
   const noteSection=inspected?.section||section;
   const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
-  const noteState=inspected?.state||selectedState;
+  const noteState=inspected?.state||(flat?pageStates.find(s=>s!=='normal')||'normal':selectedState);
   const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>readerModule(noteSection,p)===readerModule(noteSection,notePage));
   const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget}/>:<>{noteState!=='normal'&&<p className="rv-selected-state">业务状态：{stateLabels[noteState]||noteState}</p>}{noteSection==='c'&&appReviewPages.includes(notePage.id)?<AppRequirements key={notePage.id} page={notePage.id}/>:<PageRequirements section={noteSection} page={notePage}/>}</>;
   const inspect=(id:string,state:string,group=section,card=id+state)=>setInspected({id,state,section:group,card});
@@ -208,12 +209,12 @@ export default function Review() {
           ))}
         </div>
         <nav aria-label="评审模块">
-          {section === 'c' && (
+          {(
             <button
               aria-current={common ? 'step' : undefined}
               onClick={() => {
                 setCommon(true);
-                history.replaceState(null, '', '?section=c&view=common');
+                history.replaceState(null, '', '?section='+section+'&view=common');
               }}
             >
               <span>◇</span>
@@ -320,7 +321,7 @@ export default function Review() {
                   >
                     正常页面
                   </button>
-                  <button
+                  {hasBusinessStates && <button
                     aria-pressed={flat && !multi && !common}
                     onClick={() => {
                       setFlat(true);setMulti(false);setInspected({id:page.id,section,state:pageStates.find(s=>s!=='normal')||'normal'});
@@ -329,7 +330,7 @@ export default function Review() {
                   >
                     业务状态（{pageStates.filter((s) => s !== 'normal').length}
                     ）
-                  </button>
+                  </button>}
                   <button aria-pressed={multi} onClick={()=>{setMulti(true);setFlat(false);setInspected(null);}}>模块页面（{pages.length}）</button>
                   {appSample && device === 'mobile' && !flat && !multi && (
                     <button
