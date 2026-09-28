@@ -411,8 +411,11 @@ export function Comments({
   const contentKey=interactionTarget()||kind;
   const pendingKey = `reading-pending-comment:${contentKey}`;
   const inputRef=useRef<HTMLTextAreaElement>(null);
-  const [submittedReply,setSubmittedReply]=useState(()=>sessionStorage.getItem('reading-reply:'+contentKey)||'');
-  const [confirmDelete,setConfirmDelete]=useState(false);
+  type Entry={id:string;text:string;reply:string;edited?:boolean};
+  const commentKey='reading-comments:'+contentKey;
+  const [entries,setEntries]=useState<Entry[]>(()=>{try{const saved=sessionStorage.getItem(commentKey);if(saved)return JSON.parse(saved);const text=sessionStorage.getItem('reading-comment:'+contentKey);return text&&sessionStorage.getItem('reading-comment-deleted:'+contentKey)!=='1'?[{id:'legacy',text,reply:sessionStorage.getItem('reading-reply:'+contentKey)||''}]:[];}catch{return [];}});
+  const persist=(next:Entry[])=>{setEntries(next);sessionStorage.setItem(commentKey,JSON.stringify(next));};
+  const [confirmDelete,setConfirmDelete]=useState('');
   const [text, setText] = useState(() =>
     typeof window === 'undefined'
       ? ''
@@ -420,10 +423,7 @@ export function Comments({
   );
   const [replyTo, setReplyTo] = useState(()=>sessionStorage.getItem('reading-pending-reply:'+contentKey)||'');
   useEffect(()=>{sessionStorage.setItem('reading-pending-reply:'+contentKey,replyTo);},[replyTo,contentKey]);
-  const [editing, setEditing] = useState(false);
-  const [submitted, setSubmitted] = useState(()=>sessionStorage.getItem('reading-comment:'+contentKey)||'');
-  const [wasEdited, setWasEdited] = useState(false);
-  const [deleted, setDeleted] = useState(()=>sessionStorage.getItem('reading-comment-deleted:'+contentKey)==='1');
+  const [editing, setEditing] = useState('');
   const [error, setError] = useState('');
   const [expand, setExpand] = useState(false);
   const focusEditor = () => requestAnimationFrame(() => {
@@ -446,22 +446,17 @@ export function Comments({
       loginFor(go);
       return;
     }
-    sessionStorage.removeItem(pendingKey);
-    setSubmitted(value);
-    const recipient=editing?submittedReply:replyTo;setSubmittedReply(recipient);sessionStorage.setItem('reading-reply:'+contentKey,recipient);
-    sessionStorage.setItem('reading-comment:'+contentKey,value);
-    sessionStorage.removeItem('reading-comment-deleted:'+contentKey);
-    setWasEdited(editing);
-    setDeleted(false);
-    setEditing(false);
+    if(!editing)sessionStorage.removeItem(pendingKey);
+    persist(editing?entries.map(e=>e.id===editing?{...e,text:value,edited:true}:e):[...entries,{id:crypto.randomUUID(),text:value,reply:replyTo}]);
+    setEditing('');
     setReplyTo('');
-    setText('');
+    setText(editing?sessionStorage.getItem(pendingKey)||'':'');
     setError('评论已提交');
   };
   return (
     <section id="reading-comments" className="reading-comments">
       <h2>
-        评论 <span>{2+(submitted&&!deleted?1:0)}</span>
+        评论 <span>{2+entries.length}</span>
       </h2>
       <div className="reading-comment">
         <span className="reading-avatar mini">周</span>
@@ -473,7 +468,7 @@ export function Comments({
             className="reading-link"
             onClick={() => {
               setReplyTo('周末观察');
-              setEditing(false);setExpand(true);
+              if(editing)setText(sessionStorage.getItem(pendingKey)||'');setEditing('');setExpand(true);
               focusEditor();
             }}
           >
@@ -490,46 +485,15 @@ export function Comments({
           {expand && (
             <div className="reading-reply">
               <strong>林间 <span>回复 周末观察</span></strong>
-              <p>先整理素材和目标效果，电脑操作的步骤可以稍后完成。</p><button type="button" className="reading-link" onClick={()=>{setReplyTo('林间');setEditing(false);focusEditor();}}>回复</button>
+              <p>先整理素材和目标效果，电脑操作的步骤可以稍后完成。</p><button type="button" className="reading-link" onClick={()=>{setReplyTo('林间');if(editing)setText(sessionStorage.getItem(pendingKey)||'');setEditing('');focusEditor();}}>回复</button>
             </div>
           )}
         </div>
       </div>
-      {submitted && (
-        <div className="reading-comment">
-          <span className="reading-avatar mini">我</span>
-          <div>
-            <strong>
-              我 {submittedReply&&<small>回复 {submittedReply}</small>} {editing && <small>编辑中</small>}
-              {!editing && wasEdited && <small>已编辑</small>}
-            </strong>
-            <p>{deleted ? '评论已删除' : submitted}</p>
-            {!deleted && (
-              <>
-                <button
-                  type="button"
-                  className="reading-link"
-                  onClick={() => {
-                    setText(submitted);
-                    setEditing(true);setReplyTo('');focusEditor();
-                  }}
-                >
-                  编辑
-                </button>
-                <button
-                  type="button"
-                  className="reading-link"
-                  onClick={() => setConfirmDelete(true)}
-                >
-                  删除
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      )}
-      {confirmDelete&&<div className="reading-delete-confirm" aria-label="删除评论确认"><span>删除这条评论？</span><button onClick={()=>setConfirmDelete(false)}>取消</button><button onClick={()=>{setDeleted(true);sessionStorage.setItem('reading-comment-deleted:'+contentKey,'1');setConfirmDelete(false);setEditing(false);setText('');}}>删除</button></div>}
+      {entries.map(entry=><div className="reading-comment" key={entry.id}><span className="reading-avatar mini">我</span><div><strong>我 {entry.reply&&<small>回复 {entry.reply}</small>} {entry.edited&&<small>已编辑</small>}</strong><p>{entry.text}</p><button type="button" className="reading-link" onClick={()=>{setText(entry.text);setEditing(entry.id);setReplyTo('');focusEditor();}}>编辑</button><button type="button" className="reading-link" onClick={()=>setConfirmDelete(entry.id)}>删除</button></div></div>)}
+      {confirmDelete&&<div className="reading-delete-confirm" aria-label="删除评论确认"><span>删除这条评论？</span><button onClick={()=>setConfirmDelete('')}>取消</button><button onClick={()=>{persist(entries.filter(e=>e.id!==confirmDelete));if(editing===confirmDelete){setEditing('');setText(sessionStorage.getItem(pendingKey)||'');}setConfirmDelete('');}}>删除</button></div>}
       <div className="reading-comment-editor">
+      {editing&&<p className="reading-reply-target">编辑评论 <button type="button" onClick={()=>{setEditing('');setText('');}}>取消</button></p>}
       {replyTo && (
         <p className="reading-reply-target">
           回复 {replyTo}{' '}
@@ -544,7 +508,7 @@ export function Comments({
         value={text}
         onChange={(e) => {
           setText(e.target.value);
-          sessionStorage.setItem(pendingKey,e.target.value);
+          if(!editing)sessionStorage.setItem(pendingKey,e.target.value);
           setError('');
         }}
         placeholder="说点什么…"
@@ -629,12 +593,12 @@ function Post({ state, go }: Props) {
         {post.body.map(p=><p key={p}>{p}</p>)}
       </div>
       <Picture name={post.image} alt={post.title} />
-      {post.circle&&<button
+      {post.circle&&sampleCircles.some(c=>c.name===post.circle)&&<button
         type="button"
         className="reading-link"
-        onClick={() => go(circleTarget(sampleCircles.find(c=>c.name===post.circle)?.id||'image'))}
+        onClick={() => go(circleTarget(sampleCircles.find(c=>c.name===post.circle)!.id))}
       >
-        来自 · {post.circle}
+        来自 · {currentCircles().find(c=>c.id===sampleCircles.find(c=>c.name===post.circle)?.id)?.name||post.circle}
       </button>}
       {post.reference&&(state === 'partial'||(post.reference==='work?item=restore'&&db.records.find(r=>r.id==='work-1')?.publicStatus!=='公开') ? (
         <Panel
@@ -677,8 +641,9 @@ function Tutorial({ state, go }: Props) {
   const cover = detailState({ page: 'tutorial', state, go });
   if (cover) return cover;
   if((item==='restore'&&db.records.find(r=>r.id==='tutorial-1')?.publicStatus!=='公开'))return <Panel title="教程暂不可访问" action="返回教程" onAction={()=>go('tutorials')}/>;
+  if(!communityTutorials.some(t=>t.id===item))return <Panel title="教程暂不可访问" action="返回教程" onAction={()=>go('tutorials')}/>;
   const liveSample=communityTutorials.find(t=>t.id===item&&t.sections.length>0);
-  if(liveSample)return <><Tag>官方教程</Tag><h2 className="reading-title">{liveSample.title}</h2><Picture name={liveSample.cover} alt={liveSample.title}/><div className="reading-prose">{liveSample.sections.map(([title,text])=><section key={title}><h3>{title}</h3><p>{text}</p></section>)}</div><ActionBar kind="tutorial" go={go} failOnAction={state==='action-error'}/><Comments kind="tutorial" go={go} guest={state==='guest'}/></>;
+  if(liveSample)return <><Tag>官方教程</Tag><h2 className="reading-title">{liveSample.title}</h2><p className="reading-muted">多元拾光官方 · {liveSample.topic}</p><Picture name={liveSample.cover} alt={liveSample.title}/><nav className="reading-toc" aria-label="教程目录"><strong>目录</strong>{liveSample.sections.map(([title],i)=><button key={title} type="button" onClick={()=>document.getElementById('tutorial-step-'+i)?.scrollIntoView({behavior:'smooth'})}>{i+1} {title}</button>)}</nav><div className="reading-prose">{liveSample.sections.map(([title,text],i)=><section id={'tutorial-step-'+i} key={title}><h3>{title}</h3><p>{text}</p></section>)}</div><ActionBar kind="tutorial" go={go} guest={state==='guest'} failOnAction={state==='action-error'}/><Comments kind={'tutorial-'+item} go={go} guest={state==='guest'}/></>;
   if (item === 'product')
     return (
       <>

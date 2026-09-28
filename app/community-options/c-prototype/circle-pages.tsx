@@ -76,16 +76,16 @@ export function CirclesPage({state,go}:Props){
   return <div className="circle-pages circle-list-page">
 
     <section className="circle-list-section"><div className="circle-section-heading"><h2>已加入</h2><span>{joined.length} 个圈子</span></div>
-      {joined.length?<div className="circle-card-grid">{joined.map(c=><CircleCard key={c.id} circle={c} go={go} joined/>)}</div>:<div className="circle-list-empty">还没有加入圈子。浏览下方主题，找到你感兴趣的交流空间。</div>}
+      {joined.length?<div className="circle-card-grid">{joined.map(c=><CircleCard key={c.id} circle={c} go={go} joined/>)}</div>:<div className="circle-list-empty">还没有加入圈子</div>}
     </section>
-    <section className="circle-list-section"><div className="circle-section-heading"><h2>发现圈子</h2><span>{discover.length} 个圈子</span></div>
+    {discover.length>0&&<section className="circle-list-section"><div className="circle-section-heading"><h2>发现圈子</h2><span>{discover.length} 个圈子</span></div>
       <div className="circle-card-grid">{discover.map(c=><CircleCard key={c.id} circle={c} go={go} joined={false}/>)}</div>
-    </section>
+    </section>}
   </div>;
 }
 function FeedCard({item,go}:{item:SamplePost;go:Props['go']}){
   const open=()=>go(postTarget(item.id));
-  return <article className="circle-feed-card"><div className="circle-feed-byline"><span className="circle-feed-avatar">{item.author.slice(0,1)}</span><span><strong>{item.author}</strong><small>{item.date}</small></span></div>
+  return <article className="circle-feed-card"><button type="button" className="circle-feed-byline" onClick={()=>go('author?name='+encodeURIComponent(item.author))}><span className="circle-feed-avatar">{item.author.slice(0,1)}</span><span><strong>{item.author}</strong><small>{item.date}</small></span></button>
     <button type="button" className="circle-feed-open" onClick={open}>
       <strong>{item.title}</strong><span>{item.summary}</span>{item.image&&<img src={img(item.image)} alt=""/>}
     </button>
@@ -101,7 +101,7 @@ export function CirclePage({state,go}:Props){
   const publicRules=rules(id);
   if(state==='loading')return <div className="circle-skeleton" aria-label="正在加载圈子"/>;
   if(state==='removed'||state==='forbidden'||!circle)return <State title="圈子暂不可访问" action="返回圈子" onAction={()=>go('circles')}/>;
-  const feed=samplePosts.filter(p=>p.circle===circle.name&&(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开'));
+  const feed=samplePosts.filter(p=>p.circle===(demoCircles.find(c=>c.id===id)?.name||circle.name)&&(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开')).sort((a,b)=>{const date=(v:string)=>{const n=v.match(/\d+/g)||[];return Number(n[0])*100+Number(n[1]);};return date(b.date)-date(a.date)||a.id.localeCompare(b.id);});
   const publish=()=>{
     if(state==='guest'||!signedIn()){loginFor(go);return}
     if(!joined){setNotice('加入圈子后即可在这里发布');return}
@@ -115,7 +115,7 @@ export function CirclePage({state,go}:Props){
     setJoined(!joined);setNotice(joined?'已退出圈子，已发布内容仍会保留':'已加入圈子');
   };
   return <div className="circle-pages circle-detail-page">
-    <div className="circle-detail-intro"><img className="circle-detail-avatar" src={img(circle.cover)} alt=""/><div className="circle-detail-copy"><h1>{circle.name}</h1><p>{publicRules?.intro||circle.description}</p><span className="circle-member-count">{circle.members.toLocaleString('zh-CN')} 人加入</span></div><button type="button" className="circle-primary circle-join" onClick={join}>{joined?'已加入':'加入'}</button></div>
+    <div className="circle-detail-intro"><img className="circle-detail-avatar" src={img(circle.cover)} alt=""/><div className="circle-detail-copy"><h1>{circle.name}</h1><p>{publicRules?.intro||circle.description}</p><span className="circle-member-count">{circle.members.toLocaleString('zh-CN')} 人加入</span></div><button type="button" className="circle-primary circle-join" onClick={join}>{joined?'退出圈子':'加入圈子'}</button></div>
     {notice&&<output className="circle-notice">{notice}</output>}
     {publicRules?.announcement&&<p className="circle-announcement"><strong>圈子公告</strong>{publicRules.announcement}</p>}
     <details className="circle-rules"><summary>圈子规则 <span>展开查看</span></summary><p>{publicRules?.rules||'尊重原创，围绕主题分享自己的实践与想法；引用他人的作品时，请保留原内容入口。'}</p></details>

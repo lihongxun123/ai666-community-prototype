@@ -133,7 +133,7 @@ export default function Prototype() {
       window.history.back();
     } else
       go(
-        page === 'activity' ? 'activities' : ['topic'].includes(page)
+        page === 'circle' ? 'circles' : ['circles','post'].includes(page) ? 'community' : page === 'tutorial' ? 'tutorials' : page === 'activity' ? 'activities' : ['topic'].includes(page)
           ? 'topics'
           : page.startsWith('app-')
             ? 'app'
