@@ -41,7 +41,7 @@ const competitors = [
 ];
 
 const directions = [
-  ['a', 'A', '任务创作', '帮助用户选择方法、完成具体制作。', '主线：发现 → 专题 → 方法与制作'],
+  ['a', 'A', '任务创作', '帮助用户选择方法、完成具体制作。', '主线：发现 → 直接试用；专题按需进入'],
   ['c', 'C', '创作者研讨', '围绕作者意图与作品细节获得相关反馈。', '独立入口：作品、作者与圈子研讨'],
   ['b', 'B', '项目共学', '围绕一个项目练习，获得阶段反馈。', '有主理人时，作为圈子中的共学项目'],
   ['d', 'D', '方法共建', '共同补充条件、版本与复现经验。', '放入应用、工作流和教程的维护'],
@@ -110,7 +110,7 @@ export default function ResearchBrief() {
         <tr><td>写作工具已有修订指南；作者仍需判断哪些改动符合自己的观点与语气。</td><td>用原稿、改稿和取舍理由呈现方法，让作者决定如何采用。</td></tr>
         <tr><td>社媒已有评论与修订；互读案例中出现了对人物、开篇的具体反馈和作者回应。</td><td>保留作品交流入口，把创作意图、具体问题与相关同行联系起来。</td></tr>
       </tbody></table></div>
-      <aside className="rb-judgment"><strong>成熟功能值得跟进，改进点放在具体任务上。</strong><p>专题整理案例与工具，圈子承接反馈，资源保留版本与维护人。新社区能否改善任务结果、吸引中文作者持续参与，仍需使用验证。</p></aside>
+      <aside className="rb-judgment"><strong>成熟功能值得跟进，改进点放在具体任务上。</strong><p>重点专题整理案例与工具，圈子承接自愿交流；有维护者的重点资源保留版本记录。新社区能否改善任务结果、吸引中文作者持续参与，仍需使用验证。</p></aside>
       <p className="rb-source"><Link href="/community-options/review#increment">任务选择与原渠道比较 →</Link><Link href="/community-options/review#participation">作者参与的案例依据 →</Link></p>
     </section>
 
@@ -119,7 +119,7 @@ export default function ResearchBrief() {
       <h2>以任务创作为主，保留作品交流入口</h2>
       <p>五种方向有不同的组织重心。推荐组合让任务创作承担发现、选择与制作路径，作品交流保留作者表达；其他方向在有人负责时进入对应场景，避免同时运营五套独立社区。</p>
       <div className="op-table rb-direction-table"><table><thead><tr><th scope="col">方向</th><th scope="col">核心价值</th><th scope="col">融合中的位置</th></tr></thead><tbody>{directions.map(([id,code,title,value,place]) => <tr key={id}><th scope="row"><Link href={'/community-options/proposals/'+id}><span>{code}</span>{title}</Link></th><td>{value}</td><td>{place}</td></tr>)}</tbody></table></div>
-      <figure className="rb-concept"><a href="/proposal-fusion/home-v2.png" target="_blank" rel="noopener noreferrer"><img src="/proposal-fusion/home-v2.png" alt="融合方案首页概念：发现、专题、AI应用、圈子与模型广场导航，活动及专题入口，下方展示不同内容形式的卡片" loading="lazy" /></a><figcaption>融合方案首页概念：发现与专题连接作品、方法和工具。<a href="/proposal-fusion/home-v2.png" target="_blank" rel="noopener noreferrer">放大查看 ↗</a></figcaption></figure>
+      <figure className="rb-concept"><a href="/proposal-fusion/home-v4-easy-start-white.png" target="_blank" rel="noopener noreferrer"><img src="/proposal-fusion/home-v4-easy-start-white.png" alt="融合方案首页概念：发现、专题、AI应用、圈子与模型广场导航，活动及专题入口，下方展示不同内容形式的卡片" loading="lazy" /></a><figcaption>融合方案首页概念：作品表达与应用试用并列，方法按需展开。<a href="/proposal-fusion/home-v4-easy-start-white.png" target="_blank" rel="noopener noreferrer">放大查看 ↗</a></figcaption></figure>
       <p>发现页提供选题与代表内容，专题按任务组织案例、教程和资源；AI应用承接方法选择，圈子承接研讨、共学与求助，模型广场提供模型信息。作品、方法和问题之间的关联，决定这些入口能否接成一次完整使用。</p>
       <p className="rb-source"><Link href="/community-options">五套完整方案 →</Link><Link href="/community-options/fusion">融合方案与用户路径 →</Link></p>
     </section>
@@ -128,9 +128,9 @@ export default function ResearchBrief() {
       <span>06 / 产品、内容与运营</span>
       <h2>以一个完整任务组织内容和责任</h2>
       <p>优先编排电商营销、设计与视觉、写作与编辑：分别检验商品表达、系列设计和文字取舍，已有材料可支撑案例与方法对照。这是内容投入顺序；市场需求排名仍缺少可比数据。其余领域继续按可靠材料覆盖。</p>
-      <ol className="rb-path" aria-label="建议用户路径"><li>发现案例</li><li>比较条件</li><li>进入合适工具</li><li>制作与修改</li><li>保存自用</li></ol>
-      <p>遇到问题可带素材和尝试记录求助；已有作品也可直接进入圈子研讨。专题按任务关联已有成果对照、适用条件、方法与相关问题。</p>
-      <p>作者提供过程并决定公开范围，编辑核对条件和选择依据，资源维护者跟进版本，圈子主持匹配愿意回应的同行。好回答可经整理回到原案例或专题，署名与来源随内容保留。</p>
+      <ol className="rb-path" aria-label="建议用户路径"><li>看到效果</li><li>确认所需素材</li><li>直接试用</li><li>保存结果</li></ol>
+      <p>需要比较方法或继续修改时再进入专题；遇到问题可选择公开必要材料求助。已有作品也可直接分享创作想法，无需先整理成教程。</p>
+      <p>作者自由分享作品；愿意公开方法时再补充过程。编辑集中维护重点专题和可用入口，有人负责的资源再持续跟进版本。圈子按需邀请同行，好回答经整理后保留署名与来源。</p>
       <p>制作由适合任务的工具承接。方案拟通过 MakeNow 画布连接制作，项目复制、素材导入与成果回流的接入条件尚待核实。内容采用和实际修改结果，是检验这条路径的依据。</p>
       <p className="rb-source"><Link href="/community-options/content-system#editorial-plan">专题与内容配置 →</Link><Link href="/community-options/content-system#supply">作者、编辑与维护分工 →</Link><Link href="/research-status">证据状态与待验证事项 →</Link></p>
     </section>

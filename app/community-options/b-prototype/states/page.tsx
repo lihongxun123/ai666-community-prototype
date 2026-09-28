@@ -1,0 +1,6 @@
+'use client';
+/* oxlint-disable next/no-html-link-for-pages -- Prototype routes use full-page navigation. */
+import {useState} from 'react';
+import {bPages} from '../page';
+export default function States(){const [selected,setSelected]=useState('tutorials');const p=bPages.find(x=>x.id===selected)!;return <main style={{padding:28,background:'#edf0f4',minHeight:'100vh',fontFamily:'sans-serif'}}><h1>B 端页面与状态</h1><p>本地交互原型 · {bPages.length} 个页面 · {bPages.reduce((n,p)=>n+p.states.length,0)} 个状态。状态展示与正式页面分离。</p><p><a href="/community-options/c-prototype/states">C 端</a> · <a href="/community-options/cross-prototype/states">跨产品</a> · <a href="/community-options/b-prototype">打开后台</a></p><select aria-label="选择页面" value={selected} onChange={e=>setSelected(e.target.value)}>{bPages.map(p=><option key={p.id} value={p.id}>{p.module} / {p.title}（{p.states.length}）</option>)}</select><div style={{display:'grid',gap:28,marginTop:24}}>{p.states.map(s=><section key={p.id+s}><h2>{p.title} · {s}</h2><iframe title={`${p.title} ${s}`} src={'/community-options/b-prototype?page='+p.id+'&state='+s+'&embed=1'} style={{width:'100%',height:850,border:'1px solid #ccd2da',background:'#fff'}}/></section>)}</div></main>}
+

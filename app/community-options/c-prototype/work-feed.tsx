@@ -1,0 +1,6 @@
+"use client";
+/* oxlint-disable next/no-img-element -- Local prototype artwork. */
+import './work-feed.css';
+export const workRatios:Record<string,string>={girl:'3/4',cat:'1/1',perfume:'4/3',portrait:'2/3',anime:'3/2',sea:'16/9',cup:'1/1',underwater:'9/16',interior:'4/3',dog:'4/5',restore:'3/2',letter:'4/5',writing:'4/3',headphones:'1/1',tram:'16/9'};
+export type FeedWork={id:string;title:string;author:string;image?:string;likes?:string|number;type?:string;ratio?:string;target?:string};
+export function WorkFeed({items,go}:{items:FeedWork[];go:(target:string)=>void}){return <div className="wf-grid">{items.map(w=><button className={'wf-card'+(w.type==='文字'?' wf-text':'')} key={w.id} style={{aspectRatio:w.ratio||workRatios[w.id]||'1/1'}} onClick={()=>go(w.target||'work?item='+w.id)} aria-label={'查看作品：'+w.title}>{w.type==='文字'?<div className="wf-poem"><small>文字</small><h3>{w.title}</h3><p>海风穿过街角，<br/>把普通的下午写成故事。</p></div>:w.image===''?<span>封面暂不可用</span>:<img src={w.image||'/home-prototype/'+w.id+'.png'} alt={w.title}/ >}{w.type==='视频'&&<span className="wf-video">视频 · 00:03</span>}<div className="wf-caption"><strong>{w.title}</strong><div><span>{w.author}</span><span><img className="wf-heart" src="/home-prototype/icons/heart-line.svg" alt="喜欢"/> {w.likes||0}</span></div></div></button>)}</div>}

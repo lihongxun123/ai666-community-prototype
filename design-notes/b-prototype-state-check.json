@@ -1,0 +1,1245 @@
+{
+  "date": "2026-09-26",
+  "checks": [
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topics",
+      "state": "normal",
+      "text": "专题编排专题编排新建专题共 2 个专题名称 / 对象状态负责人 / 作者说明操作把日常画成插画tp-01已发布内容运营面向初次尝试图像创作的用户编辑下线从灵感到成品tp-02草稿内容运营作品、教程与工",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topics",
+      "state": "empty",
+      "text": "专题编排专题编排新建专题共 0 个专题暂无专题。可新建专题并选择公开内容。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topics",
+      "state": "target-removed",
+      "text": "专题编排专题编排新建专题「旧城的雨」已下架，公开专题不再展示该引用。请检查编排后重新发布。共 2 个专题名称 / 对象状态负责人 / 作者说明操作把日常画成插画tp-01已发布内容运营面向初次尝试图像",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topics",
+      "state": "permission-denied",
+      "text": "专题编排专题编排新建专题当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topics",
+      "state": "load-failed",
+      "text": "专题编排专题编排新建专题列表暂时无法加载。重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "normal",
+      "text": "编辑专题新建专题返回列表基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 作品上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移出添加公开内容选择内容work-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "edit",
+      "text": "编辑专题编辑专题返回列表基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 作品上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移出添加公开内容选择内容work-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "invalid",
+      "text": "编辑专题新建专题返回列表基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 作品上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移出添加公开内容选择内容work-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "target-removed",
+      "text": "编辑专题新建专题返回列表基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 不可公开引用上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移出添加公开内容选择内容w",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "save-failed",
+      "text": "编辑专题新建专题返回列表保存失败，当前输入仍在。请重试。基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 作品上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "permission-denied",
+      "text": "编辑专题新建专题返回列表当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-topic-edit",
+      "state": "conflict",
+      "text": "编辑专题新建专题返回列表基本信息专题标题封面说明简介主题 / 面向人群收录内容1. 旧照修复练习 作品上移下移移出2. 给旧照片修复时，我先做了这三件事 帖子上移下移移出添加公开内容选择内容work-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circles",
+      "state": "normal",
+      "text": "圈子管理圈子管理新建圈子名称 / 对象状态负责人 / 作者说明操作插画练习ci-01开放运营一组分享练习过程与提问维护关闭提示词交流ci-02开放运营一组交流使用经验维护关闭",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circles",
+      "state": "empty",
+      "text": "圈子管理圈子管理新建圈子暂无圈子。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circles",
+      "state": "closed",
+      "text": "圈子管理圈子管理新建圈子圈子已关闭新发帖与推荐；原有合规帖子仍可在社区访问。名称 / 对象状态负责人 / 作者说明操作插画练习ci-01开放运营一组分享练习过程与提问维护关闭提示词交流ci-02开放运",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circles",
+      "state": "permission-denied",
+      "text": "圈子管理圈子管理新建圈子当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circle-edit",
+      "state": "normal",
+      "text": "编辑圈子编辑圈子返回列表名称封面说明介绍圈内规则负责人公告置顶帖子关闭圈子的新发帖与推荐保存草稿预览发布更新",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circle-edit",
+      "state": "closed",
+      "text": "编辑圈子编辑圈子返回列表名称封面说明介绍圈内规则负责人公告置顶帖子关闭圈子的新发帖与推荐保存草稿预览发布更新",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circle-edit",
+      "state": "invalid",
+      "text": "编辑圈子编辑圈子返回列表名称封面说明介绍圈内规则负责人公告置顶帖子关闭圈子的新发帖与推荐保存草稿预览发布更新",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circle-edit",
+      "state": "permission-denied",
+      "text": "编辑圈子编辑圈子返回列表当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-circle-edit",
+      "state": "conflict",
+      "text": "编辑圈子编辑圈子返回列表名称封面说明介绍圈内规则负责人公告置顶帖子关闭圈子的新发帖与推荐保存草稿预览发布更新",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-taxonomy",
+      "state": "normal",
+      "text": "分类与标签分类与标签名称适用类型分类 · 作品标签 · 作品标签 · 帖子标签 · 教程标签 · 资源添加名称 / 对象类型状态说明操作插画ca-01分类 · 作品启用关联内容 18 条上移下移停用摄",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-taxonomy",
+      "state": "empty",
+      "text": "分类与标签分类与标签名称适用类型分类 · 作品标签 · 作品标签 · 帖子标签 · 教程标签 · 资源添加暂无分类或标签。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-taxonomy",
+      "state": "impact",
+      "text": "分类与标签分类与标签停用「插画」将影响 18 条已关联内容的后续选取；历史内容继续保留。名称适用类型分类 · 作品标签 · 作品标签 · 帖子标签 · 教程标签 · 资源添加名称 / 对象类型状态说明",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-taxonomy",
+      "state": "permission-denied",
+      "text": "分类与标签分类与标签当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-features",
+      "state": "normal",
+      "text": "推荐编排推荐编排首页爆款作品与社区推荐帖子分别配置。首页爆款作品社区推荐帖子编辑中的顺序1. 日落之前 公开上移下移移出2. 一瓶夏日晴光 公开上移下移移出3. 旧照修复练习 公开上移下移移出添加公开",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-features",
+      "state": "empty",
+      "text": "推荐编排推荐编排首页爆款作品与社区推荐帖子分别配置。首页爆款作品社区推荐帖子编辑中的顺序1. 日落之前 公开上移下移移出2. 一瓶夏日晴光 公开上移下移移出3. 旧照修复练习 公开上移下移移出添加公开",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-features",
+      "state": "target-removed",
+      "text": "推荐编排推荐编排首页爆款作品与社区推荐帖子分别配置。首页爆款作品社区推荐帖子目标已失效，公开推荐立即排除；恢复内容后仍需重新选择推荐。编辑中的顺序1. 日落之前 公开上移下移移出2. 一瓶夏日晴光 公",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-features",
+      "state": "permission-denied",
+      "text": "推荐编排推荐编排首页爆款作品与社区推荐帖子分别配置。当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-features",
+      "state": "publish-failed",
+      "text": "推荐编排推荐编排首页爆款作品与社区推荐帖子分别配置。首页爆款作品社区推荐帖子编辑中的顺序1. 日落之前 公开上移下移移出2. 一瓶夏日晴光 公开上移下移移出3. 旧照修复练习 公开上移下移移出添加公开",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-slots",
+      "state": "normal",
+      "text": "展示位配置展示位配置Banner、金刚区与首页推荐位添加展示位名称 / 对象类型目标端侧状态操作一起画个夏天sl-01首页 Banner活动 · 一起画个夏天全端已发布编辑上移下移停用AI 创作sl-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-slots",
+      "state": "empty",
+      "text": "展示位配置展示位配置Banner、金刚区与首页推荐位添加展示位名称 / 对象类型目标端侧状态操作保存草稿发布配置当前公开预览一起画个夏天　·　AI 创作　·　专题精选",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-slots",
+      "state": "invalid-target",
+      "text": "展示位配置展示位配置活动目标已失效，对应 Banner 已从公开展示位即时移除。Banner、金刚区与首页推荐位添加展示位名称 / 对象类型目标端侧状态操作一起画个夏天sl-01首页 Banner活动",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-slots",
+      "state": "mobile",
+      "text": "展示位配置展示位配置Banner、金刚区与首页推荐位添加展示位名称 / 对象类型目标端侧状态操作一起画个夏天sl-01首页 Banner活动 · 一起画个夏天全端已发布编辑上移下移停用AI 创作sl-",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-slots",
+      "state": "permission-denied",
+      "text": "展示位配置展示位配置当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-events",
+      "state": "normal",
+      "text": "活动管理活动管理新建活动名称 / 对象类型状态负责人 / 作者说明操作一起画个夏天ev-01作品征集进行中活动运营示例征集期 09-26 至 10-20维护规则查看投稿结束春日色彩练习ev-02作品征",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-events",
+      "state": "empty",
+      "text": "活动管理活动管理新建活动暂无活动。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-events",
+      "state": "ended",
+      "text": "活动管理活动管理新建活动活动已结束，停止接受新投稿；历史投稿与评审记录保留。名称 / 对象类型状态负责人 / 作者说明操作一起画个夏天ev-01作品征集进行中活动运营示例征集期 09-26 至 10-",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-events",
+      "state": "permission-denied",
+      "text": "活动管理活动管理新建活动当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-event-edit",
+      "state": "normal",
+      "text": "编辑活动编辑活动返回列表活动名称开始日期截止日期投稿类型参与资格投稿材料奖励说明规则保存草稿预览发布规则",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-event-edit",
+      "state": "invalid",
+      "text": "编辑活动编辑活动返回列表活动名称开始日期截止日期投稿类型参与资格投稿材料奖励说明规则保存草稿预览发布规则",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-event-edit",
+      "state": "ended",
+      "text": "编辑活动编辑活动返回列表本活动已结束。新投稿停止，历史评审材料继续可查。活动名称开始日期截止日期投稿类型参与资格投稿材料奖励说明规则保存草稿预览发布规则",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-event-edit",
+      "state": "permission-denied",
+      "text": "编辑活动编辑活动返回列表当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-event-edit",
+      "state": "conflict",
+      "text": "编辑活动编辑活动返回列表活动名称开始日期截止日期投稿类型参与资格投稿材料奖励说明规则保存草稿预览发布规则",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "normal",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。名称 / 对象类型状态负责人 / 作者说明操作海边的午后su-01一起画个夏天待评审山野接受材料：图片 1 张、创作说明查看与评审玻璃杯里的光",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "empty",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。暂无投稿。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "ineligible",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。资格未通过，不能进入评审或发奖。名称 / 对象类型状态负责人 / 作者说明操作海边的午后su-01一起画个夏天待评审山野接受材料：图片 1 张",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "content-removed",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。原作品已下架，公开入口不可访问；已接受的投稿材料与评审依据保留。名称 / 对象类型状态负责人 / 作者说明操作海边的午后su-01一起画个夏天",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "award-pending",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。评审已完成，奖励仍待按活动规则核发。名称 / 对象类型状态负责人 / 作者说明操作海边的午后su-01一起画个夏天待评审山野接受材料：图片 1",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-submissions",
+      "state": "permission-denied",
+      "text": "投稿与评审投稿与评审资格核验、评审结论与奖励发放分别记录。当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "normal",
+      "text": "积分与任务记录积分与任务记录社区积分账户全部预占获得释放名称 / 对象类型状态负责人 / 作者说明操作AI 创作任务pt-01预占待结算演示用户具体积分数待配置查看记录签到pt-02获得已记录演示用户",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "empty",
+      "text": "积分与任务记录积分与任务记录社区积分账户全部预占获得释放暂无相关记录。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "hold",
+      "text": "积分与任务记录积分与任务记录社区积分账户任务积分已预占，结果未确认前不可重复结算。全部预占获得释放名称 / 对象类型状态负责人 / 作者说明操作AI 创作任务pt-01预占待结算演示用户具体积分数待配",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "release",
+      "text": "积分与任务记录积分与任务记录社区积分账户取消成功的任务应释放预占并回到原社区积分账户。全部预占获得释放名称 / 对象类型状态负责人 / 作者说明操作AI 创作任务pt-01预占待结算演示用户具体积分数",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "failed",
+      "text": "积分与任务记录积分与任务记录社区积分账户记录暂不可核对。不要补记消耗或发放。全部预占获得释放名称 / 对象类型状态负责人 / 作者说明操作AI 创作任务pt-01预占待结算演示用户具体积分数待配置查看",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-points",
+      "state": "permission-denied",
+      "text": "积分与任务记录积分与任务记录社区积分账户当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-members",
+      "state": "normal",
+      "text": "会员权益会员权益名称 / 对象类型状态说明操作当前会员方案mb-01会员权益展示中权益与售价待接入原规则查看权益",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-members",
+      "state": "empty",
+      "text": "会员权益会员权益暂无可展示的会员权益。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-members",
+      "state": "expired",
+      "text": "会员权益会员权益名称 / 对象类型状态说明操作当前会员方案mb-01会员权益已到期权益与售价待接入原规则查看权益",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-members",
+      "state": "permission-denied",
+      "text": "会员权益会员权益当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-shop",
+      "state": "normal",
+      "text": "商品与兑换商品与兑换名称 / 对象类型状态说明操作待配置商品sh-01积分兑换待配置兑换条件与库存待核实查看条件兑换记录sh-02兑换记录已记录兑换记录待核对查看条件",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-shop",
+      "state": "empty",
+      "text": "商品与兑换商品与兑换暂无商品或兑换记录。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-shop",
+      "state": "unavailable",
+      "text": "商品与兑换商品与兑换商品当前不可兑换，已受理的兑换记录仍可查询。名称 / 对象类型状态说明操作待配置商品sh-01积分兑换待配置兑换条件与库存待核实查看条件兑换记录sh-02兑换记录已记录兑换记录待核",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-shop",
+      "state": "permission-denied",
+      "text": "商品与兑换商品与兑换当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-reports",
+      "state": "normal",
+      "text": "举报处理举报处理名称 / 对象类型状态负责人 / 作者说明操作作品涉嫌侵权rp-01内容举报待核查审核治理受理时间 2026-09-19处理帖子内容不当rp-02内容举报已处理审核治理受理时间 202",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-reports",
+      "state": "empty",
+      "text": "举报处理举报处理暂无举报记录。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-reports",
+      "state": "content-removed",
+      "text": "举报处理举报处理被举报内容已不可访问。举报记录和本人处理结果仍可查。名称 / 对象类型状态负责人 / 作者说明操作作品涉嫌侵权rp-01内容举报待核查审核治理受理时间 2026-09-19处理帖子内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-reports",
+      "state": "permission-denied",
+      "text": "举报处理举报处理当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-reports",
+      "state": "conflict",
+      "text": "举报处理举报处理名称 / 对象类型状态负责人 / 作者说明操作作品涉嫌侵权rp-01内容举报待核查审核治理受理时间 2026-09-19处理帖子内容不当rp-02内容举报已处理审核治理受理时间 202",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-permissions",
+      "state": "normal",
+      "text": "职责与权限职责与权限名称 / 对象类型状态说明操作内容编辑与运营pm-01职责已配置编辑官方内容、专题和圈子查看配置审核治理pm-02职责已配置审核与举报治理查看配置能力维护pm-03职责已配置运行入",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-permissions",
+      "state": "empty",
+      "text": "职责与权限职责与权限暂无职责配置。内容编辑与运营同一人可兼任多个职责；编辑、发布与推荐分别授权。编辑官方内容审核内容正式发布推荐编排维护专题圈子能力维护处理举报分配权限保存配置",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-permissions",
+      "state": "permission-denied",
+      "text": "职责与权限职责与权限当前账号没有此操作权限。请联系管理员核对职责。",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "op-permissions",
+      "state": "change-failed",
+      "text": "职责与权限职责与权限名称 / 对象类型状态说明操作内容编辑与运营pm-01职责已配置编辑官方内容、专题和圈子查看配置审核治理pm-02职责已配置审核与举报治理查看配置能力维护pm-03职责已配置运行入",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "works",
+      "state": "normal",
+      "text": "作品管理全部私有公开下架已删除新建作品内容作者 / 维护人公开状态编辑状态操作旧照修复练习work-1 · 作品林间内容编辑公开通过编辑预览引用日落之前work-sea · 作品陈屿内容编辑公开通过编",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "works",
+      "state": "empty",
+      "text": "作品管理全部私有公开下架已删除新建作品内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "works",
+      "state": "error",
+      "text": "作品管理加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "works",
+      "state": "no-permission",
+      "text": "作品管理暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "normal",
+      "text": "作品编辑作品信息标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正文附件来源与维护作者内容来源官方原",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "incomplete",
+      "text": "作品编辑作品信息标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正文附件来源与维护作者内容来源官方原",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "conflict",
+      "text": "作品编辑作品信息标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正文附件来源与维护作者内容来源官方原",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "save-error",
+      "text": "作品编辑作品信息标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正文附件来源与维护作者内容来源官方原",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "reviewing",
+      "text": "作品编辑作品信息审核中 撤回标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正文附件来源与维护作者内",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "returned",
+      "text": "作品编辑退回：请补充原作者授权与资源使用条件。作品信息标题简介用于展示创作结果与方法。文字作品成果已公开作品的主体保持原样。使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "work-edit",
+      "state": "unauthorized",
+      "text": "作品编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "posts",
+      "state": "normal",
+      "text": "帖子管理全部私有公开下架已删除新建帖子内容作者 / 维护人公开状态编辑状态操作给旧照片修复时，我先做了这三件事post-1 · 帖子林间内容编辑公开通过编辑预览引用修复失败后我改了哪些步骤post-2",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "posts",
+      "state": "empty",
+      "text": "帖子管理全部私有公开下架已删除新建帖子内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "posts",
+      "state": "error",
+      "text": "帖子管理加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "posts",
+      "state": "no-permission",
+      "text": "帖子管理暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "normal",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "incomplete",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "conflict",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "save-error",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "reviewing",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "returned",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "post-edit",
+      "state": "unauthorized",
+      "text": "帖子编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorials",
+      "state": "normal",
+      "text": "教程管理全部私有公开下架已删除新建教程内容作者 / 维护人公开状态编辑状态操作旧照片修复：从判断破损到复查tutorial-1 · 教程林间内容编辑公开通过编辑预览引用未命名草稿tutorial-2 ",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorials",
+      "state": "empty",
+      "text": "教程管理全部私有公开下架已删除新建教程内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorials",
+      "state": "error",
+      "text": "教程管理加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorials",
+      "state": "no-permission",
+      "text": "教程管理暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "normal",
+      "text": "教程编辑教程信息标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "incomplete",
+      "text": "教程编辑教程信息标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除 添加内容块使用条件准备原图副本；精细操作在电脑端完成。关联资源旧照修复参考工程 · 公开正",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "conflict",
+      "text": "教程编辑教程信息标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "save-error",
+      "text": "教程编辑教程信息标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "reviewing",
+      "text": "教程编辑教程信息审核中 撤回标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "returned",
+      "text": "教程编辑退回：请补充原作者授权与资源使用条件。教程信息标题简介先观察破损，再逐处修复并复查。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "tutorial-edit",
+      "state": "unauthorized",
+      "text": "教程编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "apps",
+      "state": "normal",
+      "text": "AI 应用管理全部私有公开下架已删除新建AI 应用内容作者 / 维护人公开状态编辑状态操作文案改写app-1 · AI 应用林间内容编辑公开通过编辑预览引用",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "apps",
+      "state": "empty",
+      "text": "AI 应用管理全部私有公开下架已删除新建AI 应用内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "apps",
+      "state": "error",
+      "text": "AI 应用管理加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "apps",
+      "state": "no-permission",
+      "text": "AI 应用管理暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "normal",
+      "text": "AI 应用编辑AI 应用信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "incomplete",
+      "text": "AI 应用编辑AI 应用信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "conflict",
+      "text": "AI 应用编辑AI 应用信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "save-error",
+      "text": "AI 应用编辑AI 应用信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "reviewing",
+      "text": "AI 应用编辑AI 应用信息审核中 撤回标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "returned",
+      "text": "AI 应用编辑退回：请补充原作者授权与资源使用条件。AI 应用信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "app-edit",
+      "state": "unauthorized",
+      "text": "AI 应用编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resources",
+      "state": "normal",
+      "text": "资源管理全部私有公开下架已删除新建资源内容作者 / 维护人公开状态编辑状态操作旧照修复参考工程resource-1 · 资源林间内容编辑公开通过编辑预览引用",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resources",
+      "state": "empty",
+      "text": "资源管理全部私有公开下架已删除新建资源内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resources",
+      "state": "error",
+      "text": "资源管理加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resources",
+      "state": "no-permission",
+      "text": "资源管理暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "normal",
+      "text": "资源编辑资源信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细节，先",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "incomplete",
+      "text": "资源编辑资源信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细节，先",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "conflict",
+      "text": "资源编辑资源信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细节，先",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "save-error",
+      "text": "资源编辑资源信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划痕与细节，先",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "reviewing",
+      "text": "资源编辑资源信息审核中 撤回标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除保留未经修改的原图，观察划",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "returned",
+      "text": "资源编辑退回：请补充原作者授权与资源使用条件。资源信息标题简介用于展示创作结果与方法。正文段落标题图片视频表格可复制示例链接资源引用上移移除准备材料 段落标题图片视频表格可复制示例链接资源引用上移移除",
+      "width": 1192
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "resource-edit",
+      "state": "unauthorized",
+      "text": "资源编辑暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "preview",
+      "state": "normal",
+      "text": "内容预览公开版本编辑版本继续编辑旧照片修复：从判断破损到复查林间 · 教程先观察破损，再逐处修复并复查。准备材料保留未经修改的原图，观察划痕与细节，先完成小范围处理，再与原图对照。 关联资源旧照修复参",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "preview",
+      "state": "private",
+      "text": "内容预览当前为后台私有版本预览，公开链接不可访问。公开版本编辑版本继续编辑旧照片修复：从判断破损到复查林间 · 教程先观察破损，再逐处修复并复查。准备材料保留未经修改的原图，观察划痕与细节，先完成小范",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "preview",
+      "state": "unavailable",
+      "text": "内容预览公开版本编辑版本继续编辑内容不可用前往发布",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "reviews",
+      "state": "normal",
+      "text": "审核任务全部私有公开下架已删除内容作者 / 维护人公开状态编辑状态操作旧照片修复：进阶复查tutorial-4 · 教程林间内容编辑公开待审 · 有修改处理预览引用修复失败后我改了哪些步骤post-2",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "reviews",
+      "state": "empty",
+      "text": "审核任务全部私有公开下架已删除内容作者 / 维护人公开状态编辑状态操作暂无符合条件的内容",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "reviews",
+      "state": "error",
+      "text": "审核任务加载失败重新加载",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "review",
+      "state": "normal",
+      "text": "审核详情旧照片修复：进阶复查版本修订 2 · 待审查看待审内容审核意见退回通过发布管理",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "review",
+      "state": "returned",
+      "text": "审核详情退回：请补充原作者授权与资源使用条件。旧照片修复步骤版本修订 1 · 退回查看待审内容审核意见退回通过发布管理",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "review",
+      "state": "stale",
+      "text": "审核详情旧照片修复：进阶复查版本修订 2 · 待审查看待审内容审核意见内容版本已变化，请重新打开任务。退回通过发布管理",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "review",
+      "state": "unknown",
+      "text": "审核详情旧照片修复：进阶复查版本修订 2 · 待审查看待审内容审核意见结果尚未确认，请查询原任务。退回通过发布管理查询处理记录",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "release",
+      "state": "normal",
+      "text": "发布确认旧照片修复：从判断破损到复查公开状态公开审核通过引用可用发布编辑版本查看影响下架删除",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "release",
+      "state": "incomplete",
+      "text": "发布确认编辑版本资料不完整，暂不能发布。旧照片修复：从判断破损到复查公开状态公开审核通过引用可用发布编辑版本查看影响下架删除",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "release",
+      "state": "reference-invalid",
+      "text": "发布确认旧照片修复：从判断破损到复查公开状态公开审核通过引用存在不可用引用发布编辑版本查看影响下架删除",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "release",
+      "state": "unverified",
+      "text": "发布确认旧照片修复：从判断破损到复查公开状态公开审核通过引用可用发布编辑版本查看影响下架删除",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "release",
+      "state": "published",
+      "text": "发布确认旧照片修复：从判断破损到复查公开状态公开审核通过引用可用发布编辑版本查看影响下架删除",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "verify",
+      "state": "normal",
+      "text": "能力核验旧照片修复：从判断破损到复查 · 1.2核验记录绑定当前执行版本。入口可达输入与输出符合说明授权与依赖完整设备与积分口径一致核验说明记录通过记录失败暂停已公开能力发布管理",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "verify",
+      "state": "failed",
+      "text": "能力核验最近一次能力核验未通过，请检查入口和依赖。旧照片修复：从判断破损到复查 · 1.2核验记录绑定当前执行版本。入口可达输入与输出符合说明授权与依赖完整设备与积分口径一致核验说明记录通过记录失败暂",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "verify",
+      "state": "changed",
+      "text": "能力核验执行版本已变更，原核验结论不能复用。旧照片修复：从判断破损到复查 · 1.2核验记录绑定当前执行版本。入口可达输入与输出符合说明授权与依赖完整设备与积分口径一致核验说明记录通过记录失败暂停已公",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "verify",
+      "state": "paused",
+      "text": "能力核验当前能力已暂停，恢复使用需重新核验。旧照片修复：从判断破损到复查 · 1.2核验记录绑定当前执行版本。入口可达输入与输出符合说明授权与依赖完整设备与积分口径一致核验说明记录通过记录失败暂停已公",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "references",
+      "state": "normal",
+      "text": "引用与影响旧照片修复：从判断破损到复查引用了旧照修复参考工程 · 公开查看被引用下架后仅关联能力停止开放，教程正文与已接收的活动投稿保留。查看社区教程",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "references",
+      "state": "unavailable",
+      "text": "引用与影响目标已不可用，公开引用已停止展示。旧照片修复：从判断破损到复查引用了旧照修复参考工程 · 公开查看被引用下架后仅关联能力停止开放，教程正文与已接收的活动投稿保留。查看社区教程",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "references",
+      "state": "private",
+      "text": "引用与影响私有目标不可用于公开引用。旧照片修复：从判断破损到复查引用了旧照修复参考工程 · 公开查看被引用下架后仅关联能力停止开放，教程正文与已接收的活动投稿保留。查看社区教程",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "transfer",
+      "state": "normal",
+      "text": "维护交接交接 旧照片修复：从判断破损到复查原作者：林间 · 当前维护人：内容编辑新维护人运营编辑内容编辑交接说明已确认新维护人具备内容维护授权，并接收未发布草稿作者署名、工程所有权与运行权限保持原归属",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "transfer",
+      "state": "unauthorized",
+      "text": "维护交接暂无维护权限内容正文由原作者或获授权的维护人修改。返回列表",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "transfer",
+      "state": "pending",
+      "text": "维护交接交接待接收。确认新维护人的身份与内容授权后继续。交接 旧照片修复：进阶复查原作者：林间 · 当前维护人：内容编辑新维护人运营编辑内容编辑交接说明已确认新维护人具备内容维护授权，并接收未发布草稿",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "history",
+      "state": "normal",
+      "text": "操作记录旧照片修复：从判断破损到复查 · 操作记录首次公开2026-09-26 09:00保留原作者与对象身份",
+      "width": 1207
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "history",
+      "state": "empty",
+      "text": "操作记录旧照片修复：从判断破损到复查 · 操作记录暂无记录",
+      "width": 1207
+    }
+  ]
+}

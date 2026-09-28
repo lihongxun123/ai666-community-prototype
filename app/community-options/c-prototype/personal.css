@@ -1,0 +1,489 @@
+.cp-personal-head {
+  margin: 0 0 24px;
+}
+.cp-personal-head h1 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.cp-personal-head p {
+  margin: 0;
+}
+.cp-personal-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  border-radius: 4px;
+  color: #292929;
+}
+.cp-personal-warn {
+  background: #faf8f3;
+  border-color: #e5ddcb;
+}
+.cp-personal-error {
+  background: #faf5f5;
+  border-color: #e8d7d7;
+}
+.cp-personal-success {
+  background: #f4f8f5;
+  border-color: #d7e3d9;
+}
+.cp-personal-row {
+  width: 100%;
+  min-height: 68px;
+  border: 0;
+  border-bottom: 1px solid #e9e9e9;
+  background: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 6px;
+  cursor: pointer;
+  color: #171717;
+}
+.cp-personal-row:hover,
+.cp-personal-row:focus-visible {
+  background: #f8f8f8;
+}
+.cp-personal-row > span:first-child {
+  display: grid;
+  gap: 4px;
+  flex: 1;
+}
+.cp-personal-row small {
+  font-size: 12px;
+}
+.cp-personal-row > b {
+  font-size: 24px;
+  font-weight: 400;
+  color: #888;
+}
+.cp-personal-cards,
+.cp-personal-choice,
+.cp-personal-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 16px 0 28px;
+}
+.cp-personal-choice > .cp-card,
+.cp-personal-shortcuts > .cp-personal-row {
+  min-width: 0;
+}
+.cp-personal-choice > .cp-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cp-personal-choice h2,
+.cp-personal-form h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.cp-personal-choice p {
+  margin: 0 0 auto;
+}
+.cp-personal-creation-types { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.cp-personal-creation-types .cp-button { min-width: 72px; margin-top: 0; }
+.cp-light-create { max-width: 960px; padding: 28px; margin: 0 auto 18px; }
+.cp-light-create-tabs { display: flex; gap: 6px; margin-bottom: 18px; padding: 4px; border: 1px solid #e5e5e5; border-radius: 4px; background: #f7f7f7; }
+.cp-light-create-tabs button { flex: 1; min-height: 40px; border: 0; border-radius: 4px; background: transparent; color: #555; font: inherit; cursor: pointer; }
+.cp-light-create-tabs button.is-active { background: #fff; color: #171717; font-weight: 700; box-shadow: 0 1px 5px #00000012; }
+.cp-light-create-label { display: grid; gap: 8px; min-width: 0; font-size: 14px; font-weight: 600; }
+.cp-light-create-label small { color: #777; font-size: 12px; font-weight: 400; }
+.cp-light-create-label textarea, .cp-light-create-label select { width: 100%; box-sizing: border-box; border: 1px solid #d5d5d5; border-radius: 4px; padding: 12px; background: #fff; color: #171717; font: inherit; font-weight: 400; }
+.cp-light-create-label textarea { resize: vertical; }
+.cp-light-create-label input[type="file"] { max-width: 100%; font-size: 12px; font-weight: 400; }
+.cp-light-create-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 16px; }
+.cp-light-create-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.cp-light-create-cost { margin: 16px 0 0; color: #555; font-size: 13px; }
+.cp-personal-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  cursor: pointer;
+}
+.cp-personal-card .cp-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.cp-personal-empty {
+  padding: 40px 24px;
+  text-align: center;
+  margin: 18px 0;
+}
+.cp-personal-empty h2 {
+  margin: 0 0 8px;
+}
+.cp-personal-empty p {
+  margin: 0 0 20px;
+}
+.cp-personal-secondary {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1px solid #ccc !important;
+}
+.cp-personal-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px;
+}
+.cp-personal-tabs button {
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.cp-personal-tabs button.active {
+  background: #171717;
+  color: #fff;
+  border-color: #171717;
+}
+.cp-personal-form {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  max-width: 900px;
+}
+.cp-personal-form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+.cp-personal-form .cp-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fff;
+  color: #171717;
+  font: inherit;
+}
+.cp-personal-form textarea {
+  resize: vertical;
+}
+.cp-personal-form p {
+  margin: 0;
+}
+.cp-personal-upload {
+  border: 1px dashed #bbb;
+  border-radius: 4px;
+  padding: 18px;
+  cursor: pointer;
+}
+.cp-personal-upload input {
+  font-weight: 400;
+}
+.cp-personal-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+.cp-personal-media > div {
+  display: grid;
+  gap: 5px;
+}
+.cp-personal-media img,
+.cp-personal-media video {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.cp-personal-media small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cp-personal-media button {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  justify-self: start;
+  cursor: pointer;
+}
+.cp-personal-preview,
+.cp-personal-leave {
+  max-width: 900px;
+  padding: 24px;
+  margin: 18px 0;
+}
+.cp-personal-preview img,
+.cp-personal-preview video {
+  max-width: min(100%, 340px);
+  max-height: 400px;
+  object-fit: contain;
+  margin: 8px;
+}
+.cp-personal-preview p {
+  white-space: pre-wrap;
+}
+.cp-personal-leave strong {
+  display: block;
+  margin-bottom: 14px;
+}
+.cp-personal-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.cp-personal-profile > div:not(.cp-personal-profile-actions) {
+  flex: 1;
+}
+.cp-personal-profile > .cp-avatar {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ededed;
+  color: #333;
+  font-size: 18px;
+}
+.cp-personal-profile p {
+  margin: 4px 0 0;
+}
+.cp-personal-profile-actions { display: flex; flex: 0 0 auto; gap: 8px; }
+.cp-personal-profile-actions .cp-button { min-width: 132px; white-space: nowrap; }
+.cp-personal-balance {
+  display: grid;
+  gap: 8px;
+  padding: 26px;
+  margin: 18px 0;
+}
+.cp-root .cp-personal-balance strong {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.cp-personal-balance small {
+  color: #777;
+}
+.cp-personal-event {
+  text-align: left;
+  cursor: pointer;
+}
+.cp-personal-event .cp-cover {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.cp-personal-event strong {
+  display: block;
+  font-size: 20px;
+}
+.cp-personal-event small {
+  color: #777;
+}
+.cp-personal-hero {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+.cp-personal-choice .cp-button,
+.cp-personal-form .cp-button {
+  margin-top: 8px;
+}
+.cp-personal-list {
+  margin: 16px 0;
+}
+.cp-personal-shortcuts .cp-personal-row {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.cp-personal-notice .cp-actions {
+  margin-left: auto;
+}
+.cp-personal-form button:disabled,
+.cp-personal-choice button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+@media (max-width: 720px) {
+  .cp-light-create { padding: 16px; }
+  .cp-light-create-fields { grid-template-columns: 1fr; gap: 14px; }
+  .cp-light-create-actions .cp-button { flex: 1 1 auto; }
+  .cp-personal-head { margin: 0 0 12px; font-size: 13px; }
+  .cp-personal-row { min-height: 54px; gap: 8px; padding: 10px 4px; font-size: 14px; }
+  .cp-personal-row small { font-size: 12px; line-height: 1.4; }
+  .cp-personal-row > b { font-size: 19px; }
+  .cp-personal-cards,
+  .cp-personal-choice,
+  .cp-personal-shortcuts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 12px 0 20px;
+  }
+  .cp-personal-form {
+    min-width: 0;
+    gap: 14px;
+    padding: 16px;
+  }
+  .cp-personal-form label, .cp-personal-form .cp-input { min-width: 0; font-size: 14px; }
+  .cp-personal-form .cp-input { padding: 10px; }
+  .cp-personal-profile {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .cp-personal-profile .cp-button {
+    flex: 1 1 140px;
+    width: auto;
+  }
+  .cp-personal-choice > .cp-card {
+    gap: 8px;
+    padding: 16px;
+  }
+  .cp-personal-choice h2, .cp-personal-form h2 { font-size: 17px; }
+  .cp-personal-choice p { font-size: 13px; line-height: 1.5; }
+  .cp-personal-tabs { gap: 6px; margin: 10px 0 14px; }
+  .cp-personal-tabs button { padding: 7px 11px; font-size: 13px; }
+  .cp-personal-empty { padding: 26px 16px; }
+  .cp-personal-preview, .cp-personal-leave { padding: 16px; }
+  .cp-personal-notice { padding: 10px 12px; margin: 12px 0; font-size: 13px; }
+  .cp-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cp-actions .cp-button { flex: 1 1 auto; min-width: 0; white-space: normal; }
+  .cp-personal-notice .cp-actions {
+    margin-left: 0;
+  }
+}
+
+.cp-week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  margin: 20px 0;
+}
+.cp-week > div {
+  display: grid;
+  text-align: center;
+  gap: 12px;
+  background: #f5f5f5;
+  padding: 12px 1px;
+  border-radius: 4px;
+}
+.cp-week strong {
+  font-size: 13px;
+}
+
+/* The review shell can render a mobile page in a wide desktop viewport. */
+.cp-root:not(.cp-desktop) .cp-personal-profile {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px 12px;
+  min-width: 0;
+}
+.cp-root:not(.cp-desktop) .cp-personal-profile > .cp-avatar {
+  grid-column: 1;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ededed;
+  color: #333;
+  font-size: 18px;
+}
+.cp-root:not(.cp-desktop) .cp-personal-profile > div {
+  grid-column: 2;
+  min-width: 0;
+}
+.cp-root:not(.cp-desktop) .cp-personal-profile > div strong,
+.cp-root:not(.cp-desktop) .cp-personal-profile > div p {
+  overflow-wrap: anywhere;
+}
+.cp-root:not(.cp-desktop) .cp-personal-profile > .cp-personal-profile-actions {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+.cp-root:not(.cp-desktop) .cp-personal-profile-actions > button {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 10px 6px;
+  white-space: nowrap;
+}
+.cp-root:not(.cp-desktop) .cp-grid.cp-personal-shortcuts {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+.cp-root:not(.cp-desktop) .cp-personal-shortcuts .cp-personal-row {
+  width: 100%;
+  min-width: 0;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  text-align: left;
+}
+.cp-root:not(.cp-desktop) .cp-personal-shortcuts .cp-personal-row:last-child { border-bottom: 0; }
+
+/* Mobile pages can render inside a wide review viewport. */
+.cp-root:not(.cp-desktop) .cp-personal-choice,
+.cp-root:not(.cp-desktop) .cp-light-create-fields { grid-template-columns: minmax(0, 1fr); }
+.cp-root:not(.cp-desktop) .cp-personal-choice { gap: 0; margin-top: 4px; }
+.cp-root:not(.cp-desktop) .cp-personal-choice > .cp-card {
+  min-height: 0;
+  padding: 18px 12px;
+  gap: 6px;
+  border-bottom: 1px solid #ececec;
+}
+.cp-root:not(.cp-desktop) .cp-personal-choice > .cp-card:last-child { border-bottom: 0; }
+.cp-root:not(.cp-desktop) .cp-personal-choice h2 { font-size: 17px; }
+.cp-root:not(.cp-desktop) .cp-personal-choice p { margin: 0 0 10px; font-size: 13px; }
+.cp-root:not(.cp-desktop) .cp-personal-choice .cp-button { width: 100%; margin-top: 0; }
+.cp-root:not(.cp-desktop) .cp-light-create { padding: 16px 12px; }
+.cp-root:not(.cp-desktop) .cp-light-create-fields { gap: 14px; }
+.cp-root:not(.cp-desktop) .cp-light-create-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.cp-root:not(.cp-desktop) .cp-light-create-actions .cp-button { width: 100%; margin: 0; }
+.cp-root:not(.cp-desktop) .cp-personal-form { padding: 16px 12px; gap: 16px; }
+.cp-root:not(.cp-desktop) .cp-personal-profile { padding: 16px 12px; margin-bottom: 14px; }
+.cp-root:not(.cp-desktop) .cp-personal-form .cp-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.cp-root:not(.cp-desktop) .cp-personal-form .cp-actions .cp-button { width: 100%; margin: 0; }
+.cp-root:not(.cp-desktop) .cp-personal-balance { gap: 4px; padding: 22px 18px; }
+.cp-root:not(.cp-desktop) .cp-week { gap: 3px; }
+.cp-root:not(.cp-desktop) .cp-week > div { gap: 8px; padding: 10px 1px; }
+.cp-desktop .cp-personal-choice { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.cp-desktop .cp-light-create-fields { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.cp-desktop .cp-personal-services { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 20px; }
+.cp-desktop .cp-personal-services h2 { grid-column: 1 / -1; }
+
+.cp-root .cp-submission{padding:18px 16px;border:1px solid #eee;border-radius:4px;margin:0 0 16px}.cp-root .cp-submission h2{font-size:16px;margin:0 0 6px;font-weight:600}.cp-submission>p{font-size:12px;color:#888;margin:0 0 20px}.cp-root .cp-submission dl{display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;margin:0}.cp-submission dt{font-size:12px;color:#999;margin-bottom:4px}.cp-submission dd{font-size:14px;color:#333;margin:0}.cp-submission>button{border:0;background:none;padding:20px 0 0;font-size:13px;color:#666;cursor:pointer}
+

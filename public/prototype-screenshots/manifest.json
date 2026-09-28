@@ -1,0 +1,733 @@
+{
+  "date": "2026-09-28",
+  "items": [
+    {
+      "section": "C 端",
+      "module": "首页与发现",
+      "title": "首页",
+      "file": "c-refined-home.png",
+      "status": "已完成"
+    },
+    {
+      "section": "C 端",
+      "module": "首页与发现",
+      "title": "专题",
+      "file": "c-refined-topics.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "首页与发现",
+      "title": "专题详情",
+      "file": "c-refined-topic.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "首页与发现",
+      "title": "AI应用",
+      "file": "c-refined-apps.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "首页与发现",
+      "title": "应用详情",
+      "file": "c-refined-app.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "社区",
+      "file": "c-refined-community.png",
+      "status": "结构已确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "圈子",
+      "file": "c-refined-circles.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "圈子详情",
+      "file": "c-refined-circle.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "帖子详情",
+      "file": "c-refined-post.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "官方教程",
+      "file": "c-refined-tutorials.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "教程详情",
+      "file": "c-refined-tutorial.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "作品详情",
+      "file": "c-refined-work.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "资源详情",
+      "file": "c-refined-resource.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "搜索",
+      "file": "c-refined-search.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "社区与内容",
+      "title": "作者主页",
+      "file": "c-refined-author.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "应用输入",
+      "file": "c-refined-app-input.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "生成任务",
+      "file": "c-refined-app-task.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "生成结果",
+      "file": "c-refined-app-result.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "电脑端继续",
+      "file": "c-refined-pc-handoff.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "关联账号",
+      "file": "c-refined-account-link.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "应用体验与跨端",
+      "title": "选择成果",
+      "file": "c-refined-return-result.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "AI 创作",
+      "file": "c-refined-create.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "选择发布方式",
+      "file": "c-refined-publish.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "编辑内容",
+      "file": "c-refined-post-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "发布状态",
+      "file": "c-refined-publish-status.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "创作与发布选择",
+      "file": "c-create-entry.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "工作台 · 生成结果",
+      "file": "c-create-result.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "创作与发布",
+      "title": "工作台 · 生成记录",
+      "file": "c-create-history.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "我的",
+      "file": "c-refined-mine.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "我的关注",
+      "file": "c-refined-my-relations.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "编辑资料",
+      "file": "c-refined-profile-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "我的内容",
+      "file": "c-refined-my-content.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "草稿箱",
+      "file": "c-refined-drafts.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "生成记录",
+      "file": "c-refined-records.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "我的收藏",
+      "file": "c-refined-favorites.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "通知",
+      "file": "c-refined-notifications.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "个人与账号",
+      "title": "登录弹层",
+      "file": "c-refined-login-mobile.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "活动中心",
+      "file": "c-refined-activities.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "活动详情",
+      "file": "c-refined-activity.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "我的投稿",
+      "file": "c-refined-submissions.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "积分中心",
+      "file": "c-refined-points.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "每日签到",
+      "file": "c-refined-checkin.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "邀请有礼",
+      "file": "c-refined-invite.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "AI 商城",
+      "file": "c-refined-shop.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "活动与积分商城",
+      "title": "兑换记录",
+      "file": "c-refined-shop-records.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 首页",
+      "file": "c-refined-home-pc.png",
+      "status": "已完成"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 生成工作台",
+      "file": "c-refined-create-pc.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 我的",
+      "file": "c-refined-mine-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 内容编辑",
+      "file": "c-refined-post-edit-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 登录弹层",
+      "file": "c-refined-login-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 资源详情",
+      "file": "c-refined-resource-pc.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 作品详情",
+      "file": "c-refined-work-pc.png",
+      "status": "已精调 · 待确认"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 活动详情",
+      "file": "c-refined-activity-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 商城",
+      "file": "c-refined-shop-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "C 端",
+      "module": "PC 样本",
+      "title": "PC · 兑换记录",
+      "file": "c-refined-shop-records-pc.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "作品管理",
+      "file": "b-refined-works.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "帖子管理",
+      "file": "b-refined-posts.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "教程管理",
+      "file": "b-refined-tutorials.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "AI 应用管理",
+      "file": "b-refined-apps.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "资源管理",
+      "file": "b-refined-resources.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "作品编辑",
+      "file": "b-refined-work-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "帖子编辑",
+      "file": "b-refined-post-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "教程编辑",
+      "file": "b-refined-tutorial-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "应用编辑",
+      "file": "b-refined-app-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容管理",
+      "title": "资源编辑",
+      "file": "b-refined-resource-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "内容预览",
+      "file": "b-refined-preview.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "审核任务",
+      "file": "b-refined-reviews.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "审核详情",
+      "file": "b-refined-review.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "发布确认",
+      "file": "b-refined-release.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "能力核验",
+      "file": "b-refined-verify.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "引用与影响",
+      "file": "b-refined-references.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "维护交接",
+      "file": "b-refined-transfer.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "操作记录",
+      "file": "b-refined-history.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "审核、发布与维护",
+      "title": "未保存修改离开确认",
+      "file": "b-refined-content-leave-dialog.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "专题编排",
+      "file": "b-refined-op-topics.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "编辑专题",
+      "file": "b-refined-op-topic-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "圈子管理",
+      "file": "b-refined-op-circles.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "编辑圈子",
+      "file": "b-refined-op-circle-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "分类与标签",
+      "file": "b-refined-op-taxonomy.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "推荐编排",
+      "file": "b-refined-op-features.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "内容运营",
+      "title": "展示位配置",
+      "file": "b-refined-op-slots.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "活动管理",
+      "file": "b-refined-op-events.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "编辑活动",
+      "file": "b-refined-op-event-edit.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "投稿与评审",
+      "file": "b-refined-op-submissions.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "积分与任务记录",
+      "file": "b-refined-op-points.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "商品与兑换",
+      "file": "b-refined-op-shop.png",
+      "status": "待评审"
+    },
+    {
+      "section": "B 端",
+      "module": "活动与账户服务",
+      "title": "职责与权限",
+      "file": "b-refined-op-permissions.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "公开项目",
+      "file": "x-refined-project.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "分享设置",
+      "file": "x-refined-share.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "公开版本",
+      "file": "x-refined-version.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "复制项目",
+      "file": "x-refined-copy.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "我的项目",
+      "file": "x-refined-library.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "个人副本",
+      "file": "x-refined-editor.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "分享与复用",
+      "title": "衍生分享",
+      "file": "x-refined-derivative.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "成果回流",
+      "title": "选择成果",
+      "file": "x-refined-results.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "成果回流",
+      "title": "确认账号",
+      "file": "x-refined-link.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "成果回流",
+      "title": "回流确认",
+      "file": "x-refined-return.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "成果回流",
+      "title": "回流状态",
+      "file": "x-refined-return-status.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "ComfyUI 资源",
+      "file": "x-refined-workflow.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "导入条件",
+      "file": "x-refined-workflow-import.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "内容维护",
+      "file": "x-refined-maintain.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "维护教程",
+      "file": "x-refined-maintain-tutorial.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "维护资源",
+      "file": "x-refined-maintain-resource.png",
+      "status": "待评审"
+    },
+    {
+      "section": "跨产品",
+      "module": "工作流与作者维护",
+      "title": "维护进度",
+      "file": "x-refined-maintain-status.png",
+      "status": "待评审"
+    }
+  ]
+}

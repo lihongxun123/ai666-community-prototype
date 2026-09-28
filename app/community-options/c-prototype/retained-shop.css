@@ -1,0 +1,82 @@
+.cp-root .rs-shop { color: #20252b; padding: 8px 0 48px; }
+.cp-root .rs-shop button { font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.cp-root .rs-shop button:disabled { opacity: .48; cursor: not-allowed; }
+.cp-root .rs-hero { display: flex; align-items: center; justify-content: space-between; min-height: 176px; padding: 22px 30px; overflow: hidden; border-radius: 4px; background: linear-gradient(115deg,#1c2841,#466394); color: #fff; }
+.cp-root .rs-hero > div { position: relative; z-index: 1; }
+.cp-root .rs-kicker { font-size: 12px; letter-spacing: .08em; color: #d4e3ff; }
+.cp-root .rs-hero h2 { margin: 4px 0 10px; color: #fff; font-size: 30px; }
+.cp-root .rs-hero p { margin: 0 0 13px; color: #e8efff; }
+.cp-root .rs-hero p strong { font-size: 26px; color: #fff; }
+.cp-root .rs-hero button { border: 1px solid #ffffff80; border-radius: 4px; padding: 7px 12px; color: #fff; background: #ffffff24; }
+.cp-root .rs-hero img { width: 40%; max-width: 270px; max-height: 170px; object-fit: contain; }
+.cp-root .rs-section-head, .cp-root .rs-group-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.cp-root .rs-section-head { margin: 28px 0 14px; }
+.cp-root .rs-record-head { justify-content: flex-end; margin-top: 4px; }
+.cp-root .rs-section-head h1, .cp-root .rs-section-head h2 { margin: 0; font-size: 23px; }
+.cp-root .rs-section-head span, .cp-root .rs-group-head span { color: #717a85; font-size: 13px; }
+.cp-root .rs-section-head button { border: 0; background: none; color: #343a40; }
+.cp-root .rs-group { margin: 0 0 25px; }
+.cp-root .rs-group-head { margin: 0 0 11px; border-bottom: 1px solid #e5e9ef; padding: 0 0 9px; }
+.cp-root .rs-group-head h3 { margin: 0; font-size: 16px; }
+.cp-root .rs-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
+.cp-root .rs-product { display: flex; flex-direction: column; min-height: 124px; padding: 15px; border: 1px solid #e2e6eb; border-radius: 4px; background: #fff; }
+.cp-root .rs-product h4 { flex: 1; margin: 0 0 12px; font-size: 16px; line-height: 1.45; }
+.cp-root .rs-product p { flex: 1; margin: 0 0 14px; color: #69727c; font-size: 12px; line-height: 1.5; }
+.cp-root .rs-product > div { display: flex; align-items: baseline; gap: 2px; }
+.cp-root .rs-product strong { color: #a8751d; font-size: 20px; }
+.cp-root .rs-product > div span { color: #a8751d; font-size: 12px; }
+.cp-root .rs-product button { margin-left: auto; padding: 6px 12px; border: 0; border-radius: 4px; color: white; background: #202326; font-size: 12px; }
+.cp-root .rs-empty { padding: 38px 15px; border: 1px dashed #d8dde3; border-radius: 4px; background: #fff; color: #68727c; text-align: center; }
+.cp-root .rs-gate { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px; padding: 12px; border: 1px solid #e1e6ee; border-radius: 4px; background: #fff; }
+.cp-root .rs-gate button, .cp-root .rs-empty button { border: 0; color: #343a40; background: none; }
+.cp-root .rs-dialog { position: fixed; inset: 0; width: min(470px,calc(100vw - 24px)); max-height: min(85vh,760px); margin: auto; padding: 0; border: 0; border-radius: 4px; color: #20252b; background: white; box-shadow: 0 22px 65px #0004; }
+.cp-root .rs-dialog::backdrop { background: #11192894; }
+.cp-root .rs-panel { padding: 22px; overflow: auto; max-height: 85vh; }
+.cp-root .rs-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.cp-root .rs-panel-head h2 { margin: 0; font-size: 22px; }
+.cp-root .rs-panel-head button { border: 0; background: transparent; font-size: 27px; line-height: 1; }
+.cp-root .rs-summary { padding: 14px; border-radius: 4px; background: #f6f8fb; }
+.cp-root .rs-summary small { color: #6e7c92; }
+.cp-root .rs-summary h3 { margin: 5px 0; font-size: 18px; }
+.cp-root .rs-summary p, .cp-root .rs-help { margin: 0; color: #6c7580; font-size: 13px; }
+.cp-root .rs-details { margin: 17px 0; }
+.cp-root .rs-details div { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid #edf0f3; }
+.cp-root .rs-details dt { color: #69727c; }
+.cp-root .rs-details dd { margin: 0; font-weight: 700; }
+.cp-root .rs-negative, .cp-root .rs-notice { color: #ae5527; }
+.cp-root .rs-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 20px; }
+.cp-root .rs-actions button, .cp-root .rs-panel > .rs-primary { border: 1px solid #d8dee6; border-radius: 4px; padding: 9px 14px; color: #29313b; background: #fff; }
+.cp-root .rs-actions .rs-primary, .cp-root .rs-panel > .rs-primary { border-color: #202326; color: #fff; background: #202326; }
+.cp-root .rs-success { text-align: center; padding: 8px 0 20px; }
+.cp-root .rs-success > span { display: block; margin: 0 auto 10px; width: 42px; height: 42px; border-radius: 50%; color: white; background: #318166; line-height: 42px; font-size: 27px; }
+.cp-root .rs-success strong { display: block; font-size: 18px; }
+.cp-root .rs-success p { color: #65717c; }
+.cp-root .rs-code { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px; border-radius: 4px; background: #f2f5f9; }
+.cp-root .rs-code span { color: #67717d; }
+.cp-root .rs-code code { flex: 1; min-width: 110px; font-weight: 700; }
+.cp-root .rs-code button, .cp-root .rs-text-button { border: 0; background: none; color: #343a40; }
+.cp-root .rs-panel > small { display: block; margin-top: 8px; color: #78828c; }
+.cp-root .rs-notice { margin-top: 14px; font-size: 13px; }
+.cp-root .rs-records-body { display: grid; gap: 10px; max-height: 60vh; overflow: auto; }
+.cp-root .rs-record { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 14px; border: 1px solid #e2e7ed; border-radius: 4px; background: #fff; }
+.cp-root .rs-record > div:first-child { display: grid; gap: 4px; }
+.cp-root .rs-record > div:first-child span { color: #77818b; font-size: 12px; }
+.cp-root .rs-record > b { color: #a8751d; }
+.cp-root .rs-record .rs-code { grid-column: 1 / -1; }
+.cp-root .rs-record .rs-text-button { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 900px) { .cp-root .rs-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media (max-width: 600px) {
+  .cp-root .rs-shop { padding: 0 0 30px; }
+  .cp-root .rs-hero { min-height: 156px; padding: 16px; }
+  .cp-root .rs-hero h2 { font-size: 25px; }
+  .cp-root .rs-hero p strong { font-size: 22px; }
+  .cp-root .rs-hero img { width: 43%; max-height: 130px; }
+  .cp-root .rs-section-head { margin-top: 22px; }
+  .cp-root .rs-section-head h1, .cp-root .rs-section-head h2 { font-size: 20px; }
+  .cp-root .rs-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; }
+  .cp-root .rs-product { min-height: 118px; padding: 11px; }
+  .cp-root .rs-product h4 { font-size: 14px; }
+  .cp-root .rs-product button { padding: 6px 9px; }
+  .cp-root .rs-dialog { width: 100%; max-width: none; max-height: 86vh; margin: auto 0 0; border-radius: 4px 4px 0 0; }
+  .cp-root .rs-panel { max-height: 86vh; padding: 20px 16px calc(20px + env(safe-area-inset-bottom)); }
+}

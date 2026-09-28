@@ -1,0 +1,1511 @@
+{
+  "date": "2026-09-26",
+  "scope": "Browser DOM render, layout and loaded-image checks; not all interaction combinations",
+  "stateCount": 242,
+  "checks": [
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=more-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=banner-ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=banner-removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=banner-hidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=image-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&state=more-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=single&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&state=pc&item=video&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&state=paused&item=restore&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=invalid&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=insufficient&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=quote-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=price-changed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=paused&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=queued&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=running&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=submitting&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=unknown&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=unaccepted&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=cancelling&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=cancel-failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=cancelled&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-task&state=completed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=settling&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=released&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-result&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=pc-handoff&state=normal&item=video&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=pc-handoff&state=unavailable&item=video&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=pc-handoff&state=copy-failed&item=video&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=account-link&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=account-link&state=mismatch&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=account-link&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=account-link&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=return-result&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=return-result&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=return-result&state=activity-ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=return-result&state=duplicate&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=return-result&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&state=more-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=action-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=closed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&state=more-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=action-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=text&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=video&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=media-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=action-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&state=idle&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&state=error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&state=partial&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=loading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=paused&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=view-only&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=revoked&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=forbidden&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=action-error&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=resource&state=guest&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&state=activity&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish&state=activity&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=post&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=activity&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=validation&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=uploading&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=upload-failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=save-failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=submit-failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=conflict&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=review&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=rejected&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=activity-ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=permission&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=review&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=public&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=rejected&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=unknown&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=activity&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=publish-status&state=activity-ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&state=restricted&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=review&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=rejected&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-content&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=expiring&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=drafts&state=account-switched&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=running&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=failed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=records&state=account-switched&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=favorites&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=favorites&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=favorites&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=favorites&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=favorites&state=account-switched&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=return&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=cancelled&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=object-gone&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=activity-ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&state=account-switched&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activities&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activities&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activities&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=ended&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=removed&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=ineligible&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=submitted&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=review&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=review&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=ineligible&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=awarded&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=submissions&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=pending&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&state=done&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&state=unavailable&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&state=pending&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=benefits&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=benefits&state=expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=benefits&state=unavailable&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=benefits&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=benefits&state=login-expired&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=normal&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=empty&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=confirm&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=done&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=records&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=insufficient&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=unknown&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=unavailable&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=failure&embed=1",
+      "width": 390
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=login-expired&embed=1",
+      "width": 390
+    }
+  ],
+  "responsiveChecks": [
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app-input&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&state=normal",
+      "width": 360
+    },
+    {
+      "overflow": 0,
+      "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&state=normal",
+      "width": 360
+    }
+  ]
+}

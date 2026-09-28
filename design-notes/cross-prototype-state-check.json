@@ -1,0 +1,593 @@
+{
+  "date": "2026-09-26",
+  "checks": [
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "normal",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "outcome-only",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "view-only",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "source-removed",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "forbidden",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "project",
+      "state": "loading",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "share",
+      "state": "normal",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "share",
+      "state": "permission",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "share",
+      "state": "dependency-missing",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "share",
+      "state": "save-error",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "version",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "version",
+      "state": "unpublished",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "version",
+      "state": "update-error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "version",
+      "state": "withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "view-only",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "dependency-missing",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "permission",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "copy",
+      "state": "copy-error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "library",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "library",
+      "state": "empty",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "library",
+      "state": "source-withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "editor",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "editor",
+      "state": "mobile",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "editor",
+      "state": "dependency-missing",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "editor",
+      "state": "source-withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "derivative",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "derivative",
+      "state": "blocked",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "derivative",
+      "state": "upstream-blocked",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "derivative",
+      "state": "published",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "results",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "results",
+      "state": "empty",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "results",
+      "state": "identity-changed",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "results",
+      "state": "activity-ended",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "link",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "link",
+      "state": "mismatch",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "link",
+      "state": "expired",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "link",
+      "state": "error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return",
+      "state": "duplicate",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return",
+      "state": "identity-error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return",
+      "state": "activity-ended",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return",
+      "state": "network-error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return-status",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return-status",
+      "state": "uncertain",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return-status",
+      "state": "duplicate",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "return-status",
+      "state": "identity-error",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "normal",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "view-only",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "license-denied",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "file-missing",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "dependency-missing",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow",
+      "state": "withdrawn",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow-import",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow-import",
+      "state": "mobile",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow-import",
+      "state": "unsupported",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow-import",
+      "state": "dependency-missing",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "workflow-import",
+      "state": "license-denied",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain",
+      "state": "normal",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain",
+      "state": "unqualified",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain",
+      "state": "mobile",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain",
+      "state": "permission-revoked",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "revision",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "submitted",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "permission-revoked",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "save-error",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-tutorial",
+      "state": "submit-error",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "normal",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "revision",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "submitted",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "permission-revoked",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "file-missing",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "save-error",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-resource",
+      "state": "submit-error",
+      "width": 1031
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "normal",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "submitted",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "revision",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "approved",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "published",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "maintain-status",
+      "state": "failed",
+      "width": 1046
+    },
+    {
+      "broken": 0,
+      "overflow": 0,
+      "page": "review",
+      "state": "normal",
+      "width": 1046
+    }
+  ]
+}

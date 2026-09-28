@@ -1,0 +1,21 @@
+.cp-creation-trigger { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #171717; border-radius: 4px; background: #171717; color: #fff; padding: 11px 16px; min-height: 42px; font: inherit; font-weight: 600; cursor: pointer; }
+.cp-creation-trigger img { width: 18px; height: 18px; filter: invert(1); }
+.cp-creation-overlay { position: fixed; inset: 0; z-index: 1600; display: flex; align-items: flex-end; justify-content: center; padding: 0; background: rgba(0,0,0,.45); font-family: Arial, 'Microsoft YaHei', sans-serif; }
+.cp-creation-backdrop { position: absolute; inset: 0; border: 0; background: transparent; cursor: default; }
+.cp-creation-panel { position: relative; margin: 0; width: min(100%, 480px); padding: 20px 16px calc(24px + env(safe-area-inset-bottom)); border: 1px solid #dedede; border-radius: 12px 12px 0 0; background: #fff; box-shadow: 0 20px 70px rgba(0,0,0,.18); }
+.cp-creation-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; font-size: 20px; }
+.cp-creation-heading button { width: 28px; height: 28px; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer; }
+.cp-creation-heading button img { width: 20px; height: 20px; }
+.cp-creation-option { width: 100%; display: flex; align-items: center; gap: 14px; margin-top: 10px; padding: 15px; border: 1px solid #e5e5e5; border-radius: 4px; background: #fafafa; color: #171717; text-align: left; cursor: pointer; }
+.cp-creation-option:hover, .cp-creation-option:focus-visible { border-color: #777; background: #f5f5f5; }
+.cp-creation-option > span:nth-child(2) { flex: 1; display: grid; gap: 4px; }
+.cp-creation-option strong { font-size: 16px; }
+.cp-creation-option small { color: #666; font-size: 13px; }
+.cp-creation-icon { display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid #ddd; border-radius: 4px; background: #fff; }
+.cp-creation-icon img { width: 23px; height: 23px; }
+.cp-creation-arrow { width: 20px; height: 20px; opacity: .55; }
+@media (max-width: 720px) { .cp-creation-panel { width: 100%; } }
+@media (min-width: 721px) {
+  .cp-creation-overlay { align-items: center; padding: 20px; }
+  .cp-creation-panel { width: min(100%, 520px); padding: 22px; border-radius: 4px; }
+}

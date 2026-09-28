@@ -1,0 +1,71 @@
+{
+  "scope": "Final pre-prototype requirements review: local documents only; no runtime or production validation",
+  "files": [
+    {
+      "file": "product-requirements-review.md",
+      "lines": 204
+    },
+    {
+      "file": "requirements-c-flows.md",
+      "lines": 172
+    },
+    {
+      "file": "requirements-b-content.md",
+      "lines": 219
+    },
+    {
+      "file": "requirements-cross-product.md",
+      "lines": 171
+    },
+    {
+      "file": "content-maintenance-matrix.md",
+      "lines": 386
+    },
+    {
+      "file": "site-content-model.md",
+      "lines": 339
+    },
+    {
+      "file": "mobile-architecture.md",
+      "lines": 171
+    },
+    {
+      "file": "b-end-architecture.md",
+      "lines": 259
+    },
+    {
+      "file": "content-sample-03-makenow.md",
+      "lines": 71
+    },
+    {
+      "file": "content-sample-04-model-background.md",
+      "lines": 65
+    },
+    {
+      "file": "content-operations-review.md",
+      "lines": 155
+    },
+    {
+      "file": "requirements-review-notes.md",
+      "lines": 78
+    }
+  ],
+  "tableAndLinkIssues": [],
+  "duplicateDecisionDefinitions": [],
+  "undefinedDecisionReferences": [],
+  "decisionIdentifierCount": 44,
+  "confirmedMainDecisions": 43,
+  "cancelledDecisionIdentifiers": [
+    "D-B13"
+  ],
+  "unmarkedDecisionIdentifiers": [],
+  "remainingProductChoices": [],
+  "implementationVerification": "Not performed; tracked in product-requirements-review.md section 9",
+  "independentReview": "Content and cross-product document logic reviewed independently; fixes integrated",
+  "statusAssessment": "Explicit confirmed decision rows; B rows inherit their explicitly confirmed section and table header, except cancelled D-B13",
+  "supplementalChoices": [
+    "Home works: backend curated hits",
+    "Community posts: default recommended, backend curated, latest switch retained",
+    "Personal report outcome via My notifications"
+  ]
+}

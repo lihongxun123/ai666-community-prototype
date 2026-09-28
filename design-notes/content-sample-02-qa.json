@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-24",
+  "scope": "Local research simulation; not production, runtime or physical-device acceptance",
+  "status": "passed",
+  "interactionAssertions": 18,
+  "coverage": ["incomplete draft", "empty title", "unsaved changes", "missing materials", "editor rights", "publish without recommendation", "mobile handoff", "PC explanation", "pause retains tutorial", "restore requires recheck", "restore excludes recommendation", "cancel unpublish", "old link unavailable", "return to tutorial", "rules open and close", "reset"],
+  "layout": [{"width":1440,"scrollWidthMinusInnerWidth":-15,"horizontalOverflow":0},{"width":390,"scrollWidthMinusInnerWidth":-15,"horizontalOverflow":0},{"width":360,"scrollWidthMinusInnerWidth":-15,"horizontalOverflow":0}],
+  "visualReview": {"desktop":"content-sample-02-desktop.png","mobile":"content-sample-02-mobile.png","result":"readable, controls wrap, no observed overlap"},
+  "independentReview": {"agent":"review_content_flow","result":"two substantive findings fixed and rechecked; instructions corrected"},
+  "notVerified": ["real workflow execution", "third-party license", "clipboard across devices", "physical mobile browser", "production data or APIs"]
+}

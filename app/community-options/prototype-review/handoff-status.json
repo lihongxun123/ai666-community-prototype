@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-28",
+  "completed": [
+    "home"
+  ],
+  "structureMobile": [
+    "community"
+  ],
+  "refined": [
+    "topics",
+    "topic",
+    "apps",
+    "app",
+    "circles",
+    "circle",
+    "post",
+    "tutorials",
+    "tutorial",
+    "work",
+    "resource",
+    "search",
+    "author",
+    "create"
+  ],
+  "labels": {
+    "completed": "已完成",
+    "structure": "结构已确认",
+    "refined": "已精调 · 待确认",
+    "pending": "待评审"
+  },
+  "note": "完成指产品原型已确认，不代表 UI 视觉稿或研发验收完成。仅首页标记已完成；移动端社区首页结构已确认，其他页面按各自状态评审。"
+}

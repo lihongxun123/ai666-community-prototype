@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>教程与资源联动样本 · 多元拾光</title><link rel="icon" href="/home-prototype/brand-logo.svg"><link rel="stylesheet" href="tutorial-loop.css"></head>
+<body>
+<header class="lab"><div><strong>多元拾光研究室</strong><span>联动样本 01 · 教程与资源</span></div><button data-action="rules">走查规则</button></header>
+<section class="bench" aria-label="原型走查控制"><div class="bench-top"><p>本地交互原型 · 虚构教学样本，沿用研究站示意图。所有审核、权限、复制与回流均为模拟，刷新重置。</p><button data-action="reset">重置样本</button></div><nav id="stages" aria-label="走查阶段"></nav><div class="scenarios"><label>资源状态<select id="resource-state"><option value="reuse">允许复用</option><option value="view">仅查看工程</option><option value="show">仅展示成果</option><option value="paused">平台暂停使用</option><option value="removed">资源已下架</option></select></label><label><input type="checkbox" id="derivative">作者允许衍生工程再次分享（新副本）</label><label><input type="checkbox" id="expired">回流活动已结束</label><label>显示宽度<select id="width"><option value="390">移动端 390</option><option value="360">移动端 360</option><option value="430">移动端 430</option></select></label></div></section>
+<main id="workspace"></main><div id="toast" role="status" aria-live="polite"></div>
+<aside id="rules" hidden><button data-action="rules" class="close">关闭规则</button><h2>走查规则</h2><p>教程 T-001 与资源 R-001 分开维护，通过引用建立关系；资源不可用不影响教程正文。</p><ol><li>后台保存不改变公开版；审核通过后还需正式发布。</li><li>移动端仅阅读，工程查看与编辑由 PC MakeNow 承载。</li><li>权限在打开、复制及回流时检查。已有副本的工程再次分享授权按取得时的权限保留；发布合法成果不要求开放工程。</li><li>回流先进入私有编辑页；预览、提交均由用户操作。提交后待审核，不直接公开。</li><li>活动失效保留草稿，不自动改成普通作品。重复回流同一成果不重复建稿。</li></ol><p>本样本不含真实引擎、账号、积分、上传、跨设备同步或发布接口；MakeNow 区域只验证承接关系，不是其画布界面还原。</p></aside>
+<dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><button data-action="close-dialog" class="dialog-close">关闭</button></dialog>
+<script src="tutorial-loop.js"></script></body></html>

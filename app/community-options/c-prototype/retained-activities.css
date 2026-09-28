@@ -1,0 +1,101 @@
+.cp-retained-activities { color: #17191c; padding: 8px 0 48px; }
+.cp-retained-activities button { cursor: pointer; font: inherit; }
+.cp-retained-activities button:disabled { cursor: not-allowed; opacity: .5; }
+.cp-ra-list-head { position: relative; overflow: hidden; min-height: 98px; display: flex; align-items: center; gap: 12px; padding: 18px 24px; margin-bottom: 24px; color: white; background: #121820; border-radius: 4px; }
+.cp-ra-list-head > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .6; }
+.cp-ra-list-head > div, .cp-ra-list-head > strong { z-index: 1; }
+.cp-ra-list-head > div { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; }
+.cp-ra-list-head span { font-size: 22px; font-weight: 800; }
+.cp-ra-list-head p { margin: 0; font-size: 12px; color: #e6e1d5; }
+.cp-ra-list-head > strong { margin-left: auto; white-space: nowrap; font-size: 24px; color: #f6d064; }
+.cp-ra-list-head small { font-size: 11px; color: #fff; font-weight: 400; }
+.cp-ra-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.cp-root .cp-retained-activities .cp-ra-card { padding: 0; border: 1px solid #dedfe1; border-radius: 4px; text-align: left; overflow: hidden; background: #fff; color: inherit; transition: transform .2s, box-shadow .2s; }
+.cp-ra-card:hover, .cp-ra-card:focus-visible { transform: translateY(-3px); box-shadow: 0 12px 28px #1b223022; }
+.cp-ra-cover { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 5px; position: relative; aspect-ratio: 2.15; overflow: hidden; background: #13262a; color: white; padding: 14px; }
+.cp-ra-cover img, .cp-ra-hero-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cp-ra-cover.is-weekly, .cp-ra-hero-art.is-weekly { background: radial-gradient(circle at 75% 55%, #a5b6a9 0, #29616a 24%, transparent 48%), linear-gradient(125deg, #07151d, #204c4e); }
+.cp-ra-cover.is-weekly strong, .cp-ra-hero-art.is-weekly strong { font-size: clamp(20px, 3vw, 36px); line-height: 1.1; }
+.cp-ra-cover.is-weekly small, .cp-ra-hero-art.is-weekly small { color: #f5d276; }
+.cp-ra-cover.is-weekly span, .cp-ra-hero-art.is-weekly span { font-size: 12px; }
+.cp-ra-card-body { padding: 14px; }
+.cp-ra-card-body span, .cp-ra-card-body b { color: #6a6f73; font-size: 12px; font-weight: 400; }
+.cp-ra-card-body h2 { font-size: 17px; margin: 5px 0; }
+.cp-ra-card-body p { color: #8b6c1a; margin: 0 0 8px; font-size: 13px; font-weight: 650; }
+.cp-ra-card-body b { display: block; }
+.cp-ra-history { margin-top: 32px; }
+.cp-ra-history h2 { font-size: 21px; margin: 0 0 14px; }
+.cp-ra-history p { padding: 30px; border: 1px dashed #d7dadd; border-radius: 4px; text-align: center; color: #787d82; background: #fff; }
+.cp-ra-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); border: 1px solid #e4e5e6; border-radius: 4px; overflow: hidden; background: #fff; }
+.cp-ra-hero-copy { grid-column: 1; grid-row: 1; }
+.cp-ra-hero-art { grid-column: 2; grid-row: 1; }
+.cp-ra-hero-art { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 8px; min-height: 240px; padding: 24px; color: white; }
+.cp-ra-hero-copy { padding: 28px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 9px; }
+.cp-ra-hero-copy h1 { font-size: clamp(26px, 3vw, 38px); margin: 0; line-height: 1.2; }
+.cp-ra-hero-copy p { margin: 0; color: #51575c; }
+.cp-ra-hero-copy strong { font-size: 18px; color: #966e18; }
+.cp-ra-hero-copy small { color: #747a80; }
+.cp-ra-pill { display: inline-block; padding: 4px 8px; border-radius: 4px; color: #68510e; background: #fff1ba; font-size: 12px; }
+.cp-ra-progress, .cp-ra-task, .cp-ra-submissions { display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid #e4e5e6; border-radius: 4px; padding: 18px; }
+.cp-ra-progress { margin: 16px 0 26px; justify-content: space-between; }
+.cp-ra-progress h2, .cp-ra-section h2 { margin: 0 0 8px; font-size: 20px; }
+.cp-ra-progress p, .cp-ra-task p, .cp-ra-submissions p { color: #686f74; margin: 0; }
+.cp-ra-progress button, .cp-ra-task button, .cp-ra-submissions button, .cp-ra-empty button, .cp-ra-notice button { border: 0; border-radius: 4px; padding: 10px 16px; background: #181b1e; color: #fff; white-space: nowrap; }
+.cp-ra-section { margin-top: 26px; }
+.cp-ra-description { padding: 18px; background: #fff; border: 1px solid #e4e5e6; border-radius: 4px; line-height: 1.8; }
+.cp-ra-description p { margin: 0 0 10px; }
+.cp-ra-description p:last-child { margin-bottom: 0; }
+.cp-ra-tasks { display: grid; gap: 10px; }
+.cp-ra-task { align-items: flex-start; }
+.cp-ra-task > div { flex: 1; }
+.cp-ra-task h3 { margin: 0 0 6px; font-size: 16px; }
+.cp-ra-task small { display: block; color: #81868a; margin-top: 8px; }
+.cp-ra-task > strong { color: #9b731a; white-space: nowrap; }
+.cp-ra-submissions { flex-wrap: wrap; }
+.cp-ra-submissions p { flex: 1 1 100%; }
+.cp-ra-notice, .cp-ra-empty { margin: 16px 0; padding: 22px; background: #faf6e9; border: 1px solid #e9ddbd; border-radius: 4px; color: #4c4639; }
+.cp-ra-empty { display: grid; place-items: center; gap: 12px; min-height: 160px; }
+.cp-ra-notice button { margin-left: 12px; }
+.cp-ra-mobile-action { display: none; }
+@media (max-width: 720px) {
+  .cp-ra-grid { grid-template-columns: 1fr; gap: 12px; }
+  .cp-ra-list-head { display: none; }
+  .cp-ra-list-head > div { display: block; }
+  .cp-ra-list-head span { font-size: 18px; }
+  .cp-ra-list-head p { font-size: 11px; }
+  .cp-ra-list-head > strong { font-size: 18px; }
+  .cp-ra-list-head small { display: block; }
+  .cp-ra-cover { aspect-ratio: 2.15; }
+  .cp-ra-hero { grid-template-columns: 1fr; }
+  .cp-ra-hero-art { grid-column: 1; grid-row: 1; }
+  .cp-ra-hero-copy { grid-column: 1; grid-row: 2; }
+  .cp-ra-hero-art { min-height: 170px; }
+  .cp-ra-hero-copy { padding: 20px; }
+  .cp-ra-progress, .cp-ra-task { flex-wrap: wrap; }
+  .cp-ra-task > div { flex-basis: 100%; }
+}
+.cp-retained-activities[data-device='mobile'] .cp-ra-grid { grid-template-columns: 1fr; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-hero { grid-template-columns: 1fr; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-list-head { display: none; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-hero-art { grid-column: 1; grid-row: 1; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-hero-copy { grid-column: 1; grid-row: 2; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-mobile-action { display: block; position: sticky; bottom: 0; z-index: 8; margin: 28px -12px -48px; padding: 10px 12px; background: #fff; box-shadow: 0 -6px 18px #13161916; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-progress > button { display: none; }
+.cp-retained-activities[data-device='mobile'] .cp-ra-mobile-action button { width: 100%; padding: 12px; border: 0; border-radius: 4px; background: #181b1e; color: white; font-weight: 700; }
+
+/* Scope above the shared prototype typography and button reset. */
+.cp-root .cp-retained-activities h1{margin:0;line-height:1.2}
+.cp-root .cp-retained-activities h2{margin:0 0 8px;font-size:20px}
+.cp-root .cp-retained-activities h3{margin:0 0 6px;font-size:16px}
+.cp-root .cp-retained-activities p{margin:0}
+.cp-root .cp-ra-description p+p{margin-top:10px}
+.cp-root .cp-ra-card-body h2{font-size:17px;margin:4px 0}
+.cp-root .cp-ra-card-body p{margin:0 0 6px}
+.cp-root .cp-ra-progress button,.cp-root .cp-ra-task button,.cp-root .cp-ra-submissions button,.cp-root .cp-ra-empty button,.cp-root .cp-ra-notice button{padding:10px 16px;background:#181b1e;color:white;border-radius:4px}
+.cp-root .cp-ra-hero-copy{gap:10px}
+.cp-root .cp-retained-activities[data-device='mobile'] .cp-ra-card-body{padding:12px 14px;position:relative}
+.cp-root .cp-retained-activities[data-device='mobile'] .cp-ra-card-body>span,.cp-root .cp-retained-activities[data-device='mobile'] .cp-ra-card-body>b{display:none}
+.cp-root .cp-retained-activities[data-device='mobile'] .cp-ra-card-body:after{content:'›';position:absolute;right:14px;top:14px;color:#777}
+.cp-root .cp-retained-activities[data-device='mobile'] .cp-ra-hero-copy>p{display:none}
+.cp-root[data-page='activities']:not(.cp-retained-desktop) .cp-body,.cp-root[data-page='activity']:not(.cp-retained-desktop) .cp-body{padding:12px}
+.cp-root .cp-retained-activities[data-device='mobile']{padding-top:0}

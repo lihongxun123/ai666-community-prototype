@@ -1,0 +1,38 @@
+.cp-login-overlay { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(17,17,17,.55); backdrop-filter: blur(4px); font-family: Arial, 'Microsoft YaHei', sans-serif; font-size: 14px; }
+.cp-login-backdrop { position: absolute; inset: 0; border: 0; background: transparent; cursor: default; }
+.cp-login-dialog { position: relative; margin: 0; padding: 0; width: min(100%, 920px); min-height: 540px; display: grid; grid-template-columns: 1fr 1fr; border: 0; border-radius: 4px; overflow: hidden; background: #fff; color: #171717; box-shadow: 0 24px 90px rgba(0,0,0,.28); }
+.cp-login-close { position: absolute; top: 12px; right: 16px; z-index: 3; width: 36px; height: 36px; border: 0; background: transparent; color: #555; font-size: 26px; cursor: pointer; }
+.cp-login-phone { min-width: 0; padding: 54px 50px 28px; }
+.cp-login-eyebrow { margin: 0 0 8px; color: #777; font-size: 13px; }
+.cp-login-phone h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.25; }
+.cp-login-muted, .cp-login-scan p { color: #666; font-size: 14px; }
+.cp-login-phone form { display: grid; gap: 16px; margin-top: 28px; }
+.cp-login-phone label { display: grid; gap: 7px; font-size: 14px; font-weight: 600; }
+.cp-login-phone label small { font-size: 12px; color: #777; font-weight: 400; }
+.cp-login-phone input { width: 100%; min-width: 0; height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #d7d7d7; border-radius: 4px; background: #fff; color: #171717; font: inherit; }
+.cp-login-code { display: flex; gap: 8px; }
+.cp-login-code button { flex: 0 0 auto; min-width: 100px; padding: 0 10px; border: 1px solid #bbb; border-radius: 4px; background: #fff; color: #222; font-size: 12px; white-space: nowrap; cursor: pointer; }
+.cp-login-submit { height: 44px; border: 1px solid #171717; border-radius: 4px; background: #171717; color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+.cp-login-more { width: 100%; display: flex; justify-content: space-between; gap: 8px; margin-top: 16px; padding: 12px 0; border: 0; border-top: 1px solid #eee; background: transparent; color: #222; font: inherit; text-align: left; cursor: pointer; }
+.cp-login-more span { color: #777; }
+.cp-login-terms { margin: 16px 0 0; color: #777; font-size: 12px; line-height: 1.6; }
+.cp-login-terms a { color: #333; }
+.cp-login-message { margin: 0; padding: 8px 10px; border: 1px solid #eadbc8; border-radius: 4px; background: #fff9f2; color: #765024; font-size: 13px; }
+.cp-login-scan { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; background: #f7f7f7; }
+.cp-login-scan h3 { margin: 0 0 6px; font-size: 24px; }
+.cp-login-qr-placeholder { width: 236px; height: 236px; display: grid; place-content: center; gap: 12px; margin-top: 24px; border: 1px solid #ddd; background: #fff; color: #555; text-align: center; }
+.cp-login-qr-placeholder span { font-weight: 700; }
+.cp-login-qr-placeholder button { justify-self: center; padding: 7px 18px; border: 1px solid #bbb; border-radius: 4px; background: #fff; color: #222; cursor: pointer; }
+.cp-login-scan-back { display: none; }
+.cp-login-overlay.is-mobile { align-items: flex-end; padding: 0; }
+.cp-login-overlay.is-mobile .cp-login-dialog { width: min(100%, 480px); min-height: 0; max-height: min(92dvh, 760px); display: block; overflow-y: auto; border-radius: 18px 18px 0 0; }
+.cp-login-overlay.is-mobile .cp-login-phone { padding: 36px 22px calc(28px + env(safe-area-inset-bottom)); }
+.cp-login-overlay.is-mobile .cp-login-phone h2 { font-size: 23px; }
+.cp-login-overlay.is-mobile .cp-login-phone form { gap: 13px; margin-top: 20px; }
+.cp-login-overlay.is-mobile .cp-login-scan { display: none; min-height: 480px; padding: 42px 20px calc(32px + env(safe-area-inset-bottom)); }
+.cp-login-overlay.is-mobile .cp-login-scan.is-visible { display: flex; }
+.cp-login-overlay.is-mobile .cp-login-dialog:has(.cp-login-scan.is-visible) .cp-login-phone { display: none; }
+.cp-login-overlay.is-mobile .cp-login-scan-back { display: block; align-self: flex-start; margin-bottom: 36px; border: 0; background: transparent; font: inherit; cursor: pointer; }
+.cp-login-overlay.is-mobile .cp-login-qr-placeholder { width: 218px; height: 218px; }
+
+.cp-login-overlay.is-pc .cp-login-more{display:none}.cp-login-dialog input{font-weight:400}

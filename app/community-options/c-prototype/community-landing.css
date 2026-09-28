@@ -1,0 +1,79 @@
+
+.cp-root .cl-community{font-size:14px;line-height:1.6;padding:0 0 16px;color:#202020}
+.cp-root .cl-community button{font-family:inherit;cursor:pointer}
+.cp-root .cl-icon{width:20px;height:20px;object-fit:contain;flex:none}
+.cp-root .cl-channel-row{display:flex;align-items:center;gap:12px;margin:0 0 12px;min-height:46px}
+.cp-root .cl-channels{display:flex;align-items:center;gap:26px;flex:1;min-width:0}
+.cp-root .cl-channels button{position:relative;white-space:nowrap;color:#777;font-size:16px;padding:8px 0 12px;line-height:24px}
+.cp-root .cl-channels button[aria-current]{color:#171717;font-weight:600}
+.cp-root .cl-channels button[aria-current]:after{content:'';position:absolute;bottom:4px;left:0;width:24px;height:2px;background:#171717}
+.cp-root .cl-filter{position:relative;flex:none;align-self:stretch;display:flex;align-items:center}
+.cp-root .cl-filter-trigger{display:flex;align-items:center;gap:4px;min-height:44px;font-size:12px;white-space:nowrap}
+.cp-root .cl-filter-menu{position:absolute;right:0;top:44px;background:white;box-shadow:0 4px 24px #0002;min-width:124px;z-index:22;padding:6px;border-radius:4px}
+.cp-root .cl-filter-menu button{display:block;width:100%;text-align:left;padding:10px;border-radius:4px}
+.cp-root .cl-filter-menu button[aria-pressed=true]{background:#f4f4f4;font-weight:600}
+.cp-root .cl-menu-dismiss{position:fixed;inset:0;z-index:21;cursor:default}
+.cp-root .cl-work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;align-items:start}
+.cp-root .cl-work-column{display:grid;gap:6px;min-width:0}
+.cp-root .cl-work{position:relative;display:block;width:100%;border-radius:4px;overflow:hidden;text-align:left;background:#f3f3f3}
+.cp-root .cl-work-image{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.cp-root .cl-work-caption{position:absolute;bottom:0;left:0;right:0;color:white;padding:30px 9px 9px;background:linear-gradient(transparent,#0009)}
+.cp-root .cl-work-caption strong{display:block;line-height:1.4;font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cp-root .cl-work-caption>div{display:flex;justify-content:space-between;gap:5px;font-size:11px;margin-top:6px}
+.cp-root .cl-work-caption span{display:flex;align-items:center;gap:3px;min-width:0}
+.cp-root .cl-work-caption .cl-icon{width:14px;height:14px;filter:invert(1)}
+.cp-root .cl-video{position:absolute;top:8px;right:8px;background:#0006;border-radius:50%;display:grid;place-items:center;width:28px;height:28px}
+.cp-root .cl-video .cl-icon{filter:invert(1);width:16px;height:16px}
+.cp-root .cl-text-work{background:#f3f1ed}
+.cp-root .cl-poem{padding:14px 12px;text-align:left}
+.cp-root .cl-poem h2{font-family:Georgia,'Songti SC',serif;font-size:21px;font-weight:400;line-height:1.6;margin:10px 0}
+.cp-root .cl-poem small{color:#888;font-size:11px}
+.cp-root .cl-poem p{font-size:12px;color:#666;margin:0;line-height:1.8}
+.cp-root .cl-text-work .cl-work-caption{color:#555;background:none;padding-top:0}
+.cp-root .cl-text-work .cl-work-caption strong{display:none}
+.cp-root .cl-text-work .cl-work-caption .cl-icon{filter:none}
+.cp-root .cl-circle-row{display:flex;gap:8px;align-items:center;margin:4px 0 18px;min-width:0}
+.cp-root .cl-circle-row>div{display:flex;gap:8px;overflow:auto;scrollbar-width:none;min-width:0;flex:1}
+.cp-root .cl-circle-row>div>button{padding:6px 10px;background:#f7f7f7;border-radius:4px;white-space:nowrap;color:#777;font-size:12px;flex:none}
+.cp-root .cl-circle-row>div>button[aria-pressed=true]{color:#222;background:#ededed;font-weight:600}
+.cp-root .cl-find-circle{display:flex;align-items:center;white-space:nowrap;font-size:12px;color:#777;min-height:36px}
+.cp-root .cl-find-circle .cl-icon{width:16px;height:16px}
+.cp-root .cl-sort{display:flex;align-items:center;gap:20px;margin-bottom:20px}
+.cp-root .cl-sort>button{padding:4px 0;color:#888;font-size:13px}
+.cp-root .cl-sort>button[aria-pressed=true]{color:#222;font-weight:600;border-bottom:2px solid #222}
+.cp-root .cl-sort .cl-compose{margin-left:auto;padding:6px}
+.cp-root .cl-post{padding:0 0 22px;margin:0 0 22px;border-bottom:1px solid #f1f1f1}
+.cp-root .cl-author{display:flex;align-items:center;gap:10px;text-align:left}
+.cp-root .cl-author>img{width:34px;height:34px;border-radius:50%;object-fit:cover}
+.cp-root .cl-author strong{display:block;font-size:13px;font-weight:500}
+.cp-root .cl-author small{display:block;color:#999;font-size:11px}
+.cp-root .cl-post-copy{display:block;text-align:left;width:100%;margin:12px 0 10px}
+.cp-root .cl-post-copy p{font-size:15px;font-weight:400;margin:0 0 4px;line-height:1.65}
+.cp-root .cl-post-copy>span{font-size:13px;color:#777;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cp-root .cl-post-media{display:block;width:100%;border-radius:4px;overflow:hidden}
+.cp-root .cl-post-media>img{display:block;width:100%;max-height:260px;object-fit:cover}
+.cp-root .cl-reference{display:flex;align-items:center;gap:10px;width:100%;background:#f7f7f7;border-radius:4px;margin-top:10px;padding:8px;text-align:left;font-size:13px}
+.cp-root .cl-reference>img:first-child{width:40px;height:36px;border-radius:4px;object-fit:cover}
+.cp-root .cl-reference>span{flex:1}.cp-root .cl-reference small{display:block;color:#888;font-size:11px}
+.cp-root .cl-post-footer{display:flex;align-items:center;gap:8px;margin-top:12px;min-height:28px}
+.cp-root .cl-circle-label{font-size:11px;color:#777;background:#f5f5f5;border-radius:4px;padding:3px 6px}
+.cp-root .cl-discuss{display:flex;align-items:center;gap:5px;font-size:12px;color:#777;margin-left:auto}
+.cp-root .cl-tutorial{display:flex;width:100%;align-items:center;gap:12px;text-align:left;padding:16px 0;border-bottom:1px solid #f0f0f0}
+.cp-root .cl-tutorial:first-child{padding-top:4px}
+.cp-root .cl-tutorial-cover{width:112px;height:78px;flex:none;object-fit:cover;border-radius:4px}
+.cp-root .cl-tutorial>span{flex:1;min-width:0}
+.cp-root .cl-tutorial strong{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:14px;line-height:1.5;font-weight:500}
+.cp-root .cl-tutorial small{display:block;color:#999;font-size:11px;margin-top:7px}
+.cp-root .cl-tutorial>.cl-icon{width:14px;height:14px;opacity:.6}
+.cp-root .cl-empty{text-align:center;padding:60px 12px;color:#888}.cp-root .cl-empty h2{font-size:16px;font-weight:500;color:#555}.cp-root .cl-empty button{padding:8px 16px;background:#f4f4f4;border-radius:4px;color:#333;margin-top:12px}
+.cp-root .cl-loading{display:grid;grid-template-columns:1fr 1fr;gap:6px}.cp-root .cl-loading>div{height:180px;background:#f4f4f4;border-radius:4px}
+.cp-root[data-page=community] .cp-body,.cp-root[data-page=tutorials] .cp-body{padding-top:0}
+.cp-root .cl-community button:focus-visible{outline:2px solid #777;outline-offset:2px}
+.cp-desktop .cl-community{max-width:1000px;margin:auto}.cp-desktop .cl-work-grid{max-width:760px;margin:auto}.cp-desktop .cl-posts,.cp-desktop .cl-tutorial-list{max-width:640px;margin:auto}
+@media(max-width:350px){.cp-root .cl-channels{gap:18px}.cp-root .cl-channels button{font-size:14px}.cp-root .cl-channel-row{gap:8px}.cp-root .cl-tutorial{gap:8px}.cp-root .cl-tutorial-cover{width:92px;height:72px}.cp-root .cl-poem h2{font-size:18px}.cp-root .cl-poem p{font-size:11px}}
+
+.cp-root .cl-like{margin-left:auto}.cp-root .cl-like,.cp-root .cl-share{display:grid;place-items:center;min-width:32px;min-height:32px}.cp-root .cl-like[aria-pressed=true]{background:#eee;border-radius:4px}.cp-root .cl-discuss{margin-left:0;min-height:32px}.cp-root .cl-toast{position:fixed;bottom:78px;left:50%;transform:translateX(-50%);background:#333;color:white;border-radius:4px;padding:10px 14px;z-index:30;white-space:nowrap}.cp-root .cl-toast button{margin-left:14px;font-size:12px;color:#ddd}
+
+.cp-root .cl-filter-menu{border:0;margin:0}
+
+.cl-topic-tags{display:flex;gap:8px;overflow:auto;scrollbar-width:none;margin:4px 0 18px}.cl-topic-tags button{white-space:nowrap;padding:6px 10px;border-radius:4px;background:#f6f6f6;color:#777;font-size:12px}.cl-topic-tags button[aria-pressed=true]{background:#eaeaea;color:#222}.cl-tutorial em{font-style:normal;color:#777}

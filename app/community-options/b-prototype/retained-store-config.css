@@ -1,0 +1,31 @@
+.retained-store{max-width:1360px;margin:24px auto;padding:20px 24px;color:#1f2937;font:14px/1.5 Arial,"Microsoft YaHei",sans-serif}
+.retained-store *{box-sizing:border-box}
+.retained-store h2{margin:0 0 16px;font-size:22px;font-weight:600;color:#161c27}
+.retained-store h3{margin:0;font-size:16px}
+.retained-store>.bop-actions{border-bottom:1px solid #e8e8e8;margin-bottom:18px;gap:4px}
+.retained-store>.bop-actions button{border:0;border-bottom:2px solid transparent;border-radius:0;margin:0 10px 0 0;padding:9px 12px;color:#526073}
+.retained-store>.bop-actions button[aria-pressed=true]{border-color:#1677ff;background:#fff;color:#1677ff;font-weight:600}
+.retained-store button{padding:7px 11px;margin:3px;border:1px solid #d9d9d9;border-radius:6px;background:#fff;color:#262f3d;cursor:pointer;font:inherit;white-space:nowrap}
+.retained-store button:hover{border-color:#91caff;color:#1677ff}
+.retained-store button:disabled{opacity:.45;cursor:not-allowed}
+.retained-store .store-primary{background:#1677ff;border-color:#1677ff;color:#fff}
+.retained-store .store-primary:hover{background:#4096ff;color:#fff}
+.retained-store .store-link{border:0;color:#1677ff;padding:2px 0}
+.retained-store .store-danger{color:#cf1322;border-color:#ffccc7}
+.store-table-scroll{overflow-x:auto;margin:14px 0 0;border:1px solid #e5e8ed;border-radius:6px}
+.retained-store table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap;font-size:13px}
+.retained-store th,.retained-store td{padding:11px 12px;border-bottom:1px solid #edf0f2;vertical-align:middle}
+.retained-store tr:last-child td{border-bottom:0}
+.retained-store th{background:#fafafa;color:#566171;font-weight:600}
+.store-products{margin-top:24px;padding-top:20px;border-top:1px solid #edf0f2}
+.store-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.retained-store .bop-panel{margin-top:18px}
+.retained-store label{display:grid;gap:6px;margin:12px 0;color:#444c5b;font-size:13px}
+.bp-shell .retained-store label{display:grid;margin:12px 0}
+.retained-store input,.retained-store textarea,.retained-store select{width:100%;padding:8px 10px;border:1px solid #d9d9d9;border-radius:6px;background:#fff;color:#1f2937;font:inherit}
+.retained-store textarea{min-height:88px;resize:vertical}
+.retained-store .rec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px}
+.store-empty{padding:50px 16px;text-align:center;color:#8c95a3;border:1px dashed #d9dfe7;border-radius:6px}
+.store-confirm{border-color:#ffccc7}
+.store-notice{display:block;margin-top:16px;padding:10px 14px;border:1px solid #91caff;border-radius:6px;background:#e6f4ff;color:#0958d9}
+@media(max-width:800px){.retained-store{margin:14px;padding:16px}.retained-store .rec-grid{grid-template-columns:1fr}}

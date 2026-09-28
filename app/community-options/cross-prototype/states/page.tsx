@@ -1,0 +1,8 @@
+'use client';
+import Link from 'next/link';
+import {useState} from 'react';
+import {crossPages} from '../data';
+import '../cross.css';
+export default function CrossStateBoard(){const [selected,setSelected]=useState('project'),[mobile,setMobile]=useState(false);const page=crossPages.find(p=>p.id===selected)!;return <main className="xp-shell"><div className="xp-main" style={{maxWidth:1280}}><header className="xp-pagehead"><span className="xp-kicker">原型走查</span><h1>跨产品页面与状态</h1><p>{crossPages.length} 个页面模板 · {crossPages.reduce((n,p)=>n+p.states.length,0)} 个状态样本</p><Link href="/community-options/prototype-review">全站评审入口</Link></header><div className="xp-actions"><select aria-label="选择跨产品页面" value={selected} onChange={e=>setSelected(e.target.value)}>{crossPages.map(p=><option key={p.id} value={p.id}>{p.module} / {p.title}（{p.states.length}）</option>)}</select><button className="xp-button quiet" aria-pressed={!mobile} onClick={()=>setMobile(false)}>电脑画面</button><button className="xp-button quiet" aria-pressed={mobile} onClick={()=>setMobile(true)}>手机画面</button></div><div style={{display:'grid',gridTemplateColumns:mobile?'repeat(auto-fit,minmax(min(100%,430px),1fr))':'1fr',gap:24,marginTop:24}}>{page.states.map(s=><section className="xp-card" key={selected+s}><h2>{page.title} · {s}</h2><Link href={`/community-options/cross-prototype?page=${page.id}&state=${s}`}>单独打开</Link><iframe title={`${page.title} ${s}`} src={`/community-options/cross-prototype?page=${page.id}&state=${s}&embed=1`} style={{display:'block',border:'1px solid #dde1e8',width:mobile?390:'100%',maxWidth:'100%',height:850,marginTop:12,background:'#fff'}}/></section>)}</div></div></main>}
+
+
