@@ -60,9 +60,6 @@ const stateLabels: Record<string, string> = {
   'view-only': '仅查看',
   'outcome-only': '仅成果',
   'source-removed': '来源已下架',
-  'banner-ended': '活动已结束',
-  'banner-removed': 'Banner目标已下架',
-  'banner-hidden': '未配置Banner',
   'image-error': '图片加载失败',
 };
 export default function Review() {

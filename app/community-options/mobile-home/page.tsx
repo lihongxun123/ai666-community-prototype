@@ -78,17 +78,13 @@ export default function MobileHome({
     <div className={'mh-root'+(contentOnly?' mh-content-only':'')} data-page="home" data-state={state}>
       {!contentOnly&&<MobileHeader home go={go}/>}
       <main>{state==='loading'?<HomeSkeleton/>:<>
-        {state !== 'banner-hidden' && banner && (
+        {banner && (
           <button
             className="mh-banner"
             aria-label={banner.title}
             onClick={() =>
               go(
-                state === 'banner-ended'
-                  ? 'activity?state=ended'
-                  : state === 'banner-removed'
-                    ? 'activity?state=removed'
-                    : resolveSlotTarget(banner.target)?.page||'activities',
+                resolveSlotTarget(banner.target)?.page||'activities',
               )
             }
           >
@@ -96,9 +92,6 @@ export default function MobileHome({
               <strong>一起画个夏天</strong>
             ) : (
               <img src={base + 'banner.png'} alt="一起画个夏天" />
-            )}
-            {state === 'banner-ended' && (
-              <span className="mh-banner-ended">活动已结束</span>
             )}
           </button>
         )}

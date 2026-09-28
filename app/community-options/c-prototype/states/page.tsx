@@ -73,9 +73,6 @@ const labels: Record<string, string> = {
   idle: '未输入',
   closed: '已关闭',
   'action-error': '互动失败',
-  'banner-ended': 'Banner 活动结束',
-  'banner-removed': 'Banner 点击失效',
-  'banner-hidden': 'Banner 停用',
   'image-error': 'Banner 素材失败',
 };
 export default function StateBoard() {
