@@ -1,0 +1,20 @@
+.rv-module-flow{min-width:0;width:100%;max-width:none;box-sizing:border-box;padding:18px}
+.rv-module-flow h3{margin-bottom:16px}
+.rv-flow-map{display:grid;gap:14px}
+.rv-flow-group{display:grid;grid-template-columns:minmax(92px,28%) minmax(0,1fr);align-items:center;gap:10px;padding:12px;border:1px solid #e3e8f0;border-radius:12px;background:#fbfcff;min-width:0}
+.rv-flow-group:not(.has-edges){grid-template-columns:1fr}
+.rv-flow-node{display:block;min-width:0;width:100%;box-sizing:border-box;padding:11px 9px;border:1px solid #a8bbdc;border-radius:9px;background:#fff;color:#20416b;text-align:center;font:inherit;font-size:13px;font-weight:650;line-height:1.4;cursor:pointer;overflow-wrap:anywhere}
+.rv-flow-node:hover{border-color:#336fd5;background:#f0f5ff}
+.rv-flow-node:focus-visible{outline:3px solid #638ce7;outline-offset:2px}
+.rv-flow-node[aria-current="page"]{border-color:#1557c9;background:#e9f1ff;color:#154b9e;box-shadow:0 0 0 2px #bfd5ff;font-weight:750}
+.rv-flow-origin{position:relative}
+.rv-flow-group.has-edges .rv-flow-origin::after{content:"";position:absolute;top:50%;left:100%;width:12px;border-top:2px solid #8aa8d4}
+.rv-flow-branches{display:grid;gap:7px;min-width:0;padding-left:10px;border-left:2px solid #8aa8d4}
+.rv-flow-branch{display:grid;grid-template-columns:minmax(0,1fr) 17px minmax(78px,42%);align-items:center;gap:4px;min-width:0}
+.rv-flow-action{min-width:0;padding:6px 0}
+.rv-flow-action strong,.rv-flow-action small{display:block;overflow-wrap:anywhere}
+.rv-flow-action strong{font-size:12px;line-height:1.35;color:#243b60}
+.rv-flow-action small{margin-top:3px;color:#62738c;font-size:11px;line-height:1.45}
+.rv-flow-arrow{font-size:18px;color:#547bb6;text-align:center;line-height:1}
+.rv-flow-destination{padding:8px 5px;font-size:12px}
+@media(max-width:480px){.rv-module-flow{padding:13px}.rv-flow-group{grid-template-columns:minmax(82px,27%) minmax(0,1fr);gap:8px;padding:8px}.rv-flow-branch{grid-template-columns:minmax(0,1fr) 14px minmax(68px,41%);gap:2px}.rv-flow-node{font-size:12px}.rv-flow-action small{font-size:10px}}

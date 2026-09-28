@@ -2,16 +2,18 @@ import {DocumentBlocks} from './document-blocks';
 import {allPages} from '../c-prototype/page';
 import {bPages} from '../b-prototype/page';
 import {crossPages} from '../cross-prototype/data';
+import {appEdges} from './app-review';
+import './flow.css';
 import cText from '../../../design-notes/requirements-c-flows.md?raw';
 import bText from '../../../design-notes/requirements-b-content.md?raw';
 import xText from '../../../design-notes/requirements-cross-product.md?raw';
 type Edge=[string,string,string];
 export const routes:Record<string,Edge[]>={
- home:[['精选专题','topic','专题仍公开'],['作品卡','work','同一作品身份'],['金刚入口','apps','浏览目录'],['每日签到','checkin','登录后主动签到']],
+ home:[['精选专题','topic','专题仍公开'],['专题入口','topics','浏览公开专题'],['作品卡','work','同一作品身份'],['金刚入口','apps','浏览目录'],['活动入口','activities','浏览公开活动'],['每日签到','checkin','登录后主动签到']],
  topics:[['专题卡','topic','按后台发布顺序']],topic:[['作品','work','关联公开对象'],['教程','tutorial','关联公开对象'],['应用','app','进入详情，不直接扣费']],
  community:[['作品','work','公开作品；独立于首页后台选用及活动关联'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['官方教程','tutorials','官方维护'],['发布','post-edit','登录后保留来源']],
  post:[['作者','author','同一作者'],['所属圈子','circle','圈子可访问'],['引用作品','work','目标失效不删除帖子讨论']],
- circles:[['圈子卡','circle','查看规则与内容']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-edit','公开圈子开放且本人有发布权限']],
+ circles:[['圈子卡','circle','查看规则与内容']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-edit','圈子开放、已加入且有发布权限']],
  tutorials:[['教程卡','tutorial','按用途与排序浏览']],tutorial:[['关联资源','resource','教程和资源分开维护'],['作者','author','保留来源']],
  work:[['关联资源','resource','有公开引用才展示'],['作者','author','同一作者'],['再次创作','create','只在支持时出现']],
  search:[['作品结果','work','按内容类型分组'],['帖子结果','post','隐藏不可见对象'],['教程结果','tutorial','保留搜索词'],['应用结果','app','进入详情'],['作者结果','author','固定栏目']],
@@ -98,8 +100,21 @@ export function PageRequirements({section,page}:{section:string;page:{id:string;
  return <section className="rv-requirements"><h3>{page.title} · 需求</h3><DocumentBlocks text={text}/></section>;
 }
 function targetTitle(target:string){const [prefix,id]=target.includes(':')?target.split(':'):['c',target];const key=id.split('?')[0];return (prefix==='b'?bPages:prefix==='cross'?crossPages:allPages).find(p=>p.id===key)?.title||target;}
-export function ModuleFlow({section,pages,open}:{section:string;pages:{id:string;title:string}[];open:(target:string,source?:string)=>void}){
- const map=section==='b'?bRoutes:section==='cross'?crossRoutes:routes;
- const known=pages.flatMap(p=>(map[p.id]||[]).map(e=>({from:p,action:e[0],target:e[1],condition:e[2]})));
- return <section className="rv-requirements"><h3>模块页面与流转</h3><div className="rv-flow">{pages.map(p=><button key={p.id} onClick={()=>open((section==='c'?'':section+':')+p.id)}>{p.title}</button>)}</div>{known.length>0?<table><thead><tr><th>页面</th><th>动作</th><th>条件</th><th>去向</th></tr></thead><tbody>{known.map((e,i)=><tr key={i}><td>{e.from.title}</td><td>{e.action}</td><td>{e.condition}</td><td><button onClick={()=>open(e.target,e.from.id)}>{targetTitle(e.target)}</button></td></tr>)}</tbody></table>:<p>本组操作在各页面内完成。选择页面可查看状态、字段和对应需求。</p>}</section>;
+function flowEdges(section:string,id:string):Edge[]{
+ if(section==='c' && appEdges[id])return appEdges[id].map(edge=>[edge.action,edge.target,edge.condition]);
+ return (section==='b'?bRoutes:section==='cross'?crossRoutes:routes)[id]||[];
+}
+function sectionTarget(section:string,id:string){return (section==='c'?'':section+':')+id;}
+export function ModuleFlow({section,pages,currentId,open}:{section:string;pages:{id:string;title:string}[];currentId?:string;open:(target:string,source?:string)=>void}){
+ return <section className="rv-requirements rv-module-flow"><h3>模块流程</h3><div className="rv-flow-map" aria-label="页面流转图">{pages.map(page=>{
+  const edges=flowEdges(section,page.id);
+  return <div className={'rv-flow-group'+(edges.length?' has-edges':'')} key={page.id}>
+   <button type="button" className="rv-flow-node rv-flow-origin" aria-current={currentId===page.id?'page':undefined} onClick={()=>open(sectionTarget(section,page.id))}>{page.title}</button>
+   {edges.length>0&&<div className="rv-flow-branches">{edges.map(([action,target,condition],index)=><div className="rv-flow-branch" key={`${page.id}-${target}-${action}-${index}`}>
+    <div className="rv-flow-action"><strong>{action}</strong>{condition&&<small>{condition}</small>}</div>
+    <span className="rv-flow-arrow" aria-hidden="true">→</span>
+    <button type="button" className="rv-flow-node rv-flow-destination" onClick={()=>open(target,page.id)}>{targetTitle(target)}</button>
+   </div>)}</div>}
+  </div>;
+ })}</div></section>;
 }

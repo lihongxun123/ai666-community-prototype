@@ -6,6 +6,7 @@ import { allPages } from '../c-prototype/page';
 import { bPages } from '../b-prototype/page';
 import { crossPages } from '../cross-prototype/data';
 import './review.css';
+import {ReviewWorkspace} from './review-workspace';
 import {ProductPlan} from './product-plan';
 import {handoffStatus} from './handoff-status';
 import {PageRequirements,ModuleFlow} from './contracts';
@@ -13,7 +14,6 @@ import {TrackedFrame} from './tracked-frame';
 import {
   AnnotatedApp,
   AppRequirements,
-  AppFlow,
   appReviewPages,
   appReviewIds,
 } from './app-review';
@@ -67,6 +67,9 @@ const stateLabels: Record<string, string> = {
 };
 export default function Review() {
   const [ready,setReady]=useState(false);
+  const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[multi,setMulti]=useState(false),[selectedState,setSelectedState]=useState('normal');
+  const [inspected,setInspected]=useState<{id:string;section:string;state:string;card?:string}|null>(null);
+  const readMode=(mode:string)=>{if(mode==='requirements'||mode==='flow'){setReading('prototype');setNotesTab(mode);setNotesOpen(true);}else setReading(mode);};
   const [section, setSection] = useState('c'),
     [module, setModule] = useState('首页'),
     [pageId, setPageId] = useState('home'),
@@ -84,7 +87,9 @@ export default function Review() {
     setCommon(q.get('view') === 'common');
     setReady(true);
     const mode=q.get('reading');
-    setReading(mode&&['plan','prototype','requirements','flow'].includes(mode)?mode:'plan');
+    setReading(mode==='plan'?'plan':mode?'prototype':'plan');
+    if(mode==='requirements'||mode==='flow'){setNotesTab(mode);setNotesOpen(true);}else if(q.get('notes')){setNotesTab(q.get('notes')==='flow'?'flow':'requirements');setNotesOpen(true);}
+    setFlat(q.get('display')==='states');setMulti(q.get('display')==='pages');
     setDevice(q.get('device')==='pc'?'pc':'mobile');
     setContext(q.get('context') || (q.get('view')==='community'?'tab=works':''));
     const group =
@@ -116,7 +121,7 @@ export default function Review() {
     (context ? '&' + context : '');
   const select = (s: string, _m: string, id: string, query = '') => {
     setCommon(false);
-    setFlat(false);
+    setFlat(false);setMulti(false);setInspected(null);setSelectedState('normal');
     setAnnotations(false);
     setSection(s);
     setModule(readerModule(s,sections.find(g=>g.id===s)!.pages.find(p=>p.id===id)!));
@@ -128,6 +133,7 @@ export default function Review() {
 
   };
   const openTarget = (target: string, sourcePage?: string) => {
+    setNotesOpen(false);
     const targetSection = target.startsWith('cross:') ? 'cross' : target.startsWith('b:')?'b':'c';
     const [id,targetQuery=''] = target.replace(/^(cross|b):/, '').split('?');
     const g = sections.find((s) => s.id === targetSection)!;
@@ -158,6 +164,7 @@ export default function Review() {
         setModule(readerModule(targetSection,p));
         setPageId(targetSection==='c'&&id==='tutorials'?'community':id);
         const q = new URLSearchParams(search);
+        setSelectedState(q.get('state')||'normal');
         q.delete('page');q.delete('device');q.delete('state');q.delete('embed');
         if(targetSection==='c'&&id==='tutorials')q.set('tab','tutorials');
         setContext(q.toString());
@@ -170,8 +177,16 @@ export default function Review() {
     if(!ready)return;
     const q=new URLSearchParams({section,view:common?'common':pageId,device,reading});
     if(context&&!common)q.set('context',context);
+    if(notesOpen)q.set('notes',notesTab);
+    if(flat||multi)q.set('display',multi?'pages':'states');
     history.replaceState(null,'','?'+q.toString());
-  },[ready,section,pageId,device,context,common,reading]);
+  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,multi]);
+  const noteSection=inspected?.section||section;
+  const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
+  const noteState=inspected?.state||selectedState;
+  const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>readerModule(noteSection,p)===readerModule(noteSection,notePage));
+  const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget}/>:<>{noteState!=='normal'&&<p className="rv-selected-state">业务状态：{stateLabels[noteState]||noteState}</p>}{noteSection==='c'&&appReviewPages.includes(notePage.id)?<AppRequirements key={notePage.id} page={notePage.id}/>:<PageRequirements section={noteSection} page={notePage}/>}</>;
+  const inspect=(id:string,state:string,group=section,card=id+state)=>setInspected({id,state,section:group,card});
   const activeTab=new URLSearchParams(context).get('tab')||'works';
   if(!ready)return <main className="rv-main" aria-busy="true"/>;
   return (
@@ -242,9 +257,7 @@ export default function Review() {
             </div>
           ))}
         </nav>
-        <p className="rv-foot">
-          评审导航在页面外。原型中的点击始终保留在右侧。
-        </p>
+
       </aside>
       <main className="rv-main">
         {!common && (
@@ -282,13 +295,11 @@ export default function Review() {
                     {[
                       ['plan', '产品方案'],
                       ['prototype', '页面原型'],
-                      ['requirements', '页面需求'],
-                      ['flow', '模块流程'],
                     ].map(([key, label]) => (
                       <button
                         key={key}
                         aria-pressed={reading === key}
-                        onClick={() => setReading(key)}
+                        onClick={() => readMode(key)}
                       >
                         {label}
                       </button>
@@ -298,28 +309,29 @@ export default function Review() {
               </div>
             )}
             {(reading === 'prototype') && (
-              <div className="rv-controls">
+              <><div className="rv-notes-launch"><button onClick={()=>readMode('requirements')}>页面需求</button><button onClick={()=>readMode('flow')}>模块流程</button></div><div className="rv-controls">
                 <div>
                   <button
-                    aria-pressed={!flat && !common}
+                    aria-pressed={!flat && !multi && !common}
                     onClick={() => {
-                      setFlat(false);
+                      setFlat(false);setMulti(false);setInspected(null);setSelectedState('normal');
                       setCommon(false);
                     }}
                   >
                     正常页面
                   </button>
                   <button
-                    aria-pressed={flat && !common}
+                    aria-pressed={flat && !multi && !common}
                     onClick={() => {
-                      setFlat(true);
+                      setFlat(true);setMulti(false);setInspected({id:page.id,section,state:pageStates.find(s=>s!=='normal')||'normal'});
                       setCommon(false);
                     }}
                   >
                     业务状态（{pageStates.filter((s) => s !== 'normal').length}
                     ）
                   </button>
-                  {appSample && device === 'mobile' && !flat && (
+                  <button aria-pressed={multi} onClick={()=>{setMulti(true);setFlat(false);setInspected(null);}}>模块页面（{pages.length}）</button>
+                  {appSample && device === 'mobile' && !flat && !multi && (
                     <button
                       aria-pressed={annotations}
                       onClick={() => setAnnotations(!annotations)}
@@ -328,7 +340,7 @@ export default function Review() {
                     </button>
                   )}
                 </div>
-              </div>
+              </div></>
             )}
           </>
         )}
@@ -340,7 +352,7 @@ export default function Review() {
                 <h2>通用状态</h2>
               </div>
             </header>
-            <p>仅展示内容区域；导航沿用各业务页面。操作演示不提交真实数据。</p>
+
             <nav className="rv-pages" aria-label="通用状态分类">
               {commonGroups.map((g) => (
                 <button
@@ -370,12 +382,15 @@ export default function Review() {
             </div>
           </>
         ) : reading === 'plan' ? (
-          <ProductPlan section={section} page={page} device={device} onRead={setReading}/>
-        ) : reading === 'requirements' ? (
-          appSample?<AppRequirements key={page.id} page={page.id} />:<PageRequirements section={section} page={page}/>
-        ) : reading === 'flow' ? (
-          appSample?<AppFlow open={openTarget} />:<ModuleFlow section={section} pages={pages} open={openTarget}/>
-        ) : section === 'c' && device === 'pc' ? (
+          <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
+        ) : (<ReviewWorkspace mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
+          {(multi||flat)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
+            {(multi?pages.map(p=>({p,state:'normal'})):pageStates.filter(state=>state!=='normal').map(state=>({p:page,state}))).map(({p,state})=>{
+              const cardUrl='/community-options/'+group.route+'?page='+p.id+'&device='+device+'&state='+state+'&embed=1';
+              const active=inspected?.card?inspected.card===p.id+state:notePage.id===p.id&&noteState===state;
+              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setMulti(false);setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
+            })}
+          </div>: section === 'c' && device === 'pc' ? (
           <section className="rv-pc-preview">
             <label>预览比例 <select value={zoom} onChange={e=>setZoom(e.target.value)}><option value="fit">适应宽度</option><option value="1">100%</option></select></label>
             {(flat?pageStates.filter(s=>s!=='normal'):['normal']).map(s=><div key={String(restart)+s}><h3>{flat?(stateLabels[s]||s):''}</h3><div className={'rv-pc-scroll '+(zoom==='fit'?'fit':'')}><TrackedFrame key={String(restart)+s} onNavigate={flat?()=>{}:syncPage} title={`PC原型：${page.title} ${s}`} src={homeSample&&s==='normal'?'/community-options/home-prototype':url+'&device=pc&state='+s+(flat?'&embed=1':'')}/></div></div>)}
@@ -419,7 +434,7 @@ export default function Review() {
                 </section>
               ))}
           </div>
-        )}
+        )}</ReviewWorkspace>)}
         {!common && (reading === 'prototype') && (
           <footer className="rv-next">
             <button

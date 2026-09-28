@@ -15,7 +15,6 @@ export function ProductPlan({section,page,device,onRead}:{section:string;page:{i
   return <section className="rv-requirements rv-product-plan">
     <h3>{page.title} · 产品方案</h3>
     <p className="rv-plan-context">{productScope[section]}</p>
-    <p className="rv-plan-basis">用户按使用任务划分；设计依据为产品判断，不代表已验证的用户行为或效果。</p>
     {plan ? <>
       <h4>用户与场景</h4>
       <dl><dt>目标用户</dt><dd>{plan.audience}</dd><dt>使用场景</dt><dd>{plan.scenario}</dd><dt>用户问题</dt><dd>{plan.need}</dd></dl>
