@@ -1,0 +1,13 @@
+.platform-report{color:#25352e;font-size:1rem;line-height:1.85;overflow-wrap:anywhere}
+.platform-report article{max-width:960px;margin:0 auto}
+.platform-report h1{font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.35;letter-spacing:-.025em;margin:8px 0 12px;font-weight:700}
+.platform-report h2{font-size:1.35rem;line-height:1.5;margin:40px 0 16px;padding-top:12px;border-top:1px solid #dce2db;scroll-margin-top:85px}
+.platform-report p{margin:16px 0}.platform-report .platform-report-date{font-size:.875rem;color:#69756e;margin-bottom:28px}
+.platform-report a{color:#315c42;text-decoration:underline;text-underline-offset:3px}.platform-report a:hover{color:#152e20}
+.platform-report-table{overflow-x:auto;margin:22px 0;border:1px solid #dce2db;border-radius:8px;max-width:100%}
+.platform-report table{border-collapse:collapse;width:100%;min-width:620px;font-size:.9375rem;line-height:1.75}
+.platform-report th,.platform-report td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid #e4e8e1}
+.platform-report th{background:#edf1e8;font-weight:600}.platform-report tbody tr:last-child td{border-bottom:0}.platform-report td:first-child{font-weight:600;min-width:125px}
+.platform-report-table:focus-visible{outline:2px solid #315c42;outline-offset:3px}
+@media(max-width:700px){.document-shell:has(.platform-report) .research-sidebar{display:none}.document-shell:has(.platform-report) .document-body{margin-left:0}.document-body>main.platform-report{padding:24px 18px 48px!important}.platform-report h2{margin-top:30px}.platform-report-table{border-radius:5px}.platform-report th,.platform-report td{padding:12px}}
+@media print{.platform-report-table{overflow:visible}.platform-report table{min-width:0;font-size:10pt}.platform-report h2{break-after:avoid}.platform-report tr{break-inside:avoid}}

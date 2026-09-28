@@ -36,6 +36,7 @@ export const topicDescriptions:Record<string,string> = {
 };
 
 export const researchReadingLinks = [
+ {group:'competitors',href:'/hf-modelscope',title:'HF 与魔搭调研'},
  {group:'planning',href:'/community-options',title:'五套方案'},
  {group:'reading',href:'/research-brief',title:'简版研究报告'},
  {group:'reading',href:'/community-options/fusion',title:'融合方案'},
