@@ -64,7 +64,7 @@ const stateLabels: Record<string, string> = {
 };
 export default function Review() {
   const [ready,setReady]=useState(false);
-  const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[multi,setMulti]=useState(false),[selectedState,setSelectedState]=useState('normal');
+  const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[selectedState,setSelectedState]=useState('normal');
   const [inspected,setInspected]=useState<{id:string;section:string;state:string;card?:string}|null>(null);
   const readMode=(mode:string)=>{if(mode==='requirements'||mode==='flow'){setReading('prototype');setNotesTab(mode);setNotesOpen(true);}else setReading(mode);};
   const [section, setSection] = useState('c'),
@@ -86,7 +86,7 @@ export default function Review() {
     const mode=q.get('reading');
     setReading(mode==='plan'?'plan':mode?'prototype':'plan');
     if(mode==='requirements'||mode==='flow'){setNotesTab(mode);setNotesOpen(true);}else if(q.get('notes')){setNotesTab(q.get('notes')==='flow'?'flow':'requirements');setNotesOpen(true);}
-    setFlat(q.get('display')==='states');setMulti(q.get('display')==='pages');
+    setFlat(q.get('display')==='states');
     setDevice(q.get('device')==='pc'?'pc':'mobile');
     setContext(q.get('context') || (q.get('view')==='community'?'tab=works':''));
     const group =
@@ -119,7 +119,7 @@ export default function Review() {
     (context ? '&' + context : '');
   const select = (s: string, _m: string, id: string, query = '') => {
     setCommon(false);
-    setFlat(false);setMulti(false);setInspected(null);setSelectedState('normal');
+    setFlat(false);setInspected(null);setSelectedState('normal');
     setAnnotations(false);
     setSection(s);
     setModule(readerModule(s,sections.find(g=>g.id===s)!.pages.find(p=>p.id===id)!));
@@ -176,9 +176,9 @@ export default function Review() {
     const q=new URLSearchParams({section,view:common?'common':pageId,device,reading});
     if(context&&!common)q.set('context',context);
     if(notesOpen)q.set('notes',notesTab);
-    if(flat||multi)q.set('display',multi?'pages':'states');
+    if(flat)q.set('display','states');
     history.replaceState(null,'','?'+q.toString());
-  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,multi]);
+  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat]);
   const noteSection=inspected?.section||section;
   const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
   const noteState=inspected?.state||(flat?pageStates.find(s=>s!=='normal')||'normal':selectedState);
@@ -310,26 +310,25 @@ export default function Review() {
               <><div className="rv-notes-launch"><button onClick={()=>readMode('requirements')}>页面需求</button><button onClick={()=>readMode('flow')}>模块流程</button></div><div className="rv-controls">
                 <div>
                   <button
-                    aria-pressed={!flat && !multi && !common}
+                    aria-pressed={!flat && !common}
                     onClick={() => {
-                      setFlat(false);setMulti(false);setInspected(null);setSelectedState('normal');
-                      setCommon(false);
+                      setFlat(false);setInspected(null);setSelectedState('normal');
+                      setCommon(false);setRestart(n=>n+1);
                     }}
                   >
                     正常页面
                   </button>
                   {hasBusinessStates && <button
-                    aria-pressed={flat && !multi && !common}
+                    aria-pressed={flat && !common}
                     onClick={() => {
-                      setFlat(true);setMulti(false);setInspected({id:page.id,section,state:pageStates.find(s=>s!=='normal')||'normal'});
+                      setFlat(true);setInspected({id:page.id,section,state:pageStates.find(s=>s!=='normal')||'normal'});
                       setCommon(false);
                     }}
                   >
                     业务状态（{pageStates.filter((s) => s !== 'normal').length}
                     ）
                   </button>}
-                  <button aria-pressed={multi} onClick={()=>{setMulti(true);setFlat(false);setInspected(null);}}>模块页面（{pages.length}）</button>
-                  {appSample && device === 'mobile' && !flat && !multi && (
+                  {appSample && device === 'mobile' && !flat && (
                     <button
                       aria-pressed={annotations}
                       onClick={() => setAnnotations(!annotations)}
@@ -382,11 +381,11 @@ export default function Review() {
         ) : reading === 'plan' ? (
           <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
         ) : (<ReviewWorkspace mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
-          {(multi||flat)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
-            {(multi?pages.map(p=>({p,state:'normal'})):pageStates.filter(state=>state!=='normal').map(state=>({p:page,state}))).map(({p,state})=>{
+          {flat?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
+            {pageStates.filter(state=>state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
               const cardUrl='/community-options/'+group.route+'?page='+p.id+'&device='+device+'&state='+state+'&embed=1';
               const active=inspected?.card?inspected.card===p.id+state:notePage.id===p.id&&noteState===state;
-              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setMulti(false);setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
+              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
             })}
           </div>: section === 'c' && device === 'pc' ? (
           <section className="rv-pc-preview">
