@@ -12,3 +12,10 @@
 .community-mobile-header h1{margin:0;text-align:center;font:500 16px/1.4 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .community-mobile-header button{width:40px;height:44px;display:flex;align-items:center;justify-content:center}.community-mobile-header .community-back{justify-content:flex-start}.community-mobile-header .community-icon{width:22px;height:22px}.community-mobile-home{display:flex;justify-content:space-between}.community-mobile-brand{width:132px;height:38px;object-fit:contain;object-position:left center}.community-mobile-actions{display:flex;gap:4px}
 @media(max-width:1280px){.community-pc-inner{gap:16px}.community-main-nav{gap:16px}.community-services{gap:12px}.community-services>button>span{display:none}.community-logo img{width:128px}}
+
+.community-mobile-community{grid-template-columns:minmax(0,1fr) 40px;gap:8px}
+.community-header-tabs{display:flex;align-items:stretch;gap:24px;height:48px;min-width:0}
+.community-mobile-header .community-header-tabs button{width:auto;height:48px;position:relative;flex:none;white-space:nowrap;font-size:16px;font-weight:400;color:#777}
+.community-mobile-header .community-header-tabs button[aria-current]{font-weight:600;color:#202124}
+.community-header-tabs button[aria-current]:after{content:'';position:absolute;bottom:6px;left:50%;width:18px;height:2px;background:#202124;transform:translateX(-50%)}
+@media(max-width:350px){.community-header-tabs{gap:18px}.community-mobile-header .community-header-tabs button{font-size:15px}}

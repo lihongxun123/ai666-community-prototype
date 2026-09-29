@@ -1,4 +1,5 @@
 'use client';
+import {communityTab,switchCommunityTab} from './community-navigation';
 import {deviceDestination} from '../navigation-model';
 import {loadingLayouts} from '../common-states/catalog';
 import {LayoutSkeleton} from '../common-states/layout-skeleton';
@@ -159,7 +160,7 @@ export default function Prototype() {
     >
       <div inert={loginOpen||undefined}>
       {desktop && <DesktopHeader active={page} go={go}/>}
-      {!contentOnly && !desktop && <MobileHeader community={['community','tutorials'].includes(page)} title={page==='search'?'搜索':meta?.title||'页面暂不可访问'} back={back} go={go}/>}
+      {!contentOnly && !desktop && <MobileHeader community={['community','tutorials'].includes(page)} communityTab={communityTab(search)} onCommunityTab={switchCommunityTab} title={page==='search'?'搜索':meta?.title||'页面暂不可访问'} back={back} go={go}/>}
       {desktop && <div className="cp-desktop-heading">{!['aigc','circles','discussion','tutorials','topics','apps','activities','shop'].includes(page)&&<button onClick={back} aria-label="返回"><img src="/home-prototype/icons/arrow-left-line.svg" alt=""/></button>}<h1>{page==='search'?'搜索':meta?.title}</h1></div>}
       {desktop&&['circles','discussion','tutorials'].includes(page)&&<nav className="cp-circle-navigation" aria-label="圈子栏目">{[['circles','圈子'],['discussion','交流'],['tutorials','官方教程']].map(([id,label])=><button key={id} aria-current={page===id?'page':undefined} onClick={()=>go(id)}>{label}</button>)}</nav>}
       <div className="cp-desktop-workspace"><main className="cp-body" key={search}>
