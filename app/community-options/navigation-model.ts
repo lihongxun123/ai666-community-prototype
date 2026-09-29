@@ -8,6 +8,7 @@ export function deviceDestination(id:string,query:string,device:string){
 export function readerVisible(id:string,device:string){return device==='pc'?id!=='community':!['aigc','discussion','tutorials'].includes(id);}
 export function readerGroup(section:string,page:{id:string;module:string},device:string){
  if(section!=='c')return page.module;
+ if(page.id==='login')return '登录';
  if(device==='pc'){
   if(['aigc','work','community'].includes(page.id))return 'AIGC';
   if(['circles','circle','discussion','post','tutorials','tutorial'].includes(page.id))return '圈子';

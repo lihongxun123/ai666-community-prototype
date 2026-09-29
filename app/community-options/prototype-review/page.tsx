@@ -94,7 +94,7 @@ export default function Review() {
   const selectedGroup=sections.find(s=>s.id===section)!;
   const group={...selectedGroup,pages:selectedGroup.pages.filter(p=>section!=='c'||readerVisible(p.id,device)).sort((a,b)=>section==='c'&&device==='pc'?['circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
     currentModule=readerModule(section,group.pages.find(p=>p.id===pageId)||group.pages[0]),
-    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(b):0),
+    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(b):0),
     pages = group.pages.filter((p) => readerModule(section,p) === currentModule ),
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);

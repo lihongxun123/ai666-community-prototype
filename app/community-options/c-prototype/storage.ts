@@ -8,6 +8,11 @@ function prefix() {
 }
 export const prototypeStore = {
   getItem(key: string) {
+    // Business prototypes are signed-in demos; explicit identity samples remain isolated.
+    if(key==='cp-auth'&&typeof window!=='undefined'){
+      const q=new URLSearchParams(window.location.search);
+      if(q.get('page')!=='login'&&!['guest','login-expired'].includes(q.get('state')||''))return '1';
+    }
     return typeof window === 'undefined'
       ? null
       : window.sessionStorage.getItem(prefix() + key);
