@@ -13,12 +13,12 @@
 | `release/verify` | 检查资料、引用与能力 → 发布、暂停、下架、恢复或删除；公开结果由 C 端按对象 ID 消费。 |
 | `references/transfer/history` | 查看引用影响、确认交接、回查同一对象记录。 |
 | `op-topics/op-topic-edit` | 专题列表 → 编辑五类公开对象引用与顺序 → 发布或下线；C 专题列表与详情读取同 ID 公开编排。 |
-| `op-circles/op-circle-edit` | 圈子列表 → 同 ID 维护规则或关闭；C 圈子根据关闭状态停止发现／新发。 |
+| `op-circles/op-circle-edit` | 圈子列表 → 同 ID 维护配置或关闭；C 圈子根据关闭状态停止发现／新发。 |
 | `op-taxonomy` | 添加、排序、停用分类标签；历史内容不改。 |
 | `op-features` | 分别编排作品和帖子 → 预览 → 发布；C 首页／社区通过已发布推荐读取。 |
 | `op-slots` | 编辑 Banner／金刚位 → 预览 → 发布；C 首页读取有效设备和目标。 |
 | `op-events/op-event-edit/op-submissions` | 六个现有活动按 code 展示／结束；新活动只存草稿；C 同 ID 投稿进入 B，资格、评审与奖励分开回写 C。 |
-| `op-points/op-shop` | 积分记录按 C 任务 ID 查询预占、消耗和释放；商品配置按同 ID 发布到 C 商城，兑换记录在 B 查询。 |
+| `op-points/op-shop` | 社区积分记录仅承接既有社区业务及轻创作任务的预占、消耗和释放；AI 应用费用与任务由 MakeNow 承接，不进入社区积分任务。商品配置按同 ID 发布到 C 商城，兑换记录在 B 查询。 |
 | `op-permissions` 与内容治理 | 职责变更单独保存；B 端独立审核治理可依规下架违规内容，使目标详情不可访问。本期移除 `op-reports` 用户举报处理路径。 |
 
 | MakeNow 页面 | 主要操作与去向 |

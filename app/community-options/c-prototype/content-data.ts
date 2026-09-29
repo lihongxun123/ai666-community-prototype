@@ -1,6 +1,9 @@
 // Fictional local examples. IDs and routes are shared by cards, search and details.
 export type SamplePost = { id:string; title:string; author:string; date:string; summary:string; body:string[]; image:string; circle?:string; reference?:string; recommended?:boolean };
 export const samplePosts:SamplePost[] = [
+{"id":"restore-color","title":"旧照片修复后，肤色怎么保持自然","image":"portrait","summary":"避免过度增加饱和度，先比较原图明暗。","author":"林间","date":"9月25日","body":["避免过度增加饱和度，先比较原图明暗。","这是一组修复练习，重点是保留原有结构，而不是重新生成整个画面。"],"circle":"影像练习圈","recommended":false},
+{"id":"restore-detail","title":"人像修复要不要保留细小纹理","image":"restore","summary":"我保留了一些皮肤纹理，让人物看起来更真实。","author":"林间","date":"9月25日","body":["我保留了一些皮肤纹理，让人物看起来更真实。","这是一组修复练习，重点是保留原有结构，而不是重新生成整个画面。"],"circle":"影像练习圈","recommended":false},
+{"id":"restore-background","title":"修复照片时，背景也需要单独处理","image":"interior","summary":"先修背景中的破损，再检查人物边缘。","author":"林间","date":"9月25日","body":["先修背景中的破损，再检查人物边缘。","这是一组修复练习，重点是保留原有结构，而不是重新生成整个画面。"],"circle":"影像练习圈","recommended":false},
   {id:'restore',title:'给旧照片修复时，我先做了这三件事',author:'林间',date:'9月24日',summary:'先判断划痕的位置，再检查面部细节，最后留一份原图对照。',body:['我先确认破损主要集中在照片边缘，再逐处观察脸部和衣服的细节。原图会单独留存，方便最后比较。','这次最有用的是先写清楚想恢复什么：减少划痕、保留表情，而不是把照片变成另一张全新的肖像。'],image:'restore',circle:'影像练习圈',reference:'work?item=restore',recommended:true},
   {id:'light',title:'给玻璃瓶拍照，先处理背景还是光线？',author:'鹿与光',date:'9月22日',summary:'我试了两种背景，发现先固定光线方向更容易比较。',body:['同一个透明瓶放在浅色与深色背景前，边缘的清晰度差别很大。先固定侧光，再调整背景，能减少反复重拍。','这只是我的拍摄练习，欢迎分享你们处理玻璃反光的方法。'],image:'perfume',circle:'视觉创作圈',reference:'work?item=perfume',recommended:true},
   {id:'sea',title:'短片的第一个镜头，我留给了海面',author:'陈屿',date:'9月19日',summary:'先定下画面的节奏，再决定转场与音乐。',body:['我把镜头顺序写在纸上，先从一段平静的海面开始。','片段完成后，重新检查字幕与画面的节奏。'],image:'sea',recommended:true},
@@ -19,6 +22,7 @@ export const samplePosts:SamplePost[] = [
   {id:'character-objects',title:'用三件日常物品写一份人物设定',author:'沐言',date:'9月24日',summary:'一支旧笔、一张车票、一只不肯丢掉的纸袋。',body:['我试着用三件随身物品写人物设定：一支旧笔、一张车票、一只不肯丢掉的纸袋。','它们分别指向角色的习惯、去过的地方和舍不得放下的事情。性格和经历慢慢就有了轮廓。'],image:'anime',circle:'角色创作圈',recommended:false},
 ];
 export const sampleCircles=[
+ {id:'repair',name:'修复交流圈',description:'旧照修复与人像细节交流',cover:'portrait',members:326},
   {id:'image',name:'影像练习圈',description:'照片修复 · 构图讨论',cover:'restore'},
   {id:'visual',name:'视觉创作圈',description:'产品视觉 · 光线与配色',cover:'perfume'},
   {id:'writing',name:'写作灵感圈',description:'日常观察 · 短篇表达',cover:'writing'},

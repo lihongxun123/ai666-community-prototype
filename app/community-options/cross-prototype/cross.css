@@ -42,3 +42,5 @@
 .xp-root .xp-button,.xp-root .xp-card,.xp-root .xp-note,.xp-root .xp-state,.xp-root .xp-hero img,.xp-root .xp-row,.xp-root input,.xp-root textarea,.xp-root select{border-radius:4px}.xp-root button:focus-visible,.xp-root a:focus-visible{outline:2px solid #666;outline-offset:3px}.xp-root{overflow-wrap:anywhere}.xp-root .xp-actions{row-gap:10px}.xp-header,.xp-nav{border-bottom:0}
 
 .xp-root .xp-cardlink,.xp-root .xp-steps span,.xp-root .xp-choice label,.xp-root .xp-feedback,.xp-root .xp-result,.xp-root .xp-form,.xp-root .xp-skeleton,.xp-root .xp-cover{border-radius:4px}
+
+.xp-app-handoff{max-width:680px;margin:0 auto;padding:24px 0}.xp-app-handoff h1{font-size:24px;line-height:1.4;margin:16px 0}.xp-app-handoff p{color:#626872;line-height:1.8}.xp-app-handoff dl{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px;margin:24px 0}.xp-app-handoff dt{color:#8a8f98}.xp-app-handoff dd{margin:0;line-height:1.6}.xp-app-handoff>button{margin-top:20px;padding:12px 20px;background:#222;color:#fff;border:0;border-radius:4px}.xp-app-handoff .xp-note{margin-top:24px;padding:18px}

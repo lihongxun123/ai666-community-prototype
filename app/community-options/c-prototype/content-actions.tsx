@@ -1,6 +1,6 @@
 'use client';
 /* oxlint-disable next/no-img-element -- Shared local prototype icons. */
-import {useState,type ReactNode} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {prototypeStore as sessionStorage,getFavorites,toggleFavorite} from './storage';
 const signedIn = () =>
   typeof window !== 'undefined' && sessionStorage.getItem('cp-auth') === '1';
@@ -17,7 +17,7 @@ const loginFor = (go: (page: string) => void) => {
 
 
 function Icon({name}:{name:string}){return <img className="reading-icon" src={'/home-prototype/icons/'+name+'-line.svg'} alt=""/>}
-function Button({children,onClick,quiet=false}:{children:ReactNode;onClick:()=>void;quiet?:boolean}){return <button type="button" className={'reading-button'+(quiet?' quiet':'')} onClick={onClick}>{children}</button>}
+export function openComments(){window.dispatchEvent(new Event('open-content-comments'))}
 export function interactionTarget(){
   if(typeof window==='undefined')return '';
   const q=new URLSearchParams(location.search),page=q.get('page')||'work';
@@ -30,9 +30,9 @@ export function ActionBar({
   go,
   guest = false,
   failOnAction = false,
-  target, title, onComment,
+  target, title, onComment, primary,
 }: {
-  target?:string; title?:string; onComment?:()=>void;
+  primary?:{label:string;onClick:()=>void}; target?:string; title?:string; onComment?:()=>void;
   kind: string;
   go: (page: string) => void;
   guest?: boolean;
@@ -44,7 +44,9 @@ export function ActionBar({
   const [saved, setSaved] = useState(() =>
     getFavorites().some((x) => x.target === contentTarget),
   );
-  const [open, setOpen] = useState<'share' | ''>('');
+  const [shareFeedback,setShareFeedback]=useState('');
+  const shareTimer=useRef<ReturnType<typeof setTimeout>|null>(null);
+  useEffect(()=>()=>{if(shareTimer.current)clearTimeout(shareTimer.current)},[]);
   const [failNext, setFailNext] = useState(failOnAction);
   const [toast, setToast] = useState(failOnAction ? '操作未完成，请重试' : '');
   const toggle = (name: 'like' | 'save') => {
@@ -78,15 +80,16 @@ export function ActionBar({
   const share = async () => {
     try {
       await navigator.clipboard.writeText(new URL('/community-options/c-prototype?page='+contentTarget.replace('?','&'),location.origin).toString());
-      setToast('链接已复制');
-      setOpen('');
+      setShareFeedback('已复制');
     } catch {
-      setToast('复制失败，请重试');
+      setShareFeedback('重试复制');
     }
+    if(shareTimer.current)clearTimeout(shareTimer.current);
+    shareTimer.current=setTimeout(()=>setShareFeedback(''),2000);
   };
   return (
     <div className="reading-actions-wrap">
-      <div className="reading-actions">
+      <div className={"reading-actions"+(primary?" has-primary":"")}>
         <button type="button" aria-pressed={liked} onClick={() => toggle('like')}>
           <Icon name="heart" />
           {liked ? '已喜欢' : '喜欢'}
@@ -99,8 +102,7 @@ export function ActionBar({
         )}
         <button
           type="button"
-          onClick={() => onComment ? onComment() : document.getElementById('reading-comments')
-              ?.scrollIntoView({ behavior: 'smooth',block:'start' })
+          onClick={() => onComment ? onComment() : openComments()
           }
         >
           <Icon name="chat-3" />
@@ -108,30 +110,14 @@ export function ActionBar({
         </button>
         <button
           type="button"
-          onClick={() => setOpen(open === 'share' ? '' : 'share')}
+          onClick={share}
         >
-          <Icon name="share-forward" />分享
+          <Icon name="share-forward" /><span aria-live="polite">{shareFeedback||'分享'}</span>
         </button>
+        {primary&&<button className="reading-action-primary" onClick={primary.onClick}>{primary.label}</button>}
       </div>
       {toast && <output className="reading-toast">{toast}</output>}
-      {open === 'share' && (
-        <div className="reading-sheet">
-          <strong>
-            分享当前
-            {kind === 'post'
-              ? '帖子'
-              : kind === 'tutorial'
-                ? '教程'
-                : kind === 'work'
-                  ? '作品'
-                  : kind === 'app' ? '应用' : '资源'}
-          </strong>
-          <Button onClick={share}>复制链接</Button>
-          <Button quiet onClick={() => setOpen('')}>
-            取消
-          </Button>
-        </div>
-      )}
+
 
     </div>
   );

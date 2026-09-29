@@ -137,7 +137,7 @@ export default function HomeBanner({
       >
         <header>
           <button onClick={close} aria-label="返回首页">
-            <img src="/home-prototype/icons/arrow-left-line.svg" alt="" />
+            <img src="/home-prototype/icons/arrow-left-s-line.svg" alt="" />
           </button>
           <span>
             {scenario === 'pc'

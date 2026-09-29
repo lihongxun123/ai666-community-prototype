@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-export function TrackedFrame({src,title,onNavigate,onActivate}:{src:string;title:string;onNavigate:(id:string,search:string,section:string)=>void;onActivate?:(id:string,search:string,section:string)=>void}){
+import {MobileBrowserFrame} from './mobile-browser-frame';
+export function TrackedFrame({src,title,onNavigate,onActivate,mobileBrowser=false}:{src:string;title:string;mobileBrowser?:boolean;onNavigate:(id:string,search:string,section:string)=>void;onActivate?:(id:string,search:string,section:string)=>void}){
  const [initial]=useState(src),ref=useRef<HTMLIFrameElement>(null);
  const [status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');
  const [attempt,setAttempt]=useState(0);
@@ -28,5 +29,6 @@ export function TrackedFrame({src,title,onNavigate,onActivate}:{src:string;title
   try{if(frame.contentDocument?.readyState==='complete'&&frame.contentWindow?.location.href!=='about:blank')bind();}catch{/* The readiness timer handles inaccessible initial documents. */}
   return()=>{disposed=true;frame.removeEventListener('load',bind);unbind();};
  },[onNavigate,onActivate,attempt]);
- return <><iframe key={attempt} ref={ref} title={title} src={initial} sandbox="allow-same-origin allow-scripts allow-forms allow-downloads" onError={()=>setStatus('failed')}/>{status!=='ready'&&<output className="rv-frame-status">{status==='loading'?'正在加载原型…':<><span>原型未能加载</span><button onClick={()=>{setStatus('loading');setAttempt(n=>n+1);}}>重新加载</button></>}</output>}</>;
+ const content=<><iframe key={attempt} ref={ref} title={title} src={initial} sandbox="allow-same-origin allow-scripts allow-forms allow-downloads" onError={()=>setStatus('failed')}/>{status!=='ready'&&<output className="rv-frame-status">{status==='loading'?'正在加载原型…':<><span>原型未能加载</span><button onClick={()=>{setStatus('loading');setAttempt(n=>n+1);}}>重新加载</button></>}</output>}</>;
+ return mobileBrowser?<MobileBrowserFrame>{content}</MobileBrowserFrame>:content;
 }

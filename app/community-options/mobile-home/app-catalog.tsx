@@ -1,5 +1,6 @@
 'use client';
 /* oxlint-disable next/no-img-element -- Reuse approved local prototype assets. */
+import { appHandoffUrl } from '../c-prototype/app-handoff';
 import { useEffect, useRef, useState } from 'react';
 type AppEntry = {
   id: string;
@@ -25,7 +26,7 @@ const entries: AppEntry[] = [
     media: '文字',
     input: '需要改写的文字，以及用途与语气要求。',
     output: '可继续编辑的文字结果。',
-    place: '社区内体验',
+    place: 'MakeNow',
   },
   {
     id: 'background',
@@ -37,7 +38,7 @@ const entries: AppEntry[] = [
     media: '图片',
     input: '一张有权使用的产品图片，以及背景描述。',
     output: '用于效果对比的图片结果。',
-    place: '社区内体验',
+    place: 'MakeNow',
   },
   {
     id: 'video',
@@ -61,7 +62,7 @@ const entries: AppEntry[] = [
     media: '图片',
     input: '一张有权使用的待修复照片。',
     output: '修复后的图片，不保证恢复原本不存在的细节。',
-    place: '社区内体验',
+    place: 'MakeNow',
   },
 ];
 type View = string;
@@ -162,7 +163,7 @@ export default function AppCatalog() {
             aria-label={view === 'list' ? '返回首页' : '返回应用列表'}
             onClick={back}
           >
-            <img src="/home-prototype/icons/arrow-left-line.svg" alt="" />
+            <img src="/home-prototype/icons/arrow-left-s-line.svg" alt="" />
           </button>
           <span>{view === 'list' ? 'AI应用' : '应用详情'}</span>
         </header>
@@ -199,7 +200,7 @@ export default function AppCatalog() {
             </label>
             <p>
               两端使用同一应用目录，手机端自动将当前可用项排在前面，同组沿用既定顺序；不提供设备筛选或手机可用标签，PC
-              使用要求在详情说明。本次不定义具体积分、不生成、不扣费。输入、费用、任务与结果将在应用体验环节深化。运行暂停保留详情；内容下架隐藏内容。
+              使用要求在详情说明。本次不定义具体积分、不生成、不扣费。输入、费用、任务与结果由 MakeNow 承接。目标暂停保留详情；内容下架隐藏内容。
             </p>
             <button onClick={() => setRules(false)}>关闭应用走查</button>
           </aside>
@@ -208,7 +209,7 @@ export default function AppCatalog() {
           <aside className="mh-app-review" aria-label="体验原型接线边界">
             <strong>
               原型接线：
-              {entry.mobile ? '社区应用体验' : 'MakeNow 指定工具'}
+              MakeNow 应用承接
             </strong>
             <p>
               当前完成列表与详情信息。本应用为虚构样例，尚未制作执行页，也没有真实工具链接；此处没有提交任务或发生费用。
@@ -307,15 +308,11 @@ export default function AppCatalog() {
                   <dd>{entry.place}</dd>
                   <dt>账号</dt>
                   <dd>
-                    {entry.mobile
-                      ? '浏览无需登录，使用时登录社区账号。'
-                      : '使用 MakeNow 账号，首次回流私人结果时确认关联。'}
+                    浏览无需登录，使用时在 MakeNow 登录。
                   </dd>
                   <dt>费用</dt>
                   <dd>
-                    {entry.mobile
-                      ? '使用社区积分，提交任务前显示本次消耗。'
-                      : '由 MakeNow 展示其自身费用，与社区积分分别管理。'}
+                    由 MakeNow 展示并确认费用，社区不对应用生成扣费。
                   </dd>
                 </dl>
                 {!entry.mobile && (
@@ -331,11 +328,10 @@ export default function AppCatalog() {
                   <button
                     className="mh-primary"
                     onClick={() => {
-                      setHandoff(true);
-                      setRules(false);
+                      window.location.assign(entry.mobile?appHandoffUrl(entry.id):'/community-options/c-prototype?page=pc-handoff&item='+entry.id);
                     }}
                   >
-                    {entry.mobile ? '在社区体验' : '查看电脑端承接'}
+                    {entry.mobile ? '在 MakeNow 中使用' : '查看电脑端承接'}
                   </button>
                 )}
               </>

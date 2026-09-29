@@ -55,13 +55,13 @@
 .cp-root .cp-discovery-filters nav button{padding:6px 0 9px;border:0;border-radius:0;background:none;color:#888;font-size:14px;position:relative;white-space:nowrap}
 .cp-root .cp-discovery-filters nav button[aria-pressed=true]{color:#161616;font-weight:600}
 .cp-discovery-filters nav button[aria-pressed=true]:after{content:"";position:absolute;bottom:2px;left:0;right:0;height:2px;background:#222}
-.cp-app-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.cp-app-gallery{display:block;columns:2;column-gap:6px}.cp-app-gallery>.cp-app-effect{width:100%;break-inside:avoid;margin-bottom:6px}
 .cp-root .cp-app-effect{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;padding:0;border:0;border-radius:4px;background:#f3f3f3;text-align:left;min-width:0}
 .cp-app-effect>img{display:block;width:100%;height:100%;object-fit:cover}
 .cp-app-caption{position:absolute;inset:45% 0 0;display:flex;flex-direction:column;justify-content:flex-end;padding:12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:white}
 .cp-app-caption strong{font-size:14px;line-height:1.5;font-weight:500}
 .cp-app-caption small{font-size:11px;color:#eee;line-height:1.5;margin-top:3px}
-.cp-root.cp-desktop .cp-app-gallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cp-root.cp-desktop .cp-app-gallery{columns:4;column-gap:16px}.cp-root.cp-desktop .cp-app-gallery>.cp-app-effect{margin-bottom:16px}
 .cp-root.cp-desktop .cp-app-caption{opacity:0;transition:opacity .15s}
 .cp-root.cp-desktop .cp-app-effect:hover .cp-app-caption,.cp-root.cp-desktop .cp-app-effect:focus-visible .cp-app-caption{opacity:1}
 .cp-root.cp-desktop[data-page="topics"] .cp-topic-list{gap:20px}
@@ -155,3 +155,16 @@
 .cp-root.cp-desktop .cp-app-dock{max-width:none;display:flex;justify-content:center;padding:12px 32px;background:rgba(255,255,255,.96)}
 .cp-root.cp-desktop .cp-app-dock>.cp-button{max-width:400px}
 .cp-root[data-page="app"]{padding-bottom:0}
+
+/* Application introductions: one purpose sentence, materials, outcome and platform. */
+.cp-root .cp-app-detail-heading{margin:0 0 18px}
+.cp-root .cp-app-detail-heading p{font-size:14px;line-height:1.7;color:#737373;margin-top:8px}
+.cp-root .cp-app-detail-cover{height:auto!important;aspect-ratio:auto!important;max-height:none!important;background:transparent}
+.app-introduction{margin:24px 0}
+.app-introduction-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.cp-root .app-introduction h3{font-size:15px;font-weight:600;margin:0 0 8px}
+.app-introduction-grid p{font-size:14px;line-height:1.8;margin:0;color:#555}
+.cp-root .app-introduction-condition{font-size:13px;line-height:1.7;margin:18px 0 0;color:#666}
+.cp-root .app-introduction-platform{font-size:12px;line-height:1.7;color:#888;margin:22px 0 0}
+.cp-root .app-introduction-provider{font-size:12px;color:#999;margin:6px 0 0}
+@media(max-width:359px){.app-introduction-grid{grid-template-columns:1fr;gap:20px}}

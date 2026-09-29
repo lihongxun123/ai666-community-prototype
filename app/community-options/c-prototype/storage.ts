@@ -97,7 +97,7 @@ export function shopRecords(): ShopRecord[] {
 }
 export function pointBalance() {
   const history=taskHistory(),tasks=history.length?history:[readTask()].filter((t):t is PrototypeTask=>Boolean(t));
-  const reserved=tasks.reduce((sum,t)=>sum+(!['cancelled','unaccepted','failed'].includes(String(t.status))?Number(t.status==='partial'?(t.settledPoints??t.points??0):(t.points??0)):0),0);
+  const reserved=tasks.filter(t=>t.item?.startsWith('light-')).reduce((sum,t)=>sum+(!['cancelled','unaccepted','failed'].includes(String(t.status))?Number(t.status==='partial'?(t.settledPoints??t.points??0):(t.points??0)):0),0);
   return Math.max(
     0,
     100 +

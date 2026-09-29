@@ -19,6 +19,7 @@ import {
   type ShareMode,
 } from './data';
 import './cross.css';
+import {AppHandoffPreview} from './app-handoff-preview';
 export { crossPages } from './data';
 
 const C = '/community-options/c-prototype';
@@ -1946,7 +1947,7 @@ export default function CrossPrototype() {
   const state = params.get('state') || 'normal';
   const item = params.get('item') || '';
   const source = params.get('source') || '';
-  const videoApp = source === 'app' && item === 'video';
+  const videoApp = source === 'app' && item === 'video' && page === 'project';
   const bStore = useB();
   const resource = bStore.records.find((record) => record.id === 'resource-1');
   const authorRecords: Record<AuthorKind, Content | undefined> = {
@@ -1995,7 +1996,7 @@ export default function CrossPrototype() {
     else if (source === 'app')
       window.sessionStorage.setItem(
         'cross-origin',
-        `${C}?page=app&item=${incoming.get('item') || 'video'}`,
+        incoming.get('return')?.startsWith(C+'?') ? incoming.get('return')! : `${C}?page=app&item=${encodeURIComponent(incoming.get('item') || 'copy')}`,
       );
     else if (source === 'mine')
       window.sessionStorage.setItem('cross-origin', `${C}?page=mine`);
@@ -2165,7 +2166,7 @@ export default function CrossPrototype() {
         </>
       );
   }
-  if (videoApp) body = <VideoAppHandoff back={back} />;
+  if (videoApp || page === 'app') body = <AppHandoffPreview item={item || 'copy'} recordId={params.get('id') || undefined} unavailable={state === 'unavailable'} back={back} />;
   return (
     <main className="xp-root">
       <div className="xp-shell" data-page={page} data-state={state}>
@@ -2182,7 +2183,7 @@ export default function CrossPrototype() {
             返回社区
           </button>
         </header>
-        {!videoApp && (
+        {!videoApp && page !== 'app' && (
           <nav className="xp-nav" aria-label="跨产品导航">
             <button
               className={page === 'project' ? 'active' : ''}
@@ -2229,12 +2230,12 @@ export default function CrossPrototype() {
           </nav>
         )}
         <div className="xp-main">
-          <div className="xp-pagehead">
+          {page !== 'app' && <div className="xp-pagehead">
             <span className="xp-kicker">
               {videoApp ? 'MakeNow 应用' : meta?.module || '跨产品承接'}
             </span>
             <h1>{videoApp ? '应用承接' : meta?.title || '跨产品原型'}</h1>
-          </div>
+          </div>}
           {body}
         </div>
       </div>

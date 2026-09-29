@@ -12,7 +12,7 @@ const items=[];
 function add(section,module,prefix,ids){for(const id of ids.split(' ')){const file=prefix+id+'.png';if(!fs.existsSync(path.join(evidence,file)))throw new Error('Missing screenshot: '+file);fs.copyFileSync(path.join(evidence,file),path.join(out,file));items.push({section,module,title:labels[id]||id,file});}}
 add('C 端','首页与发现','c-refined-','home topics topic apps app');
 add('C 端','社区与内容','c-refined-','community circles circle post tutorials tutorial work resource search author');
-add('C 端','应用体验与跨端','c-refined-','app-input app-task app-result pc-handoff account-link return-result');
+add('C 端','跨端承接','c-refined-','pc-handoff account-link return-result');
 add('C 端','创作与发布','c-refined-','create publish post-edit publish-status');
 Object.assign(labels,{entry:'创作与发布选择',result:'工作台 · 生成结果',history:'工作台 · 生成记录'});add('C 端','创作与发布','c-create-','entry result history');
 add('C 端','个人与账号','c-refined-','mine my-relations profile-edit my-content drafts records favorites notifications');

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-29",
+  "scope": "研究室AI应用统一MakeNow承接；本地原型",
+  "decision": {
+    "community": [
+      "应用露出",
+      "应用介绍",
+      "关联内容与讨论"
+    ],
+    "execution": "MakeNow",
+    "ecommerceAgent": "未上线，不提供入口",
+    "productionLinks": "用户确认尚未配置，当前仅站内承接演示",
+    "independentLightCreation": "既有社区轻创作保留"
+  },
+  "checks": {
+    "typescript": "passed",
+    "targetedLint": "passed",
+    "mobileWidths": [
+      320,
+      390
+    ],
+    "desktopWidth": 1280,
+    "applicationSamples": [
+      "copy",
+      "background",
+      "repair-color",
+      "video",
+      "restore"
+    ],
+    "horizontalOverflow": 0,
+    "detailToHandoffAndReturn": "passed",
+    "desktopOnlyHandoff": "passed",
+    "pausedActionHidden": "passed",
+    "legacyInputFormAbsent": "passed",
+    "readerRetiredPagesAbsent": "passed",
+    "backendLegacySampleMigration": "passed",
+    "backendPointRecordsExcludeApplicationTasks": "passed",
+    "build": "passed",
+    "independentReview": "passed",
+    "missingEntryDisablesAction": "passed",
+    "legacyCanonicalUrl": "passed",
+    "legacyRedirectConsoleErrors": []
+  },
+  "limitations": [
+    "未接入MakeNow真实定向链接",
+    "未验证MakeNow生产登录、生成、计费、结果回流",
+    "未发布到公网"
+  ],
+  "supersedes": "旧状态核验快照中的AI应用输入、任务、结果部分已失效；其他历史验证保持原日期。"
+}

@@ -4,3 +4,5 @@
 .search-app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.search-app-grid button{text-align:left;padding:0!important;min-width:0}.search-app-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}.search-app-grid strong{display:block;font-size:13px;font-weight:500;margin-top:7px}
 
 .cp-desktop .search-app-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+.cp-root[data-page=search] .search-suggestions section+section{margin-top:18px}.cp-root[data-page=search] .search-suggestions h2{margin-bottom:8px!important}.cp-root[data-page=search] .search-topic-grid{gap:8px}.cp-root:not(.cp-desktop)[data-page=search] .cp-body{padding-top:12px}

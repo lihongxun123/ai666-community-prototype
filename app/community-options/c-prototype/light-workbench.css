@@ -3,3 +3,18 @@
 .cp-root .lw-empty img{display:inline-block;width:40px;height:40px}.cp-root .lw-parameters select{width:auto;margin:0;min-height:0}.cp-root .lw-upload input{display:none}.cp-root .lw-composer textarea{margin:0;border:0;min-height:90px}.cp-root .lw-composer{bottom:70px}.cp-root .lw-submit button{color:white}
 
 .cp-root .lw-history{position:relative;margin:0;border:0;color:#25272b}.cp-root .lw-upload{margin:0}
+
+/* Compact creation controls follow the existing C-end structure. */
+.cp-root .lw-composer{border-radius:16px;padding:16px;box-shadow:0 4px 20px #00000005}
+.cp-root .lw-tabs{gap:18px;padding-right:30px}.cp-root .lw-tabs button{white-space:nowrap}
+.cp-root .lw-references{display:flex;gap:8px;margin-top:16px}
+.cp-root .lw-upload{width:64px;height:64px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;font-size:24px;cursor:pointer;border-radius:10px;background:#f5f5f6;padding:0}
+.cp-root .lw-upload small{font-size:11px;color:#888}
+.cp-root .lw-reference{position:relative;width:64px;height:64px}.cp-root .lw-reference img{width:64px;height:64px;object-fit:contain;background:transparent}.cp-root .lw-reference button{position:absolute;right:-6px;top:-6px;border:0;border-radius:50%;background:#333;color:white;width:22px;height:22px}
+.cp-root .lw-parameters select{border-radius:18px;padding:8px 12px;max-width:140px}
+.cp-root .lw-submit button{border-radius:24px;padding:12px 20px;font-weight:600}
+.cp-root .lw-expand{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;padding:4px;font-weight:600}.cp-root .lw-expand span{font-size:12px;color:#888;font-weight:400}
+.cp-root .lw-collapse{position:absolute;right:12px;top:20px;background:none;border:0;font-size:11px!important;color:#888}
+.cp-root .lw-result>img,.cp-root .lw-result>video{height:auto;max-height:none}
+.cp-root .lw-history .lw-tabs{margin-bottom:16px}.cp-root .lw-history .lw-tabs button{background:none;padding:10px 0;border-radius:0}
+@media(max-width:420px){.cp-root .lw-tabs{gap:12px}.cp-root .lw-tabs button{font-size:13px}.cp-root .lw-composer{padding:12px}.cp-root .lw-stage{min-height:180px;padding:20px 0}}

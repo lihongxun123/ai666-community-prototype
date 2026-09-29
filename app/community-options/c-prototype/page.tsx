@@ -1,4 +1,5 @@
 'use client';
+import {samplePosts} from './content-data';
 import {communityTab,switchCommunityTab} from './community-navigation';
 import {deviceDestination} from '../navigation-model';
 import {loadingLayouts} from '../common-states/catalog';
@@ -14,13 +15,14 @@ import {DesktopContext, desktopLayout} from './desktop';
 import './desktop.css';
 import { TopicsPage, topicPages } from './topics';
 import { ApplicationsPage, applicationPages } from './applications';
-import { ReadingPage, readingPages } from './reading';
+import { ReadingPage, readingPages, workAuthors } from './reading';
 import { PersonalPage, personalPages } from './personal';
 import { RetainedActivities } from './retained-activities';
 import { RetainedShop } from './retained-shop';
 import './prototype.css';
 import './foundation.css';
 import { prototypeStore } from './storage';
+import {useB} from '../b-prototype/store';
 import { PublishedBoundary } from './published';
 export const homePages = [
   {
@@ -79,10 +81,17 @@ const snapshot = () => window.location.search;
 const positions = new Map<string, number>();
 const hydrationSubscribe=()=>()=>{};
 export default function Prototype() {
+  const db=useB();
   const hydrated=useSyncExternalStore(hydrationSubscribe,()=>true,()=>false);
   const search = useSyncExternalStore(subscribe, snapshot, () => ''),
     params = new URLSearchParams(search);
   const rawPage=params.get('page')||'topics';
+  useEffect(()=>{
+    if(!['app-input','app-task','app-result'].includes(rawPage))return;
+    const timer=window.setTimeout(()=>{const url=new URL(location.href);if(!['app-input','app-task','app-result'].includes(url.searchParams.get('page')||''))return;url.searchParams.set('page','app');url.searchParams.delete('state');url.searchParams.delete('task');
+    history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));},0);
+    return()=>window.clearTimeout(timer);
+  },[rawPage]);
   const requestedPage=deviceDestination(rawPage,params.toString(),params.get('device')||'mobile').id, loginOpen=requestedPage==='login';
   const background=loginOpen?prototypeStore.getItem('cp-login-background')||'home':'';
   const [backgroundPage,backgroundQuery]=background.split('?');
@@ -107,7 +116,7 @@ export default function Prototype() {
       prototypeStore.removeItem('cp-result');
     }
     const q = new URLSearchParams(rest || '');
-    if(['apps','app','app-input','app-task','app-result'].includes(id)&&params.has('activity')&&!q.has('activity'))q.set('activity',params.get('activity')||'');
+    if(['apps','app'].includes(id)&&params.has('activity')&&!q.has('activity'))q.set('activity',params.get('activity')||'');
     if (params.get('origin') === 'pc') {
       if (id === 'home') {
         window.location.assign('/community-options/home-prototype');
@@ -160,8 +169,8 @@ export default function Prototype() {
     >
       <div inert={loginOpen||undefined}>
       {desktop && <DesktopHeader active={page} go={go}/>}
-      {!contentOnly && !desktop && <MobileHeader community={['community','tutorials'].includes(page)} communityTab={communityTab(search)} onCommunityTab={switchCommunityTab} title={page==='search'?'搜索':meta?.title||'页面暂不可访问'} back={back} go={go}/>}
-      {desktop && <div className="cp-desktop-heading">{!['aigc','circles','discussion','tutorials','topics','apps','activities','shop'].includes(page)&&<button onClick={back} aria-label="返回"><img src="/home-prototype/icons/arrow-left-line.svg" alt=""/></button>}<h1>{page==='search'?'搜索':meta?.title}</h1></div>}
+      {!contentOnly && !desktop && <MobileHeader topic={page==='topic'} circle={page==='circle'} search={page==='search'} author={page==='post'&&!['loading','error','removed','private'].includes(state)?samplePosts.find(p=>p.id===(params.get('item')||'restore'))?.author:page==='work'&&!['loading','error','removed','private'].includes(state)?db.records.find(r=>r.id==='work-'+((params.get('item')||'restore')==='restore'?'1':params.get('item')))?.public?.author||workAuthors[params.get('item')||'restore']:undefined} community={['community','tutorials'].includes(page)} communityTab={communityTab(search)} onCommunityTab={switchCommunityTab} title={page==='search'?'搜索':meta?.title||'页面暂不可访问'} back={back} go={go}/>}
+      {desktop && <div className="cp-desktop-heading">{!['aigc','circles','discussion','tutorials','topics','apps','activities','shop'].includes(page)&&<button onClick={back} aria-label="返回"><img src="/home-prototype/icons/arrow-left-s-line.svg" alt=""/></button>}<h1>{page==='search'?'搜索':meta?.title}</h1></div>}
       {desktop&&['circles','discussion','tutorials'].includes(page)&&<nav className="cp-circle-navigation" aria-label="圈子栏目">{[['circles','圈子'],['discussion','交流'],['tutorials','官方教程']].map(([id,label])=><button key={id} aria-current={page===id?'page':undefined} onClick={()=>go(id)}>{label}</button>)}</nav>}
       <div className="cp-desktop-workspace"><main className="cp-body" key={search}>
         {state==='loading'&&loadingLayouts[page]?<LayoutSkeleton kind={loadingLayouts[page]}/>:state==='loading'&&detailSkeletonPages.includes(page)?<DetailSkeleton page={page}/>:<PublishedBoundary {...props}>
@@ -185,7 +194,7 @@ export default function Prototype() {
       </main>
       {desktop && <DesktopContext page={page} go={go}/>}
       </div>
-      {!contentOnly && !desktop && !shopPage && page !== 'activity' && page !== 'app' && <MobileNavigation active={['community','tutorials','circles','circle','post','tutorial'].includes(page)?'community':page} go={go} />}
+      {!contentOnly && !desktop && !shopPage && page !== 'activity' && page !== 'app' && page !== 'post' && page !== 'work' && page !== 'notifications' && <MobileNavigation active={['community','tutorials','circles','circle','post','tutorial'].includes(page)?'community':page} go={go} />}
       </div>
       {loginLayer}
     </div>

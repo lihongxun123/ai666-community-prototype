@@ -130,7 +130,7 @@ export function RetainedShop({ page, state, go }: Props) {
 
   return <section className="rs-shop" aria-label="AI 商城">
     <div className="rs-hero">
-      <div><span className="rs-kicker">多元拾光 · 积分权益</span><h2>用积分兑换 AI产品权益</h2><p>可用积分 <strong>{gated ? '—' : displayedBalance.toLocaleString('zh-CN')}</strong></p><button type="button" onClick={showRecords}>兑换记录 <span aria-hidden="true">→</span></button></div>
+      <div><span className="rs-kicker">多元拾光 · 积分权益</span><h2>用积分兑换 AI产品权益</h2><p>可用积分 <strong>{gated ? '—' : displayedBalance.toLocaleString('zh-CN')}</strong></p><button type="button" onClick={showRecords}>兑换记录 <span aria-hidden="true">›</span></button></div>
       <img src="/retained/shop/store-hero.webp" alt="AI 商城创作权益" />
     </div>
     {gated && <div className="rs-gate"><span>登录后可查看积分并兑换商品。</span><button type="button" onClick={() => requireLogin('shop')}>去登录</button></div>}
@@ -148,7 +148,7 @@ export function RetainedShop({ page, state, go }: Props) {
         {panel === 'confirm' && <><div className="rs-summary"><small>{selected.site}</small><h3>{selected.name}</h3><p>{selected.description}</p></div>
           <dl className="rs-details"><div><dt>当前积分</dt><dd>{displayedBalance.toLocaleString('zh-CN')} 积分</dd></div><div><dt>兑换所需</dt><dd>{selected.price} 积分</dd></div><div><dt>兑换后余额</dt><dd>{available && state !== 'insufficient' ? `${(displayedBalance - selected.price).toLocaleString('zh-CN')} 积分` : '—'}</dd></div></dl>
           <p className="rs-help">{state==='failure'?'兑换失败，积分未扣除。请稍后再试。':state==='unavailable'?'该商品暂不可兑换。':soldout ? '该商品库存不足，无法兑换。' : !available || state === 'insufficient' ? '当前积分不足，暂时无法兑换。' : state === 'unknown' ? '兑换结果待确认，请先查看兑换记录。' : '确认后使用积分兑换。'}</p>
-          <div className="rs-actions"><button type="button" onClick={close}>取消</button><button type="button" className="rs-primary" disabled={soldout || !available || state === 'insufficient' || state === 'unknown'} onClick={confirm}>确认兑换</button></div></>}
+          <div className="rs-actions"><button type="button" onClick={close}>取消</button><button type="button" className="rs-primary" disabled={soldout || !available || state === 'insufficient' || state === 'unknown'} onClick={confirm}>确认兑换 · {selected.price} 积分</button></div></>}
         {panel === 'success' && <><div className="rs-success"><span aria-hidden="true">✓</span><strong>{result?.name || selected.name}</strong><p>积分兑换已完成</p></div><div className="rs-code"><span>您的卡密</span><code>DEMO-NOT-VALID</code><button type="button" onClick={copyCode}>{copied ? '已复制' : '复制卡密'}</button></div><small>卡密可在兑换记录中再次查看。</small><div className="rs-actions"><button type="button" onClick={close}>继续逛商城</button><button type="button" className="rs-primary" onClick={() => open('visit')}>前往产品站点</button></div></>}
         {panel === 'records' && <>{recordsBody}<div className="rs-actions"><button type="button" onClick={close}>关闭</button></div></>}
         {panel === 'visit' && <>{visit()?<><p>前往{visitSite||result?.site||selected.site}，兑换记录中的卡密可再次查看。</p><a href={visit()!} target="_blank" rel="noreferrer">打开产品站点</a></>:<p>兑换地址暂不可用。</p>}<div className="rs-actions"><button type="button" className="rs-primary" onClick={close}>知道了</button></div></>}

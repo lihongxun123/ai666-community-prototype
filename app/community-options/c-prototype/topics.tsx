@@ -1,6 +1,7 @@
 'use client';
 /* oxlint-disable next/no-img-element -- Local prototype assets. */
-import { useState,useSyncExternalStore } from 'react';
+import {createPortal} from 'react-dom';
+import { useEffect,useState,useSyncExternalStore } from 'react';
 import {WorkFeed} from './work-feed';
 import {useB} from '../b-prototype/store';
 export const topicPages = [
@@ -30,6 +31,7 @@ const themes = [
   ['anime', '角色创作', '角色设计与表达', 'topic?theme=character'],
   ['restore', '图像修复', '修复方法与案例', 'topic?theme=restore'],
   ['writing', '写作表达', '文字组织与内容表达', 'topic?theme=writing'],
+  ['portrait','人像修复练习','从肤色到细节的修复练习','topic?theme=repair'],
 ];
 type TopicRow={id:string;title:string;status:string;detail?:string};
 const subscribeTopics=(cb:()=>void)=>{window.addEventListener('bp-slots-change',cb);window.addEventListener('storage',cb);return()=>{window.removeEventListener('bp-slots-change',cb);window.removeEventListener('storage',cb);};};
@@ -44,6 +46,8 @@ export function TopicsPage({
   state: string;
   go: (p: string) => void;
 }) {
+  const [shareSlot,setShareSlot]=useState<HTMLElement|null>(null);
+  useEffect(()=>{setShareSlot(document.getElementById('topic-share-slot'))},[]);
   const contentDB=useB();
   useSyncExternalStore(subscribeTopics,topicSnapshot,()=>'');
   const rows:TopicRow[]|null=typeof window==='undefined'?null:(()=>{try{return JSON.parse(sessionStorage.getItem('bp-op-topics')||'null') as TopicRow[]|null;}catch{return null;}})();
@@ -63,14 +67,14 @@ export function TopicsPage({
   const selectedRow=rows?.find(r=>r.id===selectedId);
   const config=typeof window==='undefined'?null:(()=>{try{return JSON.parse(sessionStorage.getItem('bp-op-topic-public-'+selectedId)||'null') as {title:string;refs:string[]}|null;}catch{return null;}})();
   const topic =
-    theme === 'character'
+    theme === 'repair' ? themes[4] : theme === 'character'
       ? themes[1]
       : theme === 'restore'
         ? themes[2]
         : theme === 'writing'
           ? themes[3]
           : themes[0];
-  const single = s === 'single' || theme === 'restore';
+  const single = s === 'single' || theme === 'restore' || theme === 'repair';
   if (s === 'loading')
     return (
       <div className={'cp-content-skeleton '+(page==='topics'?'is-list':'is-detail')} aria-label="加载中" aria-busy="true">
@@ -137,34 +141,25 @@ export function TopicsPage({
   if(rows&&(selectedRow?.status!=='已发布'||!hasVisibleItem(selectedId)))return <section className="cp-state"><h2>专题暂不可访问</h2><button className="cp-button" onClick={()=>go('topics')}>浏览其他专题</button></section>;
   if((theme==='restore'&&!tutorialVisible)||(theme==='writing'&&!appVisible))return <section className="cp-state"><h2>专题暂不可浏览</h2><p>当前没有公开内容。</p><button className="cp-button" onClick={()=>go('topics')}>浏览其他专题</button></section>;
   const intro=selectedRow?.detail||cover[2];
+  const shareButton=<button onClick={async()=>{
+        try{
+          const share=new URL('/community-options/c-prototype',location.origin);share.searchParams.set('page','topic');if(theme)share.searchParams.set('theme',theme);
+          await navigator.clipboard.writeText(share.toString());setNotice('链接已复制');
+        }catch{setNotice('复制失败，请重试');}
+      }}><img src="/home-prototype/icons/share-forward-line.svg" alt=""/>分享</button>;
   return (
     <article className="cp-topic-detail">
       <div className="cp-topic-hero">
         <img src={'/home-prototype/'+cover[0]+'.png'} alt=""/>
         <div><h2>{config?.title||selectedRow?.title||cover[1]}</h2><p>{intro}</p></div>
       </div>
-      <div className="cp-topic-tools"><button onClick={async()=>{
-        try{
-          const share=new URL('/community-options/c-prototype',location.origin);share.searchParams.set('page','topic');if(theme)share.searchParams.set('theme',theme);
-          await navigator.clipboard.writeText(share.toString());setNotice('链接已复制');
-        }catch{setNotice('复制失败，请重试');}
-      }}><img src="/home-prototype/icons/share-forward-line.svg" alt=""/>分享</button></div>
+      {shareSlot?createPortal(shareButton,shareSlot):<div className="cp-topic-tools">{shareButton}</div>}
       {notice && <output>{notice}</output>}
       {config && s!=='empty' ? <section className="cp-section"><h2>精选内容</h2>{config.refs.filter(id=>contentDB.records.some(r=>r.id===id&&r.publicStatus==='公开')).map(id=>{const r=contentDB.records.find(x=>x.id===id)!;const target=targetForRef(id);return target?<button key={id} className="cp-row" onClick={()=>go(target)}><span><small>{r.kind==='app'?'AI应用':r.kind==='work'?'作品':r.kind==='post'?'帖子':r.kind==='tutorial'?'教程':'资源'}</small><strong>{r.public?.title}</strong></span><span>›</span></button>:null;})}</section> : s === 'empty' ? <section className="cp-state"><h2>暂无可浏览内容</h2><button className="cp-button" onClick={()=>go('topics')}>浏览其他专题</button></section> : theme === 'writing' || theme === 'character' ? (
         theme==='writing'&&!appVisible?<p>暂无可浏览内容</p>:
         <section className="cp-section">
           <h2>{theme === 'writing' ? '应用' : '作品'}</h2>
-          <button
-            className="cp-card"
-            onClick={() =>
-              go(theme === 'writing' ? 'app?item=copy' : 'work?item=anime')
-            }
-          >
-            <img src={'/home-prototype/' + cover[0] + '.png'} alt="" />
-            <strong>
-              {theme === 'writing' ? '文案改写' : '风从蓝色花间经过'}
-            </strong>
-          </button>
+          {theme==='character'?<WorkFeed items={[{id:'anime',title:'风从蓝色花间经过',author:'Tide',likes:982}]} go={go}/>:<button className="cp-card" onClick={()=>go('app?item=copy')}><img src={'/home-prototype/'+cover[0]+'.png'} alt=""/><strong>文案改写</strong></button>}
         </section>
       ) : single ? (
         !tutorialVisible?<p>暂无可浏览内容</p>:

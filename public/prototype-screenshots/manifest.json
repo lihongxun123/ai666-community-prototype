@@ -32,7 +32,7 @@
     {
       "section": "C 端",
       "module": "首页与发现",
-      "title": "应用详情",
+      "title": "MakeNow 应用承接",
       "file": "c-refined-app.png",
       "status": "已精调 · 待确认"
     },
@@ -108,42 +108,21 @@
     },
     {
       "section": "C 端",
-      "module": "应用体验与跨端",
-      "title": "应用输入",
-      "file": "c-refined-app-input.png",
-      "status": "待评审"
-    },
-    {
-      "section": "C 端",
-      "module": "应用体验与跨端",
-      "title": "生成任务",
-      "file": "c-refined-app-task.png",
-      "status": "待评审"
-    },
-    {
-      "section": "C 端",
-      "module": "应用体验与跨端",
-      "title": "生成结果",
-      "file": "c-refined-app-result.png",
-      "status": "待评审"
-    },
-    {
-      "section": "C 端",
-      "module": "应用体验与跨端",
+      "module": "跨端承接",
       "title": "电脑端继续",
       "file": "c-refined-pc-handoff.png",
       "status": "待评审"
     },
     {
       "section": "C 端",
-      "module": "应用体验与跨端",
+      "module": "跨端承接",
       "title": "关联账号",
       "file": "c-refined-account-link.png",
       "status": "待评审"
     },
     {
       "section": "C 端",
-      "module": "应用体验与跨端",
+      "module": "跨端承接",
       "title": "选择成果",
       "file": "c-refined-return-result.png",
       "status": "待评审"
@@ -249,7 +228,7 @@
     {
       "section": "C 端",
       "module": "个人与账号",
-      "title": "通知",
+      "title": "消息中心",
       "file": "c-refined-notifications.png",
       "status": "待评审"
     },

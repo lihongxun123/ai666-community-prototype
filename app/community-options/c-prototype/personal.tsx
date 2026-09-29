@@ -1,4 +1,5 @@
 'use client';
+import {MessageCenter} from './messages';
 /* oxlint-disable react/react-compiler -- The login/draft upload buffers and timestamps are mutated only by user actions in this local prototype. */
 import { pointBalance, shopRecords, taskHistory, type PrototypeTask } from './storage';
 /* eslint-disable next/no-img-element, jsx-a11y/media-has-caption -- Bundled images and silent local media previews are intentional in this research prototype. */
@@ -137,7 +138,7 @@ export const personalPages: Page[] = [
   },
   {
     id: 'notifications',
-    title: '通知',
+    title: '消息中心',
     module: '账户',
     states: ['normal', 'empty', 'removed', 'failure', 'login-expired'],
   },
@@ -470,7 +471,7 @@ function PostEdit({ state, go }: Props) {
         const task = JSON.parse(
           sessionStorage.getItem('cp-task') || 'null',
         ) as { item?: string; input?: string; activityCode?:string; activityName?:string; activityTask?:string } | null;
-        if(source==='app-result'){
+        if(source==='light-result'){
           if(task?.activityTask) sessionStorage.setItem('cp-activity-task',task.activityTask); else sessionStorage.removeItem('cp-activity-task');
           if(task?.activityCode&&task?.activityName){
             sessionStorage.setItem('cp-activity','1');
@@ -498,11 +499,6 @@ function PostEdit({ state, go }: Props) {
         } else if (result?.kind === 'video' && result.video) {
           setTitle(result.title || '视频创作结果');
           setFiles([{ name: '已选择的成果', url: result.video, type: 'video/mp4', size: 0 }]);
-        } else if (source === 'app-result' && task?.item === 'copy') {
-          setTitle('文案改写结果');
-          setBody(
-            '用清晰的表达记录创作想法。\n从一张图片开始，整理素材、尝试不同背景，再选择适合的效果。',
-          );
         } else {
           const file =
             source === 'MakeNow'
@@ -1386,7 +1382,7 @@ function Drafts({ state, go }: Props) {
 function Records({ state, go }: Props) {
   const [tasks, setTasks] = useState<PrototypeTask[]>([]);
   useEffect(() => {
-    const refresh = () => setTasks(taskHistory());
+    const refresh = () => setTasks(taskHistory().filter(t=>t.item?.startsWith('light-')));
     const timer = window.setTimeout(refresh, 0);
     window.addEventListener('cp-task-change', refresh);
     return () => { window.clearTimeout(timer); window.removeEventListener('cp-task-change', refresh); };
@@ -1407,15 +1403,15 @@ function Records({ state, go }: Props) {
         ) : state === 'empty' || tasks.length === 0 ? (
           <Empty
             title="暂无生成记录"
-            detail="使用 AI 应用后，可在这里查看任务。"
-            action="浏览应用"
-            onAction={() => go('apps')}
+            detail="社区轻创作记录在此查看；AI 应用任务和结果请到 MakeNow 查看。"
+            action="开始创作"
+            onAction={() => go('create')}
           />
         ) : <div className="cp-list">{tasks.map((task, index) => {
           const status = task.status || 'normal';
           const item = task.item || 'copy';
           const id = task.id || '';
-          const target = item.startsWith('light-') ? 'create' : waiting.includes(status) || ['cancelled', 'unaccepted', 'failed'].includes(status) ? 'app-task' : 'app-result';
+          const target = 'create';
           const label = status === 'failed' ? '失败' : status === 'cancelled' ? '已取消' : status === 'unaccepted' ? '未受理' : waiting.includes(status) ? '处理中' : '已完成';
           return <LinkRow key={id || index} title={labels[item] || item} detail={`${label}${task.input ? ' · '+task.input.slice(0,40) : ''}${task.createdAt ? ' · '+new Date(task.createdAt).toLocaleDateString('zh-CN') : ''}`} tag={label} onClick={() => go(`${target}?item=${encodeURIComponent(item)}&task=${encodeURIComponent(id)}`)} />;
         })}</div>}
@@ -1495,41 +1491,7 @@ function Favorites({ state, go }: Props) {
   );
 }
 
-function Notifications({ state, go }: Props) {
-  return (
-    <>
-      <Head title="通知" />
-      <Gate state={state} go={go}>
-        {state === 'empty' ? (
-          <Empty
-            title="暂无通知"
-            detail="评论回复、审核和活动结果会显示在这里。"
-          />
-        ) : state === 'removed' ? (
-          <LinkRow
-            title="原内容已失效"
-            detail="处理结果仍可查看。"
-            onClick={() => go('my-content')}
-          />
-        ) : (
-          <div className="cp-list">
-            <LinkRow
-              title="作品修改审核结果"
-              detail="9月25日 · 本次修改已通过"
-              onClick={() => go('my-content')}
-              tag="未读"
-            />
-            <LinkRow
-              title="活动投稿资格更新"
-              detail="9月24日 · 查看本人投稿进度"
-              onClick={() => go('submissions')}
-            />
-          </div>
-        )}
-      </Gate>
-    </>
-  );
-}
+function Notifications({state,go}:Props){return <Gate state={state} go={go}><MessageCenter state={state} go={go}/></Gate>;}
 
 function Activities({ state, go }: Props) {
   return (
@@ -1676,7 +1638,7 @@ function Submissions({ state, go }: Props) {
                 <div><dt>活动评审</dt><dd>{record.contentStatus==='approved'?'已通过':record.contentStatus==='rejected'?'未通过':record.contentStatus==='correction'?'待补正':'待评审'}</dd></div>
                 <div><dt>奖励</dt><dd>{record.reward==='issued'?'已发放':record.reward==='ready'?'待发放':'待确认'}</dd></div>
               </dl>
-              <button type="button" onClick={()=>go('activity?item='+(record.activityCode||'ai_image_challenge'))}>查看活动 →</button>
+              <button type="button" onClick={()=>go('activity?item='+(record.activityCode||'ai_image_challenge'))}>查看活动 ›</button>
             </article>)}
             {records.some(record=>record.reviewReason) && <Notice>{records.filter(record=>record.reviewReason).map(record=>`${record.activityName || '活动'}：${record.reviewReason}`).join('；')}</Notice>}
           </>
@@ -1690,7 +1652,7 @@ function Points({ state, go }: Props) {
   const earned = sessionStorage.getItem('cp-checkin') === 'done';
   const exchanges = shopRecords();
   const redeemed = sessionStorage.getItem('cp-redeemed') === '1';
-  const tasks = taskHistory();
+  const tasks = taskHistory().filter(t=>t.item?.startsWith('light-'));
   const pending = tasks.filter(task=>!['completed','partial','cancelled','unaccepted','failed'].includes(task.status)).reduce((sum,task)=>sum+(task.points||0),0);
   return (
     <Gate state={state} go={go}>
@@ -1738,7 +1700,7 @@ function Points({ state, go }: Props) {
             const amount=task.status==='partial'?(task.settledPoints??task.points??0):(task.points??0);
             const item=task.item||'copy';
             const id=task.id||'';
-            return <LinkRow key={id||index} title={( {copy:'文案改写',background:'产品换背景',video:'产品短片制作',restore:'照片修复'} as Record<string,string>)[item]||'AI 应用生成'} detail={`${released?'费用已释放':consumed?'费用已结算':'费用占用中'} · ${task.createdAt?new Date(task.createdAt).toLocaleDateString('zh-CN'):'生成任务'}`} tag={(released?'+':'−')+String(released?task.points||0:amount)} onClick={()=>go(`${consumed?'app-result':'app-task'}?item=${encodeURIComponent(item)}&task=${encodeURIComponent(id)}`)}/>;
+            return <LinkRow key={id||index} title={( {copy:'文案改写',background:'产品换背景',video:'产品短片制作',restore:'照片修复'} as Record<string,string>)[item]||'AI 应用生成'} detail={`${released?'费用已释放':consumed?'费用已结算':'费用占用中'} · ${task.createdAt?new Date(task.createdAt).toLocaleDateString('zh-CN'):'生成任务'}`} tag={(released?'+':'−')+String(released?task.points||0:amount)} onClick={()=>go(`create?item=${encodeURIComponent(item)}&task=${encodeURIComponent(id)}`)}/>;
           })}
         </div>
       )}

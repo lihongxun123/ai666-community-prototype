@@ -3,3 +3,5 @@
 .wf-text .wf-caption>strong{display:none}.wf-text .wf-poem{padding-bottom:38px}.wf-poem h3{margin:12px 0;font-size:19px}.wf-poem p{margin:0}
 
 .wf-caption>div>span{display:flex;align-items:center;gap:3px}.wf-caption .wf-heart{width:12px;height:12px;filter:invert(1)}.wf-text .wf-heart{filter:none}
+
+.wf-caption .wf-author{min-width:0;gap:5px}.wf-author>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wf-caption .wf-avatar{width:18px;height:18px;border-radius:50%;object-fit:cover;flex:none}.wf-caption>div>span:last-child{flex-shrink:0}

@@ -1,7 +1,9 @@
 'use client';
 
 /* eslint-disable next/no-img-element -- Images belong to the local prototype asset set. */
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
+import {createPortal} from 'react-dom';
+import {ActionBar} from './content-actions';
 import {prototypeStore as storage} from './storage';
 import {samplePosts,postTarget,circleTarget,type SamplePost} from './content-data';
 import {useB} from '../b-prototype/store';
@@ -12,6 +14,7 @@ type Circle={id:string;name:string;description:string;cover:string;members:numbe
 
 // Fictional content used only by this concept prototype. The two shared circles keep their B-end state.
 const demoCircles:Circle[]=[
+ {id:'repair',name:'修复交流圈',description:'旧照修复与人像细节交流',cover:'portrait',members:326},
   {id:'image',name:'影像练习圈',description:'照片修复、构图与视觉叙事',cover:'restore',members:1286},
   {id:'visual',name:'视觉创作圈',description:'产品视觉、光线与配色',cover:'perfume',members:963},
   {id:'writing',name:'写作灵感圈',description:'日常观察、短篇与表达练习',cover:'writing',members:742},
@@ -19,17 +22,15 @@ const demoCircles:Circle[]=[
   {id:'life',name:'生活美学圈',description:'空间、器物与生活记录',cover:'interior',members:525},
   {id:'character',name:'角色创作圈',description:'人物设定、故事与画面',cover:'anime',members:409},
 ];
-const demoReplies:Record<string,number>={restore:12,'image-window':9,'image-crop':18,'image-album':7,light:14,question:11,'visual-space':6,'writing-commute':16,'writing-sound':8,'film-opening':13,'film-cut':5,'life-desk':10,'life-colors':4,'character-expression':21,'character-objects':7};
 const img=(name:string)=>`/home-prototype/${name}.png`;
-const isEmbed=()=>typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('embed')==='1';
 const signedIn=()=>storage.getItem('cp-auth')==='1';
 function joinKey(id:string){return 'cp-circle-joined:'+id}
 function isJoined(id:string){
-  if(!signedIn()&&!isEmbed())return false;
+  if(typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('state')==='guest')return false;
   const saved=storage.getItem(joinKey(id));
   if(saved!==null)return saved==='1';
   if(id==='image'&&storage.getItem('cp-circle-joined')!==null)return storage.getItem('cp-circle-joined')==='1';
-  return isEmbed()&&(id==='image'||id==='visual');
+  return id==='image'||id==='visual';
 }
 function loginFor(go:Props['go']){
   if(typeof window!=='undefined'){
@@ -54,7 +55,7 @@ function circles():Circle[]{
 }
 function closed(id:string){return adminRows()?.some(row=>row.id==='ci-'+id&&row.status==='已关闭')||false}
 function rules(id:string){
-  try{return JSON.parse(storage.getItem('bp-op-circle-public-ci-'+id)||'null') as {intro?:string;rules?:string;announcement?:string}|null;}catch{return null;}
+  try{return JSON.parse(storage.getItem('bp-op-circle-public-ci-'+id)||'null') as {intro?:string;announcement?:string}|null;}catch{return null;}
 }
 function State({title,body,action,onAction}:{title:string;body?:string;action?:string;onAction?:()=>void}){
   return <div className="circle-state"><strong>{title}</strong>{body&&<p>{body}</p>}{action&&<button type="button" onClick={onAction}>{action}</button>}</div>;
@@ -89,10 +90,12 @@ function FeedCard({item,go}:{item:SamplePost;go:Props['go']}){
     <button type="button" className="circle-feed-open" onClick={open}>
       <strong>{item.title}</strong><span>{item.summary}</span>{item.image&&<img src={img(item.image)} alt=""/>}
     </button>
-    <div className="circle-feed-foot"><span>讨论 {demoReplies[item.id]||0}</span><button type="button" onClick={open}>查看帖子 <span aria-hidden="true">›</span></button></div>
+    <ActionBar kind="post" target={postTarget(item.id)} title={item.title} go={go} onComment={()=>go(postTarget(item.id)+'&discussion=1')}/>
   </article>;
 }
 export function CirclePage({state,go}:Props){
+  const [publishSlot,setPublishSlot]=useState<HTMLElement|null>(null);
+  useEffect(()=>{setPublishSlot(document.getElementById('circle-publish-slot'))},[]);
   const db=useB();
   const id=typeof window==='undefined'?'image':new URLSearchParams(window.location.search).get('item')||'image';
   const circle=circles().find(c=>c.id===id);
@@ -115,11 +118,10 @@ export function CirclePage({state,go}:Props){
     setJoined(!joined);setNotice(joined?'已退出圈子，已发布内容仍会保留':'已加入圈子');
   };
   return <div className="circle-pages circle-detail-page">
-    <div className="circle-detail-intro"><img className="circle-detail-avatar" src={img(circle.cover)} alt=""/><div className="circle-detail-copy"><h1>{circle.name}</h1><p>{publicRules?.intro||circle.description}</p><span className="circle-member-count">{circle.members.toLocaleString('zh-CN')} 人加入</span></div><button type="button" className="circle-primary circle-join" onClick={join}>{joined?'退出圈子':'加入圈子'}</button></div>
+    <div className="circle-detail-intro"><img className="circle-detail-avatar" src={img(circle.cover)} alt=""/><div className="circle-detail-copy"><h1>{circle.name}</h1><p>{publicRules?.intro||circle.description}</p><span className="circle-member-count">{circle.members.toLocaleString('zh-CN')} 人加入</span></div><button type="button" className={(joined?'circle-secondary':'circle-primary')+' circle-join'} onClick={join}>{joined?'退出圈子':'加入圈子'}</button></div>
     {notice&&<output className="circle-notice">{notice}</output>}
     {publicRules?.announcement&&<p className="circle-announcement"><strong>圈子公告</strong>{publicRules.announcement}</p>}
-    <details className="circle-rules"><summary>圈子规则 <span>展开查看</span></summary><p>{publicRules?.rules||'尊重原创，围绕主题分享自己的实践与想法；引用他人的作品时，请保留原内容入口。'}</p></details>
-    <section className="circle-feed"><div className="circle-feed-heading"><h2>圈内帖子</h2><button type="button" className="circle-secondary circle-publish" onClick={publish}>在圈内发布</button></div>
+    <section className="circle-feed">{publishSlot?createPortal(<button type="button" className="circle-nav-publish" onClick={publish}>发布</button>,publishSlot):<div className="circle-feed-heading"><button type="button" className="circle-secondary circle-publish" onClick={publish}>在圈内发布</button></div>}
       {state==='empty'||!feed.length?<State title="还没有公开帖子" body="加入圈子，分享你的第一次尝试。" action="发布帖子" onAction={publish}/>:feed.map(p=><FeedCard key={p.id} item={p} go={go}/>)}
     </section>
   </div>;

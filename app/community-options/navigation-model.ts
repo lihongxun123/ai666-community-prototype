@@ -1,6 +1,7 @@
 // Shared content identities, separate device navigation.
 export function deviceDestination(id:string,query:string,device:string){
  const q=new URLSearchParams(query);
+ if(['app-input','app-task','app-result'].includes(id)){id='app';q.delete('state');q.delete('task');}
  if(device==='pc'&&id==='community'){id=q.get('tab')==='talk'?'discussion':q.get('tab')==='tutorials'?'tutorials':'aigc';q.delete('tab');}
  else if(device!=='pc'&&['aigc','discussion','tutorials'].includes(id)){q.set('tab',id==='discussion'?'talk':id==='tutorials'?'tutorials':'works');id='community';}
  return {id,query:q.toString()};

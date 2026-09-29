@@ -42,6 +42,7 @@ export type CrossMeta = {
   states: string[];
 };
 export const crossPages: CrossMeta[] = [
+  {id:'app',title:'MakeNow 应用承接',module:'AI应用承接',states:['normal','unavailable']},
   {
     id: 'project',
     title: '公开项目',

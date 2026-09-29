@@ -1,5 +1,6 @@
 'use client';
-import {ActionBar,interactionTarget} from './content-actions';
+import {createPortal} from 'react-dom';
+import {ActionBar,interactionTarget,openComments} from './content-actions';
 export {ActionBar} from './content-actions';
 import {SearchSuggestions,rememberSearch} from '../search-suggestions';
 /* eslint-disable next/no-img-element -- Local prototype images are served from the existing public asset set. */
@@ -10,8 +11,8 @@ import {
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import './reading.css';
 import {CirclesPage,CirclePage} from './circle-pages';
-import {WorkDetailsExtras,WorkMedia} from './work-details-extras';
-import {WorkFeed} from './work-feed';
+import {WorkDetailsExtras,WorkMedia,remixWork,workCreationInfo} from './work-details-extras';
+import {WorkFeed,workRatios} from './work-feed';
 import {CommunityLanding,communityTutorials} from './community-landing';
 import { useB } from '../b-prototype/store';
 import {samplePosts,sampleCircles,postTarget,circleTarget} from './content-data';
@@ -103,7 +104,7 @@ export const readingPages: PageMeta[] = [
     id: 'search',
     title: '搜索',
     module: '发现',
-    states: ['normal', 'idle', 'empty', 'error', 'partial'],
+    states: ['normal', 'idle', 'empty', 'error'],
   },
   {
     id: 'author',
@@ -129,7 +130,8 @@ export const readingPages: PageMeta[] = [
   },
 ];
 
-const img = (name: string) => `/home-prototype/${name}.png`;
+const searchWorkCovers:Record<string,string>={'repair-portrait':'portrait','repair-interior':'interior','repair-color':'anime','repair-pet':'cat'};
+const img = (name: string) => `/home-prototype/${searchWorkCovers[name]||name}.png`;
 const icon = (name: string) => `/home-prototype/icons/${name}-line.svg`;
 const signedIn = () =>
   typeof window !== 'undefined' && sessionStorage.getItem('cp-auth') === '1';
@@ -279,7 +281,7 @@ function Jump({
         <strong>{title}</strong>
         {desc && <small>{desc}</small>}
       </span>
-      <Icon name="arrow-right" />
+      <Icon name="arrow-right-s" />
     </button>
   );
 }
@@ -296,6 +298,12 @@ export function Comments({
   const contentKey=interactionTarget()||kind;
   const pendingKey = `reading-pending-comment:${contentKey}`;
   const inputRef=useRef<HTMLTextAreaElement>(null);
+  const dialogRef=useRef<HTMLDialogElement>(null),previousOverflow=useRef(''),modalOpen=useRef(false);
+  const [likes,setLikes]=useState<Record<string,boolean>>(()=>{try{return JSON.parse(sessionStorage.getItem('comment-likes:'+contentKey)||'{}')}catch{return {}}});
+  const like=(id:string)=>{const next={...likes,[id]:!likes[id]};setLikes(next);sessionStorage.setItem('comment-likes:'+contentKey,JSON.stringify(next))};
+  const show=()=>{if(dialogRef.current?.open)return;previousOverflow.current=document.body.style.overflow;modalOpen.current=true;document.body.style.overflow='hidden';dialogRef.current?.showModal()};
+  const close=()=>{dialogRef.current?.close();modalOpen.current=false;document.body.style.overflow=previousOverflow.current};
+  useEffect(()=>{window.addEventListener('open-content-comments',show);if(new URLSearchParams(location.search).get('discussion')==='1')show();return()=>{window.removeEventListener('open-content-comments',show);if(modalOpen.current)document.body.style.overflow=previousOverflow.current}},[]);
   type Entry={id:string;text:string;reply:string;edited?:boolean};
   const commentKey='reading-comments:'+contentKey;
   const [entries,setEntries]=useState<Entry[]>(()=>{try{const saved=sessionStorage.getItem(commentKey);if(saved)return JSON.parse(saved);const text=sessionStorage.getItem('reading-comment:'+contentKey);return text&&sessionStorage.getItem('reading-comment-deleted:'+contentKey)!=='1'?[{id:'legacy',text,reply:sessionStorage.getItem('reading-reply:'+contentKey)||''}]:[];}catch{return [];}});
@@ -339,14 +347,14 @@ export function Comments({
     setError('评论已提交');
   };
   return (
+    <><section className="reading-comment-preview"><header><h2>评论 <span>{2+entries.length}</span></h2><button onClick={show}>查看全部 <Icon name="arrow-right-s"/></button></header><button className="reading-comment-peek" onClick={show}><span className="reading-avatar mini">周</span><span><small>周末观察</small><span>这一步如果只有手机，先准备什么最合适？</span></span></button><button className="reading-comment-start" onClick={()=>{show();focusEditor()}}>写下你的看法</button></section>
+    <dialog ref={dialogRef} className="reading-comments-dialog" aria-label="全部评论" onClose={()=>{modalOpen.current=false;document.body.style.overflow=previousOverflow.current}} onClick={e=>{if(e.target===e.currentTarget)close()}}>
     <section id="reading-comments" className="reading-comments">
-      <h2>
-        评论 <span>{2+entries.length}</span>
-      </h2>
+      <header className="reading-comments-heading"><h2>全部评论 <span>{2+entries.length}</span></h2><button autoFocus aria-label="关闭评论" onClick={close}><Icon name="close"/></button></header><div className="reading-comments-list">
       <div className="reading-comment">
         <span className="reading-avatar mini">周</span>
         <div>
-          <strong>周末观察</strong>
+          <strong>周末观察</strong><small className="reading-comment-time">9月24日 11:00</small>
           <p>这一步如果只有手机，先准备什么最合适？</p>
           <button
             type="button"
@@ -359,6 +367,7 @@ export function Comments({
           >
             回复
           </button>
+          <button className="reading-link" aria-pressed={!!likes.sample} onClick={()=>like('sample')}>{likes.sample?'已赞 1':'赞'}</button>
           <button
             type="button"
             className="reading-link reading-expand-replies"
@@ -377,7 +386,7 @@ export function Comments({
       </div>
       {entries.map(entry=><div className="reading-comment" key={entry.id}><span className="reading-avatar mini">我</span><div><strong>我 {entry.reply&&<small>回复 {entry.reply}</small>} {entry.edited&&<small>已编辑</small>}</strong><p>{entry.text}</p><button type="button" className="reading-link" onClick={()=>{setText(entry.text);setEditing(entry.id);setReplyTo('');focusEditor();}}>编辑</button><button type="button" className="reading-link" onClick={()=>setConfirmDelete(entry.id)}>删除</button></div></div>)}
       {confirmDelete&&<div className="reading-delete-confirm" aria-label="删除评论确认"><span>删除这条评论？</span><button onClick={()=>setConfirmDelete('')}>取消</button><button onClick={()=>{persist(entries.filter(e=>e.id!==confirmDelete));if(editing===confirmDelete){setEditing('');setText(sessionStorage.getItem(pendingKey)||'');}setConfirmDelete('');}}>删除</button></div>}
-      <div className="reading-comment-editor">
+      </div><div className="reading-comment-editor">
       {editing&&<p className="reading-reply-target">编辑评论 <button type="button" onClick={()=>{setEditing('');setText('');}}>取消</button></p>}
       {replyTo && (
         <p className="reading-reply-target">
@@ -396,7 +405,7 @@ export function Comments({
           if(!editing)sessionStorage.setItem(pendingKey,e.target.value);
           setError('');
         }}
-        placeholder="说点什么…"
+        placeholder={replyTo?'回复 '+replyTo:'写下你的看法'}
       />
       <div className="reading-compose">
         <span className={text.trim().length > 1000 ? 'reading-over' : ''}>
@@ -405,8 +414,8 @@ export function Comments({
         <Button disabled={!text.trim()||text.trim().length>1000} onClick={send}>{editing ? '保存修改' : '发布'}</Button>
       </div>
       </div>
-      {error && <output className="reading-feedback">{error}</output>}
-    </section>
+      {error && <output className="reading-feedback" role="status">{error}</output>}
+    </section></dialog></>
   );
 }
 
@@ -462,7 +471,7 @@ function detailState({ page, state, go }: Props) {
 function Community({state,go}:Props){return <CommunityLanding state={state} go={go}/>;}
 
 function Post({ state, go }: Props) {
-  useEffect(()=>{if(new URLSearchParams(location.search).get('discussion')==='1')requestAnimationFrame(()=>document.getElementById('reading-comments')?.scrollIntoView());},[]);
+
   const id=typeof window==='undefined'?'restore':new URLSearchParams(window.location.search).get('item')||'restore';
   const post=samplePosts.find(p=>p.id===id);
   const db=useB();
@@ -472,19 +481,18 @@ function Post({ state, go }: Props) {
   return (
     <>
       <Head title="帖子" go={go} back="community" />
-      <h2 className="reading-title">{post.title}</h2>
-      <Persona go={go} name={post.author} aside={post.date} />
+      <header className="reading-post-heading"><div className="reading-post-pc-author"><Persona go={go} name={post.author}/></div><h2 className="reading-title">{post.title}</h2></header>
       <div className="reading-prose">
         {post.body.map(p=><p key={p}>{p}</p>)}
       </div>
       <Picture name={post.image} alt={post.title} />
-      {post.circle&&sampleCircles.some(c=>c.name===post.circle)&&<button
+      <div className="reading-post-meta"><time>{post.date}</time>{post.circle&&sampleCircles.some(c=>c.name===post.circle)&&<button
         type="button"
         className="reading-link"
         onClick={() => go(circleTarget(sampleCircles.find(c=>c.name===post.circle)!.id))}
       >
         来自 · {currentCircles().find(c=>c.id===sampleCircles.find(c=>c.name===post.circle)?.id)?.name||post.circle}
-      </button>}
+      </button>}</div>
       {post.reference&&(state === 'partial'||(post.reference==='work?item=restore'&&db.records.find(r=>r.id==='work-1')?.publicStatus!=='公开') ? (
         <Panel
           title="引用作品暂时不可访问"
@@ -501,8 +509,7 @@ function Post({ state, go }: Props) {
         />
       ))}
       <ActionBar
-        kind="post"
-        go={go}
+        kind="post" onComment={openComments} go={go}
         guest={state === 'guest'}
         failOnAction={state === 'action-error'}
       />
@@ -674,7 +681,8 @@ function Tutorial({ state, go }: Props) {
   );
 }
 
-const workAuthors: Record<string, string> = {
+export const workAuthors: Record<string, string> = {
+ 'repair-portrait':'修复笔记','repair-interior':'鹿与光','repair-color':'修复研究员','repair-pet':'小鹿',
   girl: '周与斯',
   cat: '小鹿',
   perfume: '鹿与光',
@@ -692,6 +700,10 @@ const workAuthors: Record<string, string> = {
   letter: '林间',
 };
 const workVariants: Record<string, { title: string; description: string }> = {
+ 'repair-portrait':{title:'人像修复：保留自然肤色',description:'人像修复练习，比较肤色与明暗，保留原有神态。'},
+ 'repair-interior':{title:'空间照片修复练习',description:'修复背景中的杂乱边缘，保留空间光线。'},
+ 'repair-color':{title:'角色图像修复与配色',description:'调整图像局部色彩，修复不自然的边缘。'},
+ 'repair-pet':{title:'宠物照片细节修复',description:'保留毛发层次与表情，修复局部模糊。'},
   letter:{title:'写给夏天的一封信',description:'把一个普通的下午，写成自己的故事。'},
   headphones: {
     title: '只听见风的声音',
@@ -783,14 +795,14 @@ function Work({ state, go }: Props) {
         <WorkMedia image={img(workItem)} title={work.title}/>
       )}
       <h2 className="reading-title">{state === 'text' ? '写给夏天的一封信' : work.title}</h2>
-      <Persona go={go} name={publicWork?.author||workAuthors[workItem] || '林间'} />
+      <div className="reading-work-pc-author"><Persona go={go} name={publicWork?.author||workAuthors[workItem] || '林间'} /></div>
       {(state === 'text' || workItem === 'letter') && (
         <article className="reading-text-work">
           <p>海风穿过街角，晒热的石板路渐渐安静下来。我们把一天的好心情留在落日里，等下一次相遇。</p>
         </article>
       )}
       <p className="reading-prose">{work.description}</p>
-      <div className="reading-inline reading-work-meta">
+      <div className="reading-inline reading-work-meta"><time>9月24日</time>
         <Tag>{state === 'text'||workItem==='letter' ? '文字' : videoMode ? '视频' : '图片'}</Tag>
         {workItem==='restore'&&state!=='text'&&<Tag>影像处理</Tag>}
       </div>
@@ -821,7 +833,7 @@ function Work({ state, go }: Props) {
         </>
       )}
       <ActionBar
-        kind="work"
+        kind="work" onComment={openComments} primary={workCreationInfo[workItem]?{label:'一键同款',onClick:()=>{remixWork(workItem,state,go)}}:undefined}
         go={go}
         guest={state === 'guest'}
         failOnAction={state === 'action-error'}
@@ -836,6 +848,8 @@ function Work({ state, go }: Props) {
 }
 
 const searchTypes = [
+ {label:'AI 应用',target:'app?item=repair-color',title:'照片色彩修复',cover:'portrait'},
+ {label:'专题',target:'topic?theme=repair',title:'人像修复练习',cover:'portrait'},
   { label: '作品', target: 'work', title: '旧照修复练习', cover: 'restore' },
   {
     label: '帖子',
@@ -882,7 +896,20 @@ const searchTypes = [
   { label: '圈子', target: 'circle', title: '影像练习圈', cover: 'restore' },
   { label: '作者', target: 'author', title: '林间', cover: 'girl' },
 ];
+function SearchContinuation({load}:{load:()=>void}) {
+  const ref=useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+    const observer=new IntersectionObserver(entries=>{
+      if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();load();}
+    },{rootMargin:'160px'});
+    if(ref.current)observer.observe(ref.current);
+    return ()=>observer.disconnect();
+  },[load]);
+  return <div ref={ref} style={{height:1}} aria-hidden="true"/>;
+}
 function Search({ state, go }: Props) {
+  const [searchSlot,setSearchSlot]=useState<HTMLElement|null>(null);
+  useEffect(()=>{setSearchSlot(document.getElementById('community-search-slot'))},[]);
   const db=useB();
   const source =
     typeof window === 'undefined'
@@ -902,7 +929,7 @@ function Search({ state, go }: Props) {
     try{return JSON.parse(sessionStorage.getItem('cp-search-count-'+source)||'{}')}catch{return {}}
   });
   const increase=(type:string)=>{
-    const next={...searchCounts,[type]:(searchCounts[type]||2)+2};
+    const next={...searchCounts,[type]:(searchCounts[type]||4)+4};
     setSearchCounts(next);
     sessionStorage.setItem('cp-search-count-'+source,JSON.stringify(next));
   };
@@ -911,14 +938,14 @@ function Search({ state, go }: Props) {
       ? null
       : new URLSearchParams(window.location.search).get('q');
   const query =
-      typed ?? initialQuery ?? (state==='idle'?'':old?.query) ?? (['empty','partial','error'].includes(state) ? '修复' : ''),
+      typed ?? initialQuery ?? (state==='idle'?'':old?.query) ?? (['empty','error'].includes(state) ? '修复' : ''),
     submitted =
       sent ??
       initialQuery ??
       (state==='idle'?'':old?.submitted) ??
-      (['empty','partial','error'].includes(state) ? '修复' : ''),
+      (['empty','error'].includes(state) ? '修复' : ''),
     scope =
-      chosen ?? old?.scope ?? (source === 'community' ? '社区内容' : '全部');
+      chosen ?? (['作品','帖子','教程','AI 应用','专题','圈子','作者'].includes(old?.scope) ? old.scope : (source === 'community' ? '帖子' : '作品'));
   const persist = (q: string, term: string, sc: string) =>
     sessionStorage.setItem(
       'cp-search-' + source,
@@ -926,16 +953,14 @@ function Search({ state, go }: Props) {
     );
   const visiblePosts=samplePosts.filter(p=>(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开'));
   const visibleAuthors=Array.from(new Set([...visiblePosts.map(p=>p.author),...Object.entries(workAuthors).filter(([id])=>id!=='restore'||db.records.find(r=>r.id==='work-1')?.publicStatus==='公开').map(([,name])=>name)]));
-  const dynamicTypes=[...searchTypes.filter(x=>x.target!=='post'&&x.target!=='circle'&&x.target!=='author'),...visiblePosts.map(p=>({label:'帖子',target:postTarget(p.id),title:p.title,cover:p.image,summary:p.summary})),...currentCircles().filter(c=>!closedCircle(c.id)).map(c=>({label:'圈子',target:circleTarget(c.id),title:c.name,cover:c.cover,summary:c.description})),...visibleAuthors.map(name=>({label:'作者',target:'author?name='+encodeURIComponent(name),title:name,cover:'girl',summary:''}))];
+  const dynamicTypes=[...searchTypes.filter(x=>!['作品','帖子','教程','圈子','作者'].includes(x.label)),...Object.entries(workVariants).filter(([id])=>id!=='restore'||db.records.find(r=>r.id==='work-1')?.publicStatus==='公开').map(([id,w])=>({label:'作品',target:'work?item='+id,title:w.title,cover:id,summary:w.description})),...communityTutorials.filter(t=>t.id!=='restore'||db.records.find(r=>r.id==='tutorial-1')?.publicStatus==='公开').map(t=>({label:'教程',target:'tutorial?item='+t.id,title:t.title,cover:t.cover,summary:t.sections.flat().join(' ')})),...visiblePosts.map(p=>({label:'帖子',target:postTarget(p.id),title:p.title,cover:p.image,summary:p.summary})),...currentCircles().filter(c=>!closedCircle(c.id)).map(c=>({label:'圈子',target:circleTarget(c.id),title:c.name,cover:c.cover,summary:c.description})),...visibleAuthors.map(name=>({label:'作者',target:'author?name='+encodeURIComponent(name),title:name,cover:'girl',summary:''}))];
   const matches = dynamicTypes.filter(
     (x) =>
       (x.target!=='work'||db.records.find(r=>r.id==='work-1')?.publicStatus==='公开')&&
       (x.target!=='tutorial'||db.records.find(r=>r.id==='tutorial-1')?.publicStatus==='公开')&&
       (x.target!=='topic?theme=restore'||db.records.find(r=>r.id==='tutorial-1')?.publicStatus==='公开')&&
       (x.target!=='app?item=copy'||db.records.find(r=>r.id==='app-1')?.publicStatus==='公开')&&
-      (scope === '全部' ||
-        (scope === '社区内容' && ['帖子', '教程', '圈子'].includes(x.label)) ||
-        x.label === scope) &&
+      (x.label === scope) &&
       (!submitted || x.title.includes(submitted)||('summary' in x&&typeof x.summary==='string'&&x.summary.includes(submitted))),
   );
   const types = ['作品', '帖子', '教程', 'AI 应用', '专题', '圈子', '作者'];
@@ -943,12 +968,11 @@ function Search({ state, go }: Props) {
     source === 'community'
       ? ['帖子', '教程', '圈子', '作品', 'AI 应用', '专题', '作者']
       : types;
-  return (
-    <>
-      <form
+  const searchForm=(<form
         className="reading-search"
         onSubmit={(e) => {
           e.preventDefault();
+          setRetried(true);
           setSent(query.trim());
           rememberSearch(query.trim());
           setSearchCounts({});
@@ -964,13 +988,12 @@ function Search({ state, go }: Props) {
           onChange={(e) => setTyped(e.target.value)}
         />
         <button type="submit">搜索</button>
-      </form>
+      </form>);
+  return (
+    <>
+      {searchSlot?createPortal(searchForm,searchSlot):searchForm}
       {submitted&&<div className="reading-tabs search-result-tabs" aria-label="搜索结果分类">
-        {[
-          '全部',
-          ...(source === 'community' ? ['社区内容'] : []),
-          ...types,
-        ].map((t) => (
+        {types.map((t) => (
           <button
             key={t}
             className={t === scope ? 'active' : ''}
@@ -986,22 +1009,9 @@ function Search({ state, go }: Props) {
       {!submitted ? (
         <SearchSuggestions go={go} search={term=>{setTyped(term);setSent(term);rememberSearch(term);persist(term,term,scope);}}/>
       ) : state === 'error' && !retried ? (
-        <Panel
-          title="搜索失败"
-          action="重试"
-          onAction={() => setRetried(true)}
-        />
-      ) : state === 'empty' || !matches.length ? (
-        <Panel
-          title="没有找到相关内容"
-          action="清除条件"
-          onAction={() => {
-            setTyped('');
-            setSent('');
-            setChosen('全部');
-            persist('', '', '全部');
-          }}
-        />
+        <section className="search-empty" role="status"><span className="search-empty-icon"><Icon name="search"/></span><h2>暂时无法搜索</h2><p>请稍后再试</p><button onClick={()=>setRetried(true)}>重新加载</button></section>
+      ) : (state === 'empty'&&!retried) || !matches.length ? (
+        <section className="search-empty" role="status"><span className="search-empty-icon"><Icon name="search"/></span><h2>暂无相关结果</h2></section>
       ) : (
         <>
           {ordered.map((t) => {
@@ -1011,27 +1021,21 @@ function Search({ state, go }: Props) {
             });
             return list.length ? (
               <section className="reading-result-group" key={t}>
-                <h2>{t}</h2>
-                {t==='作品'?<WorkFeed items={list.slice(0,searchCounts[t]||2).map(x=>({id:x.cover,title:x.title,author:workAuthors[x.cover]||'林间',target:x.target,image:img(x.cover)}))} go={go}/>:list.slice(0,searchCounts[t]||2).map((x) => (
-                  <Jump
-                    key={x.target}
-                    title={x.title}
-                    cover={x.cover}
-                    target={x.target}
-                    go={go}
-                  />
-                ))}
-                {list.length>(searchCounts[t]||2)&&<Button quiet onClick={()=>increase(t)}>加载更多{t}</Button>}
+                
+                <div className={'search-native-list search-native-'+({'作品':'works','帖子':'posts','教程':'tutorials','AI 应用':'apps','专题':'topics','圈子':'circles','作者':'authors'}[t])}>
+                {t==='作品'?<WorkFeed items={list.slice(0,searchCounts[t]||4).map(x=>({id:x.cover,title:x.title,author:workAuthors[x.cover]||'林间',target:x.target,image:img(x.cover),ratio:workRatios[searchWorkCovers[x.cover]||x.cover],likes:18+list.indexOf(x)*7,type:x.cover==='sea'?'视频':x.cover==='letter'?'文字':'图片'}))} go={go}/>:list.slice(0,searchCounts[t]||4).map(x=>{
+ const post=samplePosts.find(p=>postTarget(p.id)===x.target);
+ if(t==='帖子'&&post)return <article className="cl-post" key={x.target}><button className="cl-author" onClick={()=>go('author?name='+encodeURIComponent(post.author))}><img src={img('portrait')} alt=""/><span><strong>{post.author}</strong><small>{post.date}</small></span></button><button className="cl-post-copy" onClick={()=>go(x.target)}><p>{x.title}</p><span>{post.summary}</span></button><button className="cl-post-media" onClick={()=>go(x.target)}><img src={img(x.cover)} alt={x.title}/></button><ActionBar kind="post" target={x.target} title={x.title} go={go} onComment={()=>go(x.target+'&discussion=1')}/></article>;
+ if(t==='教程')return <button className="cl-tutorial" key={x.target} onClick={()=>go(x.target)}><img className="cl-tutorial-cover" src={img(x.cover)} alt=""/><span><strong>{x.title}</strong><small>官方教程 · {communityTutorials.find(item=>'tutorial?item='+item.id===x.target)?.topic||'创作技巧'}</small></span><Icon name="arrow-right-s"/></button>;
+ if(t==='AI 应用')return <button className="cp-app-effect" key={x.target} onClick={()=>go(x.target)}><img src={img(x.cover)} alt=""/><span className="cp-app-caption"><strong>{x.title}</strong>{x.target==='app?item=restore'&&<small>暂不可用</small>}</span></button>;
+ if(t==='专题')return <button className="search-topic-native" key={x.target} onClick={()=>go(x.target)}><img src={img(x.cover)} alt=""/><strong>{x.title}</strong></button>;
+ if(t==='圈子')return <button className="circle-list-card" key={x.target} onClick={()=>go(x.target)}><img src={img(x.cover)} alt=""/><span className="circle-list-copy"><strong>{x.title}</strong><span>{'summary' in x&&typeof x.summary==='string'?x.summary:''}</span><small>{({repair:326,image:1286,visual:963,writing:742,film:618,life:525,character:409} as Record<string,number>)[currentCircles().find(c=>circleTarget(c.id)===x.target)?.id||'']?.toLocaleString()||128} 人加入</small></span><span className="circle-list-arrow">›</span></button>;
+ return <button className="search-author-native" key={x.target} onClick={()=>go(x.target)}><img src={img(x.cover)} alt=""/><span><strong>{x.title}</strong><small>查看作者主页</small></span><Icon name="arrow-right-s"/></button>;
+ })}</div>
+ {list.length>(searchCounts[t]||4)&&<SearchContinuation key={t+':'+(searchCounts[t]||4)} load={()=>increase(t)}/>}
               </section>
             ) : null;
           })}
-          {state === 'partial' && (
-            <Panel
-              title="部分结果加载失败"
-              action="重试"
-              onAction={() => go('search')}
-            />
-          )}
         </>
       )}
     </>

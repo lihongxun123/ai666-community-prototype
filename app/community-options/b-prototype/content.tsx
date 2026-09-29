@@ -19,6 +19,7 @@ import {
   type Draft,
   type Content,
   type Block,
+  makeNowAppHandoff,
 } from './store';
 import './content-refinement.css';
 export const contentPages = [
@@ -286,10 +287,13 @@ export function ContentPage({
       m.push('维护人');
     if (['app', 'resource'].includes(record.kind) && !d.conditions.trim())
       m.push('使用条件');
-    if (record.kind === 'app' && !d.inputs.trim()) m.push('输入要求');
+    if (record.kind === 'app' && !d.inputs.trim()) m.push('准备材料');
+    if (record.kind === 'app' && !d.outputs.trim()) m.push('输出说明');
     if (record.kind === 'work' && !d.core) m.push('作品正文或媒体');
     if (['app', 'resource'].includes(record.kind) && !d.entry.trim())
-      m.push(record.kind === 'app' ? '运行入口' : '工程或文件入口');
+      m.push(record.kind === 'app' ? 'MakeNow 承接链接' : '工程或文件入口');
+    if (record.kind === 'app' && d.entry.trim() && !d.entry.startsWith('/community-options/cross-prototype?page=app&item=') && !/^https:\/\//i.test(d.entry.trim()))
+      m.push('有效的 MakeNow 承接链接');
     if (
       (d.core.startsWith('local:') && !mediaReady(d.core)) ||
       d.body.some(
@@ -780,16 +784,17 @@ export function ContentPage({
             )}
             {['app', 'resource'].includes(record.kind) && (
               <>
-                <h3>{record.kind === 'app' ? '运行与版本' : '交付与权限'}</h3>
+                <h3>{record.kind === 'app' ? 'MakeNow 入口与说明' : '交付与权限'}</h3>
                 <label>
-                  {record.kind === 'app' ? '运行入口' : '工程或文件入口'}
+                  {record.kind === 'app' ? 'MakeNow 承接链接' : '工程或文件入口'}
                   <input
                     value={draft.entry}
                     onChange={(e) => patch('entry', e.target.value)}
                   />
                 </label>
+                {record.kind === 'app' && <p className="bp-muted">当前使用站内演示承接页；MakeNow 真实定向链接尚待配置。示例：{makeNowAppHandoff}</p>}
                 <label>
-                  版本
+                  {record.kind === 'app' ? '介绍版本' : '版本'}
                   <input
                     value={draft.version}
                     onChange={(e) => patch('version', e.target.value)}
@@ -805,7 +810,7 @@ export function ContentPage({
                     <option>手机与电脑</option>
                   </select>
                 </label>
-                <label>
+                {record.kind !== 'app' && <label>
                   更新性质
                   <select
                     value={draft.change}
@@ -816,9 +821,9 @@ export function ContentPage({
                     <option>说明更新</option>
                     <option>执行更新</option>
                   </select>
-                </label>
+                </label>}
                 <label>
-                  {record.kind === 'app' ? '输入要求' : '依赖与准备'}
+                  {record.kind === 'app' ? '准备材料' : '依赖与准备'}
                   <input
                     value={draft.inputs}
                     onChange={(e) => patch('inputs', e.target.value)}
@@ -826,15 +831,11 @@ export function ContentPage({
                 </label>
                 {record.kind === 'app' && (
                   <label>
-                    输出
-                    <select
+                    输出说明
+                    <input
                       value={draft.outputs}
                       onChange={(e) => patch('outputs', e.target.value)}
-                    >
-                      {['文字', '图片', '视频'].map((x) => (
-                        <option key={x}>{x}</option>
-                      ))}
-                    </select>
+                    />
                   </label>
                 )}
                 {record.kind === 'resource' && (
@@ -855,7 +856,7 @@ export function ContentPage({
             {record.kind !== 'post' && (
               <label>
                 {record.kind === 'app'
-                  ? '账号、设备或费用条件'
+                  ? 'MakeNow 账号与使用条件'
                   : record.kind === 'resource'
                     ? '取用条件'
                     : '使用条件'}
@@ -1069,6 +1070,15 @@ export function ContentPage({
                 ))}
                 {record.kind === 'work' && <MediaPreview value={d.core} />}
               </div>
+              {record.kind === 'app' && <section className="bp-content-preview-refs">
+                <h3>MakeNow 使用信息</h3>
+                <p>准备材料：{d.inputs || '待补充'}</p>
+                <p>输出说明：{d.outputs || '待补充'}</p>
+                <p>适用设备：{d.device || '待确认'}</p>
+                <p>使用条件：{d.conditions || '待补充'}</p>
+                <p>目标入口：{d.entry || '待配置'}</p>
+                <p>当前站内承接页为演示入口；MakeNow 真实定向链接尚待配置。</p>
+              </section>}
               {d.refs.length > 0 && (
                 <section className="bp-content-preview-refs">
                   <h3>关联资源</h3>
@@ -1185,7 +1195,7 @@ export function ContentPage({
           </p>
         )}
         {state === 'changed' && (
-          <p className="bp-warning">执行版本已变更，原核验结论不能复用。</p>
+          <p className="bp-warning">入口或说明已变更，原核验结论不能复用。</p>
         )}
         {state === 'paused' && (
           <p className="bp-warning">当前能力已暂停，恢复使用需重新核验。</p>
@@ -1193,12 +1203,12 @@ export function ContentPage({
         <h2>
           {displayTitle} · {record.draft.version}
         </h2>
-        <p>核验记录绑定当前执行版本。</p>
+        <p>{record.kind === 'app' ? '当前仅核验站内演示承接及展示资料。MakeNow 真实定向链接配置后需另行核验。' : '核验记录绑定当前执行版本。'}</p>
         {[
-          '入口可达',
-          record.kind === 'app' ? '输入与输出符合说明' : '项目或文件与说明相符',
+          record.kind === 'app' ? '站内演示承接页可达' : '入口可达',
+          record.kind === 'app' ? '准备材料与输出说明一致' : '项目或文件与说明相符',
           '授权与依赖完整',
-          record.kind === 'app' ? '设备与积分口径一致' : '设备与取用权限一致',
+          record.kind === 'app' ? '设备与使用条件一致' : '设备与取用权限一致',
         ].map((x) => (
           <label className="bp-check" key={x}>
             <input

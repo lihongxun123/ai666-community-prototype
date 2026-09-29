@@ -1,7 +1,7 @@
 type Go=(target:string)=>void;
 const personal=['mine','drafts','my-content','favorites','submissions','points','checkin','invite','following','joined-circles','profile','my-relations','profile-edit'];
-const forms=['login','publish','generate','app-input','account-link','return-result','pc-handoff'];
-const details=['post','tutorial','work','resource','app','app-task','app-result'];
+const forms=['login','publish','generate','account-link','return-result','pc-handoff'];
+const details=['post','tutorial','work','resource','app'];
 export function desktopLayout(page:string){return forms.includes(page)?'form':details.includes(page)?'detail':personal.includes(page)?'account':'browse';}
 export function DesktopContext({page,go}:{page:string;go:Go}){
  const layout=desktopLayout(page);

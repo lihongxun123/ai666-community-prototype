@@ -79,3 +79,36 @@ html:has(.rv-shell),body:has(.rv-shell){height:100%;overflow:hidden}
 .rv-pc-scroll.fit iframe{height:calc(100cqh * (1800px / 100cqw))}
 @media(max-width:760px){.rv-sidebar{width:170px;padding:12px 8px}.rv-main{padding:12px}.rv-workspace-tools{gap:8px}.rv-heading h2{font-size:20px}}
 @media(max-width:500px){.rv-shell{display:flex;flex-direction:column}.rv-sidebar{width:100%;height:auto;max-height:28dvh;flex:none;overflow:auto;padding:10px 12px}.rv-sidebar h1{font-size:18px}.rv-sidebar>p{display:none}.rv-sections{margin:6px 0}.rv-sidebar nav[aria-label="评审模块"]{max-height:130px}.rv-main{flex:1;width:100%;padding:10px}.rv-heading h2{margin-bottom:6px}.rv-workspace-tools{margin-bottom:8px}.rv-notes-launch{margin-bottom:8px}.rv-review-cards.mobile{grid-template-columns:minmax(0,1fr)}}
+
+/* One compact reader toolbar: identity, device, reading mode and state controls. */
+.rv-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin-bottom:12px;min-height:34px}
+.rv-toolbar .rv-heading{gap:10px;flex:none}
+.rv-toolbar .rv-heading>div>small{display:none}
+.rv-toolbar .rv-heading h2{font-size:18px;line-height:1.4;margin:0}
+.rv-toolbar .rv-completion{font-size:11px;padding:2px 6px}
+.rv-toolbar .rv-workspace-tools{margin:0;gap:12px}
+.rv-toolbar .rv-notes-launch,.rv-toolbar .rv-controls{margin:0;gap:6px}
+.rv-toolbar button{padding:5px 9px;font-size:13px;line-height:1.5}
+.rv-toolbar .rv-controls>div{gap:6px}
+@media(max-width:700px){.rv-toolbar{gap:7px 10px;margin-bottom:8px}.rv-toolbar .rv-heading h2{font-size:17px}.rv-toolbar .rv-workspace-tools{gap:8px}}
+
+/* The canvas is the reader background; browser chrome alone frames mobile pages. */
+.rv-review-workspace.is-docked,.rv-review-workspace.is-docked:has(.rv-review-cards){grid-template-columns:390px minmax(0,1fr)}
+.rv-review-workspace .rv-stage.mobile{width:390px;padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
+.rv-mobile-browser{display:flex;flex-direction:column;width:390px;max-width:100%;height:100%;min-height:0;background:#eceef1;border-radius:20px;overflow:hidden;outline:1px solid #cdd1d7}
+.rv-browser-status{display:flex;justify-content:space-between;align-items:center;flex:none;height:24px;padding:0 17px;font:11px/1 Arial,sans-serif;color:#222}
+.rv-browser-bar{display:flex;align-items:center;gap:12px;flex:none;height:42px;padding:4px 12px 8px;color:#50555d;font-size:21px}
+.rv-browser-address{flex:1;border-radius:8px;background:#fff;text-align:center;font:12px/30px Arial,sans-serif;color:#414750}
+.rv-browser-viewport{flex:1;min-height:0;position:relative;background:white;overflow:hidden}
+.rv-shell .rv-mobile-browser iframe{display:block;width:100%;min-width:0;max-width:none;height:100%;border:0;border-radius:0;box-sizing:border-box}
+.rv-browser-home{display:flex;align-items:center;justify-content:center;flex:none;height:14px}.rv-browser-home i{width:108px;height:4px;border-radius:4px;background:#34383e}
+.rv-review-cards.mobile{grid-template-columns:minmax(0,390px)}
+.rv-review-cards.mobile>section{padding:0;background:transparent;border:0;overflow:visible}
+.rv-review-cards.mobile>section.selected .rv-card-select{border-color:#536b91}
+.rv-review-cards.mobile .rv-mobile-browser,.rv-flat.mobile .rv-mobile-browser,.rv-phone .rv-mobile-browser{height:clamp(440px,calc(100dvh - 190px),834px)}
+.rv-phone{width:390px}
+.rv-canvas-area:has(.rv-mobile-browser){padding:1px}
+@media(max-width:500px){.rv-review-cards.mobile{grid-template-columns:minmax(0,1fr)}}
+.rv-review-workspace.is-docked,.rv-review-workspace.is-docked:has(.rv-review-cards){grid-template-columns:392px minmax(0,1fr)}
+.rv-flat.mobile{grid-template-columns:repeat(auto-fit,minmax(min(100%,390px),390px))}
+.rv-flat.mobile section{width:390px;padding:0;border:0;background:transparent;overflow:visible}

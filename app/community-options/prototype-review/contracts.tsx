@@ -31,7 +31,7 @@ export const routes:Record<string,Edge[]>={
  favorites:[['打开收藏','work','按收藏对象类型跳转；失效说明状态']],
  'my-relations':[['已加入圈子','circle','退出不删除旧帖'],['已关注作者','author','恢复关系']],
  'profile-edit':[['保存','profile-edit','校验后在当前页显示结果'],['返回','mine','返回个人中心']],
- records:[['查看任务','app-task','受理未知查询原任务'],['查看结果','app-result','私有结果不自动发布']],
+ records:[['继续创作','create','仅社区轻创作记录；AI应用任务与结果在MakeNow查看']],
  login:[['登录完成','mine','弹层关闭后返回实际来源；不自动提交原动作'],['关闭登录','home','返回实际背景页，保留未提交输入']],notifications:[['查看审核','my-content','保留目标身份；失效不跳无关内容'],['查看投稿','submissions','以投稿记录为准']],
  activities:[['活动卡','activity','活动资格沿用现有业务']],activity:[['参与活动','activity','参与状态留在详情'],['发布投稿','publish','传递活动身份；结束或未解锁禁用']],
  submissions:[['查看活动','activity','保持投稿关联活动'],['查看稿件','my-content','保留审核状态']],
@@ -62,6 +62,7 @@ const bRoutes:Record<string,Edge[]>={
  'op-events':[['编辑活动','b:op-event-edit','同 ID 活动'],['查看投稿','b:op-submissions','规则、评审、奖励分开']],
 };
 const crossRoutes:Record<string,Edge[]>={
+ app:[['返回应用介绍','app','保留同一应用身份；真实MakeNow链接待配置，演示不生成或扣费']],
  project:[['复制项目','cross:copy','公开且许可复制'],['查看分享设置','cross:share','项目所有者'],['查看公开版本','cross:version','同一项目']],
  share:[['查看项目','cross:project','按当前分享范围'],['管理版本','cross:version','所有者维护']],
  version:[['查看项目','cross:project','发布或撤回后重新校验']],
@@ -80,7 +81,7 @@ const crossRoutes:Record<string,Edge[]>={
 };
 const cSections:Record<string,number[]>={'首页':[1],'专题':[3],'AI应用':[4],'资源与跨端':[4,7],'社区与帖子':[2,5],'圈子':[2,5],'教程':[2,4,5],'作品详情':[4,5],'搜索与作者':[3],'创作与发布':[6,7],'个人管理':[6],'账号与通知':[7],'活动':[6],'积分与任务':[6],'AI 商城':[6]};
 const bSections:Record<string,number[]>={'内容管理':[2,3,4,5],'审核与发布':[4,5,7],'维护与记录':[5,7],'内容运营':[6],'社区运营':[6,7],'活动运营':[6,7],'账户服务':[6],'审核治理':[7],'系统管理':[2,7]};
-const crossSections:Record<string,number[]>={'MakeNow 分享':[3,4],'MakeNow 复用':[3],'成果回流':[2,4],'资源取用':[5,6],'作者维护':[3,4],'走查':[1,7]};
+const crossSections:Record<string,number[]>={'AI应用承接':[2],'MakeNow 分享':[3,4],'MakeNow 复用':[3],'成果回流':[2,4],'资源取用':[5,6],'作者维护':[3,4],'走查':[1,7]};
 function extract(text:string,indices:number[]){return text.split(/(?=^## \d+\.)/m).filter(s=>indices.some(n=>s.startsWith('## '+n+'.'))).join('\n');}
 const cPageSections:Record<string,string[]>={
  home:['1'],aigc:['0.3','2.1'],discussion:['0.3','2.1'],community:['2.1'],post:['4.2','5'],circles:['0.3','2.2'],circle:['2.2'],tutorials:['2.3'],tutorial:['4.3','5'],

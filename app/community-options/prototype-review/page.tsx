@@ -12,6 +12,7 @@ import {ProductPlan} from './product-plan';
 import {handoffStatus} from './handoff-status';
 import {PageRequirements,ModuleFlow} from './contracts';
 import {TrackedFrame} from './tracked-frame';
+import {MobileBrowserFrame} from './mobile-browser-frame';
 import {
   AnnotatedApp,
   AppRequirements,
@@ -83,7 +84,7 @@ export default function Review() {
     setContext(q.get('context') || (q.get('view')==='community'?'tab=works':''));
     const group =
         sections.find((s) => s.id === q.get('section')) || sections[0],
-      p = group.pages.find((p) => p.id === q.get('view'));
+      p = group.pages.find((p) => p.id === (['app-input','app-task','app-result'].includes(q.get('view')||'')?'app':q.get('view')));
     setSection(group.id);
     if (p) {      const dest=deviceDestination(p.id,q.get('context')||'',q.get('device')==='pc'?'pc':'mobile');
       setPageId(group.id==='c'?dest.id:p.id);if(group.id==='c')setContext(dest.query);
@@ -255,7 +256,7 @@ export default function Review() {
       </aside>
       <main className="rv-main">
         {!common && (
-          <>
+          <div className="rv-toolbar">
             <header className="rv-heading">
               <div>
                 <small>
@@ -270,6 +271,7 @@ export default function Review() {
             </header>
             {(
               <div className="rv-workspace-tools">
+                <a href="/downloads/index.html" target="_blank" rel="noreferrer" style={{whiteSpace:'nowrap',padding:'8px 12px',fontSize:14}}>下载原型源码</a>
                 {section==='c'&&<nav aria-label="设备">
                   <button
                     aria-pressed={device === 'mobile'}
@@ -335,7 +337,7 @@ export default function Review() {
                 </div>
               </div>}</>
             )}
-          </>
+          </div>
         )}
         {common ? (
           <>
@@ -364,12 +366,12 @@ export default function Review() {
                   <section key={sample.id}>
                     <h3>{sample.title}</h3>
                     <p className="rv-sample-use">适用：{sample.applies}</p>
-                    <iframe
+                    <MobileBrowserFrame><iframe
                       loading="lazy"
                       title={`通用 ${sample.id}`}
                       src={sample.url}
                       sandbox="allow-same-origin allow-scripts allow-forms allow-downloads"
-                    />
+                    /></MobileBrowserFrame>
                   </section>
                 ))}
             </div>
@@ -381,7 +383,7 @@ export default function Review() {
             {pageStates.filter(state=>inlineSingleState||state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
               const cardUrl='/community-options/'+group.route+'?page='+p.id+(context?'&'+context:'')+'&device='+device+'&state='+state+'&embed=1';
               const active=inspected?.card?inspected.card===p.id+state:notePage.id===p.id&&noteState===state;
-              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
+              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame mobileBrowser={section==='c'&&device==='mobile'} title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
             })}
           </div>: section === 'c' && device === 'pc' ? (
           <section className="rv-pc-preview">
@@ -403,6 +405,7 @@ export default function Review() {
               className={'rv-stage ' + (section === 'c' ? 'mobile' : 'desktop')}
             >
               <TrackedFrame
+                mobileBrowser={section==='c'}
                 key={String(restart)+device}
                 onNavigate={syncPage}
                 title={`交互原型：${page.title}`}
