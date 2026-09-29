@@ -88,3 +88,12 @@
 .cp-root .cl-talk-actions .cl-compose{margin-left:auto;display:flex;align-items:center;gap:5px;color:#666;font-size:12px;min-height:32px}
 
 .cp-root .cl-secondary-row .cl-find-circle{flex:none;height:46px;min-height:46px;padding:12px 0;box-sizing:border-box;font-size:13px;line-height:22px;gap:2px;align-items:center}
+
+.cp-root .cl-post-context{margin-top:12px}.cp-root .cl-post-context .cl-circle-label{min-height:28px;padding:4px 8px}
+.cp-root .cl-post .reading-actions-wrap{margin:8px 0 0}
+.cp-root .cl-post .reading-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;border:0;padding:0;overflow:visible}
+.cp-root .cl-post .reading-actions button{justify-content:center;min-height:44px;gap:5px;font-size:12px}
+.cp-root .cl-post .reading-actions .reading-icon{width:18px;height:18px}
+.cp-root .cl-post .reading-actions button[aria-pressed=true]{color:#202124;font-weight:600}
+.cp-root .cl-post .reading-sheet{border-radius:4px}.cp-root .cl-post .reading-sheet strong{display:block;margin-bottom:12px}
+.cp-root .cl-post .reading-sheet .reading-button{padding:8px 14px;margin-right:8px}
