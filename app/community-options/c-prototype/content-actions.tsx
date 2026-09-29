@@ -60,7 +60,7 @@ export function ActionBar({
     if (name === 'like') {
       sessionStorage.setItem(likeKey,liked?'0':'1');
       setLiked(!liked);
-      setToast(liked ? '已取消喜欢' : '已喜欢');
+      setToast('');
     } else {
       setSaved(
         toggleFavorite({
@@ -72,7 +72,7 @@ export function ActionBar({
           type: ({work:'作品',tutorial:'教程',app:'AI 应用',post:'帖子',resource:'资源'} as Record<string,string>)[kind]||'内容',
         }),
       );
-      setToast(saved ? '已取消收藏' : '已收藏，可在我的找回');
+      setToast('');
     }
   };
   const share = async () => {
