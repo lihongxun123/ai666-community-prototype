@@ -90,11 +90,13 @@ PC 首页入口为 `/community-options/home-prototype`，已采用最大 1800px 
 ## 本地构建与发布
 
 - `npm run build`：完整编译 → 发布包图片清理 → 无损压缩 → 图片引用及像素校验。原始 `public` 图片与冻结报告不修改；仅在 `dist` 合并重复报告图片、改写引用并移除确认无引用的旧概念图。动态图片目录保留。
-- PNG 使用无调色板量化的压缩并校验解码像素；JPEG、动画与高位深图片保留原文件。缓存按内容、参数与 Sharp 版本存储于 `.cache/site-images/`，不提交。
-- 清理与验证清单：`dist/.openai/image-cleanup.json`、`dist/.openai/image-validation.json`。报告正文直接引用合并后的图片；旧图片直链由 `proxy.ts` 与 `lib/report-image-aliases.json` 返回兼容跳转，不依赖托管平台的 `_redirects` 文件。冻结原始资料保留在 `public`。无损版不沿用此前有损版的 235 MiB 体积目标，体积以实际产物为准。
+- PNG 使用无调色板量化的压缩并校验解码像素；49 张大 PNG 的发布副本使用无损 WebP，原访问地址兼容跳转，尺寸及解码像素一致。JPEG、动画与高位深图片保留原文件。缓存按内容、参数与 Sharp 版本存储于 `.cache/site-images/`，不提交。
+- 清理与验证清单：`dist/.openai/image-cleanup.json`、`dist/.openai/image-validation.json`。`lib/lossless-assets.json` 记录无损 WebP 和重复附件映射，构建检查内容一致性；原图变化时需重新生成对应 WebP 并更新映射，验证失败不得发布。报告正文直接引用合并后的图片；旧图片直链由 `proxy.ts` 与 `lib/report-image-aliases.json` 返回兼容跳转，不依赖托管平台的 `_redirects` 文件。冻结原始资料保留在 `public`。Sites 解包上限为 256 MiB；静态资源设 240 MiB 门槛，为 Worker 留出空间。历史报告另合并 367 份字节相同的附件，访问地址仍保留。
 - `npm run site:check`：检查发布子进程所需的 Git Bash 和 Node。
 - `node scripts/site-workflow.mjs --project-id <project_id>`：调用已安装的官方 Sites 工作流。凭证仍由调用方通过隐藏 stdin 输入，不写入文件或命令参数。
 - Windows 启动入口自动补齐 Git Bash，优先使用 Codex 自带 Node，并为 GNU tar 设置本地盘符处理。仅影响子进程，不修改系统 PATH 或插件文件。需要指定环境时可设置 GIT_BASH_PATH 和 SITES_NODE_PATH（可执行文件绝对路径）。
 - 发布仍需完整包上传；不以旧构建替代变更后的完整编译。相同已保存版本可直接重试部署，失败时先核对保存/部署状态。
 
 历史有损方案实测（不代表当前无损方案）：首次图片处理 87.54 秒（220 个缓存未命中）；再次构建图片处理 0.82 秒（481 次缓存命中、0 未命中），包含代码编译的整个构建约 10 秒。上传耗时取决于网络，本优化不承诺减少全量上传时间。
+
+当前无损版实测（2026-09-29）：发布包移除 792 份重复图片、10 张未引用概念图，合并 367 份重复附件，49 张大 PNG 以无损 WebP 副本交付；静态资源约 234.10 MiB。保留图片及转换副本均通过像素校验；本地发布运行时的 1208 个兼容地址及 203 个目标资源检查通过。

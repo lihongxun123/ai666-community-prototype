@@ -10,4 +10,4 @@ export function proxy(request: NextRequest) {
   if (!target) return NextResponse.next();
   return NextResponse.redirect(new URL(target + request.nextUrl.search, request.url), 302);
 }
-export const config = { matcher: '/research-deliveries/:path*' };
+export const config = { matcher: ["/research-deliveries/:path*","/home-prototype/:path*","/proposal-fusion/:path*","/community-design/:path*","/proposal-options/:path*","/retained/:path*","/proposal-one/:path*","/product-concepts/:path*"] };

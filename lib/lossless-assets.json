@@ -1,0 +1,2086 @@
+{
+  "attachments": [
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-datawhale.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-datawhale.md",
+      "bytes": 13877
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-dify.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-dify.md",
+      "bytes": 15055
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-huggingface.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-huggingface.md",
+      "bytes": 17487
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-jimeng.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-jimeng.md",
+      "bytes": 12999
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-kling.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-kling.md",
+      "bytes": 14437
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-leonardo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-leonardo.md",
+      "bytes": 14550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-liblib.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-liblib.md",
+      "bytes": 12930
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-linuxdo.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-linuxdo.md",
+      "bytes": 14504
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-modelscope.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-modelscope.md",
+      "bytes": 13837
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-openart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-openart.md",
+      "bytes": 13833
+    },
+    {
+      "from": "research-deliveries/2026-09-11/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-research.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-research-data.json",
+      "to": "research-kit/audience-research-data.json",
+      "bytes": 422872
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-research.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-research.md",
+      "bytes": 254492
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-runninghub.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runninghub.md",
+      "bytes": 13466
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-runway.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-runway.md",
+      "bytes": 14421
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-seaart.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-seaart.md",
+      "bytes": 13550
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-tusi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-tusi.md",
+      "bytes": 13572
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/audience-waytoagi.md",
+      "to": "research-deliveries/2026-09-11/attachments/audience-waytoagi.md",
+      "bytes": 13072
+    },
+    {
+      "from": "research-deliveries/2026-09-11/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/business-data.json",
+      "to": "research-kit/business-data.json",
+      "bytes": 173702
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/china-ai-payers-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers-data.json",
+      "bytes": 22603
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/china-ai-payers.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-payers.md",
+      "bytes": 8883
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/china-ai-users-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users-data.json",
+      "bytes": 242216
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/china-ai-users.json",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.json",
+      "bytes": 241648
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/china-ai-users.md",
+      "to": "research-deliveries/2026-09-11/attachments/china-ai-users.md",
+      "bytes": 82293
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/community-research-report.md",
+      "to": "research-deliveries/2026-09-11/attachments/community-research-report.md",
+      "bytes": 57658
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11/attachments/competitor-evidence.md",
+      "bytes": 104821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-delivery-supply.md",
+      "bytes": 74870
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-delivery-supply.md",
+      "bytes": 74870
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-delivery-supply.md",
+      "bytes": 74870
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/content-forms.md",
+      "bytes": 206796
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/content-research.json",
+      "to": "research-deliveries/2026-09-11/attachments/content-research.json",
+      "bytes": 388478
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/interview-guide.md",
+      "to": "research-deliveries/2026-09-11/attachments/interview-guide.md",
+      "bytes": 13821
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/linuxdo-login-study.md",
+      "to": "research-deliveries/2026-09-11/attachments/linuxdo-login-study.md",
+      "bytes": 29430
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/market-content-forms.md",
+      "to": "research-deliveries/2026-09-11/attachments/market-content-forms.md",
+      "bytes": 53757
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/platform-operations.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-operations.md",
+      "bytes": 124804
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-supply.md",
+      "bytes": 53618
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-supply.md",
+      "bytes": 53618
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11/attachments/platform-supply.md",
+      "bytes": 53618
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/public-data.json",
+      "to": "research-deliveries/2026-09-11/attachments/public-data.json",
+      "bytes": 302291
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/research-brief.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-brief.json",
+      "bytes": 162385
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/research-framework.md",
+      "to": "research-deliveries/2026-09-11/attachments/research-framework.md",
+      "bytes": 37760
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/research-method.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-method.json",
+      "bytes": 4377
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/research-method.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-method.json",
+      "bytes": 4377
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/research-method.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-method.json",
+      "bytes": 4377
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/research-method.json",
+      "to": "research-deliveries/2026-09-11/attachments/research-method.json",
+      "bytes": 4377
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/strategy-comparison.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-comparison.md",
+      "bytes": 113933
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/strategy-comparison.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-comparison.md",
+      "bytes": 113933
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/strategy-comparison.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-comparison.md",
+      "bytes": 113933
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-a.md",
+      "bytes": 14097
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-a.md",
+      "bytes": 14097
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-a.md",
+      "bytes": 14097
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-a.md",
+      "bytes": 14097
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-a.md",
+      "bytes": 14097
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-b.md",
+      "bytes": 14622
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-b.md",
+      "bytes": 14622
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-b.md",
+      "bytes": 14622
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-b.md",
+      "bytes": 14622
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-b.md",
+      "bytes": 14622
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-c.md",
+      "bytes": 15528
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-c.md",
+      "bytes": 15528
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-c.md",
+      "bytes": 15528
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-c.md",
+      "bytes": 15528
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-c.md",
+      "bytes": 15528
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-d.md",
+      "bytes": 14725
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-d.md",
+      "bytes": 14725
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-d.md",
+      "bytes": 14725
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-d.md",
+      "bytes": 14725
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11/attachments/strategy-option-d.md",
+      "bytes": 14725
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/main-report.md",
+      "to": "research-deliveries/2026-09-11/main-report.md",
+      "bytes": 57777
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v2/README.md",
+      "to": "research-deliveries/2026-09-11/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v3/README.md",
+      "to": "research-deliveries/2026-09-11/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-v4/README.md",
+      "to": "research-deliveries/2026-09-11/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/README.md",
+      "to": "research-deliveries/2026-09-11/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/content-delivery-supply.md",
+      "bytes": 74720
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/content-delivery-supply.md",
+      "bytes": 74720
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/content-delivery-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/content-delivery-supply.md",
+      "bytes": 74720
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/makenow-current.json",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-current.json",
+      "bytes": 11842
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/makenow-login-study.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-login-study.md",
+      "bytes": 22021
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/makenow-login-study.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-login-study.md",
+      "bytes": 22021
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/makenow-login-study.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/makenow-login-study.md",
+      "bytes": 22021
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/platform-supply.md",
+      "bytes": 53318
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/platform-supply.md",
+      "bytes": 53318
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/platform-supply.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/platform-supply.md",
+      "bytes": 53318
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/representative-evidence.json",
+      "to": "research-kit/representative-evidence.json",
+      "bytes": 41522
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/representative-evidence.json",
+      "to": "research-kit/representative-evidence.json",
+      "bytes": 41522
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/representative-evidence.json",
+      "to": "research-kit/representative-evidence.json",
+      "bytes": 41522
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/representative-evidence.json",
+      "to": "research-kit/representative-evidence.json",
+      "bytes": 41522
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/representative-evidence.md",
+      "to": "research-kit/representative-evidence.md",
+      "bytes": 34076
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/representative-evidence.md",
+      "to": "research-kit/representative-evidence.md",
+      "bytes": 34076
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/representative-evidence.md",
+      "to": "research-kit/representative-evidence.md",
+      "bytes": 34076
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/representative-evidence.md",
+      "to": "research-kit/representative-evidence.md",
+      "bytes": 34076
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/research-method.json",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/research-method.json",
+      "bytes": 4496
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/research-progress.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/research-progress.md",
+      "bytes": 64183
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-reconciliation.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/research-reconciliation.md",
+      "bytes": 67885
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/research-reconciliation.md",
+      "to": "research-deliveries/2026-09-11-evidence/attachments/research-reconciliation.md",
+      "bytes": 67885
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-comparison.md",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-comparison.md",
+      "bytes": 171201
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-conditions.json",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-conditions.json",
+      "bytes": 51092
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-option-a.md",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-option-a.md",
+      "bytes": 29229
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-option-b.md",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-option-b.md",
+      "bytes": 30929
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-option-c.md",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-option-c.md",
+      "bytes": 32879
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/attachments/strategy-option-d.md",
+      "to": "research-deliveries/2026-09-11-readiness/attachments/strategy-option-d.md",
+      "bytes": 26692
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/README.md",
+      "to": "research-deliveries/2026-09-11-evidence/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/README.md",
+      "to": "research-deliveries/2026-09-11-evidence/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-conditions/README.md",
+      "to": "research-deliveries/2026-09-11-evidence/README.md",
+      "bytes": 569
+    },
+    {
+      "from": "research-deliveries/2026-09-11-evidence/attachments/strategy-comparison.md",
+      "to": "research-deliveries/2026-09-11-public/attachments/strategy-comparison.md",
+      "bytes": 113303
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/activity-observation.csv",
+      "to": "research-kit/activity-observation.csv",
+      "bytes": 212
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/activity-weekly.csv",
+      "to": "research-kit/activity-weekly.csv",
+      "bytes": 401
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-audit.json",
+      "to": "research-kit/audience-audit.json",
+      "bytes": 240065
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-audit.json",
+      "to": "research-kit/audience-audit.json",
+      "bytes": 240065
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-datawhale.md",
+      "to": "research-kit/audience-datawhale.md",
+      "bytes": 14556
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-datawhale.md",
+      "to": "research-kit/audience-datawhale.md",
+      "bytes": 14556
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-dify.md",
+      "to": "research-kit/audience-dify.md",
+      "bytes": 15745
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-dify.md",
+      "to": "research-kit/audience-dify.md",
+      "bytes": 15745
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-huggingface.md",
+      "to": "research-kit/audience-huggingface.md",
+      "bytes": 18082
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-huggingface.md",
+      "to": "research-kit/audience-huggingface.md",
+      "bytes": 18082
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-jimeng.md",
+      "to": "research-kit/audience-jimeng.md",
+      "bytes": 13696
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-jimeng.md",
+      "to": "research-kit/audience-jimeng.md",
+      "bytes": 13696
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-kling.md",
+      "to": "research-kit/audience-kling.md",
+      "bytes": 15112
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-kling.md",
+      "to": "research-kit/audience-kling.md",
+      "bytes": 15112
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-leonardo.md",
+      "to": "research-kit/audience-leonardo.md",
+      "bytes": 15207
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-leonardo.md",
+      "to": "research-kit/audience-leonardo.md",
+      "bytes": 15207
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-liblib.md",
+      "to": "research-kit/audience-liblib.md",
+      "bytes": 13380
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-liblib.md",
+      "to": "research-kit/audience-liblib.md",
+      "bytes": 13380
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-linuxdo.md",
+      "to": "research-kit/audience-linuxdo.md",
+      "bytes": 15138
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-linuxdo.md",
+      "to": "research-kit/audience-linuxdo.md",
+      "bytes": 15138
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-modelscope.md",
+      "to": "research-kit/audience-modelscope.md",
+      "bytes": 14422
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-modelscope.md",
+      "to": "research-kit/audience-modelscope.md",
+      "bytes": 14422
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-openart.md",
+      "to": "research-kit/audience-openart.md",
+      "bytes": 14452
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-openart.md",
+      "to": "research-kit/audience-openart.md",
+      "bytes": 14452
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-runninghub.md",
+      "to": "research-kit/audience-runninghub.md",
+      "bytes": 14003
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-runninghub.md",
+      "to": "research-kit/audience-runninghub.md",
+      "bytes": 14003
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-runway.md",
+      "to": "research-kit/audience-runway.md",
+      "bytes": 15019
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-runway.md",
+      "to": "research-kit/audience-runway.md",
+      "bytes": 15019
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-seaart.md",
+      "to": "research-kit/audience-seaart.md",
+      "bytes": 14061
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-seaart.md",
+      "to": "research-kit/audience-seaart.md",
+      "bytes": 14061
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-tusi.md",
+      "to": "research-kit/audience-tusi.md",
+      "bytes": 14071
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-tusi.md",
+      "to": "research-kit/audience-tusi.md",
+      "bytes": 14071
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/audience-waytoagi.md",
+      "to": "research-kit/audience-waytoagi.md",
+      "bytes": 13937
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/audience-waytoagi.md",
+      "to": "research-kit/audience-waytoagi.md",
+      "bytes": 13937
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/china-ai-payers.md",
+      "to": "research-kit/china-ai-payers.md",
+      "bytes": 9236
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/china-ai-payers.md",
+      "to": "research-kit/china-ai-payers.md",
+      "bytes": 9236
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/community-north-star.json",
+      "to": "research-kit/community-north-star.json",
+      "bytes": 22814
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/competitor-evidence.md",
+      "to": "research-deliveries/2026-09-11-northstar/attachments/competitor-evidence.md",
+      "bytes": 114319
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-option-tests.md",
+      "to": "research-deliveries/2026-09-11-northstar/attachments/interview-guide.md",
+      "bytes": 6536
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/platform-review.json",
+      "to": "research-kit/platform-review.json",
+      "bytes": 196479
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/platform-review.json",
+      "to": "research-kit/platform-review.json",
+      "bytes": 196479
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/platform-review.md",
+      "to": "research-kit/platform-review.md",
+      "bytes": 144647
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-condition-review.json",
+      "to": "research-kit/research-condition-review.json",
+      "bytes": 11798
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-condition-review.json",
+      "to": "research-kit/research-condition-review.json",
+      "bytes": 11798
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-condition-review.md",
+      "to": "research-kit/research-condition-review.md",
+      "bytes": 10085
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-condition-review.md",
+      "to": "research-kit/research-condition-review.md",
+      "bytes": 10085
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-corrections.json",
+      "to": "research-kit/research-corrections.json",
+      "bytes": 92580
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-corrections.json",
+      "to": "research-kit/research-corrections.json",
+      "bytes": 92580
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-cost-model.md",
+      "to": "research-kit/research-cost-model.md",
+      "bytes": 2280
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-delivery-standard.md",
+      "to": "research-kit/research-delivery-standard.md",
+      "bytes": 4830
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-delivery-standard.md",
+      "to": "research-kit/research-delivery-standard.md",
+      "bytes": 4830
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-human-input.md",
+      "to": "research-kit/research-human-input.md",
+      "bytes": 1764
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-path-audit.json",
+      "to": "research-kit/research-path-audit.json",
+      "bytes": 38344
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-path-audit.json",
+      "to": "research-kit/research-path-audit.json",
+      "bytes": 38344
+    },
+    {
+      "from": "research-deliveries/2026-09-11-readiness/attachments/research-plan.md",
+      "to": "research-deliveries/2026-09-11-northstar/attachments/research-plan.md",
+      "bytes": 5917
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/research-reconciliation.md",
+      "to": "research-kit/research-reconciliation.md",
+      "bytes": 67987
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/strategy-conditions.json",
+      "to": "research-kit/strategy-conditions.json",
+      "bytes": 81163
+    },
+    {
+      "from": "research-deliveries/2026-09-11-northstar/attachments/validation-plan.json",
+      "to": "research-kit/validation-plan.json",
+      "bytes": 10949
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/attachments/community-research-report.md",
+      "to": "research-deliveries/2026-09-11-v4/attachments/community-research-report.md",
+      "bytes": 62241
+    },
+    {
+      "from": "research-deliveries/2026-09-11-public/main-report.md",
+      "to": "research-deliveries/2026-09-11-v4/main-report.md",
+      "bytes": 62360
+    }
+  ],
+  "conversions": [
+    {
+      "from": "home-prototype/tram.png",
+      "to": "lossless/8a2282923669647b953d67d2c7552ae753e386f79601a5f636a0f74d87e0f24c.webp",
+      "bytes": 3095742
+    },
+    {
+      "from": "home-prototype/girl.png",
+      "to": "lossless/23b8610e452476477a04a615c2732505314c4650ebca9ffb77517a2250a64a4a.webp",
+      "bytes": 2765615
+    },
+    {
+      "from": "home-prototype/underwater.png",
+      "to": "lossless/c301b7ba1eba8baaff2f92e36461b159e12698f8deec7cee344e68599ff45229.webp",
+      "bytes": 2783914
+    },
+    {
+      "from": "home-prototype/banner.png",
+      "to": "lossless/26882b1e49e8423fbff9f96d6832355b3760e3d828f66bf74f7ce4ff0a0d9f74.webp",
+      "bytes": 2709633
+    },
+    {
+      "from": "home-prototype/leaves.png",
+      "to": "lossless/e824e9c108ddec2ed4e457003493afe2a19c22f73967d7f74cb34cf8fc5f77d6.webp",
+      "bytes": 2671412
+    },
+    {
+      "from": "home-prototype/sea.png",
+      "to": "lossless/b6ebf51883e735390042c60cb83d121eac635d1e0ed856f20ff204d1867092f6.webp",
+      "bytes": 2674837
+    },
+    {
+      "from": "home-prototype/interior.png",
+      "to": "lossless/4b5714fed291ea6e7541e0c5367a46e517a054697041564e07c206d708c089a7.webp",
+      "bytes": 2594096
+    },
+    {
+      "from": "proposal-fusion/home-v5-light-creation.png",
+      "to": "lossless/ab93610b2671b5017cb6cbc91511e7682202d8020692fd1a1f0d113940ddf105.webp",
+      "bytes": 2557212
+    },
+    {
+      "from": "home-prototype/cat.png",
+      "to": "lossless/a8e7fb9dc334e3bd15e200aa6a35714a36e2bee4df1b928ff954ae927909fc48.webp",
+      "bytes": 2487982
+    },
+    {
+      "from": "home-prototype/perfume.png",
+      "to": "lossless/645285745eaddc48e0003dab8a37e1faebd4e30adef877bdf4911526752ba754.webp",
+      "bytes": 2383624
+    },
+    {
+      "from": "home-prototype/portrait.png",
+      "to": "lossless/a35acfc10fb617f9059a034b15f6096a6c48be7fa322a45232726daf01655adb.webp",
+      "bytes": 2367070
+    },
+    {
+      "from": "home-prototype/anime.png",
+      "to": "lossless/95a36e143eff99a29d2eb3705b21eb49b8579831af8dac7762033b0b9975bc35.webp",
+      "bytes": 2370819
+    },
+    {
+      "from": "home-prototype/headphones.png",
+      "to": "lossless/fb93b5136b558718f0d6a85c43749eacb66e2a37fe1e73b29ac0554501840edc.webp",
+      "bytes": 2319941
+    },
+    {
+      "from": "home-prototype/restore.png",
+      "to": "lossless/b4e238c9762188e162f6a29ce37009521050c828ef76ee5a4007d3adaf91c501.webp",
+      "bytes": 2286616
+    },
+    {
+      "from": "home-prototype/dog.png",
+      "to": "lossless/072dd81a174fbd6a4cd3d3aebcf3467a7d61add4c2f171c9d0ca0a5ba08395dc.webp",
+      "bytes": 2205433
+    },
+    {
+      "from": "home-prototype/cup.png",
+      "to": "lossless/caeb64b3ce460a849c9694126ba8cb176d3fae0f5fc26f1078f13488a5928f59.webp",
+      "bytes": 2169033
+    },
+    {
+      "from": "home-prototype/writing.png",
+      "to": "lossless/1aa92c0f6f63d40fc55055dfea98253a3de273aab9a4570905f43c229e9ac1e8.webp",
+      "bytes": 2161562
+    },
+    {
+      "from": "community-design/poster.png",
+      "to": "lossless/ccb8d90f0c233db37b711c800c48be222b1beee50e0a08242854d2ac9cf5764d.webp",
+      "bytes": 2308268
+    },
+    {
+      "from": "proposal-fusion/home-v4-easy-start-white.png",
+      "to": "lossless/1a8c14dac03bb7d19c14f2b103bbff4aab056c85f316f675a469dea0611be2d8.webp",
+      "bytes": 2054266
+    },
+    {
+      "from": "proposal-options/c-discover.png",
+      "to": "lossless/7854fd4e54926fe46b319aa1c89f9b78d204e2b75f4b9ad13efcd6d64f42ace4.webp",
+      "bytes": 2124720
+    },
+    {
+      "from": "proposal-fusion/home-v1.png",
+      "to": "lossless/c5bd979e1e6518acd37d39a055b6f971ee6f9e632d417095ad1715c0faebc08e.webp",
+      "bytes": 2127071
+    },
+    {
+      "from": "proposal-options/d-discover-v2.png",
+      "to": "lossless/b18b6643e4c3a386c97ae33736154f4ffd71c1c92f2b71a0790508272426abc2.webp",
+      "bytes": 2120590
+    },
+    {
+      "from": "community-design/character.png",
+      "to": "lossless/bf767ede8245cb594d037f3ea560062a59e97da28070425c96c4655fa062a8d9.webp",
+      "bytes": 1962213
+    },
+    {
+      "from": "community-design/perfume.png",
+      "to": "lossless/b2dab27ffad8689393c39e78db1c1658b8db654a91363e500f847295301c914e.webp",
+      "bytes": 2063402
+    },
+    {
+      "from": "proposal-options/c-home-differentiated.png",
+      "to": "lossless/39be05617b7e3d9cf37beb00f5edec47034c2eef2b41990e759bec760b3a170b.webp",
+      "bytes": 2056078
+    },
+    {
+      "from": "retained/activity/activity-live-image-challenge.png",
+      "to": "lossless/ac759b084015ce5bf383cb28a128ee2460e3913b4285c9b2afd697f7484e6017.webp",
+      "bytes": 1917791
+    },
+    {
+      "from": "proposal-options/e-discover-v2.png",
+      "to": "lossless/40e8486ee4e2497bb89224c4b74780919483ae238ef4a9b04052c3fcf0118ec9.webp",
+      "bytes": 2069523
+    },
+    {
+      "from": "proposal-fusion/audit-topics-index-v1.png",
+      "to": "lossless/1996f9bce46c4e26348efcf8101e9ef1a94c31ce09c861fa3adb76d82a8bdee5.webp",
+      "bytes": 1880820
+    },
+    {
+      "from": "proposal-one/ai-apps-v3-combined.png",
+      "to": "lossless/d7199438940fea2f63a78e45ed600fef35225723947a3dbdcaa3288c2e843e61.webp",
+      "bytes": 1852989
+    },
+    {
+      "from": "retained/activity/activity-live-weekly.png",
+      "to": "lossless/9741670359d1a02cbef5749aa7d587f9fda025f8a4c8f451a489eb658a498b42.webp",
+      "bytes": 1851915
+    },
+    {
+      "from": "proposal-one/topics-index-v1.png",
+      "to": "lossless/4f9a0cf1a184c149010676343023403f88c8a7a16862643c6d52fd99e4cf2a33.webp",
+      "bytes": 1808176
+    },
+    {
+      "from": "product-concepts/topic-character-v1.png",
+      "to": "lossless/807bec4f3ce362a90ceaaefd2f43c4165923a6df86c7dccbad4f49578659e0ec.webp",
+      "bytes": 1811318
+    },
+    {
+      "from": "proposal-fusion/author-profile-v1.png",
+      "to": "lossless/2611eff1f13177b2473d33ff7cf58fb477bfa0abd460dadcb64cdda625bbccb6.webp",
+      "bytes": 1782538
+    },
+    {
+      "from": "retained/activity/activity-live-invite.png",
+      "to": "lossless/f3b8c1d3a2b33c600281f333e4bfc8a9ec690df3cc45107dd521f2ff42df2757.webp",
+      "bytes": 1784730
+    },
+    {
+      "from": "proposal-fusion/apps-index-v4.png",
+      "to": "lossless/2cde668bcd715a3d7a2d30366fa66e78b5a826b9b9af987dbceb77e7a4327fd0.webp",
+      "bytes": 1779851
+    },
+    {
+      "from": "proposal-options/b-discover.png",
+      "to": "lossless/e6e1d3fb19e9986541be9ed7b4aebb72dd2d6e47e3930ac396fda7a5d2e4d97e.webp",
+      "bytes": 1932613
+    },
+    {
+      "from": "proposal-one/work-case-detail-v1.png",
+      "to": "lossless/8e489ebc13ff5092bcbbea1ae2eeac436a6be36ab881f658a6f760e4263cda43.webp",
+      "bytes": 1758421
+    },
+    {
+      "from": "proposal-fusion/audit-d-method.png",
+      "to": "lossless/9baa79f1147cd8de1c3e6cf3f99f2040bb69215959250105a15512603b5b0286.webp",
+      "bytes": 1949537
+    },
+    {
+      "from": "proposal-fusion/audit-topic-ecommerce-v2.png",
+      "to": "lossless/969abde3737e0639a62db000d01da1f759954d761072864cf96006ba6ad49efa.webp",
+      "bytes": 1756859
+    },
+    {
+      "from": "proposal-fusion/audit-d-method-v2.png",
+      "to": "lossless/f229722f50be2c1b142382db83e9a95774e8ec12b4d8b5f57dfbfaf79865108a.webp",
+      "bytes": 1912088
+    },
+    {
+      "from": "proposal-one/home-v8-card-spacing.png",
+      "to": "lossless/472ca7cabcba2e335833519acaf6b4219279f4ef44de240bf1062e3aa9725bc8.webp",
+      "bytes": 1845896
+    },
+    {
+      "from": "proposal-fusion/audit-e-compare.png",
+      "to": "lossless/bebadc9605f56639c6f749fb7cd13cdb4d45af10197af5f62d4319d9ed05c0e4.webp",
+      "bytes": 1889937
+    },
+    {
+      "from": "retained/activity/activity-live-prompt.png",
+      "to": "lossless/b1f781b0baf7a8399acc5cc29f5d2c5a3677398e016f525307d39c0ac4924782.webp",
+      "bytes": 1693972
+    },
+    {
+      "from": "proposal-options/c-discussion-v2.png",
+      "to": "lossless/afcc12dfa0ca20157c6e93075fa1b977f6c3da2d8a7f986986b0c6ffca7da8cd.webp",
+      "bytes": 1819220
+    },
+    {
+      "from": "proposal-fusion/apps-ecommerce-v1.png",
+      "to": "lossless/3b3d43f415a817ac7a955196eecd077fd0ec270934b493dff0459f844ab8ee27.webp",
+      "bytes": 1681699
+    },
+    {
+      "from": "proposal-options/e-compare-v2.png",
+      "to": "lossless/f811b793cdbbfaa9ae3c391a661cceeb9eb08af966f0ac83f8caa4d760537a94.webp",
+      "bytes": 1876158
+    },
+    {
+      "from": "proposal-one/topic-ecommerce-v1.png",
+      "to": "lossless/318eaeb2d48571aea4cad6c766e1be1b58b2b40efc17567a9a1502f7e81c658a.webp",
+      "bytes": 1660662
+    },
+    {
+      "from": "proposal-one/app-product-scene-result-v1.png",
+      "to": "lossless/1705270558dc3cc9e591e0b784d071232f3581691318422a1b3a9f00047f1466.webp",
+      "bytes": 1840281
+    },
+    {
+      "from": "proposal-options/d-method.png",
+      "to": "lossless/0b147108b7cc156eda6d20fab755a75d2cda12c33aa3749fc962ef565ebd645f.webp",
+      "bytes": 1768253
+    }
+  ]
+}

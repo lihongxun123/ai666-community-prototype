@@ -24,9 +24,10 @@ for(const file of walk(root).filter(p=>/\.(png|jpe?g)$/i.test(p))){
 const files=walk(root),total=files.reduce((n,p)=>n+fs.statSync(p).size,0);
 
 const cleanup=JSON.parse(fs.readFileSync('dist/.openai/image-cleanup.json','utf8'));
-const excluded=new Set([...cleanup.mappings,...cleanup.unused].map(m=>m.from));
+const excluded=new Set([...cleanup.mappings,...cleanup.unused,...cleanup.attachments,...cleanup.conversions].map(m=>m.from));
 const missing=[];
 const publicRoot=path.resolve('public');
 for(const source of walk(publicRoot))if(!excluded.has(path.relative(publicRoot,source).split(path.sep).join('/'))&&!fs.existsSync(path.join(root,path.relative(publicRoot,source))))missing.push(path.relative(publicRoot,source));
 if(missing.length)throw Error('Missing public assets: '+missing.join(', '));
+if(total>240*1048576)throw Error('Client assets exceed lossless release budget (240 MiB plus Worker overhead)');
 console.log(JSON.stringify({cacheHits,cacheMisses,elapsedSeconds:+((performance.now()-started)/1000).toFixed(2),optimized,savedMiB:+(saved/1048576).toFixed(2),clientMiB:+(total/1048576).toFixed(2),publicAssetsChecked:walk(publicRoot).length,missing:missing.length,lossless:true,originalsPreserved:true}));
