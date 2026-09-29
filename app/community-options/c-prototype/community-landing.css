@@ -86,3 +86,5 @@
 .cp-root .cl-secondary-row .cl-filter-trigger{min-width:32px;justify-content:center}
 .cp-root .cl-talk-actions{display:flex;align-items:center;gap:18px;margin:-4px 0 14px}
 .cp-root .cl-talk-actions .cl-compose{margin-left:auto;display:flex;align-items:center;gap:5px;color:#666;font-size:12px;min-height:32px}
+
+.cp-root .cl-secondary-row .cl-find-circle{flex:none;height:46px;min-height:46px;padding:12px 0;box-sizing:border-box;font-size:13px;line-height:22px;gap:2px;align-items:center}

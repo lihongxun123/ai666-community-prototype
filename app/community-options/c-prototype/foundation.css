@@ -11,7 +11,7 @@
 .cp-root button{overflow-wrap:normal}
 .cp-root .cp-actions{display:flex;flex-wrap:wrap;gap:10px}.cp-root .cp-actions>button{flex-shrink:0;max-width:100%;white-space:normal}
 .cp-root .reading-search{display:flex;align-items:center;gap:8px;padding:0 10px;background:#f5f5f5;border-radius:4px;height:44px;margin:0 0 24px;width:100%;box-sizing:border-box}
-.cp-root .reading-search input{width:0;min-width:0;flex:1;height:44px;border:0;background:transparent;padding:0;font-size:14px;box-shadow:none;outline-offset:-3px}
+.cp-root .reading-search input{margin:0;line-height:22px;align-self:center;width:0;min-width:0;flex:1;height:44px;border:0;background:transparent;padding:0;font-size:14px;box-shadow:none;outline-offset:-3px}
 .cp-root .reading-search>button{flex:none;white-space:nowrap;width:44px;height:44px;font-size:14px;font-weight:500;padding:0}.cp-root .reading-search>.reading-icon{flex:none}
 .cp-root .search-result-tabs{display:flex;flex-wrap:nowrap;overflow:auto;gap:20px;scrollbar-width:none;margin:0 0 24px;padding-bottom:4px}
 .cp-root .search-result-tabs>button{flex:none;padding:0 0 8px;background:none;border:0;border-radius:0;font-size:14px;color:#777;white-space:nowrap}.cp-root .search-result-tabs>button.active{color:#222;border-bottom:2px solid #222;background:none}
