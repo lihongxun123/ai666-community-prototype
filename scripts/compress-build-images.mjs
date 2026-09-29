@@ -1,27 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import crypto from 'node:crypto';
-import sharp from 'sharp';
+import {optimizeImage} from './image-cache.mjs';
 
 // Keep every original URL and image format; optimize deployment copies only.
 const root=fs.realpathSync('dist/client');
 const walk=p=>fs.readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(p,e.name)):e.isFile()?[path.join(p,e.name)]:[]);
-const cache=new Map();
+const cacheDir=path.resolve('.cache/site-images');
+const started=performance.now();
+let cacheHits=0,cacheMisses=0;
 let saved=0,optimized=0;
 for(const file of walk(root).filter(p=>/\.(png|jpe?g)$/i.test(p))){
-  const original=fs.readFileSync(file);
+  const source=path.join('public',path.relative(root,file));
+  const original=fs.readFileSync(fs.existsSync(source)?source:file);
   if(original.length<100000)continue;
-  const key=crypto.createHash('sha256').update(original).digest('hex');
-  let bytes=cache.get(key);
-  if(!bytes){
-    const image=sharp(original),meta=await image.metadata();
-    if(meta.pages>1)continue;
-    bytes=meta.format==='png'?await image.png({palette:true,quality:90,effort:7}).toBuffer():await image.jpeg({quality:88,mozjpeg:true}).toBuffer();
-    const after=await sharp(bytes).metadata();
-    if(after.width!==meta.width||after.height!==meta.height||after.format!==meta.format)throw Error('Image contract changed');
-    if(bytes.length>=original.length)bytes=original;
-    cache.set(key,bytes);
-  }
+  const {bytes,hit}=await optimizeImage(original,cacheDir);
+  if(hit)cacheHits++;else cacheMisses++;
   if(bytes.length<original.length){
     if(!file.startsWith(root+path.sep))throw Error('Image outside build');
     fs.writeFileSync(file,bytes);
@@ -34,4 +27,4 @@ const missing=[];
 const publicRoot=path.resolve('public');
 for(const source of walk(publicRoot))if(!fs.existsSync(path.join(root,path.relative(publicRoot,source))))missing.push(path.relative(publicRoot,source));
 if(missing.length)throw Error('Missing public assets: '+missing.join(', '));
-console.log(JSON.stringify({optimized,savedMiB:+(saved/1048576).toFixed(2),clientMiB:+(total/1048576).toFixed(2),publicAssetsChecked:walk(publicRoot).length,missing:missing.length,originalUrlsAndFormatsPreserved:true}));
+console.log(JSON.stringify({cacheHits,cacheMisses,elapsedSeconds:+((performance.now()-started)/1000).toFixed(2),optimized,savedMiB:+(saved/1048576).toFixed(2),clientMiB:+(total/1048576).toFixed(2),publicAssetsChecked:walk(publicRoot).length,missing:missing.length,originalUrlsAndFormatsPreserved:true}));

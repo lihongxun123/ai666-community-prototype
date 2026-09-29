@@ -86,3 +86,13 @@ PC 首页入口为 `/community-options/home-prototype`，已采用最大 1800px 
 ## 历史记录说明
 
 下方及早期段落中的“仅本地”“未发布”均描述对应日期状态，不代表当前发布状态。当前方案入口以上方2026-09-21说明为准。旧briefs与design保留为研究依据。
+
+## 本地构建与发布
+
+- `npm run build`：完整编译页面；图片按源文件内容、压缩参数及 Sharp 版本缓存至 `.cache/site-images/`。缓存不提交；图片变化或缓存校验失败时重新处理，不修改 public 原图、URL、尺寸或格式。
+- `npm run site:check`：检查发布子进程所需的 Git Bash 和 Node。
+- `node scripts/site-workflow.mjs --project-id <project_id>`：调用已安装的官方 Sites 工作流。凭证仍由调用方通过隐藏 stdin 输入，不写入文件或命令参数。
+- Windows 启动入口自动补齐 Git Bash，优先使用 Codex 自带 Node，并为 GNU tar 设置本地盘符处理。仅影响子进程，不修改系统 PATH 或插件文件。需要指定环境时可设置 GIT_BASH_PATH 和 SITES_NODE_PATH（可执行文件绝对路径）。
+- 发布仍需完整包上传；不以旧构建替代变更后的完整编译。相同已保存版本可直接重试部署，失败时先核对保存/部署状态。
+
+本机 2026-09-29 实测：首次图片处理 87.54 秒（220 个缓存未命中）；再次构建图片处理 0.82 秒（481 次缓存命中、0 未命中），包含代码编译的整个构建约 10 秒。上传耗时取决于网络，本优化不承诺减少全量上传时间。

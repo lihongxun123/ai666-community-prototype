@@ -56,3 +56,6 @@ next-env.d.ts
 
 !/public/research-deliveries/2026-09-11-northstar/
 !/public/research-kit/ai-community-report-2026-09-11-northstar.zip
+
+# Content-addressed deployment image cache
+/.cache/
