@@ -40,6 +40,7 @@ export const researchReadingLinks = [
  {group:'planning',href:'/community-options',title:'五套方案'},
  {group:'reading',href:'/research-brief',title:'简版研究报告'},
  {group:'reading',href:'/community-options/fusion',title:'融合方案'},
+ {group:'reading',href:'/community-options/current-product',title:'当前产品方案'},
  {group:'reading',href:'/community-options/fusion/gallery',title:'社区概念图集'},
  {group:'planning',href:'/community-options/library',title:'研究依据'},
  {group:'market',href:'/community-options/background',title:'近期应用'},
