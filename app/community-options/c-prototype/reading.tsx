@@ -23,10 +23,13 @@ const currentCircles=()=>{
   return sampleCircles;
 };
 
+const returnToContent=()=>{const q=new URLSearchParams(location.search),page=q.get('page');if(page==='tutorial')return ['tutorials','返回官方教程'];if(q.get('device')!=='pc')return ['community','返回社区'];return page==='work'?['aigc','返回作品']:page==='post'?['discussion','返回交流']:['home','返回首页'];};
 type Props = { page: string; state: string; go: (page: string) => void };
 type PageMeta = { id: string; title: string; module: string; states: string[] };
 
 export const readingPages: PageMeta[] = [
+  {id:'aigc',title:'AIGC',module:'阅读与交流',states:['normal','loading','empty','error']},
+  {id:'discussion',title:'交流',module:'阅读与交流',states:['normal','loading','empty','error']},
   {
     id: 'community',
     title: '社区',
@@ -567,8 +570,8 @@ function detailState({ page, state, go }: Props) {
             ? '内容状态已变化，请返回继续浏览。'
             : '当前账号没有查看权限，仍可返回公开内容。'
         }
-        action="返回社区"
-        onAction={() => go('community')}
+        action={returnToContent()[1]}
+        onAction={() => go(returnToContent()[0])}
       />
     </>
   );
@@ -583,7 +586,7 @@ function Post({ state, go }: Props) {
   const db=useB();
   const cover = detailState({ page: 'post', state, go });
   if (cover) return cover;
-  if(!post||(post.id==='restore'&&db.records.find(r=>r.id==='post-1')?.publicStatus!=='公开'))return <Panel title="帖子暂不可访问" action="返回社区" onAction={()=>go('community')}/>;
+  if(!post||(post.id==='restore'&&db.records.find(r=>r.id==='post-1')?.publicStatus!=='公开'))return <Panel title="帖子暂不可访问" action={returnToContent()[1]} onAction={()=>go(returnToContent()[0])}/>;
   return (
     <>
       <Head title="帖子" go={go} back="community" />
@@ -626,7 +629,7 @@ function Post({ state, go }: Props) {
   );
 }
 
-function Tutorials({state,go}:Props){return <CommunityLanding state={state} go={go} initialTab="tutorials"/>;}
+function Tutorials({state,go}:Props){return <CommunityLanding state={state} go={go} initialTab="tutorials" desktop={new URLSearchParams(location.search).get('device')==='pc'}/>;}
 
 const getTutorialItem = () => new URLSearchParams(window.location.search).get('item') || 'restore';
 
@@ -872,7 +875,7 @@ function Work({ state, go }: Props) {
     go,
   });
   if (cover) return cover;
-  if((workItem==='restore'&&db.records.find(r=>r.id==='work-1')?.publicStatus!=='公开'))return <Panel title="作品暂不可访问" action="返回社区" onAction={()=>go('community')}/>;
+  if((workItem==='restore'&&db.records.find(r=>r.id==='work-1')?.publicStatus!=='公开'))return <Panel title="作品暂不可访问" action={returnToContent()[1]} onAction={()=>go(returnToContent()[0])}/>;
   return (
     <>
       <Head title="作品" go={go} back="community" />
@@ -1301,6 +1304,8 @@ function Resource({ state, go }: Props) {
 export function ReadingPage({ page, state, go }: Props) {
   const p = { page, state, go };
   switch (page) {
+    case 'aigc': return <CommunityLanding state={state} go={go} initialTab="works" desktop/>;
+    case 'discussion': return <CommunityLanding state={state} go={go} initialTab="talk" desktop/>;
     case 'community':
       return (
         <div className="reading-page">

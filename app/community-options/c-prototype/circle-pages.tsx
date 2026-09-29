@@ -69,7 +69,7 @@ function CircleCard({circle,go,joined}:{circle:Circle;go:Props['go'];joined:bool
 export function CirclesPage({state,go}:Props){
   if(state==='loading')return <div className="circle-skeleton" aria-label="正在加载圈子"/>;
   if(state==='error')return <State title="圈子暂时加载失败" body="请稍后再试。" action="重试" onAction={()=>go('circles')}/>;
-  if(state==='empty')return <State title="暂时没有可发现的圈子" body="可以返回社区继续阅读。" action="返回社区" onAction={()=>go('community')}/>;
+  if(state==='empty')return <State title="暂时没有可发现的圈子" action={new URLSearchParams(location.search).get('device')==='pc'?'浏览作品':'返回社区'} onAction={()=>go('community')}/>;
   const available=circles().filter(c=>!closed(c.id));
   const joined=available.filter(c=>isJoined(c.id));
   const discover=available.filter(c=>!isJoined(c.id));

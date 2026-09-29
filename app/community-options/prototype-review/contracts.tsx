@@ -9,6 +9,8 @@ import bText from '../../../design-notes/requirements-b-content.md?raw';
 import xText from '../../../design-notes/requirements-cross-product.md?raw';
 type Edge=[string,string,string];
 export const routes:Record<string,Edge[]>={
+ aigc:[['作品卡','work','进入同一公开作品详情'],['作者署名','author','进入公开作者主页']],
+ discussion:[['帖子','post','进入原帖'],['圈子','circles','发现圈子'],['官方教程','tutorials','浏览官方教程目录']],
  home:[['精选专题','topic','专题仍公开'],['专题入口','topics','浏览公开专题'],['作品卡','work','同一作品身份'],['金刚入口','apps','浏览目录'],['活动入口','activities','浏览公开活动'],['每日签到','checkin','登录后主动签到']],
  topics:[['专题卡','topic','按后台发布顺序']],topic:[['作品','work','关联公开对象'],['教程','tutorial','关联公开对象'],['应用','app','进入详情，不直接扣费']],
  community:[['作品','work','公开作品；独立于首页后台选用及活动关联'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['官方教程','tutorials','官方维护'],['发布','post-edit','登录后保留来源']],
@@ -81,7 +83,7 @@ const bSections:Record<string,number[]>={'内容管理':[2,3,4,5],'审核与发�
 const crossSections:Record<string,number[]>={'MakeNow 分享':[3,4],'MakeNow 复用':[3],'成果回流':[2,4],'资源取用':[5,6],'作者维护':[3,4],'走查':[1,7]};
 function extract(text:string,indices:number[]){return text.split(/(?=^## \d+\.)/m).filter(s=>indices.some(n=>s.startsWith('## '+n+'.'))).join('\n');}
 const cPageSections:Record<string,string[]>={
- home:['1'],community:['2.1'],post:['4.2','5'],circles:['2.2'],circle:['2.2'],tutorials:['2.3'],tutorial:['4.3','5'],
+ home:['1'],aigc:['0.3','2.1'],discussion:['0.3','2.1'],community:['2.1'],post:['4.2','5'],circles:['0.3','2.2'],circle:['2.2'],tutorials:['2.3'],tutorial:['4.3','5'],
  work:['4.1','5'],resource:['4.5','5'],create:['0.1','8'],publish:['0.1','6.2','6.3'],
  topics:['3.1'],topic:['3.1'],search:['0.2','3.2'],author:['3.3'],
  mine:['6.1'],drafts:['6.1'],records:['6.1'],'my-content':['6.1','6.2'],favorites:['5','6.1'],

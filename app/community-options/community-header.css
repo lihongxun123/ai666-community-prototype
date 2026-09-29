@@ -1,6 +1,6 @@
 
 .community-pc-header{position:sticky;top:0;z-index:40;background:#fff;color:#202124;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
-.community-pc-inner{height:64px;max-width:1800px;margin:auto;padding:0 16px;display:flex;align-items:center;gap:24px;box-sizing:border-box}
+.community-pc-inner{height:64px;max-width:1800px;margin:auto;padding:0 32px;display:flex;align-items:center;gap:24px;box-sizing:border-box}
 .community-pc-header button,.community-mobile-header button{font:inherit;cursor:pointer;background:none;border:0;padding:0;color:inherit}
 .community-pc-header button:focus-visible,.community-mobile-header button:focus-visible{outline:2px solid #777;outline-offset:3px}
 .community-icon{width:20px;height:20px;object-fit:contain;flex:none;display:block}

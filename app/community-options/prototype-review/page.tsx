@@ -1,6 +1,7 @@
 'use client';
 /* oxlint-disable react/react-compiler -- Restore browser URL after server hydration. */
 import { useEffect, useState, useCallback } from 'react';
+import {deviceDestination,readerVisible,readerGroup} from '../navigation-model';
 import { commonGroups, isCoveredCommonState } from '../common-states/catalog';
 import { allPages } from '../c-prototype/page';
 import { bPages } from '../b-prototype/page';
@@ -23,13 +24,6 @@ const sections = [
   { id: 'cross', name: '跨产品', route: 'cross-prototype', pages: crossPages },
 ];
 // Reader ownership is independent of product navigation and page implementation modules.
-const readerModule = (section: string, page: {id: string; module: string}) => {
-  if(section !== 'c') return page.module;
-  if(['community','post','circles','circle','tutorials','tutorial'].includes(page.id)) return '社区';
-  if(['个人管理','账号与通知','积分与任务'].includes(page.module)) return '我的';
-  if(['作品详情','搜索与作者','资源与跨端'].includes(page.module)) return '共用页面';
-  return page.module;
-};
 const communityGroups = [
   {title:'社区首页', entries:[['community','作品','works'],['community','交流','talk'],['community','官方教程','tutorials']]},
   {title:'帖子', entries:[['post','帖子详情','']]},
@@ -67,9 +61,7 @@ export default function Review() {
   const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[selectedState,setSelectedState]=useState('normal');
   const [inspected,setInspected]=useState<{id:string;section:string;state:string;card?:string}|null>(null);
   const readMode=(mode:string)=>{if(mode==='requirements'||mode==='flow'){setReading('prototype');setNotesTab(mode);setNotesOpen(true);}else setReading(mode);};
-  const [section, setSection] = useState('c'),
-    [module, setModule] = useState('首页'),
-    [pageId, setPageId] = useState('home'),
+  const [section, setSection] = useState('c'),    [pageId, setPageId] = useState('home'),
     [flat, setFlat] = useState(false),
     [common, setCommon] = useState(false),
     [commonGroup, setCommonGroup] = useState('loading'),
@@ -93,15 +85,17 @@ export default function Review() {
         sections.find((s) => s.id === q.get('section')) || sections[0],
       p = group.pages.find((p) => p.id === q.get('view'));
     setSection(group.id);
-    if (p) {
-      setModule(readerModule(group.id,p));
-      setPageId(p.id==='tutorials'&&group.id==='c'?'community':p.id);
-      if(p.id==='tutorials'&&group.id==='c'){const legacy=new URLSearchParams(q.get('context')||'');legacy.set('tab','tutorials');setContext(legacy.toString());}
+    if (p) {      const dest=deviceDestination(p.id,q.get('context')||'',q.get('device')==='pc'?'pc':'mobile');
+      setPageId(group.id==='c'?dest.id:p.id);if(group.id==='c')setContext(dest.query);
+      if(p.id==='tutorials'&&group.id==='c'&&q.get('device')!=='pc'){const legacy=new URLSearchParams(q.get('context')||'');legacy.set('tab','tutorials');setContext(legacy.toString());}
     }
   }, []);
-  const group = sections.find((s) => s.id === section)!,
-    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','社区','专题','AI应用','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(a)-['首页','社区','专题','AI应用','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(b):0),
-    pages = group.pages.filter((p) => readerModule(section,p) === module && !(section==='c'&&p.id==='tutorials')),
+  const readerModule=useCallback((s:string,p:{id:string;module:string})=>readerGroup(s,p,device),[device]);
+  const selectedGroup=sections.find(s=>s.id===section)!;
+  const group={...selectedGroup,pages:selectedGroup.pages.filter(p=>section!=='c'||readerVisible(p.id,device)).sort((a,b)=>section==='c'&&device==='pc'?['circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
+    currentModule=readerModule(section,group.pages.find(p=>p.id===pageId)||group.pages[0]),
+    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','共用页面'].indexOf(b):0),
+    pages = group.pages.filter((p) => readerModule(section,p) === currentModule ),
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);
   const pageStates = page.states.filter(s=>!isCoveredCommonState(page.id,s,section));
@@ -121,11 +115,10 @@ export default function Review() {
     setCommon(false);
     setFlat(false);setInspected(null);setSelectedState('normal');
     setAnnotations(false);
-    setSection(s);
-    setModule(readerModule(s,sections.find(g=>g.id===s)!.pages.find(p=>p.id===id)!));
-    setPageId(s==='c'&&id==='tutorials'?'community':id);
-    const selectionQuery=new URLSearchParams(query || (id==='community'?'tab=works':''));
-    if(s==='c'&&id==='tutorials')selectionQuery.set('tab','tutorials');
+    setSection(s);    const dest=deviceDestination(id,query,device);
+    setPageId(s==='c'?dest.id:id);
+    const selectionQuery=new URLSearchParams(s==='c'?dest.query:query);
+    if(s==='c'&&id==='tutorials'&&device!=='pc')selectionQuery.set('tab','tutorials');
     setContext(selectionQuery.toString());
     setRestart((n) => n + 1);
 
@@ -140,7 +133,7 @@ export default function Review() {
       select(g.id, p.module, p.id);
       setReading('prototype');
       const q = new URLSearchParams(targetQuery);
-      if(g.id==='c'&&id==='tutorials')q.set('tab','tutorials');
+      if(g.id==='c'&&id==='tutorials'&&device!=='pc')q.set('tab','tutorials');
       const defaults:Record<string,[string,string]>={post:['item','restore'],circle:['item','image'],work:['item','restore'],app:['item','copy'],author:['name','林间']};
       if(defaults[id]&&!q.has(defaults[id][0]))q.set(defaults[id][0],defaults[id][1]);
       if(id==='pc-handoff')q.set('item','video');
@@ -149,7 +142,8 @@ export default function Review() {
         q.set('source', fromResource?'resource':'app');
         q.set('return', fromResource?'/community-options/c-prototype?page=resource':'/community-options/c-prototype?page=app&item=video');
       }
-      setContext(q.toString());
+      const dest=deviceDestination(id,q.toString(),device);
+      setPageId(g.id==='c'?dest.id:id);setContext(g.id==='c'?dest.query:q.toString());
     }
   };
   const syncPage = useCallback(
@@ -158,18 +152,17 @@ export default function Review() {
         .find((s) => s.id === targetSection)
         ?.pages.find((p) => p.id === id);
       if (p) {
-        setSection(targetSection);
-        setModule(readerModule(targetSection,p));
-        setPageId(targetSection==='c'&&id==='tutorials'?'community':id);
+        setSection(targetSection);        const dest=deviceDestination(id,search,device);
+        setPageId(targetSection==='c'?dest.id:id);
         const q = new URLSearchParams(search);
         setSelectedState(q.get('state')||'normal');
         q.delete('page');q.delete('device');q.delete('state');q.delete('embed');
-        if(targetSection==='c'&&id==='tutorials')q.set('tab','tutorials');
+        if(targetSection==='c'&&id==='tutorials'&&device!=='pc')q.set('tab','tutorials');
         setContext(q.toString());
 
       }
     },
-    [],
+    [device],
   );
   useEffect(()=>{
     if(!ready)return;
@@ -182,9 +175,10 @@ export default function Review() {
   const noteSection=inspected?.section||section;
   const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
   const noteState=inspected?.state||(flat?pageStates.find(s=>s!=='normal')||'normal':selectedState);
-  const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>readerModule(noteSection,p)===readerModule(noteSection,notePage));
+  const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>(noteSection!=='c'||readerVisible(p.id,device))&&readerModule(noteSection,p)===readerModule(noteSection,notePage));
   const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget}/>:<>{noteState!=='normal'&&<p className="rv-selected-state">业务状态：{stateLabels[noteState]||noteState}</p>}{noteSection==='c'&&appReviewPages.includes(notePage.id)?<AppRequirements key={notePage.id} page={notePage.id}/>:<PageRequirements section={noteSection} page={notePage}/>}</>;
   const inspect=(id:string,state:string,group=section,card=id+state)=>setInspected({id,state,section:group,card});
+  const changeDevice=(value:string)=>{const dest=deviceDestination(page.id,context,value);setDevice(value);if(section==='c'){setPageId(dest.id);setContext(dest.query);}setFlat(false);setInspected(null);setAnnotations(false);setRestart(n=>n+1);};
   const activeTab=new URLSearchParams(context).get('tab')||'works';
   if(!ready)return <main className="rv-main" aria-busy="true"/>;
   return (
@@ -224,7 +218,7 @@ export default function Review() {
           {modules.map((m, i) => (
             <div key={m}>
               <button
-                aria-current={!common && module === m ? 'step' : undefined}
+                aria-current={!common && currentModule === m ? 'step' : undefined}
                 onClick={() => {
                   const p = group.pages.find((p) => readerModule(section,p) === m)!;
                   select(section, m, p.id);
@@ -233,12 +227,12 @@ export default function Review() {
                 <span>{String(i + 1).padStart(2, '0')}</span>
                 <strong>{m}</strong>
                 <small>
-                  {group.pages.filter((p) => readerModule(section,p) === m && !(section==='c'&&p.id==='tutorials')).length + '页'}
+                  {group.pages.filter((p) => readerModule(section,p) === m ).length + '页'}
                 </small>
               </button>
-              {!common && module === m && (
+              {!common && currentModule === m && (
                 <div className="rv-page-tree">
-                  {section==='c'&&m==='社区' ? communityGroups.map(branch=><div className="rv-nav-branch" key={branch.title}>
+                  {section==='c'&&device==='mobile'&&m==='社区' ? communityGroups.map(branch=><div className="rv-nav-branch" key={branch.title}>
                     <div className="rv-nav-label">{branch.title}</div>
                     {branch.entries.map(([id,label,tab])=><button key={id+tab}
                       aria-current={(page.id===id&&(id!=='community'||activeTab===tab))||(page.id==='tutorials'&&tab==='tutorials')?'page':undefined}
@@ -263,7 +257,7 @@ export default function Review() {
             <header className="rv-heading">
               <div>
                 <small>
-                  {group.name} / {module}
+                  {group.name} / {currentModule}
                 </small>
                 <h2>
                   {section==='c'&&page.id==='community'?'社区 · '+({works:'作品',talk:'交流',tutorials:'官方教程'}[activeTab]||'作品'):page.title}{' '}
@@ -277,13 +271,13 @@ export default function Review() {
                 {section==='c'&&<nav aria-label="设备">
                   <button
                     aria-pressed={device === 'mobile'}
-                    onClick={() => setDevice('mobile')}
+                    onClick={() => changeDevice('mobile')}
                   >
                     移动端
                   </button>
                   <button
                     aria-pressed={device === 'pc'}
-                    onClick={() => setDevice('pc')}
+                    onClick={() => changeDevice('pc')}
                   >
                     PC端
                   </button>
@@ -436,7 +430,7 @@ export default function Review() {
           <footer className="rv-next">
             <button
               disabled={index === 0}
-              onClick={() => select(section, module, pages[index - 1].id)}
+              onClick={() => select(section, currentModule, pages[index - 1].id)}
             >
               上一页
             </button>
@@ -445,15 +439,15 @@ export default function Review() {
             </span>
             {index < pages.length - 1 ? (
               <button
-                onClick={() => select(section, module, pages[index + 1].id)}
+                onClick={() => select(section, currentModule, pages[index + 1].id)}
               >
                 下一页：{pages[index + 1].title}
               </button>
             ) : (
               <button
-                disabled={modules.indexOf(module) === modules.length - 1}
+                disabled={modules.indexOf(currentModule) === modules.length - 1}
                 onClick={() => {
-                  const m = modules[modules.indexOf(module) + 1],
+                  const m = modules[modules.indexOf(currentModule) + 1],
                     p = group.pages.find((p) => readerModule(section,p) === m)!;
                   select(section, m, p.id);
                 }}

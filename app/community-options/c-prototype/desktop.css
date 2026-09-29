@@ -37,3 +37,16 @@
 .cp-filter-row select{width:100%;min-width:0;border:1px solid #d7d7d7;border-radius:4px;background:white;padding:8px;color:#222}
 @media(max-width:1000px){.cp-desktop.cp-layout-detail .cp-desktop-workspace,.cp-desktop.cp-layout-account .cp-desktop-workspace{grid-template-columns:minmax(0,1fr) 190px;gap:24px}.cp-desktop .cp-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cp-desktop .cp-retained-nav{gap:14px;padding-inline:24px}}
 @media(max-width:1280px){.cp-desktop .cp-retained-nav{overflow:auto}.cp-desktop-primary{margin-left:8px}.cp-desktop-primary,.cp-desktop-services{gap:10px}}
+
+/* Desktop browsing shares the approved homepage container. */
+.cp-desktop-heading,.cp-desktop .cp-desktop-workspace{max-width:1800px}
+.cp-desktop[data-page=aigc] .cl-community,.cp-desktop .circle-list-page{max-width:none}
+.cp-desktop[data-page=aigc] .wf-grid{columns:5}
+.cp-desktop .circle-list-page .circle-card-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cp-desktop .circle-list-card{padding:16px;gap:14px;min-height:130px}
+.cp-desktop .circle-list-copy>strong{font-size:17px}.cp-desktop .circle-list-copy>span{font-size:13px}
+.cp-circle-navigation{max-width:1800px;margin:auto;padding:4px 32px 12px;display:flex;gap:28px}
+.cp-circle-navigation button{border:0;background:none;color:#777;padding:8px 0;cursor:pointer;font:inherit}
+.cp-circle-navigation button[aria-current]{color:#222;border-bottom:2px solid #222}
+@media(max-width:1400px){.cp-desktop .circle-list-page .circle-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cp-desktop[data-page=aigc] .wf-grid{columns:4}}
+@media(max-width:1050px){.cp-desktop .circle-list-page .circle-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}

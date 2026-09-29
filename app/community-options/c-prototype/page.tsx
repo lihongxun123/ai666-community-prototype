@@ -1,4 +1,5 @@
 'use client';
+import {deviceDestination} from '../navigation-model';
 import {loadingLayouts} from '../common-states/catalog';
 import {LayoutSkeleton} from '../common-states/layout-skeleton';
 import {DetailSkeleton,detailSkeletonPages} from './detail-skeleton';
@@ -80,7 +81,8 @@ export default function Prototype() {
   const hydrated=useSyncExternalStore(hydrationSubscribe,()=>true,()=>false);
   const search = useSyncExternalStore(subscribe, snapshot, () => ''),
     params = new URLSearchParams(search);
-  const requestedPage=params.get('page')||'topics', loginOpen=requestedPage==='login';
+  const rawPage=params.get('page')||'topics';
+  const requestedPage=deviceDestination(rawPage,params.toString(),params.get('device')||'mobile').id, loginOpen=requestedPage==='login';
   const background=loginOpen?prototypeStore.getItem('cp-login-background')||'home':'';
   const [backgroundPage,backgroundQuery]=background.split('?');
   const page = loginOpen?backgroundPage:requestedPage,
@@ -94,7 +96,9 @@ export default function Prototype() {
     from = useRef<string[]>([]);
   const go = (target: string) => {
     positions.set(search, window.scrollY);
-    const [id, rest] = target.split('?');
+    const [rawId, rawQuery] = target.split('?');
+    const destination=deviceDestination(rawId,rawQuery||'',desktop?'pc':'mobile');
+    const id=destination.id,rest=destination.query;
     if(id==='login'&&!loginOpen){const source=new URLSearchParams(params);['page','device','origin','embed','contentOnly'].forEach(key=>source.delete(key));prototypeStore.setItem('cp-login-background',page+(source.size?'?'+source.toString():''));}
     if (id === 'create' && !loginOpen && !params.has('activity') && !(rest||'').includes('activity=') && prototypeStore.getItem('cp-activity')!=='1') {
       prototypeStore.removeItem('cp-activity');
@@ -133,7 +137,7 @@ export default function Prototype() {
       window.history.back();
     } else
       go(
-        page === 'circle' ? 'circles' : ['circles','post'].includes(page) ? 'community' : page === 'tutorial' ? 'tutorials' : page === 'activity' ? 'activities' : ['topic'].includes(page)
+        page === 'circle' ? 'circles' : desktop&&page==='work'?'aigc':desktop&&page==='post'?'discussion':['circles','post'].includes(page) ? 'community' : page === 'tutorial' ? 'tutorials' : page === 'activity' ? 'activities' : ['topic'].includes(page)
           ? 'topics'
           : page.startsWith('app-')
             ? 'app'
@@ -156,7 +160,8 @@ export default function Prototype() {
       <div inert={loginOpen||undefined}>
       {desktop && <DesktopHeader active={page} go={go}/>}
       {!contentOnly && !desktop && <MobileHeader community={['community','tutorials'].includes(page)} title={page==='search'?'搜索':meta?.title||'页面暂不可访问'} back={back} go={go}/>}
-      {desktop && <div className="cp-desktop-heading"><button onClick={back} aria-label="返回"><img src="/home-prototype/icons/arrow-left-line.svg" alt=""/></button><h1>{page==='search'?'搜索':meta?.title}</h1></div>}
+      {desktop && <div className="cp-desktop-heading">{!['aigc','circles','discussion','tutorials','topics','apps','activities','shop'].includes(page)&&<button onClick={back} aria-label="返回"><img src="/home-prototype/icons/arrow-left-line.svg" alt=""/></button>}<h1>{page==='search'?'搜索':meta?.title}</h1></div>}
+      {desktop&&['circles','discussion','tutorials'].includes(page)&&<nav className="cp-circle-navigation" aria-label="圈子栏目">{[['circles','圈子'],['discussion','交流'],['tutorials','官方教程']].map(([id,label])=><button key={id} aria-current={page===id?'page':undefined} onClick={()=>go(id)}>{label}</button>)}</nav>}
       <div className="cp-desktop-workspace"><main className="cp-body" key={search}>
         {state==='loading'&&loadingLayouts[page]?<LayoutSkeleton kind={loadingLayouts[page]}/>:state==='loading'&&detailSkeletonPages.includes(page)?<DetailSkeleton page={page}/>:<PublishedBoundary {...props}>
         {shopPage ? <RetainedShop {...props}/> : retained ? <RetainedActivities {...props}/> : topicPages.some((p) => p.id === page) ? (
