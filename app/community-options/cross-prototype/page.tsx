@@ -769,7 +769,8 @@ function Library({
   go: Go;
   update: (fn: (d: CrossData) => CrossData) => void;
 }) {
-  if (!data.copies.length || state === 'empty')
+  const copies=data.copies.length?data.copies:state==='source-withdrawn'?[{id:'sample-withdrawn-copy',version:data.share.publicVersion,acquiredReshare:false,parentAllows:false,title:'我的旧照修复练习'}]:[];
+  if (!copies.length || state === 'empty')
     return (
       <>
         <Note title="还没有个人副本">可以从允许复用的公开项目开始。</Note>
@@ -779,7 +780,7 @@ function Library({
   return (
     <>
       <p className="xp-lead">个人副本由你独立编辑，来源版本保持记录。</p>
-      {data.copies.map((copy) => (
+      {copies.map((copy) => (
         <CardLink
           key={copy.id}
           title={copy.title}
@@ -790,7 +791,7 @@ function Library({
               : '个人项目'
           }
           onClick={() => {
-            update((d) => ({ ...d, selectedCopy: copy.id }));
+            update((d) => ({ ...d, selectedCopy: copy.id, copies:d.copies.some(c=>c.id===copy.id)?d.copies:[...d.copies,copy] }));
             go('editor');
           }}
         />

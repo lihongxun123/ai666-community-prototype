@@ -77,3 +77,12 @@
 .cp-root .cl-filter-menu{border:0;margin:0}
 
 .cl-topic-tags{display:flex;gap:8px;overflow:auto;scrollbar-width:none;margin:4px 0 18px}.cl-topic-tags button{white-space:nowrap;padding:6px 10px;border-radius:4px;background:#f6f6f6;color:#777;font-size:12px}.cl-topic-tags button[aria-pressed=true]{background:#eaeaea;color:#222}.cl-tutorial em{font-style:normal;color:#777}
+
+.cp-root .cl-secondary-row{display:flex;align-items:center;gap:10px;min-height:48px;margin-bottom:12px;min-width:0}
+.cp-root .cl-secondary-options{display:flex;gap:20px;align-items:center;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.cp-root .cl-secondary-options button{flex:none;white-space:nowrap;padding:12px 0;font-size:13px;line-height:22px;color:#888;background:none;position:relative}
+.cp-root .cl-secondary-options button[aria-pressed=true]{color:#202124;font-weight:600}
+.cp-root .cl-secondary-options button[aria-pressed=true]:after{content:'';position:absolute;left:0;bottom:5px;width:16px;height:2px;background:#202124}
+.cp-root .cl-secondary-row .cl-filter-trigger{min-width:32px;justify-content:center}
+.cp-root .cl-talk-actions{display:flex;align-items:center;gap:18px;margin:-4px 0 14px}
+.cp-root .cl-talk-actions .cl-compose{margin-left:auto;display:flex;align-items:center;gap:5px;color:#666;font-size:12px;min-height:32px}

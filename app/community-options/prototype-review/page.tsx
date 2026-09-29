@@ -99,7 +99,9 @@ export default function Review() {
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);
   const pageStates = page.states.filter(s=>!isCoveredCommonState(page.id,s,section));
-  const hasBusinessStates=pageStates.some(s=>s!=='normal');
+  const businessStateCount=pageStates.filter(s=>s!=='normal').length;
+  const hasBusinessStates=businessStateCount>0;
+  const inlineSingleState=businessStateCount===1;
   useEffect(()=>{
     if(ready&&flat&&!hasBusinessStates){setFlat(false);setInspected(null);setSelectedState('normal');}
   },[ready,flat,hasBusinessStates]);
@@ -301,9 +303,9 @@ export default function Review() {
               </div>
             )}
             {(reading === 'prototype') && (
-              <><div className="rv-notes-launch"><button onClick={()=>readMode('requirements')}>页面需求</button><button onClick={()=>readMode('flow')}>模块流程</button></div><div className="rv-controls">
+              <><div className="rv-notes-launch"><button onClick={()=>readMode('requirements')}>页面需求</button><button onClick={()=>readMode('flow')}>模块流程</button></div>{(businessStateCount>1||(appSample&&device==='mobile'&&!flat&&!inlineSingleState))&&<div className="rv-controls">
                 <div>
-                  <button
+                  {businessStateCount>1&&<button
                     aria-pressed={!flat && !common}
                     onClick={() => {
                       setFlat(false);setInspected(null);setSelectedState('normal');
@@ -311,8 +313,8 @@ export default function Review() {
                     }}
                   >
                     正常页面
-                  </button>
-                  {hasBusinessStates && <button
+                  </button>}
+                  {businessStateCount>1 && <button
                     aria-pressed={flat && !common}
                     onClick={() => {
                       setFlat(true);setInspected({id:page.id,section,state:pageStates.find(s=>s!=='normal')||'normal'});
@@ -322,7 +324,7 @@ export default function Review() {
                     业务状态（{pageStates.filter((s) => s !== 'normal').length}
                     ）
                   </button>}
-                  {appSample && device === 'mobile' && !flat && (
+                  {appSample && device === 'mobile' && !flat && !inlineSingleState && (
                     <button
                       aria-pressed={annotations}
                       onClick={() => setAnnotations(!annotations)}
@@ -331,7 +333,7 @@ export default function Review() {
                     </button>
                   )}
                 </div>
-              </div></>
+              </div>}</>
             )}
           </>
         )}
@@ -375,9 +377,9 @@ export default function Review() {
         ) : reading === 'plan' ? (
           <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
         ) : (<ReviewWorkspace mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
-          {flat?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
-            {pageStates.filter(state=>state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
-              const cardUrl='/community-options/'+group.route+'?page='+p.id+'&device='+device+'&state='+state+'&embed=1';
+          {(flat||inlineSingleState)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
+            {pageStates.filter(state=>inlineSingleState||state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
+              const cardUrl='/community-options/'+group.route+'?page='+p.id+(context?'&'+context:'')+'&device='+device+'&state='+state+'&embed=1';
               const active=inspected?.card?inspected.card===p.id+state:notePage.id===p.id&&noteState===state;
               return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
             })}
