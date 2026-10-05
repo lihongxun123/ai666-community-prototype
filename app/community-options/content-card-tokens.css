@@ -1,0 +1,14 @@
+/* Approved homepage baseline. Media feeds share density, independent of column count. */
+:root {
+  --community-work-gap: 6px;
+  --community-work-radius: 4px;
+  --community-work-title-size: 13px;
+  --community-work-caption-padding: 32px 9px 9px;
+}
+.cp-desktop, .hp-root {
+  --community-work-gap: 4px;
+  --community-work-caption-padding: 32px 12px 12px;
+}
+@media (min-width:1000px) and (max-width:1250px) {
+  .cp-desktop, .hp-root { --community-work-caption-padding: 28px 10px 10px; }
+}

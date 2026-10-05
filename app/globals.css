@@ -416,3 +416,15 @@ body {
 #main table :where(th, td) { padding: .75rem .875rem; }
 #main table p { margin-block: 0 .5rem; }
 #main :where(.citations, .study-refs, .study-refs a, figcaption) { font-size: .8125rem; }
+/* Overlay handles do not reserve any content width, including nested frames. */
+html.site-overlay-scrollbars,html.site-overlay-scrollbars *{scrollbar-width:none!important;scrollbar-gutter:auto!important}
+html.site-overlay-scrollbars::-webkit-scrollbar,html.site-overlay-scrollbars *::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+.site-scrollbar-layer{position:fixed;inset:0;pointer-events:none;z-index:2147483646}
+.site-scrollbar-handle{position:fixed;pointer-events:auto;touch-action:none;cursor:default;border:0;border-radius:6px;outline-offset:-1px}
+.site-scrollbar-handle::before{content:'';position:absolute;background:rgb(115 119 125 / 38%);border-radius:4px;transition:background .15s}
+.site-scrollbar-handle.vertical::before{width:3px;right:2px;top:0;bottom:0}.site-scrollbar-handle.horizontal::before{height:3px;bottom:2px;left:0;right:0}
+.site-scrollbar-handle:hover::before,.site-scrollbar-handle:focus-visible::before{background:rgb(100 104 110 / 75%)}
+@media print{.site-scrollbar-layer{display:none}}
+.site-scrollbar-layer[popover]{position:fixed;inset:0;width:100vw;height:100vh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;overflow:visible}.site-scrollbar-layer::backdrop{background:transparent;pointer-events:none}
+/* Form focus uses the control itself, without an additional outer frame. */
+:is(input,textarea,select,[contenteditable="true"],[role="textbox"],[role="combobox"],[role="listbox"],[role="spinbutton"]):is(:focus,:focus-visible,:active){outline:none!important;outline-offset:0!important;box-shadow:none!important}

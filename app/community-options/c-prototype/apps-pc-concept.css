@@ -1,0 +1,28 @@
+.cp-root.cp-desktop[data-page=apps] .cp-desktop-workspace,.cp-root.cp-desktop[data-page=apps] .cp-desktop-heading{max-width:1360px;padding-inline:40px}
+.cp-root.cp-desktop[data-page=apps] .cp-desktop-heading{padding-bottom:4px}
+.cp-root.cp-desktop[data-page=apps] .app-discovery-intro{margin:0 0 20px;color:#888;font-size:14px}
+.cp-root.cp-desktop[data-page=apps] .app-latest{margin-bottom:28px}
+.cp-root.cp-desktop[data-page=apps] .app-latest header{margin-bottom:10px}
+.cp-root.cp-desktop[data-page=apps] .app-latest header h2{font-size:14px;color:#666;font-weight:500}
+.cp-root.cp-desktop[data-page=apps] .app-latest-track{gap:16px;overscroll-behavior-x:contain}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card{flex:0 0 calc((100% - 16px)/2);height:220px;aspect-ratio:auto;background:#fff;color:#222;border:1px solid #e8e8e8;border-radius:6px;display:flex;flex-direction:row-reverse}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card>img{width:54%;height:100%!important;object-fit:cover!important}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card>span{position:static;inset:auto;flex:1;min-width:0;padding:24px 20px;background:none;display:flex;flex-direction:column;align-items:flex-start}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card em{font-style:normal;font-size:11px;color:#888;margin-bottom:12px}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card strong{font-size:22px;line-height:1.35}
+.cp-root.cp-desktop[data-page=apps] .app-latest-card small{color:#777;font-size:13px;line-height:1.65;margin-top:10px}
+.cp-root.cp-desktop[data-page=apps] .app-banner-explore{display:flex;align-items:center;gap:12px;font-weight:400;font-size:12px;margin-top:auto;padding-top:12px}
+.cp-root.cp-desktop[data-page=apps] .app-banner-explore img{width:15px;height:15px}
+.cp-root.cp-desktop[data-page=apps] .app-directory-heading{display:none}
+.cp-root.cp-desktop[data-page=apps] .cp-discovery-filters{margin-bottom:18px}
+.cp-root.cp-desktop[data-page=apps] .cp-app-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px;columns:auto}
+.cp-root.cp-desktop[data-page=apps] .cp-app-gallery>.cp-app-effect{aspect-ratio:auto;margin:0;background:#fff;border:1px solid #ededed;border-radius:6px;align-self:start;transition:border-color .15s}
+.cp-root.cp-desktop[data-page=apps] .cp-app-gallery>.cp-app-effect:hover{border-color:#bbb}
+.cp-root.cp-desktop[data-page=apps] .cp-app-effect>img{width:100%;height:auto!important;aspect-ratio:1.65!important;object-fit:cover!important}
+.cp-root.cp-desktop[data-page=apps] .cp-app-caption{position:static;opacity:1;background:none;color:#222;padding:13px 12px 15px;min-height:88px;box-sizing:border-box;justify-content:flex-start}
+.cp-root.cp-desktop[data-page=apps] .cp-app-caption strong{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.cp-root.cp-desktop[data-page=apps] .cp-app-caption em{font-size:10px;color:#666;background:#f1f1f1;border-radius:3px;font-weight:400;font-style:normal;padding:2px 6px}
+.cp-root.cp-desktop[data-page=apps] .app-summary{font-size:12px;color:#777;line-height:1.6;margin-top:7px;display:block}
+.cp-root.cp-desktop[data-page=apps] .cp-app-caption small{color:#888}
+@media(max-width:1050px){.cp-root.cp-desktop[data-page=apps] .app-latest-card strong{font-size:19px}.cp-root.cp-desktop[data-page=apps] .app-latest-card>span{padding:18px 14px}.cp-root.cp-desktop[data-page=apps] .cp-app-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cp-root.cp-desktop[data-page=apps] .cp-desktop-heading h1{font-size:30px;font-weight:700;line-height:1.3}

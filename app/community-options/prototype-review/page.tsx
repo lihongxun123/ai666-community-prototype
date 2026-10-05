@@ -2,20 +2,20 @@
 /* oxlint-disable react/react-compiler -- Restore browser URL after server hydration. */
 import { useEffect, useState, useCallback } from 'react';
 import {deviceDestination,readerVisible,readerGroup} from '../navigation-model';
-import { commonGroups, isCoveredCommonState } from '../common-states/catalog';
+import {CommonFeedback} from './common-feedback';
+import {OverlayGallery,pageOverlays} from './overlay-gallery';
+import { isCoveredCommonState } from '../common-states/catalog';
 import { allPages } from '../c-prototype/page';
 import { bPages } from '../b-prototype/page';
 import { crossPages } from '../cross-prototype/data';
 import './review.css';
 import {ReviewWorkspace} from './review-workspace';
 import {ProductPlan} from './product-plan';
-import {handoffStatus} from './handoff-status';
+
 import {PageRequirements,ModuleFlow} from './contracts';
 import {TrackedFrame} from './tracked-frame';
-import {MobileBrowserFrame} from './mobile-browser-frame';
 import {
   AnnotatedApp,
-  AppRequirements,
   appReviewPages,
   appReviewIds,
 } from './app-review';
@@ -26,12 +26,18 @@ const sections = [
 ];
 // Reader ownership is independent of product navigation and page implementation modules.
 const communityGroups = [
-  {title:'社区首页', entries:[['community','作品','works'],['community','交流','talk'],['community','官方教程','tutorials']]},
-  {title:'帖子', entries:[['post','帖子详情','']]},
-  {title:'圈子', entries:[['circles','圈子发现',''],['circle','圈子详情','']]},
-  {title:'教程', entries:[['tutorial','教程详情','']]},
+  {title:'作品', entries:[['community','作品','works'],['work','作品详情','']]},
+  {title:'交流', entries:[['community','交流','talk'],['post','帖子详情','']]},
+  {title:'教程', entries:[['community','教程','tutorials'],['tutorial','教程详情','']]},
+  {title:'圈子', entries:[['circles','圈子列表',''],['circle','圈子详情','']]},
 ];
 const stateLabels: Record<string, string> = {
+ 'result-text':'剧本结果','result-video':'视频结果',
+ 'app-suite':'电商套图','app-analysis':'选品分析','app-music':'音乐翻唱','app-storyboard':'分镜一致性质检','app-website':'网页开发',
+  'create-image':'图片生成','create-text':'剧本创作','create-video':'视频生成','work-image':'图片作品','work-video':'视频作品','work-text':'文本作品',
+  'search-default':'默认推荐搜索','search-results':'命中结果','search-no-results':'无匹配结果',
+  'exchange-confirm':'确认兑换','exchange-submitting':'兑换中','exchange-success':'兑换成功','exchange-insufficient':'积分不足','exchange-soldout':'库存不足','exchange-unavailable':'商品停止兑换','exchange-price-changed':'价格已变更','exchange-failure':'兑换失败','exchange-unknown':'兑换结果待确认',
+  'account-switched':'账号已切换','action-error':'操作异常',activity:'活动投稿','activity-ended':'活动已结束',approved:'已通过','award-pending':'待发奖',awarded:'已获奖',blocked:'已阻止',cancelled:'已取消','change-failed':'变更失败',changed:'内容已变更',completed:'已完成',confirm:'待确认','content-removed':'内容已下架','copy-error':'复制失败','copy-failed':'复制失败','dependency-missing':'缺少依赖',done:'已完成',duplicate:'重复提交',edit:'编辑中',ended:'已结束',expired:'已过期',expiring:'即将过期','file-missing':'文件缺失',hold:'积分冻结','identity-changed':'身份已变更','identity-error':'身份异常',idle:'未开始',impact:'影响确认',ineligible:'不符合条件',insufficient:'积分不足',invalid:'信息无效','invalid-target':'目标无效','license-denied':'授权受限','load-failed':'加载失败','login-expired':'登录已失效','media-error':'素材加载失败',mismatch:'信息不匹配',mobile:'手机端','network-error':'网络异常','object-gone':'对象已失效',partial:'部分完成',pc:'电脑端',pending:'待处理',permission:'权限受限','permission-revoked':'权限已撤销',post:'帖子',private:'私密',public:'公开','publish-failed':'发布失败',records:'记录','reference-invalid':'引用无效',rejected:'未通过',release:'积分释放',restricted:'受限制',return:'返回',reviewing:'审核中',revision:'修订中',revoked:'已撤销',running:'生成中','save-error':'保存失败','save-failed':'保存失败',single:'单项','source-withdrawn':'来源已撤回',stale:'信息已过时','submit-error':'提交失败','submit-failed':'提交失败',submitted:'已提交','target-removed':'目标已下架',text:'文字',unauthorized:'未授权',uncertain:'待确认',unknown:'未知状态',unpublished:'未发布',unqualified:'不符合资格',unsupported:'暂不支持',unverified:'未验证','update-error':'更新失败','upload-failed':'上传失败',uploading:'上传中','upstream-blocked':'上游受阻',validation:'信息校验',video:'视频',withdrawn:'已撤回',
   normal: '正常',
   loading: '加载中',
   empty: '暂无内容',
@@ -59,13 +65,13 @@ const stateLabels: Record<string, string> = {
 };
 export default function Review() {
   const [ready,setReady]=useState(false);
+  const [overlays,setOverlays]=useState(false),[overlaySelection,setOverlaySelection]=useState('');
   const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[selectedState,setSelectedState]=useState('normal');
   const [inspected,setInspected]=useState<{id:string;section:string;state:string;card?:string}|null>(null);
   const readMode=(mode:string)=>{if(mode==='requirements'||mode==='flow'){setReading('prototype');setNotesTab(mode);setNotesOpen(true);}else setReading(mode);};
   const [section, setSection] = useState('c'),    [pageId, setPageId] = useState('home'),
     [flat, setFlat] = useState(false),
     [common, setCommon] = useState(false),
-    [commonGroup, setCommonGroup] = useState('loading'),
     [restart, setRestart] = useState(0),
     [device, setDevice] = useState('mobile'),
     [reading, setReading] = useState('plan'),
@@ -77,29 +83,33 @@ export default function Review() {
     setCommon(q.get('view') === 'common');
     setReady(true);
     const mode=q.get('reading');
-    setReading(mode==='plan'?'plan':mode?'prototype':'plan');
+    setReading(mode==='plan'?'plan':mode||q.get('display')==='overlays'?'prototype':'plan');
     if(mode==='requirements'||mode==='flow'){setNotesTab(mode);setNotesOpen(true);}else if(q.get('notes')){setNotesTab(q.get('notes')==='flow'?'flow':'requirements');setNotesOpen(true);}
     setFlat(q.get('display')==='states');
+    setOverlays(q.get('display')==='overlays');setOverlaySelection(q.get('overlay')||'');
     setDevice(q.get('device')==='pc'?'pc':'mobile');
     setContext(q.get('context') || (q.get('view')==='community'?'tab=works':''));
     const group =
         sections.find((s) => s.id === q.get('section')) || sections[0],
-      p = group.pages.find((p) => p.id === (['app-input','app-task','app-result'].includes(q.get('view')||'')?'app':q.get('view')));
+      initialDestination=deviceDestination(q.get('view')||'home',q.get('context')||'',q.get('device')||'mobile'),
+      p = group.pages.find((p) => p.id === (group.id==='c'?initialDestination.id:q.get('view')));
     setSection(group.id);
-    if (p) {      const dest=deviceDestination(p.id,q.get('context')||'',q.get('device')==='pc'?'pc':'mobile');
+    if (p) {      const dest=initialDestination;
       setPageId(group.id==='c'?dest.id:p.id);if(group.id==='c')setContext(dest.query);
       if(p.id==='tutorials'&&group.id==='c'&&q.get('device')!=='pc'){const legacy=new URLSearchParams(q.get('context')||'');legacy.set('tab','tutorials');setContext(legacy.toString());}
     }
   }, []);
   const readerModule=useCallback((s:string,p:{id:string;module:string})=>readerGroup(s,p,device),[device]);
   const selectedGroup=sections.find(s=>s.id===section)!;
-  const group={...selectedGroup,pages:selectedGroup.pages.filter(p=>section!=='c'||readerVisible(p.id,device)).sort((a,b)=>section==='c'&&device==='pc'?['circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
+  const group={...selectedGroup,pages:selectedGroup.pages.map(p=>section==='c'&&device==='pc'&&p.id==='circles'?{...p,title:'圈子首页'}:p).filter(p=>section!=='c'||readerVisible(p.id,device)).sort((a,b)=>section==='c'&&device==='pc'?['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
     currentModule=readerModule(section,group.pages.find(p=>p.id===pageId)||group.pages[0]),
-    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(b):0),
-    pages = group.pages.filter((p) => readerModule(section,p) === currentModule ),
+    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(b):0),
+    pages = group.pages.filter((p) => readerModule(section,p) === currentModule ).sort((a,b)=>section==='c'&&device==='mobile'&&currentModule==='社区'?['community','work','post','circles','circle','tutorial'].indexOf(a.id)-['community','work','post','circles','circle','tutorial'].indexOf(b.id):0),
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);
-  const pageStates = page.states.filter(s=>!isCoveredCommonState(page.id,s,section));
+  const pageStates = (section==='c'&&device==='pc'&&page.id==='create'?['normal','create-image','create-text','create-video']:section==='c'&&device==='pc'&&page.id==='app'?['normal','app-suite','app-analysis','app-music','app-storyboard','app-website']:page.states).filter(s=>!isCoveredCommonState(page.id,s,section));
+  const overlayCount=section==='c'?pageOverlays(page.id,device).length:0;
+  const showOverlays=overlays&&overlayCount>0;
   const businessStateCount=pageStates.filter(s=>s!=='normal').length;
   const hasBusinessStates=businessStateCount>0;
   const inlineSingleState=businessStateCount===1;
@@ -113,8 +123,9 @@ export default function Review() {
     group.route +
     '?page=' +
     page.id +
-    (context ? '&' + context : '');
+    (context ? '&' + context : section==='c'&&page.id==='activity'?'&item=guoqing_qitianle_20261001':section==='c'&&page.id==='search'?'&q=':'');
   const select = (s: string, _m: string, id: string, query = '') => {
+    setOverlays(false);setOverlaySelection('');
     setCommon(false);
     setFlat(false);setInspected(null);setSelectedState('normal');
     setAnnotations(false);
@@ -129,7 +140,9 @@ export default function Review() {
   const openTarget = (target: string, sourcePage?: string) => {
     setNotesOpen(false);
     const targetSection = target.startsWith('cross:') ? 'cross' : target.startsWith('b:')?'b':'c';
-    const [id,targetQuery=''] = target.replace(/^(cross|b):/, '').split('?');
+    const [rawTarget,targetQueryRaw=''] = target.replace(/^(cross|b):/, '').split('?');
+    const resolvedTarget=targetSection==='c'?deviceDestination(rawTarget,targetQueryRaw,device):{id:rawTarget,query:targetQueryRaw};
+    const id=resolvedTarget.id,targetQuery=resolvedTarget.query;
     const g = sections.find((s) => s.id === targetSection)!;
     const p = g.pages.find((p) => p.id === id);
     if (p) {
@@ -173,13 +186,14 @@ export default function Review() {
     if(context&&!common)q.set('context',context);
     if(notesOpen)q.set('notes',notesTab);
     if(flat)q.set('display','states');
+    if(showOverlays&&!common){q.set('display','overlays');if(overlaySelection)q.set('overlay',overlaySelection);}
     history.replaceState(null,'','?'+q.toString());
-  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat]);
+  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,showOverlays,overlaySelection]);
   const noteSection=inspected?.section||section;
   const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
   const noteState=inspected?.state||(flat?pageStates.find(s=>s!=='normal')||'normal':selectedState);
   const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>(noteSection!=='c'||readerVisible(p.id,device))&&readerModule(noteSection,p)===readerModule(noteSection,notePage));
-  const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget}/>:<>{noteState!=='normal'&&<p className="rv-selected-state">业务状态：{stateLabels[noteState]||noteState}</p>}{noteSection==='c'&&appReviewPages.includes(notePage.id)?<AppRequirements key={notePage.id} page={notePage.id}/>:<PageRequirements section={noteSection} page={notePage}/>}</>;
+  const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget} device={device}/>:<PageRequirements section={noteSection} page={notePage}/>;
   const inspect=(id:string,state:string,group=section,card=id+state)=>setInspected({id,state,section:group,card});
   const changeDevice=(value:string)=>{const dest=deviceDestination(page.id,context,value);setDevice(value);if(section==='c'){setPageId(dest.id);setContext(dest.query);}setFlat(false);setInspected(null);setAnnotations(false);setRestart(n=>n+1);};
   const activeTab=new URLSearchParams(context).get('tab')||'works';
@@ -203,21 +217,6 @@ export default function Review() {
           ))}
         </div>
         <nav aria-label="评审模块">
-          {(
-            <button
-              aria-current={common ? 'step' : undefined}
-              onClick={() => {
-                setCommon(true);
-                history.replaceState(null, '', '?section='+section+'&view=common');
-              }}
-            >
-              <span>◇</span>
-              <strong>通用状态</strong>
-              <small>
-                {commonGroups.reduce((n, g) => n + g.samples.length, 0)} 项
-              </small>
-            </button>
-          )}
           {modules.map((m, i) => (
             <div key={m}>
               <button
@@ -235,12 +234,12 @@ export default function Review() {
               </button>
               {!common && currentModule === m && (
                 <div className="rv-page-tree">
-                  {section==='c'&&device==='mobile'&&m==='社区' ? communityGroups.map(branch=><div className="rv-nav-branch" key={branch.title}>
-                    <div className="rv-nav-label">{branch.title}</div>
-                    {branch.entries.map(([id,label,tab])=><button key={id+tab}
-                      aria-current={(page.id===id&&(id!=='community'||activeTab===tab))||(page.id==='tutorials'&&tab==='tutorials')?'page':undefined}
+                  {section==='c'&&device==='mobile'&&m==='社区' ? <><button aria-current={page.id==='community'&&!new URLSearchParams(context).has('tab')?'page':undefined} onClick={()=>select(section,m,'community')}>社区首页</button>{communityGroups.map(branch=><div className="rv-nav-branch" key={branch.title}>
+
+                    {branch.entries.map(([id,label,tab],index)=><button key={id+tab} className={index===0?'rv-nav-parent':'rv-nav-child'}
+                      aria-current={(page.id===id&&(id!=='community'||new URLSearchParams(context).get('tab')===tab))||(page.id==='tutorials'&&tab==='tutorials')?'page':undefined}
                       onClick={()=>select(section,m,id,tab?'tab='+tab:'')}>{label}</button>)}
-                  </div>) : group.pages
+                  </div>)}</> : group.pages
                     .filter((p) => readerModule(section,p) === m)
                     .map((p) => (
                       <button key={p.id} aria-current={page.id === p.id ? 'page' : undefined}
@@ -251,6 +250,18 @@ export default function Review() {
               )}
             </div>
           ))}
+          {(
+            <button
+              aria-current={common ? 'step' : undefined}
+              onClick={() => {
+                setCommon(true);
+                history.replaceState(null, '', '?section='+section+'&view=common');
+              }}
+            >
+              <span>◇</span>
+              <strong>通用反馈</strong>
+            </button>
+          )}
         </nav>
 
       </aside>
@@ -263,15 +274,15 @@ export default function Review() {
                   {group.name} / {currentModule}
                 </small>
                 <h2>
-                  {section==='c'&&page.id==='community'?'社区 · '+({works:'作品',talk:'交流',tutorials:'官方教程'}[activeTab]||'作品'):page.title}{' '}
+                  {section==='c'&&page.id==='community'?(new URLSearchParams(context).has('tab')?'社区 · '+({works:'作品',talk:'交流',tutorials:'教程'}[activeTab]||'作品'):'社区首页'):page.title}{' '}
                   {appSample && <small>{appReviewIds[page.id]}</small>}
                 </h2>
               </div>
-              <span className={'rv-completion '+handoffStatus(section,page.id,device).tone}>{handoffStatus(section,page.id,device).label}</span>
+
             </header>
             {(
               <div className="rv-workspace-tools">
-                <a href="/downloads/index.html" target="_blank" rel="noreferrer" style={{whiteSpace:'nowrap',padding:'8px 12px',fontSize:14}}>下载原型源码</a>
+
                 {section==='c'&&<nav aria-label="设备">
                   <button
                     aria-pressed={device === 'mobile'}
@@ -305,7 +316,7 @@ export default function Review() {
               </div>
             )}
             {(reading === 'prototype') && (
-              <><div className="rv-notes-launch"><button onClick={()=>readMode('requirements')}>页面需求</button><button onClick={()=>readMode('flow')}>模块流程</button></div>{(businessStateCount>1||(appSample&&device==='mobile'&&!flat&&!inlineSingleState))&&<div className="rv-controls">
+              <>{overlayCount>0&&<nav aria-label="页面与弹层" className="rv-overlay-variants"><button aria-pressed={!showOverlays} onClick={()=>setOverlays(false)}>页面</button><button aria-pressed={showOverlays} onClick={()=>{setOverlays(true);setFlat(false);}}>弹层与提示（{overlayCount}）</button></nav>}<div className="rv-notes-launch"><button onClick={()=>{setOverlays(false);readMode('requirements');}}>页面需求</button><button onClick={()=>{setOverlays(false);readMode('flow');}}>模块流程</button></div>{!showOverlays&&(businessStateCount>1||(appSample&&device==='mobile'&&!flat&&!inlineSingleState))&&<div className="rv-controls">
                 <div>
                   {businessStateCount>1&&<button
                     aria-pressed={!flat && !common}
@@ -323,7 +334,7 @@ export default function Review() {
                       setCommon(false);
                     }}
                   >
-                    业务状态（{pageStates.filter((s) => s !== 'normal').length}
+                    {page.id==='create'&&device==='pc'?'创作类型':page.id==='work'?'内容类型':page.id==='app'&&device==='pc'?'应用样本':'业务状态'}（{pageStates.filter((s) => s !== 'normal').length}
                     ）
                   </button>}
                   {appSample && device === 'mobile' && !flat && !inlineSingleState && (
@@ -340,55 +351,23 @@ export default function Review() {
           </div>
         )}
         {common ? (
-          <>
-            <header className="rv-heading">
-              <div>
-                <small>C 端 / 通用规范</small>
-                <h2>通用状态</h2>
-              </div>
-            </header>
-
-            <nav className="rv-pages" aria-label="通用状态分类">
-              {commonGroups.map((g) => (
-                <button
-                  key={g.id}
-                  aria-pressed={commonGroup === g.id}
-                  onClick={() => setCommonGroup(g.id)}
-                >
-                  {g.title}（{g.samples.length}）
-                </button>
-              ))}
-            </nav>
-            <div className="rv-flat mobile">
-              {commonGroups
-                .find((g) => g.id === commonGroup)!
-                .samples.map((sample) => (
-                  <section key={sample.id}>
-                    <h3>{sample.title}</h3>
-                    <p className="rv-sample-use">适用：{sample.applies}</p>
-                    <MobileBrowserFrame><iframe
-                      loading="lazy"
-                      title={`通用 ${sample.id}`}
-                      src={sample.url}
-                      sandbox="allow-same-origin allow-scripts allow-forms allow-downloads"
-                    /></MobileBrowserFrame>
-                  </section>
-                ))}
-            </div>
-          </>
+          <CommonFeedback/>
         ) : reading === 'plan' ? (
           <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
-        ) : (<ReviewWorkspace mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
+        ) : showOverlays ? <OverlayGallery page={page.id} device={device} selection={overlaySelection} onSelect={setOverlaySelection}/> : (<ReviewWorkspace states={flat?pageStates.filter(s=>s!=='normal').map(s=>({id:s,title:stateLabels[s]||s,active:noteState===s})):[]} onStateSelect={s=>inspect(page.id,s)} mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
           {(flat||inlineSingleState)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
             {pageStates.filter(state=>inlineSingleState||state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
-              const cardUrl='/community-options/'+group.route+'?page='+p.id+(context?'&'+context:'')+'&device='+device+'&state='+state+'&embed=1';
+              const sampleContext=new URLSearchParams(context);
+              const appItems:Record<string,string>={'app-suite':'sample-suite','app-analysis':'sample-analysis','app-music':'sample-music','app-storyboard':'sample-storyboard','app-website':'sample-website'};
+              if(section==='c'&&device==='pc'&&p.id==='app'&&appItems[state]){sampleContext.set('item',appItems[state]);sampleContext.delete('id');}
+              const cardUrl='/community-options/'+group.route+'?page='+p.id+(sampleContext.size?'&'+sampleContext.toString():'')+'&device='+device+'&state='+state+'&embed=1';
               const active=inspected?.card?inspected.card===p.id+state:notePage.id===p.id&&noteState===state;
-              return <section key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame mobileBrowser={section==='c'&&device==='mobile'} title={p.title+' '+state} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
+              return <section data-review-state={state} key={section+p.id+state+device} className={active?'selected':''}><button className="rv-card-select" aria-pressed={active} onClick={()=>inspect(p.id,state)}>{p.title} · {stateLabels[state]||state}</button><TrackedFrame mobileBrowser={section==='c'&&device==='mobile'} title={p.title+' '+(stateLabels[state]||'未知状态')} src={cardUrl} onNavigate={()=>{}} onActivate={(id,search,g)=>{if(id!==p.id||g!==section){setFlat(false);setInspected(null);syncPage(id,search,g);setRestart(n=>n+1);}else inspect(id,new URLSearchParams(search).get('state')||'normal',g,p.id+state);}} /></section>;
             })}
           </div>: section === 'c' && device === 'pc' ? (
           <section className="rv-pc-preview">
             <label>预览比例 <select value={zoom} onChange={e=>setZoom(e.target.value)}><option value="fit">适应宽度</option><option value="1">100%</option></select></label>
-            {(flat?pageStates.filter(s=>s!=='normal'):['normal']).map(s=><div key={String(restart)+s}><h3>{flat?(stateLabels[s]||s):''}</h3><div className={'rv-pc-scroll '+(zoom==='fit'?'fit':'')}><TrackedFrame key={String(restart)+s} onNavigate={flat?()=>{}:syncPage} title={`PC原型：${page.title} ${s}`} src={homeSample&&s==='normal'?'/community-options/home-prototype':url+'&device=pc&state='+s+(flat?'&embed=1':'')}/></div></div>)}
+            {(flat?pageStates.filter(s=>s!=='normal'):['normal']).map(s=><div key={String(restart)+s}><h3>{flat?(stateLabels[s]||s):''}</h3><div className={'rv-pc-scroll '+(zoom==='fit'?'fit':'')}><TrackedFrame key={String(restart)+s} onNavigate={flat?()=>{}:syncPage} title={`PC原型：${page.title} ${stateLabels[s] || '未知状态'}`} src={homeSample&&s==='normal'?'/community-options/home-prototype':url+'&device=pc&state='+s+(flat?'&embed=1':'')}/></div></div>)}
           </section>
         ) : appSample && !flat && annotations ? (
           <AnnotatedApp
@@ -423,7 +402,7 @@ export default function Review() {
                 <section key={url + s}>
                   <h3>{stateLabels[s] || s}</h3>
                   <iframe
-                    title={`${page.title} ${s}`}
+                    title={`${page.title} ${stateLabels[s] || '未知状态'}`}
                     src={url + '&state=' + s + '&embed=1'}
                     sandbox="allow-same-origin allow-scripts allow-forms allow-downloads"
                   />

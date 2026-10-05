@@ -7,6 +7,7 @@ function inline(text: string): ReactNode[] {
 export function DocumentBlocks({ text }: { text: string }) {
   return <div className="rv-document">{text.replace(/\r\n?/g, '\n').trim().split(/\n\s*\n/).map((block, i) => {
     const heading = block.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) heading[2] = heading[2].replace(/^\d+(?:\.\d+)*\.?\s+/, '');
     if (heading) return heading[1].length >= 3 ? <h4 key={i}>{heading[2]}</h4> : <h3 key={i}>{heading[2]}</h3>;
     const lines = block.split('\n');
     if (lines.every(line => /^[-*] /.test(line))) return <ul key={i}>{lines.map((line, j) => <li key={j}>{inline(line.slice(2))}</li>)}</ul>;

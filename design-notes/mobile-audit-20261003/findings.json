@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-03",
+  "scope": "本地原型阅读台 C 端移动原型与页面需求。32 个移动页面首屏、通用反馈、重点交互；35 条 C 端需求（包含 3 个桌面独立入口的映射）。",
+  "boundary": "按用户确认的演示原型边界重新分类。只修影响展示理解、入口和演示路径的问题；研发实现项保留产品需求，不作为原型缺陷或待修清单。",
+  "findings": [
+    {
+      "id": "F01",
+      "title": "审核中的稿件直接进入编辑，缺少撤回",
+      "evidence": "浏览器复现 + 代码核对",
+      "detail": "我的内容中，审核中的“第一次尝试柔和光线的产品图”点击编辑后直接进入可编辑的发布帖子表单，没有撤回确认。",
+      "contract": "发布作品、发布帖子和我的需求均要求待审稿先撤回再修改，旧公开版独立处理。",
+      "action": "将待审稿的编辑动作改为撤回确认；撤回成功后进入编辑，失败保留当前稿。",
+      "source": "app/community-options/c-prototype/personal.tsx:997-1012",
+      "image": "issue-review-edit.jpg",
+      "originalPriority": "P1",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F02",
+      "title": "新增圈子和作者关系无法在我的列表中完整找回",
+      "evidence": "圈子浏览器复现；关注作者代码核对",
+      "detail": "在圈子详情加入修复交流圈成功，进入我的圈子后仍只有影像练习圈和视觉创作圈。私人圈子列表硬过滤两个 ID，关注作者只读林间。",
+      "contract": "我的圈子、关注作者应展示本人的实际关系，并同步数量。",
+      "action": "从统一圈子和作者目录按已建立关系生成列表，个人统计读取同一关系集合；固定样例仅用于首次初始化。",
+      "source": "app/community-options/c-prototype/personal.tsx:931-938",
+      "image": "issue-joined-circle-missing.jpg",
+      "originalPriority": "P1",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F03",
+      "title": "从生成记录编辑会丢失原活动任务标识",
+      "evidence": "代码核对，未完成带任务的端到端生成复现",
+      "detail": "生成记录编辑先清除 cp-activity-task，仅恢复活动 code/name。跳转带 editTask，但工作台未读取这个参数补回任务标识。",
+      "contract": "原活动与任务身份应贯穿历史结果、继续创作、投稿和提交校验。",
+      "action": "复用完整任务恢复逻辑，恢复 activityTask；对历史任务失效保留识别并提示，不自动转普通发布。",
+      "source": "app/community-options/c-prototype/personal.tsx:1049；light-workbench.tsx:30-46,81,85-91",
+      "originalPriority": "P1",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F04",
+      "title": "游客签到未经过登录就显示成功",
+      "evidence": "浏览器复现 + 代码核对",
+      "detail": "checkin&state=guest 背景显示登录后查看，但签到弹层仍可点击签到；点击后显示今日已签到及成功反馈。这里修改的是本地演示记录。",
+      "contract": "未登录先登录，登录后返回，仍由本人主动签到。",
+      "action": "签到操作前校验身份，保留背景和返回位置；登录取消不签到，登录成功不自动代点。",
+      "source": "app/community-options/c-prototype/personal.tsx:1275-1295；page.tsx:167",
+      "image": "issue-guest-checkin.jpg",
+      "originalPriority": "P1",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F05",
+      "title": "无效对象链接显示成另一件有效作品或应用",
+      "evidence": "无效作品浏览器复现；应用代码核对",
+      "detail": "work&item=audit-missing 显示旧照修复练习；应用找不到 item 时回退首个应用。这会让链接、标题和操作目标的身份不一致。",
+      "contract": "对象不存在应在原位置说明不可访问，不能替换成其他对象。",
+      "action": "显式区分未传 item 的默认样例与传入无效 item；后者走通用不可访问反馈。",
+      "source": "app/community-options/c-prototype/reading.tsx:726-729；applications.tsx:105；published.tsx:16",
+      "image": "issue-missing-work.jpg",
+      "originalPriority": "P2",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F06",
+      "title": "从积分中心进入活动，返回却去活动中心",
+      "evidence": "浏览器复现 + 代码核对",
+      "detail": "积分中心→国庆七天乐→顶部返回，最终进入活动列表，未回积分中心。",
+      "contract": "详情返回优先实际来源，并保留来源位置。",
+      "action": "活动详情优先使用已有历史；仅无来源直达时回活动中心。商城记录的既定返回商城规则不应连带删除。",
+      "source": "app/community-options/c-prototype/page.tsx:150；personal.tsx:1228",
+      "originalPriority": "P2",
+      "disposition": "原型调整已完成"
+    },
+    {
+      "id": "F07",
+      "title": "收藏教程的名称与打开内容不一致",
+      "evidence": "代码核对",
+      "detail": "收藏样例显示产品换背景入门，但 target 为 tutorial，默认实际打开旧照片修复教程。",
+      "contract": "收藏须进入各自原详情，保持内容身份。",
+      "action": "使用共享内容目录生成标题和目标；此条可明确指向 tutorial?item=product 并采用该教程标题。",
+      "source": "app/community-options/c-prototype/personal.tsx:1054；reading.tsx:502",
+      "originalPriority": "P2",
+      "disposition": "原型调整已完成"
+    },
+    {
+      "id": "F08",
+      "title": "评论回复缺少被回复评论的标识",
+      "evidence": "代码核对",
+      "detail": "回复关系只记录作者名称，同一作者的多条评论无法准确区分。当前编辑保存会保留原 reply，未发现编辑清空回复关系的问题。",
+      "contract": "作品、帖子、教程的回复应绑定评论标识，编辑只修改选中条目。",
+      "action": "保存 parentCommentId 和展示名称，定位与回复按 ID 操作。",
+      "source": "app/community-options/c-prototype/reading.tsx:286,322,342,361",
+      "originalPriority": "P2",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F09",
+      "title": "资源正式发布版本缺少移动端复制到电脑入口",
+      "evidence": "代码核对，未在后台创建新版本验证",
+      "detail": "基础资源样例提供复制链接；由 PublishedBoundary 展示的资源在移动端只有电脑继续说明，项目链接被 cp-desktop-only 隐藏。",
+      "contract": "资源详情手机端应能复制当前资源链接到电脑继续。",
+      "action": "基础样例和发布版本复用资源操作区，按当前资源身份、运行状态及取用权限提供复制入口。",
+      "source": "app/community-options/c-prototype/published.tsx:54；reading.tsx:1154",
+      "originalPriority": "P2",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F10",
+      "title": "无任务投稿活动的需求与配置能力没有对齐",
+      "evidence": "C/B 配置代码核对；当前默认活动无该类型样例",
+      "detail": "需求允许无任务投稿活动，但 C 端用是否有投稿任务判断投稿区；合法的新建空任务配置可能没有投稿入口。另 B 端禁止先参与后投稿且无任务的组合。",
+      "contract": "投稿能力、是否先参与、是否有任务是独立规则。",
+      "action": "明确独立投稿能力配置，任务为空时隐藏任务区而保留有效投稿操作；补一个配置样例即可，无须新建独立详情页。",
+      "source": "app/community-options/c-prototype/retained-activities.tsx:273；activity-detail.tsx:20-21；retained-event-config.tsx:99,115",
+      "originalPriority": "P2",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F11",
+      "title": "邀请型活动绕开统一活动详情，需求没有写例外",
+      "evidence": "代码核对",
+      "detail": "活动列表中 kind=invite 直接进入邀请有礼，其他卡进入活动详情；需求却说全部共用活动详情模板。",
+      "contract": "列表和详情需求应对跳转规则给出一致口径。",
+      "action": "建议列表仍进入活动详情，实际邀请动作再进入邀请有礼；若保留直达，应将它明确为例外。此项属于产品取舍，不宜静默改写。",
+      "source": "app/community-options/c-prototype/retained-activities.tsx:252；design-notes/page-requirements-c.json:activities,activity",
+      "originalPriority": "P2",
+      "disposition": "需求与当前演示对齐"
+    },
+    {
+      "id": "F12",
+      "title": "教程更新排序目前只有需求，没有原型行为覆盖",
+      "evidence": "代码核对",
+      "detail": "社区教程由固定数组 map/filter 生成，没有按最新正式公开更新时间排序。静态顺序无法证明后台更新后的规则。",
+      "contract": "教程按最新正式公开更新时间倒序；待发布修改不能提前改变排序。",
+      "action": "补充正式公开时间字段并排序，增加一次公开更新与待发布修改对照验证。",
+      "source": "app/community-options/c-prototype/community-landing.tsx:15-25,63；design-notes/page-requirements-c.json:tutorials",
+      "originalPriority": "P2",
+      "disposition": "研发实现参考，不要求原型补齐"
+    },
+    {
+      "id": "F13",
+      "title": "商城卡片未展示需求要求的商品说明",
+      "evidence": "浏览器截图 + 代码核对",
+      "detail": "卡片只有名称、积分和兑换，商品用途说明到确认弹层才出现。",
+      "contract": "商城需求要求浏览时呈现商品描述。",
+      "action": "优先补一行可区分权益的说明；若商品名已充分表达权益，需同步收敛需求，避免堆文字。",
+      "source": "app/community-options/c-prototype/retained-shop.tsx:196-203",
+      "image": "shop.jpg",
+      "originalPriority": "P3",
+      "disposition": "需求与当前演示对齐"
+    },
+    {
+      "id": "F14",
+      "title": "专题仍保留含义不清的部分完成和单项状态",
+      "evidence": "当前注册代码核对",
+      "detail": "专题的 partial/single 实际表达关联数量或局部关联失效，被统一译为部分完成、单项。它们不是用户的活动完成进度。",
+      "contract": "优先展示正常页面；配置差异和局部关联失效在同一详情及需求中表达。",
+      "action": "已按用户确认移除部分完成和单项两个阅读台状态入口，保留正常模板与必要通用反馈，并同步页面需求。",
+      "source": "app/community-options/c-prototype/topics.tsx:17-27；prototype-review/page.tsx:38",
+      "originalPriority": "P3",
+      "disposition": "原型调整已完成"
+    }
+  ]
+}

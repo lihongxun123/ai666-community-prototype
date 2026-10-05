@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import './report-editorial.css';
 import ResearchDocumentShell from '@/components/research-document-shell';
+import OverlayScrollbars from '@/components/overlay-scrollbars';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ResearchDocumentShell>{children}</ResearchDocumentShell>
+        <OverlayScrollbars />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import { prototypeStore as sessionStorage } from '../c-prototype/storage';
 import { useState, useSyncExternalStore } from 'react';
 import {useFeatured,workSampleId} from '../c-prototype/featured';
 import {useB} from '../b-prototype/store';
+import {mobileContentCategories,normalizeContentCategory,sampleWorkCategories} from '../c-prototype/content-categories';
 import {subscribeSlots,slotSnapshot,readPublishedSlots,resolveSlotTarget} from '../c-prototype/slots';
 function subscribePrefs(fn: () => void) {
   window.addEventListener('cp-home-change', fn);
@@ -71,7 +72,7 @@ export default function MobileHome({
   };
   const selectedItems=featured?featured.works.flatMap(id=>{const r=contentDB.records.find(x=>x.id===id);if(!r||r.publicStatus!=='公开'||!r.recommended)return [];const key=workSampleId(id),existing=items.find(w=>w[0]===key);return [[...(existing||[key,r.public?.title||'',r.public?.author||'','0','生活','4/3']),existing?base+key+'.png':r.public?.core.startsWith('/')?r.public.core:'',id]];}):items.filter(w=>{const r=contentDB.records.find(r=>r.id==='work-'+w[0]);return !r||r.publicStatus==='公开';});
   const filtered = selectedItems.filter(
-    (w) => category === '全部' || w[4] === category,
+    (w) => category === '全部' || normalizeContentCategory(sampleWorkCategories[w[0]]||w[4]) === normalizeContentCategory(category),
   );
   const feed = filtered;
   return (
@@ -128,8 +129,11 @@ export default function MobileHome({
             </button>
           ))}
         </div>
+        <div className="mh-topics-heading mh-works-heading">
+          <h2>爆款作品</h2>
+        </div>
         <nav className="mh-categories" aria-label="内容分类">
-          {['全部', '电商营销', 'IP与文创', '摄影', '设计', '生活'].map((c) => (
+          {mobileContentCategories.map((c) => (
             <button
               key={c}
               className={category === c ? 'active' : ''}

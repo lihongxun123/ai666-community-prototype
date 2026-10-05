@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-05T01:19:55.950Z",
+  "typescript": "passed",
+  "dedicatedLint": "passed",
+  "dataChecks": {
+    "openingBalanceMatchesLedger": true,
+    "checkinMatchesTodayAndSevenDays": true,
+    "missingPendingRewardIsUnknown": true,
+    "confirmedZeroRemainsZero": true,
+    "unknownGenerationCostIsUnknown": true,
+    "expiryBatchSumMatchesAvailable": true,
+    "knownHistoricalFavoritesMapToApp": true,
+    "unknownHistoricalFavoritesRemainUnavailable": true,
+    "historicalRemovalPreservesOriginalIdentity": true
+  },
+  "browser": {
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "desktopViewport": [
+      1280,
+      720
+    ],
+    "mobileInvite": {
+      "bodyHeight": 690,
+      "bodyContentHeight": 828,
+      "scrollReachedBottom": 137.5,
+      "closeButtonTop": 42,
+      "closeButtonBottom": 70
+    },
+    "managementPanels": {
+      "checked": [
+        "content",
+        "submissions",
+        "drafts",
+        "records",
+        "favorites"
+      ],
+      "actionsAlignWithTitle": true,
+      "coverSize": [
+        64,
+        64
+      ]
+    },
+    "binding": {
+      "unboundPhoneOneClickToForm": true,
+      "unboundWechatOneClickToQR": true
+    },
+    "points": {
+      "desktopMobileSameOverview": true,
+      "expiryDetailReachable": true,
+      "ledgerReachable": true
+    },
+    "horizontalOverflow": 0
+  },
+  "scope": "本地原型；到期批次仅演示，不实现账务或生产操作"
+}

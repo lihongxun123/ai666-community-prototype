@@ -5,14 +5,26 @@ export function TrackedFrame({src,title,onNavigate,onActivate,mobileBrowser=fals
  const [initial]=useState(src),ref=useRef<HTMLIFrameElement>(null);
  const [status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');
  const [attempt,setAttempt]=useState(0);
+ const autoRecovered=useRef(false);
+ const retry=()=>{setStatus('loading');setAttempt(n=>n+1);};
+ const frameSrc=attempt?initial+(initial.includes('?')?'&':'?')+'_previewRetry='+attempt:initial;
  useEffect(()=>{
   const check=()=>{try{
    const doc=ref.current?.contentDocument;
    if(doc&&doc.location.href!=='about:blank'&&(doc.body?.innerText.trim()||doc.querySelector('main img, main canvas'))){setStatus('ready');clearInterval(poll);clearTimeout(timeout);}
   }catch{/* A failed or inaccessible preview remains retryable. */}};
+  const frame=ref.current;
+  frame?.addEventListener('load',check);
   const poll=setInterval(check,300);
-  const timeout=setTimeout(()=>setStatus('failed'),15000);
-  return()=>{clearInterval(poll);clearTimeout(timeout);};
+  const timeout=setTimeout(()=>{
+   // Recover a stalled initial document once; never reload an already rendered form.
+   let blank=true;
+   try{const doc=frame?.contentDocument;blank=!doc||doc.location.href==='about:blank'||!doc.body?.innerText.trim();}catch{/* Inaccessible initial document. */}
+   if(blank&&!autoRecovered.current){autoRecovered.current=true;setStatus('loading');setAttempt(n=>n+1);}
+   else setStatus('failed');
+  },15000);
+  check();
+  return()=>{frame?.removeEventListener('load',check);clearInterval(poll);clearTimeout(timeout);};
  },[attempt]);
  useEffect(()=>{
   const frame=ref.current;if(!frame)return;
@@ -24,11 +36,11 @@ export function TrackedFrame({src,title,onNavigate,onActivate,mobileBrowser=fals
    const next=frame.contentWindow;
    if(!next||next.location.origin!==location.origin)return;
    win=next;win.addEventListener('popstate',navigate);win.addEventListener('pointerdown',navigate);update();
-  }catch{setStatus('failed');}};
+  }catch{/* A transient navigation is handled by the readiness check, not a permanent failure. */}};
   frame.addEventListener('load',bind);
   try{if(frame.contentDocument?.readyState==='complete'&&frame.contentWindow?.location.href!=='about:blank')bind();}catch{/* The readiness timer handles inaccessible initial documents. */}
   return()=>{disposed=true;frame.removeEventListener('load',bind);unbind();};
  },[onNavigate,onActivate,attempt]);
- const content=<><iframe key={attempt} ref={ref} title={title} src={initial} sandbox="allow-same-origin allow-scripts allow-forms allow-downloads" onError={()=>setStatus('failed')}/>{status!=='ready'&&<output className="rv-frame-status">{status==='loading'?'正在加载原型…':<><span>原型未能加载</span><button onClick={()=>{setStatus('loading');setAttempt(n=>n+1);}}>重新加载</button></>}</output>}</>;
+ const content=<><iframe key={attempt} ref={ref} title={title} src={frameSrc} sandbox="allow-same-origin allow-scripts allow-forms allow-downloads" onError={()=>setStatus('failed')}/>{status!=='ready'&&<output className="rv-frame-status">{status==='loading'?'正在加载原型…':<><span>原型未能加载</span><button onClick={retry}>重新加载</button></>}</output>}</>;
  return mobileBrowser?<MobileBrowserFrame>{content}</MobileBrowserFrame>:content;
 }

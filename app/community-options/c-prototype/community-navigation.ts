@@ -1,5 +1,5 @@
 import {prototypeStore as store} from './storage';
-export const communityTabs=[['works','作品'],['talk','交流'],['tutorials','官方教程']] as const;
+export const communityTabs=[['works','作品'],['talk','交流'],['tutorials','教程']] as const;
 export function communityTab(search:string){const q=new URLSearchParams(search);const value=q.get('tab')||({aigc:'works',discussion:'talk',tutorials:'tutorials'}[q.get('page')||''] as string|undefined)||store.getItem('cl-tab');return communityTabs.some(([id])=>id===value)?value!:'works';}
 export function switchCommunityTab(value:string){
  const current=communityTab(location.search);if(value===current)return;

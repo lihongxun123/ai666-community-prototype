@@ -15,3 +15,11 @@
 
 
 .cp-root .af-submit-bar{flex-wrap:wrap;gap:10px}.cp-root .af-submit-bar>.cp-button{white-space:nowrap;padding:12px 14px}.cp-root .af-submit-bar>div{min-width:88px}.cp-root .lw-submit{flex-wrap:wrap}.cp-root .lw-submit button{white-space:nowrap}
+
+/* Compact account and result handoff pages share the reviewed form rhythm. */
+.cp-root .af-account .cp-facts{padding:14px;margin-bottom:14px;gap:10px}
+.cp-root .af-account>label,.cp-root .af-return>label{margin:16px 0}
+.cp-root .af-account>.cp-button{margin:8px 0;min-height:40px}
+.cp-root .af-handoff .af-app-context{margin-bottom:18px}
+.cp-root .af-handoff>label{gap:6px;margin-bottom:14px}
+.cp-root .af-handoff input{min-width:0;width:100%;box-sizing:border-box}

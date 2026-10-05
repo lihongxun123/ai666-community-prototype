@@ -1,0 +1,715 @@
+{
+  "date": "2026-10-05",
+  "scope": "注册、需求键及默认设备路由；不证明全部运行交互或视觉验收",
+  "registered": 37,
+  "visible": {
+    "pc": 30,
+    "mobile": 32
+  },
+  "errors": [],
+  "pages": [
+    {
+      "id": "home",
+      "title": "首页",
+      "module": "首页",
+      "source": "app/community-options/c-prototype/page.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "home",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "home",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "topics",
+      "title": "专题",
+      "module": "专题",
+      "source": "app/community-options/c-prototype/topics.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "topics",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "topics",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "topic",
+      "title": "专题详情",
+      "module": "专题",
+      "source": "app/community-options/c-prototype/topics.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "topic",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "topic",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "apps",
+      "title": "AI应用",
+      "module": "AI应用",
+      "source": "app/community-options/c-prototype/applications.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "apps",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "apps",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "app",
+      "title": "应用详情",
+      "module": "AI应用",
+      "source": "app/community-options/c-prototype/applications.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "app",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "app",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "discover-circles",
+      "title": "发现圈子",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "discover-circles",
+          "query": ""
+        },
+        "mobile": {
+          "visible": false,
+          "id": "circles",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "aigc",
+      "title": "AIGC",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "aigc",
+          "query": ""
+        },
+        "mobile": {
+          "visible": false,
+          "id": "community",
+          "query": "tab=works"
+        }
+      }
+    },
+    {
+      "id": "discussion",
+      "title": "交流",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "circles",
+          "query": ""
+        },
+        "mobile": {
+          "visible": false,
+          "id": "community",
+          "query": "tab=talk"
+        }
+      }
+    },
+    {
+      "id": "community",
+      "title": "社区",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "aigc",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "community",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "post",
+      "title": "帖子详情",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "post",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "post",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "circles",
+      "title": "圈子",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "circles",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "circles",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "circle",
+      "title": "圈子详情",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "circles",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "circle",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "tutorials",
+      "title": "教程",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "tutorials",
+          "query": ""
+        },
+        "mobile": {
+          "visible": false,
+          "id": "community",
+          "query": "tab=tutorials"
+        }
+      }
+    },
+    {
+      "id": "tutorial",
+      "title": "教程详情",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "tutorial",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "tutorial",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "work",
+      "title": "作品详情",
+      "module": "阅读与交流",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "work",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "work",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "search",
+      "title": "搜索",
+      "module": "发现",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "search",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "search",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "author",
+      "title": "作者主页",
+      "module": "发现",
+      "source": "app/community-options/c-prototype/reading.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "author",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "author",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "creation-entry",
+      "title": "创作与发布入口",
+      "module": "创作与发布",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "create",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "creation-entry",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "create",
+      "title": "AIGC 生成",
+      "module": "创作与发布",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "create",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "create",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "create-result",
+      "title": "AIGC 查看结果",
+      "module": "创作与发布",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "create-result",
+          "query": ""
+        },
+        "mobile": {
+          "visible": false,
+          "id": "create-result",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "post-edit",
+      "title": "发布作品",
+      "module": "创作与发布",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "post-edit",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "post-edit",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "post-publish",
+      "title": "发布帖子",
+      "module": "创作与发布",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "post-publish",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "post-publish",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "mine",
+      "title": "我的",
+      "module": "个人管理",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "mine",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "mine",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "my-relations",
+      "title": "关注作者",
+      "module": "个人管理",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "mine",
+          "query": "panel=following"
+        },
+        "mobile": {
+          "visible": true,
+          "id": "my-relations",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "my-fans",
+      "title": "我的粉丝",
+      "module": "个人管理",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "mine",
+          "query": "panel=fans"
+        },
+        "mobile": {
+          "visible": true,
+          "id": "my-fans",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "my-circles",
+      "title": "我的圈子",
+      "module": "个人管理",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": false,
+          "id": "mine",
+          "query": "panel=circles"
+        },
+        "mobile": {
+          "visible": true,
+          "id": "my-circles",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "profile-edit",
+      "title": "编辑资料",
+      "module": "个人管理",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "profile-edit",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "profile-edit",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "login",
+      "title": "登录",
+      "module": "账户",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "login",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "login",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "notifications",
+      "title": "消息中心",
+      "module": "账户",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "notifications",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "notifications",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "activities",
+      "title": "活动中心",
+      "module": "活动",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "activities",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "activities",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "activity",
+      "title": "活动详情",
+      "module": "活动",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "activity",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "activity",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "points",
+      "title": "积分中心",
+      "module": "既有业务",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "points",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "points",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "checkin",
+      "title": "每日签到",
+      "module": "既有业务",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "checkin",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "checkin",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "invite",
+      "title": "邀请有礼",
+      "module": "既有业务",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "invite",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "invite",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "shop",
+      "title": "AI 商城",
+      "module": "既有业务",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "shop",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "shop",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "shop-exchange",
+      "title": "兑换弹层",
+      "module": "AI 商城",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "shop-exchange",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "shop-exchange",
+          "query": ""
+        }
+      }
+    },
+    {
+      "id": "shop-records",
+      "title": "兑换记录",
+      "module": "AI 商城",
+      "source": "app/community-options/c-prototype/personal.tsx",
+      "requirements": true,
+      "devices": {
+        "pc": {
+          "visible": true,
+          "id": "shop-records",
+          "query": ""
+        },
+        "mobile": {
+          "visible": true,
+          "id": "shop-records",
+          "query": ""
+        }
+      }
+    }
+  ]
+}

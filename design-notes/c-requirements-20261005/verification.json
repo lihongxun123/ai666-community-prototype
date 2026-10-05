@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "scope": "C端需求细化与阅读台说明展示",
+  "pageRequirements": {"cPages":36,"tables":66,"missingAcceptance":0,"unknownDecisionIds":0,"tableColumnErrors":0},
+  "registryValidation": {"c":36,"b":31,"cross":19,"errors":[]},
+  "typescript": "passed",
+  "targetedDiffWhitespace": "passed",
+  "browser": {
+    "viewport": {"width":1280,"height":720},
+    "pc": {"page":"shop-exchange","requirementsVisible":true,"fieldTableRows":5,"stateTableRows":12,"duplicatePageHeading":false,"horizontalOverflow":false},
+    "mobileSelection": {"page":"checkin","requirementsVisible":true,"naturalWeekResetPresent":true,"horizontalOverflow":false},
+    "commonRulesExpand":true,
+    "pendingConditionsExpand":true
+  },
+  "independentReview": {"scope":"19动作页、公共规则、B/C联动及已知排序规则","requiredCorrections":4,"resolved":4},
+  "productionWrites":false,
+  "limitations":["非生产功能验收","未执行真实交易或身份绑定","B端联动清单不等于全部B端逐页需求重写","待明确条件须在对应功能定版前确认"]
+}

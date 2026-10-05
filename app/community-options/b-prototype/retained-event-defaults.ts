@@ -18,7 +18,7 @@ const activity = (code: string, name: string, cover: string, max: number, descri
 
 export const defaultEventConfigs = (): EventConfig[] => {
   const weekly = activity("meizhourenwu", "每周任务", "activity-live-weekly.png", 350,
-    "本期活动时间：9月24日—9月30日。七天依次解锁任务，每轮每项任务仅可领取 1 次奖励。", [
+    "每期七天依次解锁任务，每轮每项任务仅可领取 1 次奖励。具体开放时间以活动期限及任务状态为准。", [
       task("weekly_browse", "第 1 天 · 浏览 5 条社区内容", "浏览 5 条社区内容，熟悉本周的灵感与作品。", 20, 5, 1, "", "去浏览"),
       task("weekly_favorite", "第 2 天 · 收藏 3 个 AI 作品", "收藏 3 个想参考的 AI 作品。", 30, 3, 2, "", "去收藏"),
       task("weekly_text_post", "第 3 天 · 发布 1 条纯文字圈子帖子", "记录一个灵感、想法或创作计划。", 40, 1, 3, "", "去发布"),
@@ -74,5 +74,49 @@ export const defaultEventConfigs = (): EventConfig[] => {
       task("day7_publish_work", "发布1个AI作品", "发布 1 个 AI 作品。", 70, 1, 7, "work.publish", "去发布"),
     ].map((item, index) => ({ ...item, expire_days: 365, reward_dispatch_mode: "realtime", sort_order: index + 1, cta_route: "" })), 5);
   growth.unlock_rule = { requires: ["newbie_task"], requires_condition: "all_completed", duration_days: 7 };
-  return [weekly, image, prompt, invite, newbie, growth];
+  const national = activity("guoqing_qitianle_20261001", "国庆七天乐", "activity-live-image-challenge.png", 1750,
+    "每天解锁一项任务，创作图片赢积分。七日任务最高350积分，每日图片发布最高1400积分；邀请奖励独立结算。", [], -1);
+  national.cover_url = "https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1790677795689915880.png";
+  national.description = [
+    '# 🏆 邀请排行榜（独立结算）', '',
+    '邀请奖励与排行榜奖励单独结算，不计入本活动页面展示的“任务积分上限”。', '',
+    '## 排名奖励', '',
+    '- 🥇 第 1 名：10,000 积分',
+    '- 🥈 第 2 名：3,000 积分',
+    '- 🥉 第 3 名：2,000 积分',
+    '- 🎁 第 4—5 名：各 1,000 积分', '',
+    '活动结束后统一人工复核，按最终有效邀请人数排名并发放奖励。', '',
+    '# 🎉 国庆七天乐｜每日任务领积分', '',
+    '## 📅 活动时间', '',
+    '10月1日至10月7日。', '',
+    '活动期间每天解锁 1 项七日任务；完成当天任务即可领取对应积分。当天未完成的任务，过期后不可补做。', '',
+    '## 🎁 七日任务奖励', '',
+    '- 完成 7 天任务，最高可获得 **350 积分**。', '',
+    '## 🖼️ 每日图片作品奖励', '',
+    '- 活动期间每天发布前 2 条图片作品。',
+    '- 每条作品奖励 **100 积分**。',
+    '- 每日最高 200 积分，7 天最高 **1,400 积分**。', '',
+    '## 🤝 邀请好友基础奖励', '',
+    '- 好友注册：100 积分。',
+    '- 好友首次有效互动：100 积分。',
+    '- 好友首次发布有效图片作品：100 积分。',
+    '- 每位好友基础奖励最高 **300 积分**。', '',
+    '⚠️ 邀请基础奖励和邀请排行榜奖励均为独立结算，不计入本活动页面展示的 **1,750 积分**任务上限。所有奖励以系统最终判定为准。',
+  ].join('\n');
+  national.type = "campaign";
+  national.start_time = "2026-10-01T00:00:00+08:00";
+  national.end_time = "2026-10-07T23:59:59+08:00";
+  national.extra_config.publish_config.require_join_token = true;
+  national.extra_config.publish_config.content_types = [1,2];
+  national.tasks = [
+    task('national_day1','浏览 5 条内容','当天浏览5条内容',20,5,1,'content.view','去浏览'),
+    task('national_day2','收藏 3 个作品','当天收藏3个作品',30,3,2,'interaction.favorite','去收藏'),
+    {...task('national_day3','发布 1 条纯文字帖子','当天发布纯文字帖子',40,1,3,'post.publish','去发布'),event_filter:{biz_type:'post',content_types:[1]}},
+    {...task('national_day4','发布 1 条图片帖子','当天发布带图帖子',50,1,4,'post.publish','去发布'),event_filter:{biz_type:'post',content_types:[2],min_image_count:1}},
+    task('national_day5','点赞或评论 5 个作品','当天点赞或评论5个作品',60,5,5,'interaction.like_or_comment','去互动'),
+    task('national_day6','收藏 5 个作品','当天收藏5个作品',70,5,6,'interaction.favorite','去收藏'),
+    task('national_day7','分享 1 个作品','当天分享1个作品',80,1,7,'work.share','去分享'),
+    {...task('national_daily_images','每天发布 2 条图片作品','每天前2条图片每条100积分',100,2,undefined,'work.publish','去发布作品'),event_filter:{biz_type:'work',content_types:[2],min_image_count:1},quota_rule:{scope:'per_day',limit:2}},
+  ];
+  return [national, weekly, image, prompt, invite, newbie, growth];
 };

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-05",
+  "scope": "本地C端PC同类作品流视觉一致性；移动端回归",
+  "baseline": {
+    "page": "home",
+    "gap": 4,
+    "radius": 4,
+    "title": 13
+  },
+  "verifiedDesktop": [
+    {
+      "page": "home",
+      "horizontalGap": 4,
+      "verticalGap": 4,
+      "radius": 4
+    },
+    {
+      "page": "aigc",
+      "horizontalGap": 4,
+      "verticalGap": 4,
+      "radius": 4
+    },
+    {
+      "page": "search-results",
+      "horizontalGap": 4,
+      "verticalGap": 4,
+      "radius": 4
+    },
+    {
+      "page": "author",
+      "horizontalGap": 4,
+      "verticalGap": 4,
+      "radius": 4
+    },
+    {
+      "page": "activity",
+      "horizontalGap": 4,
+      "verticalGap": 4,
+      "radius": 4
+    }
+  ],
+  "mobileHome": {
+    "gap": 6,
+    "radius": 4,
+    "titleLineHeight": 18.2,
+    "horizontalOverflow": 0
+  },
+  "topicTitle": {
+    "beforeHeight": 208.4921875,
+    "beforeAspectRatio": "16/9",
+    "afterHeight": 50.3984375,
+    "afterAspectRatio": "auto",
+    "fix": "专题详情类名前缀独立，避免教程样式污染"
+  },
+  "preserved": [
+    "专题集合和应用推荐的独立信息布局",
+    "管理列表密度",
+    "各页面原列数",
+    "移动端原排版"
+  ],
+  "validation": {
+    "typescript": "passed",
+    "requirements": "86 pages passed",
+    "independentSourceReview": "passed"
+  },
+  "screenshot": "unified-pc-work-feed.png"
+}

@@ -1,0 +1,1 @@
+.cp-transient-feedback:popover-open{position:fixed;inset:18% auto auto 50%;transform:translateX(-50%);margin:0;width:max-content;max-width:calc(100vw - 40px);padding:10px 16px;border:0;border-radius:8px;background:rgba(30,30,32,.94);color:#fff;font:13px/1.6 sans-serif;text-align:center;box-shadow:0 4px 16px #0002;pointer-events:none;overflow-wrap:anywhere}

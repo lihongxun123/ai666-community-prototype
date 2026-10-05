@@ -1,11 +1,13 @@
 'use client';
 /* oxlint-disable next/no-img-element -- These are copied local prototype assets. */
 import { useEffect, useState } from 'react';
+import { CreationEntry } from './creation-entry';
 import { prototypeStore } from './storage';
 import { readEventStatuses } from '../b-prototype/operations-data';
 import { readPublishedEventConfigs, type EventConfig, type EventTask } from '../b-prototype/retained-event-config';
 import { defaultEventConfigs } from '../b-prototype/retained-event-defaults';
 import './retained-activities.css';
+import { ActivityDetail, type DetailTask } from './activity-detail';
 
 type Props = { page: string; state: string; go: (page: string) => void };
 type Task = { title: string; description: string; reward: string; progress: string; action?: string; route?: string; eventType?: string; bizType?: string; unlockDay?: number };
@@ -16,7 +18,7 @@ type Activity = {
   reward: string;
   period: string;
   summary: string;
-  description: string[];
+  description: string[]; descriptionMarkdown?: string;
   tasks: Task[];
   kind?: 'invite' | 'locked';
   publishKind?: 'post' | 'work';
@@ -91,15 +93,20 @@ const taskFromConfig = (task: EventTask, reference?: Task): Task => ({
   description: task.description,
   reward: task.reward_points > 0 ? `+${task.reward_points} 积分` : '按活动规则',
   progress: `0/${task.target_count}`,
-  action: task.cta_route || task.event_type.endsWith('.publish') || reference?.action ? task.cta_text || reference?.action : undefined,
+  action: task.cta_route || (['work.publish','post.publish','content.view','interaction.favorite','interaction.like_or_comment','work.share','aigc.generation_success'].includes(task.event_type) && task.reward_dispatch_mode!=='manual') || reference?.action ? task.cta_text || reference?.action : undefined,
   route: task.cta_route,
   eventType: task.event_type,
   bizType: task.event_filter.biz_type,
   unlockDay: task.unlock_day || task.day_index,
 });
-const periodFromConfig = (config: EventConfig, fallback?: string) => config.type === 'campaign' && config.start_time && config.end_time
-  ? `${config.start_time.slice(0, 10)}—${config.end_time.slice(0, 10)}`
-  : fallback || (config.type === 'long_term' ? '持续进行' : '活动期间');
+const periodFromConfig = (config: EventConfig) => {
+  if (config.type === 'long_term' || config.type === 'referral') return '长期活动';
+  const format = (value: string) => value.slice(0,16).replace('T',' ');
+  if (config.start_time && config.end_time) return format(config.start_time) + ' — ' + format(config.end_time);
+  if (config.start_time) return format(config.start_time) + ' 开始';
+  if (config.end_time) return '截至 ' + format(config.end_time);
+  return '活动时间待公布';
+};
 export function readCActivities(): Activity[] {
   const hasPublishedStore = Boolean(prototypeStore.getItem('bp-op-event-configs'));
   const legacyStatuses = readEventStatuses();
@@ -113,20 +120,21 @@ export function readCActivities(): Activity[] {
       const publishedChanged = !defaultConfigs.has(code) || JSON.stringify(config) !== JSON.stringify(defaultConfigs.get(code));
       const configuredStatus = code === 'growth_7day' || hasPublishedStore && publishedChanged ? config.status : legacyStatus || config.status;
       const now = Date.now();
-      const status = configuredStatus === '进行中' && config.type === 'campaign' && config.end_time && Date.parse(config.end_time) < now ? '已结束'
+      const status = configuredStatus === '进行中' && config.type === 'campaign' && config.end_time && Date.parse(config.end_time) <= now ? '已结束'
         : configuredStatus === '进行中' && config.type === 'campaign' && config.start_time && Date.parse(config.start_time) > now ? '未开始' : configuredStatus;
       const locked = code === 'growth_7day' || config.unlock_rule.requires.length > 0;
       const description = config.description.trim().split(/\n+/).map((line) => line.trim()).filter(Boolean);
       const useReferenceCopy = Boolean(reference && config.description === defaultConfigs.get(code)?.description);
-      const tasks = config.tasks.length ? [...config.tasks].sort((a, b) => a.sort_order - b.sort_order).map((task) => taskFromConfig(task, reference?.tasks.find((item) => item.title === task.name))) : reference?.tasks || [];
+      const tasks = [...config.tasks].sort((a, b) => a.sort_order - b.sort_order).map((task) => taskFromConfig(task, reference?.tasks.find((item) => item.title === task.name)));
       return {
         code,
         name: config.name || reference?.name || code,
         image: config.cover_url || reference?.image || asset('activity-center-banner-v2.webp'),
         reward: config.max_points > 0 ? `最高可得 ${config.max_points.toLocaleString('zh-CN')} 积分` : reference?.reward || '奖励以活动规则为准',
-        period: periodFromConfig(config, reference?.period),
+        period: periodFromConfig(config),
         summary: useReferenceCopy ? reference?.summary || description[0] : description[0] || reference?.summary || '查看活动规则与参与方式。',
         description: useReferenceCopy ? reference?.description || description : description.length ? description : reference?.description || [],
+        descriptionMarkdown: config.description,
         tasks,
         kind: config.type === 'referral' ? 'invite' as const : locked ? 'locked' as const : undefined,
         publishKind: config.extra_config.publish_config.biz_type === 'post' ? 'post' as const : 'work' as const,
@@ -148,26 +156,35 @@ const stateText: Record<string, string> = {
 export function RetainedActivities({ page, state, go }: Props) {
   const query = typeof window === 'undefined' ? null : new URLSearchParams(window.location.search);
   const [activities, setActivities] = useState(readCActivities);
-  const requestedCode = canonicalCode(query?.get('item') || prototypeStore.getItem('cp-activity-code') || 'ai_image_challenge');
-  const selected = activities.find((item) => item.code === requestedCode);
+  const requestedCode = canonicalCode(query?.get('item') || prototypeStore.getItem('cp-activity-code') || 'guoqing_qitianle_20261001');
+  // Initial prototype fixtures share one list; published B-end configuration takes precedence.
+  const listActivities = !prototypeStore.getItem('bp-op-event-configs') ? activities.map((item,index)=>item.code==='guoqing_qitianle_20261001'?item:({ ...item,
+    status: index === 1 ? '未开始' : index === 3 ? '已结束' : item.status,
+    period: index === 0 ? '2026-10-01 09:00 — 2026-10-15 23:59' : index === 1 ? '2026-10-20 09:00 — 2026-10-31 23:59' : index === 3 ? '2026-09-01 09:00 — 2026-09-30 23:59' : item.period,
+  })) : activities;
+  const selected = listActivities.find((item) => item.code === requestedCode);
   const [joinedCode, setJoinedCode] = useState<string | null>(null);
+  const [activityFilter, setActivityFilter] = useState('全部');
   const joined = joinedCode === requestedCode || prototypeStore.getItem('cp-joined-'+requestedCode) === '1';
   const [clockTime, setClockTime] = useState(0);
   useEffect(() => {
-    const refresh = () => setActivities(readCActivities());
-    const timer = window.setTimeout(() => { refresh(); setClockTime(Date.now()); }, 0);
+    const refresh = () => { setActivities(readCActivities()); setClockTime(Date.now()); };
+    const timer = window.setTimeout(refresh, 0);
+    const interval = window.setInterval(refresh, 1000);
+    window.addEventListener('focus', refresh);
     window.addEventListener('bp-operations-change', refresh);
     window.addEventListener('bp-slots-change', refresh);
-    return () => { window.clearTimeout(timer); window.removeEventListener('bp-operations-change', refresh); window.removeEventListener('bp-slots-change', refresh); };
+    return () => { window.clearTimeout(timer); window.clearInterval(interval); window.removeEventListener('focus', refresh); window.removeEventListener('bp-operations-change', refresh); window.removeEventListener('bp-slots-change', refresh); };
   }, []);
   const statusBlocked = (item: Activity) => item.status !== '进行中' || item.locked;
-  const taskBlocked = (item: Activity, task: Task) => {
+  const taskBlocked = (item: Activity, task: Task, at = clockTime) => {
     if (statusBlocked(item)) return true;
     if (!task.unlockDay) return false;
+    if(item.code==='guoqing_qitianle_20261001') return task.unlockDay!==Math.floor((at-Date.parse('2026-10-01T00:00:00+08:00'))/86400000)+1;
     const joinedAt = Number(prototypeStore.getItem('cp-joined-at-' + item.code));
-    return !joinedAt || Math.floor((clockTime - joinedAt) / 86400000) + 1 < task.unlockDay;
+    return !joinedAt || Math.floor((at - joinedAt) / 86400000) + 1 < task.unlockDay;
   };
-  const activeCount = activities.filter((item) => item.status === '进行中').length;
+  const activeCount = listActivities.filter((item) => item.status === '进行中').length;
   const selectedBlocked = selected ? statusBlocked(selected) : true;
   const device = query?.get('device') === 'pc' || (typeof document !== 'undefined' && Boolean(document.querySelector('.cp-retained-desktop'))) ? 'pc' : 'mobile';
 
@@ -178,33 +195,40 @@ export function RetainedActivities({ page, state, go }: Props) {
     return false;
   };
   const join = () => {
-    if (!selected || selectedBlocked) return;
+    if (!selected || selectedBlocked || statusBlocked(readCActivities().find(x=>x.code===selected.code) || {...selected,status:'已结束'})) return;
     if (!requireLogin()) return;
     prototypeStore.setItem('cp-joined-'+selected.code, '1');
     if (!prototypeStore.getItem('cp-joined-at-' + selected.code)) prototypeStore.setItem('cp-joined-at-' + selected.code, String(Date.now()));
     setJoinedCode(selected.code);
   };
-  const goPublish = (item: Activity, postKind: 'post' | 'work' = 'work') => {
-    if (statusBlocked(item)) return;
-    if (!requireLogin()) return;
-    prototypeStore.removeItem('cp-source');
-    prototypeStore.removeItem('cp-result');
+  const [publishChoice, setPublishChoice] = useState<{item: Activity; task?: string} | null>(()=>typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('reviewOverlay')==='activity-choice'&&selected?{item:selected}:null);
+  const prepareSubmission = (item: Activity, postKind: 'post' | 'work', task?: string) => {
+    ['cp-source', 'cp-result', 'cp-circle', 'cp-activity-task'].forEach(key => prototypeStore.removeItem(key));
     prototypeStore.setItem('cp-activity', '1');
     prototypeStore.setItem('cp-activity-code', item.code);
     prototypeStore.setItem('cp-activity-name', item.name);
     prototypeStore.setItem('cp-post-kind', postKind);
-    go('publish?state=activity');
+    if (task) prototypeStore.setItem('cp-activity-task', task);
+  };
+  const goPublish = (item: Activity, postKind: 'post' | 'work' = 'work', task?: string) => {
+    if (statusBlocked(item) || statusBlocked(readCActivities().find(x=>x.code===item.code) || {...item,status:'已结束'}) || !requireLogin()) return;
+    if (postKind === 'post') {
+      prepareSubmission(item, postKind, task);
+      go('post-publish?entry=activity-' + Date.now());
+    } else setPublishChoice({item, task});
   };
   const followTask = (item: Activity, task: Task) => {
-    if (taskBlocked(item, task)) return;
+    const current = readCActivities().find(x=>x.code===item.code);
+    const currentTask = current?.tasks.find(x=>x.title===task.title);
+    if (!current || !currentTask || taskBlocked(current, currentTask, Date.now()) || taskBlocked(item, task, Date.now())) return;
+    task = currentTask;
     if (!requireLogin()) return;
     const routeQuery = task.route?.split('?')[1] || '';
     const route = new URLSearchParams(routeQuery).get('page') || task.route?.split('?')[0].split('/').filter(Boolean).at(-1) || '';
     const publish = ['publish', 'post-edit'].includes(route) || task.eventType?.endsWith('.publish') || task.action?.includes('发布');
     if (publish) {
-      prototypeStore.setItem('cp-activity-task', task.title);
       const postKind = task.bizType === 'post' || task.eventType?.startsWith('post.') || task.title.includes('圈子帖子') ? 'post' : 'work';
-      goPublish(item, postKind);
+      goPublish(item, postKind, task.title);
       return;
     }
     if (route === 'create' || task.eventType === 'aigc.generation_success') {
@@ -212,12 +236,24 @@ export function RetainedActivities({ page, state, go }: Props) {
       prototypeStore.setItem('cp-activity-code', item.code);
       prototypeStore.setItem('cp-activity-name', item.name);
       prototypeStore.setItem('cp-activity-task', task.title);
-      go('apps?activity=' + encodeURIComponent(item.code));
+      go('create?activity=' + encodeURIComponent(item.code));
       return;
     }
     const known: Record<string, string> = { profile: 'profile-edit', 'profile-edit': 'profile-edit', invite: 'invite', community: 'community', post: 'post', work: 'work', topics: 'topics', circles: 'circles', home: 'home', apps: 'apps', points: 'points', checkin: 'checkin', search: 'search', tutorials: 'tutorials', mine: 'mine' };
-    go(known[route] || (task.action === '去完善' ? 'profile-edit' : task.action === '去互动' || task.action === '去转发作品' ? 'work' : 'home'));
+    go(known[route] || (task.action === '去浏览' || task.action === '去收藏' ? 'community' : task.action === '去分享' ? 'work' : task.action === '去完善' ? 'profile-edit' : task.action === '去互动' || task.action === '去转发作品' ? 'work' : 'home'));
   };
+
+  const openActivity = (item: Activity) => go(item.kind==='invite'?'invite':'activity?item='+item.code+(item.status==='已结束'?'&state=ended':''));
+  const featuredActivity = listActivities.find(item=>item.code==='guoqing_qitianle_20261001' && item.status!=='已停用') || listActivities.find(item=>item.status==='进行中' && !item.locked);
+  const moreActivities = listActivities.filter(item=>item.status!=='已停用' && item.code!==featuredActivity?.code && (activityFilter==='全部' || item.status===(activityFilter==='即将开始'?'未开始':activityFilter)));
+  if (page === 'activities' && device === 'pc') return <section className="cp-retained-activities cp-ra-pc-center" data-device="pc">
+    <header className="cp-ra-pc-heading"><h1>活动中心</h1><p>参与创作，收获灵感与积分。</p></header>
+    {state==='failure'?<output className="cp-ra-empty">活动暂时无法加载。<button onClick={()=>go('activities')}>重试</button></output>:state==='empty'?<div className="cp-ra-empty">暂无进行中的活动。<button onClick={()=>go('submissions')}>我的投稿</button></div>:<>
+      {featuredActivity && <article className="cp-ra-pc-featured"><button className="cp-ra-pc-featured-art" type="button" aria-label={'查看'+featuredActivity.name} onClick={()=>openActivity(featuredActivity)}><img src={featuredActivity.image} alt={featuredActivity.name} /></button><div className="cp-ra-pc-featured-copy"><span className="cp-ra-status">{featuredActivity.status}</span><h2>{featuredActivity.name}</h2><p className="cp-ra-pc-period">活动时间：{featuredActivity.period}</p>{!/^\s*#/.test(featuredActivity.summary)&&<p>{featuredActivity.summary}</p>}<strong>{featuredActivity.reward}</strong><button type="button" onClick={()=>openActivity(featuredActivity)}>{featuredActivity.status==='进行中'?'参与活动':'查看活动'} <img src="/home-prototype/icons/arrow-right-line.svg" alt="" /></button></div></article>}
+      <section className="cp-ra-pc-more" aria-label="更多活动"><header><h2>更多活动</h2><div className="cp-ra-pc-filters" aria-label="活动状态筛选">{['全部','进行中','即将开始','已结束'].map(filter=><button key={filter} type="button" aria-pressed={activityFilter===filter} onClick={()=>setActivityFilter(filter)}>{filter}</button>)}</div></header>
+      {moreActivities.length?<div className="cp-ra-grid">{moreActivities.map(item=><button className="cp-ra-card" type="button" key={item.code} aria-label={'查看'+item.name} onClick={()=>openActivity(item)}><div className="cp-ra-cover"><img src={item.image} alt="" /></div><div className="cp-ra-card-body"><div className="cp-ra-pc-card-title"><h2>{item.name}</h2><span className="cp-ra-status">{item.status}</span></div><p className="cp-ra-pc-summary">{item.summary}</p><div className="cp-ra-card-meta"><span className="cp-ra-card-time">{item.period}</span></div>{item.locked && item.status!=='已结束' && <p className="cp-ra-card-condition">{item.code==='growth_7day'?'完成新手任务后解锁':'满足活动前置条件后参与'}</p>}<div className="cp-ra-card-footer"><strong>{item.reward}</strong></div></div></button>)}</div>:<p className="cp-ra-list-empty">暂无{activityFilter==='全部'?'更多':activityFilter}活动</p>}
+      </section></>}
+  </section>;
 
   if (page === 'activities') return (
     <section className="cp-retained-activities" data-device={device}>
@@ -228,14 +264,19 @@ export function RetainedActivities({ page, state, go }: Props) {
       </header>
       {state === 'failure' ? <output className="cp-ra-empty">活动暂时无法加载。<button onClick={() => go('activities')}>重试</button></output>
         : state === 'empty' ? <div className="cp-ra-empty">暂无进行中的活动。<button onClick={() => go('submissions')}>我的投稿</button></div>
-          : <><div className="cp-ra-grid">{activities.map((item) => (
-            <button className="cp-ra-card" type="button" key={item.code} aria-label={`查看${item.name}`} onClick={() => go(item.kind === 'invite' ? 'invite' : `activity?item=${item.code}`)}>
-              <div className="cp-ra-cover">
-                <img src={item.image} alt="" />
+          : <>{[{title:'当前活动',items:listActivities.filter(item=>item.status!=='已结束' && item.status!=='已停用')},{title:'往期回顾',items:listActivities.filter(item=>item.status==='已结束')}].map(group=><section className="cp-ra-list-section" key={group.title} aria-label={group.title}>
+            <h2>{group.title}</h2>
+            {group.items.length ? <div className="cp-ra-grid">{group.items.map(item=><button className="cp-ra-card" type="button" key={item.code} aria-label={'查看'+item.name} onClick={()=>go(item.kind==='invite'?'invite':'activity?item='+item.code+(item.status==='已结束'?'&state=ended':''))}>
+              <div className="cp-ra-cover"><img src={item.image} alt="" /></div>
+              <div className="cp-ra-card-body">
+                <h2>{item.name}</h2>
+                <div className="cp-ra-card-meta"><span className={"cp-ra-status is-"+({进行中:"active",未开始:"scheduled",已结束:"ended"}[item.status] || "other")}>{item.status}</span><span className="cp-ra-card-time">{item.period}</span></div>
+                {item.locked && item.status!=='已结束' && <p className="cp-ra-card-condition">{item.code==='growth_7day'?'完成新手任务后解锁':'满足活动前置条件后参与'}</p>}
+                <div className="cp-ra-card-footer"><strong>{item.status==='已结束'?'查看往期内容':item.reward}</strong><span>{item.status==='已结束'?'回顾活动':'查看详情'} →</span></div>
               </div>
-              <div className="cp-ra-card-body"><span>{item.status === '进行中' ? item.period : item.status}</span><h2>{item.name}</h2><p>{item.reward}</p><b>查看详情 ↗</b></div>
-            </button>
-          ))}</div><section className="cp-ra-history"><h2>往期回顾</h2><p>暂无往期活动</p></section></>}
+            </button>)}</div> : <p className="cp-ra-list-empty">{group.title==='往期回顾'?'暂无往期活动':'暂无当前活动'}</p>}
+          </section>)}</>}
+
     </section>
   );
 
@@ -244,23 +285,31 @@ export function RetainedActivities({ page, state, go }: Props) {
   if (state === 'failure') return <section className="cp-retained-activities" data-device={device}><output className="cp-ra-empty">活动详情暂时无法加载。<button onClick={() => go(`activity?item=${selected.code}`)}>重试</button></output></section>;
   const blocked = ['ended', 'ineligible', 'review', 'submitted', 'login-expired'].includes(state) || selectedBlocked;
   const activityStatusLabel = selectedBlocked ? (selected.locked && selected.status === '进行中' ? '尚未解锁' : selected.status === '已结束' || selected.status === '已停用' ? '已结束' : selected.status === '未开始' ? '未开始' : '尚未解锁') : state === 'ended' ? '已结束' : '进行中';
-  const progressTotal = selected.kind === 'locked' ? 7 : selected.tasks.length;
-  return (
-    <article className="cp-retained-activities cp-ra-detail" data-device={device}>
-      <header className="cp-ra-hero">
-        <div className="cp-ra-hero-art">
-          <img src={selected.image} alt="" />
-        </div>
-        <div className="cp-ra-hero-copy"><span className="cp-ra-pill">{activityStatusLabel}</span><h1>{selected.name}</h1><p>{selected.summary}</p><strong>{selected.reward}</strong><small>{selected.period}</small></div>
-      </header>
-      <section className="cp-ra-progress"><div><h2>我的参与状态</h2><p>{activityStatusLabel === '尚未解锁' ? '尚未解锁' : joined ? '已参与' : '尚未参与'} · 0/{progressTotal}</p></div><button type="button" disabled={blocked} onClick={join}>{blocked ? activityStatusLabel : joined ? '已参与' : '立即参与'}</button></section>
-      {stateText[state] && <output className="cp-ra-notice">{stateText[state]}{state === 'login-expired' && <button onClick={() => go('login?state=return')}>去登录</button>}</output>}
-      {selectedBlocked && <output className="cp-ra-notice">{activityStatusLabel === '尚未解锁' ? '当前活动尚未开放参与。' : '活动已结束，历史投稿仍可查看。'}</output>}
-      <section className="cp-ra-section"><h2>活动说明</h2><div className="cp-ra-description">{selected.description.map((line) => <p key={line}>{line}</p>)}</div></section>
-      {selected.tasks.length > 0 && <section className="cp-ra-section"><h2>活动任务</h2><div className="cp-ra-tasks">{selected.tasks.map((task) => <div className="cp-ra-task" key={task.title}><div><h3>{task.title}</h3><p>{task.description}</p><small>进度 {task.progress}{task.unlockDay && taskBlocked(selected, task) && !selectedBlocked ? ` · 第 ${task.unlockDay} 天开放` : ''}</small></div><strong>{task.reward}</strong>{task.action && <button type="button" disabled={blocked || taskBlocked(selected, task)} onClick={() => followTask(selected, task)}>{task.action}</button>}</div>)}</div></section>}
-      {selected.kind === 'locked' && <div className="cp-ra-notice">完成新手任务后开启。</div>}
-      {selected.kind !== 'locked' && <section className="cp-ra-section"><h2>活动投稿</h2><div className="cp-ra-submissions"><p>暂无公开投稿</p><button type="button" onClick={() => { if (requireLogin()) { prototypeStore.setItem('cp-activity-code', selected.code); prototypeStore.setItem('cp-activity-name', selected.name); go('submissions'); } }}>我的投稿</button>{selected.kind !== 'invite' && (['ai_image_challenge', 'prompt_co_creation'].includes(selected.code) || !referenceActivities.some((item) => item.code === selected.code)) && <button type="button" disabled={blocked} onClick={() => { prototypeStore.removeItem('cp-activity-task'); goPublish(selected, selected.publishKind); }}>{selected.publishKind === 'post' ? '发布帖子参与' : '发布作品参与'}</button>}</div></section>}
-      <footer className="cp-ra-mobile-action"><button type="button" disabled={blocked} onClick={join}>{blocked ? activityStatusLabel : joined ? '已参与' : '立即参与'}</button></footer>
-    </article>
-  );
+  const national = selected.code==='guoqing_qitianle_20261001';
+  const nationalDay = Math.floor((clockTime-Date.parse('2026-10-01T00:00:00+08:00'))/86400000)+1;
+  const showsWorks = selected.kind!=='invite' && selected.tasks.some(task=>task.bizType!=='post' && !task.eventType?.startsWith('post.') && !task.title.includes('帖子') && (task.eventType==='work.publish'||task.action?.includes('发布')));
+  const detailTasks:(DetailTask & {unlockDay?:number})[]=(national?[...selected.tasks].sort((a,b)=>(a.unlockDay||0)-(b.unlockDay||0)):selected.tasks).map(task=>{
+    const dateBlocked=national&&task.unlockDay?task.unlockDay!==nationalDay:taskBlocked(selected,task);
+    const disabled=blocked||Boolean(dateBlocked);
+    const label=blocked?activityStatusLabel:!task.action?'待判定':national&&task.unlockDay&&task.unlockDay<nationalDay?'已过期':dateBlocked?(task.unlockDay?`第 ${task.unlockDay} 天开放`:'未开放'):'待完成';
+    return {...task,title:national&&task.unlockDay?`第 ${task.unlockDay} 天：${task.title}`:task.title,status:label,disabled,reward:task.reward+(national&&!task.unlockDay?' / 条':''),run:()=>followTask(selected,task)};
+  });
+  // Historical sample completions never override today's availability.
+  if(device==='pc' && national && !blocked && !prototypeStore.getItem('bp-op-event-configs')){
+    detailTasks.forEach((task,index)=>{
+      if(!task.unlockDay) detailTasks[index]={...task,progress:'1/2',status:'进行中'};
+      else if(task.unlockDay<nationalDay && task.unlockDay<=2) detailTasks[index]={...task,progress:task.progress.split('/')[1]+'/'+task.progress.split('/')[1],status:'已完成',disabled:true};
+    });
+  }
+  return <>
+    <ActivityDetail key={selected.code} code={selected.code} name={selected.name} image={selected.image} period={selected.period} reward={selected.reward} status={activityStatusLabel} description={selected.descriptionMarkdown ?? selected.description.join('\n\n')} joined={joined} blocked={blocked} join={join} go={go} tasks={detailTasks} showWorks={showsWorks} notice={selected.locked?'完成前置任务后解锁本活动。':stateText[state]}/>
+    <CreationEntry go={go} controlledOpen={Boolean(publishChoice)} onClose={()=>setPublishChoice(null)} onSelect={target=>{
+      if(!publishChoice)return;
+      const current = readCActivities().find(item=>item.code===publishChoice.item.code);
+      const task = current?.tasks.find(item=>item.title===publishChoice.task);
+      if(!current||statusBlocked(current)||(publishChoice.task&&!task)||(task&&taskBlocked(current,task,Date.now())))return;
+      prepareSubmission(publishChoice.item,'work',publishChoice.task);
+      go(target==='create'?'create?activity='+encodeURIComponent(publishChoice.item.code):'post-edit?entry=activity-'+Date.now());
+    }}/>
+  </>;
 }

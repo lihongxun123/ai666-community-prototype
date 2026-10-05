@@ -1,4 +1,5 @@
 'use client';
+import {TransientFeedback} from './transient-feedback';
 /* oxlint-disable next/no-img-element -- Shared local prototype icons. */
 import {useEffect,useRef,useState} from 'react';
 import {prototypeStore as sessionStorage,getFavorites,toggleFavorite} from './storage';
@@ -22,7 +23,7 @@ export function interactionTarget(){
   if(typeof window==='undefined')return '';
   const q=new URLSearchParams(location.search),page=q.get('page')||'work';
   const id=q.get('id');const item=q.get('item')||(page==='app'?'copy':'restore');
-  const aliases:Record<string,string>={'app-1':'app?item=copy','work-perfume':'work?item=perfume','work-sea':'work?item=sea','work-1':'work?item=restore','post-1':'post?item=restore','tutorial-1':'tutorial?item=restore','resource-1':'resource?item=restore'};
+  const aliases:Record<string,string>={'app-1':'app?item=copy','work-perfume':'work?item=perfume','work-sea':'work?item=sea','work-1':'work?item=restore','post-1':'post?item=restore','tutorial-1':'tutorial?item=restore','resource-1':'app?item=restore'};
   return id?(aliases[id]||page+'?id='+encodeURIComponent(id)):page+'?item='+encodeURIComponent(item);
 }
 export function ActionBar({
@@ -30,8 +31,9 @@ export function ActionBar({
   go,
   guest = false,
   failOnAction = false,
-  target, title, onComment, primary,
+  target, title, onComment, primary, counts,
 }: {
+  counts?:{likes:number;favorites:number;comments:number};
   primary?:{label:string;onClick:()=>void}; target?:string; title?:string; onComment?:()=>void;
   kind: string;
   go: (page: string) => void;
@@ -92,12 +94,12 @@ export function ActionBar({
       <div className={"reading-actions"+(primary?" has-primary":"")}>
         <button type="button" aria-pressed={liked} onClick={() => toggle('like')}>
           <Icon name="heart" />
-          {liked ? '已喜欢' : '喜欢'}
+          {liked ? '已喜欢' : '喜欢'}{counts&&<span>{counts.likes+(liked?1:0)}</span>}
         </button>
         {(
           <button type="button" aria-pressed={saved} onClick={() => toggle('save')}>
             <Icon name="bookmark" />
-            {saved ? '已收藏' : '收藏'}
+            {saved ? '已收藏' : '收藏'}{counts&&<span>{counts.favorites+(saved?1:0)}</span>}
           </button>
         )}
         <button
@@ -106,7 +108,7 @@ export function ActionBar({
           }
         >
           <Icon name="chat-3" />
-          评论
+          评论{counts&&<span>{counts.comments}</span>}
         </button>
         <button
           type="button"
@@ -116,7 +118,7 @@ export function ActionBar({
         </button>
         {primary&&<button className="reading-action-primary" onClick={primary.onClick}>{primary.label}</button>}
       </div>
-      {toast && <output className="reading-toast">{toast}</output>}
+      <TransientFeedback message={toast} onClear={()=>setToast('')}/>
 
 
     </div>

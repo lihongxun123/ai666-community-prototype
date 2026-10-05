@@ -1,0 +1,51 @@
+[
+  {
+    "page": "app",
+    "text": "- banner:\n  - button \"多元拾光首页\":\n    - img \"多元拾光\"\n  - navigation \"主导航\":\n    - button \"首页\"\n    - button \"AIGC\"\n    - button \"专题\"\n    - button \"AI应用\"\n    - button \"教程\"\n    - button \"圈子\"\n    - button \"模型广场\"\n  - textbox \"搜索作品、应用、作者\"\n  - navigation \"账户与服务\":\n    - button \"活动\"\n    - button \"商城\"\n    - button \"邀请\"\n    - button \"通知，有未读消息\"\n    - button \"积分 100\":\n      - text: 积分\n      - strong: \"100\"\n    - button \"签到\":\n      - generic: 签到\n    - button \"我的菜单\"\n- main:\n  - heading \"应用暂不可访问\" [level=2]\n  - button \"返回应用列表\""
+  },
+  {
+    "page": "topic",
+    "text": "- banner:\n  - button \"多元拾光首页\":\n    - img \"多元拾光\"\n  - navigation \"主导航\":\n    - button \"首页\"\n    - button \"AIGC\"\n    - button \"专题\"\n    - button \"AI应用\"\n    - button \"教程\"\n    - button \"圈子\"\n    - button \"模型广场\"\n  - textbox \"搜索作品、应用、作者\"\n  - navigation \"账户与服务\":\n    - button \"活动\"\n    - button \"商城\"\n    - button \"邀请\"\n    - button \"通知，有未读消息\"\n    - button \"积分 100\":\n      - text: 积分\n      - strong: \"100\"\n    - button \"签到\":\n      - generic: 签到\n    - button \"我的菜单\"\n- main:\n  - heading \"专题暂不可访问\" [level=2]\n  - button \"浏览其他专题\""
+  },
+  {
+    "deleteBefore": 4,
+    "deleteAfter": 3,
+    "modalClosed": true
+  },
+  {
+    "name": "homepage-work-target",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&id=work-sea&item=sea&state=video&origin=pc&device=pc"
+  },
+  {
+    "name": "homepage-work-target",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?item=restore&page=work&embed=1&reviewScope=closure-category&device=pc"
+  },
+  {
+    "name": "category-restored",
+    "selected": "true"
+  },
+  {
+    "name": "empty-category-keeps-topics",
+    "topics": 4
+  },
+  {
+    "name": "insufficient-visible",
+    "visible": true
+  },
+  {
+    "name": "publish-error-focus",
+    "fields": [
+      "prompt",
+      "title"
+    ],
+    "inlineMessages": [
+      "请填写提示词。",
+      "请填写作品标题。"
+    ],
+    "verified": true
+  },
+  {
+    "name": "search-escape-from-suggestion",
+    "closed": true
+  }
+]

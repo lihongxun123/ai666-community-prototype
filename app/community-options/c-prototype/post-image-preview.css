@@ -1,0 +1,26 @@
+.post-images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:20px 0}
+.post-images-grid>button{border:0;padding:0;background:#f3f3f3;border-radius:6px;overflow:hidden;cursor:zoom-in;min-width:0}
+.post-images-grid>button>img{display:block;width:100%;height:100%;max-height:420px;object-fit:cover}
+.post-images.is-compact .post-images-grid{margin:12px 0;max-width:480px}
+.author-post-reading>.post-images{grid-column:2;grid-row:1;min-width:0}
+.author-post-reading>.post-images .post-images-grid{grid-template-columns:repeat(auto-fit,minmax(70px,1fr));margin:0}
+.post-images.is-compact .post-images-grid>button>img{max-height:200px}
+.post-image-preview{position:fixed;inset:0;margin:auto;width:100vw;height:100dvh;max-width:100vw;max-height:100dvh;padding:64px 64px 96px;border:0;background:#151515;color:#fff;box-sizing:border-box;overflow:hidden}
+.post-image-preview::backdrop{background:rgba(0,0,0,.8)}
+.post-image-preview>header{position:absolute;inset:12px 20px auto;display:flex;align-items:center;justify-content:space-between;height:40px}
+.post-image-preview button{border:0;border-radius:6px;background:#333;color:#fff;cursor:pointer}
+.post-image-preview>header>button{width:40px;height:40px;font-size:28px}
+.post-image-preview-main{display:block;width:100%;height:100%;object-fit:contain}
+.post-image-preview>.post-image-previous,.post-image-preview>.post-image-next{position:absolute;top:50%;width:40px;height:48px;transform:translateY(-50%);font-size:32px}
+.post-image-preview>.post-image-previous{left:12px}.post-image-preview>.post-image-next{right:12px}
+.post-image-preview>nav{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;max-width:calc(100% - 32px);overflow:auto}
+.post-image-preview>nav>button{flex:none;width:56px;height:56px;padding:2px;border:2px solid transparent}
+.post-image-preview>nav>button[aria-pressed=true]{border-color:#fff}
+.post-image-preview>nav img{display:block;width:100%;height:100%;object-fit:cover}
+.post-image-preview button:focus-visible,.post-images button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:640px){.post-image-preview{padding:64px 44px 88px}.post-image-preview>.post-image-previous,.post-image-preview>.post-image-next{width:32px}.post-images-grid{grid-template-columns:repeat(auto-fit,minmax(100px,1fr))}}
+.post-image-preview button[data-dismiss-icon=true]>img{filter:invert(1)}
+/* Keep preview controls legible and centered inside the review iframe too. */
+.post-image-preview>header>button,.post-image-preview>.post-image-previous,.post-image-preview>.post-image-next{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;line-height:1;box-sizing:border-box;background:#3d3d3d!important;color:#fff!important;border:1px solid #ffffff40}
+.post-image-preview>header>button>img,.post-image-preview>.post-image-previous>img,.post-image-preview>.post-image-next>img{display:block!important;width:24px!important;height:24px!important;flex:none!important;margin:0!important;object-fit:contain!important;filter:brightness(0) invert(1)!important}
+.post-image-preview>header>button:hover,.post-image-preview>.post-image-previous:hover,.post-image-preview>.post-image-next:hover{background:#555!important}

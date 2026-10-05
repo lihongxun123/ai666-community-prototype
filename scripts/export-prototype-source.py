@@ -8,10 +8,10 @@ import zipfile
 root = Path(__file__).resolve().parent.parent
 out = root / 'public/downloads'
 out.mkdir(parents=True, exist_ok=True)
-local_assets = root/'output/prototype-original-assets-20260930'
+local_assets = root/'.cache/prototype-original-assets-20261005'
 local_assets.mkdir(parents=True, exist_ok=True)
-stamp = '2026-09-30'
-readme = '''# 多元拾光原型交付包 · 2026-09-30
+stamp = '2026-10-05'
+readme = '''# 多元拾光原型交付包 · 2026-10-05
 
 这是当前评审中的 React / TypeScript 原型源码，不是 Figma 设计文件，也不是已经接入后端的生产系统。
 
@@ -27,10 +27,10 @@ readme = '''# 多元拾光原型交付包 · 2026-09-30
 - app/community-options/b-prototype/：B 端组件与演示配置。
 - app/community-options/cross-prototype/：MakeNow 等跨产品承接演示。
 - app/community-options/mobile-home/、home-prototype/：移动与 PC 首页。
-- design-notes/requirements-*.md：页面需求。
+- design-notes/page-requirements-*.json：页面需求源；design-notes/c-requirements-20261005/：C 端通用规则、业务决定和设计研发需求。
 - public/：图片、视频和图标。脚本从本次发布的无损素材恢复原型路径，不裁切、不降低尺寸或像素质量；重新编码后的图片不承诺与原始文件字节相同。
 
-轻创作保留在社区；AI 应用仅作发现、介绍，使用统一由 MakeNow 承接。MakeNow 定向链接尚未配置，跨产品页面为演示。
+轻创作保留在社区；AI 应用提供发现与介绍，由 MakeNow 承接使用。账户已互通；深度互通方案与开发尚未完成，原型中的继续创作入口不代表参数、素材或任务已经跨产品同步。
 本包以 C/B/跨产品原型为交付范围；为保留编译依赖附带研究站源代码，但历史研究报告的图片、附件与旧方案素材不全量打包。请从上述原型评审入口开始。
 版本仍在评审，界面内的“已完成/待确认/待评审”状态保留，不代表全量产品定稿。
 '''
@@ -41,6 +41,8 @@ for name in ['package.json','package-lock.json','tsconfig.json','next-env.d.ts',
     if (root/name).is_file(): source.append(root/name)
 source.extend(p for p in (root/'scripts').glob('*.mjs') if p.name != 'site-workflow.mjs')
 source.extend((root/'design-notes').glob('requirements-*.md'))
+source.extend((root/'design-notes').glob('page-requirements-*.json'))
+source.extend(p for p in (root/'design-notes/c-requirements-20261005').iterdir() if p.suffix in {'.md','.json','.mjs'})
 source.append(root/'design-notes/ui-design-handoff.md')
 
 files = []
@@ -108,5 +110,5 @@ source.extend([root/'scripts/restore-prototype-assets.mjs',root/'scripts/prototy
 archive('prototype-source-'+stamp+'.zip',source,True)
 (out/'manifest.json').write_text(json.dumps({'date':stamp,'scope':'C/B/cross-product review prototype','files':files},ensure_ascii=False,indent=2),encoding='utf-8')
 links=''.join(f'<li><a download href="{f["name"]}">{"源码与需求说明" if "source" in f["name"] else "原始素材包 "+f["name"].split("-")[2]} · {f["bytes"]/1024/1024:.1f} MB</a></li>' for f in files)
-(out/'index.html').write_text('''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原型源码下载 · 多元拾光</title><style>body{font:16px/1.8 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 22px;color:#25272b}h1{font-size:26px}a{color:#2758a5}li{margin:16px 0}small{color:#777}code{background:#f4f4f4;padding:3px 6px}</style><h1>原型源码与素材恢复</h1><small>2026-09-30 · 当前评审版本</small><p>包含 C 端、B 端和跨产品承接的可编辑 React 源码与需求，附联网素材恢复脚本。不是 Figma 文件，也不是已经接入后端的生产系统。</p><ul>'''+links+'''</ul><h2>本地打开</h2><p>下载源码包并解压。安装 Node.js 22.13 或更新版本，依次执行 <code>npm ci</code>、<code>node scripts/restore-prototype-assets.mjs</code> 和 <code>npm run dev</code>。详细目录说明见源码包内 START-HERE.md。</p><p>素材还原脚本需要联网，会自动补齐图片、视频和图标，并核验版本。图片保留原尺寸与像素质量，编码后的文件不保证与原始文件字节相同；历史研究报告附件不在本次交付范围内。</p><p><a href="/community-options/prototype-review?section=c&amp;view=home&amp;device=mobile&amp;reading=prototype">返回在线原型评审</a> · <a href="manifest.json">文件校验清单</a></p></html>''',encoding='utf-8')
+(out/'index.html').write_text('''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原型源码下载 · 多元拾光</title><style>body{font:16px/1.8 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 22px;color:#25272b}h1{font-size:26px}a{color:#2758a5}li{margin:16px 0}small{color:#777}code{background:#f4f4f4;padding:3px 6px}</style><h1>原型源码与素材恢复</h1><small>2026-10-05 · 当前评审版本</small><p>包含 C 端、B 端和跨产品承接的可编辑 React 源码与需求，附联网素材恢复脚本。不是 Figma 文件，也不是已经接入后端的生产系统。</p><ul>'''+links+'''</ul><h2>本地打开</h2><p>下载源码包并解压。安装 Node.js 22.13 或更新版本，依次执行 <code>npm ci</code>、<code>node scripts/restore-prototype-assets.mjs</code> 和 <code>npm run dev</code>。详细目录说明见源码包内 START-HERE.md。</p><p>素材还原脚本需要联网，会自动补齐图片、视频和图标，并核验版本。图片保留原尺寸与像素质量，编码后的文件不保证与原始文件字节相同；历史研究报告附件不在本次交付范围内。</p><p><a href="/community-options/prototype-review?section=c&amp;view=home&amp;device=mobile&amp;reading=prototype">返回在线原型评审</a> · <a href="manifest.json">文件校验清单</a></p></html>''',encoding='utf-8')
 print(json.dumps({'files':files,'sourceFiles':len(source),'mediaFiles':len(media)},ensure_ascii=False))

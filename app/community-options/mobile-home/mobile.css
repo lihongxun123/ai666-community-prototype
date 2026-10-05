@@ -46,3 +46,5 @@ html:has(.mh-root)::-webkit-scrollbar-thumb,body:has(.mh-root)::-webkit-scrollba
 .mh-sort{display:flex;gap:16px;margin:0 0 12px;font-size:12px;color:#999}.mh-sort button[aria-pressed=true]{color:#222}.mh-list-end{text-align:center;color:#aaa;font-size:11px;margin:28px 0}.mh-placeholder{height:220px;background:#f5f5f5;border-radius:4px}.mh-banner{position:relative}.mh-banner>strong{display:grid;place-items:center;height:160px;background:#f5f5f5}
 
 .mh-root.mh-content-only{padding-bottom:0}
+
+.mh-works-heading{margin-top:20px;margin-bottom:0}.mh-works-heading+.mh-categories{margin-top:4px}

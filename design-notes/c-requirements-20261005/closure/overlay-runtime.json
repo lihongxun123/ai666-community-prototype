@@ -1,0 +1,127 @@
+[
+  {
+    "page": "home",
+    "sample": "ops-promotion",
+    "bodyOverflow": false,
+    "text": "×多元拾光国庆创作计划用 AI 记录假期灵感，探索本期创作活动。查看活动今日不再提示",
+    "within": true
+  },
+  {
+    "page": "home",
+    "sample": "ops-login-promotion",
+    "bodyOverflow": false,
+    "text": "×多元拾光把灵感变成你的第一件作品登录后保存创作记录，参与社区创作与分享。登录并探索今日不再提示",
+    "within": true
+  },
+  {
+    "page": "home",
+    "sample": "ops-featured",
+    "bodyOverflow": false,
+    "text": "×精选通知你的作品入选精选《海岸日落》已入选精选，奖励积分已自动发放。+20积分已到账查看作品查看消息",
+    "within": true
+  },
+  {
+    "page": "home",
+    "sample": "ops-featured-many",
+    "bodyOverflow": false,
+    "text": "×多元拾光你的作品入选精选你的 2 件作品入选精选，奖励积分已自动发放。海岸日落查看作品 ›夏日的转角查看作品 ›+40积分已到账查看作品查看消息",
+    "within": true
+  },
+  {
+    "page": "home",
+    "sample": "ops-announcement",
+    "bodyOverflow": false,
+    "text": "×社区公告社区使用说明欢迎来到多元拾光。你可以浏览公开作品、学习教程，使用 AI 应用并分享自己的创作。创作与分享发布前请检查标题、提示词与素材，尊重原创和他人权益。作品的公开结果",
+    "within": true
+  },
+  {
+    "page": "invite",
+    "sample": "invite-rules",
+    "bodyOverflow": false,
+    "text": "邀请规则好友完成对应阶段并通过系统校验后，积分将自动发放至邀请人的积分账户。分阶段奖励好友行为阶段邀请人奖励奖励发放条件完成注册+100 积分好友通过邀请链接或邀请码成功注册并完成",
+    "within": true
+  },
+  {
+    "page": "mine",
+    "sample": "content-delete",
+    "bodyOverflow": false,
+    "text": "×删除这条内容？删除后将从我的内容移除。取消删除",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-phone",
+    "bodyOverflow": false,
+    "text": "绑定手机号×绑定到当前账号，不会创建新的社区账号。手机号验证码获取验证码取消确认绑定",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-wechat",
+    "bodyOverflow": false,
+    "text": "绑定微信×绑定到当前账号，不会创建新的社区账号。使用微信扫码授权绑定刷新二维码取消确认绑定",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-phone-change",
+    "bodyOverflow": false,
+    "text": "更换手机号×验证通过后替换原绑定，取消或失败时保留原绑定。验证已绑定手机号：138 **** 0000验证码获取验证码取消验证并继续",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-wechat-change",
+    "bodyOverflow": false,
+    "text": "更换微信×验证通过后替换原绑定，取消或失败时保留原绑定。验证已绑定手机号：138 **** 0000验证码获取验证码取消验证并继续",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-phone-unlink",
+    "bodyOverflow": false,
+    "text": "解绑手机号×解绑后将无法使用该方式登录，已有内容和积分保留。请通过另一种已绑定方式验证身份。使用已绑定微信扫码验证身份刷新二维码取消确认解绑",
+    "within": true
+  },
+  {
+    "page": "profile-edit",
+    "sample": "account-wechat-unlink",
+    "bodyOverflow": false,
+    "text": "解绑微信×解绑后将无法使用该方式登录，已有内容和积分保留。请通过另一种已绑定方式验证身份。验证已绑定手机号：138 **** 0000验证码获取验证码取消确认解绑",
+    "within": true
+  },
+  {
+    "page": "activity",
+    "sample": "activity-choice",
+    "bodyOverflow": false,
+    "text": "选择参与方式AIGC 生成把灵感变成作品直接发布上传已有作品",
+    "within": true
+  },
+  {
+    "page": "create",
+    "sample": "aigc-reference-video",
+    "bodyOverflow": false,
+    "text": "参考视频×海岸参考视频.mp4",
+    "within": true
+  },
+  {
+    "page": "work",
+    "sample": "work-image",
+    "bodyOverflow": false,
+    "text": "×",
+    "within": true
+  },
+  {
+    "page": "post",
+    "sample": "post-image",
+    "bodyOverflow": false,
+    "text": "1 / 3×‹›",
+    "within": true
+  },
+  {
+    "page": "create",
+    "sample": "aigc-insufficient",
+    "within": true,
+    "closedPreservesPrompt": true
+  }
+]

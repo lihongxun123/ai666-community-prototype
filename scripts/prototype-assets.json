@@ -100,6 +100,11 @@
     "sha256": "211a8248987f3c84ce26c7526d48f44128073d272b1b9e86738d85b190732441"
   },
   {
+    "path": "demo-login-qr.svg",
+    "url": "demo-login-qr.svg",
+    "sha256": "70af5887077a95430c7986234fc9be939d354b04bd8dcceb4333fafcfcfd2d3a"
+  },
+  {
     "path": "home-prototype/anime.png",
     "url": "lossless/95a36e143eff99a29d2eb3705b21eb49b8579831af8dac7762033b0b9975bc35.webp",
     "sha256": "13c246e86556a690349a74a8480a1b844237900cf60d640ccadfca8d4b60fd0d"
@@ -190,6 +195,11 @@
     "sha256": "870aef30209c1fc773f67b79b12265588dd56ff454a9221ae8d815f9caf40dc5"
   },
   {
+    "path": "home-prototype/icons/calendar-check-line.svg",
+    "url": "home-prototype/icons/calendar-check-line.svg",
+    "sha256": "d95516c8c22c8cf7f39f82038833767e750a813d81d1e1d50d8716d28ca2521d"
+  },
+  {
     "path": "home-prototype/icons/chat-3-line.svg",
     "url": "home-prototype/icons/chat-3-line.svg",
     "sha256": "2eb2ba8ca9991ec814331c7713a9c0a59ad938f78e5584bcae760f46c02e39c4"
@@ -213,6 +223,16 @@
     "path": "home-prototype/icons/close-line.svg",
     "url": "home-prototype/icons/close-line.svg",
     "sha256": "db3b4dcebb2d962a0231a191538bf6939620798b18f0ba52d4b91c5a4649ce54"
+  },
+  {
+    "path": "home-prototype/icons/coin-line.svg",
+    "url": "home-prototype/icons/coin-line.svg",
+    "sha256": "b55917798a3c2a6fa2fc76ac1aa71603090f3a4799ae6aab13cd1c5c57c08f38"
+  },
+  {
+    "path": "home-prototype/icons/delete-bin-line.svg",
+    "url": "home-prototype/icons/delete-bin-line.svg",
+    "sha256": "a3484fc34454104f58430d605047d353c6f9669fd037b2b30a98d4f58ad66a3e"
   },
   {
     "path": "home-prototype/icons/download-line.svg",
@@ -240,6 +260,11 @@
     "sha256": "6146b833e109330b7f0d7cd6cf9b3d0eabf309459f5743de5dfc499872f74a0d"
   },
   {
+    "path": "home-prototype/icons/file-text-line.svg",
+    "url": "home-prototype/icons/file-text-line.svg",
+    "sha256": "203b98694bd41ccb979a4d71ba24b66a3581cb3087d5ce6973e8d203afc90dc6"
+  },
+  {
     "path": "home-prototype/icons/filter-3-line.svg",
     "url": "home-prototype/icons/filter-3-line.svg",
     "sha256": "81ce171ffe9e68a7bd913a2003ea5091301e8da4e5bcb11569333af062b41b6e"
@@ -248,6 +273,11 @@
     "path": "home-prototype/icons/gift-line.svg",
     "url": "home-prototype/icons/gift-line.svg",
     "sha256": "73693fab882e5fbe46faa597605ae12c8824eadb6f443cb0a1003d99a1d5828a"
+  },
+  {
+    "path": "home-prototype/icons/group-line.svg",
+    "url": "home-prototype/icons/group-line.svg",
+    "sha256": "b3219248ec1cc9eb4ddd33b0e83ac4fcc4e2a2a0df23c68f867a63641ed0a808"
   },
   {
     "path": "home-prototype/icons/heart-line.svg",
@@ -268,6 +298,16 @@
     "path": "home-prototype/icons/lightbulb-line.svg",
     "url": "home-prototype/icons/lightbulb-line.svg",
     "sha256": "b063e5c189b776d02bd45b2be418032a8eabf47b31b85d7c4e9b4dc3db513dbd"
+  },
+  {
+    "path": "home-prototype/icons/logout-box-r-line.svg",
+    "url": "home-prototype/icons/logout-box-r-line.svg",
+    "sha256": "a59e65a894ca1b1af1e7318fd15058441e1b0f16b21290e1dd06ce5098da2624"
+  },
+  {
+    "path": "home-prototype/icons/mail-open-line.svg",
+    "url": "home-prototype/icons/mail-open-line.svg",
+    "sha256": "49c46cac53f1185baba6cd6cf3cd0de83c503fe5c1f050cc352e136b195e52b6"
   },
   {
     "path": "home-prototype/icons/more-line.svg",
@@ -293,6 +333,11 @@
     "path": "home-prototype/icons/search-line.svg",
     "url": "home-prototype/icons/search-line.svg",
     "sha256": "e36fd9d602a25425c6c2288005ef5a413eec710f9718bd01dbfd81cb4d6b5c19"
+  },
+  {
+    "path": "home-prototype/icons/send-plane-line.svg",
+    "url": "home-prototype/icons/send-plane-line.svg",
+    "sha256": "44c3951d3f068861606c4b01abcd69cd3a01744e9952625b674e092097d40c44"
   },
   {
     "path": "home-prototype/icons/share-forward-line.svg",
@@ -373,6 +418,11 @@
     "path": "home-prototype/tram.png",
     "url": "lossless/8a2282923669647b953d67d2c7552ae753e386f79601a5f636a0f74d87e0f24c.webp",
     "sha256": "35c351e4a9f9583f720da1d3da5874df5387653df57ba820539ddaace3ca85f6"
+  },
+  {
+    "path": "home-prototype/tutorial-banner.webp",
+    "url": "home-prototype/tutorial-banner.webp",
+    "sha256": "63321fbf961f61cd17e6c48fe6954d2a8da446b06f43d2f27c6785f9749a946b"
   },
   {
     "path": "home-prototype/underwater.png",
@@ -643,5 +693,15 @@
     "path": "retained/shop/store-hero.webp",
     "url": "retained/shop/store-hero.webp",
     "sha256": "448da104fa1ed68611e3ca4a6c9a5247744b15ba66d5ec200a99233b46dafd30"
+  },
+  {
+    "path": "retained/shop/voucher-gold-20261005.webp",
+    "url": "retained/shop/voucher-gold-20261005.webp",
+    "sha256": "f12eb9d0afe77235f1a39bdafc7f0e8353f9b7ae4ea6dcd56bae3a8837f0da14"
+  },
+  {
+    "path": "retained/shop/voucher-mirror-20261005.webp",
+    "url": "retained/shop/voucher-mirror-20261005.webp",
+    "sha256": "6e98ab9caa715b121de1668e177249e626a527f37449827a4201ab512fccbc98"
   }
 ]

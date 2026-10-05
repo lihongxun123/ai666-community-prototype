@@ -9,6 +9,7 @@ import './community-landing.css';
 import {communityTab} from './community-navigation';
 import {ActionBar} from './content-actions';
 import {WorkFeed} from './work-feed';
+import {contentCategories,mobileContentCategories,normalizeContentCategory,sampleWorkCategories} from './content-categories';
 type Go=(target:string)=>void;
 const pic=(id:string)=>'/home-prototype/'+id+'.png';
 const Icon=({name}:{name:string})=><img className="cl-icon" src={'/home-prototype/icons/'+name+'-line.svg'} alt=""/>;
@@ -23,8 +24,8 @@ export const communityTutorials=[
  {id:'restore',title:'旧照片修复：从判断破损到复查',cover:'restore',topic:'影像处理',views:32,sections:[]},
  {id:'product',title:'产品背景与光线的搭配',cover:'perfume',topic:'视觉设计',views:20,sections:[]},
 ];
-const workCategories=['全部','电商营销','IP与文创','摄影','设计','生活'];
-const workCategory:Record<string,string>={girl:'IP与文创',anime:'IP与文创',sea:'摄影',letter:'生活',cat:'生活',interior:'生活',perfume:'电商营销',underwater:'设计',portrait:'摄影',restore:'摄影'};
+const workCategories=mobileContentCategories;
+const desktopCategories=contentCategories;
 const works=[
  {id:'girl',title:'夏日的转角',author:'周与斯',type:'图片',likes:24},
  {id:'anime',title:'风从蓝色花间经过',author:'Tide',type:'图片',likes:18},
@@ -42,7 +43,7 @@ export function CommunityLanding({state,go,initialTab,desktop=false}:{state:stri
  const categoriesRef=useRef<HTMLElement>(null);
 
  const [tab]=useState(desktop?initialTab||'works':initialTab||communityTab(typeof window==='undefined'?'':location.search));
- const [category,setCategory]=useState(store.getItem('cl-work-category')||'全部');
+ const [category,setCategory]=useState(store.getItem(desktop?'cl-pc-work-category':'cl-work-category')||'全部');
  const [filter,setFilter]=useState(store.getItem('cl-work-type')||'全部');
  const [topic,setTopic]=useState(store.getItem('cl-topic')||'全部');
  const [circle,setCircle]=useState(store.getItem('cl-circle')||'全部');
@@ -52,21 +53,21 @@ export function CommunityLanding({state,go,initialTab,desktop=false}:{state:stri
  useEffect(()=>{const y=Number(store.getItem('cl-scroll:'+key)||0);requestAnimationFrame(()=>window.scrollTo(0,y));},[key]);
  useEffect(()=>{if(!menu)return;const close=(e:KeyboardEvent)=>{if(e.key==='Escape')setMenu(false)};window.addEventListener('keydown',close);return()=>window.removeEventListener('keydown',close)},[menu]);
  useEffect(()=>{if(desktop||tab!=='works')return;const nav=categoriesRef.current;const selected=nav?.querySelector<HTMLElement>('[aria-pressed=true]');if(nav&&selected){const left=selected.offsetLeft-nav.offsetLeft;nav.scrollTo({left:Math.max(0,left-(nav.clientWidth-selected.offsetWidth)/2),behavior:'smooth'});}},[category,desktop,tab]);
- const chooseCategory=(value:string)=>{setCategory(value);store.setItem('cl-work-category',value);setMenu(false)};
+ const chooseCategory=(value:string)=>{setCategory(value);store.setItem(desktop?'cl-pc-work-category':'cl-work-category',value);setMenu(false)};
  const open=(target:string)=>{store.setItem('cl-tab',tab);store.setItem('cl-scroll:'+key,String(window.scrollY));go(target)};
  const choose=(value:string)=>{if(tab==='works'){setFilter(value);store.setItem('cl-work-type',value)}else{setTopic(value);store.setItem('cl-topic',value)}setMenu(false)};
  const visible=(kind:string,id:string)=>(!db.records.find(r=>r.id===kind+'-'+(id==='restore'?'1':id))||db.records.find(r=>r.id===kind+'-'+(id==='restore'?'1':id))?.publicStatus==='公开');
  let closed:string[]=[];try{closed=(JSON.parse(store.getItem('bp-op-circles')||'[]') as {id:string;status:string}[]).filter(c=>c.status==='已关闭').map(c=>c.id.replace('ci-',''));}catch{/* retain local examples */}
  const circles=sampleCircles.filter(c=>!closed.includes(c.id));
  const postRows=samplePosts.filter(p=>visible('post',p.id)&&(circle==='全部'||p.circle===circle)&&(sort==='最新'||(p.recommended&&(p.id!=='restore'||(!featured||featured.posts.includes('post-1')))&& (p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.recommended)))).sort((a,b)=>sort==='最新'?(Number(b.date.split('月')[0])*100+Number(b.date.split('月')[1].replace('日','')))-(Number(a.date.split('月')[0])*100+Number(a.date.split('月')[1].replace('日',''))):0);
- const workRows=works.map(w=>{const r=db.records.find(r=>r.id==='work-'+(w.id==='restore'?'1':w.id));return r?.public?{...w,title:r.public.title,author:r.public.author}:w}).filter(w=>(filter==='全部'||w.type===filter)&&(desktop||category==='全部'||workCategory[w.id]===category)&&visible('work',w.id));
+ const workRows=works.map(w=>{const r=db.records.find(r=>r.id==='work-'+(w.id==='restore'?'1':w.id));return r?.public?{...w,title:r.public.title,author:r.public.author}:w}).filter(w=>(desktop||filter==='全部'||w.type===filter)&&(category==='全部'||sampleWorkCategories[w.id]===normalizeContentCategory(category))&&visible('work',w.id));
  const tutorialRows=communityTutorials.map(t=>{const r=db.records.find(r=>r.id==='tutorial-'+(t.id==='restore'?'1':t.id));return r?.public?{...t,title:r.public.title}:t}).filter(t=>(topic==='全部'||t.topic===topic)&&visible('tutorial',t.id));
  const empty=state==='empty'&&!recovered||(tab==='works'?workRows:tab==='talk'?postRows:tutorialRows).length===0;
- const publish=()=>{store.removeItem('cp-circle');store.setItem('cp-post-kind','post');if(store.getItem('cp-auth')!=='1'){store.setItem('cp-return','post-edit');open('login')}else open('post-edit')};
- return <section className="cl-community" aria-label={desktop?(tab==='works'?'AIGC作品':tab==='talk'?'交流':'官方教程'):'社区内容'}>
+ const publish=()=>{store.removeItem('cp-circle');store.setItem('cp-post-kind','post');if(store.getItem('cp-auth')!=='1'){store.setItem('cp-return','post-publish');open('login')}else open('post-publish')};
+ return <section className="cl-community" aria-label={desktop?(tab==='works'?'AIGC作品':tab==='talk'?'交流':'教程'):'社区内容'}>
   <div className="cl-secondary-row">
    <nav ref={categoriesRef} className="cl-secondary-options" aria-label={tab==='works'?'作品分类':tab==='talk'?'圈子选择':'教程分类'}>
-    {(tab==='works'?(desktop?['全部','图片','视频','文字']:workCategories):tab==='talk'?['全部',...circles.map(c=>c.name)]:['全部','文字创作','影像处理','视觉设计','视频创作']).map(value=><button key={value} aria-pressed={(tab==='works'?(desktop?filter:category):tab==='talk'?circle:topic)===value} onClick={()=>{if(tab==='works'&&!desktop){chooseCategory(value)}else if(tab==='talk'){setCircle(value);store.setItem('cl-circle',value)}else choose(value)}}>{value}</button>)}
+    {(tab==='works'?(desktop?desktopCategories:workCategories):tab==='talk'?['全部',...circles.map(c=>c.name)]:['全部','文字创作','影像处理','视觉设计','视频创作']).map(value=><button key={value} aria-pressed={(tab==='works'?category:tab==='talk'?circle:topic)===value} onClick={()=>{if(tab==='works'){chooseCategory(value)}else if(tab==='talk'){setCircle(value);store.setItem('cl-circle',value)}else choose(value)}}>{value}</button>)}
    </nav>
    {tab==='works'&&!desktop&&<div className="cl-filter"><button className="cl-filter-trigger" aria-label="筛选作品" aria-expanded={menu} onClick={()=>setMenu(!menu)}><Icon name="filter-3"/>{filter!=='全部'&&<span>{filter}</span>}</button>{menu&&<><button className="cl-menu-dismiss" aria-label="关闭筛选" onClick={()=>setMenu(false)}/><div className="cl-filter-menu"><fieldset aria-label="内容类型"><legend>内容类型</legend><div className="cl-filter-options">{['全部','图片','视频','文字'].map(t=><button key={t} aria-pressed={filter===t} onClick={()=>choose(t)}>{t}</button>)}</div></fieldset><fieldset aria-label="作品分类"><legend>作品分类</legend><div className="cl-filter-options">{workCategories.map(value=><button key={value} aria-pressed={category===value} onClick={()=>chooseCategory(value)}>{value}</button>)}</div></fieldset></div></>}</div>}
    {tab==='talk'&&<button className="cl-find-circle" onClick={()=>open('circles')}>找圈子<Icon name="arrow-right-s"/></button>}

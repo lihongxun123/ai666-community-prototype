@@ -19,3 +19,7 @@
   .cp-creation-overlay { align-items: center; padding: 20px; }
   .cp-creation-panel { width: min(100%, 520px); padding: 22px; border-radius: 4px; }
 }
+
+.cp-creation-desktop-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.cp-creation-desktop-links button{border:1px solid #e5e5e5;border-radius:5px;background:#fff;color:#444;padding:9px 16px;font-size:13px;cursor:pointer}
+
+.cp-creation-overlay.is-desktop{align-items:center;padding:24px}.cp-creation-overlay.is-desktop .cp-creation-panel{border-radius:14px;padding:24px;width:440px;max-height:calc(100dvh - 48px);overflow:auto}

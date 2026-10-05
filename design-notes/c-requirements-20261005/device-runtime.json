@@ -1,0 +1,440 @@
+{
+  "date": "2026-10-05",
+  "scope": "阅读台正常页逐入口加载检查；等待首个 iframe 及可见按钮，不代表全部状态、完整交互或视觉验收",
+  "results": [
+    {
+      "device": "pc",
+      "id": "home",
+      "error": false,
+      "length": 5288,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "topics",
+      "error": false,
+      "length": 6263,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "topic",
+      "error": false,
+      "length": 4076,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "apps",
+      "error": false,
+      "length": 4195,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "app",
+      "error": false,
+      "length": 3890,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "discover-circles",
+      "error": false,
+      "length": 3683,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "aigc",
+      "error": false,
+      "length": 4390,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "post",
+      "error": false,
+      "length": 4658,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "circles",
+      "error": false,
+      "length": 8555,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "tutorials",
+      "error": false,
+      "length": 4860,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "tutorial",
+      "error": false,
+      "length": 3541,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "work",
+      "error": false,
+      "length": 3832,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "search",
+      "error": false,
+      "length": 3411,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "author",
+      "error": false,
+      "length": 3298,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "create",
+      "error": false,
+      "length": 3709,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "create-result",
+      "error": false,
+      "length": 3327,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "post-edit",
+      "error": false,
+      "length": 3884,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "post-publish",
+      "error": false,
+      "length": 3710,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "mine",
+      "error": false,
+      "length": 4472,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "profile-edit",
+      "error": false,
+      "length": 3323,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "login",
+      "error": false,
+      "length": 6014,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "notifications",
+      "error": false,
+      "length": 3439,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "activities",
+      "error": false,
+      "length": 4193,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "activity",
+      "error": false,
+      "length": 6833,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "points",
+      "error": false,
+      "length": 3847,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "checkin",
+      "error": false,
+      "length": 5505,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "invite",
+      "error": false,
+      "length": 4361,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "shop",
+      "error": false,
+      "length": 4314,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "shop-exchange",
+      "error": false,
+      "length": 4838,
+      "frameControlVisible": true
+    },
+    {
+      "device": "pc",
+      "id": "shop-records",
+      "error": false,
+      "length": 6197,
+      "frameControlVisible": true
+    },
+    {
+      "device": "mobile",
+      "id": "home",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 7714
+    },
+    {
+      "device": "mobile",
+      "id": "topics",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5911
+    },
+    {
+      "device": "mobile",
+      "id": "topic",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6195
+    },
+    {
+      "device": "mobile",
+      "id": "apps",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6762
+    },
+    {
+      "device": "mobile",
+      "id": "app",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6539
+    },
+    {
+      "device": "mobile",
+      "id": "community",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 7733
+    },
+    {
+      "device": "mobile",
+      "id": "post",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6467
+    },
+    {
+      "device": "mobile",
+      "id": "circles",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6490
+    },
+    {
+      "device": "mobile",
+      "id": "circle",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 11422
+    },
+    {
+      "device": "mobile",
+      "id": "tutorial",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6629
+    },
+    {
+      "device": "mobile",
+      "id": "work",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6867
+    },
+    {
+      "device": "mobile",
+      "id": "search",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6445
+    },
+    {
+      "device": "mobile",
+      "id": "author",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6077
+    },
+    {
+      "device": "mobile",
+      "id": "creation-entry",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6373
+    },
+    {
+      "device": "mobile",
+      "id": "create",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6239
+    },
+    {
+      "device": "mobile",
+      "id": "post-edit",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5649
+    },
+    {
+      "device": "mobile",
+      "id": "post-publish",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5271
+    },
+    {
+      "device": "mobile",
+      "id": "mine",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6804
+    },
+    {
+      "device": "mobile",
+      "id": "my-relations",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 3788
+    },
+    {
+      "device": "mobile",
+      "id": "my-fans",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 4236
+    },
+    {
+      "device": "mobile",
+      "id": "my-circles",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 3952
+    },
+    {
+      "device": "mobile",
+      "id": "profile-edit",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 4929
+    },
+    {
+      "device": "mobile",
+      "id": "login",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 7127
+    },
+    {
+      "device": "mobile",
+      "id": "notifications",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 4954
+    },
+    {
+      "device": "mobile",
+      "id": "activities",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5830
+    },
+    {
+      "device": "mobile",
+      "id": "activity",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 10332
+    },
+    {
+      "device": "mobile",
+      "id": "points",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5462
+    },
+    {
+      "device": "mobile",
+      "id": "checkin",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 7318
+    },
+    {
+      "device": "mobile",
+      "id": "invite",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5456
+    },
+    {
+      "device": "mobile",
+      "id": "shop",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5208
+    },
+    {
+      "device": "mobile",
+      "id": "shop-exchange",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 6598
+    },
+    {
+      "device": "mobile",
+      "id": "shop-records",
+      "frameControlVisible": true,
+      "error": false,
+      "length": 5577
+    }
+  ]
+}

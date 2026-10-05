@@ -2029,7 +2029,7 @@ export default function CrossPrototype() {
     if (data.returnStatus === 'duplicate' && existing) {
       try {
         if (JSON.parse(existing).title === selected.title) {
-          window.location.assign(`${C}?page=publish-status`);
+          window.location.assign(`${C}?page=my-content`);
           return;
         }
       } catch {

@@ -43,6 +43,16 @@ export const prototypeStore = {
 };
 
 export type Favorite = { target: string; title: string; type: string };
+const initialFollowedAuthors=['林间','温白'];
+export function followedAuthor(name:string){const value=prototypeStore.getItem('cp-following:'+name);return value===null?initialFollowedAuthors.includes(name):value==='1';}
+export function followedAuthors(){
+  const names=new Set(initialFollowedAuthors);
+  for(let i=0;i<prototypeStore.length;i++){const key=prototypeStore.key(i);if(key?.startsWith('cp-following:'))names.add(key.slice('cp-following:'.length));}
+  return [...names].filter(followedAuthor);
+}
+export function followingCount(){return 24-initialFollowedAuthors.length+followedAuthors().length;}
+export function setAuthorFollowing(name:string,following:boolean){prototypeStore.setItem('cp-following:'+name,following?'1':'0');window.dispatchEvent(new Event('cp-following-change'));}
+export function subscribeAuthorFollowing(fn:()=>void){window.addEventListener('cp-following-change',fn);return()=>window.removeEventListener('cp-following-change',fn);}
 export function getFavorites(): Favorite[] {
   try {
     return JSON.parse(prototypeStore.getItem('cp-favorites') || '[]');
@@ -95,13 +105,23 @@ export type ShopRecord = { id: string; productId?: string; siteId?: string; name
 export function shopRecords(): ShopRecord[] {
   try { const rows = JSON.parse(prototypeStore.getItem('cp-shop-records') || '[]'); return Array.isArray(rows) ? rows : []; } catch { return []; }
 }
+export function checkinRecords(): { date: string; points: number }[] {
+  try {
+    const saved = prototypeStore.getItem('cp-checkins');
+    if (saved) {
+      const rows = JSON.parse(saved);
+      return Array.isArray(rows) ? rows.filter((row, index) => row && typeof row.date === 'string' && Number.isFinite(row.points) && row.points > 0 && rows.findIndex(other => other?.date === row.date) === index) : [];
+    }
+    return prototypeStore.getItem('cp-checkin') === 'done' ? [{ date: prototypeStore.getItem('cp-checkin-date') || 'legacy', points: 20 }] : [];
+  } catch { return []; }
+}
 export function pointBalance() {
   const history=taskHistory(),tasks=history.length?history:[readTask()].filter((t):t is PrototypeTask=>Boolean(t));
-  const reserved=tasks.filter(t=>t.item?.startsWith('light-')).reduce((sum,t)=>sum+(!['cancelled','unaccepted','failed'].includes(String(t.status))?Number(t.status==='partial'?(t.settledPoints??t.points??0):(t.points??0)):0),0);
+  const reserved=tasks.filter(t=>t.item?.startsWith('light-') && !t.id?.startsWith('sample-light-')).reduce((sum,t)=>sum+(!['cancelled','unaccepted','failed'].includes(String(t.status))?Number(t.status==='partial'?(t.settledPoints??t.points??0):(t.points??0)):0),0);
   return Math.max(
     0,
     100 +
-      (prototypeStore.getItem('cp-checkin') === 'done' ? 20 : 0) -
+      checkinRecords().reduce((sum, record) => sum + record.points, 0) -
       (shopRecords().filter(r=>r.status === 'success').reduce((n,r)=>n + Number(r.price || 0),0) + (prototypeStore.getItem('cp-redeemed') === '1' ? 50 : 0)) -
       reserved,
   );

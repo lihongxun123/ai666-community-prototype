@@ -18,3 +18,5 @@
 .rv-flow-arrow{font-size:18px;color:#547bb6;text-align:center;line-height:1}
 .rv-flow-destination{padding:8px 5px;font-size:12px}
 @media(max-width:480px){.rv-module-flow{padding:13px}.rv-flow-group{grid-template-columns:minmax(82px,27%) minmax(0,1fr);gap:8px;padding:8px}.rv-flow-branch{grid-template-columns:minmax(0,1fr) 14px minmax(68px,41%);gap:2px}.rv-flow-node{font-size:12px}.rv-flow-action small{font-size:10px}}
+
+.rv-flow-states{padding:12px 14px;margin-bottom:16px;border:1px solid #e3e8f0;border-radius:4px;background:#fff}.rv-flow-states h4{margin:0 0 8px;font-size:13px}.rv-flow-states ul{margin:0;padding-left:18px;font-size:12px;line-height:1.7}.rv-flow-states li+li{margin-top:5px}.rv-flow-destination:not(button){cursor:default}

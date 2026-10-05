@@ -26,8 +26,10 @@
 
 .community-mobile-header:has(#community-search-slot){grid-template-columns:28px minmax(0,1fr);gap:4px}#community-search-slot{min-width:0}#community-search-slot .reading-search{display:flex;align-items:center;gap:8px;height:34px;min-height:34px;margin:0;padding:0 10px;border:0;border-radius:4px;background:#f5f5f5;box-sizing:border-box}#community-search-slot .reading-search>.reading-icon{width:16px;height:16px;flex:none}#community-search-slot input{width:0;flex:1;min-width:0;height:100%;padding:0;border:0;background:none;font:inherit;font-size:13px;outline:none}#community-search-slot .reading-search button{width:auto;height:32px;min-height:32px;font-size:13px;padding:0;flex:none}
 
-/* Preserve complete source images throughout consumer prototypes. */
-.cp-root img,.mh-root img,.hp-root img{object-fit:contain!important}
+/* Mobile preserves complete images; desktop uses each component's fill style. */
+.cp-root:not(.cp-desktop) img,.mh-root img{object-fit:contain!important}
+/* Desktop content fills its existing frame; mobile keeps complete images. */
+.cp-root.cp-desktop :is(.cl-tutorial-cover,.reading-picture,.cp-cover,.cp-card>img,.cp-row>img,.wf-card>img,.cl-post-media>img,.circle-feed-open>img,.circle-list-card>img,.circle-detail-intro>img,.cp-app-effect>img,.wd-media>img,.author-content-feed img),.hp-root .hp-work>img{object-fit:cover!important}
 .cp-root .cl-post-media img,.cp-root .circle-feed-open>img,.cp-root .reading-page>img{height:auto!important;max-height:none!important;aspect-ratio:auto!important}
 .cp-root .wf-card:has(>img),.mh-root .wf-card:has(>img),.hp-root .hp-work:has(>img){aspect-ratio:auto!important}
 .cp-root .wf-card>img,.mh-root .wf-card>img,.hp-root .hp-work>img{height:auto!important;aspect-ratio:auto!important}
@@ -41,3 +43,21 @@
 /* Topic artwork is an editorial cover and fills its frame. */
 .cp-root .cp-topic-card>img,.cp-root .cp-topic-hero>img,.cp-root .search-topic-native>img,.mh-root .mh-topics img{object-fit:cover!important;width:100%;height:100%!important}
 .cp-root .cp-topic-hero{aspect-ratio:16/10!important}.cp-root.cp-desktop .cp-topic-hero{aspect-ratio:2.8!important}.cp-root .search-topic-native{aspect-ratio:2/1!important}
+
+.community-mobile-header:has(.community-mine-actions){grid-template-columns:40px minmax(0,1fr) 40px}
+
+.community-mobile-header.community-shop-header{grid-template-columns:64px minmax(0,1fr) 64px}.community-mobile-header .community-shop-records{width:auto;justify-self:end;white-space:nowrap;font-size:12px;padding:0}
+
+.community-account{gap:8px;padding:0;background:none;border-radius:0;flex:none}.community-pc-header .community-points{height:40px;padding:0 12px;display:flex;align-items:center;gap:6px;font-size:13px;border-radius:8px;background:#f5f5f6}.community-points strong{font-weight:600;font-variant-numeric:tabular-nums}.community-pc-header .community-checkin{height:40px;min-width:80px;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:8px;background:#f5f5f6;color:#202124;font-size:13px;font-weight:500}.community-checkin .community-icon{width:18px;height:18px}.community-pc-header .community-checkin:hover{background:#ebebed}.community-pc-header .community-points:hover{background:#ebebed}
+
+/* PC search recommendations: four topics fit in one row. */
+.community-search-popover{width:640px;max-width:calc(100vw - 64px);box-sizing:border-box}.community-search-popover .search-topic-grid,.community-search-popover .search-app-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.community-search-popover .search-suggestions section+section{margin-top:20px}
+/* Keep account controls fully visible on laptop-width PC navigation. */
+@media(min-width:901px) and (max-width:1100px){.community-pc-inner{padding-inline:24px;gap:12px}.community-logo img{width:110px}.community-main-nav{gap:12px}.community-main-nav button{font-size:13px}.community-services{gap:10px;flex:none}.community-search{min-width:80px}.community-user{flex:none}}
+
+/* Shared desktop avatar menu. */
+.community-user>button{display:flex;align-items:center;gap:6px;padding:4px;border-radius:20px}.community-user>button>.community-icon{width:14px;height:14px;transition:transform .15s}.community-user>button[aria-expanded=true]>.community-icon{transform:rotate(180deg)}.community-user-menu{top:calc(100% + 10px);width:184px;padding:8px;z-index:100;border-color:#e9e9e9;border-radius:10px;box-shadow:0 8px 28px #00000014}.community-user-menu button{display:flex;align-items:center;gap:10px;min-height:42px;padding:10px 12px;border-radius:6px;color:#555;font-size:14px}.community-user-menu button:hover,.community-user-menu button:focus-visible{background:#f4f4f5}.community-user-menu .community-icon{width:18px;height:18px;opacity:.65}.community-user-menu-divider{height:1px;background:#eee;margin:6px 4px}.community-user-menu .community-menu-logout{color:#92605c}
+
+.community-user-menu{width:320px;padding:12px;max-height:calc(100dvh - 90px);overflow-y:auto;white-space:normal}.community-user-menu button{min-height:44px;padding:10px 12px}.community-user-menu button>span:not(.community-menu-avatar){flex:1}.community-user-menu button>.community-icon:last-child:not(:first-child){width:16px;height:16px;opacity:.45}.community-user-menu .community-menu-profile{align-items:flex-start;padding:12px 10px 18px;gap:14px}.community-menu-avatar{width:52px;height:52px;flex:none;display:grid;place-items:center;background:#f1f1f0;border-radius:50%;font-size:24px;color:#252525;overflow:hidden}.community-menu-avatar img{width:100%;height:100%;object-fit:cover}.community-menu-profile strong{font-size:17px;display:block;color:#242424}.community-menu-profile small{display:block;font-size:12px;color:#888;line-height:1.7}.community-menu-social{margin-top:10px}.community-user-menu .community-menu-profile>.community-icon{margin-top:18px}.community-menu-points{display:flex;align-items:center;background:#f5f5f6;border-radius:8px;margin:0 2px 12px;padding:12px;gap:8px}.community-user-menu .community-menu-points>button:first-child{display:block;flex:1;padding:0;min-width:0}.community-menu-points small{display:block;font-size:12px;color:#888}.community-menu-points span{display:flex;align-items:baseline;gap:8px;margin-top:5px}.community-menu-points strong{font-size:26px;line-height:1.2;color:#222}.community-menu-points span small{font-size:11px}.community-user-menu .community-menu-checkin{width:auto;flex:none;min-height:36px;padding:8px;border:1px solid #ddd;background:#fff;font-size:12px;gap:5px}.community-menu-links{padding-block:2px}.community-user-menu-divider{margin:8px 2px}.community-user-menu .community-menu-logout{color:#ae6561}
+
+.community-user-menu{line-height:1.5}.community-menu-profile strong{line-height:1.5}.community-menu-profile small{margin-top:2px}.community-menu-profile .community-menu-social{margin-top:10px}

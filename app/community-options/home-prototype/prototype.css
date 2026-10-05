@@ -26,3 +26,9 @@
 .hp-root .hp-header,.hp-root .hp-main{width:100%;max-width:1800px;margin-left:auto;margin-right:auto}
 
 
+
+/* Shared media-card baseline used by the other work feeds. */
+.hp-waterfall,.hp-column,.hp-topic-stack{gap:var(--community-work-gap)}
+.hp-work,.hp-topic{border-radius:var(--community-work-radius)}
+.hp-work-info{padding:var(--community-work-caption-padding)}
+.hp-work-info>strong{font-size:var(--community-work-title-size)}

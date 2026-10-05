@@ -1,46 +1,43 @@
+import {deviceDestination} from '../navigation-model';
 import {DocumentBlocks} from './document-blocks';
 import {allPages} from '../c-prototype/page';
 import {bPages} from '../b-prototype/page';
 import {crossPages} from '../cross-prototype/data';
 import {appEdges} from './app-review';
 import './flow.css';
-import cText from '../../../design-notes/requirements-c-flows.md?raw';
-import bText from '../../../design-notes/requirements-b-content.md?raw';
-import xText from '../../../design-notes/requirements-cross-product.md?raw';
-type Edge=[string,string,string];
+import cRequirements from '../../../design-notes/page-requirements-c.json';
+import cCommonRequirements from '../../../design-notes/c-requirements-20261005/common-rules.json';
+import cPendingRequirements from '../../../design-notes/c-requirements-20261005/decisions.json';
+import bRequirements from '../../../design-notes/page-requirements-b.json';
+import crossRequirements from '../../../design-notes/page-requirements-cross.json';
+type Edge=[string,string,string,string?];
 export const routes:Record<string,Edge[]>={
  aigc:[['作品卡','work','进入同一公开作品详情'],['作者署名','author','进入公开作者主页']],
- discussion:[['帖子','post','进入原帖'],['圈子','circles','发现圈子'],['官方教程','tutorials','浏览官方教程目录']],
- home:[['精选专题','topic','专题仍公开'],['专题入口','topics','浏览公开专题'],['作品卡','work','同一作品身份'],['金刚入口','apps','浏览目录'],['活动入口','activities','浏览公开活动'],['每日签到','checkin','登录后主动签到']],
+ discussion:[['帖子','post','进入原帖'],['圈子','circles','发现圈子'],['教程','tutorials','浏览教程目录']],
+ home:[['精选专题','topic','专题仍公开'],['专题入口','topics','浏览公开专题'],['作品卡','work','同一作品身份'],['AI应用入口','apps','浏览目录'],['活动入口','activities','浏览公开活动'],['每日签到','checkin','登录后主动签到']],
  topics:[['专题卡','topic','按后台发布顺序']],topic:[['作品','work','关联公开对象'],['教程','tutorial','关联公开对象'],['应用','app','进入详情，不直接扣费']],
- community:[['作品','work','公开作品；独立于首页后台选用及活动关联'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['官方教程','tutorials','官方维护'],['发布','post-edit','登录后保留来源']],
+ community:[['作品','work','公开作品；独立于首页后台选用及活动关联'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['教程','tutorials','浏览公开教程']],
  post:[['作者','author','同一作者'],['所属圈子','circle','圈子可访问'],['引用作品','work','目标失效不删除帖子讨论']],
- circles:[['圈子卡','circle','查看规则与内容']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-edit','圈子开放、已加入且有发布权限']],
- tutorials:[['教程卡','tutorial','按用途与排序浏览']],tutorial:[['关联资源','resource','教程和资源分开维护'],['作者','author','保留来源']],
- work:[['关联资源','resource','有公开引用才展示'],['作者','author','同一作者'],['再次创作','create','只在支持时出现']],
- search:[['作品结果','work','按内容类型分组'],['帖子结果','post','隐藏不可见对象'],['教程结果','tutorial','保留搜索词'],['应用结果','app','进入详情'],['作者结果','author','固定栏目']],
+ circles:[['圈子卡','circle','手机进详情；PC 筛选帖子并更新圈子信息'],['查看全部','discover-circles','PC 发现列表；手机由圈子列表承接']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-publish','圈子开放、已加入且有发布权限']],
+ 'discover-circles':[['圈子','circles','PC 选中对应圈子，显示帖子与右侧资料']],
+ tutorials:[['教程卡','tutorial','按用途与排序浏览']],tutorial:[['关联应用','app?item=restore','查看可复用能力'],['作者','author','保留来源']],
+ work:[['关联应用','app?item=restore','有公开引用才展示'],['作者','author','同一作者'],['再次创作','create','只在支持时出现']],
+ search:[['作品结果','work','按内容类型分组'],['帖子结果','post','隐藏不可见对象'],['教程结果','tutorial','保留搜索词'],['应用结果','app','进入详情'],['作者结果','author','查看作者公开内容'],['专题结果','topic','同一专题'],['圈子结果','circle','按设备进入圈子']],
  author:[['作品栏目','work','只展示公开内容'],['帖子栏目','post','固定栏目无结果显示空态']],
- resource:[['查看项目','cross:project','电脑端检查公开权限']],
- create:[['生成','create','工作台内排队、生成和展示结果；报价取模型配置，演示积分不作为正式定价'],['发布作品','post-edit','主动选择结果后进入编辑，恢复该任务的活动关联'],['生成记录','create','工作台内打开历史记录，私有结果不自动发布']],
- 'post-edit':[['提交','publish-status','页内预览确认后主动提交'],['保存草稿','drafts','保留活动与来源']],
- 'publish-status':[['查看我的内容','my-content','按审核结果展示'],['返回编辑','post-edit','失败或退回时继续处理']],
- publish:[['编辑内容','post-edit','选择作品或帖子，保留活动身份'],['生成后发布','create','结果不自动公开']],
- mine:[['我的发布','my-content','区分公开状态'],['草稿','drafts','继续原对象'],['收藏','favorites','个人可见'],['关系','my-relations','关注与已加入圈子'],['资料','profile-edit','本人修改']],
- drafts:[['继续编辑','post-edit','恢复文本、媒体、活动身份']],
- 'my-content':[['查看作品','work','按当前公开状态'],['继续编辑','post-edit','不覆盖仍公开版本']],
- favorites:[['打开收藏','work','按收藏对象类型跳转；失效说明状态']],
- 'my-relations':[['已加入圈子','circle','退出不删除旧帖'],['已关注作者','author','恢复关系']],
+ 'creation-entry':[['AIGC 生成','create','进入生成工作台'],['直接发布','post-edit','进入作品编辑'],['发布帖子','post-publish','进入帖子编辑；未登录先登录再继续']],
+ create:[['查看结果','create-result','打开所选任务结果'],['发布作品','post-edit','选择结果后带入素材、提示词和活动关联'],['生成记录','records','查看本人任务与结果']],
+ 'create-result':[['继续调整','create','保留原任务输入'],['发布作品','post-edit','主动选择结果，保留活动关联'],['前往MakeNow','cross:app','同一账号继续；不自动传递素材或结果','MakeNow']],
+ 'post-publish':[['提交','my-content','主动提交帖子'],['保存草稿','drafts','保留圈子与活动']],
+ 'post-edit':[['提交','my-content','主动提交作品'],['保存草稿','drafts','保留活动与来源']],
+ mine:[['内容管理','my-content','本人空间内切换内容面板'],['我的投稿','submissions','本人空间内查看投稿'],['草稿箱','drafts','继续原对象'],['生成记录','records','本人任务与结果'],['管理收藏','favorites','个人可见'],['我的圈子','my-circles','已加入圈子'],['关注作者','my-relations','已关注作者'],['我的粉丝','my-fans','回关与粉丝关系分开'],['编辑资料','profile-edit','本人修改']],
+ 'my-circles':[['已加入圈子','circle','退出不删除旧帖']],'my-relations':[['已关注作者','author','打开所选作者']],'my-fans':[['粉丝','author','打开对应公开作者主页']],
  'profile-edit':[['保存','profile-edit','校验后在当前页显示结果'],['返回','mine','返回个人中心']],
- records:[['继续创作','create','仅社区轻创作记录；AI应用任务与结果在MakeNow查看']],
- login:[['登录完成','mine','弹层关闭后返回实际来源；不自动提交原动作'],['关闭登录','home','返回实际背景页，保留未提交输入']],notifications:[['查看审核','my-content','保留目标身份；失效不跳无关内容'],['查看投稿','submissions','以投稿记录为准']],
- activities:[['活动卡','activity','活动资格沿用现有业务']],activity:[['参与活动','activity','参与状态留在详情'],['发布投稿','publish','传递活动身份；结束或未解锁禁用']],
- submissions:[['查看活动','activity','保持投稿关联活动'],['查看稿件','my-content','保留审核状态']],
- points:[['签到','checkin','仅积分，无充值'],['兑换','shop','重新校验余额']],checkin:[['查看积分','points','成功才记账']],invite:[['查看积分','points','奖励取决于有效邀请条件']],
- shop:[['兑换记录','shop-records','成功、处理中、失败分别展示']],
- 'shop-records':[['返回商城','shop','失败不扣费；未知不重复兑换']],
- 'pc-handoff':[['返回内容','app','保留对象上下文'],['电脑继续','cross:project','PC打开后再校验权限']],
- 'account-link':[['返回结果','return-result','授权失败可重试，不丢来源']],
- 'return-result':[['发布作品','post-edit','结果先私有，主动发布']],
+ login:[['登录完成','mine','恢复来源和输入；后续动作由用户再次提交','来源页面'],['取消登录','home','关闭弹层，保留输入','来源页面']],notifications:[['查看审核','my-content','保留目标身份；失效不跳无关内容'],['查看投稿','submissions','以投稿记录为准']],
+ activities:[['活动卡','activity','查看期限、资格与任务']],activity:[['参与活动','activity','参与状态留在详情'],['发布作品','post-edit','活动可参与；选择直接发布，带入活动及任务'],['发布帖子','post-publish','任务要求发布帖子；带入活动及任务'],['生成后投稿','create','活动页内选择生成后进入创作，结果不自动公开']],
+ points:[['签到','checkin','主动签到，奖励自动发放'],['兑换','shop','重新校验余额']],checkin:[['查看积分','points','成功才记账']],invite:[['查看积分','points','奖励取决于有效邀请条件']],
+ shop:[['选择商品','shop-exchange','打开确认兑换弹层'],['兑换记录','shop-records','查看本人兑换历史']],
+ 'shop-exchange':[['查看兑换记录','shop-records','确认、提交、结果与不可兑换原因在弹层表达']],
+ 'shop-records':[['返回商城','shop','关闭记录或返回来源']],
 };
 const bRoutes:Record<string,Edge[]>={
  works:[['编辑作品','b:work-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
@@ -79,44 +76,49 @@ const crossRoutes:Record<string,Edge[]>={
  'maintain-tutorial':[['查看进度','cross:maintain-status','保存或提交后']], 'maintain-resource':[['查看进度','cross:maintain-status','保存或提交后']],
  'maintain-status':[['返回维护列表','cross:maintain','审核与正式发布分开']], review:[['查看公开项目','cross:project','示例路径入口']],
 };
-const cSections:Record<string,number[]>={'首页':[1],'专题':[3],'AI应用':[4],'资源与跨端':[4,7],'社区与帖子':[2,5],'圈子':[2,5],'教程':[2,4,5],'作品详情':[4,5],'搜索与作者':[3],'创作与发布':[6,7],'个人管理':[6],'账号与通知':[7],'活动':[6],'积分与任务':[6],'AI 商城':[6]};
-const bSections:Record<string,number[]>={'内容管理':[2,3,4,5],'审核与发布':[4,5,7],'维护与记录':[5,7],'内容运营':[6],'社区运营':[6,7],'活动运营':[6,7],'账户服务':[6],'审核治理':[7],'系统管理':[2,7]};
-const crossSections:Record<string,number[]>={'AI应用承接':[2],'MakeNow 分享':[3,4],'MakeNow 复用':[3],'成果回流':[2,4],'资源取用':[5,6],'作者维护':[3,4],'走查':[1,7]};
-function extract(text:string,indices:number[]){return text.split(/(?=^## \d+\.)/m).filter(s=>indices.some(n=>s.startsWith('## '+n+'.'))).join('\n');}
-const cPageSections:Record<string,string[]>={
- home:['1'],aigc:['0.3','2.1'],discussion:['0.3','2.1'],community:['2.1'],post:['4.2','5'],circles:['0.3','2.2'],circle:['2.2'],tutorials:['2.3'],tutorial:['4.3','5'],
- work:['4.1','5'],resource:['4.5','5'],create:['0.1','8'],publish:['0.1','6.2','6.3'],
- topics:['3.1'],topic:['3.1'],search:['0.2','3.2'],author:['3.3'],
- mine:['6.1'],drafts:['6.1'],records:['6.1'],'my-content':['6.1','6.2'],favorites:['5','6.1'],
- 'post-edit':['6.2'],'publish-status':['6.2'],activities:['6.3'],activity:['6.3'],submissions:['6.3'],shop:['6.4'],'shop-records':['6.4'],
+const localFlows:Record<string,string[]>={
+ work:['喜欢、收藏、关注：更新本人关系；失败保留原状态。','评论：校验文字或单图 → 提交 → 展示确认结果；失败保留输入。','本人删除评论：确认 → 移除条目，不展示删除占位；合法回复保留。'],
+ post:['图片：打开预览 → 切换图片 → 关闭返回原位置。','回复：选定对象 → 输入文字或单图 → 提交；可取消回复。','删除评论不显示占位；引用对象删除后隐藏引用，保留帖子正文。'],
+ circle:['未加入 → 主动加入 → 已加入；退出后保留历史帖子。','圈子关闭 → 停止新加入和发帖；公开帖子按自身权限访问。'],
+ circles:['选择推荐或圈子 → 更新帖子流与右侧资料。','加入或退出成功后更新本人关系与人数。'],
+ 'discover-circles':['未加入 → 加入成功 → 可进入；失败保留未加入状态。'],
+ create:['输入与参数校验 → 提交 → 排队/生成 → 完成或失败。','积分不足：生成按钮禁用；结果未知：查询原任务，不重复提交。','生成结果为私人资产；发布需用户主动提交。'],
+ 'create-result':['打开指定任务 → 查看结果及参考素材 → 下载、继续调整或发布。','素材、提示词与活动关联保持原任务身份；结果不自动公开。'],
+ 'post-edit':['编辑 → 校验 → 提交；按实际审核结果展示状态。','保存草稿不公开、不算投稿；提交失败保留输入。'],
+ 'post-publish':['编辑 → 校验正文、媒体、引用和圈子 → 提交。','保存草稿不公开；失败保留输入与来源。'],
+ mine:['主动下架 → 退出公开列表；恢复前重新校验公开资格。','删除需确认；删除内容不删除生成资产和必要投稿、奖励记录。'],
+ 'profile-edit':['编辑资料 → 校验 → 保存 → 显示结果；失败后重新核对实际资料。','手机号和微信绑定独立提交；唯一登录方式不可直接解绑。'],
+ login:['完成身份验证 → 恢复来源；原操作由用户再次提交。','邀请绑定失败不阻断登录。'],
+ notifications:['点击消息 → 标记已读 → 有效目标；无目标只标记已读。','全部已读只改变提醒状态，不改变业务处理结果。'],
+ activity:['查看规则 → 主动参与 → 执行任务或投稿 → 核验有效结果 → 自动发奖。','活动结束或任务未解锁时，不能新参与对应任务。'],
+ checkin:['未签到 → 主动签到 → 已签到；奖励自动发放。','日期按北京时间，同一天不能重复签到。'],
+ invite:['邀请链接 → 登录或注册 → 校验邀请关系 → 首次成功绑定。','奖励按有效注册、互动等条件发放，分享本身不计奖励。'],
+ shop:['选择有效商品 → 核对站点、价格和余额 → 确认兑换。'],
+ 'shop-exchange':['确认 → 提交 → 成功、明确失败或结果确认中。','未知结果查询原记录；返还处理中不显示已到账，不引导重复兑换。'],
+ 'shop-records':['成功且卡密有效 → 复制或前往产品；处理中 → 查询原记录。','返还按原积分批次判断有效期，已返还不等于全部恢复可用。'],
 };
-const bPageSections:Record<string,string[]>={
- works:['2'],posts:['2'],tutorials:['2'],apps:['2'],resources:['2'],
- 'work-edit':['3','4.1','4.3'],'post-edit':['3','4.1','4.3'],'tutorial-edit':['3','4.1','4.3'],'app-edit':['3','4.1','4.3'],'resource-edit':['3','4.1','4.3'],
- preview:['4.1'],reviews:['4.2','7'],review:['4.2','7'],release:['4.1','4.2'],references:['5.2'],transfer:['5.1'],history:['7'],
- 'op-events':['6.1'],'op-event-edit':['6.1'],'op-submissions':['6.1'],'op-shop':['6.2'],
-};
-const xPageSections:Record<string,string[]>={project:['3.1'],share:['3.1'],version:['3.1'],copy:['3.1'],library:['3.1'],editor:['3.1'],derivative:['3.2'],results:['2.3','4'],link:['4'],return:['2.3','4'],'return-status':['2.3','4'],workflow:['5'],'workflow-import':['5']};
-function extractPage(text:string,keys:string[]){return text.split(/(?=^#{2,3} )/m).filter(block=>{const key=block.match(/^#{2,3} ([\d.]+)\s/)?.[1].replace(/\.$/,'');return key&&keys.some(wanted=>key===wanted||key.startsWith(wanted+'.'));}).join('\n');}
+const requirements:Record<string,Record<string,string>>={c:cRequirements,b:bRequirements,cross:crossRequirements};
 export function PageRequirements({section,page}:{section:string;page:{id:string;title:string;module:string;states:string[]}}){
- const text=section==='c'?(cPageSections[page.id]?extractPage(cText,cPageSections[page.id]):extract(cText,cSections[page.module]||[1])):section==='b'?(bPageSections[page.id]?extractPage(bText,bPageSections[page.id]):extract(bText,bSections[page.module]||[1])):(xPageSections[page.id]?extractPage(xText,xPageSections[page.id]):extract(xText,crossSections[page.module]||[1]));
- return <section className="rv-requirements"><h3>{page.title} · 需求</h3><DocumentBlocks text={text}/></section>;
+ const text=requirements[section]?.[page.id];
+ const handoff=cPendingRequirements.text.slice(cPendingRequirements.text.indexOf('| 编号 |')).split('\n## ')[0].trim();
+ return <section className="rv-requirements rv-page-requirements" aria-label={page.title+'页面需求'}><h3>{page.title}</h3>{text?<DocumentBlocks text={section==='c'?text.replace(/^### [^\n]+\n\n/,''):text}/>:<p role="alert">该页面需求尚未配置。</p>}{section==='c'&&<><details className="rv-common-requirements"><summary>公共规则</summary><DocumentBlocks text={cCommonRequirements.text}/></details><details className="rv-common-requirements"><summary>研发对接项</summary><DocumentBlocks text={handoff}/></details></>}</section>;
 }
-function targetTitle(target:string){const [prefix,id]=target.includes(':')?target.split(':'):['c',target];const key=id.split('?')[0];return (prefix==='b'?bPages:prefix==='cross'?crossPages:allPages).find(p=>p.id===key)?.title||target;}
-function flowEdges(section:string,id:string):Edge[]{
- if(section==='c' && appEdges[id])return appEdges[id].map(edge=>[edge.action,edge.target,edge.condition]);
+function targetTitle(target:string,device:string){const panelLabels:Record<string,string>={'my-content':'我的内容',drafts:'草稿箱',records:'生成记录',favorites:'我的收藏',submissions:'我的投稿','my-relations':'我的关注','my-circles':'我的圈子','my-fans':'我的粉丝'};if(panelLabels[target])return panelLabels[target];const [prefix,id]=target.includes(':')?target.split(':'):['c',target];const key=prefix==='c'?deviceDestination(id.split('?')[0],id.split('?')[1]||'',device).id:id.split('?')[0];return (prefix==='b'?bPages:prefix==='cross'?crossPages:allPages).find(p=>p.id===key)?.title||target;}
+function flowEdges(section:string,id:string,device:string):Edge[]{
+ if(section==='c'&&id==='create'&&device!=='pc')return routes.create.map(edge=>edge[1]==='create-result'?[edge[0],'create','打开当前任务完整结果，不新增独立页面','工作台内结果视图']:edge);
+ if(section==='c' && appEdges[id])return appEdges[id].filter(edge=>device!=='pc'||edge.action!=='获取电脑端链接').map(edge=>[edge.action,edge.target,edge.condition,edge.action==='获取电脑端链接'?'当前应用内电脑引导':edge.action==='在 MakeNow 中使用'?'MakeNow':undefined]);
  return (section==='b'?bRoutes:section==='cross'?crossRoutes:routes)[id]||[];
 }
 function sectionTarget(section:string,id:string){return (section==='c'?'':section+':')+id;}
-export function ModuleFlow({section,pages,currentId,open}:{section:string;pages:{id:string;title:string}[];currentId?:string;open:(target:string,source?:string)=>void}){
- return <section className="rv-requirements rv-module-flow"><h3>模块流程</h3><div className="rv-flow-map" aria-label="页面流转图">{pages.map(page=>{
-  const edges=flowEdges(section,page.id);
+export function ModuleFlow({section,pages,currentId,open,device='mobile'}:{section:string;pages:{id:string;title:string}[];currentId?:string;open:(target:string,source?:string)=>void;device?:string}){
+ return <section className="rv-requirements rv-module-flow"><h3>模块流程</h3>{section==='c'&&currentId&&localFlows[currentId]&&<div className="rv-flow-states"><h4>状态变化</h4><ul>{localFlows[currentId].map(line=><li key={line}>{line}</li>)}</ul></div>}<div className="rv-flow-map" aria-label="页面流转图">{pages.map(page=>{
+  const edges=flowEdges(section,page.id,device);
   return <div className={'rv-flow-group'+(edges.length?' has-edges':'')} key={page.id}>
    <button type="button" className="rv-flow-node rv-flow-origin" aria-current={currentId===page.id?'page':undefined} onClick={()=>open(sectionTarget(section,page.id))}>{page.title}</button>
-   {edges.length>0&&<div className="rv-flow-branches">{edges.map(([action,target,condition],index)=><div className="rv-flow-branch" key={`${page.id}-${target}-${action}-${index}`}>
+   {edges.length>0&&<div className="rv-flow-branches">{edges.map(([action,target,condition,label],index)=><div className="rv-flow-branch" key={`${page.id}-${target}-${action}-${index}`}>
     <div className="rv-flow-action"><strong>{action}</strong>{condition&&<small>{condition}</small>}</div>
     <span className="rv-flow-arrow" aria-hidden="true">→</span>
-    <button type="button" className="rv-flow-node rv-flow-destination" onClick={()=>open(target,page.id)}>{targetTitle(target)}</button>
+    {label&&['来源页面','当前应用内电脑引导','工作台内结果视图'].includes(label)?<span className="rv-flow-node rv-flow-destination">{label}</span>:<button type="button" className="rv-flow-node rv-flow-destination" onClick={()=>open(target,page.id)}>{label||targetTitle(target,device)}</button>}
    </div>)}</div>}
   </div>;
  })}</div></section>;

@@ -1,0 +1,38 @@
+[
+  {
+    "page": "profile-edit",
+    "sample": "account-last-method",
+    "overflow": false,
+    "within": true
+  },
+  {
+    "page": "invite",
+    "sample": "invite-rules",
+    "overflow": false,
+    "within": true
+  },
+  {
+    "page": "mine",
+    "sample": "content-delete",
+    "overflow": false,
+    "within": true
+  },
+  {
+    "page": "post",
+    "sample": "post-image",
+    "overflow": false,
+    "within": true
+  },
+  {
+    "page": "work",
+    "sample": "work-image",
+    "overflow": false,
+    "within": true
+  },
+  {
+    "page": "activity",
+    "sample": "activity-choice",
+    "overflow": false,
+    "within": true
+  }
+]

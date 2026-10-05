@@ -1,4 +1,5 @@
 'use client';
+import {TransientFeedback} from '../c-prototype/transient-feedback';
 /* oxlint-disable next/no-img-element -- Preserve the research site's local SVG and raster assets without an image service. */
 import { useEffect, useRef, useState } from 'react';
 
@@ -184,7 +185,7 @@ export default function HomeBanner({
               <button className="mh-primary" onClick={copyLink}>
                 复制电脑端链接
               </button>
-              <output className="mh-copy-status">{copy}</output>
+              {copy.startsWith('链接已复制')?<TransientFeedback message="链接已复制" onClear={()=>setCopy('')}/>:<output className="mh-copy-status">{copy}</output>}
               <input
                 aria-label="电脑端目标链接"
                 readOnly

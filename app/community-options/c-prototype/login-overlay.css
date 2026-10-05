@@ -3,9 +3,8 @@
 .cp-login-dialog { position: relative; margin: 0; padding: 0; width: min(100%, 920px); min-height: 540px; display: grid; grid-template-columns: 1fr 1fr; border: 0; border-radius: 4px; overflow: hidden; background: #fff; color: #171717; box-shadow: 0 24px 90px rgba(0,0,0,.28); }
 .cp-login-close { position: absolute; top: 12px; right: 16px; z-index: 3; width: 36px; height: 36px; border: 0; background: transparent; color: #555; font-size: 26px; cursor: pointer; }
 .cp-login-phone { min-width: 0; padding: 54px 50px 28px; }
-.cp-login-eyebrow { margin: 0 0 8px; color: #777; font-size: 13px; }
 .cp-login-phone h2 { margin: 0 0 8px; font-size: 28px; line-height: 1.25; }
-.cp-login-muted, .cp-login-scan p { color: #666; font-size: 14px; }
+.cp-login-scan p { color: #666; font-size: 14px; }
 .cp-login-phone form { display: grid; gap: 16px; margin-top: 28px; }
 .cp-login-phone label { display: grid; gap: 7px; font-size: 14px; font-weight: 600; }
 .cp-login-phone label small { font-size: 12px; color: #777; font-weight: 400; }
@@ -20,19 +19,20 @@
 .cp-login-message { margin: 0; padding: 8px 10px; border: 1px solid #eadbc8; border-radius: 4px; background: #fff9f2; color: #765024; font-size: 13px; }
 .cp-login-scan { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; background: #f7f7f7; }
 .cp-login-scan h3 { margin: 0 0 6px; font-size: 24px; }
-.cp-login-qr-placeholder { width: 236px; height: 236px; display: grid; place-content: center; gap: 12px; margin-top: 24px; border: 1px solid #ddd; background: #fff; color: #555; text-align: center; }
-.cp-login-qr-placeholder span { font-weight: 700; }
-.cp-login-qr-placeholder button { justify-self: center; padding: 7px 18px; border: 1px solid #bbb; border-radius: 4px; background: #fff; color: #222; cursor: pointer; }
+.cp-login-qr-placeholder { width: 236px; height: 236px; flex-shrink: 0; margin-top: 24px; background: #fff url('/demo-login-qr.svg') center / contain no-repeat; }
 .cp-login-scan-back { display: none; }
 .cp-login-overlay.is-mobile { align-items: flex-end; padding: 0; }
 .cp-login-overlay.is-mobile .cp-login-dialog { width: min(100%, 480px); min-height: 0; max-height: min(92dvh, 760px); display: block; overflow-y: auto; border-radius: 18px 18px 0 0; }
-.cp-login-overlay.is-mobile .cp-login-phone { padding: 36px 22px calc(28px + env(safe-area-inset-bottom)); }
-.cp-login-overlay.is-mobile .cp-login-phone h2 { font-size: 23px; }
+.cp-login-overlay.is-mobile .cp-login-phone { padding: 20px 22px calc(28px + env(safe-area-inset-bottom)); }
+.cp-login-overlay.is-mobile .cp-login-phone h2 { min-height: 36px; padding-right: 44px; font-size: 23px; line-height: 36px; }
+.cp-login-overlay.is-mobile .cp-login-close { top: 20px; right: 22px; display: grid; place-items: center; padding: 0; line-height: 1; }
 .cp-login-overlay.is-mobile .cp-login-phone form { gap: 13px; margin-top: 20px; }
-.cp-login-overlay.is-mobile .cp-login-scan { display: none; min-height: 480px; padding: 42px 20px calc(32px + env(safe-area-inset-bottom)); }
+.cp-login-overlay.is-mobile .cp-login-scan { display: none; min-height: 0; justify-content: flex-start; padding: 20px 22px calc(28px + env(safe-area-inset-bottom)); background: #fff; }
+.cp-login-overlay.is-mobile .cp-login-scan h3 { align-self: stretch; margin: 0; min-height: 36px; padding-right: 44px; font-size: 23px; line-height: 36px; }
 .cp-login-overlay.is-mobile .cp-login-scan.is-visible { display: flex; }
 .cp-login-overlay.is-mobile .cp-login-dialog:has(.cp-login-scan.is-visible) .cp-login-phone { display: none; }
-.cp-login-overlay.is-mobile .cp-login-scan-back { display: block; align-self: flex-start; margin-bottom: 36px; border: 0; background: transparent; font: inherit; cursor: pointer; }
+.cp-login-overlay.is-mobile .cp-login-scan-back { display: block; margin-top: 20px; padding: 8px 0; border: 0; background: transparent; color: #555; font: inherit; cursor: pointer; }
 .cp-login-overlay.is-mobile .cp-login-qr-placeholder { width: 218px; height: 218px; }
 
 .cp-login-overlay.is-pc .cp-login-more{display:none}.cp-login-dialog input{font-weight:400}
+.cp-login-phone label .cp-login-field-error{color:#b44a3f;font-size:12px;font-weight:400;}.cp-login-phone input[aria-invalid=true]{border-color:#b44a3f;}.cp-login-overlay.is-pc .cp-login-dialog{width:min(100%,820px);min-height:500px;border-radius:12px;}.cp-login-overlay.is-pc .cp-login-phone{padding:46px 36px 24px;}.cp-login-overlay.is-pc .cp-login-phone h2{font-size:24px;}.cp-login-overlay.is-pc .cp-login-phone form{margin-top:22px;gap:14px;}.cp-login-overlay.is-pc .cp-login-scan{padding:32px;}.cp-login-overlay.is-pc .cp-login-qr-placeholder{width:210px;height:210px;}

@@ -1,0 +1,582 @@
+[
+  {
+    "page": "home",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-home.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nMakeNow\n无限画布\n一句话生成\n想法变成画面\n模型直通车\n找到合适模型\n发布帖子\n分享创作想法\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n专题\n电商营销\n专题\n图像修复\n专题\n角色设计\n专题\n写作表达\n一瓶夏日晴光\n鹿与光\n617\n00:03\n日落之前\n陈屿\n726\n输入灵感，即刻体验",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=pc"
+  },
+  {
+    "page": "aigc",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-aigc.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n夏日的转角\n周与斯\n24\n风从蓝色花间经过\nTide\n18\n视频 · 00:03\n日落之前\n陈屿\n32\n文字\n写给夏天的一封信\n\n海风穿过街角，\n把普通的下午写成故事。\n\n林间\n12\n西瓜味的夏天\n小鹿\n28\n在海边住一下午\n林间\n16\n一瓶夏日晴光\n鹿与光\n21\n沉入一场蓝色的梦\n拾光\n36\n把阳光留在眼睛里\n夏目川\n22\n旧照修复练习\n林间\n8",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=aigc&device=pc"
+  },
+  {
+    "page": "topics",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-topics.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n专题\n精选专题 / 01\n电商营销\n\n从产品图片到展示短片\n\n探索专题\n作品\n一瓶夏日晴光\n作品\n柠檬与蓝花杯\n教程\n产品背景与光线的搭配\nAI应用\n产品换背景\nAI应用\n产品短片制作\n作品\n在海边住一下午\n精选专题 / 02\n角色创作\n\n角色设计与表达\n\n探索专题\n作品\n风从蓝色花间经过\n作品\n沉入一场蓝色的梦\n作品\n夏日的转角\n作品\n西瓜味的夏天\n作品\n把阳光留在眼睛里\n作品\n快乐没有理由\n精选专题 / 03\n图像修复\n\n修复方法与案例\n\n探索专题\n作品\n旧照修复练习\n教程\n旧照片修复：从判断破损到复查\nAI 应用\n旧照片修复\n作品\n保留自然肤色\n作品\n空间照片修复练习\n作品\n宠物照片细节修复\n精选专题 / 04\n写作表达\n\n文字组织与内容表达\n\n探索专题\nAI应用\n文案改写\n文字作品\n写给夏天的一封信\n精选专题 / 05\n人像修复练习\n\n从肤色到细节的修复练习\n\n探索专题\n作品\n人像修复：保留自然肤色\n作品\n旧照修复练习\n教程\n旧照片修复：从判断破损到复查\n作品\n角色图像修复与配色\n作品\n空间照片修复练习\n作品\n宠物照片细节修复\n\n已浏览全部专题",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&device=pc"
+  },
+  {
+    "page": "topic",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-topic.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n全部专题\n分享\n精选专题\n电商营销\n\n从产品图片到展示短片\n\n01\n一瓶夏日晴光\n02\n柠檬与蓝花杯\n03\n产品背景与光线的搭配\n04\n产品换背景\n作品\n一瓶夏日晴光\n查看作品\n全部\n6\n作品\n3\n教程\n1\nAI应用\n2\n作品\n一瓶夏日晴光\n作品\n柠檬与蓝花杯\n教程\n产品背景与光线的搭配\nAI应用\n产品换背景\nAI应用\n产品短片制作\n作品\n在海边住一下午",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&device=pc"
+  },
+  {
+    "page": "apps",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-apps.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nAI应用\n最新上线\n产品换背景\n为产品图片更换背景，尝试不同的展示场景。\n产品短片制作\n用产品素材制作一段展示短片。\n照片色彩修复\n调整照片的色彩，让肤色和画面更自然。\n文案改写\n把已有文字改得更清楚，适合发布和分享。\n全部应用\n全部\n写文案\n做商品图\n修照片\n做视频\n照片色彩修复\n文案改写\n产品换背景\n产品短片制作\n照片修复\n暂不可用\n\n没有更多了",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&device=pc"
+  },
+  {
+    "page": "app",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-app.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n全部应用\n文案改写\n效果示例\n改写前\n\n这个杯子很好看，蓝色花纹，喝水喝咖啡都能用，也适合送朋友。\n\n改写后 · 生活方式文案\n把一小片蓝色，放进日常。\n\n清晨的咖啡，午后的一杯水，都可以多一点仪式感。蓝色花纹在杯身轻轻铺开，陪你度过慢下来的片刻。\n\n留给自己，或送给喜欢生活的朋友。\n\n应用介绍\n适合用来\n\n整理产品介绍、调整社交文案、改写日常表达。\n\n评论 2\n周\n周末观察\n9月24日 11:00\n\n这一步如果只有手机，先准备什么最合适？\n\n回复赞查看 1 条回复\n发布\n文案改写\n\n由 多元拾光 提供\n\n喜欢\n收藏\n评论\n分享\n\n把已有文字改得更清楚，适合发布和分享。\n\nAI 应用\n一份可继续编辑的改写文案。\n使用信息\n准备什么\n\n原文，以及用途和语气要求。\n\n得到什么\n\n一份可继续编辑的改写文案。\n\n暂未开放使用\n\n输入、参数与费用在 MakeNow 中确认",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&device=pc"
+  },
+  {
+    "page": "circles",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-circles.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n推荐\n影像练习圈\n视觉创作圈\n鹿\n鹿与光\n8分钟前\n#\n视觉创作圈\n给玻璃瓶拍照，先处理背景还是光线？\n\n我试了两种背景，发现先固定光线方向更容易比较。\n\n展开全文\n喜欢\n104\n收藏\n20\n评论\n7\n分享\n林\n林间\n9月24日\n#\n影像练习圈\n给旧照片修复时，我先做了这三件事\n\n先判断划痕的位置，再检查面部细节，最后留一份原图对照。\n\n展开全文\n喜欢\n87\n收藏\n17\n评论\n7\n分享\n陈\n陈屿\n9月19日\n短片的第一个镜头，我留给了海面\n\n先定下画面的节奏，再决定转场与音乐。\n\n展开全文\n喜欢\n121\n收藏\n23\n评论\n7\n分享\n温\n温白\n26分钟前\n#\n影像练习圈\n阴天拍人像，背景总显得太灰怎么办？\n\n我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。\n\n展开全文\n喜欢\n155\n收藏\n29\n评论\n7\n分享\n南\n南风\n9月25日\n#\n写作灵感圈\n把通勤路上的一句话写成了短故事\n\n“下一站，有人会记得你。”我从这句话开始写了一个很短的开头。\n\n展开全文\n喜欢\n223\n收藏\n41\n评论\n7\n分享\n陈\n陈屿\n9月25日\n#\n短片实验圈\n短片开头的十秒，我留给了海面\n\n镜头先慢下来，音乐晚一点进。看完粗剪后，这个停顿很有必要。\n\n展开全文\n喜欢\n257\n收藏\n47\n评论\n7\n分享\n木\n木木\n9月24日\n#\n生活美学圈\n周末把书桌换到窗边，光线真的不一样\n\n没有添新东西，只是换了摆放顺序。\n\n展开全文\n喜欢\n291\n收藏\n53\n评论\n7\n分享\n圆\n圆圆\n9月25日\n#\n角色创作圈\n这个角色的表情，我改了第四版\n\n放松眉眼之后，人物终于有了想要的亲近感。\n\n展开全文\n喜欢\n325\n收藏\n59\n评论\n7\n分享\n\n已经看完了，去圈子里发现更多灵感\n\n林\n林间\n今天也来分享一点灵感\n›\n发布帖子\n我的圈子\n查看全部 ›\n影像练习圈\n照片修复、构图与视觉叙事\n视觉创作圈\n产品视觉、光线与配色\n推荐圈子\n查看全部 ›\n修复交流圈\n326 人加入\n加入\n写作灵感圈\n742 人加入\n加入\n短片实验圈\n618 人加入\n加入",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&device=pc"
+  },
+  {
+    "page": "discover-circles",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-discover-circles.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n‹ 圈子首页\n发现圈子\n\n找到同好，一起分享创作中的发现\n\n修复交流圈\n\n旧照修复与人像细节交流\n\n326 人加入\n加入圈子\n影像练习圈\n\n照片修复、构图与视觉叙事\n\n1,286 人加入\n进入圈子\n视觉创作圈\n\n产品视觉、光线与配色\n\n963 人加入\n进入圈子\n写作灵感圈\n\n日常观察、短篇与表达练习\n\n742 人加入\n加入圈子\n短片实验圈\n\n镜头语言、剪辑与声音\n\n618 人加入\n加入圈子\n生活美学圈\n\n空间、器物与生活记录\n\n525 人加入\n加入圈子\n角色创作圈\n\n人物设定、故事与画面\n\n409 人加入\n加入圈子",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=discover-circles&device=pc"
+  },
+  {
+    "page": "post",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-post.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n帖子详情\n给旧照片修复时，我先做了这三件事\n\n我先确认破损主要集中在照片边缘，再逐处观察脸部和衣服的细节。原图会单独留存，方便最后比较。\n\n这次最有用的是先写清楚想恢复什么：减少划痕、保留表情，而不是把照片变成另一张全新的肖像。\n\n9月24日\n来自 · 影像练习圈\n引用作品\n旧照修复练习\n查看原作品及完整说明\n评论 7\n周\n周末观察\n1分钟前\n\n这一步如果只有手机，先准备什么最合适？\n\n回复赞收起回复\n林间 回复 周末观察\n\n先整理素材和目标效果，电脑操作的步骤可以稍后完成。\n\n回复\n温\n温白\n刚刚\n\n把尝试过程也记录下来很有帮助，尤其是调整前后的对比。\n\n回复赞 12收起 2 条回复\n青禾 回复 温白\n刚刚\n\n赞同，我会把每一步的版本单独保存，回头比较方便很多。\n\n回复\n温白 回复 青禾\n刚刚\n\n这个方法好，下次也试试按步骤留存。\n\n回复\n小\n小树影\n刚刚\n\n我之前也遇到过类似的问题。一次只改一个条件，更容易找到真正起作用的地方。\n\n回复赞 8\n南\n南风\n刚刚\n\n收藏了，准备照着这个思路试一版，再来分享结果。\n\n回复赞 5\n发布\n林\n林间\n分享创作过程，记录日常灵感\n关注\n喜欢\n87\n收藏\n17\n评论\n7\n分享\n影像练习圈\n1,286 人加入\n\n照片修复、构图与视觉叙事\n\n进入圈子\n退出圈子\n发布帖子",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&device=pc"
+  },
+  {
+    "page": "tutorials",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-tutorials.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n多元拾光 · 创作课堂\n跟着教程\n开始你的创作\n\n从真实案例出发，把方法用在下一次创作里。\n\n全部\n影像处理\n文字创作\n视觉设计\n影像处理\n多元拾光官方\n照片修复：如何检查肤色与明暗\n\n28 次阅读\n阅读教程 →\n\n影像处理\n多元拾光官方\n人像修复：保留纹理的检查步骤\n\n28 次阅读\n阅读教程 →\n\n影像处理\n多元拾光官方\n照片修复：处理背景与人物边缘\n\n28 次阅读\n阅读教程 →\n\n文字创作\n多元拾光官方\n多轮对话越改越偏？发一段“当前版本说明”把任务拉回来\n\n66 次阅读\n阅读教程 →\n\n文字创作\n多元拾光官方\nAI 总是不按格式交付？把格式要求写成一份“输出合同”\n\n26 次阅读\n阅读教程 →\n\n文字创作\n多元拾光官方\n长资料交给 AI 后总会漏重点？先做“事实清单”，再让它压缩\n\n13 次阅读\n阅读教程 →\n\n影像处理\n多元拾光官方\nAI 生图总像抽卡？用单变量测试找到稳定结果\n\n26 次阅读\n阅读教程 →\n\n影像处理\n多元拾光官方\n旧照片修复：从判断破损到复查\n\n32 次阅读\n阅读教程 →\n\n视觉设计\n多元拾光官方\n产品背景与光线的搭配\n\n20 次阅读\n阅读教程 →\n\n全部教程已展示",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorials&device=pc"
+  },
+  {
+    "page": "tutorial",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-tutorial.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n教程详情\n官方原创\n旧照片修复：从判断破损到复查\n\n林间\n\n从划痕判断开始，保留原图并逐步复查。\n\n目录\n01 准备材料\n准备材料\n\n保留未经修改的原图，观察划痕与细节，先完成小范围处理，再与原图对照。\n\n准备原图副本；精细操作在电脑端完成。\n\n相关内容\n旧照修复参考工程\n用于展示创作结果与方法。\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&device=pc"
+  },
+  {
+    "page": "work",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-work.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n作品详情\n评论 2\n周\n周末观察\n9月24日 11:00\n\n这一步如果只有手机，先准备什么最合适？\n\n回复赞查看 1 条回复\n发布\n旧照修复练习\n林\n林间\n9月24日 · 公开\n关注\n喜欢\n收藏\n评论\n分享\n\n保留人物原有神态，修复影响观看的旧照划痕。\n\n图片\n影像处理\n提示词\n模型\n图片模型\n比例\n3:2\n复制\n\n修复老照片的划痕与褪色，保留人物原有五官、神态和年代质感。\n\n一键同款\nAI 应用\n旧照片修复\n了解修复能力与使用条件\n教程\n旧照片修复：从判断破损到复查\n查看完整步骤",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&device=pc"
+  },
+  {
+    "page": "search",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-search.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n搜索\n搜索\n搜索记录\n清空\n修复\n×\n图像修复\n×\n摄影\n×\n电商营销\n×\n热门搜索\n电商营销\n摄影\n夏天\n猫\n图像修复\nIP与文创\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n精选 AI 应用\n全部\n文案改写\n产品换背景\n照片修复",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=search&device=pc"
+  },
+  {
+    "page": "author",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-author.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n林\n林间\n\nAI 创作分享者\n\n关注\n\n记录影像与日常创作的练习，分享作品背后的提示词、参考素材与尝试过程。\n\n128\n获赞\n24\n关注\n36\n粉丝\n作品4\n帖子4\n在海边住一下午\n128\n旧照修复练习\n96\n写作时刻\n72\n文字\n写给夏天的一封信\n\n海风穿过街角，\n把普通的下午写成故事。\n\n54",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&device=pc"
+  },
+  {
+    "page": "create",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-create.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nAIGC 生成\nAIGC 生成\n让灵感成为作品\n10/04 10:00\n图片模型 · 创意模型 · 4:3\n\n尝试柔和光线下的海边构图\n\n本次生成未完成\n请调整提示词或稍后重试\n重新编辑\n10/05 09:00\n图片模型 · 16:9\n生图挑战\n\n海边日落，浪花映着暖金色的光\n\n参考素材\n查看结果\n已完成\n下载\n继续调整\n发布作品\n＋\n0/4\n图片生成\n图片模型\n16:9\n不参与活动\n10 积分\n内容由 AI 生成",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&device=pc"
+  },
+  {
+    "page": "post-edit",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-post-edit.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n发布作品\n图片\n视频\n文本\n图片素材\n0/4\n添加图片\n标题\n作品介绍（选填）\n创作信息\n提示词（必填）\n使用模型（选填）\n发布设置\n投稿活动\n不参与活动\n国庆七天乐\n每周任务\n生图挑战\nPrompt 共创计划\n七日成长计划 · 暂不可参与\n内容分类\n请选择内容分类\n电商营销\nIP与文创\n摄影\n设计\n生活\n话题（选填）\n请选择话题，可多选\n＋ 添加引用内容\n保存草稿\n发布作品",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-edit&device=pc"
+  },
+  {
+    "page": "post-publish",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-post-publish.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n发布帖子\n添加图片 / 视频（选填）\n0/4\n添加图片 / 视频\n标题 选填\n正文\n发布设置\n投稿活动\n不参与活动\n国庆七天乐 · 类型不符\n每周任务\n生图挑战 · 类型不符\nPrompt 共创计划 · 类型不符\n七日成长计划 · 暂不可参与\n内容分类\n请选择内容分类\n电商营销\nIP与文创\n摄影\n设计\n生活\n话题（选填）\n请选择话题，可多选\n＋ 添加引用内容\n圈子\n不选择圈子\n发现圈子\n保存草稿\n发布帖子",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post-publish&device=pc"
+  },
+  {
+    "page": "mine",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-mine.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n林\n林间\n\n记录 AI 创作中的小发现\n\n编辑资料\n128\n获赞\n24\n关注\n36\n粉丝\n2\n圈子\n100\n可用积分\n活动中心\n每日签到\nAI 商城\n邀请有礼\n我的内容\n我的投稿\n草稿箱\n生成记录\n收藏\n我的关注\n我的粉丝\n我的圈子\n我的内容\n全部\n作品\n帖子\n旧照修复练习\n作品 · 2026/10/4\n已公开\n帖子\n第一次尝试柔和光线的产品图\n帖子 · 2026/10/3\n审核中\n夏日海岸\n作品 · 2026/10/2\n未通过\n\n请补充创作信息后重新提交。\n\n帖子\n一段海岸练习笔记\n帖子 · 2026/10/1\n已下架",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&device=pc"
+  },
+  {
+    "page": "my-relations",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-my-relations.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n关注作者\n林\n林间\n记录 AI 创作中的小发现\n查看\n取消关注",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-relations&device=pc"
+  },
+  {
+    "page": "my-circles",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-my-circles.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n我的圈子\n圈子\n影像练习圈\n浏览圈内公开帖子\n查看\n退出圈子\n圈子\n视觉创作圈\n浏览圈内公开帖子\n查看\n退出圈子",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-circles&device=pc"
+  },
+  {
+    "page": "my-fans",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-my-fans.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n我的粉丝\n温\n温白\n把日常变成创作灵感\n查看\n互相关注\n周\n周末观察\n用影像记录生活\n查看\n回关\n青\n青禾\n探索 AI 与设计的更多可能\n查看\n回关\n陈\n陈屿\n分享摄影与创作心得\n查看\n回关",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=my-fans&device=pc"
+  },
+  {
+    "page": "profile-edit",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-profile-edit.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n编辑资料\n林\n更换头像\n支持 JPG、PNG，不超过 5MB\n昵称\n2/20\n性别\n男\n女\n个人简介\n0/80\n账号与绑定\n手机号\n绑定后可使用手机号登录\n去绑定 ›\n微信\n微信账号已绑定\n管理 ›\n保存资料",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=profile-edit&device=pc"
+  },
+  {
+    "page": "notifications",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-notifications.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n消息中心\n全部\n互动\n通知\n全部已读\n周末观察回复了你的评论\n可以先整理参考素材，再确定画面效果。\n今天 10:32\n签到积分已到账\n+20\n今天 09:15\n作品修改审核结果\n本次修改已通过\n昨天\n鹿与光喜欢了你的作品\n旧照修复练习\n昨天\n活动投稿资格更新\n查看本人稿件资格与奖励记录\n9月24日\n有人回复了你的帖子\n原内容已不可访问\n9月23日",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=notifications&device=pc"
+  },
+  {
+    "page": "activities",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-activities.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n活动中心\n✦ 活动中心\n\n发现正在发生的创作挑战与社区计划\n\n05 场正在进行\n当前活动\n国庆七天乐\n进行中\n2026-10-01 00:00 — 2026-10-07 23:59\n最高可得 1,750 积分\n查看详情 →\n每周任务\n未开始\n2026-10-20 09:00 — 2026-10-31 23:59\n最高可得 350 积分\n查看详情 →\n生图挑战\n进行中\n长期活动\n最高可得 5,100 积分\n查看详情 →\n邀请有礼\n进行中\n长期活动\n最高可得 10,000 积分\n查看详情 →\n新手任务\n进行中\n长期活动\n最高可得 150 积分\n查看详情 →\n七日成长计划\n进行中\n长期活动\n\n完成新手任务后解锁\n\n最高可得 300 积分\n查看详情 →\n往期回顾\nPrompt 共创计划\n已结束\n2026-09-01 09:00 — 2026-09-30 23:59\n查看往期内容\n回顾活动 →",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activities&device=pc"
+  },
+  {
+    "page": "activity",
+    "device": "pc",
+    "extra": "&item=guoqing_qitianle_20261001",
+    "file": "pc-activity-_item_guoqing_qitianle_20261001.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n活动详情\n进行中\n国庆七天乐\n最高可得 1,750 积分\n2026-10-01 00:00 — 2026-10-07 23:59\n我的参与状态\n\n已参与 · 任务进度见下方\n\n去做任务\n活动说明\n活动任务\n投稿作品\n活动任务\n进行中\n+100 积分 / 条\n每天发布 2 条图片作品\n\n每天前2条图片每条100积分\n\n任务进度\n1/2\n去发布作品\n+20 积分\n第 1 天：浏览 5 条内容\n\n当天浏览5条内容\n\n任务进度\n5/5\n已完成\n积分已发放\n+30 积分\n第 2 天：收藏 3 个作品\n\n当天收藏3个作品\n\n任务进度\n3/3\n已完成\n积分已发放\n+40 积分\n第 3 天：发布 1 条纯文字帖子\n\n当天发布纯文字帖子\n\n任务已结束\n已过期\n待完成\n+50 积分\n第 4 天：发布 1 条图片帖子\n\n当天发布带图帖子\n\n任务进度\n0/1\n去发布\n+60 积分\n第 5 天：点赞或评论 5 个作品\n\n当天点赞或评论5个作品\n\n第 5 天开放\n未开放\n+70 积分\n第 6 天：收藏 5 个作品\n\n当天收藏5个作品\n\n第 6 天开放\n未开放\n+80 积分\n第 7 天：分享 1 个作品\n\n当天分享1个作品\n\n第 7 天开放\n未开放\n活动说明\n🏆 邀请排行榜（独立结算）\n\n邀请奖励与排行榜奖励单独结算，不计入本活动页面展示的“任务积分上限”。\n\n排名奖励\n🥇 第 1 名：10,000 积分\n🥈 第 2 名：3,000 积分\n🥉 第 3 名：2,000 积分\n🎁 第 4—5 名：各 1,000 积分\n\n活动结束后统一人工复核，按最终有效邀请人数排名并发放奖励。\n\n🎉 国庆七天乐｜每日任务领积分\n📅 活动时间\n\n10月1日至10月7日。\n\n活动期间每天解锁 1 项七日任务；完成当天任务即可领取对应积分。当天未完成的任务，过期后不可补做。\n\n🎁 七日任务奖励\n完成 7 天任务，最高可获得 350 积分。\n🖼️ 每日图片作品奖励\n活动期间每天发布前 2 条图片作品。\n每条作品奖励 100 积分。\n每日最高 200 积分，7 天最高 1,400 积分。\n🤝 邀请好友基础奖励\n好友注册：100 积分。\n好友首次有效互动：100 积分。\n好友首次发布有效图片作品：100 积分。\n每位好友基础奖励最高 300 积分。\n\n⚠️ 邀请基础奖励和邀请排行榜奖励均为独立结算，不计入本活动页面展示的 1,750 积分任务上限。所有奖励以系统最终判定为准。\n\n投稿作品\n我的投稿 →\n日落之前\n一瓶夏日晴光\n在海边住一下午\n沉入一场蓝色的梦\n把阳光留在眼睛里\n旧照修复练习\n夏日的转角\n风从蓝色花间经过\n去做任务",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&device=pc&item=guoqing_qitianle_20261001"
+  },
+  {
+    "page": "points",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-points.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n积分中心\n积分明细 ›\n可用积分\n100\n今日获得\n+0\n近 7 日获得\n+0\n待到账\n0\nAI 商城\n用积分兑换创作权益\n\n发现可兑换的 AI 体验权益\n\n去兑换\n赚积分\n全部任务 ›\n每日签到\n\n查看本周签到与奖励\n\n去签到\n国庆七天乐\n\n查看今日任务与参与进度\n\n去参与\n邀请有礼\n\n邀请好友一起创作\n\n去邀请\n最近积分记录\n查看全部 ›\n时间\t动作\t变化\n10月4日\tAI 生成\t−10\n10月4日\t活动任务奖励\t+50\n10月3日\t邀请奖励\t+100",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=points&device=pc"
+  },
+  {
+    "page": "invite",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-invite.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n邀请有礼\n邀请明细 ›\n邀请好友，一起创作\n\n好友完成任务，每位最高可得 300 积分。\n\n注册\n\n好友完成注册并绑定邀请码\n\n+100 积分\n互动\n\n好友在社区完成点赞或评论\n\n+100 积分\n首次发布\n\n好友首次发布作品并通过审核\n\n+100 积分\n我的邀请码\nDEMO-ONLY\n复制邀请码\n复制邀请链接\n我的邀请人\n绑定\n邀请好友\n3 位\n累计获得\n600 积分\n处理中\n0 积分\n好友任务进度\n查看完整规则 ›\n好友\t注册\t互动\t首次发布\t已获积分\nA拾光伙伴 A\t✓ 已完成\t✓ 已完成\t✓ 已完成\t300\nB拾光伙伴 B\t✓ 已完成\t待完成\t待完成\t100\nC拾光伙伴 C\t✓ 已完成\t✓ 已完成\t待完成\t200\n\n奖励在达成条件后自动发放，实际规则以活动说明为准。",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&device=pc"
+  },
+  {
+    "page": "shop",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-shop.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nAI 商城\n多元拾光 · 积分权益\n用积分兑换 AI 产品权益\n\n我的积分 100\n\n兑换记录 ›\n可兑换商品\n5 件\n多元探索\n3 件\n十元卡密\n1000\n积分\n兑换\n两元卡密\n200\n积分\n兑换\n五元卡密\n500\n积分\n兑换\n镜像站\n2 件\n镜像周卡\n500\n积分\n兑换\n镜像日卡\n190\n积分\n兑换",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop&device=pc"
+  },
+  {
+    "page": "shop-records",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-shop-records.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n兑换记录\n多元拾光 · 积分权益\n用积分兑换 AI 产品权益\n\n我的积分 100\n\n兑换记录 ›\n可兑换商品\n5 件\n多元探索\n3 件\n十元卡密\n1000\n积分\n兑换\n两元卡密\n200\n积分\n兑换\n五元卡密\n500\n积分\n兑换\n镜像站\n2 件\n镜像周卡\n500\n积分\n兑换\n镜像日卡\n190\n积分\n兑换\n兑换记录\n×\n共 6 条兑换记录\n十元卡密\n多元探索 · 兑换成功 · 10/02 09:20\n−1000 积分\n卡密\nDEMO-NOT-VALID-1\n复制卡密\n前往多元探索 ↗\n两元卡密\n多元探索 · 兑换成功 · 10/02 08:20\n−200 积分\n卡密\nDEMO-NOT-VALID-2\n复制卡密\n前往多元探索 ↗\n五元卡密\n多元探索 · 兑换成功 · 10/02 07:20\n−500 积分\n卡密\nDEMO-NOT-VALID-3\n复制卡密\n前往多元探索 ↗\n镜像周卡\n镜像站 · 兑换成功 · 10/01 06:20\n−500 积分\n卡密\nDEMO-NOT-VALID-4\n复制卡密\n前往镜像站 ↗\n镜像日卡\n镜像站 · 兑换成功 · 10/01 05:20\n−190 积分\n卡密\nDEMO-NOT-VALID-5\n复制卡密\n前往镜像站 ↗\n继续下滑加载更多\n关闭",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop-records&device=pc"
+  },
+  {
+    "page": "shop-exchange",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-shop-exchange.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n兑换弹层\n多元拾光 · 积分权益\n用积分兑换 AI 产品权益\n\n我的积分 1,050\n\n兑换记录 ›\n可兑换商品\n5 件\n多元探索\n3 件\n十元卡密\n1000\n积分\n兑换\n两元卡密\n200\n积分\n兑换\n五元卡密\n500\n积分\n兑换\n镜像站\n2 件\n镜像周卡\n500\n积分\n兑换\n镜像日卡\n190\n积分\n兑换\n确认兑换\n×\n多元探索\n十元卡密\n\n可以享受10元的使用额度\n\n当前积分\n1,050 积分\n兑换所需\n1000 积分\n兑换后余额\n50 积分\n\n确认后使用积分兑换。\n\n取消\n确认兑换 · 1000 积分",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=shop-exchange&device=pc"
+  },
+  {
+    "page": "checkin",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-checkin.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n林\n林间\n\n记录 AI 创作中的小发现\n\n编辑资料\n128\n获赞\n24\n关注\n36\n粉丝\n2\n圈子\n100\n可用积分\n活动中心\n每日签到\nAI 商城\n邀请有礼\n我的内容\n我的投稿\n草稿箱\n生成记录\n收藏\n我的关注\n我的粉丝\n我的圈子\n我的内容\n全部\n作品\n帖子\n旧照修复练习\n作品 · 2026/10/4\n已公开\n帖子\n第一次尝试柔和光线的产品图\n帖子 · 2026/10/3\n审核中\n夏日海岸\n作品 · 2026/10/2\n未通过\n\n请补充创作信息后重新提交。\n\n帖子\n一段海岸练习笔记\n帖子 · 2026/10/1\n已下架\n每日签到\n\n每天回来领取积分，本周奖励一目了然。\n\n本周签到\n0 / 7\n本周最多 +300 积分\n一\n+20\n今天\n二\n+20\n6\n三\n+20\n7\n四\n+20\n8\n五\n+20\n9\n六\n+50\n10\n日\n+50\n11\n连签奖励\n\n再连 3 天可得 +20\n\n连签 3 天\n+20\n连签 5 天\n+30\n连签 7 天\n+50\n签到领取 20 积分",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&device=pc"
+  },
+  {
+    "page": "login",
+    "device": "pc",
+    "extra": "",
+    "file": "pc-login.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "×\n手机验证码登录\n手机号\n验证码\n获取验证码\n邀请码 选填\n登录\n\n登录即表示同意 《用户协议》和《隐私政策》\n\n微信扫码登录\n首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nMakeNow\n无限画布\n一句话生成\n想法变成画面\n模型直通车\n找到合适模型\n发布帖子\n分享创作想法\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n专题\n电商营销\n专题\n图像修复\n专题\n角色设计\n专题\n写作表达\n一瓶夏日晴光\n鹿与光\n617\n00:03\n日落之前\n陈屿\n726\n输入灵感，即刻体验",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&device=pc"
+  },
+  {
+    "page": "home",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-home.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "AI应用\n专题\n活动中心\n每日签到\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n爆款作品\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n一瓶夏日晴光\n鹿与光\n617\n视频 · 00:03\n日落之前\n陈屿\n726\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=mobile"
+  },
+  {
+    "page": "community",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-community.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "作品\n交流\n教程\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n夏日的转角\n周与斯\n24\n风从蓝色花间经过\nTide\n18\n视频 · 00:03\n日落之前\n陈屿\n32\n文字\n写给夏天的一封信\n\n海风穿过街角，\n把普通的下午写成故事。\n\n林间\n12\n西瓜味的夏天\n小鹿\n28\n在海边住一下午\n林间\n16\n一瓶夏日晴光\n鹿与光\n21\n沉入一场蓝色的梦\n拾光\n36\n把阳光留在眼睛里\n夏目川\n22\n旧照修复练习\n林间\n8\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&device=mobile"
+  },
+  {
+    "page": "topics",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-topics.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "专题\n电商营销\n从产品图片到展示短片\n角色创作\n角色设计与表达\n图像修复\n修复方法与案例\n写作表达\n文字组织与内容表达\n人像修复练习\n从肤色到细节的修复练习\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topics&device=mobile"
+  },
+  {
+    "page": "topic",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-topic.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "专题详情\n分享\n电商营销\n\n从产品图片到展示短片\n\n看作品\n一瓶夏日晴光\n鹿与光\n617\n柠檬与蓝花杯\n鹿与光\n328\n学方法\n教程\n产品背景与光线的搭配\n›\n试应用\nAI应用\n产品换背景\n›\nAI应用\n产品短片制作\n›\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=topic&device=mobile"
+  },
+  {
+    "page": "apps",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-apps.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "AI应用\n最新上线\n产品换背景\n为产品图片更换背景，尝试不同的展示场景。\n产品短片制作\n用产品素材制作一段展示短片。\n照片色彩修复\n调整照片的色彩，让肤色和画面更自然。\n文案改写\n把已有文字改得更清楚，适合发布和分享。\n全部应用\n全部\n写文案\n做商品图\n修照片\n做视频\n照片色彩修复\n文案改写\n产品换背景\n产品短片制作\n照片修复\n暂不可用\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=apps&device=mobile"
+  },
+  {
+    "page": "community",
+    "device": "mobile",
+    "extra": "&tab=talk",
+    "file": "mobile-community-_tab_talk.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "作品\n交流\n教程\n全部\n修复交流圈\n影像练习圈\n视觉创作圈\n写作灵感圈\n短片实验圈\n生活美学圈\n角色创作圈\n找圈子\n林间\n9月25日\n\n旧照片修复后，肤色怎么保持自然\n\n避免过度增加饱和度，先比较原图明暗。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n林间\n9月25日\n\n人像修复要不要保留细小纹理\n\n我保留了一些皮肤纹理，让人物看起来更真实。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n林间\n9月25日\n\n修复照片时，背景也需要单独处理\n\n先修背景中的破损，再检查人物边缘。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n温白\n9月25日\n\n阴天拍人像，背景总显得太灰怎么办？\n\n我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n南风\n9月25日\n\n把通勤路上的一句话写成了短故事\n\n“下一站，有人会记得你。”我从这句话开始写了一个很短的开头。\n写作灵感圈\n喜欢\n收藏\n评论\n分享\n陈屿\n9月25日\n\n短片开头的十秒，我留给了海面\n\n镜头先慢下来，音乐晚一点进。看完粗剪后，这个停顿很有必要。\n短片实验圈\n喜欢\n收藏\n评论\n分享\n圆圆\n9月25日\n\n这个角色的表情，我改了第四版\n\n放松眉眼之后，人物终于有了想要的亲近感。\n角色创作圈\n喜欢\n收藏\n评论\n分享\n林间\n9月24日\n\n给旧照片修复时，我先做了这三件事\n\n先判断划痕的位置，再检查面部细节，最后留一份原图对照。\n关联作品\n旧照修复练习\n影像练习圈\n喜欢\n收藏\n评论\n分享\n小树影\n9月24日\n\n一张照片的三个裁切版本，哪张更有故事感？\n\n同一张街景，分别保留人物、路口和远处的车。第三张留白最多。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n知一\n9月24日\n\n让耳机产品图看起来更轻的一点小改动\n\n保留大块留白后，主体的位置反而更明确了。\n视觉创作圈\n喜欢\n收藏\n评论\n分享\n书页\n9月24日\n\n写不下去的时候，我先记录一个声音\n\n先把当时听见的雨声、脚步声和一句对话留下来。\n写作灵感圈\n喜欢\n收藏\n评论\n分享\n一帧\n9月24日\n\n转场太多会不会打断观看？\n\n只保留两个转场，其余地方让动作自然接上。\n短片实验圈\n喜欢\n收藏\n评论\n分享\n木木\n9月24日\n\n周末把书桌换到窗边，光线真的不一样\n\n没有添新东西，只是换了摆放顺序。\n生活美学圈\n喜欢\n收藏\n评论\n分享\n沐言\n9月24日\n\n用三件日常物品写一份人物设定\n\n一支旧笔、一张车票、一只不肯丢掉的纸袋。\n角色创作圈\n喜欢\n收藏\n评论\n分享\n阿璃\n9月23日\n\n把家里的老照片重新整理成一页相册\n\n没有做复杂修饰，只把散落的照片按时间排好。\n影像练习圈\n喜欢\n收藏\n评论\n分享\n鹿角\n9月23日\n\n一杯咖啡的颜色，成了这周的配色灵感\n\n从杯子、桌布到窗外的树叶，记录容易错过的小变化。\n生活美学圈\n喜欢\n收藏\n评论\n分享\n鹿与光\n9月22日\n\n给玻璃瓶拍照，先处理背景还是光线？\n\n我试了两种背景，发现先固定光线方向更容易比较。\n关联作品\n一瓶夏日晴光\n视觉创作圈\n喜欢\n收藏\n评论\n分享\n陈屿\n9月19日\n\n短片的第一个镜头，我留给了海面\n\n先定下画面的节奏，再决定转场与音乐。\n喜欢\n收藏\n评论\n分享\n周末观察\n9月17日\n\n第一次做产品图，素材要怎么准备？\n\n想从一张普通产品照片开始，先整理哪些信息比较好？\n视觉创作圈\n喜欢\n收藏\n评论\n分享\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&device=mobile&tab=talk"
+  },
+  {
+    "page": "community",
+    "device": "mobile",
+    "extra": "&tab=tutorials",
+    "file": "mobile-community-_tab_tutorials.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "作品\n交流\n教程\n全部\n文字创作\n影像处理\n视觉设计\n视频创作\n照片修复：如何检查肤色与明暗\n影像处理 · 28 次浏览\n人像修复：保留纹理的检查步骤\n影像处理 · 28 次浏览\n照片修复：处理背景与人物边缘\n影像处理 · 28 次浏览\n多轮对话越改越偏？发一段“当前版本说明”把任务拉回来\n文字创作 · 66 次浏览\nAI 总是不按格式交付？把格式要求写成一份“输出合同”\n文字创作 · 26 次浏览\n长资料交给 AI 后总会漏重点？先做“事实清单”，再让它压缩\n文字创作 · 13 次浏览\nAI 生图总像抽卡？用单变量测试找到稳定结果\n影像处理 · 26 次浏览\n旧照片修复：从判断破损到复查\n影像处理 · 32 次浏览\n产品背景与光线的搭配\n视觉设计 · 20 次浏览\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=community&device=mobile&tab=tutorials"
+  },
+  {
+    "page": "circle",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-circle.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "圈子详情\n发布\n影像练习圈\n\n照片修复、构图与视觉叙事\n\n1,286 人加入\n退出圈子\n温\n温白\n9月25日\n阴天拍人像，背景总显得太灰怎么办？\n我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。\n喜欢\n收藏\n评论\n分享\n林\n林间\n9月25日\n修复照片时，背景也需要单独处理\n先修背景中的破损，再检查人物边缘。\n喜欢\n收藏\n评论\n分享\n林\n林间\n9月25日\n旧照片修复后，肤色怎么保持自然\n避免过度增加饱和度，先比较原图明暗。\n喜欢\n收藏\n评论\n分享\n林\n林间\n9月25日\n人像修复要不要保留细小纹理\n我保留了一些皮肤纹理，让人物看起来更真实。\n喜欢\n收藏\n评论\n分享\n小\n小树影\n9月24日\n一张照片的三个裁切版本，哪张更有故事感？\n同一张街景，分别保留人物、路口和远处的车。第三张留白最多。\n喜欢\n收藏\n评论\n分享\n林\n林间\n9月24日\n给旧照片修复时，我先做了这三件事\n先判断划痕的位置，再检查面部细节，最后留一份原图对照。\n喜欢\n收藏\n评论\n分享\n阿\n阿璃\n9月23日\n把家里的老照片重新整理成一页相册\n没有做复杂修饰，只把散落的照片按时间排好。\n喜欢\n收藏\n评论\n分享\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circle&device=mobile"
+  },
+  {
+    "page": "post",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-post.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "林间\n已关注\n给旧照片修复时，我先做了这三件事\n\n我先确认破损主要集中在照片边缘，再逐处观察脸部和衣服的细节。原图会单独留存，方便最后比较。\n\n这次最有用的是先写清楚想恢复什么：减少划痕、保留表情，而不是把照片变成另一张全新的肖像。\n\n9月24日\n来自 · 影像练习圈\n引用作品\n旧照修复练习\n查看原作品及完整说明\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=post&device=mobile"
+  },
+  {
+    "page": "app",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-app.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "应用详情\n文案改写\n\n把已有文字改得更清楚，适合发布和分享。\n\n在 MakeNow 中使用\n适合用来\n\n整理产品介绍、调整社交文案、改写日常表达。\n\n准备什么\n\n原文，以及用途和语气要求。\n\n得到什么\n\n一份可继续编辑的改写文案。\n\n由 多元拾光 提供\n\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&device=mobile"
+  },
+  {
+    "page": "circles",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-circles.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "圈子\n已加入\n2 个圈子\n影像练习圈\n照片修复、构图与视觉叙事\n1,286 人加入\n已加入\n视觉创作圈\n产品视觉、光线与配色\n963 人加入\n已加入\n发现圈子\n5 个圈子\n修复交流圈\n旧照修复与人像细节交流\n326 人加入\n›\n写作灵感圈\n日常观察、短篇与表达练习\n742 人加入\n›\n短片实验圈\n镜头语言、剪辑与声音\n618 人加入\n›\n生活美学圈\n空间、器物与生活记录\n525 人加入\n›\n角色创作圈\n人物设定、故事与画面\n409 人加入\n›\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&device=mobile"
+  },
+  {
+    "page": "tutorial",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-tutorial.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "教程详情\n官方原创\n旧照片修复：从判断破损到复查\n\n林间\n\n从划痕判断开始，保留原图并逐步复查。\n\n目录\n01 准备材料\n准备材料\n\n保留未经修改的原图，观察划痕与细节，先完成小范围处理，再与原图对照。\n\n准备原图副本；精细操作在电脑端完成。\n\n相关内容\n旧照修复参考工程\n用于展示创作结果与方法。\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法\n首页\n社区\nAI创作\n活动\n我的",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=tutorial&device=mobile"
+  },
+  {
+    "page": "work",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-work.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "林间\n已关注\n旧照修复练习\n\n保留人物原有神态，修复影响观看的旧照划痕。\n\n9月24日\n图片\n影像处理\n提示词\n模型\n图片模型\n比例\n3:2\n复制\n\n修复老照片的划痕与褪色，保留人物原有五官、神态和年代质感。\n\nAI 应用\n旧照片修复\n了解修复能力与使用条件\n教程\n旧照片修复：从判断破损到复查\n查看完整步骤\n喜欢\n收藏\n评论\n分享\n一键同款\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=work&device=mobile"
+  },
+  {
+    "page": "author",
+    "device": "mobile",
+    "extra": "",
+    "file": "mobile-author.png",
+    "brokenImages": 0,
+    "overflow": 0,
+    "text": "作者主页\n林\n林间\n\nAI 创作分享者\n\n已关注\n\n记录影像与日常创作的练习，分享作品背后的提示词、参考素材与尝试过程。\n\n128\n获赞\n24\n关注\n37\n粉丝\n8\n公开内容\n作品4\n帖子4\n在海边住一下午\n林间\n128\n旧照修复练习\n林间\n96\n写作时刻\n林间\n72\n文字\n写给夏天的一封信\n\n海风穿过街角，\n把普通的下午写成故事。\n\n林间\n54",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=author&device=mobile"
+  },
+  {
+    "file": "mobile-creation-entry.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=creation-entry&device=mobile",
+    "text": "创作与发布\nAIGC 生成\n把灵感变成作品\n直接发布\n上传已有作品\n发布帖子\n分享问题、过程或经验\nAI应用\n专题\n活动中心\n每日签到\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n爆款作品\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n一瓶夏日晴光\n鹿与光\n617\n视频 · 00:03\n日落之前\n陈屿\n726\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的"
+  },
+  {
+    "file": "mobile-checkin.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&device=mobile",
+    "text": "我的\n林\n林间\n\n记录 AI 创作中的小发现\n\n128\n获赞\n24\n关注\n36\n粉丝\n2\n圈子\n积分中心\n活动中心\n每日签到\nAI 商城\n邀请有礼\n我的内容\n我的投稿\n草稿箱\n生成记录\n收藏\n全部\n作品\n帖子\n旧照修复练习\n作品 · 2026/10/4\n已公开\n帖子\n第一次尝试柔和光线的产品图\n帖子 · 2026/10/3\n审核中\n夏日海岸\n作品 · 2026/10/2\n未通过\n\n请补充创作信息后重新提交。\n\n帖子\n一段海岸练习笔记\n帖子 · 2026/10/1\n已下架\n首页\n社区\nAI创作\n活动\n我的\n每日签到\n\n每天回来领取积分，本周奖励一目了然。\n\n本周签到\n0 / 7\n本周最多 +300 积分\n一\n+20\n今天\n二\n+20\n6\n三\n+20\n7\n四\n+20\n8\n五\n+20\n9\n六\n+50\n10\n日\n+50\n11\n连签奖励\n\n再连 3 天可得 +20\n\n连签 3 天\n+20\n连签 5 天\n+30\n连签 7 天\n+50\n签到领取 20 积分"
+  },
+  {
+    "file": "mobile-login.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&device=mobile",
+    "text": "×\n手机验证码登录\n手机号\n验证码\n获取验证码\n邀请码 选填\n登录\n更多登录方式\n微信扫码登录 ›\n\n登录即表示同意 《用户协议》和《隐私政策》\n\nAI应用\n专题\n活动中心\n每日签到\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n爆款作品\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n一瓶夏日晴光\n鹿与光\n617\n视频 · 00:03\n日落之前\n陈屿\n726\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的"
+  },
+  {
+    "file": "mobile-login.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=login&device=mobile",
+    "text": "×\n手机验证码登录\n手机号\n验证码\n获取验证码\n邀请码 选填\n登录\n更多登录方式\n微信扫码登录 ›\n\n登录即表示同意 《用户协议》和《隐私政策》\n\nAI应用\n专题\n活动中心\n每日签到\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n爆款作品\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n一瓶夏日晴光\n鹿与光\n617\n视频 · 00:03\n日落之前\n陈屿\n726\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的"
+  },
+  {
+    "file": "mobile-checkin.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=checkin&device=mobile",
+    "text": "我的\n林\n林间\n\n记录 AI 创作中的小发现\n\n128\n获赞\n24\n关注\n36\n粉丝\n2\n圈子\n积分中心\n活动中心\n每日签到\nAI 商城\n邀请有礼\n我的内容\n我的投稿\n草稿箱\n生成记录\n收藏\n全部\n作品\n帖子\n旧照修复练习\n作品 · 2026/10/4\n已公开\n帖子\n第一次尝试柔和光线的产品图\n帖子 · 2026/10/3\n审核中\n夏日海岸\n作品 · 2026/10/2\n未通过\n\n请补充创作信息后重新提交。\n\n帖子\n一段海岸练习笔记\n帖子 · 2026/10/1\n已下架\n首页\n社区\nAI创作\n活动\n我的\n每日签到\n\n每天回来领取积分，本周奖励一目了然。\n\n本周签到\n0 / 7\n本周最多 +300 积分\n一\n+20\n今天\n二\n+20\n6\n三\n+20\n7\n四\n+20\n8\n五\n+20\n9\n六\n+50\n10\n日\n+50\n11\n连签奖励\n\n再连 3 天可得 +20\n\n连签 3 天\n+20\n连签 5 天\n+30\n连签 7 天\n+50\n签到领取 20 积分"
+  },
+  {
+    "file": "pc-common-bottom.png",
+    "url": "http://127.0.0.1:3000/community-options/prototype-review?section=c&view=common&device=pc&reading=prototype",
+    "text": "多元拾光\n\n原型阅读台\n\nC 端\nB 端\n跨产品\n01\n首页\n1页\n02\nAIGC\n2页\n03\n专题\n2页\n04\nAI应用\n2页\n05\n教程\n2页\n06\n圈子\n3页\n07\n创作与发布\n3页\n08\n活动\n2页\n09\nAI 商城\n3页\n10\n我的\n9页\n11\n登录\n1页\n12\n共用页面\n2页\n◇\n通用反馈\n通用反馈\n\n统一展示页面反馈、局部反馈与提交反馈。业务页复用对应组件，具体触发条件与文案由页面需求说明。\n\n页面反馈\n加载中\n\n首次加载按页面结构显示骨架；加载更多仅在列表底部反馈，保留已有内容。\n\n暂无内容\n暂无内容\n\n发布后的作品会显示在这里。\n\n首次无内容提供适用的创作或发现入口；筛选为空保留条件并允许清除，不统一使用同一按钮。\n\n加载失败\n暂时无法加载\n\n请检查网络后重试。\n\n重试\n\n合并断网、读取超时与服务暂不可用。重试只重新读取；续载失败在列表底部重试。\n\n内容不可访问\n内容暂不可访问\n\n内容可能已移除或当前不可查看。\n\n适用于删除、下架、不存在或无查看权限。按可公开原因给出文案与返回入口，不泄露受限正文或内部原因。\n\n局部反馈\n短暂轻提示\n\n操作完成后短暂显示，不占正文位置。\n\n已加入圈子资料已保存签到成功操作未完成，请重试\n\n加入、退出、保存、签到、评论和绑定等操作完成后提示约 2.5 秒；不挤动内容、不拦截操作。弹层内触发时显示在弹层上方。相同提示显示期间不重复弹出；不同反馈替换当前提示，不堆叠。简单操作失败可短暂提示；需要处理的错误持续保留。\n\n按钮内反馈\n演示复制反馈\n\n反馈后恢复原按钮文字。\n\n复制成功可在原按钮显示“已复制”，约 2 秒后恢复。与轻提示二选一，不重复反馈。\n\n表单校验\n作品标题\n\n请填写作品标题\n\n确认\n\n必填、格式、字数和文件限制在字段附近说明，保留输入，不跳整页错误界面。\n\n操作失败\n作品标题\n\n保存失败，已填写的内容已保留。\n\n重试保存\n\n保存失败保留输入；上传失败保留其他素材；关注失败恢复原关系；复制失败提供手动复制。反馈放在原操作附近。\n\n提交反馈\n结果待确认\n提交结果待确认\n\n尚未收到明确结果，请勿重复提交。\n\n查询结果\n\n提交或兑换结果未知时查询原请求，不重复写入、不假定成功或退款。业务弹层复用这项规则，不增加重复状态页。\n\n上传中、提交中、媒体异常与列表到底等在对应组件内体现；登录、账号绑定和电脑端继续由已有模块承载。编辑保护、权限及失败处理规则仍保留在各页面需求中。"
+  },
+  {
+    "file": "pc-common-toast.png",
+    "url": "http://127.0.0.1:3000/community-options/prototype-review?section=c&view=common&device=pc&reading=prototype",
+    "text": "多元拾光\n\n原型阅读台\n\nC 端\nB 端\n跨产品\n01\n首页\n1页\n02\nAIGC\n2页\n03\n专题\n2页\n04\nAI应用\n2页\n05\n教程\n2页\n06\n圈子\n3页\n07\n创作与发布\n3页\n08\n活动\n2页\n09\nAI 商城\n3页\n10\n我的\n9页\n11\n登录\n1页\n12\n共用页面\n2页\n◇\n通用反馈\n通用反馈\n\n统一展示页面反馈、局部反馈与提交反馈。业务页复用对应组件，具体触发条件与文案由页面需求说明。\n\n页面反馈\n加载中\n\n首次加载按页面结构显示骨架；加载更多仅在列表底部反馈，保留已有内容。\n\n暂无内容\n暂无内容\n\n发布后的作品会显示在这里。\n\n首次无内容提供适用的创作或发现入口；筛选为空保留条件并允许清除，不统一使用同一按钮。\n\n加载失败\n暂时无法加载\n\n请检查网络后重试。\n\n重试\n\n合并断网、读取超时与服务暂不可用。重试只重新读取；续载失败在列表底部重试。\n\n内容不可访问\n内容暂不可访问\n\n内容可能已移除或当前不可查看。\n\n适用于删除、下架、不存在或无查看权限。按可公开原因给出文案与返回入口，不泄露受限正文或内部原因。\n\n局部反馈\n短暂轻提示\n\n操作完成后短暂显示，不占正文位置。\n\n已加入圈子资料已保存签到成功操作未完成，请重试\n已加入圈子\n\n加入、退出、保存、签到、评论和绑定等操作完成后提示约 2.5 秒；不挤动内容、不拦截操作。弹层内触发时显示在弹层上方。相同提示显示期间不重复弹出；不同反馈替换当前提示，不堆叠。简单操作失败可短暂提示；需要处理的错误持续保留。\n\n按钮内反馈\n演示复制反馈\n\n反馈后恢复原按钮文字。\n\n复制成功可在原按钮显示“已复制”，约 2 秒后恢复。与轻提示二选一，不重复反馈。\n\n表单校验\n作品标题\n\n请填写作品标题\n\n确认\n\n必填、格式、字数和文件限制在字段附近说明，保留输入，不跳整页错误界面。\n\n操作失败\n作品标题\n\n保存失败，已填写的内容已保留。\n\n重试保存\n\n保存失败保留输入；上传失败保留其他素材；关注失败恢复原关系；复制失败提供手动复制。反馈放在原操作附近。\n\n提交反馈\n结果待确认\n提交结果待确认\n\n尚未收到明确结果，请勿重复提交。\n\n查询结果\n\n提交或兑换结果未知时查询原请求，不重复写入、不假定成功或退款。业务弹层复用这项规则，不增加重复状态页。\n\n上传中、提交中、媒体异常与列表到底等在对应组件内体现；登录、账号绑定和电脑端继续由已有模块承载。编辑保护、权限及失败处理规则仍保留在各页面需求中。"
+  },
+  {
+    "file": "pc-create-video-bottom.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=create&device=pc&state=create-video&embed=1",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nAIGC 生成\nAIGC 生成\n让灵感成为作品\n10/04 14:00\n视频模型 · 16:9\n\n海岸风景短片，记录浪花与晚霞\n\n查看结果\n已完成\n下载\n继续调整\n发布作品\n10/05 08:00\n视频模型 · 16:9\n\n镜头沿海岸缓缓推进，海面泛起微光\n\n参考素材\n正在生成\n结果将在这里展示，你可以继续浏览已有作品。\n＋\n0/1\n视频生成\nvo_3_1\n16:9\n不参与活动\n20 积分\n内容由 AI 生成"
+  },
+  {
+    "file": "mobile-app.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=app&device=mobile",
+    "text": "应用详情\n文案改写\n\n把已有文字改得更清楚，适合发布和分享。\n\n在 MakeNow 中使用\n适合用来\n\n整理产品介绍、调整社交文案、改写日常表达。\n\n准备什么\n\n原文，以及用途和语气要求。\n\n得到什么\n\n一份可继续编辑的改写文案。\n\n由 多元拾光 提供\n\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法"
+  },
+  {
+    "file": "mobile-app-handoff.png",
+    "url": "http://127.0.0.1:3000/community-options/cross-prototype?page=app&source=app&item=copy&id=app-1&device=mobile&return=%2Fcommunity-options%2Fc-prototype%3Fpage%3Dapp%26item%3Dcopy%26id%3Dapp-1%26device%3Dmobile",
+    "text": "拾光\n× MakeNow\n返回社区\n\nMakeNow · 应用承接\n\n文案改写\n\n在 MakeNow 准备材料、确认费用并生成，进度与结果也在 MakeNow 查看。\n\n准备材料\n原文，以及用途和语气要求。\n输出说明\n一份可继续编辑的改写文案。\n原型演示 · 定向链接待配置\n\n此页仅说明使用去向。对应 MakeNow 应用链接尚未配置，不会提交任务、扣费或生成结果。\n\n返回应用介绍"
+  },
+  {
+    "file": "mobile-home.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=mobile",
+    "text": "AI应用\n专题\n活动中心\n每日签到\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n爆款作品\n全部\n电商营销\nIP与文创\n摄影\n设计\n生活\n一瓶夏日晴光\n鹿与光\n617\n视频 · 00:03\n日落之前\n陈屿\n726\n\n没有更多了\n\n首页\n社区\nAI创作\n活动\n我的"
+  },
+  {
+    "file": "mobile-delete-dialog.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=mine&device=mobile",
+    "text": "我的\n林\n林间\n\n记录 AI 创作中的小发现\n\n128\n获赞\n24\n关注\n36\n粉丝\n2\n圈子\n积分中心\n活动中心\n每日签到\nAI 商城\n邀请有礼\n我的内容\n我的投稿\n草稿箱\n生成记录\n收藏\n全部\n作品\n帖子\n旧照修复练习\n作品 · 2026/10/4\n已公开\n帖子\n第一次尝试柔和光线的产品图\n帖子 · 2026/10/3\n审核中\n夏日海岸\n作品 · 2026/10/2\n未通过\n\n请补充创作信息后重新提交。\n\n帖子\n一段海岸练习笔记\n帖子 · 2026/10/1\n已下架\n×\n删除这条内容？\n\n删除后将从我的内容移除。\n\n取消\n删除\n首页\n社区\nAI创作\n活动\n我的"
+  },
+  {
+    "file": "mobile-phone-bind.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=profile-edit&device=mobile",
+    "text": "编辑资料\n林\n更换头像\n支持 JPG、PNG，不超过 5MB\n昵称\n2/20\n性别\n男\n女\n个人简介\n0/80\n账号与绑定\n手机号\n绑定后可使用手机号登录\n去绑定 ›\n微信\n微信账号已绑定\n管理 ›\n手机号\n×\n\n绑定后可使用该方式登录同一账号。\n\n立即绑定\n保存资料"
+  },
+  {
+    "file": "mobile-invite-rules.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&device=mobile",
+    "text": "邀请有礼\n明细\n把这束灵感\n递给下一位创作者\n\n邀请好友，一起探索 AI 创作\n\n多元拾光 · 创作者邀请函\nDEMO-ONLY\n复制邀请码\n\n3 位好友已加入\n\n累计获得 600 积分\n好友完成首次发布\n再得 100 积分\n01\n复制邀请链接\n02\n好友成长创作\n03\n邀请积分到账\n最近进度\n3 位好友\nA\n拾光伙伴 A\n已完成首次发布\n+300\n已到账\nB\n拾光伙伴 B\n已注册 · 待首次互动\n+100\n已到账\nC\n拾光伙伴 C\n已完成首次互动 · 待首次发布\n+200\n已到账\n查看邀请规则\n›\n复制邀请链接\n邀请规则\n×\n注册\n+100 积分\n\n好友通过邀请链接或邀请码注册，建立有效邀请关系。\n\n互动\n+100 积分\n\n好友完成首次有效点赞或评论。\n\n发布\n+100 积分\n\n好友首次发布符合社区规范的作品并通过审核。\n\n同一好友仅建立一次有效邀请关系，奖励以系统校验结果为准。"
+  },
+  {
+    "file": "mobile-invite-rules-bottom.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&device=mobile",
+    "text": "邀请有礼\n明细\n把这束灵感\n递给下一位创作者\n\n邀请好友，一起探索 AI 创作\n\n多元拾光 · 创作者邀请函\nDEMO-ONLY\n复制邀请码\n\n3 位好友已加入\n\n累计获得 600 积分\n好友完成首次发布\n再得 100 积分\n01\n复制邀请链接\n02\n好友成长创作\n03\n邀请积分到账\n最近进度\n3 位好友\nA\n拾光伙伴 A\n已完成首次发布\n+300\n已到账\nB\n拾光伙伴 B\n已注册 · 待首次互动\n+100\n已到账\nC\n拾光伙伴 C\n已完成首次互动 · 待首次发布\n+200\n已到账\n查看邀请规则\n›\n复制邀请链接\n邀请规则\n×\n注册\n+100 积分\n\n好友通过邀请链接或邀请码注册，建立有效邀请关系。\n\n互动\n+100 积分\n\n好友完成首次有效点赞或评论。\n\n发布\n+100 积分\n\n好友首次发布符合社区规范的作品并通过审核。\n\n同一好友仅建立一次有效邀请关系，奖励以系统校验结果为准。"
+  },
+  {
+    "file": "mobile-phone-bind-form.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=profile-edit&device=mobile",
+    "text": "编辑资料\n林\n更换头像\n支持 JPG、PNG，不超过 5MB\n昵称\n2/20\n性别\n男\n女\n个人简介\n0/80\n账号与绑定\n手机号\n绑定后可使用手机号登录\n去绑定 ›\n微信\n微信账号已绑定\n管理 ›\n绑定手机号\n×\n\n绑定到当前账号，不会创建新的社区账号。\n\n手机号\n验证码\n获取验证码\n取消\n确认绑定\n保存资料"
+  },
+  {
+    "file": "pc-invite-rules.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=invite&device=pc",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n邀请有礼\n邀请明细 ›\n邀请好友，一起创作\n\n好友完成任务，每位最高可得 300 积分。\n\n注册\n\n好友完成注册并绑定邀请码\n\n+100 积分\n互动\n\n好友在社区完成点赞或评论\n\n+100 积分\n首次发布\n\n好友首次发布作品并通过审核\n\n+100 积分\n我的邀请码\nDEMO-ONLY\n复制邀请码\n复制邀请链接\n我的邀请人\n绑定\n邀请好友\n3 位\n累计获得\n600 积分\n处理中\n0 积分\n好友任务进度\n查看完整规则 ›\n好友\t注册\t互动\t首次发布\t已获积分\nA拾光伙伴 A\t✓ 已完成\t✓ 已完成\t✓ 已完成\t300\nB拾光伙伴 B\t✓ 已完成\t待完成\t待完成\t100\nC拾光伙伴 C\t✓ 已完成\t✓ 已完成\t待完成\t200\n\n奖励在达成条件后自动发放，实际规则以活动说明为准。\n\n邀请规则\n\n好友完成对应阶段并通过系统校验后，积分将自动发放至邀请人的积分账户。\n\n分阶段奖励\n好友行为阶段\t邀请人奖励\t奖励发放条件\n完成注册\t+100 积分\t好友通过邀请链接或邀请码成功注册并完成绑定。\n首次互动\t+100 积分\t好友完成首次点赞或评论行为。\n首次发布\t+100 积分\t好友首次成功发布符合社区规范的 AI 作品，并通过系统校验。\n每日 / 每月限额\n每日上限\n2,000 积分\n\n达到上限后，当天停止发放邀请积分。\n\n每月上限\n10,000 积分\n\n达到上限后，当月停止发放邀请积分。\n\n有效与异常处理\n唯一绑定\n单个好友只能绑定一位邀请人，以首次输入邀请码或点击邀请链接建立的关系为准。\n内容审核\n好友发布的作品需符合社区规范；低质、灌水或违规作品不发放奖励。\n异常账号\n同设备或同 IP 高频注册时，暂停发放奖励并进入风险复核。"
+  },
+  {
+    "file": "pc-search-overlay.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=pc",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n搜索记录\n清空\n修复\n×\n图像修复\n×\n摄影\n×\n电商营销\n×\n热门搜索\n电商营销\n摄影\n夏天\n猫\n图像修复\nIP与文创\n精选专题\n全部\n电商营销\n角色创作\n图像修复\n写作表达\n精选 AI 应用\n全部\n文案改写\n产品换背景\n照片修复\n积分\n100\n签到\nMakeNow\n无限画布\n一句话生成\n想法变成画面\n模型直通车\n找到合适模型\n发布帖子\n分享创作想法\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n专题\n电商营销\n专题\n图像修复\n专题\n角色设计\n专题\n写作表达\n一瓶夏日晴光\n鹿与光\n617\n00:03\n日落之前\n陈屿\n726\n输入灵感，即刻体验"
+  },
+  {
+    "file": "pc-user-menu.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=pc",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n林\n林间\n前往我的主页\n关注 24　粉丝 36\n可用积分\n100\n积分中心 ›\n每日签到\n我的内容\n我的收藏\n草稿箱\n生成记录\n我的投稿\n邀请有礼\n退出登录\nMakeNow\n无限画布\n一句话生成\n想法变成画面\n模型直通车\n找到合适模型\n发布帖子\n分享创作想法\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n专题\n电商营销\n专题\n图像修复\n专题\n角色设计\n专题\n写作表达\n一瓶夏日晴光\n鹿与光\n617\n00:03\n日落之前\n陈屿\n726\n输入灵感，即刻体验"
+  },
+  {
+    "file": "pc-circles-scroll.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&device=pc&item=image",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n推荐\n影像练习圈\n视觉创作圈\n置顶\n影像练习圈 · 交流须知\n圈子管理员\n林\n林间\n3分钟前\n#\n影像练习圈\n旧照片修复后，肤色怎么保持自然\n\n避免过度增加饱和度，先比较原图明暗。\n\n展开全文\n喜欢\n36\n收藏\n8\n评论\n7\n分享\n林\n林间\n18分钟前\n#\n影像练习圈\n人像修复要不要保留细小纹理\n\n我保留了一些皮肤纹理，让人物看起来更真实。\n\n展开全文\n喜欢\n53\n收藏\n11\n评论\n7\n分享\n林\n林间\n1小时前\n#\n影像练习圈\n修复照片时，背景也需要单独处理\n\n先修背景中的破损，再检查人物边缘。\n\n展开全文\n喜欢\n70\n收藏\n14\n评论\n7\n分享\n温\n温白\n26分钟前\n#\n影像练习圈\n阴天拍人像，背景总显得太灰怎么办？\n\n我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。\n\n展开全文\n喜欢\n155\n收藏\n29\n评论\n7\n分享\n林\n林间\n9月24日\n#\n影像练习圈\n给旧照片修复时，我先做了这三件事\n\n先判断划痕的位置，再检查面部细节，最后留一份原图对照。\n\n展开全文\n喜欢\n87\n收藏\n17\n评论\n7\n分享\n小\n小树影\n9月24日\n#\n影像练习圈\n一张照片的三个裁切版本，哪张更有故事感？\n\n同一张街景，分别保留人物、路口和远处的车。第三张留白最多。\n\n展开全文\n喜欢\n172\n收藏\n32\n评论\n7\n分享\n阿\n阿璃\n9月23日\n#\n影像练习圈\n把家里的老照片重新整理成一页相册\n\n没有做复杂修饰，只把散落的照片按时间排好。\n\n展开全文\n喜欢\n189\n收藏\n35\n评论\n7\n分享\n\n已经看完了，去圈子里发现更多灵感\n\n林\n林间\n今天也来分享一点灵感\n›\n发布帖子\n影像练习圈\n1,286 人加入\n退出圈子\n\n照片修复、构图与视觉叙事\n\n推荐圈子\n查看全部 ›\n修复交流圈\n326 人加入\n加入\n写作灵感圈\n742 人加入\n加入"
+  },
+  {
+    "file": "pc-circle-comments.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=circles&device=pc&item=image",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n推荐\n影像练习圈\n视觉创作圈\n置顶\n影像练习圈 · 交流须知\n圈子管理员\n林\n林间\n3分钟前\n#\n影像练习圈\n旧照片修复后，肤色怎么保持自然\n\n避免过度增加饱和度，先比较原图明暗。\n\n展开全文\n喜欢\n36\n收藏\n8\n评论\n7\n分享\n收起评论\n评论 7\n周\n周末观察\n1分钟前\n\n这一步如果只有手机，先准备什么最合适？\n\n回复赞收起回复\n林间 回复 周末观察\n\n先整理素材和目标效果，电脑操作的步骤可以稍后完成。\n\n回复\n温\n温白\n刚刚\n\n把尝试过程也记录下来很有帮助，尤其是调整前后的对比。\n\n回复赞 12收起 2 条回复\n青禾 回复 温白\n刚刚\n\n赞同，我会把每一步的版本单独保存，回头比较方便很多。\n\n回复\n温白 回复 青禾\n刚刚\n\n这个方法好，下次也试试按步骤留存。\n\n回复\n小\n小树影\n刚刚\n\n我之前也遇到过类似的问题。一次只改一个条件，更容易找到真正起作用的地方。\n\n回复赞 8\n南\n南风\n刚刚\n\n收藏了，准备照着这个思路试一版，再来分享结果。\n\n回复赞 5\n发布\n林\n林间\n18分钟前\n#\n影像练习圈\n人像修复要不要保留细小纹理\n\n我保留了一些皮肤纹理，让人物看起来更真实。\n\n展开全文\n喜欢\n53\n收藏\n11\n评论\n7\n分享\n林\n林间\n1小时前\n#\n影像练习圈\n修复照片时，背景也需要单独处理\n\n先修背景中的破损，再检查人物边缘。\n\n展开全文\n喜欢\n70\n收藏\n14\n评论\n7\n分享\n温\n温白\n26分钟前\n#\n影像练习圈\n阴天拍人像，背景总显得太灰怎么办？\n\n我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。\n\n展开全文\n喜欢\n155\n收藏\n29\n评论\n7\n分享\n林\n林间\n9月24日\n#\n影像练习圈\n给旧照片修复时，我先做了这三件事\n\n先判断划痕的位置，再检查面部细节，最后留一份原图对照。\n\n展开全文\n喜欢\n87\n收藏\n17\n评论\n7\n分享\n小\n小树影\n9月24日\n#\n影像练习圈\n一张照片的三个裁切版本，哪张更有故事感？\n\n同一张街景，分别保留人物、路口和远处的车。第三张留白最多。\n\n展开全文\n喜欢\n172\n收藏\n32\n评论\n7\n分享\n阿\n阿璃\n9月23日\n#\n影像练习圈\n把家里的老照片重新整理成一页相册\n\n没有做复杂修饰，只把散落的照片按时间排好。\n\n展开全文\n喜欢\n189\n收藏\n35\n评论\n7\n分享\n\n已经看完了，去圈子里发现更多灵感\n\n林\n林间\n今天也来分享一点灵感\n›\n发布帖子\n影像练习圈\n1,286 人加入\n退出圈子\n\n照片修复、构图与视觉叙事\n\n推荐圈子\n查看全部 ›\n修复交流圈\n326 人加入\n加入\n写作灵感圈\n742 人加入\n加入"
+  },
+  {
+    "file": "pc-activity-tasks.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=activity&device=pc&item=guoqing_qitianle_20261001",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n活动详情\n进行中\n国庆七天乐\n最高可得 1,750 积分\n2026-10-01 00:00 — 2026-10-07 23:59\n我的参与状态\n\n已参与 · 任务进度见下方\n\n去做任务\n活动说明\n活动任务\n投稿作品\n活动任务\n进行中\n+100 积分 / 条\n每天发布 2 条图片作品\n\n每天前2条图片每条100积分\n\n任务进度\n1/2\n去发布作品\n+20 积分\n第 1 天：浏览 5 条内容\n\n当天浏览5条内容\n\n任务进度\n5/5\n已完成\n积分已发放\n+30 积分\n第 2 天：收藏 3 个作品\n\n当天收藏3个作品\n\n任务进度\n3/3\n已完成\n积分已发放\n+40 积分\n第 3 天：发布 1 条纯文字帖子\n\n当天发布纯文字帖子\n\n任务已结束\n已过期\n待完成\n+50 积分\n第 4 天：发布 1 条图片帖子\n\n当天发布带图帖子\n\n任务进度\n0/1\n去发布\n+60 积分\n第 5 天：点赞或评论 5 个作品\n\n当天点赞或评论5个作品\n\n第 5 天开放\n未开放\n+70 积分\n第 6 天：收藏 5 个作品\n\n当天收藏5个作品\n\n第 6 天开放\n未开放\n+80 积分\n第 7 天：分享 1 个作品\n\n当天分享1个作品\n\n第 7 天开放\n未开放\n活动说明\n🏆 邀请排行榜（独立结算）\n\n邀请奖励与排行榜奖励单独结算，不计入本活动页面展示的“任务积分上限”。\n\n排名奖励\n🥇 第 1 名：10,000 积分\n🥈 第 2 名：3,000 积分\n🥉 第 3 名：2,000 积分\n🎁 第 4—5 名：各 1,000 积分\n\n活动结束后统一人工复核，按最终有效邀请人数排名并发放奖励。\n\n🎉 国庆七天乐｜每日任务领积分\n📅 活动时间\n\n10月1日至10月7日。\n\n活动期间每天解锁 1 项七日任务；完成当天任务即可领取对应积分。当天未完成的任务，过期后不可补做。\n\n🎁 七日任务奖励\n完成 7 天任务，最高可获得 350 积分。\n🖼️ 每日图片作品奖励\n活动期间每天发布前 2 条图片作品。\n每条作品奖励 100 积分。\n每日最高 200 积分，7 天最高 1,400 积分。\n🤝 邀请好友基础奖励\n好友注册：100 积分。\n好友首次有效互动：100 积分。\n好友首次发布有效图片作品：100 积分。\n每位好友基础奖励最高 300 积分。\n\n⚠️ 邀请基础奖励和邀请排行榜奖励均为独立结算，不计入本活动页面展示的 1,750 积分任务上限。所有奖励以系统最终判定为准。\n\n投稿作品\n我的投稿 →\n日落之前\n一瓶夏日晴光\n在海边住一下午\n沉入一场蓝色的梦\n把阳光留在眼睛里\n旧照修复练习\n夏日的转角\n风从蓝色花间经过\n去做任务"
+  },
+  {
+    "file": "pc-tutorial-from-list.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?item=restore&page=tutorial&device=pc",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\n教程详情\n官方原创\n旧照片修复：从判断破损到复查\n\n林间\n\n从划痕判断开始，保留原图并逐步复查。\n\n目录\n01 准备材料\n准备材料\n\n保留未经修改的原图，观察划痕与细节，先完成小范围处理，再与原图对照。\n\n准备原图副本；精细操作在电脑端完成。\n\n相关内容\n旧照修复参考工程\n用于展示创作结果与方法。\n喜欢\n收藏\n评论\n分享\n评论 2\n查看全部\n周\n周末观察\n这一步如果只有手机，先准备什么最合适？\n写下你的看法"
+  },
+  {
+    "file": "pc-home.png",
+    "url": "http://127.0.0.1:3000/community-options/c-prototype?page=home&device=pc",
+    "text": "首页\nAIGC\n专题\nAI应用\n教程\n圈子\n模型广场\n积分\n100\n签到\nMakeNow\n无限画布\n一句话生成\n想法变成画面\n模型直通车\n找到合适模型\n发布帖子\n分享创作想法\n全部\n电商营销\n设计与视觉\nIP与文创\n摄影\n写作\n游戏\n科普\n历史\n生活\n专题\n电商营销\n专题\n图像修复\n专题\n角色设计\n专题\n写作表达\n一瓶夏日晴光\n鹿与光\n617\n00:03\n日落之前\n陈屿\n726\n输入灵感，即刻体验"
+  }
+]

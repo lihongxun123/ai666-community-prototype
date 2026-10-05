@@ -1,5 +1,5 @@
 import './detail-skeleton.css';
-export const detailSkeletonPages=['work','post','tutorial','app','resource'];
+export const detailSkeletonPages=['work','post','tutorial','app'];
 export function DetailSkeleton({page}:{page:string}){
  const bar=(kind='line')=><div className={'ds-block ds-'+kind}/>;
  const author=<div className="ds-author">{bar('avatar')}<div>{bar('short')}{bar('short')}</div></div>;

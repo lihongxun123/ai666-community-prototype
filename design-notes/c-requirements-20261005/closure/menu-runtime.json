@@ -1,0 +1,47 @@
+[
+  {
+    "sample": "ops-task",
+    "text": "×温馨提醒还有新的创作任务前往活动中心，查看适合你的任务与参与规则。查看任务稍后再看",
+    "within": true
+  },
+  {
+    "sample": "ops-expiring",
+    "text": "×温馨提醒部分积分即将到期你有 50 积分将在 3 天后到期，可查看明细或前往商城使用。查看积分稍后再看",
+    "within": true
+  },
+  {
+    "sample": "nav-account",
+    "text": "林林间前往我的主页关注 24　粉丝 36可用积分100积分中心 ›每日签到我的内容我的收藏草稿箱生成记录我的投稿邀请有礼退出登录",
+    "within": true
+  },
+  {
+    "sample": "aigc-type",
+    "text": "图片生成剧本创作视频生成",
+    "within": true
+  },
+  {
+    "sample": "aigc-video-quality",
+    "text": "720p1080p",
+    "within": true
+  },
+  {
+    "sample": "aigc-video-duration",
+    "text": "5秒10秒",
+    "within": true
+  },
+  {
+    "sample": "aigc-model",
+    "text": "图片模型",
+    "within": true
+  },
+  {
+    "sample": "aigc-ratio",
+    "text": "1:116:99:164:33:4",
+    "within": true
+  },
+  {
+    "sample": "aigc-activity",
+    "text": "不参与活动国庆七天乐每周任务生图挑战Prompt 共创计划",
+    "within": true
+  }
+]

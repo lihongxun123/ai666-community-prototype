@@ -1,13 +1,16 @@
 'use client';
 /* oxlint-disable jsx-a11y/media-has-caption -- Bundled silent sea-sample video has no audio track. */
 /* oxlint-disable next/no-img-element -- Local prototype sample media. */
-import { prototypeStore as sessionStorage } from './storage';
-import { useState } from 'react';
+import {DesktopAppDetail} from './app-desktop';
+import {DesktopContinuation,appEntryState} from './desktop-continuation';
+import {appSamples,AppSampleContent} from './app-samples';
+import { useEffect, useRef, useState } from 'react';
 import './application-flow.css';
+import './app-latest.css';
+import './apps-pc-concept.css';
 import { ActionBar, Comments } from './reading';
 import {useB} from '../b-prototype/store';
 import {AppIntroduction,appSummaries} from './app-introduction';
-import { appHandoffUrl } from './app-handoff';
 export const applicationPages = [
   {
     id: 'apps',
@@ -21,26 +24,13 @@ export const applicationPages = [
     module: 'AI应用',
     states: ['normal', 'pc', 'paused', 'removed', 'error'],
   },
-  {
-    id: 'pc-handoff',
-    title: '电脑端继续',
-    module: 'AI应用',
-    states: ['normal', 'unavailable', 'copy-failed'],
-  },
-  {
-    id: 'account-link',
-    title: '关联账号',
-    module: '跨产品承接',
-    states: ['normal', 'mismatch', 'expired', 'error'],
-  },
-  {
-    id: 'return-result',
-    title: '选择成果',
-    module: '跨产品承接',
-    states: ['normal', 'error', 'activity-ended', 'duplicate', 'forbidden'],
-  },
 ];
 const applicationCategories = [{id:'all',label:'全部'},{id:'writing',label:'写文案'},{id:'product-image',label:'做商品图'},{id:'photo',label:'修照片'},{id:'video',label:'做视频'}];
+// Prototype first-publication fixtures; production uses the content publication timestamp.
+// Independent editorial fixtures; backend mapping remains an R&D handoff.
+const featuredAppIds=['copy','background','video','repair-color'];
+const appEditorialOrder:Record<string,number>={copy:1,background:2};
+const firstPublished:Record<string,string>={background:'2026-09-30',video:'2026-09-29','repair-color':'2026-09-28',copy:'2026-09-27',restore:'2026-09-26'};
 const apps = [
  {id:'repair-color',category:'photo',name:'照片色彩修复',image:'portrait',mobile:true,available:true,input:'待修复照片',output:'图片',purpose:'影像处理',place:'MakeNow'},
 
@@ -103,21 +93,34 @@ export function ApplicationsPage({
   go: (p: string) => void;
 }) {
   const contentDB=useB();
+  const latestTrack=useRef<HTMLDivElement>(null);
+  const [latestPosition,setLatestPosition]=useState({start:true,end:false});
+  useEffect(()=>{
+    const track=latestTrack.current;if(!track)return;
+    const measure=()=>setLatestPosition({start:track.scrollLeft<2,end:track.scrollLeft+track.clientWidth>=track.scrollWidth-2});
+    const observer=new ResizeObserver(measure);observer.observe(track);
+    for(const card of Array.from(track.children))observer.observe(card);
+    measure();return ()=>observer.disconnect();
+  },[page,state,contentDB.records]);
   const query =
     typeof window !== 'undefined'
       ? new URLSearchParams(window.location.search)
       : null;
-  const item = query?.get('item') || 'copy';
+  const desktop=query?.get('device')==='pc';
+  const sampleItems:Record<string,string>={'app-suite':'sample-suite','app-analysis':'sample-analysis','app-music':'sample-music','app-storyboard':'sample-storyboard','app-website':'sample-website'};
+  const explicitId=query?.get('id');
+  const item = explicitId?(explicitId==='app-1'?'copy':explicitId):sampleItems[state] || query?.get('item') || 'copy';
   const baseApp = apps.find((a) => a.id === item) || apps[0];
-  const configuredApp=baseApp.id==='copy'?contentDB.records.find(r=>r.id==='app-1'):null;
-  const app={...baseApp,name:configuredApp?.public?.title||baseApp.name,mobile:configuredApp?.public?configuredApp.public.device==='手机与电脑':baseApp.mobile};
+  const configuredApp=explicitId?contentDB.records.find(r=>r.id===explicitId&&r.kind==='app'):!item.startsWith('sample-')&&baseApp.id==='copy'?contentDB.records.find(r=>r.id==='app-1'):null;
+  const presentation=!explicitId&&item.startsWith('sample-')?item.slice(7):undefined,sample=presentation?appSamples[presentation]:undefined;
+  const app={...baseApp,name:sample?.title||configuredApp?.public?.title||baseApp.name,input:sample?.input||configuredApp?.public?.inputs||baseApp.input,output:sample?.output||configuredApp?.public?.outputs||baseApp.output,mobile:sample?false:configuredApp?.public?configuredApp.public.device==='手机与电脑':baseApp.mobile};
   const [local, setLocal] = useState(state),
-    [category, setCategory] = useState(applicationCategories.some(c=>c.id===query?.get('category'))?query!.get('category')!:'all'),
-    [tip, setTip] = useState(''),
-    [picked, setPicked] = useState(true),
-    [linked, setLinked] = useState(false);
+    [category, setCategory] = useState(applicationCategories.some(c=>c.id===query?.get('category'))?query!.get('category')!:'all');
+  const canonicalSample=!explicitId?sampleItems[state]:undefined;
+  const sampleNeedsSync=Boolean(canonicalSample&&(query?.get('item')!==canonicalSample||query?.has('id')));
+  useEffect(()=>{if(!sampleNeedsSync||!canonicalSample)return;const url=new URL(location.href);url.searchParams.set('item',canonicalSample);url.searchParams.delete('id');history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));},[canonicalSample,sampleNeedsSync]);
+  if(sampleNeedsSync)return null;
   const s = local;
-  const nav = (p: string) => {const activity=query?.get('activity');go(p+'?item='+app.id+(activity?'&activity='+encodeURIComponent(activity):''));};
   if (page === 'apps') {
     if (s === 'loading')
       return (
@@ -143,26 +146,38 @@ export function ApplicationsPage({
       history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));
     };
     const publicCopy=contentDB.records.find(r=>r.id==='app-1');
-    const list=apps.filter(a=>a.id!=='copy'||publicCopy?.publicStatus==='公开')
-      .map(a=>({...a,name:a.id==='copy'?(publicCopy?.public?.title||a.name):a.name,available:a.available&&(a.id!=='copy'||publicCopy?.runtime==='可用')}))
+    const publicApps=apps.filter(a=>a.id!=='copy'||publicCopy?.publicStatus==='公开')
+      .map(a=>({...a,name:a.id==='copy'?(publicCopy?.public?.title||a.name):a.name,available:a.available&&(a.id!=='copy'||publicCopy?.runtime==='可用')}));
+    const latest=desktop?featuredAppIds.flatMap(id=>{const app=publicApps.find(a=>a.id===id&&a.available);return app?[app]:[]}):publicApps.filter(a=>a.available).sort((a,b)=>(firstPublished[b.id]||'').localeCompare(firstPublished[a.id]||'')||a.id.localeCompare(b.id)).slice(0,5);
+    const openApp=(id:string)=>{const activity=query?.get('activity');go('app?item='+id+(activity?'&activity='+encodeURIComponent(activity):''));};
+    const moveLatest=(direction:number)=>{const track=latestTrack.current;const card=track?.firstElementChild;if(track&&card)track.scrollBy({left:direction*(card.getBoundingClientRect().width+16),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});};
+    const list=publicApps
       .filter(a=>category==='all'||a.category===category)
-      .sort((a,b)=>query?.get('device')!=='pc'?Number(b.mobile&&b.available)-Number(a.mobile&&a.available):0);
+      .sort((a,b)=>desktop?((appEditorialOrder[a.id]??Infinity)-(appEditorialOrder[b.id]??Infinity)||(appEditorialOrder[a.id]!==undefined&&appEditorialOrder[b.id]!==undefined?0:(firstPublished[b.id]||'').localeCompare(firstPublished[a.id]||''))||a.id.localeCompare(b.id)):Number(b.mobile&&b.available)-Number(a.mobile&&a.available));
     return (
       <section className="cp-app-discovery" aria-label="应用列表">
+        {desktop&&<p className="app-discovery-intro">将想法变成作品。</p>}
+        {latest.length>0&&<section className="app-latest" aria-label={desktop?"精选应用":"最新上线"}>
+          <header><h2>{desktop?'精选应用':'最新上线'}</h2><div className="app-latest-controls"><button aria-label={desktop?"上一组精选应用":"上一组新应用"} disabled={latestPosition.start} onClick={()=>moveLatest(-1)}><img src="/home-prototype/icons/arrow-left-s-line.svg" alt=""/></button><button aria-label={desktop?"下一组精选应用":"下一组新应用"} disabled={latestPosition.end||latest.length<2} onClick={()=>moveLatest(1)}><img src="/home-prototype/icons/arrow-right-s-line.svg" alt=""/></button></div></header>
+          <div className="app-latest-track" ref={latestTrack} onScroll={e=>{const t=e.currentTarget;setLatestPosition({start:t.scrollLeft<2,end:t.scrollLeft+t.clientWidth>=t.scrollWidth-2});}}>
+            {latest.map(a=><button className="app-latest-card" key={a.id} onClick={()=>openApp(a.id)} aria-label={(desktop?'查看精选应用：':'查看新应用：')+a.name}><img src={'/home-prototype/'+a.image+'.png'} alt=""/><span>{desktop&&<em>精选应用</em>}<strong>{a.name}</strong><small>{appSummaries[a.id]}</small>{desktop&&<b className="app-banner-explore">探索应用<img src="/home-prototype/icons/arrow-right-line.svg" alt=""/></b>}</span></button>)}
+          </div>
+        </section>}
+        <h2 className="app-directory-heading">全部应用</h2>
         <div className="cp-discovery-filters">
           <nav aria-label="应用任务分类">{applicationCategories.map(({id,label})=><button key={id} aria-pressed={category===id} onClick={()=>updateCategory(id)}>{label}</button>)}</nav>
         </div>
         {list.length===0?<div className="cp-state"><h2>暂无符合条件的应用</h2><button className="cp-button" onClick={()=>updateCategory('all')}>清除筛选</button></div>:<>
           <div className="cp-app-gallery">{list.map(a=><button className="cp-app-effect" key={a.id} aria-label={a.name} onClick={()=>{const activity=query?.get('activity');go('app?item='+a.id+(activity?'&activity='+encodeURIComponent(activity):''));}}>
             <img src={'/home-prototype/'+a.image+'.png'} alt=""/>
-            <span className="cp-app-caption"><strong>{a.name}</strong>{!a.available&&<small>暂不可用</small>}</span>
+            <span className="cp-app-caption"><strong>{a.name}{desktop&&<em>官方</em>}</strong>{desktop&&<span className="app-summary">{appSummaries[a.id]}</span>}{!a.available&&<small>暂不可用</small>}</span>
           </button>)}</div>
           <p className="cp-end">没有更多了</p>
         </>}
       </section>
     );
   }
-  if (page==='app'&&configuredApp?.publicStatus!=='公开'&&configuredApp)
+  if (page==='app'&&(explicitId&&!configuredApp||!explicitId&&Boolean(query?.get('item'))&&!apps.some(a=>a.id===item)&&!sample||configuredApp&&configuredApp.publicStatus!=='公开'))
     return <div className="cp-state"><h2>应用暂不可访问</h2><button className="cp-button" onClick={()=>go('apps')}>返回应用列表</button></div>;
   if (page === 'app') {
     if (s === 'removed' || s === 'error')
@@ -178,218 +193,36 @@ export function ApplicationsPage({
         </div>
       );
     const pc = s === 'pc' || !app.mobile,
-      paused = s === 'paused' || !app.available || Boolean(configuredApp&&(configuredApp.runtime!=='可用'||!configuredApp.public?.entry));
+      paused = s === 'paused' || !app.available || Boolean(configuredApp&&configuredApp.runtime!=='可用');
+    const destination=sample?.destination||configuredApp?.public?.entry;
+    const entry=appEntryState({destination,paused,mobile:!pc,device:query?.get('device')==='pc'?'pc':'mobile'});
+    const open=()=>{if(entry.status==='available')window.location.assign(entry.href)};
+    if(query?.get('device')==='pc')return <DesktopAppDetail presentation={presentation} title={app.name} summary={sample?.summary||appSummaries[app.id]} item={app.id} cover={app.image} input={app.input} output={app.output} provider="多元拾光" conditions={pc?'需在电脑端使用':undefined} destination={destination} unavailable={paused?'暂不可用':undefined} onUse={open} go={go}/>;
     return (
       <article className="cp-app-detail">
-        <div className="cp-app-detail-heading"><h2>{app.name}</h2><p>{appSummaries[app.id]}</p></div>
-        <img
+        <div className="cp-app-detail-heading"><h2>{app.name}</h2><p>{sample?.summary||appSummaries[app.id]}</p></div>
+        {sample?<AppSampleContent sample={presentation!}/>:<img
           className="cp-app-detail-cover"
           src={'/home-prototype/' + app.image + '.png'}
           alt={app.name}
-        />
+        />}
 
-        {paused && (
+        {['missing','paused'].includes(entry.status) && (
           <div className="cp-alert">
-            应用暂不可用，介绍与讨论仍可查看。
+            {entry.status==='missing'?'暂未开放使用':'应用已暂停使用，介绍与讨论仍可查看。'}
           </div>
         )}
-        {pc && <section className="cp-note cp-mobile-only"><h2>请在电脑端使用</h2><p>画布与工作流操作需在电脑端完成。</p></section>}
-        {!paused && <div className="cp-app-dock" aria-label="应用操作">
-          {pc ? <><button className="cp-button cp-mobile-only" onClick={()=>nav('pc-handoff')}>获取电脑端链接</button><button className="cp-button cp-desktop-only" onClick={()=>window.location.assign(appHandoffUrl(app.id))}>在 MakeNow 中使用</button></> : <button className="cp-button" onClick={()=>window.location.assign(appHandoffUrl(app.id))}>在 MakeNow 中使用</button>}
+        {entry.status==='desktop' && <section className="cp-note cp-mobile-only"><h2>请在电脑端使用</h2><p>画布与工作流操作需在电脑端完成。</p></section>}
+        {['available','desktop'].includes(entry.status) && <div className="cp-app-dock" aria-label="应用操作">
+          {entry.status==='desktop' ? <DesktopContinuation item={item} id={configuredApp?.id}/> : <button className="cp-button" onClick={open}>在 MakeNow 中使用</button>}
         </div>}
-        <AppIntroduction input={app.input} output={app.output} provider="多元拾光"/>
+        {['available','desktop'].includes(entry.status)&&<p className="cp-app-account-note">使用当前账号在 MakeNow 中继续；输入、参数与费用在 MakeNow 中确认。</p>}
+        <AppIntroduction input={app.input} output={app.output} provider={sample?'MakeNow':'多元拾光'} conditions={sample?.conditions||configuredApp?.public?.conditions}/>
 
         <ActionBar kind="app" go={go}/>
         <Comments go={go} kind="app"/>
       </article>
     );
   }
-  if (page === 'pc-handoff')
-    return (
-      <section className="af-page af-handoff">
-        <div className="af-app-context"><img src={'/home-prototype/'+app.image+'.png'} alt=""/><div><strong>{app.name}</strong><span>在电脑浏览器中打开链接即可继续</span></div></div>
-        {s === 'unavailable' ? (
-          <div className="cp-state">
-            <h2>目标暂不可访问</h2>
-          </div>
-        ) : (
-          <>
-            <label>
-              应用链接
-              <input
-                readOnly
-                value={
-                  typeof window === 'undefined'
-                    ? ''
-                    : window.location.origin +
-                      '/community-options/c-prototype?page=app&item=' +
-                      app.id
-                }
-              />
-            </label>
-            <button
-              className="cp-button"
-              onClick={async () => {
-                try {
-                  if (s === 'copy-failed') throw Error();
-                  await navigator.clipboard.writeText(
-                    window.location.origin +
-                      '/community-options/c-prototype?page=app&item=' +
-                      app.id,
-                  );
-                  setTip('链接已复制');
-                } catch {
-                  setTip('复制失败，可长按链接手动复制');
-                }
-              }}
-            >
-              复制链接
-            </button>
-          </>
-        )}
-        {app.place==='MakeNow'&&<p className="af-subtle">进入 MakeNow 后，账号与费用以该平台为准。</p>}
-        {tip && <output>{tip}</output>}
-      </section>
-    );
-  if (page === 'account-link')
-    return (
-      <section className="af-page af-account">
-        
-        <dl className="cp-facts">
-          <dt>社区</dt>
-          <dd>林间</dd>
-          <dt>MakeNow</dt>
-          <dd>{s === 'mismatch' ? '另一位创作者' : '林间的工作室'}</dd>
-        </dl>
-        <p>关联后可将本人选定的成果带回社区。两端积分独立。</p>
-        {s === 'mismatch' && (
-          <div className="cp-alert">请确认这两个账号均属于你。</div>
-        )}
-        {s === 'expired' && (
-          <div className="cp-alert">关联已失效，请重新登录确认。</div>
-        )}
-        {s === 'error' && (
-          <div className="cp-alert">关联失败，原成果仍保留在 MakeNow。</div>
-        )}
-        {s === 'expired' && (
-          <button
-            className="cp-button"
-            onClick={() => {
-              sessionStorage.setItem('cp-return', 'account-link');
-              go('login');
-            }}
-          >
-            重新登录
-          </button>
-        )}
-        {s === 'error' && (
-          <button className="cp-button" onClick={() => setLocal('normal')}>
-            重试关联
-          </button>
-        )}
-        <label>
-          <input
-            type="checkbox"
-            checked={linked}
-            onChange={(e) => setLinked(e.target.checked)}
-          />
-          确认两个账号均由本人使用
-        </label>
-        <button
-          className="cp-button"
-          disabled={!linked || s === 'expired' || s === 'error'}
-          onClick={() => {
-            sessionStorage.setItem('cp-linked', '1');
-            go('return-result');
-          }}
-        >
-          确认关联
-        </button>
-        <button
-          className="cp-button cp-secondary"
-          onClick={() => go('resource')}
-        >
-          暂不关联
-        </button>
-      </section>
-    );
-  if (page === 'return-result')
-    return (
-      <section className="af-page af-return">
-        {s === 'forbidden' ? (
-          <div className="cp-state">
-            <h2>无法确认成果归属</h2>
-            <p>请使用制作该成果的账号。</p>
-            <button className="cp-button" onClick={() => go('account-link')}>
-              核对账号
-            </button>
-          </div>
-        ) : (
-          <>
-            
-            <label>
-              <input
-                type="checkbox"
-                checked={picked}
-                onChange={(e) => setPicked(e.target.checked)}
-              />
-              一瓶夏日晴光
-            </label>
-            <img
-              className="cp-cover"
-              src="/home-prototype/perfume.png"
-              alt="待发布成果"
-            />
-            {s === 'activity-ended' && (
-              <div className="cp-alert">
-                活动已结束，无法继续投稿。成果仍为私有。
-              </div>
-            )}
-            {s === 'error' && (
-              <div className="cp-alert">
-                回流失败，MakeNow 中的原成果不受影响。
-              </div>
-            )}
-            {s === 'error' && (
-              <button className="cp-button" onClick={() => setLocal('normal')}>
-                重新获取成果
-              </button>
-            )}
-            {s === 'duplicate' ? (
-              <button
-                className="cp-button"
-                onClick={() => go('publish-status')}
-              >
-                查看原提交
-              </button>
-            ) : (
-              <button
-                className="cp-button"
-                disabled={!picked || s === 'error'}
-                onClick={() => {
-                  sessionStorage.setItem('cp-source', 'MakeNow');
-                  if (s === 'activity-ended')
-                    sessionStorage.removeItem('cp-activity');
-                  sessionStorage.setItem(
-                    'cp-result',
-                    JSON.stringify({
-                      kind: 'image',
-                      image: '/home-prototype/perfume.png',
-                      title: '一瓶夏日晴光',
-                    }),
-                  );
-                  go('post-edit');
-                }}
-              >
-                {s === 'activity-ended'
-                  ? '取消活动关联，作为普通作品编辑'
-                  : '继续编辑作品'}
-              </button>
-            )}
-          </>
-        )}
-      </section>
-    );
   return null;
 }
-

@@ -6,3 +6,9 @@
 .cp-desktop .search-app-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 
 .cp-root[data-page=search] .search-suggestions section+section{margin-top:18px}.cp-root[data-page=search] .search-suggestions h2{margin-bottom:8px!important}.cp-root[data-page=search] .search-topic-grid{gap:8px}.cp-root:not(.cp-desktop)[data-page=search] .cp-body{padding-top:12px}
+
+/* Recommendation thumbnails fill their media area without stretching. */
+.cp-root .search-suggestions .search-topic-grid img,
+.cp-root .search-suggestions .search-app-grid img,
+.mh-root .search-suggestions .search-topic-grid img,
+.mh-root .search-suggestions .search-app-grid img{object-fit:cover!important;object-position:center}

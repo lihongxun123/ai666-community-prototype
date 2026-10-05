@@ -4,6 +4,7 @@
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events -- The dialog backdrop closes on pointer click; its content stops propagation. */
 import {useEffect,useRef,useState,useSyncExternalStore} from 'react';
 import Link from 'next/link';
+import '../content-card-tokens.css';
 import './prototype.css';
 import {workRatios} from '../c-prototype/work-feed';
 import {prototypeStore} from '../c-prototype/storage';
@@ -11,9 +12,10 @@ import {DesktopHeader} from '../community-header';
 import CreationWorkbench from './workbench';
 import {useFeatured,workSampleId} from '../c-prototype/featured';
 import {useB} from '../b-prototype/store';
+import {contentCategories,normalizeContentCategory,sampleWorkCategories} from '../c-prototype/content-categories';
 import {subscribeSlots,slotSnapshot,readPublishedSlots,resolveSlotTarget} from '../c-prototype/slots';
 
-type Work={id:string;title:string;image:string;ratio:string;category:string;author:string;likes:string;source?:string;recordId?:string;type?:'应用'|'视频'};
+type Work={id:string;title:string;image:string;ratio:string;category:string;author:string;likes:string;source?:string;recordId?:string;type?:'视频'};
 const A='/home-prototype/';
 const works:Work[]=[
  {id:'girl',title:'夏日的转角',image:'girl',ratio:'9/16',category:'IP与文创',author:'周与斯',likes:'1.2k'},
@@ -25,23 +27,22 @@ const works:Work[]=[
  {id:'sea',title:'日落之前',image:'sea',ratio:'16/9',category:'摄影',author:'陈屿',likes:'726',type:'视频'},
  {id:'tram',title:'下一站，海边',image:'tram',ratio:'4/3',category:'生活',author:'她与海',likes:'981'},
  {id:'underwater',title:'沉入一场蓝色的梦',image:'underwater',ratio:'9/16',category:'设计与视觉',author:'拾光',likes:'3.1k'},
- {id:'leaves',title:'产品换背景',image:'leaves',ratio:'9/16',category:'电商营销',author:'林间',likes:'2.6k',type:'应用'},
  {id:'dog',title:'快乐没有理由',image:'dog',ratio:'1/1',category:'生活',author:'小野',likes:'1.1k'},
  {id:'interior',title:'在海边住一下午',image:'interior',ratio:'4/3',category:'生活',author:'林间',likes:'536'},
  {id:'anime',title:'风从蓝色花间经过',image:'anime',ratio:'4/3',category:'游戏',author:'Tide',likes:'982'},
  {id:'perfume',title:'一瓶夏日晴光',image:'perfume',ratio:'4/3',category:'电商营销',author:'鹿与光',likes:'617'},
- {id:'restore',title:'照片修复',image:'restore',ratio:'4/3',category:'历史',author:'多元拾光',likes:'1.4k',type:'应用'},
+ {id:'restore',title:'旧照修复练习',image:'restore',ratio:'4/3',category:'历史',author:'林间',likes:'1.4k'},
 ];
-const categories=['全部','电商营销','设计与视觉','IP与文创','摄影','写作','游戏','科普','历史','生活'];
+const categories=contentCategories;
 const topics=[{title:'电商营销',image:'perfume',category:'电商营销'},{title:'角色设计',image:'anime',category:'IP与文创'},{title:'图像修复',image:'restore',category:'历史'},{title:'写作表达',image:'writing',category:'写作'}];
 const services:Record<string,string>={'AI应用':'/proposal-fusion/apps-index-v4.png','圈子':'/proposal-one/circles-index-v1.png','活动中心':'/proposal-fusion/activities-v1.png','AI商城':'/proposal-fusion/shop-v1.png','邀请有礼':'/proposal-fusion/invite-v2.png','通知':'/proposal-fusion/notifications-v1.png','积分':'/proposal-fusion/audit-points-v1.png','我的':'/proposal-fusion/my-center-v2.png'};
 function Icon({name,className=''}:{name:string;className?:string}){return <img className={'hp-icon '+className} src={A+'icons/'+name+'-line.svg'} alt="" aria-hidden="true"/>;}
 
-export default function HomePrototype(){
+export default function HomePrototype({navigate}:{navigate?:(target:string)=>void}={}){
  const featured=useFeatured(),contentDB=useB();
  useSyncExternalStore(subscribeSlots,slotSnapshot,()=> '');
  const slots=readPublishedSlots('pc'),banner=slots.find(s=>s.type==='首页 Banner');
- const [category,setCategory]=useState('全部'),[search,setSearch]=useState('');
+ const [category,setCategory]=useState(()=>{const saved=prototypeStore.getItem('cp-home-pc-category');return saved&&categories.includes(saved)?saved:'全部';}),[search,setSearch]=useState('');
  const [modal,setModal]=useState(''),[selected]=useState<Work|null>(null),[saved,setSaved]=useState<string[]>([]),[liked,setLiked]=useState<string[]>([]),[toast,setToast]=useState(''),[_signed]=useState(false);
  useEffect(()=>{if(new URLSearchParams(location.search).get('open')==='model-plaza')setModal('模型广场');},[]);
  const [prompt,setPrompt]=useState('');
@@ -49,22 +50,22 @@ export default function HomePrototype(){
  useEffect(()=>{if(modal){dialog.current?.showModal();document.body.style.overflow='hidden';}else{dialog.current?.close();document.body.style.overflow='';}return()=>{document.body.style.overflow='';};},[modal]);
  useEffect(()=>()=>{if(timer.current)clearTimeout(timer.current)},[]);
  const notify=(text:string)=>{setToast(text);if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setToast(''),2500);};
- const route=(target:string)=>{const [id,rest]=target.split('?');window.location.assign('/community-options/c-prototype?page='+id+(rest?'&'+rest:'')+'&origin=pc&device=pc');};
+ const route=(target:string)=>{if(navigate){navigate(target);return;}const [id,rest]=target.split('?');window.location.assign('/community-options/c-prototype?page='+id+(rest?'&'+rest:'')+'&origin=pc&device=pc');};
  const topicRoute=(image:string)=>route('topic'+(image==='perfume'?'':'?theme='+({anime:'character',restore:'restore',writing:'writing'} as Record<string,string>)[image]));
  const open=(name:string)=>{const targets:Record<string,string>={topics:'topics','AI应用':'apps','圈子':'circles','活动中心':'activities','AI商城':'shop','邀请有礼':'invite','通知':'notifications','积分':'points','我的':'mine','签到':'checkin',saved:'favorites',flash:'post-edit?state=post',create:'create'};if(targets[name]){route(targets[name]);return;}setModal(name);};
 
- const chooseCategory=(value:string)=>{setCategory(value);setSearch('');};
- const openWork=(work:Work)=>{if(work.recordId){route('work?id='+work.recordId+'&item='+work.image+(work.type==='视频'?'&state=video':''));return;}route(work.type==='应用'?'app?item='+(work.id==='restore'?'restore':'background'):'work?item='+work.image+(work.type==='视频'?'&state=video':work.id==='writing'?'&state=text':''));};
+ const chooseCategory=(value:string)=>{prototypeStore.setItem('cp-home-pc-category',value);setCategory(value);setSearch('');};
+ const openWork=(work:Work)=>{if(work.recordId){route('work?id='+work.recordId+'&item='+work.image+(work.type==='视频'?'&state=video':''));return;}route('work?item='+work.image+(work.type==='视频'?'&state=video':work.id==='writing'?'&state=text':''));};
  const create=(_work?:Work)=>{if(prototypeStore.getItem('cp-auth')!=='1'){prototypeStore.setItem('cp-return','create');prototypeStore.setItem('cp-login-background','home');route('login');return;}route('create');};
  const toggleSave=(id:string)=>{setSaved(v=>v.includes(id)?v.filter(x=>x!==id):[...v,id]);notify(saved.includes(id)?'已取消收藏':'已收藏');};
  const selectedWorks:Work[]=featured?featured.works.flatMap(id=>{const r=contentDB.records.find(x=>x.id===id);if(!r||r.publicStatus!=='公开'||!r.recommended)return [];const key=workSampleId(id),old=works.find(w=>w.id===key);return [{id:key,recordId:id,source:old?A+key+'.png':r.public?.core.startsWith('/')?r.public.core:'',title:r.public?.title||'',image:key,ratio:old?.ratio||'4/3',category:old?.category||'生活',author:r.public?.author||'',likes:old?.likes||'0',type:old?.type==='视频'?'视频':undefined}];}):works;
- const filtered=selectedWorks.filter(w=>(category==='全部'||w.category===category)&&(!search||[w.title,w.category,w.author,w.type||'',w.id==='restore'?'图像修复':''].join(' ').toLowerCase().includes(search.toLowerCase())));
- const showTopics=category==='全部'&&!search;
+ const filtered=selectedWorks.filter(w=>(category==='全部'||normalizeContentCategory(sampleWorkCategories[w.id]||w.category)===normalizeContentCategory(category))&&(!search||[w.title,w.category,w.author,w.type||'',w.id==='restore'?'图像修复':''].join(' ').toLowerCase().includes(search.toLowerCase())));
+ const showTopics=true;
  const columns:Work[][]=[[],[],[],[],[]];
  filtered.forEach((w,i)=>{const col=showTopics?(i<3?i+2:(i-3)%5):i%5;columns[col].push(w);});
  const renderWork=(w:Work)=><button key={w.id} className="hp-work" style={{aspectRatio:workRatios[w.id]||w.ratio}} onClick={()=>openWork(w)} aria-label={'查看作品：'+w.title}>
-  {w.recordId&&!w.source?<p>封面暂不可用</p>:<img src={w.source||A+w.image+'.png'} alt={w.title} loading="lazy"/>}{w.type==='应用'&&<span className="hp-kind"><Icon name="image"/>应用</span>}{w.type==='视频'&&<><span className="hp-play"><img className="hp-icon" src="/home-prototype/icons/play-fill.svg" alt="" aria-hidden="true"/></span><span className="hp-time">00:03</span></>}
-  <span className="hp-work-info"><strong>{w.title}</strong><span><img src={A+'portrait.png'} alt=""/>{w.author}<span className="hp-metrics"><Icon name={w.type==='应用'?'play-circle':'heart'}/>{w.likes}</span></span></span>
+  {w.recordId&&!w.source?<p>封面暂不可用</p>:<img src={w.source||A+w.image+'.png'} alt={w.title} loading="lazy"/>}{w.type==='视频'&&<><span className="hp-play"><img className="hp-icon" src="/home-prototype/icons/play-fill.svg" alt="" aria-hidden="true"/></span><span className="hp-time">00:03</span></>}
+  <span className="hp-work-info"><strong>{w.title}</strong><span><img src={A+'portrait.png'} alt=""/>{w.author}<span className="hp-metrics"><Icon name={'heart'}/>{w.likes}</span></span></span>
  </button>;
  return <div className="hp-root">
   <DesktopHeader go={route} onHome={()=>{chooseCategory('全部');window.scrollTo({top:0,behavior:'smooth'})}} onModels={()=>open('模型广场')}/>
@@ -72,13 +73,13 @@ export default function HomePrototype(){
   <section className="hp-shortcuts" aria-label="快捷创作">{slots.filter(s=>s.type==='金刚区').map(slot=>{const target=resolveSlotTarget(slot.target)?.page||'home';const [sub,icon]=({'MakeNow':['无限画布','brush'],'一句话生成':['想法变成画面','play-circle'],'模型直通车':['找到合适模型','box-3'],'发布帖子':['分享创作想法','lightbulb']} as Record<string,string[]>)[slot.target]||['','arrow-right-s'];return <button key={slot.id} onClick={()=>target==='makenow'?open('MakeNow'):target==='model-plaza'?open('模型广场'):target==='create'?create():route(target)}><Icon name={icon}/><span><strong>{slot.title}</strong>{sub&&<small>{sub}</small>}</span><Icon name="arrow-right-s"/></button>;})}</section>
   <section id="hp-feed" className="hp-feed"><nav className="hp-categories" aria-label="内容分类">{categories.map(c=><button aria-pressed={c===category} className={c===category?'active':''} key={c} onClick={()=>chooseCategory(c)}>{c}</button>)}</nav>
    {search&&<div className="hp-search-summary"><span>“{search}” · {filtered.length} 项内容</span><button onClick={()=>{setSearch('');}}>清除搜索<Icon name="close"/></button></div>}
-   {filtered.length===0?<div className="hp-empty"><Icon name="search"/><h2>暂时没有相关内容</h2><p>换个关键词，或看看其他创作。</p><button onClick={()=>chooseCategory('全部')}>浏览全部</button></div>:<div className="hp-waterfall">{columns.map((col,i)=><div className="hp-column" key={i}>{showTopics&&i<2&&<div className="hp-topic-stack">{[topics[i],topics[i+2]].map(t=><button key={t.title} className="hp-topic" onClick={()=>{topicRoute(t.image);}}><img src={A+t.image+'.png'} alt=""/><span className="hp-topic-tag">专题</span><strong>{t.title}<Icon name="arrow-right-s"/></strong></button>)}</div>}{col.map(renderWork)}</div>)}</div>}
+   {filtered.length===0?<div className="hp-empty"><Icon name="search"/><h2>暂时没有相关内容</h2><p>换个关键词，或看看其他创作。</p><button onClick={()=>chooseCategory('全部')}>浏览全部</button></div>:null}<div className="hp-waterfall">{columns.map((col,i)=><div className="hp-column" key={i}>{showTopics&&i<2&&<div className="hp-topic-stack">{[topics[i],topics[i+2]].map(t=><button key={t.title} className="hp-topic" onClick={()=>{topicRoute(t.image);}}><img src={A+t.image+'.png'} alt=""/><span className="hp-topic-tag">专题</span><strong>{t.title}<Icon name="arrow-right-s"/></strong></button>)}</div>}{col.map(renderWork)}</div>)}</div>
    
   </section></main>
   <button className="hp-floating-create" aria-label="打开轻创作体验" onClick={()=>create()}><Icon name="sparkling"/><span>输入灵感，即刻体验</span><span className="hp-floating-arrow"><Icon name="arrow-up"/></span></button>
   {toast&&<output className="hp-toast"><Icon name="check"/>{toast}</output>}
   <dialog ref={dialog} className={'hp-dialog '+(modal==='create'?'hp-create-dialog':'')} onCancel={()=>setModal('')} onClick={e=>{if(e.target===e.currentTarget)setModal('');}}><div className="hp-dialog-body"><button className="hp-close" aria-label="关闭" onClick={()=>setModal('')}><Icon name="close"/></button>
-  {modal==='work'&&selected&&<div className="hp-detail"><div className="hp-detail-image"><img src={A+selected.image+'.png'} alt={selected.title}/>{selected.type==='视频'&&<span className="hp-video-note">视频封面预览 · 00:03</span>}</div><aside><span className="hp-eyebrow">{selected.category}</span><h1>{selected.title}</h1><div className="hp-author"><img src={A+'portrait.png'} alt=""/><span>{selected.author}<small>分享每一次创作</small></span></div><p>用光线、色彩和一点想象，留下这个瞬间。</p><div className="hp-detail-actions"><button onClick={()=>setLiked(v=>v.includes(selected.id)?v.filter(x=>x!==selected.id):[...v,selected.id])} aria-pressed={liked.includes(selected.id)}><Icon name="heart"/>{liked.includes(selected.id)?'已喜欢':selected.likes}</button><button onClick={()=>toggleSave(selected.id)} aria-pressed={saved.includes(selected.id)}><Icon name="bookmark"/>{saved.includes(selected.id)?'已收藏':'收藏'}</button></div><button className="hp-primary" onClick={()=>create(selected)}><Icon name="sparkling"/>{selected.type==='应用'?'使用应用':'一键同款'}</button><small className="hp-muted">使用相同灵感，创作你的版本。</small></aside></div>}
+  {modal==='work'&&selected&&<div className="hp-detail"><div className="hp-detail-image"><img src={A+selected.image+'.png'} alt={selected.title}/>{selected.type==='视频'&&<span className="hp-video-note">视频封面预览 · 00:03</span>}</div><aside><span className="hp-eyebrow">{selected.category}</span><h1>{selected.title}</h1><div className="hp-author"><img src={A+'portrait.png'} alt=""/><span>{selected.author}<small>分享每一次创作</small></span></div><p>用光线、色彩和一点想象，留下这个瞬间。</p><div className="hp-detail-actions"><button onClick={()=>setLiked(v=>v.includes(selected.id)?v.filter(x=>x!==selected.id):[...v,selected.id])} aria-pressed={liked.includes(selected.id)}><Icon name="heart"/>{liked.includes(selected.id)?'已喜欢':selected.likes}</button><button onClick={()=>toggleSave(selected.id)} aria-pressed={saved.includes(selected.id)}><Icon name="bookmark"/>{saved.includes(selected.id)?'已收藏':'收藏'}</button></div><button className="hp-primary" onClick={()=>create(selected)}><Icon name="sparkling"/>{'一键同款'}</button><small className="hp-muted">使用相同灵感，创作你的版本。</small></aside></div>}
   <CreationWorkbench active={modal==='create'} seed={selected} notify={notify}/>
   {modal==='topics'&&<section className="hp-topic-dialog"><h2>精选专题</h2><div>{topics.map(t=><button key={t.title} onClick={()=>{chooseCategory(t.category);setModal('');document.getElementById('hp-feed')?.scrollIntoView({behavior:'smooth'});}}><img src={A+t.image+'.png'} alt=""/><strong>{t.title}<Icon name="arrow-right-s"/></strong></button>)}</div></section>}
   {modal==='saved'&&<section className="hp-topic-dialog"><h2>我的收藏</h2>{saved.length?<div>{works.filter(w=>saved.includes(w.id)).map(w=><button key={w.id} onClick={()=>openWork(w)}><img src={A+w.image+'.png'} alt=""/><strong>{w.title}</strong></button>)}</div>:<p>还没有收藏，遇到喜欢的作品可以先留在这里。</p>}</section>}

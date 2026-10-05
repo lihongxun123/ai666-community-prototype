@@ -2,7 +2,7 @@ import cPlans from './product-plans-c.json';
 import bPlans from './product-plans-b.json';
 import crossPlans from './product-plans-cross.json';
 
-type Plan = { audience:string; scenario:string; need:string; role:string; rationale:string; journey:string; boundary:string; success:string };
+type Plan = { audience:string; scenario:string; need?:string; role:string; rationale?:string; journey:string; boundary:string; success:string };
 const plans:Record<string,Record<string,Plan>> = {c:cPlans,b:bPlans,cross:crossPlans};
 const productScope:Record<string,string> = {
   c:'社区以内容展示与交流为主，同时提供创作入口。用户可独立浏览、学习、体验、创作或发布，无需按固定顺序完成。',
@@ -14,8 +14,8 @@ export function ProductPlan({section,page,device,onRead}:{section:string;page:{i
   const plan=plans[section]?.[page.id];
   return <section className="rv-requirements rv-product-plan">
     <h3>{page.title} · 产品方案</h3>
-    <p className="rv-plan-context">{productScope[section]}</p>
-    {plan ? <>
+    {section!=='c'&&<p className="rv-plan-context">{productScope[section]}</p>}
+    {plan ? section==='c' ? <dl><dt>用途</dt><dd>{plan.role}</dd><dt>使用场景</dt><dd>{plan.scenario}</dd><dt>操作路径</dt><dd>{plan.journey}</dd><dt>业务边界</dt><dd>{plan.boundary}</dd><dt>验收要点</dt><dd>{plan.success}</dd></dl> : <>
       <h4>用户与场景</h4>
       <dl><dt>目标用户</dt><dd>{plan.audience}</dd><dt>使用场景</dt><dd>{plan.scenario}</dd><dt>用户问题</dt><dd>{plan.need}</dd></dl>
       <h4>页面职责与设计依据</h4>

@@ -1,0 +1,52 @@
+/* Author posts: public reading content and circles inferred from public associations. */
+.author-posts-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.author-posts-reading{min-width:0}
+.author-post-reading{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;padding:24px 0;border-bottom:1px solid #e8e8e8}
+.cp-root .author-post-copy,.cp-root .author-post-media,.cp-root .author-post-context button,.cp-root .author-participating-circles button{border:0;background:none;padding:0;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.author-post-copy{min-width:0}
+.cp-root .author-post-copy strong{font-size:19px;line-height:1.5;font-weight:600}
+.cp-root .author-post-copy p{font-size:14px;line-height:1.7;color:#717171;margin:10px 0 0}
+.author-post-media{display:block;overflow:hidden;border-radius:5px;width:100%}
+.cp-root .author-post-media img{display:block;width:100%;height:auto;max-height:240px;object-fit:contain;background:#f5f5f5}
+.author-post-context{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:#969696}
+.cp-root .author-post-context button{padding:3px 10px;border-radius:16px;background:#f3f3f3;color:#777}
+.author-post-reading .reading-actions-wrap{margin:0;min-width:0}
+.author-post-reading .reading-actions{gap:16px;flex-wrap:wrap}
+.author-post-reading .reading-actions button{color:#777;background:transparent;border:0}
+.author-post-reading .reading-actions button[aria-pressed=true]{color:#222}
+.author-post-reading .reading-icon{filter:grayscale(1)}
+.author-participating-circles{border-top:1px solid #e8e8e8;padding-top:24px}
+.cp-root .author-participating-circles h3{font-size:19px;margin:0 0 20px}
+.cp-root .author-participating-circles>button{display:flex;align-items:center;gap:16px;width:100%;padding:20px 0;border-bottom:1px solid #eee}
+.cp-root .author-participating-circles>button img{width:64px;height:64px;object-fit:cover;border-radius:50%;flex-shrink:0}
+.author-participating-circles>button span{display:grid;gap:8px;min-width:0}
+.author-participating-circles strong{font-size:15px;font-weight:600}
+.author-participating-circles small,.author-participating-circles>p{font-size:13px;color:#888;line-height:1.6}
+.cp-root.cp-desktop[data-page=author] .author-public-profile{position:relative;display:block;padding:28px 0 32px;min-height:174px;background:#fafafa;border:0;border-radius:0}
+.cp-root.cp-desktop[data-page=author] .author-public-profile .reading-author{gap:24px;padding-left:128px;min-height:72px}
+.cp-root.cp-desktop[data-page=author] .author-public-profile .reading-avatar.large{width:104px;height:104px;border-radius:50%;background:#ededed;color:#555;font-size:36px;flex:none}
+.cp-root.cp-desktop[data-page=author] .author-public-profile .reading-author h2{font-size:28px;margin:0 0 6px}
+.cp-root.cp-desktop[data-page=author] .author-public-profile .reading-button{background:#191919;color:#fff;border-color:#191919;border-radius:24px;padding:9px 24px}
+.cp-root.cp-desktop[data-page=author] .author-public-bio{padding-left:128px;max-width:720px;font-size:14px;color:#888;line-height:1.7}
+.cp-root.cp-desktop[data-page=author] .author-public-stats{position:absolute;right:0;bottom:28px;display:flex;width:auto;padding:0;border:0;background:none;gap:0}
+.cp-root.cp-desktop[data-page=author] .author-public-stats>div{min-width:84px;padding:0 18px;border-left:1px solid #e6e6e6}
+.cp-root.cp-desktop[data-page=author] .author-public-stats strong{font-size:22px;color:#222}
+.cp-root.cp-desktop[data-page=author] .author-public-tabs{margin:24px 0 0;gap:32px;border-bottom:1px solid #e5e5e5}
+.cp-root.cp-desktop[data-page=author] .author-public-tabs button.active{color:#222;border-color:#222;background:none}
+.cp-root.cp-desktop[data-page=author] .author-posts-layout{grid-template-columns:minmax(0,1fr) 280px;gap:36px}
+.cp-root.cp-desktop[data-page=author] .author-post-reading{grid-template-columns:minmax(0,1fr) 260px;grid-template-rows:auto auto;gap:14px 24px;padding:28px 0}
+.cp-root.cp-desktop[data-page=author] .author-post-copy{grid-column:1;grid-row:1}
+.cp-root.cp-desktop[data-page=author] .author-post-copy strong{font-size:23px;line-height:1.5}
+.cp-root.cp-desktop[data-page=author] .author-post-copy p{font-size:15px;line-height:1.8}
+.cp-root.cp-desktop[data-page=author] .author-post-media{grid-column:2;grid-row:1;align-self:start;width:260px}
+.cp-root.cp-desktop[data-page=author] .author-post-media img{height:148px;object-fit:cover}
+.cp-root.cp-desktop[data-page=author] .author-post-context{grid-column:1;grid-row:2;align-self:end;display:grid;justify-items:start;gap:14px}
+.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions-wrap{grid-column:2;grid-row:2;align-self:end}
+.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions{gap:12px;justify-content:flex-end;font-size:12px}
+.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions button{font-size:0;display:inline-flex;align-items:center;gap:6px;padding:0;min-width:0;min-height:28px;border:0;background:none}
+.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions button>span{font-size:12px}
+.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions button:last-child>span{font-size:0}
+.cp-root.cp-desktop[data-page=author] .author-post-reading:not(.has-media) .author-post-copy{grid-column:1/-1}
+.cp-root.cp-desktop[data-page=author] .author-participating-circles{border-left:1px solid #eee;border-top:0;padding:28px 0 0 30px}
+@media(max-width:1100px){.cp-root.cp-desktop[data-page=author] .author-posts-layout{grid-template-columns:minmax(0,1fr) 220px;gap:24px}.cp-root.cp-desktop[data-page=author] .author-post-reading{grid-template-columns:minmax(0,1fr) 200px;gap:14px 18px}.cp-root.cp-desktop[data-page=author] .author-post-media{width:200px}.cp-root.cp-desktop[data-page=author] .author-public-stats{position:static;margin-top:24px;justify-content:flex-end}.cp-root.cp-desktop[data-page=author] .author-post-copy strong{font-size:20px}.cp-root.cp-desktop[data-page=author] .author-post-reading .reading-actions{gap:10px}}
+.cp-root.cp-desktop[data-page=author] .author-post-copy{align-self:start;display:block}.cp-root.cp-desktop[data-page=author] .author-participating-circles h3{font-size:20px;font-weight:650}

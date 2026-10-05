@@ -15,7 +15,6 @@ export function AppIntroduction({input,output,provider,conditions}:{input:string
    <section><h3>得到什么</h3><p>{output||'查看应用说明中的结果形式。'}</p></section>
   </div>
   {condition&&!defaultConditions.includes(condition)&&<p className="app-introduction-condition">{condition}</p>}
-  <p className="app-introduction-platform">在 MakeNow 使用，费用、进度和结果在该平台查看。</p>
   {provider&&<p className="app-introduction-provider">由 {provider} 提供</p>}
  </div>;
 }
