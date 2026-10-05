@@ -203,6 +203,7 @@ export default function Review() {
       className={'rv-shell' + (homeSample && !common ? ' rv-home-sample' : '')}
     >
       <aside className="rv-sidebar">
+        <a className="rv-research-link" href="/">← 返回研究室</a>
         <h1>多元拾光</h1>
         <p>原型阅读台</p>
         <div className="rv-sections">

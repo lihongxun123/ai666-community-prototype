@@ -116,3 +116,5 @@ html:has(.rv-shell),body:has(.rv-shell){height:100%;overflow:hidden}
 
 .rv-page-tree .rv-nav-branch{margin:2px 0 6px}.rv-page-tree .rv-nav-branch .rv-nav-parent{margin-left:0!important;width:100%!important}.rv-page-tree .rv-nav-branch .rv-nav-child{margin-left:14px!important;width:calc(100% - 14px)!important;font-size:12px}
 .rv-common-requirements{border-top:1px solid #e5e7eb;margin-top:20px;padding-top:14px}.rv-common-requirements>summary{cursor:pointer;font-weight:600;line-height:1.7}.rv-common-requirements[open]>summary{margin-bottom:18px}.rv-page-requirements .rv-document h4{margin:24px 0 10px}.rv-page-requirements .rv-document>h4:first-child{margin-top:0}.rv-page-requirements .rv-document{line-height:1.75}.rv-page-requirements .rv-document table{line-height:1.65}
+
+.rv-research-link{display:inline-flex;align-items:center;min-height:32px;margin:0 0 12px;padding:4px 8px;border:1px solid #d9dce2;border-radius:6px;color:#586172;text-decoration:none;font-size:12px}.rv-research-link:hover{background:#eff1f4;color:#20242b}.rv-research-link:focus-visible{outline:2px solid #646b76;outline-offset:2px}

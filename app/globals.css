@@ -428,3 +428,7 @@ html.site-overlay-scrollbars::-webkit-scrollbar,html.site-overlay-scrollbars *::
 .site-scrollbar-layer[popover]{position:fixed;inset:0;width:100vw;height:100vh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;overflow:visible}.site-scrollbar-layer::backdrop{background:transparent;pointer-events:none}
 /* Form focus uses the control itself, without an additional outer frame. */
 :is(input,textarea,select,[contenteditable="true"],[role="textbox"],[role="combobox"],[role="listbox"],[role="spinbutton"]):is(:focus,:focus-visible,:active){outline:none!important;outline-offset:0!important;box-shadow:none!important}
+
+/* Explicit entry between research documents and the prototype reader. */
+.research-prototype-entry{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:34px;padding:6px 12px;border:1px solid #252a32;border-radius:6px;background:#252a32;color:#fff;text-decoration:none;font-size:13px;font-weight:500;white-space:nowrap}.research-prototype-entry:hover{background:#41464f;color:#fff}.research-prototype-entry:focus-visible{outline:2px solid #646b76;outline-offset:3px}.current-product-links{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.current-product-links a.research-prototype-entry{color:#fff;text-decoration:none}

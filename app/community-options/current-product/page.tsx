@@ -4,7 +4,7 @@ import '../briefs/briefs.css';
 
 export default function Page() {
   return <main className="ms-report proposal-brief">
-    <p><Link href="/">← 研究总览</Link></p>
+    <p className="current-product-links"><Link href="/">← 研究总览</Link><Link className="research-prototype-entry" href="/community-options/prototype-review?section=c&amp;view=home&amp;device=pc&amp;reading=prototype">查看产品原型 →</Link></p>
     <header><p>多元拾光 / 当前产品方案</p><h1>发现 AI 创作，学习方法，交流与分享</h1>
       <p>社区把作品、教程、专题、圈子和 AI 应用介绍组织起来，让用户找到值得看的内容、理解可用的方法，并按自己的需要交流或开始创作。</p>
     </header>
