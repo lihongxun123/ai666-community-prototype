@@ -4,14 +4,14 @@
 
 ## 当前发布
 
-- 发布目录：`/opt/research-room/releases/20261007-01`。
+- 发布目录：`/opt/research-room/releases/20261007-02`。
 - Compose、非敏感发布目录变量：`/opt/research-room/compose.yaml`、`/opt/research-room/.env`。
 - 容器：`research-room`，只监听主机 `127.0.0.1:3100`，由现有 OpenResty 代理；内存上限 1 GiB，自动重启与日志轮转已配置。
 - 独立站点配置：`/opt/1panel/www/conf.d/research.yuandaokeji.com.conf`。
-- 安装包：`/home/admin/research-20261007-final-node.tar.gz`，188990694 字节。
-- SHA-256：`1d952d0d8b25af4aa30f4491c4725047fd5ff3f87662f2ae484980cd7c3d9f07`，服务器校验通过。
-- 本地对应产物：仓库 `tmp/research-release-20261007/dist/standalone`。源码提交 `6d9faee15081195e9d49cb0ebffdf340559bceb6`，GitHub 标签 `research-20261007-final`。包含当前 C/B 原型及两期需求阅读台；第二期设计进行中。
-- 回退目录：`/opt/research-room/releases/20261006-01`；上一配置保存在 `.env.previous-20261007-01`。
+- 安装包：`/home/admin/research-20261007-02-node.tar.gz`，188989512 字节。
+- SHA-256：`c81dd6543f3cac5a3a0b92b960d6c07f99e4a07cc038af75fa8fee616fc3271d`，服务器校验通过。
+- 本地对应产物：仓库 `tmp/research-release-20261007/dist/standalone`。源码提交 `5fe8ac1b0aa6a08aed2b35ff1122fdc70de17e0a`，GitHub 标签 `research-20261007-02`。包含当前 C/B 原型及两期需求阅读台；第二期设计进行中。
+- 回退目录：`/opt/research-room/releases/20261007-01`；上一配置保存在 `.env.previous-20261007-02`。
 
 ## 更新与回退
 
@@ -43,6 +43,7 @@ sudo journalctl -u research-cert-renew.service -n 30
 
 服务器安装包SHA-256与本地一致。容器healthy；HTTPS返回200、HTTP返回301。线上检查B端增长分析、C端PC/移动首页、两期分组与第二期设计进行中说明，页面正常加载。原有8个容器保持运行，磁盘约22 GiB可用。
 
-构建后添加的dist/client/release.json仅作为包内版本标记，未进入Vinext静态资源登记，公网不以此地址验收；版本以包哈希、容器挂载目录及发布提交共同核对。既有lint与浏览器日志限制沿用专项报告，不声称全局零错误。
+包根目录RELEASE.json记录发布目录与源码提交；版本以包哈希、容器挂载目录及发布提交共同核对。既有lint与浏览器日志限制沿用专项报告，不声称全局零错误。
 
-上线截图：仓库 `tmp/research-live-20261007.png`。真实AI666业务系统未发布。
+上线截图：仓库 `tmp/research-live-20261007-02.png`。真实AI666业务系统未发布。
+本次增量：阅读台集中公共说明、简化分期名称与状态、移除顶部范围卡片、隐藏单正常状态入口；移动作品卡不显示副标题，PC保持原样。类型、106项需求登记、独立构建、图片引用与定向独立复核通过，正式页面抽查通过。
