@@ -105,9 +105,10 @@ const localFlows:Record<string,string[]>={
 const requirements:Record<string,Record<string,string>>={c:cRequirements,b:bRequirements,cross:crossRequirements};
 export function PageRequirements({section,page}:{section:string;page:{id:string;title:string;module:string;states:string[]}}){
  const text=requirements[section]?.[page.id];
- const handoff=cPendingRequirements.text.slice(cPendingRequirements.text.indexOf('| 编号 |')).split('\n## ')[0].trim();
- return <section className="rv-requirements rv-page-requirements" aria-label={page.title+'页面需求'}><h3>{page.title}</h3>{text?<DocumentBlocks text={section==='c'?text.replace(/^### [^\n]+\n\n/,''):text}/>:<p role="alert">该页面需求尚未配置。</p>}{section==='c'&&<><details className="rv-common-requirements"><summary>公共规则</summary><DocumentBlocks text={cCommonRequirements.text}/></details><details className="rv-common-requirements"><summary>研发对接项</summary><DocumentBlocks text={handoff}/></details></>}</section>;
+ return <section className="rv-requirements rv-page-requirements" aria-label={page.title+'页面需求'}><h3>{page.title}</h3>{text?<DocumentBlocks text={section==='c'?text.replace(/^### [^\n]+\n\n/,''):text}/>:<p role="alert">该页面需求尚未配置。</p>}</section>;
 }
+export function SharedRequirements(){const handoff=cPendingRequirements.text.slice(cPendingRequirements.text.indexOf('| 编号 |')).split('\n## ')[0].trim();return <section className="rv-requirements"><h3>交付范围</h3><p>“已完成”表示设计已完成，不表示研发上线。第一期为社区功能与UI/UX改版；第二期为MakeNow深度互通，设计进行中。</p><h3>B端公共约定</h3><p>后台负责内容供给、审核、上下架与运营配置。PC承接编辑、审核和运营操作，不单独设计移动后台。真实接口、权限与计费由研发对接。</p><h3>C端公共规则</h3><DocumentBlocks text={cCommonRequirements.text}/><h3>研发对接项</h3><DocumentBlocks text={handoff}/></section>;}
+
 function targetTitle(target:string,device:string){const panelLabels:Record<string,string>={'my-content':'我的内容',drafts:'草稿箱',records:'生成记录',favorites:'我的收藏',submissions:'我的投稿','my-relations':'我的关注','my-circles':'我的圈子','my-fans':'我的粉丝'};if(panelLabels[target])return panelLabels[target];const [prefix,id]=target.includes(':')?target.split(':'):['c',target];const key=prefix==='c'?deviceDestination(id.split('?')[0],id.split('?')[1]||'',device).id:id.split('?')[0];return (prefix==='b'?bPages:prefix==='cross'?crossPages:allPages).find(p=>p.id===key)?.title||target;}
 function flowEdges(section:string,id:string,device:string):Edge[]{
  if(section==='c'&&id==='create'&&device!=='pc')return routes.create.map(edge=>edge[1]==='create-result'?[edge[0],'create','打开当前任务完整结果，不新增独立页面','工作台内结果视图']:edge);

@@ -1,6 +1,6 @@
 'use client';
 /* oxlint-disable react/react-compiler -- Restore browser URL after server hydration. */
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import {deviceDestination,readerVisible,readerGroup} from '../navigation-model';
 import {CommonFeedback} from './common-feedback';
 import {OverlayGallery,pageOverlays} from './overlay-gallery';
@@ -13,7 +13,7 @@ import {ReviewWorkspace} from './review-workspace';
 import {iterations,pageIterations,IterationScope,DeepIntegration} from './iterations';
 import {ProductPlan} from './product-plan';
 
-import {PageRequirements,ModuleFlow} from './contracts';
+import {PageRequirements,ModuleFlow,SharedRequirements} from './contracts';
 import {TrackedFrame} from './tracked-frame';
 import {
   AnnotatedApp,
@@ -66,6 +66,7 @@ const stateLabels: Record<string, string> = {
   'image-error': '图片加载失败',
 };
 export default function Review() {
+  const sharedDialog=useRef<HTMLDialogElement>(null);
   const [iteration,setIteration]=useState(1),[chain,setChain]=useState('makenow-app'),[deepMode,setDeepMode]=useState('plan');
   const [ready,setReady]=useState(false);
   const [overlays,setOverlays]=useState(false),[overlaySelection,setOverlaySelection]=useState('');
@@ -118,6 +119,7 @@ export default function Review() {
   const showOverlays=overlays&&overlayCount>0;
   const businessStateCount=pageStates.filter(s=>s!=='normal').length;
   const hasBusinessStates=businessStateCount>0;
+  useEffect(()=>{if(!hasBusinessStates)setFlat(false);},[hasBusinessStates]);
   const inlineSingleState=businessStateCount===1;
   useEffect(()=>{
     if(ready&&flat&&!hasBusinessStates){setFlat(false);setInspected(null);setSelectedState('normal');}
@@ -211,7 +213,8 @@ export default function Review() {
     const chooseIteration=(value:number)=>{setIteration(value);setCommon(false);setNotesOpen(false);setFlat(false);setOverlays(false);setInspected(null);if(value===2){setSection('c');setPageId('app');setContext('');return;}const sec=section==='cross'?'c':section;const candidates=sections.find(s=>s.id===sec)!.pages.filter(p=>pageIterations(sec,p.id).includes(value)&&(sec!=='c'||readerVisible(p.id,device)));setSection(sec);if(!candidates.some(p=>p.id===pageId)){setPageId(candidates[0].id);setContext('');}};
   const iterationNav=<nav className="rv-iterations" aria-label="迭代分组">{iterations.map(i=><button key={i.id} aria-pressed={iteration===i.id} onClick={()=>chooseIteration(i.id)}><strong>{i.id}. {i.title}</strong><small>{i.status}</small></button>)}</nav>;
   if(!ready)return <main className="rv-main" aria-busy="true"/>;
-  if(iteration===2&&section!=='cross')return <div className="rv-shell"><aside className="rv-sidebar"><a href="/">← 返回研究室</a><h1>多元拾光</h1><p>原型阅读台</p>{iterationNav}<nav aria-label="互通链路">{[['makenow-app','AI应用'],['makenow-result','AIGC继续创作']].map(([id,label])=><button key={id} aria-current={chain===id?'page':undefined} onClick={()=>setChain(id)}>{label}</button>)}</nav></aside><main className="rv-main"><div className="rv-toolbar"><h2>MakeNow 深度互通 · 设计进行中</h2><nav>{[['plan','产品方案'],['prototype','页面原型'],['requirements','页面需求'],['flow','模块流程']].map(([id,label])=><button key={id} aria-pressed={deepMode===id} onClick={()=>setDeepMode(id)}>{label}</button>)}</nav></div><DeepIntegration chain={chain} mode={deepMode}/></main></div>;
+  const sharedPanel=<dialog ref={sharedDialog} className="rv-shared-dialog"><header><strong>公共说明</strong><button onClick={()=>sharedDialog.current?.close()} aria-label="关闭公共说明">关闭</button></header><SharedRequirements/></dialog>;
+  if(iteration===2&&section!=='cross')return <div className="rv-shell"><aside className="rv-sidebar"><a href="/">← 返回研究室</a><h1>多元拾光</h1><p>原型阅读台</p>{iterationNav}<button className="rv-shared-entry" onClick={()=>sharedDialog.current?.showModal()}>公共说明</button><nav aria-label="互通链路">{[['makenow-app','AI应用'],['makenow-result','AIGC继续创作']].map(([id,label])=><button key={id} aria-current={chain===id?'page':undefined} onClick={()=>setChain(id)}>{label}</button>)}</nav></aside>{sharedPanel}<main className="rv-main"><div className="rv-toolbar"><h2>MakeNow 互通 · 进行中</h2><nav>{[['plan','产品方案'],['prototype','页面原型'],['requirements','页面需求'],['flow','模块流程']].map(([id,label])=><button key={id} aria-pressed={deepMode===id} onClick={()=>setDeepMode(id)}>{label}</button>)}</nav></div><DeepIntegration chain={chain} mode={deepMode}/></main></div>;
   return (
     <div
       className={'rv-shell' + (homeSample && !common ? ' rv-home-sample' : '')}
@@ -232,7 +235,7 @@ export default function Review() {
             </button>
           ))}
         </div>
-        <nav aria-label="评审模块">
+        <button className="rv-shared-entry" onClick={()=>sharedDialog.current?.showModal()}>公共说明</button><nav aria-label="评审模块">
           {modules.map((m, i) => (
             <div key={m}>
               <button
@@ -281,8 +284,8 @@ export default function Review() {
         </nav>
 
       </aside>
-      <main className="rv-main">
-        {section==='cross'?<section className="rv-iteration-scope"><strong>历史跨产品方案 · 非本次定稿范围</strong><p>仅供追溯；第二期请从左侧迭代入口查看两条当前链路。</p></section>:<IterationScope iteration={iteration} section={section} page={page.id}/>}
+      {sharedPanel}<main className="rv-main">
+
         {!common && (
           <div className="rv-toolbar">
             <header className="rv-heading">
@@ -371,8 +374,8 @@ export default function Review() {
           <CommonFeedback section={section}/>
         ) : reading === 'plan' ? (
           <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
-        ) : showOverlays ? <OverlayGallery page={page.id} device={device} selection={overlaySelection} onSelect={setOverlaySelection}/> : (<ReviewWorkspace states={flat?pageStates.filter(s=>s!=='normal').map(s=>({id:s,title:stateLabels[s]||s,active:noteState===s})):[]} onStateSelect={s=>inspect(page.id,s)} mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
-          {(flat||inlineSingleState)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
+        ) : showOverlays ? <OverlayGallery page={page.id} device={device} selection={overlaySelection} onSelect={setOverlaySelection}/> : (<ReviewWorkspace states={flat?pageStates.filter(s=>s!=='normal').map(s=>({id:s,title:stateLabels[s]||s,active:noteState===s})):[]} onStateSelect={s=>inspect(page.id,s)} mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+(noteState==='normal'&&!hasBusinessStates?'':' · '+(stateLabels[noteState]||noteState))} tab={notesTab} onTab={setNotesTab} notes={noteContent}>
+          {((flat&&hasBusinessStates)||inlineSingleState)?<div className={'rv-review-cards '+(section==='c'&&device==='mobile'?'mobile':'desktop')}>
             {pageStates.filter(state=>inlineSingleState||state!=='normal').map(state=>({p:page,state})).map(({p,state})=>{
               const sampleContext=new URLSearchParams(context);
               const appItems:Record<string,string>={'app-suite':'sample-suite','app-analysis':'sample-analysis','app-music':'sample-music','app-storyboard':'sample-storyboard','app-website':'sample-website'};

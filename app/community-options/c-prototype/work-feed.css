@@ -7,3 +7,6 @@
 .wf-caption .wf-author{min-width:0;gap:5px}.wf-author>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wf-caption .wf-avatar{width:18px;height:18px;border-radius:50%;object-fit:cover;flex:none}.wf-caption>div>span:last-child{flex-shrink:0}
 
 .cp-desktop .wf-caption strong{line-height:1.35}
+
+/* Mobile work cards keep title and metadata without a secondary summary. */
+.wf-caption > .search-match-summary{display:none}.cp-desktop .wf-caption > .search-match-summary{display:block}
