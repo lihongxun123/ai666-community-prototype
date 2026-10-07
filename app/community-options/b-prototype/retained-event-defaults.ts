@@ -18,7 +18,7 @@ const activity = (code: string, name: string, cover: string, max: number, descri
 
 export const defaultEventConfigs = (): EventConfig[] => {
   const weekly = activity("meizhourenwu", "每周任务", "activity-live-weekly.png", 350,
-    "每期七天依次解锁任务，每轮每项任务仅可领取 1 次奖励。具体开放时间以活动期限及任务状态为准。", [
+    "每期七天依次解锁任务，每轮每项任务最多自动发放 1 次奖励。具体开放时间以活动期限及任务状态为准。", [
       task("weekly_browse", "第 1 天 · 浏览 5 条社区内容", "浏览 5 条社区内容，熟悉本周的灵感与作品。", 20, 5, 1, "", "去浏览"),
       task("weekly_favorite", "第 2 天 · 收藏 3 个 AI 作品", "收藏 3 个想参考的 AI 作品。", 30, 3, 2, "", "去收藏"),
       task("weekly_text_post", "第 3 天 · 发布 1 条纯文字圈子帖子", "记录一个灵感、想法或创作计划。", 40, 1, 3, "", "去发布"),
@@ -55,8 +55,8 @@ export const defaultEventConfigs = (): EventConfig[] => {
     task("invite_publish", "邀请发布", "好友完成首次发布后进入该阶段。奖励数待核对。", 0, 1, undefined, "invite.publish"),
   ];
   const newbie = activity("newbie_task", "新手任务", "activity-live-newbie.png", 150,
-    "完成注册、浏览、完善资料、首次互动和转发作品五项任务，最高领取 150 积分；完成后解锁七日成长计划。", [
-      task("newbie_register", "注册成功，领取新人积分", "完成注册后自动到账。", 20),
+    "完成注册、浏览、完善资料、首次互动和转发作品五项任务，最高获得 150 积分；完成后解锁七日成长计划。", [
+      task("newbie_register", "注册成功，获得新人积分", "完成注册后自动到账。", 20),
       task("newbie_browse", "浏览 1 个 AIGC 作品", "浏览任意作品详情。", 30, 1, undefined, "", "去浏览"),
       task("newbie_profile", "完善个人资料", "完善头像、名称、性别和个性签名。", 30, 1, undefined, "", "去完善"),
       task("newbie_interact", "完成首次互动", "首次点赞、评论或收藏任一内容。", 30, 1, undefined, "", "去互动"),
@@ -86,10 +86,10 @@ export const defaultEventConfigs = (): EventConfig[] => {
     '- 🥉 第 3 名：2,000 积分',
     '- 🎁 第 4—5 名：各 1,000 积分', '',
     '活动结束后统一人工复核，按最终有效邀请人数排名并发放奖励。', '',
-    '# 🎉 国庆七天乐｜每日任务领积分', '',
+    '# 🎉 国庆七天乐｜每日任务赚积分', '',
     '## 📅 活动时间', '',
     '10月1日至10月7日。', '',
-    '活动期间每天解锁 1 项七日任务；完成当天任务即可领取对应积分。当天未完成的任务，过期后不可补做。', '',
+    '活动期间每天解锁 1 项七日任务；完成当天任务后自动发放对应积分。当天未完成的任务，过期后不可补做。', '',
     '## 🎁 七日任务奖励', '',
     '- 完成 7 天任务，最高可获得 **350 积分**。', '',
     '## 🖼️ 每日图片作品奖励', '',

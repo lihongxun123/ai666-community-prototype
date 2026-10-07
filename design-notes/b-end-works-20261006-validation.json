@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-06",
+  "scope": "研究室B端导航与作品管理第一批，本地演示",
+  "checks": {
+    "brokenVisibleImages": 0,
+    "brokenImageReferences": 0,
+    "build": "passed",
+    "diffCheck": "passed",
+    "readerLint": "既有 no-html-link-for-pages 规则错误，非本轮新增",
+    "targetedLint": "passed: work-management/page/content/contracts",
+    "browserViewport": "1280x720",
+    "typecheck": "passed",
+    "documentHorizontalOverflow": 0,
+    "imageReferences": 2279
+  },
+  "browserVerified": [
+    "搜索、筛选、分页与返回保留条件",
+    "图片/视频/文本详情",
+    "720px编辑抽屉、必填校验与未保存确认",
+    "新建图片作品上传并提交待审核",
+    "审核拒绝及原因校验",
+    "审核结果待确认后查询",
+    "无权限编辑不打开抽屉",
+    "旧作品审核链接转同一作品详情",
+    "设为爆款、下架取消爆款、恢复不恢复爆款",
+    "阅读台需求与入口",
+    "统一新建入口：文本提交待审核、切换类型取消保留正文、视频及封面上传，视频readyState=4"
+  ],
+  "independentReview": [
+    "重复审核存储已隔离",
+    "无权限编辑入口已阻止",
+    "待确认审核通过时publicAt已补齐"
+  ],
+  "limitations": [
+    "真实接口、权限和计费未接入",
+    "其余B端模块仍为待改造底稿",
+    "未部署"
+  ]
+}

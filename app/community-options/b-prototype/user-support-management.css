@@ -1,0 +1,111 @@
+.us-root {
+  color: #243044;
+  min-width: 0;
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #e7ebf1;
+  border-radius: 6px;
+}
+.us-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.us-filter {
+  padding: 12px 0 16px;
+}
+.us-filter .ant-input {
+  max-width: 200px;
+}
+.us-filter .ant-select {
+  width: 155px;
+}
+.us-more {
+  display: flex;
+  margin-top: 12px;
+}
+.us-sub {
+  display: block;
+  color: #8c96a5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.us-root .ant-table-cell {
+  font-size: 13px;
+}
+.us-root .ant-btn-link {
+  padding-inline: 4px;
+  height: auto;
+  font-size: 13px;
+}
+.us-root .ant-btn,
+.us-root .ant-input,
+.us-root .ant-select-selector {
+  border-radius: 4px;
+}
+.us-levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  gap: 16px;
+}
+.us-level {
+  border-radius: 6px;
+  background: #f7fbfd;
+}
+.us-level-2 {
+  background: #fffaf3;
+}
+.us-level-3 {
+  background: #f8f5ff;
+}
+.us-level .ant-card-head {
+  border-color: #e4e8ee;
+  min-height: 46px;
+}
+.us-level .ant-card-head-title > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.us-level[draggable='true'] {
+  cursor: grab;
+}
+.us-level .ant-descriptions {
+  margin-bottom: 16px;
+}
+.us-activity {
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 4px;
+}
+.us-rewards {
+  padding: 16px 0;
+}
+.us-positive {
+  color: #168653;
+}
+.us-negative {
+  color: #687487;
+}
+@media (max-width: 1000px) {
+  .us-levels {
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .us-levels {
+    grid-template-columns: 1fr;
+  }
+  .us-root {
+    padding: 12px;
+  }
+  .us-toolbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .us-filter .ant-space {
+    gap: 8px !important;
+  }
+}

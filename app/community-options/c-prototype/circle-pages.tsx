@@ -7,7 +7,7 @@ import {createPortal} from 'react-dom';
 import {ActionBar} from './content-actions';
 import {Comments,PostImageGallery,postImages} from './reading';
 import {prototypeStore as storage} from './storage';
-import {samplePosts,postTarget,circleTarget,type SamplePost} from './content-data';
+import {samplePosts,postTarget,circleTarget,publicPostRows,contentMediaSrc,postDateOrder,contentCircleId,type SamplePost} from './content-data';
 import {useB} from '../b-prototype/store';
 import './circle-pages.css';
 import './circle-desktop.css';
@@ -25,7 +25,7 @@ const demoCircles:Circle[]=[
   {id:'life',name:'生活美学圈',description:'空间、器物与生活记录',cover:'interior',members:525},
   {id:'character',name:'角色创作圈',description:'人物设定、故事与画面',cover:'anime',members:409},
 ];
-const img=(name:string)=>`/home-prototype/${name}.png`;
+const img=contentMediaSrc;
 const signedIn=()=>storage.getItem('cp-auth')==='1';
 function joinKey(id:string){return 'cp-circle-joined:'+id}
 function joinedRelation(id:string){
@@ -66,6 +66,10 @@ function circles():Circle[]{
     return {id,name:row.title,description:row.detail||base?.description||'围绕创作分享与交流',cover:base?.cover||'restore',members:base?.members||128};
   });
   return [...managed,...demoCircles.filter(c=>!managed.some(row=>row.id===c.id))];
+}
+function postCircle(post:SamplePost){
+  const id=contentCircleId(post.circle||'',post.circleId);
+  return circles().find(c=>c.id===id);
 }
 function closed(id:string){return adminRows()?.some(row=>row.id==='ci-'+id&&row.status==='已关闭')||false}
 function rules(id:string){
@@ -111,7 +115,7 @@ function FeedCard({item,go}:{item:SamplePost;go:Props['go']}){
 }
 export function CirclePage({state,go}:Props){
   const [publishSlot,setPublishSlot]=useState<HTMLElement|null>(null);
-  useEffect(()=>{setPublishSlot(document.getElementById('circle-publish-slot'))},[]);
+  useEffect(()=>{const frame=requestAnimationFrame(()=>setPublishSlot(document.getElementById('circle-publish-slot')));return()=>cancelAnimationFrame(frame)},[]);
   const db=useB();
   const id=typeof window==='undefined'?'image':new URLSearchParams(window.location.search).get('item')||'image';
   const circle=circles().find(c=>c.id===id);
@@ -120,13 +124,13 @@ export function CirclePage({state,go}:Props){
   const publicRules=rules(id);
   if(state==='loading')return <div className="circle-skeleton" aria-label="正在加载圈子"/>;
   if(state==='removed'||state==='forbidden'||!circle)return <State title="圈子暂不可访问" action="返回圈子" onAction={()=>go('circles')}/>;
-  const feed=samplePosts.filter(p=>p.circle===(demoCircles.find(c=>c.id===id)?.name||circle.name)&&(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开')).sort((a,b)=>{const date=(v:string)=>{const n=v.match(/\d+/g)||[];return Number(n[0])*100+Number(n[1]);};return date(b.date)-date(a.date)||a.id.localeCompare(b.id);});
+  const feed=publicPostRows(db.records).filter(p=>postCircle(p)?.id===circle.id&&(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开')).sort((a,b)=>{return postDateOrder(b.date)-postDateOrder(a.date)||a.id.localeCompare(b.id);});
   const publish=()=>{
     if(state==='guest'||!signedIn()){loginFor(go);return}
     if(!joined){setNotice('加入圈子后即可在这里发布');return}
-    storage.setItem('cp-post-kind','post');storage.setItem('cp-circle',circle.name);go('post-publish');
+    storage.setItem('cp-post-kind','post');storage.setItem('cp-circle',circle.name);storage.setItem('cp-circle-id',circle.id);go('post-publish');
   };
-  if(state==='closed'||closed(id))return <div className="circle-pages circle-detail-page"><State title="圈子已关闭" body="这里不再接收加入和新帖子。你可以返回社区继续浏览公开内容。" action="返回社区" onAction={()=>go('community')}/></div>;
+  if(state==='closed'||closed(id))return <div className="circle-pages circle-detail-page"><State title="圈子已停用" body="这里不再接收加入和新帖子。你可以返回社区继续浏览公开内容。" action="返回社区" onAction={()=>go('community')}/></div>;
   const join=()=>{
     if(state==='guest'||!signedIn()){loginFor(go);return}
     setJoinedRelation(id,!joined);
@@ -144,11 +148,12 @@ export function CirclePage({state,go}:Props){
 
 function CircleFeedCard({post:p,go,selectCircle}:{post:SamplePost;go:Props['go'];selectCircle:(id:string)=>void}){
  const [comments,setComments]=useState(false),[expanded,setExpanded]=useState(false);
+ const circle=postCircle(p);
  const sampleIndex=Math.max(0,samplePosts.findIndex(post=>post.id===p.id));
  let ownCommentCount=0;try{ownCommentCount=JSON.parse(storage.getItem('reading-comments:'+postTarget(p.id))||'[]').length;}catch{}
  const counts={likes:36+sampleIndex*17,favorites:8+sampleIndex*3,comments:7+ownCommentCount};
  const time=({'restore-color':'3分钟前','restore-detail':'18分钟前','restore-background':'1小时前','light':'8分钟前','image-window':'26分钟前'} as Record<string,string>)[p.id]||p.date;
- return <article className="cd-post"><div className="cd-post-meta"><button className="cd-author" onClick={()=>go('author?name='+encodeURIComponent(p.author))}><span>{p.author[0]}</span><span className="cd-author-text"><strong>{p.author}</strong><small>{time}</small></span></button>{p.circle&&<button className="cd-post-circle" onClick={()=>selectCircle(demoCircles.find(c=>c.name===p.circle)?.id||'image')}><span aria-hidden="true">#</span> {p.circle}</button>}</div><div className="cd-post-open"><h2>{p.title}</h2>{expanded?p.body.map((t,i)=><p key={i}>{t}</p>):<p>{p.summary}</p>}<button className="cd-expand-post" onClick={()=>setExpanded(!expanded)}>{expanded?'收起正文':'展开全文'}</button><PostImageGallery compact images={postImages(p.id,p.image)} title={p.title}/></div><ActionBar kind="post" target={postTarget(p.id)} title={p.title} go={go} counts={counts} onComment={()=>setComments(!comments)}/>{comments&&<section className="cd-inline-comments"><button className="cd-collapse-comments" onClick={()=>setComments(false)}>收起评论</button><Comments key={p.id} target={postTarget(p.id)} kind="post" go={go} inline/></section>}</article>;
+ return <article className="cd-post"><div className="cd-post-meta"><button className="cd-author" onClick={()=>go('author?name='+encodeURIComponent(p.author))}><span>{p.author[0]}</span><span className="cd-author-text"><strong>{p.author}</strong><small>{time}</small></span></button>{circle&&<button className="cd-post-circle" onClick={()=>selectCircle(circle.id)}><span aria-hidden="true">#</span> {circle.name}</button>}</div><div className="cd-post-open"><h2>{p.title}</h2>{expanded?p.body.map((t,i)=><p key={i}>{t}</p>):<p>{p.summary}</p>}<button className="cd-expand-post" onClick={()=>setExpanded(!expanded)}>{expanded?'收起正文':'展开全文'}</button>{p.image&&<PostImageGallery compact images={postImages(p.id,p.image)} title={p.title}/>}</div><ActionBar kind="post" target={postTarget(p.id)} title={p.title} go={go} counts={counts} onComment={()=>setComments(!comments)}/>{comments&&<section className="cd-inline-comments"><button className="cd-collapse-comments" onClick={()=>setComments(false)}>收起评论</button><Comments key={p.id} target={postTarget(p.id)} kind="post" go={go} inline/></section>}</article>;
 }
 
 export function DesktopCircleCommunity({state,go}:{state:string;go:Props['go']}){
@@ -162,15 +167,15 @@ export function DesktopCircleCommunity({state,go}:{state:string;go:Props['go']})
  const name=storage.getItem('cp-profile-name')||'林间';
  const avatar=storage.getItem('cp-profile-avatar');
  const guest=state==='guest';
- const feed=samplePosts.filter(p=>(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开')&&(selected?p.circle===(demoCircles.find(c=>c.id===selected.id)?.name||selected.name):p.recommended)).sort((a,b)=>selected?((v:string)=>{const n=v.match(/\d+/g)||[];return Number(n[0])*100+Number(n[1]);})(b.date)-((v:string)=>{const n=v.match(/\d+/g)||[];return Number(n[0])*100+Number(n[1]);})(a.date):Number(b.id==='light')-Number(a.id==='light'));
+ const feed=publicPostRows(db.records).filter(p=>(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开')&&(selected?postCircle(p)?.id===selected.id:p.recommended)).sort((a,b)=>postDateOrder(b.date)-postDateOrder(a.date)||a.id.localeCompare(b.id));
  if(selectedId&&(!selected||['removed','forbidden'].includes(state)))return <State title="圈子暂不可访问" action="返回推荐" onAction={()=>selectCircle('')}/>;
- const publish=()=>{if(guest||!signedIn()){loginFor(go);return;}storage.setItem('cp-post-kind','post');if(selected){if(!isJoined(selected.id)){setNotice('加入圈子后即可在这里发布');return;}if((state==='closed'||closed(selected.id))){setNotice('圈子已关闭，暂不可发布');return;}storage.setItem('cp-circle',selected.name);}else storage.removeItem('cp-circle');go('post-publish');};
- const row=(c:Circle,join=false)=><div className="cd-circle-row" key={c.id}><button className="cd-circle-link" onClick={()=>selectCircle(c.id)}><img src={img(c.cover)} alt=""/><span><strong>{c.name}</strong><small>{join?memberCount(c).toLocaleString('zh-CN')+' 人加入':c.description}</small></span></button>{join&&<button className="cd-join" onClick={()=>{if(guest||!signedIn()){loginFor(go);return;}setJoinedRelation(c.id,true);setRevision(revision+1);setNotice('已加入圈子');}}>加入</button>}</div>;
+ const publish=()=>{if(guest||!signedIn()){loginFor(go);return;}storage.setItem('cp-post-kind','post');if(selected){if(!isJoined(selected.id)){setNotice('加入圈子后即可在这里发布');return;}if((state==='closed'||closed(selected.id))){setNotice('圈子已停用，暂不可发布');return;}storage.setItem('cp-circle',selected.name);storage.setItem('cp-circle-id',selected.id);}else {storage.removeItem('cp-circle');storage.removeItem('cp-circle-id');}go('post-publish');};
+ const row=(c:Circle,join=false)=><div className="cd-circle-row" key={c.id}><button className="cd-circle-link" aria-label={c.name} onClick={()=>selectCircle(c.id)}><img src={img(c.cover)} alt=""/><span><strong>{c.name}</strong><small>{join?memberCount(c).toLocaleString('zh-CN')+' 人加入':c.description}</small></span></button>{join&&<button className="cd-join" onClick={()=>{if(guest||!signedIn()){loginFor(go);return;}setJoinedRelation(c.id,true);setRevision(revision+1);setNotice('已加入圈子');}}>加入</button>}</div>;
  return <div className="cd-layout"><section className="cd-stream"><header className="cd-heading"><nav aria-label="圈子内容筛选"><button aria-pressed={!selected} onClick={()=>selectCircle('')}>推荐</button>{joined.map(c=><button key={c.id} aria-pressed={selected?.id===c.id} onClick={()=>selectCircle(c.id)}>{c.name}</button>)}{selected&&!joined.some(c=>c.id===selected.id)&&<button aria-pressed="true" onClick={()=>selectCircle(selected.id)}>{selected.name}</button>}</nav></header>
  {selected&&<details className="cd-pinned"><summary><span>置顶</span><strong>{selected.name} · 交流须知</strong><small>圈子管理员</small></summary><p>{rules(selected.id)?.announcement||'欢迎分享你的创作过程、经验与问题。发帖时请说明使用的方法和希望讨论的重点，让交流更有帮助。'}</p></details>}
  {state==='error'?<State title="帖子暂时加载失败" action="重试" onAction={()=>selectCircle(selectedId)}/>:state==='empty'||!feed.length?<State title="还没有公开帖子" action="发布帖子" onAction={publish}/>:feed.map(p=><CircleFeedCard key={p.id} post={p} go={go} selectCircle={selectCircle}/>)}<p className="cd-end">已经看完了，去圈子里发现更多灵感</p></section>
  <aside className="cd-sidebar"><section className="cd-user"><button className="cd-profile" onClick={()=>guest?loginFor(go):go('mine')}><span className="cd-avatar">{avatar&&!guest?<img src={avatar} alt=""/>:guest?'客':name.slice(0,1)}</span><span><strong>{guest?'欢迎来到圈子':name}</strong><small>{guest?'登录后分享灵感，加入讨论':'今天也来分享一点灵感'}</small></span><span aria-hidden="true">›</span></button><button className="cd-publish" onClick={publish}><img src="/home-prototype/icons/edit-line.svg" alt=""/>发布帖子</button></section>
- {selected&&<section className="cd-selected-circle"><header className="cd-selected-header"><img src={img(selected.cover)} alt=""/><div><h2>{selected.name}</h2><small>{memberCount(selected).toLocaleString('zh-CN')} 人加入</small></div><button className={"cd-membership"+(isJoined(selected.id)?" is-joined":"")} disabled={(state==='closed'||closed(selected.id))} onClick={()=>{if(guest||!signedIn()){loginFor(go);return;}const wasJoined=isJoined(selected.id);setJoinedRelation(selected.id,!wasJoined);setRevision(revision+1);setNotice(wasJoined?'已退出圈子':'已加入圈子');if(wasJoined)selectCircle('');}}>{(state==='closed'||closed(selected.id))?'圈子已关闭':isJoined(selected.id)?'退出圈子':'加入圈子'}</button></header><p>{rules(selected.id)?.intro||selected.description}</p>{rules(selected.id)?.announcement&&<p className="cd-announcement"><strong>公告</strong>{rules(selected.id)?.announcement}</p>}</section>}
+ {selected&&<section className="cd-selected-circle"><header className="cd-selected-header"><img src={img(selected.cover)} alt=""/><div><h2>{selected.name}</h2><small>{memberCount(selected).toLocaleString('zh-CN')} 人加入</small></div><button className={"cd-membership"+(isJoined(selected.id)?" is-joined":"")} disabled={(state==='closed'||closed(selected.id))} onClick={()=>{if(guest||!signedIn()){loginFor(go);return;}const wasJoined=isJoined(selected.id);setJoinedRelation(selected.id,!wasJoined);setRevision(revision+1);setNotice(wasJoined?'已退出圈子':'已加入圈子');if(wasJoined)selectCircle('');}}>{(state==='closed'||closed(selected.id))?'圈子已停用':isJoined(selected.id)?'退出圈子':'加入圈子'}</button></header><p>{rules(selected.id)?.intro||selected.description}</p>{rules(selected.id)?.announcement&&<p className="cd-announcement"><strong>公告</strong>{rules(selected.id)?.announcement}</p>}</section>}
  {!selected&&<section className="cd-circle-section"><header><h2>我的圈子</h2><button onClick={()=>guest?loginFor(go):go('my-circles')}>{guest?'登录':'查看全部'} ›</button></header>{guest?<p className="cd-muted">登录后查看已加入的圈子</p>:joined.length?joined.slice(0,3).map(c=>row(c)):<p className="cd-muted">加入感兴趣的圈子，和同好交流</p>}</section>}
  <section className="cd-circle-section"><header><h2>推荐圈子</h2><button onClick={()=>go('discover-circles')}>查看全部 ›</button></header><div>{suggested.filter(c=>c.id!==selected?.id).slice(0,selected?2:3).map(c=>row(c,true))}{!suggested.length&&<p className="cd-muted">你已加入全部圈子</p>}</div></section></aside><TransientFeedback message={notice} onClear={()=>setNotice('')}/></div>;
 }
@@ -181,11 +186,10 @@ export function DiscoverCircles({state,go}:Props){
  return <section className="cd-discover"><button className="cd-discover-back" onClick={()=>go('circles')}>‹ 圈子首页</button><header><div><h1>发现圈子</h1><p>找到同好，一起分享创作中的发现</p></div></header><div className="cd-discover-grid">{rows.map(c=><article key={c.id}><button className="cd-discover-open" onClick={()=>go('circles?item='+c.id)}><img src={img(c.cover)} alt=""/><strong>{c.name}</strong><p>{c.description}</p></button><footer><small>{memberCount(c).toLocaleString('zh-CN')} 人加入</small><button className="cd-join" onClick={()=>{if(isJoined(c.id)){go('circles?item='+c.id);return;}if(state==='guest'||!signedIn()){loginFor(go);return;}setJoinedRelation(c.id,true);setRevision(revision+1);setNotice('已加入圈子');}}>{isJoined(c.id)?'进入圈子':'加入圈子'}</button></footer></article>)}</div>{!rows.length&&<State title="暂时没有可发现的圈子"/>}<TransientFeedback message={notice} onClear={()=>setNotice('')}/></section>;
 }
 
-export function PostCirclePanel({circleName,go}:{circleName?:string;go:Props['go']}){
+export function PostCirclePanel({circleName,circleId,go}:{circleName?:string;circleId?:string;go:Props['go']}){
  const [,refresh]=useState(0),[notice,setNotice]=useState('');
- const original=demoCircles.find(c=>c.name===circleName);
- const circle=circles().find(c=>c.id===original?.id);
+ const circle=circles().find(c=>c.id===contentCircleId(circleName||'',circleId));
  const joined=!!circle&&isJoined(circle.id);
- const publish=()=>{if(!signedIn()){loginFor(go);return;}if(circle&&!joined){setNotice('加入圈子后即可在这里发布');return;}storage.setItem('cp-post-kind','post');if(circle)storage.setItem('cp-circle',circle.name);else storage.removeItem('cp-circle');go('post-publish');};
- return <>{circle&&<section className="pd-circle"><header><img src={img(circle.cover)} alt=""/><div><h2>{circle.name}</h2><small>{memberCount(circle).toLocaleString('zh-CN')} 人加入</small></div></header><p>{circle.description}</p><div className="pd-circle-actions"><button onClick={()=>go('circles?item='+circle.id)}>进入圈子</button><button className={joined?'pd-exit':''} disabled={closed(circle.id)} onClick={()=>{if(!signedIn()){loginFor(go);return;}setJoinedRelation(circle.id,!joined);refresh(v=>v+1);setNotice(joined?'已退出圈子':'已加入圈子');}}>{closed(circle.id)?'圈子已关闭':joined?'退出圈子':'加入圈子'}</button></div></section>}<button className="cd-publish" disabled={!!circle&&closed(circle.id)} onClick={publish}><img src="/home-prototype/icons/edit-line.svg" alt=""/>发布帖子</button><TransientFeedback message={notice} onClear={()=>setNotice('')}/></>;
+ const publish=()=>{if(!signedIn()){loginFor(go);return;}if(circle&&!joined){setNotice('加入圈子后即可在这里发布');return;}storage.setItem('cp-post-kind','post');if(circle){storage.setItem('cp-circle',circle.name);storage.setItem('cp-circle-id',circle.id);}else {storage.removeItem('cp-circle');storage.removeItem('cp-circle-id');}go('post-publish');};
+ return <>{circle&&<section className="pd-circle"><header><img src={img(circle.cover)} alt=""/><div><h2>{circle.name}</h2><small>{memberCount(circle).toLocaleString('zh-CN')} 人加入</small></div></header><p>{circle.description}</p><div className="pd-circle-actions"><button onClick={()=>go('circles?item='+circle.id)}>进入圈子</button><button className={joined?'pd-exit':''} disabled={closed(circle.id)} onClick={()=>{if(!signedIn()){loginFor(go);return;}setJoinedRelation(circle.id,!joined);refresh(v=>v+1);setNotice(joined?'已退出圈子':'已加入圈子');}}>{closed(circle.id)?'圈子已停用':joined?'退出圈子':'加入圈子'}</button></div></section>}<button className="cd-publish" disabled={!!circle&&closed(circle.id)} onClick={publish}><img src="/home-prototype/icons/edit-line.svg" alt=""/>发布帖子</button><TransientFeedback message={notice} onClear={()=>setNotice('')}/></>;
 }

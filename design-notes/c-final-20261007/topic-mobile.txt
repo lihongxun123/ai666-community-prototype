@@ -1,0 +1,36 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "专题详情" [level=1]
+  - button "分享"
+- main:
+  - article:
+    - heading "电商营销" [level=2]
+    - paragraph: 从产品图片到展示短片
+    - heading "看作品" [level=2]
+    - button "查看作品：柠檬与蓝花杯":
+      - img "柠檬与蓝花杯"
+      - strong: 柠檬与蓝花杯
+      - generic: 鹿与光
+      - img "喜欢"
+      - text: "328"
+    - heading "学方法" [level=2]
+    - button "教程 产品背景与光线的搭配 ›":
+      - text: 教程
+      - strong: 产品背景与光线的搭配
+      - generic: ›
+    - heading "试应用" [level=2]
+    - button "AI应用 产品换背景 ›":
+      - text: AI应用
+      - strong: 产品换背景
+      - generic: ›
+    - button "AI应用 产品短片制作 ›":
+      - text: AI应用
+      - strong: 产品短片制作
+      - generic: ›
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

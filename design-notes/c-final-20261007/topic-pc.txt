@@ -1,0 +1,77 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - article:
+    - button "全部专题"
+    - button "分享"
+    - text: 精选专题
+    - heading "电商营销" [level=1]
+    - paragraph: 从产品图片到展示短片
+    - navigation "精选内容预览":
+      - button "01 柠檬与蓝花杯" [pressed]:
+        - generic: "01"
+        - strong: 柠檬与蓝花杯
+      - button "02 产品背景与光线的搭配":
+        - generic: "02"
+        - strong: 产品背景与光线的搭配
+      - button "03 产品换背景":
+        - generic: "03"
+        - strong: 产品换背景
+      - button "04 产品短片制作":
+        - generic: "04"
+        - strong: 产品短片制作
+    - img "柠檬与蓝花杯"
+    - text: 作品
+    - heading "柠檬与蓝花杯" [level=2]
+    - button "查看作品"
+    - region "专题全部内容":
+      - navigation "内容类型":
+        - button "全部 5" [pressed]:
+          - text: 全部
+          - generic: "5"
+        - button "作品 2":
+          - text: 作品
+          - generic: "2"
+        - button "教程 1":
+          - text: 教程
+          - generic: "1"
+        - button "AI应用 2":
+          - text: AI应用
+          - generic: "2"
+      - button "查看作品：柠檬与蓝花杯":
+        - generic: 作品
+        - heading "柠檬与蓝花杯" [level=2]
+      - button "阅读教程：产品背景与光线的搭配":
+        - generic: 教程
+        - heading "产品背景与光线的搭配" [level=2]
+      - button "查看应用：产品换背景":
+        - generic: AI应用
+        - heading "产品换背景" [level=2]
+      - button "查看应用：产品短片制作":
+        - generic: AI应用
+        - heading "产品短片制作" [level=2]
+      - button "查看作品：在海边住一下午":
+        - generic: 作品
+        - heading "在海边住一下午" [level=2]

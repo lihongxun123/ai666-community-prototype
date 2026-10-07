@@ -22,8 +22,10 @@ function ids(file,name){
 }
 const base='app/community-options/';
 const c=[['page.tsx','homePages'],['topics.tsx','topicPages'],['applications.tsx','applicationPages'],['reading.tsx','readingPages'],['personal.tsx','personalPages']].flatMap(([file,name])=>ids(base+'c-prototype/'+file,name));
-const kinds=initializer(base+'b-prototype/store.ts','kindLabels').properties.map(p=>p.name.getText().replace(/['"]/g,''));
-const b=[...kinds.flatMap(k=>[k+'s',k+'-edit']),...ids(base+'b-prototype/content.tsx','contentPages'),...ids(base+'b-prototype/operations.tsx','operationPages')];
+const b=[...new Set([
+ ...[['work-management.tsx','worksPages'],['content-management.tsx','contentManagementPages'],['model-series-management.tsx','modelSeriesPages'],['platform-management.tsx','platformPages'],['aigc-management.tsx','aigcPages'],['retained-operations-management.tsx','retainedOperationsPages'],['page.tsx','bPages']].flatMap(([file,name])=>ids(base+'b-prototype/'+file,name)),
+ ...initializer(base+'b-prototype/operations-management.tsx','pageSpecs').elements.map(row=>row.elements[0].text)
+])];
 const cross=ids(base+'cross-prototype/data.ts','crossPages');
 const errors=[];const counts={};
 for(const [section,registered] of Object.entries({c,b,cross})){
@@ -36,8 +38,9 @@ for(const [section,registered] of Object.entries({c,b,cross})){
     if(/(?:本轮|本次修改|已精调|待确认版本|原型演示|localStorage|sessionStorage|\d+\s*px\b)/i.test(text))errors.push(`${section}/${id}: process or layout detail`);
     if(/^### [^\n]+\n(?!\n)/m.test(text))errors.push(`${section}/${id}: heading cannot render`);
   }
-  const texts=Object.values(entries);
+  const texts=registered.map(id=>entries[id]).filter(Boolean);
   if(new Set(texts).size!==texts.length)errors.push(`${section}: duplicate whole-page requirements`);
 }
+if(process.argv.includes('--registry')){console.log(JSON.stringify({c,b,cross}));process.exit(0);}
 console.log(JSON.stringify({counts,total:Object.values(counts).reduce((a,b)=>a+b,0),errors},null,2));
 if(errors.length)process.exitCode=1;

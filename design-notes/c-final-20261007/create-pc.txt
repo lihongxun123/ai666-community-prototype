@@ -1,0 +1,64 @@
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- button "返回"
+- heading "AIGC 生成" [level=1]
+- main:
+  - dialog "AIGC 生成工作台":
+    - strong: AIGC 生成
+    - generic: 让灵感成为作品
+    - button "收起 AIGC 生成工作台"
+    - article:
+      - time: 10/06 10:00
+      - generic: 图片模型 · 创意模型 · 4:3
+      - paragraph: 尝试柔和光线下的海边构图
+      - strong: 本次生成未完成
+      - generic: 请调整提示词或稍后重试
+      - button "重新编辑"
+    - article:
+      - time: 10/07 09:00
+      - generic: 图片模型 · 16:9
+      - generic: 生图挑战
+      - paragraph: 海边日落，浪花映着暖金色的光
+      - generic: 参考素材
+      - button "预览历史参考图 1":
+        - img "参考素材"
+      - img "海岸日落创作结果"
+      - button "查看生成结果": 查看结果
+      - generic: 已完成
+      - link "下载":
+        - /url: /home-prototype/sea.png
+      - button "继续调整"
+      - button "发布作品"
+    - generic: ＋
+    - generic: 0/4
+    - textbox "创作提示词":
+      - /placeholder: 描述你想生成的画面，也可以添加参考图…
+    - button "创作类型": 图片生成
+    - button "生成模型": 图片模型
+    - button "画面比例": 16:9
+    - button "投稿活动": 不参与活动
+    - button "10 积分 生成" [disabled]:
+      - text: 10 积分
+      - img "生成"
+    - generic: 内容由 AI 生成

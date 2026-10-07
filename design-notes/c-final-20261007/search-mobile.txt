@@ -1,0 +1,19 @@
+- banner:
+  - button "返回"
+  - textbox "搜索关键词":
+    - /placeholder: 输入关键词
+  - button "搜索"
+- main:
+  - heading "搜索记录" [level=2]
+  - button "清空"
+  - button "修复"
+  - button "删除搜索记录：修复": ×
+  - button "图像修复"
+  - button "删除搜索记录：图像修复": ×
+  - button "摄影"
+  - button "删除搜索记录：摄影": ×
+  - button "电商营销"
+  - button "删除搜索记录：电商营销": ×
+  - heading "推荐搜索" [level=2]
+  - button "旧照修复"
+  - button "产品海报"

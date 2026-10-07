@@ -18,12 +18,14 @@ import './reading.css';
 import './post-image-preview.css';
 import './author-concept.css';
 import {TutorialDesktopList,TutorialDesktopDetail} from './tutorial-desktop';
+import {tutorialRecordId,tutorialImage} from './tutorial-public';
+import {ContentBlockPreview} from '../b-prototype/content-media';
 import {CirclesPage,CirclePage,DesktopCircleCommunity,DiscoverCircles,PostCirclePanel} from './circle-pages';
 import {WorkDetailsExtras,WorkMedia,remixWork,workCreationInfo} from './work-details-extras';
 import {WorkFeed,workRatios} from './work-feed';
 import {CommunityLanding,communityTutorials} from './community-landing';
 import { useB } from '../b-prototype/store';
-import {samplePosts,sampleCircles,postTarget,circleTarget} from './content-data';
+import {samplePosts,sampleCircles,postTarget,circleTarget,contentMediaSrc,publicPostRows} from './content-data';
 const isDeletedTarget=deletedTarget;
 const closedCircle=(id:string)=>{
   try{const rows=JSON.parse(sessionStorage.getItem('bp-op-circles')||'[]') as {id:string;status:string}[];return rows.some(r=>r.id==='ci-'+id&&r.status==='已关闭');}catch{return false;}
@@ -106,7 +108,7 @@ export const readingPages: PageMeta[] = [
 ];
 
 const searchWorkCovers:Record<string,string>={'repair-portrait':'portrait','repair-interior':'interior','repair-color':'anime','repair-pet':'cat'};
-const img = (name: string) => `/home-prototype/${searchWorkCovers[name]||name}.png`;
+const img = (name: string) => contentMediaSrc(searchWorkCovers[name]||name);
 const icon = (name: string) => `/home-prototype/icons/${name}-line.svg`;
 const signedIn = () =>
   typeof window !== 'undefined' && sessionStorage.getItem('cp-auth') === '1';
@@ -568,7 +570,13 @@ function Tutorial({ state, go }: Props) {
   );
   const cover = detailState({ page: 'tutorial', state, go });
   if (cover) return cover;
-  if((item==='restore'&&db.records.find(r=>r.id==='tutorial-1')?.publicStatus!=='公开'))return <Panel title="教程暂不可访问" action="返回教程" onAction={()=>go('tutorials')}/>;
+  const params=new URLSearchParams(location.search),record=db.records.find(r=>r.kind==='tutorial'&&r.id===(params.get('id')||tutorialRecordId(item)));
+  if(((params.has('id')||item==='restore'||item.startsWith('tutorial-'))&&!record)||(record&&(!record.public||record.publicStatus!=='公开')))return <Panel title="教程暂不可访问" action="返回教程" onAction={()=>go('tutorials')}/>;
+  if(record?.public){
+    const d=record.public,target='tutorial?id='+record.id,body=<>{d.body.map(b=><ContentBlockPreview key={b.id} block={b} consumer/>)}</>;
+    if(params.get('device')==='pc')return <TutorialDesktopDetail id={item} go={go} published={{title:d.title,topic:record.category||d.source||'创作教程',author:d.author,summary:d.summary,cover:d.cover,sections:[],intro:body,target,commentId:record.id}}/>;
+    return <><Tag>教程</Tag><h2 className="reading-title">{d.title}</h2><p className="reading-muted">{d.author} · {record.category||d.source}</p><img className="reading-image" src={tutorialImage(d.cover)} alt={d.title}/><p className="reading-lead">{d.summary}</p><div className="reading-prose">{body}</div><ActionBar kind="tutorial" target={target} title={d.title} go={go} guest={state==='guest'}/><Comments kind={record.id} target={target} go={go} guest={state==='guest'}/></>;
+  }
   if(!communityTutorials.some(t=>t.id===item))return <Panel title="教程暂不可访问" action="返回教程" onAction={()=>go('tutorials')}/>;
   if(new URLSearchParams(location.search).get('device')==='pc')return <TutorialDesktopDetail id={item} go={go}/>;
   const liveSample=communityTutorials.find(t=>t.id===item&&t.sections.length>0);
@@ -791,7 +799,7 @@ const subscribeWorkItem = (onChange: () => void) => {
   return () => window.removeEventListener('popstate', onChange);
 };
 export function PCWorkLayout({media,info,discussion}:{media:React.ReactNode;info:React.ReactNode;discussion:React.ReactNode}){return <div className="pc-work-detail"><div className="pc-work-main"><section className="pc-work-stage" aria-label="作品内容">{media}</section><section className="pc-work-discussion" aria-label="作品讨论">{discussion}</section></div><aside className="pc-work-aside" aria-label="作品信息与操作"><div className="pc-work-info">{info}</div></aside></div>}
-export function WorkAuthor({name,go}:{name:string;go:Props['go']}){return <div className="reading-work-pc-author"><Persona followable={name!=='我'} aside={name==='我'?'我的作品':undefined} name={name} go={go}/></div>}
+export function WorkAuthor({name,go,date}:{name:string;go:Props['go'];date?:string}){return <div className="reading-work-pc-author"><Persona followable={name!=='我'} aside={date?date+' · 公开':name==='我'?'我的作品':undefined} name={name} go={go}/></div>}
 function Work({ state: requestedState, go }: Props) {
   const state=({'work-image':'normal','work-video':'video','work-text':'text'} as Record<string,string>)[requestedState]||requestedState;
   const db=useB();
@@ -1156,7 +1164,7 @@ function Author({ state, go }: Props) {
   const [notice, setNotice] = useState('');
   const cover = detailState({ page: 'author', state, go });
   if (cover) return cover;
-  const publicPosts = samplePosts.filter(p=>p.author===name&&(p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.publicStatus==='公开'));
+  const publicPosts = publicPostRows(db.records).filter(p=>p.author===name);
   // Public post associations establish participation; private account memberships are never read here.
   const participatingCircles = currentCircles().filter(c=>!closedCircle(c.id)&&publicPosts.some(p=>p.circle===c.name));
   const items: Record<

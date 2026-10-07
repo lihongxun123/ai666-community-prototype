@@ -1,0 +1,16 @@
+- banner:
+  - button "返回"
+  - heading "关注作者" [level=1]
+- main:
+  - article:
+    - generic: 林
+    - strong: 林间
+    - generic: 查看作者公开主页
+    - button "查看"
+    - button "取消关注"
+  - article:
+    - generic: 温
+    - strong: 温白
+    - generic: 查看作者公开主页
+    - button "查看"
+    - button "取消关注"

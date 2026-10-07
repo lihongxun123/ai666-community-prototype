@@ -1,0 +1,356 @@
+{
+  "navigation": [
+    {
+      "name": "作品管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=works",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "帖子管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=posts",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "教程管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=tutorials",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "AI应用管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=apps",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "评论管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=comments",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "审核工作台",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=reviews",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "模型系列",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=aigc-series",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "模型配置",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=aigc-models",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "生成记录",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=aigc-generations",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "圈子管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-circles",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "专题编排",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-topics",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "分类与标签",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-taxonomy",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "登录弹窗配置",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-login-popup",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "展示位配置",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-slots",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "活动管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-events",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "商城管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-shop",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "签到管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-checkin",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "公告管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=announcements",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "通知记录",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=notifications-admin",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "用户列表",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=users",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "注册来源",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=user-register-sources",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "邀请记录",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-invite",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "积分记录",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=op-points",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "会员等级",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=user-member-levels",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "数据总览",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?f_range=complete7&f_start=2026-09-30&f_end=2026-10-06&f_range-label=%E6%9C%80%E8%BF%91+7+%E4%B8%AA%E5%AE%8C%E6%95%B4%E6%97%A5&f_compare=previous&f_channel=all&overview_metric=G-02&overview_granularity=auto&page=analytics-overview",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "增长分析",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?f_range=complete7&f_start=2026-09-30&f_end=2026-10-06&f_range-label=%E6%9C%80%E8%BF%91+7+%E4%B8%AA%E5%AE%8C%E6%95%B4%E6%97%A5&f_compare=previous&f_channel=all&f_utm-medium=all&f_utm-campaign=all&f_utm-content=all&f_utm-term=all&f_device=all&f_browser=all&f_region=all&f_entry=all&f_attribution=first&growth_metric=new&growth_group=channel&growth_granularity=day&growth_sort=value-desc&growth_table=collapsed&f_source-type=all&page=analytics-growth",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "用户分析",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?f_range=complete30&f_start=2026-09-07&f_end=2026-10-06&f_range-label=%E6%9C%80%E8%BF%91+30+%E4%B8%AA%E5%AE%8C%E6%95%B4%E6%97%A5&f_compare=previous&f_source=all&f_utm-medium=all&f_utm-campaign=all&f_utm-content=all&f_utm-term=all&f_window=all&f_first-value=all&f_account-scope=normal&f_device=all&f_entry=all&f_browser=all&f_region=all&journey_metric=registered&journey_group=utm-campaign&journey_granularity=day&f_source-type=all&page=analytics-users",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "创作分析",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?analysis_metric=success&analysis_group=model&analysis_granularity=auto&analysis_window=7&analysis_sort=value&f_compare=previous&f_channel=all&f_series=all&f_model=all&f_output=all&f_state=all&f_activity-code=all&f_failure-group=all&f_start=2026-09-30&f_end=2026-10-06&f_range=custom&f_range-label=2026-09-30+%E8%87%B3+2026-10-06&page=analytics-creation",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "内容生态",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?analysis_metric=submitted&analysis_group=work-type&analysis_granularity=auto&analysis_window=7&analysis_sort=value&f_compare=previous&f_channel=all&f_type=all&f_author=user&f_work-type=all&f_state=all&f_source=all&f_topic=all&f_content=all&f_start=2026-09-30&f_end=2026-10-06&f_range=custom&f_range-label=2026-09-30+%E8%87%B3+2026-10-06&page=analytics-content",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "活动与激励",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?analysis_metric=participants&analysis_group=activity&analysis_granularity=auto&analysis_window=7&analysis_sort=value&f_compare=previous&f_channel=all&f_activity=all&f_period=all&f_task=all&f_participation-mode=all&f_reward-state=all&f_points-source=all&f_exchange=all&f_trigger=all&f_task-day=all&f_start=2026-09-30&f_end=2026-10-06&f_range=custom&f_range-label=2026-09-30+%E8%87%B3+2026-10-06&page=analytics-activity",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "质量与异常",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?analysis_metric=reviewBacklog&analysis_group=severity&analysis_granularity=auto&analysis_window=7&analysis_sort=value&f_compare=previous&f_channel=all&f_severity=all&f_domain=all&f_object-state=all&f_type=all&f_start=2026-09-30&f_end=2026-10-06&f_range=custom&f_range-label=2026-09-30+%E8%87%B3+2026-10-06&page=analytics-quality",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "指标中心",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=analytics-metrics",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "操作日志",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=system-logs",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "角色管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=system-roles",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "权限管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=system-permissions",
+      "main": true,
+      "error": false
+    },
+    {
+      "name": "后台用户管理",
+      "url": "http://127.0.0.1:3000/community-options/b-prototype?page=system-admins",
+      "main": true,
+      "error": false
+    }
+  ],
+  "secondary": [
+    {
+      "page": "work-detail",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "work-edit",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "post-detail",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "post-edit",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "tutorial-detail",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "tutorial-edit",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "app-detail",
+      "main": true,
+      "error": false
+    },
+    {
+      "page": "app-edit",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "aigc-model-detail",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "aigc-runtime-detail",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "op-circle-edit",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "op-topic-edit",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "op-event-edit",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    },
+    {
+      "page": "permission-example",
+      "main": true,
+      "error": false,
+      "missingObject": false
+    }
+  ],
+  "states": [
+    {
+      "page": "works",
+      "state": "empty",
+      "tail": "- columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"爆款\"\n        - columnheader \"发布时间\"\n        - columnheader \"操作\"\n    - rowgroup\n  - generic: ⌕\n  - heading \"没有符合条件的作品\" [level=3]\n  - paragraph: 调整关键词或筛选条件后再查询。\n  - button \"清空筛选\"\n  - generic: 共 0 条\n  - button \"上一页\" [disabled]: ‹\n  - button \"第1页\": \"1\"\n  - button \"下一页\" [disabled]: ›\n  - combobox \"每页展示条数\":\n    - option \"20 条/页\" [selected]\n    - option \"50 条/页\"\n    - option \"100 条/页\""
+    },
+    {
+      "page": "works",
+      "state": "error",
+      "tail": "\"用户分析\"\n    - button \"创作分析\"\n    - button \"内容生态\"\n    - button \"活动与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"操作日志\"\n    - button \"角色管理\"\n    - button \"权限管理\"\n    - button \"后台用户管理\"\n- banner:\n  - generic: 内容管理 / 作品管理\n  - generic: 运\n  - text: 内容运营\n- button \"作品管理\"\n- main:\n  - generic: \"!\"\n  - heading \"作品列表加载失败\" [level=3]\n  - paragraph: 查询条件已保留，请重新加载。\n  - button \"重新加载\""
+    },
+    {
+      "page": "op-circles",
+      "state": "load-failed",
+      "tail": "  - button \"活动与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"操作日志\"\n    - button \"角色管理\"\n    - button \"权限管理\"\n    - button \"后台用户管理\"\n- banner:\n  - generic: 运营管理 / 圈子管理\n  - generic: 运\n  - text: 内容运营\n- button \"圈子管理\"\n- main:\n  - button \"新建圈子\":\n    - generic: 新建圈子\n  - alert:\n    - img \"close-circle\":\n    - generic: 加载失败，不能视为空记录\n    - button \"重新加载\":\n      - generic: 重新加载"
+    },
+    {
+      "page": "analytics-content",
+      "state": "empty",
+      "tail": "eneric: ⌄\n    - button \"数据总览\"\n    - button \"增长分析\"\n    - button \"用户分析\"\n    - button \"创作分析\"\n    - button \"内容生态\"\n    - button \"活动与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"操作日志\"\n    - button \"角色管理\"\n    - button \"权限管理\"\n    - button \"后台用户管理\"\n- banner:\n  - generic: 数据分析 / 内容生态\n  - generic: 运\n  - text: 内容运营\n- button \"内容生态\"\n- main:\n  - img \"暂无数据\"\n  - generic: 暂无统计数据"
+    },
+    {
+      "page": "analytics-content",
+      "state": "load-failed",
+      "tail": "分析\"\n    - button \"用户分析\"\n    - button \"创作分析\"\n    - button \"内容生态\"\n    - button \"活动与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"操作日志\"\n    - button \"角色管理\"\n    - button \"权限管理\"\n    - button \"后台用户管理\"\n- banner:\n  - generic: 数据分析 / 内容生态\n  - generic: 运\n  - text: 内容运营\n- button \"内容生态\"\n- main:\n  - img \"close-circle\":\n  - generic: 加载失败\n  - button \"重新加载\":\n    - generic: 重新加载"
+    },
+    {
+      "page": "system-roles",
+      "state": "empty",
+      "tail": "neric: 重 置\n  - button \"新建角色\":\n    - generic: 新建角色\n  - table:\n    - rowgroup:\n      - row \"角色 ID 角色名称 权限摘要 状态 后台用户数 更新时间 操作\":\n        - columnheader \"角色 ID\"\n        - columnheader \"角色名称\"\n        - columnheader \"权限摘要\"\n        - columnheader \"状态\"\n        - columnheader \"后台用户数\"\n        - columnheader \"更新时间\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"暂无数据 暂无记录\":\n        - cell \"暂无数据 暂无记录\":\n          - img \"暂无数据\"\n          - generic: 暂无记录"
+    }
+  ],
+  "announcement": {
+    "detailActions": true,
+    "readCount": true,
+    "cancelPreserves": true,
+    "successOpensEditor": true,
+    "failureDoesNotOpenEditor": true
+  },
+  "consoleErrors": [
+    {
+      "level": "error",
+      "message": "Warning: [antd: Descriptions] Sum of column `span` in a line not match `column` of Descriptions.",
+      "timestamp": "2026-10-07T08:11:55.042Z",
+      "url": "http://127.0.0.1:3000/node_modules/.vite/deps/antd.js?v=4b0742cd"
+    },
+    {
+      "level": "error",
+      "message": "Warning: Instance created by `useForm` is not connected to any Form element. Forget to pass `form` prop?",
+      "timestamp": "2026-10-07T08:12:08.013Z",
+      "url": "http://127.0.0.1:3000/node_modules/.vite/deps/antd.js?v=4b0742cd"
+    }
+  ],
+  "warningResolution": {
+    "tutorialDetail": "corrected span, targeted revisit no new warning",
+    "circleEdit": "form pre-mounted, targeted revisit no new warning"
+  }
+}

@@ -1,0 +1,1685 @@
+[
+  {
+    "code": "group:data-analysis",
+    "name": "数据分析",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_data_analysis",
+    "icon": "data-analysis",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "data-analysis-overview:view",
+    "name": "数据总览",
+    "parentCode": "group:data-analysis",
+    "type": "1",
+    "front_key": "menu_data_analysis_overview",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/analytics/overview",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "data-analysis-growth:view",
+    "name": "增长分析",
+    "parentCode": "group:data-analysis",
+    "type": "1",
+    "front_key": "menu_data_analysis_growth",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/analytics/growth/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "data-analysis-user:view",
+    "name": "用户分析",
+    "parentCode": "group:data-analysis",
+    "type": "1",
+    "front_key": "menu_data_analysis_user",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/analytics/users/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "group:content",
+    "name": "内容管理",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_content",
+    "icon": "content",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "content-list:view",
+    "name": "内容列表",
+    "parentCode": "group:content",
+    "type": "1",
+    "front_key": "menu_content_list",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "content-list:edit",
+    "name": "编辑",
+    "parentCode": "content-list:view",
+    "type": "2",
+    "front_key": "action_content_list_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/set_hot_reward",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/hot_reward_result",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "content-list:offline",
+    "name": "下架",
+    "parentCode": "content-list:view",
+    "type": "2",
+    "front_key": "action_content_list_offline",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/unpublish",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "review-workbench:view",
+    "name": "审核工作台",
+    "parentCode": "group:content",
+    "type": "1",
+    "front_key": "menu_review_workbench",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/posts/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "review-workbench:approve",
+    "name": "通过",
+    "parentCode": "review-workbench:view",
+    "type": "2",
+    "front_key": "action_review_workbench_approve",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/audit",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/posts/audit",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "review-workbench:reject",
+    "name": "拒绝",
+    "parentCode": "review-workbench:view",
+    "type": "2",
+    "front_key": "action_review_workbench_reject",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/audit",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/posts/audit",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "flash-management:view",
+    "name": "闪念管理",
+    "parentCode": "group:content",
+    "type": "1",
+    "front_key": "menu_flash_management",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "flash-management:restore",
+    "name": "恢复展示",
+    "parentCode": "flash-management:view",
+    "type": "2",
+    "front_key": "action_flash_management_restore",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/publish",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "flash-management:offline",
+    "name": "下架",
+    "parentCode": "flash-management:view",
+    "type": "2",
+    "front_key": "action_flash_management_offline",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/unpublish",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "model-management:view",
+    "name": "模型管理",
+    "parentCode": "group:content",
+    "type": "1",
+    "front_key": "menu_model_management",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "model-management:edit",
+    "name": "编辑",
+    "parentCode": "model-management:view",
+    "type": "2",
+    "front_key": "action_model_management_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "tutorial-management:view",
+    "name": "教程管理",
+    "parentCode": "group:content",
+    "type": "1",
+    "front_key": "menu_tutorial_management",
+    "icon": "",
+    "sort_order": 600,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/tutorials/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "tutorial-management:create",
+    "name": "新建",
+    "parentCode": "tutorial-management:view",
+    "type": "2",
+    "front_key": "action_tutorial_management_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/tutorials/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "tutorial-management:edit",
+    "name": "编辑",
+    "parentCode": "tutorial-management:view",
+    "type": "2",
+    "front_key": "action_tutorial_management_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/tutorials/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/tutorials/publish",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/tutorials/unpublish",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/tutorials/delete",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "group:aigc",
+    "name": "AIGC管理",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_aigc",
+    "icon": "aigc",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "aigc-model-series:view",
+    "name": "模型系列",
+    "parentCode": "group:aigc",
+    "type": "1",
+    "front_key": "menu_aigc_model_series",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/series/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "aigc-model-series:edit",
+    "name": "编辑",
+    "parentCode": "aigc-model-series:view",
+    "type": "2",
+    "front_key": "action_aigc_model_series_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/series/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "aigc-model-mapping:view",
+    "name": "模型配置",
+    "parentCode": "group:aigc",
+    "type": "1",
+    "front_key": "menu_aigc_model_mapping",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/models/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "aigc-model-mapping:edit",
+    "name": "编辑",
+    "parentCode": "aigc-model-mapping:view",
+    "type": "2",
+    "front_key": "action_aigc_model_mapping_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/models/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "generation-management:view",
+    "name": "生成记录",
+    "parentCode": "group:aigc",
+    "type": "1",
+    "front_key": "menu_generation_management",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/generations/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "generation-management:fail",
+    "name": "标记失败并退还积分",
+    "parentCode": "generation-management:view",
+    "type": "2",
+    "front_key": "action_generation_management_fail",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/aigc/generations/fail",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "group:operation",
+    "name": "运营管理",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_operation",
+    "icon": "operation",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "home-slots:view",
+    "name": "展示位管理",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_home_slots",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/display_slots/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/home_navs/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/banners/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/works/ads/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "home-slots:create",
+    "name": "新建投放",
+    "parentCode": "home-slots:view",
+    "type": "2",
+    "front_key": "action_home_slots_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/display_slots/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/home_navs/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/banners/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/ads/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "home-slots:edit",
+    "name": "编辑",
+    "parentCode": "home-slots:view",
+    "type": "2",
+    "front_key": "action_home_slots_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/display_slots/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/display_slots/delete",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/home_navs/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/home_navs/delete",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/home_navs/status",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/home_navs/sort",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/banners/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/banners/delete",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/ads/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/works/ads/delete",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "login-popup-config:view",
+    "name": "登录弹窗配置",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_login_popup_config",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/login_popup/config",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/login_popup/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "login-popup-config:create",
+    "name": "新建",
+    "parentCode": "login-popup-config:view",
+    "type": "2",
+    "front_key": "action_login_popup_config_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/login_popup/batch_create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "login-popup-config:edit",
+    "name": "编辑",
+    "parentCode": "login-popup-config:view",
+    "type": "2",
+    "front_key": "action_login_popup_config_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/login_popup/save",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/login_popup/batch_create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "login-popup-config:toggle",
+    "name": "启用 / 停用",
+    "parentCode": "login-popup-config:view",
+    "type": "2",
+    "front_key": "action_login_popup_config_toggle",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/login_popup/enable",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/login_popup/disable",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/login_popup/update_status",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:view",
+    "name": "运营配置",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_operations_settings",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/categories/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/posts/topics/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/works/scenarios/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/tutorials/sections/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/system_config/sign_in_weekly/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "operations-settings:content-category-edit",
+    "name": "维护内容分类",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_content_category_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/categories/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:content-topic-edit",
+    "name": "维护内容话题",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_content_topic_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/posts/topics/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:scenario-edit",
+    "name": "维护适用场景",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_scenario_edit",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/scenarios/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:work-model-edit",
+    "name": "维护模板模型",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_work_model_edit",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/works/models/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:tutorial-section-edit",
+    "name": "维护教程板块",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_tutorial_section_edit",
+    "icon": "",
+    "sort_order": 500,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/tutorials/sections/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operations-settings:sign-in-config-edit",
+    "name": "维护签到配置",
+    "parentCode": "operations-settings:view",
+    "type": "2",
+    "front_key": "action_operations_settings_sign_in_config_edit",
+    "icon": "",
+    "sort_order": 600,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/system_config/sign_in_weekly/save",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "activity-config:view",
+    "name": "活动管理",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_activity_config",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/activities/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "activity-config:edit",
+    "name": "编辑",
+    "parentCode": "activity-config:view",
+    "type": "2",
+    "front_key": "action_activity_config_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/activities/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/activities/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/activities/delete",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "activity-config:rule",
+    "name": "任务与投稿运营",
+    "parentCode": "activity-config:view",
+    "type": "2",
+    "front_key": "action_activity_config_rule",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/activities/tasks/*",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/activities/submissions/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "activity-config:reward",
+    "name": "奖励处理",
+    "parentCode": "activity-config:view",
+    "type": "2",
+    "front_key": "action_activity_config_reward",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/activities/rewards/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operation-config:view",
+    "name": "公告配置",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_operation_config",
+    "icon": "",
+    "sort_order": 500,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/announcements/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "operation-config:announcement-create",
+    "name": "创建公告",
+    "parentCode": "operation-config:view",
+    "type": "2",
+    "front_key": "action_operation_config_announcement_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/announcements/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/announcements/update",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operation-config:announcement-publish",
+    "name": "发布公告",
+    "parentCode": "operation-config:view",
+    "type": "2",
+    "front_key": "action_operation_config_announcement_publish",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/announcements/publish",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "operation-config:announcement-revoke",
+    "name": "撤回公告",
+    "parentCode": "operation-config:view",
+    "type": "2",
+    "front_key": "action_operation_config_announcement_revoke",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/announcements/offline",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "store-config:view",
+    "name": "商城管理",
+    "parentCode": "group:operation",
+    "type": "1",
+    "front_key": "menu_store_config",
+    "icon": "",
+    "sort_order": 600,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/sites/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/products/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/card_keys/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "store-config:site-edit",
+    "name": "维护站点",
+    "parentCode": "store-config:view",
+    "type": "2",
+    "front_key": "action_store_config_site_edit",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/sites/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "store-config:product-edit",
+    "name": "维护产品",
+    "parentCode": "store-config:view",
+    "type": "2",
+    "front_key": "action_store_config_product_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/products/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "store-config:card-key-view",
+    "name": "查看完整卡密",
+    "parentCode": "store-config:view",
+    "type": "2",
+    "front_key": "action_store_config_card_key_view",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/card_keys/*",
+        "method": "GET"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "store-config:card-key-write",
+    "name": "新增 / 删除卡密",
+    "parentCode": "store-config:view",
+    "type": "2",
+    "front_key": "action_store_config_card_key_write",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/card_keys/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "group:user",
+    "name": "用户管理",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_user",
+    "icon": "user",
+    "sort_order": 500,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "user-list:view",
+    "name": "用户列表",
+    "parentCode": "group:user",
+    "type": "1",
+    "front_key": "menu_user_list",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "user-list:detail",
+    "name": "用户详情",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_detail",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/detail",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/users/limit_points_records",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/users/sign_records",
+        "method": "GET"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:official-create",
+    "name": "创建官方账号",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_official_create",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/official_accounts/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:official-edit",
+    "name": "编辑官方账号",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_official_edit",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/official_accounts/update",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:points-adjust",
+    "name": "调整积分",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_points_adjust",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/points/manual_airdrop",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/points/batch_airdrop",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:account-ban",
+    "name": "封禁账号",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_account_ban",
+    "icon": "",
+    "sort_order": 500,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/ban",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:account-unban",
+    "name": "解封账号",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_account_unban",
+    "icon": "",
+    "sort_order": 600,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/unban",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "user-list:whitelist-set",
+    "name": "设置白名单",
+    "parentCode": "user-list:view",
+    "type": "2",
+    "front_key": "action_user_list_whitelist_set",
+    "icon": "",
+    "sort_order": 700,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/whitelist",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "register-source:view",
+    "name": "注册来源",
+    "parentCode": "group:user",
+    "type": "1",
+    "front_key": "menu_register_source",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/register_sources/list",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/users/register_sources/all_list",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/users/register_sources/detail",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "register-source:create",
+    "name": "新建",
+    "parentCode": "register-source:view",
+    "type": "2",
+    "front_key": "action_register_source_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/register_sources/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "register-source:edit",
+    "name": "编辑",
+    "parentCode": "register-source:view",
+    "type": "2",
+    "front_key": "action_register_source_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/register_sources/update",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "register-source:delete",
+    "name": "删除",
+    "parentCode": "register-source:view",
+    "type": "2",
+    "front_key": "action_register_source_delete",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/register_sources/delete",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "invite-records:view",
+    "name": "邀请记录",
+    "parentCode": "group:user",
+    "type": "1",
+    "front_key": "menu_invite_records",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/users/invite_relation",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/activities/invite/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "points-records:view",
+    "name": "积分记录",
+    "parentCode": "group:user",
+    "type": "1",
+    "front_key": "menu_points_records",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/points/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "points-records:config",
+    "name": "维护有效期配置",
+    "parentCode": "points-records:view",
+    "type": "2",
+    "front_key": "action_points_records_config",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/system_config/limit_points_expire/*",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/points/*",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "member-level:view",
+    "name": "会员等级",
+    "parentCode": "group:user",
+    "type": "1",
+    "front_key": "menu_member_level",
+    "icon": "",
+    "sort_order": 500,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/user_level/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "member-level:create",
+    "name": "新增等级",
+    "parentCode": "member-level:view",
+    "type": "2",
+    "front_key": "action_member_level_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/user_level/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "member-level:edit",
+    "name": "编辑等级",
+    "parentCode": "member-level:view",
+    "type": "2",
+    "front_key": "action_member_level_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/user_level/update",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "member-level:reorder",
+    "name": "拖拽排序",
+    "parentCode": "member-level:view",
+    "type": "2",
+    "front_key": "action_member_level_reorder",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/user_level/reorder",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "group:system",
+    "name": "系统管理",
+    "parentCode": "",
+    "type": "1",
+    "front_key": "menu_group_system",
+    "icon": "system",
+    "sort_order": 600,
+    "status": "1",
+    "apis": [],
+    "level": 0
+  },
+  {
+    "code": "operation-log:view",
+    "name": "日志",
+    "parentCode": "group:system",
+    "type": "1",
+    "front_key": "menu_operation_log",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/operation_logs/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "role-management:view",
+    "name": "角色管理",
+    "parentCode": "group:system",
+    "type": "1",
+    "front_key": "menu_role_management",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/roles/*",
+        "method": "GET"
+      },
+      {
+        "path": "/admin/api/permissions/tree",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "role-management:create",
+    "name": "新建角色",
+    "parentCode": "role-management:view",
+    "type": "2",
+    "front_key": "action_role_management_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/roles/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "role-management:edit",
+    "name": "调整权限",
+    "parentCode": "role-management:view",
+    "type": "2",
+    "front_key": "action_role_management_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/roles/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/roles/set_permissions",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "role-management:stop",
+    "name": "停用角色",
+    "parentCode": "role-management:view",
+    "type": "2",
+    "front_key": "action_role_management_stop",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/roles/update_status",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "permission-management:view",
+    "name": "权限管理",
+    "parentCode": "group:system",
+    "type": "1",
+    "front_key": "menu_permission_management",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/permissions/*",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "permission-management:create",
+    "name": "新增权限",
+    "parentCode": "permission-management:view",
+    "type": "2",
+    "front_key": "action_permission_management_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/permissions/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "permission-management:edit",
+    "name": "编辑权限",
+    "parentCode": "permission-management:view",
+    "type": "2",
+    "front_key": "action_permission_management_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/permissions/update",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "permission-management:toggle",
+    "name": "启用 / 停用",
+    "parentCode": "permission-management:view",
+    "type": "2",
+    "front_key": "action_permission_management_toggle",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/permissions/update_status",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "permission-management:sync",
+    "name": "同步系统权限",
+    "parentCode": "permission-management:view",
+    "type": "2",
+    "front_key": "action_permission_management_sync",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/permissions/create",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/permissions/update",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/permissions/update_status",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "admin-users:view",
+    "name": "后台用户管理",
+    "parentCode": "group:system",
+    "type": "1",
+    "front_key": "menu_admin_users",
+    "icon": "",
+    "sort_order": 400,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/admin/list",
+        "method": "GET"
+      }
+    ],
+    "level": 1
+  },
+  {
+    "code": "admin-users:create",
+    "name": "新增后台用户",
+    "parentCode": "admin-users:view",
+    "type": "2",
+    "front_key": "action_admin_users_create",
+    "icon": "",
+    "sort_order": 100,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/admin/create",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "admin-users:edit",
+    "name": "编辑后台用户",
+    "parentCode": "admin-users:view",
+    "type": "2",
+    "front_key": "action_admin_users_edit",
+    "icon": "",
+    "sort_order": 200,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/admin/save",
+        "method": "POST"
+      },
+      {
+        "path": "/admin/api/admin/set_extra_permissions",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  },
+  {
+    "code": "admin-users:reset-password",
+    "name": "重置密码",
+    "parentCode": "admin-users:view",
+    "type": "2",
+    "front_key": "action_admin_users_reset_password",
+    "icon": "",
+    "sort_order": 300,
+    "status": "1",
+    "apis": [
+      {
+        "path": "/admin/api/admin/save_password",
+        "method": "POST"
+      }
+    ],
+    "level": 2
+  }
+]

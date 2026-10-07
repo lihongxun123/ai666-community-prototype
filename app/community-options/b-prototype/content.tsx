@@ -22,6 +22,7 @@ import {
   makeNowAppHandoff,
 } from './store';
 import './content-refinement.css';
+import {MarkdownBodyEditor} from './markdown-editor';
 export const contentPages = [
   ...kinds.flatMap((k) => [
     {
@@ -61,7 +62,7 @@ export const contentPages = [
     id: 'review',
     title: '审核详情',
     module: '审核与发布',
-    states: ['normal', 'returned', 'stale', 'unknown'],
+    states: ['normal', 'returned', 'stale'],
   },
   {
     id: 'release',
@@ -437,7 +438,7 @@ export function ContentPage({
         : db.records.filter(
             (r) =>
               (page === 'reviews'
-                ? r.draft.review === '待审'
+                ? r.draft.review === '待审' && !['work','resource'].includes(r.kind)
                 : r.kind === kind) &&
               (r.draft.title.includes(query) ||
                 r.draft.summary.includes(query) ||
@@ -683,12 +684,13 @@ export function ContentPage({
                       ? '资源说明'
                       : '正文'}
                 </h3>
-                {draft.body.map((b, i) => (
+                {['tutorial','app'].includes(record.kind)&&<MarkdownBodyEditor body={draft.body} onChange={body=>patch('body',body)} onError={setMediaError}/>}
+                {draft.body.filter(()=>!['tutorial','app'].includes(record.kind)).map((b, i) => (
                   <div className="bp-block" key={b.id}>
                     <div className="bp-toolbar">
                       <select
                         aria-label={'段落' + (i + 1) + '类型'}
-                        value={b.type}
+                        value={record.kind==='post'&&!['图片','视频'].includes(b.type)?'段落':b.type}
                         onChange={(e) =>
                           patch(
                             'body',
@@ -703,8 +705,7 @@ export function ContentPage({
                           )
                         }
                       >
-                        {[
-                          '段落',
+                        {(record.kind==='post'?['段落','图片','视频']:['段落',
                           '标题',
                           '图片',
                           '视频',
@@ -712,7 +713,7 @@ export function ContentPage({
                           '可复制示例',
                           '链接',
                           '资源引用',
-                        ].map((t) => (
+                        ]).map((t) => (
                           <option key={t}>{t}</option>
                         ))}
                       </select>
@@ -770,7 +771,7 @@ export function ContentPage({
                     )}{' '}
                   </div>
                 ))}
-                <button
+                {!['tutorial','app'].includes(record.kind)&&<button
                   onClick={() =>
                     patch('body', [
                       ...draft.body,
@@ -779,7 +780,7 @@ export function ContentPage({
                   }
                 >
                   添加内容块
-                </button>
+                </button>}
               </>
             )}
             {['app', 'resource'].includes(record.kind) && (
@@ -1122,14 +1123,11 @@ export function ContentPage({
         {state === 'stale' && (
           <p className="bp-warning">内容版本已变化，请重新打开任务。</p>
         )}
-        {state === 'unknown' && (
-          <p className="bp-warning">结果尚未确认，请查询原任务。</p>
-        )}
+
         <div className="bp-toolbar">
           <button
             disabled={
               state === 'stale' ||
-              state === 'unknown' ||
               record.draft.review !== '待审' ||
               record.publicStatus === '已删除'
             }
@@ -1150,7 +1148,6 @@ export function ContentPage({
             className="primary"
             disabled={
               state === 'stale' ||
-              state === 'unknown' ||
               record.draft.review !== '待审' ||
               record.publicStatus === '已删除'
             }
@@ -1172,9 +1169,7 @@ export function ContentPage({
             通过
           </button>
           <button onClick={() => detail('release')}>发布管理</button>
-          {state === 'unknown' && (
-            <button onClick={() => detail('history')}>查询处理记录</button>
-          )}
+
         </div>
       </section>
     );
@@ -1367,9 +1362,9 @@ export function ContentPage({
                 publicBad ||
                 (cap && record.runtime === '暂停')
               }
-              onClick={() => setConfirm('恢复')}
+              onClick={() => setConfirm('上架')}
             >
-              恢复公开
+              上架
             </button>
           )}
         </div>
@@ -1381,7 +1376,7 @@ export function ContentPage({
                 ? record.public
                   ? '编辑版本将替换公开内容。'
                   : '编辑版本将成为公开内容。'
-                : '关联入口会随可见性变化；已存在的活动记录与个人副本保留。恢复不会自动恢复推荐或奖励。'}
+                : '关联入口会随可见性变化；已存在的活动记录与个人副本保留。上架不会自动恢复推荐或奖励。'}
             </p>
             <label>
               处理说明
@@ -1415,7 +1410,7 @@ export function ContentPage({
                             ?.publicStatus !== '公开',
                       ) ||
                       (cap && !current.draft.verified))) ||
-                  (confirm === '恢复' &&
+                  (confirm === '上架' &&
                     (!current.public ||
                       (cap && current.runtime === '暂停') ||
                       current.public.refs.some(
@@ -1437,7 +1432,7 @@ export function ContentPage({
                         publishedRevision: r.revision,
                         runtime: cap ? '可用' : r.runtime,
                       }
-                    : confirm === '恢复'
+                    : confirm === '上架'
                       ? { ...r, publicStatus: '公开', recommended: false }
                       : {
                           ...r,

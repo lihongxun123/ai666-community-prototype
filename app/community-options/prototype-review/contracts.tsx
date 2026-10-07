@@ -8,6 +8,9 @@ import './flow.css';
 import cRequirements from '../../../design-notes/page-requirements-c.json';
 import cCommonRequirements from '../../../design-notes/c-requirements-20261005/common-rules.json';
 import cPendingRequirements from '../../../design-notes/c-requirements-20261005/decisions.json';
+import bContentFlows from '../../../design-notes/b-end-20261006/content-management-flows.json';
+import bLocalFlows from '../../../design-notes/b-end-20261006/local-flows.json';
+import bPlatformFlows from '../../../design-notes/b-end-20261006/platform-management-flows.json';
 import bRequirements from '../../../design-notes/page-requirements-b.json';
 import crossRequirements from '../../../design-notes/page-requirements-cross.json';
 type Edge=[string,string,string,string?];
@@ -16,9 +19,9 @@ export const routes:Record<string,Edge[]>={
  discussion:[['帖子','post','进入原帖'],['圈子','circles','发现圈子'],['教程','tutorials','浏览教程目录']],
  home:[['精选专题','topic','专题仍公开'],['专题入口','topics','浏览公开专题'],['作品卡','work','同一作品身份'],['AI应用入口','apps','浏览目录'],['活动入口','activities','浏览公开活动'],['每日签到','checkin','登录后主动签到']],
  topics:[['专题卡','topic','按后台发布顺序']],topic:[['作品','work','关联公开对象'],['教程','tutorial','关联公开对象'],['应用','app','进入详情，不直接扣费']],
- community:[['作品','work','公开作品；独立于首页后台选用及活动关联'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['教程','tutorials','浏览公开教程']],
+ community:[['作品','work','公开作品；首页仅按统一爆款标记筛选，活动关联分别判断'],['帖子','post','带帖子标识'],['圈子','circles','保留帖子流状态'],['教程','tutorials','浏览公开教程']],
  post:[['作者','author','同一作者'],['所属圈子','circle','圈子可访问'],['引用作品','work','目标失效不删除帖子讨论']],
- circles:[['圈子卡','circle','手机进详情；PC 筛选帖子并更新圈子信息'],['查看全部','discover-circles','PC 发现列表；手机由圈子列表承接']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-publish','圈子开放、已加入且有发布权限']],
+ circles:[['圈子卡','circle','手机进详情；PC 筛选帖子并更新圈子信息'],['查看全部','discover-circles','PC 发现列表；手机由圈子列表承接']],circle:[['帖子','post','同一帖子与讨论'],['发帖','post-publish','圈子启用、已加入且有发布权限']],
  'discover-circles':[['圈子','circles','PC 选中对应圈子，显示帖子与右侧资料']],
  tutorials:[['教程卡','tutorial','按用途与排序浏览']],tutorial:[['关联应用','app?item=restore','查看可复用能力'],['作者','author','保留来源']],
  work:[['关联应用','app?item=restore','有公开引用才展示'],['作者','author','同一作者'],['再次创作','create','只在支持时出现']],
@@ -40,23 +43,25 @@ export const routes:Record<string,Edge[]>={
  'shop-records':[['返回商城','shop','关闭记录或返回来源']],
 };
 const bRoutes:Record<string,Edge[]>={
- works:[['编辑作品','b:work-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
+ ...bPlatformFlows as unknown as Record<string,Edge[]>,
+ works:[['查看详情','b:work-detail','同一作品；返回保留筛选和页码'],['编辑','b:work-edit','按作品编辑权限；在原列表打开抽屉'],['审核','b:works','仅待审核；在当前页弹层处理','作品审核弹层'],['设为爆款并发奖','b:works','首次联合发奖；已发奖仅恢复标记','精选发奖弹层'],['上架 / 下架','b:works','填写原因；下架取消爆款，上架不自动恢复爆款或重复发奖','治理确认弹层']],
+ 'work-detail':[['返回列表','b:works','保留查询条件和页码'],['编辑资料','b:work-edit','同一作品；按字段编辑权限维护']],
  posts:[['编辑帖子','b:post-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
  tutorials:[['编辑教程','b:tutorial-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
  apps:[['编辑应用','b:app-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
  resources:[['编辑资源','b:resource-edit','同 ID 草稿'],['预览','b:preview','同 ID 版本'],['查看引用','b:references','同 ID 对象']],
- 'work-edit':[['预览草稿','b:preview','保存后查看'],['提交审核','b:review','资料齐全'],['交接维护','b:transfer','确认授权'],['查看记录','b:history','同 ID 对象']],
+ 'work-edit':[['保存资料','b:works','校验通过后更新同一记录；不改变公开状态'],['取消','b:works','有修改时确认是否放弃']],
   'post-edit':[['预览草稿','b:preview','保存后查看'],['提交审核','b:review','资料齐全'],['交接维护','b:transfer','确认授权'],['查看记录','b:history','同 ID 对象']],
   'tutorial-edit':[['预览草稿','b:preview','保存后查看'],['提交审核','b:review','资料齐全'],['交接维护','b:transfer','确认授权'],['查看记录','b:history','同 ID 对象']],
   'app-edit':[['预览草稿','b:preview','保存后查看'],['提交审核','b:review','资料齐全'],['交接维护','b:transfer','确认授权'],['查看记录','b:history','同 ID 对象']],
   'resource-edit':[['预览草稿','b:preview','保存后查看'],['提交审核','b:review','资料齐全'],['交接维护','b:transfer','确认授权'],['查看记录','b:history','同 ID 对象']],
  preview:[['继续编辑','b:work-edit','按原内容类型进入编辑'],['前往发布','b:release','公开版和编辑版分开校验']],
- reviews:[['处理任务','b:review','同 ID 审核']],review:[['查看待审内容','b:preview','保留版本'],['发布管理','b:release','通过后按内容类型生效'],['查询记录','b:history','结果未知时']],
+ reviews:[['处理任务','b:review','同 ID 审核']],review:[['查看待审内容','b:preview','保留版本'],['发布管理','b:release','通过后按内容类型生效'],['查询记录','b:history','查看处理记录']],
  release:[['核验能力','b:verify','应用或资源能力'],['查看影响','b:references','下架前检查引用']],
  verify:[['发布管理','b:release','核验绑定执行版本']],references:[['查看引用对象','b:preview','按引用 ID 查看']],
   'op-topics':[['编辑专题','b:op-topic-edit','同 ID 编排']],
   'op-circles':[['编辑圈子','b:op-circle-edit','同 ID 规则']],
- 'op-events':[['编辑活动','b:op-event-edit','同 ID 活动'],['查看投稿','b:op-submissions','规则、评审、奖励分开']],
+ 'op-events':[['编辑活动','b:op-event-edit','同 ID 活动']],
 };
 const crossRoutes:Record<string,Edge[]>={
  app:[['返回应用介绍','app','保留同一应用身份；真实MakeNow链接待配置，演示不生成或扣费']],
@@ -79,7 +84,7 @@ const crossRoutes:Record<string,Edge[]>={
 const localFlows:Record<string,string[]>={
  work:['喜欢、收藏、关注：更新本人关系；失败保留原状态。','评论：校验文字或单图 → 提交 → 展示确认结果；失败保留输入。','本人删除评论：确认 → 移除条目，不展示删除占位；合法回复保留。'],
  post:['图片：打开预览 → 切换图片 → 关闭返回原位置。','回复：选定对象 → 输入文字或单图 → 提交；可取消回复。','删除评论不显示占位；引用对象删除后隐藏引用，保留帖子正文。'],
- circle:['未加入 → 主动加入 → 已加入；退出后保留历史帖子。','圈子关闭 → 停止新加入和发帖；公开帖子按自身权限访问。'],
+ circle:['未加入 → 主动加入 → 已加入；退出后保留历史帖子。','圈子停用 → 停止新加入和发帖；公开帖子按自身权限访问。'],
  circles:['选择推荐或圈子 → 更新帖子流与右侧资料。','加入或退出成功后更新本人关系与人数。'],
  'discover-circles':['未加入 → 加入成功 → 可进入；失败保留未加入状态。'],
  create:['输入与参数校验 → 提交 → 排队/生成 → 完成或失败。','积分不足：生成按钮禁用；结果未知：查询原任务，不重复提交。','生成结果为私人资产；发布需用户主动提交。'],
@@ -107,18 +112,18 @@ function targetTitle(target:string,device:string){const panelLabels:Record<strin
 function flowEdges(section:string,id:string,device:string):Edge[]{
  if(section==='c'&&id==='create'&&device!=='pc')return routes.create.map(edge=>edge[1]==='create-result'?[edge[0],'create','打开当前任务完整结果，不新增独立页面','工作台内结果视图']:edge);
  if(section==='c' && appEdges[id])return appEdges[id].filter(edge=>device!=='pc'||edge.action!=='获取电脑端链接').map(edge=>[edge.action,edge.target,edge.condition,edge.action==='获取电脑端链接'?'当前应用内电脑引导':edge.action==='在 MakeNow 中使用'?'MakeNow':undefined]);
- return (section==='b'?bRoutes:section==='cross'?crossRoutes:routes)[id]||[];
+ return (section==='b'?{...bRoutes,...bContentFlows as unknown as Record<string,Edge[]>}:section==='cross'?crossRoutes:routes)[id]||[];
 }
 function sectionTarget(section:string,id:string){return (section==='c'?'':section+':')+id;}
 export function ModuleFlow({section,pages,currentId,open,device='mobile'}:{section:string;pages:{id:string;title:string}[];currentId?:string;open:(target:string,source?:string)=>void;device?:string}){
- return <section className="rv-requirements rv-module-flow"><h3>模块流程</h3>{section==='c'&&currentId&&localFlows[currentId]&&<div className="rv-flow-states"><h4>状态变化</h4><ul>{localFlows[currentId].map(line=><li key={line}>{line}</li>)}</ul></div>}<div className="rv-flow-map" aria-label="页面流转图">{pages.map(page=>{
+ return <section className="rv-requirements rv-module-flow"><h3>模块流程</h3>{section==='b'&&currentId&&(bLocalFlows as Record<string,string[]>)[currentId]&&<div className="rv-flow-states"><h4>操作流程</h4><ul>{(bLocalFlows as Record<string,string[]>)[currentId].map(line=><li key={line}>{line}</li>)}</ul></div>}{section==='c'&&currentId&&localFlows[currentId]&&<div className="rv-flow-states"><h4>状态变化</h4><ul>{localFlows[currentId].map(line=><li key={line}>{line}</li>)}</ul></div>}<div className="rv-flow-map" aria-label="页面流转图">{pages.map(page=>{
   const edges=flowEdges(section,page.id,device);
   return <div className={'rv-flow-group'+(edges.length?' has-edges':'')} key={page.id}>
    <button type="button" className="rv-flow-node rv-flow-origin" aria-current={currentId===page.id?'page':undefined} onClick={()=>open(sectionTarget(section,page.id))}>{page.title}</button>
    {edges.length>0&&<div className="rv-flow-branches">{edges.map(([action,target,condition,label],index)=><div className="rv-flow-branch" key={`${page.id}-${target}-${action}-${index}`}>
     <div className="rv-flow-action"><strong>{action}</strong>{condition&&<small>{condition}</small>}</div>
     <span className="rv-flow-arrow" aria-hidden="true">→</span>
-    {label&&['来源页面','当前应用内电脑引导','工作台内结果视图'].includes(label)?<span className="rv-flow-node rv-flow-destination">{label}</span>:<button type="button" className="rv-flow-node rv-flow-destination" onClick={()=>open(target,page.id)}>{label||targetTitle(target,device)}</button>}
+    {label&&['来源页面','当前应用内电脑引导','工作台内结果视图','作品审核弹层'].includes(label)?<span className="rv-flow-node rv-flow-destination">{label}</span>:<button type="button" className="rv-flow-node rv-flow-destination" onClick={()=>open(target,page.id)}>{label||targetTitle(target,device)}</button>}
    </div>)}</div>}
   </div>;
  })}</div></section>;

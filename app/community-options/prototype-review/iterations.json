@@ -1,0 +1,896 @@
+{
+  "date": "2026-10-07",
+  "note": "第一期为社区功能与UI/UX改版，设计已完成；第二期为MakeNow深度互通，设计进行中。设计状态不代表研发上线。",
+  "features": [
+    {
+      "id": "c-home",
+      "section": "c",
+      "page": "home",
+      "title": "首页",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 首页承接专题、圈子/帖子和AI应用入口；已有MakeNow快捷跳转归本期。",
+      "requirements": "design-notes/page-requirements-c.json#home"
+    },
+    {
+      "id": "c-topics",
+      "section": "c",
+      "page": "topics",
+      "title": "专题",
+      "iteration": 1,
+      "status": "done",
+      "scope": "专题展示与内容编排：选择作品、教程、AI应用，查看详情及拖动排序；不设置负责人。",
+      "requirements": "design-notes/page-requirements-c.json#topics"
+    },
+    {
+      "id": "c-topic",
+      "section": "c",
+      "page": "topic",
+      "title": "专题详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "专题展示与内容编排：选择作品、教程、AI应用，查看详情及拖动排序；不设置负责人。",
+      "requirements": "design-notes/page-requirements-c.json#topic"
+    },
+    {
+      "id": "c-apps",
+      "section": "c",
+      "page": "apps",
+      "title": "AI应用",
+      "iteration": 1,
+      "status": "done",
+      "scope": "AI应用由官方维护，提供目录、详情和互动；不含附件；MakeNow深度承接归第二期。",
+      "requirements": "design-notes/page-requirements-c.json#apps"
+    },
+    {
+      "id": "c-app",
+      "section": "c",
+      "page": "app",
+      "title": "应用详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "AI应用由官方维护，提供目录、详情和互动；不含附件；MakeNow深度承接归第二期。",
+      "requirements": "design-notes/page-requirements-c.json#app"
+    },
+    {
+      "id": "c-discover-circles",
+      "section": "c",
+      "page": "discover-circles",
+      "title": "发现圈子",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#discover-circles"
+    },
+    {
+      "id": "c-aigc",
+      "section": "c",
+      "page": "aigc",
+      "title": "AIGC",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#aigc"
+    },
+    {
+      "id": "c-discussion",
+      "section": "c",
+      "page": "discussion",
+      "title": "交流",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#discussion"
+    },
+    {
+      "id": "c-community",
+      "section": "c",
+      "page": "community",
+      "title": "社区",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 社区承接作品、帖子、教程和圈子；新增圈子/帖子关系归本期。",
+      "requirements": "design-notes/page-requirements-c.json#community"
+    },
+    {
+      "id": "c-post",
+      "section": "c",
+      "page": "post",
+      "title": "帖子详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#post"
+    },
+    {
+      "id": "c-circles",
+      "section": "c",
+      "page": "circles",
+      "title": "圈子",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#circles"
+    },
+    {
+      "id": "c-circle",
+      "section": "c",
+      "page": "circle",
+      "title": "圈子详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#circle"
+    },
+    {
+      "id": "c-tutorials",
+      "section": "c",
+      "page": "tutorials",
+      "title": "教程",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-c.json#tutorials"
+    },
+    {
+      "id": "c-tutorial",
+      "section": "c",
+      "page": "tutorial",
+      "title": "教程详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-c.json#tutorial"
+    },
+    {
+      "id": "c-work",
+      "section": "c",
+      "page": "work",
+      "title": "作品详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#work"
+    },
+    {
+      "id": "c-search",
+      "section": "c",
+      "page": "search",
+      "title": "搜索",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 搜索接入帖子、圈子、专题和AI应用；按已确认命中规则，不加命中词高亮。",
+      "requirements": "design-notes/page-requirements-c.json#search"
+    },
+    {
+      "id": "c-author",
+      "section": "c",
+      "page": "author",
+      "title": "作者主页",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 作者主页承接帖子及关注/粉丝；官方维护AI应用不归属普通作者。",
+      "requirements": "design-notes/page-requirements-c.json#author"
+    },
+    {
+      "id": "c-creation-entry",
+      "section": "c",
+      "page": "creation-entry",
+      "title": "创作与发布入口",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#creation-entry"
+    },
+    {
+      "id": "c-create",
+      "section": "c",
+      "page": "create",
+      "title": "AIGC 生成",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#create"
+    },
+    {
+      "id": "c-create-result",
+      "section": "c",
+      "page": "create-result",
+      "title": "AIGC 查看结果",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#create-result"
+    },
+    {
+      "id": "c-post-edit",
+      "section": "c",
+      "page": "post-edit",
+      "title": "发布作品",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-c.json#post-edit"
+    },
+    {
+      "id": "c-post-publish",
+      "section": "c",
+      "page": "post-publish",
+      "title": "发布帖子",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#post-publish"
+    },
+    {
+      "id": "c-mine",
+      "section": "c",
+      "page": "mine",
+      "title": "我的",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 个人中心承接帖子、圈子与对应草稿/关系入口。",
+      "requirements": "design-notes/page-requirements-c.json#mine"
+    },
+    {
+      "id": "c-my-relations",
+      "section": "c",
+      "page": "my-relations",
+      "title": "关注作者",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-c.json#my-relations"
+    },
+    {
+      "id": "c-my-fans",
+      "section": "c",
+      "page": "my-fans",
+      "title": "我的粉丝",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-c.json#my-fans"
+    },
+    {
+      "id": "c-my-circles",
+      "section": "c",
+      "page": "my-circles",
+      "title": "我的圈子",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-c.json#my-circles"
+    },
+    {
+      "id": "c-profile-edit",
+      "section": "c",
+      "page": "profile-edit",
+      "title": "编辑资料",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#profile-edit"
+    },
+    {
+      "id": "c-login",
+      "section": "c",
+      "page": "login",
+      "title": "登录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#login"
+    },
+    {
+      "id": "c-notifications",
+      "section": "c",
+      "page": "notifications",
+      "title": "消息中心",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新增社区业务的通知入口与目标跳转；不扩展独立反馈业务。",
+      "requirements": "design-notes/page-requirements-c.json#notifications"
+    },
+    {
+      "id": "c-activities",
+      "section": "c",
+      "page": "activities",
+      "title": "活动中心",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新增圈子浏览/发帖/互动、AI应用浏览/使用/互动、专题浏览任务。",
+      "requirements": "design-notes/page-requirements-c.json#activities"
+    },
+    {
+      "id": "c-activity",
+      "section": "c",
+      "page": "activity",
+      "title": "活动详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 展示新增社区任务的进度及入口；奖励自动发放，不增加领奖操作。",
+      "requirements": "design-notes/page-requirements-c.json#activity"
+    },
+    {
+      "id": "c-points",
+      "section": "c",
+      "page": "points",
+      "title": "积分中心",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#points"
+    },
+    {
+      "id": "c-checkin",
+      "section": "c",
+      "page": "checkin",
+      "title": "每日签到",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#checkin"
+    },
+    {
+      "id": "c-invite",
+      "section": "c",
+      "page": "invite",
+      "title": "邀请有礼",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#invite"
+    },
+    {
+      "id": "c-shop",
+      "section": "c",
+      "page": "shop",
+      "title": "AI 商城",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#shop"
+    },
+    {
+      "id": "c-shop-exchange",
+      "section": "c",
+      "page": "shop-exchange",
+      "title": "兑换弹层",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#shop-exchange"
+    },
+    {
+      "id": "c-shop-records",
+      "section": "c",
+      "page": "shop-records",
+      "title": "兑换记录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-c.json#shop-records"
+    },
+    {
+      "id": "b-works",
+      "section": "b",
+      "page": "works",
+      "title": "作品管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-b.json#works"
+    },
+    {
+      "id": "b-work-detail",
+      "section": "b",
+      "page": "work-detail",
+      "title": "作品详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-b.json#work-detail"
+    },
+    {
+      "id": "b-work-edit",
+      "section": "b",
+      "page": "work-edit",
+      "title": "编辑作品",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 本页承接的新内容类型、业务关联、任务或统计增量；已有能力归本期。",
+      "requirements": "design-notes/page-requirements-b.json#work-edit"
+    },
+    {
+      "id": "b-posts",
+      "section": "b",
+      "page": "posts",
+      "title": "帖子管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-b.json#posts"
+    },
+    {
+      "id": "b-post-detail",
+      "section": "b",
+      "page": "post-detail",
+      "title": "帖子详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-b.json#post-detail"
+    },
+    {
+      "id": "b-post-edit",
+      "section": "b",
+      "page": "post-edit",
+      "title": "编辑帖子",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-b.json#post-edit"
+    },
+    {
+      "id": "b-tutorials",
+      "section": "b",
+      "page": "tutorials",
+      "title": "教程管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#tutorials"
+    },
+    {
+      "id": "b-tutorial-detail",
+      "section": "b",
+      "page": "tutorial-detail",
+      "title": "教程详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#tutorial-detail"
+    },
+    {
+      "id": "b-tutorial-edit",
+      "section": "b",
+      "page": "tutorial-edit",
+      "title": "编辑教程",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#tutorial-edit"
+    },
+    {
+      "id": "b-apps",
+      "section": "b",
+      "page": "apps",
+      "title": "AI应用管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "AI应用由官方维护，提供目录、详情和互动；不含附件；MakeNow深度承接归第二期。",
+      "requirements": "design-notes/page-requirements-b.json#apps"
+    },
+    {
+      "id": "b-app-detail",
+      "section": "b",
+      "page": "app-detail",
+      "title": "AI应用详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "AI应用由官方维护，提供目录、详情和互动；不含附件；MakeNow深度承接归第二期。",
+      "requirements": "design-notes/page-requirements-b.json#app-detail"
+    },
+    {
+      "id": "b-app-edit",
+      "section": "b",
+      "page": "app-edit",
+      "title": "编辑AI应用",
+      "iteration": 1,
+      "status": "done",
+      "scope": "AI应用由官方维护，提供目录、详情和互动；不含附件；MakeNow深度承接归第二期。",
+      "requirements": "design-notes/page-requirements-b.json#app-edit"
+    },
+    {
+      "id": "b-comments",
+      "section": "b",
+      "page": "comments",
+      "title": "评论管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容复用评论管理；删除评论不在C端保留占位。",
+      "requirements": "design-notes/page-requirements-b.json#comments"
+    },
+    {
+      "id": "b-reviews",
+      "section": "b",
+      "page": "reviews",
+      "title": "审核工作台",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 承接新社区内容审核；失败用短暂提示，不增加待确认状态。",
+      "requirements": "design-notes/page-requirements-b.json#reviews"
+    },
+    {
+      "id": "b-op-circles",
+      "section": "b",
+      "page": "op-circles",
+      "title": "圈子管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-b.json#op-circles"
+    },
+    {
+      "id": "b-op-circle-edit",
+      "section": "b",
+      "page": "op-circle-edit",
+      "title": "圈子配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "本次社区业务及其管理能力；复用的线上基础能力不重复计作新增。",
+      "requirements": "design-notes/page-requirements-b.json#op-circle-edit"
+    },
+    {
+      "id": "b-op-topics",
+      "section": "b",
+      "page": "op-topics",
+      "title": "专题编排",
+      "iteration": 1,
+      "status": "done",
+      "scope": "专题展示与内容编排：选择作品、教程、AI应用，查看详情及拖动排序；不设置负责人。",
+      "requirements": "design-notes/page-requirements-b.json#op-topics"
+    },
+    {
+      "id": "b-op-topic-edit",
+      "section": "b",
+      "page": "op-topic-edit",
+      "title": "专题配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "专题展示与内容编排：选择作品、教程、AI应用，查看详情及拖动排序；不设置负责人。",
+      "requirements": "design-notes/page-requirements-b.json#op-topic-edit"
+    },
+    {
+      "id": "b-op-taxonomy",
+      "section": "b",
+      "page": "op-taxonomy",
+      "title": "分类与标签",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 维护新增业务所需分类与标签；不恢复模板配置。",
+      "requirements": "design-notes/page-requirements-b.json#op-taxonomy"
+    },
+    {
+      "id": "b-op-slots",
+      "section": "b",
+      "page": "op-slots",
+      "title": "展示位配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 配置新社区页面的Banner及搜索推荐入口；沿用统一展示位管理。",
+      "requirements": "design-notes/page-requirements-b.json#op-slots"
+    },
+    {
+      "id": "b-op-events",
+      "section": "b",
+      "page": "op-events",
+      "title": "活动管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 扩充圈子、AI应用、专题任务类型，不指定单个对象。",
+      "requirements": "design-notes/page-requirements-b.json#op-events"
+    },
+    {
+      "id": "b-op-event-edit",
+      "section": "b",
+      "page": "op-event-edit",
+      "title": "活动配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 配置新增社区任务目标及奖励；沿用现有活动管理逻辑。",
+      "requirements": "design-notes/page-requirements-b.json#op-event-edit"
+    },
+    {
+      "id": "b-op-shop",
+      "section": "b",
+      "page": "op-shop",
+      "title": "商城管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#op-shop"
+    },
+    {
+      "id": "b-op-points",
+      "section": "b",
+      "page": "op-points",
+      "title": "积分记录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#op-points"
+    },
+    {
+      "id": "b-op-checkin",
+      "section": "b",
+      "page": "op-checkin",
+      "title": "签到管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#op-checkin"
+    },
+    {
+      "id": "b-op-invite",
+      "section": "b",
+      "page": "op-invite",
+      "title": "邀请记录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#op-invite"
+    },
+    {
+      "id": "b-aigc-series",
+      "section": "b",
+      "page": "aigc-series",
+      "title": "模型系列",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#aigc-series"
+    },
+    {
+      "id": "b-users",
+      "section": "b",
+      "page": "users",
+      "title": "用户列表",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#users"
+    },
+    {
+      "id": "b-announcements",
+      "section": "b",
+      "page": "announcements",
+      "title": "公告管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#announcements"
+    },
+    {
+      "id": "b-notifications-admin",
+      "section": "b",
+      "page": "notifications-admin",
+      "title": "通知记录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 记录新社区业务通知，触发点按研发交接清单；不增加用户反馈模块。",
+      "requirements": "design-notes/page-requirements-b.json#notifications-admin"
+    },
+    {
+      "id": "b-analytics-overview",
+      "section": "b",
+      "page": "analytics-overview",
+      "title": "数据总览",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-overview"
+    },
+    {
+      "id": "b-analytics-growth",
+      "section": "b",
+      "page": "analytics-growth",
+      "title": "增长分析",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-growth"
+    },
+    {
+      "id": "b-analytics-content",
+      "section": "b",
+      "page": "analytics-content",
+      "title": "内容生态",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-content"
+    },
+    {
+      "id": "b-analytics-users",
+      "section": "b",
+      "page": "analytics-users",
+      "title": "用户分析",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-users"
+    },
+    {
+      "id": "b-analytics-quality",
+      "section": "b",
+      "page": "analytics-quality",
+      "title": "质量与异常",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-quality"
+    },
+    {
+      "id": "b-analytics-creation",
+      "section": "b",
+      "page": "analytics-creation",
+      "title": "创作分析",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-creation"
+    },
+    {
+      "id": "b-analytics-activity",
+      "section": "b",
+      "page": "analytics-activity",
+      "title": "活动与激励",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-activity"
+    },
+    {
+      "id": "b-analytics-metrics",
+      "section": "b",
+      "page": "analytics-metrics",
+      "title": "指标中心",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 新社区内容、圈子/帖子、AI应用及活动任务的统计补充；原统计V0.2口径归本期。",
+      "requirements": "design-notes/page-requirements-b.json#analytics-metrics"
+    },
+    {
+      "id": "b-system-roles",
+      "section": "b",
+      "page": "system-roles",
+      "title": "角色管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#system-roles"
+    },
+    {
+      "id": "b-system-admins",
+      "section": "b",
+      "page": "system-admins",
+      "title": "后台用户管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#system-admins"
+    },
+    {
+      "id": "b-system-logs",
+      "section": "b",
+      "page": "system-logs",
+      "title": "操作日志",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#system-logs"
+    },
+    {
+      "id": "b-aigc-models",
+      "section": "b",
+      "page": "aigc-models",
+      "title": "模型配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#aigc-models"
+    },
+    {
+      "id": "b-aigc-model-detail",
+      "section": "b",
+      "page": "aigc-model-detail",
+      "title": "模型协议配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#aigc-model-detail"
+    },
+    {
+      "id": "b-aigc-runtime-detail",
+      "section": "b",
+      "page": "aigc-runtime-detail",
+      "title": "模型详情",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#aigc-runtime-detail"
+    },
+    {
+      "id": "b-aigc-generations",
+      "section": "b",
+      "page": "aigc-generations",
+      "title": "生成记录",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#aigc-generations"
+    },
+    {
+      "id": "b-op-login-popup",
+      "section": "b",
+      "page": "op-login-popup",
+      "title": "登录弹窗配置",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#op-login-popup"
+    },
+    {
+      "id": "b-system-permissions",
+      "section": "b",
+      "page": "system-permissions",
+      "title": "权限管理",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#system-permissions"
+    },
+    {
+      "id": "b-user-register-sources",
+      "section": "b",
+      "page": "user-register-sources",
+      "title": "注册来源",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#user-register-sources"
+    },
+    {
+      "id": "b-user-member-levels",
+      "section": "b",
+      "page": "user-member-levels",
+      "title": "会员等级",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#user-member-levels"
+    },
+    {
+      "id": "b-permission-example",
+      "section": "b",
+      "page": "permission-example",
+      "title": "无权限示例",
+      "iteration": 1,
+      "status": "done",
+      "scope": "已有能力的布局、操作和必要反馈改版；原有业务规则沿用。",
+      "requirements": "design-notes/page-requirements-b.json#permission-example"
+    },
+    {
+      "id": "makenow-app",
+      "section": "c",
+      "page": "app",
+      "title": "AI应用使用",
+      "iteration": 2,
+      "status": "progress",
+      "scope": "从社区应用详情进入MakeNow对应应用。目标定位、输入承接、双端路径与失败处理尚待设计。",
+      "requirements": "第三期专项待完善"
+    },
+    {
+      "id": "makenow-result",
+      "section": "c",
+      "page": "create-result",
+      "title": "AIGC继续创作",
+      "iteration": 2,
+      "status": "progress",
+      "scope": "将生成结果交给MakeNow继续创作。素材、参数、目标画布及失败处理尚待设计。",
+      "requirements": "第三期专项待完善"
+    }
+  ]
+}

@@ -6,10 +6,11 @@ import {CommonFeedback} from './common-feedback';
 import {OverlayGallery,pageOverlays} from './overlay-gallery';
 import { isCoveredCommonState } from '../common-states/catalog';
 import { allPages } from '../c-prototype/page';
-import { bPages } from '../b-prototype/page';
+import { bPages, backendNavigation, backendParents } from '../b-prototype/page';
 import { crossPages } from '../cross-prototype/data';
 import './review.css';
 import {ReviewWorkspace} from './review-workspace';
+import {iterations,pageIterations,IterationScope,DeepIntegration} from './iterations';
 import {ProductPlan} from './product-plan';
 
 import {PageRequirements,ModuleFlow} from './contracts';
@@ -32,6 +33,7 @@ const communityGroups = [
   {title:'圈子', entries:[['circles','圈子列表',''],['circle','圈子详情','']]},
 ];
 const stateLabels: Record<string, string> = {
+ 'review-error':'审核提交失败','review-unknown':'审核结果待确认',
  'result-text':'剧本结果','result-video':'视频结果',
  'app-suite':'电商套图','app-analysis':'选品分析','app-music':'音乐翻唱','app-storyboard':'分镜一致性质检','app-website':'网页开发',
   'create-image':'图片生成','create-text':'剧本创作','create-video':'视频生成','work-image':'图片作品','work-video':'视频作品','work-text':'文本作品',
@@ -64,12 +66,14 @@ const stateLabels: Record<string, string> = {
   'image-error': '图片加载失败',
 };
 export default function Review() {
+  const [iteration,setIteration]=useState(1),[chain,setChain]=useState('makenow-app'),[deepMode,setDeepMode]=useState('plan');
   const [ready,setReady]=useState(false);
   const [overlays,setOverlays]=useState(false),[overlaySelection,setOverlaySelection]=useState('');
   const [notesOpen,setNotesOpen]=useState(false),[notesTab,setNotesTab]=useState('requirements'),[selectedState,setSelectedState]=useState('normal');
   const [inspected,setInspected]=useState<{id:string;section:string;state:string;card?:string}|null>(null);
   const readMode=(mode:string)=>{if(mode==='requirements'||mode==='flow'){setReading('prototype');setNotesTab(mode);setNotesOpen(true);}else setReading(mode);};
-  const [section, setSection] = useState('c'),    [pageId, setPageId] = useState('home'),
+  const [section, setSection] = useState('c'),
+    [pageId, setPageId] = useState('home'),
     [flat, setFlat] = useState(false),
     [common, setCommon] = useState(false),
     [restart, setRestart] = useState(0),
@@ -80,7 +84,7 @@ export default function Review() {
     [context, setContext] = useState('');
   useEffect(() => {
     const q = new URLSearchParams(location.search);
-    setCommon(q.get('view') === 'common');
+    setCommon(q.get('view') === 'common' && q.get('section') !== 'b');
     setReady(true);
     const mode=q.get('reading');
     setReading(mode==='plan'?'plan':mode||q.get('display')==='overlays'?'prototype':'plan');
@@ -92,18 +96,20 @@ export default function Review() {
     const group =
         sections.find((s) => s.id === q.get('section')) || sections[0],
       initialDestination=deviceDestination(q.get('view')||'home',q.get('context')||'',q.get('device')||'mobile'),
-      p = group.pages.find((p) => p.id === (group.id==='c'?initialDestination.id:q.get('view')));
+      p = group.pages.find((p) => p.id === (group.id==='c'?initialDestination.id:(q.get('view')==='analytics-channels'?'analytics-growth':q.get('view')==='analytics-incentives'?'analytics-activity':q.get('view')==='op-submissions'?'op-events':q.get('view')==='op-redemptions'?'op-shop':q.get('view'))));
     setSection(group.id);
-    if (p) {      const dest=initialDestination;
+    const rawIteration=Number(q.get('iteration'));const requested=q.get('iterationPlan')==='2'?(rawIteration===2?2:1):(rawIteration===3?2:1);const memberships=pageIterations(group.id,p?.id||'home');setIteration(group.id==='cross'?2:[1,2].includes(requested)&&(requested===2||memberships.includes(requested))?requested:memberships[0]||1);setChain(q.get('chain')==='makenow-result'||(!q.has('chain')&&q.get('view')==='create-result')?'makenow-result':'makenow-app');setDeepMode(q.get('deepMode')||'plan');
+    if (p) {
+      const dest=initialDestination;
       setPageId(group.id==='c'?dest.id:p.id);if(group.id==='c')setContext(dest.query);
       if(p.id==='tutorials'&&group.id==='c'&&q.get('device')!=='pc'){const legacy=new URLSearchParams(q.get('context')||'');legacy.set('tab','tutorials');setContext(legacy.toString());}
     }
   }, []);
-  const readerModule=useCallback((s:string,p:{id:string;module:string})=>readerGroup(s,p,device),[device]);
+  const readerModule=useCallback((s:string,p:{id:string;module:string})=>s==='b'?(backendNavigation.find(g=>g.items.includes(backendParents[p.id]||p.id))?.title||p.module):readerGroup(s,p,device),[device]);
   const selectedGroup=sections.find(s=>s.id===section)!;
-  const group={...selectedGroup,pages:selectedGroup.pages.map(p=>section==='c'&&device==='pc'&&p.id==='circles'?{...p,title:'圈子首页'}:p).filter(p=>section!=='c'||readerVisible(p.id,device)).sort((a,b)=>section==='c'&&device==='pc'?['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
+  const group={...selectedGroup,pages:selectedGroup.pages.map(p=>section==='c'&&device==='pc'&&p.id==='circles'?{...p,title:'圈子首页'}:p).filter(p=>(section==='cross'||iteration===2||pageIterations(section,p.id).includes(iteration))&&(section!=='c'||readerVisible(p.id,device))).sort((a,b)=>section==='c'&&device==='pc'?['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(a.id)-['circles','discover-circles','discussion','circle','post','tutorials','tutorial'].indexOf(b.id):0)},
     currentModule=readerModule(section,group.pages.find(p=>p.id===pageId)||group.pages[0]),
-    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(b):0),
+    modules = [...new Set(group.pages.map((p) => readerModule(section,p)))].sort((a,b)=>section==='c'?['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(a)-['首页','AIGC','社区','专题','AI应用','教程','圈子','创作与发布','活动','AI 商城','我的','登录','共用页面'].indexOf(b):section==='b'?[...backendNavigation.map(g=>g.title),'通用页面'].indexOf(a)-[...backendNavigation.map(g=>g.title),'通用页面'].indexOf(b):0),
     pages = group.pages.filter((p) => readerModule(section,p) === currentModule ).sort((a,b)=>section==='c'&&device==='mobile'&&currentModule==='社区'?['community','work','post','circles','circle','tutorial'].indexOf(a.id)-['community','work','post','circles','circle','tutorial'].indexOf(b.id):0),
     page = pages.find((p) => p.id === pageId) || pages[0] || group.pages[0],
     index = pages.findIndex((p) => p.id === page.id);
@@ -129,7 +135,9 @@ export default function Review() {
     setCommon(false);
     setFlat(false);setInspected(null);setSelectedState('normal');
     setAnnotations(false);
-    setSection(s);    const dest=deviceDestination(id,query,device);
+    setSection(s);
+    const member=pageIterations(s,id);if(s==='cross')setIteration(2);else if(!member.includes(iteration))setIteration(member[0]||1);
+    const dest=deviceDestination(id,query,device);
     setPageId(s==='c'?dest.id:id);
     const selectionQuery=new URLSearchParams(s==='c'?dest.query:query);
     if(s==='c'&&id==='tutorials'&&device!=='pc')selectionQuery.set('tab','tutorials');
@@ -168,7 +176,9 @@ export default function Review() {
         .find((s) => s.id === targetSection)
         ?.pages.find((p) => p.id === id);
       if (p) {
-        setSection(targetSection);        const dest=deviceDestination(id,search,device);
+        setSection(targetSection);
+        const member=pageIterations(targetSection,id);if(targetSection==='cross')setIteration(2);else if(!member.includes(iteration))setIteration(member[0]||1);
+        const dest=deviceDestination(id,search,device);
         setPageId(targetSection==='c'?dest.id:id);
         const q = new URLSearchParams(search);
         setSelectedState(q.get('state')||'normal');
@@ -178,26 +188,30 @@ export default function Review() {
 
       }
     },
-    [device],
+    [device,iteration],
   );
   useEffect(()=>{
-    if(!ready)return;
-    const q=new URLSearchParams({section,view:common?'common':pageId,device,reading});
+  if(!ready)return;
+    const q=new URLSearchParams({section,view:common?'common':pageId,device,reading,iteration:String(iteration),iterationPlan:'2'});if(iteration===2&&section!=='cross'){q.set('chain',chain);q.set('deepMode',deepMode);}
     if(context&&!common)q.set('context',context);
     if(notesOpen)q.set('notes',notesTab);
     if(flat)q.set('display','states');
     if(showOverlays&&!common){q.set('display','overlays');if(overlaySelection)q.set('overlay',overlaySelection);}
     history.replaceState(null,'','?'+q.toString());
-  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,showOverlays,overlaySelection]);
+  },[ready,section,pageId,device,context,common,reading,notesOpen,notesTab,flat,showOverlays,overlaySelection,iteration,chain,deepMode]);
   const noteSection=inspected?.section||section;
   const notePage=sections.find(g=>g.id===noteSection)?.pages.find(p=>p.id===(inspected?.id||page.id))||page;
   const noteState=inspected?.state||(flat?pageStates.find(s=>s!=='normal')||'normal':selectedState);
   const notePages=sections.find(g=>g.id===noteSection)!.pages.filter(p=>(noteSection!=='c'||readerVisible(p.id,device))&&readerModule(noteSection,p)===readerModule(noteSection,notePage));
-  const noteContent=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget} device={device}/>:<PageRequirements section={noteSection} page={notePage}/>;
+  const noteBody=notesTab==='flow'?<ModuleFlow section={noteSection} pages={notePages} currentId={notePage.id} open={openTarget} device={device}/>:<PageRequirements section={noteSection} page={notePage}/>;
+  const noteContent=<><IterationScope iteration={iteration} section={noteSection} page={notePage.id}/>{noteBody}</>;
   const inspect=(id:string,state:string,group=section,card=id+state)=>setInspected({id,state,section:group,card});
   const changeDevice=(value:string)=>{const dest=deviceDestination(page.id,context,value);setDevice(value);if(section==='c'){setPageId(dest.id);setContext(dest.query);}setFlat(false);setInspected(null);setAnnotations(false);setRestart(n=>n+1);};
   const activeTab=new URLSearchParams(context).get('tab')||'works';
+    const chooseIteration=(value:number)=>{setIteration(value);setCommon(false);setNotesOpen(false);setFlat(false);setOverlays(false);setInspected(null);if(value===2){setSection('c');setPageId('app');setContext('');return;}const sec=section==='cross'?'c':section;const candidates=sections.find(s=>s.id===sec)!.pages.filter(p=>pageIterations(sec,p.id).includes(value)&&(sec!=='c'||readerVisible(p.id,device)));setSection(sec);if(!candidates.some(p=>p.id===pageId)){setPageId(candidates[0].id);setContext('');}};
+  const iterationNav=<nav className="rv-iterations" aria-label="迭代分组">{iterations.map(i=><button key={i.id} aria-pressed={iteration===i.id} onClick={()=>chooseIteration(i.id)}><strong>{i.id}. {i.title}</strong><small>{i.status}</small></button>)}</nav>;
   if(!ready)return <main className="rv-main" aria-busy="true"/>;
+  if(iteration===2&&section!=='cross')return <div className="rv-shell"><aside className="rv-sidebar"><a href="/">← 返回研究室</a><h1>多元拾光</h1><p>原型阅读台</p>{iterationNav}<nav aria-label="互通链路">{[['makenow-app','AI应用'],['makenow-result','AIGC继续创作']].map(([id,label])=><button key={id} aria-current={chain===id?'page':undefined} onClick={()=>setChain(id)}>{label}</button>)}</nav></aside><main className="rv-main"><div className="rv-toolbar"><h2>MakeNow 深度互通 · 设计进行中</h2><nav>{[['plan','产品方案'],['prototype','页面原型'],['requirements','页面需求'],['flow','模块流程']].map(([id,label])=><button key={id} aria-pressed={deepMode===id} onClick={()=>setDeepMode(id)}>{label}</button>)}</nav></div><DeepIntegration chain={chain} mode={deepMode}/></main></div>;
   return (
     <div
       className={'rv-shell' + (homeSample && !common ? ' rv-home-sample' : '')}
@@ -206,12 +220,13 @@ export default function Review() {
         <a className="rv-research-link" href="/">← 返回研究室</a>
         <h1>多元拾光</h1>
         <p>原型阅读台</p>
+        {iterationNav}
         <div className="rv-sections">
-          {sections.map((s) => (
+          {sections.filter(s=>s.id!=='cross').map((s) => (
             <button
               key={s.id}
               aria-pressed={section === s.id}
-              onClick={() => select(s.id, s.pages[0].module, s.pages[0].id)}
+              onClick={() => select(s.id, s.pages[0].module, s.pages.find(p=>pageIterations(s.id,p.id).includes(iteration))?.id||s.pages[0].id)}
             >
               {s.name}
             </button>
@@ -235,23 +250,23 @@ export default function Review() {
               </button>
               {!common && currentModule === m && (
                 <div className="rv-page-tree">
-                  {section==='c'&&device==='mobile'&&m==='社区' ? <><button aria-current={page.id==='community'&&!new URLSearchParams(context).has('tab')?'page':undefined} onClick={()=>select(section,m,'community')}>社区首页</button>{communityGroups.map(branch=><div className="rv-nav-branch" key={branch.title}>
+                  {section==='b'? (backendNavigation.find(g=>g.title===m)?.items||group.pages.filter(p=>readerModule(section,p)===m).map(p=>p.id)).map(id=><div className="rv-nav-branch" key={id}>{group.pages.filter(p=>p.id===id||backendParents[p.id]===id).sort((a,b)=>a.id===id?-1:b.id===id?1:0).map(p=><button key={p.id} className={p.id===id?'rv-nav-parent':'rv-nav-child'} aria-current={page.id===p.id?'page':undefined} onClick={()=>select(section,m,p.id)}>{p.title}</button>)}</div>):section==='c'&&device==='mobile'&&m==='社区' ? <><button aria-current={page.id==='community'&&!new URLSearchParams(context).has('tab')?'page':undefined} onClick={()=>select(section,m,'community')}>社区首页</button>{communityGroups.filter(branch=>branch.entries.some(([id])=>pageIterations(section,id).includes(iteration))).map(branch=><div className="rv-nav-branch" key={branch.title}>
 
-                    {branch.entries.map(([id,label,tab],index)=><button key={id+tab} className={index===0?'rv-nav-parent':'rv-nav-child'}
+                    {branch.entries.filter(([id])=>pageIterations(section,id).includes(iteration)).map(([id,label,tab],index)=><button key={id+tab} className={index===0?'rv-nav-parent':'rv-nav-child'}
                       aria-current={(page.id===id&&(id!=='community'||new URLSearchParams(context).get('tab')===tab))||(page.id==='tutorials'&&tab==='tutorials')?'page':undefined}
                       onClick={()=>select(section,m,id,tab?'tab='+tab:'')}>{label}</button>)}
                   </div>)}</> : group.pages
                     .filter((p) => readerModule(section,p) === m)
                     .map((p) => (
                       <button key={p.id} aria-current={page.id === p.id ? 'page' : undefined}
-                        onClick={() => select(section, m, p.id)}>{p.title}{section==='c'&&p.id==='home'&&<small className="rv-completion done">已完成</small>}</button>
+                        onClick={() => select(section, m, p.id)}>{p.title}</button>
                     ))}
 
                 </div>
               )}
             </div>
           ))}
-          {(
+          {section!=='b'&&(
             <button
               aria-current={common ? 'step' : undefined}
               onClick={() => {
@@ -267,6 +282,7 @@ export default function Review() {
 
       </aside>
       <main className="rv-main">
+        {section==='cross'?<section className="rv-iteration-scope"><strong>历史跨产品方案 · 非本次定稿范围</strong><p>仅供追溯；第二期请从左侧迭代入口查看两条当前链路。</p></section>:<IterationScope iteration={iteration} section={section} page={page.id}/>}
         {!common && (
           <div className="rv-toolbar">
             <header className="rv-heading">
@@ -352,7 +368,7 @@ export default function Review() {
           </div>
         )}
         {common ? (
-          <CommonFeedback/>
+          <CommonFeedback section={section}/>
         ) : reading === 'plan' ? (
           <ProductPlan section={section} page={page} device={device} onRead={readMode}/>
         ) : showOverlays ? <OverlayGallery page={page.id} device={device} selection={overlaySelection} onSelect={setOverlaySelection}/> : (<ReviewWorkspace states={flat?pageStates.filter(s=>s!=='normal').map(s=>({id:s,title:stateLabels[s]||s,active:noteState===s})):[]} onStateSelect={s=>inspect(page.id,s)} mobile={section==='c'&&device==='mobile'} open={notesOpen} onClose={()=>setNotesOpen(false)} title={notePage.title+' · '+(stateLabels[noteState]||noteState)} tab={notesTab} onTab={setNotesTab} notes={noteContent}>

@@ -1,0 +1,48 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "教程详情" [level=1]
+- main:
+  - article:
+    - generic: 官方原创
+    - heading "旧照片修复：从观察破损到复查" [level=2]
+    - paragraph: 多元拾光编辑部
+    - paragraph: 保留原图，逐处处理损伤，最后检查真实细节。
+    - img "旧照片修复：从观察破损到复查"
+    - heading "目标" [level=2]
+    - paragraph: 保留真实细节，完成一次自然的旧照修复。
+    - heading "准备" [level=3]
+    - list:
+      - listitem: 保留原图副本
+      - listitem: 使用电脑端工具检查细节
+    - heading "方法" [level=3]
+    - paragraph: 先处理划痕，再检查人物五官。
+    - table:
+      - rowgroup:
+        - row "检查项 通过条件":
+          - columnheader "检查项"
+          - columnheader "通过条件"
+      - rowgroup:
+        - row "人物细节 没有过度磨皮":
+          - cell "人物细节"
+          - cell "没有过度磨皮"
+    - code: 修复划痕，保留原有纹理和人物细节
+    - paragraph: 原图副本、电脑端编辑工具
+  - button "喜欢"
+  - button "收藏"
+  - button "评论"
+  - button "分享":
+    - generic: 分享
+  - heading "评论 2" [level=2]
+  - button "查看全部"
+  - button "周 周末观察 这一步如果只有手机，先准备什么最合适？":
+    - generic: 周
+    - generic: 周末观察
+    - generic: 这一步如果只有手机，先准备什么最合适？
+  - button "写下你的看法"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

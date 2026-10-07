@@ -1,5 +1,6 @@
+import {prototypeStore} from './storage';
 // Fictional local examples. IDs and routes are shared by cards, search and details.
-export type SamplePost = { id:string; title:string; author:string; date:string; summary:string; body:string[]; image:string; circle?:string; reference?:string; recommended?:boolean };
+export type SamplePost = { id:string; title:string; author:string; date:string; summary:string; body:string[]; image:string; circle?:string; circleId?:string; reference?:string; recommended?:boolean };
 export const samplePosts:SamplePost[] = [
 {"id":"restore-color","title":"旧照片修复后，肤色怎么保持自然","image":"portrait","summary":"避免过度增加饱和度，先比较原图明暗。","author":"林间","date":"9月25日","body":["避免过度增加饱和度，先比较原图明暗。","这是一组修复练习，重点是保留原有结构，而不是重新生成整个画面。"],"circle":"影像练习圈","recommended":false},
 {"id":"restore-detail","title":"人像修复要不要保留细小纹理","image":"restore","summary":"我保留了一些皮肤纹理，让人物看起来更真实。","author":"林间","date":"9月25日","body":["我保留了一些皮肤纹理，让人物看起来更真实。","这是一组修复练习，重点是保留原有结构，而不是重新生成整个画面。"],"circle":"影像练习圈","recommended":false},
@@ -30,5 +31,29 @@ export const sampleCircles=[
   {id:'life',name:'生活美学圈',description:'空间器物 · 生活记录',cover:'interior'},
   {id:'character',name:'角色创作圈',description:'人物设定 · 故事画面',cover:'anime'},
 ];
-export const postTarget=(id:string)=>'post?item='+id;
+export function currentContentCircles(){
+ let rows:{id:string;title:string;detail?:string;status?:string}[]=[];
+ try{const raw=prototypeStore.getItem('bp-op-circles');rows=raw?JSON.parse(raw):[];}catch{}
+ const managed=rows.map(row=>({...sampleCircles.find(c=>c.id===row.id.replace(/^ci-/,'')),id:row.id.replace(/^ci-/,''),name:row.title,description:row.detail||'',status:row.status}));
+ return [...managed,...sampleCircles.filter(c=>!managed.some(m=>m.id===c.id)).map(c=>({...c,status:'开放'}))];
+}
+export function contentCircleId(name:string,id?:string){
+ if(id)return id;
+ const alias=({'摄影创作':'影像练习圈','电商视觉':'视觉创作圈'} as Record<string,string>)[name]||name;
+ return currentContentCircles().find(c=>c.name===alias)?.id||sampleCircles.find(c=>c.name===alias)?.id;
+}
+export function contentCircleName(name:string,id?:string){return currentContentCircles().find(c=>c.id===contentCircleId(name,id))?.name||name;}
+export const postTarget=(id:string)=>id.startsWith('post-')?'post?id='+encodeURIComponent(id):'post?item='+id;
+export const contentMediaSrc=(value:string)=>/^(\/|https?:|blob:|data:)/.test(value)?value:'/home-prototype/'+value+'.png';
+export function publicPostRows(records:import('../b-prototype/store').Content[]):SamplePost[]{
+ const idFor=(id:string)=>id==='restore'?'post-1':id.startsWith('post-')?id:'post-'+id;
+ const rows=samplePosts.filter(p=>!records.some(r=>r.kind==='post'&&r.id===idFor(p.id))).map(p=>({...p,circleId:contentCircleId(p.circle||'',p.circleId),circle:p.circle?contentCircleName(p.circle,p.circleId):undefined}));
+ for(const r of records.filter(r=>r.kind==='post'&&r.publicStatus==='公开'&&r.public)){
+  const d=r.public!;const base=samplePosts.find(p=>idFor(p.id)===r.id);
+  rows.push({...base,id:r.id,title:d.title,author:d.author,summary:d.summary||d.body.filter(b=>b.type==='段落').map(b=>b.text).join('\n').slice(0,100),body:d.body.filter(b=>b.type==='段落').flatMap(b=>b.text.split('\n\n')),image:r.media&&!/\.(mp4|webm|mov)(\?|$)/i.test(r.media)&&!r.media.startsWith('data:video/')?r.media.split('|')[0]:d.cover||'',circleId:contentCircleId(r.circle||'',r.circleId),circle:contentCircleName(({'摄影创作':'影像练习圈','电商视觉':'视觉创作圈','创作交流':'创作交流'} as Record<string,string>)[r.circle||'']||r.circle||'',r.circleId),date:r.firstPublishedAt?r.firstPublishedAt.slice(0,10):base?.date||'',recommended:r.recommended,reference:undefined});
+ }
+ return rows;
+}
 export const circleTarget=(id:string)=>'circle?item='+id;
+
+export function postDateOrder(value:string){const parts=(value.match(/\d+/g)||[]).map(Number);return parts.length>=3?parts[0]*10000+parts[1]*100+parts[2]:20260000+(parts[0]||0)*100+(parts[1]||0);}

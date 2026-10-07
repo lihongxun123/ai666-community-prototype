@@ -1,0 +1,83 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "兑换记录" [level=1]
+- main:
+  - region "兑换记录":
+    - generic: 共 10 条兑换记录
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 兑换失败 · 10/03 08:03
+      - generic: 原扣除 1000 积分
+      - paragraph: 兑换失败 · 已返还，恢复可用0积分。原积分已过期（北京时间10月4日00:00）。
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 兑换失败 · 10/03 08:02
+      - generic: 原扣除 1000 积分
+      - paragraph: 兑换失败 · 已返还，恢复可用1000积分；沿用原有效期。
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 兑换失败 · 10/03 08:01
+      - generic: 原扣除 1000 积分
+      - paragraph: 兑换失败 · 积分返还处理中。
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 结果待确认 · 10/03 08:00
+      - generic: 原扣除 1000 积分
+      - paragraph: 兑换结果确认中 · 积分已扣除，请查询原记录，不要重复兑换。
+      - button "查询原记录"
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 兑换成功 · 10/02 09:20
+      - generic: −1000 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-1
+      - button "复制卡密"
+      - link "前往多元探索 ↗":
+        - /url: https://duoyuanx.com/
+    - article:
+      - strong: 两元卡密
+      - generic: 多元探索 · 兑换成功 · 10/02 08:20
+      - generic: −200 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-2
+      - button "复制卡密"
+      - link "前往多元探索 ↗":
+        - /url: https://duoyuanx.com/
+    - article:
+      - strong: 五元卡密
+      - generic: 多元探索 · 兑换成功 · 10/02 07:20
+      - generic: −500 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-3
+      - button "复制卡密"
+      - link "前往多元探索 ↗":
+        - /url: https://duoyuanx.com/
+    - article:
+      - strong: 镜像周卡
+      - generic: 镜像站 · 兑换成功 · 10/01 06:20
+      - generic: −500 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-4
+      - button "复制卡密"
+      - link "前往镜像站 ↗":
+        - /url: https://chat.duoyuanx.com/
+    - article:
+      - strong: 镜像日卡
+      - generic: 镜像站 · 兑换成功 · 10/01 05:20
+      - generic: −190 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-5
+      - button "复制卡密"
+      - link "前往镜像站 ↗":
+        - /url: https://chat.duoyuanx.com/
+    - article:
+      - strong: 十元卡密
+      - generic: 多元探索 · 兑换成功 · 10/01 04:20
+      - generic: −1000 积分
+      - generic: 卡密
+      - code: DEMO-NOT-VALID-6
+      - button "复制卡密"
+      - link "前往多元探索 ↗":
+        - /url: https://duoyuanx.com/
+    - generic: 没有更多了

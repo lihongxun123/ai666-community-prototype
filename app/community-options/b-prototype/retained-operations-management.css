@@ -1,0 +1,50 @@
+.rom-root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.rom-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.rom-toolbar .ant-form {
+  flex-wrap: wrap;
+  gap: 12px 14px;
+}
+.rom-toolbar .ant-form-item {
+  margin: 0;
+}
+.rom-toolbar .ant-input-affix-wrapper {
+  width: 160px;
+}
+.rom-toolbar .ant-select {
+  min-width: 120px;
+}
+.rom-settings {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+}
+.rom-settings .ant-input {
+  width: 280px;
+}
+.rom-root .ant-btn-link {
+  padding-inline: 5px;
+}
+.rom-muted {
+  display: block;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.rom-cost {
+  color: #697586;
+  margin-top: -12px;
+  margin-bottom: 20px;
+}
+.rom-hidden {
+  display: none;
+}

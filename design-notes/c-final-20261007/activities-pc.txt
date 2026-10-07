@@ -1,0 +1,79 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - heading "活动中心" [level=1]
+  - paragraph: 参与创作，收获灵感与积分。
+  - article:
+    - button "查看国庆七天乐":
+      - img "国庆七天乐"
+    - generic: 进行中
+    - heading "国庆七天乐" [level=2]
+    - paragraph: 活动时间：2026-10-01 00:00 — 2026-10-07 23:59
+    - strong: 最高可得 1,750 积分
+    - button "参与活动"
+  - region "更多活动":
+    - heading "更多活动" [level=2]
+    - generic "活动状态筛选":
+      - button "全部" [pressed]
+      - button "进行中"
+      - button "即将开始"
+      - button "已结束"
+    - button "查看每周任务":
+      - heading "每周任务" [level=2]
+      - generic: 未开始
+      - paragraph: 用简单任务，天天都有积分。
+      - generic: 2026-10-20 09:00 — 2026-10-31 23:59
+      - strong: 最高可得 350 积分
+    - button "查看生图挑战":
+      - heading "生图挑战" [level=2]
+      - generic: 进行中
+      - paragraph: "不限题材，自由创作。带上 #生图挑战 发布原创 AI 图片。"
+      - generic: 长期活动
+      - strong: 最高可得 5,100 积分
+    - button "查看Prompt 共创计划":
+      - heading "Prompt 共创计划" [level=2]
+      - generic: 已结束
+      - paragraph: 分享经过验证的 Prompt，让更多人复用你的创作方法。
+      - generic: 2026-09-01 09:00 — 2026-09-30 23:59
+      - strong: 最高可得 3,000 积分
+    - button "查看邀请有礼":
+      - heading "邀请有礼" [level=2]
+      - generic: 进行中
+      - paragraph: 邀请好友加入，一起创作。
+      - generic: 长期活动
+      - strong: 最高可得 10,000 积分
+    - button "查看新手任务":
+      - heading "新手任务" [level=2]
+      - generic: 进行中
+      - paragraph: 完成新手任务，解锁七日成长计划。
+      - generic: 长期活动
+      - strong: 最高可得 150 积分
+    - button "查看七日成长计划":
+      - heading "七日成长计划" [level=2]
+      - generic: 进行中
+      - paragraph: 从发现灵感到创作发布，完成连续七天的成长计划。
+      - generic: 长期活动
+      - paragraph: 完成新手任务后解锁
+      - strong: 最高可得 300 积分

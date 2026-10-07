@@ -1,0 +1,352 @@
+{
+  "users": [
+    [
+      "查看详情",
+      "b:users",
+      "同一对象抽屉；保留查询条件"
+    ],
+    [
+      "积分流水",
+      "b:op-points",
+      "按原业务标识核对，不直接修改余额"
+    ]
+  ],
+  "aigc-models": [
+    [
+      "查询条件提交后更新列表，重置恢复全部",
+      "b:aigc-models",
+      "查询条件提交后更新列表，重置恢复全部"
+    ],
+    [
+      "新建",
+      "b:aigc-models",
+      "新建→填写字段→保存停用模型"
+    ],
+    [
+      "编辑",
+      "b:aigc-models",
+      "编辑→保存→更新列表和系统日志"
+    ],
+    [
+      "配置",
+      "b:aigc-models",
+      "配置→模型协议；编码→模型详情"
+    ],
+    [
+      "删除",
+      "b:aigc-models",
+      "删除→确认→移除目标模型并追加日志"
+    ]
+  ],
+  "aigc-generations": [
+    [
+      "主筛选或展开更多筛选",
+      "b:aigc-generations",
+      "主筛选或展开更多筛选→查询→列表"
+    ],
+    [
+      "详情",
+      "b:aigc-generations",
+      "详情→查看任务字段、媒体与脱敏原始数据"
+    ],
+    [
+      "处理中",
+      "b:aigc-generations",
+      "处理中→标记失败→填写原因→确认→状态变为失败"
+    ],
+    [
+      "失败提交",
+      "b:aigc-generations",
+      "失败提交→保留原因→重试"
+    ],
+    [
+      "完成后",
+      "b:aigc-generations",
+      "完成后→系统操作日志回查"
+    ]
+  ],
+  "notifications-admin": [
+    [
+      "查看详情",
+      "b:notifications-admin",
+      "同一对象抽屉；保留查询条件"
+    ]
+  ],
+  "announcements": [
+    [
+      "新建或编辑",
+      "b:announcements",
+      "填写作者、标题、摘要、Markdown正文并保存草稿"
+    ],
+    [
+      "上架或下架",
+      "b:announcements",
+      "确认后更新同一公告及发布时间"
+    ],
+    [
+      "删除",
+      "b:announcements",
+      "仅未发布公告可删除，确认后移除"
+    ]
+  ],
+  "system-roles": [
+    [
+      "查看详情",
+      "b:system-roles",
+      "同一对象抽屉；保留查询条件"
+    ]
+  ],
+  "system-admins": [
+    [
+      "查看详情",
+      "b:system-admins",
+      "同一对象抽屉；保留查询条件"
+    ]
+  ],
+  "system-logs": [
+    [
+      "查看详情",
+      "b:system-logs",
+      "同一对象抽屉；保留查询条件"
+    ]
+  ],
+  "aigc-series": [
+    [
+      "新建系列",
+      "b:aigc-series",
+      "填写编码、名称、描述和状态，校验保存"
+    ],
+    [
+      "编辑",
+      "b:aigc-series",
+      "编码只读，更新同一系列"
+    ],
+    [
+      "删除",
+      "b:aigc-series",
+      "确认目标后处理，失败保留原记录"
+    ],
+    [
+      "模型配置",
+      "b:aigc-models",
+      "选择同源系列"
+    ]
+  ],
+  "op-login-popup": [
+    [
+      "全局标题 / 是否弹出",
+      "b:op-login-popup",
+      "全局标题 / 是否弹出 → 保存设置"
+    ],
+    [
+      "子项筛选",
+      "b:op-login-popup",
+      "子项筛选 → 定位编辑项"
+    ],
+    [
+      "新建或编辑",
+      "b:op-login-popup",
+      "新建或编辑 → 素材上传 → 跳转类型与链接校验 → 保存"
+    ],
+    [
+      "上下架",
+      "b:op-login-popup",
+      "上下架 → 确认 → 保留记录并更新状态"
+    ],
+    [
+      "全局未保存输入 + 子项保存",
+      "b:op-login-popup",
+      "全局未保存输入 + 子项保存 → 全局输入保留"
+    ],
+    [
+      "失败提示",
+      "b:op-login-popup",
+      "失败提示 → 留存输入和原配置 → 重试"
+    ]
+  ],
+  "aigc-model-detail": [
+    [
+      "调用页签",
+      "b:aigc-model-detail",
+      "调用页签→加载调用与鉴权→维护协议→保存"
+    ],
+    [
+      "异步任务ID",
+      "b:aigc-model-detail",
+      "异步任务ID→填写查询路径及结果映射→保存"
+    ],
+    [
+      "前端页签",
+      "b:aigc-model-detail",
+      "前端页签→填写JSON或填充图片示例→保存"
+    ],
+    [
+      "有修改时重新加载、切页签或离开",
+      "b:aigc-model-detail",
+      "有修改时重新加载、切页签或离开→确认放弃或继续编辑"
+    ]
+  ],
+  "aigc-runtime-detail": [
+    [
+      "点击模型编码",
+      "b:aigc-runtime-detail",
+      "点击模型编码→详情基础信息"
+    ],
+    [
+      "编辑基础信息",
+      "b:aigc-runtime-detail",
+      "编辑基础信息→校验→保存"
+    ],
+    [
+      "调用配置显式加载；前端JSON可查看与编辑",
+      "b:aigc-runtime-detail",
+      "调用配置显式加载；前端JSON可查看与编辑"
+    ],
+    [
+      "返回列表或切模型协议",
+      "b:aigc-runtime-detail",
+      "返回列表或切模型协议→保护未保存修改"
+    ]
+  ],
+  "analytics-overview": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-overview",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "查看专题分析",
+      "b:analytics-growth",
+      "携带适用指标和查询条件"
+    ]
+  ],
+  "analytics-growth": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-growth",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "分析注册人群",
+      "b:analytics-users",
+      "继承日期、渠道和投放条件；返回恢复"
+    ]
+  ],
+  "analytics-users": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-users",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ]
+  ],
+  "analytics-creation": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-creation",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "查看记录",
+      "b:analytics-creation",
+      "只读生成记录抽屉"
+    ]
+  ],
+  "analytics-content": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-content",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "查看详情",
+      "b:analytics-content",
+      "同组指标与日期明细"
+    ],
+    [
+      "社区统计",
+      "b:analytics-content",
+      "切换社区页签→选择对象类型/日期→查看对象明细或指标定义"
+    ]
+  ],
+  "analytics-activity": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-activity",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "打开业务工作台",
+      "b:op-events",
+      "进入活动管理"
+    ],
+    [
+      "社区统计",
+      "b:analytics-activity",
+      "切换社区页签→选择对象类型/日期→查看对象明细或指标定义"
+    ]
+  ],
+  "analytics-quality": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-quality",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "打开业务工作台",
+      "b:reviews",
+      "进入审核工作台"
+    ]
+  ],
+  "analytics-metrics": [
+    [
+      "筛选 / 指标 / 分组",
+      "b:analytics-metrics",
+      "适用维度按V0.2；保留查询上下文"
+    ],
+    [
+      "查看指标定义",
+      "b:analytics-metrics",
+      "同一统计口径"
+    ],
+    [
+      "社区统计",
+      "b:analytics-metrics",
+      "切换社区页签→选择对象类型/日期→查看对象明细或指标定义"
+    ]
+  ]
+}

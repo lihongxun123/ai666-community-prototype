@@ -1,0 +1,155 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "圈子详情" [level=1]
+  - button "发布"
+- main:
+  - heading "影像练习圈" [level=1]
+  - paragraph: 照片修复、构图与视觉叙事
+  - generic: 1,286 人加入
+  - button "退出圈子"
+  - article:
+    - button "多 多元拾光编辑部 2026-10-06":
+      - generic: 多
+      - strong: 多元拾光编辑部
+      - generic: 2026-10-06
+    - button "旧照片修复时，我先做的三件事 · 25 将创作方法与实际使用条件写清楚。":
+      - strong: 旧照片修复时，我先做的三件事 · 25
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "查看帖子第1张图片":
+      - img "旧照片修复时，我先做的三件事 · 25 · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 · 1 2026-10-05":
+      - generic: 林
+      - strong: 林间 · 1
+      - generic: 2026-10-05
+    - button "旧照片修复时，我先做的三件事 将创作方法与实际使用条件写清楚。":
+      - strong: 旧照片修复时，我先做的三件事
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "查看帖子第1张图片":
+      - img "旧照片修复时，我先做的三件事 · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 · 16 2026-10-05":
+      - generic: 林
+      - strong: 林间 · 16
+      - generic: 2026-10-05
+    - button "将创作方法与实际使用条件写清楚。":
+      - strong
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "查看帖子第1张图片":
+      - img "· 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "温 温白 9月25日":
+      - generic: 温
+      - strong: 温白
+      - generic: 9月25日
+    - button "阴天拍人像，背景总显得太灰怎么办？ 我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。":
+      - strong: 阴天拍人像，背景总显得太灰怎么办？
+      - generic: 我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。
+    - button "查看帖子第1张图片":
+      - img "阴天拍人像，背景总显得太灰怎么办？ · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 9月25日":
+      - generic: 林
+      - strong: 林间
+      - generic: 9月25日
+    - button "修复照片时，背景也需要单独处理 先修背景中的破损，再检查人物边缘。":
+      - strong: 修复照片时，背景也需要单独处理
+      - generic: 先修背景中的破损，再检查人物边缘。
+    - button "查看帖子第1张图片":
+      - img "修复照片时，背景也需要单独处理 · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 9月25日":
+      - generic: 林
+      - strong: 林间
+      - generic: 9月25日
+    - button "旧照片修复后，肤色怎么保持自然 避免过度增加饱和度，先比较原图明暗。":
+      - strong: 旧照片修复后，肤色怎么保持自然
+      - generic: 避免过度增加饱和度，先比较原图明暗。
+    - button "查看帖子第1张图片":
+      - img "旧照片修复后，肤色怎么保持自然 · 图片 1"
+    - button "查看帖子第2张图片":
+      - img "旧照片修复后，肤色怎么保持自然 · 图片 2"
+    - button "查看帖子第3张图片":
+      - img "旧照片修复后，肤色怎么保持自然 · 图片 3"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 9月25日":
+      - generic: 林
+      - strong: 林间
+      - generic: 9月25日
+    - button "人像修复要不要保留细小纹理 我保留了一些皮肤纹理，让人物看起来更真实。":
+      - strong: 人像修复要不要保留细小纹理
+      - generic: 我保留了一些皮肤纹理，让人物看起来更真实。
+    - button "查看帖子第1张图片":
+      - img "人像修复要不要保留细小纹理 · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "小 小树影 9月24日":
+      - generic: 小
+      - strong: 小树影
+      - generic: 9月24日
+    - button "一张照片的三个裁切版本，哪张更有故事感？ 同一张街景，分别保留人物、路口和远处的车。第三张留白最多。":
+      - strong: 一张照片的三个裁切版本，哪张更有故事感？
+      - generic: 同一张街景，分别保留人物、路口和远处的车。第三张留白最多。
+    - button "查看帖子第1张图片":
+      - img "一张照片的三个裁切版本，哪张更有故事感？ · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "阿 阿璃 9月23日":
+      - generic: 阿
+      - strong: 阿璃
+      - generic: 9月23日
+    - button "把家里的老照片重新整理成一页相册 没有做复杂修饰，只把散落的照片按时间排好。":
+      - strong: 把家里的老照片重新整理成一页相册
+      - generic: 没有做复杂修饰，只把散落的照片按时间排好。
+    - button "查看帖子第1张图片":
+      - img "把家里的老照片重新整理成一页相册 · 图片 1"
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

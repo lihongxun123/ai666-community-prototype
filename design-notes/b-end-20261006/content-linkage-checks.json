@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-06T13:42:50.401Z",
+  "scope": "第1组：作品、帖子、教程、AI应用的发布/审核/上下架与C端公开展示",
+  "changes": [
+    "B端内容记录与C端列表、详情使用同一ID和公开快照",
+    "C端作品、帖子提交进入本地B端审核队列，结果同步我的内容",
+    "首次待审不公开；已公开内容待审修改及拒绝保留原公开版",
+    "下架停止访问；下架重提审核不自动上架；恢复不恢复爆款或置顶",
+    "用户撤回、删除、下架和恢复同步本地内容记录",
+    "帖子多媒体与上传dataURL持久化；作品真实提示词、成果、生成参数、参考素材与发布时间同步",
+    "PC帖子保留两栏模板，教程/app PC与移动详情显示后台公开内容",
+    "页面需求与模块流程同步，跨端流程目标校验使用实际页面注册"
+  ],
+  "verification": {
+    "typescript": "passed",
+    "scopedLint": "passed for 16 affected adapters/list/detail/store files; reading.tsx and personal.tsx retain pre-existing findings",
+    "registry": {
+      "passed": true,
+      "bPages": 54,
+      "navigation": 41,
+      "metrics": 105
+    },
+    "stateTests": {
+      "passed": true,
+      "file": "content-linkage.test.mjs",
+      "coverage": [
+        "首次待审核不可公开",
+        "公开修改与拒绝保留旧版本",
+        "上下架不暴露待审稿",
+        "下架重提与非法恢复拦截",
+        "撤回和删除",
+        "爆款/置顶清理",
+        "首发时间保留",
+        "多图与video dataURL",
+        "新作品排序"
+      ]
+    },
+    "browser": [
+      "C发布帖子→B待审核→审核通过→C我的内容实时公开",
+      "C发布文本作品→B审核通过→C公开详情显示同一正文与提示词",
+      "作品跨标签页下架→C详情立即不可访问→上架恢复且时间不变",
+      "应用编辑、上下架同步PC/移动详情",
+      "未发布教程PC/移动详情不可访问；已公开教程显示后台正文",
+      "PC帖子圈子信息与两栏展示"
+    ],
+    "independentReview": "passed after fixing snapshot recommendation restore and unreviewed restore bypass",
+    "nodeBuild": "passed",
+    "buildLog": "content-linkage-build.log",
+    "screenshots": [
+      "content-link-submission-approved.jpg",
+      "content-link-work-restored.png",
+      "content-link-down.png",
+      "content-link-post-pc.png"
+    ]
+  },
+  "boundaries": [
+    "仅同源浏览器本地模拟数据；不同浏览器配置文件不共享演示记录",
+    "不代表真实接口、权限、计费、生产发布验收",
+    "本轮不是其余运营/积分/商城等模块的全量跨端验收",
+    "未提交、推送或部署"
+  ]
+}

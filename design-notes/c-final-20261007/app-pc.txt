@@ -1,0 +1,79 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - article:
+    - button "全部应用"
+    - region "效果示例":
+      - generic: 文案改写
+      - generic: 效果示例
+      - text: 改写前
+      - paragraph: 这个杯子很好看，蓝色花纹，喝水喝咖啡都能用，也适合送朋友。
+      - text: 改写后 · 生活方式文案
+      - heading "把一小片蓝色，放进日常。" [level=2]
+      - paragraph: 清晨的咖啡，午后的一杯水，都可以多一点仪式感。蓝色花纹在杯身轻轻铺开，陪你度过慢下来的片刻。
+      - paragraph: 留给自己，或送给喜欢生活的朋友。
+    - heading "应用介绍" [level=2]
+    - heading "适合用来" [level=2]
+    - paragraph: 整理产品介绍、社交文案和日常表达。
+    - heading "输入准备" [level=3]
+    - paragraph: 提供原文、发布用途与希望使用的语气。
+    - heading "输出" [level=3]
+    - paragraph: 一份可继续修改的文案。
+    - dialog "全部评论":
+      - heading "评论 2" [level=2]
+      - generic: 周
+      - strong: 周末观察
+      - generic: 9月24日 11:00
+      - paragraph: 这一步如果只有手机，先准备什么最合适？
+      - button "回复"
+      - button "赞"
+      - button "查看 1 条回复"
+      - generic: 我
+      - strong: 我
+      - paragraph: 该评论暂不可见
+      - text: 内容未通过审核，请调整后重新发布。
+      - textbox "评论内容":
+        - /placeholder: 写下你的看法
+      - button "添加图片"
+      - generic: 0/1000
+      - button "发送" [disabled]
+    - complementary:
+      - heading "文案改写" [level=1]
+      - paragraph: 由 多元拾光 提供
+      - button "喜欢"
+      - button "收藏"
+      - button "评论"
+      - button "分享":
+        - generic: 分享
+      - paragraph: 将创作方法与实际使用条件写清楚。
+      - generic: AI 应用
+      - generic: 一份可继续编辑的改写文案
+      - heading "使用信息" [level=2]
+      - heading "准备什么" [level=3]
+      - paragraph: 原文，以及用途和语气要求
+      - heading "得到什么" [level=3]
+      - paragraph: 一份可继续编辑的改写文案
+      - button "暂未开放使用" [disabled]
+      - paragraph: 介绍与讨论仍可查看

@@ -1,0 +1,91 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- heading "邀请有礼" [level=1]
+- main:
+  - heading "邀请好友，一起创作" [level=2]
+  - button "查看完整规则 ›"
+  - paragraph: 好友完成任务，每位最高可得 300 积分。
+  - article:
+    - heading "注册" [level=3]
+    - paragraph: 好友完成注册并绑定邀请码
+    - strong: +100 积分
+  - article:
+    - heading "首次互动" [level=3]
+    - paragraph: 好友完成首次有效点赞或评论
+    - strong: +100 积分
+  - article:
+    - heading "首次发布" [level=3]
+    - paragraph: 好友首次发布作品并通过审核
+    - strong: +100 积分
+  - heading "我的邀请码" [level=3]
+  - strong: DEMO-ONLY
+  - button "复制邀请码"
+  - button "复制邀请链接"
+  - generic: 我的邀请人
+  - textbox "我的邀请人":
+    - /placeholder: 输入邀请码
+  - button "绑定"
+  - term: 邀请好友
+  - definition: 3 位
+  - term: 累计获得
+  - definition: 600 积分
+  - term: 处理中
+  - definition: 0 积分
+  - heading "好友任务进度" [level=2]
+  - button "邀请明细 ›"
+  - table:
+    - rowgroup:
+      - row "好友 注册 互动 首次发布 已获积分":
+        - columnheader "好友"
+        - columnheader "注册"
+        - columnheader "互动"
+        - columnheader "首次发布"
+        - columnheader "已获积分"
+    - rowgroup:
+      - row "A 拾光伙伴 A ✓ 已完成 ✓ 已完成 ✓ 已完成 300":
+        - cell "A 拾光伙伴 A":
+          - generic: A
+          - text: 拾光伙伴 A
+        - cell "✓ 已完成"
+        - cell "✓ 已完成"
+        - cell "✓ 已完成"
+        - cell "300"
+      - row "B 拾光伙伴 B ✓ 已完成 待完成 待完成 100":
+        - cell "B 拾光伙伴 B":
+          - generic: B
+          - text: 拾光伙伴 B
+        - cell "✓ 已完成"
+        - cell "待完成"
+        - cell "待完成"
+        - cell "100"
+      - row "C 拾光伙伴 C ✓ 已完成 ✓ 已完成 待完成 200":
+        - cell "C 拾光伙伴 C":
+          - generic: C
+          - text: 拾光伙伴 C
+        - cell "✓ 已完成"
+        - cell "✓ 已完成"
+        - cell "待完成"
+        - cell "200"
+  - paragraph: 奖励在达成条件后自动发放，实际规则以活动说明为准。

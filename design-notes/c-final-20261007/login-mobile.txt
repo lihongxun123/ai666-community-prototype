@@ -1,0 +1,76 @@
+- button "关闭登录"
+- dialog "手机验证码登录":
+  - button "关闭登录" [active]: ×
+  - heading "手机验证码登录" [level=2]
+  - text: 手机号
+  - textbox "手机号":
+    - /placeholder: 请输入手机号
+  - text: 验证码
+  - textbox "验证码 获取验证码":
+    - /placeholder: 请输入验证码
+  - button "获取验证码"
+  - generic: 邀请码 选填
+  - textbox "邀请码 选填":
+    - /placeholder: 请输入邀请码（选填）
+  - button "登录"
+  - button "更多登录方式 微信扫码登录 ›":
+    - text: 更多登录方式
+    - generic: 微信扫码登录 ›
+  - paragraph:
+    - text: 登录即表示同意
+    - link "《用户协议》":
+      - /url: https://www.ai666.net/privacy.html#terms
+    - text: 和
+    - link "《隐私政策》":
+      - /url: https://www.ai666.net/privacy.html#privacy
+- banner:
+  - img "多元拾光"
+  - button "搜索"
+  - button "消息中心，有未读消息"
+- main:
+  - button "一起画个夏天":
+    - img "一起画个夏天"
+  - navigation "快捷入口":
+    - button "AI应用": AI应用
+    - button "专题": 专题
+    - button "活动中心": 活动中心
+    - button "每日签到": 每日签到
+  - button "模型广场 文本 · 图像 · 音频 · 视频":
+    - strong: 模型广场
+    - generic: 文本 · 图像 · 音频 · 视频
+  - heading "精选专题" [level=2]
+  - button "全部"
+  - button "电商营销":
+    - generic: 电商营销
+  - button "角色创作":
+    - generic: 角色创作
+  - button "图像修复":
+    - generic: 图像修复
+  - button "写作表达":
+    - generic: 写作表达
+  - heading "爆款作品" [level=2]
+  - navigation "内容分类":
+    - button "全部" [pressed]
+    - button "电商营销"
+    - button "设计"
+    - button "IP与文创"
+    - button "摄影"
+    - button "写作"
+    - button "游戏"
+    - button "科普"
+    - button "历史"
+    - button "生活"
+  - button "查看作品：旧照片的新故事":
+    - img "旧照片的新故事"
+    - strong: 旧照片的新故事
+    - generic: 围绕日常场景完成的一次视觉创作，记录画面与提示词的探索。
+    - generic: 林间
+    - img "喜欢"
+    - text: "0"
+  - paragraph: 没有更多了
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

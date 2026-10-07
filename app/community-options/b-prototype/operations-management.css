@@ -1,0 +1,25 @@
+.om-root{min-width:0;color:#262626}.om-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:22px}.om-heading h3.ant-typography{margin:0 0 8px;font-size:22px}.om-heading p{max-width:760px;color:#595959;margin:0;line-height:1.7;font-size:13px}.om-filter{margin:16px 0}.om-root .ant-table-cell{vertical-align:top}.om-root .ant-btn-link{height:auto;text-align:left;white-space:normal}.om-sub{display:block;font-size:12px;color:#737373;font-weight:400;line-height:1.6}.om-gap{margin-top:18px}.om-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}.om-task-table{margin-top:16px}.om-root .ant-table-wrapper{max-width:100%}.om-root .ant-table-cell .ant-space{row-gap:0}.om-root .ant-card{border-radius:4px}.om-form-grid .ant-input-number{width:100%}@media(max-width:800px){.om-heading{flex-direction:column}.om-form-grid{grid-template-columns:1fr}.om-heading p{max-width:100%}}
+.om-heading{justify-content:flex-end;margin-bottom:12px;gap:8px}.om-filter{margin:0 0 12px}.om-filter .ant-card-body{padding:12px}.om-root .ant-table-cell .ant-btn-link{padding-inline:6px;border:0;box-shadow:none}
+
+.om-root .ant-table-cell .ant-btn{border:0!important;box-shadow:none!important;background:transparent!important}.om-root .ant-table-cell .ant-btn:hover{background:transparent!important}
+
+.om-taxonomy .ant-table-tbody td:first-child .ant-btn-link{display:block;width:100%;text-align:left}.om-taxonomy .ant-table-tbody td:first-child .om-sub{overflow-wrap:anywhere}
+/* Compact placement editors keep actions within the viewport. */
+.placement-editor.ant-modal{max-width:calc(100vw - 32px);padding-bottom:0}
+.placement-editor .ant-modal-container,.placement-editor .ant-modal-content{display:flex;flex-direction:column;max-height:calc(100dvh - 48px);overflow:hidden}
+.placement-editor .ant-modal-header,.placement-editor .ant-modal-footer{flex-shrink:0}
+.placement-editor .ant-modal-body{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-right:4px}
+.placement-editor .ant-modal-footer{border-top:1px solid #f0f0f0;padding-top:12px;margin-top:12px}
+.placement-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;align-items:start}
+.placement-form>.ant-form-item{min-width:0;margin-bottom:14px}
+.placement-form .ant-form-item-label{padding-bottom:4px}
+.placement-form>.placement-full{grid-column:1/-1}
+.placement-form>.placement-id{display:flex;gap:8px;margin-bottom:10px;color:#8c8c8c}
+.placement-form .ant-input-number{width:100%}
+.placement-editor .bp-media-upload.bp-media-upload.bp-media-upload.bp-media-upload{margin:0}
+.placement-editor .bp-media-upload-head,.placement-editor .bp-media-upload-hint{display:none}
+.placement-editor .bp-media-upload-panel{padding:10px}
+.placement-editor .bp-media-upload-thumb,.placement-editor .bp-media-upload.bp-media-upload.bp-media-upload.bp-media-upload button.bp-media-upload-add{width:80px;height:80px}
+@media(max-width:600px){.placement-form{grid-template-columns:1fr}.placement-editor .ant-modal-container,.placement-editor .ant-modal-content{max-height:calc(100dvh - 24px)}.placement-editor .placement-media .ant-space{flex-wrap:wrap}}
+.placement-editor .bp-media-upload.bp-media-upload.bp-media-upload.bp-media-upload button.bp-media-upload-cover{display:none}
+.placement-form>.placement-id{font-size:12px;line-height:22px}

@@ -1,0 +1,36 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "编辑资料" [level=1]
+- main:
+  - generic "更换头像":
+    - generic: 林
+    - button "选择新头像"
+  - strong: 更换头像
+  - generic: 支持 JPG、PNG，不超过 5MB
+  - text: 昵称
+  - textbox "昵称 2/20":
+    - /placeholder: 请输入昵称
+    - text: 林间
+  - generic: 2/20
+  - group "性别":
+    - generic: 性别
+    - radio "男"
+    - text: 男
+    - radio "女"
+    - text: 女
+  - text: 个人简介
+  - textbox "个人简介 0/80":
+    - /placeholder: 介绍一下自己吧
+  - generic: 0/80
+  - heading "账号与绑定" [level=2]
+  - button "手机号 绑定后可使用手机号登录 去绑定 ›":
+    - text: 手机号
+    - generic: 绑定后可使用手机号登录
+    - emphasis: 去绑定 ›
+  - button "微信 微信账号已绑定 管理 ›":
+    - text: 微信
+    - generic: 微信账号已绑定
+    - emphasis: 管理 ›
+  - status
+  - button "保存资料"

@@ -1,0 +1,154 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- heading "专题" [level=1]
+- main:
+  - paragraph: 从一个主题，发现更多创作可能
+  - generic "精选专题":
+    - generic: 精选专题 / 01
+    - heading "电商营销" [level=2]
+    - paragraph: 从产品图片到展示短片
+    - generic: 5 项精选内容
+    - button "查看专题：电商营销": 探索专题
+    - button "查看作品：柠檬与蓝花杯":
+      - img "柠檬与蓝花杯"
+      - generic: 作品
+      - strong: 柠檬与蓝花杯
+    - button "查看教程：产品背景与光线的搭配":
+      - img "产品背景与光线的搭配"
+      - generic: 教程
+      - strong: 产品背景与光线的搭配
+    - button "查看AI应用：产品换背景":
+      - img "产品换背景"
+      - generic: AI应用
+      - strong: 产品换背景
+    - button "查看AI应用：产品短片制作":
+      - img "产品短片制作"
+      - generic: AI应用
+      - strong: 产品短片制作
+    - button "查看作品：在海边住一下午":
+      - img "在海边住一下午"
+      - generic: 作品
+      - strong: 在海边住一下午
+    - generic: 精选专题 / 02
+    - heading "角色创作" [level=2]
+    - paragraph: 角色设计与表达
+    - generic: 6 项精选内容
+    - button "查看专题：角色创作": 探索专题
+    - button "查看作品：风从蓝色花间经过":
+      - img "风从蓝色花间经过"
+      - generic: 作品
+      - strong: 风从蓝色花间经过
+    - button "查看作品：沉入一场蓝色的梦":
+      - img "沉入一场蓝色的梦"
+      - generic: 作品
+      - strong: 沉入一场蓝色的梦
+    - button "查看作品：夏日的转角":
+      - img "夏日的转角"
+      - generic: 作品
+      - strong: 夏日的转角
+    - button "查看作品：西瓜味的夏天":
+      - img "西瓜味的夏天"
+      - generic: 作品
+      - strong: 西瓜味的夏天
+    - button "查看作品：把阳光留在眼睛里":
+      - img "把阳光留在眼睛里"
+      - generic: 作品
+      - strong: 把阳光留在眼睛里
+    - button "查看作品：快乐没有理由":
+      - img "快乐没有理由"
+      - generic: 作品
+      - strong: 快乐没有理由
+    - generic: 精选专题 / 03
+    - heading "图像修复" [level=2]
+    - paragraph: 修复方法与案例
+    - generic: 6 项精选内容
+    - button "查看专题：图像修复": 探索专题
+    - button "查看作品：旧照修复练习":
+      - img "旧照修复练习"
+      - generic: 作品
+      - strong: 旧照修复练习
+    - button "查看教程：旧照片修复：从判断破损到复查":
+      - img "旧照片修复：从判断破损到复查"
+      - generic: 教程
+      - strong: 旧照片修复：从判断破损到复查
+    - button "查看AI 应用：旧照片修复":
+      - img "旧照片修复"
+      - generic: AI 应用
+      - strong: 旧照片修复
+    - button "查看作品：保留自然肤色":
+      - img "保留自然肤色"
+      - generic: 作品
+      - strong: 保留自然肤色
+    - button "查看作品：空间照片修复练习":
+      - img "空间照片修复练习"
+      - generic: 作品
+      - strong: 空间照片修复练习
+    - button "查看作品：宠物照片细节修复":
+      - img "宠物照片细节修复"
+      - generic: 作品
+      - strong: 宠物照片细节修复
+    - generic: 精选专题 / 04
+    - heading "写作表达" [level=2]
+    - paragraph: 文字组织与内容表达
+    - generic: 2 项精选内容
+    - button "查看专题：写作表达": 探索专题
+    - button "查看AI应用：文案改写":
+      - img "文案改写"
+      - generic: AI应用
+      - strong: 文案改写
+    - button "查看文字作品：写给夏天的一封信":
+      - img "写给夏天的一封信"
+      - generic: 文字作品
+      - strong: 写给夏天的一封信
+    - generic: 精选专题 / 05
+    - heading "人像修复练习" [level=2]
+    - paragraph: 从肤色到细节的修复练习
+    - generic: 6 项精选内容
+    - button "查看专题：人像修复练习": 探索专题
+    - button "查看作品：人像修复：保留自然肤色":
+      - img "人像修复：保留自然肤色"
+      - generic: 作品
+      - strong: 人像修复：保留自然肤色
+    - button "查看作品：旧照修复练习":
+      - img "旧照修复练习"
+      - generic: 作品
+      - strong: 旧照修复练习
+    - button "查看教程：旧照片修复：从判断破损到复查":
+      - img "旧照片修复：从判断破损到复查"
+      - generic: 教程
+      - strong: 旧照片修复：从判断破损到复查
+    - button "查看作品：角色图像修复与配色":
+      - img "角色图像修复与配色"
+      - generic: 作品
+      - strong: 角色图像修复与配色
+    - button "查看作品：空间照片修复练习":
+      - img "空间照片修复练习"
+      - generic: 作品
+      - strong: 空间照片修复练习
+    - button "查看作品：宠物照片细节修复":
+      - img "宠物照片细节修复"
+      - generic: 作品
+      - strong: 宠物照片细节修复
+    - paragraph: 已浏览全部专题

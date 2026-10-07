@@ -5,7 +5,7 @@ import { prototypeStore } from "../c-prototype/storage";
 import { defaultEventConfigs } from "./retained-event-defaults";
 import "./retained-event-config.css";
 
-export type EventType = "long_term" | "referral" | "campaign";
+export type EventType = "long_term" | "referral" | "campaign" | "archive";
 export type EventTask = {
   task_code: string; name: string; description: string; operator_note?: string; event_type: string;
   target_count: number; reward_points: number; expire_days: number;
@@ -16,6 +16,7 @@ export type EventTask = {
   validation_rule: { title_min_len?: number; content_min_cn_chars?: number; required_fields?: string[] };
 };
 export type EventConfig = {
+  id?: number; time_label?: string; status_text?: string;
   code: string; name: string; type: EventType; cover_url: string; description: string;
   start_time: string; end_time: string; max_points: number; sort_order: number;
   is_featured: boolean; status: "草稿" | "进行中" | "已结束";
@@ -29,7 +30,9 @@ export type EventConfig = {
 };
 
 const key = "bp-op-event-configs";
-const eventTypeLabels: Record<EventType, string> = { long_term: "长期活动", referral: "邀请活动", campaign: "档期活动" };
+const removedKey = "bp-op-event-deleted";
+function deletedCodes(): string[] { try { return JSON.parse(prototypeStore.getItem(removedKey) || "[]"); } catch { return []; } }
+const eventTypeLabels: Record<EventType, string> = { long_term: "长期活动", referral: "邀请活动", campaign: "档期活动", archive: "往期归档" };
 const contentTypeOptions = {
   work: [{ value: 4, label: "文字作品" }, { value: 2, label: "图片作品" }, { value: 3, label: "视频作品" }],
   post: [{ value: 1, label: "纯文字圈子帖子" }, { value: 2, label: "图文圈子帖子" }],
@@ -47,41 +50,43 @@ const hydrate = (rows: EventConfig[]): EventConfig[] => {
     if (obsoleteSeed && seed) return structuredClone(seed);
     const savedPublish = row.extra_config?.publish_config;
     const savedTypes = savedPublish?.content_types || rule.content_types;
-    const displayTypes = (savedPublish?.biz_type || rule.biz_type) === "post" ? savedTypes : [...new Set(savedTypes.map(value => value === 1 ? 3 : value))];
+    const displayTypes = [...savedTypes];
     return { ...seed, ...row, code, type: String(row.type) === "time_limited" ? "campaign" : row.type,
       unlock_rule: { ...seed?.unlock_rule, ...row.unlock_rule, requires: row.unlock_rule?.requires || seed?.unlock_rule.requires || [] },
       extra_config: { ...seed?.extra_config, ...row.extra_config, publish_config: { ...rule, ...savedPublish, content_types: displayTypes } },
       tasks: row.tasks || [],
     } as EventConfig;
   });
-  return [...normalized, ...base.filter(item => !normalized.some(row => row.code === item.code))];
+  return [...normalized, ...base.filter(item => !normalized.some(row => row.code === item.code))].filter(item => !deletedCodes().includes(item.code));
 };
 
 export const readEventConfigs = (): EventConfig[] => {
-  if (typeof window === "undefined") return defaults();
+  if (typeof window === "undefined") return defaults().filter(item => !deletedCodes().includes(item.code));
   try {
     const stored = JSON.parse(prototypeStore.getItem(key) || "null");
-    if (!stored || !Array.isArray(stored.drafts)) return defaults();
+    if (!stored || !Array.isArray(stored.drafts)) return defaults().filter(item => !deletedCodes().includes(item.code));
     return hydrate(stored.drafts as EventConfig[]);
-  } catch { return defaults(); }
+  } catch { return defaults().filter(item => !deletedCodes().includes(item.code)); }
 };
 export const readPublishedEventConfigs = (): EventConfig[] => {
-  if (typeof window === "undefined") return defaults();
+  if (typeof window === "undefined") return defaults().filter(item => !deletedCodes().includes(item.code));
   try {
     const stored = JSON.parse(prototypeStore.getItem(key) || "null");
-    return Array.isArray(stored?.published) ? hydrate(stored.published as EventConfig[]) : defaults();
-  } catch { return defaults(); }
+    return Array.isArray(stored?.published) ? hydrate(stored.published as EventConfig[]) : defaults().filter(item => !deletedCodes().includes(item.code));
+  } catch { return defaults().filter(item => !deletedCodes().includes(item.code)); }
 };
 const persist = (drafts: EventConfig[], published: EventConfig[]) => {
   prototypeStore.setItem(key, JSON.stringify({ drafts, published }));
   window.dispatchEvent(new Event("bp-operations-change"));
 };
 export const saveEventDraft = (item: EventConfig) => {
+  prototypeStore.setItem(removedKey, JSON.stringify(deletedCodes().filter(code => code !== item.code)));
   const drafts = readEventConfigs();
   const next = drafts.some(row => row.code === item.code) ? drafts.map(row => row.code === item.code ? item : row) : [item, ...drafts];
   persist(next, readPublishedEventConfigs());
 };
 export const publishEventConfig = (item: EventConfig) => {
+  prototypeStore.setItem(removedKey, JSON.stringify(deletedCodes().filter(code => code !== item.code)));
   const drafts = readEventConfigs();
   const nextDrafts = drafts.some(row => row.code === item.code) ? drafts.map(row => row.code === item.code ? item : row) : [item, ...drafts];
   const published = readPublishedEventConfigs();
@@ -92,6 +97,17 @@ export const publishEventConfig = (item: EventConfig) => {
   const nextRow = { id, title: item.name, status: item.status, type: eventTypeLabels[item.type], owner: "活动运营", detail: `${item.tasks.length} 项任务 · 最高可得 ${item.max_points} 积分` };
   const withoutLegacyAlias = item.code === "invite_reward" ? rows.filter(row => row.id !== "ev-referral") : rows;
   prototypeStore.setItem("bp-op-events", JSON.stringify(withoutLegacyAlias.some(row => row.id === id) ? withoutLegacyAlias.map(row => row.id === id ? nextRow : row) : [nextRow, ...withoutLegacyAlias]));
+  window.dispatchEvent(new Event("bp-operations-change"));
+};
+
+export const deleteEventConfig = (code: string) => {
+  const canonical = canonicalCode(code);
+  const drafts = readEventConfigs().filter(item => item.code !== canonical);
+  const published = readPublishedEventConfigs().filter(item => item.code !== canonical);
+  prototypeStore.setItem(removedKey, JSON.stringify([...new Set([...deletedCodes(), canonical])]));
+  prototypeStore.setItem(key, JSON.stringify({drafts, published}));
+  const rows = JSON.parse(prototypeStore.getItem("bp-op-events") || "[]") as {id:string}[];
+  prototypeStore.setItem("bp-op-events", JSON.stringify(rows.filter(row => row.id !== canonical && row.id !== "ev-" + canonical)));
   window.dispatchEvent(new Event("bp-operations-change"));
 };
 

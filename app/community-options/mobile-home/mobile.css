@@ -48,3 +48,5 @@ html:has(.mh-root)::-webkit-scrollbar-thumb,body:has(.mh-root)::-webkit-scrollba
 .mh-root.mh-content-only{padding-bottom:0}
 
 .mh-works-heading{margin-top:20px;margin-bottom:0}.mh-works-heading+.mh-categories{margin-top:4px}
+
+.mh-model-entry{display:flex;align-items:center;gap:12px;width:100%;background:#f6f6f6;border:1px solid #eee;border-radius:4px;padding:14px;text-align:left;margin:0 0 24px;color:#333}.mh-model-entry>span{flex:1;display:grid;gap:5px}.mh-model-entry strong{font-size:13px;font-weight:600}.mh-model-entry small{font-size:11px;color:#888}.mh-model-entry img{width:20px;height:20px}

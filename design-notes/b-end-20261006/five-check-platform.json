@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-06",
+  "scope": "B端用户、通知、统计、系统、AIGC产品五项审查",
+  "criteria": ["页面完整", "操作合理", "必要状态", "需求可开发", "过度设计"],
+  "sourceCoverage": {
+    "routes": "app/community-options/b-prototype/page.tsx",
+    "files": ["user-management.tsx", "user-support-management.tsx", "platform-management.tsx", "announcement-management.tsx", "system-management.tsx", "aigc-management.tsx", "model-series-management.tsx"],
+    "requirements": ["design-notes/page-requirements-b.json", "design-notes/b-end-20261006/platform-management-requirements.json", "app/community-options/prototype-review/product-plans-b.json", "design-notes/b-end-20261006/local-flows.json"],
+    "pages": ["users", "user-register-sources", "user-member-levels", "op-points", "op-invite", "notifications-admin", "feedback", "announcements", "aigc-series", "aigc-models", "aigc-model-detail", "aigc-runtime-detail", "aigc-generations", "system-roles", "system-permissions", "system-admins", "system-logs", "analytics-overview", "analytics-growth", "analytics-channels", "analytics-users", "analytics-quality", "analytics-creation", "analytics-incentives", "analytics-metrics"],
+    "deadBranchesExcluded": "PlatformManagement内旧users、announcements、aigc及system分支被专用组件优先路由覆盖，未将这些旧分支作为实际页面缺陷。"
+  },
+  "fixed": [
+    {"id": "P1", "page": "user-register-sources / user-member-levels / op-points / op-invite", "issue": "无访问权限状态仍展示用户关联数据，被混作只读", "change": "no-permission与permission-denied统一403；read-only可查看但维护动作禁用", "evidence": "user-support-management.tsx:173,777"},
+    {"id": "P2", "page": "announcements", "issue": "只读状态维护按钮可点击，但提交静默失效", "change": "新建、编辑、上下架、删除按钮统一禁用，编辑入口同步拦截", "evidence": "announcement-management.tsx:13,16,22,26"},
+    {"id": "P3", "page": "aigc-series", "issue": "异常旧值渲染为额外业务状态状态待核对", "change": "启用/停用为唯一正常状态；缺失字段显示—，不新增业务状态", "evidence": "model-series-management.tsx:383"},
+    {"id": "P4", "page": "users", "issue": "官方身份编辑存在实现说明且列举用途不完整", "change": "移除创建账号不创建登录凭证等段落，保留实际字段和必要确认", "evidence": "user-management.tsx:1057"},
+    {"id": "P5", "page": "op-points", "issue": "人工调整积分的业务单号回退用户ID，同一用户多次调整无法精确定位", "change": "人工调整记录bizNo使用独立流水ID，来源对象仍为用户ID", "evidence": "user-support-management.tsx:484"},
+    {"id": "P6", "page": "aigc-generations", "issue": "详情发起失败处理时弹层叠在旧详情抽屉上", "change": "先关闭详情抽屉再打开失败处理弹层", "evidence": "aigc-management.tsx:509"},
+    {"id": "P7", "page": "aigc-generations", "issue": "生成记录已知用户ID未映射昵称头像，显示通用演示用户", "change": "列表、详情、失败弹层统一读取同ID用户身份", "evidence": "aigc-management.tsx:164,742,1428,1581"},
+    {"id": "P8", "page": "aigc-generations", "issue": "列表动作标记失败与详情动作标记失败并退还积分名称不一致", "change": "统一为标记失败并退还积分；保留处理中状态限制、失败原因和重复提交锁", "evidence": "aigc-management.tsx:797,1407"}
+  ],
+  "browser": {
+    "environment": "127.0.0.1:3000本地原型；CUA Chrome，未取得in-app自动化tab；不操作真实后台",
+    "pageCoverage": "25个分配页面均查看实际路由；注册来源检查无权限页，公告检查只读页，其余正常页。模型协议与详情通过模型列表真实入口进入。",
+    "interactions": ["普通用户编辑仅维护官方身份，个人资料未开放", "反馈回复表单只读原反馈、回复必填", "公告read-only的新建维护按钮禁用", "注册来源no-permission为403且无业务数据", "生成单详情显示同ID用户身份；失败操作关闭原详情，未提交退款", "模型调用配置显式加载，鉴权值为TOKEN占位符", "模型协议与模型详情双向导航", "分页为20/50/100条选择，无跳页输入"],
+    "screenshots": ["five-check-users.jpg", "five-check-notifications.jpg", "five-check-announcements-readonly.jpg", "five-check-sources-denied.jpg", "five-check-feedback.jpg", "five-check-op-invite.jpg", "five-check-member-levels.jpg", "five-check-aigc-models.jpg", "five-check-aigc-generations.jpg", "five-check-aigc-failure.jpg", "five-check-model-protocol.jpg", "five-check-model-runtime.jpg", "five-check-system-roles.jpg", "five-check-analytics-growth.jpg"]
+  },
+  "retainedNecessaryComplexity": ["系统角色权限和超级管理员保护来自现有后台，不取消", "AIGC模型调用与前端拼包字段来自现有实现，不作为过度设计删除", "通知发送状态与阅读状态独立", "积分账本查询与人工调账分开", "统计仍为105项指标口径与固定样本，真实统计和计费交接研发"],
+  "decisionsNotBugs": [
+    {"topic": "模型系列删除", "current": "保留现有删除能力，不级联删除模型，旧归属回显为已不存在", "option": "如要避免悬空归属，可禁止删除仍被模型引用的系列；该限制改变已确认线上沿用口径，未擅自增加"},
+    {"topic": "模型协议与模型详情重复", "current": "两个路由都能维护同一配置，详情多基础信息", "option": "可合并为模型详情的基础信息/协议/用户表单页签，降低页面数量；当前属于已确认还原能力，未删除路由"},
+    {"topic": "统计说明", "current": "保留固定演示样本标签及条件说明", "option": "演示标签用于避免把固定值误当实时结果，不按内部过程文案删除"}
+  ],
+  "requirementSyncForParent": [
+    "无访问权限与只读独立：前者不展示业务数据，后者可查看但不能维护。",
+    "人工积分调整的业务单号采用独立流水ID，支持完整值精确匹配，不用用户ID替代业务单号。",
+    "生成记录列表与详情动作统一标记失败并退还积分；进入处理弹层前关闭详情抽屉。",
+    "生成记录涉及用户处统一回显同ID昵称、头像、用户ID。",
+    "模型系列只列启用/停用；缺失旧值显示—，不得形成额外状态。"
+  ],
+  "validation": {"tsc": "passed", "scopedLint": "passed"},
+  "notVerified": ["全部状态与全部弹层没有逐一进行浏览器提交，源代码覆盖与代表路径验证分别标记", "没有操作生产系统、真实发奖、扣费、退款、密码重置或消息发送", "没有接入真实鉴权/接口，也未验证固定统计样本对应真实事件", "本轮不重做上轮B/C数据联动验收", "截图在桌面常规视口检查，未覆盖所有窄屏尺寸"],
+  "conclusion": "分配范围已修复明确产品/交互问题；保留已有必要后台能力，未将线上完整能力擅自裁剪。不得据此声称真实B端上线验收通过。"
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-06",
+  "scope": [
+    "works",
+    "content",
+    "operations",
+    "platform"
+  ],
+  "rule": "同一对象同一状态共用业务动作定义；详情和返回列表为导航",
+  "checks": {
+    "typescript": "passed",
+    "targetedLint": "passed",
+    "build": "passed",
+    "independentSourceReview": "passed",
+    "browser": [
+      "work-sea 列表与详情：编辑/取消爆款/下架/封禁一致",
+      "作品详情封禁确认打开，取消未修改记录",
+      "app-2 列表与详情：审核/撤回/预览当前编辑稿一致",
+      "ci-image 列表与详情：配置/停用一致；配置打开后仅保留编辑抽屉",
+      "U-DEMO-114 列表与详情：编辑资料/限制登录一致"
+    ]
+  },
+  "limits": "浏览器为代表性对象与流程抽检，其他状态通过共享动作定义与类型检查验证；无真实业务写入。"
+}

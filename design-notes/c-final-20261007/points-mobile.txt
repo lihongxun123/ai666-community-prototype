@@ -1,0 +1,40 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "积分中心" [level=1]
+  - button "明细"
+- main:
+  - region "积分概览":
+    - generic: 可用积分
+    - strong: "100"
+    - term: 今日获得
+    - definition: "+0"
+    - term: 近 7 日
+    - definition: "+100"
+    - term: 待到账
+    - definition: 待确认
+    - button "100 积分将于 2026-10-14 23:59 到期 到期明细 ›":
+      - strong: 100 积分
+      - text: 将于 2026-10-14 23:59 到期
+      - generic: 到期明细 ›
+  - button "AI 商城 用积分，换创作力 发现可兑换的 AI 体验权益 去兑换 ›":
+    - generic: AI 商城
+    - strong: 用积分，换创作力
+    - emphasis: 发现可兑换的 AI 体验权益
+    - generic: 去兑换 ›
+  - heading "继续赚积分" [level=3]
+  - button "全部任务 ›"
+  - button "七日创作任务 国庆七天乐 查看每日任务与参与进度 去参与 ›":
+    - generic: 七日创作任务
+    - strong: 国庆七天乐
+    - emphasis: 查看每日任务与参与进度
+    - generic: 去参与 ›
+  - button "每日签到":
+    - strong: 每日签到
+    - generic: 查看本周签到与奖励
+  - button "Prompt 共创计划":
+    - strong: Prompt 共创计划
+    - generic: 分享创作思路，参与主题共创
+  - button "邀请有礼":
+    - strong: 邀请有礼
+    - generic: 邀请好友，查看奖励条件

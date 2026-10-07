@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-06",
+  "basis": "当前真实后台localRoute及页面代码，对照原型；非生产写入验收",
+  "routes": [
+    {
+      "route": "/dataAnalysis/overview",
+      "name": "数据总览",
+      "source": "../view/dataAnalysis/overview/overviewIndex.vue",
+      "prototype": "analytics-overview",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/dataAnalysis/growth",
+      "name": "增长分析",
+      "source": "../view/dataAnalysis/growth/growthIndex.vue",
+      "prototype": "analytics-growth / analytics-channels",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/dataAnalysis/user",
+      "name": "用户分析",
+      "source": "../view/dataAnalysis/user/userIndex.vue",
+      "prototype": "analytics-users",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/list",
+      "name": "内容列表",
+      "source": "../view/contentManagement/workList/workListIndex.vue",
+      "prototype": "works",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/detail",
+      "name": "内容详情",
+      "source": "../view/contentManagement/workDetail/workDetailIndex.vue",
+      "prototype": "work-detail",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/review",
+      "name": "审核工作台",
+      "source": "../view/contentManagement/reviewWorkbench/reviewWorkbenchIndex.vue",
+      "prototype": "reviews",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/flash",
+      "name": "闪念管理",
+      "source": "../view/contentManagement/postList/postListIndex.vue",
+      "prototype": "posts",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/flash-detail",
+      "name": "闪念详情",
+      "source": "../view/contentManagement/flashDetail/flashDetailIndex.vue",
+      "prototype": "post-detail",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/model-detail",
+      "name": "模型详情",
+      "source": "../view/aigcManagement/modelRuntimeDetail/modelRuntimeDetailIndex.vue",
+      "prototype": "aigc-runtime-detail",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/templates",
+      "name": "模板配置",
+      "source": "../view/contentManagement/templateConfig/templateConfigIndex.vue",
+      "prototype": "content-templates",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/tutorials",
+      "name": "教程管理",
+      "source": "../view/contentManagement/tutorialList/tutorialListIndex.vue",
+      "prototype": "tutorials",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/content/tutorial-preview",
+      "name": "教程预览",
+      "source": "../view/contentManagement/articleTutorial/articleTutorialIndex.vue",
+      "prototype": "removed-by-decision",
+      "status": "用户明确取消预览，保留教程编辑及详情"
+    },
+    {
+      "route": "/aigc/modelSeries/modelSeriesIndex",
+      "name": "模型系列",
+      "source": "../view/aigcManagement/modelSeries/modelSeriesIndex.vue",
+      "prototype": "aigc-series",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/aigc/modelMapping/modelMappingIndex",
+      "name": "模型配置",
+      "source": "../view/aigcManagement/modelMapping/modelMappingIndex.vue",
+      "prototype": "aigc-models",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/aigc/modelDetail/modelDetailIndex",
+      "name": "模型协议配置",
+      "source": "../view/aigcManagement/modelDetail/modelDetailIndex.vue",
+      "prototype": "aigc-model-detail",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/aigc/generations/generationsIndex",
+      "name": "生成记录",
+      "source": "../view/aigcManagement/generations/generationsIndex.vue",
+      "prototype": "aigc-generations",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/display-slots",
+      "name": "展示位管理",
+      "source": "../view/operationManagement/displaySlots/displaySlotsIndex.vue",
+      "prototype": "op-slots",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/login-popup",
+      "name": "登录弹窗配置",
+      "source": "../view/operationManagement/loginPopup/loginPopupIndex.vue",
+      "prototype": "op-login-popup",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/config",
+      "name": "运营配置",
+      "source": "../view/operationManagement/operationConfig/operationConfigIndex.vue",
+      "prototype": "op-taxonomy / tutorials",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/activities",
+      "name": "活动管理",
+      "source": "../view/operationManagement/activityList/activityListIndex.vue",
+      "prototype": "op-events",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/announcements",
+      "name": "公告配置",
+      "source": "../view/operationManagement/announcement/announcementIndex.vue",
+      "prototype": "announcements",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/operation/store",
+      "name": "商城管理",
+      "source": "../view/operationManagement/store/storeManagementIndex.vue",
+      "prototype": "op-shop / op-redemptions",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/user/list",
+      "name": "用户列表",
+      "source": "../view/userManagement/userList/userListIndex.vue",
+      "prototype": "users",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/user/register-sources",
+      "name": "注册来源",
+      "source": "../view/userManagement/registerSources/registerSourcesIndex.vue",
+      "prototype": "user-register-sources",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/user/invitations",
+      "name": "邀请记录",
+      "source": "../view/userManagement/inviteRecords/inviteRecordsIndex.vue",
+      "prototype": "op-invite",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/user/points",
+      "name": "积分记录",
+      "source": "../view/userManagement/pointsRecords/pointsRecordsIndex.vue",
+      "prototype": "op-points",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/user/member-levels",
+      "name": "会员等级",
+      "source": "../view/userManagement/memberLevel/memberLevelIndex.vue",
+      "prototype": "user-member-levels",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/system/logs",
+      "name": "日志",
+      "source": "../view/systemSettings/operationLogs/operationLogsIndex.vue",
+      "prototype": "system-logs",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/system/roles",
+      "name": "角色管理",
+      "source": "../view/systemSettings/roleManagement/roleManagementIndex.vue",
+      "prototype": "system-roles",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/system/permissions",
+      "name": "权限管理",
+      "source": "../view/systemSettings/permissionManagement/permissionManagementIndex.vue",
+      "prototype": "system-permissions",
+      "status": "原型已覆盖入口"
+    },
+    {
+      "route": "/system/admin-users",
+      "name": "后台用户管理",
+      "source": "../view/systemSettings/adminUsers/adminUsersIndex.vue",
+      "prototype": "system-admins",
+      "status": "原型已覆盖入口"
+    }
+  ],
+  "omissionsRepaired": [
+    "模板配置",
+    "登录弹窗配置",
+    "模型配置字段、协议配置及运行详情",
+    "生成记录筛选详情与失败退款演示",
+    "公告编辑与状态动作",
+    "统计归因、激活留存与对照趋势",
+    "教程板块字段",
+    "模板模型候选联动"
+  ],
+  "intentionalExclusions": [
+    "教程、帖子、应用预览",
+    "圈子与专题负责人",
+    "业务页操作日志",
+    "业务未知状态",
+    "内容封禁独立操作",
+    "真实接口鉴权、计费、退款执行"
+  ],
+  "validation": {
+    "typescript": "passed",
+    "scopedLint": "passed",
+    "nodeBuild": "passed",
+    "browser": [
+      "公告编辑保存、上架、详情动作",
+      "模板编辑保存、上下架",
+      "登录弹窗保存与失败重试",
+      "模型协议保存与生成记录失败兜底",
+      "归因Tab与关键词筛选",
+      "用户来源结构跳转注册来源",
+      "阅读台模板产品方案"
+    ],
+    "independentReview": "AIGC与运营交叉复核；公告和统计独立复核，发现项已修复",
+    "scope": "核对当前真实后台31个路由及主要字段动作；非线上所有账号权限与所有数据组合验收",
+    "horizontalOverflow": 0,
+    "evidence": [
+      "aigc-restoration-validation.json",
+      "screenshots/templates-save.jpg",
+      "screenshots/login-popup-save.jpg",
+      "coverage-announcement.png",
+      "coverage-analytics.png"
+    ]
+  }
+}

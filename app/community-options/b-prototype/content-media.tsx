@@ -1,7 +1,14 @@
 'use client';
+import ReactMarkdown, {defaultUrlTransform} from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+import rehypeSanitize, {defaultSchema} from 'rehype-sanitize';
+
 
 import type { Block } from './store';
 import Image from 'next/image';
+import {useRef, useState} from 'react';
+import {MediaUpload} from './media-upload';
 import './content-media.css';
 
 const localFiles = new Map<
@@ -43,14 +50,21 @@ function remember(file: File) {
 function duration(url: string) {
   return new Promise<number>((resolve, reject) => {
     const v = document.createElement('video');
+    const cleanup = () => {
+      clearTimeout(timer);
+      v.onloadedmetadata = null;
+      v.onerror = null;
+      v.removeAttribute('src');
+      v.load();
+    };
+    const timer = setTimeout(() => {cleanup(); reject(new Error('读取视频时长超时'));}, 15000);
     v.preload = 'metadata';
     v.onloadedmetadata = () => {
       const seconds = v.duration;
-      v.removeAttribute('src');
-      v.load();
+      cleanup();
       resolve(seconds);
     };
-    v.onerror = () => reject(new Error('无法读取视频时长'));
+    v.onerror = () => {cleanup(); reject(new Error('无法读取视频时长'));};
     v.src = url;
   });
 }
@@ -119,21 +133,23 @@ export function MediaPicker({
   onChange: (value: string) => void;
   onError: (message: string) => void;
 }) {
+  const [busy, setBusy] = useState(false);
+  const pending = useRef(false);
+  const existing = value ? value.split('|') : [];
   const accept =
     mode === 'image'
       ? 'image/jpeg,image/png,image/webp,image/gif,image/avif'
       : mode === 'video'
         ? 'video/mp4,video/webm,video/quicktime'
         : 'image/jpeg,image/png,image/webp,image/gif,image/avif,video/mp4,video/webm,video/quicktime';
-  const pick = async (files: FileList | null) => {
-    if (!files?.length) return;
-    const selected = [...files];
+  const pick = async (selected: File[]) => {
+    if (!selected.length || disabled || pending.current) return;
     if (mode !== 'work' && selected.length !== 1) {
       onError('此处只能选择一个文件。');
       return;
     }
-    if (selected.length > 9) {
-      onError('图集最多 9 张图片。');
+    if (mode === 'work' && existing.length + selected.length > 4) {
+      onError('图集最多 4 张图片。');
       return;
     }
     const images = selected.filter((x) => imageTypes.has(x.type)),
@@ -142,6 +158,7 @@ export function MediaPicker({
       images.length + videos.length !== selected.length ||
       (images.length && videos.length) ||
       videos.length > 1 ||
+      (mode === 'work' && ((videos.length > 0 && existing.length > 0) || (images.length > 0 && existing.some(isVideo)))) ||
       (mode === 'image' && videos.length > 0) ||
       (mode === 'video' && images.length > 0)
     ) {
@@ -158,6 +175,8 @@ export function MediaPicker({
       return;
     }
     if (videos.length) {
+      pending.current = true;
+      setBusy(true);
       const url = URL.createObjectURL(videos[0]);
       try {
         const seconds = await duration(url);
@@ -170,35 +189,26 @@ export function MediaPicker({
         return;
       } finally {
         URL.revokeObjectURL(url);
+        pending.current = false;
+        setBusy(false);
       }
     }
-    onChange(selected.map(remember).join('|'));
+    onChange([...(mode === 'work' ? existing : []), ...selected.map(remember)].join('|'));
     onError('');
   };
   return (
-    <div className="bp-media-field">
-      <input
-        type="file"
-        aria-label={
-          mode === 'work'
-            ? '选择作品图片或视频'
-            : `选择${mode === 'image' ? '图片' : '视频'}`
-        }
-        accept={accept}
-        multiple={mode === 'work'}
-        disabled={disabled}
-        onChange={(e) => {
-          void pick(e.target.files);
-          e.target.value = '';
-        }}
-      />
-      <MediaPreview value={value} />
-      {value && !disabled && (
-        <button type="button" onClick={() => onChange('')}>
-          移除素材
-        </button>
-      )}
-    </div>
+    <MediaUpload
+      items={existing.map(item => ({url: source(item) || '', type: isVideo(item) ? 'video' : 'image', name: fileName(item)}))}
+      accept={accept}
+      multiple={mode === 'work'}
+      disabled={disabled}
+      busy={busy}
+      maxCount={mode === 'work' && !existing.some(isVideo) ? 4 : 1}
+      label={mode === 'work' ? '作品图片或视频' : mode === 'image' ? '图片' : '视频'}
+      onFiles={pick}
+      onRemove={index => {onChange(existing.filter((_, i) => i !== index).join('|')); onError('');}}
+      onReorder={mode === 'work' ? (from, to) => {const next = [...existing]; const [item] = next.splice(from,1); next.splice(to,0,item); onChange(next.join('|'));} : undefined}
+    />
   );
 }
 
@@ -267,6 +277,8 @@ export function ContentBlockPreview({
 }) {
   const t = block.text;
   switch (block.type) {
+    case 'Markdown':
+      return <div className="bp-markdown-preview"><ReactMarkdown urlTransform={(url,key)=>key==='src'&&/^data:image\/(?:jpeg|png|webp|gif|avif);base64,[a-z0-9+/=]+$/i.test(url)?url:defaultUrlTransform(url)} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw,[rehypeSanitize,{...defaultSchema,protocols:{...defaultSchema.protocols,src:[...(defaultSchema.protocols?.src||[]),'data']},tagNames:[...(defaultSchema.tagNames||[]),'u']}]]}>{t}</ReactMarkdown></div>;
     case '标题':
       return <h2>{t || '未填写标题'}</h2>;
     case '图片':
@@ -287,6 +299,6 @@ export function ContentBlockPreview({
     case '资源引用':
       return <p>资源引用：{t}</p>;
     default:
-      return <p>{t}</p>;
+      return <p style={{whiteSpace:"pre-wrap"}}>{t}</p>;
   }
 }

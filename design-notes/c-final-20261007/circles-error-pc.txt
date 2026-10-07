@@ -1,0 +1,60 @@
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - navigation "圈子内容筛选":
+    - button "推荐" [pressed]
+    - button "影像练习圈"
+    - button "视觉创作圈"
+  - strong: 帖子暂时加载失败
+  - button "重试"
+  - paragraph: 已经看完了，去圈子里发现更多灵感
+  - complementary:
+    - button "林 林间 今天也来分享一点灵感":
+      - generic: 林
+      - strong: 林间
+      - generic: 今天也来分享一点灵感
+      - generic: ›
+    - button "发布帖子"
+    - heading "我的圈子" [level=2]
+    - button "查看全部 ›"
+    - button "影像练习圈":
+      - strong: 影像练习圈
+      - generic: 照片修复、构图与视觉叙事
+    - button "视觉创作圈":
+      - strong: 视觉创作圈
+      - generic: 产品视觉、光线与配色
+    - heading "推荐圈子" [level=2]
+    - button "查看全部 ›"
+    - button "修复交流圈":
+      - strong: 修复交流圈
+      - generic: 326 人加入
+    - button "加入"
+    - button "写作灵感圈":
+      - strong: 写作灵感圈
+      - generic: 742 人加入
+    - button "加入"
+    - button "短片实验圈":
+      - strong: 短片实验圈
+      - generic: 618 人加入
+    - button "加入"

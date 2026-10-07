@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-06",
+  "checks": [
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "works"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "work-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "work-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "posts"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "post-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "post-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "tutorials"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "tutorial-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "tutorial-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "apps"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "app-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "app-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "comments"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "reviews"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-circles"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-circle-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-topics"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-topic-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-taxonomy"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-features"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-slots"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-events"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-event-edit"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-submissions"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-shop"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-redemptions"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-points"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-checkin"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-invite"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "aigc-series"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "users"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "notifications-admin"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "announcements"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "feedback"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-overview"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-growth"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-channels"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-users"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-quality"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-creation"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-incentives"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "analytics-metrics"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "system-roles"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "system-admins"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "system-logs"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "aigc-models"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "aigc-model-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "aigc-runtime-detail"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "aigc-generations"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "content-templates"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "op-login-popup"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "system-permissions"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "user-register-sources"
+    },
+    {
+      "missing": false,
+      "overflow": 0,
+      "page": "user-member-levels"
+    }
+  ],
+  "scope": "Normal-route rendering and document overflow; not exhaustive state or production acceptance"
+}

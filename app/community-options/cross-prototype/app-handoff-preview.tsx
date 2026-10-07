@@ -17,7 +17,7 @@ export function AppHandoffPreview({item,recordId,unavailable,back}:{item:string;
   <p className="xp-eyebrow">MakeNow · 应用承接</p>
   {!available||!app?<><h1>应用暂不可用</h1><p>请返回应用介绍查看当前使用条件。</p><button onClick={back}>返回应用介绍</button></>:<>
   <img src={'/home-prototype/'+app.image+'.png'} alt="" style={{width:96,height:96,objectFit:'contain'}}/>
-  <h1>{app.name}</h1><p>在 MakeNow 准备材料、确认费用并生成，进度与结果也在 MakeNow 查看。</p>
+  <h1>{app.name}</h1><p>在 MakeNow 准备材料并生成，进度与结果也在 MakeNow 查看。</p>
   <dl><dt>准备材料</dt><dd>{app.input}</dd><dt>输出说明</dt><dd>{app.output}</dd></dl>
   <aside className="xp-note"><strong>原型演示 · 定向链接待配置</strong><p>此页仅说明使用去向。对应 MakeNow 应用链接尚未配置，不会提交任务、扣费或生成结果。</p></aside>
   <button onClick={back}>返回应用介绍</button>

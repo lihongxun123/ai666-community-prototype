@@ -4,9 +4,9 @@ import './app-samples.css';
 /* oxlint-disable next/no-img-element -- Existing local sample assets. */
 
 export const appSamples:Record<string,{title:string;summary:string;input:string;output:string;conditions:string;destination:string;kind:string}>={
- suite:{title:'电商套图',summary:'围绕同一款商品，整理主图、场景图与细节图的制作需求。',input:'商品图片、卖点、目标平台与画幅要求',output:'商品套图与配套文案',conditions:'商品素材需有使用授权；生成、费用与导出规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/tools/workspace/ecom-suite',kind:'图片应用'},
+ suite:{title:'电商套图',summary:'围绕同一款商品，整理主图、场景图与细节图的制作需求。',input:'商品图片、卖点、目标平台与画幅要求',output:'商品套图与配套文案',conditions:'商品素材需有使用授权；导出规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/tools/workspace/ecom-suite',kind:'图片应用'},
  analysis:{title:'选品分析',summary:'从候选商品与经营目标出发，整理比较维度和需要验证的机会。',input:'候选商品、目标市场、成本与调研资料',output:'选品比较报告与验证建议',conditions:'需在 MakeNow 中选择适用 Agent；市场数据与分析依据需核实。',destination:'https://www.makenow.tv/ecommerce?view=agents',kind:'分析应用'},
- music:{title:'音乐翻唱',summary:'把歌曲、歌词与风格要求整理成清楚的翻唱制作方案。',input:'有权使用的歌曲素材、歌词与风格要求',output:'翻唱音频',conditions:'准备原歌曲素材；可用能力、费用与音频规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/media?tool=music-cover',kind:'音乐应用'},
+ music:{title:'音乐翻唱',summary:'把歌曲、歌词与风格要求整理成清楚的翻唱制作方案。',input:'有权使用的歌曲素材、歌词与风格要求',output:'翻唱音频',conditions:'准备原歌曲素材；可用能力与音频规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/media?tool=music-cover',kind:'音乐应用'},
  storyboard:{title:'分镜一致性质检',summary:'对照角色设定与连续分镜，找出影响叙事连贯的视觉差异。',input:'分镜图片、角色设定与场景说明',output:'一致性检查报告与修改建议',conditions:'需在 MakeNow 中选择适用 Skill，并提供分镜与角色基准。',destination:'https://www.makenow.tv/skill-market',kind:'检查应用'},
  website:{title:'网页开发',summary:'把页面目标、内容与视觉偏好整理成可交付的网页开发任务。',input:'页面目标、文案、素材与交互需求',output:'网页代码与交付说明',conditions:'需在 MakeNow 中选择适用 Agent 并确认项目需求；运行与部署需验收。',destination:'https://www.makenow.tv/work?view=agents',kind:'开发应用'},
 };

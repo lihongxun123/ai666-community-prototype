@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>AI666 后台 - 内容生态</title>
+  <link rel="stylesheet" href="assets/runtime/community-b-end.css" data-bend-shared-style>
+<script type="application/json" data-register-source-catalog>[{"code":"100001","channelCode":"invite_campaign","channelName":"邀请活动","sortOrder":10},{"code":"100002","channelCode":"community_content","channelName":"社区内容","sortOrder":20},{"code":"100003","channelCode":"partner_referral","channelName":"合作推荐","sortOrder":30}]</script>
+  <script type="application/json" data-current-cend-content-catalog>[{"id":"CNT-HOME-001","order":"1","title":"标题拆解 Prompt","summary":"无图文版本，先看完整提示词再复用","model":"GPT-4.1","type":"Prompt","detailTarget":"#case-detail-prompt-text","media":"","authorName":"云栖","authorId":"USR-2101","publishedAt":"2026-07-14 16:40","state":"已发布"},{"id":"CNT-HOME-002","order":"2","title":"国风神女 Prompt","summary":"效果图、提示词和同款入口同屏承接","model":"Flux Pro 1.1","type":"Prompt","detailTarget":"#case-detail-prompt-media","media":"assets/image_assets/15.jpg","authorName":"南舟","authorId":"USR-2102","publishedAt":"2026-07-14 15:25","state":"已发布"},{"id":"CNT-HOME-003","order":"3","title":"广告脚本 Prompt","summary":"适合运营短视频首版草稿","model":"GPT-4.1","type":"Prompt","detailTarget":"#case-detail-prompt-text","media":"","authorName":"青梧","authorId":"USR-2103","publishedAt":"2026-07-14 13:50","state":"已发布"},{"id":"CNT-HOME-004","order":"4","title":"治愈场景 Prompt","summary":"带示例图，直接复用场景关键词","model":"Flux Pro 1.1","type":"Prompt","detailTarget":"#case-detail-prompt-media","media":"assets/image_assets/3.png","authorName":"星野","authorId":"USR-2104","publishedAt":"2026-07-14 12:15","state":"已发布"},{"id":"CNT-HOME-005","order":"5","title":"龙虎天劫","summary":"高燃对决封面，漫剧开场感拉满","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"木辛","authorId":"USR-2105","publishedAt":"2026-07-14 10:45","state":"已发布"},{"id":"CNT-HOME-006","order":"6","title":"竹泉秘境","summary":"清新治愈场景，夏日氛围一键生成","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/3.png","authorName":"鹿鸣","authorId":"USR-2106","publishedAt":"2026-07-14 09:20","state":"已发布"},{"id":"CNT-HOME-007","order":"7","title":"海灯守望","summary":"海边落日镜头，故事片头更有画面","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/4.png","authorName":"白榆","authorId":"USR-2107","publishedAt":"2026-07-13 16:40","state":"已发布"},{"id":"CNT-HOME-008","order":"8","title":"凤冠神女","summary":"国风神女设定，古装角色直接出图","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/15.jpg","authorName":"绘光者","authorId":"USR-2108","publishedAt":"2026-07-13 15:25","state":"已发布"},{"id":"CNT-HOME-010","order":"9","title":"画室追光","summary":"真人质感画面，短剧角色宣传图","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/2.png","authorName":"松子","authorId":"USR-2110","publishedAt":"2026-07-13 12:15","state":"已发布"},{"id":"CNT-HOME-011","order":"10","title":"异界裂隙","summary":"暗黑幻想场景，战斗分镜快速定调","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/17.png","authorName":"阿澄","authorId":"USR-2111","publishedAt":"2026-07-13 10:45","state":"已发布"},{"id":"CNT-HOME-012","order":"11","title":"决战前夜","summary":"双主角压迫感，高潮镜头直接复用","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"拾光漫剧社","authorId":"USR-2112","publishedAt":"2026-07-13 09:20","state":"已发布"},{"id":"CNT-HOME-014","order":"12","title":"云海行舟","summary":"轻幻想插画，故事配图更容易出片","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/4.png","authorName":"南舟","authorId":"USR-2102","publishedAt":"2026-07-12 15:25","state":"已发布"},{"id":"CNT-HOME-015","order":"13","title":"霓虹街角","summary":"赛博街拍质感，适合潮流海报首图","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/18.png","authorName":"青梧","authorId":"USR-2103","publishedAt":"2026-07-12 13:50","state":"已发布"},{"id":"CNT-HOME-016","order":"14","title":"沙漠巡航","summary":"荒漠大景推进，短片开场更有速度","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/12.png","authorName":"星野","authorId":"USR-2104","publishedAt":"2026-07-12 12:15","state":"已发布"},{"id":"CNT-HOME-017","order":"15","title":"机甲晨光","summary":"异界战斗压场，漫剧世界观一眼建立","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/17.png","authorName":"木辛","authorId":"USR-2105","publishedAt":"2026-07-12 10:45","state":"已发布"},{"id":"CNT-HOME-018","order":"16","title":"星舰边境","summary":"高燃冲突镜头，适合预告片转场","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/11.png","authorName":"鹿鸣","authorId":"USR-2106","publishedAt":"2026-07-12 09:20","state":"已发布"},{"id":"CNT-HOME-020","order":"17","title":"逆光少女","summary":"人物封面质感，角色设定更抓眼","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/2.png","authorName":"绘光者","authorId":"USR-2108","publishedAt":"2026-07-11 15:25","state":"已发布"},{"id":"CNT-HOME-021","order":"18","title":"金殿长阶","summary":"古风权谋场景，剧情冲突直接拉满","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"镜川","authorId":"USR-2109","publishedAt":"2026-07-11 13:50","state":"已发布"},{"id":"CNT-HOME-022","order":"19","title":"童话港口","summary":"轻奇幻故事配图，适合连载封面","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/12.png","authorName":"松子","authorId":"USR-2110","publishedAt":"2026-07-11 12:15","state":"已发布"},{"id":"CNT-HOME-023","order":"20","title":"蓝焰骑士","summary":"战斗动作镜头，动态预告快速定调","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/17.png","authorName":"阿澄","authorId":"USR-2111","publishedAt":"2026-07-11 10:45","state":"已发布"},{"id":"CNT-HOME-024","order":"21","title":"赛博花园","summary":"未来植物空间，视觉 KV 很有记忆点","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/3.png","authorName":"拾光漫剧社","authorId":"USR-2112","publishedAt":"2026-07-11 09:20","state":"已发布"},{"id":"CNT-HOME-025","order":"22","title":"密林回声","summary":"森系氛围海报，教程封面更有层次","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/12.png","authorName":"云栖","authorId":"USR-2101","publishedAt":"2026-07-10 16:40","state":"已发布"},{"id":"CNT-HOME-026","order":"23","title":"龙鳞王座","summary":"强对抗主视觉，漫剧第一集封面","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"南舟","authorId":"USR-2102","publishedAt":"2026-07-10 15:25","state":"已发布"},{"id":"CNT-HOME-027","order":"24","title":"海雾灯塔","summary":"情绪化风景镜头，片头氛围直接到位","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/4.png","authorName":"青梧","authorId":"USR-2103","publishedAt":"2026-07-10 13:50","state":"已发布"},{"id":"CNT-HOME-029","order":"25","title":"暗潮分镜","summary":"黑暗幻想分镜，冲突节点更清晰","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/17.png","authorName":"木辛","authorId":"USR-2105","publishedAt":"2026-07-10 10:45","state":"已发布"},{"id":"CNT-HOME-030","order":"26","title":"清泉物语","summary":"清爽治愈场景，轻内容封面直接可用","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/4.png","authorName":"鹿鸣","authorId":"USR-2106","publishedAt":"2026-07-10 09:20","state":"已发布"},{"id":"CNT-HOME-032","order":"27","title":"月下航线","summary":"航行镜头推进，旅行片开场更有质感","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/12.png","authorName":"绘光者","authorId":"USR-2108","publishedAt":"2026-07-09 15:25","state":"已发布"},{"id":"CNT-HOME-033","order":"28","title":"国风角色卡","summary":"人物设定图，适合短剧角色预热","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/15.jpg","authorName":"镜川","authorId":"USR-2109","publishedAt":"2026-07-09 13:50","state":"已发布"},{"id":"CNT-HOME-035","order":"29","title":"虚拟摄影棚","summary":"棚拍质感封面，人物与产品同框展示","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/2.png","authorName":"阿澄","authorId":"USR-2111","publishedAt":"2026-07-09 10:45","state":"已发布"},{"id":"CNT-HOME-036","order":"30","title":"异界荒原","summary":"巨物移动镜头，幻想短片快速起势","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/17.png","authorName":"拾光漫剧社","authorId":"USR-2112","publishedAt":"2026-07-09 09:20","state":"已发布"},{"id":"CNT-HOME-037","order":"31","title":"深海片头","summary":"蓝色海雾氛围，情绪片封面更高级","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/4.png","authorName":"云栖","authorId":"USR-2101","publishedAt":"2026-07-08 16:40","state":"已发布"},{"id":"CNT-HOME-039","order":"32","title":"竹林试镜","summary":"清透人物场景，角色定妆图更自然","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/3.png","authorName":"青梧","authorId":"USR-2103","publishedAt":"2026-07-08 13:50","state":"已发布"},{"id":"CNT-HOME-040","order":"33","title":"黑金封面","summary":"强运营海报感，活动入口更像大片","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"星野","authorId":"USR-2104","publishedAt":"2026-07-08 12:15","state":"已发布"},{"id":"CNT-HOME-042","order":"34","title":"龙虎追击","summary":"快节奏镜头方案，动作短片更利落","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/11.png","authorName":"鹿鸣","authorId":"USR-2106","publishedAt":"2026-07-08 09:20","state":"已发布"},{"id":"CNT-HOME-043","order":"35","title":"轻喜剧分镜","summary":"轻松剧情节奏，适合竖屏短剧开场","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/12.png","authorName":"白榆","authorId":"USR-2107","publishedAt":"2026-07-07 16:40","state":"已发布"},{"id":"CNT-HOME-045","order":"36","title":"花火夜航","summary":"节日活动主视觉，夜景光效更醒目","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/12.png","authorName":"镜川","authorId":"USR-2109","publishedAt":"2026-07-07 13:50","state":"已发布"},{"id":"CNT-HOME-046","order":"37","title":"古堡醒来","summary":"悬疑场景铺垫，故事封面更有张力","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/17.png","authorName":"松子","authorId":"USR-2110","publishedAt":"2026-07-07 12:15","state":"已发布"},{"id":"CNT-HOME-047","order":"38","title":"旗舰新品片","summary":"产品高光镜头，广告片卖点更集中","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/18.png","authorName":"阿澄","authorId":"USR-2111","publishedAt":"2026-07-07 10:45","state":"已发布"},{"id":"CNT-HOME-048","order":"39","title":"角色海报组","summary":"同一角色多风格，宣发素材更成套","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/15.jpg","authorName":"拾光漫剧社","authorId":"USR-2112","publishedAt":"2026-07-07 09:20","state":"已发布"},{"id":"CNT-HOME-050","order":"40","title":"云上仙音","summary":"轻幻想空间图，故事配图更有氛围","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/3.png","authorName":"南舟","authorId":"USR-2102","publishedAt":"2026-07-06 15:25","state":"已发布"},{"id":"CNT-HOME-051","order":"41","title":"决赛预告","summary":"赛事主视觉升级，适合活动公布页","model":"Seedance 2.0","type":"短剧漫剧","detailTarget":"#case-detail-manga","media":"assets/image_assets/11.png","authorName":"青梧","authorId":"USR-2103","publishedAt":"2026-07-06 13:50","state":"已发布"},{"id":"CNT-HOME-052","order":"42","title":"镜头运动样片","summary":"推拉摇移示例，视频生成更好理解","model":"Seedance 2.0","type":"视频生成","detailTarget":"#case-detail-video","media":"assets/image_assets/17.png","authorName":"星野","authorId":"USR-2104","publishedAt":"2026-07-06 12:15","state":"已发布"},{"id":"CNT-HOME-054","order":"43","title":"灵泉实验室","summary":"清透场景氛围，模型评测图更有质感","model":"Flux Pro 1.1","type":"图片生成","detailTarget":"#case-detail-image","media":"assets/image_assets/4.png","authorName":"鹿鸣","authorId":"USR-2106","publishedAt":"2026-07-06 09:20","state":"已发布"}]</script>
+  <script type="application/json" data-review-task-catalog>[{"taskId":"AIGC-1005","queue":"work","objectId":"AIGC-1005","objectType":"AI 图生视频案例更新","summary":"USR-1005","submitter":"作品","riskSource":"审核中","riskSummary":"2026-07-14 16:31","status":"审核","sla":"","assignee":"","userReason":"","internalNote":"","secondReview":"","submittedAt":"","userId":"USR-1005","sourceType":"作品","sourceObjectId":"","sourcePage":"","sourcePageState":"落点可用","sourcePageLabel":"","sourceBendHref":"","sourceBendState":"待回查","publicState":"","publicStateLabel":"","activityId":"","activityRecordId":"","ruleVersion":"","nextStep":"","resultLogId":""},{"taskId":"PRO-2048","queue":"work","objectId":"PRO-2048","objectType":"品牌短视频脚本投稿","summary":"USR-1042","submitter":"作品","riskSource":"审核中","riskSummary":"2026-07-14 16:16","status":"审核","sla":"","assignee":"","userReason":"","internalNote":"","secondReview":"","submittedAt":"","userId":"USR-1042","sourceType":"作品","sourceObjectId":"","sourcePage":"","sourcePageState":"落点可用","sourcePageLabel":"","sourceBendHref":"","sourceBendState":"待回查","publicState":"","publicStateLabel":"","activityId":"","activityRecordId":"","ruleVersion":"","nextStep":"","resultLogId":""},{"taskId":"FLA-0308","queue":"post","objectId":"FLA-0308","objectType":"今天尝试了新的分镜工作流…","summary":"USR-1001","submitter":"闪念","riskSource":"审核中","riskSummary":"2026-07-14 15:52","status":"审核","sla":"","assignee":"","userReason":"","internalNote":"","secondReview":"","submittedAt":"","userId":"USR-1001","sourceType":"闪念","sourceObjectId":"","sourcePage":"","sourcePageState":"落点可用","sourcePageLabel":"","sourceBendHref":"","sourceBendState":"待回查","publicState":"","publicStateLabel":"","activityId":"","activityRecordId":"","ruleVersion":"","nextStep":"","resultLogId":""},{"taskId":"FLA-0312","queue":"post","objectId":"FLA-0312","objectType":"分享一个提示词调试小技巧…","summary":"USR-1004","submitter":"闪念","riskSource":"审核中","riskSummary":"2026-07-14 15:21","status":"审核","sla":"","assignee":"","userReason":"","internalNote":"","secondReview":"","submittedAt":"","userId":"USR-1004","sourceType":"闪念","sourceObjectId":"","sourcePage":"","sourcePageState":"落点可用","sourcePageLabel":"","sourceBendHref":"","sourceBendState":"待回查","publicState":"","publicStateLabel":"","activityId":"","activityRecordId":"","ruleVersion":"","nextStep":"","resultLogId":""}]</script>
+  <script type="application/json" data-tutorial-admin-catalog>[{"tutorialNo":"TU000101","title":"第十五期：OMate API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1785493970531188194.png","viewCount":14,"commentCount":0,"createdAt":"2026-05-14 10:31"},{"tutorialNo":"TU000102","title":"第十四期：LobeChat API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778669559326657922.png","viewCount":32,"commentCount":9,"createdAt":"2026-05-13 18:52"},{"tutorialNo":"TU000103","title":"第十三期：SillyTavern（酒馆）API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778665616635399090.png","viewCount":7,"commentCount":0,"createdAt":"2026-05-13 17:38"},{"tutorialNo":"TU000104","title":"第十二期：zen-mcp API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778663872722361283.png","viewCount":4,"commentCount":0,"createdAt":"2026-05-13 17:17"},{"tutorialNo":"TU000105","title":"Open WebUI 下载方式","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778658093127133307.png","viewCount":4,"commentCount":0,"createdAt":"2026-05-13 15:45"},{"tutorialNo":"TU000106","title":"第十一期：OpenWebUI API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778657061904115517.png","viewCount":1,"commentCount":0,"createdAt":"2026-05-13 15:31"},{"tutorialNo":"TU000107","title":"第十期：coze API配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778653817644032200.png","viewCount":12,"commentCount":0,"createdAt":"2026-05-13 14:39"},{"tutorialNo":"TU000108","title":"第九期：Trae API 配置教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778642454204766595.png","viewCount":3,"commentCount":0,"createdAt":"2026-05-13 11:13"},{"tutorialNo":"TU000109","title":"第八期：Claude Code接入模型API教程","sectionName":"暂无归属板块","status":"published","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778577735718870833.png","viewCount":6,"commentCount":0,"createdAt":"2026-05-12 17:22"},{"tutorialNo":"TU000110","title":"专线视频教程","sectionName":"暂无归属板块","status":"draft","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778235732710970768.jpg","viewCount":25,"commentCount":0,"createdAt":"2026-05-07 19:51"},{"tutorialNo":"TU000111","title":"镜像站视频教程","sectionName":"暂无归属板块","status":"draft","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778235808684726951.png","viewCount":12,"commentCount":0,"createdAt":"2026-05-07 19:43"},{"tutorialNo":"TU000112","title":"api 视频教程","sectionName":"暂无归属板块","status":"draft","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778229565783990082.jpg","viewCount":22,"commentCount":0,"createdAt":"2026-05-07 19:30"},{"tutorialNo":"TU000113","title":"AIX API教程大全","sectionName":"暂无归属板块","status":"draft","cover":"https://aismedia.oss-cn-shanghai.aliyuncs.com/ai666/1778229611273538451.png","viewCount":32,"commentCount":0,"createdAt":"2026-05-07 17:30"}]</script>
+<style data-current-shell>html,body{min-width:0!important;background:#f5f5f5!important}.sidebar,.topbar,.walkthrough-toggle,.walkthrough-panel,.contract-panel,[data-bend-walkthrough],.analytics-page-meta{display:none!important}.app-shell,.main-shell{display:block!important;margin:0!important;padding:0!important;min-width:0!important;width:100%!important}.content{margin:0!important;padding:0!important;width:100%!important;min-height:0!important}.analytics-data-strip{display:none!important}</style><script>document.addEventListener('click',function(e){const a=e.target.closest('a[href]');if(!a)return;const u=new URL(a.href,location.href);if(u.origin===location.origin&&/\/analytics-(overview|growth|users|creation|content|activity|quality|metrics)\.html$/.test(u.pathname)){e.preventDefault();e.stopImmediatePropagation();parent.postMessage({type:'analytics-navigate',page:u.pathname.split('/').pop().replace('.html',''),search:u.search},location.origin);}},true);for(const method of ['pushState','replaceState']){const original=history[method].bind(history);history[method]=function(...args){const result=original(...args);parent.postMessage({type:'analytics-state',page:location.pathname.split('/').pop().replace('.html',''),search:location.search},location.origin);return result;};}</script></head>
+<body data-prototype-mode="multi-page">
+  <div class="app-shell ant-layout" data-layout-system="ant-design" data-sider-width="208" data-header-height="64" data-content-padding="24" data-density="compact" data-component-size="small">
+    <aside class="sidebar ant-layout-sider" aria-label="B端导航">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div>
+          <div class="brand-title">AI666 后台</div>
+          <div class="brand-subtitle">社区运营 V0.1</div>
+        </div>
+      </div>
+
+      <section class="nav-section" data-nav-section="content">
+        <div class="nav-group" data-nav-module="内容管理"><span>内容管理</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="index.html" data-nav="content-list" data-page-link="index.html">内容列表</a>
+          <a class="nav-btn" href="review-workbench.html" data-nav="review-workbench" data-page-link="review-workbench.html">审核工作台</a>
+          <a class="nav-btn" href="flash-management.html" data-nav="flash-management" data-page-link="flash-management.html">闪念管理</a>
+          <a class="nav-btn" href="aigc-template-config.html" data-nav="aigc-template-config" data-page-link="aigc-template-config.html">模板配置</a>
+          <a class="nav-btn" href="tutorial-management.html" data-nav="tutorial-management" data-page-link="tutorial-management.html">教程管理</a>
+        </div>
+      </section>
+  <section class="modal popup-item-modal" data-modal="competition-judge-workbench" data-competition-judge-workbench role="dialog" aria-modal="true" aria-labelledby="competitionJudgeWorkbenchTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionJudgeWorkbenchTitle" data-competition-judge-workbench-title>评委工作台</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="alert info">盲审已开启：隐藏作者身份、头像、互动数据和审核备注。</div><div class="competition-judge-task-summary" data-competition-judge-task-summary><div><b>负责赛道</b><strong data-competition-judge-task-scope>—</strong></div><div><b>已提交</b><strong data-competition-judge-task-done>0</strong></div><div><b>待评分</b><strong data-competition-judge-task-pending>0</strong></div><div><b>评分截止</b><strong data-competition-judge-task-deadline>—</strong></div></div><div class="competition-judge-workbench-layout"><div class="competition-judge-task-queue" role="region" aria-label="评分任务"><div class="competition-judge-task-queue-head"><b>评分任务</b><span class="tag processing" data-competition-judge-task-count>0</span></div><div class="competition-judge-task-list" data-competition-judge-task-list></div></div><article class="competition-judge-work-preview" data-competition-judge-work-preview><div class="competition-judge-work-media" data-competition-judge-work-media></div><div class="competition-judge-work-copy"><div class="competition-judge-work-tags"><span class="tag processing" data-competition-judge-work-track>极短叙事</span><span class="tag gray" data-competition-judge-work-type>图片</span></div><h3 data-competition-judge-work-title>待评作品</h3><p data-competition-judge-work-meta>—</p><div class="competition-judge-materials" data-competition-judge-work-materials hidden></div></div></article><div class="competition-judge-score-form" data-competition-judge-score-form><label class="field"><span>创意表达 · 40 分</span><input class="input" type="number" min="0" max="40" value="0" data-competition-judge-score="creativity"></label><label class="field"><span>视听完成度 · 35 分</span><input class="input" type="number" min="0" max="35" value="0" data-competition-judge-score="narrative"></label><label class="field"><span>赛题契合度 · 25 分</span><input class="input" type="number" min="0" max="25" value="0" data-competition-judge-score="visual"></label><div class="drawer-field"><b>当前总分</b><p><strong data-competition-judge-score-total>0</strong> / 100</p></div><label class="field"><span>评语</span><textarea class="textarea" rows="4" data-competition-judge-score-comment></textarea></label><p class="field-error" data-competition-judge-score-error hidden></p></div></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-competition-judge-work-nav="previous">上一件</button><button class="btn" type="button" data-competition-judge-score-save="submit-next">提交并下一件</button><button class="btn primary" type="button" data-competition-judge-score-save="submit">提交评分</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-work-report" data-competition-work-report role="dialog" aria-modal="true" aria-labelledby="competitionWorkReportTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionWorkReportTitle">作品举报处理</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body" data-competition-report-detail><div class="drawer-field"><b>处理对象</b><p class="mono" data-competition-work-report-object>—</p></div><div class="drawer-field" data-competition-report-evidence><b>举报原因与证据</b><p>疑似混入非参赛来源片段 · 举报附件 1 份 · 待核对投稿内容</p></div><div class="popup-item-fields"><div class="field"><label>处置结论</label><select class="select" data-competition-work-report-field="decision" data-competition-report-disposition><option>举报成立并下架</option><option>举报不成立</option><option>补充证据后复核</option><option>恢复展示</option></select></div><div class="field wide"><label>处置依据</label><textarea class="textarea" rows="4" data-competition-work-report-field="reason" placeholder="填写证据判断与用户可见结论"></textarea></div><p class="field-error wide" data-competition-work-report-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn danger-link" type="button" data-competition-work-report-save data-competition-report-disposition-save>提交处理</button></div>
+  </section>
+
+      <section class="nav-section" data-nav-section="aigc">
+        <div class="nav-group" data-nav-module="AIGC管理"><span>AIGC管理</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="model-series.html" data-nav="model-series" data-page-link="model-series.html">模型系列</a>
+          <a class="nav-btn" href="model-mapping.html" data-nav="model-mapping" data-page-link="model-mapping.html">模型配置</a>
+          <a class="nav-btn" href="generation-records.html" data-nav="generation-records" data-page-link="generation-records.html">生成记录</a>
+        </div>
+      </section>
+
+      <section class="nav-section" data-nav-section="operation">
+        <div class="nav-group" data-nav-module="运营管理"><span>运营管理</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="home-slots.html" data-nav="home-slots" data-page-link="home-slots.html">展示位管理</a>
+          <a class="nav-btn" href="login-popup-config.html" data-nav="login-popup-config" data-page-link="login-popup-config.html">登录弹窗配置</a>
+          <a class="nav-btn" href="operation-settings.html" data-nav="operation-settings" data-page-link="operation-settings.html">运营配置</a>
+          <a class="nav-btn" href="activity-config.html" data-nav="activity-config" data-page-link="activity-config.html">活动管理</a>
+          <a class="nav-btn" href="competition-management.html" data-nav="competition-management" data-page-link="competition-management.html">赛事管理</a>
+          <a class="nav-btn" href="operation-config.html" data-nav="operation-config" data-page-link="operation-config.html">公告配置</a>
+          <a class="nav-btn" href="store-config.html" data-nav="store-config" data-page-link="store-config.html">商城管理</a>
+        </div>
+      </section>
+
+      <section class="nav-section" data-nav-section="users">
+        <div class="nav-group" data-nav-module="用户管理"><span>用户管理</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="user-list.html" data-nav="user-list" data-page-link="user-list.html">用户列表</a>
+          <a class="nav-btn" href="register-sources.html" data-nav="register-sources" data-page-link="register-sources.html">注册来源</a>
+          <a class="nav-btn" href="invite-records.html" data-nav="invite-records" data-page-link="invite-records.html">邀请记录</a>
+          <a class="nav-btn" href="points-records.html" data-nav="points-records" data-page-link="points-records.html">积分记录</a>
+          <a class="nav-btn" href="member-levels.html" data-nav="member-levels" data-page-link="member-levels.html">会员等级</a>
+        </div>
+      </section>
+
+      <section class="nav-section" data-nav-section="analytics">
+        <div class="nav-group" data-nav-module="数据分析"><span>数据分析</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="analytics-overview.html" data-nav="analytics-overview" data-page-link="analytics-overview.html">数据总览</a>
+          <a class="nav-btn" href="analytics-growth.html" data-nav="analytics-growth" data-page-link="analytics-growth.html">增长分析</a>
+          <a class="nav-btn" href="analytics-users.html" data-nav="analytics-users" data-page-link="analytics-users.html">用户分析</a>
+          <a class="nav-btn is-active" href="analytics-content.html" data-nav="analytics-content" data-page-link="analytics-content.html">内容生态</a>
+          <a class="nav-btn" href="analytics-creation.html" data-nav="analytics-creation" data-page-link="analytics-creation.html">创作分析</a>
+          <a class="nav-btn" href="analytics-activity.html" data-nav="analytics-activity" data-page-link="analytics-activity.html">活动与激励</a>
+          <a class="nav-btn" href="analytics-quality.html" data-nav="analytics-quality" data-page-link="analytics-quality.html">运营质量</a>
+          <a class="nav-btn" href="analytics-metrics.html" data-nav="analytics-metrics" data-page-link="analytics-metrics.html">指标中心</a>
+        </div>
+      </section>
+
+      <section class="nav-section" data-nav-section="system">
+        <div class="nav-group" data-nav-module="系统管理"><span>系统管理</span></div>
+        <div class="nav-children">
+          <a class="nav-btn" href="operation-log.html" data-nav="operation-log" data-page-link="operation-log.html">日志</a>
+          <a class="nav-btn" href="role-management.html" data-nav="role-management" data-page-link="role-management.html">角色管理</a>
+          <a class="nav-btn" href="permission-management.html" data-nav="permission-management" data-page-link="permission-management.html">权限管理</a>
+          <a class="nav-btn" href="admin-users.html" data-nav="admin-users" data-page-link="admin-users.html">后台用户管理</a>
+        </div>
+      </section>
+    </aside>
+
+    <div class="main-shell ant-layout">
+      <header class="topbar ant-layout-header">
+        <div class="topbar-main">
+          <h1 class="top-title" id="globalTitle">内容生态</h1>
+        </div>
+        <div class="top-meta">
+          <div class="avatar-button" aria-label="当前登录用户" data-user-avatar="login-user" title="当前登录用户">AI</div>
+        </div>
+      </header>
+
+      <main class="content ant-layout-content">
+<section class="view is-active" data-view="analytics-content" data-page-contract="analytics-content" data-analytics-page="content" data-analytics-batch="phase1-batch2" data-analytics-demo="true" data-page-title-owned-by="header">
+          <div class="contract-panel" data-page-contract="analytics-content">内容生态以 C-02 统计作品提交审核发生量，以 C-06 分别统计创建、提交审核、审核通过、审核拒绝、正式发布和当前下架。作品创建一生一次，各阶段作品数按查询区间去重、跨日重算，重复轮次不重复计件。各阶段发生量不因后续状态回改，当前存量按查询截止状态统计；作品数和用户数分开，用户按 user_no 去重。</div>
+          <div class="analytics-data-strip" data-analytics-data-status>
+            <div><span>数据状态</span><b><span class="tag success">演示</span> 产品口径已定义</b></div>
+            <div><span>共同数据截止</span><b data-analytics-common-cutoff>2026-08-23 23:59</b></div>
+            <div><span>排行规则</span><b>收藏数 → 互动总量 → 首发时间</b></div>
+            <div><span>未接入事件</span><b>列表点击 / 收藏后二次消费</b></div>
+          </div>
+          <div class="analytics-page-meta" data-analytics-page-meta><span>页面生成：<b data-analytics-page-generated>2026-08-24 08:30</b></span><span>来源最近成功：<b data-analytics-source-success>内容/互动 08:24</b></span><span>口径版本：<b data-analytics-metric-version>metrics-v0.1</b></span><span>排除版本：<b data-analytics-exclusion-version>exclude-v0.1</b></span></div>
+          <div class="panel" data-analytics-filter-panel="analytics-content">
+            <div class="panel-head"><div class="panel-title">筛选</div></div>
+            <div class="panel-body">
+              <div class="analytics-filter-grid">
+                <div class="field analytics-date-range-field"><label>时间范围</label><button class="ant-picker ant-picker-range analytics-date-range-picker" type="button" aria-label="内容生态时间范围" aria-haspopup="dialog" aria-expanded="false" value="complete7" data-analytics-date-picker data-analytics-filter-control="range" data-default-preset="complete7" data-analytics-date-label="最近 7 个完整日" data-component-library="ant-design-vue" data-component="a-range-picker"><span class="ant-picker-input" data-analytics-date-start>2026-08-21</span><span class="ant-picker-range-separator">→</span><span class="ant-picker-input" data-analytics-date-end>2026-08-27</span><span role="img" aria-hidden="true" class="anticon ant-picker-suffix" data-antd-icon="CalendarOutlined"><svg viewBox="0 0 1024 1024" focusable="false" fill="currentColor"><path d="M880 184H712v-40c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v40H384v-40c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v40H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 388V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v132H184z"></path></svg></span></button></div>
+                <div class="field"><label>内容类型</label><select class="select" aria-label="内容生态内容类型" data-analytics-filter-control="type"><option value="all" selected>作品与帖子</option><option value="work">仅作品</option><option value="post">仅帖子</option></select></div>
+                <div class="field"><label>作者类型</label><select class="select" aria-label="内容生态作者类型" data-analytics-filter-control="author"><option value="all" selected>用户与官方</option><option value="user">用户作者</option><option value="official">官方作者</option></select></div>
+                <div class="field"><label>作品类型</label><select class="select" aria-label="内容生态作品类型" data-analytics-filter-control="work-type"><option value="all" selected>全部作品类型</option><option value="image">图片</option><option value="video">视频</option><option value="manga">漫剧</option><option value="other">其他</option></select></div>
+                <div class="field"><label>当前内容状态（不影响提交发生量）</label><select class="select" aria-label="内容生态当前状态" data-analytics-filter-control="state"><option value="published" selected>已发布</option><option value="offline">已下架</option><option value="all">全部状态</option></select></div>
+                <div class="field"><label>来源</label><select class="select" aria-label="内容生态来源" data-analytics-filter-control="source"><option value="all" selected>全部来源</option><option value="community">社区创作</option><option value="aigc">AIGC</option><option value="makenow">MakeNow</option></select></div>
+                <div class="field"><label>话题</label><select class="select" aria-label="内容生态话题" data-analytics-filter-control="topic"><option value="all" selected>全部话题</option><option value="image">AI 生图</option><option value="video">视频创作</option><option value="prompt">Prompt</option></select></div>
+                <div class="filter-actions"><button class="btn" type="button" data-analytics-filter-action="reset">重置</button><button class="btn primary" type="button" data-analytics-filter-action="apply">应用筛选</button></div>
+              </div>
+              <div class="analytics-result-line" data-analytics-filter-result>已应用：最近 7 个完整日 · 作品与帖子 · 用户与官方 · 已发布</div>
+            </div>
+          </div>
+          <div class="analytics-stat-grid" data-analytics-content-cards>
+            <div class="analytics-stat-card" data-analytics-metric="C-01"><div class="stat-label">已发布内容存量</div><div class="stat-value">4,826</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-02"><div class="stat-label">作品提交 / 提交用户</div><div class="stat-value">120 / 102</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-03"><div class="stat-label">主要内容结构</div><div class="stat-value">图片 48.2%</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-04"><div class="stat-label">活跃创作者</div><div class="stat-value">86</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-05"><div class="stat-label">当前互动总量</div><div class="stat-value">38,642</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-06"><div class="stat-label">正式发布 / 发布用户</div><div class="stat-value">82 / 74</div></div>
+            <div class="analytics-stat-card" data-analytics-metric="C-07"><div class="stat-label">高价值内容</div><div class="stat-value">Top 10</div></div>
+          </div>
+          <div class="panel" data-analytics-content-lifecycle>
+            <div class="panel-head"><div class="panel-title">作品生命周期</div><span class="muted">发生量与当前存量分开</span></div>
+            <div class="table-wrap ant-table-wrapper" data-wide-table-scroll="inside-table"><table data-component-library="ant-design-vue" data-antd-component="Table" data-table="analytics-content-lifecycle"><thead><tr><th>生命周期阶段</th><th>区间去重作品</th><th>去重用户</th><th>当前存量</th><th>统计说明</th></tr></thead><tbody><tr><td>作品创建</td><td>146</td><td>118</td><td>—</td><td>作品一生只计创建一次</td></tr><tr><td>提交审核</td><td>120</td><td>102</td><td>18</td><td>区间按作品去重；重提轮次另列</td></tr><tr><td>审核通过</td><td>88</td><td>78</td><td>—</td><td>按通过时间筛选，区间作品去重</td></tr><tr><td>审核拒绝</td><td>24</td><td>22</td><td>—</td><td>按拒绝时间筛选，区间作品去重</td></tr><tr><td>正式发布</td><td>82</td><td>74</td><td>4,826</td><td>按公开时间筛选，区间作品去重</td></tr><tr><td>当前下架</td><td>—</td><td>189</td><td>216</td><td>查询截止时状态</td></tr></tbody></table></div>
+          </div>
+          <div class="analytics-grid-two">
+            <div class="panel">
+              <div class="panel-head"><div class="panel-title">作品提交结构</div><span class="muted">提交审核成功 120 件</span></div>
+              <div class="table-wrap ant-table-wrapper">
+                <table data-component-library="ant-design-vue" data-antd-component="Table" data-table="analytics-content-supply">
+                  <thead><tr><th>作品类型</th><th>用户作品</th><th>官方作品</th><th>提交件数</th><th>提交用户</th></tr></thead>
+                  <tbody>
+                    <tr><td>图片</td><td>58</td><td>8</td><td>66</td><td>58</td></tr>
+                    <tr><td>视频</td><td>25</td><td>5</td><td>30</td><td>26</td></tr>
+                    <tr><td>漫剧</td><td>18</td><td>4</td><td>22</td><td>19</td></tr>
+                    <tr><td>其他</td><td>1</td><td>1</td><td>2</td><td>2</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><div class="panel-title">当前互动结构</div><span class="tag gray">截止时快照</span></div>
+              <div class="panel-body">
+                <div class="analytics-segment-list analytics-chart-surface" data-analytics-content-interactions data-component-library="@antv/g2" data-chart-component="Bar" data-chart-purpose="interaction-distribution">
+                  <div class="analytics-segment-row"><span>点赞</span><div class="analytics-segment-track"><div class="analytics-segment-fill" style="width:64.2%"></div></div><b>24,806</b></div>
+                  <div class="analytics-segment-row"><span>收藏</span><div class="analytics-segment-track"><div class="analytics-segment-fill" style="width:21.3%"></div></div><b>8,214</b></div>
+                  <div class="analytics-segment-row"><span>评论</span><div class="analytics-segment-track"><div class="analytics-segment-fill" style="width:10.4%"></div></div><b>4,006</b></div>
+                  <div class="analytics-segment-row"><span>分享</span><div class="analytics-segment-track"><div class="analytics-segment-fill" style="width:4.2%"></div></div><b>1,616</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><div class="panel-title">高价值内容排行</div><span class="muted">演示 ID · 不复制正文</span></div>
+            <div class="table-wrap ant-table-wrapper" data-wide-table-scroll="inside-table">
+              <table data-component-library="ant-design-vue" data-antd-component="Table" data-table="analytics-content-ranking">
+                <thead><tr><th>排名</th><th>内容 ID</th><th>标题</th><th>类型</th><th>作者类型</th><th>当前收藏</th><th>互动总量</th><th>首次发布</th><th>回查</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td class="mono">CNT-DEMO-001</td><td>竹泉秘境</td><td>图片作品</td><td>用户</td><td>486</td><td>1,892</td><td>08-18 09:20</td><td><a class="btn link" href="content-detail.html?id=CNT-DEMO-001">内容详情</a></td></tr>
+                  <tr><td>2</td><td class="mono">CNT-DEMO-002</td><td>海灯守望</td><td>视频作品</td><td>用户</td><td>421</td><td>1,744</td><td>08-19 14:05</td><td><a class="btn link" href="content-detail.html?id=CNT-DEMO-002">内容详情</a></td></tr>
+                  <tr><td>3</td><td class="mono">CNT-DEMO-003</td><td>国风神女 Prompt</td><td>Prompt</td><td>官方</td><td>398</td><td>1,628</td><td>08-17 11:40</td><td><a class="btn link" href="index.html">内容列表</a></td></tr>
+                  <tr><td>4</td><td class="mono">CNT-DEMO-004</td><td>霓虹街角</td><td>图片作品</td><td>用户</td><td>362</td><td>1,504</td><td>08-21 16:18</td><td><a class="btn link" href="content-detail.html?id=CNT-DEMO-004">内容详情</a></td></tr>
+                  <tr><td>5</td><td class="mono">CNT-DEMO-005</td><td>决战前夜</td><td>漫剧作品</td><td>用户</td><td>344</td><td>1,466</td><td>08-20 20:12</td><td><a class="btn link" href="content-detail.html?id=CNT-DEMO-005">内容详情</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <button class="btn primary walkthrough-toggle" type="button" data-toggle-walkthrough>走查规则</button>
+  <aside class="walkthrough-panel" data-bend-walkthrough="true" aria-live="polite" aria-label="本页走查规则">
+    <div class="walkthrough-panel-head"><div><b data-walkthrough-page-title>本页走查规则</b><p data-walkthrough-page-summary></p></div><button class="btn" type="button" data-close-walkthrough>关闭</button></div>
+    <div class="walkthrough-page-sections" data-walkthrough-page-sections></div>
+  </aside>
+  <template data-walkthrough-rule-registry>
+    <b>正式页清理规则</b>
+    <ul data-formal-cleanup-rules>
+      <li data-formal-cleanup-rule="contracts-hidden">页面主体不展示业务契约、验收合同、来源说明和研发口径。</li>
+      <li data-formal-cleanup-rule="logic-hidden">规则卡、流程卡、保护边界、复杂度边界和“不可做”说明统一收纳到走查。</li>
+      <li data-formal-cleanup-rule="formal-surface-only">正式页面只保留后台用户需要操作的标题、指标、筛选、表格、批量动作、抽屉、确认弹窗和状态。</li>
+      <li data-formal-cleanup-rule="global-chrome-minimal">全局顶部不展示面包屑、角色标签、用户 ID 或退出文字，只保留当前页标题和当前登录用户头像标识。</li>
+      <li data-formal-cleanup-rule="validation-kept">验证用 `data-*` 属性保留在 DOM 中，但不作为正式页面可见元素展示。</li>
+    </ul>
+    <b>规则类信息收纳范围</b>
+    <ul>
+      <li data-refinement-rule="c-end-source-first">配置页面字段必须先映射到 C端真实页面、入口、任务、活动、消息、商城或用户状态；首页入口和登录弹窗继续使用已登记 C端目标，展示位可额外填写 HTTPS 站外链接；没有 C端来源的字段不得为了“后台完整”单独捏造。</li>
+      <li data-refinement-rule="same-create-edit-form">新增和编辑优先使用同一个表单弹窗；编辑从列表行填充，新建只保留系统生成 ID、默认状态等必要默认值。</li>
+      <li data-refinement-rule="generated-id-readonly">业务对象 ID 由系统自动生成；新建时由系统赋值，编辑时只使用只读文本展示，不使用可编辑输入控件，不允许运营手填或修改。</li>
+      <li data-refinement-rule="state-control-constrained">二元展示状态使用开关，多状态只使用受控胶囊或选项，不在列表里暴露任意状态文案。</li>
+      <li data-refinement-rule="list-scan-first">列表只保留识别、扫描和进入编辑所需字段；调序、目标替换、启停、素材补充等配置动作收进编辑弹窗。</li>
+      <li data-refinement-rule="activity-development-owned-creation">新活动通常需要产品定义与研发开发活动页面、参与规则、奖励链路和状态回传，B端不提供新建活动或活动草稿入口。活动管理承接已登记活动的展示信息、参与条件、任务与投稿规则、限时积分奖励、规则版本、生命周期、参与记录与奖励处理。</li>
+      <li data-refinement-rule="rules-in-walkthrough">规则、触发条件、频控、灰度、异常阻断和日志口径进入走查规则，不作为正式页面主内容。</li>
+      <li data-refinement-rule="ia-contract">左侧固定为内容管理、AIGC管理、运营管理、用户管理、系统管理 5 组 23 个入口；内容详情、教程预览、闪念详情、活动详情、模型详情和模型协议配置使用独立工作页。</li>
+      <li data-refinement-rule="global-chrome-static-semantics">当前版本的导航分组标题和登录头像仅承担分组识别与身份标识，不提供折叠或账号菜单；没有真实动作时不得使用按钮、箭头或手型光标制造可点击暗示。</li>
+      <li data-refinement-rule="model-source">模型系列、模型配置和生成记录是 C端模型广场、模型详情与 AIGC 创作的对象及结果事实来源；模型配置维护输出类型、消耗积分和启停状态，生成记录负责回查每次生成结果，并仅对确认无响应或卡死的“处理中”生成单提供受控的标记失败入口。</li>
+      <li data-refinement-rule="generation-failure-recovery">后台失败生成单调用 `/admin/api/aigc/generations/fail`，提交完整 generation_no 与必填、最多 512 字的 fail_reason；提交前必须重新核对生成单仍为处理中，成功后以刷新后的生成状态和积分记录为准。该动作会标记失败并由接口同时退还本次扣减积分，不等于重试、补单或独立退款。</li>
+      <li data-refinement-rule="single-object-workspace">同一业务对象的详情与编辑若由同一负责人、同一事实源承接，且不存在独立审核、权限或日志责任，则合并为一个内容承载工作面，只保留一个编辑入口；审核记录、权限复核、兑换单等独立责任对象仍保留只读详情。</li>
+      <li data-refinement-rule="object-entry-responsibility-language">对象入口必须直接说明后续职责：同一事实工作面使用“编辑”，需要持续处理记录、奖励或审核的独立页面使用“进入任务/进入活动”，角色权限配置统一使用“调整权限”；日志、用户列表中的账号封禁/解封与白名单、限时积分流水若列表已完整承载事实，则不再增加重复详情入口，不得用泛化“详情”混淆编辑、处理与留痕责任。</li>
+      <li data-refinement-rule="page-purpose-entry-alignment">日志页只承接后台操作追溯；导航、页头和权限页面统一使用“日志”，不设置跨业务结果索引。</li>
+      <li data-refinement-rule="route-only-object-identity">非导航详情工作页必须在首屏显示当前业务对象身份并提供返回来源列表的路径；多页签活动详情的页头显示活动名称、活动 ID、当前状态与规则版本，基础信息只承接状态、时间和待处理业务量。</li>
+      <li data-refinement-rule="template-lifecycle">模板配置是 C端 AIGC 模板卡片的字段、分类、消耗限时积分、排序和展示状态负责人；模型只引用模型配置，消耗限时积分不可手填。只有“启用且已配置限时积分”的模型可新选；停用模型不自动改写模板状态，停用模板可保留历史关联，展示中模板保存前必须换用可用模型或先停用。</li>
+      <li data-refinement-rule="template-content-workspace">模板是官方发布的 AIGC 作品；新增和编辑复用作品 Drawer，按作品类型维护标题、简介、提示词、分类、话题、默认模型、场景、排序与媒体，不另建 Markdown 模板工作台。</li>
+      <li data-refinement-rule="template-catalog-object-coverage">当前 C端模板目录的展示对象继续保留跨端映射；B端正式列表只展示真实页面可获得的作品 ID、封面、标题、分类、默认模型、单次积分、模板排序、展示状态与更新时间，接口缺失字段显示“—”。</li>
+      <li data-refinement-rule="tutorial-lifecycle">教程管理以 tutorial_no 维护草稿和已发布教程；工具栏“发布教程”进入新建编辑器，首次保存进入草稿箱，发布后进入 C端公开列表，下架后回到草稿箱。列表按当前代码显示封面、标题、板块、浏览数、评论数和创建时间；编辑器维护标题、板块、内容格式、时长或难度、排序、摘要、封面和 Markdown 正文。正文结构工具必须真实写入对应 Markdown 语法。</li>
+      <li data-refinement-rule="content-state-separation">内容、审核任务、投稿、活动资格和精选关系分别维护状态，不能互相代替。</li>
+      <li data-refinement-rule="submission-source-review-activity-reward-binding">活动投稿统一以内容对象 ID 为来源主键；内容详情、审核任务、活动记录和奖励记录必须保留同一内容对象、审核任务、活动、活动记录和规则版本。来源审核只输出内容结论，活动资格另行判定，奖励记录不得丢失来源关系。投稿资格确认以及奖励补发、撤回前必须完成整条来源链登记；任一关系缺失时只允许回查，明确显示缺失项并阻断状态写入，不能用当前活动版本、同用户奖励或通用审核入口代替记录级绑定。</li>
+      <li data-refinement-rule="content-version-review-result-binding">作品详情只展示接口返回的当前作品状态，不补造公开版本或待审版本；审核拒绝原因仅在审核弹窗提交，完成后重新请求作品详情。</li>
+      <li data-refinement-rule="review-result-log-traceability">内容、资料和评论审核的用户结果、审核任务与不可变日志必须沿用同一审核任务 ID；从用户结果或日志返回来源时必须携带审核队列与任务 ID，并直接打开目标审核任务，不得只回到审核工作台列表。</li>
+      <li data-refinement-rule="review-task-real-page">审核工作台只承接状态为审核中的作品和闪念，使用当前行来源 ID 拉取详情并在 Ant Design Modal 中提交审核；真实路由没有独立审核详情页。</li>
+      <li data-refinement-rule="review-source-registration">审核弹窗必须校验详情响应与当前行来源 ID 一致；对象缺失或响应不一致时阻断提交。作品详情和闪念详情各自按 URL 中的对象 ID 精确加载，未知 ID 显示可重试错误态且不继承其他样例。</li>
+      <li data-refinement-rule="invite-points-result-log-traceability">邀请记录中的邀请人和被邀请人统一展示昵称与用户 ID，不能只显示占位符或只显示 ID。邀请奖励和限时积分撤回的用户结果、来源记录与不可变日志必须沿用同一邀请或流水对象 ID；邀请异常只能从目标邀请记录发起，不允许使用无对象的全局处理入口；邀请日志返回时直接打开对应邀请记录，限时积分撤回日志必须同时保留撤回流水与原流水 ID，并直接打开撤回流水，不得只回到列表或仅记录用户 ID。</li>
+      <li data-refinement-rule="activity-reward-separation">任务完成、奖励资格、奖励发放和限时积分流水分别维护；活动结束后审核和奖励处理可以继续。</li>
+      <li data-refinement-rule="activity-record-status-dictionary">活动记录的记录列只显示记录 ID，不重复展示审核任务或规则版本；来源状态统一为 12 种、活动判定统一为 10 种，运营可通过列名后的问号查看完整释义，关系主键仍保留在记录数据和处理链中。</li>
+      <li data-refinement-rule="global-status-dictionary-help">全站所有可枚举状态、判定、资格、发放和阶段字段统一在字段名或列表列名后提供问号入口；弹层必须列出该业务上下文的完整状态集合、逐项释义和数量。筛选项与列表共用同一状态字典；自由文本结果摘要和操作说明不伪装成状态枚举。</li>
+      <li data-refinement-rule="activity-reward-result-traceability">活动奖励用户结果必须使用同一活动 ID、奖励记录 ID 和不可变日志 ID；从结果或日志返回来源时必须直接打开“奖励处理”并定位对应奖励行，不得只回到活动详情首页后让运营再次查找。</li>
+      <li data-refinement-rule="activity-child-route-canonical">活动记录和奖励记录属于比活动 ID 更具体的子对象；深链携带已登记子对象时，子对象的真实活动归属优先于链接中可能过期的活动 ID，并明确提示已切换到真实活动。未知子对象不得继承、标记或打开其他活动记录；活动记录与奖励记录均需进入对应分区并定位目标行。</li>
+      <li data-refinement-rule="activity-lifecycle-version-binding">活动暂停与恢复只新增生命周期记录，不生成规则版本；暂停确认时间是新增参与截止点，恢复确认时间是当前规则版本重新绑定新增记录的起点，历史参与、资格、奖励和限时积分流水不改写。</li>
+      <li data-refinement-rule="operation-log-list-only">历史日志与当前对象状态不一致时仍保留原结论，后续动作继续新增日志；列表完整展示对象、受控动作、操作前后、原因和执行信息，不设置详情入口。</li>
+      <li data-refinement-rule="placement-registry">展示位由产品预置，后台只创建投放单；来源失效时投放失效，来源恢复后不自动恢复投放。</li>
+      <li data-refinement-rule="slot-reactivate-current-config-gate">来源恢复后的投放重新上线必须在确认框逐项展示并确认当前来源对象、素材、跳转链接、排期和点位容量；任一配置缺失、链接格式无效、排期超出容量、来源状态变化或确认期间配置发生变化时均阻断上线并要求按最新值重新核对，原失效记录继续保留。</li>
+      <li data-refinement-rule="slot-status-change-traceability">来源有效投放的日常启停在同一编辑弹层完成：发生变化时必须展示本次 C端影响并填写状态变更原因。停用只停止 C端展示，来源对象、投放配置和历史记录继续保留；启用前按当前表单值校验来源、素材、有效跳转链接、排期和排序，成功后反馈 C端结果与操作日志编号。弹层打开后若来源或投放状态变化，必须按最新状态重新操作。</li>
+      <li data-refinement-rule="slot-capacity-schedule-gate">展示位容量由 C端产品结构预置；B端允许保存不启用的草稿，但新建、编辑启用或来源恢复重新上线时，必须按同一展示位的启用投放校验排期重叠数量。达到容量即阻断并显示冲突投放 ID，运营只能改期或先停用/结束现有投放，不能让 B端配置超出 C端承载能力。</li>
+      <li data-refinement-rule="account-state-and-whitelist-separation">账号当前状态按用户接口只使用“正常/删除/冻结/限制登录”；白名单是独立配置并继续使用“启用/停用”，不得由前端推导其他中间账号状态。账号封禁/解封不自动改写内容、奖励和投放等业务对象。</li>
+      <li data-refinement-rule="account-governance-result-traceability">账号封禁/解封与白名单结果必须绑定同一用户、治理记录 ID 和不可变日志 ID；结果与日志返回来源时必须进入用户列表，应用对应账号或白名单筛选并高亮目标用户，不打开重复信息的治理页面或详情抽屉。</li>
+      <li data-refinement-rule="processed-review-recheck-isolation">已处理审核任务保持只读；如需改变结论，必须基于原任务新建复核任务。新任务创建后不改写原任务、原结论或当前 C端结果，待复核形成新结论后再按独立动作处理。</li>
+      <li data-refinement-rule="account-governance">不设置独立账号治理页面；用户列表统一承接账号封禁/解封、账号状态筛选、白名单状态筛选和白名单设置，不用会员、限时积分、资料审核或内容状态代替账号状态。治理记录不能人工新建，账号动作和白名单变更后自动留痕，历史记录由日志回查。</li>
+      <li data-refinement-rule="user-detail-source-handoff">用户详情只聚合已确认归属的资料与业务记录；各业务页签使用运营可理解的具体字段，限时积分记录直接展示来源、变动、处理结果、关联记录与时间，流水 ID 只作为次级识别信息，不使用泛化“业务对象”代替业务含义。单用户人工发放或扣除只从已登记用户详情发起，必须选择方向、填写正整数限时积分和调整原因，并追加独立流水与操作日志，不改写既有流水。处理记录由资料审核、限时积分、邀请、账号封禁/解封和白名单设置等具体业务动作自动生成，不提供泛化的“新增处理记录”入口。内容、审核、活动、邀请、限时积分与兑换仍在各自责任页面处理。路由中的未知用户 ID 必须进入“待核对”空状态，不得继承其他用户资料，也不得开放限时积分调整、封禁账号等处理动作。</li>
+      <li data-refinement-rule="manga-return-source">漫剧作品沿用内容列表、作品详情和审核工作台承接，不新增独立漫剧后台页面；来源作品或社区发布确认只有在作品详情接口实际返回对应关系字段时才展示。</li>
+      <li data-refinement-rule="manga-reward-after-confirmed-publish">漫剧入口点击、自动注册、继续创作和草稿保存均不奖励；只有用户在社区确认发布后才进入奖励资格判断。</li>
+      <li data-refinement-rule="manga-duplicate-reward-guard">同一漫剧来源作品只允许一笔有效发布奖励；重复发布不重复入账，审核失败、删除或撤回通过待确认或反向流水处理。</li>
+      <li data-refinement-rule="manga-account-conflict-governance">社区与漫剧账号映射冲突时展示接口返回的账号状态；前端不自动合并或推导状态，不展示手机号、微信标识、凭证或错误码明文。</li>
+      <li data-refinement-rule="store-fulfillment">兑换成功必须同时满足限时积分扣减生效和权益发放确认；异常只通过补发权益或新增返还流水处理。</li>
+      <li data-refinement-rule="store-catalog-object-coverage">商城管理不得只证明页面存在；所有 C端展示中商品必须按产品线、商品名称和限时积分消耗逐项承接。当前 C端 3 条产品线共 16 个商品必须与 B端展示中目录完全一致，内部草稿不得计入 C端目录覆盖。</li>
+      <li data-refinement-rule="store-fulfillment-result-traceability">商城履约用户结果必须绑定同一兑换单、商品、限时积分流水和不可变日志；补发权益或返还限时积分前必须校验这组来源关系完整，缺少任一关系时阻断动作并逐项提示；提交后把异常卡更新为对应处理中状态，新增独立补救记录与日志，明确用户可读结果和下一步，不覆盖原扣减、发放失败或异常日志。结果与日志返回来源时必须进入“异常处理”并直接定位目标兑换异常卡，不得只回到商城分区后让运营再次查找。</li>
+      <li data-refinement-rule="permission-layers">当前 RBAC 只配置页面与操作权限；没有组织、部门或数据范围权限。最后一个超级管理员不能停用或移除超级管理员角色。</li>
+      <li data-refinement-rule="rbac-direct-save">新建角色、调整角色权限、新增后台用户和编辑后台用户均直接保存生效，并记录最近操作；不建立审批状态、复核队列或启用草稿。停用角色和后台用户仍需二次确认并记录日志。</li>
+      <li data-refinement-rule="immutable-history">限时积分流水和操作日志只追加，不编辑或删除；敏感字段只记录发生变更，不记录明文。</li>
+      <li data-refinement-rule="limited-points-global-contract">C端、B端和接口只使用限时积分：所有发放必须配置有效期并生成到期时间；所有消费按最早到期批次优先扣减；业务返还关联原流水并沿用原批次到期时间，不得生成普通、通用或永久积分。</li>
+      <li data-refinement-rule="points-rule-ownership">不设置独立限时积分规则页：活动奖励在活动详情维护，轻创作与模板消耗在模型配置维护，商城兑换限时积分在商城管理维护，最终结果在限时积分记录查看。模板消耗限时积分必须跟随所选模型，不能手填。</li>
+      <li data-refinement-rule="points-ledger-readonly">限时积分记录页只提供筛选和完整流水列表，不设置独立复核状态、操作列或详情弹层，也不直接提供新增、编辑、删除、调整或批量操作。来源记录使用“业务名称 + 单号”标明流水出处；单用户人工调整只从用户详情发起，强制填写原因并追加独立流水与日志；补发、撤回、返还等动作仍由来源业务页面发起。</li>
+      <li data-refinement-rule="dangerous-actions">危险操作必须明确对象、影响范围和可恢复性并要求二次确认；原因字段按接口提供，账号封禁/解封只提交用户编号，不额外填写原因。</li>
+      <li data-refinement-rule="p0-danger-log-traceability">操作日志按 14 类业务对象回查 P0 危险操作；列表必须保留对象、受控动作码、前后状态、来源页面、操作人和复核状态，原因仅在来源接口提供时记录。</li>
+      <li data-refinement-rule="operation-log-source-traceability">操作日志对象存在已登记后台实体时，使用稳定业务主键提供精确对象链接；没有后台落点的对象只展示文本。敏感字段拦截日志只保留脱敏占位符和拦截事实，不得把占位符拼入链接或暴露真实敏感对象。</li>
+      <li data-refinement-rule="c-end-freeze">C端 21 个正式页面及信息架构冻结；如必须修改，先提交变更清单并由用户确认。</li>
+      <li data-refinement-rule="non-goals">当前不进入真实支付、退款、会员、卡密库存、通用订单、复杂反作弊和最终技术实现。</li>
+    </ul>
+  </template>
+
+  <div class="drawer-backdrop" data-close-layer></div>
+  <aside class="drawer" id="globalDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+    <div class="drawer-head"><span id="drawerTitle">详情抽屉</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="drawer-body" id="drawerBody">
+      <p>对象只读预览、状态记录、关联配置和操作历史在这里承接。</p>
+    </div>
+    <div class="drawer-footer"><button class="btn" data-close-layer>关闭</button><button class="btn primary" id="drawerPrimaryAction">保存草稿</button></div>
+  </aside>
+
+  <div class="modal-backdrop" data-close-layer></div>
+  <section class="modal popup-item-modal" data-modal="competition-create" role="dialog" aria-modal="true" aria-labelledby="competitionCreateModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionCreateModalTitle">新建赛事</span><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields" data-antd-component="Form">
+        <div class="field wide"><label><span class="b03-required">*</span>赛事名称</label><input class="input ant-input" maxlength="60" placeholder="请输入赛事名称" data-competition-create-field="name" data-antd-component="Input"></div>
+        <p class="field-error wide" data-competition-create-error role="alert" hidden></p>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">取消</button><button class="btn primary ant-btn ant-btn-primary" type="button" data-competition-create-submit data-antd-component="Button">创建并进入工作台</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-track-editor" role="dialog" aria-modal="true" aria-labelledby="competitionTrackModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionTrackModalTitle" data-competition-track-modal-title>编辑赛道</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields" data-antd-component="Form"><input type="hidden" data-competition-track-field="mode"><div class="field"><label>赛道 ID</label><input class="input mono" data-competition-track-field="id" disabled></div><div class="field"><label>排序</label><input class="input" type="number" min="1" max="99" data-competition-track-field="order"></div><div class="field"><label>赛道名称</label><input class="input" maxlength="30" data-competition-track-field="name"></div><div class="field"><label>自由创作赛道</label><select class="select" data-competition-track-field="free"><option>否</option><option>是</option></select></div><div class="field wide"><label>赛题名称</label><input class="input" maxlength="80" data-competition-track-field="topic"></div><div class="field wide"><label>赛题说明</label><textarea class="textarea" rows="3" maxlength="240" data-competition-track-field="description"></textarea></div><div class="field wide"><label>投稿内容类型</label><div class="competition-admin-checks" data-competition-track-content><label><input type="checkbox" value="视频">视频</label><label><input type="checkbox" value="图片">图片</label><label><input type="checkbox" value="纯文字">纯文字</label></div></div><div class="field"><label>视频最短时长（秒）</label><input class="input" type="number" min="1" data-competition-track-field="duration-min" placeholder="不限则留空"></div><div class="field"><label>视频最长时长（秒）</label><input class="input" type="number" min="1" data-competition-track-field="duration-max" placeholder="不限则留空"></div><div class="field"><label>状态</label><select class="select" data-competition-track-field="state"><option>启用</option><option>停用</option></select></div><p class="field-error wide" data-competition-track-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-track-save>保存赛道</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-award-editor" role="dialog" aria-modal="true" aria-labelledby="competitionAwardModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionAwardModalTitle" data-competition-award-modal-title>新增奖项</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields" data-antd-component="Form">
+        <input type="hidden" data-competition-award-editor-field="id">
+        <div class="field"><label>奖励类型</label><select class="select" data-competition-award-editor-field="type" data-antd-component="Select"><option value="ranking">竞技奖项</option><option value="participation">有效参赛奖励</option></select></div>
+        <div class="field"><label>奖项名称</label><input class="input" maxlength="30" placeholder="填写奖项名称" data-competition-award-editor-field="name" data-antd-component="Input"></div>
+        <div class="field"><label data-competition-award-quota-label>名额</label><input class="input" type="number" min="1" max="999" value="1" data-competition-award-editor-field="quota" data-antd-component="InputNumber"></div>
+        <div class="field"><label>适用赛道</label><select class="select" data-competition-award-editor-field="track" data-antd-component="Select"><option>每个启用赛道</option><option>全部赛道</option><option>极短叙事</option><option>一分钟世界</option><option>长镜头实验</option><option>自由创作</option></select></div>
+        <div class="field"><label>排序</label><input class="input" type="number" min="1" max="99" value="1" data-competition-award-editor-field="order" data-antd-component="InputNumber"></div>
+        <div class="field wide"><label>公开权益说明</label><input class="input" maxlength="80" placeholder="填写 C端可见权益" data-competition-award-editor-field="benefit" data-antd-component="Input"></div>
+        <div class="field wide" data-competition-participation-award-field hidden><label>获得条件</label><input class="input" maxlength="80" value="至少 1 件作品审核通过并公开展示" data-competition-award-editor-field="eligibility" data-antd-component="Input"></div>
+        <div class="field wide" data-competition-participation-award-field hidden><label>与竞技奖项叠加规则</label><select class="select" data-competition-award-editor-field="stacking" data-antd-component="Select"><option selected>与竞技奖项积分不叠加，按较高项发放</option></select></div>
+        <div class="field"><label>展示状态</label><select class="select" data-competition-award-editor-field="state" data-antd-component="Select"><option>展示</option><option>隐藏</option></select></div>
+        <p class="field-error wide" data-competition-award-editor-error hidden></p>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer data-antd-component="Button">取消</button><button class="btn primary" type="button" data-competition-award-save data-antd-component="Button">保存奖项</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-stage-editor" role="dialog" aria-modal="true" aria-labelledby="competitionStageModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionStageModalTitle" data-competition-stage-modal-title>编辑阶段</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields" data-antd-component="Form">
+        <input type="hidden" data-competition-stage-field="mode">
+        <div class="field"><label>阶段 ID</label><input class="input mono" data-competition-stage-field="id" disabled></div>
+        <div class="field"><label>排序</label><input class="input" type="number" min="1" max="99" data-competition-stage-field="order"></div>
+        <div class="field"><label>阶段名称</label><input class="input" maxlength="30" data-competition-stage-field="name"></div>
+        <div class="field"><label>当前状态</label><input class="input" data-competition-stage-field="state-display" value="未开始" disabled></div>
+        <div class="field wide"><label>C端用户说明</label><textarea class="textarea" rows="3" maxlength="160" data-competition-stage-field="description"></textarea></div>
+        <div class="field"><label>阶段开始时间</label><input class="input" type="datetime-local" data-competition-stage-field="start" data-competition-stage-time></div>
+        <div class="field"><label>阶段结束时间</label><input class="input" type="datetime-local" data-competition-stage-field="end" data-competition-stage-time></div>
+        <div class="field wide"><label>允许动作</label><div class="competition-admin-checks" data-competition-stage-actions><label><input type="checkbox" value="可浏览">可浏览</label><label><input type="checkbox" value="可报名">可报名</label><label><input type="checkbox" value="可投稿">可投稿</label><label><input type="checkbox" value="可修改">可修改</label><label><input type="checkbox" value="可互动">可互动</label><label><input type="checkbox" value="评委评分">评委评分</label><label><input type="checkbox" value="结果可见">结果可见</label></div></div>
+        <div class="field"><label>目标阶段</label><select class="select" data-competition-stage-field="target"></select></div>
+        <p class="field-error wide" data-competition-stage-error hidden></p>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-stage-save>保存阶段</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-stage-impact" data-competition-layer-kind="stage-impact" role="dialog" aria-modal="true" aria-labelledby="competitionStageImpactTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionStageImpactTitle">阶段完成影响预览</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="alert warning">完成后将冻结当前阶段允许动作，并切换至目标阶段；作品和历史数据继续保留。</div><div class="competition-impact-list"><div><span>当前阶段</span><b data-competition-stage-impact-current>—</b></div><div><span>关闭动作</span><b data-competition-stage-impact-actions>—</b></div><div><span>目标阶段</span><b data-competition-stage-impact-target>—</b></div></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-stage-complete-confirm data-danger-action="competition-stage-complete" data-danger-object-id="当前阶段" data-danger-current-state="进行中" data-danger-result="人工完成当前阶段并切换至已配置的目标阶段" data-requires-confirm="true">继续完成阶段</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-judge-editor" role="dialog" aria-modal="true" aria-labelledby="competitionJudgeModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionJudgeModalTitle" data-competition-judge-modal-title>新增评委</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields" data-antd-component="Form"><input type="hidden" data-competition-judge-field="mode"><input type="hidden" data-competition-judge-field="id"><input type="hidden" data-competition-judge-field="name"><div class="field wide"><label>评委账号</label><select class="select ant-select" data-competition-judge-field="account" data-antd-component="Select"><option value="">请选择已启用且拥有赛事评委角色的后台账号</option><option value="ADM-004" data-judge-name="周予安" data-judge-login="judge_zhou">ADM-004 · judge_zhou · 周予安</option><option value="ADM-005" data-judge-name="柠檬片场" data-judge-login="judge_lemon">ADM-005 · judge_lemon · 柠檬片场</option></select></div><div class="field"><label>状态</label><select class="select ant-select" data-competition-judge-field="state" data-antd-component="Select"><option>启用</option><option>停用</option></select></div><div class="field"><label>权限来源</label><div class="competition-derived-value">赛事评委角色 · 页面与评分操作权限</div></div><p class="field-error wide" data-competition-judge-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-judge-save>保存评委</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-judge-assign" role="dialog" aria-modal="true" aria-labelledby="competitionJudgeAssignTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionJudgeAssignTitle">分配赛道主评</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields"><div class="field wide"><label>评委</label><select class="select" data-competition-judge-assign-field="judge"><option>周予安</option><option>柠檬片场</option></select></div><div class="field wide"><label>负责赛道</label><div class="competition-ant-checkbox-group ant-checkbox-group" role="group" aria-label="负责赛道" data-antd-component="Checkbox.Group" data-competition-judge-assign-field="tracks"><label class="competition-ant-checkbox-option ant-checkbox-wrapper"><input type="checkbox" value="极短叙事" checked>极短叙事</label><label class="competition-ant-checkbox-option ant-checkbox-wrapper"><input type="checkbox" value="一分钟世界" checked>一分钟世界</label><label class="competition-ant-checkbox-option ant-checkbox-wrapper"><input type="checkbox" value="长镜头实验">长镜头实验</label><label class="competition-ant-checkbox-option ant-checkbox-wrapper"><input type="checkbox" value="自由创作">自由创作</label></div></div><div class="field wide"><div class="alert info">同一赛道只设 1 名主评；该赛道所有进入评分阶段的作品均由主评完成评分。</div></div><p class="field-error wide" data-competition-judge-assign-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-judge-assign-save>保存分配</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-score-dimension" role="dialog" aria-modal="true" aria-labelledby="competitionScoreDimensionTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionScoreDimensionTitle" data-competition-score-dimension-title>新增评分维度</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields" data-antd-component="Form"><input type="hidden" data-competition-score-dimension-field="mode"><div class="field"><label>维度 ID</label><input class="input mono" data-competition-score-dimension-field="id" disabled></div><div class="field"><label>排序</label><input class="input" type="number" min="1" max="99" data-competition-score-dimension-field="order"></div><div class="field"><label>维度名称</label><input class="input" maxlength="30" data-competition-score-dimension-field="name"></div><div class="field"><label>满分</label><input class="input" type="number" min="1" max="1000" data-competition-score-dimension-field="score"></div><div class="field wide"><label>评分说明</label><textarea class="textarea" rows="4" maxlength="240" data-competition-score-dimension-field="description"></textarea></div><div class="field"><label>是否必评</label><select class="select" data-competition-score-dimension-field="required"><option>是</option><option>否</option></select></div><p class="field-error wide" data-competition-score-dimension-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-score-dimension-save>保存维度</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-reward-issue" role="dialog" aria-modal="true" aria-labelledby="competitionRewardIssueTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionRewardIssueTitle">记录奖励发放</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields" data-antd-component="Form"><input type="hidden" data-competition-reward-field="id"><div class="field"><label>获奖者</label><input class="input" data-competition-reward-field="recipient" disabled></div><div class="field"><label>作品</label><input class="input" data-competition-reward-field="work" disabled></div><div class="field"><label>奖项</label><input class="input" data-competition-reward-field="award" disabled></div><div class="field"><label>奖励</label><input class="input" data-competition-reward-field="benefit" disabled></div><div class="field"><label>发放状态</label><select class="select" data-competition-reward-field="status"><option>待发放</option><option>发放处理中</option><option>已发放</option><option>发放失败</option></select></div><div class="field"><label>发放时间</label><input class="input" type="datetime-local" data-competition-reward-field="issued-at"></div><div class="field wide"><label>备注</label><textarea class="textarea" rows="3" maxlength="200" data-competition-reward-field="note"></textarea></div><p class="field-error wide" data-competition-reward-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-reward-save>保存发放记录</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-publish-check" role="dialog" aria-modal="true" aria-labelledby="competitionPublishCheckTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionPublishCheckTitle">发布检查</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="alert warning" data-competition-publish-check-summary>赛事仍有必配模块未完成，暂不能发布。</div><div class="competition-publish-checks" data-competition-publish-check-list></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>稍后处理</button><button class="btn primary" type="button" data-competition-publish-check-fix>去配置第一项</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="competition-work-audit" role="dialog" aria-modal="true" aria-labelledby="competitionWorkAuditTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionWorkAuditTitle">审核作品</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body competition-work-audit-body"><div class="competition-work-audit-object" data-competition-work-audit-object><span>作品名称</span><strong data-competition-work-audit-title>—</strong><span>作品描述</span><p data-competition-work-audit-description>—</p></div><div class="field"><label>审核结论</label><select class="select ant-select" data-competition-work-audit-decision data-antd-component="Select"><option value="approve">通过</option><option value="reject">不通过</option></select></div><div class="field" data-competition-work-audit-reason-field hidden><label><span class="required-star" aria-hidden="true">*</span> 未通过原因</label><textarea class="textarea ant-input" rows="3" maxlength="200" data-competition-work-audit-reason data-antd-component="Input.TextArea" placeholder="请填写具体原因，便于投稿用户修改"></textarea><p class="competition-work-audit-reason-hint">保存后将展示在 C端“我的投稿”的未通过记录中。</p></div><p class="field-error" data-competition-work-audit-error hidden></p></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-work-audit-save>保存审核结果</button></div>
+  </section>
+  <section class="modal popup-item-modal" data-modal="competition-notification-editor" role="dialog" aria-modal="true" aria-labelledby="competitionNotificationTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="competitionNotificationTitle">编辑赛事通知模板</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body"><div class="popup-item-fields"><div class="field"><label>触发事件</label><input class="input" data-competition-notification-field="event" disabled></div><div class="field"><label>受众</label><input class="input" data-competition-notification-field="audience"></div><div class="field"><label>渠道</label><select class="select" data-competition-notification-field="channel"><option>站内信</option><option>站内信 + 消息中心</option></select></div><div class="field"><label>状态</label><select class="select" data-competition-notification-field="state"><option>启用</option><option>停用</option></select></div><div class="field wide"><label>模板正文</label><textarea class="textarea" rows="5" maxlength="500" data-competition-notification-field="template"></textarea></div><p class="field-error wide" data-competition-notification-error hidden></p></div></div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-competition-notification-save>保存模板</button></div>
+  </section>
+  <section class="modal activity-status-help-modal" data-modal="activity-status-help" role="dialog" aria-modal="true" aria-labelledby="activityStatusHelpTitle" aria-hidden="true">
+    <div class="modal-head"><span id="activityStatusHelpTitle" data-activity-status-help-title>来源状态说明</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <section data-activity-status-help-panel="source">
+        <p class="activity-status-help-summary">来源状态共 12 种，表示投稿内容、任务进度或邀请关系在各自来源业务中的当前结果；来源尚未完成或关系未登记完整时，活动侧不能提前判定。</p>
+        <dl class="activity-status-definition-list" data-activity-source-status-definitions>
+          <div data-activity-source-status-definition><dt>内容审核中</dt><dd>投稿内容正在审核，活动侧等待来源结果。</dd></div>
+          <div data-activity-source-status-definition><dt>内容复核中</dt><dd>投稿内容进入二次复核，复核完成前不做活动判定。</dd></div>
+          <div data-activity-source-status-definition><dt>等待用户修改</dt><dd>内容已退回修改，用户重新提交并完成审核后再进入活动判定。</dd></div>
+          <div data-activity-source-status-definition><dt>内容审核已通过</dt><dd>来源审核通过，可进入活动资格确认。</dd></div>
+          <div data-activity-source-status-definition><dt>内容审核未通过</dt><dd>来源审核未通过，不进入活动资格判定，也不触发奖励。</dd></div>
+          <div data-activity-source-status-definition><dt>来源对象与审核任务未登记</dt><dd>来源关系链不完整，只允许回查，不允许判定资格或发放奖励。</dd></div>
+          <div data-activity-source-status-definition><dt>任务进行中</dt><dd>普通成长任务尚未完成，继续等待用户达成条件。</dd></div>
+          <div data-activity-source-status-definition><dt>任务已完成</dt><dd>普通成长任务已完成，可进入生效和奖励处理。</dd></div>
+          <div data-activity-source-status-definition><dt>当日任务未完成</dt><dd>连续任务当日条件尚未达成，不触发当日奖励。</dd></div>
+          <div data-activity-source-status-definition><dt>当日任务已完成</dt><dd>连续任务当日条件已达成，可进入当日奖励处理。</dd></div>
+          <div data-activity-source-status-definition><dt>关系有效</dt><dd>邀请关系已确认有效，可按注册、互动或发布阶段继续判定。</dd></div>
+          <div data-activity-source-status-definition><dt>关系异常</dt><dd>邀请关系存在重复或其他异常，需要人工复核后再处理奖励。</dd></div>
+        </dl>
+      </section>
+      <section data-activity-status-help-panel="judgment" hidden>
+        <p class="activity-status-help-summary">活动判定共 10 种，表示当前记录是否满足活动规则以及下一步是否可以触发奖励；它不会改写来源业务的原状态。</p>
+        <dl class="activity-status-definition-list" data-activity-judgment-definitions>
+          <div data-activity-judgment-definition><dt>等待来源结果</dt><dd>来源业务尚未完成，活动侧暂不判定。</dd></div>
+          <div data-activity-judgment-definition><dt>待确认资格</dt><dd>来源已通过，需要运营确认是否符合本活动资格。</dd></div>
+          <div data-activity-judgment-definition><dt>待回查来源关系</dt><dd>来源对象、审核任务或关联关系不完整，补齐前禁止判定。</dd></div>
+          <div data-activity-judgment-definition><dt>有效</dt><dd>已确认符合活动资格，可创建待发放奖励记录。</dd></div>
+          <div data-activity-judgment-definition><dt>无效</dt><dd>已确认不符合活动资格，不触发奖励并保留原因。</dd></div>
+          <div data-activity-judgment-definition><dt>不进入活动判定</dt><dd>来源审核未通过，活动侧不再重复判断。</dd></div>
+          <div data-activity-judgment-definition><dt>已生效</dt><dd>系统任务条件已完成并直接生效，可进入奖励处理。</dd></div>
+          <div data-activity-judgment-definition><dt>未达成</dt><dd>任务条件尚未满足，不触发奖励。</dd></div>
+          <div data-activity-judgment-definition><dt>注册阶段已达成</dt><dd>有效邀请已完成注册阶段，可按当前阶段规则发放奖励。</dd></div>
+          <div data-activity-judgment-definition><dt>疑似重复待复核</dt><dd>邀请关系疑似重复，人工复核完成前不确认资格。</dd></div>
+        </dl>
+      </section>
+    </div>
+    <div class="modal-footer"><button class="btn primary" type="button" data-close-layer>知道了</button></div>
+  </section>
+  <section class="modal activity-status-help-modal" data-modal="global-status-help" role="dialog" aria-modal="true" aria-labelledby="globalStatusHelpTitle" aria-hidden="true">
+    <div class="modal-head"><span id="globalStatusHelpTitle" data-global-status-help-title>状态说明</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <p class="activity-status-help-summary" data-global-status-help-summary></p>
+      <dl class="activity-status-definition-list" data-global-status-help-definitions></dl>
+    </div>
+    <div class="modal-footer"><button class="btn primary" type="button" data-close-layer>知道了</button></div>
+  </section>
+  <section class="modal" data-modal="danger-confirm" role="dialog" aria-modal="true" aria-labelledby="dangerModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="dangerModalTitle">危险操作确认</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <p id="modalImpact">该操作会改变 C端展示或用户状态，请确认影响范围。</p>
+      <div class="danger-context" id="modalContext" data-danger-context></div>
+      <div class="slot-reactivate-review" data-slot-reactivate-review hidden>
+        <p><b>本次恢复值</b> · 重新上线只使用下列当前值；如有一项不对，请取消并先编辑投放。</p>
+        <div class="slot-reactivate-values" data-slot-reactivate-values></div>
+        <label class="slot-reactivate-ack"><input type="checkbox" data-slot-reactivate-ack> <span>我已逐项核对来源、素材、跳转、排期和点位容量，确认以上均为本次要恢复的当前值。</span></label>
+        <p class="field-error" data-slot-reactivate-error role="alert" hidden>请先逐项核对并勾选确认后再重新上线。</p>
+      </div>
+      <div class="field">
+        <label data-reason-label>操作原因</label>
+        <textarea class="textarea" data-reason-input data-danger-reason data-competition-danger-reason placeholder="填写清晰原因，写入操作日志。"></textarea>
+        <p class="field-error" data-reason-error role="alert" hidden>请填写操作原因后再确认。</p>
+      </div>
+      <div class="field" data-review-internal-note-field hidden>
+        <label>内部备注（可选）</label>
+        <textarea class="textarea" data-review-internal-note-input placeholder="补充仅供后台回查的判断依据，不展示给 C端用户。"></textarea>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-danger-confirm>确认并记录日志</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="review-recheck" role="dialog" aria-modal="true" aria-labelledby="reviewRecheckModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="reviewRecheckModalTitle">新建复核任务</span><button class="btn" type="button" data-review-recheck-cancel>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-review-recheck-form>
+        <div class="popup-item-fields">
+          <div class="field">
+            <label>来源审核任务</label>
+            <input type="hidden" data-review-recheck-field="source-task" data-immutable-id-source="review-source-task">
+            <div class="immutable-id-display mono" data-immutable-id-display="review-source-task" aria-label="来源审核任务"></div>
+          </div>
+          <div class="field">
+            <label>审核对象</label>
+            <input type="hidden" data-review-recheck-field="object-id" data-immutable-id-source="review-object-id">
+            <div class="immutable-id-display mono" data-immutable-id-display="review-object-id" aria-label="审核对象"></div>
+          </div>
+          <div class="field wide">
+            <label>当前结论</label>
+            <input class="input" data-review-recheck-field="current-conclusion" readonly>
+          </div>
+          <div class="field wide">
+            <label>复核原因</label>
+            <textarea class="textarea" data-review-recheck-field="reason" placeholder="说明为什么需要重新判断，以及需要重点核对什么。"></textarea>
+          </div>
+          <div class="field">
+            <label>复核负责人</label>
+            <select class="select" data-review-recheck-field="assignee"><option value="复核组">复核组</option><option value="审核负责人">审核负责人</option></select>
+          </div>
+          <div class="field">
+            <label>复核优先级</label>
+            <select class="select" data-review-recheck-field="priority"><option value="normal">普通</option><option value="urgent">紧急</option></select>
+          </div>
+          <p class="field-error wide" data-review-recheck-error role="alert" hidden>请填写复核原因后再创建任务。</p>
+          <div class="field wide"><div class="contract-panel" data-review-recheck-boundary>创建后只新增复核任务；来源任务、原结论和当前 C端结果保持不变。</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-review-recheck-cancel>取消</button><button class="btn primary" type="button" data-review-recheck-submit>创建复核任务</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="content-category" role="dialog" aria-modal="true" aria-labelledby="contentCategoryModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="contentCategoryModalTitle">编辑内容分类</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-content-category-form>
+        <div class="popup-item-fields">
+          <div class="field"><label>分类键</label><input type="hidden" data-content-category-field="key" data-immutable-id-source="content-category-key"><div class="immutable-id-display mono" data-immutable-id-display="content-category-key" aria-label="分类键"></div></div>
+          <div class="field"><label>展示名称</label><input class="input" data-content-category-field="label" maxlength="12" placeholder="填写 C端分类名称"></div>
+          <div class="field"><label>排序</label><input class="input" type="number" min="1" step="1" data-content-category-field="sort" placeholder="数值越小越靠前"></div>
+          <div class="field"><label>状态</label><select class="select" data-content-category-field="status"><option value="active">展示中</option><option value="stopped">停用</option></select></div>
+          <div class="field wide"><label>变更原因</label><textarea class="textarea" data-content-category-field="reason" placeholder="说明本次调整原因，保存后写入操作日志。"></textarea></div>
+          <div class="field wide"><div class="contract-panel" data-content-category-impact>分类名称、排序和状态保存后全站生效；停用分类不下架已绑定内容。</div></div>
+          <p class="field-error wide" data-content-category-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-content-category-submit>保存分类配置</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="operation-slot" data-slot-form-mode="" role="dialog" aria-modal="true" aria-labelledby="slotModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="slotModalTitle" data-slot-modal-title>投放配置</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-slot-form>
+        <div class="popup-item-fields">
+          <div class="field">
+            <label>页面 / 位置</label>
+            <select class="select" data-slot-form-field="placement">
+              <option value="">选择展示位</option>
+              <option value="home-banner" data-slot-placement-option="home-banner">首页 Banner</option>
+              <option value="hot-first-card" data-slot-placement-option="hot-first-card">爆款首卡广告</option>
+              <option value="top-campaign" data-slot-placement-option="top-campaign">首页顶部限时条</option>
+              <option value="flash-hero-ad" data-slot-placement-option="flash-hero-ad">闪念首屏广告</option>
+              <option value="flash-right-ad" data-slot-placement-option="flash-right-ad">闪念右侧广告</option>
+              <option value="model-operation-card" data-slot-placement-option="model-operation-card">模型广场运营卡</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>跳转链接</label>
+            <input class="input" type="text" inputmode="url" autocomplete="url" list="slotTargetSuggestions" data-slot-form-field="target-page" placeholder="./aigc.html 或 https://example.com/path">
+            <datalist id="slotTargetSuggestions">
+              <option value="./aigc.html#aigc-create-panel" data-slot-target-option data-slot-target-label="AIGC 创作" data-slot-target-source-type="cend-target" data-slot-target-source-id="TARGET-AIGC-CREATE"></option>
+              <option value="./campaign-detail.html" data-slot-target-option data-slot-target-label="AI 生图创作挑战" data-slot-target-source-type="activity" data-slot-target-source-id="ACT-IMAGE-001"></option>
+              <option value="./member-store.html" data-slot-target-option data-slot-target-label="会员商城" data-slot-target-source-type="cend-target" data-slot-target-source-id="TARGET-MEMBER-STORE"></option>
+              <option value="./activity-center.html" data-slot-target-option data-slot-target-label="活动中心" data-slot-target-source-type="cend-target" data-slot-target-source-id="TARGET-ACTIVITY-CENTER"></option>
+              <option value="./aigc.html#inspiration-gallery" data-slot-target-option data-slot-target-label="Prompt 案例库" data-slot-target-source-type="cend-target" data-slot-target-source-id="TARGET-AIGC-PROMPT"></option>
+              <option value="./tutorial.html" data-slot-target-option data-slot-target-label="官方教程" data-slot-target-source-type="cend-target" data-slot-target-source-id="TARGET-TUTORIAL"></option>
+            </datalist>
+          </div>
+          <div class="field">
+            <label>标题</label>
+            <input class="input" data-slot-form-field="title" placeholder="填写 C端活动标题">
+          </div>
+          <div class="field wide">
+            <label>描述</label>
+            <input class="input" data-slot-form-field="benefit" placeholder="填写 C端展示描述">
+          </div>
+          <div class="field wide">
+            <label>长期投放</label>
+            <label class="switch-control" data-slot-schedule-control>
+              <input type="checkbox" data-slot-form-field="schedule-long-term">
+              <span class="switch-track" aria-hidden="true"></span>
+              <span data-slot-schedule-label>关闭</span>
+            </label>
+          </div>
+          <div class="field" data-slot-date-field="start">
+            <label>开始日期</label>
+            <input class="input" type="date" data-slot-form-field="validity-start">
+          </div>
+          <div class="field" data-slot-date-field="end">
+            <label>结束日期</label>
+            <input class="input" type="date" data-slot-form-field="validity-end">
+          </div>
+          <div class="field wide" data-slot-bg-field>
+            <label>背景图片地址</label>
+            <input class="input" type="text" inputmode="url" autocomplete="url" data-slot-form-field="background-image" placeholder="填写图片地址">
+          </div>
+          <div class="field">
+            <label>是否启用</label>
+            <label class="switch-control" data-slot-status-control>
+              <input type="checkbox" data-slot-form-field="status">
+              <span class="switch-track" aria-hidden="true"></span>
+              <span data-slot-status-label>停用</span>
+            </label>
+          </div>
+          <div class="field">
+            <label>排序</label>
+            <input class="input" data-slot-form-field="sort" placeholder="例如 10">
+          </div>
+          <div class="field wide slot-lifecycle-panel" data-slot-status-change-panel hidden>
+            <b data-slot-status-change-title>投放状态影响</b>
+            <p class="muted small" data-slot-status-change-impact></p>
+            <label>状态变更原因</label>
+            <input class="input" data-slot-form-field="status-reason" placeholder="启用或停用发生变化时必填，写入操作日志">
+          </div>
+          <p class="field-error wide" data-slot-form-error role="alert" hidden>请选择展示位并填写跳转链接、标题与投放日期。</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-slot-submit>保存</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="quick-entry-slot" data-quick-entry-form-mode="" aria-hidden="true">
+    <div class="modal-head"><span data-quick-entry-modal-title>编辑首页金刚区</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-quick-entry-form>
+        <div class="popup-item-fields">
+          <input type="hidden" data-quick-entry-form-field="quick-entry-id" data-quick-entry-id-source="auto" readonly>
+          <div class="field">
+            <label>标题</label>
+            <input class="input" data-quick-entry-form-field="title" placeholder="填写入口标题">
+          </div>
+          <div class="field wide">
+            <label>描述</label>
+            <input class="input" data-quick-entry-form-field="description" placeholder="填写入口描述">
+          </div>
+          <div class="field wide">
+            <label>跳转链接</label>
+            <input class="input" data-quick-entry-form-field="jump-link" placeholder="填写 C端页面链接，例如 ./aigc.html#quick-create">
+          </div>
+          <div class="field wide">
+            <label>背景图</label>
+            <div class="ant-upload ant-upload-drag popup-upload" data-quick-entry-upload data-prototype-upload>
+              <div class="popup-upload-title">选择金刚区入口背景图</div>
+              <div class="popup-upload-hint">用于首页 Hero 下方入口卡片；支持 JPG / PNG / WebP，单张不超过 5MB</div>
+              <div class="prototype-upload-actions">
+                <button class="btn" type="button" data-prototype-upload-trigger>选择本地图片</button>
+                <span class="popup-upload-file" data-quick-entry-upload-file data-prototype-upload-status>未选择文件</span>
+              </div>
+              <input type="file" data-prototype-upload-input accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" aria-label="选择金刚区入口背景图">
+              <input class="input prototype-upload-path" data-quick-entry-form-field="background-image" data-prototype-upload-value placeholder="图片地址或素材编号">
+              <p class="field-error prototype-upload-error" data-prototype-upload-error role="alert" hidden></p>
+            </div>
+          </div>
+          <div class="field">
+            <label>Icon</label>
+            <input class="input" data-quick-entry-form-field="icon" placeholder="plus / image / cube / window">
+          </div>
+          <div class="field">
+            <label>是否启用</label>
+            <label class="switch-control">
+              <input type="checkbox" data-quick-entry-form-field="status">
+              <span class="switch-track" aria-hidden="true"></span>
+              <span data-quick-entry-status-label>停用</span>
+            </label>
+          </div>
+          <div class="field">
+            <label>排序</label>
+            <input class="input" data-quick-entry-form-field="sort" placeholder="例如 10">
+          </div>
+          <div class="field wide">
+            <label>状态变更原因</label>
+            <input class="input" data-quick-entry-form-field="reason" placeholder="仅启用或停用发生变化时必填">
+          </div>
+          <p class="field-error wide" data-quick-entry-form-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-quick-entry-submit>保存</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="growth-config" data-growth-form-mode="" data-growth-form-type="" data-activity-edit-scope="" data-growth-supported-actions="activity-edit activity-version" aria-hidden="true">
+    <div class="modal-head"><span data-growth-modal-title>增长配置</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-growth-form>
+        <div class="popup-item-fields" data-growth-form-fields></div>
+      </div>
+      <p class="field-error" data-growth-form-error role="alert" hidden></p>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-growth-submit>保存</button><button class="btn primary" data-activity-preflight-submit hidden>提交上线检查</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="activity-task" data-activity-task-mode="create" data-activity-task-code="" role="dialog" aria-modal="true" aria-labelledby="activityTaskModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="activityTaskModalTitle" data-activity-task-modal-title>新建活动任务</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields">
+        <div class="field"><label>活动编码</label><input class="input" data-activity-task-field="activity-code" readonly></div>
+        <div class="field"><label>任务编码</label><input class="input mono" data-activity-task-field="code" placeholder="根据任务名称自动生成" readonly></div>
+        <div class="field"><label>任务名称</label><input class="input" data-activity-task-field="name" placeholder="如 好友注册"></div>
+        <div class="field"><label>事件类型</label><select class="select" data-activity-task-field="event-type"><option value="">请选择事件类型</option><option value="invite.register">邀请-好友注册</option><option value="invite.interact">邀请-好友互动</option><option value="invite.publish">邀请-好友发布</option><option value="content.publish">内容-发布</option><option value="content.featured">内容-精选</option><option value="user.profile.completed">用户-完善资料</option></select></div>
+        <div class="field wide"><label>任务描述</label><textarea class="textarea" data-activity-task-field="description" placeholder="请输入任务描述"></textarea></div>
+        <div class="field"><label>目标次数</label><input class="input" type="number" min="1" step="1" data-activity-task-field="target-count" value="1"></div>
+        <div class="field"><label>奖励积分</label><input class="input" type="number" min="0" step="1" data-activity-task-field="reward-points" value="0"></div>
+        <div class="field"><label>有效天数</label><input class="input" type="number" min="0" step="1" data-activity-task-field="valid-days" value="30"><p class="muted small">0 表示未单独配置有效期。</p></div>
+        <div class="field"><label>发奖模式</label><select class="select" data-activity-task-field="grant-mode"><option value="实时">实时</option><option value="待结算">待结算</option></select></div>
+        <div class="field"><label>排序</label><input class="input" type="number" min="1" step="1" data-activity-task-field="sort" value="1"><p class="muted small">数值越小越靠前。</p></div>
+        <div class="field"><label>第几天任务</label><input class="input" type="number" min="1" step="1" data-activity-task-field="day-index" placeholder="可选"></div>
+        <div class="field"><label>解锁天数</label><input class="input" type="number" min="0" step="1" data-activity-task-field="unlock-days" placeholder="可选"></div>
+        <div class="field"><label>按钮文案</label><input class="input" data-activity-task-field="button-text" placeholder="如 去浏览"></div>
+        <div class="field"><label>跳转路由</label><input class="input" data-activity-task-field="button-route" placeholder="如 /home 或 aigc.html"></div>
+        <details class="field wide" data-activity-task-advanced>
+          <summary>高级任务配置</summary>
+          <div class="field-grid">
+            <div class="field"><label>业务类型</label><input class="input" data-activity-task-field="business-type" placeholder="可选"></div>
+            <div class="field"><label>内容类型白名单</label><input class="input" data-activity-task-field="content-types" placeholder="多个值用逗号分隔"></div>
+            <div class="field"><label>Extra 必含键</label><input class="input" data-activity-task-field="extra-keys" placeholder="多个键用逗号分隔"></div>
+            <div class="field"><label>统计窗口</label><select class="select" data-activity-task-field="statistics-window"><option value="">不限制</option><option value="once">仅一次</option><option value="day">自然日</option><option value="month">自然月</option><option value="activity">活动周期</option></select></div>
+            <div class="field wide"><label>必填字段</label><input class="input" data-activity-task-field="required-fields" placeholder="多个字段用逗号分隔"></div>
+          </div>
+        </details>
+      </div>
+      <p class="field-error" data-activity-task-error role="alert" hidden></p>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-activity-task-submit>保存任务</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="review-audit" role="dialog" aria-modal="true" aria-labelledby="reviewAuditModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="reviewAuditModalTitle">审核</span><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields">
+        <div class="field wide"><label>来源对象</label><div class="immutable-id-display" data-review-audit-object>—</div></div>
+        <div class="field wide"><label>审核结果</label><div class="tabs ant-segmented" data-antd-component="Segmented"><button class="tab is-active ant-segmented-item-selected" type="button" data-review-audit-decision="approve">通过</button><button class="tab" type="button" data-review-audit-decision="reject">拒绝</button></div></div>
+        <div class="field wide" data-review-reject-reason-field hidden><label>拒绝原因</label><textarea class="textarea ant-input" rows="4" data-review-audit-reason placeholder="请输入拒绝原因" data-antd-component="Input.TextArea"></textarea></div>
+        <p class="field-error wide" data-review-audit-error role="alert" hidden></p>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">取消</button><button class="btn primary ant-btn ant-btn-primary" type="button" data-review-audit-submit data-antd-component="Button">确认通过</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="flash-audit" role="dialog" aria-modal="true" aria-labelledby="flashAuditModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="flashAuditModalTitle">审核帖子</span><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-fields">
+        <div class="field wide"><label>内容标题</label><div class="immutable-id-display" data-flash-audit-object>—</div></div>
+        <div class="field wide"><label>审核结果</label><div class="tabs ant-radio-group" data-antd-component="Radio.Group"><button class="tab is-active ant-radio-button-wrapper-checked" type="button" data-flash-audit-decision="approve">通过</button><button class="tab" type="button" data-flash-audit-decision="reject">拒绝</button></div></div>
+        <div class="field wide" data-flash-audit-reason-field hidden><label>拒绝原因</label><textarea class="textarea ant-input" rows="3" data-flash-audit-reason placeholder="请输入审核拒绝原因" data-antd-component="Input.TextArea"></textarea></div>
+        <p class="field-error wide" data-flash-audit-error role="alert" hidden></p>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">取消</button><button class="btn primary ant-btn ant-btn-primary" type="button" data-flash-audit-submit data-antd-component="Button">确认通过</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="flash-featured" role="dialog" aria-modal="true" aria-labelledby="flashFeaturedModalTitle" aria-hidden="true" data-antd-component="Modal">
+    <div class="modal-head"><span id="flashFeaturedModalTitle">设为精选</span><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">关闭</button></div>
+    <div class="modal-body">
+      <div class="field"><label>搜索理由名称</label><input class="input ant-input" placeholder="搜索理由名称" data-flash-featured-search data-antd-component="Input.Search"></div>
+      <div class="table-wrap ant-table-wrapper mod-table" data-component-contract="ModTable" data-antd-component="Table">
+        <table data-table="flash-featured-reasons"><thead><tr><th>选择</th><th>理由 ID</th><th>理由名称</th><th>前台文案</th><th>排序</th></tr></thead><tbody>
+          <tr><td><input type="radio" name="flash-featured-reason" value="REASON-SAMPLE-001" data-flash-featured-reason aria-label="选择精选理由"></td><td class="mono">REASON-SAMPLE-001</td><td>优质经验</td><td>来自精选理由接口的前台文案示例</td><td>10</td></tr>
+        </tbody></table>
+      </div>
+      <p class="field-error" data-flash-featured-error role="alert" hidden></p>
+    </div>
+    <div class="modal-footer"><button class="btn ant-btn" type="button" data-close-layer data-antd-component="Button">取消</button><button class="btn primary ant-btn ant-btn-primary" type="button" data-flash-featured-submit data-antd-component="Button">确定</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="official-account" data-official-account-mode="create" role="dialog" aria-modal="true" aria-labelledby="officialAccountModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="officialAccountModalTitle" data-official-account-modal-title>创建官方账号</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid">
+        <div class="popup-item-fields">
+          <div class="field"><label>官方账号 ID</label><input type="hidden" data-official-account-field="id" data-immutable-id-source="official-account-id"><div class="immutable-id-display mono" data-immutable-id-display="official-account-id" aria-label="官方账号 ID"></div></div>
+          <div class="field"><label>状态</label><input class="input" value="启用" readonly></div>
+          <div class="field wide"><label>公开昵称</label><input class="input" maxlength="24" data-official-account-field="name" placeholder="例如：多元拾光官方"></div>
+          <div class="field wide">
+            <label>头像</label>
+            <div class="ant-upload ant-upload-drag popup-upload" data-official-account-avatar-upload data-prototype-upload>
+              <div class="popup-upload-title">上传头像</div>
+              <div class="popup-upload-hint">JPG / PNG / WebP · 单张不超过 5MB；也可以直接填写头像链接</div>
+              <div class="prototype-upload-actions">
+                <button class="btn" type="button" data-prototype-upload-trigger>选择本地图片</button>
+                <span class="popup-upload-file" data-prototype-upload-status>未选择文件</span>
+              </div>
+              <input type="file" data-prototype-upload-input accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" aria-label="选择官方账号头像">
+              <input class="input prototype-upload-path" data-official-account-field="avatar" data-prototype-upload-value aria-label="头像链接" placeholder="或填写 https:// 开头的头像链接">
+              <p class="field-error prototype-upload-error" data-prototype-upload-error role="alert" hidden></p>
+            </div>
+          </div>
+          <div class="field wide"><label>公开简介</label><textarea class="textarea" rows="4" maxlength="160" data-official-account-field="bio" placeholder="说明官方账号的公开用途"></textarea></div>
+          <div class="field wide"><label>允许用途</label><input class="input" value="官方内容发布、公告发布" readonly></div>
+          <div class="field wide"><div class="contract-panel" data-official-account-credential-boundary>该对象是 C端公开作者身份，不是后台登录用户；不填写手机号、密码、Token 或其他登录凭证。普通社区用户仍只能由 C端注册产生。</div></div>
+          <p class="field-error wide" data-official-account-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-official-account-submit>保存官方账号</button></div>
+  </section>
+
+  <section class="modal popup-item-modal prototype-editor-modal" data-modal="official-content" data-official-content-mode="create" role="dialog" aria-modal="true" aria-labelledby="officialContentModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="officialContentModalTitle">以官方身份发布内容</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid">
+        <div class="popup-item-fields">
+          <div class="field"><label>内容 ID</label><input type="hidden" data-official-content-field="id" data-immutable-id-source="official-content-id"><div class="immutable-id-display mono" data-immutable-id-display="official-content-id" aria-label="内容 ID"></div></div>
+          <div class="field"><label>公开作者</label><select class="select" data-official-content-field="author" data-official-author-select></select></div>
+          <div class="field wide"><label>标题</label><input class="input" maxlength="60" data-official-content-field="title" placeholder="填写 C端内容标题"></div>
+          <div class="field"><label>内容类型</label><select class="select" data-official-content-field="type"><option value="Prompt">Prompt</option><option value="图片生成">图片生成</option><option value="视频生成">视频生成</option><option value="短剧漫剧">短剧漫剧</option></select></div>
+          <div class="field"><label>内容分类</label><select class="select" data-official-content-field="category"><option value="prompt">Prompt</option><option value="image">图片生成</option><option value="video">视频生成</option><option value="manga">短剧漫剧</option></select></div>
+          <div class="field wide"><label>摘要</label><textarea class="textarea" rows="3" maxlength="120" data-official-content-field="summary" placeholder="填写列表摘要"></textarea></div>
+          <div class="field wide"><label>正文</label><textarea class="textarea" rows="8" data-official-content-field="body" placeholder="填写内容正文"></textarea></div>
+          <div class="field"><label>保存状态</label><select class="select" data-official-content-field="state"><option value="draft">保存草稿</option><option value="published">立即发布</option></select></div>
+          <div class="field"><label>实际操作人</label><input class="input" value="内容运营" data-official-content-field="operator" readonly></div>
+          <div class="field wide"><div class="contract-panel">C端公开作者展示所选官方账号；后台日志另行记录实际操作人。停用的官方账号不能用于新发布，历史作者信息不改写。</div></div>
+          <p class="field-error wide" data-official-content-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-official-content-submit>保存内容</button></div>
+  </section>
+
+  <section class="modal popup-item-modal prototype-editor-modal" data-modal="announcement" data-announcement-mode="create" data-announcement-body-format="markdown" role="dialog" aria-modal="true" aria-labelledby="announcementModalTitle" aria-hidden="true">
+    <div class="modal-head"><span id="announcementModalTitle" data-announcement-modal-title>发布公告</span><button class="btn" type="button" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid">
+        <div class="popup-item-fields">
+          <div class="field"><label>公告 ID</label><input type="hidden" data-announcement-field="id" data-immutable-id-source="announcement-id"><div class="immutable-id-display mono" data-immutable-id-display="announcement-id" aria-label="公告 ID"></div></div>
+          <div class="field"><label>公开作者</label><select class="select" data-announcement-field="author" data-official-author-select></select></div>
+          <div class="field wide"><label>标题</label><input class="input" maxlength="40" data-announcement-field="title" placeholder="4–40 字"></div>
+          <div class="field wide"><label>摘要</label><textarea class="textarea" rows="3" maxlength="120" data-announcement-field="summary" placeholder="用于 C端消息列表的简短说明"></textarea></div>
+          <div class="field"><label>目标人群</label><select class="select" data-announcement-field="audience"><option value="all-registered">全部注册用户</option></select></div>
+          <div class="field"><label>发布方式</label><select class="select" data-announcement-field="state"><option value="draft">保存草稿</option><option value="published">立即发布</option></select></div>
+          <div class="field wide" data-announcement-markdown-workspace>
+            <label>公告正文（Markdown）</label>
+            <div class="markdown-editor-layout">
+              <textarea class="textarea" data-announcement-field="body" data-announcement-markdown-input placeholder="# 公告标题&#10;&#10;填写正文、列表和强调内容。"></textarea>
+              <article class="markdown-preview" data-announcement-markdown-preview><p class="muted">Markdown 预览</p></article>
+            </div>
+          </div>
+          <div class="field wide"><div class="contract-panel">公告发布后进入 C端消息中心；这里不复制顶部限时条投放，也不替代内容审核、奖励、兑换等来源业务产生的事务消息。</div></div>
+          <p class="field-error wide" data-announcement-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" type="button" data-close-layer>取消</button><button class="btn primary" type="button" data-announcement-submit>保存公告</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="content-ops" data-content-form-mode="" data-content-form-type="" data-content-generated-id-source="auto" data-content-supported-actions="content-create content-edit review-create review-edit feature-create feature-edit submission-create submission-edit template-create template-edit tutorial-create tutorial-edit" aria-hidden="true" data-antd-component="Drawer">
+    <div class="modal-head"><span data-content-modal-title>内容运营处理</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-content-form>
+        <div class="popup-item-fields" data-content-form-fields></div>
+      </div>
+      <p class="field-error" data-content-form-error role="alert" hidden></p>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-content-submit>保存</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="user-governance" data-user-governance-form-mode="" data-user-governance-form-type="" data-user-governance-generated-id-source="auto" data-user-governance-supported-actions="trust-edit" aria-hidden="true">
+    <div class="modal-head"><span data-user-governance-modal-title>用户治理处理</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-user-governance-form>
+        <div class="popup-item-fields" data-user-governance-form-fields></div>
+      </div>
+      <p class="field-error" data-user-governance-error role="alert" hidden></p>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-user-governance-submit>保存</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="user-points-adjustment" data-user-points-adjustment-user-id="" aria-hidden="true">
+    <div class="modal-head"><span data-user-points-adjustment-title>调整用户限时积分</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid">
+        <div class="popup-item-fields">
+          <div class="field wide"><label data-user-points-adjustment-target-label>用户</label><input class="input" data-user-points-adjustment-field="user" readonly></div>
+          <div class="field"><label>调整类型</label><select class="select" data-user-points-adjustment-field="direction"><option value="credit">发放限时积分</option><option value="debit">扣除限时积分</option></select></div>
+          <div class="field" data-user-points-current-balance-field><label>当前限时积分</label><input class="input" data-user-points-adjustment-field="current-balance" readonly></div>
+          <div class="field wide"><label>限时积分数量</label><input class="input" type="number" min="1" step="1" inputmode="numeric" data-user-points-adjustment-field="amount" placeholder="填写大于 0 的整数"></div>
+          <div class="field wide"><label>调整后限时积分</label><input class="input" data-user-points-adjustment-field="next-balance" value="—" readonly></div>
+          <div class="field wide"><label>调整原因</label><textarea class="textarea" rows="4" data-user-points-adjustment-field="reason" placeholder="必填，说明本次发放或扣除限时积分的业务原因"></textarea></div>
+          <p class="field-error wide" data-user-points-adjustment-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-user-points-adjustment-submit>确认调整</button></div>
+  </section>
+
+  <section class="modal popup-item-modal" data-modal="login-popup-item" data-popup-item-form-mode="" aria-hidden="true">
+    <div class="modal-head"><span data-popup-item-modal-title>弹窗子项配置</span><button class="btn" data-close-layer>关闭</button></div>
+    <div class="modal-body">
+      <div class="popup-item-form-grid" data-popup-item-form>
+        <div class="popup-item-fields">
+          <input type="hidden" data-popup-item-form-field="item-id" data-popup-item-id-source="auto" readonly>
+          <div class="field">
+            <label>标题</label>
+            <input class="input" data-popup-item-form-field="left-title" placeholder="填写 C端左侧标题">
+          </div>
+          <div class="field">
+            <label>描述</label>
+            <input class="input" data-popup-item-form-field="left-description" placeholder="填写限时积分或利益点">
+          </div>
+          <div class="field wide">
+            <label>活动大图</label>
+            <div class="ant-upload ant-upload-drag popup-upload" data-popup-item-upload data-prototype-upload>
+              <div class="popup-upload-title">选择登录弹窗活动大图</div>
+              <div class="popup-upload-hint">用于 C端弹窗右侧详情；支持 JPG / PNG / WebP，单张不超过 5MB</div>
+              <div class="prototype-upload-actions">
+                <button class="btn" type="button" data-prototype-upload-trigger>选择本地图片</button>
+                <span class="popup-upload-file" data-popup-item-upload-file data-prototype-upload-status>未选择文件</span>
+              </div>
+              <input type="file" data-prototype-upload-input accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" aria-label="选择登录弹窗活动大图">
+              <input class="input prototype-upload-path" data-popup-item-form-field="detail-bg-image" data-prototype-upload-value placeholder="图片地址或素材编号">
+              <p class="field-error prototype-upload-error" data-prototype-upload-error role="alert" hidden></p>
+            </div>
+          </div>
+          <div class="field">
+            <label>按钮文案</label>
+            <input class="input" data-popup-item-form-field="button-copy" placeholder="例如 查看任务">
+          </div>
+          <div class="field">
+            <label>跳转链接</label>
+            <input class="input" data-popup-item-form-field="button-link" placeholder="填写 C端页面链接">
+          </div>
+          <div class="field">
+            <label>排序</label>
+            <input class="input" data-popup-item-form-field="sort" placeholder="例如 10">
+          </div>
+          <div class="field">
+            <label>状态</label>
+            <label class="switch-control" data-popup-item-status-control>
+              <input type="checkbox" data-popup-item-form-field="status">
+              <span class="switch-track" aria-hidden="true"></span>
+              <span data-popup-item-status-label>下架</span>
+            </label>
+          </div>
+          <p class="field-error wide" data-popup-item-form-error role="alert" hidden></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn" data-close-layer>取消</button><button class="btn primary" data-popup-item-submit>保存</button></div>
+  </section>
+
+  <script src="assets/runtime/community-b-end.js" data-bend-shared-script></script>
+  <script type="application/json" data-model-management-catalog>[{"id":"gpt-4.1","name":"gpt-4.1","provider":"OpenAI","supply":"published","cendReference":"gpt-4.1","points":0,"pointsConfigured":false},{"id":"gpt-5-chat-latest","name":"gpt-5-chat-latest","provider":"OpenAI","supply":"published","cendReference":"gpt-5-chat-latest","points":0,"pointsConfigured":false},{"id":"claude-sonnet-4-6","name":"claude-sonnet-4-6","provider":"Anthropic","supply":"published","cendReference":"claude-sonnet-4-6","points":0,"pointsConfigured":false},{"id":"gemini-3-pro-preview","name":"gemini-3-pro-preview","provider":"Google","supply":"published","cendReference":"gemini-3-pro-preview","points":0,"pointsConfigured":false},{"id":"gemini-2.5-pro","name":"gemini-2.5-pro","provider":"Google","supply":"published","cendReference":"gemini-2.5-pro","points":0,"pointsConfigured":false},{"id":"o4-mini","name":"o4-mini","provider":"OpenAI","supply":"published","cendReference":"o4-mini","points":0,"pointsConfigured":false},{"id":"text-embedding-3-large","name":"text-embedding-3-large","provider":"OpenAI","supply":"published","cendReference":"text-embedding-3-large","points":0,"pointsConfigured":false},{"id":"gpt-image-2","name":"gpt-image-2","provider":"OpenAI","supply":"published","cendReference":"gpt-image-2","points":18,"pointsConfigured":true},{"id":"doubao-seedream-4-5-251128","name":"doubao-seedream-4-5-251128","provider":"Doubao","supply":"published","cendReference":"doubao-seedream-4-5-251128","points":24,"pointsConfigured":true},{"id":"gemini-3.1-flash-image","name":"gemini-3.1-flash-image","provider":"Google","supply":"published","cendReference":"gemini-3.1-flash-image","points":0,"pointsConfigured":false},{"id":"grok-video-3","name":"grok-video-3","provider":"Grok","supply":"published","cendReference":"grok-video-3","points":36,"pointsConfigured":true},{"id":"grok-video-3-10s","name":"grok-video-3-10s","provider":"Grok","supply":"published","cendReference":"grok-video-3-10s","points":40,"pointsConfigured":true},{"id":"doubao-seedream-5-0-260128","name":"doubao-seedream-5-0-260128","provider":"Doubao","supply":"published","cendReference":"doubao-seedream-5-0-260128","points":28,"pointsConfigured":true},{"id":"nano-banana-pro","name":"Nano Banana Pro","provider":"待确认","supply":"published","cendReference":"nano-banana-pro","points":22,"pointsConfigured":true},{"id":"nano-banana-2","name":"nano-banana-2","provider":"待确认","supply":"published","cendReference":"nano-banana-2","points":20,"pointsConfigured":true},{"id":"gemini-3-flash-preview","name":"gemini-3-flash-preview","provider":"待确认","supply":"published","cendReference":"gemini-3-flash-preview","points":8,"pointsConfigured":true},{"id":"kimi-k2.6","name":"kimi-k2.6","provider":"待确认","supply":"published","cendReference":"kimi-k2-6","points":10,"pointsConfigured":true},{"id":"gpt-5.5","name":"gpt-5.5","provider":"OpenAI","supply":"published","cendReference":"gpt-5-5","points":12,"pointsConfigured":true},{"id":"deepseek-v4-pro","name":"deepseek-v4-pro","provider":"待确认","supply":"published","cendReference":"deepseek-v4-pro","points":9,"pointsConfigured":true},{"id":"doubao-seedance-1-5-pro","name":"doubao-seedance-1-5-pro","provider":"待确认","supply":"published","cendReference":"doubao-seedance-1-5-pro","points":36,"pointsConfigured":true},{"id":"doubao-seedance-2-0-5s","name":"doubao-seedance-2-0-5s","provider":"待确认","supply":"published","cendReference":"doubao-seedance-2-0-5s","points":42,"pointsConfigured":true},{"id":"kling-3.0-omni-720p-ref-mute","name":"kling-3.0-omni-720p-ref-mute","provider":"待确认","supply":"published","cendReference":"kling-3-0-omni-720p-ref-mute","points":48,"pointsConfigured":true},{"id":"omni-fast","name":"omni-fast","provider":"待确认","supply":"published","cendReference":"omni-fast","points":28,"pointsConfigured":true},{"id":"doubao-seedance-2-0-10s","name":"doubao-seedance-2-0-10s","provider":"待确认","supply":"published","cendReference":"doubao-seedance-2-0-10s","points":56,"pointsConfigured":true},{"id":"doubao-seedance-2-0-15s","name":"doubao-seedance-2-0-15s","provider":"待确认","supply":"published","cendReference":"doubao-seedance-2-0-15s","points":72,"pointsConfigured":true},{"id":"kling-2.5-1080p","name":"kling-2.5-1080p","provider":"待确认","supply":"published","cendReference":"kling-2-5-1080p","points":64,"pointsConfigured":true},{"id":"grok-1.5-video-10s","name":"grok-1.5-video-10s","provider":"待确认","supply":"published","cendReference":"grok-1-5-video-10s","points":44,"pointsConfigured":true},{"id":"MODEL-0056","name":"GPT-5.6（B端待投放）","provider":"OpenAI","supply":"published","cendReference":"MODEL-0056","points":0,"pointsConfigured":false},{"id":"MODEL-IMG-A","name":"历史图像模型（样例）","provider":"示例提供方","supply":"paused","cendReference":"MODEL-IMG-A","points":0,"pointsConfigured":false},{"id":"MODEL-VID-OLD","name":"历史视频模型（样例）","provider":"示例提供方","supply":"offline","cendReference":"MODEL-VID-OLD","points":0,"pointsConfigured":false}]</script>
+  <script type="application/json" data-aigc-model-catalog>[{"code":"gpt-5.5","name":"GPT-5.5","seriesCode":"openai","seriesName":"OpenAI","vendorModel":"gpt-5.5","outputTypes":["text"],"costPoints":"12","status":"1","aspectRatios":"","resolutions":"","updatedAt":"2026-08-01 11:00"},{"code":"gpt-image-2","name":"GPT Image 2","seriesCode":"openai","seriesName":"OpenAI","vendorModel":"gpt-image-2","outputTypes":["image"],"costPoints":"18","status":"1","aspectRatios":"1:1,16:9,9:16","resolutions":"1k,2k","updatedAt":"2026-08-01 11:10"},{"code":"doubao-seedream-5-0-260128","name":"Seedream 5.0","seriesCode":"doubao","seriesName":"豆包","vendorModel":"seedream-5.0","outputTypes":["image"],"costPoints":"28","status":"1","aspectRatios":"1:1,16:9,9:16","resolutions":"2k,4k","updatedAt":"2026-08-01 11:20"},{"code":"grok-video-3","name":"Grok Video 3","seriesCode":"grok","seriesName":"Grok","vendorModel":"grok-video-3","outputTypes":["video"],"costPoints":"36","status":"1","aspectRatios":"16:9,9:16","resolutions":"720p,1080p","updatedAt":"2026-08-01 11:30"},{"code":"kling-2.5-1080p","name":"Kling 2.5","seriesCode":"grok","seriesName":"Grok","vendorModel":"kling-2.5","outputTypes":["video"],"costPoints":"64","status":"1","aspectRatios":"16:9,9:16","resolutions":"1080p","updatedAt":"2026-07-28 16:00"},{"code":"kimi-k2.6","name":"Kimi K2.6","seriesCode":"openai","seriesName":"OpenAI","vendorModel":"kimi-k2.6","outputTypes":["text"],"costPoints":"10","status":"1","aspectRatios":"","resolutions":"","updatedAt":"2026-07-28 16:10"},{"code":"MODEL-IMG-A","name":"历史图像模型","seriesCode":"legacy","seriesName":"历史模型","vendorModel":"legacy-image","outputTypes":["image"],"costPoints":"8","status":"0","aspectRatios":"1:1","resolutions":"1k","updatedAt":"2026-07-20 09:00"},{"code":"MODEL-VID-OLD","name":"历史视频模型","seriesCode":"legacy","seriesName":"历史模型","vendorModel":"legacy-video","outputTypes":["video"],"costPoints":"20","status":"0","aspectRatios":"16:9","resolutions":"720p","updatedAt":"2026-07-20 09:10"}]</script>
+</body>
+</html>

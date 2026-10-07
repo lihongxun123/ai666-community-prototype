@@ -174,7 +174,7 @@ export default function Prototype() {
   const loginLayer=loginOpen?<PersonalPage page="login" state={params.get('state')||'normal'} go={go}/>:checkinOpen?<PersonalPage page="checkin" state={params.get('state')||'normal'} go={go}/>:null;
   const invitationFeedbackLayer=<TransientFeedback message={inviteFeedback} onClear={()=>setInviteFeedback('')}/>;
   if (page === 'home' || page === 'creation-entry')
-    return <div className={loginOpen||checkinOpen?'cp-root'+(desktop?' cp-desktop cp-retained-desktop':''):undefined}><div inert={loginOpen||checkinOpen||page==='creation-entry'||undefined}>{desktop ? <HomePrototype navigate={go}/> : <MobileHome key={state} initialState={state} navigate={go} contentOnly={contentOnly}/>}</div>{page==='creation-entry'&&!loginOpen&&<CreationEntry go={go} controlledOpen onClose={()=>go('home')} />}{loginLayer}{operationsLayer}{invitationFeedbackLayer}</div>;
+    return <div className={loginOpen||checkinOpen?'cp-root'+(desktop?' cp-desktop cp-retained-desktop':''):undefined}><div inert={loginOpen||checkinOpen||page==='creation-entry'||undefined}>{desktop ? <HomePrototype key={state} navigate={go} initialState={state}/> : <MobileHome key={state} initialState={state} navigate={go} contentOnly={contentOnly}/>}</div>{page==='creation-entry'&&!loginOpen&&<CreationEntry go={go} controlledOpen onClose={()=>go('home')} />}{loginLayer}{operationsLayer}{invitationFeedbackLayer}</div>;
   const props = { page, state, go };
   return (
     <div

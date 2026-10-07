@@ -1,0 +1,62 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- button "返回"
+- main:
+  - generic: 林
+  - heading "林间" [level=2]
+  - paragraph: AI 创作分享者
+  - button "已关注"
+  - paragraph: 记录影像与日常创作的练习，分享作品背后的提示词、参考素材与尝试过程。
+  - generic "作者公开数据":
+    - strong: "128"
+    - generic: 获赞
+    - strong: "24"
+    - generic: 关注
+    - strong: "37"
+    - generic: 粉丝
+  - button "作品4"
+  - button "帖子3"
+  - button "查看作品：在海边住一下午":
+    - img "在海边住一下午"
+    - strong: 在海边住一下午
+    - img "喜欢"
+    - text: "128"
+  - button "查看作品：旧照片的新故事":
+    - img "旧照片的新故事"
+    - strong: 旧照片的新故事
+    - generic: 围绕日常场景完成的一次视觉创作，记录画面与提示词的探索。
+    - img "喜欢"
+    - text: "96"
+  - button "查看作品：写作时刻":
+    - img "写作时刻"
+    - strong: 写作时刻
+    - img "喜欢"
+    - text: "72"
+  - button "查看作品：写给夏天的一封信":
+    - text: 文字
+    - heading "写给夏天的一封信" [level=3]
+    - paragraph: 海风穿过街角，把普通的下午写成故事。
+    - img "喜欢"
+    - text: "54"

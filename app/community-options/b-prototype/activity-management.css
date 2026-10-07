@@ -1,0 +1,67 @@
+.activity-management {
+  padding: 0;
+  min-width: 0;
+}
+.activity-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.activity-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr)) auto;
+  gap: 16px;
+  align-items: end;
+}
+.activity-filters > .ant-form-item {
+  margin-bottom: 20px;
+}
+.activity-filters > .ant-space {
+  margin-bottom: 20px;
+}
+.activity-muted {
+  color: #8c8c8c;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.activity-rule-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0 24px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+.activity-rule-subtitle {
+  font-weight: 500;
+  margin: 12px 0;
+}
+.activity-form {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.activity-form .ant-picker {
+  width: 100%;
+}
+.activity-form .ant-collapse {
+  margin-top: 20px;
+}
+.activity-management .ant-table-cell .ant-btn {
+  padding-inline: 6px;
+}
+@media (max-width: 1100px) {
+  .activity-filters {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+  .activity-filters > .ant-space {
+    align-self: end;
+  }
+}
+@media (max-width: 600px) {
+  .activity-filters {
+    grid-template-columns: 1fr;
+  }
+}

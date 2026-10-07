@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-06",
+  "scope": [
+    "op-shop",
+    "op-redemptions"
+  ],
+  "reference": "ai666-admin/src/view/operationManagement/{store,site,commodity}",
+  "checks": [
+    {
+      "check": "站点产品数量打开820px抽屉",
+      "result": "passed"
+    },
+    {
+      "check": "编辑商品200->210并同tab C商城显示210",
+      "result": "passed"
+    },
+    {
+      "check": "同批卡密重复行去重为1条",
+      "result": "passed"
+    },
+    {
+      "check": "已入库卡密再次提交报错且保留输入",
+      "result": "passed"
+    },
+    {
+      "check": "修正为2条唯一演示卡密后成功",
+      "result": "passed"
+    },
+    {
+      "check": "独立复核显示用户ID精确查询、无用户显示—、积分方式",
+      "result": "passed"
+    },
+    {
+      "check": "独立复核上下架失败后重试成功",
+      "result": "passed"
+    },
+    {
+      "check": "独立复核返还处理中200/150/50明细保留",
+      "result": "passed"
+    },
+    {
+      "check": "产品操作列固定右侧，截图视觉确认",
+      "result": "passed"
+    },
+    {
+      "check": "tsc --noEmit",
+      "result": "passed"
+    },
+    {
+      "check": "scoped oxlint",
+      "result": "passed"
+    },
+    {
+      "check": "npm run build",
+      "result": "passed",
+      "note": "构建后仅增加产品操作列fixed，已通过tsc及浏览器验证"
+    }
+  ],
+  "boundaries": [
+    "验证对象为本地研究原型，未修改真实后台",
+    "使用虚构DEMO卡密和会话数据，未验证生产接口、积分扣减、真实发码",
+    "线上结构依据当前本地真实后台代码，未证明远端部署版本完全一致"
+  ],
+  "screenshot": "shop-management.png"
+}

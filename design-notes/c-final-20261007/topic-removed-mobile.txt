@@ -1,0 +1,12 @@
+- banner:
+  - button "返回"
+  - heading "专题详情" [level=1]
+- main:
+  - heading "专题暂不可访问" [level=2]
+  - button "浏览其他专题"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

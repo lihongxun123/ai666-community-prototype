@@ -1,0 +1,13 @@
+- banner:
+  - button "返回"
+  - heading "活动中心" [level=1]
+- main:
+  - status:
+    - text: 活动暂时无法加载。
+    - button "重试"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

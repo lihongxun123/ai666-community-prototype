@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-07",
+  "pages": 8,
+  "baselineRuntimeUnchanged": true,
+  "inlineScriptsParse": true,
+  "typescript": "passed",
+  "browserVerified": [
+    "eight analytics pages rendered",
+    "growth to registration cohort with channel and campaign; return restores filters",
+    "content metric change and details",
+    "creation records drawer",
+    "activity business workbench",
+    "metrics H-05 search and atomic definitions",
+    "overview to growth and browser back"
+  ],
+  "boundary": "Demo data only; no real API or 105-value production acceptance"
+}

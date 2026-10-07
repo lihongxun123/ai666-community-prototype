@@ -1,0 +1,101 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- heading "AI应用" [level=1]
+- main:
+  - region "应用列表":
+    - paragraph: 将想法变成作品。
+    - navigation "应用任务分类":
+      - button "全部" [pressed]
+      - button "写文案"
+      - button "做商品图"
+      - button "修照片"
+      - button "做视频"
+    - button "文案改写 · 场景 15":
+      - strong:
+        - text: 文案改写 · 场景 15
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 25":
+      - strong:
+        - text: 文案改写 · 场景 25
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 5 修订演示":
+      - strong:
+        - text: 文案改写 · 场景 5 修订演示
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 11":
+      - strong:
+        - text: 文案改写 · 场景 11
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 16":
+      - strong:
+        - text: 文案改写 · 场景 16
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 21":
+      - strong:
+        - text: 文案改写 · 场景 21
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 26":
+      - strong:
+        - text: 文案改写 · 场景 26
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写 · 场景 6":
+      - strong:
+        - text: 文案改写 · 场景 6
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "文案改写":
+      - strong:
+        - text: 文案改写
+        - emphasis: 官方
+      - generic: 将创作方法与实际使用条件写清楚。
+    - button "产品换背景":
+      - strong:
+        - text: 产品换背景
+        - emphasis: 官方
+      - generic: 为产品图片更换背景，尝试不同的展示场景。
+    - button "产品短片制作":
+      - strong:
+        - text: 产品短片制作
+        - emphasis: 官方
+      - generic: 用产品素材制作一段展示短片。
+    - button "照片色彩修复":
+      - strong:
+        - text: 照片色彩修复
+        - emphasis: 官方
+      - generic: 调整照片的色彩，让肤色和画面更自然。
+    - button "照片修复":
+      - strong:
+        - text: 照片修复
+        - emphasis: 官方
+      - generic: 改善旧照片中的划痕、模糊和褪色。
+      - generic: 暂不可用
+    - paragraph: 没有更多了

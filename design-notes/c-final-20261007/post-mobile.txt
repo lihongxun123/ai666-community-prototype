@@ -1,0 +1,34 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - button "林间":
+    - generic: 林间
+  - button "关注"
+- main:
+  - heading "给旧照片修复时，我先做了这三件事" [level=2]
+  - paragraph: 我先确认破损主要集中在照片边缘，再逐处观察脸部和衣服的细节。原图会单独留存，方便最后比较。
+  - paragraph: 这次最有用的是先写清楚想恢复什么：减少划痕、保留表情，而不是把照片变成另一张全新的肖像。
+  - button "查看帖子第1张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 1"
+  - button "查看帖子第2张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 2"
+  - button "查看帖子第3张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 3"
+  - time: 9月24日
+  - button "来自 · 影像练习圈"
+  - button "引用作品 旧照片的新故事 查看原作品及完整说明":
+    - generic: 引用作品
+    - strong: 旧照片的新故事
+    - generic: 查看原作品及完整说明
+  - button "喜欢"
+  - button "收藏"
+  - button "评论"
+  - button "分享":
+    - generic: 分享
+  - heading "评论 2" [level=2]
+  - button "查看全部"
+  - button "周 周末观察 这一步如果只有手机，先准备什么最合适？":
+    - generic: 周
+    - generic: 周末观察
+    - generic: 这一步如果只有手机，先准备什么最合适？
+  - button "写下你的看法"

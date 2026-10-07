@@ -5,7 +5,7 @@ import {MobileNavigation} from '../mobile-navigation';
 /* oxlint-disable next/no-img-element -- Approved local homepage assets. */
 import { prototypeStore as sessionStorage } from '../c-prototype/storage';
 import { useState, useSyncExternalStore } from 'react';
-import {useFeatured,workSampleId} from '../c-prototype/featured';
+import {workSampleId} from '../c-prototype/featured';
 import {useB} from '../b-prototype/store';
 import {mobileContentCategories,normalizeContentCategory,sampleWorkCategories} from '../c-prototype/content-categories';
 import {subscribeSlots,slotSnapshot,readPublishedSlots,resolveSlotTarget} from '../c-prototype/slots';
@@ -48,7 +48,7 @@ export default function MobileHome({
   contentOnly?: boolean;
   navigate?: (p: string) => void;
 }) {
-  const featured=useFeatured(),contentDB=useB();
+  const contentDB=useB();
   useSyncExternalStore(subscribeSlots,slotSnapshot,()=> '');
   const slots=readPublishedSlots('mobile'),banner=slots.find(s=>s.type==='首页 Banner');
   const prefs = useSyncExternalStore(
@@ -70,7 +70,7 @@ export default function MobileHome({
         '/community-options/c-prototype?page=' + id + (q ? '&' + q : '');
     }
   };
-  const selectedItems=featured?featured.works.flatMap(id=>{const r=contentDB.records.find(x=>x.id===id);if(!r||r.publicStatus!=='公开'||!r.recommended)return [];const key=workSampleId(id),existing=items.find(w=>w[0]===key);return [[...(existing||[key,r.public?.title||'',r.public?.author||'','0','生活','4/3']),existing?base+key+'.png':r.public?.core.startsWith('/')?r.public.core:'',id]];}):items.filter(w=>{const r=contentDB.records.find(r=>r.id==='work-'+w[0]);return !r||r.publicStatus==='公开';});
+  const selectedItems=contentDB.records.filter(r=>r.kind==='work'&&r.publicStatus==='公开'&&r.public&&r.adminWork?.hot).sort((a,b)=>(b.firstPublishedAt||'').localeCompare(a.firstPublishedAt||'')||a.id.localeCompare(b.id)).map(r=>{const key=workSampleId(r.id),existing=items.find(w=>w[0]===key);return [key,r.public!.title,r.public!.author,String(r.adminWork?.metrics?.likes||0),r.adminWork?.category||existing?.[4]||'生活',r.adminWork?.coverRatio||existing?.[5]||'4/3',r.public!.cover||'',r.id];});
   const filtered = selectedItems.filter(
     (w) => category === '全部' || normalizeContentCategory(sampleWorkCategories[w[0]]||w[4]) === normalizeContentCategory(category),
   );
@@ -106,6 +106,7 @@ export default function MobileHome({
             </button>
           );})}
         </nav>
+        <button className="mh-model-entry" onClick={()=>window.open('https://duoyuanx.com/pricing','_blank','noopener,noreferrer')}><I name="box-3"/><span><strong>模型广场</strong><small>文本 · 图像 · 音频 · 视频</small></span><I name="arrow-right-s"/></button>
         <div className="mh-topics-heading">
           <h2>精选专题</h2>
           <button onClick={() => go('topics')}>

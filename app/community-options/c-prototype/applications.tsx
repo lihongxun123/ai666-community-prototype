@@ -10,7 +10,9 @@ import './app-latest.css';
 import './apps-pc-concept.css';
 import { ActionBar, Comments } from './reading';
 import {useB} from '../b-prototype/store';
+import {contentMediaSrc} from './content-data';
 import {AppIntroduction,appSummaries} from './app-introduction';
+import {useFeatured} from './featured';
 export const applicationPages = [
   {
     id: 'apps',
@@ -28,8 +30,6 @@ export const applicationPages = [
 const applicationCategories = [{id:'all',label:'全部'},{id:'writing',label:'写文案'},{id:'product-image',label:'做商品图'},{id:'photo',label:'修照片'},{id:'video',label:'做视频'}];
 // Prototype first-publication fixtures; production uses the content publication timestamp.
 // Independent editorial fixtures; backend mapping remains an R&D handoff.
-const featuredAppIds=['copy','background','video','repair-color'];
-const appEditorialOrder:Record<string,number>={copy:1,background:2};
 const firstPublished:Record<string,string>={background:'2026-09-30',video:'2026-09-29','repair-color':'2026-09-28',copy:'2026-09-27',restore:'2026-09-26'};
 const apps = [
  {id:'repair-color',category:'photo',name:'照片色彩修复',image:'portrait',mobile:true,available:true,input:'待修复照片',output:'图片',purpose:'影像处理',place:'MakeNow'},
@@ -93,6 +93,8 @@ export function ApplicationsPage({
   go: (p: string) => void;
 }) {
   const contentDB=useB();
+  const placements=useFeatured();
+  const bannerRevision=JSON.stringify(placements.appBanner);
   const latestTrack=useRef<HTMLDivElement>(null);
   const [latestPosition,setLatestPosition]=useState({start:true,end:false});
   useEffect(()=>{
@@ -101,7 +103,7 @@ export function ApplicationsPage({
     const observer=new ResizeObserver(measure);observer.observe(track);
     for(const card of Array.from(track.children))observer.observe(card);
     measure();return ()=>observer.disconnect();
-  },[page,state,contentDB.records]);
+  },[page,state,contentDB.records,bannerRevision]);
   const query =
     typeof window !== 'undefined'
       ? new URLSearchParams(window.location.search)
@@ -145,22 +147,23 @@ export function ApplicationsPage({
       if(value==='all')url.searchParams.delete('category');else url.searchParams.set('category',value);
       history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));
     };
-    const publicCopy=contentDB.records.find(r=>r.id==='app-1');
-    const publicApps=apps.filter(a=>a.id!=='copy'||publicCopy?.publicStatus==='公开')
-      .map(a=>({...a,name:a.id==='copy'?(publicCopy?.public?.title||a.name):a.name,available:a.available&&(a.id!=='copy'||publicCopy?.runtime==='可用')}));
-    const latest=desktop?featuredAppIds.flatMap(id=>{const app=publicApps.find(a=>a.id===id&&a.available);return app?[app]:[]}):publicApps.filter(a=>a.available).sort((a,b)=>(firstPublished[b.id]||'').localeCompare(firstPublished[a.id]||'')||a.id.localeCompare(b.id)).slice(0,5);
-    const openApp=(id:string)=>{const activity=query?.get('activity');go('app?item='+id+(activity?'&activity='+encodeURIComponent(activity):''));};
+
+    const managedApps=contentDB.records.filter(r=>r.kind==='app'&&r.managed);
+    const publicApps=[...apps.filter(a=>!managedApps.some(r=>r.id===(a.id==='copy'?'app-1':'app-'+a.id))),...managedApps.filter(r=>r.publicStatus==='公开'&&r.public).map(r=>({id:r.id==='app-1'?'copy':r.id,category:/视频/.test(r.public!.outputs)?'video':/图片/.test(r.public!.outputs)?'product-image':'writing',name:r.public!.title,summary:r.public!.summary,image:r.public!.cover||'writing',mobile:r.public!.device==='手机与电脑',available:r.runtime==='可用',input:r.public!.inputs,output:r.public!.outputs,purpose:r.category||'创作',place:'MakeNow'}))];
+    const publishedDate=(id:string)=>contentDB.records.find(r=>r.id===(id==='copy'?'app-1':id))?.firstPublishedAt||firstPublished[id]||'';
+    const latest=desktop?placements.appBanner.flatMap(slot=>{const id=typeof slot.targetId==='string'?slot.targetId:'',app=publicApps.find(a=>(a.id===id||(a.id==='copy'?'app-1':'app-'+a.id)===id)&&a.available);return app?[{...app,name:slot.name||app.name,image:typeof slot.cover==='string'&&slot.cover?slot.cover:app.image}]:[]}):publicApps.filter(a=>a.available).sort((a,b)=>publishedDate(b.id).localeCompare(publishedDate(a.id))||a.id.localeCompare(b.id)).slice(0,5);
+    const openApp=(id:string)=>{const activity=query?.get('activity');go((id.startsWith('app-')?'app?id='+id:'app?item='+id)+(activity?'&activity='+encodeURIComponent(activity):''));};
     const moveLatest=(direction:number)=>{const track=latestTrack.current;const card=track?.firstElementChild;if(track&&card)track.scrollBy({left:direction*(card.getBoundingClientRect().width+16),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});};
     const list=publicApps
       .filter(a=>category==='all'||a.category===category)
-      .sort((a,b)=>desktop?((appEditorialOrder[a.id]??Infinity)-(appEditorialOrder[b.id]??Infinity)||(appEditorialOrder[a.id]!==undefined&&appEditorialOrder[b.id]!==undefined?0:(firstPublished[b.id]||'').localeCompare(firstPublished[a.id]||''))||a.id.localeCompare(b.id)):Number(b.mobile&&b.available)-Number(a.mobile&&a.available));
+      .sort((a,b)=>desktop?(publishedDate(b.id).localeCompare(publishedDate(a.id))||a.id.localeCompare(b.id)):(Number(b.mobile&&b.available)-Number(a.mobile&&a.available)||publishedDate(b.id).localeCompare(publishedDate(a.id))||a.id.localeCompare(b.id)));
     return (
       <section className="cp-app-discovery" aria-label="应用列表">
         {desktop&&<p className="app-discovery-intro">将想法变成作品。</p>}
         {latest.length>0&&<section className="app-latest" aria-label={desktop?"精选应用":"最新上线"}>
           <header><h2>{desktop?'精选应用':'最新上线'}</h2><div className="app-latest-controls"><button aria-label={desktop?"上一组精选应用":"上一组新应用"} disabled={latestPosition.start} onClick={()=>moveLatest(-1)}><img src="/home-prototype/icons/arrow-left-s-line.svg" alt=""/></button><button aria-label={desktop?"下一组精选应用":"下一组新应用"} disabled={latestPosition.end||latest.length<2} onClick={()=>moveLatest(1)}><img src="/home-prototype/icons/arrow-right-s-line.svg" alt=""/></button></div></header>
           <div className="app-latest-track" ref={latestTrack} onScroll={e=>{const t=e.currentTarget;setLatestPosition({start:t.scrollLeft<2,end:t.scrollLeft+t.clientWidth>=t.scrollWidth-2});}}>
-            {latest.map(a=><button className="app-latest-card" key={a.id} onClick={()=>openApp(a.id)} aria-label={(desktop?'查看精选应用：':'查看新应用：')+a.name}><img src={'/home-prototype/'+a.image+'.png'} alt=""/><span>{desktop&&<em>精选应用</em>}<strong>{a.name}</strong><small>{appSummaries[a.id]}</small>{desktop&&<b className="app-banner-explore">探索应用<img src="/home-prototype/icons/arrow-right-line.svg" alt=""/></b>}</span></button>)}
+            {latest.map(a=><button className="app-latest-card" key={a.id} onClick={()=>openApp(a.id)} aria-label={(desktop?'查看精选应用：':'查看新应用：')+a.name}><img src={contentMediaSrc(a.image)} alt=""/><span>{desktop&&<em>精选应用</em>}<strong>{a.name}</strong><small>{('summary' in a?String(a.summary):undefined)||appSummaries[a.id]}</small>{desktop&&<b className="app-banner-explore">探索应用<img src="/home-prototype/icons/arrow-right-line.svg" alt=""/></b>}</span></button>)}
           </div>
         </section>}
         <h2 className="app-directory-heading">全部应用</h2>
@@ -168,9 +171,9 @@ export function ApplicationsPage({
           <nav aria-label="应用任务分类">{applicationCategories.map(({id,label})=><button key={id} aria-pressed={category===id} onClick={()=>updateCategory(id)}>{label}</button>)}</nav>
         </div>
         {list.length===0?<div className="cp-state"><h2>暂无符合条件的应用</h2><button className="cp-button" onClick={()=>updateCategory('all')}>清除筛选</button></div>:<>
-          <div className="cp-app-gallery">{list.map(a=><button className="cp-app-effect" key={a.id} aria-label={a.name} onClick={()=>{const activity=query?.get('activity');go('app?item='+a.id+(activity?'&activity='+encodeURIComponent(activity):''));}}>
-            <img src={'/home-prototype/'+a.image+'.png'} alt=""/>
-            <span className="cp-app-caption"><strong>{a.name}{desktop&&<em>官方</em>}</strong>{desktop&&<span className="app-summary">{appSummaries[a.id]}</span>}{!a.available&&<small>暂不可用</small>}</span>
+          <div className="cp-app-gallery">{list.map(a=><button className="cp-app-effect" key={a.id} aria-label={a.name} onClick={()=>{const activity=query?.get('activity');go((a.id.startsWith('app-')?'app?id='+a.id:'app?item='+a.id)+(activity?'&activity='+encodeURIComponent(activity):''));}}>
+            <img src={contentMediaSrc(a.image)} alt=""/>
+            <span className="cp-app-caption"><strong>{a.name}{desktop&&<em>官方</em>}</strong>{desktop&&<span className="app-summary">{('summary' in a?String(a.summary):undefined)||appSummaries[a.id]}</span>}{!a.available&&<small>暂不可用</small>}</span>
           </button>)}</div>
           <p className="cp-end">没有更多了</p>
         </>}
@@ -197,7 +200,7 @@ export function ApplicationsPage({
     const destination=sample?.destination||configuredApp?.public?.entry;
     const entry=appEntryState({destination,paused,mobile:!pc,device:query?.get('device')==='pc'?'pc':'mobile'});
     const open=()=>{if(entry.status==='available')window.location.assign(entry.href)};
-    if(query?.get('device')==='pc')return <DesktopAppDetail presentation={presentation} title={app.name} summary={sample?.summary||appSummaries[app.id]} item={app.id} cover={app.image} input={app.input} output={app.output} provider="多元拾光" conditions={pc?'需在电脑端使用':undefined} destination={destination} unavailable={paused?'暂不可用':undefined} onUse={open} go={go}/>;
+    if(query?.get('device')==='pc')return <DesktopAppDetail presentation={presentation} title={app.name} summary={sample?.summary||appSummaries[app.id]} item={app.id} cover={app.image} input={app.input} output={app.output} provider="多元拾光" destination={destination} unavailable={paused?'暂不可用':undefined} onUse={open} go={go}/>;
     return (
       <article className="cp-app-detail">
         <div className="cp-app-detail-heading"><h2>{app.name}</h2><p>{sample?.summary||appSummaries[app.id]}</p></div>
@@ -216,8 +219,8 @@ export function ApplicationsPage({
         {['available','desktop'].includes(entry.status) && <div className="cp-app-dock" aria-label="应用操作">
           {entry.status==='desktop' ? <DesktopContinuation item={item} id={configuredApp?.id}/> : <button className="cp-button" onClick={open}>在 MakeNow 中使用</button>}
         </div>}
-        {['available','desktop'].includes(entry.status)&&<p className="cp-app-account-note">使用当前账号在 MakeNow 中继续；输入、参数与费用在 MakeNow 中确认。</p>}
-        <AppIntroduction input={app.input} output={app.output} provider={sample?'MakeNow':'多元拾光'} conditions={sample?.conditions||configuredApp?.public?.conditions}/>
+        {['available','desktop'].includes(entry.status)&&<p className="cp-app-account-note">在 MakeNow 中准备材料并使用应用。</p>}
+        <AppIntroduction input={app.input} output={app.output} provider={sample?'MakeNow':'多元拾光'}/>
 
         <ActionBar kind="app" go={go}/>
         <Comments go={go} kind="app"/>

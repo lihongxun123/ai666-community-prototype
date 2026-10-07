@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "pages": [
+    "analytics-overview",
+    "analytics-growth",
+    "analytics-channels",
+    "analytics-users",
+    "analytics-creation",
+    "analytics-incentives",
+    "analytics-quality",
+    "analytics-metrics",
+    "op-shop",
+    "op-redemptions"
+  ],
+  "checks": {
+    "unifiedAnalyticsFilter": "one query/reset; one channel/device state; advanced UTM conditions",
+    "queryAppliedToRows": "Xiaohongshu filter leaves one first-touch row",
+    "reset": "clears conditions and restores sample range",
+    "businessMetricsTable": "removed; statistics-contract link retained",
+    "metricCenter": "full metric search/table retained",
+    "standaloneRedemptions": "no catalog/inventory/records tabs",
+    "shopTabs": "catalog/inventory/records retained",
+    "typescript": "passed",
+    "scopedOxlint": "passed"
+  },
+  "screenshots": [
+    "simplify-analytics.png",
+    "simplify-redemptions.png"
+  ],
+  "limits": "Fixed sample totals and dates remain explicit; no real analytics or billing interfaces."
+}

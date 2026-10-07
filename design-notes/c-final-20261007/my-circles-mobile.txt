@@ -1,0 +1,16 @@
+- banner:
+  - button "返回"
+  - heading "我的圈子" [level=1]
+- main:
+  - article:
+    - generic: 圈子
+    - strong: 影像练习圈
+    - generic: 浏览圈内公开帖子
+    - button "查看"
+    - button "退出圈子"
+  - article:
+    - generic: 圈子
+    - strong: 视觉创作圈
+    - generic: 浏览圈内公开帖子
+    - button "查看"
+    - button "退出圈子"

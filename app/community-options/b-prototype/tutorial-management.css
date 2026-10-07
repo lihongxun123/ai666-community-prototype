@@ -1,0 +1,129 @@
+.tm-management {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  min-width: 0;
+}
+.tm-management > .ant-card,
+.tm-management .ant-card-body {
+  min-width: 0;
+  max-width: 100%;
+}
+.tm-tools {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+.tm-tools > .ant-space {
+  flex: 1;
+  min-width: 0;
+}
+.tm-tools,
+.tm-editor-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tm-editor-heading {
+  justify-content: flex-start;
+}
+.tm-editor-heading h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.tm-cover {
+  border-radius: 4px;
+  object-fit: cover;
+}
+.tm-basic {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(230px, 1fr);
+  gap: 24px;
+}
+.tm-title-row {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 16px;
+}
+.tm-setting-row {
+  display: grid;
+  grid-template-columns: 7fr 11fr 6fr;
+  gap: 16px;
+}
+.tm-setting-row .ant-input-number {
+  width: 100%;
+}
+.tm-actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: flex-end;
+  background: #f5f5f5;
+  border-top: 1px solid #e8e8e8;
+  padding: 12px 24px;
+}
+.tm-cover-help {
+  font-size: 12px;
+  color: #737373;
+}
+.tm-management .bp-media-upload-panel {
+  grid-template-columns: 1fr;
+}
+.tm-management .bp-media-upload-cover {
+  min-height: 150px;
+}
+.tm-management .bp-media-upload-list {
+  min-height: 70px;
+}
+.tm-detail-cover {
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+.tm-loading {
+  padding: 100px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .tm-basic {
+    grid-template-columns: 1fr;
+  }
+  .tm-title-row,
+  .tm-setting-row {
+    grid-template-columns: 1fr;
+  }
+  .tm-tools {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+.tm-detail-meta {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.tm-detail-meta .tm-detail-cover {
+  margin: 0;
+}
+.tm-detail-placeholder {
+  height: 180px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed #d9d9d9;
+  border-radius: 4px;
+  color: #737373;
+}
+@media (max-width: 900px) {
+  .tm-detail-meta {
+    grid-template-columns: 1fr;
+  }
+}
+.tm-tabs {
+  margin: 0;
+}
+
+.tm-management .ant-table-cell .ant-btn-link{padding-inline:6px;height:auto;border:0;background:transparent;box-shadow:none}

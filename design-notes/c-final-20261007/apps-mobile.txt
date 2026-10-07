@@ -1,0 +1,66 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "AI应用" [level=1]
+- main:
+  - region "应用列表":
+    - region "最新上线":
+      - heading "最新上线" [level=2]
+      - button "上一组新应用" [disabled]
+      - button "下一组新应用"
+      - button "查看新应用：文案改写 · 场景 15":
+        - strong: 文案改写 · 场景 15
+        - generic: 将创作方法与实际使用条件写清楚。
+      - button "查看新应用：文案改写 · 场景 25":
+        - strong: 文案改写 · 场景 25
+        - generic: 将创作方法与实际使用条件写清楚。
+      - button "查看新应用：文案改写 · 场景 5 修订演示":
+        - strong: 文案改写 · 场景 5 修订演示
+        - generic: 将创作方法与实际使用条件写清楚。
+      - button "查看新应用：文案改写 · 场景 11":
+        - strong: 文案改写 · 场景 11
+        - generic: 将创作方法与实际使用条件写清楚。
+      - button "查看新应用：文案改写 · 场景 16":
+        - strong: 文案改写 · 场景 16
+        - generic: 将创作方法与实际使用条件写清楚。
+    - heading "全部应用" [level=2]
+    - navigation "应用任务分类":
+      - button "全部" [pressed]
+      - button "写文案"
+      - button "做商品图"
+      - button "修照片"
+      - button "做视频"
+    - button "照片色彩修复":
+      - strong: 照片色彩修复
+    - button "产品换背景":
+      - strong: 产品换背景
+    - button "文案改写":
+      - strong: 文案改写
+    - button "文案改写 · 场景 5 修订演示":
+      - strong: 文案改写 · 场景 5 修订演示
+    - button "文案改写 · 场景 6":
+      - strong: 文案改写 · 场景 6
+    - button "文案改写 · 场景 11":
+      - strong: 文案改写 · 场景 11
+    - button "文案改写 · 场景 15":
+      - strong: 文案改写 · 场景 15
+    - button "文案改写 · 场景 16":
+      - strong: 文案改写 · 场景 16
+    - button "文案改写 · 场景 21":
+      - strong: 文案改写 · 场景 21
+    - button "文案改写 · 场景 25":
+      - strong: 文案改写 · 场景 25
+    - button "文案改写 · 场景 26":
+      - strong: 文案改写 · 场景 26
+    - button "产品短片制作":
+      - strong: 产品短片制作
+    - button "照片修复":
+      - strong: 照片修复
+      - generic: 暂不可用
+    - paragraph: 没有更多了
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

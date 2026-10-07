@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-06",
+  "criteria": [
+    "页面完整",
+    "操作合理",
+    "必要状态齐全",
+    "需求可指导开发",
+    "过度设计"
+  ],
+  "coverage": {
+    "pageCount": 54,
+    "contentPages": [
+      "works",
+      "work-detail",
+      "work-edit",
+      "posts",
+      "post-detail",
+      "post-edit",
+      "tutorials",
+      "tutorial-detail",
+      "tutorial-edit",
+      "apps",
+      "app-detail",
+      "app-edit",
+      "comments",
+      "reviews"
+    ],
+    "operations": "five-check-ops.json",
+    "platform": "five-check-platform.json",
+    "method": "全部页面按源码、注册、需求核对；浏览器核对代表性页面与路径，并非全部状态逐一提交。"
+  },
+  "contentFixes": [
+    "审核评论队列关键词及日期筛选生效，内容审核按提交时间筛选",
+    "退回详情展示退回的本次正文",
+    "筛选时间回显",
+    "教程保存失败可再次提交",
+    "评论关联对象不存在时不显示无效链接",
+    "去除加载完成演示按钮、额外冲突演示状态和重复成功卡片",
+    "AI应用去除单选来源筛选并校验入口格式",
+    "重写14页需求，保留字段限制，教程明确先存草稿后发布",
+    "独立复核补展示位外链完整HTTPS地址校验"
+  ],
+  "validation": {
+    "typescript": "passed",
+    "scopedOxlint": "passed",
+    "structure": "54 pages / 41 navigation / 105 metrics passed",
+    "browser": [
+      "审核评论关键词从4条筛为1条并重置",
+      "运营与平台路径见两份专项记录"
+    ],
+    "build": "passed",
+    "independent": "five-check-content-independent.json：评论ID筛选、退回正文、教程失败后重试通过；运营失败重试、活动筛选源码复核通过，外链发现已修复"
+  },
+  "decisions": [
+    {
+      "page": "op-redemptions",
+      "issue": "未兑换库存混入兑换记录",
+      "recommendation": "独立兑换记录仅展示兑换业务行；未兑换留库存管理",
+      "status": "保留现状待确认"
+    }
+  ],
+  "retained": [
+    "新专题允许草稿及发布；已有公开内容保存修改",
+    "新增模板保留草稿后上架，不扩大本轮业务决策",
+    "模型协议、权限与统计必要能力保留"
+  ],
+  "boundary": "本轮不扩展跨标签页同步、真实接口、计费、发奖或退款；未发布。",
+  "evidence": [
+    "five-check-reviews.png",
+    "five-check-ops.json",
+    "five-check-platform.json"
+  ]
+}

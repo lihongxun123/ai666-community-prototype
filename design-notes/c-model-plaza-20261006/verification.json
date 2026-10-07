@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "scope": "C model-plaza PC and mobile prototype",
+  "source": "ai666-user read-only code and public duoyuanx.com/pricing",
+  "sampleCount": 12,
+  "checks": {
+    "typescript": "passed",
+    "scopedLint": "New model page and directly changed C page/home/mobile/contracts passed; shared reader/header retain pre-existing lint errors",
+    "nodeBuild": "passed",
+    "pcViewports": [
+      1280,
+      1920
+    ],
+    "mobileViewports": [
+      320,
+      390
+    ],
+    "horizontalOverflow": 0,
+    "combinedFilters": "passed",
+    "noResultsReset": "passed",
+    "empty": "passed",
+    "loading": "passed",
+    "errorRetry": "passed",
+    "mobileHomeEntry": "passed",
+    "externalLinks": "12 pricing links with target blank and noopener noreferrer",
+    "requirementsReader": "passed",
+    "independentReview": "passed"
+  },
+  "limitations": [
+    "Static public samples, not live billing",
+    "No production changes or deployment"
+  ],
+  "screenshots": [
+    "pc.png",
+    "../b-end-20261006/screenshots/model-plaza-mobile-320.jpg"
+  ]
+}

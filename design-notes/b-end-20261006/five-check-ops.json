@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-06",
+  "scope": "运营相关15个页面标识；本地原型，未部署，不扩展数据同步或接口",
+  "checks": ["页面完整", "操作合理", "必要状态齐全", "需求能指导开发", "无过度设计"],
+  "sources": [
+    "app/community-options/b-prototype/operations-management.tsx",
+    "app/community-options/b-prototype/activity-management.tsx",
+    "app/community-options/b-prototype/display-slot-management.tsx",
+    "app/community-options/b-prototype/shop-management.tsx",
+    "app/community-options/b-prototype/retained-operations-management.tsx",
+    "design-notes/b-end-20261006/operations-management-requirements.json",
+    "design-notes/b-end-20261006/operations-management-flows.json",
+    "design-notes/b-end-20261006/retained-operations-docs.json"
+  ],
+  "pages": [
+    {"id":"op-circles","result":"passed-after-fix","coverage":"源码、需求、实际布局、编辑保存首回失败与第二回重试","conclusion":"圈子仅维护基本资料，启用/停用不变；恢复必要失败反馈，不添加业务状态。"},
+    {"id":"op-circle-edit","result":"passed-after-fix","coverage":"源码、需求、实际默认对象编辑抽屉","conclusion":"一次保存与未保存退出确认；不存在对象已有404，保留原启用状态。"},
+    {"id":"op-topics","result":"passed","coverage":"源码、需求、实际布局、新建抽屉","conclusion":"保留已确认的新建草稿/发布；已有公开专题一次保存，不额外发布。"},
+    {"id":"op-topic-edit","result":"passed","coverage":"源码、需求、实际对象配置抽屉","conclusion":"公开内容引用可移出/排序，失败保留输入，既有上/下架状态不因编辑改变。"},
+    {"id":"op-taxonomy","result":"passed-with-boundary","coverage":"源码、需求、实际八类页签与列表","conclusion":"同类去重、板块编码只读、停用和合并约束清楚；未逐类执行保存和合并。"},
+    {"id":"op-features","result":"passed-after-fix","coverage":"源码、需求、实际七类页签、推荐配置与保存","conclusion":"去除负责人，推荐一次保存；首页爆款不维护人工顺序，其他场景保留既有顺序。"},
+    {"id":"op-slots","result":"passed-after-fix","coverage":"源码、需求、实际布局、新建字段、非法路径校验、未保存退出确认","conclusion":"七类投放与上下架完整；站内路径拒绝协议相对外站地址及空白/反斜杠，不新增定时、人群、频次设计。"},
+    {"id":"op-events","result":"passed-after-fix","coverage":"源码、需求、实际列表、状态筛选未开始空结果、保护删除状态","conclusion":"状态筛选与展示使用同一口径，结束时间不包含；任务、参与及奖励留在活动详情。"},
+    {"id":"op-event-edit","result":"passed","coverage":"源码、需求、实际新建配置抽屉","conclusion":"编码、时间、数量、积分和类型依赖校验齐全，已有活动直接保存，新建草稿后配置任务。"},
+    {"id":"op-submissions","result":"passed-after-fix","coverage":"源码、需求、实际列表与评审结果筛选入口","conclusion":"替换无效的已接受状态筛选，改为评审结果工作队列；资格、评审、奖励仍独立。"},
+    {"id":"op-shop","result":"passed-after-fix","coverage":"源码、需求、实际站点列表、产品抽屉、无权限分支","conclusion":"站点、产品、库存及关联删除约束完整；无权限隐藏业务表格，保存不追加发布步骤。"},
+    {"id":"op-redemptions","result":"decision-needed","coverage":"源码、需求、实际独立列表及无权限分支","conclusion":"查询、历史实扣及异常状态有定义，但未兑换库存混入兑换记录仍需业务裁决。"},
+    {"id":"op-checkin","result":"passed-with-boundary","coverage":"源码、需求、实际配置布局和编辑抽屉","conclusion":"基础与連签积分、自然周、合计及历史记录分离清楚，保存确认仅影响新签到；未模拟C端发奖。"},
+    {"id":"content-templates","result":"decision-needed","coverage":"源码、独立需求、实际列表","conclusion":"编辑保留作品公开状态，模型能力与积分来自模型配置；新增官方模板默认草稿，是否纳入官方内容一次保存口径待定。"},
+    {"id":"op-login-popup","result":"passed","coverage":"源码、独立需求、实际布局、编辑子项与保存","conclusion":"全局开关/标题与子项独立保存，避免互相覆盖；无负责人、对象日志或人群频次扩展。"}
+  ],
+  "fixes": [
+    "恢复圈子empty、permission-denied、load-failed、save-failed及配置页invalid/conflict注册，不增加圈子业务状态",
+    "运营保存失败演示首次保留输入，下一次提交可重试成功",
+    "推荐列表及运营对象详情移除负责人",
+    "投稿筛选改为评审结果，替换原仅已接受的无效筛选",
+    "展示位站内路径拒绝双斜杠外站路径及空白/反斜杠",
+    "活动状态筛选取实际显示状态并补未开始；结束时刻按不包含判断",
+    "商城及独立兑换记录无权限时显示403，隐藏业务表格",
+    "独立运营需求补圈子反馈状态、一次保存、投稿队列与路径校验，明确通用日志在系统管理查询"
+  ],
+  "decisions": [
+    {"page":"op-redemptions","issue":"未兑换库存以0积分、无用户的行混入兑换记录","recommendation":"独立兑换记录只展示兑换业务行，未兑换库存留卡密库存；保留旧行为直到用户裁决。"},
+    {"page":"content-templates","issue":"新增官方模板默认草稿后再上架，已有模板编辑保持原公开状态","recommendation":"确认官方内容无需额外发布步骤是否包含新模板；不擅自推翻现有模板保存和上下架能力。"}
+  ],
+  "validation": {
+    "typescript": "tsc --noEmit passed",
+    "lint": "四个修改TSX的oxlint passed",
+    "browser": "Codex In-app Browser，localhost:3000；代表布局与上述关键交互检查",
+    "production": "not-run",
+    "unverified": [
+      "未逐页逐状态做全部排列回归；表单和通用反馈按受影响主路径验证",
+      "未执行真实积分发放、库存/兑换、计费、权限或活动结算",
+      "未补本地跨模块数据同步、C端消费映射或正式接口",
+      "顶部限时条是否需定时字段缺少明确需求，未新增定时上下架",
+      "模板新建与兑换记录范围两项尚未业务裁决，不能标记全部定稿"
+    ]
+  }
+}

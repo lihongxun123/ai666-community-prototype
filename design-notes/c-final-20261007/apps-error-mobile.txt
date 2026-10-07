@@ -1,0 +1,12 @@
+- banner:
+  - button "返回"
+  - heading "AI应用" [level=1]
+- main:
+  - heading "加载失败" [level=2]
+  - button "重新加载"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

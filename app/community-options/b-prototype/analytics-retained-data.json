@@ -1,0 +1,1191 @@
+{
+  "growth": {
+    "GROWTH_STATUS": {
+      "statusText": "演示",
+      "statusColor": "orange",
+      "items": [
+        {
+          "label": "共同数据截止",
+          "value": "2026-08-23 23:59"
+        },
+        {
+          "label": "渠道覆盖",
+          "value": "可比 UTM UV 1,628 / 全部 UV 2,184"
+        }
+      ],
+      "hint": "演示数据，取自 B 端原型；接入统计接口后由后端返回真实数值"
+    },
+    "GROWTH_STATS": [
+      {
+        "metric": "G-01",
+        "label": "PV",
+        "value": "7,320"
+      },
+      {
+        "metric": "G-02",
+        "label": "UV",
+        "value": "2,184"
+      },
+      {
+        "metric": "G-03",
+        "label": "IP / 会话",
+        "value": "1,906 / 3,126"
+      },
+      {
+        "metric": "G-03",
+        "label": "新访客 / 老访客",
+        "value": "1,104 / 1,080"
+      },
+      {
+        "metric": "G-04",
+        "label": "跳出率 / 平均时长",
+        "value": "42.6% / 2m48s"
+      },
+      {
+        "metric": "G-07",
+        "label": "新增注册",
+        "value": "148"
+      },
+      {
+        "metric": "G-09",
+        "label": "UV → 注册",
+        "value": "6.8%",
+        "note": "聚合估算"
+      },
+      {
+        "metric": "G-10",
+        "label": "渠道 UV → 注册",
+        "value": "9.1%",
+        "note": "聚合估算"
+      },
+      {
+        "metric": "Q-03",
+        "label": "注册来源缺失率",
+        "value": "2.0%"
+      }
+    ],
+    "GROWTH_ATTRIBUTION_TABS": [
+      {
+        "key": "first-touch",
+        "label": "首次获客",
+        "caption": "首次触点 · 新访客",
+        "description": "首次触点在访客首次可识别访问时确定，后续访问不覆盖。用于判断真正带来新访客的渠道，不与本次会话渠道或注册渠道混算。"
+      },
+      {
+        "key": "session",
+        "label": "访问质量",
+        "caption": "本次会话触点",
+        "description": "本次会话触点在会话开始时确定，同一会话内保持不变，新会话重新判断。用于分析当次访问质量；同一访客可能在不同渠道会话中重复出现。"
+      },
+      {
+        "key": "register",
+        "label": "注册转化",
+        "caption": "注册触点 · 成熟批次",
+        "description": "注册触点取账号创建前 30 天内最后一次有效营销触点，直接访问和站内跳转不覆盖；账号创建后固定；站内 referrer 的内部 UTM 不更新营销触点。多元直达仅认显式渠道编码；没有有效营销触点时，直接访问、站内来源、其他外部来源和来源缺失分别保留。"
+      },
+      {
+        "key": "utm",
+        "label": "投放批次与素材",
+        "caption": "按指定触点拆解 UTM",
+        "description": "投放参数用于定位渠道、载体、批次和素材。合法 source 保留渠道，其他 UTM 缺失或无效分别标记，不拼接旧字段。会话 UV、首次触点新访客和注册触点人数来自不同统计对象，只并列观察，不默认计算精确转化。"
+      }
+    ],
+    "GROWTH_FIRST_TOUCH_BARS": [
+      {
+        "label": "小红书",
+        "percent": 36.4
+      },
+      {
+        "label": "微信群",
+        "percent": 17
+      },
+      {
+        "label": "抖音自然",
+        "percent": 12.9
+      },
+      {
+        "label": "微信朋友圈",
+        "percent": 11.9
+      },
+      {
+        "label": "抖音付费",
+        "percent": 11
+      },
+      {
+        "label": "多元直达",
+        "percent": 6.9
+      }
+    ],
+    "GROWTH_FIRST_TOUCH_ROWS": [
+      {
+        "key": "xhs",
+        "channel": "小红书",
+        "visitors": "402",
+        "share": "36.4%",
+        "entry": "/home/homeIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "wechat",
+        "channel": "微信群",
+        "visitors": "188",
+        "share": "17.0%",
+        "entry": "/home/homeIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "douyin-organic",
+        "channel": "抖音自然",
+        "visitors": "142",
+        "share": "12.9%",
+        "entry": "/modelPlaza/modelList/modelListIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "moments",
+        "channel": "微信朋友圈",
+        "visitors": "131",
+        "share": "11.9%",
+        "entry": "/home/homeIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "douyin-paid",
+        "channel": "抖音付费",
+        "visitors": "121",
+        "share": "11.0%",
+        "entry": "/activity/activityIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "direct-multi",
+        "channel": "多元直达",
+        "visitors": "76",
+        "share": "6.9%",
+        "entry": "/home/homeIndex",
+        "state": "已识别"
+      },
+      {
+        "key": "direct",
+        "channel": "直接访问",
+        "visitors": "18",
+        "share": "1.6%",
+        "entry": "/home/homeIndex",
+        "state": "来源类型"
+      },
+      {
+        "key": "internal",
+        "channel": "站内来源",
+        "visitors": "8",
+        "share": "0.7%",
+        "entry": "/home/homeIndex",
+        "state": "来源类型"
+      },
+      {
+        "key": "other-external",
+        "channel": "其他外部来源",
+        "visitors": "10",
+        "share": "0.9%",
+        "entry": "—",
+        "state": "待归类渠道"
+      },
+      {
+        "key": "missing",
+        "channel": "来源缺失",
+        "visitors": "8",
+        "share": "0.7%",
+        "entry": "—",
+        "state": "待补全"
+      }
+    ],
+    "GROWTH_SESSION_ROWS": [
+      {
+        "key": "xhs",
+        "channel": "小红书",
+        "pv": "2,510",
+        "uv": "720",
+        "ip": "638",
+        "session": "846",
+        "bounce": "38.2%",
+        "duration": "03:06"
+      },
+      {
+        "key": "douyin-organic",
+        "channel": "抖音自然",
+        "pv": "820",
+        "uv": "248",
+        "ip": "221",
+        "session": "286",
+        "bounce": "45.1%",
+        "duration": "02:31"
+      },
+      {
+        "key": "douyin-paid",
+        "channel": "抖音付费",
+        "pv": "604",
+        "uv": "186",
+        "ip": "169",
+        "session": "218",
+        "bounce": "51.8%",
+        "duration": "01:54"
+      },
+      {
+        "key": "wechat",
+        "channel": "微信群",
+        "pv": "1,106",
+        "uv": "332",
+        "ip": "286",
+        "session": "408",
+        "bounce": "33.7%",
+        "duration": "03:44"
+      },
+      {
+        "key": "moments",
+        "channel": "微信朋友圈",
+        "pv": "742",
+        "uv": "224",
+        "ip": "198",
+        "session": "272",
+        "bounce": "41.5%",
+        "duration": "02:46"
+      },
+      {
+        "key": "direct-multi",
+        "channel": "多元直达",
+        "pv": "538",
+        "uv": "164",
+        "ip": "148",
+        "session": "196",
+        "bounce": "29.6%",
+        "duration": "04:18"
+      }
+    ],
+    "GROWTH_REGISTER_TOUCH_ROWS": [
+      {
+        "key": "xhs",
+        "channel": "小红书",
+        "registered": "58",
+        "mature": "52",
+        "activated": "25（48.1%）",
+        "firstGen": "22",
+        "firstSubmit": "12"
+      },
+      {
+        "key": "wechat",
+        "channel": "微信群",
+        "registered": "26",
+        "mature": "23",
+        "activated": "11（47.8%）",
+        "firstGen": "9",
+        "firstSubmit": "5"
+      },
+      {
+        "key": "douyin-organic",
+        "channel": "抖音自然",
+        "registered": "16",
+        "mature": "14",
+        "activated": "5（35.7%）",
+        "firstGen": "4",
+        "firstSubmit": "2"
+      },
+      {
+        "key": "moments",
+        "channel": "微信朋友圈",
+        "registered": "15",
+        "mature": "13",
+        "activated": "5（38.5%）",
+        "firstGen": "4",
+        "firstSubmit": "2"
+      },
+      {
+        "key": "douyin-paid",
+        "channel": "抖音付费",
+        "registered": "14",
+        "mature": "12",
+        "activated": "4（33.3%）",
+        "firstGen": "3",
+        "firstSubmit": "2"
+      },
+      {
+        "key": "direct-multi",
+        "channel": "多元直达",
+        "registered": "12",
+        "mature": "11",
+        "activated": "4（36.4%）",
+        "firstGen": "4",
+        "firstSubmit": "2"
+      },
+      {
+        "key": "direct",
+        "channel": "直接访问",
+        "registered": "2",
+        "mature": "2",
+        "activated": "1（—）",
+        "firstGen": "1",
+        "firstSubmit": "1"
+      },
+      {
+        "key": "internal",
+        "channel": "站内来源",
+        "registered": "1",
+        "mature": "1",
+        "activated": "0（—）",
+        "firstGen": "0",
+        "firstSubmit": "0"
+      },
+      {
+        "key": "other-external",
+        "channel": "其他外部来源",
+        "registered": "1",
+        "mature": "1",
+        "activated": "0（—）",
+        "firstGen": "0",
+        "firstSubmit": "0"
+      },
+      {
+        "key": "missing",
+        "channel": "来源缺失",
+        "registered": "3",
+        "mature": "3",
+        "activated": "1（—）",
+        "firstGen": "1",
+        "firstSubmit": "1"
+      }
+    ],
+    "GROWTH_UTM_ROWS": [
+      {
+        "key": "u1",
+        "source": "xiaohongshu",
+        "medium": "organic",
+        "campaign": "xhs_landing_page",
+        "content": "hero_a",
+        "term": "—",
+        "sessionUv": "432",
+        "firstVisitors": "246",
+        "registered": "28"
+      },
+      {
+        "key": "u2",
+        "source": "xiaohongshu",
+        "medium": "paid_social",
+        "campaign": "autumn_creator",
+        "content": "video_01",
+        "term": "—",
+        "sessionUv": "288",
+        "firstVisitors": "156",
+        "registered": "33"
+      },
+      {
+        "key": "u3",
+        "source": "douyin_paid",
+        "medium": "paid_social",
+        "campaign": "new_user",
+        "content": "video_03",
+        "term": "—",
+        "sessionUv": "186",
+        "firstVisitors": "121",
+        "registered": "14"
+      },
+      {
+        "key": "u4",
+        "source": "wechat_group",
+        "medium": "community",
+        "campaign": "creator_week",
+        "content": "group_a",
+        "term": "—",
+        "sessionUv": "210",
+        "firstVisitors": "118",
+        "registered": "17"
+      }
+    ],
+    "GROWTH_SOURCE_TYPE_ROWS": [
+      {
+        "key": "direct",
+        "sourceType": "直接访问",
+        "uv": "386",
+        "visitors": "205",
+        "share": "18.6%"
+      },
+      {
+        "key": "internal",
+        "sourceType": "站内来源",
+        "uv": "274",
+        "visitors": "96",
+        "share": "8.7%"
+      },
+      {
+        "key": "external",
+        "sourceType": "外部来源",
+        "uv": "1,428",
+        "visitors": "761",
+        "share": "68.9%"
+      },
+      {
+        "key": "missing",
+        "sourceType": "来源缺失",
+        "uv": "96",
+        "visitors": "42",
+        "share": "3.8%"
+      }
+    ],
+    "GROWTH_DEVICE_ROWS": [
+      {
+        "key": "desktop",
+        "device": "电脑端",
+        "pv": "4,214",
+        "uv": "1,206",
+        "ip": "1,084",
+        "session": "1,694",
+        "bounce": "38.9%",
+        "duration": "03:26"
+      },
+      {
+        "key": "mobile",
+        "device": "移动端",
+        "pv": "3,106",
+        "uv": "978",
+        "ip": "822",
+        "session": "1,432",
+        "bounce": "46.8%",
+        "duration": "02:11"
+      }
+    ],
+    "GROWTH_ENTRY_ROWS": [
+      {
+        "key": "xhs-landing",
+        "entry": "小红书承接页",
+        "path": "xiaohongshu + /home/homeIndex",
+        "uv": "720",
+        "pv": "2,510",
+        "ip": "638",
+        "newVisitors": "402",
+        "session": "846",
+        "bounce": "38.2%",
+        "duration": "03:06",
+        "pageStay": "01:42"
+      },
+      {
+        "key": "home",
+        "entry": "社区首页",
+        "path": "/home/homeIndex",
+        "uv": "962",
+        "pv": "2,814",
+        "ip": "842",
+        "newVisitors": "516",
+        "session": "1,106",
+        "bounce": "39.8%",
+        "duration": "03:12",
+        "pageStay": "01:51"
+      },
+      {
+        "key": "aigc",
+        "entry": "AIGC",
+        "path": "—",
+        "uv": "514",
+        "pv": "1,926",
+        "ip": "468",
+        "newVisitors": "248",
+        "session": "628",
+        "bounce": "34.1%",
+        "duration": "04:08",
+        "pageStay": "02:36"
+      },
+      {
+        "key": "activity",
+        "entry": "活动页",
+        "path": "—",
+        "uv": "286",
+        "pv": "708",
+        "ip": "254",
+        "newVisitors": "132",
+        "session": "338",
+        "bounce": "48.6%",
+        "duration": "02:04",
+        "pageStay": "01:08"
+      }
+    ],
+    "columns": {
+      "FIRST_TOUCH_COLUMNS": [
+        {
+          "title": "首次触点渠道 / 来源类型",
+          "dataIndex": "channel",
+          "key": "channel"
+        },
+        {
+          "title": "新访客",
+          "dataIndex": "visitors",
+          "key": "visitors"
+        },
+        {
+          "title": "新访客占比",
+          "dataIndex": "share",
+          "key": "share"
+        },
+        {
+          "title": "主要首次入口",
+          "dataIndex": "entry",
+          "key": "entry"
+        },
+        {
+          "title": "口径状态",
+          "dataIndex": "state",
+          "key": "state"
+        }
+      ],
+      "SESSION_COLUMNS": [
+        {
+          "title": "获客渠道",
+          "dataIndex": "channel",
+          "key": "channel"
+        },
+        {
+          "title": "PV",
+          "dataIndex": "pv",
+          "key": "pv"
+        },
+        {
+          "title": "UV",
+          "dataIndex": "uv",
+          "key": "uv"
+        },
+        {
+          "title": "IP",
+          "dataIndex": "ip",
+          "key": "ip"
+        },
+        {
+          "title": "会话",
+          "dataIndex": "session",
+          "key": "session"
+        },
+        {
+          "title": "跳出率",
+          "dataIndex": "bounce",
+          "key": "bounce"
+        },
+        {
+          "title": "平均访问时长",
+          "dataIndex": "duration",
+          "key": "duration"
+        }
+      ],
+      "REGISTER_TOUCH_COLUMNS": [
+        {
+          "title": "注册触点渠道 / 兜底来源",
+          "dataIndex": "channel",
+          "key": "channel"
+        },
+        {
+          "title": "新增注册",
+          "dataIndex": "registered",
+          "key": "registered"
+        },
+        {
+          "title": "7 天成熟注册",
+          "dataIndex": "mature",
+          "key": "mature"
+        },
+        {
+          "title": "7 天激活用户",
+          "dataIndex": "activated",
+          "key": "activated"
+        },
+        {
+          "title": "7 天首次生成",
+          "dataIndex": "firstGen",
+          "key": "firstGen"
+        },
+        {
+          "title": "7 天首次作品提交",
+          "dataIndex": "firstSubmit",
+          "key": "firstSubmit"
+        }
+      ],
+      "UTM_COLUMNS": [
+        {
+          "title": "utm_source",
+          "dataIndex": "source",
+          "key": "source"
+        },
+        {
+          "title": "utm_medium",
+          "dataIndex": "medium",
+          "key": "medium"
+        },
+        {
+          "title": "utm_campaign",
+          "dataIndex": "campaign",
+          "key": "campaign"
+        },
+        {
+          "title": "utm_content",
+          "dataIndex": "content",
+          "key": "content"
+        },
+        {
+          "title": "utm_term",
+          "dataIndex": "term",
+          "key": "term"
+        },
+        {
+          "title": "会话 UV",
+          "dataIndex": "sessionUv",
+          "key": "sessionUv"
+        },
+        {
+          "title": "首次触点新访客",
+          "dataIndex": "firstVisitors",
+          "key": "firstVisitors"
+        },
+        {
+          "title": "注册触点人数",
+          "dataIndex": "registered",
+          "key": "registered"
+        }
+      ],
+      "SOURCE_TYPE_COLUMNS": [
+        {
+          "title": "来源类型",
+          "dataIndex": "sourceType",
+          "key": "sourceType"
+        },
+        {
+          "title": "UV",
+          "dataIndex": "uv",
+          "key": "uv"
+        },
+        {
+          "title": "新访客",
+          "dataIndex": "visitors",
+          "key": "visitors"
+        },
+        {
+          "title": "占比",
+          "dataIndex": "share",
+          "key": "share"
+        }
+      ],
+      "DEVICE_COLUMNS": [
+        {
+          "title": "终端",
+          "dataIndex": "device",
+          "key": "device"
+        },
+        {
+          "title": "PV",
+          "dataIndex": "pv",
+          "key": "pv"
+        },
+        {
+          "title": "UV",
+          "dataIndex": "uv",
+          "key": "uv"
+        },
+        {
+          "title": "IP",
+          "dataIndex": "ip",
+          "key": "ip"
+        },
+        {
+          "title": "会话",
+          "dataIndex": "session",
+          "key": "session"
+        },
+        {
+          "title": "跳出率",
+          "dataIndex": "bounce",
+          "key": "bounce"
+        },
+        {
+          "title": "平均时长",
+          "dataIndex": "duration",
+          "key": "duration"
+        }
+      ],
+      "ENTRY_COLUMNS": [
+        {
+          "title": "入口页",
+          "dataIndex": "entry",
+          "key": "entry"
+        },
+        {
+          "title": "UV",
+          "dataIndex": "uv",
+          "key": "uv"
+        },
+        {
+          "title": "PV",
+          "dataIndex": "pv",
+          "key": "pv"
+        },
+        {
+          "title": "IP",
+          "dataIndex": "ip",
+          "key": "ip"
+        },
+        {
+          "title": "新访客",
+          "dataIndex": "newVisitors",
+          "key": "newVisitors"
+        },
+        {
+          "title": "会话",
+          "dataIndex": "session",
+          "key": "session"
+        },
+        {
+          "title": "跳出率",
+          "dataIndex": "bounce",
+          "key": "bounce"
+        },
+        {
+          "title": "平均访问时长",
+          "dataIndex": "duration",
+          "key": "duration"
+        },
+        {
+          "title": "页面平均停留",
+          "dataIndex": "pageStay",
+          "key": "pageStay"
+        }
+      ]
+    }
+  },
+  "user": {
+    "USERS_STATUS": {
+      "statusText": "演示",
+      "statusColor": "orange",
+      "items": [
+        {
+          "label": "共同数据截止",
+          "value": "2026-08-23 23:59"
+        },
+        {
+          "label": "成熟注册截止",
+          "value": "注册时间 ≤ 2026-08-16 23:59"
+        },
+        {
+          "label": "账号去重键",
+          "value": "user_no"
+        }
+      ],
+      "hint": "演示数据，取自 B 端原型；接入统计接口后由后端返回真实数值"
+    },
+    "USERS_STATS": [
+      {
+        "metric": "U-01",
+        "label": "累计注册用户",
+        "value": "12,840"
+      },
+      {
+        "metric": "U-02",
+        "label": "有效 DAU",
+        "value": "93"
+      },
+      {
+        "metric": "U-03",
+        "label": "WEVU",
+        "value": "286"
+      },
+      {
+        "metric": "U-04",
+        "label": "7 天内激活率",
+        "value": "43.5%"
+      },
+      {
+        "metric": "U-10",
+        "label": "7 天内再登录率",
+        "value": "48.9%"
+      }
+    ],
+    "USERS_ACTIVATION": [
+      {
+        "metric": "U-04",
+        "label": "1 日有效行为",
+        "value": "26.6%",
+        "note": "38 人",
+        "helpText": "1 日有效行为率 = 注册后 24 小时内完成首次有效行为的用户数 ÷ 对应成熟注册批次人数 × 100%。"
+      },
+      {
+        "metric": "U-04",
+        "label": "7 天内激活",
+        "value": "43.5%",
+        "note": "57 人",
+        "helpText": "7 天内激活率 = 注册后 168 小时内完成首次有效行为的用户数 ÷ 对应成熟注册批次人数 × 100%。"
+      },
+      {
+        "metric": "U-04",
+        "label": "14 日有效行为",
+        "value": "53.5%",
+        "note": "61 人",
+        "helpText": "14 日有效行为率 = 注册后 336 小时内完成首次有效行为的用户数 ÷ 对应成熟注册批次人数 × 100%。"
+      }
+    ],
+    "USERS_SOURCE_WINDOW_ROWS": [
+      {
+        "key": "xhs",
+        "source": "小红书",
+        "w24": "58 / 18 / 31.0%",
+        "w168": "54 / 28 / 51.9%",
+        "w336": "47 / 31 / 66.0%"
+      },
+      {
+        "key": "wechat",
+        "source": "微信群",
+        "w24": "31 / 9 / 29.0%",
+        "w168": "29 / 14 / 48.3%",
+        "w336": "25 / 16 / 64.0%"
+      },
+      {
+        "key": "douyin-organic",
+        "source": "抖音自然",
+        "w24": "20 / 5 / 25.0%",
+        "w168": "18 / 7 / 38.9%",
+        "w336": "15 / 8 / 53.3%"
+      },
+      {
+        "key": "douyin-paid",
+        "source": "抖音付费",
+        "w24": "18 / <5 / 样本不足",
+        "w168": "16 / 5 / 31.3%",
+        "w336": "14 / 6 / 42.9%"
+      },
+      {
+        "key": "missing",
+        "source": "来源缺失",
+        "w24": "16 / <5 / 样本不足",
+        "w168": "14 / <5 / 样本不足",
+        "w336": "13 / <5 / 样本不足"
+      }
+    ],
+    "USERS_DAU_TREND": [
+      {
+        "label": "08-17",
+        "value": 72
+      },
+      {
+        "label": "08-18",
+        "value": 78
+      },
+      {
+        "label": "08-19",
+        "value": 82
+      },
+      {
+        "label": "08-20",
+        "value": 89
+      },
+      {
+        "label": "08-21",
+        "value": 87
+      },
+      {
+        "label": "08-22",
+        "value": 96
+      },
+      {
+        "label": "08-23",
+        "value": 93
+      }
+    ],
+    "USERS_FIRST_ACTION": [
+      {
+        "label": "生成成功",
+        "value": 31
+      },
+      {
+        "label": "作品提交审核成功",
+        "value": 17
+      },
+      {
+        "label": "活动有效参与",
+        "value": 9
+      }
+    ],
+    "USERS_CONVERSION_ROWS": [
+      {
+        "key": "w24",
+        "window": "24 小时",
+        "mature": "143",
+        "firstGen": "36",
+        "genRate": "25.2%",
+        "firstSubmit": "18",
+        "submitRate": "12.6%"
+      },
+      {
+        "key": "w168",
+        "window": "168 小时",
+        "mature": "131",
+        "firstGen": "49",
+        "genRate": "37.4%",
+        "firstSubmit": "28",
+        "submitRate": "21.4%"
+      },
+      {
+        "key": "w336",
+        "window": "336 小时",
+        "mature": "114",
+        "firstGen": "50",
+        "genRate": "43.9%",
+        "firstSubmit": "31",
+        "submitRate": "27.2%"
+      }
+    ],
+    "USERS_SOURCE_STRUCTURE_ROWS": [
+      {
+        "key": "xhs",
+        "source": "小红书",
+        "registered": "58",
+        "share": "39.2%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "wechat",
+        "source": "微信群",
+        "registered": "26",
+        "share": "17.6%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "moments",
+        "source": "微信朋友圈",
+        "registered": "15",
+        "share": "10.1%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "douyin-organic",
+        "source": "抖音自然",
+        "registered": "16",
+        "share": "10.8%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "douyin-paid",
+        "source": "抖音付费",
+        "registered": "14",
+        "share": "9.5%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "direct-multi",
+        "source": "多元直达",
+        "registered": "12",
+        "share": "8.1%",
+        "lookup": "注册来源"
+      },
+      {
+        "key": "direct",
+        "source": "直接访问",
+        "registered": "2",
+        "share": "—",
+        "lookup": "用户列表"
+      },
+      {
+        "key": "internal",
+        "source": "站内来源",
+        "registered": "1",
+        "share": "—",
+        "lookup": "用户列表"
+      },
+      {
+        "key": "other-external",
+        "source": "其他外部来源",
+        "registered": "1",
+        "share": "—",
+        "lookup": "用户列表"
+      },
+      {
+        "key": "missing",
+        "source": "来源缺失",
+        "registered": "3",
+        "share": "—",
+        "lookup": "用户列表"
+      }
+    ],
+    "USERS_REVISIT_ROWS": [
+      {
+        "key": "w24",
+        "window": "24 小时",
+        "mature": "143",
+        "revisit": "42",
+        "revisitRate": "29.4%",
+        "wevu": "20",
+        "wevuRate": "14.0%"
+      },
+      {
+        "key": "w168",
+        "window": "168 小时",
+        "mature": "131",
+        "revisit": "62",
+        "revisitRate": "47.3%",
+        "wevu": "38",
+        "wevuRate": "29.0%"
+      },
+      {
+        "key": "w336",
+        "window": "336 小时",
+        "mature": "114",
+        "revisit": "65",
+        "revisitRate": "57.0%",
+        "wevu": "44",
+        "wevuRate": "38.6%"
+      }
+    ],
+    "USERS_RELOGIN_ROWS": [
+      {
+        "key": "w24",
+        "window": "24 小时",
+        "mature": "143",
+        "relogin": "48",
+        "rate": "33.6%"
+      },
+      {
+        "key": "w168",
+        "window": "168 小时",
+        "mature": "131",
+        "relogin": "64",
+        "rate": "48.9%"
+      },
+      {
+        "key": "w336",
+        "window": "336 小时",
+        "mature": "114",
+        "relogin": "68",
+        "rate": "59.6%"
+      }
+    ],
+    "columns": {
+      "SOURCE_WINDOW_COLUMNS": [
+        {
+          "title": "注册来源",
+          "dataIndex": "source",
+          "key": "source",
+          "fixed": "left"
+        },
+        {
+          "title": "24h 成熟 / 激活 / 比率",
+          "dataIndex": "w24",
+          "key": "w24"
+        },
+        {
+          "title": "168h 成熟 / 激活 / 比率",
+          "dataIndex": "w168",
+          "key": "w168"
+        },
+        {
+          "title": "336h 成熟 / 激活 / 比率",
+          "dataIndex": "w336",
+          "key": "w336"
+        }
+      ],
+      "CONVERSION_COLUMNS": [
+        {
+          "title": "观察窗",
+          "dataIndex": "window",
+          "key": "window"
+        },
+        {
+          "title": "成熟注册用户",
+          "dataIndex": "mature",
+          "key": "mature"
+        },
+        {
+          "title": "首次生成成功",
+          "dataIndex": "firstGen",
+          "key": "firstGen"
+        },
+        {
+          "title": "生成转化率",
+          "dataIndex": "genRate",
+          "key": "genRate"
+        },
+        {
+          "title": "首次作品提交",
+          "dataIndex": "firstSubmit",
+          "key": "firstSubmit"
+        },
+        {
+          "title": "提交转化率",
+          "dataIndex": "submitRate",
+          "key": "submitRate"
+        }
+      ],
+      "SOURCE_STRUCTURE_COLUMNS": [
+        {
+          "title": "来源",
+          "dataIndex": "source",
+          "key": "source"
+        },
+        {
+          "title": "新增注册",
+          "dataIndex": "registered",
+          "key": "registered"
+        },
+        {
+          "title": "占比",
+          "dataIndex": "share",
+          "key": "share"
+        },
+        {
+          "title": "回查",
+          "key": "lookup"
+        }
+      ],
+      "REVISIT_COLUMNS": [
+        {
+          "title": "观察窗",
+          "dataIndex": "window",
+          "key": "window"
+        },
+        {
+          "title": "成熟注册用户",
+          "dataIndex": "mature",
+          "key": "mature"
+        },
+        {
+          "title": "复访用户",
+          "dataIndex": "revisit",
+          "key": "revisit"
+        },
+        {
+          "title": "复访率",
+          "dataIndex": "revisitRate",
+          "key": "revisitRate"
+        },
+        {
+          "title": "再次有效行为用户",
+          "dataIndex": "wevu",
+          "key": "wevu"
+        },
+        {
+          "title": "再次有效行为率",
+          "dataIndex": "wevuRate",
+          "key": "wevuRate"
+        }
+      ],
+      "RELOGIN_COLUMNS": [
+        {
+          "title": "观察窗",
+          "dataIndex": "window",
+          "key": "window"
+        },
+        {
+          "title": "成熟注册用户",
+          "dataIndex": "mature",
+          "key": "mature"
+        },
+        {
+          "title": "再登录用户",
+          "dataIndex": "relogin",
+          "key": "relogin"
+        },
+        {
+          "title": "再登录率",
+          "dataIndex": "rate",
+          "key": "rate"
+        }
+      ]
+    }
+  }
+}

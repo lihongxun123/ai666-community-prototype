@@ -1,0 +1,46 @@
+- banner:
+  - button "返回"
+  - heading "作者主页" [level=1]
+- main:
+  - generic: 林
+  - heading "林间" [level=2]
+  - paragraph: AI 创作分享者
+  - button "已关注"
+  - paragraph: 记录影像与日常创作的练习，分享作品背后的提示词、参考素材与尝试过程。
+  - generic "作者公开数据":
+    - strong: "128"
+    - generic: 获赞
+    - strong: "24"
+    - generic: 关注
+    - strong: "37"
+    - generic: 粉丝
+    - strong: "7"
+    - generic: 公开内容
+  - button "作品4"
+  - button "帖子3"
+  - button "查看作品：在海边住一下午":
+    - img "在海边住一下午"
+    - strong: 在海边住一下午
+    - generic: 林间
+    - img "喜欢"
+    - text: "128"
+  - button "查看作品：旧照片的新故事":
+    - img "旧照片的新故事"
+    - strong: 旧照片的新故事
+    - generic: 围绕日常场景完成的一次视觉创作，记录画面与提示词的探索。
+    - generic: 林间
+    - img "喜欢"
+    - text: "96"
+  - button "查看作品：写作时刻":
+    - img "写作时刻"
+    - strong: 写作时刻
+    - generic: 林间
+    - img "喜欢"
+    - text: "72"
+  - button "查看作品：写给夏天的一封信":
+    - text: 文字
+    - heading "写给夏天的一封信" [level=3]
+    - paragraph: 海风穿过街角，把普通的下午写成故事。
+    - generic: 林间
+    - img "喜欢"
+    - text: "54"

@@ -2,6 +2,7 @@
 export const minePanels:Record<string,string>={'my-content':'content',drafts:'drafts',records:'records',favorites:'favorites',submissions:'submissions','publish-status':'content'};
 export function deviceDestination(id:string,query:string,device:string){
  const q=new URLSearchParams(query);
+ if(device!=='pc'&&id==='create-result'){id='create';if(!q.has('task'))q.set('task',q.get('state')==='result-video'?'sample-light-video-complete':q.get('state')==='result-text'?'sample-light-text-complete':'sample-light-image-complete');q.set('state','completed');}
  if(device==='pc'&&['my-relations','my-circles','my-fans'].includes(id)){q.set('panel',({'my-relations':'following','my-circles':'circles','my-fans':'fans'} as Record<string,string>)[id]);id='mine';}
  else if(device!=='pc'&&id==='mine'&&['following','circles','fans'].includes(q.get('panel')||'')){id=({following:'my-relations',circles:'my-circles',fans:'my-fans'} as Record<string,string>)[q.get('panel')!];q.delete('panel');}
  if(id==='resource'){id='app';q.set('item','restore');q.delete('id');q.delete('state');}

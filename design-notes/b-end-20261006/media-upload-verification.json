@@ -1,0 +1,28 @@
+{
+  "scope": "B端统一媒体上传",
+  "reference": "ai666-admin/src/view/contentManagement/workList/ui/WorkCreateMediaPanel.vue",
+  "coverage": [
+    "作品媒体",
+    "视频封面",
+    "参考素材",
+    "帖子图片及视频",
+    "教程及应用封面",
+    "Markdown正文插图",
+    "圈子/专题/展示位封面",
+    "活动封面",
+    "用户头像"
+  ],
+  "checks": {
+    "typescript": "passed",
+    "lint": "passed",
+    "browser": {
+      "twoImageUpload": "passed",
+      "keyboardReorderAndCover": "passed",
+      "imagePreview": "passed",
+      "remove": "passed",
+      "markdownInsertAndLoadedPreview": "passed"
+    },
+    "dragDrop": "implemented; code reviewed; not independently exercised in browser"
+  },
+  "screenshot": "media-upload.png"
+}

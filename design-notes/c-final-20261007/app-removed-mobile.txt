@@ -1,0 +1,6 @@
+- banner:
+  - button "返回"
+  - heading "应用详情" [level=1]
+- main:
+  - heading "内容暂不可访问" [level=2]
+  - button "返回应用列表"

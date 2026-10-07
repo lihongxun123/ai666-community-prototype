@@ -1,0 +1,59 @@
+- banner:
+  - button "返回"
+  - heading "兑换弹层" [level=1]
+- main:
+  - region "AI 商城":
+    - text: 多元拾光 · 积分权益
+    - heading "用积分兑换 AI 产品权益" [level=2]
+    - paragraph:
+      - text: 我的积分
+      - strong: 1,050
+    - img "AI 商城创作权益"
+    - heading "可兑换商品" [level=2]
+    - generic: 5 件
+    - region "多元探索":
+      - heading "多元探索" [level=3]
+      - generic: 3 件
+      - article:
+        - heading "两元卡密" [level=4]
+        - strong: "200"
+        - generic: 积分
+        - button "兑换 两元卡密": 兑换
+      - article:
+        - heading "五元卡密" [level=4]
+        - strong: "500"
+        - generic: 积分
+        - button "兑换 五元卡密": 兑换
+      - article:
+        - heading "十元卡密" [level=4]
+        - strong: "1000"
+        - generic: 积分
+        - button "兑换 十元卡密": 兑换
+    - region "镜像站":
+      - heading "镜像站" [level=3]
+      - generic: 2 件
+      - article:
+        - heading "镜像日卡" [level=4]
+        - strong: "190"
+        - generic: 积分
+        - button "兑换 镜像日卡": 兑换
+      - article:
+        - heading "镜像周卡" [level=4]
+        - strong: "500"
+        - generic: 积分
+        - button "兑换 镜像周卡": 兑换
+    - dialog "确认兑换":
+      - heading "确认兑换" [level=2]
+      - button "关闭" [active]: ×
+      - text: 多元探索
+      - heading "十元卡密" [level=3]
+      - paragraph: 可以享受10元的使用额度
+      - term: 当前积分
+      - definition: 1,050 积分
+      - term: 兑换所需
+      - definition: 1000 积分
+      - term: 兑换后余额
+      - definition: 50 积分
+      - paragraph: 确认后使用积分兑换。
+      - button "取消"
+      - button "确认兑换 · 1000 积分"

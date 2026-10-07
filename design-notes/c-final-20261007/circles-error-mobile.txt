@@ -1,0 +1,13 @@
+- banner:
+  - button "返回"
+  - heading "圈子" [level=1]
+- main:
+  - strong: 圈子暂时加载失败
+  - paragraph: 请稍后再试。
+  - button "重试"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

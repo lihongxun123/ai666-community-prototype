@@ -1,0 +1,156 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - text: 多元拾光 · 创作课堂
+  - heading "跟着教程 开始你的创作" [level=1]:
+    - text: 跟着教程
+    - text: 开始你的创作
+  - paragraph: 从真实案例出发，把方法用在下一次创作里。
+  - navigation "教程分类":
+    - button "全部" [pressed]
+    - button "影像处理"
+    - button "文字创作"
+    - button "电商营销"
+    - button "视觉设计"
+  - button "影像处理 多元拾光官方 照片修复：如何检查肤色与明暗 28 次阅读 阅读教程 →":
+    - generic: 影像处理
+    - generic: 多元拾光官方
+    - heading "照片修复：如何检查肤色与明暗" [level=2]
+    - paragraph:
+      - text: 28 次阅读
+      - generic: 阅读教程 →
+  - button "影像处理 多元拾光官方 人像修复：保留纹理的检查步骤 28 次阅读 阅读教程 →":
+    - generic: 影像处理
+    - generic: 多元拾光官方
+    - heading "人像修复：保留纹理的检查步骤" [level=2]
+    - paragraph:
+      - text: 28 次阅读
+      - generic: 阅读教程 →
+  - button "影像处理 多元拾光官方 照片修复：处理背景与人物边缘 28 次阅读 阅读教程 →":
+    - generic: 影像处理
+    - generic: 多元拾光官方
+    - heading "照片修复：处理背景与人物边缘" [level=2]
+    - paragraph:
+      - text: 28 次阅读
+      - generic: 阅读教程 →
+  - button "文字创作 多元拾光官方 多轮对话越改越偏？发一段“当前版本说明”把任务拉回来 66 次阅读 阅读教程 →":
+    - generic: 文字创作
+    - generic: 多元拾光官方
+    - heading "多轮对话越改越偏？发一段“当前版本说明”把任务拉回来" [level=2]
+    - paragraph:
+      - text: 66 次阅读
+      - generic: 阅读教程 →
+  - button "文字创作 多元拾光官方 AI 总是不按格式交付？把格式要求写成一份“输出合同” 26 次阅读 阅读教程 →":
+    - generic: 文字创作
+    - generic: 多元拾光官方
+    - heading "AI 总是不按格式交付？把格式要求写成一份“输出合同”" [level=2]
+    - paragraph:
+      - text: 26 次阅读
+      - generic: 阅读教程 →
+  - button "文字创作 多元拾光官方 长资料交给 AI 后总会漏重点？先做“事实清单”，再让它压缩 13 次阅读 阅读教程 →":
+    - generic: 文字创作
+    - generic: 多元拾光官方
+    - heading "长资料交给 AI 后总会漏重点？先做“事实清单”，再让它压缩" [level=2]
+    - paragraph:
+      - text: 13 次阅读
+      - generic: 阅读教程 →
+  - button "影像处理 多元拾光官方 AI 生图总像抽卡？用单变量测试找到稳定结果 26 次阅读 阅读教程 →":
+    - generic: 影像处理
+    - generic: 多元拾光官方
+    - heading "AI 生图总像抽卡？用单变量测试找到稳定结果" [level=2]
+    - paragraph:
+      - text: 26 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 32 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查" [level=2]
+    - paragraph:
+      - text: 32 次阅读
+      - generic: 阅读教程 →
+  - button "视觉设计 多元拾光官方 产品背景与光线的搭配 20 次阅读 阅读教程 →":
+    - generic: 视觉设计
+    - generic: 多元拾光官方
+    - heading "产品背景与光线的搭配" [level=2]
+    - paragraph:
+      - text: 20 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 5 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 5" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 6 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 6" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 11 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 11" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 15 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 15" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 16 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 16" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 21 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 21" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 25 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 25" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - button "电商营销 多元拾光官方 旧照片修复：从观察破损到复查 · 26 0 次阅读 阅读教程 →":
+    - generic: 电商营销
+    - generic: 多元拾光官方
+    - heading "旧照片修复：从观察破损到复查 · 26" [level=2]
+    - paragraph:
+      - text: 0 次阅读
+      - generic: 阅读教程 →
+  - paragraph: 全部教程已展示

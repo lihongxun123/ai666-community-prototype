@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06",
+  "target": "http://127.0.0.1:3000/community-options/b-prototype",
+  "scope": "本地演示原型；真实源码只读",
+  "checks": [
+    {"item": "TypeScript全项目检查", "result": "passed", "command": "npx tsc --noEmit"},
+    {"item": "AIGC与系列scopedlint", "result": "passed", "command": "npx oxlint app/community-options/b-prototype/aigc-management.tsx app/community-options/b-prototype/aigc-model.ts app/community-options/b-prototype/model-series-management.tsx"},
+    {"item": "模型列表→协议入口→显式加载调用与鉴权字段", "result": "passed", "method": "Chrome CUA实际DOM"},
+    {"item": "图片示例→保存前端模板→经列表进入模型详情→同JSON持续保留", "result": "passed", "method": "Chrome CUA实际操作", "evidence": "aigc-model-runtime.png"},
+    {"item": "模型详情创建时间仍为2026-10-05 10:20:00，更新时间独立变化", "result": "passed", "method": "Chrome CUA实际DOM", "evidence": "aigc-model-runtime.png"},
+    {"item": "GEN-DEMO-1001处理中→失败原因→确认→失败；标记失败按钮消失", "result": "passed", "method": "Chrome CUA实际操作", "evidence": "aigc-generation-detail.png"},
+    {"item": "生成详情保留原创建时间并展示失败原因、更新时间、折叠原始数据", "result": "passed", "method": "Chrome CUA实际DOM", "evidence": "aigc-generation-detail.png"},
+    {"item": "模型与生成迁移保留其他桶、最终写读取最新桶、鉴权不入存储日志、异步queryResultPath必填、processing再复核", "result": "passed", "method": "user_management_impl独立源码互审"},
+    {"item": "公告正常列表与编辑抽屉、用户来源结构→注册来源跳转、模板同模型积分、登录弹窗字段", "result": "passed", "method": "独立Chrome CUA实际DOM"}
+  ],
+  "notClaimed": ["未执行真实模型请求、真实扣费或退款", "未声明全部异常状态已逐个浏览器穷举", "未导入或保存真实API密钥"]
+}

@@ -1,0 +1,78 @@
+- banner:
+  - heading "我的" [level=1]
+  - button "消息中心，有未读消息"
+- main:
+  - generic: 林
+  - heading "林间" [level=2]
+  - paragraph: 记录 AI 创作中的小发现
+  - button "编辑资料"
+  - generic "个人数据":
+    - strong: "128"
+    - generic: 获赞
+    - button "24 关注":
+      - strong: "24"
+      - generic: 关注
+    - button "36 粉丝":
+      - strong: "36"
+      - generic: 粉丝
+    - button "2 圈子":
+      - strong: "2"
+      - generic: 圈子
+  - navigation "活动与服务":
+    - button "积分中心":
+      - generic: 积分中心
+    - button "活动中心":
+      - generic: 活动中心
+    - button "每日签到":
+      - generic: 每日签到
+    - button "AI 商城":
+      - generic: AI 商城
+    - button "邀请有礼":
+      - generic: 邀请有礼
+  - region "内容管理":
+    - tablist "管理类型":
+      - tab "我的内容" [selected]
+      - tab "我的投稿"
+      - tab "草稿箱"
+      - tab "生成记录"
+      - tab "收藏"
+    - tabpanel "我的内容":
+      - button "全部"
+      - button "作品"
+      - button "帖子"
+      - article:
+        - button "查看旧照修复练习"
+        - strong: 旧照修复练习
+        - generic: 作品 · 2026/10/4
+        - generic: 已公开
+        - button "编辑"
+        - generic "管理旧照修复练习": •••
+      - article:
+        - button "查看第一次尝试柔和光线的产品图"
+        - generic: 帖子
+        - strong: 第一次尝试柔和光线的产品图
+        - generic: 帖子 · 2026/10/5
+        - generic: 审核中
+        - button "编辑"
+        - generic "管理第一次尝试柔和光线的产品图": •••
+      - article:
+        - button "查看夏日海岸"
+        - strong: 夏日海岸
+        - generic: 作品 · 2026/10/4
+        - generic: 未通过
+        - button "编辑"
+        - generic "管理夏日海岸": •••
+        - paragraph: 请补充创作信息后重新提交。
+      - article:
+        - generic: 帖子
+        - strong: 一段海岸练习笔记
+        - generic: 帖子 · 2026/10/3
+        - generic: 已下架
+        - generic "管理一段海岸练习笔记": •••
+        - paragraph: 内容已被治理下架，请按处理说明核对。
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

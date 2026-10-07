@@ -1,0 +1,8 @@
+[Unit]
+Description=Renew research.yuandaokeji.com certificate
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/research-room/renew-certificate.sh

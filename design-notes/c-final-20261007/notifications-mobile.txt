@@ -1,0 +1,37 @@
+- banner:
+  - button "返回"
+  - heading "消息中心" [level=1]
+  - button "全部已读"
+- main:
+  - navigation "消息类型":
+    - button "全部" [pressed]
+    - button "互动"
+    - button "通知"
+  - button "周末观察回复了你的评论 可以先整理参考素材，再确定画面效果。 今天 10:32 未读":
+    - strong: 周末观察回复了你的评论
+    - generic: 可以先整理参考素材，再确定画面效果。
+    - time: 今天 10:32
+    - generic "未读"
+  - button "签到积分已到账 +20 今天 09:15 未读":
+    - strong: 签到积分已到账
+    - generic: "+20"
+    - time: 今天 09:15
+    - generic "未读"
+  - button "作品修改审核结果 本次修改已通过 昨天 未读":
+    - strong: 作品修改审核结果
+    - generic: 本次修改已通过
+    - time: 昨天
+    - generic "未读"
+  - button "鹿与光喜欢了你的作品 旧照修复练习 昨天":
+    - strong: 鹿与光喜欢了你的作品
+    - generic: 旧照修复练习
+    - time: 昨天
+  - button "活动投稿资格更新 查看本人稿件资格与奖励记录 9月24日":
+    - strong: 活动投稿资格更新
+    - generic: 查看本人稿件资格与奖励记录
+    - time: 9月24日
+  - button "有人回复了你的帖子 原内容已不可访问 9月23日 未读":
+    - strong: 有人回复了你的帖子
+    - generic: 原内容已不可访问
+    - time: 9月23日
+    - generic "未读"

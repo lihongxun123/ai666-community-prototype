@@ -1,0 +1,12 @@
+- banner:
+  - button "返回"
+  - heading "圈子" [level=1]
+- main:
+  - strong: 暂时没有可发现的圈子
+  - button "返回社区"
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

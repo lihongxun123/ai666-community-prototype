@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-06",
+  "status": "passed",
+  "changedPages": [
+    "op-points",
+    "notifications-admin",
+    "users",
+    "aigc-generations"
+  ],
+  "checks": {
+    "pointBusinessNumber": "task-demo-02 matches pt-02 only",
+    "notificationStates": "sending and reading shown independently",
+    "userDetailLogShortcut": "removed; global navigation retained",
+    "generationDetailLogShortcut": "removed; global navigation retained",
+    "pagination": "20/50/100 without quick jumper",
+    "typescript": "passed",
+    "scopedOxlint": "passed"
+  },
+  "screenshots": [
+    "closeout-points-filter.png",
+    "closeout-notifications.png"
+  ]
+}

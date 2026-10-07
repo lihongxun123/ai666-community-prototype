@@ -1,0 +1,21 @@
+{
+  "reference": [
+    "ai666-admin/src/view/contentManagement/tutorialList",
+    "ai666-admin/src/view/contentManagement/tutorialEdit",
+    "ai666-admin/src/view/contentManagement/articleTutorial"
+  ],
+  "liveObserved": [
+    "列表",
+    "已发布编辑页"
+  ],
+  "prototypeChecks": {
+    "createDraftThenPublish": "passed",
+    "publishedDirectSave": "passed",
+    "unpublishToDraft": "passed",
+    "draftSectionFilterHidden": "passed",
+    "listOverflow1280": 0,
+    "typescript": "passed",
+    "targetLint": "passed"
+  },
+  "boundary": "真实后台只读；验证仅修改本地演示教程，保留一条验证草稿"
+}

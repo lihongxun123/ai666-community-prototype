@@ -306,14 +306,6 @@ export default function AppCatalog() {
                   <dd>多元拾光</dd>
                   <dt>使用位置</dt>
                   <dd>{entry.place}</dd>
-                  <dt>账号</dt>
-                  <dd>
-                    浏览无需登录，使用时在 MakeNow 登录。
-                  </dd>
-                  <dt>费用</dt>
-                  <dd>
-                    由 MakeNow 展示并确认费用，社区不对应用生成扣费。
-                  </dd>
                 </dl>
                 {!entry.mobile && (
                   <section className="mh-target-note">

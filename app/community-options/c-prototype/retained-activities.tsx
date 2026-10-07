@@ -225,6 +225,7 @@ export function RetainedActivities({ page, state, go }: Props) {
     if (!requireLogin()) return;
     const routeQuery = task.route?.split('?')[1] || '';
     const route = new URLSearchParams(routeQuery).get('page') || task.route?.split('?')[0].split('/').filter(Boolean).at(-1) || '';
+    if(task.eventType?.startsWith('circle.')){go('circles');return;}
     const publish = ['publish', 'post-edit'].includes(route) || task.eventType?.endsWith('.publish') || task.action?.includes('发布');
     if (publish) {
       const postKind = task.bizType === 'post' || task.eventType?.startsWith('post.') || task.title.includes('圈子帖子') ? 'post' : 'work';

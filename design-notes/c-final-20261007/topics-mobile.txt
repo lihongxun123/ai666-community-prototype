@@ -1,0 +1,27 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "专题" [level=1]
+- main:
+  - button "电商营销":
+    - strong: 电商营销
+    - generic: 从产品图片到展示短片
+  - button "角色创作":
+    - strong: 角色创作
+    - generic: 角色设计与表达
+  - button "图像修复":
+    - strong: 图像修复
+    - generic: 修复方法与案例
+  - button "写作表达":
+    - strong: 写作表达
+    - generic: 文字组织与内容表达
+  - button "人像修复练习":
+    - strong: 人像修复练习
+    - generic: 从肤色到细节的修复练习
+  - paragraph: 没有更多了
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

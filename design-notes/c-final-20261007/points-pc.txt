@@ -1,0 +1,72 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- heading "积分中心" [level=1]
+- button "积分明细 ›"
+- main:
+  - text: 可用积分
+  - strong: "100"
+  - term: 今日获得
+  - definition: "+0"
+  - term: 近 7 日获得
+  - definition: "+100"
+  - term: 待到账
+  - definition: 待确认
+  - heading "AI 商城" [level=2]
+  - heading "用积分兑换创作权益" [level=3]
+  - paragraph: 发现可兑换的 AI 体验权益
+  - button "去兑换"
+  - button "100 积分将于 2026-10-14 23:59 到期 到期明细 ›":
+    - strong: 100 积分
+    - text: 将于 2026-10-14 23:59 到期
+    - generic: 到期明细 ›
+  - heading "赚积分" [level=2]
+  - button "全部任务 ›"
+  - article:
+    - heading "每日签到" [level=3]
+    - paragraph: 查看本周签到与奖励
+    - button "去签到"
+  - article:
+    - heading "国庆七天乐" [level=3]
+    - paragraph: 查看今日任务与参与进度
+    - button "去参与"
+  - article:
+    - heading "邀请有礼" [level=3]
+    - paragraph: 邀请好友一起创作
+    - button "去邀请"
+  - heading "最近积分记录" [level=2]
+  - button "查看全部 ›"
+  - table:
+    - rowgroup:
+      - row "时间 动作 变化":
+        - columnheader "时间"
+        - columnheader "动作"
+        - columnheader "变化"
+    - rowgroup:
+      - row "2026-10-06 创作体验奖励 已到账 +100":
+        - cell "2026-10-06"
+        - cell "创作体验奖励 已到账":
+          - text: 创作体验奖励
+          - generic: 已到账
+        - cell "+100"

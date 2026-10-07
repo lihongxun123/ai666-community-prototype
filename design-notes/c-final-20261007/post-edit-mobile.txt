@@ -1,0 +1,57 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "发布作品" [level=1]
+- main:
+  - navigation "作品类型":
+    - button "图片" [pressed]
+    - button "视频"
+    - button "文本"
+  - region "编辑正文":
+    - strong: 图片素材
+    - generic: 0/4
+    - strong: 添加图片
+    - button "选择图片或视频"
+    - generic: 标题
+    - textbox "标题 0 / 60 字":
+      - /placeholder: 给作品起个名字
+    - generic: 0 / 60 字
+    - text: 作品介绍（选填）
+    - textbox "作品介绍（选填） 0 / 20,000 字":
+      - /placeholder: 介绍作品内容或创作思路
+    - generic: 0 / 20,000 字
+    - heading "创作信息" [level=2]
+    - text: 提示词（必填）
+    - textbox "提示词（必填）":
+      - /placeholder: 分享创作时使用的提示词
+    - text: 使用模型（选填）
+    - textbox "使用模型（选填）":
+      - /placeholder: 填写实际使用的模型
+  - region "发布设置":
+    - heading "发布设置" [level=2]
+    - text: 投稿活动
+    - combobox "投稿活动":
+      - option "不参与活动" [selected]
+      - option "国庆七天乐"
+      - option "每周任务"
+      - option "生图挑战"
+      - option "Prompt 共创计划"
+      - option "七日成长计划 · 暂不可参与" [disabled]
+    - text: 内容分类
+    - combobox "内容分类":
+      - option "请选择内容分类" [selected]
+      - option "电商营销"
+      - option "设计"
+      - option "IP与文创"
+      - option "摄影"
+      - option "写作"
+      - option "游戏"
+      - option "科普"
+      - option "历史"
+      - option "生活"
+    - generic: 话题（选填）
+    - generic "选择话题，可多选":
+      - generic: 请选择话题，可多选
+    - button "＋ 添加引用内容"
+  - button "保存草稿"
+  - button "发布作品"

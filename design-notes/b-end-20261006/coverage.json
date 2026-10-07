@@ -1,0 +1,558 @@
+{
+  "checkedAt": "2026-10-07T08:16:57.829Z",
+  "pageCount": 50,
+  "navigationCount": 36,
+  "metricsCount": 105,
+  "pages": [
+    {
+      "id": "works",
+      "title": "作品管理",
+      "module": "作品管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "review-error"
+      ]
+    },
+    {
+      "id": "work-detail",
+      "title": "作品详情",
+      "module": "作品管理",
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "id": "work-edit",
+      "title": "编辑作品",
+      "module": "作品管理",
+      "states": [
+        "normal",
+        "save-error"
+      ]
+    },
+    {
+      "id": "posts",
+      "title": "帖子管理",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "post-detail",
+      "title": "帖子详情",
+      "module": "内容管理",
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "id": "post-edit",
+      "title": "编辑帖子",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "save-error"
+      ]
+    },
+    {
+      "id": "tutorials",
+      "title": "教程管理",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "tutorial-detail",
+      "title": "教程详情",
+      "module": "内容管理",
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "id": "tutorial-edit",
+      "title": "编辑教程",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "save-error"
+      ]
+    },
+    {
+      "id": "apps",
+      "title": "AI应用管理",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "app-detail",
+      "title": "AI应用详情",
+      "module": "内容管理",
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "id": "app-edit",
+      "title": "编辑AI应用",
+      "module": "内容管理",
+      "states": [
+        "normal",
+        "save-error"
+      ]
+    },
+    {
+      "id": "comments",
+      "title": "评论管理",
+      "module": "审核与治理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "reviews",
+      "title": "审核工作台",
+      "module": "审核与治理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "review-error"
+      ]
+    },
+    {
+      "id": "op-circles",
+      "title": "圈子管理",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-circle-edit",
+      "title": "圈子配置",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed",
+        "invalid",
+        "conflict"
+      ]
+    },
+    {
+      "id": "op-topics",
+      "title": "专题编排",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-topic-edit",
+      "title": "专题配置",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed",
+        "invalid",
+        "conflict"
+      ]
+    },
+    {
+      "id": "op-taxonomy",
+      "title": "分类与标签",
+      "module": "内容运营",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-slots",
+      "title": "展示位配置",
+      "module": "内容运营",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-events",
+      "title": "活动管理",
+      "module": "活动运营",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-event-edit",
+      "title": "活动配置",
+      "module": "活动运营",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed",
+        "invalid",
+        "conflict"
+      ]
+    },
+    {
+      "id": "op-shop",
+      "title": "商城管理",
+      "module": "账户服务",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-points",
+      "title": "积分记录",
+      "module": "用户管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-checkin",
+      "title": "签到管理",
+      "module": "账户服务",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-invite",
+      "title": "邀请记录",
+      "module": "用户管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "aigc-series",
+      "title": "模型系列",
+      "module": "AIGC管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "users",
+      "title": "用户列表",
+      "module": "用户管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "announcements",
+      "title": "公告管理",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "notifications-admin",
+      "title": "通知记录",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "analytics-overview",
+      "title": "数据总览",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-growth",
+      "title": "增长分析",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-content",
+      "title": "内容生态",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-users",
+      "title": "用户分析",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-quality",
+      "title": "质量与异常",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-creation",
+      "title": "创作分析",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-activity",
+      "title": "活动与激励",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "analytics-metrics",
+      "title": "指标中心",
+      "module": "数据分析",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading"
+      ]
+    },
+    {
+      "id": "system-roles",
+      "title": "角色管理",
+      "module": "系统管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "system-admins",
+      "title": "后台用户管理",
+      "module": "系统管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "system-logs",
+      "title": "操作日志",
+      "module": "系统管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "aigc-models",
+      "title": "模型配置",
+      "module": "AIGC管理",
+      "states": [
+        "normal",
+        "empty",
+        "loading",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "aigc-model-detail",
+      "title": "模型协议配置",
+      "module": "AIGC管理",
+      "states": [
+        "normal",
+        "empty",
+        "loading",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "aigc-runtime-detail",
+      "title": "模型详情",
+      "module": "AIGC管理",
+      "states": [
+        "normal",
+        "empty",
+        "loading",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "aigc-generations",
+      "title": "生成记录",
+      "module": "AIGC管理",
+      "states": [
+        "normal",
+        "empty",
+        "loading",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "op-login-popup",
+      "title": "登录弹窗配置",
+      "module": "运营管理",
+      "states": [
+        "normal",
+        "empty",
+        "error",
+        "loading",
+        "save-error"
+      ]
+    },
+    {
+      "id": "system-permissions",
+      "title": "权限管理",
+      "module": "系统管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "user-register-sources",
+      "title": "注册来源",
+      "module": "用户管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "user-member-levels",
+      "title": "会员等级",
+      "module": "用户管理",
+      "states": [
+        "normal",
+        "empty",
+        "load-failed",
+        "save-failed"
+      ]
+    },
+    {
+      "id": "permission-example",
+      "title": "无权限示例",
+      "module": "通用页面",
+      "states": [
+        "normal"
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

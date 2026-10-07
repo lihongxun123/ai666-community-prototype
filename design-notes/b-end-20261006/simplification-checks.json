@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-06T13:10:03.074Z",
+  "scope": "B端10项简化",
+  "changes": [
+    "官方应用免审发布",
+    "官方帖子免审发布",
+    "圈子一次保存",
+    "分析统一筛选",
+    "移除当前资料页签",
+    "推荐一次保存及专题保存简化",
+    "普通操作取消原因输入",
+    "指标中心集中口径",
+    "独立兑换记录仅记录",
+    "圈子专题隐藏固定类型"
+  ],
+  "verification": {
+    "typescript": "passed",
+    "scopedLint": "passed",
+    "registry": "54 pages,41 navigation,105 metrics,0 errors",
+    "nodeBuild": "passed",
+    "browser": [
+      "停用圈子保存后仍停用",
+      "圈子无类型字段、草稿或发布按钮",
+      "已发布专题仅保存",
+      "新建专题保留草稿和发布，无独立预览",
+      "内容及平台交互见同目录证据"
+    ]
+  },
+  "screenshots": [
+    "simplified-circle.png",
+    "simplified-content.jpg",
+    "simplify-analytics.png",
+    "simplify-redemptions.png"
+  ],
+  "boundary": "仅本地原型与需求；未提交或部署",
+  "independentReview": "passed after correcting legacy requirements and untouched topic seed reference"
+}

@@ -1,0 +1,116 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- button "返回"
+- heading "帖子详情" [level=1]
+- main:
+  - heading "给旧照片修复时，我先做了这三件事" [level=2]
+  - paragraph: 我先确认破损主要集中在照片边缘，再逐处观察脸部和衣服的细节。原图会单独留存，方便最后比较。
+  - paragraph: 这次最有用的是先写清楚想恢复什么：减少划痕、保留表情，而不是把照片变成另一张全新的肖像。
+  - button "查看帖子第1张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 1"
+  - button "查看帖子第2张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 2"
+  - button "查看帖子第3张图片":
+    - img "给旧照片修复时，我先做了这三件事 · 图片 3"
+  - time: 9月24日
+  - button "来自 · 影像练习圈"
+  - button "引用作品 旧照片的新故事 查看原作品及完整说明":
+    - generic: 引用作品
+    - strong: 旧照片的新故事
+    - generic: 查看原作品及完整说明
+  - dialog "全部评论":
+    - heading "评论 7" [level=2]
+    - generic: 周
+    - strong: 周末观察
+    - generic: 1分钟前
+    - paragraph: 这一步如果只有手机，先准备什么最合适？
+    - button "回复"
+    - button "赞"
+    - button "收起回复" [expanded]
+    - strong: 林间 回复 周末观察
+    - paragraph: 先整理素材和目标效果，电脑操作的步骤可以稍后完成。
+    - button "回复"
+    - generic: 温
+    - strong: 温白
+    - generic: 刚刚
+    - paragraph: 把尝试过程也记录下来很有帮助，尤其是调整前后的对比。
+    - button "回复"
+    - button "赞 12"
+    - button "收起 2 条回复" [expanded]
+    - strong:
+      - text: 青禾
+      - generic: 回复 温白
+    - generic: 刚刚
+    - paragraph: 赞同，我会把每一步的版本单独保存，回头比较方便很多。
+    - button "回复"
+    - strong:
+      - text: 温白
+      - generic: 回复 青禾
+    - generic: 刚刚
+    - paragraph: 这个方法好，下次也试试按步骤留存。
+    - button "回复"
+    - generic: 小
+    - strong: 小树影
+    - generic: 刚刚
+    - paragraph: 我之前也遇到过类似的问题。一次只改一个条件，更容易找到真正起作用的地方。
+    - button "回复"
+    - button "赞 8"
+    - generic: 南
+    - strong: 南风
+    - generic: 刚刚
+    - paragraph: 收藏了，准备照着这个思路试一版，再来分享结果。
+    - button "回复"
+    - button "赞 5"
+    - generic: 我
+    - strong: 我
+    - paragraph: 该评论暂不可见
+    - text: 内容未通过审核，请调整后重新发布。
+    - textbox "评论内容":
+      - /placeholder: 写下你的看法
+    - button "添加图片"
+    - generic: 0/1000
+    - button "发送" [disabled]
+  - complementary:
+    - button "林"
+    - button "林间"
+    - generic: 分享创作过程，记录日常灵感
+    - button "已关注" [pressed]
+    - button "喜欢 87":
+      - text: 喜欢
+      - generic: "87"
+    - button "收藏 17":
+      - text: 收藏
+      - generic: "17"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+    - heading "影像练习圈" [level=2]
+    - generic: 1,286 人加入
+    - paragraph: 照片修复、构图与视觉叙事
+    - button "进入圈子"
+    - button "退出圈子"
+    - button "发布帖子"

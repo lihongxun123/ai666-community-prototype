@@ -1,0 +1,27 @@
+{
+  "scope": [
+    "works",
+    "posts",
+    "tutorials",
+    "apps",
+    "topics",
+    "slots",
+    "products",
+    "announcements"
+  ],
+  "checks": {
+    "typescript": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "workDownUp": "passed; interaction counts preserved; hot not restored",
+    "topicDownUpRefresh": "passed",
+    "announcementSaveWhileDown": "passed"
+  },
+  "compatibility": "Legacy work ban status normalized to down; historic logs retained",
+  "excluded": [
+    "account restrictions",
+    "configuration enable/disable",
+    "activity lifecycle"
+  ],
+  "productionChanged": false
+}

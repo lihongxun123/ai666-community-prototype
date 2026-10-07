@@ -1,0 +1,16 @@
+{
+  "date":"2026-10-06",
+  "scope":"主任务content-management.tsx/tutorial-management.tsx修改的独立复核；只查筛选、退回正文、失败重试及需求约束",
+  "sources":["app/community-options/b-prototype/content-management.tsx","app/community-options/b-prototype/tutorial-management.tsx","design-notes/page-requirements-b.json"],
+  "checks":[
+    {"topic":"评论筛选","result":"passed","evidence":"localhost评论列表输入当前显示用户ID demo-user-1r9nizq，查询从24条缩至1条，作者ID与首条相同；源码同时匹配正文、作者、所属内容与创建时间。"},
+    {"topic":"审核提交时间","result":"source-verified","evidence":"pendingReview以submittedAt作为filterOne的createdAt输入，非原对象创建时间；尚未在浏览器操作日期范围。"},
+    {"topic":"退回正文","result":"passed","evidence":"localhost post-detail&id=post-3显示未公开、已退回及原正文与图片；detailPanel对待审核/已退回选择draft。"},
+    {"topic":"教程失败重试","result":"passed","evidence":"localhost tutorial-edit&id=tutorial-1&state=save-error首回提示保存失败并保留正文，第二回显示教程修改已保存。"},
+    {"topic":"通用内容失败重试","result":"source-verified","evidence":"perform遇save-error/review-error只清除演示失败状态，不清空edit/decision/reason，下次调用可提交；本轮未再重复浏览器保存该组。"},
+    {"topic":"教程首次发布需求","result":"resolved-by-main-agent","evidence":"初读需求允许新建直接发布，而源码要求先草稿。主任务已确认保留既有先草稿后发布，并同步三页全局及模块需求；不改代码。"},
+    {"topic":"维护人展示","result":"confirmed-retained","evidence":"主任务明确维护人不等于圈子/专题负责人，本轮保留content详情维护人字段。"}
+  ],
+  "boundaries":["不检查或新增数据同步","未执行真实后台、权限或发布动作","实际浏览器覆盖三条代表路径，其他筛选和反馈核对源码与需求，不称全状态回归"],
+  "unresolvedFindings":[]
+}

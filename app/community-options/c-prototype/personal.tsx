@@ -1,6 +1,7 @@
 'use client';
 import {hiddenPublicTarget} from './content-visibility';
 import {useB} from '../b-prototype/store';
+import {persistentSubmissionMedia,submitCContent,useCSubmissions,changeCSubmissionState} from './c-submission-adapter';
 import {MediaPreview} from './media-preview';
 import {TransientFeedback} from './transient-feedback';
 import {AccountBindings} from './account-bindings';
@@ -13,7 +14,7 @@ import { checkinRecords, pointBalance, taskHistory, type PrototypeTask, followed
 /* eslint-disable next/no-img-element, jsx-a11y/media-has-caption -- Bundled images and silent local media previews are intentional in this research prototype. */
 
 import { prototypeStore as sessionStorage, getFavorites, toggleFavorite, currentTarget } from './storage';
-import { sampleCircles, samplePosts } from './content-data';
+import { sampleCircles, samplePosts, currentContentCircles, contentCircleId, contentCircleName } from './content-data';
 import { readActivitySubmissions, saveActivitySubmissions } from '../b-prototype/operations-data';
 import { readPublishedEventConfigs, type EventConfig } from '../b-prototype/retained-event-config';
 import { readCActivities } from './retained-activities';
@@ -241,7 +242,7 @@ function Create({ state, go }: Props) { return <LightWorkbench state={state} go=
 
 function PostEdit({ page, state: requestedState, go }: Props) {
   const state = ['activity','review','activity-ended','permission','rejected'].includes(requestedState) ? 'normal' : requestedState;
-  const joinedCircles=sampleCircles.filter(c=>sessionStorage.getItem('cp-circle-joined:'+c.id)==='1'||(c.id==='image'&&sessionStorage.getItem('cp-circle-joined')==='1')||sessionStorage.getItem('cp-circle')===c.name);
+  const joinedCircles=currentContentCircles().filter(c=>c.status!=='已关闭'&&(sessionStorage.getItem('cp-circle-joined:'+c.id)==='1'||(c.id==='image'&&sessionStorage.getItem('cp-circle-joined')==='1')||sessionStorage.getItem('cp-circle')===c.name||sessionStorage.getItem('cp-circle-id')===c.id));
   const kind = page === 'post-publish' ? 'post' : 'work';
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
@@ -271,8 +272,9 @@ function PostEdit({ page, state: requestedState, go }: Props) {
   const [model, setModel] = useState('');
   const [caseNote, setCaseNote] = useState('');
   const [creationPrompt, setCreationPrompt] = useState('');
+  const [circleId,setCircleId]=useState(()=>sessionStorage.getItem('cp-circle')?(sessionStorage.getItem('cp-circle-id')||''):'');
   const [circle, setCircle] = useState(
-    () => sessionStorage.getItem('cp-circle') || '',
+    () => contentCircleName(sessionStorage.getItem('cp-circle') || '',sessionStorage.getItem('cp-circle')?sessionStorage.getItem('cp-circle-id')||undefined:undefined),
   );
   const [files, setFiles] = useState<
     { name: string; url: string; type: string; size: number; source?: File }[]
@@ -398,7 +400,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
           setModel(value.model || '');
           setCaseNote(value.caseNote || '');
           setCreationPrompt(value.creationPrompt || '');
-          setCircle(value.circle || '');
+          setCircleId(value.circleId||contentCircleId(value.circle||'')||'');setCircle(contentCircleName(value.circle||'',value.circleId));
           setFiles(value.media || []);
           if (value.fileCount > (value.media?.length || 0) && !pendingUploads.length) setMessage('原本地素材需要重新选择，文字和发布信息已恢复。');
         } catch {}
@@ -445,7 +447,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
             setModel(draft.model || '');
             setCaseNote(draft.caseNote || '');
             setCreationPrompt(draft.creationPrompt || '');
-            setCircle(draft.circle || '');
+            setCircleId(draft.circleId||contentCircleId(draft.circle||'')||'');setCircle(contentCircleName(draft.circle||'',draft.circleId));
             setFiles(draft.media || []);
             if (draft.fileCount > (draft.media?.length || 0) && !draftUploads.length) setMessage('本地文件无法跨浏览器刷新保留，请重新选择素材。');
             if (draftUploads.length)
@@ -576,7 +578,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
       sessionStorage.setItem('cp-return', kind === 'post' ? 'post-publish' : 'post-edit');
       sessionStorage.setItem(
         'cp-pending-edit',
-        JSON.stringify({ contentId:editingOrigin.current?.contentId, firstPublishedAt:editingOrigin.current?.firstPublishedAt, kind, title, category, workType, topics, body, relation, circle, scene, model, caseNote, creationPrompt, fileCount: files.length, media: files.filter(file => !file.url.startsWith('blob:')).map(({name,url,type,size}) => ({name,url,type,size})) }),
+        JSON.stringify({ contentId:editingOrigin.current?.contentId, firstPublishedAt:editingOrigin.current?.firstPublishedAt, kind, title, category, workType, topics, body, relation, circle, circleId, scene, model, caseNote, creationPrompt, fileCount: files.length, media: files.filter(file => !file.url.startsWith('blob:')).map(({name,url,type,size}) => ({name,url,type,size})) }),
       );
       pendingUploads = files.flatMap((file) =>
         file.source ? [file.source] : [],
@@ -602,7 +604,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
         topics,
         body,
         relation,
-        circle,
+        circle, circleId:circle?contentCircleId(circle,circleId):undefined,
         scene,
         model,
         caseNote,
@@ -619,7 +621,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
     setMessage('草稿已保存');
     return true;
   };
-  const submit = () => {
+  const submit = async () => {
     const error = validate();
     if (error) {
       setMessage(error);
@@ -630,7 +632,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
       sessionStorage.setItem('cp-return', kind === 'post' ? 'post-publish' : 'post-edit');
       sessionStorage.setItem(
         'cp-pending-edit',
-        JSON.stringify({ kind, title, category, workType, topics, body, relation, circle, scene, model, caseNote, creationPrompt, fileCount: files.length, media: files.filter(file => !file.url.startsWith('blob:')).map(({name,url,type,size}) => ({name,url,type,size})) }),
+        JSON.stringify({ kind, title, category, workType, topics, body, relation, circle, circleId, scene, model, caseNote, creationPrompt, fileCount: files.length, media: files.filter(file => !file.url.startsWith('blob:')).map(({name,url,type,size}) => ({name,url,type,size})) }),
       );
       pendingUploads = files.flatMap((file) =>
         file.source ? [file.source] : [],
@@ -644,10 +646,12 @@ function PostEdit({ page, state: requestedState, go }: Props) {
     }
     submissionUploads = files.flatMap(file => file.source ? [file.source] : []);
     const original=editingOrigin.current;
-    const contentId=original?.contentId||'content-'+Date.now();
+    const contentId=original?.contentId||kind+'-'+crypto.randomUUID().slice(0,8);
+    let savedMedia;try{savedMedia=await persistentSubmissionMedia(files);}catch(error){setMessage(error instanceof Error?error.message:'素材保存失败，请重试');return;}
+    try{submitCContent({contentId,kind,title,category,workType,topics,body,circle,circleId:circle?contentCircleId(circle,circleId):undefined,scene,creationPrompt,model,submittedAt:Date.now(),firstPublishedAt:original?.firstPublishedAt,media:savedMedia,status:'review'},sessionStorage.getItem('cp-profile-name')||'林间');}catch{setMessage('提交失败，输入已保留，请重试');return;}
     sessionStorage.setItem(
       'cp-submission',
-      JSON.stringify({ contentId, firstPublishedAt:original?.firstPublishedAt, kind, title, category, workType, topics, body, relation, circle, scene, caseNote, creationPrompt, model, activity, activityCode: activity ? sessionStorage.getItem('cp-activity-code') : null, activityName: activity ? sessionStorage.getItem('cp-activity-name') : null, activityTask: activity ? sessionStorage.getItem('cp-activity-task') : null, submittedAt: Date.now(), fileCount: files.length, media: files.filter(file => !file.url.startsWith('blob:')).map(({name,url,type,size})=>({name,url,type,size})), status: 'review' }),
+      JSON.stringify({ contentId, firstPublishedAt:original?.firstPublishedAt, kind, title, category, workType, topics, body, relation, circle, circleId, scene, caseNote, creationPrompt, model, activity, activityCode: activity ? sessionStorage.getItem('cp-activity-code') : null, activityName: activity ? sessionStorage.getItem('cp-activity-name') : null, activityTask: activity ? sessionStorage.getItem('cp-activity-task') : null, submittedAt: Date.now(), fileCount: files.length, media: savedMedia, status: 'review' }),
     );
     const managed=JSON.parse(sessionStorage.getItem('cp-personal-content-state')||'{}');
     managed[contentId]={status:'review',modified:true};
@@ -813,7 +817,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
             <select
               className="cp-input"
               data-field="circle" aria-invalid={invalidField==='circle'} value={circle}
-              onChange={(e) => setCircle(e.target.value)}
+              onChange={(e) => {setCircle(e.target.value);setCircleId(contentCircleId(e.target.value)||'');}}
             ><option value="">不选择圈子</option>{joinedCircles.map(c=><option key={c.id} value={c.name}>{c.name}</option>)}</select>
             {fieldError('circle')}{!joinedCircles.length&&<Button secondary onClick={()=>go('circles')}>发现圈子</Button>}
           </label>
@@ -855,7 +859,7 @@ function PostEdit({ page, state: requestedState, go }: Props) {
 }
 
 type SubmissionSnapshot = {
-  kind?: string; title?: string; category?: string; workType?: string; topics?: string[]; body?: string; relation?: string; circle?: string;
+  kind?: string; title?: string; category?: string; workType?: string; topics?: string[]; body?: string; relation?: string; circle?: string; circleId?: string;
   scene?: string; model?: string; caseNote?: string; creationPrompt?: string;
   activity?: boolean; activityCode?: string; activityName?: string; activityTask?: string; activityPeriod?:string;
   firstPublishedAt?: number; contentId?: string; submittedAt?: number; fileCount?: number; media?: {name:string;url:string;type:string;size:number}[];
@@ -1034,6 +1038,7 @@ function appendEligibility(row:SubmissionSnapshot & {id:string}, config:EventCon
   return matchingTask?'':'作品不符合当前可参与任务的条件';
 }
 function MyContent({ state, go }: Props & {embedded?:boolean}) {
+  const linkedSubmissions=useCSubmissions();
   let submitted:SubmissionSnapshot|null=null;
   try{submitted=JSON.parse(sessionStorage.getItem('cp-submission')||'null');}catch{}
   const [notice,setNotice]=useState(''),[filter,setFilter]=useState('全部');
@@ -1043,18 +1048,19 @@ function MyContent({ state, go }: Props & {embedded?:boolean}) {
   const [appending,setAppending]=useState<string|null>(null),[selectedActivity,setSelectedActivity]=useState(''),[appendError,setAppendError]=useState('');
   const demoPublishedAt=Date.parse('2026-10-04T09:00:00+08:00');
   const rows:(SubmissionSnapshot & {id:string;target?:string})[]=[
+    ...linkedSubmissions.map(row=>({...row,id:row.contentId})),
     ...(submitted?[{...submitted,id:submitted.contentId||'current'}]:[]),
     {id:'published',kind:'work',title:'旧照修复练习',status:'public',target:'work?item=restore',submittedAt:demoPublishedAt,firstPublishedAt:demoPublishedAt,workType:'image',media:[{name:'旧照修复',url:img('restore'),type:'image/png',size:0}],category:'创作交流',model:'标准模型',scene:'旧照修复',topics:['生图挑战'],body:'用柔和的光线修复旧照片，保留人物面部细节与原有色彩，分享这次图像修复的经验和创作思路。',creationPrompt:'修复旧照片，保留真实细节',caseNote:'旧照修复前后对比'},
     {id:'review',kind:'post',title:'第一次尝试柔和光线的产品图',body:'记录这次产品图的制作过程。',status:'review',submittedAt:Date.now()-172800000},
     {id:'rejected',kind:'work',title:'夏日海岸',body:'海边日落，浪花映着暖金色的光。',status:'rejected',submittedAt:Date.now()-259200000,reason:'请补充创作信息后重新提交。',workType:'image',media:[{name:'夏日海岸',url:img('sea'),type:'image/png',size:0}]},
     {id:'removed',kind:'post',title:'一段海岸练习笔记',status:'removed',submittedAt:Date.now()-345600000,reason:'内容已被治理下架，请按处理说明核对。'},
-  ].filter((row,index,list)=>!hidden.includes(row.id)&&list.findIndex(item=>item.id===row.id)===index).map(row=>({...row,...overrides[row.id]}));
+  ].filter((row,index,list)=>!hidden.includes(row.id)&&list.findIndex(item=>item.id===row.id)===index).map(row=>({...row,...overrides[row.id],...linkedSubmissions.find(item=>item.contentId===row.id)}));
   const visible=state==='empty'?[]:rows.filter(row=>filter==='全部'||filter===(row.kind==='post'?'帖子':'作品'));
   const update=(id:string,value:ContentOverride)=>{const next={...overrides,[id]:value};sessionStorage.setItem('cp-personal-content-state',JSON.stringify(next));setOverrides(next);window.dispatchEvent(new Event('cp-content-change'));};
   const edit=(row:SubmissionSnapshot & {id:string})=>{
     sessionStorage.removeItem('cp-source');sessionStorage.removeItem('cp-result');sessionStorage.removeItem('cp-open-draft');
     ['cp-activity','cp-activity-code','cp-activity-name','cp-activity-task'].forEach(key=>sessionStorage.removeItem(key));
-    if(row.status==='review'){update(row.id,{status:'withdrawn',modified:true});setNotice('已撤回该次审核，进入编辑');}
+    if(row.status==='review'){changeCSubmissionState(row.id,'withdraw');update(row.id,{status:'withdrawn',modified:true});setNotice('已撤回该次审核，进入编辑');}
     sessionStorage.setItem('cp-pending-edit',JSON.stringify({...row,contentId:row.id}));pendingUploads=submitted&&(submitted.contentId||'current')===row.id?[...submissionUploads]:[];
     go((row.kind==='post'?'post-publish':'post-edit')+'?entry=return-'+Date.now());
   };
@@ -1064,6 +1070,7 @@ function MyContent({ state, go }: Props & {embedded?:boolean}) {
     if(!action)return;const row=rows.find(item=>item.id===action.id);if(!row){setAction(null);return;}
     try{
       if(action.kind==='delete'){
+        changeCSubmissionState(row.id,'delete');
         const target=row.target||(row.kind==='post'?'post':'work')+'?owned='+encodeURIComponent(row.id);
         const deleted=JSON.parse(sessionStorage.getItem('cp-personal-deleted-targets')||'[]') as string[];
         sessionStorage.setItem('cp-personal-deleted-targets',JSON.stringify([...new Set([...deleted,target])]));
@@ -1072,13 +1079,13 @@ function MyContent({ state, go }: Props & {embedded?:boolean}) {
         saveActivitySubmissions(readActivitySubmissions().map(item=>item.id.startsWith('existing-content:'+encodeURIComponent(row.id)+':')||row.activityCode&&item.activityCode===row.activityCode&&item.title===row.title?{...item,contentStatus:'deleted'}:item));
         setNotice('内容已删除，参与及奖励记录保留');
       }else{
-        const status=action.kind==='remove'?'removed':overrides[row.id]?.modified?'review':'public';
+        const status=changeCSubmissionState(row.id,action.kind)|| (action.kind==='remove'?'removed':overrides[row.id]?.modified?'review':'public');
         update(row.id,{status,removalSource:'author',modified:overrides[row.id]?.modified});
         saveActivitySubmissions(readActivitySubmissions().map(item=>item.id.startsWith('existing-content:'+encodeURIComponent(row.id)+':')?{...item,contentStatus:status}:item));
         setNotice(status==='removed'?'已下架，原投稿记录保留':status==='review'?'已提交重新审核':'已恢复公开，首次发布时间保持');
       }
       setAction(null);
-    }catch{setNotice('操作结果待核对，请刷新确认原内容状态后再操作');}
+    }catch(error){setNotice(error instanceof Error?error.message:'操作失败，请重试');}
   };
   return <Gate state={state} go={go}><section className="cp-personal-manager">
     <div className="cp-personal-tabs">{['全部','作品','帖子'].map(x=><button key={x} className={filter===x?'active':''} onClick={()=>setFilter(x)}>{x}</button>)}</div>

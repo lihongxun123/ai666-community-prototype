@@ -1,0 +1,87 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - region "AI 商城":
+    - heading "AI 商城" [level=1]
+    - paragraph: 用积分开启更多 AI 创作可能
+    - button "兑换记录"
+    - heading "用积分兑换 AI 产品权益" [level=2]
+    - paragraph: 让优质的 AI 工具，助你创造更多可能
+    - paragraph:
+      - text: 我的积分
+      - strong: "100"
+    - button "积分明细"
+    - img "AI 商城创作权益"
+    - region "多元探索":
+      - heading "多元探索" [level=3]
+      - generic: 释放你的 AI 创造力
+      - article:
+        - generic: 多元探索
+        - strong: ¥2
+        - generic: AI 让灵感发生
+        - heading "两元卡密" [level=4]
+        - paragraph: 可以享用2元的使用额度
+        - strong: "200"
+        - generic: 积分
+        - button "兑换 两元卡密": 兑换
+      - article:
+        - generic: 多元探索
+        - strong: ¥5
+        - generic: AI 让灵感发生
+        - heading "五元卡密" [level=4]
+        - paragraph: 可以享用5元的使用额度
+        - strong: "500"
+        - generic: 积分
+        - button "兑换 五元卡密": 兑换
+      - article:
+        - generic: 多元探索
+        - strong: ¥10
+        - generic: AI 让灵感发生
+        - heading "十元卡密" [level=4]
+        - paragraph: 可以享受10元的使用额度
+        - strong: "1000"
+        - generic: 积分
+        - button "兑换 十元卡密": 兑换
+    - region "镜像站":
+      - heading "镜像站" [level=3]
+      - generic: 更稳定的 AI 镜像服务，助你高效创作
+      - article:
+        - generic: 镜像站
+        - strong: 1天
+        - generic: 让 AI 持续陪伴
+        - heading "镜像日卡" [level=4]
+        - paragraph: 积分兑换多元探索镜像站日卡！
+        - strong: "190"
+        - generic: 积分
+        - button "兑换 镜像日卡": 兑换
+      - article:
+        - generic: 镜像站
+        - strong: 7天
+        - generic: 让 AI 持续陪伴
+        - heading "镜像周卡" [level=4]
+        - paragraph: 镜像周卡
+        - strong: "500"
+        - generic: 积分
+        - button "兑换 镜像周卡": 兑换

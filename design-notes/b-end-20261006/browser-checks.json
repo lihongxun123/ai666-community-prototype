@@ -1,0 +1,296 @@
+{
+  "checkedAt": "2026-10-05T17:57:44.047Z",
+  "navigation": [
+    {
+      "label": "帖子管理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "教程管理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "AI应用管理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "圈子管理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "专题编排",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "评论管理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "举报处理",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "审核工作台",
+      "ok": true,
+      "overflow": 0
+    },
+    {
+      "label": "模型配置",
+      "heading": "模型配置",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "生成记录",
+      "heading": "生成记录",
+      "overflow": 0,
+      "tableRows": 21
+    },
+    {
+      "label": "推荐编排",
+      "heading": "推荐编排",
+      "overflow": 0,
+      "tableRows": 8
+    },
+    {
+      "label": "展示位配置",
+      "heading": "展示位配置",
+      "overflow": 0,
+      "tableRows": 10
+    },
+    {
+      "label": "活动管理",
+      "heading": "活动管理",
+      "overflow": 0,
+      "tableRows": 8
+    },
+    {
+      "label": "投稿与评审",
+      "heading": "投稿与评审",
+      "overflow": 0,
+      "tableRows": 3
+    },
+    {
+      "label": "商城管理",
+      "heading": "商城管理",
+      "overflow": 0,
+      "tableRows": 6
+    },
+    {
+      "label": "兑换记录",
+      "heading": "兑换记录",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "签到管理",
+      "heading": "签到管理",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "邀请管理",
+      "heading": "邀请管理",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "通知记录",
+      "heading": "通知记录",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "公告管理",
+      "heading": "公告管理",
+      "overflow": 0,
+      "tableRows": 3
+    },
+    {
+      "label": "用户反馈",
+      "heading": "用户反馈",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "数据总览",
+      "heading": "数据总览",
+      "overflow": 0,
+      "tableRows": 5
+    },
+    {
+      "label": "访问与注册",
+      "heading": "访问与注册",
+      "overflow": 0,
+      "tableRows": 11
+    },
+    {
+      "label": "渠道分析",
+      "heading": "渠道分析",
+      "overflow": 0,
+      "tableRows": 5
+    },
+    {
+      "label": "用户价值",
+      "heading": "用户价值",
+      "overflow": 0,
+      "tableRows": 18
+    },
+    {
+      "label": "创作与内容",
+      "heading": "创作与内容",
+      "overflow": 0,
+      "tableRows": 21
+    },
+    {
+      "label": "任务与激励",
+      "heading": "任务与激励",
+      "overflow": 0,
+      "tableRows": 21
+    },
+    {
+      "label": "质量与异常",
+      "heading": "质量与异常",
+      "overflow": 0,
+      "tableRows": 8
+    },
+    {
+      "label": "指标中心",
+      "heading": "指标中心",
+      "overflow": 0,
+      "tableRows": 21
+    },
+    {
+      "label": "角色权限",
+      "heading": "角色权限",
+      "overflow": 0,
+      "tableRows": 4
+    },
+    {
+      "label": "管理员",
+      "heading": "管理员",
+      "overflow": 0,
+      "tableRows": 3
+    },
+    {
+      "label": "操作日志",
+      "heading": "操作日志",
+      "overflow": 0,
+      "tableRows": 3
+    },
+    {
+      "label": "分类与标签",
+      "heading": "分类与标签",
+      "overflow": 0
+    },
+    {
+      "label": "作品管理",
+      "heading": [
+        "作品管理",
+        "作品列表 65"
+      ],
+      "overflow": 0,
+      "hasTable": true
+    },
+    {
+      "label": "用户管理",
+      "heading": [
+        "用户管理"
+      ],
+      "overflow": 0,
+      "hasTable": true
+    },
+    {
+      "label": "积分流水",
+      "heading": [
+        "积分流水"
+      ],
+      "overflow": 0,
+      "hasTable": true
+    }
+  ],
+  "statesAndDetails": [
+    {
+      "page": "post-detail",
+      "state": "normal",
+      "headings": [
+        "帖子详情",
+        "本周创作交流：先整理素材，再记录提示词调整过程。"
+      ],
+      "tail": "generic: 维护与展示信息\n  - table:\n    - rowgroup:\n      - 'row \"作者 : 多元拾光编辑部\"':\n        - 'cell \"作者 : 多元拾光编辑部\"':\n          - generic: \"作者 :\"\n          - generic: 多元拾光编辑部\n      - 'row \"来源 : 官方原创\"':\n        - 'cell \"来源 : 官方原创\"':\n          - generic: \"来源 :\"\n          - generic: 官方原创\n      - 'row \"维护人 : 内容编辑\"':\n        - 'cell \"维护人 : 内容编辑\"':\n          - generic: \"维护人 :\"\n          - generic: 内容编辑\n      - 'row \"首次公开 : 2026-10-06 01:41:59\"':\n        - 'cell \"首次公开 : 2026-10-06 01:41:59\"':\n          - generic: \"首次公开 :\"\n          - generic: 2026-10-06 01:41:59\n      - 'row \"展示授权 : 待补充\"':\n        - 'cell \"展示授权 : 待补充\"':\n          - generic: \"展示授权 :\"\n          - generic: 待补充\n      - 'row \"分类 : 电商营销\"':\n        - 'cell \"分类 : 电商营销\"':\n          - generic: \"分类 :\"\n          - generic: 电商营销\n      - 'row \"圈子 : 社区交流\"':\n        - 'cell \"圈子 : 社区交流\"':\n          - generic: \"圈子 :\"\n          - generic: 社区交流\n      - 'row \"圈内置顶 : 未置顶\"':\n        - 'cell \"圈内置顶 : 未置顶\"':\n          - generic: \"圈内置顶 :\"\n          - generic: 未置顶",
+      "overflow": 0
+    },
+    {
+      "page": "tutorial-detail",
+      "state": "normal",
+      "headings": [
+        "教程详情",
+        "旧照片修复：从观察破损到复查",
+        "目标",
+        "准备",
+        "方法"
+      ],
+      "tail": "- 'cell \"首次公开 : 2026-10-05 10:30:00\"':\n          - generic: \"首次公开 :\"\n          - generic: 2026-10-05 10:30:00\n      - 'row \"展示授权 : 示例：内容与素材已获得社区展示授权。\"':\n        - 'cell \"展示授权 : 示例：内容与素材已获得社区展示授权。\"':\n          - generic: \"展示授权 :\"\n          - generic: 示例：内容与素材已获得社区展示授权。\n      - 'row \"分类 : 电商营销\"':\n        - 'cell \"分类 : 电商营销\"':\n          - generic: \"分类 :\"\n          - generic: 电商营销\n      - 'row \"教学目标 : 学会判断旧照损伤并完成一次局部修复\"':\n        - 'cell \"教学目标 : 学会判断旧照损伤并完成一次局部修复\"':\n          - generic: \"教学目标 :\"\n          - generic: 学会判断旧照损伤并完成一次局部修复\n      - 'row \"准备条件 : 原图副本、电脑端编辑工具\"':\n        - 'cell \"准备条件 : 原图副本、电脑端编辑工具\"':\n          - generic: \"准备条件 :\"\n          - generic: 原图副本、电脑端编辑工具\n      - 'row \"工具版本 : MakeNow 当前公开版\"':\n        - 'cell \"工具版本 : MakeNow 当前公开版\"':\n          - generic: \"工具版本 :\"\n          - generic: MakeNow 当前公开版\n      - 'row \"结果限制 : 严重缺失的细节需要人工判断，不能保证恢复历史原貌。\"':\n        - 'cell \"结果限制 : 严重缺失的细节需要人工判断，不能保证恢复历史原貌。\"':\n          - generic: \"结果限制 :\"\n          - generic: 严重缺失的细节需要人工判断，不能保证恢复历史原貌。",
+      "overflow": 0
+    },
+    {
+      "page": "app-detail",
+      "state": "normal",
+      "headings": [
+        "AI应用详情",
+        "文案改写",
+        "适合用来",
+        "输入准备",
+        "输出"
+      ],
+      "tail": "- 'row \"输出形态 : 一份可继续编辑的改写文案\"':\n        - 'cell \"输出形态 : 一份可继续编辑的改写文案\"':\n          - generic: \"输出形态 :\"\n          - generic: 一份可继续编辑的改写文案\n      - 'row \"支持设备 : 手机与电脑\"':\n        - 'cell \"支持设备 : 手机与电脑\"':\n          - generic: \"支持设备 :\"\n          - generic: 手机与电脑\n      - 'row \"运行入口 : 可用\"':\n        - 'cell \"运行入口 : 可用\"':\n          - generic: \"运行入口 :\"\n          - generic: 可用\n      - 'row \"MakeNow入口 : /community-options/cross-prototype?page=app&item=copy 复制\"':\n        - 'cell \"MakeNow入口 : /community-options/cross-prototype?page=app&item=copy 复制\"':\n          - generic: \"MakeNow入口 :\"\n          - text: /community-options/cross-prototype?page=app&item=copy\n          - button \"复制\":\n            - img \"copy\":\n      - 'row \"账号与费用 : 使用同一多元拾光账号继续，应用费用以MakeNow实际入口为准。\"':\n        - 'cell \"账号与费用 : 使用同一多元拾光账号继续，应用费用以MakeNow实际入口为准。\"':\n          - generic: \"账号与费用 :\"\n          - generic: 使用同一多元拾光账号继续，应用费用以MakeNow实际入口为准。\n  - alert:\n    - generic: MakeNow账号已互通\n    - generic: 设备以应用支持为准；素材、任务和结果深度互通不作已完成承诺。社区不配置执行报价或扣费。",
+      "overflow": 0
+    },
+    {
+      "page": "posts",
+      "state": "no-permission",
+      "headings": [
+        "帖子管理"
+      ],
+      "tail": "编排\"\n    - button \"展示位配置\"\n    - button \"活动管理\"\n    - button \"投稿与评审\"\n    - button \"商城管理\"\n    - button \"兑换记录\"\n    - button \"签到管理\"\n    - button \"邀请管理\"\n    - button \"用户与积分\" [expanded]:\n      - generic: 用户与积分\n      - generic: ⌄\n    - button \"用户管理\"\n    - button \"积分流水\"\n    - button \"通知与反馈\" [expanded]:\n      - generic: 通知与反馈\n      - generic: ⌄\n    - button \"通知记录\"\n    - button \"公告管理\"\n    - button \"用户反馈\"\n    - button \"数据分析\" [expanded]:\n      - generic: 数据分析\n      - generic: ⌄\n    - button \"数据总览\"\n    - button \"访问与注册\"\n    - button \"渠道分析\"\n    - button \"用户价值\"\n    - button \"创作与内容\"\n    - button \"任务与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"角色权限\"\n    - button \"管理员\"\n    - button \"操作日志\"\n- banner:\n  - generic: 内容管理 / 帖子管理\n  - generic: 运\n  - text: 内容运营\n- button \"帖子管理\"\n- main:\n  - heading \"帖子管理\" [level=3]\n  - button \"走查规则\":\n    - generic: 走查规则\n  - img \"Unauthorized\"\n  - generic: 暂无当前模块访问权限\n  - generic: 请联系管理员确认账号职责与授权范围。",
+      "overflow": 0
+    },
+    {
+      "page": "op-circles",
+      "state": "error",
+      "headings": [
+        "圈子管理"
+      ],
+      "tail": " 用户与积分\n      - generic: ⌄\n    - button \"用户管理\"\n    - button \"积分流水\"\n    - button \"通知与反馈\" [expanded]:\n      - generic: 通知与反馈\n      - generic: ⌄\n    - button \"通知记录\"\n    - button \"公告管理\"\n    - button \"用户反馈\"\n    - button \"数据分析\" [expanded]:\n      - generic: 数据分析\n      - generic: ⌄\n    - button \"数据总览\"\n    - button \"访问与注册\"\n    - button \"渠道分析\"\n    - button \"用户价值\"\n    - button \"创作与内容\"\n    - button \"任务与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"角色权限\"\n    - button \"管理员\"\n    - button \"操作日志\"\n- banner:\n  - generic: 内容管理 / 圈子管理\n  - generic: 运\n  - text: 内容运营\n- button \"圈子管理\"\n- main:\n  - heading \"圈子管理\" [level=3]\n  - paragraph: 关闭停止新发帖和推荐，合法原帖保留。移出只解除圈子关联，不删除正文；重新开放不恢复撤下的推荐。置顶按运营顺序，普通帖按首次公开时间。\n  - button \"操作日志\":\n    - generic: 操作日志\n  - button \"新建圈子\":\n    - generic: 新建圈子\n  - alert:\n    - img \"close-circle\":\n    - generic: 加载失败，不能视为空记录\n    - button \"重新加载\":\n      - generic: 重新加载\n  - button \"页面规则与验收\":\n    - generic: 页面规则与验收",
+      "overflow": 0
+    },
+    {
+      "page": "users",
+      "state": "no-permission",
+      "headings": [],
+      "tail": "    - generic: 运营管理\n      - generic: ⌄\n    - button \"分类与标签\"\n    - button \"推荐编排\"\n    - button \"展示位配置\"\n    - button \"活动管理\"\n    - button \"投稿与评审\"\n    - button \"商城管理\"\n    - button \"兑换记录\"\n    - button \"签到管理\"\n    - button \"邀请管理\"\n    - button \"用户与积分\" [expanded]:\n      - generic: 用户与积分\n      - generic: ⌄\n    - button \"用户管理\"\n    - button \"积分流水\"\n    - button \"通知与反馈\" [expanded]:\n      - generic: 通知与反馈\n      - generic: ⌄\n    - button \"通知记录\"\n    - button \"公告管理\"\n    - button \"用户反馈\"\n    - button \"数据分析\" [expanded]:\n      - generic: 数据分析\n      - generic: ⌄\n    - button \"数据总览\"\n    - button \"访问与注册\"\n    - button \"渠道分析\"\n    - button \"用户价值\"\n    - button \"创作与内容\"\n    - button \"任务与激励\"\n    - button \"质量与异常\"\n    - button \"指标中心\"\n    - button \"系统管理\" [expanded]:\n      - generic: 系统管理\n      - generic: ⌄\n    - button \"角色权限\"\n    - button \"管理员\"\n    - button \"操作日志\"\n- banner:\n  - generic: 用户与积分 / 用户管理\n  - generic: 运\n  - text: 内容运营\n- button \"用户管理\"\n- main:\n  - img \"Unauthorized\"\n  - generic: 暂无查看权限\n  - generic: 请联系管理员核对职责范围。",
+      "overflow": 0
+    }
+  ],
+  "reader": {
+    "requirements": true,
+    "flows": true,
+    "iframe": true
+  },
+  "interactions": [
+    "official untitled post saved/submitted/approved",
+    "app required fields prevent empty submit",
+    "announcement draft preserves published copy",
+    "feedback unknown result locked and queried once",
+    "activity eight structured tasks inspected",
+    "stock required fields prevent empty import"
+  ],
+  "currentErrors": []
+}

@@ -1,0 +1,32 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "AIGC 生成" [level=1]
+  - button "找灵感"
+  - button "生成记录"
+- main:
+  - heading "AI 灵感工作台" [level=2]
+  - paragraph: 写下灵感，开始创作
+  - button "图片生成" [pressed]
+  - button "剧本创作"
+  - button "视频生成"
+  - text: ＋
+  - generic: 参考图 0/4
+  - textbox "创作描述":
+    - /placeholder: 描述你想创作的内容…
+  - generic: 活动投稿
+  - combobox "活动投稿":
+    - option "暂不参加" [selected]
+    - option "国庆七天乐"
+    - option "每周任务"
+    - option "生图挑战"
+    - option "Prompt 共创计划"
+  - button "生成模型": 图片模型
+  - button "画面比例": 16:9
+  - button "开始生成，预计消耗10积分" [disabled]: 10 积分 ↑
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

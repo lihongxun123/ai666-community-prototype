@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "checks": {
+    "appPublicRevision": "Edited app-5 title, submitted, approved, published; publish action disappeared after success; firstPublishedAt stayed 2026-10-06 10:30:00",
+    "workReviewRetry": "review-error retained decision and reason; retry closed dialog",
+    "circleStatus": "List status/actions rendered 启用/停用",
+    "platform": "See closeout-platform-checks.json",
+    "allRoutes": "See closeout-route-checks.json"
+  },
+  "typescript": "passed",
+  "scopedLint": "passed",
+  "nodeBuild": "passed",
+  "independentReview": "cross-reviewed by content agent; reported leftovers fixed",
+  "limitations": [
+    "No real API or production state changed",
+    "All normal routes checked; not every permission/error combination"
+  ]
+}

@@ -6,7 +6,7 @@ import {RetainedStoreConfig} from "./retained-store-config";
 import {RetainedEventConfig,readEventConfigs,readPublishedEventConfigs,publishEventConfig} from "./retained-event-config";
 import { changeRecord, useB, kindLabels, type Content } from "./store";
 import {defaultSlots,isSlotTargetValid,slotTargets} from '../c-prototype/slots';
-import {readActivitySubmissions,saveActivitySubmissions,eventDefaults} from './operations-data';
+import {readActivitySubmissions,eventDefaults} from './operations-data';
 import {taskHistory,shopRecords,prototypeStore as sessionStorage} from '../c-prototype/storage';
 const sharedSubscribe=(cb:()=>void)=>{window.addEventListener('bp-operations-change',cb);window.addEventListener('cp-task-change',cb);window.addEventListener('storage',cb);return()=>{window.removeEventListener('bp-operations-change',cb);window.removeEventListener('cp-task-change',cb);window.removeEventListener('storage',cb);};};
 const sharedSnapshot=(key:string)=>sessionStorage.getItem(key)||'[]';
@@ -25,7 +25,6 @@ export const operationPages: Page[] = [
   { id: "op-slots", title: "展示位配置", module: "内容运营", states: ["normal", "empty", "invalid-target", "mobile", "permission-denied"] },
   { id: "op-events", title: "活动管理", module: "活动运营", states: ["normal", "empty", "ended", "permission-denied"] },
   { id: "op-event-edit", title: "编辑活动", module: "活动运营", states: ["normal", "invalid", "ended", "permission-denied", "conflict"] },
-  { id: "op-submissions", title: "投稿与评审", module: "活动运营", states: ["normal", "empty", "ineligible", "content-removed", "award-pending", "permission-denied"] },
   { id: "op-points", title: "积分与任务记录", module: "账户服务", states: ["normal", "empty", "hold", "release", "failed", "permission-denied"] },
   { id: "op-shop", title: "商品与兑换", module: "账户服务", states: ["normal", "empty", "unavailable", "permission-denied"] },
   { id: "op-permissions", title: "职责与权限", module: "系统管理", states: ["normal", "empty", "permission-denied", "change-failed"] },
@@ -111,35 +110,9 @@ function Events({state,go}:Props){
  useSyncExternalStore(sharedSubscribe,()=>sharedSnapshot('bp-op-event-configs'),()=> '');
  const configs=readEventConfigs(),published=readPublishedEventConfigs();
  const rows:Row[]=configs.map(c=>({id:'ev-'+c.code,title:c.name,type:c.type==='referral'?'邀请裂变':c.type==='campaign'?'档期活动':'长期活动',status:published.find(p=>p.code===c.code)?.status||'草稿',detail:c.tasks.length+' 项任务 · '+c.max_points+' 展示积分'}));
- return <Frame title="活动管理" action={<Button onClick={()=>go('op-event-edit?id=new')}>新建活动</Button>}><StateGate state={state}>{state==='empty'?<p>暂无活动。</p>:<Table rows={rows} columns={['type','status','detail']} action={r=><><button onClick={()=>go('op-event-edit?id='+r.id)}>维护规则与任务</button><button onClick={()=>go('op-submissions')}>查看投稿</button><button disabled={r.status==='草稿'} onClick={()=>{const c=published.find(p=>'ev-'+p.code===r.id);if(c)publishEventConfig({...c,status:c.status==='进行中'?'已结束':'进行中'});}}>{r.status==='已结束'?'重新开放':'结束活动'}</button></>}/>}</StateGate></Frame>;
+ return <Frame title="活动管理" action={<Button onClick={()=>go('op-event-edit?id=new')}>新建活动</Button>}><StateGate state={state}>{state==='empty'?<p>暂无活动。</p>:<Table rows={rows} columns={['type','status','detail']} action={r=><><button onClick={()=>go('op-event-edit?id='+r.id)}>维护规则与任务</button><button disabled={r.status==='草稿'} onClick={()=>{const c=published.find(p=>'ev-'+p.code===r.id);if(c)publishEventConfig({...c,status:c.status==='进行中'?'已结束':'进行中'});}}>{r.status==='已结束'?'重新开放':'结束活动'}</button></>}/>}</StateGate></Frame>;
 }
 function EventEdit({state,go}:Props){const id=typeof window==='undefined'?'new':new URLSearchParams(location.search).get('id')||'new';return <RetainedEventConfig key={id} id={id} state={state} go={go}/>;}
-
-function Submissions({ state }: Props) {
-  useSyncExternalStore(sharedSubscribe,()=>sharedSnapshot('cp-activity-submissions'),()=> '[]');
-  const live=readActivitySubmissions();
-  const [sampleRows,saveSamples]=useSaved('submissions',sample.submissions);
-  const [selected,setSelected]=useState<string|null>(null);
-  const [eligibility,setEligibility]=useState('通过');
-  const [decision,setDecision]=useState('通过');
-  const [reason,setReason]=useState('');
-  const [notice,setNotice]=useState('');
-  const rows:Row[]=[...live.map(x=>({id:x.id,title:x.title,type:x.activityName||x.activityCode||'活动投稿',status:x.contentStatus==='review'?'待评审':x.contentStatus==='approved'?'评审通过':x.contentStatus==='rejected'?'评审不通过':'待补正',owner:'投稿人',detail:'接受材料 · '+new Date(x.submittedAt).toLocaleDateString('zh-CN')})),...sampleRows];
-  const row=rows.find(x=>x.id===selected);
-  const source=live.find(x=>x.id===selected);
-  const update=(patch:Partial<(typeof live)[number]>)=>{if(!source)return;saveActivitySubmissions(live.map(x=>x.id===source.id?{...x,...patch}:x));};
-  return <Frame title="投稿与评审" note="资格核验、评审结论与奖励发放分别记录。"><StateGate state={state}>
-    {state==='content-removed'&&<Alert tone="warn">原作品已下架；已接受材料和评审依据保留。</Alert>}
-    {state==='empty'||!rows.length?<div className="bop-empty">暂无投稿。</div>:<Table rows={rows} columns={['type','status','owner','detail']} action={r=><button onClick={()=>setSelected(r.id)}>查看与评审</button>}/>}
-    {row&&<div className="bop-panel bop-editor"><h3>{row.title}</h3><p>活动：{row.type} · 对象 ID：{row.id}</p><p>{row.detail}</p>
-      <p>资格：{source?({passed:'通过',failed:'不通过',pending:'待核验'}[source.eligibility]||source.eligibility):row.eligibility||'待核验'} · 评审：{row.status} · 奖励：{source?({pending:'未登记',ready:'待核发',issued:'已核发'}[source.reward]||source.reward):row.award||'未登记'}</p>
-      <div className="bop-inline"><Select label="资格核验" value={eligibility} options={['通过','不通过','待核验']} onChange={setEligibility}/><Button onClick={()=>{if(source)update({eligibility:eligibility==='通过'?'passed':eligibility==='不通过'?'failed':'pending'});setNotice('资格结果已记录。');}}>保存资格</Button></div>
-      <div className="bop-inline"><Select label="评审结论" value={decision} options={['通过','不通过','待补正']} onChange={setDecision}/><Field label="反馈给投稿人的说明" value={reason} onChange={setReason}/></div>
-      <div className="bop-actions"><Button onClick={()=>{if(source){if(source.eligibility!=='passed'){setNotice('请先核验投稿资格。');return;}update({contentStatus:decision==='通过'?'approved':decision==='不通过'?'rejected':'correction',reviewReason:reason});}else saveSamples(sampleRows.map(x=>x.id===row.id?{...x,status:'评审'+decision}:x));setNotice('评审结论已记录，奖励仍单独核发。');}}>保存评审</Button>
-      <Button muted onClick={()=>{if(source){if(source.eligibility!=='passed'||source.contentStatus!=='approved'){setNotice('资格与评审均通过后才能登记奖励。');return;}update({reward:'ready'});}else if(row.status.includes('通过'))saveSamples(sampleRows.map(x=>x.id===row.id?{...x,award:'待核发'}:x));else{setNotice('请先确认评审通过。');return;}setNotice('奖励已登记为待核发。');}}>登记奖励</Button></div>{notice&&<Alert>{notice}</Alert>}
-    </div>}
-  </StateGate></Frame>;
-}
 
 function Points({state}:Props){
   useSyncExternalStore(sharedSubscribe,()=>['cp-tasks','cp-checkin','cp-shop-records','cp-redeemed','cp-activity-submissions'].map(sharedSnapshot).join('|'),()=> '[]');
@@ -182,7 +155,7 @@ export function OperationsPage({ page, state, go }: Props) {
   case "op-circles": return <Circles {...props} />; case "op-circle-edit": return <CircleEdit {...props} />;
   case "op-taxonomy": return <Taxonomy {...props} />; case "op-features": return <Features {...props} />;
   case "op-slots": return <Slots {...props} />; case "op-events": return <Events {...props} />;
-  case "op-event-edit": return <EventEdit {...props} />; case "op-submissions": return <Submissions {...props} />;
+  case "op-event-edit": return <EventEdit {...props} />;
   case "op-points": return <Points {...props} />;
   case "op-shop": return <Shop {...props} />;
   case "op-permissions": return <Permissions {...props} />; default: return <Frame title="页面未找到"><p>请从导航选择页面。</p></Frame>;

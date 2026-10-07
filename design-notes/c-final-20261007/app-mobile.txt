@@ -1,0 +1,33 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "应用详情" [level=1]
+- main:
+  - article:
+    - heading "文案改写" [level=2]
+    - paragraph: 将创作方法与实际使用条件写清楚。
+    - img "文案改写"
+    - generic: 暂未开放使用
+    - heading "适合用来" [level=2]
+    - paragraph: 整理产品介绍、社交文案和日常表达。
+    - heading "输入准备" [level=3]
+    - paragraph: 提供原文、发布用途与希望使用的语气。
+    - heading "输出" [level=3]
+    - paragraph: 一份可继续修改的文案。
+    - heading "准备什么" [level=3]
+    - paragraph: 原文，以及用途和语气要求
+    - heading "得到什么" [level=3]
+    - paragraph: 一份可继续编辑的改写文案
+    - paragraph: 由 多元拾光 提供
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+    - heading "评论 2" [level=2]
+    - button "查看全部"
+    - button "周 周末观察 这一步如果只有手机，先准备什么最合适？":
+      - generic: 周
+      - generic: 周末观察
+      - generic: 这一步如果只有手机，先准备什么最合适？
+    - button "写下你的看法"

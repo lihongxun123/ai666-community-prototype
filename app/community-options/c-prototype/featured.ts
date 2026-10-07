@@ -1,12 +1,17 @@
 'use client';
 import {useSyncExternalStore} from 'react';
+import {readOperations,publicOperationRows,type OpRow} from '../b-prototype/operations-model';
 const subscribe=(onChange:()=>void)=>{window.addEventListener('bp-operations-change',onChange);window.addEventListener('storage',onChange);return()=>{window.removeEventListener('bp-operations-change',onChange);window.removeEventListener('storage',onChange);};};
 function snapshot(){
-  let reviewFrame=false;
-  try{reviewFrame=window.parent!==window&&window.parent.location.pathname.endsWith('/prototype-review');}catch{/* Cross-origin embeds use the explicit flag. */}
-  return reviewFrame||new URLSearchParams(location.search).has('embed')?'null':localStorage.getItem('bp-published-features')||'null';
+  return JSON.stringify(readOperations().rows.slots);
 }
-export function useFeatured(){const raw=useSyncExternalStore(subscribe,snapshot,()=>'null');try{return JSON.parse(raw) as {works:string[];posts:string[]}|null;}catch{return null;}}
+export type FeaturedSlots={appBanner:OpRow[];searchTopics:OpRow[];searchApps:OpRow[];hotwords:OpRow[]};
+export function useFeatured():FeaturedSlots{
+ const raw=useSyncExternalStore(subscribe,snapshot,()=> '[]');
+ let rows:OpRow[]=[];try{rows=publicOperationRows(JSON.parse(raw) as OpRow[]).filter(row=>row.status==='已发布'&&row.published!==false).sort((a,b)=>a.order-b.order||a.id.localeCompare(b.id));}catch{/* An invalid local configuration renders no placements. */}
+ const group=(tab:string)=>rows.filter(row=>row.slotTab===tab);
+ return {appBanner:group('appBanner'),searchTopics:group('searchTopics'),searchApps:group('searchApps'),hotwords:group('hotwords')};
+}
 export const workSampleId=(id:string)=>id==='work-1'?'restore':id.replace(/^work-/,'');
 
 

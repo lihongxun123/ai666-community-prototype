@@ -8,12 +8,13 @@ import {Comments} from './reading';
 import {ActionBar} from './content-actions';
 import {useB} from '../b-prototype/store';
 import './tutorial-desktop.css';
+import {publicTutorialRows,tutorialImage} from './tutorial-public';
 type Go=(page:string)=>void;
-const picture=(id:string)=>'/home-prototype/'+id+'.png';
+const picture=tutorialImage;
 export function TutorialDesktopList({go}:{go:Go}){
  const [category,setCategory]=useState('全部');const db=useB();
- const rows=communityTutorials.filter(t=>{const record=db.records.find(r=>r.id==='tutorial-'+(t.id==='restore'?'1':t.id));return (!record||record.publicStatus==='公开')&&(category==='全部'||t.topic===category)});
- return <section className="td-list"><header className="td-banner"><img src="/home-prototype/tutorial-banner.webp" alt=""/><div><small>多元拾光 · 创作课堂</small><h1>跟着教程<br/>开始你的创作</h1><p>从真实案例出发，把方法用在下一次创作里。</p></div></header><nav className="td-filters" aria-label="教程分类">{['全部',...new Set(communityTutorials.map(t=>t.topic))].map(c=><button key={c} aria-pressed={c===category} onClick={()=>setCategory(c)}>{c}</button>)}</nav><div className="td-grid">{rows.map(t=><button className="td-card" key={t.id} onClick={()=>go('tutorial?item='+t.id)}><div><img src={picture(t.cover)} alt=""/><span>{t.topic}</span></div><small>多元拾光官方</small><h2>{t.title}</h2><p>{t.views} 次阅读 <span>阅读教程 →</span></p></button>)}</div><p className="td-end">{rows.length?'全部教程已展示':'该分类暂无教程'}</p></section>;
+ const tutorials=publicTutorialRows(db.records,communityTutorials);const rows=tutorials.filter(t=>category==='全部'||t.topic===category);
+ return <section className="td-list"><header className="td-banner"><img src="/home-prototype/tutorial-banner.webp" alt=""/><div><small>多元拾光 · 创作课堂</small><h1>跟着教程<br/>开始你的创作</h1><p>从真实案例出发，把方法用在下一次创作里。</p></div></header><nav className="td-filters" aria-label="教程分类">{['全部',...new Set(tutorials.map(t=>t.topic))].map(c=><button key={c} aria-pressed={c===category} onClick={()=>setCategory(c)}>{c}</button>)}</nav><div className="td-grid">{rows.map(t=><button className="td-card" key={t.id} onClick={()=>go(t.target||'tutorial?item='+t.id)}><div><img src={picture(t.cover)} alt=""/><span>{t.topic}</span></div><small>多元拾光官方</small><h2>{t.title}</h2><p>{t.views} 次阅读 <span>阅读教程 →</span></p></button>)}</div><p className="td-end">{rows.length?'全部教程已展示':'该分类暂无教程'}</p></section>;
 }
 const fallback:Record<string,string[][]>={restore:[['判断破损','保留原始文件，先辨认划痕、缺失与偏色的位置，区分需要修复和应当保留的细节。'],['分步修复','先处理大面积破损，再检查人物表情与衣物边缘。每一步另存版本，方便对照。'],['复查与保存','将原图与结果按相同比例查看，确认没有改变人物特征，再保存最终版本。']],product:[['准备主体','选择轮廓清晰的产品照片，明确材质、主色和需要保留的标识。'],['比较光线','固定产品与镜头，只调整光线方向。对比高光和阴影，选择主体最清楚的版本。'],['整理结果','检查产品形状与材质是否保持一致，记录有效条件用于下一次创作。']]};
 export type TutorialDetailContent={title:string;topic:string;author:string;summary:string;cover:string;sections:[string,ReactNode][];intro?:ReactNode;related?:ReactNode;conditions?:string;target:string;commentId:string};

@@ -1,0 +1,50 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - heading "圈子" [level=1]
+- main:
+  - heading "已加入" [level=2]
+  - generic: 2 个圈子
+  - button "影像练习圈 照片修复、构图与视觉叙事 1,286 人加入":
+    - strong: 影像练习圈
+    - generic: 照片修复、构图与视觉叙事
+    - generic: 1,286 人加入
+    - generic: 已加入
+  - button "视觉创作圈 产品视觉、光线与配色 963 人加入":
+    - strong: 视觉创作圈
+    - generic: 产品视觉、光线与配色
+    - generic: 963 人加入
+    - generic: 已加入
+  - heading "发现圈子" [level=2]
+  - generic: 5 个圈子
+  - button "修复交流圈 旧照修复与人像细节交流 326 人加入":
+    - strong: 修复交流圈
+    - generic: 旧照修复与人像细节交流
+    - generic: 326 人加入
+    - generic: ›
+  - button "写作灵感圈 日常观察、短篇与表达练习 742 人加入":
+    - strong: 写作灵感圈
+    - generic: 日常观察、短篇与表达练习
+    - generic: 742 人加入
+    - generic: ›
+  - button "短片实验圈 镜头语言、剪辑与声音 618 人加入":
+    - strong: 短片实验圈
+    - generic: 镜头语言、剪辑与声音
+    - generic: 618 人加入
+    - generic: ›
+  - button "生活美学圈 空间、器物与生活记录 525 人加入":
+    - strong: 生活美学圈
+    - generic: 空间、器物与生活记录
+    - generic: 525 人加入
+    - generic: ›
+  - button "角色创作圈 人物设定、故事与画面 409 人加入":
+    - strong: 角色创作圈
+    - generic: 人物设定、故事与画面
+    - generic: 409 人加入
+    - generic: ›
+- navigation "底部导航":
+  - button "首页": 首页
+  - button "社区": 社区
+  - button "AI创作": AI创作
+  - button "活动": 活动
+  - button "我的": 我的

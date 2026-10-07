@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "scope": [
+    "system-roles",
+    "system-permissions",
+    "system-admins",
+    "system-logs"
+  ],
+  "references": [
+    "ai666-admin/src/view/systemSettings",
+    "ai666-admin/src/view/shared/system/permissionCatalog.js",
+    "https://www.ai666.net/b/system/roles",
+    "https://www.ai666.net/b/system/permissions"
+  ],
+  "checks": [
+    "新增权限进入角色树",
+    "角色保存直接提交",
+    "后台用户多角色保存，角色用户数同步",
+    "按对象ID筛选日志并打开详情",
+    "角色保存失败保留输入，重试成功",
+    "管理员创建时间保留",
+    "混合日期格式日志数字倒序",
+    "独立复核92项权限目录一致、父级循环、同步幂等、密码不持久化",
+    "TypeScript及scoped lint通过",
+    "完整构建通过，图片断链0"
+  ],
+  "result": "passed",
+  "screenshot": "system-management.png",
+  "boundary": "仅本地原型；未修改线上权限、账号或密码，未发布"
+}

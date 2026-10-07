@@ -1,0 +1,55 @@
+- banner:
+  - button "返回"
+  - heading "邀请有礼" [level=1]
+  - button "明细"
+- main:
+  - heading "把这束灵感 递给下一位创作者" [level=2]:
+    - text: 把这束灵感
+    - text: 递给下一位创作者
+  - paragraph: 邀请好友，一起探索 AI 创作
+  - region "创作者邀请函":
+    - text: 多元拾光 · 创作者邀请函
+    - strong: DEMO-ONLY
+    - button "复制邀请码"
+    - paragraph: 3 位好友已加入
+  - region "邀请奖励进度":
+    - text: 累计获得
+    - strong: "600"
+    - text: 积分
+    - text: 好友完成首次发布
+    - text: 再得 100 积分
+  - list "邀请流程":
+    - generic: "01"
+    - strong: 复制邀请链接
+    - generic: "02"
+    - strong: 好友成长创作
+    - generic: "03"
+    - strong: 邀请积分到账
+  - generic: 我的邀请人
+  - textbox "我的邀请人":
+    - /placeholder: 输入邀请码
+  - button "绑定"
+  - heading "最近进度" [level=3]
+  - generic: 3 位好友
+  - article:
+    - generic: A
+    - strong: 拾光伙伴 A
+    - generic: 已完成首次发布
+    - text: "+300"
+    - generic: 已到账
+  - article:
+    - generic: B
+    - strong: 拾光伙伴 B
+    - generic: 已注册 · 待首次互动
+    - text: "+100"
+    - generic: 已到账
+  - article:
+    - generic: C
+    - strong: 拾光伙伴 C
+    - generic: 已完成首次互动 · 待首次发布
+    - text: "+200"
+    - generic: 已到账
+  - button "查看邀请规则 ›":
+    - text: 查看邀请规则
+    - generic: ›
+  - button "复制邀请链接"

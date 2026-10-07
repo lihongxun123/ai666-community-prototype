@@ -1,0 +1,248 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - navigation "圈子内容筛选":
+    - button "推荐" [pressed]
+    - button "影像练习圈"
+    - button "视觉创作圈"
+  - article:
+    - button "鹿 鹿与光 8分钟前":
+      - generic: 鹿
+      - strong: 鹿与光
+      - generic: 8分钟前
+    - button "视觉创作圈":
+      - generic: "#"
+      - text: 视觉创作圈
+    - heading "给玻璃瓶拍照，先处理背景还是光线？" [level=2]
+    - paragraph: 我试了两种背景，发现先固定光线方向更容易比较。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "给玻璃瓶拍照，先处理背景还是光线？ · 图片 1"
+    - button "喜欢 104":
+      - text: 喜欢
+      - generic: "104"
+    - button "收藏 20":
+      - text: 收藏
+      - generic: "20"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "陈 陈屿 9月19日":
+      - generic: 陈
+      - strong: 陈屿
+      - generic: 9月19日
+    - heading "短片的第一个镜头，我留给了海面" [level=2]
+    - paragraph: 先定下画面的节奏，再决定转场与音乐。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "短片的第一个镜头，我留给了海面 · 图片 1"
+    - button "喜欢 121":
+      - text: 喜欢
+      - generic: "121"
+    - button "收藏 23":
+      - text: 收藏
+      - generic: "23"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "温 温白 26分钟前":
+      - generic: 温
+      - strong: 温白
+      - generic: 26分钟前
+    - button "影像练习圈":
+      - generic: "#"
+      - text: 影像练习圈
+    - heading "阴天拍人像，背景总显得太灰怎么办？" [level=2]
+    - paragraph: 我试着让人物靠近窗边，先调亮脸部，再留住背景里的阴影。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "阴天拍人像，背景总显得太灰怎么办？ · 图片 1"
+    - button "喜欢 155":
+      - text: 喜欢
+      - generic: "155"
+    - button "收藏 29":
+      - text: 收藏
+      - generic: "29"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "南 南风 9月25日":
+      - generic: 南
+      - strong: 南风
+      - generic: 9月25日
+    - button "写作灵感圈":
+      - generic: "#"
+      - text: 写作灵感圈
+    - heading "把通勤路上的一句话写成了短故事" [level=2]
+    - paragraph: “下一站，有人会记得你。”我从这句话开始写了一个很短的开头。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "把通勤路上的一句话写成了短故事 · 图片 1"
+    - button "喜欢 223":
+      - text: 喜欢
+      - generic: "223"
+    - button "收藏 41":
+      - text: 收藏
+      - generic: "41"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "陈 陈屿 9月25日":
+      - generic: 陈
+      - strong: 陈屿
+      - generic: 9月25日
+    - button "短片实验圈":
+      - generic: "#"
+      - text: 短片实验圈
+    - heading "短片开头的十秒，我留给了海面" [level=2]
+    - paragraph: 镜头先慢下来，音乐晚一点进。看完粗剪后，这个停顿很有必要。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "短片开头的十秒，我留给了海面 · 图片 1"
+    - button "喜欢 257":
+      - text: 喜欢
+      - generic: "257"
+    - button "收藏 47":
+      - text: 收藏
+      - generic: "47"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "木 木木 9月24日":
+      - generic: 木
+      - strong: 木木
+      - generic: 9月24日
+    - button "生活美学圈":
+      - generic: "#"
+      - text: 生活美学圈
+    - heading "周末把书桌换到窗边，光线真的不一样" [level=2]
+    - paragraph: 没有添新东西，只是换了摆放顺序。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "周末把书桌换到窗边，光线真的不一样 · 图片 1"
+    - button "喜欢 291":
+      - text: 喜欢
+      - generic: "291"
+    - button "收藏 53":
+      - text: 收藏
+      - generic: "53"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "圆 圆圆 9月25日":
+      - generic: 圆
+      - strong: 圆圆
+      - generic: 9月25日
+    - button "角色创作圈":
+      - generic: "#"
+      - text: 角色创作圈
+    - heading "这个角色的表情，我改了第四版" [level=2]
+    - paragraph: 放松眉眼之后，人物终于有了想要的亲近感。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "这个角色的表情，我改了第四版 · 图片 1"
+    - button "喜欢 325":
+      - text: 喜欢
+      - generic: "325"
+    - button "收藏 59":
+      - text: 收藏
+      - generic: "59"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - article:
+    - button "林 林间 · 1 2026-10-05":
+      - generic: 林
+      - strong: 林间 · 1
+      - generic: 2026-10-05
+    - button "影像练习圈":
+      - generic: "#"
+      - text: 影像练习圈
+    - heading "旧照片修复时，我先做的三件事" [level=2]
+    - paragraph: 将创作方法与实际使用条件写清楚。
+    - button "展开全文"
+    - button "查看帖子第1张图片":
+      - img "旧照片修复时，我先做的三件事 · 图片 1"
+    - button "喜欢 36":
+      - text: 喜欢
+      - generic: "36"
+    - button "收藏 8":
+      - text: 收藏
+      - generic: "8"
+    - button "评论 7":
+      - text: 评论
+      - generic: "7"
+    - button "分享":
+      - generic: 分享
+  - paragraph: 已经看完了，去圈子里发现更多灵感
+  - complementary:
+    - button "林 林间 今天也来分享一点灵感":
+      - generic: 林
+      - strong: 林间
+      - generic: 今天也来分享一点灵感
+      - generic: ›
+    - button "发布帖子"
+    - heading "我的圈子" [level=2]
+    - button "查看全部 ›"
+    - button "影像练习圈":
+      - strong: 影像练习圈
+      - generic: 照片修复、构图与视觉叙事
+    - button "视觉创作圈":
+      - strong: 视觉创作圈
+      - generic: 产品视觉、光线与配色
+    - heading "推荐圈子" [level=2]
+    - button "查看全部 ›"
+    - button "修复交流圈":
+      - strong: 修复交流圈
+      - generic: 326 人加入
+    - button "加入"
+    - button "写作灵感圈":
+      - strong: 写作灵感圈
+      - generic: 742 人加入
+    - button "加入"
+    - button "短片实验圈":
+      - strong: 短片实验圈
+      - generic: 618 人加入
+    - button "加入"

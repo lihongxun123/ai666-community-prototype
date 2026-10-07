@@ -6,15 +6,12 @@ export const appSummaries:Record<string,string>={
  'repair-color':'调整照片的色彩，让肤色和画面更自然。',
  restore:'改善旧照片中的划痕、模糊和褪色。'
 };
-export function AppIntroduction({input,output,provider,conditions}:{input:string;output:string;provider:string;conditions?:string}){
- const condition=conditions?.trim();
- const defaultConditions=['使用 MakeNow 前请核对目标页说明与账号条件。','准备需要改写的原文。生成前确认本次积分。'];
+export function AppIntroduction({input,output,provider}:{input:string;output:string;provider:string}){
  return <div className="app-introduction">
   <div className="app-introduction-grid">
    <section><h3>准备什么</h3><p>{input||'查看应用说明中的材料要求。'}</p></section>
    <section><h3>得到什么</h3><p>{output||'查看应用说明中的结果形式。'}</p></section>
   </div>
-  {condition&&!defaultConditions.includes(condition)&&<p className="app-introduction-condition">{condition}</p>}
   {provider&&<p className="app-introduction-provider">由 {provider} 提供</p>}
  </div>;
 }

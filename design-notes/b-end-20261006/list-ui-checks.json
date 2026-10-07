@@ -1,0 +1,286 @@
+{
+  "checkedAt": "2026-10-06T04:21:33.596Z",
+  "pages": [
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "帖子管理",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "教程管理",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "AI应用管理",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "评论管理",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "举报处理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "审核工作台",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "圈子管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "专题编排",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "分类与标签",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "推荐编排",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "展示位配置",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "活动管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "投稿与评审",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "商城管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "兑换记录",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "签到管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "邀请管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "积分流水",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "用户管理",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "模型配置",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "生成记录",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "通知记录",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "公告管理",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "用户反馈",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "角色权限",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "管理员",
+      "overflow": 0,
+      "quickJump": 0,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "操作日志",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "borderedRowButtons": 0,
+      "headings": [],
+      "label": "指标中心",
+      "overflow": 0,
+      "quickJump": 1,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "数据总览",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "访问与注册",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "渠道分析",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "用户价值",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "创作与内容",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "任务与激励",
+      "overflow": 0,
+      "sizeSelects": 0
+    },
+    {
+      "headings": [],
+      "label": "质量与异常",
+      "overflow": 0,
+      "sizeSelects": 0
+    }
+  ],
+  "works": {
+    "idFilter": true,
+    "rejectedPreservedAsFailed": true,
+    "awardThenCancelThenRestoreNoSecondAward": true,
+    "banAndUnban": true,
+    "quickJump": true,
+    "editFieldsInspected": true
+  },
+  "antdQuickJump": true,
+  "ruleModals": [
+    "works",
+    "posts",
+    "op-circles",
+    "users"
+  ]
+}

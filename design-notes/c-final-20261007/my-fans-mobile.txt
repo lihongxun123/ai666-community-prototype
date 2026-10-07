@@ -1,0 +1,28 @@
+- banner:
+  - button "返回"
+  - heading "我的粉丝" [level=1]
+- main:
+  - article:
+    - generic: 温
+    - strong: 温白
+    - generic: 把日常变成创作灵感
+    - button "查看"
+    - button "互相关注" [pressed]
+  - article:
+    - generic: 周
+    - strong: 周末观察
+    - generic: 用影像记录生活
+    - button "查看"
+    - button "回关"
+  - article:
+    - generic: 青
+    - strong: 青禾
+    - generic: 探索 AI 与设计的更多可能
+    - button "查看"
+    - button "回关"
+  - article:
+    - generic: 陈
+    - strong: 陈屿
+    - generic: 分享摄影与创作心得
+    - button "查看"
+    - button "回关"

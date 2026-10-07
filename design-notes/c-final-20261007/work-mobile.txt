@@ -1,0 +1,50 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "返回"
+  - button "林间":
+    - generic: 林间
+  - button "关注"
+- main:
+  - article:
+    - button "查看作品大图":
+      - img "旧照片的新故事 · 1"
+    - heading "旧照片的新故事" [level=2]
+    - button "喜欢"
+    - button "收藏"
+    - button "评论"
+    - button "分享":
+      - generic: 分享
+    - paragraph: 围绕日常场景完成的一次视觉创作，记录画面与提示词的探索。
+    - heading "提示词" [level=3]
+    - paragraph: 柔和的自然光，细腻的纹理，干净的画面构图，保留真实细节。 cinematic lighting, natural colors, high detail.
+    - button "复制提示词"
+    - paragraph: Seedream · 1:1
+    - heading "参考素材" [level=3]
+    - img "作品图片"
+    - button "一键同款"
+    - heading "评论 2" [level=2]
+    - button "查看全部"
+    - button "周 周末观察 这一步如果只有手机，先准备什么最合适？":
+      - generic: 周
+      - generic: 周末观察
+      - generic: 这一步如果只有手机，先准备什么最合适？
+    - button "写下你的看法"
+    - dialog "全部评论":
+      - heading "评论 2" [level=2]
+      - button "关闭评论"
+      - generic: 周
+      - strong: 周末观察
+      - generic: 9月24日 11:00
+      - paragraph: 这一步如果只有手机，先准备什么最合适？
+      - button "回复"
+      - button "赞"
+      - button "查看 1 条回复"
+      - generic: 我
+      - strong: 我
+      - paragraph: 该评论暂不可见
+      - text: 内容未通过审核，请调整后重新发布。
+      - textbox "评论内容":
+        - /placeholder: 写下你的看法
+      - button "添加图片"
+      - generic: 0/1000
+      - button "发送" [disabled]

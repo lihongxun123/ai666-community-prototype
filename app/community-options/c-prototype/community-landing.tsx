@@ -1,17 +1,19 @@
 /* oxlint-disable next/no-img-element -- Existing local prototype media. */
 'use client';
+import {publicTutorialRows} from './tutorial-public';
+import {publicWorkRows} from './public-work-rows';
 import {useEffect,useRef,useState} from 'react';
 import {prototypeStore as store} from './storage';
-import {samplePosts,sampleCircles,postTarget,circleTarget} from './content-data';
+import {sampleCircles,postTarget,circleTarget,publicPostRows,contentMediaSrc,postDateOrder} from './content-data';
 import {useB} from '../b-prototype/store';
-import {useFeatured} from './featured';
+
 import './community-landing.css';
 import {communityTab} from './community-navigation';
 import {ActionBar} from './content-actions';
 import {WorkFeed} from './work-feed';
 import {contentCategories,mobileContentCategories,normalizeContentCategory,sampleWorkCategories} from './content-categories';
 type Go=(target:string)=>void;
-const pic=(id:string)=>'/home-prototype/'+id+'.png';
+const pic=contentMediaSrc;
 const Icon=({name}:{name:string})=><img className="cl-icon" src={'/home-prototype/icons/'+name+'-line.svg'} alt=""/>;
 export const communityTutorials=[
 {"id":"repair-color","title":"照片修复：如何检查肤色与明暗","cover":"portrait","topic":"影像处理","views":28,"sections":[["准备对照","保存原图与修复版本，以相同缩放比例对比。"],["检查细节","依次检查明暗、纹理和边缘，只修改不符合目标的部分。"],["确认结果","保存本轮结果与参数，避免覆盖原始素材。"]]},
@@ -39,7 +41,7 @@ const works=[
  {id:'restore',title:'旧照修复练习',author:'林间',type:'图片',likes:8},
 ];
 export function CommunityLanding({state,go,initialTab,desktop=false}:{state:string;go:Go;initialTab?:string;desktop?:boolean}){
- const db=useB(),featured=useFeatured();
+ const db=useB();
  const categoriesRef=useRef<HTMLElement>(null);
 
  const [tab]=useState(desktop?initialTab||'works':initialTab||communityTab(typeof window==='undefined'?'':location.search));
@@ -59,9 +61,9 @@ export function CommunityLanding({state,go,initialTab,desktop=false}:{state:stri
  const visible=(kind:string,id:string)=>(!db.records.find(r=>r.id===kind+'-'+(id==='restore'?'1':id))||db.records.find(r=>r.id===kind+'-'+(id==='restore'?'1':id))?.publicStatus==='公开');
  let closed:string[]=[];try{closed=(JSON.parse(store.getItem('bp-op-circles')||'[]') as {id:string;status:string}[]).filter(c=>c.status==='已关闭').map(c=>c.id.replace('ci-',''));}catch{/* retain local examples */}
  const circles=sampleCircles.filter(c=>!closed.includes(c.id));
- const postRows=samplePosts.filter(p=>visible('post',p.id)&&(circle==='全部'||p.circle===circle)&&(sort==='最新'||(p.recommended&&(p.id!=='restore'||(!featured||featured.posts.includes('post-1')))&& (p.id!=='restore'||db.records.find(r=>r.id==='post-1')?.recommended)))).sort((a,b)=>sort==='最新'?(Number(b.date.split('月')[0])*100+Number(b.date.split('月')[1].replace('日','')))-(Number(a.date.split('月')[0])*100+Number(a.date.split('月')[1].replace('日',''))):0);
- const workRows=works.map(w=>{const r=db.records.find(r=>r.id==='work-'+(w.id==='restore'?'1':w.id));return r?.public?{...w,title:r.public.title,author:r.public.author}:w}).filter(w=>(desktop||filter==='全部'||w.type===filter)&&(category==='全部'||sampleWorkCategories[w.id]===normalizeContentCategory(category))&&visible('work',w.id));
- const tutorialRows=communityTutorials.map(t=>{const r=db.records.find(r=>r.id==='tutorial-'+(t.id==='restore'?'1':t.id));return r?.public?{...t,title:r.public.title}:t}).filter(t=>(topic==='全部'||t.topic===topic)&&visible('tutorial',t.id));
+ const postRows=publicPostRows(db.records).filter(p=>(circle==='全部'||p.circle===circle)&&(sort==='最新'||p.recommended)).sort((a,b)=>sort==='最新'?postDateOrder(b.date)-postDateOrder(a.date):0);
+ const workRows=publicWorkRows(db.records,works.map(w=>({...w,target:'work?item='+w.id+(w.id==='letter'?'&state=text':'')}))).filter(w=>(desktop||filter==='全部'||w.type===filter)&&(category==='全部'||normalizeContentCategory(db.records.find(r=>r.id===(new URLSearchParams(w.target?.split('?')[1]||'').get('id')||'work-'+w.id))?.category||sampleWorkCategories[w.id]||'')===normalizeContentCategory(category)));
+ const tutorialRows=publicTutorialRows(db.records,communityTutorials).filter(t=>topic==='全部'||t.topic===topic);
  const empty=state==='empty'&&!recovered||(tab==='works'?workRows:tab==='talk'?postRows:tutorialRows).length===0;
  const publish=()=>{store.removeItem('cp-circle');store.setItem('cp-post-kind','post');if(store.getItem('cp-auth')!=='1'){store.setItem('cp-return','post-publish');open('login')}else open('post-publish')};
  return <section className="cl-community" aria-label={desktop?(tab==='works'?'AIGC作品':tab==='talk'?'交流':'教程'):'社区内容'}>
@@ -73,7 +75,7 @@ export function CommunityLanding({state,go,initialTab,desktop=false}:{state:stri
    {tab==='talk'&&<button className="cl-find-circle" onClick={()=>open('circles')}>找圈子<Icon name="arrow-right-s"/></button>}
   </div>
   {tab==='talk'&&desktop&&<div className="cl-talk-actions">{desktop&&['推荐','最新'].map(s=><button key={s} aria-pressed={sort===s} onClick={()=>{setSort(s);store.setItem('cp-community-sort',s)}}>{s}</button>)}<button className="cl-compose" aria-label="发布帖子" onClick={publish}><Icon name="edit"/>发帖</button></div>}
-  {state==='loading'?<div className="cl-loading" aria-label="正在加载">{[0,1,2,3].map(i=><div key={i}/>)}</div>:state==='error'&&!recovered?<div className="cl-empty"><h2>暂时加载失败</h2><button onClick={()=>setRecovered(true)}>重试</button></div>:empty?<div className="cl-empty"><h2>暂无{tab==='works'?'作品':tab==='talk'?'帖子':'教程'}</h2><button onClick={()=>{setRecovered(true);choose('全部');setCategory('全部');store.setItem('cl-work-category','全部');setCircle('全部');store.setItem('cl-circle','全部')}}>查看全部</button></div>:tab==='works'?<WorkFeed items={workRows.map(w=>({...w,target:'work?item='+w.id+(w.id==='letter'?'&state=text':'')}))} go={open}/>:tab==='talk'?<div className="cl-posts">{postRows.map(p=><article className="cl-post" key={p.id}><button className="cl-author" aria-label={'查看作者：'+p.author} onClick={()=>open('author?name='+encodeURIComponent(p.author))}><img src={pic(p.author==='林间'?'portrait':'girl')} alt=""/><span><strong>{p.author}</strong><small>{p.date}</small></span></button><button className="cl-post-copy" onClick={()=>open(postTarget(p.id))}><p>{p.title}</p><span>{p.summary}</span></button><button className="cl-post-media" onClick={()=>open(postTarget(p.id))} aria-label={'查看帖子：'+p.title}><img src={pic(p.image)} alt={p.title}/></button>{p.reference&&(visible('work',new URLSearchParams(p.reference.split('?')[1]).get('item')||'restore')?<button className="cl-reference" onClick={()=>open(p.reference!)}><img src={pic(p.image)} alt=""/><span><small>关联作品</small>{p.id==='restore'?'旧照修复练习':'一瓶夏日晴光'}</span><Icon name="arrow-right-s"/></button>:<p className="cl-reference">关联作品暂不可访问</p>)}{p.circle&&<div className="cl-post-context"><button className="cl-circle-label" onClick={()=>open(circleTarget(sampleCircles.find(c=>c.name===p.circle)?.id||'image'))}>{p.circle}</button></div>}<ActionBar kind="post" target={postTarget(p.id)} title={p.title} go={open} onComment={()=>open(postTarget(p.id)+'&discussion=1')}/></article>)}</div>:<div className="cl-tutorial-list">{tutorialRows.map(t=><button className="cl-tutorial" key={t.id} onClick={()=>open('tutorial?item='+t.id)}><img className="cl-tutorial-cover" src={pic(t.cover)} alt=""/><span><strong>{t.title}</strong><small><em>{t.topic}</em> · {t.views} 次浏览</small></span><Icon name="arrow-right-s"/></button>)}</div>}
+  {state==='loading'?<div className="cl-loading" aria-label="正在加载">{[0,1,2,3].map(i=><div key={i}/>)}</div>:state==='error'&&!recovered?<div className="cl-empty"><h2>暂时加载失败</h2><button onClick={()=>setRecovered(true)}>重试</button></div>:empty?<div className="cl-empty"><h2>暂无{tab==='works'?'作品':tab==='talk'?'帖子':'教程'}</h2><button onClick={()=>{setRecovered(true);choose('全部');setCategory('全部');store.setItem('cl-work-category','全部');setCircle('全部');store.setItem('cl-circle','全部')}}>查看全部</button></div>:tab==='works'?<WorkFeed items={workRows} go={open}/>:tab==='talk'?<div className="cl-posts">{postRows.map(p=><article className="cl-post" key={p.id}><button className="cl-author" aria-label={'查看作者：'+p.author} onClick={()=>open('author?name='+encodeURIComponent(p.author))}><img src={pic(p.author==='林间'?'portrait':'girl')} alt=""/><span><strong>{p.author}</strong><small>{p.date}</small></span></button><button className="cl-post-copy" onClick={()=>open(postTarget(p.id))}><p>{p.title}</p><span>{p.summary}</span></button>{p.image&&<button className="cl-post-media" onClick={()=>open(postTarget(p.id))} aria-label={'查看帖子：'+p.title}><img src={pic(p.image)} alt={p.title}/></button>}{p.reference&&(visible('work',new URLSearchParams(p.reference.split('?')[1]).get('item')||'restore')?<button className="cl-reference" onClick={()=>open(p.reference!)}><img src={pic(p.image)} alt=""/><span><small>关联作品</small>{p.id==='restore'?'旧照修复练习':'一瓶夏日晴光'}</span><Icon name="arrow-right-s"/></button>:<p className="cl-reference">关联作品暂不可访问</p>)}{p.circle&&<div className="cl-post-context"><button className="cl-circle-label" onClick={()=>open(circleTarget(sampleCircles.find(c=>c.name===p.circle)?.id||'image'))}>{p.circle}</button></div>}<ActionBar kind="post" target={postTarget(p.id)} title={p.title} go={open} onComment={()=>open(postTarget(p.id)+'&discussion=1')}/></article>)}</div>:<div className="cl-tutorial-list">{tutorialRows.map(t=><button className="cl-tutorial" key={t.id} onClick={()=>open(t.target||'tutorial?item='+t.id)}><img className="cl-tutorial-cover" src={pic(t.cover)} alt=""/><span><strong>{t.title}</strong><small><em>{t.topic}</em> · {t.views} 次浏览</small></span><Icon name="arrow-right-s"/></button>)}</div>}
   {state==='more-error'&&!more&&!empty&&<div className="cl-empty"><p>后续内容加载失败</p><button onClick={()=>setMore(true)}>重试加载</button></div>}
  </section>;
 }

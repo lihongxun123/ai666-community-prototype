@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-06",
+  "scope": [
+    "users",
+    "user-register-sources",
+    "op-invite",
+    "op-points",
+    "user-member-levels"
+  ],
+  "reference": "ai666-admin/src/view/userManagement",
+  "checks": [
+    "用户ID精确筛选",
+    "用户积分增加与全局流水联动107→117",
+    "全局流水时间倒序",
+    "白名单加入状态更新",
+    "注册来源新增保存",
+    "会员签到有效期30→45保存",
+    "邀请聚合及阶段详情打开",
+    "失败保留输入并重试成功",
+    "阅读台五个入口可达",
+    "独立交叉复核"
+  ],
+  "result": "passed",
+  "validation": {
+    "imageReferences": "no broken references",
+    "build": "passed",
+    "scopedLint": "passed",
+    "postBuildChange": "状态别名兼容已通过TypeScript与浏览器失败重试验证",
+    "typescript": "passed"
+  },
+  "boundary": "本地原型演示；未调用真实用户或积分写入接口，未提交或发布",
+  "screenshot": "user-management.png"
+}

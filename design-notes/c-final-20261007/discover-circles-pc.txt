@@ -1,0 +1,70 @@
+- scrollbar "纵向滚动"
+- banner:
+  - button "多元拾光首页":
+    - img "多元拾光"
+  - navigation "主导航":
+    - button "首页"
+    - button "AIGC"
+    - button "专题"
+    - button "AI应用"
+    - button "教程"
+    - button "圈子"
+    - button "模型广场"
+  - textbox "搜索作品、应用、作者"
+  - navigation "账户与服务":
+    - button "活动"
+    - button "商城"
+    - button "邀请"
+    - button "通知，有未读消息"
+    - button "积分 100":
+      - text: 积分
+      - strong: "100"
+    - button "签到":
+      - generic: 签到
+    - button "我的菜单"
+- main:
+  - button "‹ 圈子首页"
+  - heading "发现圈子" [level=1]
+  - paragraph: 找到同好，一起分享创作中的发现
+  - article:
+    - button "修复交流圈 旧照修复与人像细节交流":
+      - strong: 修复交流圈
+      - paragraph: 旧照修复与人像细节交流
+    - generic: 326 人加入
+    - button "加入圈子"
+  - article:
+    - button "影像练习圈 照片修复、构图与视觉叙事":
+      - strong: 影像练习圈
+      - paragraph: 照片修复、构图与视觉叙事
+    - generic: 1,286 人加入
+    - button "进入圈子"
+  - article:
+    - button "视觉创作圈 产品视觉、光线与配色":
+      - strong: 视觉创作圈
+      - paragraph: 产品视觉、光线与配色
+    - generic: 963 人加入
+    - button "进入圈子"
+  - article:
+    - button "写作灵感圈 日常观察、短篇与表达练习":
+      - strong: 写作灵感圈
+      - paragraph: 日常观察、短篇与表达练习
+    - generic: 742 人加入
+    - button "加入圈子"
+  - article:
+    - button "短片实验圈 镜头语言、剪辑与声音":
+      - strong: 短片实验圈
+      - paragraph: 镜头语言、剪辑与声音
+    - generic: 618 人加入
+    - button "加入圈子"
+  - article:
+    - button "生活美学圈 空间、器物与生活记录":
+      - strong: 生活美学圈
+      - paragraph: 空间、器物与生活记录
+    - generic: 525 人加入
+    - button "加入圈子"
+  - article:
+    - button "角色创作圈 人物设定、故事与画面":
+      - strong: 角色创作圈
+      - paragraph: 人物设定、故事与画面
+    - generic: 409 人加入
+    - button "加入圈子"
