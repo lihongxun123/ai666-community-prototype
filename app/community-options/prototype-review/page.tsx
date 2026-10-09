@@ -302,6 +302,7 @@ export default function Review() {
             </header>
             {(
               <div className="rv-workspace-tools">
+                <a href={`/community-options/prototype-gallery?section=${section === 'b' ? 'b' : 'c'}&device=${device}`} target="_blank" rel="noopener noreferrer" style={{fontSize:12,color:'inherit',textDecoration:'none',padding:'6px 10px',border:'1px solid #d9dde3',borderRadius:5,background:'#fff'}}>纯享版 ↗</a>
 
                 {section==='c'&&<nav aria-label="设备">
                   <button

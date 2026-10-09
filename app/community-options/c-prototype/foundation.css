@@ -219,3 +219,5 @@ button[data-dismiss-icon=true]>img{display:block!important;position:static!impor
 .cp-root.cp-desktop :is(.cp-button,.rs-primary,.pg-preview footer>a,.pg-task footer>a,.pg-makenow>a,.pg-upload,.pg-video-upload),
 .cp-login-overlay.is-pc button:not(.cp-login-close),
 .community-pc-header button:not([aria-label="我的菜单"]){border-radius:var(--cp-action-radius,4px)!important}
+/* Underlined text tabs must not inherit action-button corner rounding. */
+.cp-root.cp-desktop :is(.td-filters,.cd-heading nav,.cl-sort,.cp-circle-navigation,.search-result-tabs,.cp-personal-tabs,.lw-tabs)>button{--cp-action-radius:0px;border-radius:0!important}
