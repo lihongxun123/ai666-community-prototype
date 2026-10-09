@@ -93,5 +93,5 @@
 | b-user-register-sources | 1 | b/user-register-sources 注册来源 | 设计已完成 | 已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 |
 | b-user-member-levels | 1 | b/user-member-levels 会员等级 | 设计已完成 | 已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 |
 | b-permission-example | 1 | b/permission-example 无权限示例 | 设计已完成 | 已有能力的布局、操作和必要反馈改版；原有业务规则沿用。 |
-| makenow-app | 2 | c/app AI应用使用 | 设计进行中 | 从社区应用详情进入MakeNow对应应用。目标定位、输入承接、双端路径与失败处理尚待设计。 |
-| makenow-result | 2 | c/create-result AIGC继续创作 | 设计进行中 | 将生成结果交给MakeNow继续创作。素材、参数、目标画布及失败处理尚待设计。 |
+| makenow-app | 2 | c/app AI应用使用 | 设计进行中 | 范围与概念已确认，双端原型已补齐：PC进入对应应用，移动端引导电脑操作；材料在MakeNow内准备。真实入口与登录恢复待核实。 |
+| makenow-result | 2 | c/create-result AIGC继续创作 | 设计进行中 | PC图片、视频、文本结果及原提示词进入新画布；产品方案与概念已确认，交互原型已补齐，技术对接待核实。移动端引导到电脑端继续创作。 |

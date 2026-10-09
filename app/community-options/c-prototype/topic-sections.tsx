@@ -1,0 +1,6 @@
+'use client';
+/* oxlint-disable next/no-img-element -- Local prototype assets. */
+export type TopicCard={cover:string;title:string;kind:string;target:string};
+export type TopicDisplaySection={id:string;title:string;summary:string;cards:TopicCard[]};
+export const topicImage=(cover:string)=>/^(https?:|local:|blob:|data:|\/)/.test(cover)?cover:'/home-prototype/'+cover+'.png';
+export function TopicSections({sections,go}:{sections:TopicDisplaySection[];go:(target:string)=>void}){return <div className="topic-section-collection">{sections.filter(s=>s.cards.length>0).map((section,index)=><section className="topic-content-section" id={"topic-section-"+section.id} key={section.id} aria-label={section.title}><header><span>{String(index+1).padStart(2,'0')}</span><div><h2>{section.title}</h2><p>{section.summary}</p></div></header><div className="topic-detail-grid">{section.cards.map(card=><button className="topic-detail-card" key={card.target} onClick={()=>go(card.target)} aria-label={'查看'+card.kind+'：'+card.title}><div className="topic-detail-card-image"><img src={topicImage(card.cover)} alt=""/><span>{card.kind}</span></div><div className="topic-detail-card-title"><h2>{card.title}</h2><img src="/home-prototype/icons/arrow-right-line.svg" alt=""/></div></button>)}</div></section>)}</div>;}

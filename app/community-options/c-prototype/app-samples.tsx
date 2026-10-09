@@ -5,16 +5,16 @@ import './app-samples.css';
 
 export const appSamples:Record<string,{title:string;summary:string;input:string;output:string;conditions:string;destination:string;kind:string}>={
  suite:{title:'电商套图',summary:'围绕同一款商品，整理主图、场景图与细节图的制作需求。',input:'商品图片、卖点、目标平台与画幅要求',output:'商品套图与配套文案',conditions:'商品素材需有使用授权；导出规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/tools/workspace/ecom-suite',kind:'图片应用'},
- analysis:{title:'选品分析',summary:'从候选商品与经营目标出发，整理比较维度和需要验证的机会。',input:'候选商品、目标市场、成本与调研资料',output:'选品比较报告与验证建议',conditions:'需在 MakeNow 中选择适用 Agent；市场数据与分析依据需核实。',destination:'https://www.makenow.tv/ecommerce?view=agents',kind:'分析应用'},
+ analysis:{title:'选品分析',summary:'从候选商品与经营目标出发，整理比较维度和需要验证的机会。',input:'候选商品、目标市场、成本与调研资料',output:'选品比较报告与验证建议',conditions:'在对应应用内准备材料；市场数据与分析依据需核实。',destination:'',kind:'分析应用'},
  music:{title:'音乐翻唱',summary:'把歌曲、歌词与风格要求整理成清楚的翻唱制作方案。',input:'有权使用的歌曲素材、歌词与风格要求',output:'翻唱音频',conditions:'准备原歌曲素材；可用能力与音频规格在 MakeNow 中确认。',destination:'https://www.makenow.tv/media?tool=music-cover',kind:'音乐应用'},
- storyboard:{title:'分镜一致性质检',summary:'对照角色设定与连续分镜，找出影响叙事连贯的视觉差异。',input:'分镜图片、角色设定与场景说明',output:'一致性检查报告与修改建议',conditions:'需在 MakeNow 中选择适用 Skill，并提供分镜与角色基准。',destination:'https://www.makenow.tv/skill-market',kind:'检查应用'},
- website:{title:'网页开发',summary:'把页面目标、内容与视觉偏好整理成可交付的网页开发任务。',input:'页面目标、文案、素材与交互需求',output:'网页代码与交付说明',conditions:'需在 MakeNow 中选择适用 Agent 并确认项目需求；运行与部署需验收。',destination:'https://www.makenow.tv/work?view=agents',kind:'开发应用'},
+ storyboard:{title:'分镜一致性质检',summary:'对照角色设定与连续分镜，找出影响叙事连贯的视觉差异。',input:'分镜图片、角色设定与场景说明',output:'一致性检查报告与修改建议',conditions:'在对应应用内准备材料，并提供分镜与角色基准。',destination:'',kind:'检查应用'},
+ website:{title:'网页开发',summary:'把页面目标、内容与视觉偏好整理成可交付的网页开发任务。',input:'页面目标、文案、素材与交互需求',output:'网页代码与交付说明',conditions:'在对应应用内准备材料 并确认项目需求；运行与部署需验收。',destination:'',kind:'开发应用'},
 };
 const sampleGuide:Record<string,{fit:string;steps:string[]}>={
  suite:{fit:'适合已有商品素材，希望统一上新图片风格的商家与内容运营。',steps:['准备商品素材与核心卖点','在 MakeNow 中确认场景、画幅与生成设置','检查商品细节，选取并导出需要的图片']},
  analysis:{fit:'适合有候选商品，需要把资料整理成可比较决策依据的小团队。',steps:['明确目标市场与经营约束','提交候选商品和可核实的调研资料','检查依据，确定下一轮小规模验证']},
  music:{fit:'适合拥有歌曲使用授权，希望探索不同演绎风格的音乐创作者。',steps:['准备授权音源与风格参考','在 MakeNow 中确认歌词、风格及制作设置','试听并检查音质、发音和授权范围']},
- storyboard:{fit:'适合已有连续分镜，需要检查角色、道具和场景是否前后一致的创作者。',steps:['整理分镜顺序与角色基准','在 MakeNow 中查找适用 Skill 并提交材料','复核问题位置，修改后再次检查']},
+ storyboard:{fit:'适合已有连续分镜，需要检查角色、道具和场景是否前后一致的创作者。',steps:['整理分镜顺序与角色基准','在对应应用内提交分镜与角色基准','复核问题位置，修改后再次检查']},
  website:{fit:'适合目标明确，需要把活动页、品牌页或产品展示页做成网页的小团队。',steps:['整理页面目标、内容与素材','在 MakeNow 中创建并确认开发任务','检查页面与交互，完成运行和部署验收']},
 };
 function SuiteSample(){

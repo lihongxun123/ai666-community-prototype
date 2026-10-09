@@ -5,9 +5,10 @@ import { readShopSites, readShopProducts, readStock, readActivitySubmissions } f
 import { defaultSlots } from '../c-prototype/slots';
 
 export type Bucket = 'circles'|'topics'|'taxonomy'|'features'|'slots'|'events'|'submissions'|'sites'|'products'|'stock'|'redemptions'|'points'|'checkin'|'invite';
-export type OpRow = { id:string; name:string; status:string; type:string; order:number; owner?:string; summary?:string; count?:number; published?:boolean; [key:string]:unknown };
+export type TopicSection = {id:string;title:string;summary:string;refs:string[]};
+export type OpRow = { sections?:TopicSection[]; id:string; name:string; status:string; type:string; order:number; owner?:string; summary?:string; count?:number; published?:boolean; [key:string]:unknown };
 export type OpLog = {id:string;at:string;actor:string;module:string;object:string;action:string;detail:string};
-export type OperationsData = { placementsMigrated?:boolean; rows:Record<Bucket,OpRow[]>; logs:OpLog[]; revision:number };
+export type OperationsData = { placementsMigrated?:boolean; searchExamplesMigrated?:boolean; searchFourExamplesMigrated?:boolean; rows:Record<Bucket,OpRow[]>; logs:OpLog[]; revision:number };
 export const opKey='bp-operations-management-v1';
 const row=(id:string,name:string,type:string,status='已发布',extra:Partial<OpRow>={}):OpRow=>({id,name,type,status,order:10,...extra});
 export const eventRow=(config:EventConfig):OpRow=>row(config.code,config.name,config.type,config.status,{order:config.sort_order,config,count:config.tasks.length,published:true});
@@ -16,7 +17,7 @@ export function seedOperations():OperationsData {
  const imported=readActivitySubmissions().map(s=>row(s.id,s.title,s.kind==='post'?'帖子':'作品','已接受',{activity:s.activityCode,activityName:s.activityName,submittedAt:s.submittedAt,contentStatus:s.contentStatus,eligibility:s.eligibility==='valid'?'通过':'待核验',review:'待评审',reward:s.reward==='success'?'已到账':'待判定',reason:s.reviewReason||'',material:s.body||s.title}));
  return {revision:0,logs:[],rows:{
  circles:[row('ci-image','影像练习圈','圈子','开放',{summary:'照片修复与构图讨论',announcement:'分享过程，也欢迎提出问题。',cover:'restore',pins:['post-1'],postIds:['post-1'],count:24,published:true}),row('ci-visual','视觉创作圈','圈子','关闭',{summary:'产品视觉、光线与配色',announcement:'暂时关闭新发帖，历史内容仍可浏览。',cover:'perfume',pins:[],postIds:[],count:16,published:true})],
- topics:[row('tp-perfume','电商营销','专题','已发布',{summary:'从产品图片到展示短片',cover:'perfume',refs:['work-sea'],published:true}),row('tp-restore','图像修复','专题','已发布',{summary:'修复方法与案例',cover:'restore',refs:['work-1','tutorial-1'],published:true})],
+ topics:[row('tp-perfume','电商营销','专题','已发布',{summary:'从产品图片到展示短片',cover:'perfume',refs:['work-sea'],published:true}),row('tp-launch','商品上新内容指南','专题','已发布',{summary:'从卖点梳理到商品套图，再到视频表达',cover:'perfume',refs:['app-selling','tutorial-selling','app-suite','tutorial-suite','app-storyboard','tutorial-storyboard'],sections:[{id:'selling',title:'卖点梳理',summary:'把产品特点整理成清晰的表达。',refs:['app-selling','tutorial-selling']},{id:'images',title:'商品套图',summary:'为同一件商品准备一致的展示图片。',refs:['app-suite','tutorial-suite']},{id:'video',title:'视频表达',summary:'把静态素材延展为有节奏的展示短片。',refs:['app-storyboard','tutorial-storyboard']}],published:true}),row('tp-restore','图像修复','专题','已发布',{summary:'修复方法与案例',cover:'restore',refs:['work-1','tutorial-1'],published:true})],
  taxonomy:[...initialTaxonomyRows().map(t=>row(t.id,t.name,t.type,t.status,{...t,count:0})),row('tag-new','新手友好','教程标签','启用',{count:6,order:30})],
  features:[row('ft-work','首页爆款作品','作品推荐','已发布',{refs:['work-1'],published:true}),row('ft-post','PC交流推荐','帖子推荐','已发布',{refs:['post-1'],published:true}),row('ft-app','PC全部应用顺序','应用排序','已发布',{refs:['app-1'],published:true}),row('ft-banner','精选应用Banner','应用推荐','草稿',{refs:[],published:false}),row('ft-search-topic','搜索默认专题','专题推荐','草稿',{refs:[]}),row('ft-search-app','搜索默认应用','应用推荐','草稿',{refs:[]}),row('ft-hotwords','搜索推荐词','推荐词','已发布',{words:['旧照修复','产品海报'],refs:[],published:true})],
  slots:defaultSlots.map((s,i)=>row(s.id,s.title,s.type,s.status,{...s,order:i+1,published:true})),events,
@@ -33,7 +34,35 @@ export function seedOperations():OperationsData {
 export function readOperations():OperationsData {
  let data:OperationsData|undefined;try {const raw=prototypeStore.getItem(opKey);if(raw){const parsed=JSON.parse(raw) as OperationsData;if(parsed.rows&&parsed.logs)data=parsed;}}catch{/* preserve seeded review state */}data=data||seedOperations();
  if(!data.placementsMigrated){const mapping:Record<string,string>={"ft-banner":"appBanner","ft-search-topic":"searchTopics","ft-search-app":"searchApps","ft-hotwords":"hotwords"};for(const legacy of publicOperationRows(data.rows.features)){const slotTab=mapping[legacy.id];if(!slotTab)continue;const values=slotTab==="hotwords"?legacy.words:(legacy.liveRefs??legacy.refs);for(const [index,value] of (Array.isArray(values)?values:[]).entries()){const id="migrated-"+legacy.id+"-"+index;if(!data.rows.slots.some(x=>x.id===id))data.rows.slots.push(row(id,slotTab==="hotwords"?String(value):legacy.name,slotTab,slotTab==="appBanner"?"停用":legacy.status,{slotTab,targetId:slotTab==="hotwords"?undefined:String(value),order:index+1,cover:legacy.cover||"",published:true}));}}data.placementsMigrated=true;}
-for(const feature of data.rows.features){if(feature.type==='热门词')feature.type='推荐词';if(feature.id==='ft-hotwords')feature.name='搜索推荐词';}for(const circle of [...data.rows.circles,...data.rows.topics]){delete circle.owner;if(circle.publicSnapshot)delete (circle.publicSnapshot as OpRow).owner;}for(const base of initialTaxonomyRows())if(!data.rows.taxonomy.some(x=>x.id===base.id||x.name===base.name&&x.type===base.type))data.rows.taxonomy.push(row(base.id,base.name,base.type,base.status,{...base,count:0}));
+// Fill the previously empty search demonstration once; preserve configured or deliberately cleared placements.
+ if(!data.searchExamplesMigrated){
+  const examples=[{tab:'searchTopics',label:'专题推荐',items:[['tp-perfume','电商营销'],['tp-restore','图像修复']]},{tab:'searchApps',label:'应用推荐',items:[['app-1','文案改写'],['app-suite','电商套图']]}];
+  for(const group of examples){
+   const touched=data.rows.slots.some(x=>x.slotTab===group.tab)||data.logs.some(x=>x.module==='slots'&&x.detail===group.label);
+   if(!touched)group.items.forEach(([targetId,name],index)=>data.rows.slots.push(row('search-demo-'+targetId,name,group.label,'已发布',{slotTab:group.tab,targetId,order:(index+1)*10,published:true})));
+  }
+  data.searchExamplesMigrated=true;
+ }
+ // Expand untouched search examples to four cards per group.
+ if(!data.searchFourExamplesMigrated){
+  const groups=[{tab:'searchTopics',label:'专题推荐',items:[['tp-character','角色创作'],['tp-writing','写作表达']]},{tab:'searchApps',label:'应用推荐',items:[['app-weekly','周报总结'],['app-storyboard','分镜一致性质检']]}];
+  for(const group of groups){
+   const existing=data.rows.slots.filter(x=>x.slotTab===group.tab);
+   if(existing.length===2&&existing.every(x=>x.id.startsWith('search-demo-'))&&!data.logs.some(x=>x.module==='slots'&&x.detail===group.label)){
+    if(group.tab==='searchTopics')for(const [id,name] of group.items)if(!data.rows.topics.some(x=>x.id===id))data.rows.topics.push(row(id,name,'专题','已发布',{summary:name==='角色创作'?'角色设计与表达':'文字组织与内容表达',cover:name==='角色创作'?'anime':'writing',refs:name==='角色创作'?['work-anime','work-girl']:['app-1','work-letter'],published:true}));
+    group.items.forEach(([targetId,name],i)=>data.rows.slots.push(row('search-demo-'+targetId,name,group.label,'已发布',{slotTab:group.tab,targetId,order:(i+3)*10,published:true})));
+   }
+  }
+  data.searchFourExamplesMigrated=true;
+ }
+ // Repair untouched aliases from the initial search demo to managed content records.
+ if(!data.logs.some(x=>x.module==='slots'&&x.detail==='应用推荐')){
+  const aliases:Record<string,[string,string]>={'app-background':['app-suite','电商套图'],'app-video':['app-weekly','周报总结'],'app-repair-color':['app-storyboard','分镜一致性质检']};
+  for(const slot of data.rows.slots){const next=aliases[String(slot.targetId)];if(slot.id.startsWith('search-demo-')&&next){slot.targetId=next[0];slot.name=next[1];}}
+ }
+ for(const feature of data.rows.features){if(feature.type==='热门词')feature.type='推荐词';if(feature.id==='ft-hotwords')feature.name='搜索推荐词';}for(const circle of [...data.rows.circles,...data.rows.topics]){delete circle.owner;if(circle.publicSnapshot)delete (circle.publicSnapshot as OpRow).owner;}for(const base of initialTaxonomyRows())if(!data.rows.taxonomy.some(x=>x.id===base.id||x.name===base.name&&x.type===base.type))data.rows.taxonomy.push(row(base.id,base.name,base.type,base.status,{...base,count:0}));
+ // Add the new composition example without rewriting existing topic configurations.
+ const launchTopic=seedOperations().rows.topics.find(x=>x.id==='tp-launch');if(launchTopic&&!data.rows.topics.some(x=>x.id===launchTopic.id))data.rows.topics.push(launchTopic);
  // Repair only the untouched legacy demonstration topic, never an edited composition.
  const demoTopic=data.rows.topics.find(x=>x.id==='tp-perfume');if(demoTopic&&!demoTopic.publicSnapshot&&!demoTopic.draftPending&&!data.logs.some(x=>x.object==='tp-perfume')&&demoTopic.name==='电商营销'&&demoTopic.summary==='从产品图片到展示短片'&&JSON.stringify(demoTopic.refs)==='["work-perfume"]')demoTopic.refs=['work-sea'];
  for(const item of data.rows.taxonomy)if(item.type==='作品标签')item.type='内容话题';

@@ -879,8 +879,8 @@
       "title": "AI应用使用",
       "iteration": 2,
       "status": "progress",
-      "scope": "从社区应用详情进入MakeNow对应应用。目标定位、输入承接、双端路径与失败处理尚待设计。",
-      "requirements": "第三期专项待完善"
+      "scope": "PC从社区详情打开对应应用；移动端提示到电脑操作。社区不收集或传递输入材料。 范围与概念已确认；技术对接待核实。",
+      "requirements": "design-notes/makenow-app-handoff-20261008.md"
     },
     {
       "id": "makenow-result",
@@ -889,8 +889,8 @@
       "title": "AIGC继续创作",
       "iteration": 2,
       "status": "progress",
-      "scope": "将生成结果交给MakeNow继续创作。素材、参数、目标画布及失败处理尚待设计。",
-      "requirements": "第三期专项待完善"
+      "scope": "PC图片、视频、文本结果及原提示词进入新画布；产品方案与概念已确认，交互原型已补齐，技术对接待核实。移动端引导到电脑端继续创作。",
+      "requirements": "app/community-options/prototype-review/result-handoff.json"
     }
   ]
 }

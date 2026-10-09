@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-08",
+  "scope": "引用定稿生成结果页与阅读台说明归位",
+  "checks": {
+    "typescript": "passed",
+    "canonicalResult": "iframe引用既有c-prototype create-result",
+    "sourceFields": "已在浏览器核对模型、比例、提示词、参考素材及原操作",
+    "success": "passed",
+    "mediaFailureAndRetry": "passed",
+    "returnAndResetAfterNavigation": "passed",
+    "missingPrompt": "passed",
+    "horizontalOverflow": false,
+    "inlineRulePanel": false,
+    "independentCodeReview": "passed; reset iframe问题已修复"
+  },
+  "boundary": "仅本地原型验证，未连接真实MakeNow、未提交或发布"
+}

@@ -1,11 +1,12 @@
 'use client';
 import {useEffect,useSyncExternalStore} from 'react';
+import type {AppEditorial} from '../app-editorial';
 import {readContentModel} from './content-model';
 import {mergeManagedContent} from './content-consumer-adapter';
 import {mergeAdminWorks} from './work-public-adapter';
 export type Kind='work'|'post'|'tutorial'|'app'|'resource';
 export type Block={id:string;type:'Markdown'|'段落'|'标题'|'图片'|'视频'|'表格'|'可复制示例'|'链接'|'资源引用';text:string};
-export type Draft={title:string;summary:string;body:Block[];cover:string;author:string;owner:string;source:string;license:string;conditions:string;refs:string[];version:string;device:string;entry:string;permission:string;inputs:string;outputs:string;change:'说明更新'|'执行更新';review:'草稿'|'待审'|'通过'|'退回';verified:boolean;note:string;core:string;attachments:string[]};
+export type Draft=AppEditorial&{title:string;summary:string;body:Block[];cover:string;author:string;owner:string;source:string;license:string;conditions:string;refs:string[];version:string;device:string;entry:string;permission:string;inputs:string;outputs:string;change:'说明更新'|'执行更新';review:'草稿'|'待审'|'通过'|'退回';verified:boolean;note:string;core:string;attachments:string[]};
 export type Content={adminWork?:import('./work-management').Work;managed?:boolean;firstPublishedAt?:string;circle?:string;circleId?:string;media?:string;category?:string;id:string;kind:Kind;publicStatus:'私有'|'公开'|'下架'|'已删除';runtime:'可用'|'待核验'|'暂停';public:Draft|null;draft:Draft;revision:number;publishedRevision:number;authorized:boolean;recommended:boolean;reason:string;history:{at:string;action:string;detail:string}[]};
 export type BStore={records:Content[];active:string};
 export const kindLabels:Record<Kind,string>={work:'作品',post:'帖子',tutorial:'教程',app:'AI 应用',resource:'资源'};

@@ -4,6 +4,8 @@ import {PostCirclePanel} from './circle-pages';
 import {prototypeStore} from './storage';
 import {hiddenPublicTarget} from './content-visibility';
 import {WorkDetailsExtras,workCreationInfo,WorkMedia,WorkReferences} from './work-details-extras';
+import {AppCaseContent} from './app-case';
+import {AppRelatedTopics} from './app-related';
 import {DesktopAppDetail} from './app-desktop';
 import {DesktopContinuation,appEntryState} from './desktop-continuation';
 import {TutorialDesktopDetail,type TutorialDetailContent} from './tutorial-desktop';
@@ -21,8 +23,10 @@ export function PublishedBoundary({page,state,children,go}:{page:string;state:st
  const q=new URLSearchParams(typeof location==='undefined'?'':location.search);
  if(q.has('owned'))return children;
  const match:Record<string,Kind>={tutorial:'tutorial',work:'work',post:'post',app:'app'};
- const kind=match[page],mapped=kind==='work'&&q.get('item')&&q.get('item')!=='restore'?'work-'+q.get('item'):kind+'-1',r=db.records.find(r=>r.id===(q.get('id')||mapped));
- const sample=q.has('id')&&!['removed','error','loading'].includes(state)||['normal','video','text','guest'].includes(state)&&(q.has('id')||kind==='work'||!q.has('item')||q.get('item')===(kind==='app'?'copy':'restore'));
+ const editorialKey=q.get('item')?.replace(/^sample-/, '')||state.replace(/^app-/, '');
+ const editorialId=page==='app'&&['suite','weekly','storyboard'].includes(editorialKey)?'app-'+editorialKey:undefined;
+ const kind=match[page],mapped=kind==='work'&&q.get('item')&&q.get('item')!=='restore'?'work-'+q.get('item'):kind+'-1',r=db.records.find(r=>r.id===(q.get('id')||editorialId||mapped));
+ const sample=Boolean(editorialId)&&!['removed','error','loading'].includes(state)||q.has('id')&&!['removed','error','loading'].includes(state)||['normal','video','text','guest'].includes(state)&&(q.has('id')||kind==='work'||!q.has('item')||q.get('item')===(kind==='app'?'copy':'restore'));
  if(!kind||!sample)return children;
  if(!r||r.kind!==kind)return q.has('id')?<div className="cp-state"><h2>内容暂不可访问</h2><button className="cp-button" onClick={()=>go('home')}>返回首页</button></div>:children;
  if(r.publicStatus!=='公开'||!r.public||hiddenPublicTarget(publishedContentTarget(r)||''))return <div className="cp-state"><h2>内容暂不可访问</h2><button className="cp-button" onClick={()=>go('home')}>返回首页</button></div>;
@@ -32,20 +36,20 @@ export function PublishedBoundary({page,state,children,go}:{page:string;state:st
   const ref=db.records.find(x=>x.id===id),target=ref?publishedContentTarget(ref):null;
   if(ref?.publicStatus!=='公开'||!ref.public||!target||hiddenPublicTarget(target))return null;
   const title=ref.kind==='resource'?'照片修复 · AI 应用':ref.public.title;
-  return <button key={id} type="button" className="reading-jump" aria-label={'打开'+title} onClick={()=>go(target)}><span><strong>{title}</strong><small>{ref.public.summary}</small></span></button>;
+  return <button key={id} type="button" className="reading-jump" aria-label={'打开'+title} onClick={()=>go(target)}>{kind==='app'&&ref.public.cover&&<img src={publicMediaSource(ref.public.cover)} alt=""/>}<span><strong>{title}</strong><small>{ref.public.summary}</small></span></button>;
  };
  if(kind==='app'){
+  const relatedTutorials=d.refs.map(relatedLink).filter(Boolean);
   const appBody=d.body.filter(block=>!['附件','attachment'].includes(String(block.type)));
   const pc=state==='pc'||d.device!=='手机与电脑',paused=state==='paused'||r.runtime!=='可用',item=r.id==='app-1'?'copy':r.id;
   const entry=appEntryState({destination:d.entry,paused,mobile:!pc,device:q.get('device')==='pc'?'pc':'mobile'});
   const connected=Boolean(entry.href),open=()=>{if(entry.status==='available')window.location.assign(entry.href)};
-  if(q.get('device')==='pc')return <DesktopAppDetail title={d.title} summary={d.summary} item={item} cover={d.cover||'writing'} input={d.inputs} output={d.outputs} provider="多元拾光" destination={d.entry} unavailable={!connected?'暂未开放使用':paused?'暂不可用':undefined} onUse={open} go={go} body={<>{appBody.map(b=><ContentBlockPreview key={b.id} block={b} consumer/>)}{d.refs.map(relatedLink)}</>}/>;
+  if(q.get('device')==='pc')return <DesktopAppDetail title={d.title} summary={d.summary} item={item} caseContent={d.appCase?<AppCaseContent value={d.appCase}/>:undefined} related={<AppRelatedTopics ids={d.topicRefs||[]} go={go}/>} cover={d.cover||'writing'} input={d.inputs} output={d.outputs} provider={d.appCase?"MakeNow":"多元拾光"} destination={d.entry} unavailable={!connected?'暂未开放使用':paused?'暂不可用':undefined} onUse={open} go={go} body={<>{appBody.map(b=><ContentBlockPreview key={b.id} block={b} consumer/>)}{relatedTutorials.length>0&&<section className="ad-related"><h2>相关教程</h2>{relatedTutorials}</section>}</>}/>;
   return <article className="cp-app-detail">
     <div className="cp-app-detail-heading"><h2>{d.title}</h2><p>{d.summary}</p></div>
-    <img className="cp-app-detail-cover" src={publicMediaSource(d.cover||'writing')} alt={d.title}/>
+    {d.appCase?<AppCaseContent value={d.appCase}/>:<img className="cp-app-detail-cover" src={publicMediaSource(d.cover||'writing')} alt={d.title}/>}
 
     {entry.status==='missing'?<div className="cp-alert">暂未开放使用</div>:entry.status==='paused'?<div className="cp-alert">应用已暂停使用，介绍与讨论仍可查看。</div>:<>
-      {pc&&<section className="cp-note cp-mobile-only"><h2>请在电脑端使用</h2><p>此应用需在电脑端操作。</p></section>}
       <div className="cp-app-dock" aria-label="应用操作">
         {entry.status==='desktop'?<DesktopContinuation item={item} id={r.id}/>:<button className="cp-button" onClick={open}>在 MakeNow 中使用</button>}
       </div>
@@ -53,7 +57,7 @@ export function PublishedBoundary({page,state,children,go}:{page:string;state:st
     </>}
 
     <section className="cp-app-published-body">{appBody.map(b=><ContentBlockPreview key={b.id} block={b} consumer/>)}{d.refs.map(relatedLink)}</section>
-    <AppIntroduction input={d.inputs} output={d.outputs} provider="多元拾光"/>
+    <AppIntroduction input={d.inputs} output={d.outputs} provider="多元拾光"/><AppRelatedTopics ids={d.topicRefs||[]} go={go}/>
     <ActionBar kind={kind} go={go}/><Comments kind={kind} go={go}/>
   </article>;
  }

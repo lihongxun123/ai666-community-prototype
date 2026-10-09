@@ -120,7 +120,7 @@ export function ApplicationsPage({
     [category, setCategory] = useState(applicationCategories.some(c=>c.id===query?.get('category'))?query!.get('category')!:'all');
   const canonicalSample=!explicitId?sampleItems[state]:undefined;
   const sampleNeedsSync=Boolean(canonicalSample&&(query?.get('item')!==canonicalSample||query?.has('id')));
-  useEffect(()=>{if(!sampleNeedsSync||!canonicalSample)return;const url=new URL(location.href);url.searchParams.set('item',canonicalSample);url.searchParams.delete('id');history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));},[canonicalSample,sampleNeedsSync]);
+  useEffect(()=>{if(!sampleNeedsSync||!canonicalSample)return;const url=new URL(location.href);if(['sample-suite','sample-storyboard','sample-weekly'].includes(canonicalSample)){url.searchParams.set('id',canonicalSample.replace('sample-','app-'));url.searchParams.delete('item');}else{url.searchParams.set('item',canonicalSample);url.searchParams.delete('id');}history.replaceState(history.state,'',url);window.dispatchEvent(new PopStateEvent('popstate'));},[canonicalSample,sampleNeedsSync]);
   if(sampleNeedsSync)return null;
   const s = local;
   if (page === 'apps') {
@@ -215,7 +215,6 @@ export function ApplicationsPage({
             {entry.status==='missing'?'暂未开放使用':'应用已暂停使用，介绍与讨论仍可查看。'}
           </div>
         )}
-        {entry.status==='desktop' && <section className="cp-note cp-mobile-only"><h2>请在电脑端使用</h2><p>画布与工作流操作需在电脑端完成。</p></section>}
         {['available','desktop'].includes(entry.status) && <div className="cp-app-dock" aria-label="应用操作">
           {entry.status==='desktop' ? <DesktopContinuation item={item} id={configuredApp?.id}/> : <button className="cp-button" onClick={open}>在 MakeNow 中使用</button>}
         </div>}
