@@ -11,7 +11,7 @@ import {workRatios} from '../c-prototype/work-feed';
 import {prototypeStore} from '../c-prototype/storage';
 import {DesktopHeader} from '../community-header';
 import CreationWorkbench from './workbench';
-import {readOperations,publicOperationRows} from '../b-prototype/operations-model';
+import {useHomeTopics} from '../c-prototype/home-topics';
 import {contentMediaSrc} from '../c-prototype/content-data';
 import {workSampleId} from '../c-prototype/featured';
 import {useB} from '../b-prototype/store';
@@ -37,16 +37,13 @@ const works:Work[]=[
  {id:'restore',title:'旧照修复练习',image:'restore',ratio:'4/3',category:'历史',author:'林间',likes:'1.4k'},
 ];
 const categories=contentCategories;
-const subscribeTopics=(notify:()=>void)=>{window.addEventListener('bp-operations-change',notify);window.addEventListener('storage',notify);return()=>{window.removeEventListener('bp-operations-change',notify);window.removeEventListener('storage',notify);};};
-const topicsSnapshot=()=>JSON.stringify(publicOperationRows(readOperations().rows.topics).filter(r=>r.status==='已发布'&&r.published!==false).sort((a,b)=>a.order-b.order||a.id.localeCompare(b.id)));
 const services:Record<string,string>={'AI应用':'/proposal-fusion/apps-index-v4.png','圈子':'/proposal-one/circles-index-v1.png','活动中心':'/proposal-fusion/activities-v1.png','AI商城':'/proposal-fusion/shop-v1.png','邀请有礼':'/proposal-fusion/invite-v2.png','通知':'/proposal-fusion/notifications-v1.png','积分':'/proposal-fusion/audit-points-v1.png','我的':'/proposal-fusion/my-center-v2.png'};
 function Icon({name,className=''}:{name:string;className?:string}){return <img className={'hp-icon '+className} src={A+'icons/'+name+'-line.svg'} alt="" aria-hidden="true"/>;}
 
 export default function HomePrototype({navigate,initialState='normal'}:{navigate?:(target:string)=>void;initialState?:string}={}){
  const contentDB=useB();
  const [viewState,setViewState]=useState(initialState);
- const topicData=useSyncExternalStore(subscribeTopics,topicsSnapshot,()=> '[]');
- const topics=(JSON.parse(topicData) as import('../b-prototype/operations-model').OpRow[]).filter(t=>Array.isArray(t.refs)&&t.refs.some(id=>contentDB.records.some(r=>r.id===id&&r.publicStatus==='公开'))).filter(t=>t.id!=='tp-restore'||contentDB.records.some(r=>r.id==='tutorial-1'&&r.publicStatus==='公开')).filter(t=>t.id!=='tp-writing'||contentDB.records.some(r=>r.id==='app-1'&&r.publicStatus==='公开')).slice(0,4).map(t=>({id:t.id,title:t.name,image:contentMediaSrc(typeof t.cover==='string'?t.cover:''),category:t.name}));
+ const topics=useHomeTopics(contentDB);
  useSyncExternalStore(subscribeSlots,slotSnapshot,()=> '');
  const slots=readPublishedSlots('pc'),banner=slots.find(s=>s.type==='首页 Banner');
  const [category,setCategory]=useState(()=>{const saved=prototypeStore.getItem('cp-home-pc-category');return saved&&categories.includes(saved)?saved:'全部';}),[search,setSearch]=useState('');

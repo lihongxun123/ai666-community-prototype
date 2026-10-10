@@ -7,6 +7,7 @@ import { prototypeStore as sessionStorage } from '../c-prototype/storage';
 import { useState, useSyncExternalStore } from 'react';
 import {workSampleId} from '../c-prototype/featured';
 import {useB} from '../b-prototype/store';
+import {useHomeTopics} from '../c-prototype/home-topics';
 import {mobileContentCategories,normalizeContentCategory,sampleWorkCategories} from '../c-prototype/content-categories';
 import {subscribeSlots,slotSnapshot,readPublishedSlots,resolveSlotTarget} from '../c-prototype/slots';
 function subscribePrefs(fn: () => void) {
@@ -49,6 +50,7 @@ export default function MobileHome({
   navigate?: (p: string) => void;
 }) {
   const contentDB=useB();
+  const topics=useHomeTopics(contentDB);
   useSyncExternalStore(subscribeSlots,slotSnapshot,()=> '');
   const slots=readPublishedSlots('mobile'),banner=slots.find(s=>s.type==='首页 Banner');
   const prefs = useSyncExternalStore(
@@ -106,30 +108,18 @@ export default function MobileHome({
             </button>
           );})}
         </nav>
-        <button className="mh-model-entry" onClick={()=>window.open('https://duoyuanx.com/pricing','_blank','noopener,noreferrer')}><I name="box-3"/><span><strong>模型广场</strong><small>文本 · 图像 · 音频 · 视频</small></span><I name="arrow-right-s"/></button>
-        <div className="mh-topics-heading">
+        {topics.length>0&&<><div className="mh-topics-heading">
           <h2>精选专题</h2>
-          <button onClick={() => go('topics')}>
-            全部
-            <I name="arrow-right-s" />
-          </button>
+          <button onClick={() => go('topics')}>全部<I name="arrow-right-s" /></button>
         </div>
         <div className="mh-topics">
-          {[
-            ['perfume', '电商营销', ''],
-            ['anime', '角色创作', 'character'],
-            ['restore', '图像修复', 'restore'],
-            ['writing', '写作表达', 'writing'],
-          ].map(([image, title, theme]) => (
-            <button
-              key={title}
-              onClick={() => go('topic' + (theme ? '?theme=' + theme : ''))}
-            >
-              <img src={base + image + '.png'} alt="" />
-              <span>{title}</span>
+          {topics.map(topic => (
+            <button key={topic.id} onClick={() => go('topic?theme='+encodeURIComponent(topic.id.replace(/^tp-/,'')))}>
+              <img src={topic.image} alt="" />
+              <span>{topic.title}</span>
             </button>
           ))}
-        </div>
+        </div></>}
         <div className="mh-topics-heading mh-works-heading">
           <h2>爆款作品</h2>
         </div>
