@@ -37,6 +37,7 @@ jobs:
           npx tsc --noEmit
           node scripts/validate-page-requirements.mjs
           bash -n deploy/deploy-release.sh
+          bash -n deploy/check-connection.sh
       - name: Test deployment and rollback offline
         run: docker run --rm --network none -e RESEARCH_DEPLOY_FIXTURE=1 -v "$PWD/deploy:/tests:ro" python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704 python /tests/test-deploy-release.py
       - name: Build standalone and smoke test
