@@ -1,6 +1,40 @@
 # 白色 2.0 社区：双人协作说明
 
-两人共用 [ai666-community-prototype](https://github.com/lihongxun123/ai666-community-prototype) 仓库，各自在自己的电脑修改。每项任务建一个分支，另一人检查 PR 后再合并到 `main`。需求与对应原型一起交付。
+两人共用 [ai666-community-prototype](https://github.com/lihongxun123/ai666-community-prototype) 仓库，各自在自己的电脑修改。每项任务建一个分支，由仓库所有者 lihongxun123 统一审核、合并与批准部署。需求与对应原型一起交付。
+
+## 日常操作：从修改到公网更新
+
+**提交或合并到 main 不会直接部署。先自动构建，再由鸿勋确认一次，才更新公网。**
+
+任务分支 → PR → 鸿勋审核合并 → main 自动构建 → 鸿勋批准部署 → 公网更新。
+
+| 步骤 | 谁操作 | 具体操作 |
+|---|---|---|
+| 1. 开始修改 | 修改人 | 各用自己的本地仓库，先同步最新 main，再新建任务分支。约定负责的页面，避免同时修改同一文件。 |
+| 2. 提交修改 | 修改人 | 验证需求与原型，提交并推送任务分支，在 GitHub 创建任务分支 → main 的 PR。写清改动页面、验证结果，附关键截图。 |
+| 3. 审核合并 | 鸿勋 | 打开 Pull requests → 对应 PR → Files changed，核对需求和页面效果；等 Build and checks 绿色通过，并解决冲突和对话后合并。 |
+| 4. 等待构建 | 自动执行 | 合并后到 Actions → Research checks and release 查看这次 main 运行。构建成功后等待审批，此时公网仍是原版本。 |
+| 5. 确认部署 | 鸿勋 | 确认可上线后，打开对应运行，点击 Review deployments → 勾选 research-production → Approve and deploy。此时才开始上传、切换版本和健康检查。 |
+| 6. 检查结果 | 鸿勋 | 等部署任务成功后，打开公网抽查本次改动页面。若失败，查看运行日志与回退结果，不把构建成功当成部署成功。 |
+
+同事提交的 PR：鸿勋点击 **Review changes → Approve**，再合并。鸿勋自己提交的 PR：GitHub 不允许自己批准自己的 PR，检查通过后使用管理员合并，无需等同事批准。管理员权限可以绕过检查，日常仍等检查通过后再合并。
+
+暂时不发布时，不点击 Approve and deploy，可以取消该运行；不要把失败或等待审批理解为已经发布。批准前核对提交记录，只批准最新 main 对应的运行，旧运行会因主线变化被拒绝。部署环境只允许鸿勋批准，管理员也不能跳过这道审批。
+
+| 操作 | 是否更新公网 |
+|---|---|
+| 提交、推送任务分支 | 否；保存并分享修改，PR 运行检查 |
+| 合并或直接推送到 main | 否；更新主线并自动构建，等待部署审批 |
+| 批准 Research checks and release 的部署任务 | 是；构建成功且部署执行通过后更新公网 |
+| 运行 Research connection check (no deployment) | 否；仅检查连接与权限，即使批准环境访问也不会发布 |
+
+两个人都建议通过任务分支和 PR 修改，不直接向 main 推送。**“PR 的 Approve”是代码审核；“Approve and deploy”是上线确认，两者不是同一步。**
+
+可以直接把下面这段交给 Codex：
+
+> 同步 GitHub 最新 main，为本次任务新建分支。修改需求和对应原型，验证后提交 PR，写清变更与验证结果，先不合并、不部署。
+
+详细命令见下方“每次修改”；凭据、连接检查和异常处理见 [GitHub Actions 运维说明](deploy/GITHUB_ACTIONS.md)。
 
 ## 第一次加入
 
