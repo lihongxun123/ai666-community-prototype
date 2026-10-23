@@ -2,9 +2,9 @@
 
 ## 两人日常流程
 
-任务分支 → PR → 另一人审核 + Build and checks 通过 → 合并 main → 重新构建 → lihongxun123 批准后才部署。
+任务分支 → PR → lihongxun123 审核 + Build and checks 通过 → 合并 main → 重新构建 → lihongxun123 批准后才部署。
 
-`main` 禁止直接推送、强制推送和删除，管理员也适用；必须解决 PR 对话、同步最新主线，最后推送由另一人批准，新提交会撤销旧批准。所有者自己的 PR 也需要同事审核，同事须先接受邀请。
+协作者对 `main` 的改动必须走 PR，由 CODEOWNERS 指定的 lihongxun123 审核，解决对话、同步主线并通过构建。新提交撤销旧批准。所有者可用管理员权限合并自己的 PR；GitHub 不允许作者批准自己的 PR。管理员豁免也允许绕过检查，操作时仍应等待检查成功。部署环境没有管理员豁免，仍只允许 lihongxun123 批准。
 
 Actions 的 `Research checks and release` 检查素材、类型、需求，构建 Node standalone，启动服务检查 7 个入口，并在无网络容器中运行部署与回滚模拟。PR 不取得服务器凭据。手动 Run workflow 只构建，不触发部署。合并 main 后生成保留 7 天的制品，部署等待 `research-production` 环境审批。
 
@@ -30,7 +30,7 @@ Actions 的 `Research checks and release` 检查素材、类型、需求，构�
 - 账号具备操作 Docker 的权限；Docker 权限属于服务器高权限，由运维决定账号和访问控制。GitHub runner 可以经 SSH 访问服务器，服务器可访问 GitHub 公共 API 和研究站 HTTPS。
 - 固定 known_hosts 需与实际 SSH 主机一致，不以关闭主机验证解决连接问题。
 
-本次未填凭据、未访问或修改服务器，也未验证真实 SSH、Docker 或公网发布。离线回滚测试使用模拟 Docker、网络和锁，不能替代首次部署验收。
+2026-10-23 已配置五项环境凭据、专用部署账号与上传目录；本机 SSH/SFTP、目录权限和 Docker 只读访问验证通过，线上版本仍为 20261010-01。GitHub 云端连接检查须以独立工作流的实际运行结果为准；实际发布和回滚尚未验证。离线回滚测试使用模拟 Docker、网络和锁，不能替代首次部署验收。
 
 ## 每次部署由你确认
 
@@ -43,3 +43,9 @@ Actions 的 `Research checks and release` 检查素材、类型、需求，构�
 若失败发生在解压前，可重跑失败任务；只要已创建版本目录（包括已回滚），请选择 **Re-run all jobs**，重新构建得到新的版本号，避免覆盖旧版本。制品超过 7 天也须重新全量运行。只重跑部署会沿用原构建的版本号和制品。
 
 历史手动部署与回退步骤见 [README.md](README.md)。本流水线仅服务研究站及其 C/B 原型，不部署真实社区业务系统。
+
+## 只检查连接，不部署
+
+手动运行 **Research connection check (no deployment)**，选择 main，再批准该连接检查对 research-production 环境的访问。此工作流不接受发布参数、不下载发布制品，只检查 SSH、SFTP、目录权限位、现有容器健康、服务入口及服务器访问 GitHub API。检查前后比对配置文件摘要、容器标识、挂载和启动时间；不写服务器文件、不重启服务。权限位检查不代表已实际完成写入或回滚。
+
+首次新增工作流须通过 PR 合入 main，之后才可手动运行。所有者自己的 PR 等检查通过后可使用管理员合并。合并产生的 Research checks and release 是另一条发布流程；仅做连接检查时取消它等待批准的部署任务，不批准实际发布。

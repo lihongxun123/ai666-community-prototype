@@ -1,0 +1,28 @@
+name: Research connection check (no deployment)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  connection:
+    name: Read-only server connection and permissions
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment:
+      name: research-production
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check SSH, SFTP and deployment permissions without deploying
+        env:
+          SSH_HOST: ${{ secrets.RESEARCH_SSH_HOST }}
+          SSH_PORT: ${{ secrets.RESEARCH_SSH_PORT }}
+          SSH_USER: ${{ secrets.RESEARCH_SSH_USER }}
+          SSH_KEY: ${{ secrets.RESEARCH_SSH_PRIVATE_KEY }}
+          KNOWN_HOSTS: ${{ secrets.RESEARCH_SSH_KNOWN_HOSTS }}
+        run: bash deploy/check-connection.sh
