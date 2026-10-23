@@ -2,9 +2,9 @@
 
 ## 两人日常流程
 
-任务分支 → PR → 另一人审核 + Build and checks 通过 → 合并 main → 重新构建 → lihongxun123 批准后才部署。
+任务分支 → PR → lihongxun123 审核 + Build and checks 通过 → 合并 main → 重新构建 → lihongxun123 批准后才部署。
 
-`main` 禁止直接推送、强制推送和删除，管理员也适用；必须解决 PR 对话、同步最新主线，最后推送由另一人批准，新提交会撤销旧批准。所有者自己的 PR 也需要同事审核，同事须先接受邀请。
+协作者对 `main` 的改动必须走 PR，由 CODEOWNERS 指定的 lihongxun123 审核，解决对话、同步主线并通过构建。新提交撤销旧批准。所有者可用管理员权限合并自己的 PR；GitHub 不允许作者批准自己的 PR。管理员豁免也允许绕过检查，操作时仍应等待检查成功。部署环境没有管理员豁免，仍只允许 lihongxun123 批准。
 
 Actions 的 `Research checks and release` 检查素材、类型、需求，构建 Node standalone，启动服务检查 7 个入口，并在无网络容器中运行部署与回滚模拟。PR 不取得服务器凭据。手动 Run workflow 只构建，不触发部署。合并 main 后生成保留 7 天的制品，部署等待 `research-production` 环境审批。
 
@@ -48,4 +48,4 @@ Actions 的 `Research checks and release` 检查素材、类型、需求，构�
 
 手动运行 **Research connection check (no deployment)**，选择 main，再批准该连接检查对 research-production 环境的访问。此工作流不接受发布参数、不下载发布制品，只检查 SSH、SFTP、目录权限位、现有容器健康、服务入口及服务器访问 GitHub API。检查前后比对配置文件摘要、容器标识、挂载和启动时间；不写服务器文件、不重启服务。权限位检查不代表已实际完成写入或回滚。
 
-首次新增工作流须经过 PR 审核并合入 main，之后才可手动运行。合并产生的 Research checks and release 是另一条发布流程；仅做连接检查时取消它等待批准的部署任务，不批准实际发布。
+首次新增工作流须通过 PR 合入 main，之后才可手动运行。所有者自己的 PR 等检查通过后可使用管理员合并。合并产生的 Research checks and release 是另一条发布流程；仅做连接检查时取消它等待批准的部署任务，不批准实际发布。
