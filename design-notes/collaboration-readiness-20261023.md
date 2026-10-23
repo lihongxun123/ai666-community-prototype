@@ -32,7 +32,20 @@
 
 ## GitHub 最终克隆验证
 
-待提交、推送授权后执行；当前以上是 GitHub 基线克隆应用本次修复的验证，不能称为 GitHub 已同步。
+用户授权后，修复已提交并推送到 GitHub `main`：`1d79a66f534b832194bcb629b263c1060df146e1`。
+
+随后通过 GitHub HTTPS 地址在另一个全新目录克隆 `main`，确认 HEAD 为该提交、工作区无改动、`core.autocrlf=true`。没有从原工作区复制素材、`node_modules`、构建产物或图片缓存。
+
+- `npm run check:assets -- --tracked`：1517 项输入齐全且全部跟踪，附件字节差异为 0。
+- `npm ci --no-audit --no-fund`：成功安装 816 个包。
+- `npx tsc --noEmit` 与 106 项页面需求登记：均通过。
+- `npm run build:node`：通过；图片缓存命中为 0，157 项从源素材重新处理，451 张图片、792 组字节一致性、49 组无损转换校验通过，断链为 0。
+- `npm run start:node`、`npm run dev:node -- --port 3180`：均成功启动；构建服务的七个代表性页面／资源地址和开发阅读台均返回 200。
+- 浏览器再次确认新克隆构建服务的 C 端原型与具体需求同屏展示、B 端需求面板与作品列表可用。
+
+本轮在 Windows / Node.js 24.14.1 实测，其他操作系统未另行复验。后续仅回写本验证记录，不改上述已验证源码。测试服务完成后停止。
+
+GitHub 分支状态查询显示 `main` 的 `protected=false`；协作者邀请和分支保护未执行，协作流程见 `COLLABORATION.md`。
 
 ## 范围与既有问题
 
