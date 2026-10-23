@@ -89,7 +89,7 @@ git commit -m "完善 C 端发布流程与页面需求"
 git push -u origin feat/c-publish-flow
 ```
 
-在 GitHub 建立 **任务分支 → main** 的 PR，写清变更目的、页面和需求位置、验证结果，并附关键截图。另一人核对后合并；合并不自动代表允许公网发布。当前仓库没有随本次改动新增自动部署流程。
+在 GitHub 建立 **任务分支 → main** 的 PR，写清变更目的、页面和需求位置、验证结果，并附关键截图。另一人审核通过、Build and checks 成功且分支与 main 同步后合并。合并会重新构建并等待仓库所有者批准部署；未经批准不会更新公网。
 
 ### 4. 处理并行修改与冲突
 
@@ -106,8 +106,8 @@ Git 没报冲突也需要业务复核。例如 C 端改成“提交后待审核�
 
 ## 仓库所有者设置一次即可
 
-在 GitHub 支持的情况下保护 `main`：必须通过 PR、至少一位审核者通过、禁用强制推送和删除。私有仓库的分支保护是否可用取决于账号套餐；本说明不代表已配置。暂时没有平台保护时，双方仍遵守 PR 流程，由所有者负责合并。
+`main` 采用分支保护：必须通过 PR、至少一位审核者通过、Build and checks 成功、分支与主线同步、对话已解决；新提交使旧批准失效，最后一次推送由其他人批准。管理员也遵守，禁止强制推送和删除。所有者自己的 PR 也需要同事审核，因此同事须先接受协作邀请。
 
-公网发布固定由一人负责，只发布已合并、已验证的版本；另一人不同时切换服务器版本。部署另按 `deploy/README.md` 执行，这份说明不要求同事取得服务器权限。
+公网发布固定由一人负责，只发布已合并、已验证的版本；另一人不同时切换服务器版本。部署审批与凭据配置按 [GitHub Actions 运维说明](deploy/GITHUB_ACTIONS.md) 执行，这份说明不要求同事取得服务器权限。
 
 GitHub 官方参考：[邀请协作者](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository)、[个人仓库权限](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository)、[分支保护](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)。

@@ -1,3 +1,5 @@
 # Preserve the exact bytes recorded in the downloadable report manifest.
 /public/research-deliveries/** -text
 /public/research-kit/** -text
+/deploy/*.sh text eol=lf
+/.github/workflows/*.yml text eol=lf

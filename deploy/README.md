@@ -1,3 +1,5 @@
+> GitHub 构建与人工审批部署见 [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md)。本次只配置流水线，以下历史服务器发布记录未更新。
+
 # 研究室阿里云部署
 
 2026-10-10 已发布至 https://research.yuandaokeji.com/ 。研究室、C 端 PC/移动端与 B 端原型共用此入口；这是研究与原型展示服务，不代表真实业务系统上线。原 Sites 发布保持第 61 版。

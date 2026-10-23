@@ -1,0 +1,133 @@
+name: Research checks and release
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      artifact-name: ${{ steps.package.outputs.artifact-name }}
+      release-id: ${{ steps.package.outputs.release-id }}
+    concurrency:
+      group: research-build-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22.13.0'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Check source assets, types and requirements
+        run: |
+          npm run check:assets -- --tracked
+          npx tsc --noEmit
+          node scripts/validate-page-requirements.mjs
+          bash -n deploy/deploy-release.sh
+      - name: Test deployment and rollback offline
+        run: docker run --rm --network none -e RESEARCH_DEPLOY_FIXTURE=1 -v "$PWD/deploy:/tests:ro" python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704 python /tests/test-deploy-release.py
+      - name: Build standalone and smoke test
+        run: |
+          npm run build:node
+          node scripts/smoke-node.mjs
+      - name: Package this commit
+        id: package
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RELEASE_ID: gh-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          mkdir -p release
+          node --input-type=module -e 'import fs from "node:fs"; fs.writeFileSync("dist/standalone/RELEASE.json", JSON.stringify({sourceSha:process.env.SOURCE_SHA,release:process.env.RELEASE_ID},null,2));'
+          tar -czf release/research-node.tar.gz -C dist/standalone .
+          (cd release && sha256sum research-node.tar.gz > SHA256SUMS)
+          echo "artifact-name=research-node-$SOURCE_SHA-$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+          echo "release-id=$RELEASE_ID" >> "$GITHUB_OUTPUT"
+          echo "Source: $SOURCE_SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "Release: $RELEASE_ID; awaiting owner approval, no automatic publication." >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload release bundle
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ${{ steps.package.outputs.artifact-name }}
+          path: release/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+
+  deploy:
+    name: Owner-approved production deployment
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    concurrency:
+      group: research-production
+      cancel-in-progress: false
+    environment:
+      name: research-production
+      url: https://research.yuandaokeji.com/
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Reject an obsolete main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          current=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
+          test "$current" = "$SOURCE_SHA" || { echo 'main has changed; approve the latest run instead.'; exit 1; }
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: ${{ needs.build.outputs.artifact-name }}
+          path: release
+      - name: Verify and transfer approved release
+        env:
+          SSH_HOST: ${{ secrets.RESEARCH_SSH_HOST }}
+          SSH_USER: ${{ secrets.RESEARCH_SSH_USER }}
+          SSH_PORT: ${{ secrets.RESEARCH_SSH_PORT }}
+          SSH_KEY: ${{ secrets.RESEARCH_SSH_PRIVATE_KEY }}
+          KNOWN_HOSTS: ${{ secrets.RESEARCH_SSH_KNOWN_HOSTS }}
+          SOURCE_SHA: ${{ github.sha }}
+          RELEASE_ID: ${{ needs.build.outputs.release-id }}
+        run: |
+          set -euo pipefail
+          : "${SSH_HOST:?Set environment secret RESEARCH_SSH_HOST}"
+          : "${SSH_USER:?Set environment secret RESEARCH_SSH_USER}"
+          : "${SSH_PORT:?Set environment secret RESEARCH_SSH_PORT}"
+          : "${SSH_KEY:?Set environment secret RESEARCH_SSH_PRIVATE_KEY}"
+          : "${KNOWN_HOSTS:?Set environment secret RESEARCH_SSH_KNOWN_HOSTS}"
+          [[ "$SSH_HOST" =~ ^[a-zA-Z0-9][a-zA-Z0-9.-]*$ ]]
+          [[ "$SSH_USER" =~ ^[a-zA-Z_][a-zA-Z0-9_-]*$ ]]
+          [[ "$SSH_PORT" =~ ^[0-9]{1,5}$ ]] && ((10#$SSH_PORT > 0 && 10#$SSH_PORT <= 65535))
+          (cd release && sha256sum -c SHA256SUMS)
+          digest=$(sha256sum release/research-node.tar.gz | cut -d' ' -f1)
+          key_dir=$(mktemp -d)
+          trap 'rm -rf "$key_dir"' EXIT
+          chmod 700 "$key_dir"
+          printf '%s\n' "$SSH_KEY" > "$key_dir/key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$key_dir/known_hosts"
+          chmod 600 "$key_dir/key" "$key_dir/known_hosts"
+          unset SSH_KEY KNOWN_HOSTS
+          ssh_args=(-i "$key_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$key_dir/known_hosts" -o ConnectTimeout=15 -o ServerAliveInterval=15 -o ServerAliveCountMax=3)
+          ssh "${ssh_args[@]}" -p "$SSH_PORT" "$SSH_USER@$SSH_HOST" 'test -d /opt/research-room/incoming && test -w /opt/research-room/incoming'
+          scp "${ssh_args[@]}" -P "$SSH_PORT" release/research-node.tar.gz "$SSH_USER@$SSH_HOST:/opt/research-room/incoming/$RELEASE_ID.tar.gz"
+          ssh "${ssh_args[@]}" -p "$SSH_PORT" "$SSH_USER@$SSH_HOST" "bash -s -- '$RELEASE_ID' '$digest' '$SOURCE_SHA'" < deploy/deploy-release.sh
+      - name: Check public endpoints
+        run: |
+          curl --fail --silent --show-error --retry 3 --max-time 30 https://research.yuandaokeji.com/ -o /dev/null
+          curl --fail --silent --show-error --retry 3 --max-time 30 https://research.yuandaokeji.com/community-options/prototype-review -o /dev/null
