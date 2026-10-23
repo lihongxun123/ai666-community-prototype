@@ -8,7 +8,8 @@ set -euo pipefail
 : "${KNOWN_HOSTS:?Missing verified host key}"
 [[ "$SSH_HOST" =~ ^[a-zA-Z0-9][a-zA-Z0-9.-]*$ ]]
 [[ "$SSH_USER" =~ ^[a-zA-Z_][a-zA-Z0-9_-]*$ ]]
-[[ "$SSH_PORT" =~ ^[0-9]{1,5}$ ]] && ((10#$SSH_PORT > 0 && 10#$SSH_PORT <= 65535))
+[[ "$SSH_PORT" =~ ^[0-9]{1,5}$ ]]
+((10#$SSH_PORT > 0 && 10#$SSH_PORT <= 65535))
 key_dir=$(mktemp -d)
 trap 'rm -rf "$key_dir"' EXIT
 chmod 700 "$key_dir"
@@ -22,10 +23,17 @@ set -euo pipefail
 root=/opt/research-room
 echo 'SSH authentication and verified host identity: passed'
 for dir in "$root" "$root/incoming" "$root/releases"; do
-  test -d "$dir" && test ! -L "$dir" && test -r "$dir" && test -w "$dir" && test -x "$dir"
+  test -d "$dir"
+  test ! -L "$dir"
+  test -r "$dir"
+  test -w "$dir"
+  test -x "$dir"
 done
-test -f "$root/.env" && test ! -L "$root/.env" && test -r "$root/.env"
-test -f "$root/compose.yaml" && test ! -L "$root/compose.yaml" && test -r "$root/compose.yaml"
+for file in "$root/.env" "$root/compose.yaml"; do
+  test -f "$file"
+  test ! -L "$file"
+  test -r "$file"
+done
 for tool in docker bash python3 curl flock sha256sum; do command -v "$tool" >/dev/null; done
 before=$(sha256sum "$root/.env" "$root/compose.yaml")
 container_before=$(docker inspect --format '{{.Id}} {{.State.StartedAt}} {{range .Mounts}}{{if eq .Destination "/app"}}{{.Source}}{{end}}{{end}}' research-room)
