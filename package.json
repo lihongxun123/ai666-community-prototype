@@ -6,6 +6,9 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "check:assets": "node scripts/check-source-assets.mjs",
+    "dev:node": "node scripts/dev-node.mjs",
+    "start:node": "node dist/standalone/server.js",
     "build:node": "node scripts/build-node.mjs",
     "dev": "vinext dev",
     "build": "vinext build && node scripts/dedupe-build-images.mjs && node scripts/compress-build-images.mjs && node scripts/validate-build-images.mjs",

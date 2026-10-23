@@ -1,5 +1,9 @@
 # 多元拾光研究室
 
+## GitHub 双人协作与本地运行
+
+从 [双人协作说明](COLLABORATION.md) 开始：包含邀请、首次克隆、Node 本地预览、需求源文件、PR 和冲突处理。首次运行依次执行 `npm ci`、`npm run check:assets -- --tracked`、`npm run dev:node`。公司 Node 构建使用 `npm run build:node`，不需要 Sites 登录。现有工作区的 GitHub 远端名是 `github`；新克隆默认是 `origin`。
+
 ## 当前 C 端原型与需求入口
 
 2026-10-05：本地 PC / 移动端评审从 [双端对齐记录](design-notes/c-requirements-20261005/alignment-review.md) 和 [设计研发需求](design-notes/c-requirements-20261005/README.md) 接手。当前 C 端 37 个注册页面标识，PC 30 个、移动端 32 个独立评审入口；B 端 31 个、跨产品 19 个注册项。最新本地稿未发布，正常入口加载检查不代表全部视觉、状态交互或生产验收。

@@ -7,6 +7,7 @@ const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
 process.chdir(root);
 const env={...process.env,RESEARCH_DEPLOY_TARGET:'node'};
 for(const args of [
+ ['scripts/check-source-assets.mjs'],
  ['node_modules/vinext/dist/cli.js','build'],
  ['scripts/dedupe-build-images.mjs'],
  ['scripts/compress-build-images.mjs'],
